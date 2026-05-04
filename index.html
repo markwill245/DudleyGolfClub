@@ -674,41 +674,40 @@ function setHole(n) {
     const img = document.getElementById('h-img');
     const gallery = document.getElementById('h-gallery');
 
-    // Update Text Content
+    // 👇 TEXT (DO NOT TOUCH THIS PART)
     document.getElementById('h-num').innerText = n.toString().padStart(2, '0');
     document.getElementById('h-name').innerText = h.name;
     document.getElementById('h-par-si').innerText = `P${h.par} / S${h.si}`;
-    
-    // Update Yardages
+
     document.getElementById('h-white').innerText = h.w;
     document.getElementById('h-yellow').innerText = h.y;
     document.getElementById('h-red').innerText = h.r;
-    
+
     document.getElementById('h-desc').innerText = h.desc;
     document.getElementById('h-tip').innerText = h.tip;
 
-    // Set Main Image
-    // Stop previous slider
-clearInterval(currentInterval);
+    // 👇 REPLACE ONLY THIS IMAGE PART
+    clearInterval(currentInterval);
 
-let currentIndex = 0;
+    let currentIndex = 0;
 
-// Set first image
-img.src = h.images[0];
-img.style.opacity = 1;
+    img.src = h.images[0];
+    img.style.opacity = 1;
 
-// Auto rotate images
-currentInterval = setInterval(() => {
-    currentIndex = (currentIndex + 1) % h.images.length;
+    currentInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % h.images.length;
 
-    img.style.opacity = 0;
+        img.style.opacity = 0;
 
-    setTimeout(() => {
-        img.src = h.images[currentIndex];
-        img.style.opacity = 1;
-    }, 200);
+        setTimeout(() => {
+            img.src = h.images[currentIndex];
+            img.style.opacity = 1;
+        }, 200);
 
-}, 3000);
+    }, 3000);
+
+    // 👇 KEEP YOUR GALLERY CODE
+}
 
     // Build Image Gallery
     if (gallery) {
