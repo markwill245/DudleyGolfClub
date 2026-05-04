@@ -163,6 +163,9 @@ h3 { font-size: 1.8rem; }
 
 a, button { transition: all 0.25s ease; }
 button:active, a:active { transform: scale(0.97); }
+section[id] {
+            scroll-margin-top: 80px;
+        }
 </style>
 </head>
 <body class="antialiased">
@@ -793,26 +796,45 @@ membershipData.forEach(m => {
         </div>`;
 });
 
-// --- MENU & SCROLL ---
+// --- MOBILE MENU LOGIC ---
 const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('nav-links');
 
-function closeMenu(){
-    navLinks.classList.remove('translate-x-0');
+function closeMenu() {
     navLinks.classList.add('translate-x-full');
-    document.body.style.overflow = 'auto';
+    navLinks.classList.remove('translate-x-0');
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
 }
 
+function openMenu() {
+    navLinks.classList.remove('translate-x-full');
+    navLinks.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+// Toggle menu on button click
 menuBtn.onclick = (e) => {
     e.stopPropagation();
-    navLinks.classList.contains('translate-x-full') ? 
-        (navLinks.classList.remove('translate-x-full'), navLinks.classList.add('translate-x-0'), document.body.style.overflow = 'hidden') : 
+    if (navLinks.classList.contains('translate-x-full')) {
+        openMenu();
+    } else {
         closeMenu();
+    }
 };
 
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.nav-blur');
-    window.scrollY > 50 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
+// CRITICAL FIX: Close menu when ANY link inside it is clicked
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        closeMenu(); 
+        // The browser will now naturally follow the href="#id" 
+    });
+});
+
+// Close menu if clicking anywhere outside the menu
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeMenu();
+    }
 });
 
 // --- STARTUP ---
