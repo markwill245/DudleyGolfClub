@@ -664,8 +664,7 @@ function updateClock(){
 }
 
 // SLIDER
-let imgIndex=0;
-let imgInterval;
+let currentInterval;
 
 // --- HOLE LOGIC ---
 function setHole(n) {
@@ -689,14 +688,33 @@ function setHole(n) {
     document.getElementById('h-tip').innerText = h.tip;
 
     // Set Main Image
-    img.src = h.images[0];
-    img.style.opacity = 1;
+    // Stop previous slider
+clearInterval(currentInterval);
+
+let currentIndex = 0;
+
+// Set first image
+img.src = h.images[0];
+img.style.opacity = 1;
+
+// Auto rotate images
+currentInterval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % h.images.length;
+
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+        img.src = h.images[currentIndex];
+        img.style.opacity = 1;
+    }, 200);
+
+}, 3000);
 
     // Build Image Gallery
     if (gallery) {
         gallery.innerHTML = ''; 
         h.images.forEach((imgSrc) => {
-            if(imgSrc.trim().length > 10) { // Safety check for empty paths
+           if(imgSrc && imgSrc.includes('.webp'))
                 const thumb = document.createElement('img');
                 thumb.src = imgSrc;
                 thumb.className = "w-20 h-14 object-cover rounded cursor-pointer border-2 border-transparent hover:border-gold transition-all duration-300 opacity-60 hover:opacity-100";
