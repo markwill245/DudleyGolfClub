@@ -674,7 +674,7 @@ function setHole(n) {
     const img = document.getElementById('h-img');
     const gallery = document.getElementById('h-gallery');
 
-    // 👇 TEXT (DO NOT TOUCH THIS PART)
+    // TEXT
     document.getElementById('h-num').innerText = n.toString().padStart(2, '0');
     document.getElementById('h-name').innerText = h.name;
     document.getElementById('h-par-si').innerText = `P${h.par} / S${h.si}`;
@@ -686,7 +686,7 @@ function setHole(n) {
     document.getElementById('h-desc').innerText = h.desc;
     document.getElementById('h-tip').innerText = h.tip;
 
-    // 👇 REPLACE ONLY THIS IMAGE PART
+    // IMAGE SLIDER
     clearInterval(currentInterval);
 
     let currentIndex = 0;
@@ -706,18 +706,17 @@ function setHole(n) {
 
     }, 3000);
 
-    // 👇 KEEP YOUR GALLERY CODE
-}
-
-    // Build Image Gallery
+    // ✅ GALLERY (NOW INSIDE FUNCTION)
     if (gallery) {
-        gallery.innerHTML = ''; 
+        gallery.innerHTML = '';
+
         h.images.forEach((imgSrc) => {
-           if(imgSrc && imgSrc.includes('.webp'))
+            if (imgSrc && imgSrc.includes('.webp')) {
+
                 const thumb = document.createElement('img');
                 thumb.src = imgSrc;
                 thumb.className = "w-20 h-14 object-cover rounded cursor-pointer border-2 border-transparent hover:border-gold transition-all duration-300 opacity-60 hover:opacity-100";
-                
+
                 thumb.onclick = () => {
                     img.style.opacity = 0;
                     setTimeout(() => {
@@ -725,21 +724,22 @@ function setHole(n) {
                         img.style.opacity = 1;
                     }, 200);
                 };
+
                 gallery.appendChild(thumb);
             }
         });
     }
 
-    // Highlight active button/card
+    // ACTIVE CARD
     document.querySelectorAll('.hole-card').forEach(card => {
         card.classList.remove('border-gold', 'bg-gold/20');
     });
+
     const activeCard = document.getElementById(`h-${n}`);
     if (activeCard) {
         activeCard.classList.add('border-gold', 'bg-gold/20');
     }
 }
-
 // --- SCORECARD ---
 function toggleScorecard(){
     const modal = document.getElementById('scorecard-modal');
