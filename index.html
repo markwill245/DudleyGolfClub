@@ -182,17 +182,14 @@ section[id] {
         <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
     </a>
     
-  <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none relative">
-    <div class="w-6 h-0.5 bg-gold"></div>
-    <div class="w-6 h-0.5 bg-gold"></div>
-    <div class="w-6 h-0.5 bg-gold"></div>
-</button>
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none relative">
+        <div class="w-6 h-0.5 bg-gold"></div>
+        <div class="w-6 h-0.5 bg-gold"></div>
+        <div class="w-6 h-0.5 bg-gold"></div>
+    </button>
 
-    <!-- FIXED MOBILE MENU: Added solid background and all links -->
-    <!-- Check these specific classes in your nav-links div -->
-<div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0">
-    <!-- Links here -->
-</div>
+    <!-- FIXED MOBILE MENU: Links are now INSIDE the div -->
+    <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0">
         <a href="#" class="hover:text-gold transition">Home</a>
         <a href="#course" class="hover:text-gold transition">Course Guide</a>
         <a href="#heritage" class="hover:text-gold transition">History</a>
@@ -200,7 +197,7 @@ section[id] {
         <a href="#pro-shop" class="hover:text-gold transition">Pro Shop</a>
         <a href="#visitors" class="hover:text-gold transition">Visitors</a>
         <a href="#membership" class="hover:text-gold transition">Membership</a>
-    </div>
+    </div> <!-- This was closed too early before! -->
     
     <a href="https://www.dudleygolfclub.com/login.php" target="_blank" class="relative z-[200] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
 </nav>
