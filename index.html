@@ -169,20 +169,20 @@ section[id] {
 	/* --- CLEAN MOBILE MENU FIX --- */
 @media (max-width: 768px) {
     #nav-links {
-        background-color: #132419 !important;
+        /* This hides the menu to the right */
+        transform: translateX(100%); 
         position: fixed !important;
         inset: 0 !important;
+        background-color: #132419 !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        z-index: 1000 !important;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        transition: transform 0.4s ease-in-out !important;
+        z-index: 9999 !important;
     }
 
-    /* This class is what hides it off-screen */
-    .translate-x-full {
-        transform: translateX(100%) !important;
+    /* When this class is REMOVED, the menu slides IN */
+    #nav-links.menu-active {
+        transform: translateX(0) !important;
     }
 }
 </style>
@@ -205,7 +205,7 @@ section[id] {
             <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
         </a>
         
-        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[10001] p-2">
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[10000] p-2 focus:outline-none">
     <div class="w-6 h-0.5 bg-gold"></div>
     <div class="w-6 h-0.5 bg-gold"></div>
     <div class="w-6 h-0.5 bg-gold"></div>
@@ -819,48 +819,77 @@ membershipData.forEach(m => {
 const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('nav-links');
 
-function closeMenu() {
-    navLinks.classList.add('translate-x-full');
-    navLinks.classList.remove('translate-x-0');
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-}
+// This function controls opening/closing the menu
+function toggleMenu(forceClose = false) {
+    const isOpen = navLinks.classList.contains('menu-active');
 
-function openMenu() {
-    navLinks.classList.remove('translate-x-full');
-    navLinks.classList.add('translate-x-0');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
-}
-
-// Toggle menu on button click
-menuBtn.onclick = (e) => {
-    e.stopPropagation();
-    if (navLinks.classList.contains('translate-x-full')) {
-        openMenu();
+    if (isOpen || forceClose) {
+        // CLOSE MENU
+        navLinks.classList.remove('menu-active');
+        document.body.style.overflow = 'auto'; // Let user scroll again
     } else {
-        closeMenu();
+        // OPEN MENU
+        navLinks.classList.add('menu-active');
+        document.body.style.overflow = 'hidden'; // Stop background from scrolling
     }
-};
+}
 
-// CRITICAL FIX: Close menu when ANY link inside it is clicked
-document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        closeMenu(); 
-        // The browser will now naturally follow the href="#id" 
-    });
+// 1. Toggle on button click
+menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
 });
 
-// Close menu if clicking anywhere outside the menu
+// 2. Close when a link is clicked (Navigation)
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => toggleMenu(true));
+});
+
+// 3. Close if clicking outside the menu
 document.addEventListener('click', (e) => {
     if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
-        closeMenu();
+        toggleMenu(true);
     }
 });
 
-// --- STARTUP ---
+// --- SCROLL EFFECT LOGIC ---
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.nav-blur');
+    // Changes header appearance after scrolling 50px
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+// --- STARTUP SEQUENCE ---
 document.addEventListener('DOMContentLoaded', () => {
-    updateClock();
-    setInterval(updateClock, 1000);
-    setHole(1);
+    // Start the clock
+    if (typeof updateClock === "function") {
+        updateClock();
+        setInterval(updateClock, 1000);
+    }
+    
+    // Build the 18 holes in the sidebar (if the container exists)
+    const navCont = document.getElementById('hole-nav-container');
+    if (navCont && typeof courseData !== 'undefined') {
+        navCont.innerHTML = courseData.map(h => `
+            <button onclick="setHole(${h.number})" 
+                    data-hole="${h.number}" 
+                    class="hole-nav-btn flex-shrink-0 w-full text-left p-4 border border-white/10 hover:bg-white/5 transition-all group">
+                <div class="flex justify-between items-center">
+                    <span class="serif text-xl text-gold">${h.number}</span>
+                    <span class="text-[10px] text-white uppercase tracking-widest">${h.name}</span>
+                </div>
+            </button>
+        `).join('');
+    }
+
+    // Set initial view to Hole 1
+    if (typeof setHole === "function") {
+        setHole(1);
+    }
 });
 </script> 
  <script>
