@@ -43,7 +43,7 @@ h3 { font-size: 1.8rem; }
 }
    
 
-/* MOBILE SPACING */
+/* MOBILE SPACING & MENU FIXES */
 @media (max-width: 768px) {
     section {
         padding-top: 5rem !important;
@@ -58,7 +58,20 @@ h3 { font-size: 1.8rem; }
         gap: 10px;
         padding-bottom: 10px;
     }
-	#nav-links { background-color: #132419 !important; }
+
+    /* Force the main nav bar to be solid on mobile */
+    nav {
+        background-color: #132419 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    /* Force the sliding menu to be solid on mobile */
+    #nav-links { 
+        background-color: #132419 !important; 
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
 }
 
 
@@ -178,7 +191,7 @@ section[id] {
         </div>
     </div>
 
-   <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+   <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white bg-[#132419]/80 backdrop-blur-md border-b border-white/10">
     <a href="#" class="flex flex-col relative z-[100]">
         <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
         <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
@@ -191,7 +204,7 @@ section[id] {
     </button>
 
     <!-- FIXED MOBILE MENU: Links are now INSIDE the div -->
-    <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0" style="background-color: #132419 !important;">
+    <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0" style="background-color: #132419 !important; opacity: 1 !important;">
     <a href="#" class="hover:text-gold transition">Home</a>
     <a href="#course" class="hover:text-gold transition">Course Guide</a>
     <a href="#heritage" class="hover:text-gold transition">History</a>
