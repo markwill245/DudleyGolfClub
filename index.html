@@ -166,6 +166,24 @@ button:active, a:active { transform: scale(0.97); }
 section[id] {
             scroll-margin-top: 80px;
         }
+	/* --- EMERGENCY MOBILE MENU FIX --- */
+@media (max-width: 768px) {
+    #nav-links {
+        background-color: #132419 !important; /* Forces the Forest Green */
+        background-image: none !important;    /* Removes any conflicting gradients */
+        opacity: 1 !important;               /* Ensures it's not see-through */
+        visibility: visible !important;
+        display: flex !important;
+        position: fixed !important;
+        inset: 0 !important;
+        z-index: 99999 !important;            /* Puts it on the very top layer */
+    }
+
+    #nav-links a {
+        color: #ffffff !important;           /* Forces text to stay white */
+        font-size: 1.2rem !important;
+    }
+}	
 </style>
 </head>
 <body class="antialiased">
