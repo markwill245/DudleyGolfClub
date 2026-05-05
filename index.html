@@ -36,14 +36,10 @@ h3 { font-size: 1.8rem; }
 
 /* SCROLLED STATE */
 .nav-blur.scrolled {
-    background: rgba(19, 36, 25, 0.85);
+    background-color: #132419 !important; /* Forces the solid forest green */
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-}
-.nav-blur.scrolled {
-    background: rgba(19, 36, 25, 0.85);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(197, 163, 103, 0.2); /* Adds a subtle gold tint to the bottom edge */
 }
    
 
@@ -166,25 +162,6 @@ button:active, a:active { transform: scale(0.97); }
 section[id] {
             scroll-margin-top: 80px;
         }
-	/* --- CLEAN MOBILE MENU FIX --- */
-@media (max-width: 768px) {
-    #nav-links {
-        /* This hides the menu to the right */
-        transform: translateX(100%); 
-        position: fixed !important;
-        inset: 0 !important;
-        background-color: #132419 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        transition: transform 0.4s ease-in-out !important;
-        z-index: 9999 !important;
-    }
-
-    /* When this class is REMOVED, the menu slides IN */
-    #nav-links.menu-active {
-        transform: translateX(0) !important;
-    }
-}
 </style>
 </head>
 <body class="antialiased">
@@ -199,34 +176,31 @@ section[id] {
         </div>
     </div>
 
-    <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
-        <a href="#" class="flex flex-col relative z-[100]">
-            <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
-            <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
-        </a>
-        
-        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[10000] p-2 focus:outline-none">
-    <div class="w-6 h-0.5 bg-gold"></div>
-    <div class="w-6 h-0.5 bg-gold"></div>
-    <div class="w-6 h-0.5 bg-gold"></div>
-</button>
+   <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+    <a href="#" class="flex flex-col relative z-[100]">
+        <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
+        <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
+    </a>
+    
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[100] p-2 focus:outline-none">
+        <div class="w-6 h-0.5 bg-gold"></div>
+        <div class="w-6 h-0.5 bg-gold"></div>
+        <div class="w-6 h-0.5 bg-gold"></div>
+    </button>
 
-  <div id="nav-links" 
-     class="fixed inset-0 z-[10000] flex flex-col items-center justify-center gap-8 translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0 text-[14px] uppercase tracking-[0.3em] font-semibold px-8"
-     style="background-color: #132419 !important; opacity: 1 !important; visibility: visible !important;">
-
-    <a href="#" class="hover:text-gold transition">Home</a>
-    <a href="#course" class="hover:text-gold transition">Course Guide</a>
-    <a href="#heritage" class="hover:text-gold transition">History</a>
-    <a href="#hospitality" class="hover:text-gold transition">Hospitality</a>
-    <a href="#pro-shop" class="hover:text-gold transition">Pro Shop</a>
-    <a href="#visitors" class="hover:text-gold transition">Visitors</a>
-    <a href="#membership" class="hover:text-gold transition">Membership</a>
-
-</div>
-        
-        <a href="https://www.dudleygolfclub.com/login.php" target="_blank" class="relative z-[100] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
-    </nav>
+    <!-- FIXED MOBILE MENU: Added solid background and all links -->
+    <div id="nav-links" class="fixed inset-0 z-[90] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0 text-[14px] uppercase tracking-[0.3em] font-semibold px-8">
+        <a href="#" class="hover:text-gold transition">Home</a>
+        <a href="#course" class="hover:text-gold transition">Course Guide</a>
+        <a href="#heritage" class="hover:text-gold transition">History</a>
+        <a href="#hospitality" class="hover:text-gold transition">Hospitality</a>
+        <a href="#pro-shop" class="hover:text-gold transition">Pro Shop</a>
+        <a href="#visitors" class="hover:text-gold transition">Visitors</a>
+        <a href="#membership" class="hover:text-gold transition">Membership</a>
+    </div>
+    
+    <a href="https://www.dudleygolfclub.com/login.php" target="_blank" class="relative z-[100] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
+</nav>
 
     <header class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
     <div class="max-w-4xl px-4">
@@ -819,87 +793,54 @@ membershipData.forEach(m => {
 const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('nav-links');
 
-// This function controls opening/closing the menu
-function toggleMenu(forceClose = false) {
-    const isOpen = navLinks.classList.contains('menu-active');
-
-    if (isOpen || forceClose) {
-        // CLOSE MENU
-        navLinks.classList.remove('menu-active');
-        document.body.style.overflow = 'auto'; // Let user scroll again
-    } else {
-        // OPEN MENU
-        navLinks.classList.add('menu-active');
-        document.body.style.overflow = 'hidden'; // Stop background from scrolling
-    }
+function closeMenu() {
+    navLinks.classList.add('translate-x-full');
+    navLinks.classList.remove('translate-x-0');
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
 }
 
-// 1. Toggle on button click
-menuBtn.addEventListener('click', (e) => {
+function openMenu() {
+    navLinks.classList.remove('translate-x-full');
+    navLinks.classList.add('translate-x-0');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+// Toggle menu on button click
+menuBtn.onclick = (e) => {
     e.stopPropagation();
-    toggleMenu();
-});
+    if (navLinks.classList.contains('translate-x-full')) {
+        openMenu();
+    } else {
+        closeMenu();
+    }
+};
 
-// 2. Close when a link is clicked (Navigation)
+// CRITICAL FIX: Close menu when ANY link inside it is clicked
 document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => toggleMenu(true));
+    link.addEventListener('click', () => {
+        closeMenu(); 
+        // The browser will now naturally follow the href="#id" 
+    });
 });
 
-// 3. Close if clicking outside the menu
+// Close menu if clicking anywhere outside the menu
 document.addEventListener('click', (e) => {
     if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
-        toggleMenu(true);
+        closeMenu();
     }
 });
 
-// --- SCROLL EFFECT LOGIC ---
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.nav-blur');
-    // Changes header appearance after scrolling 50px
-    if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
-
-// --- STARTUP SEQUENCE ---
+// --- STARTUP ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Start the clock
-    if (typeof updateClock === "function") {
-        updateClock();
-        setInterval(updateClock, 1000);
-    }
-    
-    // Build the 18 holes in the sidebar (if the container exists)
-    const navCont = document.getElementById('hole-nav-container');
-    if (navCont && typeof courseData !== 'undefined') {
-        navCont.innerHTML = courseData.map(h => `
-            <button onclick="setHole(${h.number})" 
-                    data-hole="${h.number}" 
-                    class="hole-nav-btn flex-shrink-0 w-full text-left p-4 border border-white/10 hover:bg-white/5 transition-all group">
-                <div class="flex justify-between items-center">
-                    <span class="serif text-xl text-gold">${h.number}</span>
-                    <span class="text-[10px] text-white uppercase tracking-widest">${h.name}</span>
-                </div>
-            </button>
-        `).join('');
-    }
-
-    // Set initial view to Hole 1
-    if (typeof setHole === "function") {
-        setHole(1);
-    }
+    updateClock();
+    setInterval(updateClock, 1000);
+    setHole(1);
 });
 </script> 
- <script>
+  <script>
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav-blur');
-    const navLinks = document.getElementById('nav-links');
-    
-    // Only apply the transparent "scrolled" effect if the mobile menu is CLOSED
-    // If the mobile menu is open (translate-x-0), we keep the background solid green
-    if (window.scrollY > 50 && navLinks.classList.contains('translate-x-full')) {
+    if (window.scrollY > 50) {
         nav.classList.add('scrolled');
     } else {
         nav.classList.remove('scrolled');
