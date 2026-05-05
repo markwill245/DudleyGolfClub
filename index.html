@@ -166,24 +166,25 @@ button:active, a:active { transform: scale(0.97); }
 section[id] {
             scroll-margin-top: 80px;
         }
-	/* --- EMERGENCY MOBILE MENU FIX --- */
+	/* --- CLEAN MOBILE MENU FIX --- */
 @media (max-width: 768px) {
     #nav-links {
-        background-color: #132419 !important; /* Forces the Forest Green */
-        background-image: none !important;    /* Removes any conflicting gradients */
-        opacity: 1 !important;               /* Ensures it's not see-through */
-        visibility: visible !important;
-        display: flex !important;
+        background-color: #132419 !important;
         position: fixed !important;
         inset: 0 !important;
-        z-index: 99999 !important;            /* Puts it on the very top layer */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        z-index: 1000 !important;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
     }
 
-    #nav-links a {
-        color: #ffffff !important;           /* Forces text to stay white */
-        font-size: 1.2rem !important;
+    /* This class is what hides it off-screen */
+    .translate-x-full {
+        transform: translateX(100%) !important;
     }
-}	
+}
 </style>
 </head>
 <body class="antialiased">
@@ -204,11 +205,11 @@ section[id] {
             <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
         </a>
         
-        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[100] p-2 focus:outline-none">
-            <div class="w-6 h-0.5 bg-gold"></div>
-            <div class="w-6 h-0.5 bg-gold"></div>
-            <div class="w-6 h-0.5 bg-gold"></div>
-        </button>
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[10001] p-2">
+    <div class="w-6 h-0.5 bg-gold"></div>
+    <div class="w-6 h-0.5 bg-gold"></div>
+    <div class="w-6 h-0.5 bg-gold"></div>
+</button>
 
   <div id="nav-links" 
      class="fixed inset-0 z-[10000] flex flex-col items-center justify-center gap-8 translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0 text-[14px] uppercase tracking-[0.3em] font-semibold px-8"
@@ -862,10 +863,14 @@ document.addEventListener('DOMContentLoaded', () => {
     setHole(1);
 });
 </script> 
-  <script>
+ <script>
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav-blur');
-    if (window.scrollY > 50) {
+    const navLinks = document.getElementById('nav-links');
+    
+    // Only apply the transparent "scrolled" effect if the mobile menu is CLOSED
+    // If the mobile menu is open (translate-x-0), we keep the background solid green
+    if (window.scrollY > 50 && navLinks.classList.contains('translate-x-full')) {
         nav.classList.add('scrolled');
     } else {
         nav.classList.remove('scrolled');
