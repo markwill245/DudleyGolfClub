@@ -25,13 +25,9 @@ h3 { font-size: 1.8rem; }
 }
 
 /* HEADER */
-/* HEADER BASE (transparent at top) */
 .nav-blur {
-    background-color: var(--forest); /* This creates the solid dark bar */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
-    transition: all 0.4s ease;
-    /* Optional: If you want it slightly see-through but still dark, use: 
-       background-color: rgba(19, 36, 25, 0.95); */
+    background: rgba(19, 36, 25, 0.98);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 /* SCROLLED STATE */
@@ -191,17 +187,17 @@ section[id] {
         </div>
     </div>
 
-   <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white bg-[#132419]/80 backdrop-blur-md border-b border-white/10">
-    <a href="#" class="flex flex-col relative z-[100]">
-        <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
-        <span class="text-[8px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
-    </a>
-    
-    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none relative">
-        <div class="w-6 h-0.5 bg-gold"></div>
-        <div class="w-6 h-0.5 bg-gold"></div>
-        <div class="w-6 h-0.5 bg-gold"></div>
-    </button>
+   <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+        <a href="#" class="flex flex-col relative z-[100]">
+            <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
+            <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+        </a>
+        
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[100] p-2 focus:outline-none">
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+        </button>
 
     <!-- FIXED MOBILE MENU: Links are now INSIDE the div -->
     <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 translate-x-full transition-transform duration-500 md:static md:flex md:flex-row md:bg-transparent md:translate-x-0" style="background-color: #132419 !important; opacity: 1 !important;">
@@ -220,14 +216,14 @@ section[id] {
     <header class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
     <div class="max-w-4xl px-4">
     <h1 class="serif text-6xl md:text-9xl mb-4 italic tracking-tight leading-[0.95]">
-    Heritage in every <span class="text-gold">detail.</span>
+    Heritage in every <span class="text-[#C5A367]">detail.</span>
 </h1>
         
-        <p class="serif text-2xl md:text-3xl text-gold tracking-[0.1em] mb-6 italic">
+        <p class="serif text-2xl md:text-3xl text-[#C5A367] tracking-[0.1em] mb-6 italic">
             Established 1893
         </p>
         
-        <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
+        <div class="w-32 h-1 bg-[#C5A367] mx-auto mb-8"></div>
         
         <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-90 font-light">
             The Black Country's Toughest Parkland Challenge
