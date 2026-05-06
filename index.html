@@ -473,20 +473,30 @@ section[id] {
         </div>
     </footer>
 
-    <div id="scorecard-modal" class="fixed inset-0 bg-black/90 z-[200] hidden items-center justify-center p-4">
-        <div class="bg-[#F9F7F2] p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded shadow-2xl">
-            <div class="flex justify-between items-center mb-6 border-b border-gray-200 pb-4 text-[#132419]">
-                <h3 class="serif text-3xl italic">Course Scorecard</h3>
-              <button onclick="toggleScorecard()" class="text-4xl text-gold/50 hover:text-gold transition-colors">×</button> 
-            </div>
-            <table class="w-full text-center border-collapse overflow-hidden rounded-lg shadow-xl">
-                <thead class="bg-forest text-white text-[10px] uppercase font-bold">
-                    <tr><th class="p-3">Hole</th><th class="p-3">Name</th><th class="p-3">White</th><th class="p-3">Yellow</th><th class="p-3">Red</th><th class="p-3">Par</th><th class="p-3">SI</th></tr>
-                </thead>
-                <tbody id="scorecard-body" class="text-sm text-[#132419]"></tbody>
-            </table>
+  <div id="scorecard-modal" class="fixed inset-0 bg-black/90 z-[200] hidden items-center justify-center p-4">
+    <div class="bg-[#F9F7F2] p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded shadow-2xl">
+        <div class="flex justify-between items-center mb-6 border-b border-gray-200 pb-4 text-[#132419]">
+            <h3 class="serif text-3xl italic">Course Scorecard</h3>
+            <button onclick="toggleScorecard()" class="text-4xl text-gold/50 hover:text-gold transition-colors">×</button>
         </div>
+
+        <table class="w-full text-center border-collapse overflow-hidden rounded-lg shadow-xl">
+            <thead class="bg-forest text-white text-[10px] uppercase font-bold">
+                <tr>
+                    <th class="p-3">Hole</th>
+                    <th class="p-3">Name</th>
+                    <th class="p-3">White</th>
+                    <th class="p-3">Yellow</th>
+                    <th class="p-3">Red</th>
+                    <th class="p-3">Par</th>
+                    <th class="p-3">SI</th>
+                    <th class="p-3">Score</th>
+                </tr>
+            </thead>
+            <tbody id="scorecard-body" class="text-sm text-[#132419]"></tbody>
+        </table>
     </div>
+</div>
 
 <script>
 const courseData = [
@@ -748,17 +758,40 @@ function setHole(n) {
     }
 }
 // --- SCORECARD ---
-function toggleScorecard(){
+let savedScores = JSON.parse(localStorage.getItem('savedScores')) || {};
+
+function toggleScorecard() {
     const modal = document.getElementById('scorecard-modal');
+    const body = document.getElementById('scorecard-body');
+
     modal.classList.toggle('hidden');
     modal.classList.toggle('flex');
 
-    const body = document.getElementById('scorecard-body');
-    if (!modal.classList.contains('hidden')) {
-        body.innerHTML = '';
-        courseData.forEach(h => {
-            body.innerHTML += `
-            <tr class="border-b border-gold/20 hover:bg-gold/10 transition-all">
+    if (modal.classList.contains('hidden')) return;
+
+    let rows = '';
+    let outPar = 0, inPar = 0, totalPar = 0;
+    let outYards = 0, inYards = 0, totalYards = 0;
+
+    courseData.forEach(h => {
+        const hole = String(h.number);
+        const par = parseInt(h.par) || 0;
+        const yards = parseInt(h.y) || 0;
+        const savedValue = savedScores[hole] || '';
+
+        if (h.number <= 9) {
+            outPar += par;
+            outYards += yards;
+        } else {
+            inPar += par;
+            inYards += yards;
+        }
+
+        totalPar += par;
+        totalYards += yards;
+
+        rows += `
+            <tr class="border-b border-gold/20">
                 <td class="p-3 font-bold text-gold">${h.number}</td>
                 <td class="p-3 italic">${h.name}</td>
                 <td class="p-3">${h.w}</td>
@@ -766,9 +799,88 @@ function toggleScorecard(){
                 <td class="p-3 text-red-500 font-bold">${h.r}</td>
                 <td class="p-3 font-semibold">${h.par}</td>
                 <td class="p-3 font-black">${h.si}</td>
+                <td class="p-3">
+                    <input
+                     type="number"
+                     min="1"
+                        value="${savedValue}"
+                        class="score-input w-16 p-1 rounded bg-white text-black text-center"
+                        data-hole="${hole}"
+                        data-par="${par}">
+                </td>
             </tr>`;
+    });
+
+    rows += `
+        <tr class="bg-gold/20 font-bold text-gold">
+            <td colspan="2" class="p-3">OUT (1–9)</td>
+            <td></td><td class="p-3">${outYards}</td><td></td>
+            <td class="p-3">${outPar}</td><td></td>
+            <td id="out-score" class="p-3">0</td>
+        </tr>
+
+        <tr class="bg-gold/20 font-bold text-gold">
+            <td colspan="2" class="p-3">IN (10–18)</td>
+            <td></td><td class="p-3">${inYards}</td><td></td>
+            <td class="p-3">${inPar}</td><td></td>
+            <td id="in-score" class="p-3">0</td>
+        </tr>
+
+        <tr class="bg-gold text-black font-black">
+            <td colspan="2" class="p-3">TOTAL</td>
+            <td></td><td class="p-3">${totalYards}</td><td></td>
+            <td class="p-3">${totalPar}</td><td></td>
+            <td id="total-score" class="p-3">0</td>
+        </tr>
+
+        <tr class="bg-black text-gold font-bold">
+            <td colspan="7" class="p-3 text-right">+ / - PAR</td>
+            <td id="vs-par" class="p-3">0</td>
+        </tr>`;
+
+    body.innerHTML = rows;
+
+    document.querySelectorAll('.score-input').forEach(input => {
+        input.addEventListener('input', function () {
+            
+
+            savedScores[this.dataset.hole] = this.value;
+            localStorage.setItem('savedScores', JSON.stringify(savedScores));
+
+            updateScores();
         });
-    }
+    });
+
+    updateScores();
+}
+
+function updateScores() {
+    let outScore = 0;
+    let inScore = 0;
+    let totalScore = 0;
+    let totalParCalc = 0;
+
+    document.querySelectorAll('.score-input').forEach(inp => {
+        const val = parseInt(inp.value) || 0;
+        const hole = parseInt(inp.dataset.hole);
+        const par = parseInt(inp.dataset.par) || 0;
+
+        totalScore += val;
+        totalParCalc += par;
+
+        if (hole <= 9) outScore += val;
+        else inScore += val;
+
+      inp.style.backgroundColor = 'white';
+inp.style.color = 'black';  
+    });
+
+    document.getElementById('out-score').innerText = outScore;
+    document.getElementById('in-score').innerText = inScore;
+    document.getElementById('total-score').innerText = totalScore;
+
+    const vsPar = totalScore - totalParCalc;
+    document.getElementById('vs-par').innerText = vsPar > 0 ? `+${vsPar}` : vsPar;
 }
 
 // --- INITIALIZE NAVIGATION ---
