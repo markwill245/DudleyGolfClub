@@ -357,6 +357,27 @@ section[id] {
             </div>
         </div>
     </section>
+	<div class="flex justify-center gap-6 mt-10 text-gold text-sm uppercase tracking-[0.2em]">
+
+    <a href="https://facebook.com/YOURPAGE"
+       target="_blank"
+       class="hover:text-white transition-all">
+       Facebook
+    </a>
+
+    <a href="https://instagram.com/YOURPAGE"
+       target="_blank"
+       class="hover:text-white transition-all">
+       Instagram
+    </a>
+
+    <a href="https://x.com/YOURPAGE"
+       target="_blank"
+       class="hover:text-white transition-all">
+       X / Twitter
+    </a>
+
+</div>
 
     <section id="course" class="max-w-7xl mx-auto px-4 py-20">
         <div class="flex flex-col md:flex-row gap-10">
@@ -496,59 +517,9 @@ section[id] {
             </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-3 gap-8" id="membershipGrid">
 
-            <!-- Full Membership -->
-            <div class="border border-[#C5A367]/30 p-10 bg-white/5 backdrop-blur-sm">
-                <h3 class="serif text-3xl text-gold mb-6">Full Membership</h3>
 
-                <p class="text-white/70 mb-8 leading-relaxed">
-                    Enjoy full access to the course, competitions, clubhouse facilities, and official handicap.
-                </p>
-
-                <a href="#contact"
-                   class="inline-block bg-gold text-white px-6 py-4 text-xs uppercase tracking-[0.2em] font-bold hover:bg-white hover:text-[#132419] transition-all">
-                    Enquire Now
-                </a>
-            </div>
-
-            <!-- iGolf -->
-            <div class="border border-[#C5A367] p-10 bg-[#1b3324] relative overflow-hidden">
-                
-                <div class="absolute top-0 right-0 bg-gold text-[#132419] text-[10px] font-black px-3 py-1 uppercase tracking-widest">
-                    Flexible
-                </div>
-
-                <h3 class="serif text-3xl text-gold mb-6">iGolf</h3>
-
-                <p class="text-white/70 mb-8 leading-relaxed">
-                    Flexible membership designed for modern golfers. 
-                    Obtain an official WHS handicap and enjoy access to club competitions.
-                </p>
-
-                <a href="https://englandigolf.co.uk/"
-                   target="_blank"
-                   class="inline-block border border-gold text-gold px-6 py-4 text-xs uppercase tracking-[0.2em] font-bold hover:bg-white hover:text-[#132419] transition-all">
-                    Explore iGolf
-                </a>
-            </div>
-
-            <!-- Member Login -->
-            <div class="border border-[#C5A367]/30 p-10 bg-white/5 backdrop-blur-sm">
-                <h3 class="serif text-3xl text-gold mb-6">Member Login</h3>
-
-                <p class="text-white/70 mb-8 leading-relaxed">
-                    Access competition entry, tee bookings, results, and handicap information through the member portal.
-                </p>
-
-                <a href="YOUR_IGOLF_OR_CDH_LOGIN_LINK"
-                   target="_blank"
-                   class="inline-block border border-[#C5A367] text-gold px-6 py-4 text-xs uppercase tracking-[0.2em] font-bold hover:bg-white hover:text-[#132419] transition-all">
-                    Member Sign In
-                </a>
-            </div>
-
-        </div>
     </div>
 </section>
 
@@ -564,6 +535,23 @@ section[id] {
                     <p>Turners Hill, Oakham,<br>Dudley, West Midlands, DY2 7JL</p>
                     <p>Pro Shop: 01384 254020<br>Office: 01384 253020</p>
                 </div>
+				<div class="flex gap-6 pt-4 text-gold text-xs uppercase tracking-[0.2em]">
+    <a href="https://facebook.com/YOURPAGE" target="_blank" class="hover:text-white transition-all">
+        Facebook
+    </a>
+
+    <a href="https://instagram.com/YOURPAGE" target="_blank" class="hover:text-white transition-all">
+        Instagram
+    </a>
+
+    <a href="https://x.com/YOURPAGE" target="_blank" class="hover:text-white transition-all">
+        X
+    </a>
+</div>
+				<a href="#book"
+   class="inline-block px-6 py-3 border border-gold text-gold uppercase tracking-[0.2em] text-xs hover:bg-gold hover:text-black transition-all duration-300">
+   Book Tee Time
+</a>
                 <div class="pt-8 border-t border-white/10 text-[9px] uppercase tracking-[0.3em] opacity-40">
                     © <span id="year"></span> Dudley Golf Club. All Rights Reserved.
                 </div>
@@ -1000,21 +988,30 @@ courseData.forEach(h => {
     navCont.appendChild(div);
 });
 
+
 // --- MEMBERSHIP GRID ---
-const mGrid = document.getElementById('membership-grid');
-mGrid.innerHTML = '';
-membershipData.forEach(m => {
-    mGrid.innerHTML += `
-        <div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
-            <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
-            <p class="text-5xl font-light text-white mb-6 tracking-tight">${m.price}</p>
-            <p class="text-sm text-white/70 leading-relaxed italic mb-8">${m.desc}</p>
-           <a href="tel:01384254020"
-   class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
-    Call: 01384 254020
-</a>
-        </div>`;
-});
+const mGrid = document.getElementById('membershipGrid');
+
+if (mGrid) {
+    let html = '';
+
+    membershipData.forEach(m => {
+        html += `
+            <div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
+                <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
+                <p class="text-5xl font-light text-white mb-6 tracking-tight">${m.price}</p>
+                <p class="text-sm text-white/70 leading-relaxed italic mb-8">${m.desc}</p>
+                <a href="tel:01384254020"
+                   class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
+                    Call: 01384 254020
+                </a>
+            </div>
+        `;
+    });
+
+    mGrid.innerHTML = html;
+}
+
 
 // --- MOBILE MENU LOGIC ---
 const menuBtn = document.getElementById('menu-btn');
