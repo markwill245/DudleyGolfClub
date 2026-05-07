@@ -990,9 +990,11 @@ courseData.forEach(h => {
 
 
 // --- MEMBERSHIP GRID ---
-const mGrid = document.getElementById('membershipGrid');
+document.addEventListener("DOMContentLoaded", () => {
 
-if (mGrid) {
+    const mGrid = document.getElementById('membershipGrid');
+    if (!mGrid || typeof membershipData === "undefined") return;
+
     let html = '';
 
     membershipData.forEach(m => {
@@ -1010,66 +1012,76 @@ if (mGrid) {
     });
 
     mGrid.innerHTML = html;
-}
+});
 
 
-// --- MOBILE MENU LOGIC ---
+// --- MOBILE MENU ---
 const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('nav-links');
 
 function closeMenu() {
+    if (!navLinks) return;
     navLinks.classList.add('translate-x-full');
     navLinks.classList.remove('translate-x-0');
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto';
 }
 
 function openMenu() {
+    if (!navLinks) return;
     navLinks.classList.remove('translate-x-full');
     navLinks.classList.add('translate-x-0');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    document.body.style.overflow = 'hidden';
 }
 
-// Toggle menu on button click
-menuBtn.onclick = (e) => {
-    e.stopPropagation();
-    if (navLinks.classList.contains('translate-x-full')) {
-        openMenu();
-    } else {
-        closeMenu();
-    }
-};
+if (menuBtn && navLinks) {
+    menuBtn.onclick = (e) => {
+        e.stopPropagation();
+        navLinks.classList.contains('translate-x-full') ? openMenu() : closeMenu();
+    };
 
-// CRITICAL FIX: Close menu when ANY link inside it is clicked
-document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        closeMenu(); 
-        // The browser will now naturally follow the href="#id" 
+    document.querySelectorAll('#nav-links a').forEach(link => {
+        link.addEventListener('click', closeMenu);
     });
-});
 
-// Close menu if clicking anywhere outside the menu
-document.addEventListener('click', (e) => {
-    if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
-        closeMenu();
-    }
-});
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+            closeMenu();
+        }
+    });
+}
+
 
 // --- STARTUP ---
 document.addEventListener('DOMContentLoaded', () => {
-    updateClock();
-    setInterval(updateClock, 1000);
-    setHole(1);
+    if (typeof updateClock === "function") {
+        updateClock();
+        setInterval(updateClock, 1000);
+    }
+    if (typeof setHole === "function") {
+        setHole(1);
+    }
 });
-</script> 
-  <script>
+
+
+// --- NAV SCROLL EFFECT ---
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav-blur');
+    if (!nav) return;
+
     if (window.scrollY > 50) {
         nav.classList.add('scrolled');
     } else {
         nav.classList.remove('scrolled');
     }
 });
+
+
+// --- GLOBAL ERROR CATCHER ---
+window.addEventListener("error", function(e) {
+    console.log("Caught error:", e.message);
+});
+
 </script>
+
 </body>
-</html>     
+</html>
