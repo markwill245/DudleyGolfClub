@@ -588,6 +588,23 @@ section[id] {
 </div>
 
 <script>
+(() => {
+"use strict";
+
+/* =========================
+   SAFE GUARDS
+========================= */
+
+if (window.__SITE_INIT__) {
+    console.warn("Script already initialised - blocking duplicate run.");
+    return;
+}
+window.__SITE_INIT__ = true;
+
+/* =========================
+   DATA
+========================= */
+
 const courseData = [
     { 
         number: 1, name: "The Dog-Leg", par: 5, si: 9, 
@@ -721,152 +738,205 @@ const courseData = [
     }
 ];
 const membershipData = [
-    { 
-        name: "Full Member", 
-        price: "£1,150", 
-        desc: "Unlimited golf 7 days a week, full competition entry and voting rights.(£22 p/w for unlimitted golf.)" 
+    {
+        name: "Full Member",
+        price: "£1,150",
+        desc: "Unlimited golf 7 days a week, full competition entry and voting rights. (£22 p/w for unlimited golf.)"
     },
-    { 
-        name: "7 Day Restricted", 
-        price: "£860", 
-        desc: "Weekday and weekend access with some restrictions." 
+    {
+        name: "5 Day Member",
+        price: "£860",
+        desc: "Weekday and weekend access with some restrictions."
     },
-    { 
-        name: "Junior Member", 
-        price: "£50", 
-        desc: "Under 18s. Supporting the next generation of golfers." 
+    {
+        name: "Junior Member",
+        price: "£50",
+        desc: "Under 18s. Supporting the next generation of golfers."
     }
 ];
 
-// CLOCK
-function updateCourseStatus(){
-    const now=new Date();
-    const current=now.getHours()*60+now.getMinutes();
-    const el=document.getElementById('course-status');
+/* =========================
+   CLOCK SYSTEM
+========================= */
 
-    if(current>=480 && current<=1072){
-        el.innerText="Open";
-        el.className="text-green-400 font-bold uppercase";
-    }else{
-        el.innerText="Closed";
-        el.className="text-red-500 font-bold uppercase";
-    }
+function updateCourseStatus() {
+    const el = document.getElementById("course-status");
+    if (!el) return;
+
+    const now = new Date();
+    const minutes = now.getHours() * 60 + now.getMinutes();
+
+    const open = minutes >= 480 && minutes <= 1072;
+
+    el.textContent = open ? "Open" : "Closed";
+    el.className = open
+        ? "text-green-400 font-bold uppercase"
+        : "text-red-500 font-bold uppercase";
 }
 
-function updateClock(){
-    const now=new Date();
+function updateClock() {
+    const clock = document.getElementById("live-clock");
+    const year = document.getElementById("year");
 
-    document.getElementById('live-clock').innerText=
-    now.toLocaleString('en-GB',{
-        weekday:'short',
-        day:'numeric',
-        month:'short',
-        hour:'2-digit',
-        minute:'2-digit'
-    });
+    const now = new Date();
 
-    document.getElementById('year').innerText=now.getFullYear();
+    if (clock) {
+        clock.textContent = now.toLocaleString("en-GB", {
+            weekday: "short",
+            day: "numeric",
+            month: "short",
+            hour: "2-digit",
+            minute: "2-digit"
+        });
+    }
+
+    if (year) year.textContent = now.getFullYear();
+
     updateCourseStatus();
 }
 
-// SLIDER
-let currentInterval;
+/* =========================
+   HOLE SYSTEM
+========================= */
 
-// --- HOLE LOGIC ---
+let currentInterval = null;
+
 function setHole(n) {
-    const h = courseData.find(hole => hole.number === n);
-    if (!h) return;
+    const hole = courseData.find(h => h.number === n);
+    if (!hole) return;
 
-    const img = document.getElementById('h-img');
-    const gallery = document.getElementById('h-gallery');
+    const img = document.getElementById("h-img");
+const gallery = document.getElementById("h-gallery");
+
+if (!img) return;
+
+if (!hole.images?.length) return;
+
+img.src = hole.images[0];
 
     // TEXT
-    document.getElementById('h-num').innerText = n.toString().padStart(2, '0');
-    document.getElementById('h-name').innerText = h.name;
-    document.getElementById('h-par-si').innerText = `P${h.par} / S${h.si}`;
+    const setText = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+    };
 
-    document.getElementById('h-white').innerText = h.w;
-    document.getElementById('h-yellow').innerText = h.y;
-    document.getElementById('h-red').innerText = h.r;
+    setText("h-num", String(n).padStart(2, "0"));
+    setText("h-name", hole.name);
+    setText("h-par-si", `P${hole.par} / S${hole.si}`);
+    setText("h-white", hole.w);
+    setText("h-yellow", hole.y);
+    setText("h-red", hole.r);
+    setText("h-desc", hole.desc);
+    setText("h-tip", hole.tip);
 
-    document.getElementById('h-desc').innerText = h.desc;
-    document.getElementById('h-tip').innerText = h.tip;
-
-    // IMAGE SLIDER
+    // SLIDER
     clearInterval(currentInterval);
 
-    let currentIndex = 0;
+    let i = 0;
 
-    img.src = h.images[0];
     img.style.opacity = 1;
 
     currentInterval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % h.images.length;
+        i = (i + 1) % hole.images.length;
 
         img.style.opacity = 0;
 
         setTimeout(() => {
-            img.src = h.images[currentIndex];
+            img.src = hole.images[i];
             img.style.opacity = 1;
         }, 200);
-
     }, 3000);
 
-    // ✅ GALLERY (NOW INSIDE FUNCTION)
+    // GALLERY
     if (gallery) {
-        gallery.innerHTML = '';
+        gallery.innerHTML = "";
 
-        h.images.forEach((imgSrc) => {
-            if (imgSrc && imgSrc.includes('.webp')) {
+        hole.images.forEach(src => {
+            const thumb = document.createElement("img");
+            thumb.src = src;
+            thumb.className =
+                "w-20 h-14 object-cover rounded cursor-pointer opacity-60 hover:opacity-100 transition";
 
-                const thumb = document.createElement('img');
-                thumb.src = imgSrc;
-                thumb.className = "w-20 h-14 object-cover rounded cursor-pointer border-2 border-transparent hover:border-gold transition-all duration-300 opacity-60 hover:opacity-100";
+            thumb.onclick = () => {
+                img.style.opacity = 0;
+                setTimeout(() => {
+                    img.src = src;
+                    img.style.opacity = 1;
+                }, 200);
+            };
 
-                thumb.onclick = () => {
-                    img.style.opacity = 0;
-                    setTimeout(() => {
-                        img.src = imgSrc;
-                        img.style.opacity = 1;
-                    }, 200);
-                };
-
-                gallery.appendChild(thumb);
-            }
+            gallery.appendChild(thumb);
         });
     }
 
-    // ACTIVE CARD
-    document.querySelectorAll('.hole-card').forEach(card => {
-        card.classList.remove('border-gold', 'bg-gold/20');
+    // ACTIVE STATE
+    document.querySelectorAll(".hole-card").forEach(c =>
+        c.classList.remove("border-gold", "bg-gold/20")
+    );
+
+    const active = document.getElementById(`h-${n}`);
+    if (active) active.classList.add("border-gold", "bg-gold/20");
+}
+
+/* =========================
+   SCORECARD
+========================= */
+
+let savedScores = JSON.parse(localStorage.getItem("savedScores") || "{}");
+
+function updateScores() {
+    let out = 0, inn = 0, total = 0, parTotal = 0;
+
+    document.querySelectorAll(".score-input").forEach(inp => {
+        const val = parseInt(inp.value) || 0;
+        const hole = parseInt(inp.dataset.hole);
+        const par = parseInt(inp.dataset.par) || 0;
+
+        total += val;
+        parTotal += par;
+
+        if (hole <= 9) out += val;
+        else inn += val;
     });
 
-    const activeCard = document.getElementById(`h-${n}`);
-    if (activeCard) {
-        activeCard.classList.add('border-gold', 'bg-gold/20');
-    }
+    const set = (id, v) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = v;
+    };
+
+    set("out-score", out);
+    set("in-score", inn);
+    set("total-score", total);
+
+    const diff = total - parTotal;
+    set("vs-par", diff > 0 ? `+${diff}` : diff);
 }
-// --- SCORECARD ---
-let savedScores = JSON.parse(localStorage.getItem('savedScores')) || {};
 
 function toggleScorecard() {
-    const modal = document.getElementById('scorecard-modal');
-    const body = document.getElementById('scorecard-body');
+    const modal = document.getElementById("scorecard-modal");
+    const body = document.getElementById("scorecard-body");
 
-    modal.classList.toggle('hidden');
-    modal.classList.toggle('flex');
+    if (!modal || !body) return;
 
-    if (modal.classList.contains('hidden')) return;
+    modal.classList.toggle("hidden");
+    modal.classList.toggle("flex");
 
-    let rows = '';
-    let outPar = 0, inPar = 0, totalPar = 0;
-    let outYards = 0, inYards = 0, totalYards = 0;
+    if (modal.classList.contains("hidden")) return;
+
+    let rows = "";
+
+    let outPar = 0;
+    let inPar = 0;
+    let totalPar = 0;
+
+    let outYards = 0;
+    let inYards = 0;
+    let totalYards = 0;
 
     courseData.forEach(h => {
-        const hole = String(h.number);
+
         const par = parseInt(h.par) || 0;
         const yards = parseInt(h.y) || 0;
-        const savedValue = savedScores[hole] || '';
 
         if (h.number <= 9) {
             outPar += par;
@@ -890,51 +960,64 @@ function toggleScorecard() {
                 <td class="p-3 font-black">${h.si}</td>
                 <td class="p-3">
                     <input
-                     type="number"
-                     min="1"
-                        value="${savedValue}"
+                        type="number"
+                        min="1"
+                        value="${savedScores[h.number] || ""}"
                         class="score-input w-16 p-1 rounded bg-white text-black text-center"
-                        data-hole="${hole}"
-                        data-par="${par}">
+                        data-hole="${h.number}"
+                        data-par="${h.par}">
                 </td>
-            </tr>`;
+            </tr>
+        `;
     });
 
     rows += `
         <tr class="bg-gold/20 font-bold text-gold">
             <td colspan="2" class="p-3">OUT (1–9)</td>
-            <td></td><td class="p-3">${outYards}</td><td></td>
-            <td class="p-3">${outPar}</td><td></td>
+            <td></td>
+            <td class="p-3">${outYards}</td>
+            <td></td>
+            <td class="p-3">${outPar}</td>
+            <td></td>
             <td id="out-score" class="p-3">0</td>
         </tr>
 
         <tr class="bg-gold/20 font-bold text-gold">
             <td colspan="2" class="p-3">IN (10–18)</td>
-            <td></td><td class="p-3">${inYards}</td><td></td>
-            <td class="p-3">${inPar}</td><td></td>
+            <td></td>
+            <td class="p-3">${inYards}</td>
+            <td></td>
+            <td class="p-3">${inPar}</td>
+            <td></td>
             <td id="in-score" class="p-3">0</td>
         </tr>
 
         <tr class="bg-gold text-black font-black">
             <td colspan="2" class="p-3">TOTAL</td>
-            <td></td><td class="p-3">${totalYards}</td><td></td>
-            <td class="p-3">${totalPar}</td><td></td>
+            <td></td>
+            <td class="p-3">${totalYards}</td>
+            <td></td>
+            <td class="p-3">${totalPar}</td>
+            <td></td>
             <td id="total-score" class="p-3">0</td>
         </tr>
 
         <tr class="bg-black text-gold font-bold">
             <td colspan="7" class="p-3 text-right">+ / - PAR</td>
             <td id="vs-par" class="p-3">0</td>
-        </tr>`;
+        </tr>
+    `;
 
     body.innerHTML = rows;
 
-    document.querySelectorAll('.score-input').forEach(input => {
-        input.addEventListener('input', function () {
-            
+    document.querySelectorAll(".score-input").forEach(inp => {
+        inp.addEventListener("input", () => {
+            savedScores[inp.dataset.hole] = inp.value;
 
-            savedScores[this.dataset.hole] = this.value;
-            localStorage.setItem('savedScores', JSON.stringify(savedScores));
+            localStorage.setItem(
+                "savedScores",
+                JSON.stringify(savedScores)
+            );
 
             updateScores();
         });
@@ -942,145 +1025,125 @@ function toggleScorecard() {
 
     updateScores();
 }
+window.toggleScorecard = toggleScorecard;
+/* =========================
+   MEMBERSHIP
+========================= */
 
-function updateScores() {
-    let outScore = 0;
-    let inScore = 0;
-    let totalScore = 0;
-    let totalParCalc = 0;
+function renderMembership() {
+    const grid = document.getElementById("membershipGrid");
+    if (!grid) return;
 
-    document.querySelectorAll('.score-input').forEach(inp => {
-        const val = parseInt(inp.value) || 0;
-        const hole = parseInt(inp.dataset.hole);
-        const par = parseInt(inp.dataset.par) || 0;
+    grid.innerHTML = membershipData.map(m => `
+<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
+    <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
 
-        totalScore += val;
-        totalParCalc += par;
+    <p class="text-5xl font-light text-white mb-6 tracking-tight">
+        ${m.price}
+    </p>
 
-        if (hole <= 9) outScore += val;
-        else inScore += val;
+    <p class="text-sm text-white/70 leading-relaxed italic mb-8">
+        ${m.desc}
+    </p>
 
-      inp.style.backgroundColor = 'white';
-inp.style.color = 'black';  
+    <a href="tel:01384254020"
+       class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
+        Call: 01384 254020
+    </a>
+</div>
+    `).join("");
+}
+
+/* =========================
+   NAV BUILD
+========================= */
+
+function buildNav() {
+    const nav = document.getElementById("hole-nav-container");
+    if (!nav) return;
+
+    nav.innerHTML = "";
+
+    courseData.forEach(h => {
+        const div = document.createElement("div");
+        div.id = `h-${h.number}`;
+      div.className =
+    "hole-card p-4 cursor-pointer flex-shrink-0 md:flex-shrink border border-white/5 rounded min-w-[140px]";
+
+div.innerHTML = `
+    <p class="text-gold font-bold text-xs">HOLE ${h.number}</p>
+    <p class="text-white text-sm truncate">${h.name}</p>
+`;
+        div.onclick = () => setHole(h.number);
+        nav.appendChild(div);
     });
-
-    document.getElementById('out-score').innerText = outScore;
-    document.getElementById('in-score').innerText = inScore;
-    document.getElementById('total-score').innerText = totalScore;
-
-    const vsPar = totalScore - totalParCalc;
-    document.getElementById('vs-par').innerText = vsPar > 0 ? `+${vsPar}` : vsPar;
 }
 
-// --- INITIALIZE NAVIGATION ---
-const navCont = document.getElementById('hole-nav-container');
-navCont.innerHTML = ''; // Clear existing
-
-courseData.forEach(h => {
-    const div = document.createElement('div');
-    div.id = `h-${h.number}`;
-    div.className = "hole-card p-4 cursor-pointer flex-shrink-0 md:flex-shrink border border-white/5 rounded min-w-[140px]";
-    div.innerHTML = `
-        <p class="text-gold font-bold text-xs">HOLE ${h.number}</p>
-        <p class="text-white text-sm truncate">${h.name}</p>
-    `;
-    div.onclick = () => setHole(h.number);
-    navCont.appendChild(div);
-});
+/* =========================
+   MOBILE MENU
+========================= */
 
 
-// --- MEMBERSHIP GRID ---
-document.addEventListener("DOMContentLoaded", () => {
+function initMenu() {
+    const btn = document.getElementById("menu-btn");
+    const nav = document.getElementById("nav-links");
 
-    const mGrid = document.getElementById('membershipGrid');
-    if (!mGrid || typeof membershipData === "undefined") return;
+    if (!btn || !nav) return;
 
-    let html = '';
+    function closeMenu() {
+        nav.classList.add("translate-x-full");
+        nav.classList.remove("translate-x-0");
+        document.body.style.overflow = "auto";
+    }
 
-    membershipData.forEach(m => {
-        html += `
-            <div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
-                <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
-                <p class="text-5xl font-light text-white mb-6 tracking-tight">${m.price}</p>
-                <p class="text-sm text-white/70 leading-relaxed italic mb-8">${m.desc}</p>
-                <a href="tel:01384254020"
-                   class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
-                    Call: 01384 254020
-                </a>
-            </div>
-        `;
-    });
+    function openMenu() {
+        nav.classList.remove("translate-x-full");
+        nav.classList.add("translate-x-0");
+        document.body.style.overflow = "hidden";
+    }
 
-    mGrid.innerHTML = html;
-});
-
-
-// --- MOBILE MENU ---
-const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.getElementById('nav-links');
-
-function closeMenu() {
-    if (!navLinks) return;
-    navLinks.classList.add('translate-x-full');
-    navLinks.classList.remove('translate-x-0');
-    document.body.style.overflow = 'auto';
-}
-
-function openMenu() {
-    if (!navLinks) return;
-    navLinks.classList.remove('translate-x-full');
-    navLinks.classList.add('translate-x-0');
-    document.body.style.overflow = 'hidden';
-}
-
-if (menuBtn && navLinks) {
-    menuBtn.onclick = (e) => {
+    btn.addEventListener("click", e => {
         e.stopPropagation();
-        navLinks.classList.contains('translate-x-full') ? openMenu() : closeMenu();
-    };
 
-    document.querySelectorAll('#nav-links a').forEach(link => {
-        link.addEventListener('click', closeMenu);
+        nav.classList.contains("translate-x-full")
+            ? openMenu()
+            : closeMenu();
     });
 
-    document.addEventListener('click', (e) => {
-        if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+    document.querySelectorAll("#nav-links a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", e => {
+        if (!nav.contains(e.target) && !btn.contains(e.target)) {
             closeMenu();
         }
     });
 }
 
+/* =========================
+   STARTUP (ONE ENTRY POINT)
+========================= */
 
-// --- STARTUP ---
-document.addEventListener('DOMContentLoaded', () => {
-    if (typeof updateClock === "function") {
-        updateClock();
-        setInterval(updateClock, 1000);
-    }
-    if (typeof setHole === "function") {
-        setHole(1);
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    buildNav();
+    renderMembership();
+    initMenu();
+
+    setHole(1);
+    updateClock();
+    setInterval(updateClock, 1000);
 });
 
+/* =========================
+   GLOBAL SAFETY NET
+========================= */
 
-// --- NAV SCROLL EFFECT ---
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.nav-blur');
-    if (!nav) return;
-
-    if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
+window.addEventListener("error", e => {
+    console.log("JS Error caught:", e.message);
 });
 
-
-// --- GLOBAL ERROR CATCHER ---
-window.addEventListener("error", function(e) {
-    console.log("Caught error:", e.message);
-});
-
+})();
 </script>
 
 </body>
