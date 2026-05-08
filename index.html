@@ -385,7 +385,7 @@ section[id] {
             </p>
 
             <h2 class="serif text-5xl md:text-6xl text-white italic relative inline-block">
-                Amen Corner Gallery
+                Our Amen Corner Gallery
 
                 <!-- GOLD UNDERLINE -->
                 <span class="absolute left-1/2 -translate-x-1/2 bottom-[-18px] w-28 h-px bg-[#C5A367]/50"></span>
@@ -799,22 +799,32 @@ function closeLightbox() {
                     </div>
                 </div>
                 <div class="space-y-8">
-                    <h2 class="serif text-6xl text-[#132419]">Our Story</h2>
-                    <div class="space-y-6 text-[#132419]/80 serif text-xl italic leading-relaxed">
-                        <p>In 1893, Canon Adam Gray Maitland arrived from Scotland to find a void in the Black Country: the absence of the "Royal and Ancient game."</p>
-                        <p><span class="text-[#132419] font-bold not-italic">Old Tom Morris</span>—architect of Muirfield—personally designed the original course.</p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-8 border-y border-[#C5A367]/20 py-8">
-                        <div>
-                            <h4 class="text-[10px] uppercase tracking-widest font-bold text-gold mb-2">The Ascent</h4>
-                            <p class="text-sm">Built on volcanic rock covered in thousands of years of soft, fine grass.</p>
-                        </div>
-                        <div>
-                            <h4 class="text-[10px] uppercase tracking-widest font-bold text-gold mb-2">The Vista</h4>
-                            <p class="text-sm">From the 8th green, look East. Nothing is higher until the Ural Mountains.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Changed text-[#132419] to text-white -->
+    <h2 class="serif text-6xl text-white">Our Story</h2>
+    
+    <!-- Changed text-[#132419]/80 to text-white/80 -->
+    <div class="space-y-6 text-white/80 serif text-xl italic leading-relaxed">
+        <p>In 1893, Canon Adam Gray Maitland arrived from Scotland to find a void in the Black Country: the absence of the "Royal and Ancient game."</p>
+                                       <!-- STAFF: History Title -->
+        <!-- Changed text-[#132419] to text-[#C5A367] (Gold) to make Old Tom Morris pop -->
+        <p><span class="text-[#C5A367] font-bold not-italic">Old Tom Morris</span>—architect of Muirfield—personally designed the original course.</p>
+
+<!-- New Paragraph -->
+<p class="mt-4">His layout takes full advantage of the volcanic ridge, offering a test of golf that remains as relevant today as it was in 1893.</p>
+    </div>
+
+    <!-- The rest of your grid remains the same as it already uses 'text-gold' and light text -->
+    <div class="grid grid-cols-2 gap-8 border-y border-[#C5A367]/20 py-8 text-white/90">
+        <div>
+            <h4 class="text-[10px] uppercase tracking-widest font-bold text-[#C5A367] mb-2">The Ascent</h4>
+            <p class="text-sm">Built on volcanic rock covered in thousands of years of soft, fine grass.</p>
+        </div>
+        <div>
+            <h4 class="text-[10px] uppercase tracking-widest font-bold text-[#C5A367] mb-2">The Vista</h4>
+            <p class="text-sm">From the 8th green, look East. Nothing is higher until the Ural Mountains.</p>
+        </div>
+    </div>
+</div>
             </div>
         </div>
     </section>
@@ -891,26 +901,21 @@ function closeLightbox() {
             </div>
         </div>
     </section>
-	<div class="flex justify-center items-center gap-6 mt-12 text-gold text-sm uppercase tracking-[0.2em] leading-none">
-                      <!-- STAFF: Social Media -->
-    <a href="https://www.facebook.com/DudleyGolfClub"
-       target="_blank"
-       class="hover:text-white transition-all">
-       Facebook
+	
+	<!-- STAFF: SOCIAL MEDIA LINKS (Moved to bottom) -->
+	
+<div class="flex justify-center items-center gap-10 py-12 bg-[#f9f7f2] text-gold text-sm uppercase tracking-[0.2em] border-t border-gray-100">
+    <a href="https://www.facebook.com/DudleyGolfClub" target="_blank" class="hover:text-[#132419] transition-all">
+        Facebook
     </a>
 
-    <a href="https://www.instagram.com/dudleygolfclub?igsh=MTd0NGVwMmt1Zzhoag=="
-       target="_blank"
-       class="hover:text-white transition-all">
-       Instagram
+    <a href="https://www.instagram.com/dudleygolfclub?igsh=MTd0NGVwMmt1Zzhoag==" target="_blank" class="hover:text-[#132419] transition-all">
+        Instagram
     </a>
 
-    <a href="https://x.com/dudleygolfclub"
-       target="_blank"
-       class="hover:text-white transition-all">
-       X / Twitter
+    <a href="https://x.com/dudleygolfclub" target="_blank" class="hover:text-[#132419] transition-all">
+        X / Twitter
     </a>
-
 </div>
 
     <section id="course" class="max-w-7xl mx-auto px-4 py-20">
