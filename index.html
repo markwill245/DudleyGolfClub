@@ -6,6 +6,8 @@
     <title>Dudley Golf Club | Heritage & Excellence</title>
  <link rel="stylesheet" href="./dist/output.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+              <!-- css -->
   <style>
 :root { --gold: #C5A367; --forest: #132419; --cream: #F9F7F2; }
 .bg-cream {
@@ -187,6 +189,71 @@ button:active, a:active { transform: scale(0.97); }
 section[id] {
             scroll-margin-top: 80px;
         }
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* =========================================
+   FOOTER SOCIAL FIX
+========================================= */
+
+.social-links {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 6px 4px;
+}
+
+/* =========================================
+   PRO SHOP MOBILE POLISH
+========================================= */
+
+@media (max-width: 768px) {
+
+    .pro-shop-card,
+    .service-card,
+    .shop-card {
+
+        width: 100%;
+        min-height: 150px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 26px;
+
+        border-radius: 8px;
+
+        margin-bottom: 18px;
+
+        box-shadow:
+            0 6px 18px rgba(0,0,0,0.16);
+
+    }
+
+    .pro-shop-card h3,
+    .service-card h3,
+    .shop-card h3 {
+
+        margin-bottom: 12px;
+        line-height: 1.2;
+
+    }
+
+    .pro-shop-card p,
+    .service-card p,
+    .shop-card p {
+
+        line-height: 1.5;
+        opacity: 0.92;
+
+    }
+
+}		
 
 </style>
 <style>
