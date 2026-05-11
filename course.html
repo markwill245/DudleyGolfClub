@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership | Dudley Golf Club</title>
+    <title>Course Guide | Dudley Golf Club</title>
  <link rel="stylesheet" href="./dist/output.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -343,13 +343,20 @@ img {
     <!-- FIXED MOBILE MENU: Links are now INSIDE the div -->
    <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
 	
-   <a href="index.html">Home</a>
-<a href="course.html">Course Guide</a>
-<a href="history.html">History</a>
-<a href="hospitality.html">Hospitality</a>
-<a href="pro-shop.html">Pro Shop</a>
-<a href="visitors.html">Visitors</a>
-<a href="membership.html">Membership</a>
+    <a href="index.html" class="hover:text-gold transition">Home</a>
+
+<a href="course.html" class="hover:text-gold transition">Course Guide</a>
+
+<a href="history.html" class="hover:text-gold transition">History</a>
+
+<a href="hospitality.html" class="hover:text-gold transition">Hospitality</a>
+
+<a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
+
+<a href="visitors.html" class="hover:text-gold transition">Visitors</a>
+
+<a href="membership.html" class="hover:text-gold transition">Membership</a>
+	
 </div>
     
     <a href="https://www.dudleygolfclub.com/login.php" target="_blank" class="relative z-[200] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
@@ -917,9 +924,6 @@ function closeLightbox() {
 
 </script>
     
-    
-
- 
 	
 	<!-- STAFF: SOCIAL MEDIA LINKS (Moved to bottom) -->
 	
@@ -937,31 +941,57 @@ function closeLightbox() {
     </a>
 </div>
 
-    <section id="membership" class="bg-forest text-white py-24 px-4">
-    <div class="max-w-7xl mx-auto">
+    <section id="course" class="max-w-7xl mx-auto px-4 py-20">
+        <div class="flex flex-col md:flex-row gap-10">
+            <div class="md:w-1/3 bg-forest p-6 ">
+                <h2 class="serif text-5xl mb-4 text-[#132419]">The 18 Holes</h2>
+            <button onclick="toggleScorecard()" class="mb-8 text-[10px] tracking-[0.2em] font-bold uppercase border border-gold/30 px-6 py-3 !text-gold hover:bg-gold hover:text-white hover:shadow-[0_0_20px_rgba(197,163,103,0.3)] transition-all duration-500 rounded-sm">
+    View Full Scorecard
+</button>
+                <div id="hole-nav-container" class="flex md:flex-col overflow-x-auto md:overflow-y-auto custom-scrollbar gap-2 pb-4 md:h-[600px]"></div>
+            </div>
+            <div class="md:w-2/3 bg-forest rounded shadow-2xl overflow-hidden">
+             <div class="h-72 md:h-[400px] bg-black relative overflow-hidden">
+<!-- Gallery Container (Paste this above the img tag) -->
+<div id="h-gallery" class="flex gap-2 p-3 bg-[#08110D] border-b border-[#C5A367]/20">
+    <!-- JS will inject thumbnails here -->
+</div>
+    <img id="h-img"
+         src="images/hole1.webp"
+         class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700">
 
-        <div class="text-center mb-20">
-            <h2 class="serif text-6xl md:text-7xl text-gold mb-6">
-                Membership
-            </h2>
-                        
-            <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
-                            <!-- STAFF: Membership text -->
-            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed">
-                Become part of one of the Midlands' most welcoming golf clubs. 
-                Flexible options available for full members, new golfers, and iGolf players.
-            </p>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#132419]/80 via-[#132419]/20 to-transparent"></div>
+
+</div>  
+
+    
+               <div class="p-8 md:p-12 bg-forest">
+                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
+                        <div>
+                            <span id="h-num" class="serif text-6xl text-gold italic"></span>
+                            <h3 id="h-name" class="serif text-5xl md:text-6xl text-white mt-2 italic tracking-wide"></h3>
+                        </div>
+                        <div class="text-right">
+                            <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 mb-10">
+                        <div class="bg-white/5 p-4 text-center"><p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p><p id="h-white" class="serif text-xl text-white"></p></div>
+                        <div class="bg-white/5 p-4 text-center"><p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p><p id="h-yellow" class="serif text-xl text-yellow-400"></p></div>
+                        <div class="bg-white/5 p-4 text-center"><p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p><p id="h-red" class="serif text-xl text-red-500"></p></div>
+                    </div>
+                    <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
+                    <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
+                        <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
+                        <p id="h-tip" class="text-white italic"></p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="grid md:grid-cols-3 gap-8" id="membershipGrid">
 
-
-    </div>
-</section>
-
-    
-
-    
+   
 
     <footer class="bg-forest-dark text-white py-20 px-4">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
