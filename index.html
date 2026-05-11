@@ -341,7 +341,7 @@ img {
         </button>
 
     <!-- FIXED MOBILE MENU: Links are now INSIDE the div -->
-   <div id="nav-links" class="flex flex-col md:flex-row items-center gap-6">
+  <div id="nav-links" class="flex flex-col md:flex-row items-center gap-6">
 	
     <a href="index.html" class="hover:text-gold transition">Home</a>
 
@@ -1946,13 +1946,7 @@ function initMenu() {
 ========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-    buildNav();
-    renderMembership();
     initMenu();
-
-    setHole(1);
-    updateClock();
-    setInterval(updateClock, 1000);
 });
 
 /* =========================

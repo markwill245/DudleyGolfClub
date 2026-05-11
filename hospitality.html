@@ -1266,16 +1266,10 @@ function initMenu() {
 /* =========================
    STARTUP (ONE ENTRY POINT)
 ========================= */
-
 document.addEventListener("DOMContentLoaded", () => {
-    buildNav();
-    renderMembership();
     initMenu();
-
-    setHole(1);
-    updateClock();
-    setInterval(updateClock, 1000);
 });
+
 
 /* =========================
    GLOBAL SAFETY NET
