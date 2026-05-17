@@ -1633,14 +1633,24 @@ const membershipData = [
    CLOCK SYSTEM
 ========================= */
 
+/* =========================
+   CLOCK SYSTEM
+========================= */
+
+let lastCheckedMinute = -1;
+
 function updateCourseStatus() {
     const el = document.getElementById("course-status");
     if (!el) return;
 
     const now = new Date();
-    const minutes = now.getHours() * 60 + now.getMinutes();
+    const currentMinute = now.getHours() * 60 + now.getMinutes();
+    
+    // Baby step safety catch: Only calculate layout changes if the actual minute has changed
+    if (currentMinute === lastCheckedMinute) return;
+    lastCheckedMinute = currentMinute;
 
-    const open = minutes >= 480 && minutes <= 1072;
+    const open = currentMinute >= 480 && currentMinute <= 1072;
 
     el.textContent = open ? "Open" : "Closed";
     el.className = open
