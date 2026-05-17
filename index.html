@@ -1920,7 +1920,7 @@ function renderMembership() {
         ${m.desc}
     </p>
 
-    <a href="tel:013842"
+    <a href="tel:01384233877"
        class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
         Call: 01384 233877
     </a>
@@ -3764,17 +3764,14 @@ function toggleScorecard() {
     if (modal.classList.contains("hidden")) return;
 
     let rows = "";
-
     let outPar = 0;
     let inPar = 0;
     let totalPar = 0;
-
     let outYards = 0;
     let inYards = 0;
     let totalYards = 0;
 
     courseData.forEach(h => {
-
         const par = parseInt(h.par) || 0;
         const yards = parseInt(h.y) || 0;
 
@@ -3849,19 +3846,18 @@ function toggleScorecard() {
     `;
 
     body.innerHTML = rows;
+    updateScores();
+}
+window.toggleScorecard = toggleScorecard;
 
-    document.querySelectorAll(".score-input").forEach(inp => {
-        inp.addEventListener("input", () => {
-            savedScores[inp.dataset.hole] = inp.value;
-
-            localStorage.setItem(
-                "savedScores",
-                JSON.stringify(savedScores)
-            );
-
-            updateScores();
-        });
-    });
+// LISTEN TO THE INPUTS GLOBALLY ONCE (Stops the listener duplication loop)
+document.addEventListener("input", e => {
+    if (e.target.classList.contains("score-input")) {
+        savedScores[e.target.dataset.hole] = e.target.value;
+        localStorage.setItem("savedScores", JSON.stringify(savedScores));
+        updateScores();
+    }
+});
 
     updateScores();
 }
