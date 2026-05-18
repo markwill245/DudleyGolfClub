@@ -1292,24 +1292,25 @@ function closeLightbox() {
     </div>
 </section>
 
-    <section id="membership" class="bg-forest text-white py-24 px-4">
+<section id="membership" class="bg-forest text-white py-24 px-4 border-t border-[#C5A367]/10 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[#C5A367]/5 rounded-full blur-3xl pointer-events-none"></div>
+
     <div class="max-w-7xl mx-auto">
 
         <div class="text-center mb-20">
-            <h2 class="serif text-6xl md:text-7xl text-gold mb-6">
+            <h2 class="serif text-5xl md:text-7xl text-gold mb-6">
                 Membership
             </h2>
-                        
-            <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
-                            <!-- STAFF: Membership text -->
-            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed">
+            <div class="w-24 h-[2px] bg-gold mx-auto mb-8"></div>
+            
+            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed text-sm md:text-base">
                 Become part of one of the Midlands' most welcoming golf clubs. 
-                Flexible options available for full members, new golfers, and iGolf players.
+                Flexible options beautifully structured for full members, new lady golfers, and academy players.
             </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8" id="membershipGrid">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch" id="membershipGrid">
+            </div>
 
     </div>
 </section>
@@ -1560,25 +1561,33 @@ const courseData = [
         tip: "A slight dogleg right brings you home."
     },
 ];
-                     // STAFF: Membership Prices 
-const membershipData = [
-    {
-        name: "Full Member",
-        price: "£1,150",
-        desc: "Unlimited golf 7 days a week, full competition entry and voting rights. (£22 p/w for unlimited golf.)"
-    },
-    {
-        name: "5 Day Member",
-        price: "£860",
-        desc: "Weekday and weekend access with some restrictions."
-    },
-    {
-        name: "Junior Member",
-        price: "£50",
-        desc: "Under 18s. Supporting the next generation of golfers."
-    }
-];
-
+      // STAFF: Membership Prices 
+        const membershipData = [
+            {
+                name: "Full 7-Day Member",
+                price: "£1,150",
+                desc: "The ultimate club experience with complete unrestricted access.",
+                features: ["Unlimited Golf 7 Days a Week", "Full Competition Entry", "Official CONGU Handicap", "Clubhouse Voting Rights"]
+            },
+            {
+                name: "Ladies Introductory",
+                price: "£650",
+                desc: "Special first-year rate welcoming new players into our community.",
+                features: ["Full 7-Day Course Access", "Academy Integration Setup", "Lady-Only Fixture Mornings", "Welcoming Social Calendar"]
+            },
+            {
+                name: "5-Day Weekday",
+                price: "£860",
+                desc: "Perfect for regular players looking for mid-week tranquility.",
+                features: ["Monday to Friday Access", "Full Clubhouse Facilities", "Select Weekend Restrictions", "Friendly Stableford Mixers"]
+            },
+            {
+                name: "Junior Academy",
+                price: "£50",
+                desc: "Nurturing and supporting the next generation of West Midlands talent.",
+                features: ["Under 18 Allocation", "Professional PGA Coaching", "Weekend Junior Fixtures", "Safe & Supportive Culture"]
+            }
+        ];
 /* =========================
    CLOCK SYSTEM
 ========================= */
