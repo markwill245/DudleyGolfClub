@@ -136,21 +136,64 @@ h3 { font-size: 1.8rem; }
 
 
 
-/* =========================================
-   HOLE CARDS (RE-STYLED FOR CREAM MENU PANEL)
-========================================= */
-.hole-card {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    color: #132419;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+/* ========================================================
+   FORCE COLOURED HOLE BUTTONS OVERRIDES (No JS Changes)
+======================================================== */
+
+/* 1. Force the main button container to be Forest Green */
+.hole-card, 
+#hole-nav-container button {
+    background-color: #132419 !important; 
+    border: 1px solid rgba(197, 163, 103, 0.25) !important;
+    transition: all 0.25s ease-in-out !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    /* Forces the exact clean font family of your pro tips */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
-.hole-card:hover {
-    transform: translateY(-2px);
-    border-color: #C5A367;
-    box-shadow: 0 4px 12px rgba(19, 36, 25, 0.05);
+/* 2. Target the first piece of text inside the button (The Number) and make it Gold */
+.hole-card span:first-child,
+#hole-nav-container button span:first-child,
+.hole-card p:first-child,
+#hole-nav-container button p:first-child {
+    color: #C5A367 !important;
+    font-weight: 700 !important;
+    margin-right: 8px !important;
+}
+
+/* 3. Target the second piece of text inside the button (The Name) and make it White */
+.hole-card span:last-child,
+#hole-nav-container button span:last-child,
+.hole-card p:last-child,
+#hole-nav-container button p:last-child {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+/* 4. Smooth hover action */
+.hole-card:hover,
+#hole-nav-container button:hover {
+    border-color: #C5A367 !important;
+    transform: translateX(4px) !important;
+    box-shadow: 0 4px 12px rgba(197, 163, 103, 0.1) !important;
+}
+
+/* ACTIVE STATE GLOW EFFECT */
+.hole-card.bg-\[\#132419\] {
+    animation: goldPulse 3s infinite ease-in-out;
+}
+
+/* 5. Keep active button text perfectly white and sharp when clicked */
+#hole-nav-container button.bg-\[\#132419\] span:last-child,
+#hole-nav-container button.bg-\[\#132419\] p:last-child {
+    color: #ffffff !important;
+}
+
+/* Enforce the crisp gold border on the active item */
+#hole-nav-container button.bg-\[\#132419\] {
+    border-color: #C5A367 !important;
 }
 
 /* ACTIVE STATE GLOW EFFECT */
@@ -1046,6 +1089,13 @@ function closeLightbox() {
  <section id="pro-shop" class="bg-[#f9f7f2] py-24 px-4 border-b border-gray-200">
     <div class="max-w-7xl mx-auto">
 
+        <!-- NEW CENTERED HEADING -->
+        <div class="text-center mb-16 flex flex-col items-center">
+            <h2 class="serif text-4xl md:text-6xl text-[#132419] pb-4 inline-block" style="border-bottom: 3px solid #C5A367;">
+                Professional Shop
+            </h2>
+        </div>
+
         <div class="flex flex-col lg:flex-row gap-20 items-center">
 
             <!-- IMAGE -->
@@ -1179,8 +1229,7 @@ function closeLightbox() {
         X / Twitter
     </a>
 </div>
-
-   <section id="course" class="max-w-7xl mx-auto px-4 py-20">
+<section id="course" class="max-w-7xl mx-auto px-4 py-20">
         <div class="flex flex-col md:flex-row gap-10">
             <!-- LEFT SIDEBAR: CHANGED 'bg-forest' TO CREAM LIGHT COLOR BACKGROUND PANEL -->
             <div class="md:w-1/3 bg-[#f9f7f2] p-6 rounded-sm border border-gray-200/40 shadow-sm">
@@ -1229,6 +1278,80 @@ function closeLightbox() {
             </div>
         </div>
     </section>
+
+    <section id="visitors" class="bg-[#f9f7f2] py-24 px-4 border-y border-gray-200">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="serif text-6xl md:text-8xl text-[#132419] mb-8 leading-none">Experience Dudley</h2>
+            <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
+            <p class="serif text-2xl italic text-[#132419]/80 max-w-4xl mx-auto leading-relaxed px-4">
+                "We invite you to share our course as well as our outstanding facilities. We want to ensure your experience is one to remember for all the right reasons."
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+            <div class="lg:col-span-2 bg-forest p-1 border-4 border-[#C5A367] shadow-2xl">
+                <div class="bg-forest p-10">
+                    <h3 class="serif text-4xl text-gold mb-10 uppercase tracking-widest text-center">Green Fees — 2026</h3>
+
+                    <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                        <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
+                            <span class="text-sm">Visitors (Mon-Fri)</span>
+                            <span class="serif text-3xl text-gold">£25.00</span>
+                        </div>
+
+                        <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
+                            <span class="text-sm">Visitors (Sat-Sun)</span>
+                            <span class="serif text-3xl text-gold">£32.00</span>
+                        </div>
+
+                        <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
+                            <span class="text-sm">Member Guest (Mon-Fri)</span>
+                            <span class="serif text-3xl text-gold">£20.00</span>
+                        </div>
+
+                        <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
+                            <span class="text-sm">Member Guest (Sat-Sun)</span>
+                            <span class="serif text-3xl text-gold">£25.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 grid md:grid-cols-2 gap-4 text-center">
+                        <a href="https://www.dudleygolfclub.com/visitorbooking/"
+                           target="_blank"
+                           class="inline-block bg-gold text-white px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:text-[#132419] transition-all">
+                             Book Online
+                        </a>
+
+                        <a href="tel:0138423387"
+                           class="inline-block border border-[#C5A367] text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:text-[#132419] transition-all">
+                             Call: 01384 233877
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 border border-gray-100 flex flex-col justify-center shadow-lg text-[#132419]">
+                <h4 class="serif text-3xl mb-6">Arrival Info</h4>
+
+                <ul class="space-y-4 text-xs tracking-wide uppercase opacity-70">
+                    <li><span class="text-gold font-black mr-2">/</span> Report to Pro Shop</li>
+                    <li><span class="text-gold font-black mr-2">/</span> 8:00AM Summer Opening</li>
+                    <li><span class="text-gold font-black mr-2">/</span> Check Local Rules</li>
+                    <li><span class="text-gold font-black mr-2">/</span> 1st & 10th Tee Starts</li>
+                </ul>
+
+                <div class="mt-10 bg-[#f9f7f2] p-6 border-l-4 border-[#C5A367]">
+                    <h5 class="serif text-2xl mb-3">Visitor Tee Booking</h5>
+                    <p class="text-sm leading-relaxed opacity-75">
+                        Book your visitor tee time online or contact the Pro Shop for availability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
 
     <section id="visitors" class="bg-[#f9f7f2] py-24 px-4 border-y border-gray-200">
     <div class="max-w-6xl mx-auto">
