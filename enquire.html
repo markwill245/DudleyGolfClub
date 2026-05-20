@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Enquiry | Dudley Golf Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .serif { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
+    </style>
+</head>
+<body class="text-[#132419]">
+
+    <header class="bg-[#132419] py-16 px-4 text-center border-b border-[#C5A367]/30">
+        <h1 class="serif text-4xl text-white mb-2">Stock & Order Enquiry</h1>
+        <p class="text-[#C5A367] uppercase tracking-widest text-xs font-bold">Pro Shop & Academy</p>
+    </header>
+
+    <main class="max-w-2xl mx-auto py-16 px-6">
+        
+        <form id="enquiryForm" class="bg-white border border-[#C5A367]/20 p-8 md:p-10 space-y-6 shadow-sm">
+            
+            <div>
+                <label class="block text-[11px] uppercase tracking-widest font-bold mb-2">Full Name</label>
+                <input type="text" id="formName" required class="w-full bg-[#F9F7F2] border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#C5A367]">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-[11px] uppercase tracking-widest font-bold mb-2">Email Address</label>
+                    <input type="email" id="formEmail" required class="w-full bg-[#F9F7F2] border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#C5A367]">
+                </div>
+                <div>
+                    <label class="block text-[11px] uppercase tracking-widest font-bold mb-2">Phone Number</label>
+                    <input type="tel" id="formPhone" class="w-full bg-[#F9F7F2] border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#C5A367]">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-[11px] uppercase tracking-widest font-bold mb-2">Enquiry Type</label>
+                <select id="formType" class="w-full bg-[#F9F7F2] border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#C5A367] text-gray-700">
+                    <option value="Stock Check">Check Current Stock</option>
+                    <option value="Special Order">Place a Special Order</option>
+                    <option value="Custom Fitting">Custom Fitting Enquiry</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-[11px] uppercase tracking-widest font-bold mb-2">Item Details & Message</label>
+                <textarea id="formMessage" rows="5" required placeholder="Please state product brand, model, size, or specific options required..." class="w-full bg-[#F9F7F2] border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#C5A367]"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-[#132419] text-white py-4 text-[11px] uppercase tracking-widest font-bold hover:bg-[#C5A367] transition duration-300">
+                Open Email Draft
+            </button>
+        </form>
+
+        <div class="mt-12 text-center">
+            <a href="pro-shop.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition">Back to Pro Shop</a>
+        </div>
+    </main>
+
+    <footer class="bg-[#132419] py-8 text-center text-white/50 text-[10px] uppercase tracking-widest">
+        &copy; 2026 Dudley Golf Club
+    </footer>
+
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevents page reload
+            
+            // Collect all form data values
+            const name = document.getElementById('formName').value;
+            const email = document.getElementById('formEmail').value;
+            const phone = document.getElementById('formPhone').value || 'Not provided';
+            const type = document.getElementById('formType').value;
+            const message = document.getElementById('formMessage').value;
+            
+            // Build out clean email layout texts
+            const subject = encodeURIComponent(`Pro Shop Enquiry: ${type}`);
+            const body = encodeURIComponent(
+                `Hello Pro Shop Team,\n\n` +
+                `You have received a new website enquiry:\n\n` +
+                `--- Customer Details ---\n` +
+                `Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Phone: ${phone}\n\n` +
+                `--- Request Details ---\n` +
+                `Type: ${type}\n` +
+                `Message:\n${message}`
+            );
+            
+            // Automatically fire open the default email window
+            window.location.href = `mailto:proshop@dudleygolfclub.com?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>
