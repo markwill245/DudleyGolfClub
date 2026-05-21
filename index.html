@@ -45,7 +45,12 @@
 
 <!-- css -->
 <style>
-:root { --gold: #C5A367; --forest: #132419; --cream: #F9F7F2; }
+:root {
+    --gold: #C5A367;
+    --forest: #132419;
+    --cream: #F9F7F2;
+}
+
 .bg-cream {
     background-color: var(--cream);
 }
@@ -55,16 +60,18 @@ body {
     background-color: var(--forest);
     color: #ffffff;
 }
+
 a[href^="tel"] {
     color: #C5A367;
     text-decoration: none;
 }
+
 #menu-btn div {
-  display: block !important;
-  width: 24px !important;
-  height: 2px !important;
-  background-color: #C5A367 !important;
-  opacity: 1 !important;
+    display: block !important;
+    width: 24px !important;
+    height: 2px !important;
+    background-color: #C5A367 !important;
+    opacity: 1 !important;
 }
 
 h1 { font-size: 3.5rem; }
@@ -75,22 +82,20 @@ h3 { font-size: 1.8rem; }
     font-family: 'Cormorant Garamond', serif;
 }
 
-/* HEADER */
+/* HEADER NAVIGATION */
 .nav-blur {
     background: rgba(19, 36, 25, 0.98);
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* SCROLLED STATE */
 .nav-blur.scrolled {
     background-color: #132419 !important;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border-bottom: 1px solid rgba(197, 163, 103, 0.2);
 }
-    
 
-/* MOBILE SPACING & MENU FIXES */
+/* MOBILE RESPONSIVE LAYOUT */
 @media (max-width: 768px) {
     section {
         padding-top: 7rem !important;
@@ -125,12 +130,9 @@ h3 { font-size: 1.8rem; }
     }
 }
 
-/* ========================================================
-   FORCE COLOURED HOLE BUTTONS OVERRIDES (No JS Changes)
-======================================================== */
-.hole-card, 
-#hole-nav-container button {
-    background-color: #132419 !important; 
+/* NAVIGATION BUTTONS & CARDS OVERRIDES */
+.hole-card, #hole-nav-container button {
+    background-color: #132419 !important;
     border: 1px solid rgba(197, 163, 103, 0.25) !important;
     transition: all 0.25s ease-in-out !important;
     text-transform: uppercase;
@@ -138,31 +140,26 @@ h3 { font-size: 1.8rem; }
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
-.hole-card span:first-child,
-#hole-nav-container button span:first-child,
-.hole-card p:first-child,
-#hole-nav-container button p:first-child {
+.hole-card span:first-child, #hole-nav-container button span:first-child,
+.hole-card p:first-child, #hole-nav-container button p:first-child {
     color: #C5A367 !important;
     font-weight: 700 !important;
     margin-right: 8px !important;
 }
 
-.hole-card span:last-child,
-#hole-nav-container button span:last-child,
-.hole-card p:last-child,
-#hole-nav-container button p:last-child {
+.hole-card span:last-child, #hole-nav-container button span:last-child,
+.hole-card p:last-child, #hole-nav-container button p:last-child {
     color: #ffffff !important;
     font-weight: 500 !important;
 }
 
-.hole-card:hover,
-#hole-nav-container button:hover {
+.hole-card:hover, #hole-nav-container button:hover {
     border-color: #C5A367 !important;
     transform: translateX(4px) !important;
     box-shadow: 0 4px 12px rgba(197, 163, 103, 0.1) !important;
 }
 
-/* ACTIVE STATE GLOW EFFECT */
+/* ACTIVE STATE PULSE EFFECT */
 .hole-card.bg-\[\#132419\] {
     animation: goldPulse 3s infinite ease-in-out;
 }
@@ -177,18 +174,12 @@ h3 { font-size: 1.8rem; }
 }
 
 @keyframes goldPulse {
-    0% {
-        box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25);
-    }
-    50% {
-        box-shadow: 0 0 0 1px rgba(197,163,103,0.5), 0 10px 30px rgba(197,163,103,0.35), 0 0 35px rgba(197,163,103,0.6);
-    }
-    100% {
-        box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25);
-    }
+    0% { box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25); }
+    50% { box-shadow: 0 0 0 1px rgba(197,163,103,0.5), 0 10px 30px rgba(197,163,103,0.35), 0 0 35px rgba(197,163,103,0.6); }
+    100% { box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25); }
 }
 
-/* SCORECARD MODAL STYLING */
+/* SCORECARD MODAL SYSTEM */
 #scorecard-modal table {
     border-radius: 8px;
     overflow: hidden;
@@ -204,8 +195,7 @@ h3 { font-size: 1.8rem; }
     background: rgba(197,163,103,0.1);
     transform: scale(1.01);
 }
-#scorecard-modal td,
-#scorecard-modal th {
+#scorecard-modal td, #scorecard-modal th {
     padding: 12px;
 }
 #scorecard-modal td:first-child {
@@ -213,10 +203,9 @@ h3 { font-size: 1.8rem; }
     color: #C5A367;
 }
 
-/* SCROLLBAR */
+/* SCROLLBAR & HERO STYLES */
 .custom-scrollbar::-webkit-scrollbar { display: none; }
 
-/* HERO */
 .hero-bg { 
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/home-page.webp');
     background-size: cover; 
@@ -243,7 +232,6 @@ a, button { transition: all 0.25s ease; }
 button:active, a:active { transform: scale(0.97); }
 section[id] { scroll-margin-top: 80px; }
 
-/* FOOTER SOCIAL FIX */
 .social-links {
     padding-left: 22px;
     padding-right: 22px;
@@ -253,7 +241,7 @@ section[id] { scroll-margin-top: 80px; }
     padding: 6px 4px;
 }
 
-/* PRO SHOP MOBILE POLISH */
+/* PRO SHOP LAYOUT POLISH */
 @media (max-width: 768px) {
     .pro-shop-card, .service-card, .shop-card {
         width: 100%;
@@ -276,17 +264,14 @@ section[id] { scroll-margin-top: 80px; }
     }
 }        
 
-/* =========================================
-   CLEAN SCORECARD TOGGLE BUTTON SYSTEM FIX
-========================================= */
-button[onclick*="scorecard"],
-.view-scorecard-btn {
+/* SCORECARD TRIGGER ACTIONS */
+button[onclick*="scorecard"], .view-scorecard-btn {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    background-color: var(--forest) !important;
+    background-color: #132419 !important;
     color: #ffffff !important;
-    border: 1px solid var(--gold) !important;
+    border: 1px solid #C5A367 !important;
     padding: 10px 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -296,13 +281,12 @@ button[onclick*="scorecard"],
     opacity: 1 !important;
 }
 
-button[onclick*="scorecard"]:hover,
-.view-scorecard-btn:hover {
-    background-color: var(--gold) !important;
-    color: var(--forest) !important;
+button[onclick*="scorecard"]:hover, .view-scorecard-btn:hover {
+    background-color: #C5A367 !important;
+    color: #132419 !important;
 }
 
-/* GLOBAL MOBILE FIXES OVERFLOW SYSTEM */
+/* COMPONENT BOUNDARY CONTROLS */
 html, body {
     width: 100%;
     max-width: 100%;
