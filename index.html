@@ -192,7 +192,7 @@ h3 { font-size: 1.8rem; }
     transition: all 0.2s ease;
 }
 #scorecard-modal tbody tr:hover {
-    background: rgba(197,163,103,0.1);
+    background: rgba(197, 163, 103, 0.1);
     transform: scale(1.01);
 }
 #scorecard-modal td, #scorecard-modal th {
@@ -264,28 +264,6 @@ section[id] { scroll-margin-top: 80px; }
     }
 }        
 
-/* SCORECARD TRIGGER ACTIONS */
-button[onclick*="scorecard"], .view-scorecard-btn {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    background-color: #132419 !important;
-    color: #ffffff !important;
-    border: 1px solid #C5A367 !important;
-    padding: 10px 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-button[onclick*="scorecard"]:hover, .view-scorecard-btn:hover {
-    background-color: #C5A367 !important;
-    color: #132419 !important;
-}
-
 /* COMPONENT BOUNDARY CONTROLS */
 html, body {
     width: 100%;
@@ -309,8 +287,41 @@ img {
     body { overflow-x: hidden !important; }
     * { max-width: 100vw; }
 }
-</style>
 
+/* =========================================
+   EXCLUSIVE MASTER VISIBILITY OVERRIDE
+========================================= */
+.view-scorecard-btn {
+    display: inline-block !important;
+    margin-bottom: 2rem !important;
+    font-size: 10px !important;
+    letter-spacing: 0.2em !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border: 1px solid rgba(197, 163, 103, 0.4) !important;
+    padding: 12px 24px !important;
+    background-color: #ffffff !important;
+    color: #C5A367 !important; /* Forces gold directly to the text block */
+    transition: all 0.5s ease-in-out !important;
+    border-radius: 2px !important;
+    cursor: pointer !important;
+}
+
+.view-scorecard-btn span {
+    color: #C5A367 !important;
+    font-weight: 700 !important;
+}
+
+.view-scorecard-btn:hover {
+    background-color: #C5A367 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(197, 163, 103, 0.3) !important;
+}
+
+.view-scorecard-btn:hover span {
+    color: #ffffff !important;
+}
+</style>
     <div class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
         <div id="live-clock">Loading...</div>
         <div class="flex gap-6">
@@ -1139,9 +1150,9 @@ function closeLightbox() {
             <!-- LEFT SIDEBAR: CHANGED 'bg-forest' TO CREAM LIGHT COLOR BACKGROUND PANEL -->
             <div class="md:w-1/3 bg-[#f9f7f2] p-6 rounded-sm border border-gray-200/40 shadow-sm">
                 <h2 class="serif text-5xl mb-4 text-[#132419]">The 18 Holes</h2>
-                <button onclick="toggleScorecard()" class="mb-8 text-[10px] tracking-[0.2em] font-bold uppercase border border-[#C5A367]/40 px-6 py-3 text-[#C5A367] bg-white hover:bg-[#C5A367] hover:text-white hover:shadow-[0_0_20px_rgba(197,163,103,0.3)] transition-all duration-500 rounded-sm">
-                    View Full Scorecard
-                </button>
+                <button onclick="toggleScorecard()" class="view-scorecard-btn">
+    <span>View Full Scorecard</span>
+</button>
                 <div id="hole-nav-container" class="flex md:flex-col overflow-x-auto md:overflow-y-auto custom-scrollbar gap-2 pb-4 md:h-[600px]"></div>
             </div>
             
