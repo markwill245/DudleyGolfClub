@@ -83,19 +83,19 @@ h3 { font-size: 1.8rem; }
 
 /* SCROLLED STATE */
 .nav-blur.scrolled {
-    background-color: #132419 !important; /* Forces the solid forest green */
+    background-color: #132419 !important;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(197, 163, 103, 0.2); /* Adds a subtle gold tint to the bottom edge */
+    border-bottom: 1px solid rgba(197, 163, 103, 0.2);
 }
     
 
 /* MOBILE SPACING & MENU FIXES */
 @media (max-width: 768px) {
     section {
-    padding-top: 7rem !important;
-    padding-bottom: 5rem !important;
-}
+        padding-top: 7rem !important;
+        padding-bottom: 5rem !important;
+    }
     h1 { font-size: 2.8rem !important; line-height: 1.1; }
     h2 { font-size: 2.2rem !important; }
     h3 { font-size: 1.6rem !important; }
@@ -106,25 +106,18 @@ h3 { font-size: 1.8rem; }
         padding-bottom: 10px;
     }
 
-    /* Force the main nav bar to be solid on mobile */
-   nav {
-    background-color: #132419 !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    nav {
+        background-color: #132419 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
 
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-
-    z-index: 9999;
-
-    box-shadow:
-        0 2px 12px rgba(0,0,0,0.18);
-}
-
-    /* Force the sliding menu to be solid on mobile */
     #nav-links { 
         background-color: #132419 !important; 
         opacity: 1 !important;
@@ -132,13 +125,9 @@ h3 { font-size: 1.8rem; }
     }
 }
 
-
-
 /* ========================================================
    FORCE COLOURED HOLE BUTTONS OVERRIDES (No JS Changes)
 ======================================================== */
-
-/* 1. Force the main button container to be Forest Green */
 .hole-card, 
 #hole-nav-container button {
     background-color: #132419 !important; 
@@ -146,12 +135,9 @@ h3 { font-size: 1.8rem; }
     transition: all 0.25s ease-in-out !important;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    
-    /* Forces the exact clean font family of your pro tips */
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
-/* 2. Target the first piece of text inside the button (The Number) and make it Gold */
 .hole-card span:first-child,
 #hole-nav-container button span:first-child,
 .hole-card p:first-child,
@@ -161,7 +147,6 @@ h3 { font-size: 1.8rem; }
     margin-right: 8px !important;
 }
 
-/* 3. Target the second piece of text inside the button (The Name) and make it White */
 .hole-card span:last-child,
 #hole-nav-container button span:last-child,
 .hole-card p:last-child,
@@ -170,7 +155,6 @@ h3 { font-size: 1.8rem; }
     font-weight: 500 !important;
 }
 
-/* 4. Smooth hover action */
 .hole-card:hover,
 #hole-nav-container button:hover {
     border-color: #C5A367 !important;
@@ -183,65 +167,47 @@ h3 { font-size: 1.8rem; }
     animation: goldPulse 3s infinite ease-in-out;
 }
 
-/* 5. Keep active button text perfectly white and sharp when clicked */
 #hole-nav-container button.bg-\[\#132419\] span:last-child,
 #hole-nav-container button.bg-\[\#132419\] p:last-child {
     color: #ffffff !important;
 }
 
-/* Enforce the crisp gold border on the active item */
 #hole-nav-container button.bg-\[\#132419\] {
     border-color: #C5A367 !important;
 }
 
-
-/* GLOW ANIMATION */
 @keyframes goldPulse {
     0% {
-        box-shadow:
-            0 0 0 1px rgba(197,163,103,0.4),
-            0 8px 25px rgba(197,163,103,0.25),
-            0 0 15px rgba(197,163,103,0.25);
+        box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25);
     }
     50% {
-        box-shadow:
-            0 0 0 1px rgba(197,163,103,0.5),
-            0 10px 30px rgba(197,163,103,0.35),
-            0 0 35px rgba(197,163,103,0.6);
+        box-shadow: 0 0 0 1px rgba(197,163,103,0.5), 0 10px 30px rgba(197,163,103,0.35), 0 0 35px rgba(197,163,103,0.6);
     }
     100% {
-        box-shadow:
-            0 0 0 1px rgba(197,163,103,0.4),
-            0 8px 25px rgba(197,163,103,0.25),
-            0 0 15px rgba(197,163,103,0.25);
+        box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25);
     }
 }
 
-/* SCORECARD UPGRADE */
+/* SCORECARD MODAL STYLING */
 #scorecard-modal table {
     border-radius: 8px;
     overflow: hidden;
 }
-
 #scorecard-modal thead {
     background: #132419;
     color: white;
 }
-
 #scorecard-modal tbody tr {
     transition: all 0.2s ease;
 }
-
 #scorecard-modal tbody tr:hover {
     background: rgba(197,163,103,0.1);
     transform: scale(1.01);
 }
-
 #scorecard-modal td,
 #scorecard-modal th {
     padding: 12px;
 }
-
 #scorecard-modal td:first-child {
     font-weight: bold;
     color: #C5A367;
@@ -259,12 +225,8 @@ h3 { font-size: 1.8rem; }
 
 :target { scroll-margin-top: 100px; }
 
-/* NAV ANIMATION */
-#nav-links {
-    will-change: transform;
-}
+#nav-links { will-change: transform; }
 #nav-links a { position: relative; }
-
 #nav-links a::after {
     content: '';
     position: absolute;
@@ -275,152 +237,93 @@ h3 { font-size: 1.8rem; }
     background: var(--gold);
     transition: 0.3s ease;
 }
-
 #nav-links a:hover::after { width: 100%; }
 
 a, button { transition: all 0.25s ease; }
 button:active, a:active { transform: scale(0.97); }
-section[id] {
-            scroll-margin-top: 80px;
-        }
-section[id] {
-    scroll-margin-top: 80px;
-}
+section[id] { scroll-margin-top: 80px; }
 
-/* =========================================
-   FOOTER SOCIAL FIX
-========================================= */
-
+/* FOOTER SOCIAL FIX */
 .social-links {
     padding-left: 22px;
     padding-right: 22px;
 }
-
 .social-links a {
     display: inline-block;
     padding: 6px 4px;
 }
 
-/* =========================================
-   PRO SHOP MOBILE POLISH
-========================================= */
-
+/* PRO SHOP MOBILE POLISH */
 @media (max-width: 768px) {
-
-    .pro-shop-card,
-    .service-card,
-    .shop-card {
-
+    .pro-shop-card, .service-card, .shop-card {
         width: 100%;
         min-height: 150px;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         padding: 26px;
-
         border-radius: 8px;
-
         margin-bottom: 18px;
-
-        box-shadow:
-            0 6px 18px rgba(0,0,0,0.16);
-
+        box-shadow: 0 6px 18px rgba(0,0,0,0.16);
     }
-
-    .pro-shop-card h3,
-    .service-card h3,
-    .shop-card h3 {
-
+    .pro-shop-card h3, .service-card h3, .shop-card h3 {
         margin-bottom: 12px;
         line-height: 1.2;
-
     }
-
-    .pro-shop-card p,
-    .service-card p,
-    .shop-card p {
-
+    .pro-shop-card p, .service-card p, .shop-card p {
         line-height: 1.5;
         opacity: 0.92;
-
     }
-
-}       
+}        
 
 /* =========================================
-   MOBILE BUTTON SCORECARD VISIBILITY FIX
+   CLEAN SCORECARD TOGGLE BUTTON SYSTEM FIX
 ========================================= */
-@media (max-width: 768px) {
-    #hole-nav-container button,
-    .hole-card,
-    button[onclick*="scorecard"] {
-        display: inline-flex !important;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #hole-nav-container button *,
-    .hole-card *,
-    button[onclick*="scorecard"] * {
-        color: #ffffff !important;
-    }
-
-    #hole-nav-container button *:first-child,
-    .hole-card *:first-child,
-    button[onclick*="scorecard"] *:first-child {
-        color: #C5A367 !important;
-    }
+button[onclick*="scorecard"],
+.view-scorecard-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--forest) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--gold) !important;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-</style>
-<style>
-/* =========================================
-   GLOBAL MOBILE FIXES
-========================================= */
+button[onclick*="scorecard"]:hover,
+.view-scorecard-btn:hover {
+    background-color: var(--gold) !important;
+    color: var(--forest) !important;
+}
 
-html,
-body {
+/* GLOBAL MOBILE FIXES OVERFLOW SYSTEM */
+html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
 }
-
-/* Prevent elements overflowing mobile width */
 * {
     box-sizing: border-box;
     min-width: 0;
 }
-
-/* Main layout containers */
-section,
-div,
-main,
-nav,
-footer {
+section, div, main, nav, footer {
     max-width: 100%;
 }
-
-/* Images */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-/* Prevent accidental mobile overflow */
 @media (max-width: 768px) {
-
-    body {
-        overflow-x: hidden !important;
-    }
-
-    * {
-        max-width: 100vw;
-    }
-
+    body { overflow-x: hidden !important; }
+    * { max-width: 100vw; }
 }
 </style>
 
