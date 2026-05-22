@@ -354,7 +354,9 @@ img {
     
     <a href="login.html" target="_blank" class="relative z-[200] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
 </nav>
-
+                        <!-- ===================================================== -->
+                                 <!-- Staff home page title -->
+                        <!-- ===================================================== -->
 <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
     <div class="max-w-4xl px-4">
         <h1 class="serif text-6xl md:text-9xl mb-4 italic tracking-tight leading-[0.95]">
@@ -372,6 +374,9 @@ img {
         </p>
     </div>
 </header>
+                        <!-- ===================================================== -->
+                                 <!-- Staff Amen corner title -->
+                        <!-- ===================================================== -->
 
 <section class="bg-forest py-12">
     <div class="max-w-7xl mx-auto px-4">
@@ -688,29 +693,38 @@ function closeLightbox() {
 }
 </script>
 
-<!-- New Top Banner Photo -->
-<div class="w-full h-[400px] md:h-[500px] overflow-hidden relative border-t border-[#C5A367]/10">
-    <img src="our-story/history1.webp" alt="Historic view of the course grounds" class="w-full h-full object-cover object-center" loading="lazy">
-    <div class="absolute inset-0 bg-gradient-to-t from-[#0B1410] via-transparent to-transparent"></div>
-</div>
 
 <!-- Your Existing Heritage Section -->
-<section id="heritage" class="bg-[#0B1410] py-24 px-4 overflow-hidden">
+<section id="heritage" class="bg-[#0B1410] py-24 px-4 overflow-hidden border-t border-[#C5A367]/10">
     <div class="max-w-7xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left Side: Old Tom Morris Photo Frame -->
             <div class="relative">
                 <div class="absolute -top-10 -left-10 w-64 h-64 bg-gold/5 rounded-full blur-3xl"></div>
                 <div class="relative bg-white p-2 shadow-2xl border border-gray-100 rotate-1">
                    <img src="heritage-dudley.webp" alt="Dudley Golf Club heritage design by Old Tom Morris historic view" class="w-full h-auto grayscale hover:grayscale-0 transition duration-700" width="800" height="530" loading="lazy">
                 </div>
             </div>
+            
+            <!-- Right Side: History Photo and Narrative Text -->
             <div class="space-y-8">
-                <h2 class="serif text-6xl text-white">Our Story</h2>
+                
+                <!-- This is the history image you wanted to keep, sized cleanly right above the text -->
+                <div class="relative max-w-md lg:max-w-full">
+                    <div class="relative bg-white p-2 shadow-xl border border-gray-100 -rotate-1 max-h-[280px] overflow-hidden">
+                        <img src="our-story/history1.webp" alt="Dudley Golf Club historic course photography" class="w-full h-auto object-cover grayscale hover:grayscale-0 transition duration-700" loading="lazy">
+                    </div>
+                </div>
+
+                <h2 class="serif text-6xl text-white pt-4">Our Story</h2>
+                
                 <div class="space-y-6 text-white/80 serif text-xl italic leading-relaxed">
                     <p>In 1893, Canon Adam Gray Maitland arrived from Scotland to find a void in the Black Country: the absence of the "Royal and Ancient game."</p>
                     <p><span class="text-[#C5A367] font-bold not-italic">Old Tom Morris</span>—architect of Muirfield—personally designed the original course.</p>
                     <p class="mt-4">His layout takes full advantage of the volcanic ridge, offering a test of golf that remains as relevant today as it was in 1893.</p>
                 </div>
+                
                 <div class="grid grid-cols-2 gap-8 border-y border-[#C5A367]/20 py-8 text-white/90">
                     <div>
                         <h4 class="text-[10px] uppercase tracking-widest font-bold text-[#C5A367] mb-2">The Ascent</h4>
@@ -722,6 +736,7 @@ function closeLightbox() {
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
