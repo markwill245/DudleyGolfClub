@@ -354,9 +354,7 @@ img {
     
     <a href="login.html" target="_blank" class="relative z-[200] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
 </nav>
-                        <!-- ===================================================== -->
-                                 <!-- Staff home page title -->
-                        <!-- ===================================================== -->
+
 <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
     <div class="max-w-4xl px-4">
         <h1 class="serif text-6xl md:text-9xl mb-4 italic tracking-tight leading-[0.95]">
@@ -374,9 +372,6 @@ img {
         </p>
     </div>
 </header>
-                        <!-- ===================================================== -->
-                                 <!-- Staff Amen corner title -->
-                        <!-- ===================================================== -->
 
 <section class="bg-forest py-12">
     <div class="max-w-7xl mx-auto px-4">
@@ -693,38 +688,22 @@ function closeLightbox() {
 }
 </script>
 
-
-<!-- Your Existing Heritage Section -->
-<section id="heritage" class="bg-[#0B1410] py-24 px-4 overflow-hidden border-t border-[#C5A367]/10">
+<section id="heritage" class="bg-[#0B1410] py-24 px-4 border-t border-[#C5A367]/10 overflow-hidden">
     <div class="max-w-7xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
-            
-            <!-- Left Side: Old Tom Morris Photo Frame -->
             <div class="relative">
                 <div class="absolute -top-10 -left-10 w-64 h-64 bg-gold/5 rounded-full blur-3xl"></div>
                 <div class="relative bg-white p-2 shadow-2xl border border-gray-100 rotate-1">
                    <img src="heritage-dudley.webp" alt="Dudley Golf Club heritage design by Old Tom Morris historic view" class="w-full h-auto grayscale hover:grayscale-0 transition duration-700" width="800" height="530" loading="lazy">
                 </div>
             </div>
-            
-            <!-- Right Side: History Photo and Narrative Text -->
             <div class="space-y-8">
-                
-                <!-- This is the history image you wanted to keep, sized cleanly right above the text -->
-                <div class="relative max-w-md lg:max-w-full">
-                    <div class="relative bg-white p-2 shadow-xl border border-gray-100 -rotate-1 max-h-[280px] overflow-hidden">
-                        <img src="our-story/history1.webp" alt="Dudley Golf Club historic course photography" class="w-full h-auto object-cover grayscale hover:grayscale-0 transition duration-700" loading="lazy">
-                    </div>
-                </div>
-
-                <h2 class="serif text-6xl text-white pt-4">Our Story</h2>
-                
+                <h2 class="serif text-6xl text-white">Our Story</h2>
                 <div class="space-y-6 text-white/80 serif text-xl italic leading-relaxed">
                     <p>In 1893, Canon Adam Gray Maitland arrived from Scotland to find a void in the Black Country: the absence of the "Royal and Ancient game."</p>
                     <p><span class="text-[#C5A367] font-bold not-italic">Old Tom Morris</span>—architect of Muirfield—personally designed the original course.</p>
                     <p class="mt-4">His layout takes full advantage of the volcanic ridge, offering a test of golf that remains as relevant today as it was in 1893.</p>
                 </div>
-                
                 <div class="grid grid-cols-2 gap-8 border-y border-[#C5A367]/20 py-8 text-white/90">
                     <div>
                         <h4 class="text-[10px] uppercase tracking-widest font-bold text-[#C5A367] mb-2">The Ascent</h4>
@@ -736,7 +715,6 @@ function closeLightbox() {
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -963,6 +941,7 @@ function closeLightbox() {
   
 
    
+
 <section id="membership" class="bg-forest text-white py-24 px-4 border-t border-[#C5A367]/10 relative overflow-hidden">
     <div class="absolute top-0 right-0 w-96 h-96 bg-[#C5A367]/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -974,26 +953,17 @@ function closeLightbox() {
             </h2>
             <div class="w-24 h-[2px] bg-gold mx-auto mb-8"></div>
             
-            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed text-sm md:text-base mb-10">
+            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed text-sm md:text-base">
                 Become part of one of the Midlands' most welcoming golf clubs. 
                 Flexible options beautifully structured for full members, new lady golfers, and academy players.
             </p>
-
-            <!-- Premium Button linking to your standalone hub page -->
-            <div class="flex justify-center">
-                <a href="membership.html" class="inline-block border border-[#C5A367] text-[#C5A367] hover:bg-[#C5A367] hover:text-white font-semibold tracking-wider uppercase text-xs px-8 py-4 rounded transition shadow-md">
-                    Explore Categories & View Rates
-                </a>
-            </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch" id="membershipGrid">
-            <!-- Your dynamic category cards live here -->
-        </div>
+            </div>
 
     </div>
 </section>
-
 
   <div id="scorecard-modal" class="fixed inset-0 bg-black/90 z-[200] hidden items-center justify-center p-4">
     <div class="bg-[#F9F7F2] p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded shadow-2xl">
@@ -1547,30 +1517,21 @@ function renderMembership() {
     if (!grid) return;
 
     grid.innerHTML = membershipData.map(m => `
-<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-8 shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between text-center group">
-    <div>
-        <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
+<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
+    <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
 
-        <p class="text-5xl font-light text-white mb-6 tracking-tight">
-            ${m.price}
-        </p>
+    <p class="text-5xl font-light text-white mb-6 tracking-tight">
+        ${m.price}
+    </p>
 
-        <p class="text-sm text-white/70 leading-relaxed italic mb-8 min-h-[45px]">
-            ${m.desc}
-        </p>
-    </div>
+    <p class="text-sm text-white/70 leading-relaxed italic mb-8">
+        ${m.desc}
+    </p>
 
-    <div class="flex flex-col sm:flex-row gap-3 mt-auto pt-6 border-t border-white/5">
-        <a href="membership.html#categories"
-           class="flex-1 text-center bg-[#C5A367] text-stone-900 font-bold uppercase text-[11px] tracking-wider py-4 rounded hover:bg-white hover:text-stone-900 transition shadow-md no-underline">
-            View Rates & Info
-        </a>
-        <a href="tel:01384233877"
-           class="px-4 text-center border border-white/20 text-white/80 font-bold uppercase text-[11px] tracking-wider py-4 rounded hover:bg-white/10 hover:text-white transition no-underline"
-           title="Call Club Office">
-            📞 Call
-        </a>
-    </div>
+    <a href="tel:01384233877"
+       class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
+        Call: 01384 233877
+    </a>
 </div>
     `).join("");
 }
@@ -1656,7 +1617,16 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateClock, 1000);
 });
 
+/* =========================
+   GLOBAL SAFETY NET
+========================= */
 
+window.addEventListener("error", e => {
+    console.log("JS Error caught:", e.message);
+});
+
+// This closes the (() => { that is at the very top of your script
+})(); 
 </script>
 
 
