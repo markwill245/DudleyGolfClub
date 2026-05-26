@@ -88,100 +88,140 @@
 
     <hr class="border-stone-200 max-w-7xl mx-auto">
 
-    <!-- 3. MEMBERSHIP CATEGORIES GRID -->
+  <!-- 3. MEMBERSHIP CATEGORIES GRID WITH LIVE 2026 RATES -->
     <section id="categories" class="py-20 bg-stone-100 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-premium text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight">Structured for Your Schedule</h2>
-                <p class="text-stone-600 mt-4">We maintain a protected roster cap across our categories to safeguard easy weekend tee-time access and an uncrowded club experience.</p>
+                <h2 class="font-premium text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight">2026 Membership Structure & Rates</h2>
+                <p class="text-stone-600 mt-4">Transparent annual subscription tiers built around your lifestyle. Subject to England Golf & Worcester Golf Union affiliation fees.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1: 7-Day -->
-                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col">
-                    <div class="bg-emerald-950 p-6 text-white text-center">
-                        <h3 class="font-premium text-2xl font-bold">Traditional 7-Day</h3>
-                        <p class="text-xs text-emerald-300 tracking-wider uppercase mt-1 font-semibold">The Ultimate Competitor Stack</p>
+            <!-- Dynamic Grid: Automatically switches from 1 column on mobile to 2 on tablets and 4 on desktop screens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
+                
+                <!-- Card 1: Full 7-Day -->
+                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-emerald-950 p-6 text-white text-center">
+                            <span class="bg-emerald-800 text-emerald-100 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Most Popular</span>
+                            <h3 class="font-premium text-xl font-bold mt-2">Full Playing (7-Day)</h3>
+                            <p class="text-3xl font-bold text-white mt-3">£1,150<span class="text-xs font-normal text-stone-300"> / year</span></p>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-3 text-stone-600 text-sm">
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Unlimited tee times 7 days a week</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full access to weekend Majors & Board competitions</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Dynamic County Card regional entry discounts</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <ul class="space-y-3.5 text-stone-600 text-sm mb-8">
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Unlimited tee times 7 days a week</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full access to weekend Majors & Board majors</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Dynamic County Card regional entry discounts</li>
-							<li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Just £22 per week for unlimited golf & Full voting rights.</li>
-							<li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full Membership £1150</li>
-                        </ul>
-                        <a href="#enquire" onclick="selectCategory('Traditional 7-Day')" class="block text-center border border-emerald-800 text-emerald-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-900 hover:text-white transition">Select & Enquire</a>
-                    </div>
-                </div>
-
-                <!-- Card 2: 5day 7 restricted -->
-                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col">
-                    <div class="bg-stone-900 p-6 text-white text-center">
-                        <h3 class="font-premium text-2xl font-bold">5 Day / 7 day restricted Membership</h3>
-                        <p class="text-xs text-stone-400 tracking-wider uppercase mt-1 font-semibold">The Flexible Professional</p>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <ul class="space-y-3.5 text-stone-600 text-sm mb-8">
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Unlimited golf Monday to Friday Restricted Weekends</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full social clubhouse membership. </li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full facility use & official WHS handicap tracking</li>
-							<li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> 5 Day cost £770 / 7 Day Restricted £860</li>
-                        </ul>
-                        <a href="#enquire" onclick="selectCategory('Lifestyle Points Matrix')" class="block text-center border border-emerald-800 text-emerald-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-900 hover:text-white transition">Select & Enquire</a>
+                    <div class="p-5 pt-0">
+                        <a href="#enquire" onclick="selectCategory('Traditional 7-Day')" class="block text-center bg-emerald-900 text-white text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-800 transition">Select Category</a>
                     </div>
                 </div>
 
-                <!-- Card 3: Ladies Academy -->
-                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col">
-                    <div class="bg-emerald-900 p-6 text-white text-center">
-                        <h3 class="font-premium text-2xl font-bold">Ladies' Academy</h3>
-                        <p class="text-xs text-emerald-300 tracking-wider uppercase mt-1 font-semibold">Growth, Community, Social</p>
+                <!-- Card 2: Ladies' Academy -->
+                <div class="bg-white rounded-xl border border-emerald-200 shadow-md ring-2 ring-emerald-800/10 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-emerald-900 p-6 text-white text-center">
+                            <span class="bg-white/20 text-emerald-100 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Growth & Community</span>
+                            <h3 class="font-premium text-xl font-bold mt-2">Ladies' Academy</h3>
+                            <p class="text-3xl font-bold text-white mt-3">£780<span class="text-xs font-normal text-emerald-200"> / introductory</span></p>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-3 text-stone-600 text-sm">
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Step-by-step group lessons with our Head Pro <span class="text-xs text-stone-400 font-medium">(small cost)</span></li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Low-pressure Sunday evening 9-hole short loops</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full clubhouse social access + 7-day unlimited golf <span class="text-xs text-stone-400 font-medium">(afternoon times on weekends)</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <ul class="space-y-3.5 text-stone-600 text-sm mb-8">
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Structured step-by-step group lessons with our head Pro (at a small cost)</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Low-pressure Sunday evening 9-hole short loops</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full social clubhouse membership 7 day unlimmited golf (afternoon tee times on weekends.</li>
-							<li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> introductionary price £780 </li>
-                        </ul>
-                        <a href="#enquire" onclick="selectCategory('Ladies\' Academy & Track')" class="block text-center border border-emerald-800 text-emerald-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-900 hover:text-white transition">Select & Enquire</a>
-                    </div>
-                </div>
-
-                <!-- Card 4: Intermediate Ladder -->
-                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col">
-                    <div class="bg-stone-800 p-6 text-white text-center">
-                        <h3 class="font-premium text-2xl font-bold">Intermediate Ladder</h3>
-                        <p class="text-xs text-stone-400 tracking-wider uppercase mt-1 font-semibold">Ages 18-34 Future Safeguard</p>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <ul class="space-y-3.5 text-stone-600 text-sm mb-8">
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Phased, sliding-scale annual subscription rates</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Complete, unrestricted 7-Day playing privileges</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Flawless financial transition out of Junior tiers</li>
-							<li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Ask about sliding prices</li>
-                        </ul>
-                        <a href="#enquire" onclick="selectCategory('Intermediate Ladder (Under 35)')" class="block text-center border border-emerald-800 text-emerald-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-900 hover:text-white transition">Select & Enquire</a>
+                    <div class="p-5 pt-0">
+                        <a href="#enquire" onclick="selectCategory('Ladies\' Academy & Track')" class="block text-center bg-emerald-950 text-white text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-900 transition">Select Category</a>
                     </div>
                 </div>
 
-                <!-- Card 5: Twilight Loop -->
-                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col">
-                    <div class="bg-stone-950 p-6 text-white text-center">
-                        <h3 class="font-premium text-2xl font-bold">Twilight / 9-Hole</h3>
-                        <p class="text-xs text-stone-400 tracking-wider uppercase mt-1 font-semibold">The Post-Office Decompressor</p>
+                <!-- Card 3: 7-Day Restricted -->
+                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-stone-900 p-6 text-white text-center">
+                            <h3 class="font-premium text-xl font-bold mt-2">7-Day Restricted</h3>
+                            <p class="text-3xl font-bold text-white mt-3">£860<span class="text-xs font-normal text-stone-400"> / year</span></p>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-3 text-stone-600 text-sm">
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Mid-week and restricted peak weekend access windows</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Maintain full tracking of official WHS Handicap</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Perfect loop window after the working day</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col justify-between">
-                        <ul class="space-y-3.5 text-stone-600 text-sm mb-8">
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Strategic restricted late afternoon & evening access</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Perfect format for an efficient 9 holes after the working day</li>
-                            <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Full bar card activation & post-round dining access</li>
-							<li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Ask about prices.</li>
-                        </ul>
-                        <a href="#enquire" onclick="selectCategory('Twilight & 9-Hole')" class="block text-center border border-emerald-800 text-emerald-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-emerald-900 hover:text-white transition">Select & Enquire</a>
+                    <div class="p-5 pt-0">
+                        <a href="#enquire" onclick="selectCategory('Twilight & 9-Hole')" class="block text-center border border-stone-800 text-stone-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-stone-900 hover:text-white transition">Select Category</a>
                     </div>
                 </div>
+
+                <!-- Card 4: Emergency Services -->
+                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-stone-800 p-6 text-white text-center">
+                            <h3 class="font-premium text-xl font-bold mt-2">Emergency Services</h3>
+                            <p class="text-3xl font-bold text-white mt-3">£960<span class="text-xs font-normal text-stone-400"> / year</span></p>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-3 text-stone-600 text-sm">
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Reduced rate for active blue light & frontline staff</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Unrestricted playing roster privileges</li>
+                                <li class="flex items-start"><span class="text-emerald-700 mr-2 font-bold">✓</span> Flexible scheduling alignments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#enquire" onclick="selectCategory('Traditional 7-Day')" class="block text-center border border-stone-800 text-stone-900 text-xs font-bold tracking-wider uppercase py-3 rounded hover:bg-stone-800 hover:text-white transition">Select Category</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- LOWER SUB-RATE INFRASTRUCTURE TABLES -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Intermediate & Junior Progression Ladder -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm">
+                    <h4 class="font-premium text-lg font-bold text-stone-900 mb-4 border-b pb-2 flex justify-between items-center">
+                        <span>Age-Phased Progression Tiers</span>
+                        <span class="text-xs font-sans text-emerald-800 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Junior & Intermediate</span>
+                    </h4>
+                    <div class="divide-y divide-stone-100 text-sm text-stone-600">
+                        <div class="py-2.5 flex justify-between"><span>Junior (Under 11 Years Old)</span> <span class="font-bold text-emerald-800">FREE *</span></div>
+                        <div class="py-2.5 flex justify-between"><span>Junior (11-15 Years Old)</span> <span class="font-bold text-emerald-800">FREE *</span></div>
+                        <div class="py-2.5 flex justify-between"><span>Junior (16-18 Years Old)</span> <span class="font-bold text-stone-900">£50.00</span></div>
+                        <div class="py-2.5 flex justify-between"><span>Intermediate (19-25 Years Old)</span> <span class="font-bold text-stone-900">£665.00</span></div>
+                        <div class="py-2.5 flex justify-between"><span>Intermediate (26-28 Years Old)</span> <span class="font-bold text-stone-900">£770.00</span></div>
+                        <div class="py-2.5 flex justify-between"><span>Intermediate (29-31 Years Old)</span> <span class="font-bold text-stone-900">£880.00</span></div>
+                        <div class="py-2.5 flex justify-between"><span>Intermediate (32-34 Years Old)</span> <span class="font-bold text-stone-900">£990.00</span></div>
+                    </div>
+                    <p class="text-[11px] text-stone-400 mt-3">* Under 15s are subject solely to standard Union affiliation fees.</p>
+                </div>
+
+                <!-- Alternative Categories & Extras -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-premium text-lg font-bold text-stone-900 mb-4 border-b pb-2">Alternative Categories & Club Facilities</h4>
+                        <div class="divide-y divide-stone-100 text-sm text-stone-600">
+                            <div class="py-2.5 flex justify-between"><span>Country Membership <span class="text-xs text-stone-400">(Outside 35-mile radius)</span></span> <span class="font-bold text-stone-900">£585.00</span></div>
+                            <div class="py-2.5 flex justify-between"><span>Social Membership <span class="text-xs text-stone-400">(Includes £25 Clubhouse Bar Levy)</span></span> <span class="font-bold text-stone-900">£75.00</span></div>
+                            <div class="py-2.5 flex justify-between"><span>Locker Rental <span class="text-xs text-stone-400">(Subject to availability)</span></span> <span class="font-bold text-stone-900">£25.00</span></div>
+                            <div class="py-2.5 flex justify-between"><span>Trolley Shed Storage <span class="text-xs text-stone-400">(Subject to availability)</span></span> <span class="font-bold text-stone-900">£15.00</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-stone-50 p-3.5 rounded-lg border border-stone-200 text-xs text-stone-500 space-y-1">
+                        <p class="font-semibold text-stone-700">💳 Monthly Payment Options Available:</p>
+                        <p>Spread your subscription flexibly over the season. Enquire via the form below or coordinate directly with the Pro Shop on 01384 233877.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
