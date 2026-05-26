@@ -16,7 +16,7 @@
 <body class="bg-stone-50 text-stone-800 antialiased font-sans">
 
     <!-- HEADER / NAVIGATION BAR -->
- <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
             <a href="index.html" class="flex items-center space-x-3 no-underline group select-none">
@@ -38,11 +38,10 @@
 
         </div>
     </header>
+
     <!-- 1. HERO SECTION -->
     <section class="relative bg-stone-950 text-white overflow-hidden min-h-[85vh] flex items-center">
-        <!-- Background Image Container Layer (The Course is the Hero) -->
         <div class="absolute inset-0 z-0 opacity-60">
-            <!-- Explicit directory path with mix-blend removed to prevent black-out -->
             <img src="./images/dudley.webp" alt="Dudley Golf Club Fairway Layout" class="w-full h-full object-cover object-center">
         </div>       
         <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
@@ -58,7 +57,6 @@
                 <a href="#enquire" class="w-full sm:w-auto bg-white/10 backdrop-blur border border-white/30 text-white text-sm font-bold tracking-wide uppercase px-8 py-4 rounded hover:bg-white/20 transition text-center">Request Brochure Pack</a>
             </div>
         </div>
-        <!-- Elegant subtle fade divider to the next section -->
         <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-stone-50 to-transparent"></div>
     </section>
 
@@ -70,19 +68,16 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            <!-- Pillar 1: Enjoyment & Value Pitch -->
             <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition">
                 <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-800 text-2xl mb-6">⛳</div>
                 <h3 class="text-xl font-bold text-stone-900 mb-3">Pure Golf, Total Freedom</h3>
                 <p class="text-stone-600 text-sm leading-relaxed">For less than £22 a week, our full package gives you unlimited access to the course. No calculating green fees or worrying about booking costs—just turn up, tee off, and enjoy your game whenever you want.</p>
             </div>
-            <!-- Pillar 2: Community Vibe -->
             <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition">
                 <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-800 text-2xl mb-6">🤝</div>
                 <h3 class="text-xl font-bold text-stone-900 mb-3">A Thriving Community</h3>
                 <p class="text-stone-600 text-sm leading-relaxed">From highly competitive weekend board medals and regional league matches to relaxed roll-ups and a vibrant clubhouse social scene, finding your perfect playing group is entirely effortless.</p>
             </div>
-            <!-- Pillar 3: Ladies & Junior Push -->
             <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition">
                 <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-800 text-2xl mb-6">🏌️‍♂️</div>
                 <h3 class="text-xl font-bold text-stone-900 mb-3">Next Generation & Ladies' Golf</h3>
@@ -185,11 +180,10 @@
         </div>
     </section>
 
-    <!-- 4. LEAD CAPTURE & CONVERSION SECTION -->
+    <!-- 4. LEAD CAPTURE SECTION -->
     <section id="enquire" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div class="bg-white rounded-2xl border border-stone-200 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
             
-            <!-- Left Info Panel Context -->
             <div class="lg:col-span-5 bg-emerald-950 text-white p-8 sm:p-12 flex flex-col justify-between relative">
                 <div class="absolute inset-0 opacity-10 mix-blend-overlay">
                     <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80" alt="Clubhouse Vibe" class="w-full h-full object-cover">
@@ -201,7 +195,7 @@
                     </p>
                     <div class="space-y-4 text-sm text-emerald-100">
                         <p class="flex items-center"><span class="text-xl mr-3">📍</span> Turners Hill, Rowley Regis, B65 9DP</p>
-                        <p class="flex items-center"><span class="text-xl mr-3">📧</span>markwilliams55@msn.com </p>
+                        <p class="flex items-center"><span class="text-xl mr-3">📧</span> markwilliams55@msn.com </p>
                     </div>
                 </div>
                 <div class="mt-12 pt-6 border-t border-emerald-800 text-xs text-emerald-300 relative z-10">
@@ -209,32 +203,27 @@
                 </div>
             </div>
 
-            <!-- Right Form Panel Processing Container -->
+            <!-- Form Panel Processing Container -->
             <div class="lg:col-span-7 p-8 sm:p-12 bg-white">
-                <!-- Success State Overlay Alert Interface (Controlled dynamically by JS) -->
-                <div id="success-alert" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-900 p-6 rounded-lg mb-6">
-                    <h4 class="font-bold text-lg mb-1">✓ Application Data Captured Successfully</h4>
-                    <p class="text-sm">Your digital brochure package has been prioritized. Please verify your email inbox shortly.</p>
-                </div>
-
-                <form id="membership-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                <!-- Formspree Production Endpoint Live Integration Layer -->
+                <form id="membership-form" action="https://formspree.io/f/xlgvonje" method="POST" class="space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Full Name</label>
-                            <input type="text" required class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
+                            <input type="text" name="name" required class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Phone Number</label>
-                            <input type="tel" required class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
+                            <input type="tel" name="phone" required class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
                         </div>
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Email Address</label>
-                        <input type="email" required class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
+                        <input type="email" name="email" required class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Preferred Membership Style</label>
-                        <select id="form-category-select" class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
+                        <select id="form-category-select" name="category" class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-emerald-700 bg-stone-50 text-stone-900 text-sm">
                             <option value="General Enquiry">Select Option...</option>
                             <option value="Traditional 7-Day">Traditional 7-Day / 5-Day</option>
                             <option value="Lifestyle Points Matrix">Flexible Points Matrix</option>
@@ -265,34 +254,12 @@
 
     <!-- INTERACTIVE FUNCTIONAL JAVASCRIPT LAYER -->
     <script>
-        /**
-         * Dynamically pre-selects the relevant dropdown item based on user layout interaction clicks
-         */
         function selectCategory(categoryValue) {
             const selectElement = document.getElementById('form-category-select');
             if (selectElement) {
                 selectElement.value = categoryValue;
             }
         }
-
-        /**
-         * Emulates dynamic web page form data submission processing securely on-screen
-         */
-        function handleFormSubmit(event) {
-            event.preventDefault(); 
-            
-            // Highlight visibility transitions for success tracking alerts
-            const successAlert = document.getElementById('success-alert');
-            const formElement = document.getElementById('membership-form');
-            
-            if (successAlert && formElement) {
-                successAlert.classList.remove('hidden');
-                formElement.reset();
-                
-                // Automatically scroll screen layout cleanly up to frame the visual validation confirmation
-                successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        }
     </script>
 </body>
-</html>18:52 26/05/2026
+</html>
