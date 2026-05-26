@@ -963,7 +963,6 @@ function closeLightbox() {
   
 
    
-
 <section id="membership" class="bg-forest text-white py-24 px-4 border-t border-[#C5A367]/10 relative overflow-hidden">
     <div class="absolute top-0 right-0 w-96 h-96 bg-[#C5A367]/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -975,17 +974,26 @@ function closeLightbox() {
             </h2>
             <div class="w-24 h-[2px] bg-gold mx-auto mb-8"></div>
             
-            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed text-sm md:text-base">
+            <p class="max-w-3xl mx-auto text-white/70 leading-relaxed text-sm md:text-base mb-10">
                 Become part of one of the Midlands' most welcoming golf clubs. 
                 Flexible options beautifully structured for full members, new lady golfers, and academy players.
             </p>
+
+            <!-- Premium Button linking to your standalone hub page -->
+            <div class="flex justify-center">
+                <a href="membership.html" class="inline-block border border-[#C5A367] text-[#C5A367] hover:bg-[#C5A367] hover:text-white font-semibold tracking-wider uppercase text-xs px-8 py-4 rounded transition shadow-md">
+                    Explore Categories & View Rates
+                </a>
+            </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch" id="membershipGrid">
-            </div>
+            <!-- Your dynamic category cards live here -->
+        </div>
 
     </div>
 </section>
+
 
   <div id="scorecard-modal" class="fixed inset-0 bg-black/90 z-[200] hidden items-center justify-center p-4">
     <div class="bg-[#F9F7F2] p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded shadow-2xl">
