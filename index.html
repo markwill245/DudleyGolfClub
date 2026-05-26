@@ -1547,21 +1547,30 @@ function renderMembership() {
     if (!grid) return;
 
     grid.innerHTML = membershipData.map(m => `
-<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
-    <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
+<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-8 shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between text-center group">
+    <div>
+        <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
 
-    <p class="text-5xl font-light text-white mb-6 tracking-tight">
-        ${m.price}
-    </p>
+        <p class="text-5xl font-light text-white mb-6 tracking-tight">
+            ${m.price}
+        </p>
 
-    <p class="text-sm text-white/70 leading-relaxed italic mb-8">
-        ${m.desc}
-    </p>
+        <p class="text-sm text-white/70 leading-relaxed italic mb-8 min-h-[45px]">
+            ${m.desc}
+        </p>
+    </div>
 
-    <a href="tel:01384233877"
-       class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
-        Call: 01384 233877
-    </a>
+    <div class="flex flex-col sm:flex-row gap-3 mt-auto pt-6 border-t border-white/5">
+        <a href="membership.html#categories"
+           class="flex-1 text-center bg-[#C5A367] text-stone-900 font-bold uppercase text-[11px] tracking-wider py-4 rounded hover:bg-white hover:text-stone-900 transition shadow-md no-underline">
+            View Rates & Info
+        </a>
+        <a href="tel:01384233877"
+           class="px-4 text-center border border-white/20 text-white/80 font-bold uppercase text-[11px] tracking-wider py-4 rounded hover:bg-white/10 hover:text-white transition no-underline"
+           title="Call Club Office">
+            📞 Call
+        </a>
+    </div>
 </div>
     `).join("");
 }
@@ -1647,16 +1656,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateClock, 1000);
 });
 
-/* =========================
-   GLOBAL SAFETY NET
-========================= */
 
-window.addEventListener("error", e => {
-    console.log("JS Error caught:", e.message);
-});
-
-// This closes the (() => { that is at the very top of your script
-})(); 
 </script>
 
 
