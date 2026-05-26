@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Shop Stock | Dudley Golf Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
@@ -42,13 +42,25 @@
 
         </div>
 
-        <div class="bg-[#132419] p-12 text-center text-white">
+        <div class="bg-[#132419] p-8 sm:p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
             <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
             
-            <a href="enquire.html" class="inline-block border border-[#C5A367] text-[#C5A367] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
-                Inquire About Stock
-            </a>
+            <form action="https://formspree.io/f/mkoepvge" method="POST" class="space-y-4 text-left max-w-xl mx-auto">
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider font-bold text-[#C5A367] mb-1">Your Email</label>
+                    <input type="email" name="email" required class="w-full bg-[#1c3224] border border-[#C5A367]/30 px-4 py-2 text-white text-sm rounded focus:outline-none focus:border-[#C5A367]">
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider font-bold text-[#C5A367] mb-1">Message / Requirements</label>
+                    <textarea name="message" required rows="4" placeholder="What gear, sizing, or fittings are you inquiring about?" class="w-full bg-[#1c3224] border border-[#C5A367]/30 p-4 text-white text-sm rounded focus:outline-none focus:border-[#C5A367] placeholder-white/20"></textarea>
+                </div>
+                <div class="text-center pt-2">
+                    <button type="submit" class="w-full inline-block border border-[#C5A367] text-[#C5A367] bg-transparent px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition cursor-pointer">
+                        Send Message
+                    </button>
+                </div>
+            </form>
         </div>
 
         <div class="mt-20 text-center">
