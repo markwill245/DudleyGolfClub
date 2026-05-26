@@ -16,24 +16,28 @@
 <body class="bg-stone-50 text-stone-800 antialiased font-sans">
 
     <!-- HEADER / NAVIGATION BAR -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm">
+ <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <!-- Placeholder for Club Logo / Identity -->
-                <div class="bg-emerald-900 text-white font-bold p-2.5 rounded text-sm tracking-wider uppercase">DGC</div>
+            
+            <a href="index.html" class="flex items-center space-x-3 no-underline group select-none">
+                <div class="bg-emerald-900 text-white font-bold p-2.5 rounded text-sm tracking-wider uppercase group-hover:bg-emerald-800 transition shadow-sm">DGC</div>
                 <div>
-                    <span class="block font-bold text-stone-900 tracking-tight text-lg leading-tight">Dudley Golf Club</span>
+                    <span class="block font-bold text-stone-900 tracking-tight text-lg leading-tight group-hover:text-emerald-800 transition">Dudley Golf Club</span>
                     <span class="block text-xs text-stone-500 font-medium tracking-wide uppercase">Turners Hill, Rowley Regis</span>
                 </div>
-            </div>
+            </a>
+
             <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide uppercase text-stone-600">
+                <a href="index.html" class="text-emerald-800 hover:text-emerald-900 transition normal-case font-bold flex items-center gap-1">
+                    ← Home Site
+                </a>
                 <a href="#why-us" class="hover:text-emerald-800 transition">Why Us</a>
                 <a href="#categories" class="hover:text-emerald-800 transition">Categories</a>
                 <a href="#enquire" class="bg-emerald-900 text-white px-5 py-2.5 rounded hover:bg-emerald-800 transition shadow-sm">Enquire Now</a>
             </nav>
+
         </div>
     </header>
-
     <!-- 1. HERO SECTION -->
     <section class="relative bg-stone-950 text-white overflow-hidden min-h-[85vh] flex items-center">
         <!-- Background Image Container Layer (The Course is the Hero) -->
