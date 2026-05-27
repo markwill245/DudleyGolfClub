@@ -347,6 +347,7 @@ img {
         <a href="#course" class="hover:text-gold transition">Course Guide</a>
         <a href="#heritage" class="hover:text-gold transition">History</a>
         <a href="#hospitality" class="hover:text-gold transition">Hospitality & Events</a>
+        <a href="#announcements" class="hover:text-gold transition">Club News</a>
         <a href="#pro-shop" class="hover:text-gold transition">Pro Shop</a>
         <a href="#visitors" class="hover:text-gold transition">Visitors</a>
         <a href="#membership" class="hover:text-gold transition">Membership</a>
@@ -1666,6 +1667,71 @@ window.addEventListener("error", e => {
         <path d="m18 15-6-6-6 6"/>
     </svg>
 </a>
+<!-- ========================================== -->
+    <!-- LATEST CLUB NEWS & ANNOUNCEMENTS SECTION    -->
+    <!-- ========================================== -->
+    <section id="announcements" class="border-t border-[#C5A367]/20 py-24 px-6 bg-white text-[#132419]">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-3">
+                <span class="text-[#C5A367] uppercase tracking-[0.2em] text-xs font-bold">Stay Updated</span>
+                <h2 class="serif text-4xl text-[#132419]">Latest News & Announcements</h2>
+                <div class="w-16 h-0.5 bg-[#C5A367] mx-auto mt-4"></div>
+            </div>
+
+            <!-- News Grid (Will be dynamically populated by Sanity) -->
+            <div id="announcements-feed" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Notice 1: Course Update -->
+                <div class="bg-[#F9F7F2] p-8 border border-[#C5A367]/10 shadow-sm flex flex-col justify-between transition hover:border-[#C5A367]/40 duration-300">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] bg-[#132419] text-[#C5A367] font-bold uppercase tracking-widest px-2 py-1">Course</span>
+                            <span class="text-xs text-gray-400">May 2026</span>
+                        </div>
+                        <h3 class="serif text-xl mb-3 text-[#132419]">Greens Drainage Scheme Progress</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-6">
+                            An update on the phase 1 fairway drainage installations at Turners Hill. Contractor works are progressing smoothly to safeguard our historic fairways against seasonal flooding.
+                        </p>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-wider font-bold text-[#C5A367] border-t border-gray-200/60 pt-4 block">Dudley Golf Club Committee</span>
+                </div>
+
+                <!-- Notice 2: Captain's Update -->
+                <div class="bg-[#F9F7F2] p-8 border border-[#C5A367]/10 shadow-sm flex flex-col justify-between transition hover:border-[#C5A367]/40 duration-300">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] bg-[#C5A367] text-[#132419] font-bold uppercase tracking-widest px-2 py-1">Captains</span>
+                            <span class="text-xs text-gray-400">May 2026</span>
+                        </div>
+                        <h3 class="serif text-xl mb-3 text-[#132419]">Charity Drive-In Success</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-6">
+                            A massive thank you to all members who attended the annual Captains' Drive-In on the 1st tee. Thanks to your incredible generosity, our opening event raised £1,250 for our 2026 fund.
+                        </p>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-wider font-bold text-[#C5A367] border-t border-gray-200/60 pt-4 block">Club Captain</span>
+                </div>
+
+                <!-- Notice 3: Competitions Update -->
+                <div class="bg-[#F9F7F2] p-8 border border-[#C5A367]/10 shadow-sm flex flex-col justify-between transition hover:border-[#C5A367]/40 duration-300">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] bg-[#132419] text-white font-bold uppercase tracking-widest px-2 py-1">Match & Handicap</span>
+                            <span class="text-xs text-gray-400">May 2026</span>
+                        </div>
+                        <h3 class="serif text-xl mb-3 text-[#132419]">Weekend Medal Entry Notice</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed mb-6">
+                            Online registration for the upcoming historic board competition is now live on the club portal. Please ensure your handicap cards are fully submitted prior to Friday night's cutoff.
+                        </p>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-wider font-bold text-[#C5A367] border-t border-gray-200/60 pt-4 block">Handicap Committee</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 <!-- THE FOOTER -->
 <footer class="bg-[#0D1712] text-white py-20 px-8 border-t border-[#C5A367]/20">
