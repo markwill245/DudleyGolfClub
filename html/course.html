@@ -1,0 +1,1685 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Guide | Dudley Golf Club</title>
+ <link rel="stylesheet" href="./dist/output.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+              <!-- css -->
+  <style>
+:root { --gold: #C5A367; --forest: #132419; --cream: #F9F7F2; }
+.bg-cream {
+    background-color: var(--cream);
+}
+
+body { 
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--forest);
+    color: #ffffff;
+}
+a[href^="tel"] {
+    color: #C5A367;
+    text-decoration: none;
+}
+#menu-btn div {
+  display: block !important;
+  width: 24px !important;
+  height: 2px !important;
+  background-color: #C5A367 !important;
+  opacity: 1 !important;
+}
+
+/* 👇 ADD IT HERE */
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+.serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* HEADER */
+.nav-blur {
+    background: rgba(19, 36, 25, 0.98);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* SCROLLED STATE */
+.nav-blur.scrolled {
+    background-color: #132419 !important; /* Forces the solid forest green */
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(197, 163, 103, 0.2); /* Adds a subtle gold tint to the bottom edge */
+}
+   
+
+/* MOBILE SPACING & MENU FIXES */
+@media (max-width: 768px) {
+    section {
+    padding-top: 7rem !important;
+    padding-bottom: 5rem !important;
+}
+    h1 { font-size: 2.8rem !important; line-height: 1.1; }
+    h2 { font-size: 2.2rem !important; }
+    h3 { font-size: 1.6rem !important; }
+    p { font-size: 0.95rem; line-height: 1.6; }
+
+    #hole-nav-container {
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* Force the main nav bar to be solid on mobile */
+   nav {
+    background-color: #132419 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 2px 12px rgba(0,0,0,0.18);
+}
+
+    /* Force the sliding menu to be solid on mobile */
+    #nav-links { 
+        background-color: #132419 !important; 
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+
+
+/* HOLE CARDS */
+.hole-card {
+    background: rgba(19, 36, 25, 0.7);
+    border: 1px solid rgba(197,163,103,0.15);
+    color: white;
+    transition: all 0.3s ease;
+   backdrop-filter: blur(2px);
+}
+
+.hole-card:hover {
+    transform: scale(1.03);
+    border-color: rgba(197,163,103,0.6);
+}
+/* GLOW ANIMATION */
+@keyframes goldPulse {
+    0% {
+        box-shadow:
+            0 0 0 1px rgba(197,163,103,0.4),
+            0 8px 25px rgba(197,163,103,0.25),
+            0 0 15px rgba(197,163,103,0.25);
+    }
+    50% {
+        box-shadow:
+            0 0 0 1px rgba(197,163,103,0.5),
+            0 10px 30px rgba(197,163,103,0.35),
+            0 0 35px rgba(197,163,103,0.6);
+    }
+    100% {
+        box-shadow:
+            0 0 0 1px rgba(197,163,103,0.4),
+            0 8px 25px rgba(197,163,103,0.25),
+            0 0 15px rgba(197,163,103,0.25);
+    }
+}
+
+/* SCORECARD UPGRADE */
+#scorecard-modal table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#scorecard-modal thead {
+    background: #132419;
+    color: white;
+}
+
+#scorecard-modal tbody tr {
+    transition: all 0.2s ease;
+}
+
+#scorecard-modal tbody tr:hover {
+    background: rgba(197,163,103,0.1);
+    transform: scale(1.01);
+}
+
+#scorecard-modal td,
+#scorecard-modal th {
+    padding: 12px;
+}
+
+#scorecard-modal td:first-child {
+    font-weight: bold;
+    color: #C5A367;
+}
+
+/* SCROLLBAR */
+.custom-scrollbar::-webkit-scrollbar { display: none; }
+
+/* HERO */
+.hero-bg { 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/home-page.webp');
+    background-size: cover; 
+    background-position: center;
+}
+
+:target { scroll-margin-top: 100px; }
+
+/* NAV ANIMATION */
+#nav-links {
+    will-change: transform;
+}
+#nav-links a { position: relative; }
+
+#nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--gold);
+    transition: 0.3s ease;
+}
+
+#nav-links a:hover::after { width: 100%; }
+
+a, button { transition: all 0.25s ease; }
+button:active, a:active { transform: scale(0.97); }
+section[id] {
+            scroll-margin-top: 80px;
+        }
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* =========================================
+   FOOTER SOCIAL FIX
+========================================= */
+
+.social-links {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 6px 4px;
+}
+
+/* =========================================
+   PRO SHOP MOBILE POLISH
+========================================= */
+
+@media (max-width: 768px) {
+
+    .pro-shop-card,
+    .service-card,
+    .shop-card {
+
+        width: 100%;
+        min-height: 150px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 26px;
+
+        border-radius: 8px;
+
+        margin-bottom: 18px;
+
+        box-shadow:
+            0 6px 18px rgba(0,0,0,0.16);
+
+    }
+
+    .pro-shop-card h3,
+    .service-card h3,
+    .shop-card h3 {
+
+        margin-bottom: 12px;
+        line-height: 1.2;
+
+    }
+
+    .pro-shop-card p,
+    .service-card p,
+    .shop-card p {
+
+        line-height: 1.5;
+        opacity: 0.92;
+
+    }
+
+}		
+
+</style>
+<style>
+/* =========================================
+   GLOBAL MOBILE FIXES
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Prevent elements overflowing mobile width */
+* {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+/* Main layout containers */
+section,
+div,
+main,
+nav,
+footer {
+    max-width: 100%;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent accidental mobile overflow */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    * {
+        max-width: 100vw;
+    }
+
+}
+</style>
+</head>
+<body class="antialiased">
+
+
+
+    <div class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+        <div id="live-clock">Loading...</div>
+        <div class="flex gap-6">
+            <span id="weather">Dudley: 14°C</span>
+           <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
+        </div>
+    </div>
+
+   <nav class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+        <a href="#" class="flex flex-col relative z-[100]">
+            <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
+            <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+        </a>
+        
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[100] p-2 focus:outline-none">
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+        </button>
+
+    <!-- FIXED MOBILE MENU: Links are now INSIDE the div -->
+   <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
+	
+    <a href="index.html" class="hover:text-gold transition">Home</a>
+
+<a href="course.html" class="hover:text-gold transition">Course Guide</a>
+
+<a href="history.html" class="hover:text-gold transition">History</a>
+
+<a href="hospitality.html" class="hover:text-gold transition">Hospitality</a>
+
+<a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
+
+<a href="visitors.html" class="hover:text-gold transition">Visitors</a>
+
+<a href="membership.html" class="hover:text-gold transition">Membership</a>
+	
+</div>
+    
+    <a href="https://www.dudleygolfclub.com/login.php" target="_blank" class="relative z-[200] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
+</nav>
+
+    <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
+    <div class="max-w-4xl px-4">
+    <h1 class="serif text-6xl md:text-9xl mb-4 italic tracking-tight leading-[0.95]">
+    Heritage in every <span class="text-[#C5A367]">detail.</span>
+</h1>
+        
+        <p class="serif text-2xl md:text-3xl text-[#C5A367] tracking-[0.1em] mb-6 italic">
+            Established 1893
+        </p>
+        
+        <div class="w-32 h-1 bg-[#C5A367] mx-auto mb-8"></div>
+        
+        <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-90 font-light">
+            The Black Country's Toughest Parkland Challenge
+        </p>
+    </div>
+</header>
+
+    <section class="bg-forest py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="border border-[#C5A367]/30 p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+
+            <div class="text-center md:text-left">
+                <h2 class="serif text-3xl text-gold italic">
+                    Our Famous "Amen Corner"
+                </h2>
+
+                <p class="text-white/60 text-xs uppercase tracking-widest mt-2">
+                    Holes 5, 6 & 7 — Survive the stretch
+                </p>
+            </div>
+
+            <p class="text-white/80 text-sm italic max-w-xl text-center md:text-left leading-relaxed">
+                A defining stretch of golf that has tested players for over a century.
+                From the plateau of the 5th to the precision required on the 7th.
+            </p>
+
+            <div class="flex gap-4 items-center">
+
+                <!-- Course Guide -->
+               <a href="course.html"
+                   onclick="setHole(5)"
+                   class="text-gold border-b border-gold pb-1 text-[10px] uppercase tracking-widest font-bold hover:text-white transition">
+                    Explore the 5th
+                </a>
+
+                <!-- Gallery -->
+                <a href="#amen-gallery"
+                   class="bg-gold text-forest px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-white transition">
+                    View Gallery
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AMEN CORNER FEATURE -->
+<section class="bg-forest py-16 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <!-- FEATURE PANEL -->
+        <div class="border-2 border-[#C5A367] !important bg-[#0D1712] py-20 px-12 lg:py-28 lg:px-16">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- LEFT -->
+                <div>
+                    <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-5">
+                        The Signature Stretch
+                    </p>
+
+                    <h2 class="serif text-4xl lg:text-5xl text-white italic leading-snug pb-1 -mt-1">
+                        Our Famous
+                        <span class="text-[#C5A367]">Amen Corner</span>
+                    </h2>
+
+                    <div class="w-24 h-px bg-[#C5A367]/50 my-8"></div>
+                                    <!-- STAFF: Hole 5 Description -->
+                    <p class="text-white/70 leading-relaxed text-sm lg:text-base max-w-xl">
+                        Three unforgettable holes carved through rolling parkland.
+                        Precision from the elevated 5th, nerve across the demanding 6th,
+                        and absolute commitment on the iconic par 3 seventh.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mt-10">
+
+                        <a href="#course"
+                           onclick="setHole(5)"
+                           class="border border-[#C5A367] text-[#C5A367] px-6 py-3 uppercase tracking-[0.25em] text-[10px] hover:bg-[#C5A367] hover:text-[#0D1712] transition duration-300">
+                            Explore the Course
+                        </a>
+
+                        <a href="#amen-gallery"
+                           class="bg-[#C5A367] text-[#0D1712] px-6 py-3 uppercase tracking-[0.25em] text-[10px] hover:bg-white transition duration-300">
+                            View Gallery
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT HERO IMAGE -->
+                <div class="relative h-full min-h-[600px]">
+
+                    <img src="images/amen-corner/hero.webp"
+                         alt="Amen Corner"
+                         class="w-full h-full min-h-[600px] object-cover">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+
+                    <div class="absolute bottom-12 left-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-2">
+                            Since 1893
+                        </p>
+
+                        <h3 class="serif text-3xl text-white italic">
+                            Holes 5 • 6 • 7
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="h-20 bg-gradient-to-b from-[#08110D] to-[#F9F7F2]"></div>
+
+</section>
+<div class="h-20 bg-gradient-to-b from-[#08110D] to-[#F9F7F2]"></div>
+
+<!-- ===================================================== -->
+<!-- AMEN CORNER PREMIUM AUGUSTA-STYLE GALLERY -->
+<!-- ===================================================== -->
+
+<section id="amen-gallery"
+         class="relative z-20 bg-[#08110D] py-24 overflow-hidden isolate">
+		 <!-- HARD BACKGROUND -->
+<div class="absolute inset-0 bg-[#08110D] -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-24">
+
+            <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
+                Championship Photography
+            </p>
+
+            <h2 class="serif text-5xl md:text-6xl text-white italic relative inline-block">
+                Our Amen Corner Gallery
+
+                <!-- GOLD UNDERLINE -->
+                <span class="absolute left-1/2 -translate-x-1/2 bottom-[-18px] w-28 h-px bg-[#C5A367]/50"></span>
+            </h2>
+                                  <!-- STAFF: Hole 5 Description -->
+            <p class="text-white/60 max-w-2xl mx-auto mt-10 leading-relaxed text-sm md:text-base">
+                Three unforgettable holes where precision, beauty and pressure combine
+                to create the defining stretch of the golf course.
+            </p>
+
+        </div>
+
+
+        <!-- ===================================================== -->
+        <!-- HOLE 5 -->
+        <!-- ===================================================== -->
+
+        <div class="mb-32">
+
+            <div class="flex items-end justify-between mb-10">
+
+                <div>
+                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">
+                        Hole Five
+                    </p>
+
+                    <h3 class="serif text-4xl md:text-5xl text-white italic">
+                        The Plateau
+                    </h3>
+                </div>
+
+                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">
+                    Par 4
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+                                   <!-- STAFF: Hole 5-1 image -->
+                <!-- IMAGE 1 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole5-1.webp')">
+
+                    <img src="images/amen-corner/hole5-1.webp"
+                         alt="Hole 5"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <!-- DARK OVERLAY -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <!-- GOLD BORDER -->
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <!-- TEXT -->
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Five
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Opening Drive
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                                      <!-- STAFF: Hole 5-2 image -->
+                <!-- IMAGE 2 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole5-2.webp')">
+
+                    <img src="images/amen-corner/hole5-2.webp"
+                         alt="Hole 5"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Five
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            The Approach
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                                    <!-- STAFF: Hole 5-3 image -->
+                <!-- IMAGE 3 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole5-3.webp')">
+
+                    <img src="images/amen-corner/hole5-3.webp"
+                         alt="Hole 5"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Five
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Evening Light
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================================== -->
+        <!-- HOLE 6 -->
+        <!-- ===================================================== -->
+
+        <div class="mb-32">
+
+            <div class="flex items-end justify-between mb-10">
+
+                <div>
+                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">
+                        Hole Six
+                    </p>
+
+                    <h3 class="serif text-4xl md:text-5xl text-white italic">
+                        Hells Corner
+                    </h3>
+                </div>
+
+                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">
+                    Par 3
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+                                     <!-- STAFF: Hole 6-1 image -->
+                <!-- IMAGE 1 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole6-1.webp')">
+
+                    <img src="images/amen-corner/hole6-1.webp"
+                         alt="Hole 6"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Six
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Through The Pines
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                                   <!-- STAFF: Hole 6-2 image -->
+                <!-- IMAGE 2 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole6-2.webp')">
+
+                    <img src="images/amen-corner/hole6-2.webp"
+                         alt="Hole 6"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Six
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Championship Line
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                                     <!-- STAFF: Hole 6-3 image -->
+                <!-- IMAGE 3 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole6-3.webp')">
+
+                    <img src="images/amen-corner/hole6-3.webp"
+                         alt="Hole 6"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Six
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Golden Hour
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================================== -->
+        <!-- HOLE 7 -->
+        <!-- ===================================================== -->
+
+        <div>
+
+            <div class="flex items-end justify-between mb-10">
+
+                <div>
+                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">
+                        Hole Seven
+                    </p>
+
+                    <h3 class="serif text-4xl md:text-5xl text-white italic">
+                        The Gauntlet
+                    </h3>
+                </div>
+
+                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">
+                    Par 3
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+                                 <!-- STAFF: Hole 7-1 image -->
+                <!-- IMAGE 1 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole7-1.webp')">
+
+                    <img src="images/amen-corner/hole7-1.webp"
+                         alt="Hole 7"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Seven
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            The Carry
+                        </h4>
+
+                    </div>
+
+                </div>
+                                 <!-- STAFF: Hole 7-2 image -->
+
+                <!-- IMAGE 2 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole7-2.webp')">
+
+                    <img src="images/amen-corner/hole7-2.webp"
+                         alt="Hole 7"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Seven
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Guarded Green
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                                <!-- STAFF: Hole 7-3 image -->
+                <!-- IMAGE 3 -->
+                <div class="group relative overflow-hidden cursor-pointer"
+                     onclick="openLightbox('images/amen-corner/hole7-3.webp')">
+
+                    <img src="images/amen-corner/hole7-3.webp"
+                         alt="Hole 7"
+                         class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+
+                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
+                            Hole Seven
+                        </p>
+
+                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
+                            Final Test
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- PREMIUM LIGHTBOX -->
+<!-- ===================================================== -->
+
+<div id="lightbox"
+     class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-6">
+
+    <!-- CLOSE -->
+    <button onclick="closeLightbox()"
+            class="absolute top-6 right-8 text-white text-5xl hover:text-[#C5A367] transition duration-300">
+        &times;
+    </button>
+
+    <!-- IMAGE -->
+    <img id="lightbox-img"
+         src=""
+         class="max-w-full max-h-full object-contain shadow-2xl">
+</div>
+
+
+<!-- ===================================================== -->
+<!-- LIGHTBOX SCRIPT -->
+<!-- ===================================================== -->
+
+<script>
+
+function openLightbox(src) {
+
+    document.getElementById('lightbox-img').src = src;
+
+    document.getElementById('lightbox').classList.remove('hidden');
+
+    document.getElementById('lightbox').classList.add('flex');
+
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+
+    document.getElementById('lightbox').classList.add('hidden');
+
+    document.getElementById('lightbox').classList.remove('flex');
+
+    document.body.style.overflow = 'auto';
+}
+
+</script>
+    
+	
+	<!-- STAFF: SOCIAL MEDIA LINKS (Moved to bottom) -->
+	
+<div class="flex justify-center items-center gap-10 py-12 bg-[#f9f7f2] text-gold text-sm uppercase tracking-[0.2em] border-t border-gray-100">
+    <a href="https://www.facebook.com/DudleyGolfClub" target="_blank" class="hover:text-[#132419] transition-all">
+        Facebook
+    </a>
+
+    <a href="https://www.instagram.com/dudleygolfclub?igsh=MTd0NGVwMmt1Zzhoag==" target="_blank" class="hover:text-[#132419] transition-all">
+        Instagram
+    </a>
+
+    <a href="https://x.com/dudleygolfclub" target="_blank" class="hover:text-[#132419] transition-all">
+        X / Twitter
+    </a>
+</div>
+
+    <section id="course" class="max-w-7xl mx-auto px-4 py-20">
+        <div class="flex flex-col md:flex-row gap-10">
+            <div class="md:w-1/3 bg-forest p-6 ">
+                <h2 class="serif text-5xl mb-4 text-[#132419]">The 18 Holes</h2>
+            <button onclick="toggleScorecard()" class="mb-8 text-[10px] tracking-[0.2em] font-bold uppercase border border-gold/30 px-6 py-3 !text-gold hover:bg-gold hover:text-white hover:shadow-[0_0_20px_rgba(197,163,103,0.3)] transition-all duration-500 rounded-sm">
+    View Full Scorecard
+</button>
+                <div id="hole-nav-container" class="flex md:flex-col overflow-x-auto md:overflow-y-auto custom-scrollbar gap-2 pb-4 md:h-[600px]"></div>
+            </div>
+            <div class="md:w-2/3 bg-forest rounded shadow-2xl overflow-hidden">
+             <div class="h-72 md:h-[400px] bg-black relative overflow-hidden">
+<!-- Gallery Container (Paste this above the img tag) -->
+<div id="h-gallery" class="flex gap-2 p-3 bg-[#08110D] border-b border-[#C5A367]/20">
+    <!-- JS will inject thumbnails here -->
+</div>
+    <img id="h-img"
+         src="images/hole1.webp"
+         class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-[#132419]/80 via-[#132419]/20 to-transparent"></div>
+
+</div>  
+
+    
+               <div class="p-8 md:p-12 bg-forest">
+                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
+                        <div>
+                            <span id="h-num" class="serif text-6xl text-gold italic"></span>
+                            <h3 id="h-name" class="serif text-5xl md:text-6xl text-white mt-2 italic tracking-wide"></h3>
+                        </div>
+                        <div class="text-right">
+                            <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 mb-10">
+                        <div class="bg-white/5 p-4 text-center"><p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p><p id="h-white" class="serif text-xl text-white"></p></div>
+                        <div class="bg-white/5 p-4 text-center"><p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p><p id="h-yellow" class="serif text-xl text-yellow-400"></p></div>
+                        <div class="bg-white/5 p-4 text-center"><p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p><p id="h-red" class="serif text-xl text-red-500"></p></div>
+                    </div>
+                    <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
+                    <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
+                        <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
+                        <p id="h-tip" class="text-white italic"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+    <footer class="bg-forest-dark text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+            <div class="space-y-8">
+                <div class="flex flex-col">
+                    <span class="serif text-4xl tracking-widest leading-none">DUDLEY</span>
+                    <span class="text-[10px] tracking-[0.4em] uppercase text-gold">Golf Club Est. 1893</span>
+                </div>
+                <div class="space-y-4 text-sm opacity-70 leading-relaxed">
+                    <p class="font-bold text-white opacity-100 uppercase text-[10px] tracking-widest">Our Location</p>
+                    <p>Turners Hill, Oakham,<br>Dudley, West Midlands, DY2 7JL</p>
+                    <p>Pro Shop: 01384 254020<br>Office: 01384 253020</p>
+                </div>
+				<div class="flex gap-6 pt-4 text-gold text-xs uppercase tracking-[0.2em]">
+    <a href="https://www.facebook.com/DudleyGolfClub" target="_blank" class="hover:text-white transition-all">
+        Facebook
+    </a>
+
+    <a href="https://www.instagram.com/dudleygolfclub?igsh=MTd0NGVwMmt1Zzhoag==" target="_blank" class="hover:text-white transition-all">
+        Instagram
+    </a>
+
+    <a href="https://x.com/dudleygolfclub" target="_blank" class="hover:text-white transition-all">
+        X
+    </a>
+</div>
+				<a href="#book"
+   class="inline-block px-6 py-3 border border-gold text-gold uppercase tracking-[0.2em] text-xs hover:bg-gold hover:text-black transition-all duration-300">
+   Book Tee Time
+</a>
+                <div class="pt-8 border-t border-white/10 text-[9px] uppercase tracking-[0.3em] opacity-40">
+                    © <span id="year"></span> Dudley Golf Club. All Rights Reserved.
+                </div>
+            </div>
+            <div class="h-80 w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden grayscale opacity-80 hover:grayscale-0 transition-all duration-700 shadow-2xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk!4v1709142000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+  <div id="scorecard-modal" class="fixed inset-0 bg-black/90 z-[200] hidden items-center justify-center p-4">
+    <div class="bg-[#F9F7F2] p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded shadow-2xl">
+        <div class="flex justify-between items-center mb-6 border-b border-gray-200 pb-4 text-[#132419]">
+            <h3 class="serif text-3xl italic">Course Scorecard</h3>
+            <button onclick="toggleScorecard()" class="text-4xl text-gold/50 hover:text-gold transition-colors">×</button>
+        </div>
+
+        <table class="w-full text-center border-collapse overflow-hidden  shadow-xl">
+            <thead class="bg-forest text-white text-[10px] uppercase font-bold">
+                <tr>
+                    <th class="p-3">Hole</th>
+                    <th class="p-3">Name</th>
+                    <th class="p-3">White</th>
+                    <th class="p-3">Yellow</th>
+                    <th class="p-3">Red</th>
+                    <th class="p-3">Par</th>
+                    <th class="p-3">SI</th>
+                    <th class="p-3">Score</th>
+                </tr>
+            </thead>
+            <tbody id="scorecard-body" class="text-sm text-[#132419]"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+(() => {
+"use strict";
+
+/* =========================
+   SAFE GUARDS
+========================= */
+
+if (window.__SITE_INIT__) {
+    console.warn("Script already initialised - blocking duplicate run.");
+    return;
+}
+window.__SITE_INIT__ = true;
+
+/* =========================
+   DATA
+========================= */
+
+const courseData = [
+    {          <!-- STAFF: Hole 1 name-image-yards -->
+        number: 1, name: "The Dog-Leg", par: 5, si: 9, 
+        w: 483, y: 473, r: 464,
+        images: [
+            "images/hole1.webp",
+            "images/hole1-1.webp",
+            "images/hole1-view3.webp"
+			                                         <!-- STAFF: Hole 1 description Tip -->			                                        
+        ],
+        desc: "A challenging start to the round requiring precision from the tee.",
+        tip: "A straight tee shot is required to a long left sweeping fairway followed by a club of choice for the second shot and then careful consideration is required for the shot to a sloping green."
+    },
+    { 
+	          <!-- STAFF: Hole 2 name-image-yards --> 
+        number: 2, name: "Risk & Reward", par: 4, si: 17, 
+        w: 257, y: 251, r: 167,
+        images: ["images/hole2.webp", "images/hole2-2.webp", "images/hole2-view3.webp"],
+		
+		                                           <!-- STAFF: Hole 2 description/ Tip -->	
+		                                           
+        desc: "Test your nerve on this tactical short hole.",
+        tip: "A steady tee shot followed by an accurate pitch to a narrow raised green."
+    },
+    { 
+	            <!-- STAFF: Hole 3 name-image-yards --> 
+        number: 3, name: "Marker Pole", par: 4, si: 1, 
+        w: 443, y: 433, r: 421,
+        images: ["images/hole3.webp", "images/hole3-3.webp", "images/hole3-view3.webp"],
+		
+		                                         <!-- STAFF: Hole 3 description/ Tip -->
+												 
+        desc: "Note the horizontal dry ditch across the fairway.",
+        tip: "A difficult blind straight tee shot."
+    },
+    { 
+	          <!-- STAFF: Hole 4 name-image-yards -->    
+        number: 4, name: "The Stamp", par: 3, si: 13, 
+        w: 143, y: 131, r: 119,
+        images: ["images/hole4.webp", "images/hole4-4.webp", "images/hole4-view3.webp"],
+		
+		                                       <!-- STAFF: Hole 4 description/ Tip -->
+											   
+        desc: "Short but dangerous. Club selection is everything.",
+        tip: "Our own postage stamp hole with a bunker across the front."
+    },
+    {         
+             <!-- STAFF: Hole 5 name-image-yards -->
+        number: 5, name: "The Plateau", par: 4, si: 3, 
+        w: 425, y: 415, r: 334,
+        images: ["images/hole5.webp", "images/hole5-5.webp", "images/hole5-view3.webp"],
+		
+		                                     <!-- STAFF: Hole 5 description/ Tip -->
+											 
+        desc: "The first hole of our famous 'Amen Corner'.",
+        tip: "Steady shot onto the top of a plateau fairway."
+    },
+    { 
+	          <!-- STAFF: Hole 6 name-image-yards -->
+        number: 6, name: "Hells Corner", par: 3, si: 7, 
+        w: 182, y: 174, r: 159,
+        images: ["images/hole6.webp", "images/hole6-6.webp", "images/hole6-view3.webp"],
+		
+		                                    <!-- STAFF: Hole 6 description/ Tip -->
+											
+        desc: "The second challenge of Amen Corner.",
+        tip: "A long difficult hole to a right to left sloping green."
+    },
+    { 
+	         <!-- STAFF: Hole 7 name-image-yards -->
+        number: 7, name: "The Gauntlet", par: 3, si: 5, 
+        w: 199, y: 180, r: 150,
+        images: ["images/hole7.webp", "images/hole7-7.webp", "images/hole7-view3.webp"],
+		
+		                                  <!-- STAFF: Hole 7 description/ Tip -->
+										  
+        desc: "The finale of Amen Corner.",
+        tip: "probably the most difficult of the three with very little room for manoeuvre. A par here is a great score"
+    },
+    { 
+	          <!-- STAFF: Hole 8 name-image-yards -->
+        number: 8, name: "The Summit", par: 4, si: 15, 
+        w: 298, y: 291, r: 272,
+        images: ["images/hole8.webp", "images/hole8-8.webp", "images/hole8-view3.webp"],
+		
+		                                 <!-- STAFF: Hole 8 description/ Tip -->
+										 
+        desc: "The peak of the course with breathtaking panoramas.",
+        tip: "A straight forward uphill hole to the very top of the course with outstanding views across several counties to the west and the next nearest highest point being the Ural mountains in Russia!"
+    },
+    { 
+	          <!-- STAFF: Hole9 name-image-yards -->
+        number: 9, name: "Devils Horns", par: 4, si: 11, 
+        w: 388, y: 382, r: 314,
+        images: ["images/hole9.webp", "images/hole9-9.webp", "images/hole9-view3.webp"],
+		
+		                                <!-- STAFF: Hole 9 description/ Tip -->
+										
+        desc: "A tight fairway that tests your ability to play the slopes.",
+        tip: "Use slopes,don't miss left."
+    },
+    { 
+	          <!-- STAFF: Hole 10 name-image-yards -->
+        number: 10, name: "The Dell", par: 4, si: 16, 
+        w: 322, y: 310, r: 251,
+        images: ["images/hole10.webp", "images/hole10-10.webp", "images/hole10-view3.webp"],
+		
+		                                <!-- STAFF: Hole 10 description/ Tip -->
+										
+        desc: "Accuracy is rewarded on this scenic par 4.",
+        tip: "A straight forward hole onto a slightly raised green."
+    },
+    { 
+	          <!-- STAFF: Hole 11 name-image-yards -->
+        number: 11, name: "The Trap", par: 3, si: 10, 
+        w: 173, y: 163, r: 105,
+        images: ["images/hole11.webp", "images/hole11-11.webp", "images/hole11-view3.webp"],
+		
+		                             <!-- STAFF: Hole 11 description/ Tip -->
+									 
+        desc: "Stay centered to avoid the sand traps.",
+        tip: "Bunkers either side to be aware of."
+    },
+    { 
+	          <!-- STAFF: Hole 12 name-image-yards -->
+        number: 12, name: "Calm", par: 4, si: 18, 
+        w: 269, y: 264, r: 258,
+        images: ["images/hole12.webp", "images/hole12-12.webp", "images/hole12-view3.webp"],
+		
+		                            <!-- STAFF: Hole 12 description/ Tip -->
+									  
+        desc: "A generous fairway offering a real birdie opportunity.",
+        tip: "Possible to hit the green with a good tee shot.Avoid Bunkers Left & Right."
+    },
+    { 
+	         <!-- STAFF: Hole 13 name-image-yards -->
+        number: 13, name: "The Stables", par: 5, si: 6, 
+        w: 523, y: 452, r: 442,
+        images: ["images/hole13.webp", "images/hole13-13.webp", "images/hole13-view3.webp"],
+		
+		                           <!-- STAFF: Hole 13 description/ Tip -->
+								   
+								   
+        desc: "A long journey home requiring strong ball striking.",
+        tip: "A late dogleg left after downhill shots."
+    },
+    { 
+	          <!-- STAFF: Hole 14 name-image-yards -->
+        number: 14, name: "The Snap", par: 3, si: 14, 
+        w: 174, y: 168, r: 154,
+        images: ["images/hole14.webp", "images/hole14-14.webp", "images/hole14-view3.webp"],
+		
+		                           <!-- STAFF: Hole 14 description/ Tip -->
+								   
+        desc: "A beautiful drop shot par 3.",
+        tip: "A slightly downhill green requires an accurate tee shot."
+    },
+    { 
+	          <!-- STAFF: Hole 15 name-image-yards -->
+        number: 15, name: "The Climb", par: 4, si: 8, 
+        w: 304, y: 298, r: 294,
+        images: ["images/hole15.webp", "images/hole15-15.webp", "images/hole15-view3.webp"],
+		
+		                            <!-- STAFF: Hole 15 description/ Tip -->
+									
+        desc: "Don't let the yardage fool you.",
+        tip: "Uphill ground makes it longer than you think."
+    },
+    { 
+	          <!-- STAFF: Hole 16 name-image-yards -->
+        number: 16, name: "High Pressure", par: 4, si: 2, 
+        w: 436, y: 430, r: 419,
+        images: ["images/hole16.webp", "images/hole16-16.webp", "images/hole16-view3.webp"],
+		
+		                           <!-- STAFF: Hole 16 description/ Tip -->
+								   
+        desc: "Tests your nerve and power.",
+        tip: "A very tough long hole with a ditch."
+    },
+    { 
+	          <!-- STAFF: Hole 17 name-image-yards -->
+        number: 17, name: "The Firs", par: 4, si: "4/", 
+        w: 416, y: 406, r: 392,
+        images: ["images/hole17.webp", "images/hole17-17.webp", "images/hole17-view3.webp"],
+		
+		                         <!-- STAFF: Hole 17 description/ Tip -->
+						   
+        desc: "A demanding hole as you approach the clubhouse.",
+        tip: "A par requires four very good shots."
+    },
+    { 
+	          <!-- STAFF: Hole 18 name-image-yards -->
+        number: 18, name: "The Finale", par: 4, si: 12, 
+        w: 318, y: 308, r: 298,
+        images: ["images/hole18.webp", "images/hole18-18.webp", "images/hole18-view3.webp"],
+		
+		                        <!-- STAFF: Hole 18 description/ Tip -->
+								
+        desc: "A finishing hole in front of the members.",
+        tip: "A slight dogleg right brings you home."
+    }
+];
+                     <!-- STAFF: Membership Prices -->
+const membershipData = [
+    {
+        name: "Full Member",
+        price: "£1,150",
+        desc: "Unlimited golf 7 days a week, full competition entry and voting rights. (£22 p/w for unlimited golf.)"
+    },
+    {
+        name: "5 Day Member",
+        price: "£860",
+        desc: "Weekday and weekend access with some restrictions."
+    },
+    {
+        name: "Junior Member",
+        price: "£50",
+        desc: "Under 18s. Supporting the next generation of golfers."
+    }
+];
+
+/* =========================
+   CLOCK SYSTEM
+========================= */
+
+function updateCourseStatus() {
+    const el = document.getElementById("course-status");
+    if (!el) return;
+
+    const now = new Date();
+    const minutes = now.getHours() * 60 + now.getMinutes();
+
+    const open = minutes >= 480 && minutes <= 1072;
+
+    el.textContent = open ? "Open" : "Closed";
+    el.className = open
+        ? "text-green-400 font-bold uppercase"
+        : "text-red-500 font-bold uppercase";
+}
+
+function updateClock() {
+    const clock = document.getElementById("live-clock");
+    const year = document.getElementById("year");
+
+    const now = new Date();
+
+    if (clock) {
+        clock.textContent = now.toLocaleString("en-GB", {
+            weekday: "short",
+            day: "numeric",
+            month: "short",
+            hour: "2-digit",
+            minute: "2-digit"
+        });
+    }
+
+    if (year) year.textContent = now.getFullYear();
+
+    updateCourseStatus();
+}
+
+/* =========================
+   HOLE SYSTEM
+========================= */
+
+let currentInterval = null;
+
+function setHole(n) {
+    const hole = courseData.find(h => h.number === n);
+    if (!hole) return;
+
+    const img = document.getElementById("h-img");
+const gallery = document.getElementById("h-gallery");
+
+if (!img) return;
+
+if (!hole.images?.length) return;
+
+img.src = hole.images[0];
+
+    // TEXT
+    const setText = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+    };
+
+    setText("h-num", String(n).padStart(2, "0"));
+    setText("h-name", hole.name);
+    setText("h-par-si", `P${hole.par} / S${hole.si}`);
+    setText("h-white", hole.w);
+    setText("h-yellow", hole.y);
+    setText("h-red", hole.r);
+    setText("h-desc", hole.desc);
+    setText("h-tip", hole.tip);
+
+    // SLIDER
+    clearInterval(currentInterval);
+
+    let i = 0;
+
+    img.style.opacity = 1;
+
+    currentInterval = setInterval(() => {
+        i = (i + 1) % hole.images.length;
+
+        img.style.opacity = 0;
+
+        setTimeout(() => {
+            img.src = hole.images[i];
+            img.style.opacity = 1;
+        }, 200);
+    }, 3000);
+
+    // GALLERY
+    if (gallery) {
+        gallery.innerHTML = "";
+
+        hole.images.forEach(src => {
+            const thumb = document.createElement("img");
+            thumb.src = src;
+            thumb.className =
+                "w-20 h-14 object-cover rounded cursor-pointer opacity-60 hover:opacity-100 transition";
+
+            thumb.onclick = () => {
+                img.style.opacity = 0;
+                setTimeout(() => {
+                    img.src = src;
+                    img.style.opacity = 1;
+                }, 200);
+            };
+
+            gallery.appendChild(thumb);
+        });
+    }
+
+    // ACTIVE STATE
+    document.querySelectorAll(".hole-card").forEach(c =>
+        c.classList.remove("border-gold", "bg-gold/20")
+    );
+
+    const active = document.getElementById(`h-${n}`);
+    if (active) active.classList.add("border-gold", "bg-gold/20");
+}
+
+/* =========================
+   SCORECARD
+========================= */
+
+let savedScores = JSON.parse(localStorage.getItem("savedScores") || "{}");
+
+function updateScores() {
+    let out = 0, inn = 0, total = 0, parTotal = 0;
+
+    document.querySelectorAll(".score-input").forEach(inp => {
+        const val = parseInt(inp.value) || 0;
+        const hole = parseInt(inp.dataset.hole);
+        const par = parseInt(inp.dataset.par) || 0;
+
+        total += val;
+        parTotal += par;
+
+        if (hole <= 9) out += val;
+        else inn += val;
+    });
+
+    const set = (id, v) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = v;
+    };
+
+    set("out-score", out);
+    set("in-score", inn);
+    set("total-score", total);
+
+    const diff = total - parTotal;
+    set("vs-par", diff > 0 ? `+${diff}` : diff);
+}
+
+function toggleScorecard() {
+    const modal = document.getElementById("scorecard-modal");
+    const body = document.getElementById("scorecard-body");
+
+    if (!modal || !body) return;
+
+    modal.classList.toggle("hidden");
+    modal.classList.toggle("flex");
+
+    if (modal.classList.contains("hidden")) return;
+
+    let rows = "";
+
+    let outPar = 0;
+    let inPar = 0;
+    let totalPar = 0;
+
+    let outYards = 0;
+    let inYards = 0;
+    let totalYards = 0;
+
+    courseData.forEach(h => {
+
+        const par = parseInt(h.par) || 0;
+        const yards = parseInt(h.y) || 0;
+
+        if (h.number <= 9) {
+            outPar += par;
+            outYards += yards;
+        } else {
+            inPar += par;
+            inYards += yards;
+        }
+
+        totalPar += par;
+        totalYards += yards;
+
+        rows += `
+            <tr class="border-b border-gold/20">
+                <td class="p-3 font-bold text-gold">${h.number}</td>
+                <td class="p-3 italic">${h.name}</td>
+                <td class="p-3">${h.w}</td>
+                <td class="p-3 text-yellow-600 font-bold">${h.y}</td>
+                <td class="p-3 text-red-500 font-bold">${h.r}</td>
+                <td class="p-3 font-semibold">${h.par}</td>
+                <td class="p-3 font-black">${h.si}</td>
+                <td class="p-3">
+                    <input
+                        type="number"
+                        min="1"
+                        value="${savedScores[h.number] || ""}"
+                        class="score-input w-16 p-1 rounded bg-white text-black text-center"
+                        data-hole="${h.number}"
+                        data-par="${h.par}">
+                </td>
+            </tr>
+        `;
+    });
+
+    rows += `
+        <tr class="bg-gold/20 font-bold text-gold">
+            <td colspan="2" class="p-3">OUT (1–9)</td>
+            <td></td>
+            <td class="p-3">${outYards}</td>
+            <td></td>
+            <td class="p-3">${outPar}</td>
+            <td></td>
+            <td id="out-score" class="p-3">0</td>
+        </tr>
+
+        <tr class="bg-gold/20 font-bold text-gold">
+            <td colspan="2" class="p-3">IN (10–18)</td>
+            <td></td>
+            <td class="p-3">${inYards}</td>
+            <td></td>
+            <td class="p-3">${inPar}</td>
+            <td></td>
+            <td id="in-score" class="p-3">0</td>
+        </tr>
+
+        <tr class="bg-gold text-black font-black">
+            <td colspan="2" class="p-3">TOTAL</td>
+            <td></td>
+            <td class="p-3">${totalYards}</td>
+            <td></td>
+            <td class="p-3">${totalPar}</td>
+            <td></td>
+            <td id="total-score" class="p-3">0</td>
+        </tr>
+
+        <tr class="bg-black text-gold font-bold">
+            <td colspan="7" class="p-3 text-right">+ / - PAR</td>
+            <td id="vs-par" class="p-3">0</td>
+        </tr>
+    `;
+
+    body.innerHTML = rows;
+
+    document.querySelectorAll(".score-input").forEach(inp => {
+        inp.addEventListener("input", () => {
+            savedScores[inp.dataset.hole] = inp.value;
+
+            localStorage.setItem(
+                "savedScores",
+                JSON.stringify(savedScores)
+            );
+
+            updateScores();
+        });
+    });
+
+    updateScores();
+}
+window.toggleScorecard = toggleScorecard;
+/* =========================
+   MEMBERSHIP
+========================= */
+
+function renderMembership() {
+    const grid = document.getElementById("membershipGrid");
+    if (!grid) return;
+
+    grid.innerHTML = membershipData.map(m => `
+<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-10 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center">
+    <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
+
+    <p class="text-5xl font-light text-white mb-6 tracking-tight">
+        ${m.price}
+    </p>
+
+    <p class="text-sm text-white/70 leading-relaxed italic mb-8">
+        ${m.desc}
+    </p>
+
+    <a href="tel:01384254020"
+       class="inline-block border border-[#C5A367] !text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:!text-[#132419] transition-all no-underline">
+        Call: 01384 254020
+    </a>
+</div>
+    `).join("");
+}
+
+/* =========================
+   NAV BUILD
+========================= */
+
+function buildNav() {
+    const nav = document.getElementById("hole-nav-container");
+    if (!nav) return;
+
+    nav.innerHTML = "";
+
+    courseData.forEach(h => {
+        const div = document.createElement("div");
+        div.id = `h-${h.number}`;
+      div.className =
+    "hole-card p-4 cursor-pointer flex-shrink-0 md:flex-shrink border border-white/5 rounded min-w-[140px]";
+
+div.innerHTML = `
+    <p class="text-gold font-bold text-xs">HOLE ${h.number}</p>
+    <p class="text-white text-sm truncate">${h.name}</p>
+`;
+        div.onclick = () => setHole(h.number);
+        nav.appendChild(div);
+    });
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+
+function initMenu() {
+    const btn = document.getElementById("menu-btn");
+    const nav = document.getElementById("nav-links");
+
+    if (!btn || !nav) return;
+
+    function closeMenu() {
+        nav.classList.add("translate-x-full");
+        nav.classList.remove("translate-x-0");
+        document.body.style.overflow = "auto";
+    }
+
+    function openMenu() {
+        nav.classList.remove("translate-x-full");
+        nav.classList.add("translate-x-0");
+        document.body.style.overflow = "hidden";
+    }
+
+    btn.addEventListener("click", e => {
+        e.stopPropagation();
+
+        nav.classList.contains("translate-x-full")
+            ? openMenu()
+            : closeMenu();
+    });
+
+    document.querySelectorAll("#nav-links a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", e => {
+        if (!nav.contains(e.target) && !btn.contains(e.target)) {
+            closeMenu();
+        }
+    });
+}
+
+/* =========================
+   STARTUP (ONE ENTRY POINT)
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+    initMenu();
+});
+
+/* =========================
+   GLOBAL SAFETY NET
+========================= */
+
+window.addEventListener("error", e => {
+    console.log("JS Error caught:", e.message);
+});
+
+})();
+</script>
+
+</body>
+</html> 
