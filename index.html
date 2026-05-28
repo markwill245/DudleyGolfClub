@@ -44,286 +44,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap**&display=swap**" rel="stylesheet">
 
 <!-- css -->
+
 <style>
 :root {
     --gold: #C5A367;
     --forest: #132419;
     --cream: #F9F7F2;
+    --nav-height: 90px; /* Set this once to match your header height */
 }
+
+/* Unified Scroll Control */
 html {
-    scroll-padding-top:80px; /* Adjust this to match the height of your navbar */
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
 }
 
-.bg-cream {
-    background-color: var(--cream);
+section {
+    scroll-margin-top: var(--nav-height);
+    display: block;
+    width: 100%;
 }
 
-body { 
-    font-family: 'Outfit', sans-serif;
-    background-color: var(--forest);
-    color: #ffffff;
-}
-
-a[href^="tel"] {
-    color: #C5A367;
-    text-decoration: none;
-}
-
-#menu-btn div {
-    display: block !important;
-    width: 24px !important;
-    height: 2px !important;
-    background-color: #C5A367 !important;
-    opacity: 1 !important;
-}
+/* Core Styles */
+.bg-cream { background-color: var(--cream); }
+body { font-family: 'Outfit', sans-serif; background-color: var(--forest); color: #ffffff; margin: 0; }
+a[href^="tel"] { color: #C5A367; text-decoration: none; }
 
 h1 { font-size: 3.5rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 1.8rem; }
+.serif { font-family: 'Cormorant Garamond', serif; }
 
-.serif {
-    font-family: 'Cormorant Garamond', serif;
-}
+/* Navigation */
+.nav-blur { background: rgba(19, 36, 25, 0.98); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.nav-blur.scrolled { background-color: #132419 !important; backdrop-filter: blur(18px); border-bottom: 1px solid rgba(197, 163, 103, 0.2); }
 
-/* HEADER NAVIGATION */
-.nav-blur {
-    background: rgba(19, 36, 25, 0.98);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.nav-blur.scrolled {
-    background-color: #132419 !important;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(197, 163, 103, 0.2);
-}
-
-/* MOBILE RESPONSIVE LAYOUT */
+/* Responsive & Utility */
 @media (max-width: 768px) {
-    section {
-        padding-top: 7rem !important;
-        padding-bottom: 5rem !important;
-    }
-    h1 { font-size: 2.8rem !important; line-height: 1.1; }
-    h2 { font-size: 2.2rem !important; }
-    h3 { font-size: 1.6rem !important; }
-    p { font-size: 0.95rem; line-height: 1.6; }
-
-    #hole-nav-container {
-        gap: 10px;
-        padding-bottom: 10px;
-    }
-
-    nav {
-        background-color: #132419 !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9999;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-    }
-
-    #nav-links { 
-        background-color: #132419 !important; 
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
+    section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+    nav { background-color: #132419 !important; position: fixed; top: 0; width: 100%; z-index: 9999; }
 }
 
-/* NAVIGATION BUTTONS & CARDS OVERRIDES */
-.hole-card, #hole-nav-container button {
-    background-color: #132419 !important;
-    border: 1px solid rgba(197, 163, 103, 0.25) !important;
-    transition: all 0.25s ease-in-out !important;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-}
+/* Hero & Images */
+.hero-bg { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/home-page.webp'); background-size: cover; background-position: center; height: 100vh; }
+img { max-width: 100%; height: auto; display: block; }
 
-.hole-card span:first-child, #hole-nav-container button span:first-child,
-.hole-card p:first-child, #hole-nav-container button p:first-child {
-    color: #C5A367 !important;
-    font-weight: 700 !important;
-    margin-right: 8px !important;
-}
-
-.hole-card span:last-child, #hole-nav-container button span:last-child,
-.hole-card p:last-child, #hole-nav-container button p:last-child {
-    color: #ffffff !important;
-    font-weight: 500 !important;
-}
-
-.hole-card:hover, #hole-nav-container button:hover {
-    border-color: #C5A367 !important;
-    transform: translateX(4px) !important;
-    box-shadow: 0 4px 12px rgba(197, 163, 103, 0.1) !important;
-}
-
-/* ACTIVE STATE PULSE EFFECT */
-.hole-card.bg-\[\#132419\] {
-    animation: goldPulse 3s infinite ease-in-out;
-}
-
-#hole-nav-container button.bg-\[\#132419\] span:last-child,
-#hole-nav-container button.bg-\[\#132419\] p:last-child {
-    color: #ffffff !important;
-}
-
-#hole-nav-container button.bg-\[\#132419\] {
-    border-color: #C5A367 !important;
-}
-
-@keyframes goldPulse {
-    0% { box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25); }
-    50% { box-shadow: 0 0 0 1px rgba(197,163,103,0.5), 0 10px 30px rgba(197,163,103,0.35), 0 0 35px rgba(197,163,103,0.6); }
-    100% { box-shadow: 0 0 0 1px rgba(197,163,103,0.4), 0 8px 25px rgba(197,163,103,0.25), 0 0 15px rgba(197,163,103,0.25); }
-}
-
-/* SCORECARD MODAL SYSTEM */
-#scorecard-modal table {
-    border-radius: 8px;
-    overflow: hidden;
-}
-#scorecard-modal thead {
-    background: #132419;
-    color: white;
-}
-#scorecard-modal tbody tr {
-    transition: all 0.2s ease;
-}
-#scorecard-modal tbody tr:hover {
-    background: rgba(197, 163, 103, 0.1);
-    transform: scale(1.01);
-}
-#scorecard-modal td, #scorecard-modal th {
-    padding: 12px;
-}
-#scorecard-modal td:first-child {
-    font-weight: bold;
-    color: #C5A367;
-}
-
-/* SCROLLBAR & HERO STYLES */
-.custom-scrollbar::-webkit-scrollbar { display: none; }
-
-.hero-bg { 
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/home-page.webp');
-    background-size: cover; 
-    background-position: center;
-}
-
-:target { scroll-margin-top: 100px; }
-
-#nav-links { will-change: transform; }
-#nav-links a { position: relative; }
-#nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 0%;
-    height: 1px;
-    background: var(--gold);
-    transition: 0.3s ease;
-}
-#nav-links a:hover::after { width: 100%; }
-
-a, button { transition: all 0.25s ease; }
-button:active, a:active { transform: scale(0.97); }
-section[id] { scroll-margin-top: 80px; }
-
-.social-links {
-    padding-left: 22px;
-    padding-right: 22px;
-}
-.social-links a {
-    display: inline-block;
-    padding: 6px 4px;
-}
-
-/* PRO SHOP LAYOUT POLISH */
-@media (max-width: 768px) {
-    .pro-shop-card, .service-card, .shop-card {
-        width: 100%;
-        min-height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 26px;
-        border-radius: 8px;
-        margin-bottom: 18px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.16);
-    }
-    .pro-shop-card h3, .service-card h3, .shop-card h3 {
-        margin-bottom: 12px;
-        line-height: 1.2;
-    }
-    .pro-shop-card p, .service-card p, .shop-card p {
-        line-height: 1.5;
-        opacity: 0.92;
-    }
-}        
-
-/* COMPONENT BOUNDARY CONTROLS */
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    position: relative;
-}
-* {
-    box-sizing: border-box;
-    min-width: 0;
-}
-section, div, main, nav, footer {
-    max-width: 100%;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-@media (max-width: 768px) {
-    body { overflow-x: hidden !important; }
-    * { max-width: 100vw; }
-}
-
-/* =========================================
-   EXCLUSIVE MASTER VISIBILITY OVERRIDE
-========================================= */
-.view-scorecard-btn {
-    display: inline-block !important;
-    margin-bottom: 2rem !important;
-    font-size: 10px !important;
-    letter-spacing: 0.2em !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    border: 1px solid rgba(197, 163, 103, 0.4) !important;
-    padding: 12px 24px !important;
-    background-color: #ffffff !important;
-    color: #C5A367 !important;
-    transition: all 0.5s ease-in-out !important;
-    border-radius: 2px !important;
-    cursor: pointer !important;
-}
-
-.view-scorecard-btn span {
-    color: #C5A367 !important;
-    font-weight: 700 !important;
-}
-
-.view-scorecard-btn:hover {
-    background-color: #C5A367 !important;
-    color: #ffffff !important;
-    box-shadow: 0 0 20px rgba(197, 163, 103, 0.3) !important;
-}
-
-.view-scorecard-btn:hover span {
-    color: #ffffff !important;
-}
+/* Keep your existing button and scorecard styles below here */
+.view-scorecard-btn { display: inline-block !important; padding: 12px 24px !important; background-color: #ffffff !important; color: #C5A367 !important; border-radius: 2px !important; cursor: pointer !important; }
 </style>
 </head>
 
@@ -349,14 +116,15 @@ img {
     </button>
 
     <div id="nav-links" class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
-        <a href="index.html" class="hover:text-gold transition">Home</a>
-        <a href="#course" class="hover:text-gold transition">Course Guide</a>
-        <a href="#heritage" class="hover:text-gold transition">History</a>
-        <a href="#hospitality" class="hover:text-gold transition">Hospitality & Events</a>
-        <a href="#pro-shop" class="hover:text-gold transition">Pro Shop</a>
-        <a href="#visitors" class="hover:text-gold transition">Visitors</a>
-        <a href="#membership" class="hover:text-gold transition">Membership</a>
-    </div>
+    <a href="index.html" class="hover:text-gold transition">Home</a>
+    <a href="#course" class="hover:text-gold transition">Course Guide</a>
+    <a href="#amen-gallery" class="hover:text-gold transition">Amen Corner</a> <!-- Added this -->
+    <a href="#heritage" class="hover:text-gold transition">History</a>
+    <a href="#hospitality" class="hover:text-gold transition">Hospitality & Events</a>
+    <a href="#pro-shop" class="hover:text-gold transition">Pro Shop</a>
+    <a href="#visitors" class="hover:text-gold transition">Visitors</a>
+    <a href="#membership" class="hover:text-gold transition">Membership</a>
+</div>
     
     <a href="login.html" target="_blank" class="relative z-[200] border border-[#C5A367] text-gold px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition">Member Login</a>
 </nav>
@@ -455,216 +223,103 @@ img {
 
 <div class="h-20 bg-gradient-to-b from-[#08110D] to-[#F9F7F2]"></div>
 
+<!-- AMEN CORNER SECTION -->
 <section id="amen-gallery" class="relative z-20 bg-[#08110D] py-24 overflow-hidden isolate">
     <div class="absolute inset-0 bg-[#08110D] -z-10"></div>
     <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-24">
-            <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
-                Championship Photography
-            </p>
+            <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">Championship Photography</p>
             <h2 class="serif text-5xl md:text-6xl text-white italic relative inline-block">
                 Our Amen Corner Gallery
                 <span class="absolute left-1/2 -translate-x-1/2 bottom-[-18px] w-28 h-px bg-[#C5A367]/50"></span>
             </h2>
-            <p class="text-white/60 max-w-2xl mx-auto mt-10 leading-relaxed text-sm md:text-base">
-                Three unforgettable holes where precision, beauty and pressure combine
-                to create the defining stretch of the golf course.
-            </p>
         </div>
 
+        <!-- HOLE 5: THE PLATEAU -->
         <div class="mb-32">
             <div class="flex items-end justify-between mb-10">
                 <div>
-                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">
-                        Hole Five
-                    </p>
-                    <h3 class="serif text-4xl md:text-5xl text-white italic">
-                        The Plateau
-                    </h3>
+                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Five</p>
+                    <h3 class="serif text-4xl md:text-5xl text-white italic">The Plateau</h3>
                 </div>
-                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">
-                    Par 4
-                </p>
+                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">Par 4</p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-6">
+                <!-- Hole 5 Images -->
                 <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole5-1.webp')">
-                   <img src="images/amen-corner/hole5-1.webp" alt="Dudley Golf Club Hole 5 The Plateau opening drive view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
+                    <img src="images/amen-corner/hole5-1.webp" alt="Opening Drive" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-                    <div class="absolute bottom-0 left-0 p-8 z-10">
-                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                            Hole Five
-                        </p>
-                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                            Opening Drive
-                        </h4>
-                    </div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Opening Drive</h4></div>
                 </div>
-
                 <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole5-2.webp')">
-                    <img src="images/amen-corner/hole5-2.webp" alt="Dudley Golf Club Hole 5 The Plateau approach shot view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
+                    <img src="images/amen-corner/hole5-2.webp" alt="The Approach" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-                    <div class="absolute bottom-0 left-0 p-8 z-10">
-                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                            Hole Five
-                        </p>
-                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                            The Approach
-                        </h4>
-                    </div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">The Approach</h4></div>
                 </div>
-
                 <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole5-3.webp')">
-                    <img src="images/amen-corner/hole5-3.webp" alt="Dudley Golf Club Hole 5 The Plateau evening light scenic view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
+                    <img src="images/amen-corner/hole5-3.webp" alt="Evening Light" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                    <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-                    <div class="absolute bottom-0 left-0 p-8 z-10">
-                        <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                            Hole Five
-                        </p>
-                        <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                            Evening Light
-                        </h4>
-                    </div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Evening Light</h4></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOLE 6: HELLS CORNER -->
+        <div class="mb-32">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Six</p>
+                    <h3 class="serif text-4xl md:text-5xl text-white italic">Hells Corner</h3>
+                </div>
+                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">Par 3</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole6-1.webp')">
+                    <img src="images/amen-corner/hole6-1.webp" alt="Through The Pines" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Through The Pines</h4></div>
+                </div>
+                <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole6-2.webp')">
+                    <img src="images/amen-corner/hole6-2.webp" alt="Championship Line" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Championship Line</h4></div>
+                </div>
+                <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole6-3.webp')">
+                    <img src="images/amen-corner/hole6-3.webp" alt="Golden Hour" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Golden Hour</h4></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOLE 7: THE GAUNTLET -->
+        <div class="mb-32">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Seven</p>
+                    <h3 class="serif text-4xl md:text-5xl text-white italic">The Gauntlet</h3>
+                </div>
+                <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">Par 3</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole7-1.webp')">
+                    <img src="images/amen-corner/hole7-1.webp" alt="The Carry" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">The Carry</h4></div>
+                </div>
+                <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole7-2.webp')">
+                    <img src="images/amen-corner/hole7-2.webp" alt="Guarded Green" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Guarded Green</h4></div>
+                </div>
+                <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole7-3.webp')">
+                    <img src="images/amen-corner/hole7-3.webp" alt="Final Test" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8"><h4 class="serif text-3xl italic text-white">Final Test</h4></div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- ===================================================== -->
-<!-- HOLE 6 -->
-<!-- ===================================================== -->
-<div class="mb-32">
-    <div class="flex items-end justify-between mb-10">
-        <div>
-            <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">
-                Hole Six
-            </p>
-            <h3 class="serif text-4xl md:text-5xl text-white italic">
-                Hells Corner
-            </h3>
-        </div>
-        <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">
-            Par 3
-        </p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-        <!-- IMAGE 1 -->
-        <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole6-1.webp')">
-            <img src="images/amen-corner/hole6-1.webp" alt="Dudley Golf Club Hole 6 Hells Corner through the pines view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-            <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-            <div class="absolute bottom-0 left-0 p-8 z-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                    Hole Six
-                </p>
-                <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                    Through The Pines
-                </h4>
-            </div>
-        </div>
-
-        <!-- IMAGE 2 -->
-        <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole6-2.webp')">
-            <img src="images/amen-corner/hole6-2.webp" alt="Dudley Golf Club Hole 6 Hells Corner championship line tee shot view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-            <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-            <div class="absolute bottom-0 left-0 p-8 z-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                    Hole Six
-                </p>
-                <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                    Championship Line
-                </h4>
-            </div>
-        </div>
-
-        <!-- IMAGE 3 -->
-        <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole6-3.webp')">
-           <img src="images/amen-corner/hole6-3.webp" alt="Dudley Golf Club Hole 6 Hells Corner golden hour scenic view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-            <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-            <div class="absolute bottom-0 left-0 p-8 z-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                    Hole Six
-                </p>
-                <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                    Golden Hour
-                </h4>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ===================================================== -->
-<!-- HOLE 7 -->
-<!-- ===================================================== -->
-<div>
-    <div class="flex items-end justify-between mb-10">
-        <div>
-            <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">
-                Hole Seven
-            </p>
-            <h3 class="serif text-4xl md:text-5xl text-white italic">
-                The Gauntlet
-            </h3>
-        </div>
-        <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">
-            Par 3
-        </p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-        <!-- IMAGE 1 -->
-        <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole7-1.webp')">
-          <img src="images/amen-corner/hole7-1.webp" alt="Dudley Golf Club Hole 7 The Gauntlet the carry tee shot view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-            <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-            <div class="absolute bottom-0 left-0 p-8 z-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                    Hole Seven
-                </p>
-                <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                    The Carry
-                </h4>
-            </div>
-        </div>
-
-        <!-- IMAGE 2 -->
-        <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole7-2.webp')">
-            <img src="images/amen-corner/hole7-2.webp" alt="Dudley Golf Club Hole 7 The Gauntlet approach shot to the green view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-            <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-            <div class="absolute bottom-0 left-0 p-8 z-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                    Hole Seven
-                </p>
-                <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                    Guarded Green
-                </h4>
-            </div>
-        </div>
-
-        <!-- IMAGE 3 -->
-        <div class="group relative overflow-hidden cursor-pointer" onclick="openLightbox('images/amen-corner/hole7-3.webp')">
-            <img src="images/amen-corner/hole7-3.webp" alt="Dudley Golf Club Hole 7 The Gauntlet green and bunkers scenic view" class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110" width="800" height="520" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-            <div class="absolute inset-0 border border-[#C5A367]/0 group-hover:border-[#C5A367]/40 transition duration-700"></div>
-            <div class="absolute bottom-0 left-0 p-8 z-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">
-                    Hole Seven
-                </p>
-                <h4 class="serif text-3xl italic text-white drop-shadow-2xl">
-                    Final Test
-                </h4>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
 </section>
 
 <!-- ===================================================== -->
