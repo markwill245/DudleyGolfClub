@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Shop Stock | Dudley Golf Club</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
     
-    <!-- Sanity Client CDN Libraries -->
-
-<script src="https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/dist/index.browser.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/dist/index.browser.js"></script>
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
@@ -26,15 +21,12 @@
 
     <main class="max-w-7xl mx-auto py-20 px-6">
         
-        <!-- DYNAMIC SANITY GRID (Replaces static sections) -->
         <div id="pro-shop-grid" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-            <!-- Loading Indicator fallback while fetching data -->
             <div class="col-span-3 text-center py-10 text-gray-500 tracking-wider text-sm animate-pulse">
                 Loading live pro shop inventory...
             </div>
         </div>
 
-        <!-- Inquiry Form Section -->
         <div class="bg-[#132419] p-8 sm:p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
             <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
@@ -56,7 +48,6 @@
             </form>
         </div>
 
-        <!-- Navigation Return -->
         <div class="mt-20 text-center">
             <a href="index.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition">Return to Home</a>
         </div>
@@ -66,75 +57,49 @@
         &copy; 2026 Dudley Golf Club
     </footer>
 
-    <!-- SANITY INTEGRATION SCRIPT -->
-<script type="module">
-    // 1. Import the production-ready libraries directly as modern modules
-    import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
-    import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
+    <script type="module">
+        // 1. Import the production-ready libraries directly as modern modules
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
+        import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
 
-    // 2. Configure the connection to your live Sanity project
-    const client = createClient({
-        projectId: 'c54r3a5t', 
-        dataset: 'production',
-        useCdn: false,          // Pulls live un-cached data instantly
-        apiVersion: '2024-03-01'
-    });
+        // 2. Configure the connection to your live Sanity project
+        const client = createClient({
+            projectId: 'c54r3a5t', 
+            dataset: 'production',
+            useCdn: false,          // Pulls live un-cached data instantly
+            apiVersion: '2024-03-01'
+        });
 
-    // 3. Set up image helper tool to generate optimized image URLs
-    const builder = imageUrlBuilder(client);
-    function urlFor(source) {
-        return builder.image(source).width(800).height(400).url();
-    }
-
-    // 4. Fetch data from your 'proShop' schema and render it
-    async function fetchProShopData() {
-        const gridContainer = document.getElementById('pro-shop-grid');
-        
-        // GROQ query pulling everything from your 'proShop' schema
-        const query = `*[_type == "proShop"] | order(_createdAt asc)`;
-
-        try {
-            const items = await client.fetch(query);
-
-            // Fallback content if you haven't typed anything into the dashboard yet
-            if (items.length === 0) {
-                gridContainer.innerHTML = `
-                    <div class="col-span-3 text-center py-10 text-gray-500">
-                        No pro shop items posted yet. Add records in your Sanity dashboard to see them live!
-                    </div>`;
-                return;
-            }
-
-            // Loop over the dashboard database results and construct HTML panels dynamically
-            gridContainer.innerHTML = items.map(item => {
-                // Safety check to swap placeholder images if you forget to upload a photo
-                const imageUrl = item.image ? urlFor(item.image) : 'stock/stock3.webp';
-                
-                return `
-                    <div class="space-y-4">
-                        <img src="${imageUrl}" alt="${item.title || 'Dudley Golf Club Pro Shop Item'}" class="w-full h-64 object-cover border border-[#C5A367]/20" loading="lazy">
-                        <h3 class="serif text-2xl">${item.title || 'Untitled Section'}</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            ${item.brands ? `Featured collections from <strong>${item.brands}</strong>. ` : ''}
-                            ${item.description || ''}
-                        </p>
-                    </div>
-                `;
-            }).join('');
-
-        } catch (error) {
-            console.error("Sanity connection error:", error);
-            gridContainer.innerHTML = `
-                <div class="col-span-3 text-center py-10 text-red-700 font-bold">
-                    Failed to connect to stock database. Please check your network connection or project settings.
-                </div>`;
+        // 3. Set up image helper tool to generate optimized image URLs
+        const builder = imageUrlBuilder(client);
+        function urlFor(source) {
+            return builder.image(source).width(800).height(400).url();
         }
-    }
 
-    // Fire off data retrieval loop as soon as the window finishes loading
-    window.addEventListener('DOMContentLoaded', fetchProShopData);
-</script>
+        // 4. Fetch data from your 'proShop' schema and render it
+        async function fetchProShopData() {
+            const gridContainer = document.getElementById('pro-shop-grid');
+            
+            // GROQ query pulling everything from your 'proShop' schema
+            const query = `*[_type == "proShop"] | order(_createdAt asc)`;
 
+            try {
+                const items = await client.fetch(query);
 
-   </body>
-</html>
+                // Fallback content if you haven't typed anything into the dashboard yet
+                if (items.length === 0) {
+                    gridContainer.innerHTML = `
+                        <div class="col-span-3 text-center py-10 text-gray-500">
+                            No pro shop items posted yet. Add records in your Sanity dashboard to see them live!
+                        </div>`;
+                    return;
+                }
+
+                // Loop over the dashboard database results and construct HTML panels dynamically
+                gridContainer.innerHTML = items.map(item => {
+                    // Safety check to swap placeholder images if you forget to upload a photo
+                    const imageUrl = item.image ? urlFor(item.image) : 'stock/stock3.webp';
+                    
+                    return `
+                        <div class="space-y-4">
+                            <img src="${imageUrl}" alt="${
