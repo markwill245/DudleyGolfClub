@@ -50,6 +50,9 @@
     --forest: #132419;
     --cream: #F9F7F2;
 }
+html {
+    scroll-padding-top:90px; /* Adjust this to match the height of your navbar */
+}
 
 .bg-cream {
     background-color: var(--cream);
@@ -729,20 +732,22 @@ function closeLightbox() {
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Box 1 -->
             <div class="group relative h-[450px] overflow-hidden bg-forest">
-               <img src="images/club.webp" alt="Dudley Golf Club function room and event space interior view" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700" width="800" height="600" loading="lazy">
+               <img src="images/club.webp" alt="Dudley Golf Club function room" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700" width="800" height="450">
                 <div class="absolute inset-0 flex flex-col justify-end p-10 bg-gradient-to-t from-[#132419] via-[#132419]/40 to-transparent">
                     <h3 class="serif text-4xl text-white mb-2">Function Hire</h3>
-                    <p class="text-white/70 text-sm mb-8 font-light italic leading-relaxed">Experience panoramic views from our first-floor lounge. We cater for all your special requirements in the heart of the Black Country.</p>
+                    <p class="text-white/70 text-sm mb-8 font-light italic leading-relaxed">Experience panoramic views from our first-floor lounge.</p>
                     <a href="functions.html" class="inline-block border border-[#C5A367] text-gold px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition w-fit">Event Enquiries</a>
                 </div>
             </div>
 
+            <!-- Box 2 -->
             <div class="group relative h-[450px] overflow-hidden bg-forest">
-                <img src="images/cup.webp" alt="Dudley Golf Club historic trophy and heritage memorabilia display" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700" width="800" height="600" loading="lazy">
+                <img src="images/cup.webp" alt="Dudley Golf Club heritage" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700" width="800" height="450">
                 <div class="absolute inset-0 flex flex-col justify-end p-10 bg-gradient-to-t from-[#132419] via-[#132419]/40 to-transparent">
                     <h3 class="serif text-4xl text-white mb-2">Captain's Page & Charity</h3>
-                    <p class="text-white/70 text-sm mb-8 font-light italic leading-relaxed">Honouring our club traditions and supporting our local Black Country community initiatives.</p>
+                    <p class="text-white/70 text-sm mb-8 font-light italic leading-relaxed">Honouring our traditions and community initiatives.</p>
                     <div class="flex flex-wrap gap-4">
                         <a href="captains.html" class="inline-block border border-[#C5A367] text-gold px-6 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition w-fit">The Captains</a>
                         <a href="charity.html" class="inline-block border border-[#C5A367] text-gold px-6 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition w-fit">Our Charity</a>
@@ -750,11 +755,12 @@ function closeLightbox() {
                 </div>
             </div>
 
+            <!-- Box 3 -->
             <div class="group relative h-[450px] overflow-hidden bg-forest">
-                <img src="pro-shop-hero.webp" alt="Dudley Golf Club professional shop retail and golf equipment area" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition duration-700" width="800" height="600" loading="lazy">
+                <img src="pro-shop-hero.webp" alt="Dudley Golf Club pro shop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition duration-700" width="800" height="450">
                 <div class="absolute inset-0 flex flex-col justify-end p-10 bg-gradient-to-t from-[#132419] via-[#132419]/40 to-transparent">
                     <h3 class="serif text-4xl text-white mb-2">Club Results</h3>
-                    <p class="text-white/70 text-sm mb-8 font-light italic leading-relaxed">Stay up to date with the latest competition results, upcoming fixtures, and club honours boards.</p>
+                    <p class="text-white/70 text-sm mb-8 font-light italic leading-relaxed">Stay up to date with competition results and honours.</p>
                     <a href="results.html" class="inline-block border border-[#C5A367] text-gold px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-white transition w-fit">View Results</a>
                 </div>
             </div>
@@ -1708,12 +1714,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             const data = await client.fetch(query);
-            // Logic to render your data goes here
             console.log("Data loaded:", data);
         } catch (err) {
             console.error("Failed to load:", err);
         }
     }
+
+    // Navigation fix to prevent double-click jumping
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); 
+            
+            const nav = document.getElementById('nav-links');
+            // If mobile menu is open, close it
+            if (nav && nav.classList.contains('translate-x-0')) {
+                nav.classList.remove('translate-x-0');
+                nav.classList.add('translate-x-full');
+            }
+            
+            // Wait for animation to finish before scrolling
+            setTimeout(() => {
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300);
+        });
+    });
 
     fetchHospitality();
 </script>
