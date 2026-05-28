@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
     
     <!-- Sanity Client CDN Libraries -->
-    <script src="https://unpkg.com/@sanity/client@6.15.2/dist/index.umd.js"></script>
-    <script src="https://unpkg.com/@sanity/image-url@1.0.2/dist/index.umd.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/dist/index.browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/dist/index.browser.js"></script>
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
@@ -68,20 +68,20 @@
 
     <!-- SANITY INTEGRATION SCRIPT -->
     <script>
-        // 1. Configure the connection to your live Sanity project
-        const client = window.SanityClient.createClient({
-            projectId: 'c54r3a5t', // Linked directly to Dudley Golf Club's real database cluster
-            dataset: 'production',
-            useCdn: false,          // Fast edge-cached delivery
-            apiVersion: '2024-03-01'
-        });
+        
+       // 1. Configure the connection to your live Sanity project
+const client = SanityClient.createClient({
+    projectId: 'c54r3a5t', 
+    dataset: 'production',
+    useCdn: false,          // Forces instant live data retrieval
+    apiVersion: '2024-03-01'
+});
 
-        // 2. Set up image helper tool to generate optimized image URLs
-        const builder = window.SanityImageUrl(client);
-        function urlFor(source) {
-            return builder.image(source).width(800).height(400).url();
-        }
-
+// 2. Set up image helper tool
+const builder = SanityImageUrl(client);
+function urlFor(source) {
+    return builder.image(source).width(800).height(400).url();
+}
         // 3. Fetch data from your 'proShop' schema and render it
         async function fetchProShopData() {
             const gridContainer = document.getElementById('pro-shop-grid');
