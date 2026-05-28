@@ -1,105 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dudley Golf Club | Heritage & Excellence</title>
-
-    <!-- Search Engine Tags -->
-    <meta name="description" content="Established in 1893, Dudley Golf Club offers a historic 18-hole course with panoramic views. Join our community or book a tee time in the West Midlands.">
-    <meta name="keywords" content="Dudley Golf Club, golf West Midlands, 18-hole course Black Country, Old Tom Morris golf, golf membership Dudley">
-    <meta name="author" content="Dudley Golf Club">
-
-    <!-- Open Graph (Social Media Previews) -->
-    <meta property="og:title" content="Dudley Golf Club | Heritage & Excellence">
-    <meta property="og:description" content="Play a historic 18-hole course with a rich heritage dating back to 1893.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dudley-golf-club.vercel.app">
-    <!-- Using your image dudley.webp for social previews -->
-    <meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
-
-    <!-- Structured Data for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "GolfCourse",
-      "name": "Dudley Golf Club",
-      "url": "https://dudley-golf-club.vercel.app",
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "B65 9DP",
-        "addressLocality": "Rowley Regis",
-        "addressRegion": "West Midlands"
-      },
-      "sameAs": [
-        "https://www.facebook.com/YourFacebookPage",
-        "https://twitter.com/YourTwitterHandle"
-      ]
-    }
-    </script>
-
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap**&display=swap**" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- css -->
+    <style>
+        :root {
+            --gold: #C5A367;
+            --forest: #132419;
+            --cream: #F9F7F2;
+            --nav-height: 90px;
+        }
 
-<style>
-:root {
-    --gold: #C5A367;
-    --forest: #132419;
-    --cream: #F9F7F2;
-    --nav-height: 90px; /* Set this once to match your header height */
-}
-<style>
-    /* Force your specific button color regardless of classes */
-    .hole-button {
-        background-color: #08110D !important;
-        color: white !important;
-        border: 1px solid #C5A367 !important;
-    }
-</style>
+        /* Force your specific button color */
+        .hole-button {
+            background-color: #08110D !important;
+            color: white !important;
+            border: 1px solid #C5A367 !important;
+        }
 
-/* Unified Scroll Control */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--nav-height);
-}
+        /* Unified Scroll Control */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--nav-height);
+        }
 
-section {
-    scroll-margin-top: var(--nav-height);
-    display: block;
-    width: 100%;
-}
+        section {
+            scroll-margin-top: var(--nav-height);
+            display: block;
+            width: 100%;
+        }
 
-/* Core Styles */
-.bg-cream { background-color: var(--cream); }
-body { font-family: 'Outfit', sans-serif; background-color: var(--forest); color: #ffffff; margin: 0; }
-a[href^="tel"] { color: #C5A367; text-decoration: none; }
+        /* Core Styles */
+        .bg-cream { background-color: var(--cream); }
+        body { font-family: 'Outfit', sans-serif; background-color: var(--forest); color: #ffffff; margin: 0; }
+        a[href^="tel"] { color: #C5A367; text-decoration: none; }
 
-h1 { font-size: 3.5rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 1.8rem; }
-.serif { font-family: 'Cormorant Garamond', serif; }
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.8rem; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
 
-/* Navigation */
-.nav-blur { background: rgba(19, 36, 25, 0.98); border-bottom: 1px solid rgba(255,255,255,0.08); }
-.nav-blur.scrolled { background-color: #132419 !important; backdrop-filter: blur(18px); border-bottom: 1px solid rgba(197, 163, 103, 0.2); }
+        /* Navigation */
+        .nav-blur { background: rgba(19, 36, 25, 0.98); border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .nav-blur.scrolled { background-color: #132419 !important; backdrop-filter: blur(18px); border-bottom: 1px solid rgba(197, 163, 103, 0.2); }
 
-/* Responsive & Utility */
-@media (max-width: 768px) {
-    section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
-    nav { background-color: #132419 !important; position: fixed; top: 0; width: 100%; z-index: 9999; }
-}
+        /* Responsive & Utility */
+        @media (max-width: 768px) {
+            section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+            nav { background-color: #132419 !important; position: fixed; top: 0; width: 100%; z-index: 9999; }
+        }
 
-/* Hero & Images */
-.hero-bg { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/home-page.webp'); background-size: cover; background-position: center; height: 100vh; }
-img { max-width: 100%; height: auto; display: block; }
+        /* Hero & Images */
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/home-page.webp'); background-size: cover; background-position: center; height: 100vh; }
+        img { max-width: 100%; height: auto; display: block; }
 
-/* Keep your existing button and scorecard styles below here */
-.view-scorecard-btn { display: inline-block !important; padding: 12px 24px !important; background-color: #ffffff !important; color: #C5A367 !important; border-radius: 2px !important; cursor: pointer !important; }
-</style>
+        .view-scorecard-btn { 
+            display: inline-block !important; 
+            padding: 12px 24px !important; 
+            background-color: #08110D !important;
+            color: #ffffff !important;
+            border: 1px solid #C5A367 !important;
+            border-radius: 2px !important; 
+            cursor: pointer !important; 
+        }
+    </style>
 </head>
 
 <body class="bg-[#132419] text-white antialiased m-0 p-0">
