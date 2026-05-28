@@ -1628,13 +1628,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateClock, 1000);
 });
 
-/* =========================
-   GLOBAL SAFETY NET
-========================= */
 
-window.addEventListener("error", e => {
-    console.log("JS Error caught:", e.message);
-});
 
 // This closes the (() => { that is at the very top of your script
 })(); 
@@ -1697,9 +1691,31 @@ window.addEventListener("error", e => {
     window.addEventListener("error", e => {
         console.log("JS Error caught:", e.message);
     });
+</script>
+<script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
 
-    // This closes the main block wrapper securely
-    })(); 
+    const client = createClient({
+        projectId: 'c54r3a5t', 
+        dataset: 'production',
+        useCdn: false,          
+        apiVersion: '2024-03-01'
+    });
+
+    async function fetchHospitality() {
+        const container = document.getElementById('hospitality-grid');
+        const query = `*[_type == "hospitality"] | order(order asc)`;
+
+        try {
+            const data = await client.fetch(query);
+            // Logic to render your data goes here
+            console.log("Data loaded:", data);
+        } catch (err) {
+            console.error("Failed to load:", err);
+        }
+    }
+
+    fetchHospitality();
 </script>
 
 </body>
