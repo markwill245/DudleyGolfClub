@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Shop Stock | Dudley Golf Club</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
+    
+    <!-- Sanity Client CDN Libraries -->
+    <script src="https://unpkg.com/@sanity/client@6.15.2/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/@sanity/image-url@1.0.2/dist/index.umd.js"></script>
+
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
@@ -20,28 +26,15 @@
 
     <main class="max-w-7xl mx-auto py-20 px-6">
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-            
-            <div class="space-y-4">
-               <img src="stock/stock4.webp" alt="Dudley Golf Club premium golf clubs and equipment selection" class="w-full h-64 object-cover border border-[#C5A367]/20" width="800" height="400" loading="lazy">
-                <h3 class="serif text-2xl">Stylish Shirts</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">We stock the latest range from <strong>Titleist, Ping, and TaylorMade</strong>. Custom fitting sessions are available with our PGA Professional using launch monitor technology.</p>
+        <!-- DYNAMIC SANITY GRID (Replaces static sections) -->
+        <div id="pro-shop-grid" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+            <!-- Loading Indicator fallback while fetching data -->
+            <div class="col-span-3 text-center py-10 text-gray-500 tracking-wider text-sm animate-pulse">
+                Loading live pro shop inventory...
             </div>
-
-            <div class="space-y-4">
-               <img src="stock/stock5.webp" alt="Dudley Golf Club stylish golf clothing and apparel collection" class="w-full h-64 object-cover border border-[#C5A367]/20" width="800" height="400" loading="lazy">
-                <h3 class="serif text-2xl">Apparel & Footwear</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Look the part with <strong>FootJoy and Galvin Green</strong>. We carry a wide selection of Dudley GC crested clothing, waterproofs, and the latest spike/spikeless shoes.</p>
-            </div>
-
-            <div class="space-y-4">
-              <img src="stock/stock3.webp" alt="Dudley Golf Club essential golf accessories and training aids" class="w-full h-64 object-cover border border-[#C5A367]/20" width="800" height="400" loading="lazy">
-                <h3 class="serif text-2xl">Essentials & Gifts</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">From the #1 Ball in Golf to premium leather gloves and GPS devices. Perfect for stocking up before your round or finding a gift for a fellow member.</p>
-            </div>
-
         </div>
 
+        <!-- Inquiry Form Section -->
         <div class="bg-[#132419] p-8 sm:p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
             <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
@@ -63,6 +56,7 @@
             </form>
         </div>
 
+        <!-- Navigation Return -->
         <div class="mt-20 text-center">
             <a href="index.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition">Return to Home</a>
         </div>
@@ -71,5 +65,70 @@
     <footer class="bg-[#132419] py-8 text-center text-white/50 text-[10px] uppercase tracking-widest">
         &copy; 2026 Dudley Golf Club
     </footer>
+
+    <!-- SANITY INTEGRATION SCRIPT -->
+    <script>
+        // 1. Configure the connection to your live Sanity project
+        const client = window.SanityClient.createClient({
+            projectId: 'c54r3a5t', // Linked directly to Dudley Golf Club's real database cluster
+            dataset: 'production',
+            useCdn: true,          // Fast edge-cached delivery
+            apiVersion: '2024-03-01'
+        });
+
+        // 2. Set up image helper tool to generate optimized image URLs
+        const builder = window.SanityImageUrl(client);
+        function urlFor(source) {
+            return builder.image(source).width(800).height(400).url();
+        }
+
+        // 3. Fetch data from your 'proShop' schema and render it
+        async function fetchProShopData() {
+            const gridContainer = document.getElementById('pro-shop-grid');
+            
+            // GROQ query pulling everything from your 'proShop' schema
+            const query = `*[_type == "proShop"] | order(_createdAt asc)`;
+
+            try {
+                const items = await client.fetch(query);
+
+                // Fallback content if you haven't typed anything into the dashboard yet
+                if (items.length === 0) {
+                    gridContainer.innerHTML = `
+                        <div class="col-span-3 text-center py-10 text-gray-500">
+                            No pro shop items posted yet. Add records in your Sanity dashboard to see them live!
+                        </div>`;
+                    return;
+                }
+
+                // Loop over the dashboard database results and construct HTML panels dynamically
+                gridContainer.innerHTML = items.map(item => {
+                    // Safety check to swap placeholder images if you forget to upload a photo
+                    const imageUrl = item.image ? urlFor(item.image) : 'stock/stock3.webp';
+                    
+                    return `
+                        <div class="space-y-4">
+                            <img src="${imageUrl}" alt="${item.title || 'Dudley Golf Club Pro Shop Item'}" class="w-full h-64 object-cover border border-[#C5A367]/20" loading="lazy">
+                            <h3 class="serif text-2xl">${item.title || 'Untitled Section'}</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                ${item.brands ? `Featured collections from <strong>${item.brands}</strong>. ` : ''}
+                                ${item.description || ''}
+                            </p>
+                        </div>
+                    `;
+                }).join('');
+
+            } catch (error) {
+                console.error("Sanity connection error:", error);
+                gridContainer.innerHTML = `
+                    <div class="col-span-3 text-center py-10 text-red-700 font-bold">
+                        Failed to connect to stock database. Please check your network connection or project settings.
+                    </div>`;
+            }
+        }
+
+        // Fire off data retrieval loop as soon as the window finishes loading
+        window.addEventListener('DOMContentLoaded', fetchProShopData);
+    </script>
 </body>
 </html>
