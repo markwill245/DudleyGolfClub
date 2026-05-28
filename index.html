@@ -50,8 +50,17 @@
     --forest: #132419;
     --cream: #F9F7F2;
 }
-html {
-    scroll-padding-top:90px; /* Adjust this to match the height of your navbar */
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust this value to exactly match your header height */
+}
+
+/* Force sections to start cleanly */
+section {
+    scroll-margin-top: 80px;
+    display: block;
+    width: 100%;
 }
 
 .bg-cream {
@@ -1698,7 +1707,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("JS Error caught:", e.message);
     });
 </script>
-<script type="module">
+
+  <script type="module">
     import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
 
     const client = createClient({
@@ -1709,39 +1719,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     async function fetchHospitality() {
-        const container = document.getElementById('hospitality-grid');
-        const query = `*[_type == "hospitality"] | order(order asc)`;
-
         try {
-            const data = await client.fetch(query);
+            const data = await client.fetch(`*[_type == "hospitality"] | order(order asc)`);
             console.log("Data loaded:", data);
         } catch (err) {
             console.error("Failed to load:", err);
         }
     }
-
-    // Navigation fix to prevent double-click jumping
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault(); 
-            
-            const nav = document.getElementById('nav-links');
-            // If mobile menu is open, close it
-            if (nav && nav.classList.contains('translate-x-0')) {
-                nav.classList.remove('translate-x-0');
-                nav.classList.add('translate-x-full');
-            }
-            
-            // Wait for animation to finish before scrolling
-            setTimeout(() => {
-                const targetId = this.getAttribute('href');
-                const target = document.querySelector(targetId);
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 300);
-        });
-    });
 
     fetchHospitality();
 </script>
