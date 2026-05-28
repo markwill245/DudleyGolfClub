@@ -81,7 +81,7 @@
             const gridContainer = document.getElementById('pro-shop-grid');
             
             // GROQ query pulling everything from your 'proShop' schema
-            const query = `*[_type == "proShop"] | order(_createdAt asc)`;
+            const query = `*[_type == "proshop"] | order(_createdAt asc)`;
 
             try {
                 const items = await client.fetch(query);
