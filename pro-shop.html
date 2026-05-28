@@ -67,68 +67,74 @@
     </footer>
 
     <!-- SANITY INTEGRATION SCRIPT -->
-    <script>
+<script type="module">
+    // 1. Import the production-ready libraries directly as modern modules
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
+    import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
+
+    // 2. Configure the connection to your live Sanity project
+    const client = createClient({
+        projectId: 'c54r3a5t', 
+        dataset: 'production',
+        useCdn: false,          // Pulls live un-cached data instantly
+        apiVersion: '2024-03-01'
+    });
+
+    // 3. Set up image helper tool to generate optimized image URLs
+    const builder = imageUrlBuilder(client);
+    function urlFor(source) {
+        return builder.image(source).width(800).height(400).url();
+    }
+
+    // 4. Fetch data from your 'proShop' schema and render it
+    async function fetchProShopData() {
+        const gridContainer = document.getElementById('pro-shop-grid');
         
-       // 1. Configure the connection to your live Sanity project
-const client = SanityClient.createClient({
-    projectId: 'c54r3a5t', 
-    dataset: 'production',
-    useCdn: false,          // Forces instant live data retrieval
-    apiVersion: '2024-03-01'
-});
+        // GROQ query pulling everything from your 'proShop' schema
+        const query = `*[_type == "proShop"] | order(_createdAt asc)`;
 
-// 2. Set up image helper tool
-const builder = SanityImageUrl(client);
-function urlFor(source) {
-    return builder.image(source).width(800).height(400).url();
-}
-        // 3. Fetch data from your 'proShop' schema and render it
-        async function fetchProShopData() {
-            const gridContainer = document.getElementById('pro-shop-grid');
-            
-            // GROQ query pulling everything from your 'proShop' schema
-            const query = `*[_type == "proShop"] | order(_createdAt asc)`;
+        try {
+            const items = await client.fetch(query);
 
-            try {
-                const items = await client.fetch(query);
-
-                // Fallback content if you haven't typed anything into the dashboard yet
-                if (items.length === 0) {
-                    gridContainer.innerHTML = `
-                        <div class="col-span-3 text-center py-10 text-gray-500">
-                            No pro shop items posted yet. Add records in your Sanity dashboard to see them live!
-                        </div>`;
-                    return;
-                }
-
-                // Loop over the dashboard database results and construct HTML panels dynamically
-                gridContainer.innerHTML = items.map(item => {
-                    // Safety check to swap placeholder images if you forget to upload a photo
-                    const imageUrl = item.image ? urlFor(item.image) : 'stock/stock3.webp';
-                    
-                    return `
-                        <div class="space-y-4">
-                            <img src="${imageUrl}" alt="${item.title || 'Dudley Golf Club Pro Shop Item'}" class="w-full h-64 object-cover border border-[#C5A367]/20" loading="lazy">
-                            <h3 class="serif text-2xl">${item.title || 'Untitled Section'}</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">
-                                ${item.brands ? `Featured collections from <strong>${item.brands}</strong>. ` : ''}
-                                ${item.description || ''}
-                            </p>
-                        </div>
-                    `;
-                }).join('');
-
-            } catch (error) {
-                console.error("Sanity connection error:", error);
+            // Fallback content if you haven't typed anything into the dashboard yet
+            if (items.length === 0) {
                 gridContainer.innerHTML = `
-                    <div class="col-span-3 text-center py-10 text-red-700 font-bold">
-                        Failed to connect to stock database. Please check your network connection or project settings.
+                    <div class="col-span-3 text-center py-10 text-gray-500">
+                        No pro shop items posted yet. Add records in your Sanity dashboard to see them live!
                     </div>`;
+                return;
             }
-        }
 
-        // Fire off data retrieval loop as soon as the window finishes loading
-        window.addEventListener('DOMContentLoaded', fetchProShopData);
-    </script>
-</body>
+            // Loop over the dashboard database results and construct HTML panels dynamically
+            gridContainer.innerHTML = items.map(item => {
+                // Safety check to swap placeholder images if you forget to upload a photo
+                const imageUrl = item.image ? urlFor(item.image) : 'stock/stock3.webp';
+                
+                return `
+                    <div class="space-y-4">
+                        <img src="${imageUrl}" alt="${item.title || 'Dudley Golf Club Pro Shop Item'}" class="w-full h-64 object-cover border border-[#C5A367]/20" loading="lazy">
+                        <h3 class="serif text-2xl">${item.title || 'Untitled Section'}</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            ${item.brands ? `Featured collections from <strong>${item.brands}</strong>. ` : ''}
+                            ${item.description || ''}
+                        </p>
+                    </div>
+                `;
+            }).join('');
+
+        } catch (error) {
+            console.error("Sanity connection error:", error);
+            gridContainer.innerHTML = `
+                <div class="col-span-3 text-center py-10 text-red-700 font-bold">
+                    Failed to connect to stock database. Please check your network connection or project settings.
+                </div>`;
+        }
+    }
+
+    // Fire off data retrieval loop as soon as the window finishes loading
+    window.addEventListener('DOMContentLoaded', fetchProShopData);
+</script>
+
+
+   </body>
 </html>
