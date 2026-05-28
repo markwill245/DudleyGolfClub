@@ -27,25 +27,10 @@
             </div>
         </div>
 
-        <div class="bg-[#132419] p-8 sm:p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
+        <div class="bg-[#132419] p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
             <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
-            
-            <form action="https://formspree.io/f/mkoepvge" method="POST" class="space-y-4 text-left max-w-xl mx-auto">
-                <div>
-                    <label class="block text-[10px] uppercase tracking-wider font-bold text-[#C5A367] mb-1">Your Email</label>
-                    <input type="email" name="email" required class="w-full bg-[#1c3224] border border-[#C5A367]/30 px-4 py-2 text-white text-sm rounded focus:outline-none focus:border-[#C5A367]">
-                </div>
-                <div>
-                    <label class="block text-[10px] uppercase tracking-wider font-bold text-[#C5A367] mb-1">Message / Requirements</label>
-                    <textarea name="message" required rows="4" placeholder="What gear, sizing, or fittings are you inquiring about?" class="w-full bg-[#1c3224] border border-[#C5A367]/30 p-4 text-white text-sm rounded focus:outline-none focus:border-[#C5A367] placeholder-white/20"></textarea>
-                </div>
-                <div class="text-center pt-2">
-                    <button type="submit" class="w-full inline-block border border-[#C5A367] text-[#C5A367] bg-transparent px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition cursor-pointer">
-                        Send Message
-                    </button>
-                </div>
-            </form>
+            <a href="mailto:proshop@dudleygolfclub.com" class="inline-block border border-[#C5A367] text-[#C5A367] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">Inquire About Stock</a>
         </div>
 
         <div class="mt-20 text-center">
@@ -58,76 +43,57 @@
     </footer>
 
     <script type="module">
-        // 1. Import the production-ready libraries directly as modern modules
         import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
         import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
 
-        // 2. Configure the connection to your live Sanity project
         const client = createClient({
             projectId: 'c54r3a5t', 
             dataset: 'production',
-            useCdn: false,          // Pulls live un-cached data instantly
+            useCdn: false,          
             apiVersion: '2024-03-01'
         });
 
-        // 3. Set up image helper tool to generate optimized image URLs
         const builder = imageUrlBuilder(client);
         function urlFor(source) {
-            return builder.image(source).width(800).height(500).url();
+            return builder.image(source).width(800).height(600).url();
         }
 
-        // 4. Fetch data from your schema and render it
         async function fetchProShopData() {
             const gridContainer = document.getElementById('pro-shop-grid');
-            
-            // GROQ query pulling everything matching either spelling variation
             const query = `*[_type == "proshop" || _type == "proShop"] | order(_createdAt asc)`;
 
             try {
                 const items = await client.fetch(query);
 
-                // Fallback content if no documents match yet
                 if (!items || items.length === 0) {
                     gridContainer.innerHTML = `
                         <div class="col-span-3 text-center py-10 text-gray-500">
-                            No pro shop items posted yet. Add records in your Sanity dashboard to see them live!
+                            No items posted yet. Open Sanity to populate your stock list!
                         </div>`;
                     return;
                 }
 
-                // Loop over the dataset array and construct HTML cards dynamically
+                // Generates cards that look precisely like your original design format
                 gridContainer.innerHTML = items.map(item => {
-                    const imageUrl = item.image ? urlFor(item.image) : 'stock/stock3.webp';
+                    const imageUrl = item.image ? urlFor(item.image) : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80';
                     const titleText = item.title || 'Untitled Stock Item';
-                    const brandText = item.brands ? `<p class="text-[#C5A367] text-[10px] uppercase tracking-widest font-bold">${item.brands}</p>` : '';
-                    const descriptionText = item.description || 'No description provided for this item.';
+                    const brandText = item.brands ? `<strong>${item.brands}</strong> ` : '';
+                    const descriptionText = item.description || '';
                     
                     return `
-                        <div class="bg-white p-6 rounded shadow-sm border border-gray-100 flex flex-col justify-between space-y-4">
-                            <div class="space-y-4">
-                                <div class="overflow-hidden rounded bg-gray-50 aspect-[4/3]">
-                                    <img src="${imageUrl}" alt="${titleText}" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-                                </div>
-                                <div class="space-y-1">
-                                    ${brandText}
-                                    <h3 class="serif text-xl text-[#132419]">${titleText}</h3>
-                                </div>
-                                <p class="text-sm text-gray-600 leading-relaxed">${descriptionText}</p>
-                            </div>
+                        <div class="space-y-4">
+                            <img src="${imageUrl}" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="${titleText}">
+                            <h3 class="serif text-2xl">${titleText}</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">${brandText}${descriptionText}</p>
                         </div>
                     `;
-                }).join(''); // Connect all item panels into a single long clean layout string
+                }).join('');
 
             } catch (error) {
-                console.error("Sanity Database Error:", error);
-                gridContainer.innerHTML = `
-                    <div class="col-span-3 text-center py-10 text-red-700 font-bold bg-red-50 rounded border border-red-200">
-                        Failed to connect to the live inventory network. Please verify your local CORS configuration settings.
-                    </div>`;
+                console.error("Sanity Error:", error);
             }
         }
 
-        // Fire off execution immediately upon page paint load
         fetchProShopData();
     </script>
 </body>
