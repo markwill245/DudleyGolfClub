@@ -21,12 +21,47 @@
 
     <main class="max-w-7xl mx-auto py-20 px-6">
         
+        <!-- SECTION 1: Fixed Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+            
+            <!-- Pillar 1: Clothing/Apparel -->
+            <div class="space-y-4">
+                <img src="pro-shop-stock/stock4.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Club Apparel">
+                <h3 class="serif text-2xl">Club Apparel & Fashion</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Elevate your on-course style with our exclusive Dudley GC crested range. We stock the latest performance fabrics and seasonal collections from top brands to keep you looking your best in any weather.</p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="space-y-4">
+                <img src="pro-shop-stock/stock5.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Equipment">
+                <h3 class="serif text-2xl">Performance Hardware</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Experience the game like never before. From high-tech drivers to precision-engineered irons, our selection from Titleist, Ping, and TaylorMade is chosen to improve your scores and consistency.</p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="space-y-4">
+                <img src="pro-shop-stock/stock3.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Essentials">
+                <h3 class="serif text-2xl">Essentials & Accessories</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Don't head to the first tee unprepared. We carry all the essentials, including premium balls, leather gloves, and the latest range-finding technology to ensure you have a seamless round.</p>
+            </div>
+
+        </div>
+
+        <hr class="border-[#C5A367]/20 mb-20">
+
+        <!-- SECTION 2: Live Stock Arrivals -->
+        <div class="mb-10 text-center">
+            <h2 class="serif text-3xl mb-2">New Arrivals & Featured Items</h2>
+            <p class="text-xs uppercase tracking-widest text-[#C5A367] font-bold">Live from the Shop Floor</p>
+        </div>
+
         <div id="pro-shop-grid" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-            <div class="col-span-3 text-center py-10 text-gray-500 tracking-wider text-sm animate-pulse">
-                Loading live pro shop inventory...
+            <div class="col-span-3 text-center py-10 text-gray-400 tracking-wider text-sm animate-pulse">
+                Loading live arrivals...
             </div>
         </div>
 
+        <!-- Action Section -->
         <div class="bg-[#132419] p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
             <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
@@ -42,6 +77,7 @@
         &copy; 2026 Dudley Golf Club
     </footer>
 
+    <!-- Live Data Engine -->
     <script type="module">
         import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
         import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
@@ -67,15 +103,14 @@
 
                 if (!items || items.length === 0) {
                     gridContainer.innerHTML = `
-                        <div class="col-span-3 text-center py-10 text-gray-500">
-                            No items posted yet. Open Sanity to populate your stock list!
+                        <div class="col-span-3 text-center py-6 text-gray-500 text-sm italic">
+                            No promotional items listed at the moment. Check back soon!
                         </div>`;
                     return;
                 }
 
-                // Generates cards that look precisely like your original design format
                 gridContainer.innerHTML = items.map(item => {
-                    const imageUrl = item.image ? urlFor(item.image) : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80';
+                    const imageUrl = item.image ? urlFor(item.image) : 'pro-shop-stock/stock3.webp';
                     const titleText = item.title || 'Untitled Stock Item';
                     const brandText = item.brands ? `<strong>${item.brands}</strong> ` : '';
                     const descriptionText = item.description || '';
