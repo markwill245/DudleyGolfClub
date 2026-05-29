@@ -1697,26 +1697,31 @@ window.addEventListener("error", e => {
     });
 </script>
 
+<!-- SANITY BRIDGE -->
 <script type="module">
-    // 2. Sanity Connection Test
-    // If your client is defined in another file, you might need to import it here.
-    // If it's defined globally, this will work.
+    // Import the client directly from the Sanity CDN
+    import { createClient } from 'https://esm.sh/@sanity/client';
+
+    // 1. Initialize the client
+    const client = createClient({
+        projectId: 'c54r3a5t', // Your Project ID
+        dataset: 'production',
+        apiVersion: '2026-05-29', // Current date for latest features
+        useCdn: true
+    });
+
+    // 2. Test the connection
     async function testSanity() {
         try {
-            console.log("Attempting Sanity connection...");
+            console.log("Connecting to Sanity...");
             const data = await client.fetch(`*[_type == "hospitality"]`);
-            console.log("Sanity Connection Successful! Data received:", data);
+            console.log("Success! Data received from Sanity:", data);
         } catch (err) {
             console.error("Sanity Connection Failed:", err);
         }
     }
     
-    // Check if 'client' is defined before calling
-    if (typeof client !== 'undefined') {
-        testSanity();
-    } else {
-        console.error("Sanity 'client' variable not found. Check your configuration script.");
-    }
+    testSanity();
 </script>
 
 </body>
