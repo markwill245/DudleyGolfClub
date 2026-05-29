@@ -1691,15 +1691,32 @@ window.addEventListener("error", e => {
 
 <!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
 <script>
-    /* =========================
-       GLOBAL SAFETY NET
-    ========================= */
+    // 1. Global Safety Net
     window.addEventListener("error", e => {
         console.log("JS Error caught:", e.message);
     });
+</script>
 
-    // This closes the main block wrapper securely
-    })(); 
+<script type="module">
+    // 2. Sanity Connection Test
+    // If your client is defined in another file, you might need to import it here.
+    // If it's defined globally, this will work.
+    async function testSanity() {
+        try {
+            console.log("Attempting Sanity connection...");
+            const data = await client.fetch(`*[_type == "hospitality"]`);
+            console.log("Sanity Connection Successful! Data received:", data);
+        } catch (err) {
+            console.error("Sanity Connection Failed:", err);
+        }
+    }
+    
+    // Check if 'client' is defined before calling
+    if (typeof client !== 'undefined') {
+        testSanity();
+    } else {
+        console.error("Sanity 'client' variable not found. Check your configuration script.");
+    }
 </script>
 
 </body>
