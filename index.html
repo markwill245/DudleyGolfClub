@@ -1701,18 +1701,6 @@ window.addEventListener("error", e => {
 
 <!-- SANITY BRIDGE -->
 <script type="module">
-    // Import the client directly from the Sanity CDN
-    import { createClient } from 'https://esm.sh/@sanity/client';
-
-    // 1. Initialize the client
-    const client = createClient({
-        projectId: 'c54r3a5t', // Your Project ID
-        dataset: 'production',
-        apiVersion: '2026-05-29', // Current date for latest features
-        useCdn: true
-    });
-
-    <script type="module">
     import { createClient } from 'https://esm.sh/@sanity/client';
 
     const client = createClient({
@@ -1723,12 +1711,13 @@ window.addEventListener("error", e => {
     });
 
     async function loadProShop() {
+        const container = document.getElementById('pro-shop-container');
+        if (!container) return;
+
         try {
-            // Fetching only items of type 'proshop'
             const items = await client.fetch(`*[_type == "proshop"]`);
-            const container = document.getElementById('pro-shop-container');
             
-            if (container && items.length > 0) {
+            if (items.length > 0) {
                 container.innerHTML = items.map(item => `
                     <div class="pro-shop-card border p-4 rounded-lg">
                         <h3>${item.name || 'Pro Shop Item'}</h3>
