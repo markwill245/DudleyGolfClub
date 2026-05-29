@@ -768,6 +768,8 @@ function closeLightbox() {
             <h2 class="serif text-4xl md:text-6xl text-[#132419] pb-4 inline-block" style="border-bottom: 3px solid #C5A367;">
                 Professional Shop
             </h2>
+			<div id="pro-shop-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    </div>
         </div>
 
         <div class="flex flex-col lg:flex-row gap-20 items-center">
@@ -1710,22 +1712,36 @@ window.addEventListener("error", e => {
         useCdn: true
     });
 
-    // 2. Test the connection
-    async function testSanity() {
-    try {
-        // This * fetches every document in your database
-        const data = await client.fetch(`*`); 
-        console.log("Full database contents:", data);
-        
-        // This prints out all the 'types' found in your database
-        const types = data.map(item => item._type);
-        console.log("Found these document types:", [...new Set(types)]);
-    } catch (err) {
-        console.error("Connection Failed:", err);
+    <script type="module">
+    import { createClient } from 'https://esm.sh/@sanity/client';
+
+    const client = createClient({
+        projectId: 'c54r3a5t',
+        dataset: 'production',
+        apiVersion: '2026-05-29',
+        useCdn: true
+    });
+
+    async function loadProShop() {
+        try {
+            // Fetching only items of type 'proshop'
+            const items = await client.fetch(`*[_type == "proshop"]`);
+            const container = document.getElementById('pro-shop-container');
+            
+            if (container && items.length > 0) {
+                container.innerHTML = items.map(item => `
+                    <div class="pro-shop-card border p-4 rounded-lg">
+                        <h3>${item.name || 'Pro Shop Item'}</h3>
+                        <p>${item.description || 'Visit us for all your golfing needs.'}</p>
+                    </div>
+                `).join('');
+            }
+        } catch (err) {
+            console.error("Pro Shop load failed:", err);
+        }
     }
-}
-    
-    testSanity();
+
+    loadProShop();
 </script>
 
 </body>
