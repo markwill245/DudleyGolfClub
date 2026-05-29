@@ -1701,8 +1701,10 @@ window.addEventListener("error", e => {
 
 <!-- SANITY BRIDGE -->
 <script type="module">
+    // 1. Import the client
     import { createClient } from 'https://esm.sh/@sanity/client';
 
+    // 2. Initialize the client
     const client = createClient({
         projectId: 'c54r3a5t',
         dataset: 'production',
@@ -1710,9 +1712,13 @@ window.addEventListener("error", e => {
         useCdn: true
     });
 
+    // 3. Define the function to inject data
     async function loadProShop() {
         const container = document.getElementById('pro-shop-container');
-        if (!container) return;
+        if (!container) {
+            console.warn("Pro Shop container not found in HTML!");
+            return;
+        }
 
         try {
             const items = await client.fetch(`*[_type == "proshop"]`);
@@ -1724,12 +1730,15 @@ window.addEventListener("error", e => {
                         <p>${item.description || 'Visit us for all your golfing needs.'}</p>
                     </div>
                 `).join('');
+            } else {
+                container.innerHTML = '<p>No items found in Pro Shop.</p>';
             }
         } catch (err) {
             console.error("Pro Shop load failed:", err);
         }
     }
 
+    // 4. Run the function
     loadProShop();
 </script>
 
