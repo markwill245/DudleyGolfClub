@@ -1712,14 +1712,18 @@ window.addEventListener("error", e => {
 
     // 2. Test the connection
     async function testSanity() {
-        try {
-            console.log("Connecting to Sanity...");
-            const data = await client.fetch(`*[_type == "hospitality"]`);
-            console.log("Success! Data received from Sanity:", data);
-        } catch (err) {
-            console.error("Sanity Connection Failed:", err);
-        }
+    try {
+        // This * fetches every document in your database
+        const data = await client.fetch(`*`); 
+        console.log("Full database contents:", data);
+        
+        // This prints out all the 'types' found in your database
+        const types = data.map(item => item._type);
+        console.log("Found these document types:", [...new Set(types)]);
+    } catch (err) {
+        console.error("Connection Failed:", err);
     }
+}
     
     testSanity();
 </script>
