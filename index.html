@@ -1701,10 +1701,8 @@ window.addEventListener("error", e => {
 
 <!-- SANITY BRIDGE -->
 <script type="module">
-    // 1. Import the client
     import { createClient } from 'https://esm.sh/@sanity/client';
 
-    // 2. Initialize the client
     const client = createClient({
         projectId: 'c54r3a5t',
         dataset: 'production',
@@ -1712,33 +1710,29 @@ window.addEventListener("error", e => {
         useCdn: true
     });
 
-    // 3. Define the function to inject data
     async function loadProShop() {
         const container = document.getElementById('pro-shop-container');
-        if (!container) {
-            console.warn("Pro Shop container not found in HTML!");
-            return;
-        }
+        if (!container) return;
 
         try {
             const items = await client.fetch(`*[_type == "proshop"]`);
+            console.log("Pro Shop Items found:", items); // Check the console for this!
             
             if (items.length > 0) {
                 container.innerHTML = items.map(item => `
-                    <div class="pro-shop-card border p-4 rounded-lg">
-                        <h3>${item.name || 'Pro Shop Item'}</h3>
-                        <p>${item.description || 'Visit us for all your golfing needs.'}</p>
+                    <div class="pro-shop-card border p-4 m-2 rounded-lg bg-white shadow-sm">
+                        <h3 class="font-bold text-xl">${item.name || item.title || 'No Name'}</h3>
+                        <p>${item.description || 'No description available.'}</p>
                     </div>
                 `).join('');
             } else {
-                container.innerHTML = '<p>No items found in Pro Shop.</p>';
+                container.innerHTML = '<p>No pro shop items found.</p>';
             }
         } catch (err) {
             console.error("Pro Shop load failed:", err);
         }
     }
 
-    // 4. Run the function
     loadProShop();
 </script>
 
