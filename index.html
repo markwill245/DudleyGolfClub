@@ -1763,8 +1763,6 @@ window.addEventListener("error", e => {
         </div>
     </div>
 </footer>
-
-<!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
 <script>
     // 1. Global Safety Net
     window.addEventListener("error", e => {
@@ -1772,10 +1770,10 @@ window.addEventListener("error", e => {
     });
 </script>
 
-<!-- SANITY BRIDGE -->
 <script type="module">
     import { createClient } from 'https://esm.sh/@sanity/client';
 
+    // A. Sanity Client Configuration
     const client = createClient({
         projectId: 'c54r3a5t',
         dataset: 'production',
@@ -1783,32 +1781,41 @@ window.addEventListener("error", e => {
         useCdn: true
     });
 
+    // B. Pro Shop Data Loader
     async function loadProShop() {
         const container = document.getElementById('pro-shop-container');
         if (!container) return;
 
         try {
             const items = await client.fetch(`*[_type == "proshop"]`);
-            console.log("Pro Shop Items found:", items); // Check the console for this!
             
             if (items.length > 0) {
                 container.innerHTML = items.map(item => `
-    <div class="pro-shop-card border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow bg-white">
-        <h3 class="text-2xl font-bold text-gray-900 mb-2">${item.name || item.title || 'Untitled Item'}</h3>
-        <p class="text-gray-600">${item.description || 'Professional golf equipment available now.'}</p>
-        <button class="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">View Details</button>
-    </div>
-`).join('');
+                    <div class="pro-shop-card border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow bg-white">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">${item.name || item.title || 'Untitled Item'}</h3>
+                        <p class="text-gray-600">${item.description || 'Professional golf equipment available now.'}</p>
+                        <button class="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">View Details</button>
+                    </div>
+                `).join('');
             } else {
                 container.innerHTML = '<p>No pro shop items found.</p>';
             }
         } catch (err) {
             console.error("Pro Shop load failed:", err);
+            container.innerHTML = '<p>Unable to load shop items at this time.</p>';
         }
     }
 
-    loadProShop();
+    // C. Initialize everything on Load
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize Course Data (from your course-data.js)
+        if (typeof initCourseGuide === 'function') {
+            initCourseGuide(); 
+        }
+        
+        // Initialize Pro Shop
+        loadProShop();
+    });
 </script>
-
 </body>
 </html>
