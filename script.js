@@ -1,32 +1,37 @@
 // ==========================================
 // 1. SANITY REAL-TIME DATA FETCH (CHARITY)
 // ==========================================
-async function fetchSanityData() {
-    if (!window.SanityClient || !window.SanityClient.createClient) {
-        console.warn("Sanity library engine is still loading or unavailable.");
-        return;
-    }
+import { createClient } from 'https://esm.sh/@sanity/client';
 
-    const client = window.SanityClient.createClient({
+async function fetchSanityData() {
+    const client = createClient({
         projectId: 'c54r3a5t',
         dataset: 'production',
-        useCdn: false, // Ensures updates show instantly on hit publish!
-        apiVersion: '2024-03-01'
+        useCdn: false, // Ensures updates show instantly upon publish
+        apiVersion: '2026-05-29' // Updated to current version
     });
 
     try {
-        const query = `*[_type == "charity"][0].amount`;
-        const liveTotal = await client.fetch(query);
+        // Fetch the amount directly
+        const liveTotal = await client.fetch(`*[_type == "charity"][0].amount`);
         const charityElement = document.getElementById('charity-total');
 
-        if (charityElement && liveTotal !== undefined) {
-            charityElement.innerText = liveTotal;
-            console.log("Charity total updated from Sanity: £" + liveTotal);
+        if (charityElement) {
+            // Check if liveTotal exists, fallback to £0 if missing
+            const displayValue = liveTotal !== undefined ? liveTotal : "0";
+            charityElement.innerText = displayValue;
+            console.log("Charity total updated from Sanity: £" + displayValue);
         }
     } catch (err) {
         console.error("Sanity Charity Fetch Error:", err);
     }
 }
+
+// Initialise scripts when the site structure is loaded
+window.addEventListener('DOMContentLoaded', () => {
+    initNavigation();
+    fetchSanityData();
+});
 
 // ==========================================
 // 2. MOBILE MENU SLIDER & JUMP-GLITCH FIX
@@ -36,15 +41,17 @@ function initNavigation() {
     const navLinksContainer = document.getElementById('nav-links');
 
     if (menuBtn && navLinksContainer) {
-        // Toggle mobile drawer layout smoothly
+        // Toggle mobile drawer
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            navLinksContainer.classList.toggle('translate-x-full');
-            navLinksContainer.classList.toggle('translate-x-0');
+            // Using classList.toggle is fine, but we ensure state consistency
+            const isOpen = navLinksContainer.classList.contains('translate-x-0');
+            navLinksContainer.classList.toggle('translate-x-full', isOpen);
+            navLinksContainer.classList.toggle('translate-x-0', !isOpen);
         });
     }
 
-    // Fixes the "Hospitality opens History first" link glitch
+    // Intercept local anchor links
     const links = document.querySelectorAll('#nav-links a');
     links.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -54,22 +61,23 @@ function initNavigation() {
             if (targetHref && targetHref.startsWith('#')) {
                 e.preventDefault();
 
-                // 1. Instantly hide the mobile drawer menu first so it can't conflict
+                // 1. Force close the menu drawer immediately
                 if (navLinksContainer) {
                     navLinksContainer.classList.add('translate-x-full');
                     navLinksContainer.classList.remove('translate-x-0');
                 }
 
-                // 2. Short pause allows the drawer layout to close cleanly before calculating positions
-                setTimeout(() => {
-                    const targetSection = document.querySelector(targetHref);
-                    if (targetSection) {
+                // 2. Scroll to section
+                const targetSection = document.querySelector(targetHref);
+                if (targetSection) {
+                    // Use a slightly shorter delay for snappier mobile feel
+                    setTimeout(() => {
                         targetSection.scrollIntoView({
                             behavior: 'smooth',
                             block: 'start'
                         });
-                    }
-                }, 200); // 200ms delay stops the viewport math from breaking
+                    }, 150);
+                }
             }
         });
     });
