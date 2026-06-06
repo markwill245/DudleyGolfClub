@@ -788,12 +788,14 @@ img {
     // 2. Fetch data
     const fetchHoles = async () => {
         const holes = await client.fetch(`*[_type == "course"] | order(holeNumber asc){holeNumber, holeName, par, yards, proTip}`);
-        window.courseData = holes.map(h => ({ 
-            number: h.holeNumber, name: h.holeName, par: h.par, 
-            w: h.yards, y: h.yards, r: h.yards, si: "-",
-            desc: h.proTip || "", tip: h.proTip || "", 
-            images: [`images/hole${h.holeNumber}.webp`] 
-        }));
+      window.courseData = holes.map(h => ({ 
+    number: h.holeNumber, 
+    name: h.holeName,
+    par: h.par,
+    w: h.yards,
+    desc: h.introduction, // Use the new introduction field here
+    tip: h.proTip         // Existing field
+}));
         
         window.buildNav();
         window.setHole(window.courseData[0].number);
