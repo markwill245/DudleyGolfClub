@@ -6,6 +6,7 @@
     <title>Pro Shop Stock | Dudley Golf Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
+    
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
@@ -20,47 +21,51 @@
 
     <main class="max-w-7xl mx-auto py-20 px-6">
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+        <!-- SECTION 1: Fixed Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
             
+            <!-- Pillar 1: Clothing/Apparel -->
             <div class="space-y-4">
-               <img src="stock/stock4.webp" alt="Dudley Golf Club premium golf clubs and equipment selection" class="w-full h-64 object-cover border border-[#C5A367]/20" width="800" height="400" loading="lazy">
-                <h3 class="serif text-2xl">Stylish Shirts</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">We stock the latest range from <strong>Titleist, Ping, and TaylorMade</strong>. Custom fitting sessions are available with our PGA Professional using launch monitor technology.</p>
+                <img src="stock4.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Club Apparel">
+                <h3 class="serif text-2xl">Club Apparel & Fashion</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Elevate your on-course style with our exclusive Dudley GC crested range. We stock the latest performance fabrics and seasonal collections from top brands to keep you looking your best in any weather.</p>
             </div>
 
+            <!-- Pillar 2 -->
             <div class="space-y-4">
-               <img src="stock/stock5.webp" alt="Dudley Golf Club stylish golf clothing and apparel collection" class="w-full h-64 object-cover border border-[#C5A367]/20" width="800" height="400" loading="lazy">
-                <h3 class="serif text-2xl">Apparel & Footwear</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Look the part with <strong>FootJoy and Galvin Green</strong>. We carry a wide selection of Dudley GC crested clothing, waterproofs, and the latest spike/spikeless shoes.</p>
+                <img src="stock5.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Equipment">
+                <h3 class="serif text-2xl">Performance Hardware</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Experience the game like never before. From high-tech drivers to precision-engineered irons, our selection from Titleist, Ping, and TaylorMade is chosen to improve your scores and consistency.</p>
             </div>
 
+            <!-- Pillar 3 -->
             <div class="space-y-4">
-              <img src="stock/stock3.webp" alt="Dudley Golf Club essential golf accessories and training aids" class="w-full h-64 object-cover border border-[#C5A367]/20" width="800" height="400" loading="lazy">
-                <h3 class="serif text-2xl">Essentials & Gifts</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">From the #1 Ball in Golf to premium leather gloves and GPS devices. Perfect for stocking up before your round or finding a gift for a fellow member.</p>
+                <img src="stock3.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Essentials">
+                <h3 class="serif text-2xl">Essentials & Accessories</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Don't head to the first tee unprepared. We carry all the essentials, including premium balls, leather gloves, and the latest range-finding technology to ensure you have a seamless round.</p>
             </div>
 
         </div>
 
-        <div class="bg-[#132419] p-8 sm:p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
+        <hr class="border-[#C5A367]/20 mb-20">
+
+        <!-- SECTION 2: Live Stock Arrivals -->
+        <div class="mb-10 text-center">
+            <h2 class="serif text-3xl mb-2">New Arrivals & Featured Items</h2>
+            <p class="text-xs uppercase tracking-widest text-[#C5A367] font-bold">Live from the Shop Floor</p>
+        </div>
+
+        <div id="pro-shop-grid" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+            <div class="col-span-3 text-center py-10 text-gray-400 tracking-wider text-sm animate-pulse">
+                Loading live arrivals...
+            </div>
+        </div>
+
+        <!-- Action Section -->
+        <div class="bg-[#132419] p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
             <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
-            
-            <form action="https://formspree.io/f/mkoepvge" method="POST" class="space-y-4 text-left max-w-xl mx-auto">
-                <div>
-                    <label class="block text-[10px] uppercase tracking-wider font-bold text-[#C5A367] mb-1">Your Email</label>
-                    <input type="email" name="email" required class="w-full bg-[#1c3224] border border-[#C5A367]/30 px-4 py-2 text-white text-sm rounded focus:outline-none focus:border-[#C5A367]">
-                </div>
-                <div>
-                    <label class="block text-[10px] uppercase tracking-wider font-bold text-[#C5A367] mb-1">Message / Requirements</label>
-                    <textarea name="message" required rows="4" placeholder="What gear, sizing, or fittings are you inquiring about?" class="w-full bg-[#1c3224] border border-[#C5A367]/30 p-4 text-white text-sm rounded focus:outline-none focus:border-[#C5A367] placeholder-white/20"></textarea>
-                </div>
-                <div class="text-center pt-2">
-                    <button type="submit" class="w-full inline-block border border-[#C5A367] text-[#C5A367] bg-transparent px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition cursor-pointer">
-                        Send Message
-                    </button>
-                </div>
-            </form>
+            <a href="mailto:proshop@dudleygolfclub.com" class="inline-block border border-[#C5A367] text-[#C5A367] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">Inquire About Stock</a>
         </div>
 
         <div class="mt-20 text-center">
@@ -71,5 +76,60 @@
     <footer class="bg-[#132419] py-8 text-center text-white/50 text-[10px] uppercase tracking-widest">
         &copy; 2026 Dudley Golf Club
     </footer>
+
+    <!-- Live Data Engine -->
+    <script type="module">
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
+        import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
+
+        const client = createClient({
+            projectId: 'c54r3a5t', 
+            dataset: 'production',
+            useCdn: false,          
+            apiVersion: '2024-03-01'
+        });
+
+        const builder = imageUrlBuilder(client);
+        function urlFor(source) {
+            return builder.image(source).width(800).height(600).url();
+        }
+
+        async function fetchProShopData() {
+            const gridContainer = document.getElementById('pro-shop-grid');
+            const query = `*[_type == "proshop" || _type == "proShop"] | order(_createdAt asc)`;
+
+            try {
+                const items = await client.fetch(query);
+
+                if (!items || items.length === 0) {
+                    gridContainer.innerHTML = `
+                        <div class="col-span-3 text-center py-6 text-gray-500 text-sm italic">
+                            No promotional items listed at the moment. Check back soon!
+                        </div>`;
+                    return;
+                }
+
+                gridContainer.innerHTML = items.map(item => {
+                    const imageUrl = item.image ? urlFor(item.image) : 'pro-shop-stock/stock3.webp';
+                    const titleText = item.title || 'Untitled Stock Item';
+                    const brandText = item.brands ? `<strong>${item.brands}</strong> ` : '';
+                    const descriptionText = item.description || '';
+                    
+                    return `
+                        <div class="space-y-4">
+                            <img src="${imageUrl}" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="${titleText}">
+                            <h3 class="serif text-2xl">${titleText}</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">${brandText}${descriptionText}</p>
+                        </div>
+                    `;
+                }).join('');
+
+            } catch (error) {
+                console.error("Sanity Error:", error);
+            }
+        }
+
+        fetchProShopData();
+    </script>
 </body>
 </html>
