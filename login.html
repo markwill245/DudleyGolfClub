@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member Login | Dudley Golf Club</title>
     <link rel="stylesheet" href="./dist/output.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
     <style>
-        :root { 
-            --gold: #C5A367; 
-            --forest: #132419; 
-            --cream: #F9F7F2; 
+        :root {
+            --gold: #C5A367;
+            --forest: #132419;
+            --cream: #F9F7F2;
         }
-        
-        body { 
+
+        body {
             font-family: 'Outfit', sans-serif;
             background-color: var(--forest);
             color: #ffffff;
@@ -25,14 +28,15 @@
             flex-direction: column;
         }
 
-        .serif { font-family: 'Cormorant Garamond', serif; }
+        .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
 
-        /* GATEWAY HERO BACKGROUND */
-        .gateway-bg { 
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)), url('images/home-page.webp');
-            background-size: cover; 
+        .gateway-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)), url('images/home-page.webp');
+            background-size: cover;
             background-position: center;
-            background-repeat: no-repeat; /* Prevents background duplication */
+            background-repeat: no-repeat;
             background-attachment: fixed;
             flex-grow: 1;
             display: flex;
@@ -41,7 +45,6 @@
             padding: 4rem 1rem;
         }
 
-        /* PREMIUM GLASS PANEL */
         .gateway-card {
             background: rgba(19, 36, 25, 0.85);
             border: 1px solid rgba(197, 163, 103, 0.25);
@@ -52,7 +55,6 @@
             max-width: 500px;
         }
 
-        /* GOLD BUTTON STYLES */
         .gold-btn {
             background-color: var(--gold);
             color: var(--forest);
@@ -67,38 +69,45 @@
             letter-spacing: 0.05em;
             border-radius: 0.25rem;
         }
+
         .gold-btn:hover {
             background-color: #dfb979;
             box-shadow: 0 0 20px rgba(197, 163, 103, 0.6);
             transform: translateY(-2px);
         }
 
-        /* RESPONSIVE TYPE FIXES */
         @media (max-width: 768px) {
-            h2 { font-size: 2rem !important; }
-            h3 { font-size: 1.5rem !important; }
+            h2 {
+                font-size: 2rem !important;
+            }
+
+            h3 {
+                font-size: 1.5rem !important;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <main class="gateway-bg">
         <div class="gateway-card rounded-xl p-8 md:p-12 text-center">
-            
+
             <h2 class="serif text-3xl md:text-4xl text-[#C5A367] italic mb-2">Dudley Golf Club</h2>
             <p class="text-sm tracking-widest uppercase text-white/50 mb-8">Members Area Portal</p>
-            
+
             <div class="w-16 h-[1px] bg-[#C5A367]/40 mx-auto mb-8"></div>
-            
+
             <h3 class="serif text-xl md:text-2xl mb-4 text-white">Secure Sign-In</h3>
             <p class="text-white/70 text-sm leading-relaxed mb-8">
-                Click the button below to safely access our secure tee booking system, handicap records, and private members portal features.
+                Click the button below to safely access our secure tee booking system, handicap records, and private
+                members portal features.
             </p>
-            
+
             <a href="https://www.dudleygolfclub.com/login.php" class="gold-btn">
                 Proceed to Secure Login
             </a>
-            
+
             <p class="text-xs text-white/40 mt-6 flex items-center justify-center gap-1">
                 🔒 Secure Portal
             </p>
@@ -113,9 +122,16 @@
                     Turners Hill, Rowley Regis,<br>
                     West Midlands, B65 9DP
                 </p>
-                <p class="text-white/70 text-sm mb-2">Tel: <a href="tel:01215591625" class="text-[#C5A367] hover:underline">01384 233877</a></p>
-                <p class="text-white/70 text-sm">Email: <a href="mailto:secretary@dudleygolfclub.com" class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a></p>
+                <p class="text-white/70 text-sm mb-2">Tel: <a href="tel:01215591625"
+                        class="text-[#C5A367] hover:underline">01384 233877</a></p>
+                <p class="text-white/70 text-sm">Email: <a href="mailto:secretary@dudleygolfclub.com"
+                        class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a></p>
             </div>
-            
+
             <div class="w-full h-[250px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.8428807831034!2d-2.062226223594879!3d52.47648357207436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870900cc2311af9%3A0x6b44583151829676!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk!4v1717787000000!5m2!1sen!2suk" width="
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

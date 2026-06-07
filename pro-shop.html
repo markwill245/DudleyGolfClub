@@ -1,18 +1,27 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Shop Stock | Dudley Golf Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap"
+        rel="stylesheet">
+
     <style>
-        .serif { font-family: 'Playfair Display', serif; }
-        body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F7F2;
+        }
     </style>
 </head>
+
 <body class="text-[#132419]">
 
     <header class="bg-[#132419] py-16 px-4 text-center border-b border-[#C5A367]/30">
@@ -21,29 +30,35 @@
     </header>
 
     <main class="max-w-7xl mx-auto py-20 px-6">
-        
+
         <!-- SECTION 1: Fixed Pillars -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
-            
+
             <!-- Pillar 1: Clothing/Apparel -->
             <div class="space-y-4">
                 <img src="stock4.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Club Apparel">
                 <h3 class="serif text-2xl">Club Apparel & Fashion</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Elevate your on-course style with our exclusive Dudley GC crested range. We stock the latest performance fabrics and seasonal collections from top brands to keep you looking your best in any weather.</p>
+                <p class="text-sm text-gray-600 leading-relaxed">Elevate your on-course style with our exclusive Dudley
+                    GC crested range. We stock the latest performance fabrics and seasonal collections from top brands
+                    to keep you looking your best in any weather.</p>
             </div>
 
             <!-- Pillar 2 -->
             <div class="space-y-4">
                 <img src="stock5.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Equipment">
                 <h3 class="serif text-2xl">Performance Hardware</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Experience the game like never before. From high-tech drivers to precision-engineered irons, our selection from Titleist, Ping, and TaylorMade is chosen to improve your scores and consistency.</p>
+                <p class="text-sm text-gray-600 leading-relaxed">Experience the game like never before. From high-tech
+                    drivers to precision-engineered irons, our selection from Titleist, Ping, and TaylorMade is chosen
+                    to improve your scores and consistency.</p>
             </div>
 
             <!-- Pillar 3 -->
             <div class="space-y-4">
                 <img src="stock3.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Essentials">
                 <h3 class="serif text-2xl">Essentials & Accessories</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Don't head to the first tee unprepared. We carry all the essentials, including premium balls, leather gloves, and the latest range-finding technology to ensure you have a seamless round.</p>
+                <p class="text-sm text-gray-600 leading-relaxed">Don't head to the first tee unprepared. We carry all
+                    the essentials, including premium balls, leather gloves, and the latest range-finding technology to
+                    ensure you have a seamless round.</p>
             </div>
 
         </div>
@@ -65,12 +80,17 @@
         <!-- Action Section -->
         <div class="bg-[#132419] p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
             <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
-            <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
-            <a href="mailto:proshop@dudleygolfclub.com" class="inline-block border border-[#C5A367] text-[#C5A367] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">Inquire About Stock</a>
+            <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club
+                specification or clothing size, get in touch and we can order it directly to the club for you.</p>
+            <a href="mailto:proshop@dudleygolfclub.com"
+                class="inline-block border border-[#C5A367] text-[#C5A367] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">Inquire
+                About Stock</a>
         </div>
 
         <div class="mt-20 text-center">
-            <a href="index.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition">Return to Home</a>
+            <a href="index.html"
+                class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition">Return
+                to Home</a>
         </div>
     </main>
 
@@ -84,9 +104,9 @@
         import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
 
         const client = createClient({
-            projectId: 'c54r3a5t', 
+            projectId: 'c54r3a5t',
             dataset: 'production',
-            useCdn: false,          
+            useCdn: false,
             apiVersion: '2024-03-01'
         });
 
@@ -115,7 +135,7 @@
                     const titleText = item.title || 'Untitled Stock Item';
                     const brandText = item.brands ? `<strong>${item.brands}</strong> ` : '';
                     const descriptionText = item.description || '';
-                    
+
                     return `
                         <div class="space-y-4">
                             <img src="${imageUrl}" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="${titleText}">
@@ -133,140 +153,5 @@
         fetchProShopData();
     </script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Shop Stock | Dudley Golf Club</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700&family=Inter:wght=400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        .serif { font-family: 'Playfair Display', serif; }
-        body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; }
-    </style>
-</head>
-<body class="text-[#132419]">
 
-    <header class="bg-[#132419] py-16 px-4 text-center border-b border-[#C5A367]/30">
-        <h1 class="serif text-5xl text-white mb-4">Pro Shop & Academy</h1>
-        <p class="text-[#C5A367] uppercase tracking-widest text-xs font-bold">Premium Equipment & Expert Advice</p>
-    </header>
-
-    <main class="max-w-7xl mx-auto py-20 px-6">
-        
-        <!-- SECTION 1: Fixed Pillars -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
-            
-            <!-- Pillar 1: Clothing/Apparel -->
-            <div class="space-y-4">
-                <img src="stock4.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Club Apparel">
-                <h3 class="serif text-2xl">Club Apparel & Fashion</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Elevate your on-course style with our exclusive Dudley GC crested range. We stock the latest performance fabrics and seasonal collections from top brands to keep you looking your best in any weather.</p>
-            </div>
-
-            <!-- Pillar 2 -->
-            <div class="space-y-4">
-                <img src="stock5.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Equipment">
-                <h3 class="serif text-2xl">Performance Hardware</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Experience the game like never before. From high-tech drivers to precision-engineered irons, our selection from Titleist, Ping, and TaylorMade is chosen to improve your scores and consistency.</p>
-            </div>
-
-            <!-- Pillar 3 -->
-            <div class="space-y-4">
-                <img src="stock3.webp" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="Essentials">
-                <h3 class="serif text-2xl">Essentials & Accessories</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Don't head to the first tee unprepared. We carry all the essentials, including premium balls, leather gloves, and the latest range-finding technology to ensure you have a seamless round.</p>
-            </div>
-
-        </div>
-
-        <hr class="border-[#C5A367]/20 mb-20">
-
-        <!-- SECTION 2: Live Stock Arrivals -->
-        <div class="mb-10 text-center">
-            <h2 class="serif text-3xl mb-2">New Arrivals & Featured Items</h2>
-            <p class="text-xs uppercase tracking-widest text-[#C5A367] font-bold">Live from the Shop Floor</p>
-        </div>
-
-        <div id="pro-shop-grid" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-            <div class="col-span-3 text-center py-10 text-gray-400 tracking-wider text-sm animate-pulse">
-                Loading live arrivals...
-            </div>
-        </div>
-
-        <!-- Action Section -->
-        <div class="bg-[#132419] p-12 text-center text-white max-w-4xl mx-auto rounded shadow-lg">
-            <h2 class="serif text-3xl mb-4">Looking for something specific?</h2>
-            <p class="text-white/70 mb-8 max-w-2xl mx-auto">Our stock moves quickly. If you need a specific club specification or clothing size, get in touch and we can order it directly to the club for you.</p>
-            <a href="mailto:proshop@dudleygolfclub.com" class="inline-block border border-[#C5A367] text-[#C5A367] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">Inquire About Stock</a>
-        </div>
-
-        <div class="mt-20 text-center">
-            <a href="index.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition">Return to Home</a>
-        </div>
-    </main>
-
-    <footer class="bg-[#132419] py-8 text-center text-white/50 text-[10px] uppercase tracking-widest">
-        &copy; 2026 Dudley Golf Club
-    </footer>
-
-    <!-- Live Data Engine -->
-    <script type="module">
-        import { createClient } from 'https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/+esm';
-        import imageUrlBuilder from 'https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/+esm';
-
-        const client = createClient({
-            projectId: 'c54r3a5t', 
-            dataset: 'production',
-            useCdn: false,          
-            apiVersion: '2024-03-01'
-        });
-
-        const builder = imageUrlBuilder(client);
-        function urlFor(source) {
-            return builder.image(source).width(800).height(600).url();
-        }
-
-        async function fetchProShopData() {
-            const gridContainer = document.getElementById('pro-shop-grid');
-            const query = `*[_type == "proshop" || _type == "proShop"] | order(_createdAt asc)`;
-
-            try {
-                const items = await client.fetch(query);
-
-                if (!items || items.length === 0) {
-                    gridContainer.innerHTML = `
-                        <div class="col-span-3 text-center py-6 text-gray-500 text-sm italic">
-                            No promotional items listed at the moment. Check back soon!
-                        </div>`;
-                    return;
-                }
-
-                gridContainer.innerHTML = items.map(item => {
-                    const imageUrl = item.image ? urlFor(item.image) : 'pro-shop-stock/stock3.webp';
-                    const titleText = item.title || 'Untitled Stock Item';
-                    const brandText = item.brands ? `<strong>${item.brands}</strong> ` : '';
-                    const descriptionText = item.description || '';
-                    
-                    return `
-                        <div class="space-y-4">
-                            <img src="${imageUrl}" class="w-full h-64 object-cover border border-[#C5A367]/20" alt="${titleText}">
-                            <h3 class="serif text-2xl">${titleText}</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">${brandText}${descriptionText}</p>
-                        </div>
-                    `;
-                }).join('');
-
-            } catch (error) {
-                console.error("Sanity Error:", error);
-            }
-        }
-
-        fetchProShopData();
-    </script>
-</body>
->>>>>>> a1349b6e417ccd8802b2cef382d95cb7bf8e6773
 </html>
