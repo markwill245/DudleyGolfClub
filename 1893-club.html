@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The 1893 Club Reciprocals | Dudley Golf Club</title>
-    <script defer src="/_vercel/insights/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -15,6 +14,9 @@
             background-color: #132419;
             border: 1px solid rgba(197, 163, 103, 0.15);
             transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card-glow:hover {
             border-color: #C5A367;
@@ -38,16 +40,9 @@
     </header>
 
     <main class="max-w-7xl mx-auto py-16 px-4">
-        
-        <div class="bg-white p-8 border border-[#C5A367]/20 shadow-sm max-w-4xl mx-auto mb-16 rounded-sm">
-            <h2 class="serif text-xl font-bold text-[#132419] mb-3 text-center">Reciprocal Regulations</h2>
-            <p class="text-xs text-gray-600 leading-relaxed text-center max-w-2xl mx-auto">
-                Arrangements must be booked in advance through our Professional Shop or Club Secretary. Players must present a valid home club introduction card and an active WHS handicap certificate.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-[#132419] p-6 text-white rounded-sm border-2 border-[#C5A367] relative">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="club-grid">
+            <!-- Host Club -->
+            <div class="bg-[#132419] p-6 text-white rounded-sm border-2 border-[#C5A367] relative flex flex-col justify-center">
                 <span class="absolute top-4 right-4 text-[9px] uppercase font-bold bg-[#C5A367] text-[#132419] px-2 py-0.5 rounded-sm">Host</span>
                 <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">West Midlands, England</span>
                 <h4 class="serif text-lg font-bold my-1">Dudley Golf Club</h4>
@@ -55,67 +50,62 @@
 
             <script>
                 const clubs = [
-                    { name: "Abernethy Golf Club", region: "Inverness-shire, Scotland" },
-                    { name: "Accrington & District GC", region: "Lancashire, England" },
-                    { name: "Baberton Golf Club", region: "Edinburgh, Scotland" },
-                    { name: "Bellingham Golf Club", region: "Northumberland, England" },
-                    { name: "Brechin Golf Club", region: "Brechin, Scotland" },
-                    { name: "Brough Golf Club", region: "East Riding, England" },
-                    { name: "Cirencester Golf Club", region: "Gloucestershire, England" },
-                    { name: "East Brighton Golf Club", region: "W Sussex, England" },
-                    { name: "East London Golf Club", region: "South Africa" },
-                    { name: "Enfield Golf Club", region: "Middlesex, England" },
-                    { name: "Engadine Golf Club", region: "Switzerland" },
-                    { name: "Flixton Golf Club", region: "Greater Manchester, England" },
-                    { name: "Foxrock Golf Club", region: "Dublin, Ireland" },
-                    { name: "Hampstead Golf Club", region: "London, England" },
-                    { name: "Harborne Golf Club", region: "West Midlands, England" },
-                    { name: "Helensburgh Golf Club", region: "Argyll & Bute, Scotland" },
-                    { name: "Holtye Golf Club", region: "East Sussex, England" },
-                    { name: "King Edward Bay Golf Club", region: "Isle of Man" },
-                    { name: "Kirby Muxloe Golf Club", region: "Leicestershire, England" },
-                    { name: "Kirkcudbright Golf Club", region: "Dumfries & Galloway, Scotland" },
-                    { name: "Long Ashton Golf Club", region: "North Somerset, England" },
-                    { name: "Lurgan Golf Club", region: "Craigavon, N. Ireland" },
-                    { name: "Malden Golf Club", region: "Surrey, England" },
-                    { name: "Muswell Hill Golf Club", region: "London, England" },
-                    { name: "Newtonmore Golf Club", region: "Inverness, Scotland" },
-                    { name: "Northampton Golf Club", region: "Northamptonshire, England" },
-                    { name: "Olton Golf Club", region: "West Midlands, England" },
-                    { name: "Oundle Golf Club", region: "Peterborough, England" },
-                    { name: "Robin Hood Golf Club", region: "West Midlands, England" },
-                    { name: "Rochford Hundred GC", region: "Essex, England" },
-                    { name: "Royal Norwich Golf Club", region: "Norfolk, England" },
-                    { name: "Seascale Golf Club", region: "Cumbria, England" },
-                    { name: "Silkstone Golf Club", region: "South Yorkshire, England" },
-                    { name: "Skipton Golf Club", region: "North Yorkshire, England" },
-                    { name: "South Shields Golf Club", region: "Tyne & Wear, England" },
-                    { name: "Stanmore Golf Club", region: "Middlesex, England" },
-                    { name: "Townsville Golf Club", region: "Queensland, Australia" },
-                    { name: "Wanstead Golf Club", region: "London, England" },
-                    { name: "Wellingborough Golf Club", region: "Northamptonshire, England" },
-                    { name: "Wells Golf Club", region: "Somerset, England" },
-                    { name: "Westgate & Birchington GC", region: "Kent, England" }
+                    { name: "Abernethy GC", region: "Scotland", url: "https://www.abernethygolfclub.com" },
+                    { name: "Accrington & District GC", region: "England", url: "https://www.accringtongolfclub.com" },
+                    { name: "Baberton GC", region: "Scotland", url: "https://babertongc.com" },
+                    { name: "Bellingham GC", region: "England", url: "https://bellinghamgolfclub.com" },
+                    { name: "Brechin GC", region: "Scotland", url: "https://www.brechingolfclub.co.uk" },
+                    { name: "Brough GC", region: "England", url: "https://www.brough-golfclub.co.uk" },
+                    { name: "Cirencester GC", region: "England", url: "https://www.cirencestergolfclub.co.uk" },
+                    { name: "East Brighton GC", region: "England", url: "https://www.ebgc.co.uk" },
+                    { name: "East London GC", region: "South Africa", url: "https://www.elgc.co.za" },
+                    { name: "Enfield GC", region: "England", url: "https://www.enfieldgolfclub.co.uk" },
+                    { name: "Engadine GC", region: "Switzerland", url: "https://www.engadine-golf.ch" },
+                    { name: "Flixton GC", region: "England", url: "https://www.flixtongolfclub.com" },
+                    { name: "Foxrock GC", region: "Ireland", url: "https://www.foxrockgolfclub.com" },
+                    { name: "Hampstead GC", region: "England", url: "https://www.hampsteadgolfclub.co.uk" },
+                    { name: "Harborne GC", region: "England", url: "https://www.harbornegolfclub.org.uk" },
+                    { name: "Helensburgh GC", region: "Scotland", url: "https://www.helensburghgolfclub.co.uk" },
+                    { name: "Holtye GC", region: "England", url: "https://www.holtyegolfclub.co.uk" },
+                    { name: "King Edward Bay GC", region: "Isle of Man", url: "https://www.kegc.im" },
+                    { name: "Kirby Muxloe GC", region: "England", url: "https://www.kirbymuxloegolfclub.co.uk" },
+                    { name: "Kirkcudbright GC", region: "Scotland", url: "https://www.kirkcudbrightgolfclub.co.uk" },
+                    { name: "Long Ashton GC", region: "England", url: "https://www.longashtongolfclub.co.uk" },
+                    { name: "Lurgan GC", region: "N. Ireland", url: "https://www.lurgangolfclub.com" },
+                    { name: "Malden GC", region: "England", url: "https://www.maldengolfclub.co.uk" },
+                    { name: "Muswell Hill GC", region: "England", url: "https://www.muswellhillgolfclub.co.uk" },
+                    { name: "Newtonmore GC", region: "Scotland", url: "https://www.newtonmoregolf.co.uk" },
+                    { name: "Northampton GC", region: "England", url: "https://www.northamptongolfclub.co.uk" },
+                    { name: "Olton GC", region: "England", url: "https://www.oltongolfclub.co.uk" },
+                    { name: "Oundle GC", region: "England", url: "https://www.oundlegolfclub.com" },
+                    { name: "Robin Hood GC", region: "England", url: "https://www.robinhoodgolfclub.co.uk" },
+                    { name: "Rochford Hundred GC", region: "England", url: "https://www.rochfordhundredgolfclub.co.uk" },
+                    { name: "Royal Norwich GC", region: "England", url: "https://www.royalnorwich.uk" },
+                    { name: "Seascale GC", region: "England", url: "https://www.seascalegolfclub.co.uk" },
+                    { name: "Silkstone GC", region: "England", url: "https://www.silkstonegolfclub.com" },
+                    { name: "Skipton GC", region: "England", url: "https://www.skiptongolfclub.co.uk" },
+                    { name: "South Shields GC", region: "England", url: "https://southshieldsgolfclub.co.uk" },
+                    { name: "Stanmore GC", region: "England", url: "https://www.stanmoregolfclub.co.uk" },
+                    { name: "Townsville GC", region: "Australia", url: "https://www.townsvillegolfclub.com.au" },
+                    { name: "Wanstead GC", region: "England", url: "https://www.wansteadgolfclub.com" },
+                    { name: "Wellingborough GC", region: "England", url: "https://wellingboroughgolfclub.com" },
+                    { name: "Wells GC", region: "England", url: "https://www.wellsgolfclub.co.uk" },
+                    { name: "Westgate & Birchington GC", region: "England", url: "https://www.westgate-and-birchington-golfclub.co.uk" }
                 ];
 
                 clubs.forEach(club => {
                     document.write(`
                         <div class="card-glow p-6 text-white rounded-sm">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">${club.region}</span>
-                            <h4 class="serif text-lg font-medium my-1">${club.name}</h4>
+                            <div>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">${club.region}</span>
+                                <h4 class="serif text-lg font-medium my-1">${club.name}</h4>
+                            </div>
+                            <a href="${club.url}" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Website &rarr;</a>
                         </div>
                     `);
                 });
             </script>
         </div>
-
-        <div class="mt-16 text-center">
-            <a href="results.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition duration-300">Return to Results</a>
-        </div>
     </main>
-
-    <footer class="bg-[#132419] py-8 text-center text-white/50 text-[10px] uppercase tracking-widest border-t border-[#C5A367]/20">
-        &copy; 2026 Dudley Golf Club &bull; The 1893 Club Network Hub
-    </footer>
 </body>
 </html>
