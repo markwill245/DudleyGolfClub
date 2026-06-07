@@ -10,7 +10,7 @@
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; color: #132419; }
-        .bg-prestige { background-color: #0b140e; } /* Elegant ultra-dark base */
+        .bg-prestige { background-color: #0b140e; }
         .card-glow { 
             background-color: #132419;
             border: 1px solid rgba(197, 163, 103, 0.15);
@@ -32,7 +32,7 @@
             <h1 class="serif text-4xl md:text-6xl text-white mb-4">The 1893 Club</h1>
             <div class="w-24 h-[1px] bg-[#C5A367] mx-auto my-6"></div>
             <p class="max-w-2xl mx-auto text-gray-300 text-sm md:text-base leading-relaxed font-light">
-                Dudley Golf Club is proud to extend reciprocal golf privileges, under the foundational rules of the network, to registered members of fellow historic clubs founded in the year 1893.
+                Dudley Golf Club is proud to extend reciprocal golf privileges to registered members of fellow historic clubs founded in the year 1893.
             </p>
         </div>
     </header>
@@ -42,62 +42,72 @@
         <div class="bg-white p-8 border border-[#C5A367]/20 shadow-sm max-w-4xl mx-auto mb-16 rounded-sm">
             <h2 class="serif text-xl font-bold text-[#132419] mb-3 text-center">Reciprocal Regulations</h2>
             <p class="text-xs text-gray-600 leading-relaxed text-center max-w-2xl mx-auto">
-                Arrangements must be booked strictly in advance through our Professional Shop or Club Secretary. Standard rules require players to present a valid home club introduction card and an active WHS handicap certificate upon arrival.
+                Arrangements must be booked in advance through our Professional Shop or Club Secretary. Players must present a valid home club introduction card and an active WHS handicap certificate.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Inverness-shire, Scotland</span>
-                <h4 class="serif text-lg font-medium my-1">Abernethy Golf Club</h4>
-                <a href="https://www.abernethygolfclub.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Lancashire, England</span>
-                <h4 class="serif text-lg font-medium my-1">Accrington & District</h4>
-                <a href="http://www.accringtongolfclub.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Edinburgh, Scotland</span>
-                <h4 class="serif text-lg font-medium my-1">Baberton Golf Club</h4>
-                <a href="https://babertongc.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Northumberland, England</span>
-                <h4 class="serif text-lg font-medium my-1">Bellingham Golf Club</h4>
-                <a href="https://bellinghamgolfclub.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Angus, Scotland</span>
-                <h4 class="serif text-lg font-medium my-1">Brechin Golf Club</h4>
-                <a href="https://www.brechingolfclub.co.uk" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">East Riding of Yorkshire</span>
-                <h4 class="serif text-lg font-medium my-1">Brough Golf Club</h4>
-                <a href="https://www.brough-golfclub.co.uk" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Gloucestershire, England</span>
-                <h4 class="serif text-lg font-medium my-1">Cirencester Golf Club</h4>
-                <a href="https://www.cirencestergolfclub.co.uk" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
             <div class="bg-[#132419] p-6 text-white rounded-sm border-2 border-[#C5A367] relative">
                 <span class="absolute top-4 right-4 text-[9px] uppercase font-bold bg-[#C5A367] text-[#132419] px-2 py-0.5 rounded-sm">Host</span>
                 <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">West Midlands, England</span>
                 <h4 class="serif text-lg font-bold my-1">Dudley Golf Club</h4>
-                <p class="text-xs text-gray-300 mt-2">Founding Network Partner</p>
             </div>
-            
-            </div>
+
+            <script>
+                const clubs = [
+                    { name: "Abernethy Golf Club", region: "Inverness-shire, Scotland" },
+                    { name: "Accrington & District GC", region: "Lancashire, England" },
+                    { name: "Baberton Golf Club", region: "Edinburgh, Scotland" },
+                    { name: "Bellingham Golf Club", region: "Northumberland, England" },
+                    { name: "Brechin Golf Club", region: "Brechin, Scotland" },
+                    { name: "Brough Golf Club", region: "East Riding, England" },
+                    { name: "Cirencester Golf Club", region: "Gloucestershire, England" },
+                    { name: "East Brighton Golf Club", region: "W Sussex, England" },
+                    { name: "East London Golf Club", region: "South Africa" },
+                    { name: "Enfield Golf Club", region: "Middlesex, England" },
+                    { name: "Engadine Golf Club", region: "Switzerland" },
+                    { name: "Flixton Golf Club", region: "Greater Manchester, England" },
+                    { name: "Foxrock Golf Club", region: "Dublin, Ireland" },
+                    { name: "Hampstead Golf Club", region: "London, England" },
+                    { name: "Harborne Golf Club", region: "West Midlands, England" },
+                    { name: "Helensburgh Golf Club", region: "Argyll & Bute, Scotland" },
+                    { name: "Holtye Golf Club", region: "East Sussex, England" },
+                    { name: "King Edward Bay Golf Club", region: "Isle of Man" },
+                    { name: "Kirby Muxloe Golf Club", region: "Leicestershire, England" },
+                    { name: "Kirkcudbright Golf Club", region: "Dumfries & Galloway, Scotland" },
+                    { name: "Long Ashton Golf Club", region: "North Somerset, England" },
+                    { name: "Lurgan Golf Club", region: "Craigavon, N. Ireland" },
+                    { name: "Malden Golf Club", region: "Surrey, England" },
+                    { name: "Muswell Hill Golf Club", region: "London, England" },
+                    { name: "Newtonmore Golf Club", region: "Inverness, Scotland" },
+                    { name: "Northampton Golf Club", region: "Northamptonshire, England" },
+                    { name: "Olton Golf Club", region: "West Midlands, England" },
+                    { name: "Oundle Golf Club", region: "Peterborough, England" },
+                    { name: "Robin Hood Golf Club", region: "West Midlands, England" },
+                    { name: "Rochford Hundred GC", region: "Essex, England" },
+                    { name: "Royal Norwich Golf Club", region: "Norfolk, England" },
+                    { name: "Seascale Golf Club", region: "Cumbria, England" },
+                    { name: "Silkstone Golf Club", region: "South Yorkshire, England" },
+                    { name: "Skipton Golf Club", region: "North Yorkshire, England" },
+                    { name: "South Shields Golf Club", region: "Tyne & Wear, England" },
+                    { name: "Stanmore Golf Club", region: "Middlesex, England" },
+                    { name: "Townsville Golf Club", region: "Queensland, Australia" },
+                    { name: "Wanstead Golf Club", region: "London, England" },
+                    { name: "Wellingborough Golf Club", region: "Northamptonshire, England" },
+                    { name: "Wells Golf Club", region: "Somerset, England" },
+                    { name: "Westgate & Birchington GC", region: "Kent, England" }
+                ];
+
+                clubs.forEach(club => {
+                    document.write(`
+                        <div class="card-glow p-6 text-white rounded-sm">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">${club.region}</span>
+                            <h4 class="serif text-lg font-medium my-1">${club.name}</h4>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
 
         <div class="mt-16 text-center">
             <a href="results.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition duration-300">Return to Results</a>
