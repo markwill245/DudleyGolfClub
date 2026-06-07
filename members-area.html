@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Area | Dudley Golf Club</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C5A367;
+            --forest: #132419;
+            --cream: #F9F7F2;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--forest);
+            background-image:
+                radial-gradient(at 0% 0%, rgba(197, 163, 103, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(197, 163, 103, 0.05) 0px, transparent 50%),
+                linear-gradient(45deg, #132419 25%, #182d20 25%, #182d20 50%, #132419 50%, #132419 75%, #182d20 75%, #182d20 100%);
+            background-size: 60px 60px;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .nav-home {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-home:hover {
+            opacity: 0.7;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--gold);
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            text-decoration-thickness: 1px;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            color: var(--gold);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 163, 103, 0.3);
+            padding: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--cream);
+            font-weight: 300;
+            transition: all 0.4s ease;
+        }
+
+        .menu-item:hover {
+            background-color: var(--gold);
+            color: var(--forest);
+            border-color: var(--gold);
+        }
+
+        .login-section {
+            margin-top: 80px;
+            padding: 40px;
+            background-color: var(--cream);
+            color: var(--forest);
+            text-align: center;
+            border-radius: 2px;
+            border: 1px solid var(--gold);
+        }
+
+        .btn-gold {
+            display: inline-block;
+            border: 1px solid var(--forest);
+            color: var(--forest);
+            padding: 12px 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--forest);
+            color: var(--gold);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-home">← Back to Home</a>
+        <h1>Members Area</h1>
+
+        <h2>Clubs (Team Comps)</h2>
+        <div class="grid">
+            <a href="wm-league.html" class="menu-item">West Midlands League</a>
+            <a href="wm-low-league.html" class="menu-item">West Midlands Low League</a>
+            <a href="wm-mid-league.html" class="menu-item">West Midlands Mid League</a>
+            <a href="wm-17-24-league.html" class="menu-item">West Midlands 17-24 League</a>
+        </div>
+
+        <h2>Mens Section</h2>
+        <div class="grid">
+            <a href="board-winners.html" class="menu-item">Board Winners</a>
+            <a href="social-events.html" class="menu-item">Club Social Events</a>
+            <a href="comp-winners.html" class="menu-item">Competition Winners</a>
+            <a href="upcoming-comps.html" class="menu-item">Upcoming Comps</a>
+        </div>
+
+        <h2>Junior Section</h2>
+        <div class="grid">
+            <a href="junior-comps.html" class="menu-item">Competitions</a>
+            <a href="junior-past-winners.html" class="menu-item">Past Winners</a>
+        </div>
+
+        <div class="login-section">
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin-top:0;">Member Access</h3>
+            <p>Please sign in to your preferred portal below.</p>
+
+            <a href="1893-club.html" class="btn-gold">1893 Club Login</a>
+            <a href="login.html" class="btn-gold">iGolf Login</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
