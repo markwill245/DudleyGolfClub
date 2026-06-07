@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        :root { --gold: #C5A367; --forest: #132419; --cream: #F9F7F2; }
-        .bg-cream { background-color: var(--cream); }
-
+        :root { 
+            --gold: #C5A367; 
+            --forest: #132419; 
+            --cream: #F9F7F2; 
+        }
+        
         body { 
             font-family: 'Outfit', sans-serif;
             background-color: var(--forest);
             color: #ffffff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
-        a[href^="tel"] {
-            color: #C5A367;
-            text-decoration: none;
-        }
-
-        h1 { font-size: 3.5rem; }
-        h2 { font-size: 2.5rem; }
-        h3 { font-size: 1.8rem; }
 
         .serif { font-family: 'Cormorant Garamond', serif; }
 
@@ -33,7 +32,13 @@
             background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)), url('images/home-page.webp');
             background-size: cover; 
             background-position: center;
+            background-repeat: no-repeat; /* Prevents background duplication */
             background-attachment: fixed;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem;
         }
 
         /* PREMIUM GLASS PANEL */
@@ -43,14 +48,24 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 500px;
         }
 
-        /* GOLD PULSE HOVER EFFECT FOR BUTTON */
+        /* GOLD BUTTON STYLES */
         .gold-btn {
             background-color: var(--gold);
             color: var(--forest);
             font-weight: 600;
             transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            border-radius: 0.25rem;
         }
         .gold-btn:hover {
             background-color: #dfb979;
@@ -58,62 +73,43 @@
             transform: translateY(-2px);
         }
 
-        /* GLOBAL MOBILE OVERFLOW PREVENTIONS */
-        html, body {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
-            position: relative;
-        }
-        * { box-sizing: border-box; min-width: 0; }
-        section, div, main, nav, footer { max-width: 100%; }
-
+        /* RESPONSIVE TYPE FIXES */
         @media (max-width: 768px) {
-            body { overflow-x: hidden !important; }
-            * { max-width: 100vw; }
-            h1 { font-size: 2.8rem !important; line-height: 1.1; }
-            h2 { font-size: 2.2rem !important; }
-            h3 { font-size: 1.6rem !important; }
+            h2 { font-size: 2rem !important; }
+            h3 { font-size: 1.5rem !important; }
         }
     </style>
 </head>
-<body class="flex flex-col min-h-screen">
+<body>
 
-    <!-- MAIN GATEWAY DISPLAY SECTION -->
-    <main class="flex-grow gateway-bg flex items-center justify-center px-4 py-24 md:py-32">
-        <div class="gateway-card w-full max-w-lg rounded-xl p-8 md:p-12 text-center transition-all duration-300">
+    <main class="gateway-bg">
+        <div class="gateway-card rounded-xl p-8 md:p-12 text-center">
             
-            <!-- Club Identity -->
             <h2 class="serif text-3xl md:text-4xl text-[#C5A367] italic mb-2">Dudley Golf Club</h2>
             <p class="text-sm tracking-widest uppercase text-white/50 mb-8">Members Area Portal</p>
             
             <div class="w-16 h-[1px] bg-[#C5A367]/40 mx-auto mb-8"></div>
             
-            <!-- Explanatory Text -->
             <h3 class="serif text-xl md:text-2xl mb-4 text-white">Secure Sign-In</h3>
             <p class="text-white/70 text-sm leading-relaxed mb-8">
                 Click the button below to safely access our secure tee booking system, handicap records, and private members portal features.
             </p>
             
-            <!-- Action Button (Change URL target below) -->
-            <a href="https://www.dudleygolfclub.com/login.php" 
-               class="gold-btn block w-full py-4 rounded text-center uppercase tracking-wider text-sm transition-all shadow-lg">
+            <a href="https://www.dudleygolfclub.com/login.php" class="gold-btn">
                 Proceed to Secure Login
             </a>
             
-            <!-- Secure Notice -->
             <p class="text-xs text-white/40 mt-6 flex items-center justify-center gap-1">
-                🔒 You are being directed to a secure administrative system.
+                🔒 Secure Portal
             </p>
-            
         </div>
     </main>
-    <!-- OFFICIAL CLUB FOOTER -->
-    <footer class="bg-[#0D1712] text-white py-20 px-8 border-t border-[#C5A367]/20">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+    <footer class="bg-[#0D1712] text-white py-16 px-8 border-t border-[#C5A367]/20">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             <div>
-                <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
-                <p class="text-white/70 text-sm leading-relaxed mb-6">
+                <h3 class="serif text-2xl text-[#C5A367] italic mb-4">Dudley Golf Club</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-4">
                     Turners Hill, Rowley Regis,<br>
                     West Midlands, B65 9DP
                 </p>
@@ -121,11 +117,5 @@
                 <p class="text-white/70 text-sm">Email: <a href="mailto:secretary@dudleygolfclub.com" class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a></p>
             </div>
             
-            <div class="w-full h-[350px] md:h-[550px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk!4v1709142000000!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+            <div class="w-full h-[250px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.8428807831034!2d-2.062226223594879!3d52.47648357207436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870900cc2311af9%3A0x6b44583151829676!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk!4v1717787000000!5m2!1sen!2suk" width="
