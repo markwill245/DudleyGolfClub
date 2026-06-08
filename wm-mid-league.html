@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Outfit:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <style>
+   <style>
         :root {
             --gold: #C5A367;
             --forest: #132419;
@@ -53,18 +53,38 @@
             padding: 40px;
             border: 1px solid rgba(197, 163, 103, 0.2);
         }
+
+        .league-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--gold);
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .league-btn:hover {
+            background-color: #b08d4e;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-       <a href="members-area.html" class="back-btn">← Back to Members Area</a>
+         <a href="members-area.html" class="back-btn">← Back to Members Area</a>
         <h1>West Midlands Mid League</h1>
         <div class="content-box">
-            <p>Information regarding the West Midlands Mid League competitions, fixtures, and standings will be posted
-                here.</p>
+            <p>Click the button below to view the current league standings on the official website.Dudley Division 3</p>
+            <a href="https://worcshcp.leaguerepublic.com/fg/1_311837522.html" class="league-btn" target="_blank"
+                rel="noopener noreferrer">
+                View League Tables
+            </a>
         </div>
     </div>
+
 </body>
 
 </html>

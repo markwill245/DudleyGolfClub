@@ -10,11 +10,14 @@
     <style>
         .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: #F9F7F2; color: #132419; }
-        .bg-prestige { background-color: #0b140e; } /* Elegant ultra-dark base */
+        .bg-prestige { background-color: #0b140e; }
         .card-glow { 
             background-color: #132419;
             border: 1px solid rgba(197, 163, 103, 0.15);
             transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card-glow:hover {
             border-color: #C5A367;
@@ -38,7 +41,6 @@
     </header>
 
     <main class="max-w-7xl mx-auto py-16 px-4">
-        
         <div class="bg-white p-8 border border-[#C5A367]/20 shadow-sm max-w-4xl mx-auto mb-16 rounded-sm">
             <h2 class="serif text-xl font-bold text-[#132419] mb-3 text-center">Reciprocal Regulations</h2>
             <p class="text-xs text-gray-600 leading-relaxed text-center max-w-2xl mx-auto">
@@ -47,57 +49,71 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Inverness-shire, Scotland</span>
-                <h4 class="serif text-lg font-medium my-1">Abernethy Golf Club</h4>
-                <a href="https://www.abernethygolfclub.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Lancashire, England</span>
-                <h4 class="serif text-lg font-medium my-1">Accrington & District</h4>
-                <a href="http://www.accringtongolfclub.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Edinburgh, Scotland</span>
-                <h4 class="serif text-lg font-medium my-1">Baberton Golf Club</h4>
-                <a href="https://babertongc.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Northumberland, England</span>
-                <h4 class="serif text-lg font-medium my-1">Bellingham Golf Club</h4>
-                <a href="https://bellinghamgolfclub.com" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Angus, Scotland</span>
-                <h4 class="serif text-lg font-medium my-1">Brechin Golf Club</h4>
-                <a href="https://www.brechingolfclub.co.uk" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">East Riding of Yorkshire</span>
-                <h4 class="serif text-lg font-medium my-1">Brough Golf Club</h4>
-                <a href="https://www.brough-golfclub.co.uk" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="card-glow p-6 text-white rounded-sm">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">Gloucestershire, England</span>
-                <h4 class="serif text-lg font-medium my-1">Cirencester Golf Club</h4>
-                <a href="https://www.cirencestergolfclub.co.uk" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
-            </div>
-
-            <div class="bg-[#132419] p-6 text-white rounded-sm border-2 border-[#C5A367] relative">
+            <div class="bg-[#132419] p-6 text-white rounded-sm border-2 border-[#C5A367] relative flex flex-col justify-center">
                 <span class="absolute top-4 right-4 text-[9px] uppercase font-bold bg-[#C5A367] text-[#132419] px-2 py-0.5 rounded-sm">Host</span>
                 <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">West Midlands, England</span>
                 <h4 class="serif text-lg font-bold my-1">Dudley Golf Club</h4>
                 <p class="text-xs text-gray-300 mt-2">Founding Network Partner</p>
             </div>
-            
-            </div>
+
+            <script>
+                const clubs = [
+                    { name: "Abernethy GC", region: "Scotland", url: "https://www.abernethygolfclub.com" },
+                    { name: "Accrington & District GC", region: "England", url: "https://www.accringtongolfclub.com" },
+                    { name: "Baberton GC", region: "Scotland", url: "https://babertongc.com" },
+                    { name: "Bellingham GC", region: "England", url: "https://bellinghamgolfclub.com" },
+                    { name: "Brechin GC", region: "Scotland", url: "https://www.brechingolfclub.co.uk" },
+                    { name: "Brough GC", region: "England", url: "https://www.brough-golfclub.co.uk" },
+                    { name: "Cirencester GC", region: "England", url: "https://www.cirencestergolfclub.co.uk" },
+                    { name: "East Brighton GC", region: "England", url: "https://www.ebgc.co.uk" },
+                    { name: "East London GC", region: "South Africa", url: "https://www.elgc.co.za" },
+                    { name: "Enfield GC", region: "England", url: "https://www.enfieldgolfclub.co.uk" },
+                    { name: "Engadine GC", region: "Switzerland", url: "https://www.engadine-golf.ch" },
+                    { name: "Flixton GC", region: "England", url: "https://www.flixtongolfclub.com" },
+                    { name: "Foxrock GC", region: "Ireland", url: "https://www.foxrockgolfclub.com" },
+                    { name: "Hampstead GC", region: "England", url: "https://www.hampsteadgolfclub.co.uk" },
+                    { name: "Harborne GC", region: "England", url: "https://www.harbornegolfclub.org.uk" },
+                    { name: "Helensburgh GC", region: "Scotland", url: "https://www.helensburghgolfclub.co.uk" },
+                    { name: "Holtye GC", region: "England", url: "https://www.holtyegolfclub.co.uk" },
+                    { name: "King Edward Bay GC", region: "Isle of Man", url: "https://www.kegc.im" },
+                    { name: "Kirby Muxloe GC", region: "England", url: "https://www.kirbymuxloegolfclub.co.uk" },
+                    { name: "Kirkcudbright GC", region: "Scotland", url: "https://www.kirkcudbrightgolfclub.co.uk" },
+                    { name: "Long Ashton GC", region: "England", url: "https://www.longashtongolfclub.co.uk" },
+                    { name: "Lurgan GC", region: "N. Ireland", url: "https://www.lurgangolfclub.com" },
+                    { name: "Malden GC", region: "England", url: "https://www.maldengolfclub.co.uk" },
+                    { name: "Muswell Hill GC", region: "England", url: "https://www.muswellhillgolfclub.co.uk" },
+                    { name: "Newtonmore GC", region: "Scotland", url: "https://www.newtonmoregolf.co.uk" },
+                    { name: "Northampton GC", region: "England", url: "https://www.northamptongolfclub.co.uk" },
+                    { name: "Olton GC", region: "England", url: "https://www.oltongolfclub.co.uk" },
+                    { name: "Oundle GC", region: "England", url: "https://www.oundlegolfclub.com" },
+                    { name: "Robin Hood GC", region: "England", url: "https://www.robinhoodgolfclub.co.uk" },
+                    { name: "Rochford Hundred GC", region: "England", url: "https://www.rochfordhundredgolfclub.co.uk" },
+                    { name: "Royal Norwich GC", region: "England", url: "https://www.royalnorwich.uk" },
+                    { name: "Seascale GC", region: "England", url: "https://www.seascalegolfclub.co.uk" },
+                    { name: "Silkstone GC", region: "England", url: "https://www.silkstonegolfclub.com" },
+                    { name: "Skipton GC", region: "England", url: "https://www.skiptongolfclub.co.uk" },
+                    { name: "South Shields GC", region: "England", url: "https://southshieldsgolfclub.co.uk" },
+                    { name: "Stanmore GC", region: "England", url: "https://www.stanmoregolfclub.co.uk" },
+                    { name: "Townsville GC", region: "Australia", url: "https://www.townsvillegolfclub.com.au" },
+                    { name: "Wanstead GC", region: "England", url: "https://www.wansteadgolfclub.com" },
+                    { name: "Wellingborough GC", region: "England", url: "https://wellingboroughgolfclub.com" },
+                    { name: "Wells GC", region: "England", url: "https://www.wellsgolfclub.co.uk" },
+                    { name: "Westgate & Birchington GC", region: "England", url: "https://www.westgate-and-birchington-golfclub.co.uk" }
+                ];
+
+                clubs.forEach(club => {
+                    document.write(`
+                        <div class="card-glow p-6 text-white rounded-sm">
+                            <div>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A367]">${club.region}</span>
+                                <h4 class="serif text-lg font-medium my-1">${club.name}</h4>
+                            </div>
+                            <a href="${club.url}" target="_blank" class="text-xs text-gray-400 hover:text-white transition inline-block mt-3 border-b border-gray-600 pb-0.5">Visit Club Website &rarr;</a>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
 
         <div class="mt-16 text-center">
             <a href="results.html" class="inline-block border border-[#132419] text-[#132419] px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-white transition duration-300">Return to Results</a>
