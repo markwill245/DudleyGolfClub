@@ -57,11 +57,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="members-area.html" class="back-btn">← Back to Members Area</a>
-        <h1>Upcoming Comps</h1>
-        <div class="content-box">
-            <p>Schedule of upcoming competitions and registration links.</p>
+    <div class="content-box">
+        <div class="flex flex-wrap gap-4 mb-8 pb-8 border-b border-[#C5A367]/20">
+            <select class="bg-transparent border border-[#C5A367] text-white p-2 text-sm outline-none cursor-pointer">
+                <option class="text-[#132419]">All Categories</option>
+                <option class="text-[#132419]">Men</option>
+                <option class="text-[#132419]">Ladies</option>
+                <option class="text-[#132419]">Juniors</option>
+                <option class="text-[#132419]">Seniors</option>
+            </select>
+            <button class="text-[#C5A367] hover:text-white underline text-sm transition">Clear Filters</button>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="text-[#C5A367] uppercase text-[10px] tracking-[0.2em] border-b border-[#C5A367]/30">
+                        <th class="py-4">Date</th>
+                        <th class="py-4">Competition</th>
+                        <th class="py-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                        <td class="py-4">Thu 11th Jun</td>
+                        <td class="py-4">Seniors Greensomes</td>
+                        <td class="py-4 text-[#C5A367]">Open</td>
+                    </tr>
+                    <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                        <td class="py-4">Sat 13th Jun</td>
+                        <td class="py-4">James Grainger Pairs</td>
+                        <td class="py-4 text-green-400">Entered</td>
+                    </tr>
+                    <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                        <td class="py-4">Sat 27th Jun</td>
+                        <td class="py-4">Saturday Medal Only</td>
+                        <td class="py-4"><a href="#" class="text-[#C5A367] underline">Online Signup</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
