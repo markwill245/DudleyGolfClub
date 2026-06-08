@@ -453,9 +453,10 @@
             <a href="#membership" class="hover:text-gold transition">Membership</a>
         </div>
 
-        <a href="members-area.html" class="relative z-[200] border border-[#C5A367] text-[#C5A367] px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
-    Member Area Login
-</a>
+        <a href="members-area.html"
+            class="relative z-[200] border border-[#C5A367] text-[#C5A367] px-4 md:px-5 py-2 text-[8px] md:text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+            Member Area Login
+        </a>
     </nav>
 
     <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
@@ -977,7 +978,8 @@
                     class="hover:text-[#132419] transition-all">Facebook</a><a
                     href="https://www.instagram.com/dudleygolfclub"
                     class="hover:text-[#132419] transition-all">Instagram</a><a href="https://x.com/dudleygolfclub"
-                    class="hover:text-[#132419] transition-all">X / Twitter</a></div>
+                    class="hover:text-[#132419] transition-all">X / Twitter</a>
+            </div>
         </div>
     </section>
 
@@ -1051,16 +1053,20 @@
                         <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
                             <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
                                 <span class="text-sm">Visitors (Mon-Fri)</span><span
-                                    class="serif text-3xl text-gold">£25.00</span></div>
+                                    class="serif text-3xl text-gold">£25.00</span>
+                            </div>
                             <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
                                 <span class="text-sm">Visitors (Sat-Sun)</span><span
-                                    class="serif text-3xl text-gold">£32.00</span></div>
+                                    class="serif text-3xl text-gold">£32.00</span>
+                            </div>
                             <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
                                 <span class="text-sm">Member Guest (Mon-Fri)</span><span
-                                    class="serif text-3xl text-gold">£20.00</span></div>
+                                    class="serif text-3xl text-gold">£20.00</span>
+                            </div>
                             <div class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end text-white">
                                 <span class="text-sm">Member Guest (Sat-Sun)</span><span
-                                    class="serif text-3xl text-gold">£25.00</span></div>
+                                    class="serif text-3xl text-gold">£25.00</span>
+                            </div>
                         </div>
                         <div class="mt-12 grid md:grid-cols-2 gap-4 text-center"><a
                                 href="https://www.dudleygolfclub.com/visitorbooking/"
@@ -2158,6 +2164,30 @@
         }
 
         loadProShop();
+    </script>
+    <script>
+        // Fetch live weather for Dudley
+        async function updateWeather() {
+            // Use a restricted API key that you have regenerated
+            const apiKey = '92791fb339d855dff8b055c35ce08b56';
+            const city = 'Dudley,UK';
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Weather fetch failed');
+                const data = await response.json();
+                const temp = Math.round(data.main.temp);
+                // Update the span we identified earlier
+                document.getElementById('weather').textContent = `Dudley: ${temp}°C`;
+            } catch (error) {
+                console.error("Could not fetch weather:", error);
+                document.getElementById('weather').textContent = "Dudley: --°C";
+            }
+        }
+
+        // Run when the page loads
+        updateWeather();
     </script>
 
 </body>
