@@ -22,16 +22,32 @@
                 linear-gradient(45deg, #132419 25%, #182d20 25%, #182d20 50%, #132419 50%, #132419 75%, #182d20 75%, #182d20 100%);
             background-size: 60px 60px;
             color: white;
-            padding: 40px 20px;
+            padding: 20px 10px;
             min-height: 100vh;
         }
 
         .content-box {
             background: rgba(255, 255, 255, 0.03);
-            padding: 40px;
+            padding: 20px;
             border: 1px solid rgba(197, 163, 103, 0.2);
             max-width: 1000px;
             margin: 0 auto;
+        }
+
+        .igolf-btn {
+            font-size: 10px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+        }
+
+        .igolf-btn:hover {
+            background: var(--gold);
+            color: var(--forest);
         }
     </style>
 </head>
@@ -41,20 +57,11 @@
         <div class="grid lg:grid-cols-3 gap-8 items-start">
 
             <div class="lg:col-span-2">
-                <div class="flex flex-wrap gap-4 mb-8 pb-8 border-b border-[#C5A367]/20">
-                    <select
-                        class="bg-transparent border border-[#C5A367] text-white p-2 text-sm outline-none cursor-pointer">
-                        <option class="text-[#132419]">All Categories</option>
-                        <option class="text-[#132419]">Men</option>
-                        <option class="text-[#132419]">Ladies</option>
-                        <option class="text-[#132419]">Juniors</option>
-                        <option class="text-[#132419]">Seniors</option>
-                    </select>
-                    <button class="text-[#C5A367] hover:text-white underline text-sm transition">Clear Filters</button>
-                </div>
-
-                <div class="text-center mb-10">
-                    <h2 class="text-2xl text-[#C5A367] mb-2 font-serif italic">2026 Season Schedule</h2>
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl text-[#C5A367] mb-2 font-serif italic">2026 Competition Schedule</h2>
+                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                        class="inline-block bg-[#C5A367] text-[#132419] px-6 py-2 rounded text-sm font-bold hover:bg-white transition">Access
+                        iGolf Portal</a>
                 </div>
 
                 <div class="overflow-x-auto">
@@ -64,271 +71,320 @@
                                 class="text-[#C5A367] uppercase text-[10px] tracking-[0.2em] border-b border-[#C5A367]/30">
                                 <th class="py-4 px-2">Date</th>
                                 <th class="py-4 px-2">Competition</th>
-                                <th class="py-4 px-2">Status</th>
                             </tr>
                         </thead>
                         <tbody class="text-sm">
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Thu 11th Jun</td>
-                                <td class="py-4 px-2">Seniors Greensomes</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Thu 11th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors Greensomes <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 13th Jun</td>
-                                <td class="py-4 px-2">James Grainger Pairs</td>
-                                <td class="py-4 px-2 text-green-400">Entered</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 13th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">James Grainger Pairs <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 13th Jun</td>
-                                <td class="py-4 px-2">Junior Stableford - Mixed 9</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 13th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Stableford - Mixed 9 <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 14th Jun</td>
-                                <td class="py-4 px-2">June Sunday Stableford</td>
-                                <td class="py-4 px-2 text-green-400">Entered</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 14th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">June Sunday Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Mon 15th Jun</td>
-                                <td class="py-4 px-2">Seniors Bruton Cup</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Mon 15th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors Bruton Cup <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 20th Jun</td>
-                                <td class="py-4 px-2">Bassano Cup</td>
-                                <td class="py-4 px-2 text-green-400">Entered</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 20th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Bassano Cup <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 27th Jun</td>
-                                <td class="py-4 px-2">Club Championship Round 1</td>
-                                <td class="py-4 px-2 text-green-400">Entered</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 27th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Club Championship Round 1 <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 27th Jun</td>
-                                <td class="py-4 px-2">Saturday Medal Only</td>
-                                <td class="py-4 px-2"><a href="#" class="text-[#C5A367] underline">Online Signup</a>
-                                </td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 27th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Saturday Medal Only <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 27th Jun</td>
-                                <td class="py-4 px-2">Junior Major - Arthur Turley Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 27th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Major - Arthur Turley
+                                    Trophy <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 28th Jun</td>
-                                <td class="py-4 px-2">Sunday Medal & Club Championship Rd 2</td>
-                                <td class="py-4 px-2"><a href="#" class="text-[#C5A367] underline">Online Signup</a>
-                                </td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 28th Jun</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Sunday Medal & Club Championship
+                                    Rd 2 <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Thu 2nd Jul</td>
-                                <td class="py-4 px-2">Seniors July Medal</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Thu 2nd Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors July Medal <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 4th Jul</td>
-                                <td class="py-4 px-2">Captain's Day & Walker Cup OPEN</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 4th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Captain's Day & Walker Cup OPEN
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 4th Jul</td>
-                                <td class="py-4 px-2">Captain's Day - Junior Stableford</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 4th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Captain's Day - Junior
+                                    Stableford <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 11th Jul</td>
-                                <td class="py-4 px-2">July Medal / Bloom Cup</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 11th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">July Medal / Bloom Cup <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Thu 16th Jul</td>
-                                <td class="py-4 px-2">Seniors Bruce Mansell Foursomes</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Thu 16th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors Bruce Mansell Foursomes
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 25th Jul</td>
-                                <td class="py-4 px-2">Hooper Cup</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 25th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Hooper Cup <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 25th Jul</td>
-                                <td class="py-4 px-2">Junior Major - Derrick Wood Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 25th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Major - Derrick Wood
+                                    Trophy <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 26th Jul</td>
-                                <td class="py-4 px-2">July Sunday Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 26th Jul</td>
+                                <td class="py-4 px-2 flex justify-between items-center">July Sunday Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 1st Aug</td>
-                                <td class="py-4 px-2">August Medal</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 1st Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">August Medal <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Mon 3rd Aug</td>
-                                <td class="py-4 px-2">Seniors August Medal</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Mon 3rd Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors August Medal <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Wed 5th Aug</td>
-                                <td class="py-4 px-2">Junior Stableford - 18 Holes</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Wed 5th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Stableford - 18 Holes <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 8th Aug</td>
-                                <td class="py-4 px-2">Centenary Trophy & Boscowan Cup</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 8th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Centenary Trophy & Boscowan Cup
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Mon 10th Aug</td>
-                                <td class="py-4 px-2">Seniors George Barratt Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Mon 10th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors George Barratt Trophy <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Wed 12th Aug</td>
-                                <td class="py-4 px-2">Junior Stableford - 18 Holes</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Wed 12th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Stableford - 18 Holes <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 15th Aug</td>
-                                <td class="py-4 px-2">Doug Lee Pairs</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 15th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Doug Lee Pairs <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 15th Aug</td>
-                                <td class="py-4 px-2">Junior Major - The TV Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 15th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Major - The TV Trophy <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 16th Aug</td>
-                                <td class="py-4 px-2">August Sunday Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 16th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">August Sunday Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 22nd Aug</td>
-                                <td class="py-4 px-2">125 Trophy - Pairs Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 22nd Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">125 Trophy - Pairs Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 22nd Aug</td>
-                                <td class="py-4 px-2">Junior Major - Daniel Lowe Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 22nd Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Major - Daniel Lowe
+                                    Trophy <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 29th Aug</td>
-                                <td class="py-4 px-2">Queen Elizabeth II Memorial Cup</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 29th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Queen Elizabeth II Memorial Cup
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 29th Aug</td>
-                                <td class="py-4 px-2">Junior Stableford - Mixed 9</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 29th Aug</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Stableford - Mixed 9 <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Thu 3rd Sep</td>
-                                <td class="py-4 px-2">Seniors September Medal</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Thu 3rd Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors September Medal <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 5th Sep</td>
-                                <td class="py-4 px-2">September Medal</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 5th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">September Medal <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 5th Sep</td>
-                                <td class="py-4 px-2">Junior Major - Richard Prophet Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 5th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Junior Major - Richard Prophet
+                                    Trophy <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Mon 7th Sep</td>
-                                <td class="py-4 px-2">Seniors Roy Birch Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Mon 7th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors Roy Birch Trophy <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Thu 10th Sep</td>
-                                <td class="py-4 px-2">Seniors Thyssen Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Thu 10th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors Thyssen Trophy <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 12th Sep</td>
-                                <td class="py-4 px-2">Captain's Charity Day OPEN</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 12th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Captain's Charity Day OPEN <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 13th Sep</td>
-                                <td class="py-4 px-2">September Sunday Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 13th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">September Sunday Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Thu 17th Sep</td>
-                                <td class="py-4 px-2">Seniors Ted Jones Trophy</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Thu 17th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors Ted Jones Trophy <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 19th Sep</td>
-                                <td class="py-4 px-2">Grandads Cup & Veterans Cup</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 19th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Grandads Cup & Veterans Cup <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 19th Sep</td>
-                                <td class="py-4 px-2">Members Non-Cup Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 19th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Members Non-Cup Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 26th Sep</td>
-                                <td class="py-4 px-2">Jubilee Salver Pairs BetterBall</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 26th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Jubilee Salver Pairs BetterBall
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Mon 28th Sep</td>
-                                <td class="py-4 px-2">Seniors October Medal</td>
-                                <td class="py-4 px-2">-</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Mon 28th Sep</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Seniors October Medal <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 3rd Oct</td>
-                                <td class="py-4 px-2">October Medal & Lewis Cup</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 3rd Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">October Medal & Lewis Cup <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 10th Oct</td>
-                                <td class="py-4 px-2">Writtle Grove & Winter Greensomes</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 10th Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Writtle Grove & Winter
+                                    Greensomes <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 11th Oct</td>
-                                <td class="py-4 px-2">October Sunday Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 11th Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">October Sunday Stableford <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 17th Oct</td>
-                                <td class="py-4 px-2">Christmas Turkey Trot</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 17th Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Christmas Turkey Trot <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 18th Oct</td>
-                                <td class="py-4 px-2">October Sunday Stableford Comp</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 18th Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">October Sunday Stableford Comp
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 24th Oct</td>
-                                <td class="py-4 px-2">Christmas Hamper Competition</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 24th Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Christmas Hamper Competition <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 31st Oct</td>
-                                <td class="py-4 px-2">Club Betterball Pairs Stableford</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 31st Oct</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Club Betterball Pairs Stableford
+                                    <a href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sun 8th Nov</td>
-                                <td class="py-4 px-2">Club Stableford Pairs</td>
-                                <td class="py-4 px-2 text-red-400">Signup Closed</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sun 8th Nov</td>
+                                <td class="py-4 px-2 flex justify-between items-center">Club Stableford Pairs <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                             <tr class="border-b border-white/5 hover:bg-white/5">
-                                <td class="py-4 px-2 text-[#C5A367]">Sat 14th Nov</td>
-                                <td class="py-4 px-2">3 Ball Waltz</td>
-                                <td class="py-4 px-2 text-gray-400">Signup Not Open</td>
+                                <td class="py-4 px-2 text-[#C5A367] whitespace-nowrap">Sat 14th Nov</td>
+                                <td class="py-4 px-2 flex justify-between items-center">3 Ball Waltz <a
+                                        href="https://www.dudleygolfclub.co.uk/members-area/login-required/"
+                                        class="igolf-btn ml-2">iGolf</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -338,9 +394,6 @@
             <div class="hidden lg:block lg:sticky lg:top-10">
                 <img src="cup.webp" alt="Competition Trophy"
                     class="w-full h-auto rounded-lg shadow-2xl border border-[#C5A367]/20">
-                <div class="mt-6 p-4 bg-white/5 border border-[#C5A367]/20 text-center">
-                    <p class="text-[#C5A367] font-serif italic text-lg">"Honouring the legacy of our champions."</p>
-                </div>
             </div>
         </div>
     </div>
