@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Competition Winners | Dudley Golf Club</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Outfit:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
     <style>
         :root {
@@ -17,15 +16,9 @@
 
         body {
             font-family: 'Outfit', sans-serif;
-            background-color: var(--forest);
-            background-image:
-                radial-gradient(at 0% 0%, rgba(197, 163, 103, 0.08) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(197, 163, 103, 0.05) 0px, transparent 50%),
-                linear-gradient(45deg, #132419 25%, #182d20 25%, #182d20 50%, #132419 50%, #132419 75%, #182d20 75%, #182d20 100%);
-            background-size: 60px 60px;
-            color: white;
+            background-color: var(--cream);
+            color: var(--forest);
             padding: 40px 20px;
-            min-height: 100vh;
             margin: 0;
         }
 
@@ -36,34 +29,287 @@
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            color: var(--gold);
-            border-bottom: 1px solid var(--gold);
-            padding-bottom: 20px;
+            color: var(--forest);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
         }
 
-        .back-btn {
-            color: var(--gold);
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 20px;
+        .comp-card {
+            background: white;
+            border-left: 5px solid var(--gold);
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .content-box {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 40px;
-            border: 1px solid rgba(197, 163, 103, 0.2);
+        .comp-info h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--forest);
+        }
+
+        .comp-info p {
+            margin: 5px 0 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .winner {
+            font-weight: 600;
+            color: var(--gold);
+            background: rgba(197, 163, 103, 0.1);
+            padding: 5px 12px;
+            border-radius: 4px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="container">
-        <a href="members-area.html" class="back-btn">← Back to Members Area</a>
         <h1>Competition Winners</h1>
-        <div class="content-box">
-            <p>Archive of recent competition winners.</p>
+
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Captains Day</h3>
+                <p>Monday 8th June</p>
+            </div>
+            <div class="winner">Robert Hudson</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>June Monthly Medal/ Prosser Lytham Trophy</h3>
+                <p>Saturday 6th June</p>
+            </div>
+            <div class="winner">Alan Ball</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors June Medal</h3>
+                <p>Monday 1st June</p>
+            </div>
+            <div class="winner">James Marsh</div>
+        </div>
+
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Probus Pairs Stableford Betterball</h3>
+                <p>Saturday 30th May</p>
+            </div>
+            <div class="winner">Neil Hartland & James Stevens</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Millenium Trophy - 4 Ball</h3>
+                <p>Saturday 23rd May</p>
+            </div>
+            <div class="winner">Gary Baker, Mark Dando, Clive Kearey, Adam Stanfield</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Cyril Joseph Trophy</h3>
+                <p>Thursday 21st May</p>
+            </div>
+            <div class="winner">Malcolm Powell</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Club Stableford competition</h3>
+                <p>Saturday 16th May</p>
+            </div>
+            <div class="winner">James Stevens</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>May Sunday Stableford</h3>
+                <p>Sunday 10th May</p>
+            </div>
+            <div class="winner">Scott Longhurst</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Tom Poole Trophy & Summer Foursomes</h3>
+                <p>Saturday 9th May</p>
+            </div>
+            <div class="winner">Paul Thomas Donnelly & Sean Element</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>May Medal & Brian Lloyd Scratch</h3>
+                <p>Saturday 2nd May</p>
+            </div>
+            <div class="winner">Richard Weston</div>
+        </div>
+
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors May Medal</h3>
+                <p>Monday 27th April</p>
+            </div>
+            <div class="winner">Stephen Hall</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>April Sunday Stableford</h3>
+                <p>Sunday 26th April</p>
+            </div>
+            <div class="winner">M T Cowdell</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Coronation Pairs Cup</h3>
+                <p>Saturday 25th April</p>
+            </div>
+            <div class="winner">Gregory Curry & Richard Weston</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Walker Cup</h3>
+                <p>Monday 20th April</p>
+            </div>
+            <div class="winner">Keith Brian Culwick & Kevin John Hartland</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>April Medal & Presidents Putter</h3>
+                <p>Saturday 18th April</p>
+            </div>
+            <div class="winner">Paul Wayne Taylor</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Centenary Trophy</h3>
+                <p>Thursday 16th April</p>
+            </div>
+            <div class="winner">Keith Ratcliffe</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Peter Pendrey Trophy</h3>
+                <p>Monday 13th April</p>
+            </div>
+            <div class="winner">Malcolm Powell</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Par/Bogey Medal</h3>
+                <p>Saturday 11th April</p>
+            </div>
+            <div class="winner">Andrew Russell</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Arthur Turley Trophy</h3>
+                <p>Thursday 9th April</p>
+            </div>
+            <div class="winner">Kenneth Brettle</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>The Claughton Cup</h3>
+                <p>Saturday 4th April</p>
+            </div>
+            <div class="winner">Richard Weston</div>
+        </div>
+
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors April Medal</h3>
+                <p>Monday 30th March</p>
+            </div>
+            <div class="winner">Robert Hudson</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>March Medal</h3>
+                <p>Saturday 28th March</p>
+            </div>
+            <div class="winner">Robert Keith Woodall</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Club Stableford</h3>
+                <p>Saturday 21st March</p>
+            </div>
+            <div class="winner">Andrew Card</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>March Sunday Stableford</h3>
+                <p>Sunday 15th March</p>
+            </div>
+            <div class="winner">Dean Johnson</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Club Pairs competition</h3>
+                <p>Saturday 14th March</p>
+            </div>
+            <div class="winner">Steve Homer & Philip John Northall</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>3 Ball - Cha Cha Cha</h3>
+                <p>Saturday 7th March</p>
+            </div>
+            <div class="winner">Michael David Cosnett, Stephen Brian Hopkins, Craig Locke</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Winter League 5</h3>
+                <p>Monday 2nd March</p>
+            </div>
+            <div class="winner">Harry Westwood</div>
+        </div>
+
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Winter League 4</h3>
+                <p>Monday 2nd February</p>
+            </div>
+            <div class="winner">David Evitts</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>3 Ball Am-Am (2 to count)</h3>
+                <p>Saturday 31st January</p>
+            </div>
+            <div class="winner">Dean Johnson, James Johnson, Joshua Johnson</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Stableford Pairs</h3>
+                <p>Saturday 24th January</p>
+            </div>
+            <div class="winner">Lewis Ganner & Philip Thompson</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>Seniors Winter League 3</h3>
+                <p>Monday 19th January</p>
+            </div>
+            <div class="winner">Keith Brian Culwick</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>January Sunday Stableford</h3>
+                <p>Sunday 18th January</p>
+            </div>
+            <div class="winner">Richard Weston</div>
+        </div>
+        <div class="comp-card">
+            <div class="comp-info">
+                <h3>3 Ball Modified Waltz</h3>
+                <p>Saturday 17th January</p>
+            </div>
+            <div class="winner">Mark Basterfield, Neil Hanley, Jason Langford</div>
         </div>
     </div>
+
 </body>
 
 </html>
