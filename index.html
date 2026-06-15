@@ -651,6 +651,43 @@
 
         document.addEventListener("DOMContentLoaded", initMenu);
     </script>
+    <script>
+        function updateClockAndStatus() {
+            const clock = document.getElementById("live-clock");
+            const status = document.getElementById("course-status");
+
+            const now = new Date();
+
+            if (clock) {
+                clock.textContent = now.toLocaleTimeString("en-GB", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                });
+            }
+
+            const minutesNow = now.getHours() * 60 + now.getMinutes();
+
+            // Open 08:00 to 17:52
+            const openTime = 8 * 60;
+            const closeTime = (17 * 60) + 52;
+
+            if (status) {
+                if (minutesNow >= openTime && minutesNow <= closeTime) {
+                    status.textContent = "Open";
+                    status.classList.remove("text-red-500");
+                    status.classList.add("text-green-400");
+                } else {
+                    status.textContent = "Closed";
+                    status.classList.remove("text-green-400");
+                    status.classList.add("text-red-500");
+                }
+            }
+        }
+
+        updateClockAndStatus();
+        setInterval(updateClockAndStatus, 1000);
+    </script>
 </body>
 
 </html>
