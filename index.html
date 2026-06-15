@@ -549,112 +549,69 @@
     </footer>
 
     <!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
+
     <script>
-        // 1. Global Safety Net
         window.addEventListener("error", e => {
             console.log("JS Error caught:", e.message);
         });
     </script>
 
-    <!-- SANITY BRIDGE -->
-    <script type="module">
-        import { createClient } from 'https://esm.sh/@sanity/client';
-
-        const client = createClient({
-            projectId: 'c54r3a5t',
-            dataset: 'production',
-            apiVersion: '2026-05-29',
-            useCdn: true
-        });
-
-        async function loadProShop() {
-            const container = document.getElementById('pro-shop-container');
-            if (!container) return;
-
-            try {
-                const items = await client.fetch(`*[_type == "proshop"]`);
-                console.log("Pro Shop Items found:", items); // Check the console for this!
-
-                if (items.length > 0) {
-                    container.innerHTML = items.map(item => `
-    <div class="pro-shop-card border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow bg-white">
-        <h3 class="text-2xl font-bold text-gray-900 mb-2">${item.name || item.title || 'Untitled Item'}</h3>
-        <p class="text-gray-600">${item.description || 'Professional golf equipment available now.'}</p>
-        <button class="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">View Details</button>
-    </div>
-`).join('');
-                } else {
-                    container.innerHTML = '<p>No pro shop items found.</p>';
-                }
-            } catch (err) {
-                console.error("Pro Shop load failed:", err);
-            }
-        }
-
-        loadProShop();
-    </script>
     <script>
-        // Fetch live weather for Dudley
         async function updateWeather() {
-            // Use a restricted API key that you have regenerated
-            const apiKey = 'cee564ae83bb8bbba492593fd40dd2eb';
-            const city = 'Dudley,UK';
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=Dudley,UK&units=metric&appid=${apiKey}`;
+            const weather = document.getElementById("weather");
 
             try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error('Weather fetch failed');
+                const response = await fetch("/api/weather");
+                if (!response.ok) throw new Error("Weather fetch failed");
+
                 const data = await response.json();
-                const temp = Math.round(data.main.temp);
-                // Update the span we identified earlier
-                document.getElementById('weather').textContent = `Dudley: ${temp}°C`;
+                weather.textContent = `Dudley: ${data.temp}°C`;
             } catch (error) {
                 console.error("Could not fetch weather:", error);
-                document.getElementById('weather').textContent = "Dudley: --°C";
+                if (weather) weather.textContent = "Dudley: --°C";
             }
         }
 
-        // Run when the page loads
         updateWeather();
     </script>
+
     <script>
-        <script>
-document.addEventListener("DOMContentLoaded", function () {
-    function updateClockAndStatus() {
-        const clock = document.getElementById("live-clock");
-        const status = document.getElementById("course-status");
+        function updateClockAndStatus() {
+            const clock = document.getElementById("live-clock");
+            const status = document.getElementById("course-status");
 
-        const now = new Date();
+            const now = new Date();
 
-        if (clock) {
-            clock.textContent = now.toLocaleTimeString("en-GB", {
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit"
-            });
-        }
+            if (clock) {
+                clock.textContent = now.toLocaleTimeString("en-GB", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                });
+            }
 
-        const minutesNow = now.getHours() * 60 + now.getMinutes();
-        const openTime = 8 * 60;
-        const closeTime = (17 * 60) + 52;
+            const minutesNow = now.getHours() * 60 + now.getMinutes();
+            const openTime = 8 * 60;
+            const closeTime = (17 * 60) + 52;
 
-        if (status) {
-            if (minutesNow >= openTime && minutesNow <= closeTime) {
-                status.textContent = "Open";
-                status.classList.remove("text-red-500");
-                status.classList.add("text-green-400");
-            } else {
-                status.textContent = "Closed";
-                status.classList.remove("text-green-400");
-                status.classList.add("text-red-500");
+            if (status) {
+                if (minutesNow >= openTime && minutesNow <= closeTime) {
+                    status.textContent = "Open";
+                    status.classList.remove("text-red-500");
+                    status.classList.add("text-green-400");
+                } else {
+                    status.textContent = "Closed";
+                    status.classList.remove("text-green-400");
+                    status.classList.add("text-red-500");
+                }
             }
         }
-    }
 
-    updateClockAndStatus();
-    setInterval(updateClockAndStatus, 1000);
-});
-</script>
+        updateClockAndStatus();
+        setInterval(updateClockAndStatus, 1000);
+    </script>
+
+    <script>
         function initMenu() {
             const btn = document.getElementById("menu-btn");
             const nav = document.getElementById("nav-links");
@@ -687,43 +644,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         document.addEventListener("DOMContentLoaded", initMenu);
-    </script>
-    <script>
-        function updateClockAndStatus() {
-            const clock = document.getElementById("live-clock");
-            const status = document.getElementById("course-status");
-
-            const now = new Date();
-
-            if (clock) {
-                clock.textContent = now.toLocaleTimeString("en-GB", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    second: "2-digit"
-                });
-            }
-
-            const minutesNow = now.getHours() * 60 + now.getMinutes();
-
-            // Open 08:00 to 17:52
-            const openTime = 8 * 60;
-            const closeTime = (17 * 60) + 52;
-
-            if (status) {
-                if (minutesNow >= openTime && minutesNow <= closeTime) {
-                    status.textContent = "Open";
-                    status.classList.remove("text-red-500");
-                    status.classList.add("text-green-400");
-                } else {
-                    status.textContent = "Closed";
-                    status.classList.remove("text-green-400");
-                    status.classList.add("text-red-500");
-                }
-            }
-        }
-
-        updateClockAndStatus();
-        setInterval(updateClockAndStatus, 1000);
     </script>
 </body>
 
