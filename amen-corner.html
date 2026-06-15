@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudley Golf Club | Amen Corner</title>
+
+    <link rel="stylesheet" href="dist/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #C5A367;
+            --forest: #132419;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #08110D;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .nav-blur {
+            background: rgba(19, 36, 25, .98);
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        #menu-btn div {
+            display: block !important;
+            width: 24px !important;
+            height: 2px !important;
+            background: #C5A367 !important;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        #nav-links a {
+            position: relative;
+        }
+
+        #nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0%;
+            height: 1px;
+            background: var(--gold);
+            transition: .3s ease;
+        }
+
+        #nav-links a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width:768px) {
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                background: #132419 !important;
+            }
+
+            section {
+                padding-top: 8rem !important;
+            }
+
+            #nav-links {
+                background: #132419 !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#08110D] text-white antialiased">
+
+    <!-- TOP BAR -->
+    <div
+        class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+        <div id="live-clock">Loading...</div>
+        <div class="flex gap-6">
+            <span id="weather">Dudley: --°C</span>
+            <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav
+        class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+        <a href="index.html" class="flex flex-col relative z-[100]">
+            <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
+            <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+        </a>
+
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <div id="nav-links"
+            class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
+            <a href="index.html" class="hover:text-gold transition">Home</a>
+            <a href="course.html" class="hover:text-gold transition">Course Guide</a>
+            <a href="amen-corner.html" class="hover:text-gold transition">Amen Corner</a>
+            <a href="heritage.html" class="hover:text-gold transition">History</a>
+            <a href="hospitality.html" class="hover:text-gold transition">Hospitality & Events</a>
+            <a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
+            <a href="visitors.html" class="hover:text-gold transition">Visitors</a>
+            <a href="membership.html" class="hover:text-gold transition">Membership</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4 relative z-[200]">
+            <a href="https://www.dudleygolfclub.com/login.php" target="_blank"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                iGolf App
+            </a>
+            <a href="members-area.html"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                Members Area Login
+            </a>
+        </div>
+    </nav>
+
+    <!-- AMEN CORNER -->
+    <section id="amen-gallery" class="relative z-20 bg-[#08110D] py-24 px-4 overflow-hidden isolate">
+        <div class="absolute inset-0 bg-[#08110D] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-24">
+                <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
+                    Signature Stretch
+                </p>
+
+                <h1 class="serif text-5xl md:text-7xl text-white italic relative inline-block">
+                    Amen Corner
+                    <span class="absolute left-1/2 -translate-x-1/2 bottom-[-18px] w-28 h-px bg-[#C5A367]/50"></span>
+                </h1>
+
+                <p class="text-white/60 max-w-3xl mx-auto mt-10 leading-relaxed text-sm md:text-base">
+                    Three unforgettable holes where pressure, precision and Black Country character define the round.
+                </p>
+            </div>
+
+            <!-- HOLE 5 -->
+            <div class="mb-32 border-t border-[#C5A367]/20 pt-12">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+                    <div>
+                        <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Five</p>
+                        <h2 class="serif text-4xl md:text-6xl text-white italic">The Plateau</h2>
+                        <p class="text-white/50 mt-4 max-w-2xl text-sm leading-relaxed">
+                            The opening test of Dudley’s Amen Corner — a hole that demands control, judgement and
+                            commitment.
+                        </p>
+                    </div>
+                    <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">Par 4</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden cursor-pointer border border-[#C5A367]/20"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole5-1.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole5-2.webp"
+                            class="w-full h-[520px] md:h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">Hole Five</p>
+                            <h3 class="serif text-3xl italic text-white">Opening Drive</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer border border-[#C5A367]/20"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole5-2.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole5-1.webp"
+                            class="w-full h-[520px] md:h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">Hole Five</p>
+                            <h3 class="serif text-3xl italic text-white">The Approach</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer border border-[#C5A367]/20"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole5-3.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole5-3.webp"
+                            class="w-full h-[520px] md:h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">Hole Five</p>
+                            <h3 class="serif text-3xl italic text-white">Evening Light</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- HOLE 6 -->
+            <div class="mb-32">
+                <div class="flex items-end justify-between mb-10">
+                    <div>
+                        <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Six</p>
+                        <h2 class="serif text-4xl md:text-5xl text-white italic">Hells Corner</h2>
+                    </div>
+                    <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">Par 3</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden cursor-pointer"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole6-1.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole6-3.webp"
+                            class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <h3 class="serif text-3xl italic text-white">Through The Pines</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole6-2.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole6-2.webp"
+                            class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <h3 class="serif text-3xl italic text-white">Championship Line</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole6-3.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole6-1.webp"
+                            class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <h3 class="serif text-3xl italic text-white">Golden Hour</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOLE 7 -->
+            <div class="mb-10">
+                <div class="flex items-end justify-between mb-10">
+                    <div>
+                        <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Seven</p>
+                        <h2 class="serif text-4xl md:text-5xl text-white italic">The Gauntlet</h2>
+                    </div>
+                    <p class="text-white/40 uppercase tracking-[0.25em] text-[10px]">Par 3</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden cursor-pointer"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole7-1.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole7-1.webp"
+                            class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <h3 class="serif text-3xl italic text-white">The Carry</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole7-2.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole7-2.webp"
+                            class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <h3 class="serif text-3xl italic text-white">Guarded Green</h3>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer"
+                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole7-3.webp')">
+                        <img src="/DGC-REBUILD/images/amen-corner/hole7-3.webp"
+                            class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
+                            width="800" height="520" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 z-10">
+                            <h3 class="serif text-3xl italic text-white">Final Test</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" style="
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.95);
+z-index:999999;
+align-items:center;
+justify-content:center;
+padding:24px;
+">
+        <button onclick="closeLightbox()"
+            class="absolute top-6 right-8 text-white text-5xl hover:text-[#C5A367] transition duration-300">
+            &times;
+        </button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain shadow-2xl">
+    </div>
+
+    <!-- MASTER FOOTER -->
+    <footer class="bg-[#0D1712] text-white px-8 py-20 border-t border-[#C5A367]/20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+            <div>
+                <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-6">
+                    Turners Hill, Rowley Regis,<br>
+                    West Midlands, B65 9DP
+                </p>
+                <p class="text-white/70 text-sm mb-2">
+                    Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
+                </p>
+                <p class="text-white/70 text-sm">
+                    Email: <a href="mailto:secretary@dudleygolfclub.com"
+                        class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore</h4>
+                <div class="flex flex-col gap-3 text-sm text-white/70">
+                    <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
+                    <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
+                    <a href="heritage.html" class="hover:text-[#C5A367] transition">History</a>
+                    <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
+                    <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
+                    <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
+                    <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
+                <div class="flex flex-col gap-3 text-sm text-white/70">
+                    <a href="https://www.dudleygolfclub.com/visitorbooking/"
+                        class="hover:text-[#C5A367] transition">Book a Tee Time</a>
+                    <a href="https://www.dudleygolfclub.com/login.php" class="hover:text-[#C5A367] transition">iGolf
+                        App</a>
+                    <a href="members-area.html" class="hover:text-[#C5A367] transition">Members Area</a>
+                    <a href="https://www.facebook.com/DudleyGolfClub"
+                        class="hover:text-[#C5A367] transition">Facebook</a>
+                    <a href="https://www.instagram.com/dudleygolfclub"
+                        class="hover:text-[#C5A367] transition">Instagram</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
+                <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
+            <p>© 2026 Dudley Golf Club</p>
+            <p>Established 1893 • Rowley Regis</p>
+        </div>
+    </footer>
+
+    <!-- RETURN HOME BUTTON -->
+    <a href="index.html" aria-label="Return Home" style="
+        position:fixed;
+        bottom:24px;
+        right:24px;
+        width:50px;
+        height:50px;
+        background-color:#132419;
+        color:#C5A367;
+        border:2px solid #C5A367;
+        border-radius:4px;
+        z-index:1000;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-decoration:none;
+        box-shadow:0 10px 25px rgba(0,0,0,0.5);
+        font-size:20px;
+        font-weight:bold;">
+        ⌂
+    </a>
+
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+
+            if (!lightbox || !img) return;
+
+            img.src = src;
+            lightbox.style.display = 'flex';
+
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+
+            if (!lightbox) return;
+
+            lightbox.style.display = 'none';
+
+            document.body.style.overflow = 'auto';
+        }
+
+        function updateCourseStatus() {
+            const el = document.getElementById("course-status");
+            if (!el) return;
+
+            const now = new Date();
+            const minutes = now.getHours() * 60 + now.getMinutes();
+            const open = minutes >= 420 && minutes <= 1140;
+
+            el.textContent = open ? "Open" : "Closed";
+            el.className = open
+                ? "text-green-400 font-bold uppercase"
+                : "text-red-500 font-bold uppercase";
+        }
+
+        function updateClock() {
+            const clock = document.getElementById("live-clock");
+            const now = new Date();
+
+            if (clock) {
+                clock.textContent = now.toLocaleString("en-GB", {
+                    weekday: "short",
+                    day: "numeric",
+                    month: "short",
+                    hour: "2-digit",
+                    minute: "2-digit"
+                });
+            }
+
+            updateCourseStatus();
+        }
+
+        function initMenu() {
+            const btn = document.getElementById("menu-btn");
+            const nav = document.getElementById("nav-links");
+
+            if (!btn || !nav) return;
+
+            function closeMenu() {
+                nav.classList.add("translate-x-full");
+                nav.classList.remove("translate-x-0");
+                document.body.style.overflow = "auto";
+            }
+
+            function openMenu() {
+                nav.classList.remove("translate-x-full");
+                nav.classList.add("translate-x-0");
+                document.body.style.overflow = "hidden";
+            }
+
+            btn.addEventListener("click", e => {
+                e.stopPropagation();
+                nav.classList.contains("translate-x-full")
+                    ? openMenu()
+                    : closeMenu();
+            });
+
+            document.querySelectorAll("#nav-links a").forEach(link => {
+                link.addEventListener("click", closeMenu);
+            });
+        }
+
+        async function updateWeather() {
+            const apiKey = 'cee564ae83bb8bbba492593fd40dd2eb';
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=Dudley,UK&units=metric&appid=${apiKey}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Weather fetch failed');
+
+                const data = await response.json();
+                const temp = Math.round(data.main.temp);
+
+                document.getElementById('weather').textContent = `Dudley: ${temp}°C`;
+            } catch (error) {
+                document.getElementById('weather').textContent = "Dudley: --°C";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            initMenu();
+            updateClock();
+            updateWeather();
+
+            setInterval(updateClock, 1000);
+
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox) {
+                lightbox.style.display = 'none';
+
+                lightbox.addEventListener('click', function (e) {
+                    if (e.target === lightbox) {
+                        closeLightbox();
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

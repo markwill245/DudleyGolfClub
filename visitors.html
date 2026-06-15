@@ -4,7 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dudley Golf Club | Pro Shop</title>
+    <title>Dudley Golf Club | Visitors</title>
+
+    <meta name="description"
+        content="Visitor green fees, booking information and arrival details for Dudley Golf Club in Rowley Regis, West Midlands.">
+    <meta name="keywords"
+        content="Dudley Golf Club visitors, green fees Dudley Golf Club, golf West Midlands, visitor tee booking, golf Rowley Regis">
+    <meta name="author" content="Dudley Golf Club">
+
+    <meta property="og:title" content="Dudley Golf Club | Visitors">
+    <meta property="og:description" content="Visitor green fees and booking information for Dudley Golf Club.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://markwill245.github.io/DGC-REBUILD/visitors.html">
+    <meta property="og:image" content="https://markwill245.github.io/DGC-REBUILD/images/dudley.webp">
 
   <link rel="stylesheet" href="dist/output.css">
 
@@ -23,20 +35,45 @@
 
         html,
         body {
+            width: 100%;
+            max-width: 100%;
             overflow-x: hidden;
-            scroll-behavior: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+            min-width: 0;
         }
 
         body {
             font-family: 'Outfit', sans-serif;
-            background: #132419;
-            color: #fff;
-            margin: 0;
-            padding: 0;
+            background-color: var(--forest);
+            color: #ffffff;
         }
 
         .serif {
             font-family: 'Cormorant Garamond', serif;
+        }
+
+        .bg-forest {
+            background-color: var(--forest);
+        }
+
+        .bg-forest-dark {
+            background-color: #0b1610;
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        a[href^="tel"] {
+            color: #C5A367;
+            text-decoration: none;
         }
 
         .nav-blur {
@@ -45,15 +82,19 @@
         }
 
         #menu-btn div {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: #C5A367;
+            display: block !important;
+            width: 24px !important;
+            height: 2px !important;
+            background-color: #C5A367 !important;
+            opacity: 1 !important;
+        }
+
+        #nav-links {
+            will-change: transform;
         }
 
         #nav-links a {
             position: relative;
-            transition: color .3s ease;
         }
 
         #nav-links a::after {
@@ -61,78 +102,24 @@
             position: absolute;
             bottom: -6px;
             left: 0;
-            width: 0;
+            width: 0%;
             height: 1px;
             background: var(--gold);
-            transition: width .3s ease;
+            transition: 0.3s ease;
         }
 
         #nav-links a:hover::after {
             width: 100%;
         }
 
-        /* MOBILE FIXES */
-        @media (max-width: 768px) {
-
-            html,
-            body {
-                overflow-x: hidden;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            nav {
-                position: sticky !important;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 9999;
-                background: #132419 !important;
-            }
-
-            section {
-                padding-top: 4rem !important;
-                padding-bottom: 4rem !important;
-                height: auto !important;
-                min-height: auto !important;
-                overflow: visible !important;
-            }
-
-            #nav-links {
-                background: #132419 !important;
-            }
-
-            /* Stops old single-page layout causing jumps */
-            .h-\[100dvh\],
-            .snap-start,
-            .shrink-0,
-            .overflow-y-auto {
-                height: auto !important;
-                min-height: auto !important;
-                overflow: visible !important;
-                flex-shrink: 1 !important;
-                scroll-snap-align: none !important;
-            }
-
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            #pro-shop {
-                min-height: auto !important;
-            }
+        a,
+        button {
+            transition: all 0.25s ease;
         }
 
-        /* STOP SIDE-TO-SIDE MOBILE WOBBLE */
-        html,
-        body {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden !important;
-        }
-
-        * {
-            box-sizing: border-box;
+        button:active,
+        a:active {
+            transform: scale(0.97);
         }
 
         section,
@@ -143,51 +130,40 @@
             max-width: 100%;
         }
 
-        @media (max-width: 768px) {
-            body {
-                position: relative;
-            }
-
-            #pro-shop {
-                overflow-x: hidden !important;
-            }
-
-            #pro-shop>div {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-
-            #pro-shop [style*="grid-template-columns"] {
-                display: block !important;
-            }
-
-            #pro-shop [style*="width:420px"] {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-
-            iframe {
-                max-width: 100% !important;
-            }
-        }
-
-        .pro-shop-layout {
-            display: grid;
-            grid-template-columns: 420px 1fr;
-            gap: 80px;
-            align-items: start;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         @media (max-width: 768px) {
-            .pro-shop-layout {
-                display: block !important;
+            nav {
+                background-color: #132419 !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                position: sticky;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+            }
+
+            #nav-links {
+                background-color: #132419 !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+
+            #visitors {
+                padding-top: 5rem !important;
+                padding-bottom: 5rem !important;
             }
         }
     </style>
 </head>
 
-<body class="bg-[#132419] text-white antialiased">
-
+<body class="bg-[#132419] text-white antialiased m-0 p-0">
 
     <!-- TOP BAR -->
     <div
@@ -201,13 +177,14 @@
 
     <!-- NAV -->
     <nav
-        class="relative w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+        class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
         <a href="index.html" class="flex flex-col relative z-[100]">
             <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
             <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
         </a>
 
-        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none">
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none"
+            aria-label="Open menu">
             <div></div>
             <div></div>
             <div></div>
@@ -223,6 +200,17 @@
             <a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
             <a href="visitors.html" class="hover:text-gold transition">Visitors</a>
             <a href="membership.html" class="hover:text-gold transition">Membership</a>
+
+            <div class="flex flex-col gap-4 mt-4 md:hidden">
+                <a href="https://www.dudleygolfclub.com/login.php" target="_blank"
+                    class="border border-[#C5A367] text-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    iGolf App
+                </a>
+                <a href="members-area.html"
+                    class="border border-[#C5A367] text-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    Members Area Login
+                </a>
+            </div>
         </div>
 
         <div class="hidden md:flex items-center gap-4 relative z-[200]">
@@ -237,89 +225,99 @@
         </div>
     </nav>
 
-    <!-- PRO SHOP -->
-    <section id="pro-shop" class="bg-[#f9f7f2] py-24 px-4">
-        <div class="max-w-7xl mx-auto">
+    <!-- VISITORS -->
+    <section id="visitors" class="min-h-screen bg-[#f9f7f2] py-24 px-4">
+        <div class="max-w-6xl mx-auto">
 
-            <div class="text-center mb-16">
-                <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.4em] font-bold mb-4">
-                    The Professional Shop
+            <div class="text-center mb-20">
+                <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
+                    Visitor Golf
                 </p>
-                <h1 class="serif text-4xl md:text-6xl text-[#132419] pb-4 inline-block"
-                    style="border-bottom:3px solid #C5A367;">
-                    Professional Shop
+                <h1 class="serif text-6xl md:text-8xl text-[#132419] mb-8 leading-none">
+                    Experience Dudley
                 </h1>
+                <div class="w-32 h-1 bg-[#C5A367] mx-auto mb-8"></div>
+                <p class="serif text-2xl italic text-[#132419]/80 max-w-4xl mx-auto leading-relaxed px-4">
+                    “We invite you to share our course as well as our outstanding facilities. We want to ensure your
+                    experience is one to remember for all the right reasons.”
+                </p>
             </div>
 
-            <div class="pro-shop-layout">
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
 
-                <div>
-                    <h2 class="serif text-2xl text-[#132419] mb-4">
-                        Head Professional Richard Prophet
-                    </h2>
-                    <div
-                        style="background:#132419; padding:4px; box-shadow:0 4px 12px rgba(0,0,0,.25); width:420px; max-width:100%;">
-                        <img src="/DGC-REBUILD/images/pro.webp" alt="Head Professional Richard Prophet"
-                            style="display:block; width:100%; height:auto;">
+                <!-- GREEN FEES -->
+                <div
+                    class="lg:col-span-2 bg-[#132419] p-1 border border-[#C5A367] shadow-[0_25px_70px_rgba(0,0,0,0.35)]">
+                    <div class="bg-[#132419] p-8 md:p-10">
+                        <h2 class="serif text-4xl text-[#C5A367] mb-10 uppercase tracking-widest text-center">
+                            Green Fees — 2026
+                        </h2>
+
+                        <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                            <div
+                                class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end gap-4 text-white">
+                                <span class="text-sm">Visitors (Mon-Fri)</span>
+                                <span class="serif text-3xl text-[#C5A367]">£25.00</span>
+                            </div>
+
+                            <div
+                                class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end gap-4 text-white">
+                                <span class="text-sm">Visitors (Sat-Sun)</span>
+                                <span class="serif text-3xl text-[#C5A367]">£32.00</span>
+                            </div>
+
+                            <div
+                                class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end gap-4 text-white">
+                                <span class="text-sm">Member Guest (Mon-Fri)</span>
+                                <span class="serif text-3xl text-[#C5A367]">£20.00</span>
+                            </div>
+
+                            <div
+                                class="border-b border-[#C5A367]/30 pb-4 flex justify-between items-end gap-4 text-white">
+                                <span class="text-sm">Member Guest (Sat-Sun)</span>
+                                <span class="serif text-3xl text-[#C5A367]">£25.00</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 flex flex-col md:grid md:grid-cols-3 gap-4 text-center">
+                            <a href="https://www.dudleygolfclub.com/visitorbooking/"
+                                class="inline-block bg-[#C5A367] text-[#132419] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:text-[#132419] transition-all">
+                                Book a Tee Time
+                            </a>
+
+                            <a href="tel:01384233877"
+                                class="inline-block border border-[#C5A367] text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:text-[#132419] transition-all">
+                                Call: 01384 233877
+                            </a>
+
+                            <a href="societies.html"
+                                class="inline-block border border-[#C5A367] text-[#C5A367] px-8 py-5 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:text-[#132419] transition-all">
+                                Societies
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="space-y-8" style="padding-top:48px;">
-                    <div class="space-y-2">
-                        <h3 class="text-gold text-[10px] uppercase tracking-[0.4em] font-bold">The Academy</h3>
-                        <h2 class="serif text-4xl md:text-6xl text-[#132419] leading-tight">Expertise & Equipment</h2>
-                    </div>
+                <!-- ARRIVAL INFO -->
+                <div
+                    class="bg-white p-8 md:p-10 border border-gray-100 flex flex-col justify-center shadow-lg text-[#132419]">
+                    <h2 class="serif text-4xl italic mb-6">Before You Play</h2>
 
-                    <p class="serif text-xl md:text-2xl italic text-[#132419]/70 leading-relaxed">
-                        "Our Head professional is dedicated to helping you enjoy the game. Whether it's a quick bucket
-                        of balls or a full Round of Golf, he will provide a tour-level experience for every member."
-                    </p>
+                    <ul class="space-y-4 text-xs tracking-wide uppercase opacity-70">
+                        <li><span class="text-[#C5A367] font-black mr-2">/</span> Report to Pro Shop</li>
+                        <li><span class="text-[#C5A367] font-black mr-2">/</span> 8:00AM Summer Opening</li>
+                        <li><span class="text-[#C5A367] font-black mr-2">/</span> Check Local Rules</li>
+                        <li><span class="text-[#C5A367] font-black mr-2">/</span> 1st & 10th Tee Starts</li>
+                    </ul>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-4 items-start">
-                        <div class="border-l-2 border-[#C5A367] pl-7 pr-3 py-2">
-                            <h4 class="serif text-[12px] font-semibold uppercase tracking-[0.14em] mb-2 text-[#132419]">
-                                Re-Grip Fitting
-                            </h4>
-                            <p class="text-[11px] text-gray-500 leading-relaxed">Only top brands used.</p>
-                        </div>
-
-                        <div class="border-l-2 border-[#C5A367] pl-7 pr-3 py-2">
-                            <h4 class="serif text-[12px] font-semibold uppercase tracking-[0.14em] mb-2 text-[#132419]">
-                                Electric Buggies
-                            </h4>
-                            <p class="text-[11px] text-gray-500 leading-relaxed">Why not do it in style.</p>
-                        </div>
-
-                        <div class="border-l-2 border-[#C5A367] pl-7 pr-3 py-2">
-                            <h4 class="serif text-[12px] font-semibold uppercase tracking-[0.14em] mb-2 text-[#132419]">
-                                Stockists
-                            </h4>
-                            <p class="text-[11px] text-gray-500 leading-relaxed">Titleist / Ping / FJ / Galvin Green</p>
-                        </div>
-                    </div>
-
-                    <div class="pt-6 flex flex-row flex-wrap items-center gap-3">
-                        <a href="https://www.dudleygolfclub.com/visitorbooking/"
-                            class="bg-forest text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-[#132419] transition-all duration-300">
-                            Book a Tee Time
-                        </a>
-
-                        <a href="pro-shop1.html"
-                            class="bg-forest text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-[#132419] transition-all duration-300">
-                            View My Stock
-                        </a>
+                    <div class="mt-10 bg-[#f9f7f2] p-6 border-l-4 border-[#C5A367]">
+                        <h3 class="serif text-2xl mb-3">Visitor Tee Booking</h3>
+                        <p class="text-sm leading-relaxed opacity-75">
+                            Book your visitor tee time online or contact the Pro Shop for availability.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div
-            class="flex justify-center items-center gap-10 py-12 text-gold text-sm uppercase tracking-[0.2em] border-t border-gray-100 mt-16">
-            <a href="https://www.facebook.com/DudleyGolfClub" class="hover:text-[#132419] transition-all">Facebook</a>
-            <a href="https://www.instagram.com/dudleygolfclub" class="hover:text-[#132419] transition-all">Instagram</a>
-            <a href="https://x.com/dudleygolfclub" class="hover:text-[#132419] transition-all">X / Twitter</a>
-        </div>
-
         </div>
     </section>
 
@@ -373,7 +371,7 @@
             <div>
                 <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
                 <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                    <iframe
+                    <iframe title="Dudley Golf Club map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
@@ -391,23 +389,23 @@
 
     <!-- RETURN HOME BUTTON -->
     <a href="index.html" aria-label="Return Home" style="
-        position:fixed;
-        bottom:24px;
-        right:24px;
-        width:50px;
-        height:50px;
-        background-color:#132419;
-        color:#C5A367;
-        border:2px solid #C5A367;
-        border-radius:4px;
-        z-index:99999;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        text-decoration:none;
-        box-shadow:0 10px 25px rgba(0,0,0,0.5);
-        font-size:20px;
-        font-weight:bold;">
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 50px;
+        height: 50px;
+        background-color: #132419;
+        color: #C5A367;
+        border: 2px solid #C5A367;
+        border-radius: 4px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        font-size: 20px;
+        font-weight: bold;">
         ⌂
     </a>
 
@@ -418,7 +416,7 @@
 
             const now = new Date();
             const minutes = now.getHours() * 60 + now.getMinutes();
-            const open = minutes >= 420 && minutes <= 1140;
+            const open = minutes >= 480 && minutes <= 1072;
 
             el.textContent = open ? "Open" : "Closed";
             el.className = open
