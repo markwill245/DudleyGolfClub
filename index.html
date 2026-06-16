@@ -648,8 +648,11 @@
 
         setInterval(() => {
             updateClock();
-            updateCourseStatus();
         }, 1000);
+
+        setInterval(() => {
+            updateCourseStatus();
+        }, 60000);
     </script>
 
     <script>
