@@ -599,13 +599,13 @@
             }
 
             if (COURSE_STATUS_OVERRIDE === "OPEN") {
-                statusEl.textContent = "Course Open";
+                statusEl.textContent = "🟢 COURSE OPEN";
                 statusEl.className = "text-green-400 font-semibold";
                 return;
             }
 
             if (COURSE_STATUS_OVERRIDE === "CLOSED") {
-                statusEl.textContent = "Course Closed";
+                statusEl.textContent = "🔴 COURSE CLOSED";
                 statusEl.className = "text-red-400 font-semibold";
                 return;
             }
