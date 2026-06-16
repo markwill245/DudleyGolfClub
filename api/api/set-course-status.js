@@ -1,4 +1,4 @@
-let savedStatus = "automatic";
+export let savedCourseStatus = "automatic";
 
 export default async function handler(req, res) {
     if (req.method !== "POST") {
@@ -31,10 +31,10 @@ export default async function handler(req, res) {
         });
     }
 
-    savedStatus = status;
+    savedCourseStatus = status;
 
     return res.status(200).json({
         success: true,
-        status: savedStatus
+        status: savedCourseStatus
     });
 }
