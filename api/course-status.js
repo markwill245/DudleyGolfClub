@@ -32,7 +32,11 @@ export default function handler(req, res) {
         "maintenance"
     ];
 
-    if (override && allowedOverrides.includes(override)) {
+    if (
+        override &&
+        override !== "automatic" &&
+        allowedOverrides.includes(override)
+    ) {
         status = override;
     }
 
