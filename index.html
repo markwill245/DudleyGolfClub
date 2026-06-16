@@ -578,7 +578,8 @@
 
     <script>
         const OPEN_HOUR = 8;
-        const CLOSE_HOUR = 18;
+        const CLOSE_HOUR = 17;
+        const CLOSE_MINUTE = 52;
 
         let COURSE_STATUS_OVERRIDE = null;
 
@@ -604,8 +605,20 @@
                 return;
             }
 
-            const currentHour = now.getHours();
-            const isOpen = currentHour >= OPEN_HOUR && currentHour < CLOSE_HOUR;
+            const currentMinutes =
+                (now.getHours() * 60) +
+                now.getMinutes();
+
+            const openMinutes =
+                (OPEN_HOUR * 60);
+
+            const closeMinutes =
+                (CLOSE_HOUR * 60) +
+                CLOSE_MINUTE;
+
+            const isOpen =
+                currentMinutes >= openMinutes &&
+                currentMinutes < closeMinutes;
 
             statusEl.textContent = isOpen ? "Course Open" : "Course Closed";
             statusEl.className = isOpen
