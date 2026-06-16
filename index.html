@@ -602,23 +602,37 @@
                 const data =
                     await response.json();
 
-                if (data.status === "open") {
+                const statusMap = {
+                    open: {
+                        text: "🟢 COURSE OPEN",
+                        className: "font-bold uppercase text-green-400"
+                    },
+                    closed: {
+                        text: "🔴 COURSE CLOSED",
+                        className: "font-bold uppercase text-red-400"
+                    },
+                    frost: {
+                        text: "🟡 FROST DELAY",
+                        className: "font-bold uppercase text-yellow-400"
+                    },
+                    "temporary-greens": {
+                        text: "🟠 TEMPORARY GREENS",
+                        className: "font-bold uppercase text-orange-400"
+                    },
+                    "preferred-lies": {
+                        text: "🔵 PREFERRED LIES",
+                        className: "font-bold uppercase text-blue-400"
+                    },
+                    maintenance: {
+                        text: "⚪ COURSE MAINTENANCE",
+                        className: "font-bold uppercase text-gray-300"
+                    }
+                };
 
-                    statusEl.textContent =
-                        "🟢 COURSE OPEN";
+                const currentStatus = statusMap[data.status] || statusMap.closed;
 
-                    statusEl.className =
-                        "font-bold uppercase text-green-400";
-
-                } else {
-
-                    statusEl.textContent =
-                        "🔴 COURSE CLOSED";
-
-                    statusEl.className =
-                        "font-bold uppercase text-red-400";
-
-                }
+                statusEl.textContent = currentStatus.text;
+                statusEl.className = currentStatus.className;
 
             } catch (error) {
 
