@@ -717,10 +717,7 @@
     </script>
     <script>
 
-        const CLUB_NOTICE = "";
-        "🏌️ Visitors Welcome Today"
-
-        function updateClubNotice() {
+        async function updateClubNotice() {
 
             const banner =
                 document.getElementById("club-notice");
@@ -730,22 +727,40 @@
 
             if (!banner || !text) return;
 
-            if (CLUB_NOTICE.trim() === "") {
+            try {
+
+                const response =
+                    await fetch("/api/course-status");
+
+                const data =
+                    await response.json();
+
+                if (
+                    !data.notices.showNotice ||
+                    data.notices.clubNotice === ""
+                ) {
+
+                    banner.classList.add("hidden");
+
+                    return;
+                }
+
+                text.textContent =
+                    data.notices.clubNotice;
+
+                banner.classList.remove("hidden");
+
+            } catch (error) {
+
+                console.log(error);
 
                 banner.classList.add("hidden");
-
-                return;
             }
-
-            text.textContent = CLUB_NOTICE;
-
-            banner.classList.remove("hidden");
         }
 
         updateClubNotice();
 
     </script>
-
 </body>
 
 </html>
