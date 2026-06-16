@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DGC Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Dudley Golf Club Admin</h1>
+
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="unlockAdmin()">Unlock</button>
+
+    <div id="admin-panel" style="display:none;">
+        <h2>Course Status</h2>
+
+        <button>🔄 Automatic</button>
+        <button>🟢 Open</button>
+        <button>🔴 Closed</button>
+        <button>🟡 Frost Delay</button>
+        <button>🟠 Temporary Greens</button>
+        <button>🔵 Preferred Lies</button>
+        <button>⚪ Maintenance</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script>
+        function unlockAdmin() {
+            const password = document.getElementById("password").value;
+            const panel = document.getElementById("admin-panel");
+            const message = document.getElementById("message");
+
+            if (password === "DGC1893") {
+                panel.style.display = "block";
+                message.textContent = "Admin unlocked.";
+            } else {
+                message.textContent = "Wrong password.";
+            }
+        }
+    </script>
+</body>
+
+</html>
