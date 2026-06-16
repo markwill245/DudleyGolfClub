@@ -18,16 +18,21 @@ export default function handler(req, res) {
 
   let status = "closed";
 
-  if (minutesNow >= openTime && minutesNow <= closeTime) {
+  if (minutesNow >= openTime && minutesNow < closeTime) {
     status = "open";
   }
 
-  if (override === "open") {
-    status = "open";
-  }
+  const allowedOverrides = [
+    "open",
+    "closed",
+    "frost",
+    "temporary-greens",
+    "preferred-lies",
+    "maintenance"
+  ];
 
-  if (override === "closed") {
-    status = "closed";
+  if (override && allowedOverrides.includes(override)) {
+    status = override;
   }
 
   res.status(200).json({
