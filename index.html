@@ -574,6 +574,10 @@
         }
 
         updateWeather();
+
+        setInterval(() => {
+            updateWeather();
+        }, 600000);
     </script>
 
     <script>
