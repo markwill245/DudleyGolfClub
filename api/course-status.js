@@ -1,5 +1,3 @@
-import { savedCourseStatus } from "./set-course-status.js";
-
 export default function handler(req, res) {
   const override = process.env.COURSE_STATUS_OVERRIDE;
 
