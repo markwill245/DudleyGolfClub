@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dudley Golf Club - Course Status Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #132419;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 420px;
+            background: #0b1610;
+            border: 1px solid #C5A367;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #C5A367;
+            margin-bottom: 10px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #C5A367;
+            color: #132419;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .status-buttons {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .message {
+            margin-top: 15px;
+            color: #C5A367;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Course Status</h1>
+        <p>Dudley Golf Club Admin</p>
+
+        <input id="password" type="password" placeholder="Enter admin password">
+
+        <div class="status-buttons" id="status-buttons">
+            <button onclick="setStatus('automatic')">🔄 Automatic</button>
+            <button onclick="setStatus('open')">🟢 Course Open</button>
+            <button onclick="setStatus('closed')">🔴 Course Closed</button>
+            <button onclick="setStatus('frost')">🟡 Frost Delay</button>
+            <button onclick="setStatus('temporary-greens')">🟠 Temporary Greens</button>
+            <button onclick="setStatus('preferred-lies')">🔵 Preferred Lies</button>
+            <button onclick="setStatus('maintenance')">⚪ Course Maintenance</button>
+        </div>
+
+        <button onclick="unlockAdmin()">Unlock</button>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        function unlockAdmin() {
+            const password = document.getElementById("password").value;
+            const buttons = document.getElementById("status-buttons");
+            const message = document.getElementById("message");
+
+            if (!password) {
+                message.textContent = "Enter password first.";
+                return;
+            }
+
+            buttons.style.display = "block";
+            message.textContent = "Admin unlocked.";
+        }
+
+        async function setStatus(status) {
+            const password = document.getElementById("password").value;
+            const message = document.getElementById("message");
+
+            try {
+                const response = await fetch("/api/set-course-status", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        password,
+                        status
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    message.textContent = data.error || "Update failed.";
+                    return;
+                }
+
+                message.textContent = "Status updated: " + data.status;
+
+            } catch (error) {
+                message.textContent = "Could not update status.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
