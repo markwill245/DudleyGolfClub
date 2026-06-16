@@ -576,39 +576,121 @@
     </script>
 
     <script>
-        function updateClockAndStatus() {
-            const clock = document.getElementById("live-clock");
-            const status = document.getElementById("course-status");
+
+        const OPEN_HOUR = 8;
+        const CLOSE_HOUR = 18;
+
+        /*
+        OPTIONS
+        
+        null = automatic
+        
+        "OPEN" = force open
+        
+        "CLOSED" = force closed
+        */
+
+        let COURSE_STATUS_OVERRIDE = null;
+
+        function updateCourseStatus() {
+
+            const statusEl = document.getElementById("course-status");
+
+            if (!statusEl) return;
 
             const now = new Date();
 
-            if (clock) {
-                clock.textContent = now.toLocaleTimeString("en-GB", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    second: "2-digit"
-                });
+            // Midnight reset
+
+            if (
+                now.getHours() === 0 &&
+                now.getMinutes() === 0
+            ) {
+                COURSE_STATUS_OVERRIDE = null;
             }
 
-            const minutesNow = now.getHours() * 60 + now.getMinutes();
-            const openTime = 8 * 60;
-            const closeTime = (17 * 60) + 52;
+            // Manual override
 
-            if (status) {
-                if (minutesNow >= openTime && minutesNow <= closeTime) {
-                    status.textContent = "Open";
-                    status.classList.remove("text-red-500");
-                    status.classList.add("text-green-400");
-                } else {
-                    status.textContent = "Closed";
-                    status.classList.remove("text-green-400");
-                    status.classList.add("text-red-500");
-                }
+            if (COURSE_STATUS_OVERRIDE === "OPEN") {
+
+                statusEl.textContent = "Course Open";
+
+                statusEl.className =
+                    "text-green-400 font-semibold";
+
+                return;
+            }
+
+            if (COURSE_STATUS_OVERRIDE === "CLOSED") {
+
+                statusEl.textContent = "Course Closed";
+
+                statusEl.className =
+                    "text-red-400 font-semibold";
+
+                return;
+            }
+
+            // Automatic mode
+
+            const currentHour = now.getHours();
+
+            const isOpen =
+                currentHour >= OPEN_HOUR &&
+                currentHour < CLOSE_HOUR;
+
+            if (isOpen) {
+
+                statusEl.textContent = "Course Open";
+
+                statusEl.className =
+                    "text-green-400 font-semibold";
+
+            } else {
+
+                statusEl.textContent = "Course Closed";
+
+                statusEl.className =
+                    "text-red-400 font-semibold";
+
             }
         }
 
-        updateClockAndStatus();
-        setInterval(updateClockAndStatus, 1000);
+        function updateClock() {
+
+            const clock = document.getElementById(
+                "live-clock"
+            );
+
+            if (!clock) return;
+
+            const now = new Date();
+
+            clock.textContent =
+                now.toLocaleTimeString(
+                    "en-GB",
+                    {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        second: "2-digit"
+                    }
+                );
+        }
+
+        // Start
+
+        updateClock();
+
+        updateCourseStatus();
+
+        setInterval(() => {
+
+            updateClock();
+
+            updateCourseStatus();
+
+        }, 1000);
+
     </script>
 
     <script>
