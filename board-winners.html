@@ -71,27 +71,25 @@
             </div>
         </div>
 
-        <script type="module">
-            import { createClient } from "https://esm.sh/@sanity/client";
-
-            const client = createClient({
-                projectId: "c54r3a5t",
-                dataset: "production",
-                apiVersion: "2024-03-01",
-                useCdn: false
-            });
-
+        <script>
             async function loadMembersContent() {
                 const container = document.getElementById("members-content");
                 if (!container) return;
 
                 try {
-                    const data = await client.fetch(`
+                    const query = encodeURIComponent(`
                 *[_type == "membersContent" && page == "board-winners"][0]{
                     title,
                     content
                 }
             `);
+
+                    const response = await fetch(
+                        `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
+                    );
+
+                    const result = await response.json();
+                    const data = result.result;
 
                     if (!data) {
                         container.innerHTML = "<p>No board winners have been added yet.</p>";
@@ -99,10 +97,11 @@
                     }
 
                     container.innerHTML = `
-                <h2 class="serif text-3xl text-[#C5A367] mb-6">${data.title}</h2>
-                <div class="whitespace-pre-line leading-relaxed text-white/80">${data.content}</div>
+                <h2 class="serif text-3xl text-[#C5A367] mb-6">${data.title || "Board Winners"}</h2>
+                <div class="whitespace-pre-line leading-relaxed text-white/80">${data.content || ""}</div>
             `;
                 } catch (error) {
+                    console.log("Members content error:", error);
                     container.innerHTML = "<p>Could not load board winners.</p>";
                 }
             }
