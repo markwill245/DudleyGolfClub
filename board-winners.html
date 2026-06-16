@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Board Winners | Dudley Golf Club</title>
-   <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="dist/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,8 +66,49 @@
         <a href="members-area.html" class="back-btn">← Back to Members Area</a>
         <h1>Board Winners</h1>
         <div class="content-box">
-            <p>Historical archive of club board winners.</p>
+            <div id="members-content">
+                <p>Loading board winners...</p>
+            </div>
         </div>
+
+        <script type="module">
+            import { createClient } from "https://esm.sh/@sanity/client";
+
+            const client = createClient({
+                projectId: "c54r3a5t",
+                dataset: "production",
+                apiVersion: "2024-03-01",
+                useCdn: false
+            });
+
+            async function loadMembersContent() {
+                const container = document.getElementById("members-content");
+                if (!container) return;
+
+                try {
+                    const data = await client.fetch(`
+                *[_type == "membersContent" && page == "board-winners"][0]{
+                    title,
+                    content
+                }
+            `);
+
+                    if (!data) {
+                        container.innerHTML = "<p>No board winners have been added yet.</p>";
+                        return;
+                    }
+
+                    container.innerHTML = `
+                <h2 class="serif text-3xl text-[#C5A367] mb-6">${data.title}</h2>
+                <div class="whitespace-pre-line leading-relaxed text-white/80">${data.content}</div>
+            `;
+                } catch (error) {
+                    container.innerHTML = "<p>Could not load board winners.</p>";
+                }
+            }
+
+            loadMembersContent();
+        </script>
     </div>
     <!-- RETURN HOME BUTTON -->
     <a href="index.html" aria-label="Return Home" style="
