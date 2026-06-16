@@ -1,48 +1,53 @@
-export default function handler(req, res) {
-    const override = process.env.COURSE_STATUS_OVERRIDE;
+export default async function handler(req, res) {
+    try {
+        const sanityUrl =
+            "https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=" +
+            encodeURIComponent(`*[_type == "clubSettings"][0]{
+        courseStatus
+      }`);
 
-    const now = new Date();
+        const sanityResponse = await fetch(sanityUrl);
+        const sanityData = await sanityResponse.json();
 
-    const ukTime = new Intl.DateTimeFormat("en-GB", {
-        timeZone: "Europe/London",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false
-    }).format(now);
+        const sanityStatus =
+            sanityData?.result?.courseStatus || "automatic";
 
-    const [hour, minute] = ukTime.split(":").map(Number);
-    const minutesNow = hour * 60 + minute;
+        const now = new Date();
 
-    const openTime = 8 * 60;
-    const closeTime = 17 * 60 + 52;
+        const ukTime = new Intl.DateTimeFormat("en-GB", {
+            timeZone: "Europe/London",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false
+        }).format(now);
 
-    let status = "closed";
+        const [hour, minute] = ukTime.split(":").map(Number);
+        const minutesNow = hour * 60 + minute;
 
-    if (minutesNow >= openTime && minutesNow < closeTime) {
-        status = "open";
+        const openTime = 8 * 60;
+        const closeTime = 17 * 60 + 52;
+
+        let status = "closed";
+
+        if (minutesNow >= openTime && minutesNow < closeTime) {
+            status = "open";
+        }
+
+        if (sanityStatus && sanityStatus !== "automatic") {
+            status = sanityStatus;
+        }
+
+        return res.status(200).json({
+            status,
+            time: ukTime,
+            source: "sanity",
+            sanityStatus
+        });
+
+    } catch (error) {
+        return res.status(200).json({
+            status: "closed",
+            error: "Sanity status failed"
+        });
     }
-
-    const allowedOverrides = [
-        "automatic",
-        "open",
-        "closed",
-        "frost",
-        "temporary-greens",
-        "preferred-lies",
-        "maintenance"
-    ];
-
-    if (
-        override &&
-        override !== "automatic" &&
-        allowedOverrides.includes(override)
-    ) {
-        status = override;
-    }
-
-    res.status(200).json({
-        status,
-        time: ukTime,
-        override: override || "automatic"
-    });
 }
