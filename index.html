@@ -582,55 +582,54 @@
     </script>
 
     <script>
-        const OPEN_HOUR = 8;
-        const CLOSE_HOUR = 17;
-        const CLOSE_MINUTE = 52;
 
-        let COURSE_STATUS_OVERRIDE = null;
 
-        function updateCourseStatus() {
-            const statusEl = document.getElementById("course-status");
+        async function updateCourseStatus() {
+
+            const statusEl =
+                document.getElementById("course-status");
+
             if (!statusEl) return;
 
-            const now = new Date();
+            try {
 
-            if (now.getHours() === 0 && now.getMinutes() === 0) {
-                COURSE_STATUS_OVERRIDE = null;
+                const response =
+                    await fetch("/api/course-status");
+
+                if (!response.ok)
+                    throw new Error();
+
+                const data =
+                    await response.json();
+
+                if (data.status === "open") {
+
+                    statusEl.textContent =
+                        "🟢 COURSE OPEN";
+
+                    statusEl.className =
+                        "font-bold uppercase text-green-400";
+
+                } else {
+
+                    statusEl.textContent =
+                        "🔴 COURSE CLOSED";
+
+                    statusEl.className =
+                        "font-bold uppercase text-red-400";
+
+                }
+
+            } catch (error) {
+
+                statusEl.textContent =
+                    "⚪ STATUS UNKNOWN";
+
+                statusEl.className =
+                    "font-bold uppercase text-gray-400";
+
             }
-
-            if (COURSE_STATUS_OVERRIDE === "OPEN") {
-                statusEl.textContent = "🟢 COURSE OPEN";
-                statusEl.className = "text-green-400 font-semibold";
-                return;
-            }
-
-            if (COURSE_STATUS_OVERRIDE === "CLOSED") {
-                statusEl.textContent = "🔴 COURSE CLOSED";
-                statusEl.className = "text-red-400 font-semibold";
-                return;
-            }
-
-            const currentMinutes =
-                (now.getHours() * 60) +
-                now.getMinutes();
-
-            const openMinutes =
-                (OPEN_HOUR * 60);
-
-            const closeMinutes =
-                (CLOSE_HOUR * 60) +
-                CLOSE_MINUTE;
-
-            const isOpen =
-                currentMinutes >= openMinutes &&
-                currentMinutes < closeMinutes;
-
-            statusEl.textContent = isOpen ? "Course Open" : "Course Closed";
-            statusEl.className = isOpen
-                ? "text-green-400 font-semibold"
-                : "text-red-400 font-semibold";
         }
-
         function updateClock() {
             const clock = document.getElementById("live-clock");
             if (!clock) return;
