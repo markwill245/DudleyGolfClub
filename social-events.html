@@ -1,185 +1,282 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Club Social Events | Dudley Golf Club</title>
-   <link rel="stylesheet" href="dist/output.css">
+
+    <link rel="stylesheet" href="dist/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
+
     <style>
         :root {
+
             --gold: #C5A367;
+
             --forest: #132419;
+
             --cream: #F9F7F2;
+
         }
 
         body {
+
             font-family: 'Outfit', sans-serif;
+
             background-color: var(--forest);
+
             background-image:
-                radial-gradient(at 0% 0%, rgba(197, 163, 103, 0.08) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(197, 163, 103, 0.05) 0px, transparent 50%),
-                linear-gradient(45deg, #132419 25%, #182d20 25%, #182d20 50%, #132419 50%, #132419 75%, #182d20 75%, #182d20 100%);
+
+                radial-gradient(at 0% 0%, rgba(197, 163, 103, .08) 0px, transparent 50%),
+
+                radial-gradient(at 100% 100%, rgba(197, 163, 103, .05) 0px, transparent 50%),
+
+                linear-gradient(45deg,
+
+                    #132419 25%,
+
+                    #182d20 25%,
+
+                    #182d20 50%,
+
+                    #132419 50%,
+
+                    #132419 75%,
+
+                    #182d20 75%,
+
+                    #182d20 100%);
+
             background-size: 60px 60px;
+
             color: white;
+
             padding: 40px 20px;
+
             min-height: 100vh;
+
             margin: 0;
+
         }
 
         .container {
+
             max-width: 800px;
+
             margin: 0 auto;
+
         }
 
         h1 {
+
             font-family: 'Cormorant Garamond', serif;
+
             color: var(--gold);
+
             border-bottom: 1px solid var(--gold);
+
             padding-bottom: 20px;
+
         }
 
         .back-btn {
+
             color: var(--gold);
+
             text-decoration: none;
+
             display: inline-block;
+
             margin-bottom: 20px;
+
         }
 
         .content-box {
-            background: rgba(255, 255, 255, 0.03);
+
+            background: rgba(255, 255, 255, .03);
+
             padding: 40px;
-            border: 1px solid rgba(197, 163, 103, 0.2);
+
+            border: 1px solid rgba(197, 163, 103, .2);
+
         }
     </style>
+
 </head>
 
 <body>
+
     <div class="container">
-        <a href="members-area.html" class="back-btn">← Back to Members Area</a>
-        <h1>Club Social Events</h1>
+
+        <a href="members-area.html" class="back-btn">
+
+            ← Back to Members Area
+
+        </a>
+
+        <h1>
+
+            Club Social Events
+
+        </h1>
+
         <div class="content-box">
-            <h2 class="serif text-2xl text-[#C5A367] mb-6 italic">Captain's Day - July 4th</h2>
 
-            <p class="mb-4">Dear Members,</p>
+            <div id="members-content">
 
-            <p class="mb-4">Your club Captain, Keith Woodall, would like to invite you all to his Captain's Day on
-                <strong>Saturday July 4th</strong>. There will be a BBQ and some drinks on the course, along with a
-                prize presentation in the evening followed by live entertainment.
-            </p>
+                <p>
 
-            <ul class="list-disc ml-5 mb-6 space-y-2">
-                <li>Entrance Fee £5, including raffle ticket (2's payable in the pro shop)</li>
-                <li>Prizes for: Best Nett (1st to 3rd), Best Gross, Best Nett Front 9, Best Nett Back 9, Past Captains,
-                    Over 65's, Nearest the Pin on all Par 3's, Nearest the Pin in 2 on 18, Nearest the line on the 17th,
-                    and a Juniors 9 hole competition.</li>
-            </ul>
+                    Loading club social events...
 
-            <p class="mb-4 italic">The Captain has requested that all prize winners attend the presentation in the Brian
-                Clee Suite at Approx. 6pm, followed by live entertainment.</p>
+                </p>
 
-            <p class="mb-6">All Members are invited to play and please bring your friends and family on the evening and
-                make this a Captain's Day to remember.</p>
+            </div>
 
-            <p class="mb-2">I look forward to seeing you all there!</p>
-            <p class="font-bold">Kind Regards,<br>Keith Woodall<br>Captain</p>
         </div>
+
     </div>
-    <!-- MASTER FOOTER -->
-    <footer class="bg-[#0D1712] text-white px-8 py-20 border-t border-[#C5A367]/20">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-12">
 
-            <div>
-                <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
-                <p class="text-white/70 text-sm leading-relaxed mb-6">
-                    Turners Hill, Rowley Regis,<br>
-                    West Midlands, B65 9DP
-                </p>
-                <p class="text-white/70 text-sm mb-2">
-                    Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
-                </p>
-                <p class="text-white/70 text-sm">
-                    Email: <a href="mailto:secretary@dudleygolfclub.com"
-                        class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
-                </p>
-            </div>
+    <script>
 
-            <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore</h4>
-                <div class="flex flex-col gap-3 text-sm text-white/70">
-                    <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
-                    <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
-                    <a href="heritage.html" class="hover:text-[#C5A367] transition">History</a>
-                    <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
-                    <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
-                    <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
-                    <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
-                </div>
-            </div>
+        async function loadMembersContent() {
 
-            <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
-                <div class="flex flex-col gap-3 text-sm text-white/70">
-                    <a href="https://www.dudleygolfclub.com/visitorbooking/"
-                        class="hover:text-[#C5A367] transition">Book a Tee Time</a>
-                    <a href="https://www.dudleygolfclub.com/login.php" class="hover:text-[#C5A367] transition">iGolf
-                        App</a>
-                    <a href="members-area.html" class="hover:text-[#C5A367] transition">Members Area</a>
-                    <a href="https://www.facebook.com/DudleyGolfClub"
-                        class="hover:text-[#C5A367] transition">Facebook</a>
-                    <a href="https://www.instagram.com/dudleygolfclub"
-                        class="hover:text-[#C5A367] transition">Instagram</a>
-                </div>
-            </div>
+            const container =
 
-            <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
-                <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </div>
+                document.getElementById("members-content");
 
-        </div>
+            if (!container) return;
 
-        <div
-            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>© 2026 Dudley Golf Club</p>
-            <p>Established 1893 • Rowley Regis</p>
-        </div>
-    </footer>
+            try {
 
-    <!-- RETURN HOME BUTTON -->
+                const query =
+
+                    encodeURIComponent(`
+
+*[_type=="membersContent" && page=="club-social-events"][0]{
+
+title,
+
+content
+
+}
+
+`);
+
+                const response =
+
+                    await fetch(
+
+                        `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
+
+                    );
+
+                const result =
+
+                    await response.json();
+
+                const data =
+
+                    result.result;
+
+                if (!data) {
+
+                    container.innerHTML =
+
+                        "<p>No club social events have been added yet.</p>";
+
+                    return;
+
+                }
+
+                container.innerHTML = `
+
+<h2 class="serif text-2xl text-[#C5A367] mb-6 italic">
+
+${data.title}
+
+</h2>
+
+<div class="whitespace-pre-line leading-relaxed text-white/80">
+
+${data.content}
+
+</div>
+
+`;
+
+            }
+
+            catch (error) {
+
+                console.log(error);
+
+                container.innerHTML =
+
+                    "<p>Could not load club social events.</p>";
+
+            }
+
+        }
+
+        loadMembersContent();
+
+    </script>
+
     <a href="index.html" aria-label="Return Home" style="
-position: fixed;
-bottom: 24px;
-right: 24px;
-width: 50px;
-height: 50px;
-background-color: #132419;
-color: #C5A367;
-border: 2px solid #C5A367;
-border-radius: 4px;
-z-index: 99999;
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-font-size: 20px;
-font-weight: bold;
+
+position:fixed;
+
+bottom:24px;
+
+right:24px;
+
+width:50px;
+
+height:50px;
+
+background:#132419;
+
+color:#C5A367;
+
+border:2px solid #C5A367;
+
+border-radius:4px;
+
+z-index:99999;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+
+font-size:20px;
+
+font-weight:bold;
+
 ">
+
         ⌂
+
     </a>
+
 </body>
 
 </html>
+```
