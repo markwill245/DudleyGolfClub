@@ -3,14 +3,19 @@ export default async function handler(req, res) {
         const sanityUrl =
             "https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=" +
             encodeURIComponent(`*[_type == "clubSettings"][0]{
-        courseStatus
-      }`);
+                courseStatus,
+                showNotice,
+                clubNotice,
+                competitionNotice,
+                eventsNotice,
+                visitorsNotice
+            }`);
 
         const sanityResponse = await fetch(sanityUrl);
         const sanityData = await sanityResponse.json();
 
-        const sanityStatus =
-            sanityData?.result?.courseStatus || "automatic";
+        const settings = sanityData?.result || {};
+        const sanityStatus = settings.courseStatus || "automatic";
 
         const now = new Date();
 
@@ -41,13 +46,27 @@ export default async function handler(req, res) {
             status,
             time: ukTime,
             source: "sanity",
-            sanityStatus
+            sanityStatus,
+            notices: {
+                showNotice: settings.showNotice || false,
+                clubNotice: settings.clubNotice || "",
+                competitionNotice: settings.competitionNotice || "",
+                eventsNotice: settings.eventsNotice || "",
+                visitorsNotice: settings.visitorsNotice || ""
+            }
         });
 
     } catch (error) {
         return res.status(200).json({
             status: "closed",
-            error: "Sanity status failed"
+            error: "Sanity status failed",
+            notices: {
+                showNotice: false,
+                clubNotice: "",
+                competitionNotice: "",
+                eventsNotice: "",
+                visitorsNotice: ""
+            }
         });
     }
 }
