@@ -23,6 +23,7 @@ export default function handler(req, res) {
     }
 
     const allowedOverrides = [
+        "automatic",
         "open",
         "closed",
         "frost",
