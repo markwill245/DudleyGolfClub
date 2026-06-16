@@ -2,7 +2,7 @@ export default async function handler(req, res) {
     try {
         const sanityUrl =
             "https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=" +
-            encodeURIComponent(`*[_type == "clubSettings"][0]{
+            encodeURIComponent(`*[_type == "clubSettings" && _id == "clubSettings"][0]{
                 courseStatus,
                 showNotice,
                 clubNotice,
