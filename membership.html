@@ -1200,21 +1200,32 @@
                STARTUP (ONE ENTRY POINT)
             ========================= */
 
+            // PASTE THIS REPLACEMENT
             document.addEventListener("DOMContentLoaded", () => {
+                // 1. Initialize UI elements immediately
+                initMenu();
                 buildNav();
                 renderMembership();
-                initMenu();
-
-                // Check if courseData is defined before calling setHole
-                if (typeof courseData !== 'undefined') {
-                    setHole(1);
-                } else {
-                    console.warn("courseData not found yet, delaying setHole execution.");
-                    // Optional: wait for a data-load event or use a small interval to retry
-                }
-
                 updateClock();
                 setInterval(updateClock, 1000);
+
+                // 2. Safely attempt to set the hole data
+                const attemptSetHole = () => {
+                    if (typeof courseData !== 'undefined') {
+                        setHole(1);
+                        return true;
+                    }
+                    return false;
+                };
+
+                // 3. If data isn't ready, check every 200ms until it is
+                if (!attemptSetHole()) {
+                    const interval = setInterval(() => {
+                        if (attemptSetHole()) {
+                            clearInterval(interval);
+                        }
+                    }, 200);
+                }
             });
 
             /* =========================
