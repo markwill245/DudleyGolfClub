@@ -139,8 +139,12 @@ font-weight: bold;
 
             try {
                 const query = encodeURIComponent(`
-    *[_type == "competitionSchedule"] | order(order asc) {
+    *[
+        _type == "competitionSchedule"
+        && eventDate >= string(now())[0..9]
+    ] | order(eventDate asc) {
         date,
+        eventDate,
         competitionName,
         igolfLink
     }
