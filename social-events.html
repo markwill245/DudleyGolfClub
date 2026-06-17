@@ -148,89 +148,74 @@
     </div>
 
     <script>
+        function renderBlocks(blocks) {
+            if (!Array.isArray(blocks)) return "";
+
+            return blocks.map(block => {
+                if (block._type !== "block") return "";
+
+                const text = (block.children || [])
+                    .map(child => child.text || "")
+                    .join("");
+
+                if (!text.trim()) return "";
+
+                if (block.listItem === "bullet") {
+                    return `<li>${text}</li>`;
+                }
+
+                if (block.style === "h2") {
+                    return `<h2 class="serif text-2xl text-[#C5A367] mb-4 mt-6">${text}</h2>`;
+                }
+
+                if (block.style === "h3") {
+                    return `<h3 class="serif text-xl text-[#C5A367] mb-3 mt-5">${text}</h3>`;
+                }
+
+                return `<p class="mb-4">${text}</p>`;
+            }).join("");
+        }
 
         async function loadMembersContent() {
-
-            const container =
-
-                document.getElementById("members-content");
-
+            const container = document.getElementById("members-content");
             if (!container) return;
 
             try {
+                const query = encodeURIComponent(`
+                *[_type=="membersContent" && page=="club-social-events"][0]{
+                    title,
+                    content
+                }
+            `);
 
-                const query =
+                const response = await fetch(
+                    `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
+                );
 
-                    encodeURIComponent(`
-
-*[_type=="membersContent" && page=="club-social-events"][0]{
-
-title,
-
-content
-
-}
-
-`);
-
-                const response =
-
-                    await fetch(
-
-                        `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
-
-                    );
-
-                const result =
-
-                    await response.json();
-
-                const data =
-
-                    result.result;
+                const result = await response.json();
+                const data = result.result;
 
                 if (!data) {
-
-                    container.innerHTML =
-
-                        "<p>No club social events have been added yet.</p>";
-
+                    container.innerHTML = "<p>No club social events have been added yet.</p>";
                     return;
-
                 }
 
                 container.innerHTML = `
+                <h2 class="serif text-2xl text-[#C5A367] mb-6 italic">
+                    ${data.title || "Club Social Events"}
+                </h2>
 
-<h2 class="serif text-2xl text-[#C5A367] mb-6 italic">
-
-${data.title}
-
-</h2>
-
-<div class="whitespace-pre-line leading-relaxed text-white/80">
-
-${data.content}
-
-</div>
-
-`;
-
-            }
-
-            catch (error) {
-
+                <div class="leading-relaxed text-white/80">
+                    ${renderBlocks(data.content)}
+                </div>
+            `;
+            } catch (error) {
                 console.log(error);
-
-                container.innerHTML =
-
-                    "<p>Could not load club social events.</p>";
-
+                container.innerHTML = "<p>Could not load club social events.</p>";
             }
-
         }
 
         loadMembersContent();
-
     </script>
 
     <a href="index.html" aria-label="Return Home" style="
