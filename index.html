@@ -295,464 +295,471 @@
             <div class="w-6 h-0.5 bg-[#C5A367]"></div>
         </button>
 
-        <div id="nav-links"
-            class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-center md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
+        <nav
+            class="relative w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+            <a href="index.html" class="flex flex-col relative z-[100]">
+                <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
+                <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+            </a>
 
-            <a href="index.html">Home</a>
-            <a href="course.html">Course Guide</a>
-            <a href="amen-corner.html">Amen Corner</a>
-            <a href="heritage.html">History</a>
-            <a href="hospitality.html">Hospitality & Events</a>
-            <a href="pro-shop.html">Pro Shop</a>
-            <a href="visitors.html">Visitors</a>
-            <a href="membership.html">Membership</a>
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
 
-            <div class="flex flex-col gap-4 mt-4 md:hidden">
+            <div id="nav-links"
+                class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="course.html" class="hover:text-gold transition">Course Guide</a>
+                <a href="amen-corner.html" class="hover:text-gold transition">Amen Corner</a>
+                <a href="heritage.html" class="hover:text-gold transition">History</a>
+                <a href="hospitality.html" class="hover:text-gold transition">Hospitality & Events</a>
+                <a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
+                <a href="visitors.html" class="hover:text-gold transition">Visitors</a>
+                <a href="membership.html" class="hover:text-gold transition">Membership</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4 relative z-[200]">
                 <a href="https://www.dudleygolfclub.com/login.php" target="_blank"
-                    class="border border-[#C5A367] text-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest font-bold text-center">iGolf
-                    App</a>
-                <a href="/members-area.html"
-                    class="border border-[#C5A367] text-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest font-bold text-center">Members
-                    Area Login</a>
-            </div>
-        </div>
-
-        <div class="hidden md:flex items-center gap-4 z-[100]">
-            <a href="https://www.dudleygolfclub.com/login.php" target="_blank"
-                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">iGolf
-                App</a>
-            <a href="/members-area.html"
-                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">Members
-                Area Login</a>
-        </div>
-    </nav>
-    <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
-        <div class="max-w-4xl px-4">
-
-            <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-80 font-light mb-4">
-                Established 1893
-            </p>
-
-            <h1 class="serif text-6xl md:text-9xl mb-4 italic tracking-tight leading-[0.95]">
-                The Black Country’s <span class="text-[#C5A367]">Toughest</span> Parkland Challenge
-            </h1>
-
-            <div class="w-32 h-1 bg-[#C5A367] mx-auto mb-8"></div>
-
-            <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-90 font-light mb-8">
-                Visitors Welcome • Membership Available • Open All Year
-            </p>
-
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="https://www.dudleygolfclub.com/visitorbooking/"
-                    class="bg-forest text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-[#132419] transition-all duration-300">Book
-                    a Tee Time</a>
-
-
-                <a href="membership.html"
-                    class="inline-block border border-[#C5A367] text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
-                    Membership Information
+                    class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    iGolf App
                 </a>
-
+                <a href="members-area.html"
+                    class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    Members Area Login
+                </a>
             </div>
+        </nav>
+        <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
+            <div class="max-w-4xl px-4">
 
-        </div>
-    </header>
-
-
-    <!-- HOME LANDING LINKS -->
-    <section class="bg-[#132419] py-24 px-4">
-        <div class="max-w-7xl mx-auto">
-
-            <div class="text-center mb-16">
-                <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
-                    Welcome To Dudley Golf Club
+                <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-80 font-light mb-4">
+                    Established 1893
                 </p>
 
-                <h2 class="serif text-4xl md:text-6xl text-white italic mb-6">
-                    Explore The Club
-                </h2>
+                <h1 class="serif text-6xl md:text-9xl mb-4 italic tracking-tight leading-[0.95]">
+                    The Black Country’s <span class="text-[#C5A367]">Toughest</span> Parkland Challenge
+                </h1>
 
-                <p class="text-white/60 max-w-3xl mx-auto leading-relaxed text-sm md:text-base">
-                    A historic Black Country golf club offering a challenging 18-hole parkland / inland links course,
-                    welcoming
-                    membership,
-                    visitor golf, hospitality and professional services.
+                <div class="w-32 h-1 bg-[#C5A367] mx-auto mb-8"></div>
+
+                <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-90 font-light mb-8">
+                    Visitors Welcome • Membership Available • Open All Year
                 </p>
-            </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                <a href="course.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">01</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            Course Guide</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            Explore all 18 holes, yardages, hole names, imagery and professional advice.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Course</span>
-                </a>
-
-                <a href="amen-corner.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">02</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            Amen Corner</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            Discover Dudley’s defining three-hole stretch: The Plateau, Hells Corner and The Gauntlet.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Gallery</span>
-                </a>
-
-                <a href="heritage.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">03</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            History</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            Learn about the heritage, tradition and character of Dudley Golf Club.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View History</span>
-                </a>
-
-                <a href="hospitality.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">04</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            Hospitality</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            Explore functions, events, society days and hospitality at the club.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Events</span>
-                </a>
-
-                <a href="pro-shop.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">05</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            Pro Shop</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            Visit the professional shop for equipment, advice, buggies and services.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Pro Shop</span>
-                </a>
-
-                <a href="membership.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">06</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            Membership</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            View membership options, benefits and information for joining Dudley Golf Club.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Membership</span>
-                </a>
-
-
-                <a href="visitors.html"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
-                    <div>
-                        <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">07</p>
-                        <h3
-                            class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
-                            Visitors</h3>
-                        <p class="text-white/55 text-sm leading-relaxed">
-                            Green fees, visitor information, society golf and online tee booking.
-                        </p>
-                    </div>
-                    <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Visitors</span>
-                </a>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- MASTER FOOTER -->
-    <footer class="bg-[#0D1712] text-white px-8 py-20 border-t border-[#C5A367]/20">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-12">
-
-            <div>
-                <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
-                <p class="text-white/70 text-sm leading-relaxed mb-6">
-                    Turners Hill, Rowley Regis,<br>
-                    West Midlands, B65 9DP
-                </p>
-                <p class="text-white/70 text-sm mb-2">
-                    Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
-                </p>
-                <p class="text-white/70 text-sm">
-                    Email: <a href="mailto:secretary@dudleygolfclub.com"
-                        class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
-                </p>
-            </div>
-
-            <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore</h4>
-                <div class="flex flex-col gap-3 text-sm text-white/70">
-                    <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
-                    <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
-                    <a href="heritage.html" class="hover:text-[#C5A367] transition">History</a>
-                    <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
-                    <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
-                    <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
-                    <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
-                <div class="flex flex-col gap-3 text-sm text-white/70">
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
                     <a href="https://www.dudleygolfclub.com/visitorbooking/"
-                        class="hover:text-[#C5A367] transition">Book a Tee Time</a>
-                    <a href="https://www.dudleygolfclub.com/login.php" class="hover:text-[#C5A367] transition">iGolf
-                        App</a>
-                    <a href="members-area.html" class="hover:text-[#C5A367] transition">Members Area</a>
-                    <a href="https://www.facebook.com/DudleyGolfClub"
-                        class="hover:text-[#C5A367] transition">Facebook</a>
-                    <a href="https://www.instagram.com/dudleygolfclub"
-                        class="hover:text-[#C5A367] transition">Instagram</a>
+                        class="bg-forest text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-[#132419] transition-all duration-300">Book
+                        a Tee Time</a>
+
+
+                    <a href="membership.html"
+                        class="inline-block border border-[#C5A367] text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+                        Membership Information
+                    </a>
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <!-- HOME LANDING LINKS -->
+        <section class="bg-[#132419] py-24 px-4">
+            <div class="max-w-7xl mx-auto">
+
+                <div class="text-center mb-16">
+                    <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
+                        Welcome To Dudley Golf Club
+                    </p>
+
+                    <h2 class="serif text-4xl md:text-6xl text-white italic mb-6">
+                        Explore The Club
+                    </h2>
+
+                    <p class="text-white/60 max-w-3xl mx-auto leading-relaxed text-sm md:text-base">
+                        A historic Black Country golf club offering a challenging 18-hole parkland / inland links
+                        course,
+                        welcoming
+                        membership,
+                        visitor golf, hospitality and professional services.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <a href="course.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">01</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                Course Guide</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                Explore all 18 holes, yardages, hole names, imagery and professional advice.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Course</span>
+                    </a>
+
+                    <a href="amen-corner.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">02</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                Amen Corner</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                Discover Dudley’s defining three-hole stretch: The Plateau, Hells Corner and The
+                                Gauntlet.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Gallery</span>
+                    </a>
+
+                    <a href="heritage.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">03</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                History</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                Learn about the heritage, tradition and character of Dudley Golf Club.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View History</span>
+                    </a>
+
+                    <a href="hospitality.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">04</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                Hospitality</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                Explore functions, events, society days and hospitality at the club.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Events</span>
+                    </a>
+
+                    <a href="pro-shop.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">05</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                Pro Shop</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                Visit the professional shop for equipment, advice, buggies and services.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Pro Shop</span>
+                    </a>
+
+                    <a href="membership.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">06</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                Membership</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                View membership options, benefits and information for joining Dudley Golf Club.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Membership</span>
+                    </a>
+
+
+                    <a href="visitors.html"
+                        class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                        <div>
+                            <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">07</p>
+                            <h3
+                                class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
+                                Visitors</h3>
+                            <p class="text-white/55 text-sm leading-relaxed">
+                                Green fees, visitor information, society golf and online tee booking.
+                            </p>
+                        </div>
+                        <span class="text-[#C5A367] text-[10px] uppercase tracking-[0.25em] mt-8">View Visitors</span>
+                    </a>
+
+
                 </div>
             </div>
+        </section>
 
-            <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
-                <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+        <!-- MASTER FOOTER -->
+        <footer class="bg-[#0D1712] text-white px-8 py-20 border-t border-[#C5A367]/20">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+                <div>
+                    <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
+                    <p class="text-white/70 text-sm leading-relaxed mb-6">
+                        Turners Hill, Rowley Regis,<br>
+                        West Midlands, B65 9DP
+                    </p>
+                    <p class="text-white/70 text-sm mb-2">
+                        Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
+                    </p>
+                    <p class="text-white/70 text-sm">
+                        Email: <a href="mailto:secretary@dudleygolfclub.com"
+                            class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
+                    </p>
                 </div>
+
+                <div>
+                    <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore</h4>
+                    <div class="flex flex-col gap-3 text-sm text-white/70">
+                        <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
+                        <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
+                        <a href="heritage.html" class="hover:text-[#C5A367] transition">History</a>
+                        <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
+                        <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
+                        <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
+                        <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
+                    <div class="flex flex-col gap-3 text-sm text-white/70">
+                        <a href="https://www.dudleygolfclub.com/visitorbooking/"
+                            class="hover:text-[#C5A367] transition">Book a Tee Time</a>
+                        <a href="https://www.dudleygolfclub.com/login.php" class="hover:text-[#C5A367] transition">iGolf
+                            App</a>
+                        <a href="members-area.html" class="hover:text-[#C5A367] transition">Members Area</a>
+                        <a href="https://www.facebook.com/DudleyGolfClub"
+                            class="hover:text-[#C5A367] transition">Facebook</a>
+                        <a href="https://www.instagram.com/dudleygolfclub"
+                            class="hover:text-[#C5A367] transition">Instagram</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
+                    <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
+            <div
+                class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
+                <p>© 2026 Dudley Golf Club</p>
+                <p>Established 1893 • Rowley Regis</p>
+            </div>
+        </footer>
 
-        <div
-            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>© 2026 Dudley Golf Club</p>
-            <p>Established 1893 • Rowley Regis</p>
-        </div>
-    </footer>
+        <!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
 
-    <!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
+        <script>
+            window.addEventListener("error", e => {
+                console.log("JS Error caught:", e.message);
+            });
+        </script>
 
-    <script>
-        window.addEventListener("error", e => {
-            console.log("JS Error caught:", e.message);
-        });
-    </script>
+        <script>
+            async function updateWeather() {
+                const weather = document.getElementById("weather");
+                if (!weather) return;
 
-    <script>
-        async function updateWeather() {
-            const weather = document.getElementById("weather");
-            if (!weather) return;
+                try {
+                    const response = await fetch("/api/weather");
+                    if (!response.ok) throw new Error("Weather fetch failed");
 
-            try {
-                const response = await fetch("/api/weather");
-                if (!response.ok) throw new Error("Weather fetch failed");
-
-                const data = await response.json();
-                weather.textContent = `Dudley: ${data.temp}°C`;
-            } catch (error) {
-                console.error("Could not fetch weather:", error);
-                weather.textContent = "Dudley: --°C";
+                    const data = await response.json();
+                    weather.textContent = `Dudley: ${data.temp}°C`;
+                } catch (error) {
+                    console.error("Could not fetch weather:", error);
+                    weather.textContent = "Dudley: --°C";
+                }
             }
-        }
 
-        updateWeather();
-
-        setInterval(() => {
             updateWeather();
-        }, 600000);
-    </script>
 
-    <script>
+            setInterval(() => {
+                updateWeather();
+            }, 600000);
+        </script>
+
+        <script>
 
 
-        async function updateCourseStatus() {
+            async function updateCourseStatus() {
 
-            const statusEl =
-                document.getElementById("course-status");
+                const statusEl =
+                    document.getElementById("course-status");
 
-            if (!statusEl) return;
+                if (!statusEl) return;
 
-            try {
+                try {
 
-                const response =
-                    await fetch("/api/course-status");
+                    const response =
+                        await fetch("/api/course-status");
 
-                if (!response.ok)
-                    throw new Error();
+                    if (!response.ok)
+                        throw new Error();
 
-                const data =
-                    await response.json();
+                    const data =
+                        await response.json();
 
-                const statusMap = {
-                    open: {
-                        text: "🟢 COURSE OPEN",
-                        className: "font-bold uppercase text-green-400"
-                    },
-                    closed: {
-                        text: "🔴 COURSE CLOSED",
-                        className: "font-bold uppercase text-red-400"
-                    },
-                    frost: {
-                        text: "🟡 FROST DELAY",
-                        className: "font-bold uppercase text-yellow-400"
-                    },
-                    "temporary-greens": {
-                        text: "🟠 TEMPORARY GREENS",
-                        className: "font-bold uppercase text-orange-400"
-                    },
-                    "preferred-lies": {
-                        text: "🔵 PREFERRED LIES",
-                        className: "font-bold uppercase text-blue-400"
-                    },
-                    maintenance: {
-                        text: "⚪ COURSE MAINTENANCE",
-                        className: "font-bold uppercase text-gray-300"
-                    }
-                };
+                    const statusMap = {
+                        open: {
+                            text: "🟢 COURSE OPEN",
+                            className: "font-bold uppercase text-green-400"
+                        },
+                        closed: {
+                            text: "🔴 COURSE CLOSED",
+                            className: "font-bold uppercase text-red-400"
+                        },
+                        frost: {
+                            text: "🟡 FROST DELAY",
+                            className: "font-bold uppercase text-yellow-400"
+                        },
+                        "temporary-greens": {
+                            text: "🟠 TEMPORARY GREENS",
+                            className: "font-bold uppercase text-orange-400"
+                        },
+                        "preferred-lies": {
+                            text: "🔵 PREFERRED LIES",
+                            className: "font-bold uppercase text-blue-400"
+                        },
+                        maintenance: {
+                            text: "⚪ COURSE MAINTENANCE",
+                            className: "font-bold uppercase text-gray-300"
+                        }
+                    };
 
-                const currentStatus = statusMap[data.status] || statusMap.closed;
+                    const currentStatus = statusMap[data.status] || statusMap.closed;
 
-                statusEl.textContent = currentStatus.text;
-                statusEl.className = currentStatus.className;
+                    statusEl.textContent = currentStatus.text;
+                    statusEl.className = currentStatus.className;
 
-            } catch (error) {
+                } catch (error) {
 
-                statusEl.textContent =
-                    "⚪ STATUS UNKNOWN";
+                    statusEl.textContent =
+                        "⚪ STATUS UNKNOWN";
 
-                statusEl.className =
-                    "font-bold uppercase text-gray-400";
+                    statusEl.className =
+                        "font-bold uppercase text-gray-400";
 
+                }
             }
-        }
-        function updateClock() {
-            const clock = document.getElementById("live-clock");
-            if (!clock) return;
+            function updateClock() {
+                const clock = document.getElementById("live-clock");
+                if (!clock) return;
 
-            const now = new Date();
+                const now = new Date();
 
-            clock.textContent = now.toLocaleTimeString("en-GB", {
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit"
-            });
-        }
+                clock.textContent = now.toLocaleTimeString("en-GB", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                });
+            }
 
-        updateClock();
-        updateCourseStatus();
-
-        setInterval(() => {
             updateClock();
-        }, 1000);
-
-        setInterval(() => {
             updateCourseStatus();
-        }, 60000);
-    </script>
 
-    <script>
-        function initMenu() {
-            const btn = document.getElementById("menu-btn");
-            const nav = document.getElementById("nav-links");
+            setInterval(() => {
+                updateClock();
+            }, 1000);
 
-            if (!btn || !nav) return;
+            setInterval(() => {
+                updateCourseStatus();
+            }, 60000);
+        </script>
 
-            function closeMenu() {
-                nav.classList.add("translate-x-full");
-                nav.classList.remove("translate-x-0");
-                document.body.style.overflow = "auto";
-            }
+        <script>
+            function initMenu() {
+                const btn = document.getElementById("menu-btn");
+                const nav = document.getElementById("nav-links");
 
-            function openMenu() {
-                nav.classList.remove("translate-x-full");
-                nav.classList.add("translate-x-0");
-                document.body.style.overflow = "hidden";
-            }
+                if (!btn || !nav) return;
 
-            btn.addEventListener("click", e => {
-                e.stopPropagation();
-
-                nav.classList.contains("translate-x-full")
-                    ? openMenu()
-                    : closeMenu();
-            });
-
-            document.querySelectorAll("#nav-links a").forEach(link => {
-                link.addEventListener("click", closeMenu);
-            });
-        }
-
-        document.addEventListener("DOMContentLoaded", initMenu);
-    </script>
-    <script>
-
-        async function updateClubNotice() {
-
-            const banner =
-                document.getElementById("club-notice");
-
-            const text =
-                document.getElementById("club-notice-text");
-
-            if (!banner || !text) return;
-
-            try {
-
-                const response =
-                    await fetch("/api/course-status");
-
-                const data =
-                    await response.json();
-
-                if (
-                    !data.notices.showNotice ||
-                    data.notices.clubNotice === ""
-                ) {
-
-                    banner.classList.add("hidden");
-
-                    return;
+                function closeMenu() {
+                    nav.classList.add("translate-x-full");
+                    nav.classList.remove("translate-x-0");
+                    document.body.style.overflow = "auto";
                 }
 
-                text.textContent =
-                    data.notices.clubNotice;
+                function openMenu() {
+                    nav.classList.remove("translate-x-full");
+                    nav.classList.add("translate-x-0");
+                    document.body.style.overflow = "hidden";
+                }
 
-                banner.classList.remove("hidden");
+                btn.addEventListener("click", e => {
+                    e.stopPropagation();
 
-            } catch (error) {
+                    nav.classList.contains("translate-x-full")
+                        ? openMenu()
+                        : closeMenu();
+                });
 
-                console.log(error);
-
-                banner.classList.add("hidden");
+                document.querySelectorAll("#nav-links a").forEach(link => {
+                    link.addEventListener("click", closeMenu);
+                });
             }
-        }
 
-        updateClubNotice();
+            document.addEventListener("DOMContentLoaded", initMenu);
+        </script>
+        <script>
 
-    </script>
+            async function updateClubNotice() {
+
+                const banner =
+                    document.getElementById("club-notice");
+
+                const text =
+                    document.getElementById("club-notice-text");
+
+                if (!banner || !text) return;
+
+                try {
+
+                    const response =
+                        await fetch("/api/course-status");
+
+                    const data =
+                        await response.json();
+
+                    if (
+                        !data.notices.showNotice ||
+                        data.notices.clubNotice === ""
+                    ) {
+
+                        banner.classList.add("hidden");
+
+                        return;
+                    }
+
+                    text.textContent =
+                        data.notices.clubNotice;
+
+                    banner.classList.remove("hidden");
+
+                } catch (error) {
+
+                    console.log(error);
+
+                    banner.classList.add("hidden");
+                }
+            }
+
+            updateClubNotice();
+
+        </script>
 </body>
 
 </html>
