@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junior Past Winners | Dudley Golf Club</title>
- 
-<link rel="stylesheet" href="dist/output.css">
+
+    <link rel="stylesheet" href="dist/output.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
+
     <style>
         :root {
             --gold: #C5A367;
@@ -64,9 +66,34 @@
 <body>
     <div class="container">
         <a href="members-area.html" class="back-btn">← Back to Members Area</a>
+
         <h1>Junior Past Winners</h1>
+
         <div class="content-box">
-            <p>Archive of past junior competition winners.</p>
+            <p class="mb-6 text-white/70">
+                Archive of past junior competition winners.
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-[#C5A367]/30">
+                            <th class="py-3 px-2 text-[#C5A367]">Year</th>
+                            <th class="py-3 px-2 text-[#C5A367]">Competition</th>
+                            <th class="py-3 px-2 text-[#C5A367]">Winner</th>
+                            <th class="py-3 px-2 text-[#C5A367]">Score</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="junior-past-winners-body">
+                        <tr>
+                            <td colspan="4" class="py-6 text-center text-white/60">
+                                Loading junior past winners...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -135,6 +162,7 @@
             <p>Established 1893 • Rowley Regis</p>
         </div>
     </footer>
+
     <!-- RETURN HOME BUTTON -->
     <a href="index.html" aria-label="Return Home" style="
 position: fixed;
@@ -157,6 +185,74 @@ font-weight: bold;
 ">
         ⌂
     </a>
+
+    <!-- SANITY JUNIOR PAST WINNERS FETCH -->
+    <script>
+        async function loadJuniorPastWinners() {
+            const body = document.getElementById("junior-past-winners-body");
+
+            try {
+                const query = encodeURIComponent(`
+                    *[_type == "juniorPastWinner"]
+                    | order(year desc, competitionName asc) {
+                        year,
+                        competitionName,
+                        winnerName,
+                        score,
+                        notes
+                    }
+                `);
+
+                const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
+
+                const response = await fetch(url);
+                const data = await response.json();
+                const winners = data.result || [];
+
+                if (!winners.length) {
+                    body.innerHTML = `
+                        <tr>
+                            <td colspan="4" class="py-6 text-center text-white/60">
+                                No junior past winners available.
+                            </td>
+                        </tr>
+                    `;
+                    return;
+                }
+
+                body.innerHTML = winners.map(item => {
+                    const notesHtml = item.notes
+                        ? `<div class="text-xs text-white/50 mt-1 italic">${item.notes}</div>`
+                        : "";
+
+                    return `
+                        <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
+                            <td class="py-3 px-2 align-top">${item.year || ""}</td>
+                            <td class="py-3 px-2 align-top text-[#C5A367]">${item.competitionName || ""}</td>
+                            <td class="py-3 px-2 align-top">
+                                ${item.winnerName || ""}
+                                ${notesHtml}
+                            </td>
+                            <td class="py-3 px-2 align-top">${item.score || ""}</td>
+                        </tr>
+                    `;
+                }).join("");
+
+            } catch (error) {
+                console.error("Junior past winners failed to load:", error);
+
+                body.innerHTML = `
+                    <tr>
+                        <td colspan="4" class="py-6 text-center text-red-400">
+                            Unable to load junior past winners.
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        loadJuniorPastWinners();
+    </script>
 
 </body>
 
