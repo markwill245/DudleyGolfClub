@@ -825,33 +825,7 @@
                     tip: "A slight dogleg right brings you home."
                 },
             ];
-            // STAFF: Membership Prices 
-            const membershipData = [
-                {
-                    name: "Full 7-Day Member",
-                    price: "£1,150",
-                    desc: "The ultimate club experience with complete unrestricted access.",
-                    features: ["Unlimited Golf 7 Days a Week", "Full Competition Entry", "Official CONGU Handicap", "Clubhouse Voting Rights"]
-                },
-                {
-                    name: "Ladies Introductory",
-                    price: "£650",
-                    desc: "Special first-year rate welcoming new players into our community.",
-                    features: ["Full 7-Day Course Access", "Academy Integration Setup", "Lady-Only Fixture Mornings", "Welcoming Social Calendar"]
-                },
-                {
-                    name: "5-Day Weekday",
-                    price: "£860",
-                    desc: "Perfect for regular players looking for mid-week tranquility.",
-                    features: ["Monday to Friday Access", "Full Clubhouse Facilities", "Select Weekend Restrictions", "Friendly Stableford Mixers"]
-                },
-                {
-                    name: "Junior Academy",
-                    price: "£50",
-                    desc: "Nurturing and supporting the next generation of West Midlands talent.",
-                    features: ["Under 18 Allocation", "Professional PGA Coaching", "Weekend Junior Fixtures", "Safe & Supportive Culture"]
-                }
-            ];
+
             /* =========================
                CLOCK SYSTEM
             ========================= */
@@ -1123,42 +1097,7 @@
                 updateScores();
             }
             window.toggleScorecard = toggleScorecard;
-            /* =========================
-               MEMBERSHIP
-            ========================= */
 
-            function renderMembership() {
-                const grid = document.getElementById("membershipGrid");
-                if (!grid) return;
-
-                grid.innerHTML = membershipData.map(m => `
-<div class="bg-[#0f1f16] border border-[#C5A367]/20 p-6 md:p-8 shadow-xl hover:scale-[1.02] transition-all duration-300 text-center flex flex-col justify-between group">
-    <div>
-        <h4 class="serif text-3xl text-gold mb-4 italic">${m.name}</h4>
-
-        <p class="text-5xl font-light text-white mb-6 tracking-tight">
-            ${m.price}
-        </p>
-
-        <p class="text-sm text-white/70 leading-relaxed italic mb-8 min-h-[45px]">
-            ${m.desc}
-        </p>
-    </div>
-
-    <div class="flex flex-col sm:flex-row gap-2.5 pt-4 border-t border-white/5">
-        <a href="membership.html#categories"
-           class="flex-1 text-center bg-[#C5A367] text-[#0f1f16] font-bold uppercase text-[11px] tracking-wider py-4 rounded hover:bg-white hover:text-[#0f1f16] transition-all no-underline shadow-md">
-            View Rates & Info
-        </a>
-        <a href="tel:01384233877"
-           class="px-3 text-center border border-[#C5A367]/40 !text-[#C5A367] font-bold uppercase text-[11px] tracking-wider py-4 rounded hover:bg-white hover:!text-[#0f1f16] transition-all no-underline"
-           title="Call Club Office">
-            📞 Call
-        </a>
-    </div>
-</div>
-    `).join("");
-            }
             /* =========================
                NAV BUILD
             ========================= */
@@ -1234,21 +1173,54 @@
                     }
                 });
             }
+            async function loadCourseGuideFromSanity() {
+                try {
+                    const query = encodeURIComponent(`
+            *[_type == "course"] | order(holeNumber asc) {
+                holeNumber,
+                holeName,
+                par,
+                yards,
+                proTip
+            }
+        `);
 
+                    const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    const sanityHoles = data.result || [];
+
+                    sanityHoles.forEach(item => {
+                        const hole = courseData.find(h => h.number === item.holeNumber);
+                        if (!hole) return;
+
+                        if (item.holeName) hole.name = item.holeName;
+                        if (item.par) hole.par = item.par;
+                        if (item.yards) hole.y = item.yards;
+                        if (item.proTip) hole.tip = item.proTip;
+                    });
+
+                    console.log("Course guide updated from Sanity:", sanityHoles);
+
+                } catch (error) {
+                    console.error("Course guide Sanity load failed:", error);
+                }
+            }
             /* =========================
                STARTUP (ONE ENTRY POINT)
             ========================= */
 
-            document.addEventListener("DOMContentLoaded", () => {
+            document.addEventListener("DOMContentLoaded", async () => {
+                await loadCourseGuideFromSanity();
+
                 buildNav();
-                renderMembership();
+
                 initMenu();
 
                 setHole(1);
                 updateClock();
                 setInterval(updateClock, 1000);
             });
-
             /* =========================
                GLOBAL SAFETY NET
             ========================= */
