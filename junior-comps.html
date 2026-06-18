@@ -236,14 +236,15 @@ font-weight: bold;
 
             try {
                 const query = encodeURIComponent(`
-                    *[_type == "juniorCompetition"]
-                    | order(eventDate asc, displayOrder asc) {
-                        displayDate,
-                        eventName,
-                        startTime,
-                        igolfLink
-                    }
-                `);
+                *[_type == "juniorCompetition"]
+                | order(eventDate asc, displayOrder asc) {
+                    displayDate,
+                    eventName,
+                    startTime,
+                    igolfLink,
+                    notes
+                }
+            `);
 
                 const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
 
@@ -251,14 +252,16 @@ font-weight: bold;
                 const data = await response.json();
                 const competitions = data.result || [];
 
+                console.log("Junior competitions:", competitions);
+
                 if (!competitions.length) {
                     body.innerHTML = `
-                        <tr>
-                            <td colspan="2" class="py-6 text-center text-white/60">
-                                No junior competitions available.
-                            </td>
-                        </tr>
-                    `;
+                    <tr>
+                        <td colspan="2" class="py-6 text-center text-white/60">
+                            No junior competitions available.
+                        </td>
+                    </tr>
+                `;
                     return;
                 }
 
@@ -274,29 +277,35 @@ font-weight: bold;
                         eventText += ` (${comp.startTime})`;
                     }
 
+                    const eventHtml = comp.igolfLink
+                        ? `<a href="${comp.igolfLink}" target="_blank" class="text-[#C5A367] hover:text-white transition">${eventText}</a>`
+                        : `<span class="text-[#C5A367]">${eventText}</span>`;
+
+                    const notesHtml = comp.notes
+                        ? `<div class="text-xs text-white/60 mt-1 italic">${comp.notes}</div>`
+                        : "";
+
                     return `
-                        <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
-                            <td class="py-3 px-2">${date}</td>
-                            <td class="py-3 px-2">
-                                ${comp.igolfLink
-                            ? `<a href="${comp.igolfLink}" target="_blank" class="text-[#C5A367] hover:text-white transition">${eventText}</a>`
-                            : eventText
-                        }
-                            </td>
-                        </tr>
-                    `;
+                    <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
+                        <td class="py-3 px-2 align-top">${date}</td>
+                        <td class="py-3 px-2 align-top">
+                            ${eventHtml}
+                            ${notesHtml}
+                        </td>
+                    </tr>
+                `;
                 }).join("");
 
             } catch (error) {
                 console.error("Junior competitions failed to load:", error);
 
                 body.innerHTML = `
-                    <tr>
-                        <td colspan="2" class="py-6 text-center text-red-400">
-                            Unable to load junior competitions.
-                        </td>
-                    </tr>
-                `;
+                <tr>
+                    <td colspan="2" class="py-6 text-center text-red-400">
+                        Unable to load junior competitions.
+                    </td>
+                </tr>
+            `;
             }
         }
 
