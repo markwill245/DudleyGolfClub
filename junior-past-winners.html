@@ -198,8 +198,8 @@ font-weight: bold;
                         year,
                         competitionName,
                         winnerName,
-                        score,
-                        notes
+                        score
+                        
                     }
                 `);
 
@@ -221,18 +221,15 @@ font-weight: bold;
                 }
 
                 body.innerHTML = winners.map(item => {
-                    const notesHtml = item.notes
-                        ? `<div class="text-xs text-white/50 mt-1 italic">${item.notes}</div>`
-                        : "";
+
 
                     return `
                         <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
                             <td class="py-3 px-2 align-top">${item.year || ""}</td>
                             <td class="py-3 px-2 align-top text-[#C5A367]">${item.competitionName || ""}</td>
-                            <td class="py-3 px-2 align-top">
-                                ${item.winnerName || ""}
-                                ${notesHtml}
-                            </td>
+                           <td class="py-3 px-2 align-top">
+    ${item.winnerName || ""}
+</td>
                             <td class="py-3 px-2 align-top">${item.score || ""}</td>
                         </tr>
                     `;
