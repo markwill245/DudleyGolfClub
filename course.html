@@ -497,7 +497,7 @@
                     </button>
                 </div>
 
-                <div id="hole-nav-container" class="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-9 gap-2 md:gap-3">
+                <div id="hole-nav-container" class="grid grid-cols-9 gap-1 md:gap-2 max-w-4xl mx-auto">
                 </div>
             </div>
 
@@ -1106,7 +1106,6 @@
             /* =========================
                NAV BUILD
             ========================= */
-
             function buildNav() {
                 const nav = document.getElementById("hole-nav-container");
                 if (!nav) return;
@@ -1114,31 +1113,20 @@
                 nav.innerHTML = "";
 
                 courseData.forEach(h => {
-                    const div = document.createElement("div");
-                    div.id = `h-${h.number}`;
-                    div.className =
-                        "hole-card cursor-pointer rounded bg-[#132419] border border-[#C5A367]/25 px-3 py-3 min-h-[74px] flex flex-col justify-between hover:border-[#C5A367] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300";
+                    const btn = document.createElement("button");
+                    btn.type = "button";
+                    btn.id = `h-${h.number}`;
 
-                    div.innerHTML = `
-                        <div class="flex items-start justify-between gap-2 mb-2">
-                            <p class="text-gold font-bold text-[9px] tracking-[0.22em]">
-                                HOLE ${String(h.number).padStart(2, '0')}
-                            </p>
-                            <p class="text-white/70 text-[8px] uppercase tracking-widest text-right leading-tight shrink-0">
-                                P${h.par}<br>SI${h.si}
-                            </p>
-                        </div>
+                    btn.className =
+                        "hole-card h-11 md:h-12 flex items-center justify-center border border-[#C5A367]/30 bg-[#132419] text-[#C5A367] text-sm md:text-base font-bold hover:bg-[#C5A367] hover:text-[#132419] transition rounded-sm";
 
-                        <p class="text-white text-xs md:text-sm serif italic leading-tight truncate">
-                            ${h.name}
-                        </p>
-                    `;
+                    btn.textContent = String(h.number).padStart(2, "0");
 
-                    div.onclick = () => setHole(h.number);
-                    nav.appendChild(div);
+                    btn.onclick = () => setHole(h.number);
+
+                    nav.appendChild(btn);
                 });
             }
-
             /* =========================
                MOBILE MENU
             ========================= */
