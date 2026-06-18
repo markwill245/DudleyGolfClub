@@ -920,6 +920,8 @@
                 if (!hole.images?.length) return;
 
                 img.src = hole.images[0];
+                img.onclick = () => openLightbox(img.src);
+                img.style.cursor = "zoom-in";
 
                 // TEXT
                 const setText = (id, val) => {
@@ -936,23 +938,7 @@
                 setText("h-desc", hole.desc);
                 setText("h-tip", hole.tip);
 
-                // SLIDER
-                clearInterval(currentInterval);
 
-                let i = 0;
-
-                img.style.opacity = 1;
-
-                currentInterval = setInterval(() => {
-                    i = (i + 1) % hole.images.length;
-
-                    img.style.opacity = 0;
-
-                    setTimeout(() => {
-                        img.src = hole.images[i];
-                        img.style.opacity = 1;
-                    }, 200);
-                }, 3000);
 
                 // GALLERY
                 if (gallery) {
@@ -960,24 +946,18 @@
 
                     hole.images.forEach((src, index) => {
                         const thumb = document.createElement("img");
+
                         thumb.src = src;
-                        thumb.loading = "lazy";
+                        thumb.loading = index === 0 ? "eager" : "lazy";
+                        thumb.alt = `${hole.name} image ${index + 1}`;
 
                         thumb.className =
-                            index === 0
-                                ? "w-full h-72 md:h-[420px] object-cover rounded-sm cursor-pointer border border-[#C5A367]/30"
-                                : "w-full h-40 md:h-[200px] object-cover rounded-sm cursor-pointer opacity-80 hover:opacity-100 transition border border-[#C5A367]/20";
+                            "w-full h-28 md:h-36 object-cover rounded-sm cursor-pointer opacity-75 hover:opacity-100 transition border border-[#C5A367]/20";
 
                         thumb.onclick = (e) => {
                             e.preventDefault();
                             e.stopPropagation();
-
-                            img.style.opacity = 0;
-
-                            setTimeout(() => {
-                                img.src = src;
-                                img.style.opacity = 1;
-                            }, 200);
+                            img.src = src;
                         };
 
                         gallery.appendChild(thumb);
