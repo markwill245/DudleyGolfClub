@@ -496,8 +496,8 @@
                         <span>View Full Scorecard</span>
                     </button>
                 </div>
-
-                <div id="hole-nav-container" class="grid grid-cols-9 gap-1 md:gap-2 max-w-4xl mx-auto">
+                <div id="hole-nav-container"
+                    style="display:grid; grid-template-columns:repeat(9, 1fr); gap:8px; max-width:900px; margin:0 auto;">
                 </div>
             </div>
 
@@ -1118,7 +1118,7 @@
                     btn.id = `h-${h.number}`;
 
                     btn.className =
-                        "hole-card h-11 md:h-12 flex items-center justify-center border border-[#C5A367]/30 bg-[#132419] text-[#C5A367] text-sm md:text-base font-bold hover:bg-[#C5A367] hover:text-[#132419] transition rounded-sm";
+                        "h-12 flex items-center justify-center border border-[#C5A367]/40 bg-[#132419] text-[#C5A367] text-sm font-bold hover:bg-[#C5A367] hover:text-[#132419] transition rounded-sm";
 
                     btn.textContent = String(h.number).padStart(2, "0");
 
