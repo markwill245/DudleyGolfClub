@@ -482,7 +482,7 @@
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
 
             <!-- LEFT: HOLE SELECTOR -->
-            <div class="lg:w-[38%] bg-[#f9f7f2] p-6 md:p-8 rounded-sm border border-gray-200/40 shadow-sm">
+            <div class="lg:w-[28%] bg-[#f9f7f2] p-6 md:p-8 rounded-sm border border-gray-200/40 shadow-sm">
                 <div class="mb-6">
                     <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3">
                         Course Guide
@@ -495,64 +495,65 @@
                 </div>
 
                 <div id="hole-nav-container"
-                    class="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[720px] overflow-y-auto custom-scrollbar pr-1">
+                    class="flex flex-col gap-2 max-h-[720px] overflow-y-auto custom-scrollbar pr-1">
                 </div>
             </div>
 
             <!-- RIGHT: HOLE DISPLAY -->
-            <div class="lg:w-[62%] bg-forest rounded shadow-2xl overflow-hidden">
+            <div class="lg:w-[72%] bg-forest rounded shadow-2xl overflow-hidden">
 
-                <div class="h-72 md:h-[560px] bg-black relative overflow-hidden"></div>
-                <div id="h-gallery" class="flex gap-2 p-3 bg-[#08110D] border-b border-[#C5A367]/20 relative z-20">
+                <div class="h-72 md:h-[560px] bg-black relative overflow-hidden">
+                    <div id="h-gallery" class="flex gap-2 p-3 bg-[#08110D] border-b border-[#C5A367]/20 relative z-20">
+                    </div>
+
+                    <img id="h-img" src="images/hole1.webp"
+                        class="absolute inset-0 w-full h-full object-contain bg-black opacity-100 transition-opacity duration-700"
+                        alt="Dudley Golf Club course hole image">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#132419]/80 via-[#132419]/20 to-transparent pointer-events-none">
+                    </div>
                 </div>
 
-                <img id="h-img" src="images/hole1.webp"
-                    class="absolute inset-0 w-full h-full object-contain bg-black opacity-100 transition-opacity duration-700"
-                    alt="Dudley Golf Club course hole image">
+                <div class="p-8 md:p-12 bg-forest">
+                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
+                        <div>
+                            <span id="h-num" class="serif text-6xl text-gold italic"></span>
+                            <h3 id="h-name" class="serif text-5xl md:text-6xl text-white mt-2 italic tracking-wide">
+                            </h3>
+                        </div>
 
-                <div class="absolute inset-0 bg-gradient-to-t from-[#132419]/80 via-[#132419]/20 to-transparent">
+                        <div class="text-right">
+                            <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 mb-10">
+                        <div class="bg-white/5 p-4 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p>
+                            <p id="h-white" class="serif text-xl text-white"></p>
+                        </div>
+
+                        <div class="bg-white/5 p-4 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p>
+                            <p id="h-yellow" class="serif text-xl text-yellow-400"></p>
+                        </div>
+
+                        <div class="bg-white/5 p-4 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p>
+                            <p id="h-red" class="serif text-xl text-red-500"></p>
+                        </div>
+                    </div>
+
+                    <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
+
+                    <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
+                        <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
+                        <p id="h-tip" class="text-white italic"></p>
+                    </div>
                 </div>
+
             </div>
-
-            <div class="p-8 md:p-12 bg-forest">
-                <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
-                    <div>
-                        <span id="h-num" class="serif text-6xl text-gold italic"></span>
-                        <h3 id="h-name" class="serif text-5xl md:text-6xl text-white mt-2 italic tracking-wide">
-                        </h3>
-                    </div>
-
-                    <div class="text-right">
-                        <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-3 gap-2 mb-10">
-                    <div class="bg-white/5 p-4 text-center">
-                        <p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p>
-                        <p id="h-white" class="serif text-xl text-white"></p>
-                    </div>
-
-                    <div class="bg-white/5 p-4 text-center">
-                        <p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p>
-                        <p id="h-yellow" class="serif text-xl text-yellow-400"></p>
-                    </div>
-
-                    <div class="bg-white/5 p-4 text-center">
-                        <p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p>
-                        <p id="h-red" class="serif text-xl text-red-500"></p>
-                    </div>
-                </div>
-
-                <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
-
-                <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
-                    <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
-                    <p id="h-tip" class="text-white italic"></p>
-                </div>
-            </div>
-
-        </div>
         </div>
     </section>
 
@@ -1115,70 +1116,68 @@
                     const div = document.createElement("div");
                     div.id = `h-${h.number}`;
                     div.className =
-                        "hole-card p-4 md:p-5 cursor-pointer border border-[#C5A367]/20 rounded bg-[#132419] min-h-[120px] overflow-hidden";
+                        "hole-card cursor-pointer border border-[#C5A367]/20 rounded bg-[#132419] px-4 py-3 min-h-[72px] overflow-hidden flex items-center justify-between gap-3";
 
                     div.innerHTML = `
-    <p class="text-gold font-bold text-[10px] tracking-[0.25em] mb-1">
-        HOLE ${String(h.number).padStart(2, '0')}
-    </p>
+    <div class="min-w-0">
+        <p class="text-gold font-bold text-[9px] tracking-[0.22em] mb-1">
+            HOLE ${String(h.number).padStart(2, '0')}
+        </p>
 
-   <p class="text-white text-base md:text-lg serif italic mb-2 leading-tight break-words">
-    ${h.name}
-</p>
+        <p class="text-white text-sm md:text-base serif italic leading-tight break-words">
+            ${h.name}
+        </p>
+    </div>
 
-    <p class="text-white/50 text-[10px] uppercase tracking-widest">
-        Par ${h.par} • SI ${h.si}
+    <p class="text-white/60 text-[9px] uppercase tracking-widest shrink-0 text-right leading-tight">
+        P${h.par}<br>SI${h.si}
     </p>
 `;
-                    div.onclick = () => setHole(h.number);
-                    nav.appendChild(div);
-                });
-            }
 
-            /* =========================
-               MOBILE MENU
-            ========================= */
+                    /* =========================
+                       MOBILE MENU
+                    ========================= */
 
 
-            function initMenu() {
-                const btn = document.getElementById("menu-btn");
-                const nav = document.getElementById("nav-links");
+                    function initMenu() {
+                        const btn = document.getElementById("menu-btn");
+                        const nav = document.getElementById("nav-links");
 
-                if (!btn || !nav) return;
+                        if (!btn || !nav) return;
 
-                function closeMenu() {
-                    nav.classList.add("translate-x-full");
-                    nav.classList.remove("translate-x-0");
-                    document.body.style.overflow = "auto";
-                }
+                        function closeMenu() {
+                            nav.classList.add("translate-x-full");
+                            nav.classList.remove("translate-x-0");
+                            document.body.style.overflow = "auto";
+                        }
 
-                function openMenu() {
-                    nav.classList.remove("translate-x-full");
-                    nav.classList.add("translate-x-0");
-                    document.body.style.overflow = "hidden";
-                }
+                        function openMenu() {
+                            nav.classList.remove("translate-x-full");
+                            nav.classList.add("translate-x-0");
+                            document.body.style.overflow = "hidden";
+                        }
 
-                btn.addEventListener("click", e => {
-                    e.stopPropagation();
+                        btn.addEventListener("click", e => {
+                            e.stopPropagation();
 
-                    nav.classList.contains("translate-x-full")
-                        ? openMenu()
-                        : closeMenu();
-                });
+                            nav.classList.contains("translate-x-full")
+                                ? openMenu()
+                                : closeMenu();
+                        });
 
-                document.querySelectorAll("#nav-links a").forEach(link => {
-                    link.addEventListener("click", closeMenu);
-                });
+                        document.querySelectorAll("#nav-links a").forEach(link => {
+                            link.addEventListener("click", closeMenu);
+                        });
 
-                document.addEventListener("click", e => {
-                    if (!nav.contains(e.target) && !btn.contains(e.target)) {
-                        closeMenu();
+                        document.addEventListener("click", e => {
+                            if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                                closeMenu();
+                            }
+                        });
                     }
-                });
-            }
-            async function loadCourseGuideFromSanity() {
-                try {
-                    const query = encodeURIComponent(`
+                    async function loadCourseGuideFromSanity() {
+                        try {
+                            const query = encodeURIComponent(`
             *[_type == "course"] | order(holeNumber asc) {
                 holeNumber,
                 holeName,
@@ -1188,52 +1187,52 @@
             }
         `);
 
-                    const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
-                    const response = await fetch(url);
-                    const data = await response.json();
-                    const sanityHoles = data.result || [];
+                            const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
+                            const response = await fetch(url);
+                            const data = await response.json();
+                            const sanityHoles = data.result || [];
 
-                    sanityHoles.forEach(item => {
-                        const hole = courseData.find(h => h.number === item.holeNumber);
-                        if (!hole) return;
+                            sanityHoles.forEach(item => {
+                                const hole = courseData.find(h => h.number === item.holeNumber);
+                                if (!hole) return;
 
-                        if (item.holeName) hole.name = item.holeName;
-                        if (item.par) hole.par = item.par;
-                        if (item.yards) hole.y = item.yards;
-                        if (item.proTip) hole.tip = item.proTip;
+                                if (item.holeName) hole.name = item.holeName;
+                                if (item.par) hole.par = item.par;
+                                if (item.yards) hole.y = item.yards;
+                                if (item.proTip) hole.tip = item.proTip;
+                            });
+
+                            console.log("Course guide updated from Sanity:", sanityHoles);
+
+                        } catch (error) {
+                            console.error("Course guide Sanity load failed:", error);
+                        }
+                    }
+                    /* =========================
+                       STARTUP (ONE ENTRY POINT)
+                    ========================= */
+
+                    document.addEventListener("DOMContentLoaded", async () => {
+                        await loadCourseGuideFromSanity();
+
+                        buildNav();
+
+                        initMenu();
+
+                        setHole(1);
+                        updateClock();
+                        setInterval(updateClock, 1000);
+                    });
+                    /* =========================
+                       GLOBAL SAFETY NET
+                    ========================= */
+
+                    window.addEventListener("error", e => {
+                        console.log("JS Error caught:", e.message);
                     });
 
-                    console.log("Course guide updated from Sanity:", sanityHoles);
-
-                } catch (error) {
-                    console.error("Course guide Sanity load failed:", error);
-                }
-            }
-            /* =========================
-               STARTUP (ONE ENTRY POINT)
-            ========================= */
-
-            document.addEventListener("DOMContentLoaded", async () => {
-                await loadCourseGuideFromSanity();
-
-                buildNav();
-
-                initMenu();
-
-                setHole(1);
-                updateClock();
-                setInterval(updateClock, 1000);
-            });
-            /* =========================
-               GLOBAL SAFETY NET
-            ========================= */
-
-            window.addEventListener("error", e => {
-                console.log("JS Error caught:", e.message);
-            });
-
-            // This closes the (() => { that is at the very top of your script
-        })(); 
+                    // This closes the (() => { that is at the very top of your script
+                })(); 
     </script>
 
 
@@ -1308,36 +1307,36 @@
 
     <!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
     <script>
-        // 1. Global Safety Net
-        window.addEventListener("error", e => {
-            console.log("JS Error caught:", e.message);
-        });
+                // 1. Global Safety Net
+                window.addEventListener("error", e => {
+                    console.log("JS Error caught:", e.message);
+                });
     </script>
 
 
     <script>
-        // Fetch live weather for Dudley
-        async function updateWeather() {
-            // Use a restricted API key that you have regenerated
-            const apiKey = 'cee564ae83bb8bbba492593fd40dd2eb';
-            const city = 'Dudley,UK';
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=Dudley,UK&units=metric&appid=${apiKey}`;
+                // Fetch live weather for Dudley
+                async function updateWeather() {
+                    // Use a restricted API key that you have regenerated
+                    const apiKey = 'cee564ae83bb8bbba492593fd40dd2eb';
+                    const city = 'Dudley,UK';
+                    const url = `https://api.openweathermap.org/data/2.5/weather?q=Dudley,UK&units=metric&appid=${apiKey}`;
 
-            try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error('Weather fetch failed');
-                const data = await response.json();
-                const temp = Math.round(data.main.temp);
-                // Update the span we identified earlier
-                document.getElementById('weather').textContent = `Dudley: ${temp}°C`;
-            } catch (error) {
-                console.error("Could not fetch weather:", error);
-                document.getElementById('weather').textContent = "Dudley: --°C";
-            }
-        }
+                    try {
+                        const response = await fetch(url);
+                        if (!response.ok) throw new Error('Weather fetch failed');
+                        const data = await response.json();
+                        const temp = Math.round(data.main.temp);
+                        // Update the span we identified earlier
+                        document.getElementById('weather').textContent = `Dudley: ${temp}°C`;
+                    } catch (error) {
+                        console.error("Could not fetch weather:", error);
+                        document.getElementById('weather').textContent = "Dudley: --°C";
+                    }
+                }
 
-        // Run when the page loads
-        updateWeather();
+                // Run when the page loads
+                updateWeather();
     </script>
     <!-- RETURN HOME BUTTON -->
     <a href="index.html" aria-label="Return Home" style="
