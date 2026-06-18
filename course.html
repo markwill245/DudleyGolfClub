@@ -478,88 +478,82 @@
     </nav>
 
     <!-- COURSE -->
-    <section id="course" class="min-h-screen bg-[#132419] px-4 py-20">
-        <div class="max-w-[1500px] mx-auto flex flex-col lg:flex-row gap-8">
+    <section id="course" class="bg-[#132419] px-4 py-20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-[330px_minmax(0,1fr)] gap-8 items-start">
 
             <!-- LEFT: HOLE SELECTOR -->
-            <div class="lg:w-[28%] bg-[#f9f7f2] p-5 md:p-6 rounded-sm border border-[#C5A367]/20 shadow-2xl"></div>
-            <div class="mb-5 border-b border-[#132419]/10 pb-5">
+            <div class="bg-[#f9f7f2] p-5 md:p-6 rounded-sm border border-[#C5A367]/20 shadow-2xl">
                 <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3">
                     Course Guide
                 </p>
 
-                <h2 class="serif text-4xl md:text-5xl mb-4 text-[#132419] leading-none">
-                    The 18 Holes
-                </h2>
+                <h2 class="serif text-5xl md:text-6xl mb-4 text-[#132419]">The 18 Holes</h2>
 
                 <button onclick="toggleScorecard()" class="view-scorecard-btn">
                     <span>View Full Scorecard</span>
                 </button>
-            </div>
 
-            <div id="hole-nav-container"
-                class="flex flex-col gap-2 max-h-[760px] overflow-y-auto custom-scrollbar pr-1">
-            </div>
-        </div>
-
-        <!-- RIGHT: HOLE DISPLAY -->
-        <div class="lg:w-[72%] bg-forest rounded shadow-2xl overflow-hidden border border-[#C5A367]/10"></div>
-
-        <div class="h-72 md:h-[620px] bg-black relative overflow-hidden">
-            <img id="h-img" src="images/hole1.webp"
-                class="absolute inset-0 w-full h-full object-cover object-center opacity-100 transition-opacity duration-700"
-                alt="Dudley Golf Club course hole image">
-
-            <div
-                class="absolute inset-0 bg-gradient-to-t from-[#132419]/90 via-[#132419]/20 to-transparent pointer-events-none">
-            </div>
-
-            <div id="h-gallery"
-                class="absolute left-4 right-4 bottom-4 flex gap-2 p-2 bg-[#08110D]/80 backdrop-blur-sm border border-[#C5A367]/20 rounded-sm z-20 overflow-x-auto custom-scrollbar">
-            </div>
-        </div>
-
-        <div class="p-8 md:p-12 bg-forest">
-            <div
-                class="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-8 border-b border-white/10 pb-6">
-                <div>
-                    <span id="h-num" class="serif text-6xl text-gold italic"></span>
-                    <h3 id="h-name"
-                        class="serif text-5xl md:text-7xl text-white mt-2 italic tracking-wide leading-none">
-                    </h3>
-                </div>
-
-                <div class="md:text-right">
-                    <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
+                <div id="hole-nav-container"
+                    class="grid grid-cols-1 gap-2 max-h-[760px] overflow-y-auto custom-scrollbar pr-1">
                 </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2 mb-10">
-                <div class="bg-white/5 p-4 text-center border border-white/5">
-                    <p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p>
-                    <p id="h-white" class="serif text-xl text-white"></p>
+            <!-- RIGHT: HOLE DISPLAY -->
+            <div class="bg-forest rounded shadow-2xl overflow-hidden border border-[#C5A367]/10">
+
+                <div class="h-72 md:h-[520px] bg-black relative overflow-hidden">
+                    <div id="h-gallery"
+                        class="absolute top-4 right-4 flex gap-2 p-2 bg-[#08110D]/80 border border-[#C5A367]/20 z-20">
+                    </div>
+
+                    <img id="h-img" src="images/hole1.webp"
+                        class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700"
+                        alt="Dudley Golf Club course hole image">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#132419]/80 via-[#132419]/10 to-transparent pointer-events-none">
+                    </div>
                 </div>
 
-                <div class="bg-white/5 p-4 text-center border border-white/5">
-                    <p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p>
-                    <p id="h-yellow" class="serif text-xl text-yellow-400"></p>
+                <div class="p-8 md:p-12 bg-forest">
+                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
+                        <div>
+                            <span id="h-num" class="serif text-6xl text-gold italic"></span>
+                            <h3 id="h-name" class="serif text-5xl md:text-6xl text-white mt-2 italic tracking-wide">
+                            </h3>
+                        </div>
+
+                        <div class="text-right">
+                            <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 mb-10">
+                        <div class="bg-white/5 p-4 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p>
+                            <p id="h-white" class="serif text-xl text-white"></p>
+                        </div>
+
+                        <div class="bg-white/5 p-4 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p>
+                            <p id="h-yellow" class="serif text-xl text-yellow-400"></p>
+                        </div>
+
+                        <div class="bg-white/5 p-4 text-center">
+                            <p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p>
+                            <p id="h-red" class="serif text-xl text-red-500"></p>
+                        </div>
+                    </div>
+
+                    <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
+
+                    <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
+                        <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
+                        <p id="h-tip" class="text-white italic text-sm md:text-base leading-relaxed"></p>
+                    </div>
                 </div>
 
-                <div class="bg-white/5 p-4 text-center border border-white/5">
-                    <p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p>
-                    <p id="h-red" class="serif text-xl text-red-500"></p>
-                </div>
             </div>
-
-            <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
-
-            <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
-                <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
-                <p id="h-tip" class="text-white italic leading-relaxed whitespace-pre-line"></p>
-            </div>
-        </div>
-
-        </div>
         </div>
     </section>
 
