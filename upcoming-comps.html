@@ -149,7 +149,6 @@ font-weight: bold;
                 const query = encodeURIComponent(`
     *[
         _type == "competitionSchedule"
-        && eventDate >= string(now())[0..9]
     ]
     | order(eventDate asc) {
         date,
