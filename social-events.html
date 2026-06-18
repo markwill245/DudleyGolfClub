@@ -180,17 +180,13 @@
                 }
 
                 container.innerHTML = events.map(event => {
-                    const buttonHtml =
-                        event.buttonText && event.buttonLink
-                            ? `<a href="${event.buttonLink}" target="_blank" class="social-btn">${event.buttonText}</a>`
-                            : "";
 
                     return `
                         <div class="social-card">
                             <div class="social-date">${event.displayDate || ""}</div>
                             <div class="social-title">${event.eventName || ""}</div>
                             <div class="social-description">${event.description || ""}</div>
-                            ${buttonHtml}
+                           
                         </div>
                     `;
                 }).join("");
