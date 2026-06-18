@@ -203,17 +203,10 @@ font-weight: bold;
 ">
         ⌂
     </a>
-    <script src="https://unpkg.com/@sanity/client@6.15.2/dist/index.umd.js"></script>
+
 
     <script>
         async function loadCharityPage() {
-            const client = window.SanityClient.createClient({
-                projectId: "c54r3a5t",
-                dataset: "production",
-                apiVersion: "2024-03-01",
-                useCdn: false
-            });
-
             const setText = (id, value) => {
                 const el = document.getElementById(id);
                 if (el && value !== undefined && value !== null) {
@@ -221,48 +214,57 @@ font-weight: bold;
                 }
             };
 
-            const data = await client.fetch(`
-            *[_type == "charityPage"][0] {
-                pageTitle,
-                subHeading,
-                introText,
-                campaignYear,
-                amountRaised,
-                targetAmount,
-                donationLink,
-                charityName,
-                charityDescription
-            }
-        `);
+            try {
+                const query = encodeURIComponent(`
+                *[_type == "charityPage"][0] {
+                    pageTitle,
+                    subHeading,
+                    introText,
+                    campaignYear,
+                    amountRaised,
+                    targetAmount,
+                    donationLink,
+                    charityName,
+                    charityDescription
+                }
+            `);
 
-            if (!data) return;
+                const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
 
-            setText("charity-page-title", data.pageTitle || "The Captains' Legacy");
-            setText("charity-sub-heading", data.subHeading || "");
-            setText("charity-intro-text", data.introText || "");
-            setText("charity-campaign-year", data.campaignYear || "");
-            setText("charity-name", data.charityName || "");
-            setText("charity-description", data.charityDescription || "");
+                const response = await fetch(url);
+                const data = await response.json();
+                const charity = data.result;
 
-            const amount = Number(data.amountRaised || 0);
-            const target = Number(data.targetAmount || 0);
+                if (!charity) return;
 
-            setText("charity-total", amount.toLocaleString());
+                setText("charity-page-title", charity.pageTitle || "The Captains' Legacy");
+                setText("charity-sub-heading", charity.subHeading || "");
+                setText("charity-intro-text", charity.introText || "");
+                setText("charity-campaign-year", charity.campaignYear || "");
+                setText("charity-name", charity.charityName || "");
+                setText("charity-description", charity.charityDescription || "");
 
-            const progress = document.getElementById("charity-progress");
-            if (progress && target > 0) {
-                progress.style.width = Math.min((amount / target) * 100, 100) + "%";
-            }
+                const amount = Number(charity.amountRaised || 0);
+                const target = Number(charity.targetAmount || 0);
 
-            const donateBtn = document.getElementById("charity-donation-link");
-            if (donateBtn && data.donationLink) {
-                donateBtn.href = data.donationLink;
+                setText("charity-total", amount.toLocaleString());
+
+                const progress = document.getElementById("charity-progress");
+                if (progress && target > 0) {
+                    progress.style.width = Math.min((amount / target) * 100, 100) + "%";
+                }
+
+                const donateBtn = document.getElementById("charity-donation-link");
+                if (donateBtn && charity.donationLink) {
+                    donateBtn.href = charity.donationLink;
+                }
+
+            } catch (error) {
+                console.error("Charity page failed to load:", error);
             }
         }
 
-        loadCharityPage().catch(error => {
-            console.error("Charity page failed to load:", error);
-        });
+        loadCharityPage();
     </script>
 
 </body>
