@@ -479,40 +479,39 @@
 
     <!-- COURSE -->
     <section id="course" class="min-h-screen bg-[#132419] px-4 py-20">
-        <div class="max-w-[1500px] mx-auto">
+        <div class="max-w-[1500px] mx-auto flex flex-col lg:flex-row gap-8">
 
-            <!-- COURSE HEADER -->
-            <div class="bg-[#f9f7f2] p-6 md:p-8 rounded-sm border border-[#C5A367]/20 shadow-2xl mb-8">
-                <div
-                    class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 border-b border-[#132419]/10 pb-6 mb-6">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3">
-                            Course Guide
-                        </p>
-                        <h2 class="serif text-5xl md:text-6xl text-[#132419] leading-none">The 18 Holes</h2>
-                    </div>
+            <!-- LEFT: HOLE SELECTOR -->
+            <div class="lg:w-[28%] bg-[#f9f7f2] p-5 md:p-6 rounded-sm border border-[#C5A367]/20 shadow-2xl">
+                <div class="mb-5 border-b border-[#132419]/10 pb-5">
+                    <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3">
+                        Course Guide
+                    </p>
 
-                    <button onclick="toggleScorecard()" class="view-scorecard-btn !mb-0">
+                    <h2 class="serif text-4xl md:text-5xl mb-4 text-[#132419] leading-none">
+                        The 18 Holes
+                    </h2>
+
+                    <button onclick="toggleScorecard()" class="view-scorecard-btn">
                         <span>View Full Scorecard</span>
                     </button>
                 </div>
 
-                <!-- HORIZONTAL HOLE SELECTOR -->
                 <div id="hole-nav-container"
-                    class="flex gap-3 overflow-x-auto custom-scrollbar pb-2 snap-x snap-mandatory">
+                    class="flex flex-col gap-2 max-h-[760px] overflow-y-auto custom-scrollbar pr-1">
                 </div>
             </div>
 
-            <!-- HOLE DISPLAY -->
-            <div class="bg-forest rounded shadow-2xl overflow-hidden border border-[#C5A367]/10">
+            <!-- RIGHT: HOLE DISPLAY -->
+            <div class="lg:w-[72%] bg-forest rounded shadow-2xl overflow-hidden border border-[#C5A367]/10">
 
-                <div class="h-72 md:h-[620px] bg-black relative overflow-hidden">
+                <div class="h-72 md:h-[560px] bg-black relative overflow-hidden">
                     <img id="h-img" src="images/hole1.webp"
-                        class="absolute inset-0 w-full h-full object-contain bg-black opacity-100 transition-opacity duration-700"
+                        class="absolute inset-0 w-full h-full object-cover object-center opacity-100 transition-opacity duration-700"
                         alt="Dudley Golf Club course hole image">
 
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-[#132419]/90 via-[#132419]/10 to-transparent pointer-events-none">
+                        class="absolute inset-0 bg-gradient-to-t from-[#132419]/90 via-[#132419]/20 to-transparent pointer-events-none">
                     </div>
 
                     <div id="h-gallery"
@@ -530,7 +529,7 @@
                             </h3>
                         </div>
 
-                        <div class="text-left md:text-right">
+                        <div class="md:text-right">
                             <p id="h-par-si" class="serif text-3xl text-gold italic"></p>
                         </div>
                     </div>
@@ -556,7 +555,7 @@
 
                     <div class="bg-gold/10 p-6 border-l-2 border-[#C5A367]">
                         <p class="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Pro Advice</p>
-                        <p id="h-tip" class="text-white italic whitespace-pre-line"></p>
+                        <p id="h-tip" class="text-white italic leading-relaxed whitespace-pre-line"></p>
                     </div>
                 </div>
 
@@ -1150,7 +1149,7 @@
                     const div = document.createElement("div");
                     div.id = `h-${h.number}`;
                     div.className =
-                        "hole-card shrink-0 snap-start cursor-pointer border border-[#C5A367]/20 rounded bg-[#132419] px-4 py-3 w-[180px] min-h-[76px] overflow-hidden flex items-center justify-between gap-3";
+                        "hole-card cursor-pointer border border-[#C5A367]/20 rounded bg-[#132419] px-4 py-3 min-h-[72px] overflow-hidden flex items-center justify-between gap-3";
 
                     div.innerHTML = `
                         <div class="min-w-0">
