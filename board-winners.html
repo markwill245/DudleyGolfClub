@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Board Winners | Dudley Golf Club</title>
+
     <link rel="stylesheet" href="dist/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
+
     <style>
         :root {
             --gold: #C5A367;
@@ -64,51 +66,37 @@
 <body>
     <div class="container">
         <a href="members-area.html" class="back-btn">← Back to Members Area</a>
+
         <h1>Board Winners</h1>
+
         <div class="content-box">
-            <div id="members-content">
-                <p>Loading board winners...</p>
+            <p class="mb-6 text-white/70">
+                Archive of club board winners.
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-[#C5A367]/30">
+                            <th class="py-3 px-2 text-[#C5A367]">Year</th>
+                            <th class="py-3 px-2 text-[#C5A367]">Board</th>
+                            <th class="py-3 px-2 text-[#C5A367]">Winner</th>
+                            <th class="py-3 px-2 text-[#C5A367]">Score</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="board-winners-body">
+                        <tr>
+                            <td colspan="4" class="py-6 text-center text-white/60">
+                                Loading board winners...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-
-        <script>
-            async function loadMembersContent() {
-                const container = document.getElementById("members-content");
-                if (!container) return;
-
-                try {
-                    const query = encodeURIComponent(`
-                *[_type == "membersContent" && page == "board-winners"][0]{
-                    title,
-                    content
-                }
-            `);
-
-                    const response = await fetch(
-                        `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
-                    );
-
-                    const result = await response.json();
-                    const data = result.result;
-
-                    if (!data) {
-                        container.innerHTML = "<p>No board winners have been added yet.</p>";
-                        return;
-                    }
-
-                    container.innerHTML = `
-                <h2 class="serif text-3xl text-[#C5A367] mb-6">${data.title || "Board Winners"}</h2>
-                <div class="whitespace-pre-line leading-relaxed text-white/80">${data.content || ""}</div>
-            `;
-                } catch (error) {
-                    console.log("Members content error:", error);
-                    container.innerHTML = "<p>Could not load board winners.</p>";
-                }
-            }
-
-            loadMembersContent();
-        </script>
     </div>
+
     <!-- RETURN HOME BUTTON -->
     <a href="index.html" aria-label="Return Home" style="
 position: fixed;
@@ -131,6 +119,64 @@ font-weight: bold;
 ">
         ⌂
     </a>
+
+    <!-- SANITY BOARD WINNERS FETCH -->
+    <script>
+        async function loadBoardWinners() {
+            const body = document.getElementById("board-winners-body");
+
+            try {
+                const query = encodeURIComponent(`
+                    *[_type == "boardWinner"]
+                    | order(year desc, boardName asc) {
+                        year,
+                        boardName,
+                        winnerName,
+                        score
+                    }
+                `);
+
+                const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
+
+                const response = await fetch(url);
+                const data = await response.json();
+                const winners = data.result || [];
+
+                if (!winners.length) {
+                    body.innerHTML = `
+                        <tr>
+                            <td colspan="4" class="py-6 text-center text-white/60">
+                                No board winners available.
+                            </td>
+                        </tr>
+                    `;
+                    return;
+                }
+
+                body.innerHTML = winners.map(item => `
+                    <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
+                        <td class="py-3 px-2 align-top">${item.year || ""}</td>
+                        <td class="py-3 px-2 align-top text-[#C5A367]">${item.boardName || ""}</td>
+                        <td class="py-3 px-2 align-top">${item.winnerName || ""}</td>
+                        <td class="py-3 px-2 align-top">${item.score || ""}</td>
+                    </tr>
+                `).join("");
+
+            } catch (error) {
+                console.error("Board winners failed to load:", error);
+
+                body.innerHTML = `
+                    <tr>
+                        <td colspan="4" class="py-6 text-center text-red-400">
+                            Unable to load board winners.
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        loadBoardWinners();
+    </script>
 
 </body>
 
