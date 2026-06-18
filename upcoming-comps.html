@@ -147,16 +147,17 @@ font-weight: bold;
 
             try {
                 const query = encodeURIComponent(`
-        *[
-            _type == "competitionSchedule"
-        ]
-        | order(eventDate asc) {
-            date,
-            eventDate,
-            competitionName,
-            igolfLink
-        }
-    `);
+    *[
+        _type == "competitionSchedule"
+        && eventDate >= string(now())[0..9]
+    ]
+    | order(eventDate asc) {
+        date,
+        eventDate,
+        competitionName,
+        igolfLink
+    }
+`);
 
                 const response = await fetch(
                     `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
