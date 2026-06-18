@@ -40,9 +40,13 @@
         </div>
 
         <div class="max-w-4xl mx-auto space-y-3">
-            <h1 class="serif text-4xl md:text-6xl text-white tracking-wide">The Captains' Legacy</h1>
-            <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs font-bold">Honouring Tradition Through Regional
-                Impact</p>
+            <h1 id="charity-page-title" class="serif text-4xl md:text-6xl text-white tracking-wide">
+                The Captains' Legacy
+            </h1>
+
+            <p id="charity-sub-heading" class="text-[#C5A367] uppercase tracking-[0.3em] text-xs font-bold">
+                Honouring Tradition Through Regional Impact
+            </p>
         </div>
     </header>
 
@@ -110,57 +114,6 @@
             </a>
         </div>
     </main>
-
-    <footer
-        class="bg-[#132419] py-8 text-center text-white/50 text-[10px] uppercase tracking-widest border-t border-[#C5A367]/10">
-        &copy; 2026 Dudley Golf Club
-    </footer>
-
-    <!-- ==========================================
-         SANITY DATABASE SYNCHRONIZATION ENGINE LAYER
-         ========================================== -->
-    <script src="https://unpkg.com/@sanity/client@6.15.2/dist/index.umd.js"></script>
-    <script>
-
-        async function loadCharityPage() {
-
-            if (!window.SanityClient || !window.SanityClient.createClient) return;
-
-            const client = window.SanityClient.createClient({
-                projectId: 'c54r3a5t',
-                dataset: 'production',
-                apiVersion: '2024-03-01',
-                useCdn: false
-            });
-
-            try {
-
-                const data = await client.fetch(`
-            *[_type=="charityPage"][0]{
-                pageTitle,
-                subHeading,
-                introText,
-                campaignYear,
-                amountRaised,
-                targetAmount,
-                donationLink,
-                charityName,
-                charityDescription
-            }
-        `);
-
-                console.log(data);
-
-            } catch (err) {
-
-                console.log(err);
-
-            }
-
-        }
-
-        window.addEventListener('DOMContentLoaded', loadCharityPage);
-    </script>
 
 
     <!-- MASTER FOOTER -->
@@ -250,6 +203,61 @@ font-weight: bold;
 ">
         ⌂
     </a>
+    <script src="https://unpkg.com/@sanity/client@6.15.2/dist/index.umd.js"></script>
+
+    <script>
+        async function loadCharityPage() {
+            const client = window.SanityClient.createClient({
+                projectId: "c54r3a5t",
+                dataset: "production",
+                apiVersion: "2024-03-01",
+                useCdn: false
+            });
+
+            const data = await client.fetch(`
+            *[_type == "charityPage"][0] {
+                pageTitle,
+                subHeading,
+                introText,
+                campaignYear,
+                amountRaised,
+                targetAmount,
+                donationLink,
+                charityName,
+                charityDescription
+            }
+        `);
+
+            if (!data) return;
+
+            document.getElementById("charity-page-title").textContent = data.pageTitle || "The Captains' Legacy";
+            document.getElementById("charity-sub-heading").textContent = data.subHeading || "";
+            document.getElementById("charity-intro-text").textContent = data.introText || "";
+            document.getElementById("charity-campaign-year").textContent = data.campaignYear || "";
+
+            document.getElementById("charity-name").textContent = data.charityName || "";
+            document.getElementById("charity-description").textContent = data.charityDescription || "";
+
+            const amount = Number(data.amountRaised || 0);
+            const target = Number(data.targetAmount || 0);
+
+            document.getElementById("charity-total").textContent = amount.toLocaleString();
+
+            if (target > 0) {
+                document.getElementById("charity-progress").style.width =
+                    Math.min((amount / target) * 100, 100) + "%";
+            }
+
+            if (data.donationLink) {
+                document.getElementById("charity-donation-link").href = data.donationLink;
+            }
+        }
+
+        loadCharityPage().catch(error => {
+            console.error("Charity page failed to load:", error);
+        });
+    </script>
+
 </body>
 
 </html>
