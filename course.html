@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap**&display=swap**"
         rel="stylesheet">
 
     <!-- css -->
@@ -416,6 +416,38 @@
         .view-scorecard-btn:hover span {
             color: #ffffff !important;
         }
+
+
+        /* LITTLE ASTON STYLE COURSE SELECTOR */
+        #hole-nav-container .hole-card {
+            min-height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(197, 163, 103, 0.35) !important;
+            background: #132419 !important;
+            color: #C5A367 !important;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            border-radius: 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+        }
+
+        #hole-nav-container .hole-card:hover,
+        #hole-nav-container .hole-card.is-active {
+            background: #C5A367 !important;
+            color: #132419 !important;
+            border-color: #C5A367 !important;
+            transform: translateY(-2px) !important;
+        }
+
+        @media (max-width: 640px) {
+            #hole-nav-container {
+                grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+            }
+        }
     </style>
 </head>
 
@@ -481,8 +513,8 @@
     <section id="course" class="bg-[#132419] px-4 py-16 md:py-20">
         <div class="max-w-7xl mx-auto">
 
-            <!-- TOP: COURSE SELECTOR -->
-            <div class="bg-[#f9f7f2] p-6 md:p-8 rounded-sm border border-[#C5A367]/20 shadow-2xl mb-8">
+            <!-- TOP: LITTLE ASTON STYLE SELECTOR -->
+            <div class="bg-[#f9f7f2] p-6 md:p-8 rounded-sm border border-[#C5A367]/20 shadow-2xl mb-0">
                 <div
                     class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 border-b border-[#132419]/10 pb-6 mb-6">
                     <div>
@@ -496,28 +528,26 @@
                         <span>View Full Scorecard</span>
                     </button>
                 </div>
-                <div id="hole-nav-container" class="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-9 gap-3">
+
+                <div id="hole-nav-container"
+                    style="display:grid; grid-template-columns:repeat(9, minmax(0, 1fr)); gap:8px; max-width:920px; margin:0 auto;">
                 </div>
             </div>
 
-            <!-- MAIN: HOLE DISPLAY -->
-            <div class="bg-forest rounded shadow-2xl overflow-hidden border border-[#C5A367]/10">
+            <!-- MAIN: HERO IMAGE + HOLE DISPLAY -->
+            <div class="bg-forest rounded-b shadow-2xl overflow-hidden border-x border-b border-[#C5A367]/10">
 
-                <div class="h-[420px] md:h-[520px] bg-black relative overflow-hidden">
-                </div>
-
-                <div id="h-gallery" class="grid grid-cols-3 gap-3 p-6 bg-[#08110D] border-b border-[#C5A367]/10">
-                </div>
-
-                <div class="p-8 md:p-12 bg-forest">
-
+                <div class="h-[420px] md:h-[640px] bg-black relative overflow-hidden">
                     <img id="h-img" src="images/hole1.webp"
                         class="absolute inset-0 w-full h-full object-cover object-center opacity-100 transition-opacity duration-700"
                         alt="Dudley Golf Club course hole image">
 
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-[#132419]/85 via-[#132419]/15 to-transparent pointer-events-none">
+                        class="absolute inset-0 bg-gradient-to-t from-[#132419]/85 via-[#132419]/20 to-transparent pointer-events-none">
                     </div>
+                </div>
+
+                <div id="h-gallery" class="grid grid-cols-3 gap-3 p-4 md:p-6 bg-[#08110D] border-b border-[#C5A367]/10">
                 </div>
 
                 <div class="p-8 md:p-12 bg-forest">
@@ -562,6 +592,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- PREMIUM LIGHTBOX (OUTSIDE MAIN) -->
     <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-6">
@@ -931,7 +963,7 @@
                         const thumb = document.createElement("img");
                         thumb.src = src;
                         thumb.className =
-                            "w-20 h-14 object-cover rounded cursor-pointer opacity-60 hover:opacity-100 transition";
+                            "w-full h-24 md:h-32 object-cover rounded-sm cursor-pointer opacity-70 hover:opacity-100 transition border border-[#C5A367]/20";
 
                         thumb.onclick = () => {
                             img.style.opacity = 0;
@@ -947,12 +979,12 @@
 
                 // ACTIVE STATE
                 document.querySelectorAll(".hole-card").forEach(c =>
-                    c.classList.remove("border-gold", "bg-gold/20")
+                    c.classList.remove("border-gold", "bg-gold/20", "is-active")
                 );
 
                 const active = document.getElementById(`h-${n}`);
                 if (active) {
-                    active.classList.add("border-gold", "bg-gold/20");
+                    active.classList.add("border-gold", "bg-gold/20", "is-active");
                 }
             }
 
@@ -1108,6 +1140,7 @@
             /* =========================
                NAV BUILD
             ========================= */
+
             function buildNav() {
                 const nav = document.getElementById("hole-nav-container");
                 if (!nav) return;
@@ -1118,17 +1151,13 @@
                     const btn = document.createElement("button");
                     btn.type = "button";
                     btn.id = `h-${h.number}`;
-
-                    btn.className =
-                        "h-12 flex items-center justify-center border border-[#C5A367]/40 bg-[#132419] text-[#C5A367] text-sm font-bold hover:bg-[#C5A367] hover:text-[#132419] transition rounded-sm";
-
+                    btn.className = "hole-card";
                     btn.textContent = String(h.number).padStart(2, "0");
-
                     btn.onclick = () => setHole(h.number);
-
                     nav.appendChild(btn);
                 });
             }
+
             /* =========================
                MOBILE MENU
             ========================= */
@@ -1229,6 +1258,7 @@
 
         })();
     </script>
+
 
 
 
