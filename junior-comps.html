@@ -71,9 +71,11 @@
         <h1>Junior Competitions</h1>
 
         <div class="content-box">
-            <h2 class="serif text-2xl text-[#C5A367] mb-4 italic">2026 Junior Summer Schedule</h2>
+            <h2 id="junior-page-title" class="serif text-2xl text-[#C5A367] mb-4 italic">
+                2026 Junior Summer Schedule
+            </h2>
 
-            <p class="mb-6">
+            <p id="junior-intro-text" class="mb-6">
                 I am pleased to put together more of a Junior Schedule for this coming Summer. We have
                 nearly 30 Junior members so it will be great for everyone to see them competing over the next few
                 months.
@@ -98,13 +100,13 @@
                 </table>
             </div>
 
-            <p class="text-xs italic mb-6 text-white/60">
+            <p id="junior-footer-note" class="text-xs italic mb-6 text-white/60">
                 * Unless stated, all start times are from 1.30pm. No entry fee & free food available for all players.
             </p>
 
             <h3 class="text-[#C5A367] font-semibold mb-2">Entry & Format</h3>
 
-            <p class="mb-4">
+            <p id="junior-entry-format" class="mb-4">
                 To enter, use the IG App, see me in the Professional Shop, or drop me a message. The Order
                 of Merit Trophy will be played over the 4 Stableford events and Captain's Day. The Captain and I will
                 decide the Junior Golfer of The Year once all events have finished.
@@ -112,12 +114,12 @@
 
             <h3 class="text-[#C5A367] font-semibold mb-2">Support & Donations</h3>
 
-            <p class="mb-6">
+            <p id="junior-support-donations" class="mb-6">
                 Thank you to everyone who has contributed to the Junior Section. Donations can be made in
                 the Professional Shop with myself or in the office with Robert or Nicola.
             </p>
 
-            <p class="font-bold">
+            <p id="junior-sign-off" class="font-bold">
                 Kind regards,<br>
                 Richard Prophet<br>
                 Head Professional
@@ -228,22 +230,73 @@ font-weight: bold;
         ⌂
     </a>
 
-    <!-- SANITY JUNIOR COMPETITIONS FETCH -->
+    <!-- SANITY JUNIOR SETTINGS + COMPETITIONS FETCH -->
     <script>
+        async function loadJuniorSettings() {
+            try {
+                const query = encodeURIComponent(`
+                    *[_type == "juniorSettings"][0] {
+                        pageTitle,
+                        introText,
+                        footerNote,
+                        entryFormat,
+                        supportDonations,
+                        signOff
+                    }
+                `);
+
+                const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
+
+                const response = await fetch(url);
+                const data = await response.json();
+                const settings = data.result;
+
+                if (!settings) return;
+
+                if (settings.pageTitle) {
+                    document.getElementById("junior-page-title").textContent = settings.pageTitle;
+                }
+
+                if (settings.introText) {
+                    document.getElementById("junior-intro-text").textContent = settings.introText;
+                }
+
+                if (settings.footerNote) {
+                    document.getElementById("junior-footer-note").textContent = settings.footerNote;
+                }
+
+                if (settings.entryFormat) {
+                    document.getElementById("junior-entry-format").textContent = settings.entryFormat;
+                }
+
+                if (settings.supportDonations) {
+                    document.getElementById("junior-support-donations").textContent = settings.supportDonations;
+                }
+
+                if (settings.signOff) {
+                    document.getElementById("junior-sign-off").innerHTML =
+                        "Kind regards,<br>" + settings.signOff.replace(/\n/g, "<br>");
+                }
+
+            } catch (error) {
+                console.error("Junior settings failed to load:", error);
+            }
+        }
+
         async function loadJuniorCompetitions() {
             const body = document.getElementById("junior-competition-body");
 
             try {
                 const query = encodeURIComponent(`
-                *[_type == "juniorCompetition"]
-                | order(eventDate asc, displayOrder asc) {
-                    displayDate,
-                    eventName,
-                    startTime,
-                    igolfLink,
-                    notes
-                }
-            `);
+                    *[_type == "juniorCompetition"]
+                    | order(eventDate asc, displayOrder asc) {
+                        displayDate,
+                        eventName,
+                        startTime,
+                        igolfLink,
+                        notes
+                    }
+                `);
 
                 const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
 
@@ -251,16 +304,14 @@ font-weight: bold;
                 const data = await response.json();
                 const competitions = data.result || [];
 
-                console.log("Junior competitions:", competitions);
-
                 if (!competitions.length) {
                     body.innerHTML = `
-                    <tr>
-                        <td colspan="2" class="py-6 text-center text-white/60">
-                            No junior competitions available.
-                        </td>
-                    </tr>
-                `;
+                        <tr>
+                            <td colspan="2" class="py-6 text-center text-white/60">
+                                No junior competitions available.
+                            </td>
+                        </tr>
+                    `;
                     return;
                 }
 
@@ -285,29 +336,30 @@ font-weight: bold;
                         : "";
 
                     return `
-                    <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
-                        <td class="py-3 px-2 align-top">${date}</td>
-                        <td class="py-3 px-2 align-top">
-                            ${eventHtml}
-                            ${notesHtml}
-                        </td>
-                    </tr>
-                `;
+                        <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
+                            <td class="py-3 px-2 align-top">${date}</td>
+                            <td class="py-3 px-2 align-top">
+                                ${eventHtml}
+                                ${notesHtml}
+                            </td>
+                        </tr>
+                    `;
                 }).join("");
 
             } catch (error) {
                 console.error("Junior competitions failed to load:", error);
 
                 body.innerHTML = `
-                <tr>
-                    <td colspan="2" class="py-6 text-center text-red-400">
-                        Unable to load junior competitions.
-                    </td>
-                </tr>
-            `;
+                    <tr>
+                        <td colspan="2" class="py-6 text-center text-red-400">
+                            Unable to load junior competitions.
+                        </td>
+                    </tr>
+                `;
             }
         }
 
+        loadJuniorSettings();
         loadJuniorCompetitions();
     </script>
 
