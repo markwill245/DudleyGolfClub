@@ -546,8 +546,8 @@
                         class="absolute inset-0 bg-gradient-to-t from-[#132419]/85 via-[#132419]/20 to-transparent pointer-events-none">
                     </div>
                 </div>
-
-                <div id="h-gallery" class="grid grid-cols-3 gap-3 bg-[#08110D] p-4 border-b border-[#C5A367]/10"></div>
+                <div id="h-gallery"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-[#08110D] p-4 border-b border-[#C5A367]/10"></div>
 
                 <div class="p-8 md:p-12 bg-forest">
                     <div
@@ -958,14 +958,22 @@
                 if (gallery) {
                     gallery.innerHTML = "";
 
-                    hole.images.forEach(src => {
+                    hole.images.forEach((src, index) => {
                         const thumb = document.createElement("img");
                         thumb.src = src;
-                        thumb.className =
-                            "w-full h-32 md:h-40 object-cover rounded-sm cursor-pointer opacity-75 hover:opacity-100 transition border border-[#C5A367]/20";
+                        thumb.loading = "lazy";
 
-                        thumb.onclick = () => {
+                        thumb.className =
+                            index === 0
+                                ? "w-full h-72 md:h-[420px] object-cover rounded-sm cursor-pointer border border-[#C5A367]/30"
+                                : "w-full h-40 md:h-[200px] object-cover rounded-sm cursor-pointer opacity-80 hover:opacity-100 transition border border-[#C5A367]/20";
+
+                        thumb.onclick = (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+
                             img.style.opacity = 0;
+
                             setTimeout(() => {
                                 img.src = src;
                                 img.style.opacity = 1;
