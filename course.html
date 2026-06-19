@@ -43,6 +43,7 @@
     </script>
 
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="preload" as="image" href="images/hole1.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -418,7 +419,7 @@
         }
 
 
-        /* Dudley STYLE COURSE SELECTOR */
+        /* LITTLE ASTON STYLE COURSE SELECTOR */
         #hole-nav-container .hole-card {
             min-height: 46px;
             display: flex;
@@ -460,7 +461,7 @@
 
         .course-main-image-wrap {
             width: 100%;
-            height: 360px;
+            height: 420px;
             background: #050A08;
             position: relative;
             overflow: hidden;
@@ -469,7 +470,7 @@
 
         @media (min-width: 768px) {
             .course-main-image-wrap {
-                height: 560px;
+                height: 640px;
             }
         }
 
@@ -480,6 +481,16 @@
             object-position: center;
             cursor: zoom-in;
             display: block;
+            opacity: 1;
+            transition: opacity 220ms ease, transform 500ms ease;
+        }
+
+        .course-main-image-wrap img.is-loading {
+            opacity: 0.35;
+        }
+
+        .course-main-image-wrap:hover img {
+            transform: scale(1.015);
         }
 
         .course-thumbs {
@@ -498,6 +509,7 @@
             overflow: hidden;
             cursor: pointer;
             opacity: 0.72;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
         }
 
         .course-thumb-btn:hover,
@@ -517,13 +529,13 @@
 
         @media (min-width: 768px) {
             .course-thumb-btn {
-                height: 145px;
+                height: 140px;
             }
         }
 
         @media (max-width: 640px) {
             .course-main-image-wrap {
-                height: 300px;
+                height: 340px;
             }
 
             .course-thumbs {
@@ -1018,7 +1030,11 @@
                HOLE SYSTEM
             ========================= */
 
+            let currentHoleNumber = 1;
+            let imageRequestToken = 0;
+
             function setHole(n) {
+                currentHoleNumber = n;
                 const hole = courseData.find(h => h.number === n);
                 if (!hole || !hole.images || !hole.images.length) return;
 
@@ -1027,13 +1043,19 @@
                 if (!img) return;
 
                 const mainSrc = hole.images[0];
+                const token = ++imageRequestToken;
 
+                img.classList.add("is-loading");
+                img.onload = () => {
+                    if (token === imageRequestToken) img.classList.remove("is-loading");
+                };
+                img.onerror = () => {
+                    img.classList.remove("is-loading");
+                    console.warn("Missing course image:", img.src);
+                };
                 img.src = mainSrc;
                 img.alt = `${hole.name} - Dudley Golf Club hole ${hole.number}`;
                 img.onclick = () => openLightbox(img.src);
-                img.onerror = () => {
-                    console.warn("Missing course image:", img.src);
-                };
 
                 // TEXT
                 const setText = (id, val) => {
@@ -1062,15 +1084,29 @@
                         btn.setAttribute("aria-label", `View ${hole.name} image ${index + 1}`);
 
                         const thumb = document.createElement("img");
-                        thumb.src = src;
                         thumb.loading = index === 0 ? "eager" : "lazy";
                         thumb.decoding = "async";
                         thumb.alt = `${hole.name} thumbnail ${index + 1}`;
+
+                        // Load thumbnail 1 immediately, then gently stagger 2 and 3.
+                        // This keeps the big image feeling quicker instead of fighting 3 images at once.
+                        if (index === 0) {
+                            thumb.src = src;
+                        } else {
+                            setTimeout(() => {
+                                if (currentHoleNumber === n) thumb.src = src;
+                            }, 220 + (index * 180));
+                        }
 
                         btn.onclick = (e) => {
                             e.preventDefault();
                             e.stopPropagation();
 
+                            const clickToken = ++imageRequestToken;
+                            img.classList.add("is-loading");
+                            img.onload = () => {
+                                if (clickToken === imageRequestToken) img.classList.remove("is-loading");
+                            };
                             img.src = src;
                             img.alt = `${hole.name} - image ${index + 1}`;
 
@@ -1369,7 +1405,7 @@
                 // Load Sanity quietly in the background so the page/images do not wait.
                 loadCourseGuideFromSanity().then(() => {
                     buildNav();
-                    setHole(1);
+                    setHole(currentHoleNumber);
                 });
             });
 
