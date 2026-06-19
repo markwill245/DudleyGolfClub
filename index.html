@@ -258,25 +258,48 @@
 
         @media (max-width: 640px) {
             .bg-forest-dark {
-                padding-left: 10px !important;
-                padding-right: 10px !important;
-                gap: 8px !important;
-                font-size: 8px !important;
-                letter-spacing: 0.12em !important;
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1.2fr;
+                gap: 14px !important;
+                padding: 14px 22px !important;
+                font-size: 10px !important;
+                letter-spacing: 0.22em !important;
+                line-height: 1.6 !important;
             }
 
-            .bg-forest-dark>div:last-child {
-                gap: 10px !important;
-                flex-shrink: 0;
+            .bg-forest-dark>div {
+                display: block !important;
             }
 
-            #live-clock {
-                white-space: nowrap;
+            .bg-forest-dark .flex {
+                display: contents !important;
             }
 
+            #live-clock,
             #weather,
             #course-status {
-                white-space: nowrap;
+                white-space: normal !important;
+            }
+
+            header,
+            .hero-bg {
+                min-height: calc(100vh - 150px) !important;
+                padding-top: 5rem !important;
+                padding-bottom: 7rem !important;
+            }
+
+            .hero-bg h1 {
+                font-size: 3.4rem !important;
+                line-height: 0.95 !important;
+            }
+
+            .hero-bg .flex {
+                width: 100%;
+            }
+
+            .hero-bg a {
+                width: 100%;
+                text-align: center;
             }
         }
     </style>
