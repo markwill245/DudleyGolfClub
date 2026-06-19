@@ -255,6 +255,30 @@
                 max-width: 100vw;
             }
         }
+
+        @media (max-width: 640px) {
+            .bg-forest-dark {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                gap: 8px !important;
+                font-size: 8px !important;
+                letter-spacing: 0.12em !important;
+            }
+
+            .bg-forest-dark>div:last-child {
+                gap: 10px !important;
+                flex-shrink: 0;
+            }
+
+            #live-clock {
+                white-space: nowrap;
+            }
+
+            #weather,
+            #course-status {
+                white-space: nowrap;
+            }
+        }
     </style>
 </head>
 
