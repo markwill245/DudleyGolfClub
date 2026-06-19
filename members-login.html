@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members Login | Dudley Golf Club</title>
+    <title>Members Portal | Dudley Golf Club</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -38,13 +38,27 @@
 
 </head>
 
-<body class="min-h-screen flex items-center justify-center px-6">
+<body class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+    <!-- BACKGROUND IMAGE -->
 
-    <div class="w-full max-w-md bg-[#0D1712] border border-[#C5A367]/20 rounded-xl p-10 shadow-2xl">
+    <div class="absolute inset-0">
 
+        <img src="images/members-bg.webp" alt="Golf background" class="w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-[#132419]/75"></div>
+
+    </div>
+
+    <div class="relative z-10 w-full max-w-md
+bg-[#0D1712]/90
+backdrop-blur-sm
+border border-[#C5A367]/20
+rounded-xl
+p-10
+shadow-2xl">
         <p class="text-[#C5A367] text-xs uppercase tracking-[0.35em] text-center mb-3">
 
-            Members Login
+            Members Portal
 
         </p>
 
