@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Members Login | Dudley Golf Club</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Outfit', sans-serif;
+
+            background: #132419;
+
+        }
+
+        .serif {
+
+            font-family: 'Cormorant Garamond', serif;
+
+        }
+    </style>
+
+</head>
+
+<body class="min-h-screen flex items-center justify-center px-6">
+
+    <div class="w-full max-w-md bg-[#0D1712] border border-[#C5A367]/20 rounded-xl p-10 shadow-2xl">
+
+        <p class="text-[#C5A367] text-xs uppercase tracking-[0.35em] text-center mb-3">
+
+            Members Login
+
+        </p>
+
+        <h1 class="serif text-5xl text-white text-center mb-8">
+
+            Dudley Golf Club
+
+        </h1>
+
+        <input id="password" type="password" placeholder="Enter password"
+            class="w-full p-4 rounded bg-[#132419] text-white border border-[#C5A367]/20 mb-6 outline-none">
+
+        <button onclick="checkPassword()"
+            class="w-full bg-[#C5A367] text-[#132419] font-bold py-4 uppercase tracking-[0.2em] rounded hover:bg-white transition">
+
+            Enter Members Area
+
+        </button>
+
+        <p id="error" class="hidden text-red-400 text-center mt-6">
+
+            Incorrect password
+
+        </p>
+
+    </div>
+
+    <script>
+
+        function checkPassword() {
+
+            const password = document.getElementById('password').value;
+
+            if (password === 'DGC1893') {
+
+                window.location.href = 'members-area.html';
+
+            } else {
+
+                document.getElementById('error').classList.remove('hidden');
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
