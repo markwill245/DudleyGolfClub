@@ -1390,8 +1390,8 @@
             }
 
             /* =========================
-               STARTUP (ONE ENTRY POINT)
-            ========================= */
+     STARTUP (ONE ENTRY POINT)
+  ========================= */
 
             async function loadCourseImages() {
                 try {
@@ -1401,8 +1401,10 @@
                     const imageData = await response.json();
 
                     courseData.forEach(hole => {
-                        if (imageData[String(hole.number)] && imageData[String(hole.number)].length) {
-                            hole.images = imageData[String(hole.number)];
+                        const newImages = imageData[String(hole.number)];
+
+                        if (Array.isArray(newImages) && newImages.length) {
+                            hole.images = newImages;
                         }
                     });
 
@@ -1429,25 +1431,15 @@
                 });
             });
 
-            updateClock();
-            setInterval(updateClock, 1000);
+            /* =========================
+               GLOBAL SAFETY NET
+            ========================= */
 
-            // Load Sanity quietly in the background so the page/images do not wait.
-            loadCourseGuideFromSanity().then(() => {
-                buildNav();
-                setHole(currentHoleNumber);
+            window.addEventListener("error", e => {
+                console.log("JS Error caught:", e.message);
             });
-        });
 
-        /* =========================
-           GLOBAL SAFETY NET
-        ========================= */
-
-        window.addEventListener("error", e => {
-            console.log("JS Error caught:", e.message);
-        });
-
-        }) ();
+        })();
     </script>
 
 
