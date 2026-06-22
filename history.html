@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudley Golf Club | Heritage & Excellence</title>
+
+    <!-- Search Engine Tags -->
+    <meta name="description"
+        content="Established in 1893, Dudley Golf Club offers a historic 18-hole course with panoramic views. Join our community or book a tee time in the West Midlands.">
+    <meta name="keywords"
+        content="Dudley Golf Club, golf West Midlands, 18-hole course Black Country, Old Tom Morris golf, golf membership Dudley ,visitors Dudley Golf,functions Dudley,Golf Dudley,Parkland Golf,Syndicate Golf">
+    <meta name="author" content="Dudley Golf Club">
+
+
+    <!-- Open Graph (Social Media Previews) -->
+    <meta property="og:title" content="Dudley Golf Club | Heritage & Excellence">
+    <meta property="og:description" content="Play a historic 18-hole course with a rich heritage dating back to 1893.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dudley-golf-club.vercel.app">
+    <!-- Using your image dudley.webp for social previews -->
+    <meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GolfCourse",
+      "name": "Dudley Golf Club",
+      "url": "https://dudley-golf-club.vercel.app",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "B65 9DP",
+        "addressLocality": "Rowley Regis",
+        "addressRegion": "West Midlands"
+      },
+      "sameAs": [
+        "https://www.facebook.com/YourFacebookPage",
+        "https://twitter.com/YourTwitterHandle"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="dist/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <style>
+        :root {
+            --gold: #C5A367;
+            --forest: #132419;
+            --cream: #F9F7F2;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--forest);
+            color: #ffffff;
+        }
+
+        a[href^="tel"] {
+            color: #C5A367;
+            text-decoration: none;
+        }
+
+        #menu-btn div {
+            display: block !important;
+            width: 24px !important;
+            height: 2px !important;
+            background-color: #C5A367 !important;
+            opacity: 1 !important;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* HEADER NAVIGATION */
+        .nav-blur {
+            background: rgba(19, 36, 25, 0.98);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-blur.scrolled {
+            background-color: #132419 !important;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(197, 163, 103, 0.2);
+        }
+
+        /* MOBILE RESPONSIVE LAYOUT */
+        @media (max-width: 768px) {
+            section {
+                padding-top: 7rem !important;
+                padding-bottom: 5rem !important;
+            }
+
+            h1 {
+                font-size: 2.8rem !important;
+                line-height: 1.1;
+            }
+
+            h2 {
+                font-size: 2.2rem !important;
+            }
+
+            h3 {
+                font-size: 1.6rem !important;
+            }
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            #hole-nav-container {
+                gap: 10px;
+                padding-bottom: 10px;
+            }
+
+            nav {
+                background-color: #132419 !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+            }
+
+            #nav-links {
+                background-color: #132419 !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        }
+
+        /* NAVIGATION BUTTONS & CARDS OVERRIDES */
+            {
+            background-color: #132419 !important;
+            border: 1px solid rgba(197, 163, 103, 0.25) !important;
+            transition: all 0.25s ease-in-out !important;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+        }
+
+        .hole-card span:first-child,
+        #hole-nav-container button span:first-child,
+        .hole-card p:first-child,
+        #hole-nav-container button p:first-child {
+            color: #C5A367 !important;
+            font-weight: 700 !important;
+            margin-right: 8px !important;
+        }
+
+        .hole-card span:last-child,
+        #hole-nav-container button span:last-child,
+        .hole-card p:last-child,
+        #hole-nav-container button p:last-child {
+            color: #ffffff !important;
+            font-weight: 500 !important;
+        }
+
+        .hole-card:hover,
+        #hole-nav-container button:hover {
+            border-color: #C5A367 !important;
+            transform: translateX(4px) !important;
+            box-shadow: 0 4px 12px rgba(197, 163, 103, 0.1) !important;
+        }
+
+        /* ACTIVE STATE PULSE EFFECT */
+        .hole-card.bg-\[\#132419\] {
+            animation: goldPulse 3s infinite ease-in-out;
+        }
+
+        #hole-nav-container button.bg-\[\#132419\] span:last-child,
+        #hole-nav-container button.bg-\[\#132419\] p:last-child {
+            color: #ffffff !important;
+        }
+
+        #hole-nav-container button.bg-\[\#132419\] {
+            border-color: #C5A367 !important;
+        }
+
+        @keyframes goldPulse {
+            0% {
+                box-shadow: 0 0 0 1px rgba(197, 163, 103, 0.4), 0 8px 25px rgba(197, 163, 103, 0.25), 0 0 15px rgba(197, 163, 103, 0.25);
+            }
+
+            50% {
+                box-shadow: 0 0 0 1px rgba(197, 163, 103, 0.5), 0 10px 30px rgba(197, 163, 103, 0.35), 0 0 35px rgba(197, 163, 103, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 0 0 1px rgba(197, 163, 103, 0.4), 0 8px 25px rgba(197, 163, 103, 0.25), 0 0 15px rgba(197, 163, 103, 0.25);
+            }
+        }
+
+        /* COMPONENT BOUNDARY CONTROLS */
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            box-sizing: border-box;
+            min-width: 0;
+        }
+
+        section,
+        div,
+        main,
+        nav,
+        footer {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden !important;
+            }
+
+            * {
+                max-width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#132419] text-white antialiased m-0 p-0">
+    <div
+        class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+        <div id="live-clock">Loading...</div>
+        <div class="flex gap-6">
+            <span id="weather">Dudley: 14°C</span>
+            <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
+        </div>
+    </div>
+
+    <nav
+        class="sticky top-0 w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
+        <a href="#" class="flex flex-col relative z-[100]">
+            <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
+            <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+        </a>
+
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[100] p-2 focus:outline-none">
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+            <div class="w-6 h-0.5 bg-[#C5A367]"></div>
+        </button>
+
+        <div id="nav-links"
+            class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
+            <a href="index.html" class="hover:text-gold transition">Home</a>
+            <a href="course.html" class="hover:text-gold transition">Course Guide</a>
+            <a href="amen-corner.html" class="hover:text-gold transition">Amen Corner</a>
+            <a href="history.html" class="hover:text-gold transition">History</a>
+            <a href="hospitality.html" class="hover:text-gold transition">Hospitality & Events</a>
+            <a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
+            <a href="visitors.html" class="hover:text-gold transition">Visitors</a>
+            <a href="membership.html" class="hover:text-gold transition">Membership</a>
+
+            <div class="flex flex-col gap-4 mt-4 md:hidden">
+                <a href="https://www.dudleygolfclub.com/login.php" target="_blank"
+                    class="border border-[#C5A367] text-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    iGolf App
+                </a>
+                <a href="members-login.html"
+                    class="border border-[#C5A367] text-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+
+                    Members Portal
+
+                </a>
+            </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4 relative z-[200]">
+            <a href="https://www.dudleygolfclub.com/login.php" target="_blank"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                iGolf App
+            </a>
+            <a href="members-login.html"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                Members Portal
+            </a>
+        </div>
+    </nav>
+    <!-- HERITAGE  -->
+
+    <section id="heritage" class="bg-[#0f1a13] py-24 px-4 border-t border-[#C5A367]/10 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- IMAGE SIDE -->
+                <div class="relative group">
+
+                    <!-- Background glow -->
+                    <div class="absolute -top-10 -left-10 w-72 h-72 bg-[#C5A367]/10 rounded-full blur-3xl"></div>
+
+                    <!-- 1893 background text -->
+                    <div class="absolute -bottom-8 -right-4 text-[120px] lg:text-[160px]
+                            font-bold text-white/5 leading-none select-none serif z-0">
+                        1893
+                    </div>
+
+                    <!-- Heritage image -->
+                    <div class="relative z-10 bg-white/5 backdrop-blur-sm p-2
+                            shadow-2xl border border-white/10 rotate-1
+                            transition duration-700
+                            group-hover:rotate-0">
+
+                        <img src="heritage-dudley.webp" alt="Historic view of Dudley Golf Club" class="w-full h-auto grayscale
+                            group-hover:grayscale-0
+                            group-hover:scale-[1.02]
+                            transition duration-700" width="800" height="530" loading="lazy">
+
+                    </div>
+
+                </div>
+
+                <!-- TEXT SIDE -->
+                <div class="space-y-8">
+
+                    <!-- Small label -->
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-[1px] bg-[#C5A367]"></div>
+
+                        <span class="uppercase tracking-[0.3em]
+                                text-[#C5A367]
+                                text-xs font-semibold">
+                            Since 1893
+                        </span>
+
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="serif text-5xl lg:text-6xl text-white leading-tight">
+                        Our Heritage
+                    </h2>
+
+                    <!-- Signature line -->
+                    <p class="italic text-[#C5A367] text-lg serif">
+                        The Black Country’s historic hilltop course
+                    </p>
+
+                    <!-- Paragraphs -->
+                    <div class="space-y-6">
+
+                        <p class="text-white/70 leading-relaxed text-lg">
+                            Founded in 1893, Dudley Golf Club has stood at the heart
+                            of Black Country golf for over a century.
+                        </p>
+
+                        <p class="text-white/60 leading-relaxed text-lg">
+                            Built on tradition, shaped by generations of golfers,
+                            and influenced by the golden age of course design,
+                            the club continues to offer a timeless golfing experience.
+                        </p>
+
+                        <p class="text-white/60 leading-relaxed text-lg">
+                            Designed during the era of legendary course architect
+                            <span class="text-[#C5A367] font-semibold">
+                                Old Tom Morris
+                            </span>,
+                            the course takes full advantage of the dramatic volcanic ridge,
+                            creating a natural and enduring test of golf.
+                        </p>
+
+                    </div>
+
+                    <!-- INFO STRIP -->
+                    <div class="grid grid-cols-2 gap-8
+                            border-y border-[#C5A367]/20
+                            py-8 text-white/90">
+
+                        <!-- Box 1 -->
+                        <div>
+
+                            <h4 class="text-[10px]
+                                uppercase tracking-widest
+                                font-bold text-[#C5A367]
+                                mb-3">
+                                Established
+                            </h4>
+
+                            <p class="text-sm leading-relaxed text-white/70">
+                                Proudly welcoming golfers since 1893.
+                            </p>
+
+                        </div>
+
+                        <!-- Box 2 -->
+                        <div>
+
+                            <h4 class="text-[10px]
+                                uppercase tracking-widest
+                                font-bold text-[#C5A367]
+                                mb-3">
+                                The Landscape
+                            </h4>
+
+                            <p class="text-sm leading-relaxed text-white/70">
+                                Elevated volcanic terrain with panoramic Black Country views.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        (() => {
+            "use strict";
+
+            /* =========================
+               SAFE GUARDS
+            ========================= */
+
+            if (window.__SITE_INIT__) {
+                console.warn("Script already initialised - blocking duplicate run.");
+                return;
+            }
+            window.__SITE_INIT__ = true;
+
+            /* =
+            /* =========================
+               CLOCK SYSTEM
+            ========================= */
+
+            function updateCourseStatus() {
+                const el = document.getElementById("course-status");
+                if (!el) return;
+
+                const now = new Date();
+                const minutes = now.getHours() * 60 + now.getMinutes();
+
+                const open = minutes >= 480 && minutes <= 1072;
+
+                el.textContent = open ? "Open" : "Closed";
+                el.className = open
+                    ? "text-green-400 font-bold uppercase"
+                    : "text-red-500 font-bold uppercase";
+            }
+
+            function updateClock() {
+                const clock = document.getElementById("live-clock");
+                const year = document.getElementById("year");
+
+                const now = new Date();
+
+                if (clock) {
+                    clock.textContent = now.toLocaleString("en-GB", {
+                        weekday: "short",
+                        day: "numeric",
+                        month: "short",
+                        hour: "2-digit",
+                        minute: "2-digit"
+                    });
+                }
+
+                if (year) year.textContent = now.getFullYear();
+
+                updateCourseStatus();
+            }
+
+
+
+            /* =========================
+               MOBILE MENU
+            ========================= */
+
+
+            function initMenu() {
+                const btn = document.getElementById("menu-btn");
+                const nav = document.getElementById("nav-links");
+
+                if (!btn || !nav) return;
+
+                function closeMenu() {
+                    nav.classList.add("translate-x-full");
+                    nav.classList.remove("translate-x-0");
+                    document.body.style.overflow = "auto";
+                }
+
+                function openMenu() {
+                    nav.classList.remove("translate-x-full");
+                    nav.classList.add("translate-x-0");
+                    document.body.style.overflow = "hidden";
+                }
+
+                btn.addEventListener("click", e => {
+                    e.stopPropagation();
+
+                    nav.classList.contains("translate-x-full")
+                        ? openMenu()
+                        : closeMenu();
+                });
+
+                document.querySelectorAll("#nav-links a").forEach(link => {
+                    link.addEventListener("click", closeMenu);
+                });
+
+                document.addEventListener("click", e => {
+                    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+
+                initMenu();
+
+                updateClock();
+
+                setInterval(updateClock, 1000);
+
+            });
+
+            /* =========================
+               GLOBAL SAFETY NET
+            ========================= */
+
+            window.addEventListener("error", e => {
+                console.log("JS Error caught:", e.message);
+            });
+
+            // This closes the (() => { that is at the very top of your script
+        })(); 
+    </script>
+
+
+
+
+
+    <!-- MASTER FOOTER -->
+    <footer class="bg-[#0D1712] text-white px-8 py-20 border-t border-[#C5A367]/20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+            <div>
+
+
+                <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
+
+                <p class="text-white/70 text-sm leading-relaxed mb-6">
+                    Turners Hill, Rowley Regis,<br>
+                    West Midlands, B65 9DP
+                </p>
+
+                <p class="text-white/70 text-sm mb-2">
+                    Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
+                </p>
+
+                <p class="text-white/70 text-sm">
+                    Email: <a href="mailto:secretary@dudleygolfclub.com"
+                        class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore The Club</h4>
+                <div class="flex flex-col gap-3 text-sm text-white/70">
+                    <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
+                    <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
+                    <a href="history.html" class="hover:text-[#C5A367] transition">History</a>
+                    <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
+                    <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
+                    <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
+                    <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
+                    <a href="meet-the-team.html" class="hover:text-[#C5A367] transition">
+                        Meet The Team
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
+                <div class="flex flex-col gap-3 text-sm text-white/70">
+                    <a href="https://www.dudleygolfclub.com/visitorbooking/"
+                        class="hover:text-[#C5A367] transition">Book a Tee Time</a>
+                    <a href="https://www.dudleygolfclub.com/login.php" class="hover:text-[#C5A367] transition">iGolf
+                        App</a>
+                    <a href="members-login.html" class="hover:text-[#C5A367] transition">Members Portal</a>
+                    <a href="https://www.facebook.com/DudleyGolfClub"
+                        class="hover:text-[#C5A367] transition">Facebook</a>
+                    <a href="https://www.instagram.com/dudleygolfclub"
+                        class="hover:text-[#C5A367] transition">Instagram</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
+                <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
+            <p>© 2026 Dudley Golf Club</p>
+            <p>Established 1893 • Rowley Regis</p>
+            <p class="text-white/30">
+                Website designed & maintained by Mark Williams
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT SCRIPTS WRAP-UP (Always placed at the very end of body) -->
+    <script>
+        // 1. Global Safety Net
+        window.addEventListener("error", e => {
+            console.log("JS Error caught:", e.message);
+        });
+    </script>
+
+
+    <script>
+        async function updateWeather() {
+            const weatherEl = document.getElementById("weather");
+            if (!weatherEl) return;
+
+            try {
+                const response = await fetch("/api/weather");
+                if (!response.ok) throw new Error("Weather API failed");
+
+                const data = await response.json();
+                const temp = Math.round(data.temp);
+
+                weatherEl.textContent = `Dudley: ${temp}°C`;
+            } catch (error) {
+                console.error("Could not fetch weather:", error);
+                weatherEl.textContent = "Dudley: --°C";
+            }
+        }
+
+        updateWeather();
+    </script>
+    <!-- RETURN HOME BUTTON -->
+    <a href="index.html" aria-label="Return Home" style="
+position: fixed;
+bottom: 24px;
+right: 24px;
+width: 50px;
+height: 50px;
+background-color: #132419;
+color: #C5A367;
+border: 2px solid #C5A367;
+border-radius: 4px;
+z-index: 99999;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+font-size: 20px;
+font-weight: bold;
+">
+        ⌂
+    </a>
+
+</body>
+
+</html>
