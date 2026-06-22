@@ -2,122 +2,93 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Meet The Team | Dudley Golf Club</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="dist/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
 
     <style>
         :root {
-
             --forest: #132419;
-
             --gold: #C5A367;
-
             --cream: #F9F7F2;
-
         }
 
         body {
-
             font-family: 'Outfit', sans-serif;
-
             background: #132419;
-
         }
 
         .serif {
-
             font-family: 'Cormorant Garamond', serif;
-
         }
     </style>
-
 </head>
 
 <body>
 
     <section class="bg-[#F9F7F2] py-24 px-4">
-
         <div class="max-w-7xl mx-auto">
 
             <div class="text-center mb-16">
-
                 <p class="text-[#C5A367] uppercase tracking-[0.45em] text-[10px] mb-5">
-
                     Dudley Golf Club
-
                 </p>
 
                 <h1 class="serif text-5xl md:text-7xl text-[#132419] italic mb-6">
-
                     Meet The Team
-
                 </h1>
 
                 <p class="text-[#132419]/70 max-w-3xl mx-auto">
-
                     Meet the people who help run Dudley Golf Club both on and off the course.
-
                 </p>
-
             </div>
 
             <div id="team-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="text-center text-[#132419]/60">
-
+                <p class="text-center text-[#132419]/60 col-span-full">
                     Loading team...
-
-                </div>
-
+                </p>
             </div>
 
         </div>
-
     </section>
+
     <script>
         async function loadTeam() {
             const container = document.getElementById("team-container");
             if (!container) return;
 
-            container.innerHTML = `
-            <p class="text-center text-[#132419]/60 col-span-full">
-                Loading team...
-            </p>
-        `;
-
             try {
                 const query = encodeURIComponent(`
-                *[
-                    _type == "staff"
-                ]
-                | order(displayOrder asc) {
-                    displayOrder,
-                    name,
-                    role,
-                    committeeRole,
-                    department,
-                    bio,
-                    email,
-                    phone,
-                    showOnWebsite
-                }
-            `);
+                    *[
+                        _type == "staff"
+                        && showOnWebsite != false
+                    ]
+                    | order(displayOrder asc) {
+                        displayOrder,
+                        name,
+                        role,
+                        committeeRole,
+                        department,
+                        bio,
+                        email,
+                        phone,
+                        showOnWebsite,
+                        photo{
+                            asset->{
+                                url
+                            }
+                        }
+                    }
+                `);
 
                 const response = await fetch(
                     `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`
@@ -131,72 +102,84 @@
                     throw new Error(result.error.description || "Sanity query error");
                 }
 
-                const staff = (result.result || []).filter(person => person.showOnWebsite !== false);
+                const staff = result.result || [];
 
                 if (!staff.length) {
                     container.innerHTML = `
-                    <p class="text-center text-[#132419]/60 col-span-full">
-                        No team members found.
-                    </p>
-                `;
+                        <p class="text-center text-[#132419]/60 col-span-full">
+                            No team members found.
+                        </p>
+                    `;
                     return;
                 }
 
-                container.innerHTML = staff.map(person => `
-                <article class="bg-white border border-[#C5A367]/20 shadow-xl p-8">
-                    <p class="text-[10px] uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-4">
-                        ${person.department || "Team"}
-                    </p>
+                container.innerHTML = staff.map(person => {
+                    const photoUrl = person.photo?.asset?.url || "images/members/placeholder.webp";
 
-                    <h2 class="serif text-3xl text-[#132419] italic mb-2">
-                        ${person.name || ""}
-                    </h2>
+                    return `
+                        <article class="bg-white border border-[#C5A367]/20 shadow-xl overflow-hidden">
 
-                    <p class="text-[#132419]/70 font-semibold mb-4">
-                        ${person.committeeRole || person.role || ""}
-                    </p>
+                            <div class="h-80 bg-[#132419]/10">
+                                <img src="${photoUrl}"
+                                     alt="${person.name || 'Dudley Golf Club team member'}"
+                                     class="w-full h-full object-cover object-center">
+                            </div>
 
-                    ${person.bio ? `
-                        <p class="text-[#132419]/65 text-sm leading-relaxed mb-6">
-                            ${person.bio}
-                        </p>
-                    ` : ""}
+                            <div class="p-8">
+                                <p class="text-[10px] uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-4">
+                                    ${person.department || "Team"}
+                                </p>
 
-                    ${person.email ? `
-                        <p class="text-sm text-[#132419]/70">
-                            Email:
-                            <a href="mailto:${person.email}" class="text-[#C5A367] hover:underline">
-                                ${person.email}
-                            </a>
-                        </p>
-                    ` : ""}
+                                <h2 class="serif text-3xl text-[#132419] italic mb-2">
+                                    ${person.name || ""}
+                                </h2>
 
-                    ${person.phone ? `
-                        <p class="text-sm text-[#132419]/70 mt-1">
-                            Tel:
-                            <a href="tel:${person.phone}" class="text-[#C5A367] hover:underline">
-                                ${person.phone}
-                            </a>
-                        </p>
-                    ` : ""}
-                </article>
-            `).join("");
+                                <p class="text-[#132419]/70 font-semibold mb-4">
+                                    ${person.committeeRole || person.role || ""}
+                                </p>
+
+                                ${person.bio ? `
+                                    <p class="text-[#132419]/65 text-sm leading-relaxed mb-6">
+                                        ${person.bio}
+                                    </p>
+                                ` : ""}
+
+                                ${person.email ? `
+                                    <p class="text-sm text-[#132419]/70">
+                                        Email:
+                                        <a href="mailto:${person.email}" class="text-[#C5A367] hover:underline">
+                                            ${person.email}
+                                        </a>
+                                    </p>
+                                ` : ""}
+
+                                ${person.phone ? `
+                                    <p class="text-sm text-[#132419]/70 mt-1">
+                                        Tel:
+                                        <a href="tel:${person.phone}" class="text-[#C5A367] hover:underline">
+                                            ${person.phone}
+                                        </a>
+                                    </p>
+                                ` : ""}
+                            </div>
+
+                        </article>
+                    `;
+                }).join("");
 
             } catch (error) {
                 console.log("Team loading error:", error);
 
                 container.innerHTML = `
-                <p class="text-center text-red-700 col-span-full">
-                    Could not load team members.
-                </p>
-            `;
+                    <p class="text-center text-red-700 col-span-full">
+                        Could not load team members.
+                    </p>
+                `;
             }
         }
 
         loadTeam();
     </script>
-
-    <!-- RETURN HOME BUTTON -->
 
     <a href="index.html" aria-label="Return Home" class="fixed bottom-6 right-6 z-50
           flex items-center gap-2
@@ -211,10 +194,9 @@
           hover:bg-[#C5A367]
           hover:text-[#132419]
           transition-all duration-300">
-
         ← Home
-
     </a>
+
 </body>
 
 </html>
