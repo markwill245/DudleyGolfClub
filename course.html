@@ -1393,30 +1393,61 @@
                STARTUP (ONE ENTRY POINT)
             ========================= */
 
-            document.addEventListener("DOMContentLoaded", () => {
+            async function loadCourseImages() {
+                try {
+                    const response = await fetch("course-images.json?v=1");
+                    if (!response.ok) throw new Error("Could not load course-images.json");
+
+                    const imageData = await response.json();
+
+                    courseData.forEach(hole => {
+                        if (imageData[String(hole.number)] && imageData[String(hole.number)].length) {
+                            hole.images = imageData[String(hole.number)];
+                        }
+                    });
+
+                    console.log("Course images loaded from course-images.json");
+                } catch (error) {
+                    console.warn("Course images JSON skipped/failed:", error);
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", async () => {
                 buildNav();
                 initMenu();
+
+                await loadCourseImages();
+
                 setHole(1);
 
                 updateClock();
                 setInterval(updateClock, 1000);
 
-                // Load Sanity quietly in the background so the page/images do not wait.
                 loadCourseGuideFromSanity().then(() => {
                     buildNav();
                     setHole(currentHoleNumber);
                 });
             });
 
-            /* =========================
-               GLOBAL SAFETY NET
-            ========================= */
+            updateClock();
+            setInterval(updateClock, 1000);
 
-            window.addEventListener("error", e => {
-                console.log("JS Error caught:", e.message);
+            // Load Sanity quietly in the background so the page/images do not wait.
+            loadCourseGuideFromSanity().then(() => {
+                buildNav();
+                setHole(currentHoleNumber);
             });
+        });
 
-        })();
+        /* =========================
+           GLOBAL SAFETY NET
+        ========================= */
+
+        window.addEventListener("error", e => {
+            console.log("JS Error caught:", e.message);
+        });
+
+        }) ();
     </script>
 
 
