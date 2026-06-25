@@ -201,40 +201,74 @@
 
     <!-- NAV -->
     <nav
-        class="relative w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10">
-        <a href="index.html" class="flex flex-col relative z-[100]">
-            <span class="serif text-2xl tracking-widest leading-none">DUDLEY</span>
-            <span class="text-[8px] tracking-[0.4em] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+        class="w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10 relative">
+
+        <!-- LOGO -->
+        <a href="index.html" class="flex flex-col z-[100]">
+            <span class="serif text-2xl">DUDLEY</span>
+            <span class="text-[8px] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
         </a>
 
-        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-[200] p-2 focus:outline-none">
+        <!-- DESKTOP MENU -->
+        <div class="hidden md:flex justify-center gap-6 text-[12px] uppercase tracking-widest">
+            <a href="index.html">Home</a>
+            <a href="course.html">Course Guide</a>
+            <a href="amen-corner.html">Amen Corner</a>
+            <a href="history.html">History</a>
+            <a href="hospitality.html">Hospitality & Events</a>
+            <a href="pro-shop.html">Pro Shop</a>
+            <a href="visitors.html">Visitors</a>
+            <a href="membership.html">Membership</a>
+        </div>
+
+        <!-- DESKTOP RIGHT BUTTONS -->
+        <div class="hidden md:flex items-center gap-4 relative z-[200]">
+
+            <a href="members-login.html" target="_blank"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                Members iGolf
+            </a>
+
+            <a href="members-area.html"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                Members Portal
+            </a>
+
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button id="menu-btn" class="md:hidden z-[120] flex flex-col gap-1">
             <div></div>
             <div></div>
             <div></div>
         </button>
 
+        <!-- MOBILE SLIDER MENU -->
         <div id="nav-links"
-            class="fixed inset-0 z-[150] flex flex-col items-center justify-center gap-8 bg-[#132419] translate-x-full transition-transform duration-500 md:static md:flex-row md:justify-end md:gap-6 md:w-auto md:h-auto md:translate-x-0 md:bg-transparent">
-            <a href="index.html" class="hover:text-gold transition">Home</a>
-            <a href="course.html" class="hover:text-gold transition">Course Guide</a>
-            <a href="amen-corner.html" class="hover:text-gold transition">Amen Corner</a>
-            <a href="history.html" class="hover:text-gold transition">History</a>
-            <a href="hospitality.html" class="hover:text-gold transition">Hospitality & Events</a>
-            <a href="pro-shop.html" class="hover:text-gold transition">Pro Shop</a>
-            <a href="visitors.html" class="hover:text-gold transition">Visitors</a>
-            <a href="membership.html" class="hover:text-gold transition">Membership</a>
+            class="fixed top-0 right-0 h-screen w-[80%] max-w-[320px] bg-[#132419] z-[110] translate-x-full transition-transform duration-300 flex flex-col pt-28 px-8 gap-6 text-[12px] uppercase tracking-widest border-l border-[#C5A367]/30 md:hidden">
+
+            <a href="index.html">Home</a>
+            <a href="course.html">Course Guide</a>
+            <a href="amen-corner.html">Amen Corner</a>
+            <a href="history.html">History</a>
+            <a href="hospitality.html">Hospitality & Events</a>
+            <a href="pro-shop.html">Pro Shop</a>
+            <a href="visitors.html">Visitors</a>
+            <a href="membership.html">Membership</a>
+
+            <div class="pt-6 border-t border-[#C5A367]/20 flex flex-col gap-4">
+                <a href="members-login.html" target="_blank"
+                    class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-center text-[10px] font-bold">
+                    iGolf App
+                </a>
+
+                <a href="members-area.html"
+                    class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    Members Portal
+                </a>
+            </div>
         </div>
 
-        <div class="hidden md:flex items-center gap-4 relative z-[200]">
-            <a href="members-login.html" target="_blank"
-                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
-                Member iGolf
-            </a>
-            <a href="members-area.html"
-                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
-                Members Portal
-            </a>
-        </div>
     </nav>
 
     <!-- PRO SHOP -->
