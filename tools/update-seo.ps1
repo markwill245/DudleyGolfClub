@@ -1,6 +1,6 @@
 # Dudley Golf Club
-# Updates SEO tags from tools/seo-data.csv
-# Safe: only updates SEO tags, not the whole head
+# Updates or inserts SEO tags from tools/seo-data.csv
+# Safe: only updates SEO block, not the whole head
 
 $projectRoot = Split-Path $PSScriptRoot -Parent
 $seoFile = Join-Path $PSScriptRoot "seo-data.csv"
@@ -25,8 +25,11 @@ foreach ($row in $seoRows) {
     $title = $row.title
     $description = $row.description
     $keywords = $row.keywords
+
     $canonical = "$baseUrl/$($row.file)"
-    if ($row.file -eq "index.html") { $canonical = "$baseUrl/" }
+    if ($row.file -eq "index.html") {
+        $canonical = "$baseUrl/"
+    }
 
     $seoBlock = @"
 <!-- MASTER SEO TEMPLATE -->
@@ -53,15 +56,32 @@ foreach ($row in $seoRows) {
 "@
 
     if ($content -match '(?s)<!-- MASTER SEO TEMPLATE -->.*?<!-- END MASTER SEO TEMPLATE -->') {
-        $content = [regex]::Replace($content, '(?s)<!-- MASTER SEO TEMPLATE -->.*?<!-- END MASTER SEO TEMPLATE -->', $seoBlock, 1)
-    }
-    else {
         $content = [regex]::Replace(
             $content,
-            '(?s)<title>.*?</title>(\s*<!-- Search Engine Tags -->.*?)(?=<!-- Open Graph|<link|<script|<style)',
+            '(?s)<!-- MASTER SEO TEMPLATE -->.*?<!-- END MASTER SEO TEMPLATE -->',
             $seoBlock,
             1
         )
+    }
+    elseif ($content -match '(?s)<title>.*?</title>') {
+        $content = [regex]::Replace(
+            $content,
+            '(?s)<title>.*?</title>',
+            $seoBlock,
+            1
+        )
+    }
+    elseif ($content -match '<meta name="viewport"[^>]*>') {
+        $content = [regex]::Replace(
+            $content,
+            '<meta name="viewport"[^>]*>',
+            "`$0`r`n`r`n$seoBlock",
+            1
+        )
+    }
+    else {
+        Write-Host "COULD NOT INSERT SEO: $($row.file)" -ForegroundColor Red
+        continue
     }
 
     if ($content -ne $original) {
