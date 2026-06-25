@@ -130,9 +130,17 @@
                 members' features.
             </p>
 
-            <a href="members-login.html" class="gold-btn">
-                Proceed to Secure Login
-            </a>
+            <input id="member-password" type="password" placeholder="Enter Members Password"
+                class="w-full mb-4 px-4 py-3 rounded bg-white text-[#132419] text-center outline-none"
+                onkeypress="if(event.key==='Enter'){checkMemberPassword();}">
+
+            <button onclick="checkMemberPassword()" class="gold-btn border-0 cursor-pointer">
+                Proceed to Members Area
+            </button>
+
+            <p id="password-error" class="text-sm text-red-300 mt-4 hidden">
+                Incorrect password. Please try again.
+            </p>
 
             <p class="text-xs text-white/40 mt-6 flex items-center justify-center gap-1">
                 🔒 Secure Portal
@@ -228,6 +236,21 @@ font-weight: bold;
 ">
         ⌂
     </a>
+    <script>
+        function checkMemberPassword() {
+
+            const password = document.getElementById("member-password").value.trim();
+
+            if (password === "DGC1893") {
+                window.location.href = "members-area.html";
+                return;
+            }
+
+            document.getElementById("password-error").classList.remove("hidden");
+            document.getElementById("member-password").value = "";
+            document.getElementById("member-password").focus();
+        }
+    </script>
 
 </body>
 
