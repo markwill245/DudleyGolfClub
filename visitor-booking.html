@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -32,7 +35,7 @@
     .hero {
       min-height: 100vh;
       background:
-        linear-gradient(rgba(19,36,25,0.72), rgba(19,36,25,0.95)),
+        linear-gradient(rgba(19, 36, 25, 0.45), rgba(19, 36, 25, 0.75)),
         url("images/Course.webp");
       background-size: cover;
       background-position: center;
@@ -41,17 +44,20 @@
     .gold-btn {
       background: var(--gold);
       color: var(--forest);
-      padding: 18px 34px;
+      padding: 22px 42px;
       display: inline-block;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       letter-spacing: .25em;
       text-transform: uppercase;
-      transition: .3s;
+      border-radius: 6px;
+      transition: all .3s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
     }
 
     .gold-btn:hover {
       background: white;
+      transform: translateY(-2px);
     }
 
     .home-btn {
@@ -68,7 +74,7 @@
       justify-content: center;
       font-weight: 700;
       text-decoration: none;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
       z-index: 50;
     }
   </style>
@@ -123,4 +129,5 @@
   <a href="index.html" class="home-btn" aria-label="Return Home">⌂</a>
 
 </body>
+
 </html>
