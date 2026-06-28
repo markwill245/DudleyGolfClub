@@ -45,13 +45,19 @@
             font-family: 'Outfit', sans-serif;
             background-color: var(--cream);
             color: var(--forest);
-            padding: 40px 20px;
+            padding: 0;
             margin: 0;
         }
 
         .container {
             max-width: 800px;
             margin: 40px auto 0;
+        }
+
+        #menu-btn div {
+            width: 26px;
+            height: 2px;
+            background: #C5A367;
         }
 
         h1 {
@@ -131,47 +137,61 @@
 </head>
 
 <body>
-    <!-- LOGO -->
-    <a href="index.html" class="flex flex-col z-[100]">
-        <span class="serif text-2xl">DUDLEY</span>
-        <span class="text-[8px] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
-    </a>
+    <!-- TOP STATUS BAR -->
+    <div
+        class="w-full bg-[#07140d] text-white px-8 py-2 flex justify-between items-center text-[11px] uppercase tracking-[0.25em]">
+        <div id="live-clock">MON 29 JUN, 00:03</div>
 
-    <!-- DESKTOP MENU -->
-    <div class="hidden md:flex justify-center gap-6 text-[12px] uppercase tracking-widest">
-        <a href="index.html">Home</a>
-        <a href="course.html">Course Guide</a>
-        <a href="amen-corner.html">Amen Corner</a>
-        <a href="history.html">History</a>
-        <a href="hospitality.html">Hospitality & Events</a>
-        <a href="pro-shop.html">Pro Shop</a>
-        <a href="visitors.html">Visitors</a>
-        <a href="membership.html">Membership</a>
+        <div class="flex gap-8 items-center">
+            <span>DUDLEY: 13°C</span>
+            <span>COURSE STATUS: <span class="text-red-500 font-bold">CLOSED</span></span>
+        </div>
     </div>
 
-    <!-- DESKTOP RIGHT BUTTONS -->
-    <div class="hidden md:flex items-center gap-4 relative z-[200]">
+    <!-- MAIN NAVIGATION -->
+    <nav
+        class="w-full bg-[#132419] text-white px-8 py-5 flex justify-between items-center border-b border-[#C5A367]/20">
 
-        <a href="members-login.html" target="_blank"
-            class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
-            Members iGolf
+        <!-- LOGO -->
+        <a href="index.html" class="flex flex-col leading-none">
+            <span class="serif text-2xl text-white">DUDLEY</span>
+            <span class="text-[8px] uppercase text-[#C5A367] mt-1">GOLF CLUB EST. 1893</span>
         </a>
 
-        <a href="login.html"
-            class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
-            Members Portal
-        </a>
+        <!-- DESKTOP MENU -->
+        <div class="hidden md:flex justify-center gap-7 text-[12px] uppercase tracking-widest font-bold">
+            <a href="index.html" class="hover:text-[#C5A367] transition">Home</a>
+            <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
+            <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
+            <a href="history.html" class="hover:text-[#C5A367] transition">History</a>
+            <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
+            <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
+            <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
+            <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
+        </div>
 
-    </div>
+        <!-- RIGHT BUTTONS -->
+        <div class="hidden md:flex items-center gap-4">
+            <a href="members-login.html" target="_blank"
+                class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+                Members iGolf
+            </a>
+
+            <a href="login.html"
+                class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+                Members Portal
+            </a>
+        </div>
 
 
-    <!-- MOBILE BUTTON -->
-    <button id="menu-btn" class="md:hidden z-[120] flex flex-col gap-1">
-        <div></div>
-        <div></div>
-        <div></div>
-    </button>
 
+        <!-- MOBILE BUTTON -->
+        <button id="menu-btn" class="md:hidden z-[120] flex flex-col gap-1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </nav>
     <!-- MOBILE SLIDER MENU -->
     <div id="nav-links"
         class="fixed top-0 right-0 h-screen w-[80%] max-w-[320px] bg-[#132419] z-[110] translate-x-full transition-transform duration-300 flex flex-col pt-28 px-8 gap-6 text-[12px] uppercase tracking-widest border-l border-[#C5A367]/30 md:hidden">
@@ -198,7 +218,7 @@
         </div>
     </div>
 
-    </nav>
+
 
     <div class="container">
         <h1>Competition Winners</h1>
