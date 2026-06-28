@@ -133,6 +133,28 @@
                 text-align: left;
             }
         }
+
+        .main-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 700;
+        }
+
+        .main-menu a {
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 0.3s ease;
+        }
+
+        .main-menu a:hover {
+            color: #C5A367;
+        }
     </style>
 </head>
 
@@ -159,7 +181,7 @@
         </a>
 
         <!-- DESKTOP MENU -->
-        <div class="hidden md:flex justify-center gap-7 text-[12px] uppercase tracking-widest font-bold">
+        <div class="main-menu hidden md:flex">
             <a href="index.html" class="hover:text-[#C5A367] transition">Home</a>
             <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
             <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
