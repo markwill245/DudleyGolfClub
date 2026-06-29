@@ -167,10 +167,7 @@ font-weight: bold;
 
             try {
                 const query = encodeURIComponent(`
-    *[
-        _type == "competitionSchedule"
-    ]
-| order(eventDate asc)
+    *[_type == "competitionSchedule"] {
         date,
         eventDate,
         competitionName,
