@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- MASTER SEO TEMPLATE -->
-<title>Junior Competitions | Dudley Golf Club</title>
+    <title>Junior Competitions | Dudley Golf Club</title>
 
-<meta name="description" content="View upcoming junior competitions, fixtures and entry information at Dudley Golf Club.">
-<meta name="keywords" content="Dudley Golf Club junior competitions, junior golf fixtures">
-<meta name="author" content="Dudley Golf Club">
+    <meta name="description"
+        content="View upcoming junior competitions, fixtures and entry information at Dudley Golf Club.">
+    <meta name="keywords" content="Dudley Golf Club junior competitions, junior golf fixtures">
+    <meta name="author" content="Dudley Golf Club">
 
-<link rel="canonical" href="https://dudley-golf-club.vercel.app/junior-comps.html">
-<meta name="theme-color" content="#132419">
+    <link rel="canonical" href="https://dudley-golf-club.vercel.app/junior-comps.html">
+    <meta name="theme-color" content="#132419">
 
-<meta property="og:title" content="Junior Competitions | Dudley Golf Club">
-<meta property="og:description" content="View upcoming junior competitions, fixtures and entry information at Dudley Golf Club.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dudley-golf-club.vercel.app/junior-comps.html">
-<meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
+    <meta property="og:title" content="Junior Competitions | Dudley Golf Club">
+    <meta property="og:description"
+        content="View upcoming junior competitions, fixtures and entry information at Dudley Golf Club.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dudley-golf-club.vercel.app/junior-comps.html">
+    <meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Junior Competitions | Dudley Golf Club">
-<meta name="twitter:description" content="View upcoming junior competitions, fixtures and entry information at Dudley Golf Club.">
-<meta name="twitter:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
-<!-- END MASTER SEO TEMPLATE -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Junior Competitions | Dudley Golf Club">
+    <meta name="twitter:description"
+        content="View upcoming junior competitions, fixtures and entry information at Dudley Golf Club.">
+    <meta name="twitter:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
+    <!-- END MASTER SEO TEMPLATE -->
 
     <link rel="stylesheet" href="dist/output.css">
 
@@ -254,15 +257,15 @@ font-weight: bold;
         async function loadJuniorSettings() {
             try {
                 const query = encodeURIComponent(`
-                    *[_type == "juniorSettings"][0] {
-                        pageTitle,
-                        introText,
-                        footerNote,
-                        entryFormat,
-                        supportDonations,
-                        signOff
-                    }
-                `);
+                *[_type == "juniorSettings"][0] {
+                    pageTitle,
+                    introText,
+                    footerNote,
+                    entryFormat,
+                    supportDonations,
+                    signOff
+                }
+            `);
 
                 const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
 
@@ -304,38 +307,64 @@ font-weight: bold;
 
         async function loadJuniorCompetitions() {
             const body = document.getElementById("junior-competition-body");
+            if (!body) return;
 
             try {
                 const query = encodeURIComponent(`
-                    *[_type == "juniorCompetition"]
-                    | order(eventDate asc, displayOrder asc) {
-                        displayDate,
-                        eventName,
-                        startTime,
-                        igolfLink,
-                        notes
-                    }
-                `);
+                *[_type == "juniorCompetition"] {
+                    displayDate,
+                    eventDate,
+                    eventName,
+                    startTime,
+                    igolfLink,
+                    notes,
+                    displayOrder
+                }
+            `);
 
                 const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
 
                 const response = await fetch(url);
                 const data = await response.json();
-                const competitions = data.result || [];
+
+                const allCompetitions = data.result || [];
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+
+                const competitions = allCompetitions
+                    .filter(comp => {
+                        if (!comp.eventDate) return true;
+
+                        const eventDate = new Date(comp.eventDate);
+                        eventDate.setHours(0, 0, 0, 0);
+
+                        return eventDate >= today;
+                    })
+                    .sort((a, b) => {
+                        if (!a.eventDate && !b.eventDate) {
+                            return (a.displayOrder || 9999) - (b.displayOrder || 9999);
+                        }
+
+                        if (!a.eventDate) return 1;
+                        if (!b.eventDate) return -1;
+
+                        return new Date(a.eventDate) - new Date(b.eventDate);
+                    });
 
                 if (!competitions.length) {
                     body.innerHTML = `
-                        <tr>
-                            <td colspan="2" class="py-6 text-center text-white/60">
-                                No junior competitions available.
-                            </td>
-                        </tr>
-                    `;
+                    <tr>
+                        <td colspan="2" class="py-6 text-center text-white/60">
+                            No junior competitions available.
+                        </td>
+                    </tr>
+                `;
                     return;
                 }
 
                 body.innerHTML = competitions.map(comp => {
-                    const date = comp.displayDate || "";
+                    const date = comp.displayDate || comp.eventDate || "";
                     let eventText = comp.eventName || "";
 
                     if (
@@ -355,26 +384,26 @@ font-weight: bold;
                         : "";
 
                     return `
-                        <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
-                            <td class="py-3 px-2 align-top">${date}</td>
-                            <td class="py-3 px-2 align-top">
-                                ${eventHtml}
-                                ${notesHtml}
-                            </td>
-                        </tr>
-                    `;
+                    <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
+                        <td class="py-3 px-2 align-top">${date}</td>
+                        <td class="py-3 px-2 align-top">
+                            ${eventHtml}
+                            ${notesHtml}
+                        </td>
+                    </tr>
+                `;
                 }).join("");
 
             } catch (error) {
                 console.error("Junior competitions failed to load:", error);
 
                 body.innerHTML = `
-                    <tr>
-                        <td colspan="2" class="py-6 text-center text-red-400">
-                            Unable to load junior competitions.
-                        </td>
-                    </tr>
-                `;
+                <tr>
+                    <td colspan="2" class="py-6 text-center text-red-400">
+                        Unable to load junior competitions.
+                    </td>
+                </tr>
+            `;
             }
         }
 
@@ -385,7 +414,3 @@ font-weight: bold;
 </body>
 
 </html>
-
-
-
-
