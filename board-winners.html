@@ -92,31 +92,82 @@
 
         <h1>Board Winners</h1>
 
-        <div class="text-center mb-10">
-            <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs mb-3">
-                Dudley Golf Club
-            </p>
+        <div class="content-box">
 
-            <h1 class="font-serif text-4xl md:text-6xl text-white mb-4">
-                Honours Archive
-            </h1>
+            <div class="text-center mb-10">
+                <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs mb-3">
+                    Dudley Golf Club
+                </p>
 
-            <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
-                Search Dudley Golf Club board winners by year, board competition or winner name.
-            </p>
-        </div>
+                <h1 class="font-serif text-4xl md:text-6xl text-white mb-4">
+                    Honours Archive
+                </h1>
 
-        <div class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
-            <label for="honours-search" class="block text-[#C5A367] text-xs uppercase tracking-[0.2em] mb-3">
-                Search the archive
-            </label>
+                <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
+                    Search Dudley Golf Club board winners by year, board competition, winner or score.
+                </p>
+            </div>
 
-            <input id="honours-search" type="text" placeholder="Try 2020, Club Championship, or a winner's name..."
-                class="w-full bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded outline-none text-sm">
+            <div class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
 
-            <p class="text-white/50 text-xs mt-3">
-                Example: type “2020” to see all winners from that year, or “Club Championship” to see past champions.
-            </p>
+                <label for="honours-search" class="block text-[#C5A367] text-xs uppercase tracking-[0.2em] mb-3">
+                    Search the Archive
+                </label>
+
+                <input id="honours-search" type="text"
+                    placeholder="Try 2020, Club Championship, Scratch Cup or a winner's name..."
+                    class="w-full bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none border border-[#C5A367]/20 focus:border-[#C5A367]">
+
+                <p class="text-white/50 text-xs mt-3">
+                    Search by Year • Board Competition • Winner • Score
+                </p>
+
+            </div>
+
+            <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
+
+                <table class="w-full text-sm text-left border-collapse">
+
+                    <thead class="bg-[#132419] sticky top-0">
+
+                        <tr class="border-b border-[#C5A367]/30">
+
+                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
+                                Year
+                            </th>
+
+                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
+                                Board
+                            </th>
+
+                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
+                                Winner
+                            </th>
+
+                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
+                                Score
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="board-winners-body">
+
+                        <tr>
+
+                            <td colspan="4" class="py-8 text-center text-white/60">
+                                Loading Honours Archive...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
         </div>
     </div>
 
