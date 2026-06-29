@@ -242,6 +242,7 @@ font-weight: bold;
 
                 // Close Button
                 document.getElementById("close-search").addEventListener("click", () => {
+                    clearHonoursFilters();           // Clear all search criteria
                     searchPanel.style.display = "none";
                     document.getElementById("toggle-search").textContent = "Search the Archive";
                 });
