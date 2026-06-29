@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- MASTER SEO TEMPLATE -->
-<title>Board Winners | Dudley Golf Club</title>
+    <title>Board Winners | Dudley Golf Club</title>
 
-<meta name="description" content="View Dudley Golf Club honours board winners and historic competition achievements.">
-<meta name="keywords" content="Dudley Golf Club board winners, honours board, competition winners">
-<meta name="author" content="Dudley Golf Club">
+    <meta name="description"
+        content="View Dudley Golf Club honours board winners and historic competition achievements.">
+    <meta name="keywords" content="Dudley Golf Club board winners, honours board, competition winners">
+    <meta name="author" content="Dudley Golf Club">
 
-<link rel="canonical" href="https://dudley-golf-club.vercel.app/board-winners.html">
-<meta name="theme-color" content="#132419">
+    <link rel="canonical" href="https://dudley-golf-club.vercel.app/board-winners.html">
+    <meta name="theme-color" content="#132419">
 
-<meta property="og:title" content="Board Winners | Dudley Golf Club">
-<meta property="og:description" content="View Dudley Golf Club honours board winners and historic competition achievements.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dudley-golf-club.vercel.app/board-winners.html">
-<meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
+    <meta property="og:title" content="Board Winners | Dudley Golf Club">
+    <meta property="og:description"
+        content="View Dudley Golf Club honours board winners and historic competition achievements.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dudley-golf-club.vercel.app/board-winners.html">
+    <meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Board Winners | Dudley Golf Club">
-<meta name="twitter:description" content="View Dudley Golf Club honours board winners and historic competition achievements.">
-<meta name="twitter:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
-<!-- END MASTER SEO TEMPLATE -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Board Winners | Dudley Golf Club">
+    <meta name="twitter:description"
+        content="View Dudley Golf Club honours board winners and historic competition achievements.">
+    <meta name="twitter:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
+    <!-- END MASTER SEO TEMPLATE -->
 
     <link rel="stylesheet" href="dist/output.css">
 
@@ -89,31 +92,31 @@
 
         <h1>Board Winners</h1>
 
-        <div class="content-box">
-            <p class="mb-6 text-white/70">
-                Archive of club board winners.
+        <div class="text-center mb-10">
+            <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs mb-3">
+                Dudley Golf Club
             </p>
 
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left border-collapse">
-                    <thead>
-                        <tr class="border-b border-[#C5A367]/30">
-                            <th class="py-3 px-2 text-[#C5A367]">Year</th>
-                            <th class="py-3 px-2 text-[#C5A367]">Board</th>
-                            <th class="py-3 px-2 text-[#C5A367]">Winner</th>
-                            <th class="py-3 px-2 text-[#C5A367]">Score</th>
-                        </tr>
-                    </thead>
+            <h1 class="font-serif text-4xl md:text-6xl text-white mb-4">
+                Honours Archive
+            </h1>
 
-                    <tbody id="board-winners-body">
-                        <tr>
-                            <td colspan="4" class="py-6 text-center text-white/60">
-                                Loading board winners...
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
+                Search Dudley Golf Club board winners by year, board competition or winner name.
+            </p>
+        </div>
+
+        <div class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
+            <label for="honours-search" class="block text-[#C5A367] text-xs uppercase tracking-[0.2em] mb-3">
+                Search the archive
+            </label>
+
+            <input id="honours-search" type="text" placeholder="Try 2020, Club Championship, or a winner's name..."
+                class="w-full bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded outline-none text-sm">
+
+            <p class="text-white/50 text-xs mt-3">
+                Example: type “2020” to see all winners from that year, or “Club Championship” to see past champions.
+            </p>
         </div>
     </div>
 
@@ -142,57 +145,93 @@ font-weight: bold;
 
     <!-- SANITY BOARD WINNERS FETCH -->
     <script>
+        let allBoardWinners = [];
+
         async function loadBoardWinners() {
             const body = document.getElementById("board-winners-body");
+            const searchInput = document.getElementById("honours-search");
+
+            if (!body) return;
 
             try {
                 const query = encodeURIComponent(`
-                    *[_type == "boardWinner"]
-                    | order(year desc, boardName asc) {
-                        year,
-                        boardName,
-                        winnerName,
-                        score
-                    }
-                `);
+                *[_type == "boardWinner"] {
+                    year,
+                    boardName,
+                    winnerName,
+                    score
+                }
+            `);
 
                 const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
 
                 const response = await fetch(url);
                 const data = await response.json();
-                const winners = data.result || [];
 
-                if (!winners.length) {
-                    body.innerHTML = `
-                        <tr>
-                            <td colspan="4" class="py-6 text-center text-white/60">
-                                No board winners available.
-                            </td>
-                        </tr>
-                    `;
-                    return;
+                allBoardWinners = data.result || [];
+
+                allBoardWinners.sort((a, b) => {
+                    if ((b.year || 0) !== (a.year || 0)) {
+                        return (b.year || 0) - (a.year || 0);
+                    }
+
+                    return (a.boardName || "").localeCompare(b.boardName || "");
+                });
+
+                renderBoardWinners(allBoardWinners);
+
+                if (searchInput) {
+                    searchInput.addEventListener("input", () => {
+                        const term = searchInput.value.toLowerCase().trim();
+
+                        const filtered = allBoardWinners.filter(item => {
+                            return (
+                                String(item.year || "").includes(term) ||
+                                String(item.boardName || "").toLowerCase().includes(term) ||
+                                String(item.winnerName || "").toLowerCase().includes(term) ||
+                                String(item.score || "").toLowerCase().includes(term)
+                            );
+                        });
+
+                        renderBoardWinners(filtered);
+                    });
                 }
-
-                body.innerHTML = winners.map(item => `
-                    <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
-                        <td class="py-3 px-2 align-top">${item.year || ""}</td>
-                        <td class="py-3 px-2 align-top text-[#C5A367]">${item.boardName || ""}</td>
-                        <td class="py-3 px-2 align-top">${item.winnerName || ""}</td>
-                        <td class="py-3 px-2 align-top">${item.score || ""}</td>
-                    </tr>
-                `).join("");
 
             } catch (error) {
                 console.error("Board winners failed to load:", error);
 
                 body.innerHTML = `
-                    <tr>
-                        <td colspan="4" class="py-6 text-center text-red-400">
-                            Unable to load board winners.
-                        </td>
-                    </tr>
-                `;
+                <tr>
+                    <td colspan="4" class="py-6 text-center text-red-400">
+                        Unable to load board winners.
+                    </td>
+                </tr>
+            `;
             }
+        }
+
+        function renderBoardWinners(winners) {
+            const body = document.getElementById("board-winners-body");
+
+            if (!winners.length) {
+                body.innerHTML = `
+                <tr>
+                    <td colspan="4" class="py-6 text-center text-white/60">
+                        No matching honours found.
+                    </td>
+                </tr>
+            `;
+                return;
+            }
+
+            body.innerHTML = winners.map(item => `
+            <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
+                <td class="py-3 px-2 align-top">${item.year || ""}</td>
+                <td class="py-3 px-2 align-top text-[#C5A367]">${item.boardName || ""}</td>
+                <td class="py-3 px-2 align-top">${item.winnerName || ""}</td>
+                <td class="py-3 px-2 align-top">${item.score || ""}</td>
+            </tr>
+        `).join("");
         }
 
         loadBoardWinners();
@@ -201,5 +240,3 @@ font-weight: bold;
 </body>
 
 </html>
-
-
