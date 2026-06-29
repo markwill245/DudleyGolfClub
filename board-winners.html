@@ -99,28 +99,46 @@
             </h1>
 
             <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
-                Search the club’s board winners by year, board competition, winner or score.
+                Archive of club board winners.
             </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-4 mb-6">
-            <input id="honours-search" type="text" placeholder="Search winner, board, year..."
-                class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
-
-            <select id="year-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
-                <option value="">All Years</option>
-            </select>
-
-            <select id="board-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
-                <option value="">All Boards</option>
-            </select>
+        <div class="text-center mb-6">
+            <button id="toggle-search"
+                class="border border-[#C5A367] text-[#C5A367] px-6 py-3 text-xs uppercase tracking-[0.2em] hover:bg-[#C5A367] hover:text-[#132419] transition">
+                Search the Archive
+            </button>
         </div>
 
-        <div class="flex justify-between items-center mb-4 text-xs uppercase tracking-[0.2em] text-white/50">
-            <span id="honours-count">Loading archive...</span>
-            <button id="clear-filters" class="text-[#C5A367] hover:text-white transition">
-                Clear Search
-            </button>
+        <div id="search-panel" class="hidden bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
+
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+                <input id="honours-search" type="text" placeholder="Search winner, board, year..."
+                    class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+
+                <select id="year-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+                    <option value="">All Years</option>
+                </select>
+
+                <select id="board-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+                    <option value="">All Boards</option>
+                </select>
+            </div>
+
+            <div class="flex justify-between items-center text-xs uppercase tracking-[0.2em] text-white/50">
+                <span id="honours-count">Loading archive...</span>
+
+                <div class="flex gap-4">
+                    <button id="clear-filters" class="text-[#C5A367] hover:text-white transition">
+                        Clear
+                    </button>
+
+                    <button id="close-search" class="text-[#C5A367] hover:text-white transition">
+                        Close
+                    </button>
+                </div>
+            </div>
+
         </div>
 
         <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
@@ -188,7 +206,6 @@ font-weight: bold;
             `);
 
                 const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
-
                 const response = await fetch(url);
                 const data = await response.json();
 
@@ -205,16 +222,18 @@ font-weight: bold;
                 buildFilters();
                 applyHonoursFilters();
 
+                document.getElementById("toggle-search").addEventListener("click", () => {
+                    document.getElementById("search-panel").classList.toggle("hidden");
+                });
+
+                document.getElementById("close-search").addEventListener("click", () => {
+                    document.getElementById("search-panel").classList.add("hidden");
+                });
+
                 document.getElementById("honours-search").addEventListener("input", applyHonoursFilters);
                 document.getElementById("year-filter").addEventListener("change", applyHonoursFilters);
                 document.getElementById("board-filter").addEventListener("change", applyHonoursFilters);
-
-                document.getElementById("clear-filters").addEventListener("click", () => {
-                    document.getElementById("honours-search").value = "";
-                    document.getElementById("year-filter").value = "";
-                    document.getElementById("board-filter").value = "";
-                    applyHonoursFilters();
-                });
+                document.getElementById("clear-filters").addEventListener("click", clearHonoursFilters);
 
             } catch (error) {
                 console.error("Board winners failed to load:", error);
@@ -260,11 +279,8 @@ font-weight: bold;
                     String(item.winnerName || "").toLowerCase().includes(searchTerm) ||
                     String(item.score || "").toLowerCase().includes(searchTerm);
 
-                const matchesYear =
-                    !selectedYear || String(item.year) === selectedYear;
-
-                const matchesBoard =
-                    !selectedBoard || item.boardName === selectedBoard;
+                const matchesYear = !selectedYear || String(item.year) === selectedYear;
+                const matchesBoard = !selectedBoard || item.boardName === selectedBoard;
 
                 return matchesSearch && matchesYear && matchesBoard;
             });
@@ -272,11 +288,21 @@ font-weight: bold;
             renderBoardWinners(filtered);
         }
 
+        function clearHonoursFilters() {
+            document.getElementById("honours-search").value = "";
+            document.getElementById("year-filter").value = "";
+            document.getElementById("board-filter").value = "";
+
+            applyHonoursFilters();
+        }
+
         function renderBoardWinners(winners) {
             const body = document.getElementById("board-winners-body");
             const count = document.getElementById("honours-count");
 
-            count.textContent = `${winners.length} honour${winners.length === 1 ? "" : "s"} found`;
+            if (count) {
+                count.textContent = `${winners.length} honour${winners.length === 1 ? "" : "s"} found`;
+            }
 
             if (!winners.length) {
                 body.innerHTML = `
