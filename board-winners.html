@@ -99,18 +99,18 @@
             </h1>
 
             <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
-                Archive of club board winners.
+                Search the club’s historic board winners by year, board competition, winner or score.
             </p>
         </div>
 
-        <div class="text-center mb-6">
+        <div class="text-center mb-8">
             <button id="toggle-search"
                 class="border border-[#C5A367] text-[#C5A367] px-6 py-3 text-xs uppercase tracking-[0.2em] hover:bg-[#C5A367] hover:text-[#132419] transition">
                 Search the Archive
             </button>
         </div>
 
-        <div id="search-panel" style="display: none;" class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
+        <div id="search-panel" style="display:none;" class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
 
             <div class="grid md:grid-cols-3 gap-4 mb-4">
                 <input id="honours-search" type="text" placeholder="Search winner, board, year..."
@@ -125,23 +125,24 @@
                 </select>
             </div>
 
-            <div class="flex justify-between items-center text-xs uppercase tracking-[0.2em] text-white/50"></div>
-            <span id="honours-count">Loading archive...</span>
+            <div class="flex justify-between items-center text-xs uppercase tracking-[0.2em] text-white/50">
+                <span id="honours-count">Enter a search to begin.</span>
 
-            <div class="flex gap-4">
-                <button id="clear-filters" class="text-[#C5A367] hover:text-white transition">
-                    Clear
-                </button>
+                <div class="flex gap-4">
+                    <button id="clear-filters" class="text-[#C5A367] hover:text-white transition">
+                        Clear
+                    </button>
 
-                <button id="close-search" class="text-[#C5A367] hover:text-white transition">
-                    Close
-                </button>
+                    <button id="close-search" class="text-[#C5A367] hover:text-white transition">
+                        Close
+                    </button>
+                </div>
             </div>
-
 
         </div>
 
-        <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
+        <div id="results-wrapper" style="display:none;" class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
+
             <table class="w-full text-sm text-left border-collapse">
                 <thead class="bg-[#132419]">
                     <tr class="border-b border-[#C5A367]/30">
@@ -152,21 +153,14 @@
                     </tr>
                 </thead>
 
-                <tbody id="board-winners-body">
-                    <tr>
-                        <td colspan="4" class="py-8 text-center text-white/60">
-                            Loading Honours Archive...
-                        </td>
-                    </tr>
-                </tbody>
+                <tbody id="board-winners-body"></tbody>
             </table>
+
         </div>
 
     </div>
 
-
-    <!-- RETURN HOME BUTTON -->
-    <a href="index.html" aria-label="Return Home" style="
+    <a href="members-area.html" aria-label="Return to Members Area" style="
 position: fixed;
 bottom: 24px;
 right: 24px;
@@ -188,13 +182,10 @@ font-weight: bold;
         ⌂
     </a>
 
-    <!-- SANITY BOARD WINNERS FETCH -->
     <script>
         let allBoardWinners = [];
 
         async function loadBoardWinners() {
-            const body = document.getElementById("board-winners-body");
-
             try {
                 const query = encodeURIComponent(`
                 *[_type == "boardWinner"] {
@@ -220,48 +211,11 @@ font-weight: bold;
                 });
 
                 buildFilters();
-                applyHonoursFilters();
-
-                const searchPanel = document.getElementById("search-panel");
-
-                // Hide it when the page first loads
-                searchPanel.style.display = "none";
-
-                // Open / Close Search Panel
-                document.getElementById("toggle-search").addEventListener("click", () => {
-
-                    if (searchPanel.style.display === "none") {
-                        searchPanel.style.display = "block";
-                        document.getElementById("toggle-search").textContent = "Hide Search";
-                    } else {
-                        searchPanel.style.display = "none";
-                        document.getElementById("toggle-search").textContent = "Search the Archive";
-                    }
-
-                });
-
-                // Close Button
-                document.getElementById("close-search").addEventListener("click", () => {
-                    clearHonoursFilters();           // Clear all search criteria
-                    searchPanel.style.display = "none";
-                    document.getElementById("toggle-search").textContent = "Search the Archive";
-                });
-
-                document.getElementById("honours-search").addEventListener("input", applyHonoursFilters);
-                document.getElementById("year-filter").addEventListener("change", applyHonoursFilters);
-                document.getElementById("board-filter").addEventListener("change", applyHonoursFilters);
-                document.getElementById("clear-filters").addEventListener("click", clearHonoursFilters);
+                setupArchiveControls();
 
             } catch (error) {
                 console.error("Board winners failed to load:", error);
-
-                body.innerHTML = `
-                <tr>
-                    <td colspan="4" class="py-6 text-center text-red-400">
-                        Unable to load board winners.
-                    </td>
-                </tr>
-            `;
+                document.getElementById("honours-count").textContent = "Unable to load archive.";
             }
         }
 
@@ -284,13 +238,48 @@ font-weight: bold;
             });
         }
 
+        function setupArchiveControls() {
+            const searchPanel = document.getElementById("search-panel");
+            const resultsWrapper = document.getElementById("results-wrapper");
+            const toggleButton = document.getElementById("toggle-search");
+
+            toggleButton.addEventListener("click", () => {
+                searchPanel.style.display = searchPanel.style.display === "none" ? "block" : "none";
+                toggleButton.textContent = searchPanel.style.display === "none" ? "Search the Archive" : "Hide Search";
+            });
+
+            document.getElementById("close-search").addEventListener("click", () => {
+                clearHonoursFilters();
+                searchPanel.style.display = "none";
+                resultsWrapper.style.display = "none";
+                toggleButton.textContent = "Search the Archive";
+            });
+
+            document.getElementById("clear-filters").addEventListener("click", clearHonoursFilters);
+
+            document.getElementById("honours-search").addEventListener("input", applyHonoursFilters);
+            document.getElementById("year-filter").addEventListener("change", applyHonoursFilters);
+            document.getElementById("board-filter").addEventListener("change", applyHonoursFilters);
+        }
+
         function applyHonoursFilters() {
             const searchTerm = document.getElementById("honours-search").value.toLowerCase().trim();
             const selectedYear = document.getElementById("year-filter").value;
             const selectedBoard = document.getElementById("board-filter").value;
+            const resultsWrapper = document.getElementById("results-wrapper");
+
+            const hasSearch = searchTerm || selectedYear || selectedBoard;
+
+            if (!hasSearch) {
+                resultsWrapper.style.display = "none";
+                document.getElementById("honours-count").textContent = "Enter a search to begin.";
+                document.getElementById("board-winners-body").innerHTML = "";
+                return;
+            }
 
             const filtered = allBoardWinners.filter(item => {
                 const matchesSearch =
+                    !searchTerm ||
                     String(item.year || "").includes(searchTerm) ||
                     String(item.boardName || "").toLowerCase().includes(searchTerm) ||
                     String(item.winnerName || "").toLowerCase().includes(searchTerm) ||
@@ -302,6 +291,7 @@ font-weight: bold;
                 return matchesSearch && matchesYear && matchesBoard;
             });
 
+            resultsWrapper.style.display = "block";
             renderBoardWinners(filtered);
         }
 
@@ -309,17 +299,16 @@ font-weight: bold;
             document.getElementById("honours-search").value = "";
             document.getElementById("year-filter").value = "";
             document.getElementById("board-filter").value = "";
-
-            applyHonoursFilters();
+            document.getElementById("results-wrapper").style.display = "none";
+            document.getElementById("board-winners-body").innerHTML = "";
+            document.getElementById("honours-count").textContent = "Enter a search to begin.";
         }
 
         function renderBoardWinners(winners) {
             const body = document.getElementById("board-winners-body");
             const count = document.getElementById("honours-count");
 
-            if (count) {
-                count.textContent = `${winners.length} honour${winners.length === 1 ? "" : "s"} found`;
-            }
+            count.textContent = `${winners.length} honour${winners.length === 1 ? "" : "s"} found`;
 
             if (!winners.length) {
                 body.innerHTML = `
