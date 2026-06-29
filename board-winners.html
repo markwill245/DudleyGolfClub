@@ -87,89 +87,65 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="members-area.html" class="back-btn">← Back to Members Area</a>
+    <div class="content-box">
 
-        <h1>Board Winners</h1>
+        <div class="text-center mb-10">
+            <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs mb-3">
+                Dudley Golf Club
+            </p>
 
-        <div class="content-box">
+            <h1 class="font-serif text-4xl md:text-6xl text-white mb-4">
+                Honours Archive
+            </h1>
 
-            <div class="text-center mb-10">
-                <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs mb-3">
-                    Dudley Golf Club
-                </p>
-
-                <h1 class="font-serif text-4xl md:text-6xl text-white mb-4">
-                    Honours Archive
-                </h1>
-
-                <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
-                    Search Dudley Golf Club board winners by year, board competition, winner or score.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
-
-                <label for="honours-search" class="block text-[#C5A367] text-xs uppercase tracking-[0.2em] mb-3">
-                    Search the Archive
-                </label>
-
-                <input id="honours-search" type="text"
-                    placeholder="Try 2020, Club Championship, Scratch Cup or a winner's name..."
-                    class="w-full bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none border border-[#C5A367]/20 focus:border-[#C5A367]">
-
-                <p class="text-white/50 text-xs mt-3">
-                    Search by Year • Board Competition • Winner • Score
-                </p>
-
-            </div>
-
-            <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
-
-                <table class="w-full text-sm text-left border-collapse">
-
-                    <thead class="bg-[#132419] sticky top-0">
-
-                        <tr class="border-b border-[#C5A367]/30">
-
-                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
-                                Year
-                            </th>
-
-                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
-                                Board
-                            </th>
-
-                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
-                                Winner
-                            </th>
-
-                            <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">
-                                Score
-                            </th>
-
-                        </tr>
-
-                    </thead>
-
-                    <tbody id="board-winners-body">
-
-                        <tr>
-
-                            <td colspan="4" class="py-8 text-center text-white/60">
-                                Loading Honours Archive...
-                            </td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
+            <p class="text-white/70 max-w-2xl mx-auto text-sm md:text-base">
+                Search the club’s board winners by year, board competition, winner or score.
+            </p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+            <input id="honours-search" type="text" placeholder="Search winner, board, year..."
+                class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+
+            <select id="year-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+                <option value="">All Years</option>
+            </select>
+
+            <select id="board-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+                <option value="">All Boards</option>
+            </select>
+        </div>
+
+        <div class="flex justify-between items-center mb-4 text-xs uppercase tracking-[0.2em] text-white/50">
+            <span id="honours-count">Loading archive...</span>
+            <button id="clear-filters" class="text-[#C5A367] hover:text-white transition">
+                Clear Search
+            </button>
+        </div>
+
+        <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
+            <table class="w-full text-sm text-left border-collapse">
+                <thead class="bg-[#132419]">
+                    <tr class="border-b border-[#C5A367]/30">
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Year</th>
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Board</th>
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Winner</th>
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Score</th>
+                    </tr>
+                </thead>
+
+                <tbody id="board-winners-body">
+                    <tr>
+                        <td colspan="4" class="py-8 text-center text-white/60">
+                            Loading Honours Archive...
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
+
 
     <!-- RETURN HOME BUTTON -->
     <a href="index.html" aria-label="Return Home" style="
@@ -200,9 +176,6 @@ font-weight: bold;
 
         async function loadBoardWinners() {
             const body = document.getElementById("board-winners-body");
-            const searchInput = document.getElementById("honours-search");
-
-            if (!body) return;
 
             try {
                 const query = encodeURIComponent(`
@@ -229,24 +202,19 @@ font-weight: bold;
                     return (a.boardName || "").localeCompare(b.boardName || "");
                 });
 
-                renderBoardWinners(allBoardWinners);
+                buildFilters();
+                applyHonoursFilters();
 
-                if (searchInput) {
-                    searchInput.addEventListener("input", () => {
-                        const term = searchInput.value.toLowerCase().trim();
+                document.getElementById("honours-search").addEventListener("input", applyHonoursFilters);
+                document.getElementById("year-filter").addEventListener("change", applyHonoursFilters);
+                document.getElementById("board-filter").addEventListener("change", applyHonoursFilters);
 
-                        const filtered = allBoardWinners.filter(item => {
-                            return (
-                                String(item.year || "").includes(term) ||
-                                String(item.boardName || "").toLowerCase().includes(term) ||
-                                String(item.winnerName || "").toLowerCase().includes(term) ||
-                                String(item.score || "").toLowerCase().includes(term)
-                            );
-                        });
-
-                        renderBoardWinners(filtered);
-                    });
-                }
+                document.getElementById("clear-filters").addEventListener("click", () => {
+                    document.getElementById("honours-search").value = "";
+                    document.getElementById("year-filter").value = "";
+                    document.getElementById("board-filter").value = "";
+                    applyHonoursFilters();
+                });
 
             } catch (error) {
                 console.error("Board winners failed to load:", error);
@@ -261,8 +229,54 @@ font-weight: bold;
             }
         }
 
+        function buildFilters() {
+            const yearFilter = document.getElementById("year-filter");
+            const boardFilter = document.getElementById("board-filter");
+
+            const years = [...new Set(allBoardWinners.map(item => item.year).filter(Boolean))]
+                .sort((a, b) => b - a);
+
+            const boards = [...new Set(allBoardWinners.map(item => item.boardName).filter(Boolean))]
+                .sort();
+
+            years.forEach(year => {
+                yearFilter.innerHTML += `<option value="${year}">${year}</option>`;
+            });
+
+            boards.forEach(board => {
+                boardFilter.innerHTML += `<option value="${board}">${board}</option>`;
+            });
+        }
+
+        function applyHonoursFilters() {
+            const searchTerm = document.getElementById("honours-search").value.toLowerCase().trim();
+            const selectedYear = document.getElementById("year-filter").value;
+            const selectedBoard = document.getElementById("board-filter").value;
+
+            const filtered = allBoardWinners.filter(item => {
+                const matchesSearch =
+                    String(item.year || "").includes(searchTerm) ||
+                    String(item.boardName || "").toLowerCase().includes(searchTerm) ||
+                    String(item.winnerName || "").toLowerCase().includes(searchTerm) ||
+                    String(item.score || "").toLowerCase().includes(searchTerm);
+
+                const matchesYear =
+                    !selectedYear || String(item.year) === selectedYear;
+
+                const matchesBoard =
+                    !selectedBoard || item.boardName === selectedBoard;
+
+                return matchesSearch && matchesYear && matchesBoard;
+            });
+
+            renderBoardWinners(filtered);
+        }
+
         function renderBoardWinners(winners) {
             const body = document.getElementById("board-winners-body");
+            const count = document.getElementById("honours-count");
+
+            count.textContent = `${winners.length} honour${winners.length === 1 ? "" : "s"} found`;
 
             if (!winners.length) {
                 body.innerHTML = `
@@ -277,10 +291,10 @@ font-weight: bold;
 
             body.innerHTML = winners.map(item => `
             <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
-                <td class="py-3 px-2 align-top">${item.year || ""}</td>
-                <td class="py-3 px-2 align-top text-[#C5A367]">${item.boardName || ""}</td>
-                <td class="py-3 px-2 align-top">${item.winnerName || ""}</td>
-                <td class="py-3 px-2 align-top">${item.score || ""}</td>
+                <td class="py-4 px-3 align-top font-bold">${item.year || ""}</td>
+                <td class="py-4 px-3 align-top text-[#C5A367]">${item.boardName || ""}</td>
+                <td class="py-4 px-3 align-top">${item.winnerName || ""}</td>
+                <td class="py-4 px-3 align-top">${item.score || ""}</td>
             </tr>
         `).join("");
         }
