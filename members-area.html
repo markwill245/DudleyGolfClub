@@ -4,36 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- MASTER SEO TEMPLATE -->
-<title>Members Area | Dudley Golf Club</title>
+    <title>Members Area | Dudley Golf Club</title>
 
-<meta name="description" content="Access Dudley Golf Club competitions, results, honours boards, social events and member information.">
-<meta name="keywords" content="Dudley Golf Club members area, competitions, results">
-<meta name="author" content="Dudley Golf Club">
+    <meta name="description"
+        content="Access Dudley Golf Club competitions, results, honours boards, social events and member information.">
+    <meta name="keywords" content="Dudley Golf Club members area, competitions, results">
+    <meta name="author" content="Dudley Golf Club">
 
-<link rel="canonical" href="https://dudley-golf-club.vercel.app/members-area.html">
-<meta name="theme-color" content="#132419">
+    <link rel="canonical" href="https://dudley-golf-club.vercel.app/members-area.html">
+    <meta name="theme-color" content="#132419">
 
-<meta property="og:title" content="Members Area | Dudley Golf Club">
-<meta property="og:description" content="Access Dudley Golf Club competitions, results, honours boards, social events and member information.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dudley-golf-club.vercel.app/members-area.html">
-<meta property="og:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Members Area | Dudley Golf Club">
-<meta name="twitter:description" content="Access Dudley Golf Club competitions, results, honours boards, social events and member information.">
-<meta name="twitter:image" content="https://dudley-golf-club.vercel.app/images/dudley.webp">
-<!-- END MASTER SEO TEMPLATE -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="dist/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
+
     <style>
         body {
             font-family: 'Outfit', sans-serif;
@@ -52,10 +41,6 @@
         .forest-bg {
             background-color: #132419;
         }
-
-        .forest-text {
-            color: #132419;
-        }
     </style>
 </head>
 
@@ -66,12 +51,15 @@
             <div>
                 <p class="gold-text tracking-[0.4em] uppercase text-xs mb-4">Dudley Golf Club</p>
                 <h1 class="serif text-6xl mb-6">Members Hub</h1>
-                <p class="text-gray-700 mb-8 leading-relaxed">The central portal for fixtures, results, team
-                    competitions, and club systems.</p>
+                <p class="text-gray-700 mb-8 leading-relaxed">
+                    The central portal for fixtures, results, honours, team competitions and club systems.
+                </p>
                 <a href="members-login.html" target="_blank"
-                    class="inline-block forest-bg text-white px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-[#C5A367] transition">Open
-                    iGolf Portal</a>
+                    class="inline-block forest-bg text-white px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-[#C5A367] transition">
+                    Open iGolf Portal
+                </a>
             </div>
+
             <div>
                 <img src="cup.webp" alt="Club Trophy" class="w-full rounded-lg border border-[#C5A367]/30 shadow-2xl">
             </div>
@@ -80,63 +68,124 @@
 
     <main class="max-w-6xl mx-auto py-16 px-6">
         <div class="space-y-16">
+
             <section>
-                <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">Team Leagues</h2>
+                <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">
+                    Honours & Competitions
+                </h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="board-winners.html"
+                        class="p-6 border border-[#132419]/10 hover:bg-[#132419] hover:text-white transition">
+                        <div class="text-2xl mb-3">🏛️</div>
+                        <h3 class="serif text-2xl mb-2">Board Winners</h3>
+                        <p class="text-sm opacity-70">Search the club honours archive.</p>
+                    </a>
+
+                    <a href="competition-winners.html"
+                        class="p-6 border border-[#132419]/10 hover:bg-[#132419] hover:text-white transition">
+                        <div class="text-2xl mb-3">🏆</div>
+                        <h3 class="serif text-2xl mb-2">Competition Winners</h3>
+                        <p class="text-sm opacity-70">Search winners by year, event, category or player.</p>
+                    </a>
+
+                    <a href="upcoming-comps.html"
+                        class="p-6 border border-[#132419]/10 hover:bg-[#132419] hover:text-white transition">
+                        <div class="text-2xl mb-3">📅</div>
+                        <h3 class="serif text-2xl mb-2">Upcoming Comps</h3>
+                        <p class="text-sm opacity-70">View upcoming club competitions.</p>
+                    </a>
+
+                    <a href="comp-winners.html"
+                        class="p-6 border border-[#132419]/10 hover:bg-[#132419] hover:text-white transition">
+                        <div class="text-2xl mb-3">🥇</div>
+                        <h3 class="serif text-2xl mb-2">Results</h3>
+                        <p class="text-sm opacity-70">View recent competition results.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">
+                    Team Leagues
+                </h2>
+
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <a href="wm-league.html"
-                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">West
-                        Midlands League</a>
+                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">
+                        West Midlands League
+                    </a>
+
                     <a href="wm-low-league.html"
-                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">Low
-                        League</a>
+                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">
+                        Low League
+                    </a>
+
                     <a href="wm-mid-league.html"
-                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">Mid
-                        League</a>
+                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">
+                        Mid League
+                    </a>
+
                     <a href="wm-17-24-league.html"
-                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">17-24
-                        League</a>
+                        class="p-6 border border-[#132419]/10 hover:bg-[#C5A367] hover:text-white transition text-center">
+                        17-24 League
+                    </a>
                 </div>
             </section>
 
             <div class="grid md:grid-cols-2 gap-12">
+
                 <section>
-                    <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">Mens Section</h2>
+                    <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">
+                        Members Section
+                    </h2>
+
                     <div class="grid grid-cols-1 gap-2">
-                        <a href="board-winners.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">Board
-                            Winners</a>
-                        <a href="social-events.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">Club
-                            Social Events</a>
-                        <a href="comp-winners.html"
-                            class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">Competition Winners</a>
-                        <a href="upcoming-comps.html"
-                            class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">Upcoming Comps</a>
+                        <a href="social-events.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">
+                            Club Social Events
+                        </a>
+
+                        <a href="1893-club.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">
+                            1893 Club Reciprocal Access
+                        </a>
                     </div>
                 </section>
+
                 <section>
-                    <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">Junior Section</h2>
+                    <h2 class="serif text-3xl text-[#132419] mb-8 border-b border-[#132419]/10 pb-2">
+                        Junior Section
+                    </h2>
+
                     <div class="grid grid-cols-1 gap-2">
-                        <a href="junior-comps.html"
-                            class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">Competitions</a>
-                        <a href="junior-past-winners.html"
-                            class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">Past Winners</a>
-                        <a href="1893-club.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">1893 Club
-                            Reciprocal Access</a>
+                        <a href="junior-comps.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">
+                            Junior Competitions
+                        </a>
+
+                        <a href="junior-past-winners.html" class="p-4 border-b border-[#132419]/5 hover:text-[#C5A367]">
+                            Junior Past Winners
+                        </a>
                     </div>
                 </section>
+
             </div>
 
             <section class="bg-[#132419] p-10 text-center text-white">
                 <h3 class="serif text-2xl gold-text mb-4">Handicap & Technical Support</h3>
-                <p class="text-gray-300 mb-6 max-w-2xl mx-auto text-sm">Need help with the World Handicap System (WHS)
-                    or portal access? Our committee is here to assist.</p>
+
+                <p class="text-gray-300 mb-6 max-w-2xl mx-auto text-sm">
+                    Need help with the World Handicap System (WHS) or portal access?
+                    Our committee is here to assist.
+                </p>
+
                 <a href="mailto:handicaps@dudleygolfclub.com"
-                    class="inline-block border border-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest hover:bg-[#C5A367] hover:text-[#132419] transition">Contact
-                    Committee</a>
+                    class="inline-block border border-[#C5A367] px-8 py-3 text-xs uppercase tracking-widest hover:bg-[#C5A367] hover:text-[#132419] transition">
+                    Contact Committee
+                </a>
             </section>
+
         </div>
     </main>
 
-    <!-- MASTER FOOTER -->
     <footer class="bg-[#0D1712] text-white px-8 py-20 border-t border-[#C5A367]/20">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-12">
 
@@ -146,9 +195,11 @@
                     Turners Hill, Rowley Regis,<br>
                     West Midlands, B65 9DP
                 </p>
+
                 <p class="text-white/70 text-sm mb-2">
                     Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
                 </p>
+
                 <p class="text-white/70 text-sm">
                     Email: <a href="mailto:secretary@dudleygolfclub.com"
                         class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
@@ -156,7 +207,10 @@
             </div>
 
             <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore The Club</h4>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">
+                    Explore The Club
+                </h4>
+
                 <div class="flex flex-col gap-3 text-sm text-white/70">
                     <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
                     <a href="amen-corner.html" class="hover:text-[#C5A367] transition">Amen Corner</a>
@@ -165,18 +219,20 @@
                     <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
                     <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
                     <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
-                    <a href="meet-the-team.html" class="hover:text-[#C5A367] transition">
-                        Meet The Team
-                    </a>
+                    <a href="meet-the-team.html" class="hover:text-[#C5A367] transition">Meet The Team</a>
                 </div>
             </div>
 
             <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">
+                    Club Links
+                </h4>
+
                 <div class="flex flex-col gap-3 text-sm text-white/70">
                     <a href="visitor-booking.html" class="hover:text-[#C5A367] transition">Book a Tee Time</a>
                     <a href="members-login.html" class="hover:text-[#C5A367] transition">Member iGolf</a>
                     <a href="login.html" class="hover:text-[#C5A367] transition">Members Portal</a>
+                    <a href="members-area.html" class="hover:text-[#C5A367] transition">Members Area</a>
                     <a href="https://www.facebook.com/DudleyGolfClub"
                         class="hover:text-[#C5A367] transition">Facebook</a>
                     <a href="https://www.instagram.com/dudleygolfclub"
@@ -185,7 +241,10 @@
             </div>
 
             <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">
+                    Find Us
+                </h4>
+
                 <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
@@ -202,7 +261,7 @@
             <p>Established 1893 • Rowley Regis</p>
         </div>
     </footer>
-    <!-- RETURN HOME BUTTON -->
+
     <a href="index.html" aria-label="Return Home" style="
 position: fixed;
 bottom: 24px;
@@ -224,10 +283,7 @@ font-weight: bold;
 ">
         ⌂
     </a>
+
 </body>
 
 </html>
-
-
-
-
