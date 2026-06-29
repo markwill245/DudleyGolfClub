@@ -187,7 +187,26 @@ font-weight: bold;
                     throw new Error(result.error.description || "Sanity query error");
                 }
 
-                const competitions = result.result || [];
+                const allCompetitions = result.result || [];
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+
+                const competitions = allCompetitions
+                    .filter(comp => {
+                        if (!comp.eventDate) return true;
+
+                        const eventDate = new Date(comp.eventDate);
+                        eventDate.setHours(0, 0, 0, 0);
+
+                        return eventDate >= today;
+                    })
+                    .sort((a, b) => {
+                        if (!a.eventDate) return 1;
+                        if (!b.eventDate) return -1;
+
+                        return new Date(a.eventDate) - new Date(b.eventDate);
+                    });
 
                 if (competitions.length === 0) {
                     body.innerHTML = `
