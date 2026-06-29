@@ -111,22 +111,21 @@
         </div>
 
         <div id="search-panel" style="display: none;" class="bg-white/5 border border-[#C5A367]/20 rounded-lg p-5 mb-8">
-        </div>
 
-        <div class="grid md:grid-cols-3 gap-4 mb-4">
-            <input id="honours-search" type="text" placeholder="Search winner, board, year..."
-                class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+                <input id="honours-search" type="text" placeholder="Search winner, board, year..."
+                    class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
 
-            <select id="year-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
-                <option value="">All Years</option>
-            </select>
+                <select id="year-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+                    <option value="">All Years</option>
+                </select>
 
-            <select id="board-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
-                <option value="">All Boards</option>
-            </select>
-        </div>
+                <select id="board-filter" class="bg-[#F9F7F2] text-[#132419] px-4 py-3 rounded-md outline-none">
+                    <option value="">All Boards</option>
+                </select>
+            </div>
 
-        <div class="flex justify-between items-center text-xs uppercase tracking-[0.2em] text-white/50">
+            <div class="flex justify-between items-center text-xs uppercase tracking-[0.2em] text-white/50"></div>
             <span id="honours-count">Loading archive...</span>
 
             <div class="flex gap-4">
@@ -138,30 +137,30 @@
                     Close
                 </button>
             </div>
+
+
         </div>
 
-    </div>
+        <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
+            <table class="w-full text-sm text-left border-collapse">
+                <thead class="bg-[#132419]">
+                    <tr class="border-b border-[#C5A367]/30">
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Year</th>
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Board</th>
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Winner</th>
+                        <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Score</th>
+                    </tr>
+                </thead>
 
-    <div class="overflow-x-auto rounded-lg border border-[#C5A367]/20">
-        <table class="w-full text-sm text-left border-collapse">
-            <thead class="bg-[#132419]">
-                <tr class="border-b border-[#C5A367]/30">
-                    <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Year</th>
-                    <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Board</th>
-                    <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Winner</th>
-                    <th class="py-4 px-3 text-[#C5A367] uppercase tracking-wider">Score</th>
-                </tr>
-            </thead>
-
-            <tbody id="board-winners-body">
-                <tr>
-                    <td colspan="4" class="py-8 text-center text-white/60">
-                        Loading Honours Archive...
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                <tbody id="board-winners-body">
+                    <tr>
+                        <td colspan="4" class="py-8 text-center text-white/60">
+                            Loading Honours Archive...
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </div>
 
