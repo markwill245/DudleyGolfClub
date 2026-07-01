@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Order of Merit | Dudley Golf Club</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-body{font-family:Outfit,sans-serif;background:#F9F7F2;color:#132419}
-.serif{font-family:"Cormorant Garamond",serif}
-</style>
+  <meta charset="UTF-8">
+  <title>Order of Merit | Dudley Golf Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: Outfit, sans-serif;
+      background: #F9F7F2;
+      color: #132419
+    }
+
+    .serif {
+      font-family: "Cormorant Garamond", serif
+    }
+  </style>
 </head>
 
 <body>
 
-<header class="bg-[#132419] text-white px-6 py-5">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <a href="digital-museum.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Digital Museum</a>
-    <span class="text-xs uppercase tracking-[0.35em]">Order of Merit</span>
-  </div>
-</header>
+  <header class="bg-[#132419] text-white px-6 py-5">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="digital-museum.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Digital Museum</a>
+      <span class="text-xs uppercase tracking-[0.35em]">Order of Merit</span>
+    </div>
+  </header>
 
-<section class="bg-[#132419] text-white px-6 py-20">
-  <div class="max-w-7xl mx-auto">
-    <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">Digital Museum</p>
-    <h1 class="serif text-6xl md:text-8xl leading-none mb-6">Order of Merit</h1>
-    <p class="max-w-3xl text-white/70 text-lg">
-      A live leaderboard built from Player Intelligence and recorded competition results.
-    </p>
-  </div>
-</section>
+  <section class="bg-[#132419] text-white px-6 py-20">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">Digital Museum</p>
+      <h1 class="serif text-6xl md:text-8xl leading-none mb-6">Order of Merit</h1>
+      <p class="max-w-3xl text-white/70 text-lg">
+        A live leaderboard built from Player Intelligence and recorded competition results.
+      </p>
+    </div>
+  </section>
 
-<main class="max-w-7xl mx-auto px-6 py-16">
-  <div id="oom">Loading Order of Merit...</div>
-</main>
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="oom">Loading Order of Merit...</div>
+  </main>
 
-<script>
-const projectId = "c54r3a5t";
-const dataset = "production";
-const apiVersion = "2024-03-01";
+  <script>
+    const projectId = "c54r3a5t";
+    const dataset = "production";
+    const apiVersion = "2024-03-01";
 
-const query = encodeURIComponent(`
+    const query = encodeURIComponent(`
 *[_type == "playerIntelligence"] | order(orderOfMeritPoints desc, wins desc, topTen desc, playerName asc) {
   playerName,
   playerSlug,
@@ -52,39 +62,39 @@ const query = encodeURIComponent(`
 }
 `);
 
-const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
+    const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
 
-function num(value) {
-  const n = Number(value);
-  return Number.isFinite(n) ? n : 0;
-}
+    function num(value) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : 0;
+    }
 
-function slug(player) {
-  return player.playerSlug?.current || "";
-}
+    function slug(player) {
+      return player.playerSlug?.current || "";
+    }
 
-function medal(index) {
-  if (index === 0) return "🥇";
-  if (index === 1) return "🥈";
-  if (index === 2) return "🥉";
-  return index + 1;
-}
+    function medal(index) {
+      if (index === 0) return "🥇";
+      if (index === 1) return "🥈";
+      if (index === 2) return "🥉";
+      return index + 1;
+    }
 
-async function loadOOM() {
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    const players = data.result || [];
+    async function loadOOM() {
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        const players = data.result || [];
 
-    const ranked = players
-      .filter(p => num(p.competitionsPlayed) > 0)
-      .map((p, index) => ({ ...p, rank: index + 1 }));
+        const ranked = players
+          .filter(p => num(p.competitionsPlayed) > 0)
+          .map((p, index) => ({ ...p, rank: index + 1 }));
 
-    const leader = ranked[0];
-    const totalPoints = ranked.reduce((sum, p) => sum + num(p.orderOfMeritPoints), 0);
-    const totalWins = ranked.reduce((sum, p) => sum + num(p.wins), 0);
+        const leader = ranked[0];
+        const leaderPoints = leader ? num(leader.orderOfMeritPoints) : 0;
+        const totalWins = ranked.reduce((sum, p) => sum + num(p.wins), 0);
 
-    document.getElementById("oom").innerHTML = `
+        document.getElementById("oom").innerHTML = `
       <section class="grid md:grid-cols-4 gap-6 mb-14">
         <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
           <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Current Leader</p>
@@ -97,8 +107,8 @@ async function loadOOM() {
         </div>
 
         <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Points Awarded</p>
-          <p class="serif text-5xl">${totalPoints}</p>
+          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Leader Points</p>
+          <p class="serif text-5xl">${leaderPoints}</p>
         </div>
 
         <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
@@ -155,14 +165,15 @@ async function loadOOM() {
         </p>
       </section>
     `;
-  } catch (err) {
-    document.getElementById("oom").innerHTML = `<p>Unable to load Order of Merit.</p>`;
-    console.error(err);
-  }
-}
+      } catch (err) {
+        document.getElementById("oom").innerHTML = `<p>Unable to load Order of Merit.</p>`;
+        console.error(err);
+      }
+    }
 
-loadOOM();
-</script>
+    loadOOM();
+  </script>
 
 </body>
+
 </html>
