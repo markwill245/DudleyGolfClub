@@ -2,126 +2,130 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<title>Museum Record | Dudley Golf Club</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Museum Record | Dudley Golf Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 
-<style>
-body {
-  font-family: Outfit, sans-serif;
-  background: #F9F7F2;
-  color: #132419;
-}
+  <style>
+    body {
+      font-family: Outfit, sans-serif;
+      background: #F9F7F2;
+      color: #132419;
+    }
 
-.serif {
-  font-family: "Cormorant Garamond", serif;
-}
+    .serif {
+      font-family: "Cormorant Garamond", serif;
+    }
 
-.museum-line {
-  height: 1px;
-  background: rgba(197, 163, 103, 0.45);
-}
-</style>
+    .museum-line {
+      height: 1px;
+      background: rgba(197, 163, 103, 0.45);
+    }
+  </style>
 </head>
 
 <body>
 
-<header class="bg-[#132419] text-white px-6 py-5">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <a href="museum-collection.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Collection</a>
-    <span class="text-xs uppercase tracking-[0.35em]">Museum Record</span>
-  </div>
-</header>
+  <header class="bg-[#132419] text-white px-6 py-5">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="museum-collection.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Collection</a>
+      <span class="text-xs uppercase tracking-[0.35em]">Museum Record</span>
+    </div>
+  </header>
 
-<div id="record">Loading museum record...</div>
+  <div id="record">Loading museum record...</div>
 
-<script>
-const projectId = "c54r3a5t";
-const dataset = "production";
-const apiVersion = "2024-03-01";
+  <script>
+    const projectId = "c54r3a5t";
+    const dataset = "production";
+    const apiVersion = "2024-03-01";
 
-const params = new URLSearchParams(window.location.search);
-const slug = params.get("slug");
+    const slug = decodeURIComponent(window.location.hash.replace("#", ""));
 
-function safe(value, fallback = "—") {
-  return value === null || value === undefined || value === "" ? fallback : value;
-}
 
-function plural(value, word) {
-  return Number(value) === 1 ? word : word + "s";
-}
+    function safe(value, fallback = "—") {
+      return value === null || value === undefined || value === "" ? fallback : value;
+    }
 
-function stat(label, value, icon) {
-  return `
+    function plural(value, word) {
+      return Number(value) === 1 ? word : word + "s";
+    }
+
+    function stat(label, value, icon) {
+      return `
     <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
       <div class="text-3xl mb-4">${icon}</div>
       <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">${label}</p>
       <p class="serif text-5xl">${safe(value)}</p>
     </div>
   `;
-}
+    }
 
-function achievementCard(title, text, icon) {
-  return `
+    function achievementCard(title, text, icon) {
+      return `
     <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
       <div class="text-3xl mb-4">${icon}</div>
       <h3 class="serif text-3xl mb-3">${title}</h3>
       <p class="text-gray-700 leading-relaxed">${text}</p>
     </div>
   `;
-}
-
-async function loadRecord() {
-  if (!slug) {
-    document.getElementById("record").innerHTML = "<p class='p-8'>No player selected.</p>";
-    return;
-  }
-
-  const query = encodeURIComponent(`
-  *[_type == "playerIntelligence" && playerSlug.current == "${slug}"][0] {
-    playerName,
-    status,
-    section,
-    competitionsPlayed,
-    wins,
-    runnerUp,
-    thirdPlace,
-    topTen,
-    averageGross,
-    averageNett,
-    lowestGross,
-    lowestNett,
-    orderOfMeritPoints,
-    orderOfMeritPosition,
-    firstCompetition,
-    latestCompetition,
-    museumSummary,
-    lastUpdated
-  }
-  `);
-
-  const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
-
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    const player = data.result;
-
-    if (!player) {
-      document.getElementById("record").innerHTML = "<p class='p-8'>Museum record not found.</p>";
-      return;
     }
 
-    document.title = `${player.playerName} | Dudley Golf Club Museum`;
+    async function loadRecord() {
+      if (!slug) {
+        document.getElementById("record").innerHTML =
+          "<p class='p-8'>No player selected.</p>";
+        return;
+      }
 
-    const comps = safe(player.competitionsPlayed, 0);
-    const wins = safe(player.wins, 0);
-    const runnerUp = safe(player.runnerUp, 0);
-    const topTen = safe(player.topTen, 0);
+      const query = encodeURIComponent(`
+*[_type == "playerIntelligence" && playerSlug.current == "${slug}"][0] {
+  playerName,
+  status,
+  section,
+  competitionsPlayed,
+  wins,
+  runnerUp,
+  thirdPlace,
+  topTen,
+  averageGross,
+  averageNett,
+  lowestGross,
+  lowestNett,
+  orderOfMeritPoints,
+  orderOfMeritPosition,
+  firstCompetition,
+  latestCompetition,
+  museumSummary,
+  lastUpdated
+}
+`);
 
-    document.getElementById("record").innerHTML = `
+      const sanityUrl = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
+
+      try {
+        const res = await fetch(sanityUrl);
+        const data = await res.json();
+        const player = data.result;
+
+        if (!player) {
+          document.getElementById("record").innerHTML =
+            "<p class='p-8'>Museum record not found.</p>";
+          return;
+        }
+
+        document.title = `${player.playerName} | Dudley Golf Club Museum`;
+
+        const comps = safe(player.competitionsPlayed, 0);
+        const wins = safe(player.wins, 0);
+        const runnerUp = safe(player.runnerUp, 0);
+        const topTen = safe(player.topTen, 0);
+
+        document.getElementById("record").innerHTML = `
       <section class="bg-[#132419] text-white px-6 py-24 border-t border-[#C5A367]/20">
         <div class="max-w-7xl mx-auto">
           <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">
@@ -260,14 +264,16 @@ async function loadRecord() {
         </div>
       </footer>
     `;
-  } catch (err) {
-    document.getElementById("record").innerHTML = "<p class='p-8'>Unable to load museum record.</p>";
-    console.error(err);
-  }
-}
+      } catch (err) {
+        document.getElementById("record").innerHTML =
+          "<p class='p-8'>Unable to load museum record.</p>";
+        console.error(err);
+      }
+    }
 
-loadRecord();
-</script>
+    loadRecord();
+  </script>
 
 </body>
+
 </html>
