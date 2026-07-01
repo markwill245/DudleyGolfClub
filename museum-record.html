@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Museum Record | Dudley Golf Club</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{font-family:Outfit,sans-serif;background:#F9F7F2;color:#132419}
-.serif{font-family:"Cormorant Garamond",serif}
+body {
+  font-family: Outfit, sans-serif;
+  background: #F9F7F2;
+  color: #132419;
+}
+
+.serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.museum-line {
+  height: 1px;
+  background: rgba(197, 163, 103, 0.45);
+}
 </style>
 </head>
 
@@ -35,12 +49,26 @@ function safe(value, fallback = "—") {
   return value === null || value === undefined || value === "" ? fallback : value;
 }
 
+function plural(value, word) {
+  return Number(value) === 1 ? word : word + "s";
+}
+
 function stat(label, value, icon) {
   return `
     <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
       <div class="text-3xl mb-4">${icon}</div>
       <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">${label}</p>
       <p class="serif text-5xl">${safe(value)}</p>
+    </div>
+  `;
+}
+
+function achievementCard(title, text, icon) {
+  return `
+    <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
+      <div class="text-3xl mb-4">${icon}</div>
+      <h3 class="serif text-3xl mb-3">${title}</h3>
+      <p class="text-gray-700 leading-relaxed">${text}</p>
     </div>
   `;
 }
@@ -88,26 +116,63 @@ async function loadRecord() {
 
     document.title = `${player.playerName} | Dudley Golf Club Museum`;
 
+    const comps = safe(player.competitionsPlayed, 0);
+    const wins = safe(player.wins, 0);
+    const runnerUp = safe(player.runnerUp, 0);
+    const topTen = safe(player.topTen, 0);
+
     document.getElementById("record").innerHTML = `
-      <section class="bg-[#132419] text-white px-6 py-24">
+      <section class="bg-[#132419] text-white px-6 py-24 border-t border-[#C5A367]/20">
         <div class="max-w-7xl mx-auto">
-          <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">Dudley Golf Club Digital Museum</p>
-          <h1 class="serif text-7xl md:text-9xl leading-none mb-8">${player.playerName}</h1>
-          <p class="text-xl text-white/70">${safe(player.section, "Member")} · ${safe(player.status, "Active")}</p>
+          <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">
+            Dudley Golf Club Digital Museum
+          </p>
+
+          <h1 class="serif text-7xl md:text-9xl leading-none mb-8">
+            ${player.playerName}
+          </h1>
+
+          <div class="museum-line mb-8"></div>
+
+          <div class="grid md:grid-cols-4 gap-6 text-white/80">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Section</p>
+              <p class="serif text-3xl">${safe(player.section, "Member")}</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Status</p>
+              <p class="serif text-3xl">${safe(player.status, "Active")}</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Recorded Results</p>
+              <p class="serif text-3xl">${comps}</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Museum Type</p>
+              <p class="serif text-3xl">Player Record</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <main class="max-w-7xl mx-auto px-6 py-16">
 
-        <section class="bg-white border border-[#C5A367]/30 p-8 md:p-12 rounded shadow mb-12">
-          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Museum Summary</p>
+        <section class="bg-white border border-[#C5A367]/30 p-8 md:p-12 rounded shadow mb-14">
+          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Career Narrative</p>
           <p class="serif text-3xl md:text-4xl leading-snug">
-            ${safe(player.museumSummary, "This museum record is generated from Dudley Golf Club competition data.")}
+            ${safe(player.museumSummary, `${player.playerName} is part of the Dudley Golf Club Digital Museum archive.`)}
           </p>
         </section>
 
         <section class="mb-16">
-          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Career Statistics</p>
+          <div class="mb-8">
+            <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">Career Statistics</p>
+            <h2 class="serif text-5xl">Competition Record</h2>
+          </div>
+
           <div class="grid md:grid-cols-4 gap-6">
             ${stat("Competitions", player.competitionsPlayed, "⛳")}
             ${stat("Wins", player.wins, "🏆")}
@@ -117,7 +182,11 @@ async function loadRecord() {
         </section>
 
         <section class="mb-16">
-          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Scoring Record</p>
+          <div class="mb-8">
+            <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">Scoring Record</p>
+            <h2 class="serif text-5xl">Best Recorded Scores</h2>
+          </div>
+
           <div class="grid md:grid-cols-4 gap-6">
             ${stat("Lowest Gross", player.lowestGross, "📉")}
             ${stat("Lowest Nett", player.lowestNett, "📊")}
@@ -126,7 +195,7 @@ async function loadRecord() {
           </div>
         </section>
 
-        <section class="grid md:grid-cols-2 gap-8">
+        <section class="grid md:grid-cols-2 gap-8 mb-16">
           <div class="bg-[#132419] text-white p-8 rounded shadow">
             <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">First Recorded Competition</p>
             <h2 class="serif text-4xl">${safe(player.firstCompetition)}</h2>
@@ -138,7 +207,58 @@ async function loadRecord() {
           </div>
         </section>
 
+        <section class="mb-16">
+          <div class="mb-8">
+            <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">Museum Highlights</p>
+            <h2 class="serif text-5xl">Record Highlights</h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            ${achievementCard("Competition Footprint", `${player.playerName} currently has ${comps} recorded ${plural(comps, "competition")} in the archive.`, "📜")}
+            ${achievementCard("Winning Record", `${player.playerName} has recorded ${wins} ${plural(wins, "win")} and ${runnerUp} runner-up ${plural(runnerUp, "finish")}.`, "🏆")}
+            ${achievementCard("Consistency", `${player.playerName} has recorded ${topTen} top-ten ${plural(topTen, "finish")} from the available results.`, "⭐")}
+          </div>
+        </section>
+
+        <section class="bg-white border border-[#C5A367]/30 p-8 md:p-12 rounded shadow mb-16">
+          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Timeline</p>
+          <h2 class="serif text-5xl mb-8">Career Timeline</h2>
+
+          <div class="space-y-6">
+            <div class="border-l-2 border-[#C5A367] pl-6">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">First Appearance</p>
+              <p class="serif text-3xl">${safe(player.firstCompetition)}</p>
+            </div>
+
+            <div class="border-l-2 border-[#C5A367] pl-6">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Latest Archive Entry</p>
+              <p class="serif text-3xl">${safe(player.latestCompetition)}</p>
+            </div>
+
+            <div class="border-l-2 border-gray-300 pl-6">
+              <p class="text-xs uppercase tracking-[0.25em] text-gray-400 mb-2">Coming Next</p>
+              <p class="text-gray-700">Full competition-by-competition timeline will be added when detailed result history is connected.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-[#132419] text-white p-8 md:p-12 rounded shadow">
+          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Museum Notes</p>
+          <h2 class="serif text-5xl mb-6">Living Archive</h2>
+          <p class="text-white/75 leading-relaxed max-w-4xl">
+            This record is generated from the Dudley Golf Club Digital Museum data. As more competition results are imported,
+            this page will automatically grow with additional statistics, achievements, competition history and future archive features.
+          </p>
+        </section>
+
       </main>
+
+      <footer class="bg-[#132419] text-white px-6 py-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+          <p class="serif text-3xl">Dudley Golf Club Digital Museum</p>
+          <a href="museum-collection.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Back to Collection</a>
+        </div>
+      </footer>
     `;
   } catch (err) {
     document.getElementById("record").innerHTML = "<p class='p-8'>Unable to load museum record.</p>";
