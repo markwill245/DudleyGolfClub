@@ -78,11 +78,17 @@
         grid.innerHTML = `<p>No players found.</p>`;
         return;
       }
+grid.innerHTML = players.map((player, index) => {
 
-      grid.innerHTML = players.map((player, index) => {
-        const slug = player.playerSlug?.current || "";
+    const slug =
+        player.playerSlug?.current ||
+        player.playerName
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-|-$/g, "");
 
-        return `
+
+             return `
       <a href="museum-record.html?slug=${slug}"
         class="block bg-white border border-[#C5A367]/30 p-7 rounded shadow hover:shadow-xl transition">
         
