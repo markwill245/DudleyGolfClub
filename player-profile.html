@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Profile | Dudley Golf Club Digital Museum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+
+    <a href="index.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+      ← Back to Museum
+    </a>
+
+    <section id="profile" class="mt-10">
+      <p>Loading player profile...</p>
+    </section>
+
+  </main>
+
+  <script>
+    function getSlug() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("player");
+    }
+
+    async function loadPlayerProfile() {
+      const slug = getSlug();
+      const container = document.getElementById("profile");
+
+      if (!slug) {
+        container.innerHTML = "<p>No player selected.</p>";
+        return;
+      }
+
+      const response = await fetch("data/player-page-data.json");
+      const players = await response.json();
+
+      const player = players.find(p => p.slug === slug);
+
+      if (!player) {
+        container.innerHTML = "<p>Player profile not found.</p>";
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+            ${player.hero.section} • ${player.hero.status}
+          </p>
+
+          <h1 class="text-5xl font-serif mb-4">${player.hero.name}</h1>
+
+          <p class="text-lg leading-8 mb-8">${player.summary}</p>
+
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
+            <div><strong>${player.headlineStats.competitionsPlayed}</strong><br>Played</div>
+            <div><strong>${player.headlineStats.wins}</strong><br>Wins</div>
+            <div><strong>${player.headlineStats.runnerUp}</strong><br>Runner-up</div>
+            <div><strong>${player.headlineStats.top3}</strong><br>Top 3</div>
+            <div><strong>${player.headlineStats.winPercentage}%</strong><br>Win Rate</div>
+          </div>
+
+          <h2 class="text-2xl font-serif mb-4">Career Timeline</h2>
+
+          <div class="space-y-3">
+            ${player.timeline.map(item => `
+              <div class="border-l-4 border-[#C5A367] pl-4 py-2">
+                <strong>${item.year}</strong> — ${item.competition}
+                <span class="text-sm text-gray-600">Position ${item.position}</span>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    loadPlayerProfile();
+  </script>
+
+</body>
+</html>

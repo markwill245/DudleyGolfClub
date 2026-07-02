@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Competition Profile | Dudley Golf Club Digital Museum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+
+    <a href="competition-index.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+      ← Back to Competition Gallery
+    </a>
+
+    <section id="competition" class="mt-10">
+      <p>Loading competition profile...</p>
+    </section>
+
+  </main>
+
+  <script>
+    function getCompetitionId() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("id");
+    }
+
+    async function loadCompetitionProfile() {
+      const id = getCompetitionId();
+      const container = document.getElementById("competition");
+
+      if (!id) {
+        container.innerHTML = "<p>No competition selected.</p>";
+        return;
+      }
+
+      const response = await fetch("data/competition-profiles.json");
+      const competitions = await response.json();
+
+      const comp = competitions.find(c => c.id === id);
+
+      if (!comp) {
+        container.innerHTML = "<p>Competition profile not found.</p>";
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
+
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+            ${comp.section || "Club"} • ${comp.status || "Competition"}
+          </p>
+
+          <h1 class="text-5xl font-serif mb-4">${comp.name}</h1>
+
+          <p class="text-lg leading-8 mb-10">
+            ${comp.name} is a ${comp.status || "club"} competition played in ${comp.format || "recorded"} format.
+          </p>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            <div>
+              <strong>${comp.yearsPlayed || 0}</strong><br>
+              Years Played
+            </div>
+
+            <div>
+              <strong>${comp.firstYear || "-"}</strong><br>
+              First Year
+            </div>
+
+            <div>
+              <strong>${comp.latestYear || "-"}</strong><br>
+              Latest Year
+            </div>
+
+            <div>
+              <strong>${comp.uniqueWinners || 0}</strong><br>
+              Unique Winners
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <div class="bg-[#F9F7F2] rounded-xl p-6 border border-[#C5A367]/30">
+              <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+                Most Successful Player
+              </p>
+              <h2 class="text-3xl font-serif">
+                ${comp.mostSuccessfulPlayer || "Not yet recorded"}
+              </h2>
+              <p>${comp.mostWins || 0} win${comp.mostWins === 1 ? "" : "s"}</p>
+            </div>
+
+            <div class="bg-[#F9F7F2] rounded-xl p-6 border border-[#C5A367]/30">
+              <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+                Entries
+              </p>
+              <h2 class="text-3xl font-serif">${comp.totalEntries || 0}</h2>
+              <p>Average entries: ${comp.averageEntries || 0}</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-serif mb-4">Competition Intelligence</h2>
+
+          <ul class="space-y-3">
+            <li><strong>Section:</strong> ${comp.section || "-"}</li>
+            <li><strong>Format:</strong> ${comp.format || "-"}</li>
+            <li><strong>Status:</strong> ${comp.status || "-"}</li>
+            <li><strong>Order of Merit:</strong> ${comp.orderOfMerit ? "Counts" : "Not confirmed"}</li>
+          </ul>
+
+        </div>
+      `;
+    }
+
+    loadCompetitionProfile();
+  </script>
+
+</body>
+</html>

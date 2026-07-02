@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Index | Dudley Golf Club Digital Museum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+
+    <a href="index.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+      ← Back to Museum
+    </a>
+
+    <section class="mt-10 mb-12">
+      <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+        Digital Museum
+      </p>
+
+      <h1 class="text-5xl font-serif mb-4">Player Index</h1>
+
+      <p class="text-lg max-w-3xl">
+        Explore recorded player profiles, career statistics, Hall of Fame scores and competition history.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <input
+        id="search"
+        type="text"
+        placeholder="Search player..."
+        class="w-full px-5 py-4 rounded-xl border border-[#C5A367]/40 bg-white text-lg"
+      >
+    </section>
+
+    <section id="players" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <p>Loading players...</p>
+    </section>
+
+  </main>
+
+  <script>
+    let allPlayers = [];
+
+    async function loadPlayers() {
+      const response = await fetch("data/player-page-data.json");
+      allPlayers = await response.json();
+      renderPlayers(allPlayers);
+    }
+
+    function renderPlayers(players) {
+      const container = document.getElementById("players");
+
+      if (!players.length) {
+        container.innerHTML = "<p>No players found.</p>";
+        return;
+      }
+
+      container.innerHTML = players.map(player => `
+        <a href="player-profile.html?player=${player.slug}"
+           class="block bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
+
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+            ${player.hero.section} • ${player.hero.status}
+          </p>
+
+          <h2 class="text-3xl font-serif mb-4">${player.hero.name}</h2>
+
+          <div class="grid grid-cols-3 gap-4 text-sm">
+            <div>
+              <strong class="text-xl">${player.headlineStats.wins}</strong><br>
+              Wins
+            </div>
+            <div>
+              <strong class="text-xl">${player.headlineStats.top3}</strong><br>
+              Top 3
+            </div>
+            <div>
+              <strong class="text-xl">${player.hallOfFame.score}</strong><br>
+              HOF
+            </div>
+          </div>
+
+          <p class="mt-4 text-sm text-gray-600">
+            ${player.hallOfFame.status}
+          </p>
+        </a>
+      `).join("");
+    }
+
+    document.getElementById("search").addEventListener("input", e => {
+      const term = e.target.value.toLowerCase();
+
+      const filtered = allPlayers.filter(player =>
+        player.hero.name.toLowerCase().includes(term)
+      );
+
+      renderPlayers(filtered);
+    });
+
+    loadPlayers();
+  </script>
+
+</body>
+</html>

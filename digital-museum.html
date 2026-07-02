@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Museum | Dudley Golf Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+    <a href="index.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+      ← Back to Home
+    </a>
+
+    <section class="mt-12 mb-16">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-5">
+        Dudley Golf Club
+      </p>
+
+      <h1 class="text-6xl md:text-7xl font-serif mb-6">
+        Digital Museum
+      </h1>
+
+      <p class="text-xl max-w-4xl leading-8">
+        A living archive of Dudley Golf Club’s players, competitions, records,
+        champions and historical achievements.
+      </p>
+    </section>
+
+    <section id="museum-stats" class="grid md:grid-cols-4 gap-6 mb-16">
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="stat-players" class="text-4xl font-serif">-</strong>
+        <p>Players Recorded</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="stat-competitions" class="text-4xl font-serif">-</strong>
+        <p>Competitions</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="stat-results" class="text-4xl font-serif">-</strong>
+        <p>Recorded Results</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="stat-leader" class="text-2xl font-serif">-</strong>
+        <p>Lifetime Leader</p>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="player-index.html" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg hover:shadow-2xl transition">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Players</p>
+        <h2 class="text-3xl font-serif mb-4">Player Index</h2>
+        <p>Explore player profiles, career records, Hall of Fame scores and timelines.</p>
+      </a>
+
+      <a href="competition-index.html" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg hover:shadow-2xl transition">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Competitions</p>
+        <h2 class="text-3xl font-serif mb-4">Competition Archive</h2>
+        <p>Explore competition profiles, winners, records and histories.</p>
+      </a>
+
+      <a href="#" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg opacity-80">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Records</p>
+        <h2 class="text-3xl font-serif mb-4">Records Centre</h2>
+        <p>Coming soon: wins, top finishes, majors, medals and milestone achievements.</p>
+      </a>
+
+      <a href="#" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg opacity-80">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Order of Merit</p>
+        <h2 class="text-3xl font-serif mb-4">Order of Merit</h2>
+        <p>Annual, Mens season, Seniors season and lifetime rankings.</p>
+      </a>
+
+      <a href="#" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg opacity-80">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Hall of Fame</p>
+        <h2 class="text-3xl font-serif mb-4">Hall of Fame</h2>
+        <p>Generated candidates, records and historical achievement scores.</p>
+      </a>
+
+      <a href="#" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg opacity-80">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Timeline</p>
+        <h2 class="text-3xl font-serif mb-4">Museum Timeline</h2>
+        <p>Coming soon: a chronological story of results, winners and achievements.</p>
+      </a>
+
+    </section>
+
+  </main>
+
+  <script>
+    async function loadMuseumStats() {
+      try {
+        const players = await fetch("data/player-page-data.json").then(r => r.json());
+        const competitions = await fetch("data/competition-profiles.json").then(r => r.json());
+        const lifetime = await fetch("data/order-of-merit-lifetime.json").then(r => r.json());
+
+        document.getElementById("stat-players").textContent = players.length;
+        document.getElementById("stat-competitions").textContent = competitions.length;
+
+        const resultCount = players.reduce(
+          (total, player) => total + player.timeline.length,
+          0
+        );
+
+        document.getElementById("stat-results").textContent = resultCount;
+        document.getElementById("stat-leader").textContent =
+          lifetime[0]?.player || "-";
+
+      } catch (error) {
+        console.log("Museum stats failed to load", error);
+      }
+    }
+
+    loadMuseumStats();
+  </script>
+
+</body>
+</html>
