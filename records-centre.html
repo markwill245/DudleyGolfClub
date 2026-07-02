@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Records Centre | Dudley Golf Club Digital Museum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+<main class="max-w-7xl mx-auto px-6 py-16">
+
+  <a href="digital-museum.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+    ← Back to Digital Museum
+  </a>
+
+  <section class="mt-12 mb-12">
+    <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
+      Dudley Golf Club Digital Museum
+    </p>
+
+    <h1 class="text-6xl font-serif mb-6">Records Centre</h1>
+
+    <p class="text-xl max-w-4xl leading-8">
+      The living wall of records, generated automatically from the Museum Brain.
+    </p>
+  </section>
+
+  <section id="records" class="space-y-12">
+    <p>Loading records...</p>
+  </section>
+
+</main>
+
+<script>
+async function loadRecords() {
+  const response = await fetch("data/records-centre.json");
+  const records = await response.json();
+
+  const sections = [
+    ["Career Records", records.career],
+    ["Championship Records", records.championships],
+    ["Museum Records", records.museum]
+  ];
+
+  document.getElementById("records").innerHTML = sections.map(([title, group]) => `
+    <section>
+      <h2 class="text-4xl font-serif mb-6">${title}</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        ${Object.values(group).map(record => `
+          <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+              ${record.label}
+            </p>
+
+            <h3 class="text-3xl font-serif mb-2">
+              ${record.holder ? record.holder.player : "No holder yet"}
+            </h3>
+
+            <p class="text-5xl font-serif text-[#C5A367] mb-6">
+              ${record.holder ? record.holder.value : "-"}
+            </p>
+
+            <div class="space-y-2">
+              ${record.leaders.map(item => `
+                <a href="player-profile.html?player=${item.slug}"
+                   class="flex justify-between border-b border-[#C5A367]/20 pb-2 hover:text-[#C5A367]">
+                  <span>${item.rank}. ${item.player}</span>
+                  <strong>${item.displayValue}</strong>
+                </a>
+              `).join("")}
+            </div>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+  `).join("");
+}
+
+loadRecords();
+</script>
+
+</body>
+</html>
