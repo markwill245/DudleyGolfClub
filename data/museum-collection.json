@@ -1,0 +1,54 @@
+[
+  {
+    "id": "captains-board",
+    "name": "Captains Honour Board",
+    "category": "Honour Board",
+    "section": "Club",
+    "introduced": 1893,
+    "status": "Active",
+    "description": "Records every Captain of Dudley Golf Club from the club's foundation.",
+    "photo": "images/captains-board.webp",
+    "boardPhoto": "images/captains-board.webp",
+    "competitionId": "",
+    "relatedPage": "captains.html"
+  },
+  {
+    "id": "presidents-board",
+    "name": "Presidents Honour Board",
+    "category": "Honour Board",
+    "section": "Club",
+    "introduced": 1946,
+    "status": "Active",
+    "description": "Records every President of Dudley Golf Club.",
+    "photo": "images/presidents-board.webp",
+    "boardPhoto": "images/presidents-board.webp",
+    "competitionId": "",
+    "relatedPage": ""
+  },
+  {
+    "id": "golfer-of-the-year",
+    "name": "Golfer of the Year Board",
+    "category": "Honour Board",
+    "section": "Mens",
+    "introduced": "",
+    "status": "Active",
+    "description": "Honour board recording the Golfer of the Year winners.",
+    "photo": "images/golfer-of-the-year.webp",
+    "boardPhoto": "images/golfer-of-the-year.webp",
+    "competitionId": "golfer-of-the-year",
+    "relatedPage": "order-of-merit.html"
+  },
+  {
+    "id": "presidents-putter",
+    "name": "The President's Putter",
+    "category": "Historic Trophy",
+    "section": "Club",
+    "introduced": "",
+    "status": "Active",
+    "description": "Historic artefact displayed within the Dudley Golf Club collection.",
+    "photo": "images/presidents-putter.webp",
+    "boardPhoto": "",
+    "competitionId": "",
+    "relatedPage": ""
+  }
+]

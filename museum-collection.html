@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Museum Collection | Dudley Golf Club</title>
+  <title>Trophy & Heritage Collection | Dudley Golf Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
@@ -28,137 +29,146 @@
   <header class="bg-[#132419] text-white px-6 py-5">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <a href="digital-museum.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Digital Museum</a>
-      <span class="text-xs uppercase tracking-[0.35em]">Museum Collection</span>
+      <span class="text-xs uppercase tracking-[0.35em]">Trophy & Heritage Collection</span>
     </div>
   </header>
 
   <main class="max-w-7xl mx-auto px-6 py-16">
-    <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Digital Museum</p>
-    <h1 class="serif text-6xl md:text-7xl mb-6">Explore the Collection</h1>
 
-    <input id="searchBox" placeholder="Search player name..."
+    <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-4">Dudley Golf Club</p>
+    <h1 class="serif text-6xl md:text-7xl mb-6">Trophy & Heritage Collection</h1>
+
+    <p class="max-w-3xl text-lg text-gray-700 leading-relaxed mb-10">
+      Explore the trophies, honour boards, historic artefacts and heritage of Dudley Golf Club.
+      Each item forms part of the club's digital museum and links together over 130 years of golfing history through
+      competitions, players, officers and historic records.
+    </p>
+
+    <input id="searchBox" placeholder="Search trophies, boards, artefacts..."
       class="w-full max-w-xl mb-10 px-5 py-4 border border-[#C5A367]/40 bg-white rounded">
 
-    <div id="playersGrid" class="grid md:grid-cols-3 gap-6">
-      <p>Loading collection...</p>
+    <div id="collectionGrid" class="grid md:grid-cols-3 gap-6">
+      <p>Loading museum collection...</p>
     </div>
+
   </main>
 
   <script>
-    const projectId = "c54r3a5t";
-    const dataset = "production";
-    const apiVersion = "2024-03-01";
-
-    const query = encodeURIComponent(`
-*[_type == "playerIntelligence"] | order(playerName asc) {
-  playerName,
-  playerSlug,
-  competitionsPlayed,
-  wins,
-  topTen,
-  museumSummary
-}
-`);
-
-    const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
-
-    let allPlayers = [];
+    let collectionItems = [];
 
     function safe(value, fallback = "—") {
       return value === null || value === undefined || value === "" ? fallback : value;
     }
 
     function collectionNumber(index) {
-      return `DGC-PL-${String(index + 1).padStart(4, "0")}`;
+      return `DGC-MC-${String(index + 1).padStart(4, "0")}`;
     }
 
-    function makeSlug(player) {
-      return player.playerSlug?.current ||
-        player.playerName
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")
-          .replace(/^-|-$/g, "");
-    }
-
-    function getVisiblePlayers(players) {
+    function getVisibleItems(items) {
       const term = document.getElementById("searchBox").value.toLowerCase().trim();
 
-      if (!term) {
-        return players.slice(0, 12);
-      }
+      if (!term) return items;
 
-      return players.filter(player =>
-        player.playerName.toLowerCase().includes(term)
+      return items.filter(item =>
+        `${item.name} ${item.category} ${item.section} ${item.description}`
+          .toLowerCase()
+          .includes(term)
       );
     }
 
-    function renderPlayers(players) {
-      const grid = document.getElementById("playersGrid");
+    function renderCollection(items) {
+      const grid = document.getElementById("collectionGrid");
 
-      if (!players.length) {
-        grid.innerHTML = `<p>No players found.</p>`;
+      if (!items.length) {
+        grid.innerHTML = `<p>No collection items found.</p>`;
         return;
       }
 
-      grid.innerHTML = players.map((player, index) => {
-        const slug = makeSlug(player);
+      grid.innerHTML = items.map((item, index) => `
+        <article class="bg-white border border-[#C5A367]/30 rounded shadow overflow-hidden hover:shadow-xl transition">
 
-        return `
-      <a href="museum-record.html#${encodeURIComponent(slug)}"
-        class="block bg-white border border-[#C5A367]/30 p-7 rounded shadow hover:shadow-xl transition">
-
-        <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-4">
-          ${collectionNumber(index)}
-        </p>
-
-        <h2 class="serif text-3xl mb-4">${player.playerName}</h2>
-
-        <div class="grid grid-cols-3 gap-3 text-center mb-5">
-          <div>
-            <p class="serif text-3xl">${safe(player.competitionsPlayed, 0)}</p>
-            <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Comps</p>
+          <div class="h-56 bg-[#132419]/10 flex items-center justify-center">
+            ${item.photo
+          ? `<img src="${item.photo}" alt="${item.name}" class="w-full h-full object-cover">`
+          : `<span class="serif text-5xl text-[#C5A367]">🏆</span>`
+        }
           </div>
-          <div>
-            <p class="serif text-3xl">${safe(player.wins, 0)}</p>
-            <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Wins</p>
-          </div>
-          <div>
-            <p class="serif text-3xl">${safe(player.topTen, 0)}</p>
-            <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Top 10</p>
-          </div>
-        </div>
 
-        <p class="text-sm text-gray-700 leading-relaxed">
-          ${safe(player.museumSummary, "Museum record generated from competition data.")}
-        </p>
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-4">
+              ${collectionNumber(index)}
+            </p>
 
-        <p class="mt-6 text-xs uppercase tracking-[0.25em] text-[#C5A367]">
-          View Museum Record →
-        </p>
-      </a>
-    `;
-      }).join("");
+            <h2 class="serif text-3xl mb-3">${safe(item.name)}</h2>
+
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">
+              ${safe(item.category)} · ${safe(item.section)}
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 text-sm mb-5">
+              <div>
+                <p class="text-gray-500">Introduced</p>
+                <p class="font-semibold">${safe(item.introduced)}</p>
+              </div>
+              <div>
+                <p class="text-gray-500">Status</p>
+                <p class="font-semibold">${safe(item.status, "Active")}</p>
+              </div>
+            </div>
+
+            <p class="text-sm text-gray-700 leading-relaxed mb-6">
+              ${safe(item.description, "Museum catalogue record awaiting further historical notes.")}
+            </p>
+<div class="flex flex-col gap-3">
+
+  ${item.competitionId
+          ? `<a href="competition-profile.html?id=${encodeURIComponent(item.competitionId)}"
+        class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">
+        View Competition →
+      </a>`
+          : ""}
+
+  <a href="competition-index.html"
+     class="text-xs uppercase tracking-[0.25em] text-[#132419]">
+     Competition Archive →
+  </a>
+
+  ${item.relatedPage
+          ? `<a href="${item.relatedPage}"
+        class="text-xs uppercase tracking-[0.25em] text-[#132419]">
+        View Related Page →
+      </a>`
+          : ""}
+
+  ${!item.competitionId && !item.relatedPage
+          ? `<p class="text-xs uppercase tracking-[0.25em] text-gray-400">
+        Record Only
+      </p>`
+          : ""}
+
+</div>
+
+        </article>
+      `).join("");
     }
 
-    async function loadPlayers() {
+    async function loadCollection() {
       try {
-        const res = await fetch(url);
-        const data = await res.json();
-
-        allPlayers = data.result || [];
-        renderPlayers(getVisiblePlayers(allPlayers));
+        const res = await fetch("data/museum-collection.json");
+        collectionItems = await res.json();
+        renderCollection(getVisibleItems(collectionItems));
       } catch (err) {
-        document.getElementById("playersGrid").innerHTML =
+        document.getElementById("collectionGrid").innerHTML =
           `<p>Unable to load museum collection.</p>`;
         console.error(err);
       }
     }
 
     document.getElementById("searchBox").addEventListener("input", () => {
-      renderPlayers(getVisiblePlayers(allPlayers));
+      renderCollection(getVisibleItems(collectionItems));
     });
 
-    loadPlayers();
+    loadCollection();
   </script>
 
 </body>
