@@ -3,6 +3,12 @@
     "id": "club-championship",
     "name": "Club Championship",
     "section": "Mens",
+    "type": "Major",
+    "category": "Strokeplay",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": true,
+    "profileType": "Competition Profile",
     "yearsPlayed": 1,
     "firstYear": 2026,
     "latestYear": 2026,
@@ -10,13 +16,18 @@
     "averageEntries": 51,
     "uniqueWinners": 1,
     "mostSuccessfulPlayer": "Lewis Jones",
-    "mostWins": 1
+    "mostWins": 1,
+    "summary": "Club Championship is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "captains-day-walker-cup",
     "name": "Captain's Day & Walker Cup",
     "section": "Mixed",
     "format": "Stableford",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": true,
+    "profileType": "Competition Profile",
     "yearsPlayed": 1,
     "firstYear": 2026,
     "latestYear": 2026,
@@ -24,12 +35,19 @@
     "averageEntries": 92,
     "uniqueWinners": 1,
     "mostSuccessfulPlayer": "Gary Baker",
-    "mostWins": 1
+    "mostWins": 1,
+    "summary": "Captain's Day & Walker Cup is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "monthly-medal",
     "name": "Monthly Medal",
     "section": "Mens",
+    "type": "Medal",
+    "category": "Strokeplay",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": true,
+    "profileType": "Competition Profile",
     "yearsPlayed": 0,
     "firstYear": null,
     "latestYear": null,
@@ -37,12 +55,19 @@
     "averageEntries": 0,
     "uniqueWinners": 0,
     "mostSuccessfulPlayer": null,
-    "mostWins": 0
+    "mostWins": 0,
+    "summary": "Monthly Medal is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "golfer-of-the-year",
     "name": "Golfer of the Year",
     "section": "Mens",
+    "type": "Board Competition",
+    "category": "Historical Honour",
+    "historicalBoard": true,
+    "winnerOnly": true,
+    "countsForOrderOfMerit": false,
+    "profileType": "Historical Honour",
     "yearsPlayed": 0,
     "firstYear": null,
     "latestYear": null,
@@ -50,12 +75,19 @@
     "averageEntries": 0,
     "uniqueWinners": 0,
     "mostSuccessfulPlayer": null,
-    "mostWins": 0
+    "mostWins": 0,
+    "summary": "Golfer of the Year is preserved as a historical honours board competition in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "golfer-of-the-year",
     "name": "Golfer of the Year",
     "section": "Mens",
+    "type": "Board Competition",
+    "category": "Historical Honour",
+    "historicalBoard": true,
+    "winnerOnly": true,
+    "countsForOrderOfMerit": false,
+    "profileType": "Historical Honour",
     "yearsPlayed": 0,
     "firstYear": null,
     "latestYear": null,
@@ -63,6 +95,7 @@
     "averageEntries": 0,
     "uniqueWinners": 0,
     "mostSuccessfulPlayer": null,
-    "mostWins": 0
+    "mostWins": 0,
+    "summary": "Golfer of the Year is preserved as a historical honours board competition in the Dudley Golf Club Digital Museum."
   }
 ]
