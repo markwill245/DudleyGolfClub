@@ -41,10 +41,19 @@
   <script>
     let allPlayers = [];
 
+    let allPlayers = [];
+    let activePlayers = [];
+
     async function loadPlayers() {
       const response = await fetch("data/player-page-data.json");
+
       allPlayers = await response.json();
-      renderPlayers(allPlayers);
+
+      activePlayers = allPlayers.filter(player =>
+        (player.headlineStats?.competitionsPlayed || 0) > 0
+      );
+
+      renderPlayers(activePlayers);
     }
 
     function renderPlayers(players) {
@@ -90,7 +99,7 @@
     document.getElementById("search").addEventListener("input", e => {
       const term = e.target.value.toLowerCase();
 
-      const filtered = allPlayers.filter(player =>
+      const filtered = activePlayers.filter(player =>
         player.hero.name.toLowerCase().includes(term)
       );
 
