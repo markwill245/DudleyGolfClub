@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Competition Profile | Dudley Golf Club Digital Museum</title>
@@ -8,113 +9,127 @@
 
 <body class="bg-[#F9F7F2] text-[#132419]">
 
-  <main class="max-w-5xl mx-auto px-6 py-16">
+  <main class="max-w-7xl mx-auto px-6 py-16">
 
     <a href="competition-index.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
-      ← Back to Competition Gallery
+      ← Back to Competition Archive
     </a>
 
-    <section id="competition" class="mt-10">
-      <p>Loading competition profile...</p>
+    <section id="profile" class="mt-12">
+      Loading competition...
     </section>
 
   </main>
 
   <script>
-    function getCompetitionId() {
+    async function loadCompetition() {
       const params = new URLSearchParams(window.location.search);
-      return params.get("id");
-    }
-
-    async function loadCompetitionProfile() {
-      const id = getCompetitionId();
-      const container = document.getElementById("competition");
-
-      if (!id) {
-        container.innerHTML = "<p>No competition selected.</p>";
-        return;
-      }
+      const id = params.get("id");
 
       const response = await fetch("data/competition-profiles.json");
       const competitions = await response.json();
 
       const comp = competitions.find(c => c.id === id);
 
+      const container = document.getElementById("profile");
+
       if (!comp) {
-        container.innerHTML = "<p>Competition profile not found.</p>";
+        container.innerHTML = `
+      <h1 class="text-5xl font-serif mb-4">Competition Not Found</h1>
+      <p>This competition could not be found in the Digital Museum.</p>
+    `;
         return;
       }
 
+      document.title = `${comp.name} | Dudley Golf Club Digital Museum`;
+
       container.innerHTML = `
-        <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
+    <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+      Competition Profile
+    </p>
 
-          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
-            ${comp.section || "Club"} • ${comp.status || "Competition"}
-          </p>
+    <h1 class="text-6xl font-serif mb-4">
+      ${comp.name}
+    </h1>
 
-          <h1 class="text-5xl font-serif mb-4">${comp.name}</h1>
+    <p class="text-xl text-gray-700 mb-10">
+      ${comp.section || "Club"} competition record preserved in the Dudley Golf Club Digital Museum.
+    </p>
 
-          <p class="text-lg leading-8 mb-10">
-            ${comp.name} is a ${comp.status || "club"} competition played in ${comp.format || "recorded"} format.
-          </p>
+    <div class="grid md:grid-cols-4 gap-6 mb-12">
 
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-            <div>
-              <strong>${comp.yearsPlayed || 0}</strong><br>
-              Years Played
-            </div>
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Years Recorded</p>
+        <p class="text-4xl font-serif">${comp.yearsPlayed || 0}</p>
+      </div>
 
-            <div>
-              <strong>${comp.firstYear || "-"}</strong><br>
-              First Year
-            </div>
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">First Year</p>
+        <p class="text-4xl font-serif">${comp.firstYear || "—"}</p>
+      </div>
 
-            <div>
-              <strong>${comp.latestYear || "-"}</strong><br>
-              Latest Year
-            </div>
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Latest Year</p>
+        <p class="text-4xl font-serif">${comp.latestYear || "—"}</p>
+      </div>
 
-            <div>
-              <strong>${comp.uniqueWinners || 0}</strong><br>
-              Unique Winners
-            </div>
-          </div>
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Entries</p>
+        <p class="text-4xl font-serif">${comp.totalEntries || 0}</p>
+      </div>
 
-          <div class="grid md:grid-cols-2 gap-6 mb-10">
-            <div class="bg-[#F9F7F2] rounded-xl p-6 border border-[#C5A367]/30">
-              <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
-                Most Successful Player
-              </p>
-              <h2 class="text-3xl font-serif">
-                ${comp.mostSuccessfulPlayer || "Not yet recorded"}
-              </h2>
-              <p>${comp.mostWins || 0} win${comp.mostWins === 1 ? "" : "s"}</p>
-            </div>
+    </div>
 
-            <div class="bg-[#F9F7F2] rounded-xl p-6 border border-[#C5A367]/30">
-              <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
-                Entries
-              </p>
-              <h2 class="text-3xl font-serif">${comp.totalEntries || 0}</h2>
-              <p>Average entries: ${comp.averageEntries || 0}</p>
-            </div>
-          </div>
+    <div class="grid lg:grid-cols-3 gap-8">
 
-          <h2 class="text-2xl font-serif mb-4">Competition Intelligence</h2>
+      <section class="lg:col-span-2 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+          Competition Summary
+        </p>
 
-          <ul class="space-y-3">
-            <li><strong>Section:</strong> ${comp.section || "-"}</li>
-            <li><strong>Format:</strong> ${comp.format || "-"}</li>
-            <li><strong>Status:</strong> ${comp.status || "-"}</li>
-            <li><strong>Order of Merit:</strong> ${comp.orderOfMerit ? "Counts" : "Not confirmed"}</li>
-          </ul>
+        <h2 class="text-4xl font-serif mb-6">Museum Record</h2>
 
+        <div class="space-y-4 text-lg">
+          <p><strong>Competition:</strong> ${comp.name}</p>
+          <p><strong>Section:</strong> ${comp.section || "—"}</p>
+          <p><strong>Years covered:</strong> ${comp.firstYear || "—"}–${comp.latestYear || "—"}</p>
+          <p><strong>Years recorded:</strong> ${comp.yearsPlayed || 0}</p>
+          <p><strong>Total recorded entries:</strong> ${comp.totalEntries || 0}</p>
+          <p><strong>Average entries:</strong> ${comp.averageEntries || 0}</p>
+          <p><strong>Unique winners:</strong> ${comp.uniqueWinners || 0}</p>
         </div>
-      `;
+      </section>
+
+      <aside class="bg-[#132419] text-white rounded-2xl p-8 shadow">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+          Most Successful
+        </p>
+
+        <h2 class="text-4xl font-serif mb-4">
+          ${comp.mostSuccessfulPlayer || "None yet"}
+        </h2>
+
+        <p class="text-white/70 text-lg">
+          ${comp.mostWins || 0} ${comp.mostWins === 1 ? "recorded win" : "recorded wins"}
+        </p>
+
+        <div class="mt-8 pt-6 border-t border-white/20">
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+            Museum Status
+          </p>
+          <p class="text-white/80">
+            Linked to competition archive, records centre and player statistics.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  `;
     }
 
-    loadCompetitionProfile();
+    loadCompetition();
   </script>
 
 </body>
+
 </html>
