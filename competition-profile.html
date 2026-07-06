@@ -28,8 +28,11 @@
 
       const response = await fetch("data/competition-profiles.json");
       const competitions = await response.json();
+      const resultsResponse = await fetch("data/competition-results.json");
+      const results = await resultsResponse.json();
 
       const comp = competitions.find(c => c.id === id);
+      const compResults = results.find(r => r.competitionId === id);
 
       const container = document.getElementById("profile");
 
@@ -123,7 +126,25 @@
         </div>
       </aside>
 
-    </div>
+       </div>
+
+    ${compResults?.results?.length
+          ? `<section class="mt-12 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+          <h2 class="text-4xl font-serif mb-6">Full Result</h2>
+
+          <div class="space-y-3">
+            ${compResults.results.map(r => `
+              <div class="grid grid-cols-3 gap-4 border-b pb-2 text-sm">
+                <span>${r.position}. ${r.playerName}</span>
+                <span>${r.handicap !== undefined ? `Hcp ${r.handicap}` : ""}</span>
+                <span class="text-right font-semibold">
+                  ${r.points !== undefined ? `${r.points} pts` : r.total !== undefined && r.total !== null ? r.total : r.status || ""}
+                </span>
+              </div>
+            `).join("")}
+          </div>
+        </section>`
+          : ""}
   `;
     }
 
