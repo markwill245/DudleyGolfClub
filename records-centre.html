@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Records Centre | Dudley Golf Club Digital Museum</title>
@@ -8,47 +9,51 @@
 
 <body class="bg-[#F9F7F2] text-[#132419]">
 
-<main class="max-w-7xl mx-auto px-6 py-16">
+  <main class="max-w-7xl mx-auto px-6 py-16">
 
-  <a href="digital-museum.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
-    ← Back to Digital Museum
-  </a>
+    <a href="digital-museum.html"
+      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
+      ← Back to Museum
+    </a>
 
-  <section class="mt-12 mb-12">
-    <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
-      Dudley Golf Club Digital Museum
-    </p>
+    <section class="mt-12 mb-12">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
+        Dudley Golf Club Digital Museum
+      </p>
 
-    <h1 class="text-6xl font-serif mb-6">Records Centre</h1>
+      <h1 class="text-6xl font-serif mb-6">Records Centre</h1>
 
-    <p class="text-xl max-w-4xl leading-8">
-      The living wall of records, generated automatically from the Museum Brain.
-    </p>
-  </section>
+      <p class="text-xl max-w-4xl leading-8">
+        The living wall of records, generated automatically from the Museum Brain.
+      </p>
+    </section>
 
-  <section id="records" class="space-y-12">
-    <p>Loading records...</p>
-  </section>
+    <section id="records" class="space-y-12">
+      <p>Loading records...</p>
+    </section>
 
-</main>
+  </main>
 
-<script>
-async function loadRecords() {
-  const response = await fetch("data/records-centre.json");
-  const records = await response.json();
+  <script>
+    async function loadRecords() {
+      const container = document.getElementById("records");
 
-  const sections = [
-    ["Career Records", records.career],
-    ["Championship Records", records.championships],
-    ["Museum Records", records.museum]
-  ];
+      try {
+        const response = await fetch("data/records-centre.json");
+        const records = await response.json();
 
-  document.getElementById("records").innerHTML = sections.map(([title, group]) => `
+        const sections = [
+          ["Career Records", records.career],
+          ["Championship Records", records.championships],
+          ["Museum Records", records.museum]
+        ];
+
+        document.getElementById("records").innerHTML = sections.map(([title, group]) => `
     <section>
       <h2 class="text-4xl font-serif mb-6">${title}</h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        ${Object.values(group).map(record => `
+        ${Object.values(group || {}).map(record => `
           <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
             <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
               ${record.label}
@@ -76,10 +81,22 @@ async function loadRecords() {
       </div>
     </section>
   `).join("");
-}
+      }
+  } catch (error) {
+      console.log("Records failed to load", error);
 
-loadRecords();
-</script>
+      container.innerHTML = `
+      <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+        <h2 class="text-3xl font-serif mb-4">Records unavailable</h2>
+        <p class="text-gray-600">
+          The records could not be loaded at the moment.
+        </p>
+      </div>
+    `;
+    }
+    loadRecords();
+  </script>
 
 </body>
+
 </html>

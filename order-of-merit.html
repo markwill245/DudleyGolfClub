@@ -26,7 +26,10 @@
 
   <header class="bg-[#132419] text-white px-6 py-5">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <a href="digital-museum.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Digital Museum</a>
+      <a href="digital-museum.html"
+        class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
+        ← Back to Museum
+      </a>
       <span class="text-xs uppercase tracking-[0.35em]">Order of Merit</span>
     </div>
   </header>
@@ -141,7 +144,7 @@
                 <tr class="border-b border-gray-200 hover:bg-[#F9F7F2] transition">
                   <td class="p-4 serif text-3xl">${medal(index)}</td>
                   <td class="p-4">
-                    <a href="museum-record.html#${slug(p)}" class="font-semibold hover:text-[#C5A367] transition">
+                    <a href="player-profile.html?player=${slug(p)}" class="font-semibold hover:text-[#C5A367] transition">
                       ${p.playerName}
                     </a>
                   </td>

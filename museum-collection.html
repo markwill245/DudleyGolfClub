@@ -28,7 +28,10 @@
 
   <header class="bg-[#132419] text-white px-6 py-5">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <a href="digital-museum.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">← Digital Museum</a>
+      <a href="digital-museum.html"
+        class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
+        ← Back to Museum
+      </a>
       <span class="text-xs uppercase tracking-[0.35em]">Trophy & Heritage Collection</span>
     </div>
   </header>
@@ -80,7 +83,14 @@
       const grid = document.getElementById("collectionGrid");
 
       if (!items.length) {
-        grid.innerHTML = `<p>No collection items found.</p>`;
+        grid.innerHTML = `
+  <div class="col-span-full bg-white border border-[#C5A367]/30 p-8 shadow rounded">
+    <h2 class="serif text-3xl mb-3">No collection items found</h2>
+    <p class="text-gray-600">
+      Try searching for a trophy, board, artefact or competition name.
+    </p>
+  </div>
+`;
         return;
       }
 
@@ -123,7 +133,7 @@
 
   ${item.competitionId
           ? `<a href="competition-profile.html?id=${encodeURIComponent(item.competitionId)}"
-        class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">
+        class="text-xs uppercase tracking-[0.25em] text-[#C5A367] font-bold hover:text-[#132419] transition">
         View Competition →
       </a>`
           : ""}

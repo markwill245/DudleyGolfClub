@@ -35,8 +35,9 @@
     <header class="bg-[#132419] text-white px-6 py-8">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="serif text-3xl tracking-wide">Dudley Golf Club</a>
-            <a href="digital-museum.html" class="text-xs uppercase tracking-[0.25em] text-[#C5A367]">
-                ← Back to Digital Museum
+            <a href="digital-museum.html"
+                class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
+                ← Back to Museum
             </a>
         </div>
     </header>
@@ -154,7 +155,14 @@
             const container = document.getElementById("timeline");
 
             if (!items.length) {
-                container.innerHTML = `<p class="text-gray-500">No captains found.</p>`;
+                container.innerHTML = `
+  <div class="bg-white border border-[#C5A367]/25 p-8 shadow-sm">
+    <h3 class="serif text-3xl mb-3">No captains found</h3>
+    <p class="text-gray-600">
+      Try searching by captain name or year.
+    </p>
+  </div>
+`;
                 return;
             }
 
