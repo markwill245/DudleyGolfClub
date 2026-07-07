@@ -11,7 +11,8 @@
 
   <main class="max-w-6xl mx-auto px-6 py-16">
 
-    <a href="digital-museum.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+    <a href="digital-museum.html"
+      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
       ← Back to Museum
     </a>
 
@@ -28,7 +29,7 @@
     </section>
 
     <section class="mb-8">
-      <input id="search" type="text" placeholder="Search player..."
+      <input id="search" type="text" placeholder="Search by player name..."
         class="w-full px-5 py-4 rounded-xl border border-[#C5A367]/40 bg-white text-lg">
     </section>
 
@@ -39,7 +40,6 @@
   </main>
 
   <script>
-    let allPlayers = [];
 
     let allPlayers = [];
     let activePlayers = [];
@@ -60,7 +60,14 @@
       const container = document.getElementById("players");
 
       if (!players.length) {
-        container.innerHTML = "<p>No players found.</p>";
+        container.innerHTML = `
+  <div class="col-span-full text-center py-16">
+    <h2 class="text-3xl font-serif mb-4">No players found</h2>
+    <p class="text-gray-600">
+      Try searching with a different player name.
+    </p>
+  </div>
+`;
         return;
       }
 

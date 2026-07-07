@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Player Profile | Dudley Golf Club Digital Museum</title>
@@ -10,8 +11,9 @@
 
   <main class="max-w-5xl mx-auto px-6 py-16">
 
-    <a href="index.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
-      ← Back to Museum
+    <a href="player-index.html"
+      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
+      ← Back to Player Index
     </a>
 
     <section id="profile" class="mt-10">
@@ -44,6 +46,8 @@
         container.innerHTML = "<p>Player profile not found.</p>";
         return;
       }
+
+      document.title = `${player.hero.name} | Dudley Golf Club Digital Museum`;
 
       container.innerHTML = `
         <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
@@ -81,4 +85,5 @@
   </script>
 
 </body>
+
 </html>
