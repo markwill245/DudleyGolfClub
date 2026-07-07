@@ -2,38 +2,328 @@
   "career": {
     "mostWins": {
       "label": "Most Wins",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "mostRunnerUp": {
       "label": "Most Runner-up Finishes",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Gary William Stubbs",
+        "slug": "gary-william-stubbs",
+        "section": "Mens",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "mostTop3": {
       "label": "Most Top 3 Finishes",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 2,
+          "player": "Craig Biddulph",
+          "slug": "craig-biddulph",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "mostTop5": {
       "label": "Most Top 5 Finishes",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 2,
+          "player": "Craig Biddulph",
+          "slug": "craig-biddulph",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 4,
+          "player": "Paul Andrew Birch",
+          "slug": "paul-andrew-birch",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
+          "player": "Scott Postin",
+          "slug": "scott-postin",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "mostTop10": {
       "label": "Most Top 10 Finishes",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 2,
+          "player": "Craig Biddulph",
+          "slug": "craig-biddulph",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Darren Povey",
+          "slug": "darren-povey",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 4,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
+          "player": "Jason Gregory",
+          "slug": "jason-gregory",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 6,
+          "player": "Mark Andrew Poulding",
+          "slug": "mark-andrew-poulding",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 7,
+          "player": "Paul Andrew Birch",
+          "slug": "paul-andrew-birch",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 8,
+          "player": "Paul Thomas Donnelly",
+          "slug": "paul-thomas-donnelly",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 9,
+          "player": "Scott Postin",
+          "slug": "scott-postin",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 10,
+          "player": "Steven Brookes",
+          "slug": "steven-brookes",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "mostPlayed": {
       "label": "Most Competitions Played",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Adam Bonehill",
+        "slug": "adam-bonehill",
+        "section": "Mens",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Adam Bonehill",
+          "slug": "adam-bonehill",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 2,
+          "player": "Andrew Deakin",
+          "slug": "andrew-deakin",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Anthony Willetts",
+          "slug": "anthony-willetts",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 4,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
+          "player": "Ben Paul Smith",
+          "slug": "ben-paul-smith",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 6,
+          "player": "Brett Denis Gilbert",
+          "slug": "brett-denis-gilbert",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 7,
+          "player": "Christopher Vanes",
+          "slug": "christopher-vanes",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 8,
+          "player": "Clive Peter Gould",
+          "slug": "clive-peter-gould",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 9,
+          "player": "Craig Biddulph",
+          "slug": "craig-biddulph",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 10,
+          "player": "Darren Element",
+          "slug": "darren-element",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "bestWinPercentage": {
       "label": "Best Win Percentage",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 100
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 100,
+          "displayValue": "100%"
+        }
+      ]
     }
   },
   "championships": {
@@ -56,13 +346,89 @@
   "museum": {
     "highestHallOfFameScore": {
       "label": "Highest Hall of Fame Score",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 14
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 14,
+          "displayValue": 14
+        },
+        {
+          "rank": 2,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 9,
+          "displayValue": 9
+        },
+        {
+          "rank": 3,
+          "player": "Craig Biddulph",
+          "slug": "craig-biddulph",
+          "section": "Mens",
+          "value": 4,
+          "displayValue": 4
+        },
+        {
+          "rank": 4,
+          "player": "Paul Andrew Birch",
+          "slug": "paul-andrew-birch",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
+          "player": "Scott Postin",
+          "slug": "scott-postin",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     },
     "mostRecordsHeld": {
       "label": "Most Records Held",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Ben Fisher",
+        "slug": "ben-fisher",
+        "section": "Mens",
+        "value": 2
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
+          "player": "Craig Biddulph",
+          "slug": "craig-biddulph",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     }
   }
 }
