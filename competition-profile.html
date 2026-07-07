@@ -32,7 +32,9 @@
       const results = await resultsResponse.json();
 
       const comp = competitions.find(c => c.id === id);
-      const compResults = results.find(r => r.competitionId === id);
+      const compResults = results
+        .filter(r => r.competitionId === id)
+        .sort((a, b) => b.year - a.year);
 
       const container = document.getElementById("profile");
 
@@ -128,22 +130,38 @@
 
        </div>
 
-    ${compResults?.results?.length
-          ? `<section class="mt-12 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
-          <h2 class="text-4xl font-serif mb-6">Full Result</h2>
+   ${compResults.length
+          ? compResults.map(yearBlock => `
+    <section class="mt-12 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+        ${yearBlock.year || "Year Unknown"} Result
+      </p>
 
-          <div class="space-y-3">
-            ${compResults.results.map(r => `
-              <div class="grid grid-cols-3 gap-4 border-b pb-2 text-sm">
-                <span>${r.position}. ${r.playerName}</span>
-                <span>${r.handicap !== undefined ? `Hcp ${r.handicap}` : ""}</span>
-                <span class="text-right font-semibold">
-                  ${r.points !== undefined ? `${r.points} pts` : r.total !== undefined && r.total !== null ? r.total : r.status || ""}
-                </span>
-              </div>
-            `).join("")}
+      <h2 class="text-4xl font-serif mb-2">
+        ${yearBlock.competitionName || comp.name}
+      </h2>
+
+      <p class="text-gray-600 mb-6">
+        ${yearBlock.format || ""} ${yearBlock.tees ? `• ${yearBlock.tees} Tees` : ""}
+      </p>
+
+      <div class="space-y-3">
+        ${yearBlock.results.map(r => `
+          <div class="grid grid-cols-3 gap-4 border-b pb-2 text-sm">
+            <span>${r.position}. ${r.playerName}</span>
+            <span>${r.handicap !== undefined ? `Hcp ${r.handicap}` : ""}</span>
+            <span class="text-right font-semibold">
+              ${r.points !== undefined
+              ? `${r.points} pts`
+              : r.total !== undefined && r.total !== null
+                ? `${r.total}${r.toPar ? ` (${r.toPar})` : ""}`
+                : r.status || ""}
+            </span>
           </div>
-        </section>`
+        `).join("")}
+      </div>
+    </section>
+  `).join("")
           : ""}
   `;
     }

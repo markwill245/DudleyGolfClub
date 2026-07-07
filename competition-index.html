@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Competition Gallery | Dudley Golf Club Digital Museum</title>
+    <title>Competition Archive | Dudley Golf Club Digital Museum</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -18,7 +18,7 @@
         <section class="mt-12 mb-12">
 
             <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
-                Competition Gallery
+                Competition Archive
             </p>
 
             <h1 class="text-6xl font-serif mb-6">
@@ -26,12 +26,13 @@
             </h1>
 
             <p class="text-xl max-w-3xl">
-                Explore every competition held at Dudley Golf Club.
+                Explore every competition in the history of Dudley Golf Club, including winners, records, honours and
+                historical profiles.
             </p>
 
         </section>
 
-        <input id="search" placeholder="Search competitions..." class="w-full p-4 rounded-xl border mb-10">
+        <input id="search" placeholder="Search by competition name..." class="w-full p-4 rounded-xl border mb-10">
 
         <div id="competitions" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -58,6 +59,21 @@
         function renderCompetitions(list) {
 
             const container = document.getElementById("competitions");
+
+            if (!list.length) {
+                container.innerHTML = `
+            <div class="col-span-full text-center py-16">
+                <h2 class="text-3xl font-serif mb-4">
+                    No competitions found
+                </h2>
+
+                <p class="text-gray-600">
+                    Try searching with a different competition name.
+                </p>
+            </div>
+        `;
+                return;
+            }
 
             container.innerHTML = list.map(comp => `
 <a href="competition-profile.html?id=${comp.id}"
