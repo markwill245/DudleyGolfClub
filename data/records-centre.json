@@ -3,14 +3,22 @@
     "mostWins": {
       "label": "Most Wins",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -18,7 +26,23 @@
           "displayValue": 2
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 4,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -26,7 +50,7 @@
           "displayValue": 1
         },
         {
-          "rank": 3,
+          "rank": 6,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -34,7 +58,7 @@
           "displayValue": 1
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
           "section": "Mens",
@@ -42,7 +66,7 @@
           "displayValue": 1
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
           "slug": "b-carter-j-chivers-s-brown-s-jones",
           "section": "Mens",
@@ -50,7 +74,7 @@
           "displayValue": 1
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -58,33 +82,9 @@
           "displayValue": 1
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "C. Taylor",
           "slug": "c-taylor",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "D. Hill",
-          "slug": "d-hill",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "D. Organ",
-          "slug": "d-organ",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "D. Sutton / M. Crew",
-          "slug": "d-sutton-m-crew",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
@@ -113,14 +113,22 @@
     "mostTop3": {
       "label": "Most Top 3 Finishes",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -128,7 +136,23 @@
           "displayValue": 2
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 4,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -136,7 +160,7 @@
           "displayValue": 1
         },
         {
-          "rank": 3,
+          "rank": 6,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -144,7 +168,7 @@
           "displayValue": 1
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
           "section": "Mens",
@@ -152,7 +176,7 @@
           "displayValue": 1
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
           "slug": "b-carter-j-chivers-s-brown-s-jones",
           "section": "Mens",
@@ -160,7 +184,7 @@
           "displayValue": 1
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -168,33 +192,9 @@
           "displayValue": 1
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "C. Taylor",
           "slug": "c-taylor",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "Craig Biddulph",
-          "slug": "craig-biddulph",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "D. Hill",
-          "slug": "d-hill",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "D. Organ",
-          "slug": "d-organ",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
@@ -204,14 +204,22 @@
     "mostTop5": {
       "label": "Most Top 5 Finishes",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -219,7 +227,23 @@
           "displayValue": 2
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 4,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -227,7 +251,7 @@
           "displayValue": 1
         },
         {
-          "rank": 3,
+          "rank": 6,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -235,7 +259,7 @@
           "displayValue": 1
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
           "section": "Mens",
@@ -243,7 +267,7 @@
           "displayValue": 1
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
           "slug": "b-carter-j-chivers-s-brown-s-jones",
           "section": "Mens",
@@ -251,7 +275,7 @@
           "displayValue": 1
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -259,33 +283,9 @@
           "displayValue": 1
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "C. Taylor",
           "slug": "c-taylor",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "Craig Biddulph",
-          "slug": "craig-biddulph",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "D. Hill",
-          "slug": "d-hill",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "D. Organ",
-          "slug": "d-organ",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
@@ -295,14 +295,22 @@
     "mostTop10": {
       "label": "Most Top 10 Finishes",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -310,7 +318,23 @@
           "displayValue": 2
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 4,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -318,7 +342,7 @@
           "displayValue": 1
         },
         {
-          "rank": 3,
+          "rank": 6,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -326,7 +350,7 @@
           "displayValue": 1
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
           "section": "Mens",
@@ -334,7 +358,7 @@
           "displayValue": 1
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
           "slug": "b-carter-j-chivers-s-brown-s-jones",
           "section": "Mens",
@@ -342,7 +366,7 @@
           "displayValue": 1
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -350,33 +374,9 @@
           "displayValue": 1
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "C. Taylor",
           "slug": "c-taylor",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "Craig Biddulph",
-          "slug": "craig-biddulph",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "D. Hill",
-          "slug": "d-hill",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "D. Organ",
-          "slug": "d-organ",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
@@ -386,14 +386,22 @@
     "mostPlayed": {
       "label": "Most Competitions Played",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -401,7 +409,23 @@
           "displayValue": 2
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 4,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -409,7 +433,7 @@
           "displayValue": 1
         },
         {
-          "rank": 3,
+          "rank": 6,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -417,7 +441,7 @@
           "displayValue": 1
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "Adam Bonehill",
           "slug": "adam-bonehill",
           "section": "Mens",
@@ -425,7 +449,7 @@
           "displayValue": 1
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "Andrew Deakin",
           "slug": "andrew-deakin",
           "section": "Mens",
@@ -433,7 +457,7 @@
           "displayValue": 1
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Anthony Willetts",
           "slug": "anthony-willetts",
           "section": "Mens",
@@ -441,33 +465,9 @@
           "displayValue": 1
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
-          "slug": "b-carter-j-chivers-s-brown-s-jones",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "Ben Fisher",
-          "slug": "ben-fisher",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "Ben Paul Smith",
-          "slug": "ben-paul-smith",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
@@ -477,14 +477,22 @@
     "bestWinPercentage": {
       "label": "Best Win Percentage",
       "holder": {
-        "player": "A. Jackson / P. Jackson",
-        "slug": "a-jackson-p-jackson",
+        "player": "A. Butler",
+        "slug": "a-butler",
         "section": "Mens",
         "value": 100
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 100,
+          "displayValue": "100%"
+        },
+        {
+          "rank": 2,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -492,7 +500,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -500,7 +508,15 @@
           "displayValue": "100%"
         },
         {
-          "rank": 3,
+          "rank": 4,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 100,
+          "displayValue": "100%"
+        },
+        {
+          "rank": 5,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
           "section": "Mens",
@@ -508,7 +524,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 4,
+          "rank": 6,
           "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
           "slug": "b-carter-j-chivers-s-brown-s-jones",
           "section": "Mens",
@@ -516,7 +532,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 5,
+          "rank": 7,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -524,7 +540,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 6,
+          "rank": 8,
           "player": "C. Taylor",
           "slug": "c-taylor",
           "section": "Mens",
@@ -532,7 +548,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 7,
+          "rank": 9,
           "player": "D. Hill",
           "slug": "d-hill",
           "section": "Mens",
@@ -540,25 +556,9 @@
           "displayValue": "100%"
         },
         {
-          "rank": 8,
+          "rank": 10,
           "player": "D. Organ",
           "slug": "d-organ",
-          "section": "Mens",
-          "value": 100,
-          "displayValue": "100%"
-        },
-        {
-          "rank": 9,
-          "player": "D. Sutton / M. Crew",
-          "slug": "d-sutton-m-crew",
-          "section": "Mens",
-          "value": 100,
-          "displayValue": "100%"
-        },
-        {
-          "rank": 10,
-          "player": "E. Davies",
-          "slug": "e-davies",
           "section": "Mens",
           "value": 100,
           "displayValue": "100%"
@@ -587,14 +587,22 @@
     "highestHallOfFameScore": {
       "label": "Highest Hall of Fame Score",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 28
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 28,
+          "displayValue": 28
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -602,7 +610,23 @@
           "displayValue": 28
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
+          "section": "Mens",
+          "value": 28,
+          "displayValue": 28
+        },
+        {
+          "rank": 4,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 14,
+          "displayValue": 14
+        },
+        {
+          "rank": 5,
           "player": "A. Jackson / P. Jackson",
           "slug": "a-jackson-p-jackson",
           "section": "Mens",
@@ -610,7 +634,7 @@
           "displayValue": 14
         },
         {
-          "rank": 3,
+          "rank": 6,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -618,7 +642,7 @@
           "displayValue": 14
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "B. Carter / J. Chivers",
           "slug": "b-carter-j-chivers",
           "section": "Mens",
@@ -626,7 +650,7 @@
           "displayValue": 14
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
           "slug": "b-carter-j-chivers-s-brown-s-jones",
           "section": "Mens",
@@ -634,7 +658,7 @@
           "displayValue": 14
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -642,33 +666,9 @@
           "displayValue": 14
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "C. Taylor",
           "slug": "c-taylor",
-          "section": "Mens",
-          "value": 14,
-          "displayValue": 14
-        },
-        {
-          "rank": 8,
-          "player": "D. Hill",
-          "slug": "d-hill",
-          "section": "Mens",
-          "value": 14,
-          "displayValue": 14
-        },
-        {
-          "rank": 9,
-          "player": "D. Organ",
-          "slug": "d-organ",
-          "section": "Mens",
-          "value": 14,
-          "displayValue": 14
-        },
-        {
-          "rank": 10,
-          "player": "D. Sutton / M. Crew",
-          "slug": "d-sutton-m-crew",
           "section": "Mens",
           "value": 14,
           "displayValue": 14
@@ -678,16 +678,32 @@
     "mostRecordsHeld": {
       "label": "Most Records Held",
       "holder": {
-        "player": "M. Short",
-        "slug": "m-short",
+        "player": "A. P. Jackson",
+        "slug": "a-p-jackson",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "A. P. Jackson",
+          "slug": "a-p-jackson",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 2,
           "player": "M. Short",
           "slug": "m-short",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 3,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
