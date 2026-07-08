@@ -22,6 +22,7 @@
       font-family: "Cormorant Garamond", serif;
     }
   </style>
+
 </head>
 
 <body>
@@ -71,7 +72,7 @@
       if (!term) return items;
 
       return items.filter(item =>
-        `${item.name} ${item.category} ${item.section} ${item.description}`
+        `${item.name || ""} ${item.category || ""} ${item.section || ""} ${item.description || ""}`
           .toLowerCase()
           .includes(term)
       );
@@ -97,7 +98,7 @@
 
           <div class="h-56 bg-[#132419]/10 flex items-center justify-center">
             ${item.photo
-          ? `<img src="${item.photo}" alt="${item.name}" class="w-full h-full object-cover">`
+          ? `<img src="${item.photo}" alt="${item.name || "Museum collection item"}" class="w-full h-full object-cover">`
           : `<span class="serif text-5xl text-[#C5A367]">🏆</span>`
         }
           </div>

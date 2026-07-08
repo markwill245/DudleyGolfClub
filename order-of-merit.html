@@ -144,7 +144,7 @@
                 <tr class="border-b border-gray-200 hover:bg-[#F9F7F2] transition">
                   <td class="p-4 serif text-3xl">${medal(index)}</td>
                   <td class="p-4">
-                    <a href="player-profile.html?player=${slug(p)}" class="font-semibold hover:text-[#C5A367] transition">
+                   <a href="${slug(p) ? `player-profile.html?player=${slug(p)}` : `player-index.html`}" class="font-semibold hover:text-[#C5A367] transition">
                       ${p.playerName}
                     </a>
                   </td>
@@ -176,6 +176,22 @@
 
     loadOOM();
   </script>
+  <footer class="bg-[#07140d] text-white py-10 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="serif text-2xl">Dudley Golf Club Digital Museum</p>
+
+      <div class="flex flex-col md:flex-row gap-6 text-center">
+        <a href="digital-museum.html"
+          class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
+          Museum Home →
+        </a>
+
+        <a href="index.html" class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
+          Club Website →
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

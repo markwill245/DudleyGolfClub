@@ -119,9 +119,26 @@
     </main>
 
     <footer class="bg-[#07140d] text-white py-10 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-4">
-            <p class="serif text-2xl">Dudley Golf Club Digital Museum</p>
-            <a href="index.html" class="text-[#C5A367] uppercase tracking-[0.25em] text-xs">Return Home →</a>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <p class="serif text-2xl">
+                Dudley Golf Club Digital Museum
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 text-center">
+
+                <a href="digital-museum.html"
+                    class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
+                    Museum Home →
+                </a>
+
+                <a href="index.html"
+                    class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
+                    Club Website →
+                </a>
+
+            </div>
+
         </div>
     </footer>
 
@@ -188,7 +205,7 @@
           <p class="text-[#C5A367] text-sm">#${index + 1}</p>
           <h4 class="serif text-xl text-white">${item.name}</h4>
           <p class="text-sm">${item.totalYears} years</p>
-          <p class="text-xs text-white/50">${item.years.join(", ")}</p>
+       <p class="text-xs text-white/50">${(item.years || []).join(", ")}</p>
         </div>
       `).join("");
         }
@@ -197,8 +214,8 @@
             const term = this.value.toLowerCase().trim();
 
             const filtered = captainsData.filter(item =>
-                item.name.toLowerCase().includes(term) ||
-                String(item.year).includes(term)
+                (item.name || "").toLowerCase().includes(term) ||
+                String(item.year || "").includes(term)
             );
 
             renderTimeline(filtered);

@@ -105,15 +105,20 @@
     <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
       <h2 class="serif text-4xl mb-6">${title}</h2>
       <div class="space-y-4">
-        ${players.map((p, index) => `
-       <a href="player-profile.html?player=${slug(p)}" class="flex justify-between items-center border-b border-gray-200 pb-3 hover:text-[#C5A367] transition">
+      ${players.map((p, index) => {
+        const playerSlug = slug(p);
+
+        return `
+    <a href="${playerSlug ? `player-profile.html?player=${playerSlug}` : `player-index.html`}"
+       class="flex justify-between items-center border-b border-gray-200 pb-3 hover:text-[#C5A367] transition">
             <span>
               <span class="text-[#C5A367] mr-3">${index + 1}</span>
               ${p.playerName}
             </span>
             <strong>${p[field] ?? "—"}${suffix}</strong>
           </a>
-        `).join("")}
+         `;
+      }).join("")}
       </div>
     </section>
   `;

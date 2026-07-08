@@ -5,6 +5,21 @@
   <meta charset="UTF-8">
   <title>Records Centre | Dudley Golf Club Digital Museum</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+  </style>
 </head>
 
 <body class="bg-[#F9F7F2] text-[#132419]">
@@ -68,7 +83,7 @@
             </p>
 
             <div class="space-y-2">
-              ${record.leaders.map(item => `
+            ${(record.leaders || []).map(item => `
                 <a href="player-profile.html?player=${item.slug}"
                    class="flex justify-between border-b border-[#C5A367]/20 pb-2 hover:text-[#C5A367]">
                   <span>${item.rank}. ${item.player}</span>
@@ -82,18 +97,20 @@
     </section>
   `).join("");
       }
-  } catch (error) {
+    } catch (error) {
       console.log("Records failed to load", error);
 
       container.innerHTML = `
-      <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-        <h2 class="text-3xl font-serif mb-4">Records unavailable</h2>
-        <p class="text-gray-600">
-          The records could not be loaded at the moment.
-        </p>
-      </div>
-    `;
+        <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+          <h2 class="text-3xl font-serif mb-4">Records unavailable</h2>
+          <p class="text-gray-600">
+            The records could not be loaded at the moment.
+          </p>
+        </div>
+      `;
     }
+  }
+
     loadRecords();
   </script>
 
