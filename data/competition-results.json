@@ -1317,158 +1317,374 @@
     "competitionFormat": "Pairs",
     "teamSize": 2,
     "section": "Mens",
-    "competitionClass": "Standard",
+    "competitionClass": "Board",
     "countsForOrderOfMerit": false,
-    "boardCompetition": false,
+    "boardCompetition": true,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General",
+    "museumCategory": "Board Competition",
     "year": 2021,
     "results": [
       {
         "position": 1,
+        "score": 49,
         "points": 49,
-        "playerName": "Lee Roger Grainger",
-        "handicap": 3
+        "players": [
+          {
+            "name": "Lee Roger Grainger",
+            "handicap": 3
+          },
+          {
+            "name": "Gary William Stubbs",
+            "handicap": 8
+          }
+        ]
       },
       {
         "position": 2,
+        "score": 47,
         "points": 47,
-        "playerName": "Tony John Salt",
-        "handicap": 12
+        "players": [
+          {
+            "name": "Tony John Salt",
+            "handicap": 12
+          },
+          {
+            "name": "Karl Matthew Ashmore",
+            "handicap": 8
+          }
+        ]
       },
       {
         "position": 3,
+        "score": 46,
         "points": 46,
-        "playerName": "Sean Element",
-        "handicap": 15
+        "players": [
+          {
+            "name": "Sean Element",
+            "handicap": 15
+          },
+          {
+            "name": "Mark Neil Tolley",
+            "handicap": 14
+          }
+        ]
       },
       {
         "position": 4,
+        "score": 46,
         "points": 46,
-        "playerName": "Luke Homer",
-        "handicap": 11
+        "players": [
+          {
+            "name": "Luke Homer",
+            "handicap": 11
+          },
+          {
+            "name": "Ben Fisher",
+            "handicap": 22
+          }
+        ]
       },
       {
         "position": 5,
+        "score": 45,
         "points": 45,
-        "playerName": "Robert Keith Woodall",
-        "handicap": 8
+        "players": [
+          {
+            "name": "Robert Keith Woodall",
+            "handicap": 8
+          },
+          {
+            "name": "Philip Thompson",
+            "handicap": 13
+          }
+        ]
       },
       {
         "position": 6,
+        "score": 44,
         "points": 44,
-        "playerName": "Gavin Higgs",
-        "handicap": 12
+        "players": [
+          {
+            "name": "Gavin Higgs",
+            "handicap": 12
+          },
+          {
+            "name": "Jack Lowe",
+            "handicap": 24
+          }
+        ]
       },
       {
         "position": 7,
+        "score": 43,
         "points": 43,
-        "playerName": "Michael David Cosnett",
-        "handicap": 12
+        "players": [
+          {
+            "name": "Michael David Cosnett",
+            "handicap": 12
+          },
+          {
+            "name": "Stephen Brian Hopkins",
+            "handicap": 12
+          }
+        ]
       },
       {
         "position": 8,
+        "score": 43,
         "points": 43,
-        "playerName": "Jamie Daniel Hunt",
-        "handicap": 13
+        "players": [
+          {
+            "name": "Jamie Daniel Hunt",
+            "handicap": 13
+          },
+          {
+            "name": "Jason Langford",
+            "handicap": 23
+          }
+        ]
       },
       {
         "position": 9,
+        "score": 43,
         "points": 43,
-        "playerName": "Stewart Marshall",
-        "handicap": 14
+        "players": [
+          {
+            "name": "Stewart Marshall",
+            "handicap": 14
+          },
+          {
+            "name": "Darren Element",
+            "handicap": 18
+          }
+        ]
       },
       {
         "position": 10,
+        "score": 42,
         "points": 42,
-        "playerName": "Craig Biddulph",
-        "handicap": 18
+        "players": [
+          {
+            "name": "Craig Biddulph",
+            "handicap": 18
+          },
+          {
+            "name": "Brett Denis Gilbert",
+            "handicap": 13
+          }
+        ]
       },
       {
         "position": 11,
+        "score": 41,
         "points": 41,
-        "playerName": "Stephen Hall",
-        "handicap": 18
+        "players": [
+          {
+            "name": "Stephen Hall",
+            "handicap": 18
+          },
+          {
+            "name": "Terrance Stanley Nolan",
+            "handicap": 20
+          }
+        ]
       },
       {
         "position": 12,
+        "score": 39,
         "points": 39,
-        "playerName": "Stephen Price",
-        "handicap": 21
+        "players": [
+          {
+            "name": "Stephen Price",
+            "handicap": 21
+          },
+          {
+            "name": "James Price",
+            "handicap": 17
+          }
+        ]
       },
       {
         "position": 13,
+        "score": 39,
         "points": 39,
-        "playerName": "Ivan John Jones",
-        "handicap": 19
+        "players": [
+          {
+            "name": "Ivan John Jones",
+            "handicap": 19
+          },
+          {
+            "name": "Michael John Kendrick",
+            "handicap": 16
+          }
+        ]
       },
       {
         "position": 14,
+        "score": 39,
         "points": 39,
-        "playerName": "David Hobley",
-        "handicap": 13
+        "players": [
+          {
+            "name": "David Hobley",
+            "handicap": 13
+          },
+          {
+            "name": "David J. L. Jones",
+            "handicap": 14
+          }
+        ]
       },
       {
         "position": 15,
+        "score": 38,
         "points": 38,
-        "playerName": "Eric Edwards",
-        "handicap": 21
+        "players": [
+          {
+            "name": "Eric Edwards",
+            "handicap": 21
+          },
+          {
+            "name": "Roger John Smith",
+            "handicap": 16
+          }
+        ]
       },
       {
         "position": 16,
+        "score": 37,
         "points": 37,
-        "playerName": "Mike Peacock",
-        "handicap": 28
+        "players": [
+          {
+            "name": "Mike Peacock",
+            "handicap": 28
+          },
+          {
+            "name": "Luke Hopkins",
+            "handicap": 14
+          }
+        ]
       },
       {
         "position": 17,
+        "score": 37,
         "points": 37,
-        "playerName": "Christopher Vanes",
-        "handicap": 18
+        "players": [
+          {
+            "name": "Christopher Vanes",
+            "handicap": 18
+          },
+          {
+            "name": "Tim Mark Wright",
+            "handicap": 18
+          }
+        ]
       },
       {
         "position": 18,
+        "score": 35,
         "points": 35,
-        "playerName": "Graham John Franks",
-        "handicap": 18
+        "players": [
+          {
+            "name": "Graham John Franks",
+            "handicap": 18
+          },
+          {
+            "name": "James Webber",
+            "handicap": 18
+          }
+        ]
       },
       {
         "position": 19,
+        "score": 35,
         "points": 35,
-        "playerName": "Steve Homer",
-        "handicap": 18
+        "players": [
+          {
+            "name": "Steve Homer",
+            "handicap": 18
+          },
+          {
+            "name": "Philip John Northall",
+            "handicap": 14
+          }
+        ]
       },
       {
         "position": 20,
+        "score": 35,
         "points": 35,
-        "playerName": "Scott Postin",
-        "handicap": 19
+        "players": [
+          {
+            "name": "Scott Postin",
+            "handicap": 19
+          },
+          {
+            "name": "Jason Gregory",
+            "handicap": 19
+          }
+        ]
       },
       {
         "position": 21,
+        "score": 34,
         "points": 34,
-        "playerName": "Kevin Eric Conn",
-        "handicap": 15
+        "players": [
+          {
+            "name": "Kevin Eric Conn",
+            "handicap": 15
+          },
+          {
+            "name": "Wayne Rutter",
+            "handicap": 16
+          }
+        ]
       },
       {
         "position": 22,
+        "score": 33,
         "points": 33,
-        "playerName": "Gerald Paul Crowley",
-        "handicap": 14
+        "players": [
+          {
+            "name": "Gerald Paul Crowley",
+            "handicap": 14
+          },
+          {
+            "name": "John Edwards",
+            "handicap": 19
+          }
+        ]
       },
       {
         "position": 23,
+        "score": 32,
         "points": 32,
-        "playerName": "M T Cowdell",
-        "handicap": 11
+        "players": [
+          {
+            "name": "M T Cowdell",
+            "handicap": 11
+          },
+          {
+            "name": "Darren Povey",
+            "handicap": 14
+          }
+        ]
       },
       {
         "position": 24,
+        "score": 31,
         "points": 31,
-        "playerName": "Gary Deeley",
-        "handicap": 17
+        "players": [
+          {
+            "name": "Gary Deeley",
+            "handicap": 17
+          },
+          {
+            "name": "Keith John Woodall",
+            "handicap": 16
+          }
+        ]
       }
     ]
   },
@@ -1500,8 +1716,7 @@
             "name": "Luke Hopkins",
             "handicap": 14
           }
-        ],
-        "playerName": "David J. L. Jones / Luke Hopkins"
+        ]
       },
       {
         "position": 2,
@@ -1516,8 +1731,7 @@
             "name": "Philip Thompson",
             "handicap": 12
           }
-        ],
-        "playerName": "Nigel Brookes / Philip Thompson"
+        ]
       },
       {
         "position": 3,
@@ -1532,8 +1746,7 @@
             "name": "Gary William Stubbs",
             "handicap": 8
           }
-        ],
-        "playerName": "Lee Roger Grainger / Gary William Stubbs"
+        ]
       },
       {
         "position": 4,
@@ -1548,8 +1761,7 @@
             "name": "Mark Neil Tolley",
             "handicap": 14
           }
-        ],
-        "playerName": "Sean Element / Mark Neil Tolley"
+        ]
       },
       {
         "position": 5,
@@ -1564,8 +1776,7 @@
             "name": "Jack Lowe",
             "handicap": 24
           }
-        ],
-        "playerName": "Gavin Higgs / Jack Lowe"
+        ]
       },
       {
         "position": 6,
@@ -1580,8 +1791,7 @@
             "name": "Ben Fisher",
             "handicap": 22
           }
-        ],
-        "playerName": "Luke Homer / Ben Fisher"
+        ]
       },
       {
         "position": 7,
@@ -1596,8 +1806,7 @@
             "name": "M T Cowdell",
             "handicap": 11
           }
-        ],
-        "playerName": "Kevin John Foster / M T Cowdell"
+        ]
       },
       {
         "position": 8,
@@ -1612,8 +1821,7 @@
             "name": "Darren Element",
             "handicap": 18
           }
-        ],
-        "playerName": "Stewart Marshall / Darren Element"
+        ]
       },
       {
         "position": 9,
@@ -1628,8 +1836,7 @@
             "name": "Ian Frederick Stevens",
             "handicap": 9
           }
-        ],
-        "playerName": "Neil Penton / Ian Frederick Stevens"
+        ]
       },
       {
         "position": 10,
@@ -1644,8 +1851,7 @@
             "name": "Peter Evans",
             "handicap": 12
           }
-        ],
-        "playerName": "John Edwards / Peter Evans"
+        ]
       },
       {
         "position": 11,
@@ -1660,8 +1866,7 @@
             "name": "Stephen Brian Hopkins",
             "handicap": 12
           }
-        ],
-        "playerName": "David Hobley / Stephen Brian Hopkins"
+        ]
       },
       {
         "position": 12,
@@ -1676,8 +1881,7 @@
             "name": "Philip John Northall",
             "handicap": 14
           }
-        ],
-        "playerName": "Steve Homer / Philip John Northall"
+        ]
       },
       {
         "position": 13,
@@ -1692,8 +1896,7 @@
             "name": "Gerald Paul Crowley",
             "handicap": 14
           }
-        ],
-        "playerName": "Carl R. Biddulph / Gerald Paul Crowley"
+        ]
       },
       {
         "position": 14,
@@ -1708,8 +1911,7 @@
             "name": "Steven Taylor",
             "handicap": 14
           }
-        ],
-        "playerName": "Mark Basterfield / Steven Taylor"
+        ]
       },
       {
         "position": 15,
@@ -1724,8 +1926,7 @@
             "name": "Brett Denis Gilbert",
             "handicap": 13
           }
-        ],
-        "playerName": "Stephen Price / Brett Denis Gilbert"
+        ]
       },
       {
         "position": 16,
@@ -1740,8 +1941,7 @@
             "name": "Jason Langford",
             "handicap": 22
           }
-        ],
-        "playerName": "G.B. Ray / Jason Langford"
+        ]
       },
       {
         "position": 17,
@@ -1756,8 +1956,7 @@
             "name": "Jack Lewis",
             "handicap": 28
           }
-        ],
-        "playerName": "Paul Andrew Birch / Jack Lewis"
+        ]
       },
       {
         "position": 18,
@@ -1772,8 +1971,7 @@
             "name": "Keith John Woodall",
             "handicap": 16
           }
-        ],
-        "playerName": "Roger John Smith / Keith John Woodall"
+        ]
       },
       {
         "position": 19,
@@ -1788,8 +1986,7 @@
             "name": "Michael John Kendrick",
             "handicap": 16
           }
-        ],
-        "playerName": "Ivan John Jones / Michael John Kendrick"
+        ]
       },
       {
         "position": 20,
@@ -1804,8 +2001,7 @@
             "name": "Shaun Edward Messer",
             "handicap": 16
           }
-        ],
-        "playerName": "Paul Thomas Donnelly / Shaun Edward Messer"
+        ]
       },
       {
         "position": 21,
@@ -1820,8 +2016,7 @@
             "name": "Jason Gregory",
             "handicap": 19
           }
-        ],
-        "playerName": "Scott Postin / Jason Gregory"
+        ]
       },
       {
         "position": 22,
@@ -1836,8 +2031,7 @@
             "name": "Eric Edwards",
             "handicap": 21
           }
-        ],
-        "playerName": "Gary Deeley / Eric Edwards"
+        ]
       },
       {
         "position": 23,
@@ -1852,8 +2046,7 @@
             "name": "Terrance Stanley Nolan",
             "handicap": 20
           }
-        ],
-        "playerName": "Stephen Hall / Terrance Stanley Nolan"
+        ]
       },
       {
         "position": 24,
@@ -1868,8 +2061,7 @@
             "name": "Christopher Vanes",
             "handicap": 18
           }
-        ],
-        "playerName": "Paul Harper / Christopher Vanes"
+        ]
       },
       {
         "position": 25,
@@ -1884,8 +2076,7 @@
             "name": "Ben Paul Smith",
             "handicap": 25
           }
-        ],
-        "playerName": "Richard Price / Ben Paul Smith"
+        ]
       }
     ]
   },
