@@ -1,6 +1,9 @@
 [
   {
+    "id": "club-championship",
+    "competitionId": "club-championship",
     "name": "Club Championship",
+    "competitionName": "Club Championship",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -18,7 +21,10 @@
     "summary": "Club Championship is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "monthly-medal",
+    "competitionId": "monthly-medal",
     "name": "Monthly Medal",
+    "competitionName": "Monthly Medal",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -36,7 +42,10 @@
     "summary": "Monthly Medal is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "captains-day",
+    "competitionId": "captains-day",
     "name": "Captain's Day",
+    "competitionName": "Captain's Day",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -54,7 +63,10 @@
     "summary": "Captain's Day is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "presidents-day",
+    "competitionId": "presidents-day",
     "name": "President's Day",
+    "competitionName": "President's Day",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -72,7 +84,10 @@
     "summary": "President's Day is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "invitation",
+    "competitionId": "invitation",
     "name": "Invitation",
+    "competitionName": "Invitation",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -90,7 +105,10 @@
     "summary": "Invitation is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "seniors-stableford",
+    "competitionId": "seniors-stableford",
     "name": "Seniors Stableford",
+    "competitionName": "Seniors Stableford",
     "section": "Seniors",
     "format": "Individual",
     "historicalBoard": false,
@@ -108,7 +126,10 @@
     "summary": "Seniors Stableford is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "seniors-monthly-medal",
+    "competitionId": "seniors-monthly-medal",
     "name": "Seniors Monthly Medal",
+    "competitionName": "Seniors Monthly Medal",
     "section": "Seniors",
     "format": "Individual",
     "historicalBoard": false,
@@ -127,7 +148,9 @@
   },
   {
     "id": "captains-day-walker-cup",
+    "competitionId": "captains-day-walker-cup",
     "name": "Captain's Day & Walker Cup",
+    "competitionName": "Captain's Day & Walker Cup",
     "section": "Mixed",
     "format": "Stableford",
     "historicalBoard": false,
@@ -145,7 +168,12 @@
     "summary": "Captain's Day & Walker Cup is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "bassano-cup",
+    "competitionId": "bassano-cup",
+    "name": "Bassano Cup",
+    "competitionName": "Bassano Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -161,7 +189,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "bloom-cup",
+    "competitionId": "bloom-cup",
+    "name": "Bloom Cup",
+    "competitionName": "Bloom Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -177,7 +210,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "boscawen-cup",
+    "competitionId": "boscawen-cup",
+    "name": "Boscawen Cup",
+    "competitionName": "Boscawen Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -193,7 +231,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "brian-lloyd-cup",
+    "competitionId": "brian-lloyd-cup",
+    "name": "Brian Lloyd Cup",
+    "competitionName": "Brian Lloyd Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -209,7 +252,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "caldene-cup",
+    "competitionId": "caldene-cup",
+    "name": "Caldene Cup",
+    "competitionName": "Caldene Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -225,7 +273,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "centenary-trophy",
+    "competitionId": "centenary-trophy",
+    "name": "Centenary Trophy",
+    "competitionName": "Centenary Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -241,7 +294,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "centenary-trophy-boscowan-cup",
+    "competitionId": "centenary-trophy-boscowan-cup",
+    "name": "Centenary Trophy & Boscowan Cup",
+    "competitionName": "Centenary Trophy & Boscowan Cup",
     "section": "Mens",
+    "format": "Individual",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -257,7 +315,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "challenge-shield",
+    "competitionId": "challenge-shield",
+    "name": "Challenge Shield",
+    "competitionName": "Challenge Shield",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -273,7 +336,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "claughton-cup",
+    "competitionId": "claughton-cup",
+    "name": "Claughton Cup",
+    "competitionName": "Claughton Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -289,7 +357,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "coronation-cup",
+    "competitionId": "coronation-cup",
+    "name": "Coronation Cup",
+    "competitionName": "Coronation Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -305,7 +378,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "cunningham-cup",
+    "competitionId": "cunningham-cup",
+    "name": "Cunningham Cup",
+    "competitionName": "Cunningham Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -321,7 +399,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "david-poole-trophy",
+    "competitionId": "david-poole-trophy",
+    "name": "David Poole Trophy",
+    "competitionName": "David Poole Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -337,7 +420,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "doug-lee-trophy",
+    "competitionId": "doug-lee-trophy",
+    "name": "Doug Lee Trophy",
+    "competitionName": "Doug Lee Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -353,7 +441,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "golfer-of-the-year",
+    "competitionId": "golfer-of-the-year",
+    "name": "Golfer of the Year",
+    "competitionName": "Golfer of the Year",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -369,7 +462,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "grandads-cup",
+    "competitionId": "grandads-cup",
+    "name": "Grandads Cup",
+    "competitionName": "Grandads Cup",
     "section": "Seniors",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -385,7 +483,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "hooper-cup",
+    "competitionId": "hooper-cup",
+    "name": "Hooper Cup",
+    "competitionName": "Hooper Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -401,7 +504,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "james-grainger-trophy",
+    "competitionId": "james-grainger-trophy",
+    "name": "James Grainger Trophy",
+    "competitionName": "James Grainger Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -417,7 +525,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "jubilee-salver",
+    "competitionId": "jubilee-salver",
+    "name": "Jubilee Salver",
+    "competitionName": "Jubilee Salver",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -433,7 +546,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "lewis-cup",
+    "competitionId": "lewis-cup",
+    "name": "Lewis Cup",
+    "competitionName": "Lewis Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -449,7 +567,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "millenium-trophy",
+    "competitionId": "millenium-trophy",
+    "name": "Millenium Trophy",
+    "competitionName": "Millenium Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -465,7 +588,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "probus-trophy",
+    "competitionId": "probus-trophy",
+    "name": "Probus Trophy",
+    "competitionName": "Probus Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -481,7 +609,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "prosser-lytham-trophy",
+    "competitionId": "prosser-lytham-trophy",
+    "name": "Prosser Lytham Trophy",
+    "competitionName": "Prosser Lytham Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -497,7 +630,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "stewart-goldie-trophy",
+    "competitionId": "stewart-goldie-trophy",
+    "name": "Stewart Goldie Trophy",
+    "competitionName": "Stewart Goldie Trophy",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -513,7 +651,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "[summer-foursomes]",
+    "competitionId": "[summer-foursomes]",
+    "name": "Summer Foursomes",
+    "competitionName": "Summer Foursomes",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -529,7 +672,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "thompson-shield",
+    "competitionId": "thompson-shield",
+    "name": "Thompson Shield",
+    "competitionName": "Thompson Shield",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -545,7 +693,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "tom-poole-cup",
+    "competitionId": "tom-poole-cup",
+    "name": "Tom Poole Cup",
+    "competitionName": "Tom Poole Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -561,7 +714,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "veterans-cup",
+    "competitionId": "veterans-cup",
+    "name": "Veterans Cup",
+    "competitionName": "Veterans Cup",
     "section": "Seniors",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -577,7 +735,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "walker-cup",
+    "competitionId": "walker-cup",
+    "name": "Walker Cup",
+    "competitionName": "Walker Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -593,7 +756,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "winter-greensomes",
+    "competitionId": "winter-greensomes",
+    "name": "Winter Greensomes",
+    "competitionName": "Winter Greensomes",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -609,7 +777,12 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "writtle-groves-cup",
+    "competitionId": "writtle-groves-cup",
+    "name": "Writtle Groves Cup",
+    "competitionName": "Writtle Groves Cup",
     "section": "Mens",
+    "format": "Historical Winners",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
@@ -625,7 +798,10 @@
     "summary": "undefined is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "june-monthly-medal-prosser-lytham-trophy-brian-lloyd-qualifier",
+    "competitionId": "june-monthly-medal-prosser-lytham-trophy-brian-lloyd-qualifier",
     "name": "June Monthly Medal/ Prosser Lytham Trophy & Brian Lloyd Qualifier",
+    "competitionName": "June Monthly Medal/ Prosser Lytham Trophy & Brian Lloyd Qualifier",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -643,7 +819,10 @@
     "summary": "June Monthly Medal/ Prosser Lytham Trophy & Brian Lloyd Qualifier is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "seniors-june-medal",
+    "competitionId": "seniors-june-medal",
     "name": "Seniors June Medal",
+    "competitionName": "Seniors June Medal",
     "section": "Seniors",
     "format": "Individual",
     "historicalBoard": false,
@@ -661,7 +840,10 @@
     "summary": "Seniors June Medal is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
+    "id": "doug-lee-pairs",
+    "competitionId": "doug-lee-pairs",
     "name": "Doug Lee Pairs",
+    "competitionName": "Doug Lee Pairs",
     "section": "Mens",
     "format": "Pairs",
     "historicalBoard": false,
@@ -680,7 +862,9 @@
   },
   {
     "id": "june-sunday-stableford",
+    "competitionId": "june-sunday-stableford",
     "name": "June Sunday Stableford",
+    "competitionName": "June Sunday Stableford",
     "section": "Mens",
     "format": "Individual",
     "historicalBoard": false,
@@ -699,7 +883,9 @@
   },
   {
     "id": "james-grainger-pairs",
+    "competitionId": "james-grainger-pairs",
     "name": "James Grainger Pairs",
+    "competitionName": "James Grainger Pairs",
     "section": "Mens",
     "format": "Pairs",
     "historicalBoard": false,
