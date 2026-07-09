@@ -92,7 +92,8 @@
             }
 
             container.innerHTML = list.map(comp => `
-<a href="competition-profile.html?id=${comp.id}"
+
+<a href="competition-profile.html?id=${comp.id || comp.competitionId}"
 class="block bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30 hover:shadow-xl transition">
 
 <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
@@ -100,16 +101,27 @@ ${comp.section || ""}
 </p>
 
 <h2 class="text-3xl font-serif mb-4">
-${comp.name}
+${comp.name || comp.competitionName || "Unnamed Competition"}
 </h2>
 
-<p class="text-lg">
-${comp.yearsPlayed || 0} ${comp.yearsPlayed === 1 ? "year" : "years"} recorded
-</p>
-
-${comp.firstYear && comp.latestYear
-                    ? `<p class="text-sm text-gray-500 mt-2">${comp.firstYear}–${comp.latestYear}</p>`
-                    : ""}
+${comp.yearsPlayed > 0
+                    ? `
+    <p class="text-lg">
+      ${comp.yearsPlayed} ${comp.yearsPlayed === 1 ? "year" : "years"} recorded
+    </p>
+    ${comp.firstYear && comp.latestYear
+                        ? `<p class="text-sm text-gray-500 mt-2">${comp.firstYear}–${comp.latestYear}</p>`
+                        : ""}
+  `
+                    : `
+    <p class="text-lg text-gray-500">
+      Awaiting results
+    </p>
+    <p class="text-sm text-gray-400 mt-2">
+      This competition is listed in the Museum catalogue but results have not yet been imported.
+    </p>
+  `
+                }
 
 <div class="mt-6 pt-4 border-t border-[#C5A367]/20">
 
@@ -118,15 +130,17 @@ Most Successful
 </p>
 
 <p class="font-semibold">
-${comp.mostSuccessfulPlayer || "None yet"}
+${comp.yearsPlayed > 0 ? (comp.mostSuccessfulPlayer || "None yet") : "Awaiting results"}
 </p>
 
 <p class="text-sm text-gray-500">
-${comp.mostWins || 0} ${comp.mostWins === 1 ? "win" : "wins"}
+${comp.yearsPlayed > 0
+                    ? `${comp.mostWins || 0} ${comp.mostWins === 1 ? "win" : "wins"}`
+                    : "No result data yet"
+                }
 </p>
 
 </div>
-
 </a>
 
 `).join("");

@@ -164,8 +164,20 @@
       <div class="space-y-3">
         ${yearBlock.results.map(r => `
          <div class="grid md:grid-cols-3 gap-2 md:gap-4 border-b pb-2 text-sm">
-           <span>${r.position}. ${r.playerName}</span>
-            <span>${r.handicap !== undefined ? `Hcp ${r.handicap}` : ""}</span>
+           <span>
+  ${r.position}. ${
+    Array.isArray(r.players) && r.players.length
+      ? r.players.map(p => p.name).join(" / ")
+      : r.playerName || "Unknown player"
+  }
+</span>
+            <span>
+  ${
+    Array.isArray(r.players) && r.players.length
+      ? r.players.map(p => p.handicap !== null && p.handicap !== undefined ? `Hcp ${p.handicap}` : "").filter(Boolean).join(" / ")
+      : r.handicap !== undefined ? `Hcp ${r.handicap}` : ""
+  }
+</span>
             <span class="text-right font-semibold">
               ${r.points !== undefined
               ? `${r.points} pts`
