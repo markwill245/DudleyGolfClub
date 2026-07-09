@@ -51,14 +51,6 @@
         },
         {
           "rank": 6,
-          "player": "L. Henley / M.A. Williams",
-          "slug": "l-henley-m-a-williams",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 7,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -66,7 +58,7 @@
           "displayValue": 2
         },
         {
-          "rank": 8,
+          "rank": 7,
           "player": "P. Howard",
           "slug": "p-howard",
           "section": "Mens",
@@ -74,7 +66,7 @@
           "displayValue": 2
         },
         {
-          "rank": 9,
+          "rank": 8,
           "player": "P. I. Welch",
           "slug": "p-i-welch",
           "section": "Mens",
@@ -82,12 +74,20 @@
           "displayValue": 2
         },
         {
-          "rank": 10,
+          "rank": 9,
           "player": "P. O'Reilly",
           "slug": "p-o-reilly",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
+        },
+        {
+          "rank": 10,
+          "player": "A. Butler",
+          "slug": "a-butler",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
         }
       ]
     },
@@ -233,14 +233,6 @@
         },
         {
           "rank": 7,
-          "player": "L. Henley / M.A. Williams",
-          "slug": "l-henley-m-a-williams",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 8,
           "player": "Lee Roger Grainger",
           "slug": "lee-roger-grainger",
           "section": "Mens",
@@ -248,7 +240,7 @@
           "displayValue": 2
         },
         {
-          "rank": 9,
+          "rank": 8,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -256,9 +248,17 @@
           "displayValue": 2
         },
         {
-          "rank": 10,
+          "rank": 9,
           "player": "P. Howard",
           "slug": "p-howard",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 10,
+          "player": "P. I. Welch",
+          "slug": "p-i-welch",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
@@ -332,14 +332,6 @@
         },
         {
           "rank": 8,
-          "player": "L. Henley / M.A. Williams",
-          "slug": "l-henley-m-a-williams",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 9,
           "player": "Lee Roger Grainger",
           "slug": "lee-roger-grainger",
           "section": "Mens",
@@ -347,9 +339,17 @@
           "displayValue": 2
         },
         {
-          "rank": 10,
+          "rank": 9,
           "player": "M. Short",
           "slug": "m-short",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 10,
+          "player": "Mark Neil Tolley",
+          "slug": "mark-neil-tolley",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
@@ -557,14 +557,6 @@
         },
         {
           "rank": 2,
-          "player": "A. Jackson / P. Jackson",
-          "slug": "a-jackson-p-jackson",
-          "section": "Mens",
-          "value": 100,
-          "displayValue": "100%"
-        },
-        {
-          "rank": 3,
           "player": "A. Lucas",
           "slug": "a-lucas",
           "section": "Mens",
@@ -572,7 +564,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "player": "A. P. Jackson",
           "slug": "a-p-jackson",
           "section": "Mens",
@@ -580,23 +572,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 5,
-          "player": "B. Carter / J. Chivers",
-          "slug": "b-carter-j-chivers",
-          "section": "Mens",
-          "value": 100,
-          "displayValue": "100%"
-        },
-        {
-          "rank": 6,
-          "player": "B. Carter / J. Chivers / S. Brown / S. Jones",
-          "slug": "b-carter-j-chivers-s-brown-s-jones",
-          "section": "Mens",
-          "value": 100,
-          "displayValue": "100%"
-        },
-        {
-          "rank": 7,
+          "rank": 4,
           "player": "C. B. Jones",
           "slug": "c-b-jones",
           "section": "Seniors",
@@ -604,7 +580,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 8,
+          "rank": 5,
           "player": "C. Taylor",
           "slug": "c-taylor",
           "section": "Mens",
@@ -612,7 +588,7 @@
           "displayValue": "100%"
         },
         {
-          "rank": 9,
+          "rank": 6,
           "player": "Clive Atkins",
           "slug": "clive-atkins",
           "section": "Seniors",
@@ -620,9 +596,33 @@
           "displayValue": "100%"
         },
         {
-          "rank": 10,
+          "rank": 7,
           "player": "D. Hill",
           "slug": "d-hill",
+          "section": "Mens",
+          "value": 100,
+          "displayValue": "100%"
+        },
+        {
+          "rank": 8,
+          "player": "D. Organ",
+          "slug": "d-organ",
+          "section": "Mens",
+          "value": 100,
+          "displayValue": "100%"
+        },
+        {
+          "rank": 9,
+          "player": "E. Davies",
+          "slug": "e-davies",
+          "section": "Mens",
+          "value": 100,
+          "displayValue": "100%"
+        },
+        {
+          "rank": 10,
+          "player": "F. J. Dalloway",
+          "slug": "f-j-dalloway",
           "section": "Mens",
           "value": 100,
           "displayValue": "100%"
@@ -699,14 +699,6 @@
         },
         {
           "rank": 6,
-          "player": "L. Henley / M.A. Williams",
-          "slug": "l-henley-m-a-williams",
-          "section": "Mens",
-          "value": 42,
-          "displayValue": 42
-        },
-        {
-          "rank": 7,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -714,7 +706,7 @@
           "displayValue": 42
         },
         {
-          "rank": 8,
+          "rank": 7,
           "player": "P. Howard",
           "slug": "p-howard",
           "section": "Mens",
@@ -722,7 +714,7 @@
           "displayValue": 42
         },
         {
-          "rank": 9,
+          "rank": 8,
           "player": "P. I. Welch",
           "slug": "p-i-welch",
           "section": "Mens",
@@ -730,12 +722,20 @@
           "displayValue": 42
         },
         {
-          "rank": 10,
+          "rank": 9,
           "player": "P. O'Reilly",
           "slug": "p-o-reilly",
           "section": "Mens",
           "value": 42,
           "displayValue": 42
+        },
+        {
+          "rank": 10,
+          "player": "Gary William Stubbs",
+          "slug": "gary-william-stubbs",
+          "section": "Mens",
+          "value": 39,
+          "displayValue": 39
         }
       ]
     },

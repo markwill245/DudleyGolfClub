@@ -55,18 +55,18 @@
   </main>
 
   <script>
-
     let allPlayers = [];
     let activePlayers = [];
 
     async function loadPlayers() {
       const response = await fetch("data/player-page-data.json");
-
       allPlayers = await response.json();
 
-      activePlayers = allPlayers.filter(player =>
-        (player.headlineStats?.competitionsPlayed || 0) > 0
-      );
+      activePlayers = allPlayers
+        .slice()
+        .sort((a, b) =>
+          (a.hero?.name || "").localeCompare(b.hero?.name || "")
+        );
 
       renderPlayers(activePlayers);
     }
@@ -76,54 +76,66 @@
 
       if (!players.length) {
         container.innerHTML = `
-  <div class="col-span-full text-center py-16">
-    <h2 class="text-3xl font-serif mb-4">No players found</h2>
-    <p class="text-gray-600">
-      Try searching with a different player name.
-    </p>
-  </div>
-`;
+          <div class="col-span-full text-center py-16">
+            <h2 class="text-3xl font-serif mb-4">No players found</h2>
+            <p class="text-gray-600">Try searching with a different player name.</p>
+          </div>
+        `;
         return;
       }
 
-      container.innerHTML = players.map(player => `
-        <a href="player-profile.html?player=${player.slug}"
-           class="block bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
+      container.innerHTML = players.map(player => {
+        const name = player.hero?.name || "Unknown Player";
+        const section = player.hero?.section || "Unknown";
+        const status = player.hero?.status || "Unknown";
+        const wins = player.headlineStats?.wins || 0;
+        const top3 = player.headlineStats?.top3 || 0;
+        const hofScore = player.hallOfFame?.score || 0;
+        const hofStatus = player.hallOfFame?.status || "Building Record";
 
-          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
-            ${player.hero.section} • ${player.hero.status}
-          </p>
+        return `
+          <a href="player-profile.html?player=${player.slug}"
+             class="block bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
 
-          <h2 class="text-3xl font-serif mb-4">${player.hero.name}</h2>
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+              ${section} • ${status}
+            </p>
 
-          <div class="grid grid-cols-3 gap-4 text-sm">
-            <div>
-              <strong class="text-xl">${player.headlineStats.wins}</strong><br>
-              Wins
+            <h2 class="text-3xl font-serif mb-5">${name}</h2>
+
+            <div class="grid grid-cols-3 gap-4 text-sm">
+              <div>
+                <strong class="text-xl">${wins}</strong><br>
+                Wins
+              </div>
+              <div>
+                <strong class="text-xl">${top3}</strong><br>
+                Top 3
+              </div>
+              <div>
+                <strong class="text-xl">${hofScore}</strong><br>
+                HOF
+              </div>
             </div>
-            <div>
-              <strong class="text-xl">${player.headlineStats.top3}</strong><br>
-              Top 3
-            </div>
-            <div>
-              <strong class="text-xl">${player.hallOfFame.score}</strong><br>
-              HOF
-            </div>
-          </div>
 
-          <p class="mt-4 text-sm text-gray-600">
-            ${player.hallOfFame.status}
-          </p>
-        </a>
-      `).join("");
+            <p class="mt-4 text-sm text-gray-600">
+              ${hofStatus}
+            </p>
+          </a>
+        `;
+      }).join("");
     }
 
     document.getElementById("search").addEventListener("input", e => {
-      const term = e.target.value.toLowerCase();
+      const term = e.target.value.toLowerCase().trim();
 
-      const filtered = activePlayers.filter(player =>
-        (player.hero?.name || "").toLowerCase().includes(term)
-      );
+      const filtered = activePlayers
+        .filter(player =>
+          (player.hero?.name || "").toLowerCase().includes(term)
+        )
+        .sort((a, b) =>
+          (a.hero?.name || "").localeCompare(b.hero?.name || "")
+        );
 
       renderPlayers(filtered);
     });
