@@ -3,22 +3,38 @@
     "mostWins": {
       "label": "Most Wins",
       "holder": {
-        "player": "M.P. Williams",
-        "slug": "mark-williams",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 4
+        "value": 10
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
+          "player": "M. Hickman",
+          "slug": "m-hickman",
           "section": "Mens",
-          "value": 4,
-          "displayValue": 4
+          "value": 10,
+          "displayValue": 10
         },
         {
           "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 7,
+          "displayValue": 7
+        },
+        {
+          "rank": 3,
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
+          "section": "Mens",
+          "value": 5,
+          "displayValue": 5
+        },
+        {
+          "rank": 4,
           "player": "Mark Williams",
           "slug": "mark-williams",
           "section": "Mens",
@@ -26,15 +42,7 @@
           "displayValue": 4
         },
         {
-          "rank": 3,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
-          "section": "Mens",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
-          "rank": 4,
+          "rank": 5,
           "player": "A. P. Jackson",
           "slug": "a-p-jackson",
           "section": "Mens",
@@ -42,7 +50,7 @@
           "displayValue": 2
         },
         {
-          "rank": 5,
+          "rank": 6,
           "player": "G. Smith",
           "slug": "g-smith",
           "section": "Mens",
@@ -50,7 +58,15 @@
           "displayValue": 2
         },
         {
-          "rank": 6,
+          "rank": 7,
+          "player": "L. Henley",
+          "slug": "l-henley",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 8,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -58,7 +74,7 @@
           "displayValue": 2
         },
         {
-          "rank": 7,
+          "rank": 9,
           "player": "P. Howard",
           "slug": "p-howard",
           "section": "Mens",
@@ -66,28 +82,12 @@
           "displayValue": 2
         },
         {
-          "rank": 8,
+          "rank": 10,
           "player": "P. I. Welch",
           "slug": "p-i-welch",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
-        },
-        {
-          "rank": 9,
-          "player": "P. O'Reilly",
-          "slug": "p-o-reilly",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 10,
-          "player": "A. Butler",
-          "slug": "a-butler",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
         }
       ]
     },
@@ -185,22 +185,38 @@
     "mostTop3": {
       "label": "Most Top 3 Finishes",
       "holder": {
-        "player": "M.P. Williams",
-        "slug": "mark-williams",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 4
+        "value": 10
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
+          "player": "M. Hickman",
+          "slug": "m-hickman",
           "section": "Mens",
-          "value": 4,
-          "displayValue": 4
+          "value": 10,
+          "displayValue": 10
         },
         {
           "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 7,
+          "displayValue": 7
+        },
+        {
+          "rank": 3,
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
+          "section": "Mens",
+          "value": 5,
+          "displayValue": 5
+        },
+        {
+          "rank": 4,
           "player": "Mark Williams",
           "slug": "mark-williams",
           "section": "Mens",
@@ -208,7 +224,7 @@
           "displayValue": 4
         },
         {
-          "rank": 3,
+          "rank": 5,
           "player": "Gary William Stubbs",
           "slug": "gary-william-stubbs",
           "section": "Mens",
@@ -216,7 +232,7 @@
           "displayValue": 3
         },
         {
-          "rank": 4,
+          "rank": 6,
           "player": "Lee Roger Grainger",
           "slug": "lee-roger-grainger",
           "section": "Mens",
@@ -224,15 +240,7 @@
           "displayValue": 3
         },
         {
-          "rank": 5,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
-          "section": "Mens",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
-          "rank": 6,
+          "rank": 7,
           "player": "A. P. Jackson",
           "slug": "a-p-jackson",
           "section": "Mens",
@@ -240,7 +248,7 @@
           "displayValue": 2
         },
         {
-          "rank": 7,
+          "rank": 8,
           "player": "G. Smith",
           "slug": "g-smith",
           "section": "Mens",
@@ -248,25 +256,17 @@
           "displayValue": 2
         },
         {
-          "rank": 8,
-          "player": "M. Short",
-          "slug": "m-short",
+          "rank": 9,
+          "player": "L. Henley",
+          "slug": "l-henley",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
         },
         {
-          "rank": 9,
-          "player": "Nigel Brookes",
-          "slug": "nigel-brookes",
-          "section": "Mixed",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
           "rank": 10,
-          "player": "P. Howard",
-          "slug": "p-howard",
+          "player": "M. Short",
+          "slug": "m-short",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
@@ -276,22 +276,38 @@
     "mostTop5": {
       "label": "Most Top 5 Finishes",
       "holder": {
-        "player": "M.P. Williams",
-        "slug": "mark-williams",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 4
+        "value": 10
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
+          "player": "M. Hickman",
+          "slug": "m-hickman",
           "section": "Mens",
-          "value": 4,
-          "displayValue": 4
+          "value": 10,
+          "displayValue": 10
         },
         {
           "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 7,
+          "displayValue": 7
+        },
+        {
+          "rank": 3,
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
+          "section": "Mens",
+          "value": 5,
+          "displayValue": 5
+        },
+        {
+          "rank": 4,
           "player": "Mark Williams",
           "slug": "mark-williams",
           "section": "Mens",
@@ -299,7 +315,7 @@
           "displayValue": 4
         },
         {
-          "rank": 3,
+          "rank": 5,
           "player": "Gary William Stubbs",
           "slug": "gary-william-stubbs",
           "section": "Mens",
@@ -307,7 +323,7 @@
           "displayValue": 3
         },
         {
-          "rank": 4,
+          "rank": 6,
           "player": "Lee Roger Grainger",
           "slug": "lee-roger-grainger",
           "section": "Mens",
@@ -315,15 +331,7 @@
           "displayValue": 3
         },
         {
-          "rank": 5,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
-          "section": "Mens",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
-          "rank": 6,
+          "rank": 7,
           "player": "Robert Keith Woodall",
           "slug": "robert-keith-woodall",
           "section": "Mens",
@@ -331,7 +339,7 @@
           "displayValue": 3
         },
         {
-          "rank": 7,
+          "rank": 8,
           "player": "A. P. Jackson",
           "slug": "a-p-jackson",
           "section": "Mens",
@@ -339,7 +347,7 @@
           "displayValue": 2
         },
         {
-          "rank": 8,
+          "rank": 9,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -347,17 +355,9 @@
           "displayValue": 2
         },
         {
-          "rank": 9,
+          "rank": 10,
           "player": "G. Smith",
           "slug": "g-smith",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 10,
-          "player": "M. Short",
-          "slug": "m-short",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
@@ -367,14 +367,38 @@
     "mostTop10": {
       "label": "Most Top 10 Finishes",
       "holder": {
-        "player": "Gary William Stubbs",
-        "slug": "gary-william-stubbs",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 4
+        "value": 10
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "M. Hickman",
+          "slug": "m-hickman",
+          "section": "Mens",
+          "value": 10,
+          "displayValue": 10
+        },
+        {
+          "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 7,
+          "displayValue": 7
+        },
+        {
+          "rank": 3,
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
+          "section": "Mens",
+          "value": 5,
+          "displayValue": 5
+        },
+        {
+          "rank": 4,
           "player": "Gary William Stubbs",
           "slug": "gary-william-stubbs",
           "section": "Mens",
@@ -382,15 +406,7 @@
           "displayValue": 4
         },
         {
-          "rank": 2,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
-          "section": "Mens",
-          "value": 4,
-          "displayValue": 4
-        },
-        {
-          "rank": 3,
+          "rank": 5,
           "player": "Mark Williams",
           "slug": "mark-williams",
           "section": "Mens",
@@ -398,7 +414,7 @@
           "displayValue": 4
         },
         {
-          "rank": 4,
+          "rank": 6,
           "player": "Stewart Marshall",
           "slug": "stewart-marshall",
           "section": "Mens",
@@ -406,7 +422,7 @@
           "displayValue": 4
         },
         {
-          "rank": 5,
+          "rank": 7,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -414,7 +430,7 @@
           "displayValue": 3
         },
         {
-          "rank": 6,
+          "rank": 8,
           "player": "Lee Roger Grainger",
           "slug": "lee-roger-grainger",
           "section": "Mens",
@@ -422,15 +438,7 @@
           "displayValue": 3
         },
         {
-          "rank": 7,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
-          "section": "Mens",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
-          "rank": 8,
+          "rank": 9,
           "player": "Philip Thompson",
           "slug": "philip-thompson",
           "section": "Mens",
@@ -438,17 +446,9 @@
           "displayValue": 3
         },
         {
-          "rank": 9,
+          "rank": 10,
           "player": "Robert Keith Woodall",
           "slug": "robert-keith-woodall",
-          "section": "Mens",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
-          "rank": 10,
-          "player": "Stephen Brian Hopkins",
-          "slug": "stephen-brian-hopkins",
           "section": "Mens",
           "value": 3,
           "displayValue": 3
@@ -458,14 +458,30 @@
     "mostPlayed": {
       "label": "Most Competitions Played",
       "holder": {
-        "player": "Christopher Vanes",
-        "slug": "christopher-vanes",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 6
+        "value": 10
       },
       "leaders": [
         {
           "rank": 1,
+          "player": "M. Hickman",
+          "slug": "m-hickman",
+          "section": "Mens",
+          "value": 10,
+          "displayValue": 10
+        },
+        {
+          "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 7,
+          "displayValue": 7
+        },
+        {
+          "rank": 3,
           "player": "Christopher Vanes",
           "slug": "christopher-vanes",
           "section": "Mens",
@@ -473,7 +489,7 @@
           "displayValue": 6
         },
         {
-          "rank": 2,
+          "rank": 4,
           "player": "Philip Thompson",
           "slug": "philip-thompson",
           "section": "Mens",
@@ -481,7 +497,7 @@
           "displayValue": 6
         },
         {
-          "rank": 3,
+          "rank": 5,
           "player": "Stephen Hall",
           "slug": "stephen-hall",
           "section": "Mens",
@@ -489,7 +505,7 @@
           "displayValue": 6
         },
         {
-          "rank": 4,
+          "rank": 6,
           "player": "Ben Fisher",
           "slug": "ben-fisher",
           "section": "Mens",
@@ -497,7 +513,7 @@
           "displayValue": 5
         },
         {
-          "rank": 5,
+          "rank": 7,
           "player": "Darren Element",
           "slug": "darren-element",
           "section": "Mens",
@@ -505,7 +521,7 @@
           "displayValue": 5
         },
         {
-          "rank": 6,
+          "rank": 8,
           "player": "David Hobley",
           "slug": "david-hobley",
           "section": "Mens",
@@ -513,7 +529,7 @@
           "displayValue": 5
         },
         {
-          "rank": 7,
+          "rank": 9,
           "player": "G.B. Ray",
           "slug": "g-b-ray",
           "section": "Mens",
@@ -521,25 +537,9 @@
           "displayValue": 5
         },
         {
-          "rank": 8,
+          "rank": 10,
           "player": "Gary William Stubbs",
           "slug": "gary-william-stubbs",
-          "section": "Mens",
-          "value": 5,
-          "displayValue": 5
-        },
-        {
-          "rank": 9,
-          "player": "Gerald Paul Crowley",
-          "slug": "gerald-paul-crowley",
-          "section": "Mens",
-          "value": 5,
-          "displayValue": 5
-        },
-        {
-          "rank": 10,
-          "player": "James Webber",
-          "slug": "james-webber",
           "section": "Mens",
           "value": 5,
           "displayValue": 5
@@ -642,22 +642,38 @@
     "mostMajorWins": {
       "label": "Most Major Wins",
       "holder": {
-        "player": "M.P. Williams",
-        "slug": "mark-williams",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 4
+        "value": 10
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
+          "player": "M. Hickman",
+          "slug": "m-hickman",
           "section": "Mens",
-          "value": 4,
-          "displayValue": 4
+          "value": 10,
+          "displayValue": 10
         },
         {
           "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 7,
+          "displayValue": 7
+        },
+        {
+          "rank": 3,
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
+          "section": "Mens",
+          "value": 5,
+          "displayValue": 5
+        },
+        {
+          "rank": 4,
           "player": "Mark Williams",
           "slug": "mark-williams",
           "section": "Mens",
@@ -665,15 +681,7 @@
           "displayValue": 4
         },
         {
-          "rank": 3,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
-          "section": "Mens",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
-          "rank": 4,
+          "rank": 5,
           "player": "A. P. Jackson",
           "slug": "a-p-jackson",
           "section": "Mens",
@@ -681,7 +689,7 @@
           "displayValue": 2
         },
         {
-          "rank": 5,
+          "rank": 6,
           "player": "G. Smith",
           "slug": "g-smith",
           "section": "Mens",
@@ -689,7 +697,15 @@
           "displayValue": 2
         },
         {
-          "rank": 6,
+          "rank": 7,
+          "player": "L. Henley",
+          "slug": "l-henley",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 8,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -697,7 +713,7 @@
           "displayValue": 2
         },
         {
-          "rank": 7,
+          "rank": 9,
           "player": "P. Howard",
           "slug": "p-howard",
           "section": "Mens",
@@ -705,28 +721,12 @@
           "displayValue": 2
         },
         {
-          "rank": 8,
+          "rank": 10,
           "player": "P. I. Welch",
           "slug": "p-i-welch",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
-        },
-        {
-          "rank": 9,
-          "player": "P. O'Reilly",
-          "slug": "p-o-reilly",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 10,
-          "player": "A. Butler",
-          "slug": "a-butler",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
         }
       ]
     },
@@ -745,38 +745,46 @@
     "highestHallOfFameScore": {
       "label": "Highest Hall of Fame Score",
       "holder": {
-        "player": "M.P. Williams",
-        "slug": "mark-williams",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
-        "value": 224
+        "value": 500
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
-          "section": "Mens",
-          "value": 224,
-          "displayValue": 224
-        },
-        {
-          "rank": 2,
-          "player": "Mark Williams",
-          "slug": "mark-williams",
-          "section": "Mens",
-          "value": 224,
-          "displayValue": 224
-        },
-        {
-          "rank": 3,
           "player": "M. Hickman",
           "slug": "m-hickman",
           "section": "Mens",
-          "value": 138,
-          "displayValue": 138
+          "value": 500,
+          "displayValue": 500
+        },
+        {
+          "rank": 2,
+          "player": "M. Williams",
+          "slug": "m-williams",
+          "section": "Mens",
+          "value": 322,
+          "displayValue": 322
+        },
+        {
+          "rank": 3,
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
+          "section": "Mens",
+          "value": 230,
+          "displayValue": 230
         },
         {
           "rank": 4,
+          "player": "Mark Williams",
+          "slug": "mark-williams",
+          "section": "Mens",
+          "value": 184,
+          "displayValue": 184
+        },
+        {
+          "rank": 5,
           "player": "A. P. Jackson",
           "slug": "a-p-jackson",
           "section": "Mens",
@@ -784,7 +792,7 @@
           "displayValue": 92
         },
         {
-          "rank": 5,
+          "rank": 6,
           "player": "G. Smith",
           "slug": "g-smith",
           "section": "Mens",
@@ -792,7 +800,15 @@
           "displayValue": 92
         },
         {
-          "rank": 6,
+          "rank": 7,
+          "player": "L. Henley",
+          "slug": "l-henley",
+          "section": "Mens",
+          "value": 92,
+          "displayValue": 92
+        },
+        {
+          "rank": 8,
           "player": "M. Short",
           "slug": "m-short",
           "section": "Mens",
@@ -800,7 +816,7 @@
           "displayValue": 92
         },
         {
-          "rank": 7,
+          "rank": 9,
           "player": "P. Howard",
           "slug": "p-howard",
           "section": "Mens",
@@ -808,52 +824,28 @@
           "displayValue": 92
         },
         {
-          "rank": 8,
+          "rank": 10,
           "player": "P. I. Welch",
           "slug": "p-i-welch",
           "section": "Mens",
           "value": 92,
           "displayValue": 92
-        },
-        {
-          "rank": 9,
-          "player": "P. O'Reilly",
-          "slug": "p-o-reilly",
-          "section": "Mens",
-          "value": 92,
-          "displayValue": 92
-        },
-        {
-          "rank": 10,
-          "player": "Gary William Stubbs",
-          "slug": "gary-william-stubbs",
-          "section": "Mens",
-          "value": 64,
-          "displayValue": 64
         }
       ]
     },
     "mostRecordsHeld": {
       "label": "Most Records Held",
       "holder": {
-        "player": "M.P. Williams",
-        "slug": "mark-williams",
+        "player": "M. Hickman",
+        "slug": "m-hickman",
         "section": "Mens",
         "value": 2
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M.P. Williams",
-          "slug": "mark-williams",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 2,
-          "player": "Mark Williams",
-          "slug": "mark-williams",
+          "player": "M. Hickman",
+          "slug": "m-hickman",
           "section": "Mens",
           "value": 2,
           "displayValue": 2
