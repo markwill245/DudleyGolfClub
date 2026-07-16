@@ -641,13 +641,46 @@
     },
     "mostMedalWins": {
       "label": "Most Medal Wins",
-      "holder": null,
-      "leaders": []
-    },
-    "mostMatchplayWins": {
-      "label": "Most Matchplay Wins",
-      "holder": null,
-      "leaders": []
+      "holder": {
+        "player": "Clive Atkins",
+        "slug": "clive-atkins",
+        "section": "Seniors",
+        "value": 1
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Clive Atkins",
+          "slug": "clive-atkins",
+          "section": "Seniors",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 2,
+          "player": "Jason Bates",
+          "slug": "jason-bates",
+          "section": "Mixed",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Robert Hudson",
+          "slug": "robert-hudson",
+          "section": "Mixed",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 4,
+          "player": "Stewart Marshall",
+          "slug": "stewart-marshall",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        }
+      ]
     }
   },
   "museum": {
