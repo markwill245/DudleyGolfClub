@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Museum Dashboard | Dudley Golf Club</title>
@@ -8,130 +9,156 @@
 
 <body class="bg-[#F9F7F2] text-[#132419]">
 
-<main class="max-w-7xl mx-auto px-6 py-16">
+  <main class="max-w-7xl mx-auto px-6 py-16">
 
-  <a href="digital-museum.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
-    ← Back to Digital Museum
-  </a>
+    <a href="digital-museum.html" class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+      ← Back to Digital Museum
+    </a>
 
-  <section class="mt-12 mb-12">
-    <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
-      Dudley Golf Club Digital Museum
-    </p>
-
-    <h1 class="text-6xl font-serif mb-6">Museum Dashboard</h1>
-
-    <p class="text-xl max-w-4xl leading-8">
-      A live overview of the Digital Museum, generated from the Museum Brain.
-    </p>
-  </section>
-
-  <section class="grid md:grid-cols-4 gap-6 mb-12">
-    <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
-      <strong id="players-count" class="text-4xl font-serif">-</strong>
-      <p>Players Recorded</p>
-    </div>
-
-    <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
-      <strong id="competitions-count" class="text-4xl font-serif">-</strong>
-      <p>Competitions</p>
-    </div>
-
-    <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
-      <strong id="results-count" class="text-4xl font-serif">-</strong>
-      <p>Recorded Results</p>
-    </div>
-
-    <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
-      <strong id="leader-name" class="text-2xl font-serif">-</strong>
-      <p>Lifetime Leader</p>
-    </div>
-  </section>
-
-  <section class="grid lg:grid-cols-2 gap-8 mb-12">
-
-    <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
-        Order of Merit
+    <section class="mt-12 mb-12">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
+        Dudley Golf Club Digital Museum
       </p>
-      <h2 class="text-3xl font-serif mb-6">Lifetime Top 5</h2>
-      <div id="lifetime-top-five" class="space-y-4">Loading...</div>
-    </div>
 
-    <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
-        Hall of Fame
+      <h1 class="text-6xl font-serif mb-6">Museum Dashboard</h1>
+
+      <p class="text-xl max-w-4xl leading-8">
+        A live overview of the Digital Museum, generated from the Museum Brain.
       </p>
-      <h2 class="text-3xl font-serif mb-6">Leading Candidates</h2>
-      <div id="hof-leaders" class="space-y-4">Loading...</div>
-    </div>
+    </section>
 
-  </section>
+    <section class="grid md:grid-cols-4 gap-6 mb-12">
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="players-count" class="text-4xl font-serif">-</strong>
+        <p>Players Recorded</p>
+      </div>
 
-  <section class="grid lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="competitions-count" class="text-4xl font-serif">-</strong>
+        <p>Competitions</p>
+      </div>
 
-    <a href="player-index.html" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow hover:shadow-2xl transition">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Players</p>
-      <h2 class="text-3xl font-serif mb-4">Player Gallery</h2>
-      <p>Search player profiles and career records.</p>
-    </a>
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="results-count" class="text-4xl font-serif">-</strong>
+        <p>Recorded Results</p>
+      </div>
 
-    <a href="competition-index.html" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow hover:shadow-2xl transition">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Competitions</p>
-      <h2 class="text-3xl font-serif mb-4">Competition Gallery</h2>
-      <p>Explore competition histories and records.</p>
-    </a>
+      <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+        <strong id="leader-name" class="text-2xl font-serif">-</strong>
+        <p>Lifetime Leader</p>
+      </div>
+    </section>
 
-    <a href="digital-museum.html" class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow hover:shadow-2xl transition">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Museum</p>
-      <h2 class="text-3xl font-serif mb-4">Entrance Hall</h2>
-      <p>Return to the main museum home.</p>
-    </a>
+    <section class="grid lg:grid-cols-2 gap-8 mb-12">
 
-  </section>
+      <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+          Order of Merit
+        </p>
+        <h2 class="text-3xl font-serif mb-6">Lifetime Top 5</h2>
+        <div id="lifetime-top-five" class="space-y-4">Loading...</div>
+      </div>
 
-</main>
+      <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+          Hall of Fame
+        </p>
+        <h2 class="text-3xl font-serif mb-6">Leading Candidates</h2>
+        <div id="hof-leaders" class="space-y-4">Loading...</div>
+      </div>
 
-<script>
-async function loadDashboard() {
-  try {
-    const players = await fetch("data/player-page-data.json").then(r => r.json());
-    const competitions = await fetch("data/competition-profiles.json").then(r => r.json());
-    const lifetime = await fetch("data/order-of-merit-lifetime.json").then(r => r.json());
+    </section>
 
-    document.getElementById("players-count").textContent = players.length;
-    document.getElementById("competitions-count").textContent = competitions.length;
+    <section class="grid lg:grid-cols-3 gap-6">
 
-    const resultsCount = players.reduce((total, player) => total + player.timeline.length, 0);
-    document.getElementById("results-count").textContent = resultsCount;
+      <a href="player-index.html"
+        class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow hover:shadow-2xl transition">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Players</p>
+        <h2 class="text-3xl font-serif mb-4">Player Gallery</h2>
+        <p>Search player profiles and career records.</p>
+      </a>
 
-    document.getElementById("leader-name").textContent = lifetime[0]?.player || "-";
+      <a href="competition-index.html"
+        class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow hover:shadow-2xl transition">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Competitions</p>
+        <h2 class="text-3xl font-serif mb-4">Competition Gallery</h2>
+        <p>Explore competition histories and records.</p>
+      </a>
 
-    document.getElementById("lifetime-top-five").innerHTML =
-      lifetime.slice(0, 5).map(player => `
+      <a href="digital-museum.html"
+        class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow hover:shadow-2xl transition">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Museum</p>
+        <h2 class="text-3xl font-serif mb-4">Entrance Hall</h2>
+        <p>Return to the main museum home.</p>
+      </a>
+
+    </section>
+
+  </main>
+
+  <script>
+    async function loadDashboard() {
+      try {
+        const players = await fetch("data/player-page-data.json").then(r => r.json());
+        const competitions = await fetch("data/competition-profiles.json").then(r => r.json());
+        const lifetime = await fetch("data/order-of-merit-lifetime.json").then(r => r.json());
+
+        document.getElementById("players-count").textContent = players.length;
+        document.getElementById("competitions-count").textContent = competitions.length;
+
+        const resultsCount = players.reduce((total, player) => total + player.timeline.length, 0);
+        document.getElementById("results-count").textContent = resultsCount;
+
+        document.getElementById("leader-name").textContent = lifetime[0]?.player || "-";
+
+        document.getElementById("lifetime-top-five").innerHTML =
+          lifetime.slice(0, 5).map(player => `
         <div class="flex justify-between border-b border-[#C5A367]/20 pb-3">
           <span><strong>${player.rank}. ${player.player}</strong></span>
           <span>${player.points} pts</span>
         </div>
       `).join("");
 
-    const hof = [...players].sort((a, b) => b.hallOfFame.score - a.hallOfFame.score);
+        const hof = [...players].sort((a, b) => b.hallOfFame.score - a.hallOfFame.score);
 
-    document.getElementById("hof-leaders").innerHTML =
-      hof.slice(0, 5).map(player => `
+        document.getElementById("hof-leaders").innerHTML =
+          hof.slice(0, 5).map(player => `
         <div class="flex justify-between border-b border-[#C5A367]/20 pb-3">
           <span><strong>${player.hero.name}</strong><br><small>${player.hallOfFame.status}</small></span>
           <span>${player.hallOfFame.score}</span>
         </div>
       `).join("");
 
-  } catch (error) {
-    console.log("Dashboard failed to load", error);
-  }
-}
+      } catch (error) {
+        console.log("Dashboard failed to load", error);
+      }
+    }
 
-loadDashboard();
-</script>
+    loadDashboard();
+  </script>
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
+    ↑ Top
+  </button>
 
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+      } else {
+        backToTop.classList.add("hidden");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 </body>
+
 </html>

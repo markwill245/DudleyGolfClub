@@ -136,7 +136,6 @@
       try {
         const players = await fetch("data/player-page-data.json").then(r => r.json());
         const competitions = await fetch("data/competition-profiles.json").then(r => r.json());
-        const lifetime = await fetch("data/order-of-merit-lifetime.json").then(r => r.json());
 
         document.getElementById("stat-players").textContent = players.length;
         document.getElementById("stat-competitions").textContent = competitions.length;
@@ -147,9 +146,14 @@
         );
 
         document.getElementById("stat-results").textContent = resultCount;
-        document.getElementById("stat-leader").textContent =
-          lifetime[0]?.player || "-";
+        const lifetimeLeader = [...players].sort(
+          (a, b) =>
+            (b.headlineStats?.wins || 0) -
+            (a.headlineStats?.wins || 0)
+        )[0];
 
+        document.getElementById("stat-leader").textContent =
+          lifetimeLeader?.hero?.name || "-";
       } catch (error) {
         console.log("Museum stats failed to load", error);
       }
@@ -157,7 +161,29 @@
 
     loadMuseumStats();
   </script>
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
+    ↑ Top
+  </button>
 
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+      } else {
+        backToTop.classList.add("hidden");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -50,25 +50,25 @@
   </main>
 
   <script>
-  async function loadRecords() {
-    const container = document.getElementById("records");
+    async function loadRecords() {
+      const container = document.getElementById("records");
 
-    try {
-      const response = await fetch("data/records-centre.json");
+      try {
+        const response = await fetch("data/records-centre.json");
 
-      if (!response.ok) {
-        throw new Error(`Records file returned ${response.status}`);
-      }
+        if (!response.ok) {
+          throw new Error(`Records file returned ${response.status}`);
+        }
 
-      const records = await response.json();
+        const records = await response.json();
 
-      const sections = [
-        ["Career Records", records.career],
-        ["Championship Records", records.championships],
-        ["Museum Records", records.museum]
-      ];
+        const sections = [
+          ["Career Records", records.career],
+          ["Championship Records", records.championships],
+          ["Museum Records", records.museum]
+        ];
 
-      container.innerHTML = sections.map(([title, group]) => `
+        container.innerHTML = sections.map(([title, group]) => `
         <section>
           <h2 class="text-4xl font-serif mb-6">${title}</h2>
 
@@ -104,10 +104,10 @@
         </section>
       `).join("");
 
-    } catch (error) {
-      console.error("Records failed to load", error);
+      } catch (error) {
+        console.error("Records failed to load", error);
 
-      container.innerHTML = `
+        container.innerHTML = `
         <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
           <h2 class="text-3xl font-serif mb-4">Records unavailable</h2>
           <p class="text-gray-600">
@@ -115,12 +115,34 @@
           </p>
         </div>
       `;
+      }
     }
-  }
 
-  loadRecords();
-</script>
+    loadRecords();
+  </script>
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
+    ↑ Top
+  </button>
 
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+      } else {
+        backToTop.classList.add("hidden");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 </body>
 
 </html>
