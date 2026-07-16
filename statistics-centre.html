@@ -48,133 +48,378 @@
   </main>
 
   <script>
-    const projectId = "c54r3a5t";
-    const dataset = "production";
-    const apiVersion = "2024-03-01";
-
-    const query = encodeURIComponent(`
-*[_type == "playerIntelligence"] | order(playerName asc) {
-  playerName,
-  playerSlug,
-  competitionsPlayed,
-  wins,
-  runnerUp,
-  thirdPlace,
-  topTen,
-  averageGross,
-  averageNett,
-  lowestGross,
-  lowestNett
-}
-`);
-
-    const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
-
     function num(value) {
-      const n = Number(value);
-      return Number.isFinite(n) ? n : 0;
+      const number = Number(value);
+      return Number.isFinite(number) ? number : 0;
     }
 
     function validScore(value) {
-      const n = Number(value);
-      return Number.isFinite(n) && n > 0;
+      const number = Number(value);
+
+      return (
+        Number.isFinite(number) &&
+        number > 0
+      );
     }
 
-    function slug(player) {
-      return player.playerSlug?.current || "";
+    function createSlug(value) {
+      return String(value || "")
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
     }
 
-    function topBy(players, field, limit = 10, lowest = false) {
+    function topBy(
+      players,
+      field,
+      limit = 10,
+      lowestFirst = false
+    ) {
       return [...players]
-        .filter(p => lowest ? validScore(p[field]) : p[field] !== null && p[field] !== undefined)
-        .sort((a, b) => lowest ? num(a[field]) - num(b[field]) : num(b[field]) - num(a[field]))
+        .filter(player => {
+          if (lowestFirst) {
+            return validScore(player[field]);
+          }
+
+          return num(player[field]) > 0;
+        })
+        .sort((a, b) => {
+          const firstValue = num(a[field]);
+          const secondValue = num(b[field]);
+
+          const valueDifference = lowestFirst
+            ? firstValue - secondValue
+            : secondValue - firstValue;
+
+          if (valueDifference !== 0) {
+            return valueDifference;
+          }
+
+          return String(a.playerName || "")
+            .localeCompare(
+              String(b.playerName || "")
+            );
+        })
         .slice(0, limit);
     }
 
-    function leaderboard(title, players, field, suffix = "") {
+    function leaderboard(
+      title,
+      players,
+      field,
+      suffix = ""
+    ) {
       if (!players.length) {
         return `
-      <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-        <h2 class="serif text-4xl mb-6">${title}</h2>
-        <p class="text-gray-500">No data available yet.</p>
-      </section>
-    `;
+        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+          <h2 class="serif text-4xl mb-6">
+            ${title}
+          </h2>
+
+          <p class="text-gray-500">
+            No verified data available yet.
+          </p>
+        </section>
+      `;
       }
 
       return `
-    <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-      <h2 class="serif text-4xl mb-6">${title}</h2>
-      <div class="space-y-4">
-      ${players.map((p, index) => {
-        const playerSlug = slug(p);
+      <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+        <h2 class="serif text-4xl mb-6">
+          ${title}
+        </h2>
 
-        return `
-    <a href="${playerSlug ? `player-profile.html?player=${playerSlug}` : `player-index.html`}"
-       class="flex justify-between items-center border-b border-gray-200 pb-3 hover:text-[#C5A367] transition">
-            <span>
-              <span class="text-[#C5A367] mr-3">${index + 1}</span>
-              ${p.playerName}
-            </span>
-            <strong>${p[field] ?? "—"}${suffix}</strong>
-          </a>
-         `;
-      }).join("")}
-      </div>
-    </section>
-  `;
+        <div class="space-y-4">
+          ${players.map((player, index) => `
+            <a
+              href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+              class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3 hover:text-[#C5A367] transition"
+            >
+              <span>
+                <span class="text-[#C5A367] mr-3">
+                  ${index + 1}
+                </span>
+
+                ${player.playerName}
+              </span>
+
+              <strong>
+                ${player[field]}${suffix}
+              </strong>
+            </a>
+          `).join("")}
+        </div>
+      </section>
+    `;
     }
 
     async function loadStats() {
+      const container =
+        document.getElementById("stats");
+
       try {
-        const res = await fetch(url);
-        const data = await res.json();
-        const players = data.result || [];
+        const [
+          profilesResponse,
+          pagesResponse
+        ] = await Promise.all([
+          fetch("data/player-profiles.json"),
+          fetch("data/player-page-data.json")
+        ]);
 
-        const totalCompetitions = players.reduce((sum, p) => sum + num(p.competitionsPlayed), 0);
-        const totalWins = players.reduce((sum, p) => sum + num(p.wins), 0);
-        const totalTopTens = players.reduce((sum, p) => sum + num(p.topTen), 0);
+        if (!profilesResponse.ok) {
+          throw new Error(
+            `player-profiles.json returned ${profilesResponse.status}`
+          );
+        }
 
-        document.getElementById("stats").innerHTML = `
-      <section class="grid md:grid-cols-4 gap-6 mb-14">
-        <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Players</p>
-          <p class="serif text-5xl">${players.length}</p>
+        if (!pagesResponse.ok) {
+          throw new Error(
+            `player-page-data.json returned ${pagesResponse.status}`
+          );
+        }
+
+        const playerProfiles =
+          await profilesResponse.json();
+
+        const playerPages =
+          await pagesResponse.json();
+
+        const profileList =
+          Array.isArray(playerProfiles)
+            ? playerProfiles
+            : Object.values(
+              playerProfiles || {}
+            );
+
+        const pageList =
+          Array.isArray(playerPages)
+            ? playerPages
+            : Object.values(
+              playerPages || {}
+            );
+
+        const slugByName = new Map();
+
+        pageList.forEach(page => {
+          const playerName =
+            page?.hero?.name ||
+            page?.player ||
+            page?.playerName ||
+            "";
+
+          if (!playerName) {
+            return;
+          }
+
+          slugByName.set(
+            playerName,
+            page.slug ||
+            createSlug(playerName)
+          );
+        });
+
+        const players = profileList
+          .filter(profile => profile?.player)
+          .map(profile => ({
+            playerName: profile.player,
+
+            slug:
+              slugByName.get(profile.player) ||
+              createSlug(profile.player),
+
+            competitionsPlayed:
+              num(
+                profile.career
+                  ?.competitionsPlayed
+              ),
+
+            wins:
+              num(profile.career?.wins),
+
+            runnerUp:
+              num(profile.career?.runnerUp),
+
+            topTen:
+              num(profile.career?.top10),
+
+            /*
+             * These fields will populate as Museum Brain
+             * receives complete scoring information.
+             */
+            averageGross:
+              num(
+                profile.averageGross ??
+                profile.scoring?.averageGross
+              ),
+
+            averageNett:
+              num(
+                profile.averageNett ??
+                profile.scoring?.averageNett
+              ),
+
+            lowestGross:
+              num(
+                profile.lowestGross ??
+                profile.scoring?.lowestGross
+              ),
+
+            lowestNett:
+              num(
+                profile.lowestNett ??
+                profile.scoring?.lowestNett
+              )
+          }));
+
+        const totalAppearances =
+          players.reduce(
+            (total, player) =>
+              total +
+              player.competitionsPlayed,
+            0
+          );
+
+        const totalWins =
+          players.reduce(
+            (total, player) =>
+              total + player.wins,
+            0
+          );
+
+        const totalTopTens =
+          players.reduce(
+            (total, player) =>
+              total + player.topTen,
+            0
+          );
+
+        container.innerHTML = `
+        <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+              Players
+            </p>
+
+            <p class="serif text-5xl">
+              ${players.length}
+            </p>
+          </div>
+
+          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+              Recorded Appearances
+            </p>
+
+            <p class="serif text-5xl">
+              ${totalAppearances}
+            </p>
+          </div>
+
+          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+              Recorded Wins
+            </p>
+
+            <p class="serif text-5xl">
+              ${totalWins}
+            </p>
+          </div>
+
+          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+              Top-Ten Finishes
+            </p>
+
+            <p class="serif text-5xl">
+              ${totalTopTens}
+            </p>
+          </div>
+        </section>
+
+        <section class="grid lg:grid-cols-2 gap-8">
+          ${leaderboard(
+          "Most Recorded Wins",
+          topBy(
+            players,
+            "wins"
+          ),
+          "wins"
+        )}
+
+          ${leaderboard(
+          "Most Recorded Appearances",
+          topBy(
+            players,
+            "competitionsPlayed"
+          ),
+          "competitionsPlayed"
+        )}
+
+          ${leaderboard(
+          "Most Top-Ten Finishes",
+          topBy(
+            players,
+            "topTen"
+          ),
+          "topTen"
+        )}
+
+          ${leaderboard(
+          "Most Runner-Up Finishes",
+          topBy(
+            players,
+            "runnerUp"
+          ),
+          "runnerUp"
+        )}
+
+          ${leaderboard(
+          "Lowest Gross",
+          topBy(
+            players,
+            "lowestGross",
+            10,
+            true
+          ),
+          "lowestGross"
+        )}
+
+          ${leaderboard(
+          "Lowest Nett",
+          topBy(
+            players,
+            "lowestNett",
+            10,
+            true
+          ),
+          "lowestNett"
+        )}
+        </section>
+      `;
+
+      } catch (error) {
+        console.error(
+          "Statistics failed to load",
+          error
+        );
+
+        container.innerHTML = `
+        <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+          <h2 class="serif text-3xl mb-4">
+            Statistics unavailable
+          </h2>
+
+          <p class="text-gray-600">
+            The Museum statistics could not be loaded at the moment.
+          </p>
         </div>
-
-        <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Recorded Results</p>
-          <p class="serif text-5xl">${totalCompetitions}</p>
-        </div>
-
-        <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Wins</p>
-          <p class="serif text-5xl">${totalWins}</p>
-        </div>
-
-        <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Top Tens</p>
-          <p class="serif text-5xl">${totalTopTens}</p>
-        </div>
-      </section>
-
-      <section class="grid lg:grid-cols-2 gap-8">
-        ${leaderboard("Most Wins", topBy(players, "wins"), "wins")}
-        ${leaderboard("Most Competitions", topBy(players, "competitionsPlayed"), "competitionsPlayed")}
-        ${leaderboard("Most Top Tens", topBy(players, "topTen"), "topTen")}
-        ${leaderboard("Most Runner-Up Finishes", topBy(players, "runnerUp"), "runnerUp")}
-        ${leaderboard("Lowest Gross", topBy(players, "lowestGross", 10, true), "lowestGross")}
-        ${leaderboard("Lowest Nett", topBy(players, "lowestNett", 10, true), "lowestNett")}
-      </section>
-    `;
-      } catch (err) {
-        document.getElementById("stats").innerHTML = `<p>Unable to load statistics.</p>`;
-        console.error(err);
+      `;
       }
     }
 
     loadStats();
   </script>
-
 </body>
 
 </html>
