@@ -126,6 +126,30 @@
         },
         {
           "rank": 4,
+          "player": "Philip John Northall",
+          "slug": "philip-john-northall",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 5,
+          "player": "Robert Keith Woodall",
+          "slug": "robert-keith-woodall",
+          "section": "Mens",
+          "value": 2,
+          "displayValue": 2
+        },
+        {
+          "rank": 6,
+          "player": "Anthony Fegan",
+          "slug": "anthony-fegan",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 7,
           "player": "David Evitts",
           "slug": "david-evitts",
           "section": "Mens",
@@ -133,7 +157,7 @@
           "displayValue": 1
         },
         {
-          "rank": 5,
+          "rank": 8,
           "player": "Gary Male",
           "slug": "gary-male",
           "section": "Mixed",
@@ -141,7 +165,7 @@
           "displayValue": 1
         },
         {
-          "rank": 6,
+          "rank": 9,
           "player": "Gary William Stubbs",
           "slug": "gary-william-stubbs",
           "section": "Mens",
@@ -149,33 +173,9 @@
           "displayValue": 1
         },
         {
-          "rank": 7,
+          "rank": 10,
           "player": "Gordon Hampstead",
           "slug": "gordon-hampstead",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "James Webber",
-          "slug": "james-webber",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "Jeffrey Dean",
-          "slug": "jeffrey-dean",
-          "section": "Mixed",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "Karl Matthew Ashmore",
-          "slug": "karl-matthew-ashmore",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
@@ -209,19 +209,19 @@
         },
         {
           "rank": 3,
-          "player": "T. Blakemore",
-          "slug": "t-blakemore",
+          "player": "Mark A. Williams",
+          "slug": "mark-a-williams",
           "section": "Mens",
           "value": 11,
           "displayValue": 11
         },
         {
           "rank": 4,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
           "section": "Mens",
-          "value": 10,
-          "displayValue": 10
+          "value": 11,
+          "displayValue": 11
         },
         {
           "rank": 5,
@@ -300,19 +300,19 @@
         },
         {
           "rank": 3,
-          "player": "T. Blakemore",
-          "slug": "t-blakemore",
+          "player": "Mark A. Williams",
+          "slug": "mark-a-williams",
           "section": "Mens",
           "value": 11,
           "displayValue": 11
         },
         {
           "rank": 4,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
+          "player": "T. Blakemore",
+          "slug": "t-blakemore",
           "section": "Mens",
-          "value": 10,
-          "displayValue": 10
+          "value": 11,
+          "displayValue": 11
         },
         {
           "rank": 5,
@@ -327,8 +327,8 @@
           "player": "Michael John Kendrick",
           "slug": "michael-john-kendrick",
           "section": "Mens",
-          "value": 7,
-          "displayValue": 7
+          "value": 8,
+          "displayValue": 8
         },
         {
           "rank": 7,
@@ -394,8 +394,8 @@
           "player": "Mark A. Williams",
           "slug": "mark-a-williams",
           "section": "Mens",
-          "value": 13,
-          "displayValue": 13
+          "value": 14,
+          "displayValue": 14
         },
         {
           "rank": 4,
@@ -415,6 +415,14 @@
         },
         {
           "rank": 6,
+          "player": "Michael John Kendrick",
+          "slug": "michael-john-kendrick",
+          "section": "Mens",
+          "value": 8,
+          "displayValue": 8
+        },
+        {
+          "rank": 7,
           "player": "Ian Frederick Stevens",
           "slug": "ian-frederick-stevens",
           "section": "Mixed",
@@ -422,15 +430,15 @@
           "displayValue": 7
         },
         {
-          "rank": 7,
-          "player": "Michael John Kendrick",
-          "slug": "michael-john-kendrick",
+          "rank": 8,
+          "player": "M.j. Davies",
+          "slug": "m-j-davies",
           "section": "Mens",
           "value": 7,
           "displayValue": 7
         },
         {
-          "rank": 8,
+          "rank": 9,
           "player": "P. Swift",
           "slug": "p-swift",
           "section": "Mens",
@@ -438,20 +446,12 @@
           "displayValue": 7
         },
         {
-          "rank": 9,
-          "player": "G. Smith",
-          "slug": "g-smith",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
           "rank": 10,
-          "player": "M. Short",
-          "slug": "m-short",
+          "player": "Philip John Northall",
+          "slug": "philip-john-northall",
           "section": "Mens",
-          "value": 6,
-          "displayValue": 6
+          "value": 7,
+          "displayValue": 7
         }
       ]
     },
@@ -477,11 +477,19 @@
           "player": "Stephen Hall",
           "slug": "stephen-hall",
           "section": "Mens",
+          "value": 21,
+          "displayValue": 21
+        },
+        {
+          "rank": 3,
+          "player": "Keith John Woodall",
+          "slug": "keith-john-woodall",
+          "section": "Mens",
           "value": 19,
           "displayValue": 19
         },
         {
-          "rank": 3,
+          "rank": 4,
           "player": "M. Williams",
           "slug": "m-williams",
           "section": "Mens",
@@ -489,60 +497,52 @@
           "displayValue": 18
         },
         {
-          "rank": 4,
-          "player": "Keith John Woodall",
-          "slug": "keith-john-woodall",
-          "section": "Mens",
-          "value": 17,
-          "displayValue": 17
-        },
-        {
           "rank": 5,
           "player": "Mark A. Williams",
           "slug": "mark-a-williams",
           "section": "Mens",
-          "value": 17,
-          "displayValue": 17
+          "value": 18,
+          "displayValue": 18
         },
         {
           "rank": 6,
           "player": "Michael John Kendrick",
           "slug": "michael-john-kendrick",
           "section": "Mens",
-          "value": 14,
-          "displayValue": 14
+          "value": 16,
+          "displayValue": 16
         },
         {
           "rank": 7,
           "player": "Gerald Paul Crowley",
           "slug": "gerald-paul-crowley",
           "section": "Mens",
-          "value": 13,
-          "displayValue": 13
+          "value": 15,
+          "displayValue": 15
         },
         {
           "rank": 8,
-          "player": "M T Cowdell",
-          "slug": "m-t-cowdell",
-          "section": "Mens",
-          "value": 13,
-          "displayValue": 13
-        },
-        {
-          "rank": 9,
           "player": "Philip John Northall",
           "slug": "philip-john-northall",
           "section": "Mens",
-          "value": 13,
-          "displayValue": 13
+          "value": 15,
+          "displayValue": 15
+        },
+        {
+          "rank": 9,
+          "player": "G.B. Ray",
+          "slug": "g-b-ray",
+          "section": "Mens",
+          "value": 14,
+          "displayValue": 14
         },
         {
           "rank": 10,
-          "player": "Christopher Vanes",
-          "slug": "christopher-vanes",
+          "player": "M T Cowdell",
+          "slug": "m-t-cowdell",
           "section": "Mens",
-          "value": 12,
-          "displayValue": 12
+          "value": 14,
+          "displayValue": 14
         }
       ]
     }
@@ -754,8 +754,8 @@
           "player": "Mark A. Williams",
           "slug": "mark-a-williams",
           "section": "Mens",
-          "value": 460,
-          "displayValue": 460
+          "value": 466,
+          "displayValue": 466
         },
         {
           "rank": 5,
