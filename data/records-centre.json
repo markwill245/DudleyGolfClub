@@ -118,19 +118,19 @@
         },
         {
           "rank": 3,
-          "player": "Philip Thompson",
-          "slug": "philip-thompson",
+          "player": "Adam Stanfield",
+          "slug": "adam-stanfield",
           "section": "Mens",
           "value": 4,
           "displayValue": 4
         },
         {
           "rank": 4,
-          "player": "Adam Stanfield",
-          "slug": "adam-stanfield",
+          "player": "Philip Thompson",
+          "slug": "philip-thompson",
           "section": "Mens",
-          "value": 3,
-          "displayValue": 3
+          "value": 4,
+          "displayValue": 4
         },
         {
           "rank": 5,
@@ -142,6 +142,14 @@
         },
         {
           "rank": 6,
+          "player": "Clive Kearey",
+          "slug": "clive-kearey",
+          "section": "Mixed",
+          "value": 3,
+          "displayValue": 3
+        },
+        {
+          "rank": 7,
           "player": "David Evitts",
           "slug": "david-evitts",
           "section": "Mens",
@@ -149,7 +157,7 @@
           "displayValue": 3
         },
         {
-          "rank": 7,
+          "rank": 8,
           "player": "Gary Baker",
           "slug": "gary-baker",
           "section": "Mens",
@@ -157,7 +165,7 @@
           "displayValue": 3
         },
         {
-          "rank": 8,
+          "rank": 9,
           "player": "Ian Frederick Stevens",
           "slug": "ian-frederick-stevens",
           "section": "Mixed",
@@ -165,18 +173,10 @@
           "displayValue": 3
         },
         {
-          "rank": 9,
-          "player": "Keith Sabin",
-          "slug": "keith-sabin",
-          "section": "Mixed",
-          "value": 3,
-          "displayValue": 3
-        },
-        {
           "rank": 10,
-          "player": "Mark Andrew Poulding",
-          "slug": "mark-andrew-poulding",
-          "section": "Mens",
+          "player": "Keith Brian Culwick",
+          "slug": "keith-brian-culwick",
+          "section": "Seniors",
           "value": 3,
           "displayValue": 3
         }
@@ -324,6 +324,22 @@
         },
         {
           "rank": 6,
+          "player": "Neil Hartland",
+          "slug": "neil-hartland",
+          "section": "Mens",
+          "value": 12,
+          "displayValue": 12
+        },
+        {
+          "rank": 7,
+          "player": "Stephen Hall",
+          "slug": "stephen-hall",
+          "section": "Mens",
+          "value": 12,
+          "displayValue": 12
+        },
+        {
+          "rank": 8,
           "player": "Michael John Kendrick",
           "slug": "michael-john-kendrick",
           "section": "Mens",
@@ -331,25 +347,9 @@
           "displayValue": 11
         },
         {
-          "rank": 7,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 11,
-          "displayValue": 11
-        },
-        {
-          "rank": 8,
+          "rank": 9,
           "player": "Robert Keith Woodall",
           "slug": "robert-keith-woodall",
-          "section": "Mens",
-          "value": 11,
-          "displayValue": 11
-        },
-        {
-          "rank": 9,
-          "player": "Stephen Hall",
-          "slug": "stephen-hall",
           "section": "Mens",
           "value": 11,
           "displayValue": 11
@@ -383,6 +383,30 @@
         },
         {
           "rank": 2,
+          "player": "Stephen Hall",
+          "slug": "stephen-hall",
+          "section": "Mens",
+          "value": 25,
+          "displayValue": 25
+        },
+        {
+          "rank": 3,
+          "player": "James Stevens",
+          "slug": "james-stevens",
+          "section": "Mens",
+          "value": 22,
+          "displayValue": 22
+        },
+        {
+          "rank": 4,
+          "player": "Neil Hartland",
+          "slug": "neil-hartland",
+          "section": "Mens",
+          "value": 22,
+          "displayValue": 22
+        },
+        {
+          "rank": 5,
           "player": "Philip John Northall",
           "slug": "philip-john-northall",
           "section": "Mens",
@@ -390,15 +414,15 @@
           "displayValue": 22
         },
         {
-          "rank": 3,
-          "player": "Stephen Hall",
-          "slug": "stephen-hall",
+          "rank": 6,
+          "player": "Keith Durbridge",
+          "slug": "keith-durbridge",
           "section": "Mens",
-          "value": 22,
-          "displayValue": 22
+          "value": 21,
+          "displayValue": 21
         },
         {
-          "rank": 4,
+          "rank": 7,
           "player": "Mark A. Williams",
           "slug": "mark-a-williams",
           "section": "Mens",
@@ -406,41 +430,17 @@
           "displayValue": 21
         },
         {
-          "rank": 5,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 21,
-          "displayValue": 21
-        },
-        {
-          "rank": 6,
-          "player": "James Stevens",
-          "slug": "james-stevens",
+          "rank": 8,
+          "player": "Keith Ratcliffe",
+          "slug": "keith-ratcliffe",
           "section": "Mens",
           "value": 20,
           "displayValue": 20
         },
         {
-          "rank": 7,
+          "rank": 9,
           "player": "Calin Tiplea",
           "slug": "calin-tiplea",
-          "section": "Mens",
-          "value": 19,
-          "displayValue": 19
-        },
-        {
-          "rank": 8,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
-          "section": "Mens",
-          "value": 19,
-          "displayValue": 19
-        },
-        {
-          "rank": 9,
-          "player": "Keith Ratcliffe",
-          "slug": "keith-ratcliffe",
           "section": "Mens",
           "value": 19,
           "displayValue": 19
@@ -450,8 +450,8 @@
           "player": "G.B. Ray",
           "slug": "g-b-ray",
           "section": "Mens",
-          "value": 18,
-          "displayValue": 18
+          "value": 19,
+          "displayValue": 19
         }
       ]
     },
@@ -461,7 +461,7 @@
         "player": "Stephen Hall",
         "slug": "stephen-hall",
         "section": "Mens",
-        "value": 75
+        "value": 78
       },
       "leaders": [
         {
@@ -469,8 +469,8 @@
           "player": "Stephen Hall",
           "slug": "stephen-hall",
           "section": "Mens",
-          "value": 75,
-          "displayValue": 75
+          "value": 78,
+          "displayValue": 78
         },
         {
           "rank": 2,
@@ -493,56 +493,56 @@
           "player": "Keith Durbridge",
           "slug": "keith-durbridge",
           "section": "Mens",
+          "value": 54,
+          "displayValue": 54
+        },
+        {
+          "rank": 5,
+          "player": "G.B. Ray",
+          "slug": "g-b-ray",
+          "section": "Mens",
           "value": 52,
           "displayValue": 52
         },
         {
-          "rank": 5,
-          "player": "Calin Tiplea",
-          "slug": "calin-tiplea",
-          "section": "Mens",
-          "value": 50,
-          "displayValue": 50
-        },
-        {
           "rank": 6,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 50,
-          "displayValue": 50
-        },
-        {
-          "rank": 7,
           "player": "Melvyn Crook",
           "slug": "melvyn-crook",
           "section": "Mixed",
-          "value": 49,
-          "displayValue": 49
+          "value": 52,
+          "displayValue": 52
+        },
+        {
+          "rank": 7,
+          "player": "Calin Tiplea",
+          "slug": "calin-tiplea",
+          "section": "Mens",
+          "value": 51,
+          "displayValue": 51
         },
         {
           "rank": 8,
           "player": "Gerald Paul Crowley",
           "slug": "gerald-paul-crowley",
           "section": "Mens",
-          "value": 45,
-          "displayValue": 45
+          "value": 47,
+          "displayValue": 47
         },
         {
           "rank": 9,
           "player": "Neil Hartland",
           "slug": "neil-hartland",
           "section": "Mens",
-          "value": 45,
-          "displayValue": 45
+          "value": 46,
+          "displayValue": 46
         },
         {
           "rank": 10,
-          "player": "David Hill",
-          "slug": "david-hill",
+          "player": "Paul Ian Welch",
+          "slug": "paul-ian-welch",
           "section": "Mens",
-          "value": 43,
-          "displayValue": 43
+          "value": 45,
+          "displayValue": 45
         }
       ]
     }
