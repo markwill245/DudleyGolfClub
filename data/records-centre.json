@@ -150,6 +150,14 @@
         },
         {
           "rank": 7,
+          "player": "Clive Atkins",
+          "slug": "clive-atkins",
+          "section": "Seniors",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 8,
           "player": "David Evitts",
           "slug": "david-evitts",
           "section": "Mens",
@@ -157,7 +165,7 @@
           "displayValue": 1
         },
         {
-          "rank": 8,
+          "rank": 9,
           "player": "Gary Baker",
           "slug": "gary-baker",
           "section": "Mens",
@@ -165,18 +173,10 @@
           "displayValue": 1
         },
         {
-          "rank": 9,
+          "rank": 10,
           "player": "Gary Male",
           "slug": "gary-male",
           "section": "Mixed",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "Gary William Stubbs",
-          "slug": "gary-william-stubbs",
-          "section": "Mens",
           "value": 1,
           "displayValue": 1
         }
@@ -423,16 +423,16 @@
         },
         {
           "rank": 7,
-          "player": "M.j. Davies",
-          "slug": "m-j-davies",
+          "player": "Philip John Northall",
+          "slug": "philip-john-northall",
           "section": "Mens",
-          "value": 8,
-          "displayValue": 8
+          "value": 9,
+          "displayValue": 9
         },
         {
           "rank": 8,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
+          "player": "M.j. Davies",
+          "slug": "m-j-davies",
           "section": "Mens",
           "value": 8,
           "displayValue": 8
@@ -447,8 +447,8 @@
         },
         {
           "rank": 10,
-          "player": "P. Swift",
-          "slug": "p-swift",
+          "player": "Keith Ratcliffe",
+          "slug": "keith-ratcliffe",
           "section": "Mens",
           "value": 7,
           "displayValue": 7
@@ -477,19 +477,35 @@
           "player": "Stephen Hall",
           "slug": "stephen-hall",
           "section": "Mens",
-          "value": 23,
-          "displayValue": 23
+          "value": 26,
+          "displayValue": 26
         },
         {
           "rank": 3,
           "player": "Keith John Woodall",
           "slug": "keith-john-woodall",
           "section": "Mens",
-          "value": 20,
-          "displayValue": 20
+          "value": 21,
+          "displayValue": 21
         },
         {
           "rank": 4,
+          "player": "Mark A. Williams",
+          "slug": "mark-a-williams",
+          "section": "Mens",
+          "value": 19,
+          "displayValue": 19
+        },
+        {
+          "rank": 5,
+          "player": "Gerald Paul Crowley",
+          "slug": "gerald-paul-crowley",
+          "section": "Mens",
+          "value": 18,
+          "displayValue": 18
+        },
+        {
+          "rank": 6,
           "player": "M. Williams",
           "slug": "m-williams",
           "section": "Mens",
@@ -497,52 +513,36 @@
           "displayValue": 18
         },
         {
-          "rank": 5,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
+          "rank": 7,
+          "player": "Philip John Northall",
+          "slug": "philip-john-northall",
           "section": "Mens",
           "value": 18,
           "displayValue": 18
         },
         {
-          "rank": 6,
+          "rank": 8,
+          "player": "G.B. Ray",
+          "slug": "g-b-ray",
+          "section": "Mens",
+          "value": 17,
+          "displayValue": 17
+        },
+        {
+          "rank": 9,
+          "player": "M T Cowdell",
+          "slug": "m-t-cowdell",
+          "section": "Mens",
+          "value": 17,
+          "displayValue": 17
+        },
+        {
+          "rank": 10,
           "player": "Michael John Kendrick",
           "slug": "michael-john-kendrick",
           "section": "Mens",
           "value": 17,
           "displayValue": 17
-        },
-        {
-          "rank": 7,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
-          "section": "Mens",
-          "value": 17,
-          "displayValue": 17
-        },
-        {
-          "rank": 8,
-          "player": "Gerald Paul Crowley",
-          "slug": "gerald-paul-crowley",
-          "section": "Mens",
-          "value": 16,
-          "displayValue": 16
-        },
-        {
-          "rank": 9,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 15,
-          "displayValue": 15
-        },
-        {
-          "rank": 10,
-          "player": "M T Cowdell",
-          "slug": "m-t-cowdell",
-          "section": "Mens",
-          "value": 15,
-          "displayValue": 15
         }
       ]
     }
