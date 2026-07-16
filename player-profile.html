@@ -79,7 +79,7 @@
             <div><strong>${player.headlineStats.wins}</strong><br>Wins</div>
             <div><strong>${player.headlineStats.runnerUp}</strong><br>Runner-up</div>
             <div><strong>${player.headlineStats.top3}</strong><br>Top 3</div>
-            <div><strong>${player.headlineStats.winPercentage}%</strong><br>Win Rate</div>
+           
                   </div>
 
           <section class="mb-10">
@@ -105,9 +105,9 @@
 
             <div class="grid md:grid-cols-3 gap-4 mb-5">
               ${[1, 2, 3].map(division => {
-                const key = `division${division}`;
+        const key = `division${division}`;
 
-                return `
+        return `
                   <div class="rounded-xl border border-[#C5A367]/30 bg-[#F9F7F2] p-5">
                     <h3 class="font-serif text-xl mb-3">
                       Division ${division}
@@ -128,11 +128,11 @@
                     </div>
                   </div>
                 `;
-              }).join("")}
+      }).join("")}
             </div>
 
             ${(player.divisionHonours?.history || []).length
-              ? `
+          ? `
                 <div class="rounded-xl border border-[#C5A367]/20 overflow-hidden">
                   ${(player.divisionHonours.history || []).map(item => `
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-5 py-4 border-b last:border-b-0 border-[#C5A367]/20">
@@ -148,22 +148,22 @@
 
                       <div class="text-sm font-bold text-[#C5A367]">
                         ${item.position === 1
-                          ? "Division Winner"
-                          : `Division Top ${item.position}`}
+              ? "Division Winner"
+              : `Division Top ${item.position}`}
                         ${item.score !== null
-                          ? ` • ${item.score}`
-                          : ""}
+              ? ` • ${item.score}`
+              : ""}
                       </div>
                     </div>
                   `).join("")}
                 </div>
               `
-              : `
+          : `
                 <p class="text-gray-500">
                   No medal division honours recorded yet.
                 </p>
               `
-            }
+        }
           </section>
 
           <h2 class="text-2xl font-serif mb-4">Career Timeline</h2>
