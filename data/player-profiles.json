@@ -1745,7 +1745,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 8,
+      "competitionsPlayed": 9,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -1792,11 +1792,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 8
+      "played": 9
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Adrian Burns has played 8 recorded competitions in the Digital Museum. Adrian Burns is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Adrian Burns has played 8 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Adrian Burns has played 9 recorded competitions in the Digital Museum. Adrian Burns is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Adrian Burns has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -1860,6 +1860,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 24,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -2107,7 +2115,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -2143,11 +2151,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Andrew Card has played 5 recorded competitions in the Digital Museum. Andrew Card is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Andrew Card has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Andrew Card has played 6 recorded competitions in the Digital Museum. Andrew Card is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Andrew Card has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -2190,6 +2198,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 18,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -2201,7 +2217,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -2237,11 +2253,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 8
+      "played": 9
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Andrew Deakin has played 11 recorded competitions in the Digital Museum. Andrew Deakin is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Andrew Deakin has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Andrew Deakin has played 12 recorded competitions in the Digital Museum. Andrew Deakin is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Andrew Deakin has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -2332,6 +2348,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 29,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -2413,17 +2437,17 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 5,
-      "wins": 0,
+      "competitionsPlayed": 6,
+      "wins": 1,
       "runnerUp": 0,
-      "top3": 0,
-      "top5": 0,
-      "top10": 0
+      "top3": 1,
+      "top5": 1,
+      "top10": 1
     },
-    "favouriteCompetition": null,
-    "favouriteCompetitionWins": 0,
+    "favouriteCompetition": "Par/Bogey Medal",
+    "favouriteCompetitionWins": 1,
     "majorWins": 0,
-    "medalWins": 0,
+    "medalWins": 1,
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
@@ -2442,20 +2466,26 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 0,
+      "score": 29,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
-      "wins": 0,
-      "top3": 0,
-      "played": 5
+      "wins": 1,
+      "top3": 1,
+      "played": 6
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Andrew Russell has played 5 recorded competitions in the Digital Museum. Andrew Russell is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Andrew Russell has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
-    "firstWin": null,
-    "latestWin": null,
+    "writtenSummary": "Andrew Russell has played 6 recorded competitions in the Digital Museum. Andrew Russell has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Andrew Russell's strongest competition so far is Par/Bogey Medal. Current Hall of Fame status: Building Record with a score of 29.",
+    "profileSummary": "Andrew Russell has played 6 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "firstWin": {
+      "year": 2026,
+      "competition": "Par/Bogey Medal"
+    },
+    "latestWin": {
+      "year": 2026,
+      "competition": "Par/Bogey Medal"
+    },
     "careerTimeline": [
       {
         "year": 2026,
@@ -2496,9 +2526,21 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
-    "highlights": []
+    "highlights": [
+      "1 career win",
+      "1 top-three finish",
+      "Most successful in Par/Bogey Medal"
+    ]
   },
   {
     "player": "Andy Sherwood",
@@ -5788,7 +5830,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 15,
+      "competitionsPlayed": 16,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -5824,11 +5866,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 15
+      "played": 16
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Calin Tiplea has played 15 recorded competitions in the Digital Museum. Calin Tiplea is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Calin Tiplea has played 15 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Calin Tiplea has played 16 recorded competitions in the Digital Museum. Calin Tiplea is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Calin Tiplea has played 16 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -5940,6 +5982,14 @@
         "year": 2026,
         "competition": "May Sunday Stableford",
         "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 21,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -6709,12 +6759,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 1,
       "runnerUp": 1,
       "top3": 3,
       "top5": 3,
-      "top10": 4
+      "top10": 5
     },
     "favouriteCompetition": "Seniors June Medal",
     "favouriteCompetitionWins": 1,
@@ -6748,8 +6798,8 @@
       "played": 1
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Clive Atkins has played 9 recorded competitions in the Digital Museum. Clive Atkins has recorded 1 win, with 1 runner-up finish and 3 top-three finishes. Clive Atkins's strongest competition so far is Seniors June Medal. Current Hall of Fame status: Building Record with a score of 47.",
-    "profileSummary": "Clive Atkins has played 9 recorded competitions, with 1 win, 1 runner-up finish and 3 top-three finishes.",
+    "writtenSummary": "Clive Atkins has played 10 recorded competitions in the Digital Museum. Clive Atkins has recorded 1 win, with 1 runner-up finish and 3 top-three finishes. Clive Atkins's strongest competition so far is Seniors June Medal. Current Hall of Fame status: Building Record with a score of 47.",
+    "profileSummary": "Clive Atkins has played 10 recorded competitions, with 1 win, 1 runner-up finish and 3 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "Seniors June Medal"
@@ -6763,6 +6813,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 6,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -6915,12 +6973,12 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
       "top5": 1,
-      "top10": 1
+      "top10": 2
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -6962,11 +7020,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Clive Kearey has played 9 recorded competitions in the Digital Museum. Clive Kearey is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Clive Kearey has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Clive Kearey has played 10 recorded competitions in the Digital Museum. Clive Kearey is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Clive Kearey has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -7030,6 +7088,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 9,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -7282,7 +7348,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 2,
@@ -7339,11 +7405,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 2,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Craig Locke has played 9 recorded competitions in the Digital Museum. Craig Locke is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 14.",
-    "profileSummary": "Craig Locke has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "Craig Locke has played 10 recorded competitions in the Digital Museum. Craig Locke is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Craig Locke has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -7415,6 +7481,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 3,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 35,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -7557,12 +7631,12 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 2,
+      "competitionsPlayed": 3,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
-      "top5": 0,
-      "top10": 0
+      "top5": 1,
+      "top10": 1
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -7586,18 +7660,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 0,
+      "score": 2,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 2
+      "played": 3
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Craig Tromans has played 2 recorded competitions in the Digital Museum. Craig Tromans is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Craig Tromans has played 2 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Craig Tromans has played 3 recorded competitions in the Digital Museum. Craig Tromans is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Craig Tromans has played 3 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -7613,6 +7687,14 @@
         "year": 2026,
         "competition": "Captain's Day & Walker Cup",
         "position": 59,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 4,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -9537,7 +9619,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 14,
+      "competitionsPlayed": 15,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -9584,11 +9666,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "David Hobley has played 14 recorded competitions in the Digital Museum. David Hobley is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "David Hobley has played 14 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "David Hobley has played 15 recorded competitions in the Digital Museum. David Hobley is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "David Hobley has played 15 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -9703,6 +9785,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -9810,12 +9900,12 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
-      "top5": 0,
-      "top10": 2
+      "top5": 1,
+      "top10": 3
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -9839,18 +9929,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 0,
+      "score": 2,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "David Jeavons has played 9 recorded competitions in the Digital Museum. David Jeavons is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "David Jeavons has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "David Jeavons has played 10 recorded competitions in the Digital Museum. David Jeavons is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "David Jeavons has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -9906,6 +9996,14 @@
         "year": 2026,
         "competition": "June Monthly Medal/ Prosser Lytham Trophy",
         "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 5,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -12896,7 +12994,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 18,
+      "competitionsPlayed": 19,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -12943,11 +13041,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 13
+      "played": 14
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "G.B. Ray has played 18 recorded competitions in the Digital Museum. G.B. Ray is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "G.B. Ray has played 18 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "G.B. Ray has played 19 recorded competitions in the Digital Museum. G.B. Ray is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "G.B. Ray has played 19 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -13091,6 +13189,14 @@
         "year": 2026,
         "competition": "May Sunday Stableford",
         "position": 30,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 31,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -14742,7 +14848,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -14778,14 +14884,22 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Harry Westwood has played 5 recorded competitions in the Digital Museum. Harry Westwood is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Harry Westwood has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Harry Westwood has played 6 recorded competitions in the Digital Museum. Harry Westwood is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Harry Westwood has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 12,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
       {
         "year": 2026,
         "competition": "Seniors Bruce Mansell Foursomes",
@@ -15202,7 +15316,7 @@
     "career": {
       "firstYear": 1999,
       "latestYear": 2026,
-      "competitionsPlayed": 12,
+      "competitionsPlayed": 13,
       "wins": 3,
       "runnerUp": 2,
       "top3": 5,
@@ -15252,8 +15366,8 @@
       "played": 2
     },
     "careerEra": "1999-2026",
-    "writtenSummary": "Ian Frederick Stevens has played 12 recorded competitions in the Digital Museum. Ian Frederick Stevens has recorded 3 wins, with 2 runner-up finishes and 5 top-three finishes. Ian Frederick Stevens's strongest competition so far is Boscawen Cup. Current Hall of Fame status: Hall of Fame Level with a score of 162.",
-    "profileSummary": "Ian Frederick Stevens has played 12 recorded competitions, with 3 wins, 2 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Ian Frederick Stevens has played 13 recorded competitions in the Digital Museum. Ian Frederick Stevens has recorded 3 wins, with 2 runner-up finishes and 5 top-three finishes. Ian Frederick Stevens's strongest competition so far is Boscawen Cup. Current Hall of Fame status: Hall of Fame Level with a score of 162.",
+    "profileSummary": "Ian Frederick Stevens has played 13 recorded competitions, with 3 wins, 2 runner-up finishes and 5 top-three finishes.",
     "firstWin": {
       "year": 1999,
       "competition": "Boscawen Cup"
@@ -15331,6 +15445,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 24,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 22,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -15445,7 +15567,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 7,
+      "competitionsPlayed": 8,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -15481,14 +15603,22 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 7
+      "played": 8
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Ivan James Cooper has played 7 recorded competitions in the Digital Museum. Ivan James Cooper is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Ivan James Cooper has played 7 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Ivan James Cooper has played 8 recorded competitions in the Digital Museum. Ivan James Cooper is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Ivan James Cooper has played 8 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
       {
         "year": 2026,
         "competition": "Seniors Bruce Mansell Foursomes",
@@ -19471,7 +19601,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 1,
       "top3": 1,
@@ -19507,11 +19637,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Jeffrey Dean has played 9 recorded competitions in the Digital Museum. Jeffrey Dean is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 12.",
-    "profileSummary": "Jeffrey Dean has played 9 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
+    "writtenSummary": "Jeffrey Dean has played 10 recorded competitions in the Digital Museum. Jeffrey Dean is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 12.",
+    "profileSummary": "Jeffrey Dean has played 10 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -19519,6 +19649,14 @@
         "year": 2026,
         "competition": "Captain's Day & Walker Cup",
         "position": 89,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 22,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -19731,12 +19869,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
       "top5": 0,
-      "top10": 3
+      "top10": 4
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -19767,11 +19905,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "John Edwards has played 9 recorded competitions in the Digital Museum. John Edwards is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "John Edwards has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "John Edwards has played 10 recorded competitions in the Digital Museum. John Edwards is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "John Edwards has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -19803,6 +19941,14 @@
         "year": 2026,
         "competition": "Club Stableford competition",
         "position": 49,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 7,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -19857,7 +20003,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -19893,11 +20039,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 7
+      "played": 8
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "John Gilbert Baker has played 9 recorded competitions in the Digital Museum. John Gilbert Baker is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "John Gilbert Baker has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "John Gilbert Baker has played 10 recorded competitions in the Digital Museum. John Gilbert Baker is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "John Gilbert Baker has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -19913,6 +20059,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 32,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 27,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -20087,12 +20241,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 8,
+      "competitionsPlayed": 9,
       "wins": 0,
       "runnerUp": 0,
       "top3": 2,
       "top5": 3,
-      "top10": 4
+      "top10": 5
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -20123,11 +20277,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "John W. T. Mc'ewan has played 8 recorded competitions in the Digital Museum. John W. T. Mc'ewan is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 14.",
-    "profileSummary": "John W. T. Mc'ewan has played 8 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "John W. T. Mc'ewan has played 9 recorded competitions in the Digital Museum. John W. T. Mc'ewan is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "John W. T. Mc'ewan has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -20143,6 +20297,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 34,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 8,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -21553,7 +21715,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 14,
+      "competitionsPlayed": 15,
       "wins": 0,
       "runnerUp": 0,
       "top3": 2,
@@ -21600,11 +21762,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 2,
-      "played": 14
+      "played": 15
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Keith Durbridge has played 14 recorded competitions in the Digital Museum. Keith Durbridge is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 14.",
-    "profileSummary": "Keith Durbridge has played 14 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "Keith Durbridge has played 15 recorded competitions in the Digital Museum. Keith Durbridge is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Keith Durbridge has played 15 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -21652,6 +21814,14 @@
         "year": 2026,
         "competition": "Probus Pairs Stableford Betterball",
         "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 26,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -21732,12 +21902,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 24,
+      "competitionsPlayed": 26,
       "wins": 0,
       "runnerUp": 1,
       "top3": 2,
-      "top5": 3,
-      "top10": 4
+      "top5": 4,
+      "top10": 5
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -21761,18 +21931,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 20,
+      "score": 22,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 0,
       "top3": 2,
-      "played": 19
+      "played": 21
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Keith John Woodall has played 24 recorded competitions in the Digital Museum. Keith John Woodall is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 20.",
-    "profileSummary": "Keith John Woodall has played 24 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Keith John Woodall has played 26 recorded competitions in the Digital Museum. Keith John Woodall is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 22.",
+    "profileSummary": "Keith John Woodall has played 26 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -21898,6 +22068,22 @@
       },
       {
         "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 33,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Seniors Bruce Mansell Foursomes",
         "position": 12,
         "resultType": "Competition Result",
@@ -21980,12 +22166,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 13,
+      "competitionsPlayed": 14,
       "wins": 1,
       "runnerUp": 1,
       "top3": 2,
-      "top5": 3,
-      "top10": 9
+      "top5": 4,
+      "top10": 10
     },
     "favouriteCompetition": "Seniors Centenary Trophy",
     "favouriteCompetitionWins": 1,
@@ -22009,18 +22195,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 35,
+      "score": 37,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 1,
       "top3": 2,
-      "played": 11
+      "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Keith Ratcliffe has played 13 recorded competitions in the Digital Museum. Keith Ratcliffe has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Keith Ratcliffe's strongest competition so far is Seniors Centenary Trophy. Current Hall of Fame status: Building Record with a score of 35.",
-    "profileSummary": "Keith Ratcliffe has played 13 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Keith Ratcliffe has played 14 recorded competitions in the Digital Museum. Keith Ratcliffe has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Keith Ratcliffe's strongest competition so far is Seniors Centenary Trophy. Current Hall of Fame status: Building Record with a score of 37.",
+    "profileSummary": "Keith Ratcliffe has played 14 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors Centenary Trophy"
@@ -22042,6 +22228,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 9,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 4,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -22148,7 +22342,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 6,
+      "competitionsPlayed": 7,
       "wins": 0,
       "runnerUp": 1,
       "top3": 1,
@@ -22184,11 +22378,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Keith Sabin has played 6 recorded competitions in the Digital Museum. Keith Sabin is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
-    "profileSummary": "Keith Sabin has played 6 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
+    "writtenSummary": "Keith Sabin has played 7 recorded competitions in the Digital Museum. Keith Sabin is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Keith Sabin has played 7 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -22196,6 +22390,14 @@
         "year": 2026,
         "competition": "Captain's Day & Walker Cup",
         "position": 2,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": "DQ",
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -22346,14 +22548,14 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 8,
-      "wins": 1,
+      "competitionsPlayed": 9,
+      "wins": 2,
       "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 3
+      "top3": 2,
+      "top5": 2,
+      "top10": 4
     },
-    "favouriteCompetition": "Seniors Greensomes",
+    "favouriteCompetition": "Seniors Arthur Turley Trophy",
     "favouriteCompetitionWins": 1,
     "majorWins": 0,
     "medalWins": 0,
@@ -22375,21 +22577,21 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 21,
+      "score": 42,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
-      "wins": 1,
-      "top3": 1,
-      "played": 7
+      "wins": 2,
+      "top3": 2,
+      "played": 8
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Kenneth Brettle has played 8 recorded competitions in the Digital Museum. Kenneth Brettle has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Kenneth Brettle's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Building Record with a score of 21.",
-    "profileSummary": "Kenneth Brettle has played 8 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Kenneth Brettle has played 9 recorded competitions in the Digital Museum. Kenneth Brettle has recorded 2 wins, with 0 runner-up finishes and 2 top-three finishes. Kenneth Brettle's strongest competition so far is Seniors Arthur Turley Trophy. Current Hall of Fame status: Building Record with a score of 42.",
+    "profileSummary": "Kenneth Brettle has played 9 recorded competitions, with 2 wins, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": {
       "year": 2026,
-      "competition": "Seniors Greensomes"
+      "competition": "Seniors Arthur Turley Trophy"
     },
     "latestWin": {
       "year": 2026,
@@ -22400,6 +22602,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 1,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -22462,9 +22672,9 @@
       }
     ],
     "highlights": [
-      "1 career win",
-      "1 top-three finish",
-      "Most successful in Seniors Greensomes"
+      "2 career wins",
+      "2 top-three finishes",
+      "Most successful in Seniors Arthur Turley Trophy"
     ]
   },
   {
@@ -22474,7 +22684,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -22510,11 +22720,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Kevin Eric Conn has played 9 recorded competitions in the Digital Museum. Kevin Eric Conn is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Kevin Eric Conn has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Kevin Eric Conn has played 10 recorded competitions in the Digital Museum. Kevin Eric Conn is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Kevin Eric Conn has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -22570,6 +22780,14 @@
         "year": 2026,
         "competition": "July Medal / Bloom Cup",
         "position": 30,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": "DQ",
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -23545,7 +23763,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 10,
+      "competitionsPlayed": 11,
       "wins": 1,
       "runnerUp": 1,
       "top3": 2,
@@ -23592,11 +23810,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 2,
-      "played": 10
+      "played": 11
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Lewis Jones has played 10 recorded competitions in the Digital Museum. Lewis Jones has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Lewis Jones's strongest competition so far is Club Championship GROSS. Current Hall of Fame status: Building Record with a score of 33.",
-    "profileSummary": "Lewis Jones has played 10 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Lewis Jones has played 11 recorded competitions in the Digital Museum. Lewis Jones has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Lewis Jones's strongest competition so far is Club Championship GROSS. Current Hall of Fame status: Building Record with a score of 33.",
+    "profileSummary": "Lewis Jones has played 11 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Club Championship GROSS"
@@ -23674,6 +23892,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 21,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 28,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -27148,7 +27374,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 1,
       "runnerUp": 0,
       "top3": 2,
@@ -27184,11 +27410,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 2,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "M.j. Davies has played 11 recorded competitions in the Digital Museum. M.j. Davies has recorded 1 win, with 0 runner-up finishes and 2 top-three finishes. M.j. Davies's strongest competition so far is Seniors Bruton Cup. Current Hall of Fame status: Building Record with a score of 29.",
-    "profileSummary": "M.j. Davies has played 11 recorded competitions, with 1 win, 0 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "M.j. Davies has played 12 recorded competitions in the Digital Museum. M.j. Davies has recorded 1 win, with 0 runner-up finishes and 2 top-three finishes. M.j. Davies's strongest competition so far is Seniors Bruton Cup. Current Hall of Fame status: Building Record with a score of 29.",
+    "profileSummary": "M.j. Davies has played 12 recorded competitions, with 1 win, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors Bruton Cup"
@@ -27210,6 +27436,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 20,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -27300,7 +27534,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -27336,17 +27570,25 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 10
+      "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Malcolm Benjamin Jones has played 11 recorded competitions in the Digital Museum. Malcolm Benjamin Jones is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Malcolm Benjamin Jones has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Malcolm Benjamin Jones has played 12 recorded competitions in the Digital Museum. Malcolm Benjamin Jones is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Malcolm Benjamin Jones has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
       {
         "year": 2021,
         "competition": "Seniors June Medal",
+        "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
         "position": 17,
         "resultType": "Competition Result",
         "historicalHonour": false,
@@ -27442,12 +27684,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 12,
+      "competitionsPlayed": 13,
       "wins": 2,
       "runnerUp": 0,
       "top3": 3,
       "top5": 4,
-      "top10": 7
+      "top10": 8
     },
     "favouriteCompetition": "Seniors Cyril Joseph Trophy",
     "favouriteCompetitionWins": 1,
@@ -27478,11 +27720,11 @@
       "year": 2026,
       "wins": 2,
       "top3": 3,
-      "played": 10
+      "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Malcolm Powell has played 12 recorded competitions in the Digital Museum. Malcolm Powell has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Malcolm Powell's strongest competition so far is Seniors Cyril Joseph Trophy. Current Hall of Fame status: Emerging Candidate with a score of 50.",
-    "profileSummary": "Malcolm Powell has played 12 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Malcolm Powell has played 13 recorded competitions in the Digital Museum. Malcolm Powell has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Malcolm Powell's strongest competition so far is Seniors Cyril Joseph Trophy. Current Hall of Fame status: Emerging Candidate with a score of 50.",
+    "profileSummary": "Malcolm Powell has played 13 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors Cyril Joseph Trophy"
@@ -27504,6 +27746,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 21,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 9,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -27899,12 +28149,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 10,
+      "competitionsPlayed": 11,
       "wins": 0,
       "runnerUp": 2,
       "top3": 2,
       "top5": 2,
-      "top10": 4
+      "top10": 5
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -27935,11 +28185,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 8
+      "played": 9
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Mark Andrew Poulding has played 10 recorded competitions in the Digital Museum. Mark Andrew Poulding is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 24.",
-    "profileSummary": "Mark Andrew Poulding has played 10 recorded competitions, with 0 wins, 2 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "Mark Andrew Poulding has played 11 recorded competitions in the Digital Museum. Mark Andrew Poulding is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 24.",
+    "profileSummary": "Mark Andrew Poulding has played 11 recorded competitions, with 0 wins, 2 runner-up finishes and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -28011,6 +28261,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 7,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -28137,7 +28395,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 6,
+      "competitionsPlayed": 7,
       "wins": 0,
       "runnerUp": 1,
       "top3": 2,
@@ -28173,11 +28431,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 2,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Mark Dando has played 6 recorded competitions in the Digital Museum. Mark Dando is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 18.",
-    "profileSummary": "Mark Dando has played 6 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Mark Dando has played 7 recorded competitions in the Digital Museum. Mark Dando is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 18.",
+    "profileSummary": "Mark Dando has played 7 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -28217,6 +28475,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 9,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 30,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -28501,7 +28767,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 0,
       "runnerUp": 0,
       "top3": 1,
@@ -28537,11 +28803,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Melvyn Crook has played 9 recorded competitions in the Digital Museum. Melvyn Crook is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 8.",
-    "profileSummary": "Melvyn Crook has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Melvyn Crook has played 10 recorded competitions in the Digital Museum. Melvyn Crook is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 8.",
+    "profileSummary": "Melvyn Crook has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -28573,6 +28839,14 @@
         "year": 2026,
         "competition": "June Sunday Stableford",
         "position": 21,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 11,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -28731,7 +29005,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -28767,11 +29041,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael Geoffrey Guise has played 11 recorded competitions in the Digital Museum. Michael Geoffrey Guise is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Michael Geoffrey Guise has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Michael Geoffrey Guise has played 12 recorded competitions in the Digital Museum. Michael Geoffrey Guise is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Michael Geoffrey Guise has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -28787,6 +29061,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 18,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 15,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -28873,7 +29155,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 17,
+      "competitionsPlayed": 18,
       "wins": 0,
       "runnerUp": 3,
       "top3": 6,
@@ -28909,11 +29191,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 6,
-      "played": 14
+      "played": 15
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael John Kendrick has played 17 recorded competitions in the Digital Museum. Michael John Kendrick is still waiting for a first recorded win, but has 6 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 60.",
-    "profileSummary": "Michael John Kendrick has played 17 recorded competitions, with 0 wins, 3 runner-up finishes and 6 top-three finishes.",
+    "writtenSummary": "Michael John Kendrick has played 18 recorded competitions in the Digital Museum. Michael John Kendrick is still waiting for a first recorded win, but has 6 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 60.",
+    "profileSummary": "Michael John Kendrick has played 18 recorded competitions, with 0 wins, 3 runner-up finishes and 6 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -28999,6 +29281,14 @@
       },
       {
         "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 21,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Seniors Bruton Cup",
         "position": 4,
         "resultType": "Competition Result",
@@ -29065,7 +29355,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -29101,11 +29391,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael John Walter Horne has played 11 recorded competitions in the Digital Museum. Michael John Walter Horne is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 4.",
-    "profileSummary": "Michael John Walter Horne has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Michael John Walter Horne has played 12 recorded competitions in the Digital Museum. Michael John Walter Horne is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 4.",
+    "profileSummary": "Michael John Walter Horne has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -29121,6 +29411,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 22,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 16,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -29285,7 +29583,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 8,
+      "competitionsPlayed": 9,
       "wins": 0,
       "runnerUp": 1,
       "top3": 1,
@@ -29321,14 +29619,22 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 8
+      "played": 9
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Michael William Murray has played 8 recorded competitions in the Digital Museum. Michael William Murray is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 12.",
-    "profileSummary": "Michael William Murray has played 8 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
+    "writtenSummary": "Michael William Murray has played 9 recorded competitions in the Digital Museum. Michael William Murray is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 12.",
+    "profileSummary": "Michael William Murray has played 9 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": "DQ",
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
       {
         "year": 2026,
         "competition": "Seniors Bruce Mansell Foursomes",
@@ -29405,12 +29711,12 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
       "top5": 0,
-      "top10": 3
+      "top10": 4
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -29441,11 +29747,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 11
+      "played": 12
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Michael Williams has played 11 recorded competitions in the Digital Museum. Michael Williams is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Michael Williams has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Michael Williams has played 12 recorded competitions in the Digital Museum. Michael Williams is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Michael Williams has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -29533,6 +29839,14 @@
         "year": 2026,
         "competition": "May Sunday Stableford",
         "position": 9,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 6,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -29625,7 +29939,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 10,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -29661,11 +29975,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 1,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Mitchell Raybould has played 9 recorded competitions in the Digital Museum. Mitchell Raybould has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Mitchell Raybould's strongest competition so far is Bassano Cup. Current Hall of Fame status: Building Record with a score of 48.",
-    "profileSummary": "Mitchell Raybould has played 9 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Mitchell Raybould has played 10 recorded competitions in the Digital Museum. Mitchell Raybould has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Mitchell Raybould's strongest competition so far is Bassano Cup. Current Hall of Fame status: Building Record with a score of 48.",
+    "profileSummary": "Mitchell Raybould has played 10 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2026,
       "competition": "Bassano Cup"
@@ -29743,6 +30057,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 41,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 32,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -30355,12 +30677,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 10,
+      "competitionsPlayed": 11,
       "wins": 0,
       "runnerUp": 1,
-      "top3": 2,
-      "top5": 3,
-      "top10": 5
+      "top3": 3,
+      "top5": 4,
+      "top10": 6
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -30384,7 +30706,7 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 20,
+      "score": 26,
       "status": "Building Record"
     },
     "bestSeason": {
@@ -30394,8 +30716,8 @@
       "played": 3
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Nigel Brookes has played 10 recorded competitions in the Digital Museum. Nigel Brookes is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 20.",
-    "profileSummary": "Nigel Brookes has played 10 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Nigel Brookes has played 11 recorded competitions in the Digital Museum. Nigel Brookes is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 26.",
+    "profileSummary": "Nigel Brookes has played 11 recorded competitions, with 0 wins, 1 runner-up finish and 3 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -30478,10 +30800,18 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 3,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": [
-      "2 top-three finishes"
+      "3 top-three finishes"
     ]
   },
   {
@@ -33400,12 +33730,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 13,
+      "competitionsPlayed": 14,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
       "top5": 0,
-      "top10": 0
+      "top10": 1
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -33436,11 +33766,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 10
+      "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Ian Welch has played 13 recorded competitions in the Digital Museum. Paul Ian Welch is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Paul Ian Welch has played 13 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Paul Ian Welch has played 14 recorded competitions in the Digital Museum. Paul Ian Welch is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Paul Ian Welch has played 14 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -33547,6 +33877,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -33558,7 +33896,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -33594,11 +33932,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Paul Meaden has played 5 recorded competitions in the Digital Museum. Paul Meaden is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Paul Meaden has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Paul Meaden has played 6 recorded competitions in the Digital Museum. Paul Meaden is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Paul Meaden has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -33638,6 +33976,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 39,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 15,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -33738,7 +34084,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 12,
+      "competitionsPlayed": 13,
       "wins": 0,
       "runnerUp": 1,
       "top3": 2,
@@ -33774,11 +34120,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 2,
-      "played": 10
+      "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Russell has played 12 recorded competitions in the Digital Museum. Paul Russell is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 20.",
-    "profileSummary": "Paul Russell has played 12 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Paul Russell has played 13 recorded competitions in the Digital Museum. Paul Russell is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 20.",
+    "profileSummary": "Paul Russell has played 13 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -33802,6 +34148,14 @@
         "year": 2026,
         "competition": "Captain's Day & Walker Cup",
         "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 23,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -34278,12 +34632,12 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 12,
+      "competitionsPlayed": 13,
       "wins": 0,
       "runnerUp": 0,
-      "top3": 0,
-      "top5": 4,
-      "top10": 5
+      "top3": 1,
+      "top5": 5,
+      "top10": 6
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -34307,18 +34661,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 8,
+      "score": 14,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 0,
-      "top3": 0,
-      "played": 12
+      "top3": 1,
+      "played": 13
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Pavittar Singh has played 12 recorded competitions in the Digital Museum. Pavittar Singh is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 8.",
-    "profileSummary": "Pavittar Singh has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Pavittar Singh has played 13 recorded competitions in the Digital Museum. Pavittar Singh is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Pavittar Singh has played 13 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -34342,6 +34696,14 @@
         "year": 2026,
         "competition": "May Sunday Stableford",
         "position": 16,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 3,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -34419,7 +34781,9 @@
         "boardCompetition": false
       }
     ],
-    "highlights": []
+    "highlights": [
+      "1 top-three finish"
+    ]
   },
   {
     "player": "Peter Bradley",
@@ -34696,7 +35060,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 20,
+      "competitionsPlayed": 22,
       "wins": 0,
       "runnerUp": 3,
       "top3": 5,
@@ -34743,11 +35107,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 4,
-      "played": 15
+      "played": 17
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Philip John Northall has played 20 recorded competitions in the Digital Museum. Philip John Northall is still waiting for a first recorded win, but has 5 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 50.",
-    "profileSummary": "Philip John Northall has played 20 recorded competitions, with 0 wins, 3 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Philip John Northall has played 22 recorded competitions in the Digital Museum. Philip John Northall is still waiting for a first recorded win, but has 5 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 50.",
+    "profileSummary": "Philip John Northall has played 22 recorded competitions, with 0 wins, 3 runner-up finishes and 5 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -34849,8 +35213,24 @@
       },
       {
         "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 13,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Saturday Medal Only",
         "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 14,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -37753,7 +38133,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 16,
+      "competitionsPlayed": 17,
       "wins": 0,
       "runnerUp": 1,
       "top3": 2,
@@ -37800,11 +38180,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 2,
-      "played": 13
+      "played": 14
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Richard Limb has played 16 recorded competitions in the Digital Museum. Richard Limb is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 22.",
-    "profileSummary": "Richard Limb has played 16 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Richard Limb has played 17 recorded competitions in the Digital Museum. Richard Limb is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 22.",
+    "profileSummary": "Richard Limb has played 17 recorded competitions, with 0 wins, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -37924,6 +38304,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 47,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 14,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -38207,7 +38595,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 10,
+      "competitionsPlayed": 11,
       "wins": 2,
       "runnerUp": 0,
       "top3": 3,
@@ -38243,11 +38631,11 @@
       "year": 2026,
       "wins": 2,
       "top3": 3,
-      "played": 8
+      "played": 9
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Robert Hudson has played 10 recorded competitions in the Digital Museum. Robert Hudson has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Robert Hudson's strongest competition so far is Seniors Captains Day. Current Hall of Fame status: Emerging Candidate with a score of 58.",
-    "profileSummary": "Robert Hudson has played 10 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Robert Hudson has played 11 recorded competitions in the Digital Museum. Robert Hudson has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Robert Hudson's strongest competition so far is Seniors Captains Day. Current Hall of Fame status: Emerging Candidate with a score of 58.",
+    "profileSummary": "Robert Hudson has played 11 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors Captains Day"
@@ -38277,6 +38665,14 @@
         "year": 2026,
         "competition": "Captain's Day & Walker Cup",
         "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 18,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -38538,12 +38934,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
       "top5": 0,
-      "top10": 3
+      "top10": 4
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -38574,11 +38970,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 9
+      "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Robert P. Timmington has played 11 recorded competitions in the Digital Museum. Robert P. Timmington is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Robert P. Timmington has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Robert P. Timmington has played 12 recorded competitions in the Digital Museum. Robert P. Timmington is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Robert P. Timmington has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -38594,6 +38990,14 @@
         "year": 2021,
         "competition": "Seniors June Medal",
         "position": 28,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 10,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -38916,7 +39320,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 13,
+      "competitionsPlayed": 14,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -38963,11 +39367,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 12
+      "played": 13
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Roger William Grainger has played 13 recorded competitions in the Digital Museum. Roger William Grainger is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Roger William Grainger has played 13 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Roger William Grainger has played 14 recorded competitions in the Digital Museum. Roger William Grainger is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
+    "profileSummary": "Roger William Grainger has played 14 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -39063,6 +39467,14 @@
         "year": 2026,
         "competition": "Probus Pairs Stableford Betterball",
         "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 24,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -39265,7 +39677,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -39301,11 +39713,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 1,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Ryan Walker has played 5 recorded competitions in the Digital Museum. Ryan Walker has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Ryan Walker's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Building Record with a score of 21.",
-    "profileSummary": "Ryan Walker has played 5 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Ryan Walker has played 6 recorded competitions in the Digital Museum. Ryan Walker has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Ryan Walker's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Building Record with a score of 21.",
+    "profileSummary": "Ryan Walker has played 6 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2026,
       "competition": "James Grainger Pairs"
@@ -39351,6 +39763,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 23,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -41433,7 +41853,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 7,
+      "competitionsPlayed": 8,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -41472,8 +41892,8 @@
       "played": 5
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Stephen Brian Hopkins has played 7 recorded competitions in the Digital Museum. Stephen Brian Hopkins is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Stephen Brian Hopkins has played 7 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Stephen Brian Hopkins has played 8 recorded competitions in the Digital Museum. Stephen Brian Hopkins is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Stephen Brian Hopkins has played 8 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -41529,6 +41949,14 @@
         "year": 2026,
         "competition": "Coronation Pairs Cup",
         "position": 10,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 12,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -41605,7 +42033,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 29,
+      "competitionsPlayed": 31,
       "wins": 1,
       "runnerUp": 1,
       "top3": 2,
@@ -41641,11 +42069,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 2,
-      "played": 23
+      "played": 25
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Stephen Hall has played 29 recorded competitions in the Digital Museum. Stephen Hall has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Stephen Hall's strongest competition so far is Seniors May Medal. Current Hall of Fame status: Building Record with a score of 43.",
-    "profileSummary": "Stephen Hall has played 29 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Stephen Hall has played 31 recorded competitions in the Digital Museum. Stephen Hall has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Stephen Hall's strongest competition so far is Seniors May Medal. Current Hall of Fame status: Building Record with a score of 43.",
+    "profileSummary": "Stephen Hall has played 31 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors May Medal"
@@ -41817,6 +42245,22 @@
       },
       {
         "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 20,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 13,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Seniors Bruton Cup",
         "position": 15,
         "resultType": "Competition Result",
@@ -41901,7 +42345,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 6,
+      "competitionsPlayed": 7,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -41937,11 +42381,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Stephen Holmes has played 6 recorded competitions in the Digital Museum. Stephen Holmes is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Stephen Holmes has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Stephen Holmes has played 7 recorded competitions in the Digital Museum. Stephen Holmes is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Stephen Holmes has played 7 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -41992,6 +42436,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 11,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -42003,7 +42455,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 7,
+      "competitionsPlayed": 8,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -42039,11 +42491,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 7
+      "played": 8
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Stephen Langford has played 7 recorded competitions in the Digital Museum. Stephen Langford is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Stephen Langford has played 7 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Stephen Langford has played 8 recorded competitions in the Digital Museum. Stephen Langford is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Stephen Langford has played 8 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -42102,6 +42554,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 16,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -42113,7 +42573,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 15,
+      "competitionsPlayed": 16,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -42149,11 +42609,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 1,
-      "played": 12
+      "played": 13
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Stephen Price has played 15 recorded competitions in the Digital Museum. Stephen Price has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Stephen Price's strongest competition so far is Seniors Bruce Mansell Foursomes. Current Hall of Fame status: Building Record with a score of 21.",
-    "profileSummary": "Stephen Price has played 15 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Stephen Price has played 16 recorded competitions in the Digital Museum. Stephen Price has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Stephen Price's strongest competition so far is Seniors Bruce Mansell Foursomes. Current Hall of Fame status: Building Record with a score of 21.",
+    "profileSummary": "Stephen Price has played 16 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors Bruce Mansell Foursomes"
@@ -42229,6 +42689,14 @@
       },
       {
         "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 25,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Seniors Bruce Mansell Foursomes",
         "position": 1,
         "resultType": "Competition Result",
@@ -42297,7 +42765,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -42333,11 +42801,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Stephen Thompson has played 5 recorded competitions in the Digital Museum. Stephen Thompson is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Stephen Thompson has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Stephen Thompson has played 6 recorded competitions in the Digital Museum. Stephen Thompson is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Stephen Thompson has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -42369,6 +42837,14 @@
         "year": 2026,
         "competition": "James Grainger Pairs",
         "position": 25,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 34,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -42477,12 +42953,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 12,
+      "competitionsPlayed": 13,
       "wins": 0,
-      "runnerUp": 0,
-      "top3": 0,
-      "top5": 1,
-      "top10": 2
+      "runnerUp": 1,
+      "top3": 1,
+      "top5": 2,
+      "top10": 3
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -42517,18 +42993,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 2,
+      "score": 14,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 0,
-      "top3": 0,
-      "played": 8
+      "top3": 1,
+      "played": 9
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Steve Homer has played 12 recorded competitions in the Digital Museum. Steve Homer is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Steve Homer has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Steve Homer has played 13 recorded competitions in the Digital Museum. Steve Homer is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Steve Homer has played 13 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -42622,6 +43098,14 @@
       },
       {
         "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 2,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Saturday Medal Only",
         "position": 12,
         "resultType": "Competition Result",
@@ -42629,7 +43113,9 @@
         "boardCompetition": false
       }
     ],
-    "highlights": []
+    "highlights": [
+      "1 top-three finish"
+    ]
   },
   {
     "player": "Steven Brookes",
@@ -42638,7 +43124,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 12,
       "wins": 0,
       "runnerUp": 0,
       "top3": 1,
@@ -42674,11 +43160,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 8
+      "played": 9
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Steven Brookes has played 11 recorded competitions in the Digital Museum. Steven Brookes is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 8.",
-    "profileSummary": "Steven Brookes has played 11 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Steven Brookes has played 12 recorded competitions in the Digital Museum. Steven Brookes is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 8.",
+    "profileSummary": "Steven Brookes has played 12 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -42758,6 +43244,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 37,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 17,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -42988,12 +43482,12 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 2,
+      "competitionsPlayed": 3,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
       "top5": 0,
-      "top10": 0
+      "top10": 1
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -43024,11 +43518,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 0,
-      "played": 2
+      "played": 3
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Stewart Smith has played 2 recorded competitions in the Digital Museum. Stewart Smith is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Stewart Smith has played 2 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Stewart Smith has played 3 recorded competitions in the Digital Museum. Stewart Smith is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Stewart Smith has played 3 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -43044,6 +43538,14 @@
         "year": 2026,
         "competition": "Club Stableford competition",
         "position": "DQ",
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 10,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -44532,7 +45034,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 13,
+      "competitionsPlayed": 14,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -44582,8 +45084,8 @@
       "played": 5
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Tim Mark Wright has played 13 recorded competitions in the Digital Museum. Tim Mark Wright has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Tim Mark Wright's strongest competition so far is June Sunday Stableford. Current Hall of Fame status: Building Record with a score of 21.",
-    "profileSummary": "Tim Mark Wright has played 13 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Tim Mark Wright has played 14 recorded competitions in the Digital Museum. Tim Mark Wright has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Tim Mark Wright's strongest competition so far is June Sunday Stableford. Current Hall of Fame status: Building Record with a score of 21.",
+    "profileSummary": "Tim Mark Wright has played 14 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2021,
       "competition": "June Sunday Stableford"
@@ -44696,6 +45198,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 27,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": [
@@ -44797,7 +45307,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 14,
+      "competitionsPlayed": 15,
       "wins": 1,
       "runnerUp": 1,
       "top3": 3,
@@ -44833,11 +45343,11 @@
       "year": 2026,
       "wins": 1,
       "top3": 1,
-      "played": 11
+      "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Tony John Salt has played 14 recorded competitions in the Digital Museum. Tony John Salt has recorded 1 win, with 1 runner-up finish and 3 top-three finishes. Tony John Salt's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Building Record with a score of 39.",
-    "profileSummary": "Tony John Salt has played 14 recorded competitions, with 1 win, 1 runner-up finish and 3 top-three finishes.",
+    "writtenSummary": "Tony John Salt has played 15 recorded competitions in the Digital Museum. Tony John Salt has recorded 1 win, with 1 runner-up finish and 3 top-three finishes. Tony John Salt's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Building Record with a score of 39.",
+    "profileSummary": "Tony John Salt has played 15 recorded competitions, with 1 win, 1 runner-up finish and 3 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "James Grainger Pairs"
@@ -44947,6 +45457,14 @@
         "year": 2026,
         "competition": "May Medal & Brian Lloyd Scratch Qualifier",
         "position": 35,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 26,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -45836,12 +46354,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 15,
+      "competitionsPlayed": 16,
       "wins": 1,
-      "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 2
+      "runnerUp": 1,
+      "top3": 2,
+      "top5": 2,
+      "top10": 3
     },
     "favouriteCompetition": "Sunday Medal Only",
     "favouriteCompetitionWins": 1,
@@ -45865,18 +46383,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 29,
+      "score": 41,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2026,
       "wins": 1,
-      "top3": 1,
-      "played": 11
+      "top3": 2,
+      "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Wayne Rutter has played 15 recorded competitions in the Digital Museum. Wayne Rutter has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Wayne Rutter's strongest competition so far is Sunday Medal Only. Current Hall of Fame status: Building Record with a score of 29.",
-    "profileSummary": "Wayne Rutter has played 15 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Wayne Rutter has played 16 recorded competitions in the Digital Museum. Wayne Rutter has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Wayne Rutter's strongest competition so far is Sunday Medal Only. Current Hall of Fame status: Building Record with a score of 41.",
+    "profileSummary": "Wayne Rutter has played 16 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Sunday Medal Only"
@@ -45960,6 +46478,14 @@
       },
       {
         "year": 2026,
+        "competition": "Seniors Arthur Turley Trophy",
+        "position": 2,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
         "competition": "Seniors Bruce Mansell Foursomes",
         "position": 11,
         "resultType": "Competition Result",
@@ -46009,7 +46535,7 @@
     ],
     "highlights": [
       "1 career win",
-      "1 top-three finish",
+      "2 top-three finishes",
       "Most successful in Sunday Medal Only"
     ]
   },
@@ -46082,7 +46608,7 @@
     "career": {
       "firstYear": 2026,
       "latestYear": 2026,
-      "competitionsPlayed": 6,
+      "competitionsPlayed": 7,
       "wins": 0,
       "runnerUp": 1,
       "top3": 1,
@@ -46129,11 +46655,11 @@
       "year": 2026,
       "wins": 0,
       "top3": 1,
-      "played": 6
+      "played": 7
     },
     "careerEra": "2026-2026",
-    "writtenSummary": "Zachary Downing has played 6 recorded competitions in the Digital Museum. Zachary Downing is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
-    "profileSummary": "Zachary Downing has played 6 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
+    "writtenSummary": "Zachary Downing has played 7 recorded competitions in the Digital Museum. Zachary Downing is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Zachary Downing has played 7 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -46181,6 +46707,14 @@
         "year": 2026,
         "competition": "July Medal / Bloom Cup",
         "position": 42,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2026,
+        "competition": "Par/Bogey Medal",
+        "position": 25,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
