@@ -5442,6 +5442,689 @@
     ]
   },
   {
+    "competitionId": "april-medal-and-presidents-putter-qualifier",
+    "competitionName": "April Medal and Presidents Putter qualifier",
+    "competitionFormat": "Individual",
+    "scoreType": "Nett",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2024,
+    "date": "2024-04-27",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "April Medal and Presidents Putter qualifier",
+    "sourceDate": "Saturday 27th April 2024, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Mark Andrew Poulding",
+        "score": 69,
+        "countsAsCareerWin": true
+      },
+      "divisionWinners": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Mark Andrew Poulding",
+          "score": 69,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "David J. L. Jones",
+          "score": 70,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "James Webber",
+          "score": 70,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        }
+      ],
+      "divisionResults": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Mark Andrew Poulding",
+          "score": 69,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 2,
+          "playerName": "Stephen Brian Hopkins",
+          "score": 69,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 3,
+          "playerName": "James Stevens",
+          "score": 69,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "David J. L. Jones",
+          "score": 70,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 2,
+          "playerName": "Scott Postin",
+          "score": 71,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 3,
+          "playerName": "Christopher Churchman",
+          "score": 72,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "James Webber",
+          "score": 70,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 2,
+          "playerName": "Keith Durbridge",
+          "score": 71,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 3,
+          "playerName": "Clive Peter Gould",
+          "score": 73,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        }
+      ]
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 69,
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Mark Andrew Poulding",
+        "handicap": 9
+      },
+      {
+        "position": 2,
+        "totalScore": 69,
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Stephen Brian Hopkins",
+        "handicap": 11
+      },
+      {
+        "position": 3,
+        "totalScore": 69,
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "James Stevens",
+        "handicap": 11
+      },
+      {
+        "position": 4,
+        "totalScore": 70,
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "David J. L. Jones",
+        "handicap": 18
+      },
+      {
+        "position": 5,
+        "totalScore": 70,
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "James Webber",
+        "handicap": 23
+      },
+      {
+        "position": 6,
+        "totalScore": 70,
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Paul Harper",
+        "handicap": 12
+      },
+      {
+        "position": 7,
+        "totalScore": 71,
+        "scoreType": "Nett",
+        "nettScore": 71,
+        "playerName": "Keith Durbridge",
+        "handicap": 25
+      },
+      {
+        "position": 8,
+        "totalScore": 71,
+        "scoreType": "Nett",
+        "nettScore": 71,
+        "playerName": "Scott Postin",
+        "handicap": 13
+      },
+      {
+        "position": 9,
+        "totalScore": 72,
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Christopher Churchman",
+        "handicap": 13
+      },
+      {
+        "position": 10,
+        "totalScore": 72,
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Mark Dando",
+        "handicap": 4
+      },
+      {
+        "position": 11,
+        "totalScore": 72,
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Robert Keith Woodall",
+        "handicap": 6
+      },
+      {
+        "position": 12,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Ian Frederick Stevens",
+        "handicap": 7
+      },
+      {
+        "position": 13,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Jason Hurp",
+        "handicap": 10
+      },
+      {
+        "position": 14,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Clive Peter Gould",
+        "handicap": 22
+      },
+      {
+        "position": 15,
+        "totalScore": 74,
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Mark Basterfield",
+        "handicap": 18
+      },
+      {
+        "position": 16,
+        "totalScore": 74,
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Stephen Hall",
+        "handicap": 19
+      },
+      {
+        "position": 17,
+        "totalScore": 74,
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Arran Keeley",
+        "handicap": 26
+      },
+      {
+        "position": 18,
+        "totalScore": 74,
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Gary William Stubbs",
+        "handicap": 9
+      },
+      {
+        "position": 19,
+        "totalScore": 74,
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Scott Longhurst",
+        "handicap": 27
+      },
+      {
+        "position": 20,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Luke Jones",
+        "handicap": 14
+      },
+      {
+        "position": 21,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "M T Cowdell",
+        "handicap": 10
+      },
+      {
+        "position": 22,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Richard Limb",
+        "handicap": 10
+      },
+      {
+        "position": 23,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Thomas Worley",
+        "handicap": 14
+      },
+      {
+        "position": 24,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Alan Ball",
+        "handicap": 8
+      },
+      {
+        "position": 25,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Mitch Sayce",
+        "handicap": 5
+      },
+      {
+        "position": 26,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Mark Neil Tolley",
+        "handicap": 13
+      },
+      {
+        "position": 27,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Kevin Eric Conn",
+        "handicap": 19
+      },
+      {
+        "position": 28,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "G.B. Ray",
+        "handicap": 14
+      },
+      {
+        "position": 29,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Wayne Rutter",
+        "handicap": 19
+      },
+      {
+        "position": 30,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Neil Moorby",
+        "handicap": 24
+      },
+      {
+        "position": 31,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Philip Thompson",
+        "handicap": 7
+      },
+      {
+        "position": 32,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Gary Baker",
+        "handicap": 15
+      },
+      {
+        "position": 33,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Adam Stanfield",
+        "handicap": 13
+      },
+      {
+        "position": 34,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Clive Kearey",
+        "handicap": 15
+      },
+      {
+        "position": 35,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Philip John Northall",
+        "handicap": 15
+      },
+      {
+        "position": 36,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Lewis Jones",
+        "handicap": 5
+      },
+      {
+        "position": 37,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Luke Homer",
+        "handicap": 9
+      },
+      {
+        "position": 38,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Steve Homer",
+        "handicap": 20
+      },
+      {
+        "position": 39,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Kevin Walters",
+        "handicap": 13
+      },
+      {
+        "position": 40,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Liam Harding",
+        "handicap": 19
+      },
+      {
+        "position": 41,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Paul Thomas Donnelly",
+        "handicap": 14
+      },
+      {
+        "position": 42,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Neil Hanley",
+        "handicap": 24
+      },
+      {
+        "position": 43,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Stewart Marshall",
+        "handicap": 13
+      },
+      {
+        "position": 44,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Paul Wayne Taylor",
+        "handicap": 20
+      },
+      {
+        "position": 45,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Tim Mark Wright",
+        "handicap": 17
+      },
+      {
+        "position": 46,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Michael John Kendrick",
+        "handicap": 17
+      },
+      {
+        "position": 47,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Michael Williams",
+        "handicap": 20
+      },
+      {
+        "position": 48,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Mark Williams",
+        "handicap": 11
+      },
+      {
+        "position": 49,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Calin Tiplea",
+        "handicap": 14
+      },
+      {
+        "position": 50,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Craig Smart",
+        "handicap": 26
+      },
+      {
+        "position": 51,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Kevin Cooksey",
+        "handicap": 13
+      },
+      {
+        "position": 52,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Sam Marsden",
+        "handicap": 24
+      },
+      {
+        "position": 53,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Micah Dance",
+        "handicap": 7
+      },
+      {
+        "position": 54,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Neil Hartland",
+        "handicap": 9
+      },
+      {
+        "position": 55,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "David Hill",
+        "handicap": 15
+      },
+      {
+        "position": 56,
+        "totalScore": 82,
+        "scoreType": "Nett",
+        "nettScore": 82,
+        "playerName": "Christopher Vanes",
+        "handicap": 18
+      },
+      {
+        "position": 57,
+        "totalScore": 82,
+        "scoreType": "Nett",
+        "nettScore": 82,
+        "playerName": "Craig Locke",
+        "handicap": 19
+      },
+      {
+        "position": 58,
+        "totalScore": 82,
+        "scoreType": "Nett",
+        "nettScore": 82,
+        "playerName": "Andrew Deakin",
+        "handicap": 11
+      },
+      {
+        "position": 59,
+        "totalScore": 83,
+        "scoreType": "Nett",
+        "nettScore": 83,
+        "playerName": "Christopher Longhurst",
+        "handicap": 15
+      },
+      {
+        "position": 60,
+        "totalScore": 83,
+        "scoreType": "Nett",
+        "nettScore": 83,
+        "playerName": "Melvyn Crook",
+        "handicap": 16
+      },
+      {
+        "position": 61,
+        "totalScore": 84,
+        "scoreType": "Nett",
+        "nettScore": 84,
+        "playerName": "Stuart Evans",
+        "handicap": 8
+      },
+      {
+        "position": 62,
+        "totalScore": 86,
+        "scoreType": "Nett",
+        "nettScore": 86,
+        "playerName": "Jason Langford",
+        "handicap": 12
+      },
+      {
+        "position": 63,
+        "totalScore": 93,
+        "scoreType": "Nett",
+        "nettScore": 93,
+        "playerName": "Nathan Greendale",
+        "handicap": 28
+      },
+      {
+        "position": 64,
+        "totalScore": 98,
+        "scoreType": "Nett",
+        "nettScore": 98,
+        "playerName": "Craig Biddulph",
+        "handicap": 18
+      },
+      {
+        "position": 65,
+        "totalScore": 102,
+        "scoreType": "Nett",
+        "nettScore": 102,
+        "playerName": "Terrance Stanley Nolan",
+        "handicap": 23
+      },
+      {
+        "position": 66,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Graham Morgan",
+        "handicap": 21
+      },
+      {
+        "position": 67,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Anthony Willetts",
+        "handicap": 17
+      },
+      {
+        "position": 68,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Richard Price",
+        "handicap": 23
+      },
+      {
+        "position": 69,
+        "status": "DQ",
+        "statusNote": "Rule 3.3b no name on score card",
+        "scoreType": "Nett",
+        "playerName": "David Evitts",
+        "handicap": 28
+      }
+    ]
+  },
+  {
     "competitionId": "august-medal",
     "competitionName": "August Medal",
     "competitionFormat": "Individual",
@@ -19581,6 +20264,569 @@
     ]
   },
   {
+    "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
+    "competitionName": "May Medal & Brian Lloyd Scratch Qualifier",
+    "competitionFormat": "Individual",
+    "scoreType": "Nett",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2024,
+    "date": "2024-05-04",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "May Medal & Brian Lloyd Scratch Qualifier",
+    "sourceDate": "Saturday 4th May 2024, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Jason Sean Higley",
+        "score": 68,
+        "countsAsCareerWin": true
+      },
+      "divisionWinners": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Jason Sean Higley",
+          "score": 68,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "Paul Thomas Donnelly",
+          "score": 72,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "Mitchell Raybould",
+          "score": 68,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        }
+      ],
+      "divisionResults": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Jason Sean Higley",
+          "score": 68,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 2,
+          "playerName": "Paul Ian Welch",
+          "score": 69,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 3,
+          "playerName": "Luke Homer",
+          "score": 71,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "Paul Thomas Donnelly",
+          "score": 72,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 2,
+          "playerName": "Adrian Burns",
+          "score": 74,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 3,
+          "playerName": "G.B. Ray",
+          "score": 75,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "Mitchell Raybould",
+          "score": 68,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 2,
+          "playerName": "Stephen Hall",
+          "score": 72,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 3,
+          "playerName": "Liam Harding",
+          "score": 75,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        }
+      ]
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 68,
+        "scoreType": "Nett",
+        "nettScore": 68,
+        "playerName": "Jason Sean Higley",
+        "handicap": 10
+      },
+      {
+        "position": 2,
+        "totalScore": 68,
+        "scoreType": "Nett",
+        "nettScore": 68,
+        "playerName": "Mitchell Raybould",
+        "handicap": 24
+      },
+      {
+        "position": 3,
+        "totalScore": 69,
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Paul Ian Welch",
+        "handicap": 11
+      },
+      {
+        "position": 4,
+        "totalScore": 71,
+        "scoreType": "Nett",
+        "nettScore": 71,
+        "playerName": "Luke Homer",
+        "handicap": 9
+      },
+      {
+        "position": 5,
+        "totalScore": 71,
+        "scoreType": "Nett",
+        "nettScore": 71,
+        "playerName": "Alan Ball",
+        "handicap": 8
+      },
+      {
+        "position": 6,
+        "totalScore": 72,
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Paul Thomas Donnelly",
+        "handicap": 15
+      },
+      {
+        "position": 7,
+        "totalScore": 72,
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Stephen Hall",
+        "handicap": 19
+      },
+      {
+        "position": 8,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Brett Denis Gilbert",
+        "handicap": 10
+      },
+      {
+        "position": 9,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Mark Andrew Poulding",
+        "handicap": 8
+      },
+      {
+        "position": 10,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Mark Dando",
+        "handicap": 4
+      },
+      {
+        "position": 11,
+        "totalScore": 73,
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Mark Williams",
+        "handicap": 12
+      },
+      {
+        "position": 12,
+        "totalScore": 74,
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Adrian Burns",
+        "handicap": 14
+      },
+      {
+        "position": 13,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Ian Frederick Stevens",
+        "handicap": 7
+      },
+      {
+        "position": 14,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "G.B. Ray",
+        "handicap": 14
+      },
+      {
+        "position": 15,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "M T Cowdell",
+        "handicap": 10
+      },
+      {
+        "position": 16,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Neil Hartland",
+        "handicap": 11
+      },
+      {
+        "position": 17,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Liam Harding",
+        "handicap": 19
+      },
+      {
+        "position": 18,
+        "totalScore": 75,
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Philip John Northall",
+        "handicap": 17
+      },
+      {
+        "position": 19,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Steve Homer",
+        "handicap": 20
+      },
+      {
+        "position": 20,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Kevin Walters",
+        "handicap": 13
+      },
+      {
+        "position": 21,
+        "totalScore": 76,
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Michael Williams",
+        "handicap": 20
+      },
+      {
+        "position": 22,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Craig Biddulph",
+        "handicap": 18
+      },
+      {
+        "position": 23,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Lewis Jones",
+        "handicap": 5
+      },
+      {
+        "position": 24,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Richard Limb",
+        "handicap": 10
+      },
+      {
+        "position": 25,
+        "totalScore": 77,
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Anthony Willetts",
+        "handicap": 17
+      },
+      {
+        "position": 26,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Gavin Higgs",
+        "handicap": 9
+      },
+      {
+        "position": 27,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Neil Hanley",
+        "handicap": 24
+      },
+      {
+        "position": 28,
+        "totalScore": 78,
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Tim Mark Wright",
+        "handicap": 17
+      },
+      {
+        "position": 29,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Philip Thompson",
+        "handicap": 8
+      },
+      {
+        "position": 30,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Gary Baker",
+        "handicap": 15
+      },
+      {
+        "position": 31,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "David J. L. Jones",
+        "handicap": 18
+      },
+      {
+        "position": 32,
+        "totalScore": 79,
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Keith Durbridge",
+        "handicap": 24
+      },
+      {
+        "position": 33,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "James Stevens",
+        "handicap": 11
+      },
+      {
+        "position": 34,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Clive Peter Gould",
+        "handicap": 22
+      },
+      {
+        "position": 35,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Melvyn Crook",
+        "handicap": 17
+      },
+      {
+        "position": 36,
+        "totalScore": 80,
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Wayne Rutter",
+        "handicap": 19
+      },
+      {
+        "position": 37,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Gerald Paul Crowley",
+        "handicap": 19
+      },
+      {
+        "position": 38,
+        "totalScore": 81,
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Stephen Price",
+        "handicap": 20
+      },
+      {
+        "position": 39,
+        "totalScore": 82,
+        "scoreType": "Nett",
+        "nettScore": 82,
+        "playerName": "Eric Edwards",
+        "handicap": 27
+      },
+      {
+        "position": 40,
+        "totalScore": 84,
+        "scoreType": "Nett",
+        "nettScore": 84,
+        "playerName": "Steven Brookes",
+        "handicap": 10
+      },
+      {
+        "position": 41,
+        "totalScore": 84,
+        "scoreType": "Nett",
+        "nettScore": 84,
+        "playerName": "Clive Kearey",
+        "handicap": 15
+      },
+      {
+        "position": 42,
+        "totalScore": 86,
+        "scoreType": "Nett",
+        "nettScore": 86,
+        "playerName": "Nigel Brookes",
+        "handicap": 5
+      },
+      {
+        "position": 43,
+        "totalScore": 88,
+        "scoreType": "Nett",
+        "nettScore": 88,
+        "playerName": "Kevin Eric Conn",
+        "handicap": 19
+      },
+      {
+        "position": 44,
+        "totalScore": 93,
+        "scoreType": "Nett",
+        "nettScore": 93,
+        "playerName": "David Hill",
+        "handicap": 15
+      },
+      {
+        "position": 45,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Jason Watchorn",
+        "handicap": 21
+      },
+      {
+        "position": 46,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Robert Hudson",
+        "handicap": 19
+      },
+      {
+        "position": 47,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Scott Whitehall",
+        "handicap": 15
+      },
+      {
+        "position": 48,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Roger John Smith",
+        "handicap": 17
+      },
+      {
+        "position": 49,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "James Price",
+        "handicap": 22
+      },
+      {
+        "position": 50,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Andrew Deakin",
+        "handicap": 11
+      },
+      {
+        "position": 51,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Peter Evans",
+        "handicap": 11
+      },
+      {
+        "position": 52,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Micah Dance",
+        "handicap": 7
+      },
+      {
+        "position": 53,
+        "status": "DQ",
+        "statusNote": "Rule 3.3b signed for an incorrect score",
+        "scoreType": "Nett",
+        "playerName": "Paul Harper",
+        "handicap": 11
+      },
+      {
+        "position": 54,
+        "status": "DQ",
+        "statusNote": "Rule 3.3b Not returning a scorecard",
+        "scoreType": "Nett",
+        "playerName": "Robert Shedden",
+        "handicap": 16
+      }
+    ]
+  },
+  {
     "competitionId": "may-sunday-stableford",
     "competitionName": "May Sunday Stableford",
     "competitionFormat": "Individual",
@@ -25090,6 +26336,293 @@
         "scoreType": "Nett",
         "playerName": "Melvyn Crook",
         "handicap": 8
+      }
+    ]
+  },
+  {
+    "competitionId": "seniors-may-medal",
+    "competitionName": "Seniors May Medal",
+    "competitionFormat": "Individual",
+    "scoreType": "Nett",
+    "teamSize": 1,
+    "section": "Seniors",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2024,
+    "date": "2024-04-29",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "Seniors May Medal",
+    "sourceDate": "Monday 29th April 2024, Yellow Tees, Mixed 9",
+    "awards": {
+      "overallWinner": {
+        "playerName": "M T Cowdell",
+        "score": 33,
+        "countsAsCareerWin": true
+      }
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 33,
+        "scoreType": "Nett",
+        "nettScore": 33,
+        "playerName": "M T Cowdell",
+        "handicap": 4
+      },
+      {
+        "position": 2,
+        "totalScore": 37,
+        "scoreType": "Nett",
+        "nettScore": 37,
+        "playerName": "Clive Atkins",
+        "handicap": 7
+      },
+      {
+        "position": 3,
+        "totalScore": 38,
+        "scoreType": "Nett",
+        "nettScore": 38,
+        "playerName": "James Marsh Derrer",
+        "handicap": 12
+      },
+      {
+        "position": 4,
+        "totalScore": 38,
+        "scoreType": "Nett",
+        "nettScore": 38,
+        "playerName": "Keith Durbridge",
+        "handicap": 10
+      },
+      {
+        "position": 5,
+        "totalScore": 38,
+        "scoreType": "Nett",
+        "nettScore": 38,
+        "playerName": "James Webber",
+        "handicap": 10
+      },
+      {
+        "position": 6,
+        "totalScore": 39,
+        "scoreType": "Nett",
+        "nettScore": 39,
+        "playerName": "M.j. Davies",
+        "handicap": 9
+      },
+      {
+        "position": 7,
+        "totalScore": 39,
+        "scoreType": "Nett",
+        "nettScore": 39,
+        "playerName": "Geoffrey Alan Ford",
+        "handicap": 10
+      },
+      {
+        "position": 8,
+        "totalScore": 39,
+        "scoreType": "Nett",
+        "nettScore": 39,
+        "playerName": "Ken Jones",
+        "handicap": 8
+      },
+      {
+        "position": 9,
+        "totalScore": 40,
+        "scoreType": "Nett",
+        "nettScore": 40,
+        "playerName": "Philip John Northall",
+        "handicap": 7
+      },
+      {
+        "position": 10,
+        "totalScore": 40,
+        "scoreType": "Nett",
+        "nettScore": 40,
+        "playerName": "Kevin John Hartland",
+        "handicap": 4
+      },
+      {
+        "position": 11,
+        "totalScore": 40,
+        "scoreType": "Nett",
+        "nettScore": 40,
+        "playerName": "Raymond Saunders",
+        "handicap": 7
+      },
+      {
+        "position": 12,
+        "totalScore": 40,
+        "scoreType": "Nett",
+        "nettScore": 40,
+        "playerName": "Eric Edwards",
+        "handicap": 11
+      },
+      {
+        "position": 13,
+        "totalScore": 41,
+        "scoreType": "Nett",
+        "nettScore": 41,
+        "playerName": "Harry Westwood",
+        "handicap": 11
+      },
+      {
+        "position": 14,
+        "totalScore": 41,
+        "scoreType": "Nett",
+        "nettScore": 41,
+        "playerName": "Michael John Kendrick",
+        "handicap": 8
+      },
+      {
+        "position": 15,
+        "totalScore": 41,
+        "scoreType": "Nett",
+        "nettScore": 41,
+        "playerName": "Keith Sabin",
+        "handicap": 6
+      },
+      {
+        "position": 16,
+        "totalScore": 41,
+        "scoreType": "Nett",
+        "nettScore": 41,
+        "playerName": "Kevin Eric Conn",
+        "handicap": 8
+      },
+      {
+        "position": 17,
+        "totalScore": 42,
+        "scoreType": "Nett",
+        "nettScore": 42,
+        "playerName": "Wayne Rutter",
+        "handicap": 8
+      },
+      {
+        "position": 18,
+        "totalScore": 42,
+        "scoreType": "Nett",
+        "nettScore": 42,
+        "playerName": "Robert Hudson",
+        "handicap": 8
+      },
+      {
+        "position": 19,
+        "totalScore": 43,
+        "scoreType": "Nett",
+        "nettScore": 43,
+        "playerName": "John Gilbert Baker",
+        "handicap": 12
+      },
+      {
+        "position": 20,
+        "totalScore": 43,
+        "scoreType": "Nett",
+        "nettScore": 43,
+        "playerName": "Bruce Antony Mansell",
+        "handicap": 10
+      },
+      {
+        "position": 21,
+        "totalScore": 44,
+        "scoreType": "Nett",
+        "nettScore": 44,
+        "playerName": "Kenneth Brettle",
+        "handicap": 10
+      },
+      {
+        "position": 22,
+        "totalScore": 44,
+        "scoreType": "Nett",
+        "nettScore": 44,
+        "playerName": "Paul Russell",
+        "handicap": 10
+      },
+      {
+        "position": 23,
+        "totalScore": 45,
+        "scoreType": "Nett",
+        "nettScore": 45,
+        "playerName": "Keith Ratcliffe",
+        "handicap": 10
+      },
+      {
+        "position": 24,
+        "totalScore": 45,
+        "scoreType": "Nett",
+        "nettScore": 45,
+        "playerName": "Barry Thomas Lawton",
+        "handicap": 8
+      },
+      {
+        "position": 25,
+        "totalScore": 45,
+        "scoreType": "Nett",
+        "nettScore": 45,
+        "playerName": "John Edwards",
+        "handicap": 10
+      },
+      {
+        "position": 26,
+        "totalScore": 48,
+        "scoreType": "Nett",
+        "nettScore": 48,
+        "playerName": "Michael John Walter Horne",
+        "handicap": 15
+      },
+      {
+        "position": 27,
+        "totalScore": 48,
+        "scoreType": "Nett",
+        "nettScore": 48,
+        "playerName": "Michael Geoffrey Guise",
+        "handicap": 9
+      },
+      {
+        "position": 28,
+        "totalScore": 49,
+        "scoreType": "Nett",
+        "nettScore": 49,
+        "playerName": "Melvyn Crook",
+        "handicap": 7
+      },
+      {
+        "position": 29,
+        "totalScore": 49,
+        "scoreType": "Nett",
+        "nettScore": 49,
+        "playerName": "Gordon Hampstead",
+        "handicap": 16
+      },
+      {
+        "position": 30,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Malcolm Powell",
+        "handicap": 12
+      },
+      {
+        "position": 31,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Ivan James Cooper",
+        "handicap": 9
+      },
+      {
+        "position": 32,
+        "status": "NR",
+        "statusNote": "",
+        "scoreType": "Nett",
+        "playerName": "Robert P. Timmington",
+        "handicap": 12
       }
     ]
   },
