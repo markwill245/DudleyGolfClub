@@ -50,55 +50,62 @@
   </main>
 
   <script>
-    async function loadRecords() {
-      const container = document.getElementById("records");
+  async function loadRecords() {
+    const container = document.getElementById("records");
 
-      try {
-        const response = await fetch("data/records-centre.json");
-        const records = await response.json();
+    try {
+      const response = await fetch("data/records-centre.json");
 
-        const sections = [
-          ["Career Records", records.career],
-          ["Championship Records", records.championships],
-          ["Museum Records", records.museum]
-        ];
-
-        document.getElementById("records").innerHTML = sections.map(([title, group]) => `
-    <section>
-      <h2 class="text-4xl font-serif mb-6">${title}</h2>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        ${Object.values(group || {}).map(record => `
-          <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
-              ${record.label}
-            </p>
-
-            <h3 class="text-3xl font-serif mb-2">
-              ${record.holder ? record.holder.player : "No holder yet"}
-            </h3>
-
-            <p class="text-5xl font-serif text-[#C5A367] mb-6">
-              ${record.holder ? record.holder.value : "-"}
-            </p>
-
-            <div class="space-y-2">
-            ${(record.leaders || []).map(item => `
-                <a href="player-profile.html?player=${item.slug}"
-                   class="flex justify-between border-b border-[#C5A367]/20 pb-2 hover:text-[#C5A367]">
-                  <span>${item.rank}. ${item.player}</span>
-                  <strong>${item.displayValue}</strong>
-                </a>
-              `).join("")}
-            </div>
-          </div>
-        `).join("")}
-      </div>
-    </section>
-  `).join("");
+      if (!response.ok) {
+        throw new Error(`Records file returned ${response.status}`);
       }
+
+      const records = await response.json();
+
+      const sections = [
+        ["Career Records", records.career],
+        ["Championship Records", records.championships],
+        ["Museum Records", records.museum]
+      ];
+
+      container.innerHTML = sections.map(([title, group]) => `
+        <section>
+          <h2 class="text-4xl font-serif mb-6">${title}</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            ${Object.values(group || {}).map(record => `
+              <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+                <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+                  ${record.label || "Museum Record"}
+                </p>
+
+                <h3 class="text-3xl font-serif mb-2">
+                  ${record.holder?.player || "No holder yet"}
+                </h3>
+
+                <p class="text-5xl font-serif text-[#C5A367] mb-6">
+                  ${record.holder?.value ?? "-"}
+                </p>
+
+                <div class="space-y-2">
+                  ${(record.leaders || []).map(item => `
+                    <a
+                      href="player-profile.html?player=${encodeURIComponent(item.slug || "")}"
+                      class="flex justify-between border-b border-[#C5A367]/20 pb-2 hover:text-[#C5A367]"
+                    >
+                      <span>${item.rank}. ${item.player}</span>
+                      <strong>${item.displayValue ?? item.value ?? "-"}</strong>
+                    </a>
+                  `).join("")}
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </section>
+      `).join("");
+
     } catch (error) {
-      console.log("Records failed to load", error);
+      console.error("Records failed to load", error);
 
       container.innerHTML = `
         <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
@@ -111,8 +118,8 @@
     }
   }
 
-    loadRecords();
-  </script>
+  loadRecords();
+</script>
 
 </body>
 
