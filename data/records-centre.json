@@ -1,820 +1,1470 @@
 {
-  "career": {
-    "mostWins": {
-      "label": "Most Wins",
-      "holder": {
-        "player": "M. Hickman",
-        "slug": "m-hickman",
-        "section": "Mens",
-        "value": 26
-      },
-      "leaders": [
-        {
-          "rank": 1,
+  "mens": {
+    "career": {
+      "mostWins": {
+        "label": "Most Wins",
+        "holder": {
           "player": "M. Hickman",
           "slug": "m-hickman",
           "section": "Mens",
-          "value": 26,
-          "displayValue": 26
+          "value": 26
         },
-        {
-          "rank": 2,
-          "player": "M. Williams",
-          "slug": "m-williams",
-          "section": "Mens",
-          "value": 18,
-          "displayValue": 18
-        },
-        {
-          "rank": 3,
-          "player": "James Stevens",
-          "slug": "james-stevens",
-          "section": "Mens",
-          "value": 13,
-          "displayValue": 13
-        },
-        {
-          "rank": 4,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
-          "section": "Mens",
-          "value": 13,
-          "displayValue": 13
-        },
-        {
-          "rank": 5,
-          "player": "T. Blakemore",
-          "slug": "t-blakemore",
-          "section": "Mens",
-          "value": 11,
-          "displayValue": 11
-        },
-        {
-          "rank": 6,
-          "player": "M. Bianco",
-          "slug": "m-bianco",
-          "section": "Mens",
-          "value": 9,
-          "displayValue": 9
-        },
-        {
-          "rank": 7,
-          "player": "Alan Ball",
-          "slug": "alan-ball",
-          "section": "Mens",
-          "value": 8,
-          "displayValue": 8
-        },
-        {
-          "rank": 8,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
-          "section": "Mens",
-          "value": 8,
-          "displayValue": 8
-        },
-        {
-          "rank": 9,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 7,
-          "displayValue": 7
-        },
-        {
-          "rank": 10,
-          "player": "P. Swift",
-          "slug": "p-swift",
-          "section": "Mens",
-          "value": 7,
-          "displayValue": 7
-        }
-      ]
-    },
-    "mostRunnerUp": {
-      "label": "Most Runner-up Finishes",
-      "holder": {
-        "player": "Adam Stanfield",
-        "slug": "adam-stanfield",
-        "section": "Mens",
-        "value": 7
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "M. Hickman",
+            "slug": "m-hickman",
+            "section": "Mens",
+            "value": 26,
+            "displayValue": 26
+          },
+          {
+            "rank": 2,
+            "player": "M. Williams",
+            "slug": "m-williams",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 3,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 13,
+            "displayValue": 13
+          },
+          {
+            "rank": 4,
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
+            "section": "Mens",
+            "value": 13,
+            "displayValue": 13
+          },
+          {
+            "rank": 5,
+            "player": "T. Blakemore",
+            "slug": "t-blakemore",
+            "section": "Mens",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 6,
+            "player": "M. Bianco",
+            "slug": "m-bianco",
+            "section": "Mens",
+            "value": 9,
+            "displayValue": 9
+          },
+          {
+            "rank": 7,
+            "player": "Alan Ball",
+            "slug": "alan-ball",
+            "section": "Mens",
+            "value": 8,
+            "displayValue": 8
+          },
+          {
+            "rank": 8,
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 9,
+            "player": "P. Swift",
+            "slug": "p-swift",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 10,
+            "player": "G. Smith",
+            "slug": "g-smith",
+            "section": "Mens",
+            "value": 6,
+            "displayValue": 6
+          }
+        ]
       },
-      "leaders": [
-        {
-          "rank": 1,
+      "mostRunnerUp": {
+        "label": "Most Runner-up Finishes",
+        "holder": {
           "player": "Adam Stanfield",
           "slug": "adam-stanfield",
           "section": "Mens",
-          "value": 7,
-          "displayValue": 7
+          "value": 7
         },
-        {
-          "rank": 2,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 7,
-          "displayValue": 7
-        },
-        {
-          "rank": 3,
-          "player": "Robert Keith Woodall",
-          "slug": "robert-keith-woodall",
-          "section": "Mens",
-          "value": 7,
-          "displayValue": 7
-        },
-        {
-          "rank": 4,
-          "player": "Eric Edwards",
-          "slug": "eric-edwards",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 5,
-          "player": "Gary Baker",
-          "slug": "gary-baker",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 6,
-          "player": "James Stevens",
-          "slug": "james-stevens",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 7,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 8,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 9,
-          "player": "Philip Thompson",
-          "slug": "philip-thompson",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 10,
-          "player": "Darren Element",
-          "slug": "darren-element",
-          "section": "Mens",
-          "value": 5,
-          "displayValue": 5
-        }
-      ]
-    },
-    "mostTop3": {
-      "label": "Most Top 3 Finishes",
-      "holder": {
-        "player": "James Stevens",
-        "slug": "james-stevens",
-        "section": "Mens",
-        "value": 26
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 2,
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 3,
+            "player": "Robert Keith Woodall",
+            "slug": "robert-keith-woodall",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 4,
+            "player": "Gary Baker",
+            "slug": "gary-baker",
+            "section": "Mens",
+            "value": 6,
+            "displayValue": 6
+          },
+          {
+            "rank": 5,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 6,
+            "displayValue": 6
+          },
+          {
+            "rank": 6,
+            "player": "Philip Thompson",
+            "slug": "philip-thompson",
+            "section": "Mens",
+            "value": 6,
+            "displayValue": 6
+          },
+          {
+            "rank": 7,
+            "player": "Nigel Brookes",
+            "slug": "nigel-brookes",
+            "section": "Mens",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 8,
+            "player": "Richard Limb",
+            "slug": "richard-limb",
+            "section": "Mens",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 9,
+            "player": "Sean Element",
+            "slug": "sean-element",
+            "section": "Mens",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 10,
+            "player": "Clive Kearey",
+            "slug": "clive-kearey",
+            "section": "Mens",
+            "value": 4,
+            "displayValue": 4
+          }
+        ]
       },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "James Stevens",
-          "slug": "james-stevens",
-          "section": "Mens",
-          "value": 26,
-          "displayValue": 26
-        },
-        {
-          "rank": 2,
+      "mostTop3": {
+        "label": "Most Top 3 Finishes",
+        "holder": {
           "player": "M. Hickman",
           "slug": "m-hickman",
           "section": "Mens",
-          "value": 26,
-          "displayValue": 26
+          "value": 26
         },
-        {
-          "rank": 3,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
-          "section": "Mens",
-          "value": 21,
-          "displayValue": 21
-        },
-        {
-          "rank": 4,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
-          "section": "Mens",
-          "value": 20,
-          "displayValue": 20
-        },
-        {
-          "rank": 5,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
-          "section": "Mens",
-          "value": 19,
-          "displayValue": 19
-        },
-        {
-          "rank": 6,
-          "player": "M. Williams",
-          "slug": "m-williams",
-          "section": "Mens",
-          "value": 18,
-          "displayValue": 18
-        },
-        {
-          "rank": 7,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 16,
-          "displayValue": 16
-        },
-        {
-          "rank": 8,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 15,
-          "displayValue": 15
-        },
-        {
-          "rank": 9,
-          "player": "Alan Ball",
-          "slug": "alan-ball",
-          "section": "Mens",
-          "value": 14,
-          "displayValue": 14
-        },
-        {
-          "rank": 10,
-          "player": "Ian Frederick Stevens",
-          "slug": "ian-frederick-stevens",
-          "section": "Mixed",
-          "value": 13,
-          "displayValue": 13
-        }
-      ]
-    },
-    "mostTop5": {
-      "label": "Most Top 5 Finishes",
-      "holder": {
-        "player": "James Stevens",
-        "slug": "james-stevens",
-        "section": "Mens",
-        "value": 30
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "M. Hickman",
+            "slug": "m-hickman",
+            "section": "Mens",
+            "value": 26,
+            "displayValue": 26
+          },
+          {
+            "rank": 2,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 25,
+            "displayValue": 25
+          },
+          {
+            "rank": 3,
+            "player": "M. Williams",
+            "slug": "m-williams",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 4,
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 5,
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
+            "section": "Mens",
+            "value": 16,
+            "displayValue": 16
+          },
+          {
+            "rank": 6,
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
+            "section": "Mens",
+            "value": 15,
+            "displayValue": 15
+          },
+          {
+            "rank": 7,
+            "player": "Alan Ball",
+            "slug": "alan-ball",
+            "section": "Mens",
+            "value": 14,
+            "displayValue": 14
+          },
+          {
+            "rank": 8,
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
+            "section": "Mens",
+            "value": 13,
+            "displayValue": 13
+          },
+          {
+            "rank": 9,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
+            "value": 12,
+            "displayValue": 12
+          },
+          {
+            "rank": 10,
+            "player": "Adrian Burns",
+            "slug": "adrian-burns",
+            "section": "Mens",
+            "value": 11,
+            "displayValue": 11
+          }
+        ]
       },
-      "leaders": [
-        {
-          "rank": 1,
+      "mostTop5": {
+        "label": "Most Top 5 Finishes",
+        "holder": {
           "player": "James Stevens",
           "slug": "james-stevens",
           "section": "Mens",
-          "value": 30,
-          "displayValue": 30
+          "value": 29
         },
-        {
-          "rank": 2,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 29,
+            "displayValue": 29
+          },
+          {
+            "rank": 2,
+            "player": "M. Hickman",
+            "slug": "m-hickman",
+            "section": "Mens",
+            "value": 26,
+            "displayValue": 26
+          },
+          {
+            "rank": 3,
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
+            "section": "Mens",
+            "value": 25,
+            "displayValue": 25
+          },
+          {
+            "rank": 4,
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
+            "section": "Mens",
+            "value": 24,
+            "displayValue": 24
+          },
+          {
+            "rank": 5,
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
+            "section": "Mens",
+            "value": 23,
+            "displayValue": 23
+          },
+          {
+            "rank": 6,
+            "player": "Lewis Jones",
+            "slug": "lewis-jones",
+            "section": "Mens",
+            "value": 19,
+            "displayValue": 19
+          },
+          {
+            "rank": 7,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 8,
+            "player": "Alan Ball",
+            "slug": "alan-ball",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 9,
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 10,
+            "player": "M. Williams",
+            "slug": "m-williams",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          }
+        ]
+      },
+      "mostTop10": {
+        "label": "Most Top 10 Finishes",
+        "holder": {
+          "player": "James Stevens",
+          "slug": "james-stevens",
           "section": "Mens",
-          "value": 28,
-          "displayValue": 28
+          "value": 56
         },
-        {
-          "rank": 3,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 56,
+            "displayValue": 56
+          },
+          {
+            "rank": 2,
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
+            "section": "Mens",
+            "value": 50,
+            "displayValue": 50
+          },
+          {
+            "rank": 3,
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
+            "section": "Mens",
+            "value": 45,
+            "displayValue": 45
+          },
+          {
+            "rank": 4,
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
+            "section": "Mens",
+            "value": 39,
+            "displayValue": 39
+          },
+          {
+            "rank": 5,
+            "player": "Richard Limb",
+            "slug": "richard-limb",
+            "section": "Mens",
+            "value": 39,
+            "displayValue": 39
+          },
+          {
+            "rank": 6,
+            "player": "Alan Ball",
+            "slug": "alan-ball",
+            "section": "Mens",
+            "value": 37,
+            "displayValue": 37
+          },
+          {
+            "rank": 7,
+            "player": "Mark Andrew Poulding",
+            "slug": "mark-andrew-poulding",
+            "section": "Mens",
+            "value": 33,
+            "displayValue": 33
+          },
+          {
+            "rank": 8,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
+            "value": 32,
+            "displayValue": 32
+          },
+          {
+            "rank": 9,
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
+            "section": "Mens",
+            "value": 32,
+            "displayValue": 32
+          },
+          {
+            "rank": 10,
+            "player": "Lewis Jones",
+            "slug": "lewis-jones",
+            "section": "Mens",
+            "value": 32,
+            "displayValue": 32
+          }
+        ]
+      },
+      "mostPlayed": {
+        "label": "Most Competitions Played",
+        "holder": {
+          "player": "G.B. Ray",
+          "slug": "g-b-ray",
           "section": "Mens",
-          "value": 28,
-          "displayValue": 28
+          "value": 112
         },
-        {
-          "rank": 4,
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
+            "section": "Mens",
+            "value": 112,
+            "displayValue": 112
+          },
+          {
+            "rank": 2,
+            "player": "Stephen Hall",
+            "slug": "stephen-hall",
+            "section": "Mens",
+            "value": 105,
+            "displayValue": 105
+          },
+          {
+            "rank": 3,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 100,
+            "displayValue": 100
+          },
+          {
+            "rank": 4,
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
+            "section": "Mens",
+            "value": 96,
+            "displayValue": 96
+          },
+          {
+            "rank": 5,
+            "player": "Gerald Paul Crowley",
+            "slug": "gerald-paul-crowley",
+            "section": "Mens",
+            "value": 95,
+            "displayValue": 95
+          },
+          {
+            "rank": 6,
+            "player": "David Hill",
+            "slug": "david-hill",
+            "section": "Mens",
+            "value": 94,
+            "displayValue": 94
+          },
+          {
+            "rank": 7,
+            "player": "Richard Limb",
+            "slug": "richard-limb",
+            "section": "Mens",
+            "value": 93,
+            "displayValue": 93
+          },
+          {
+            "rank": 8,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
+            "value": 91,
+            "displayValue": 91
+          },
+          {
+            "rank": 9,
+            "player": "Paul Ian Welch",
+            "slug": "paul-ian-welch",
+            "section": "Mens",
+            "value": 91,
+            "displayValue": 91
+          },
+          {
+            "rank": 10,
+            "player": "Calin Tiplea",
+            "slug": "calin-tiplea",
+            "section": "Mens",
+            "value": 90,
+            "displayValue": 90
+          }
+        ]
+      }
+    },
+    "championships": {
+      "mostMajorWins": {
+        "label": "Most Major Wins",
+        "holder": {
           "player": "M. Hickman",
           "slug": "m-hickman",
           "section": "Mens",
-          "value": 26,
-          "displayValue": 26
+          "value": 26
         },
-        {
-          "rank": 5,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 25,
-          "displayValue": 25
-        },
-        {
-          "rank": 6,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 24,
-          "displayValue": 24
-        },
-        {
-          "rank": 7,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
-          "section": "Mens",
-          "value": 24,
-          "displayValue": 24
-        },
-        {
-          "rank": 8,
-          "player": "Melvyn Crook",
-          "slug": "melvyn-crook",
-          "section": "Mixed",
-          "value": 22,
-          "displayValue": 22
-        },
-        {
-          "rank": 9,
-          "player": "Stephen Hall",
-          "slug": "stephen-hall",
-          "section": "Mens",
-          "value": 21,
-          "displayValue": 21
-        },
-        {
-          "rank": 10,
-          "player": "Lewis Jones",
-          "slug": "lewis-jones",
-          "section": "Mens",
-          "value": 19,
-          "displayValue": 19
-        }
-      ]
-    },
-    "mostTop10": {
-      "label": "Most Top 10 Finishes",
-      "holder": {
-        "player": "James Stevens",
-        "slug": "james-stevens",
-        "section": "Mens",
-        "value": 58
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "M. Hickman",
+            "slug": "m-hickman",
+            "section": "Mens",
+            "value": 26,
+            "displayValue": 26
+          },
+          {
+            "rank": 2,
+            "player": "M. Williams",
+            "slug": "m-williams",
+            "section": "Mens",
+            "value": 18,
+            "displayValue": 18
+          },
+          {
+            "rank": 3,
+            "player": "T. Blakemore",
+            "slug": "t-blakemore",
+            "section": "Mens",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 4,
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
+            "section": "Mens",
+            "value": 10,
+            "displayValue": 10
+          },
+          {
+            "rank": 5,
+            "player": "M. Bianco",
+            "slug": "m-bianco",
+            "section": "Mens",
+            "value": 9,
+            "displayValue": 9
+          },
+          {
+            "rank": 6,
+            "player": "P. Swift",
+            "slug": "p-swift",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 7,
+            "player": "G. Smith",
+            "slug": "g-smith",
+            "section": "Mens",
+            "value": 6,
+            "displayValue": 6
+          },
+          {
+            "rank": 8,
+            "player": "M. Short",
+            "slug": "m-short",
+            "section": "Mens",
+            "value": 6,
+            "displayValue": 6
+          },
+          {
+            "rank": 9,
+            "player": "B. Lloyd",
+            "slug": "b-lloyd",
+            "section": "Mens",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 10,
+            "player": "C. Cheese",
+            "slug": "c-cheese",
+            "section": "Mens",
+            "value": 5,
+            "displayValue": 5
+          }
+        ]
       },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "James Stevens",
-          "slug": "james-stevens",
-          "section": "Mens",
-          "value": 58,
-          "displayValue": 58
-        },
-        {
-          "rank": 2,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
-          "section": "Mens",
-          "value": 55,
-          "displayValue": 55
-        },
-        {
-          "rank": 3,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 50,
-          "displayValue": 50
-        },
-        {
-          "rank": 4,
-          "player": "Stephen Hall",
-          "slug": "stephen-hall",
-          "section": "Mens",
-          "value": 49,
-          "displayValue": 49
-        },
-        {
-          "rank": 5,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
-          "section": "Mens",
-          "value": 48,
-          "displayValue": 48
-        },
-        {
-          "rank": 6,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 45,
-          "displayValue": 45
-        },
-        {
-          "rank": 7,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
-          "section": "Mens",
-          "value": 41,
-          "displayValue": 41
-        },
-        {
-          "rank": 8,
-          "player": "Richard Limb",
-          "slug": "richard-limb",
-          "section": "Mens",
-          "value": 40,
-          "displayValue": 40
-        },
-        {
-          "rank": 9,
-          "player": "Melvyn Crook",
-          "slug": "melvyn-crook",
-          "section": "Mixed",
-          "value": 38,
-          "displayValue": 38
-        },
-        {
-          "rank": 10,
+      "mostMedalWins": {
+        "label": "Most Medal Wins",
+        "holder": {
           "player": "Alan Ball",
           "slug": "alan-ball",
           "section": "Mens",
-          "value": 37,
-          "displayValue": 37
-        }
-      ]
-    },
-    "mostPlayed": {
-      "label": "Most Competitions Played",
-      "holder": {
-        "player": "Stephen Hall",
-        "slug": "stephen-hall",
-        "section": "Mens",
-        "value": 146
-      },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "Stephen Hall",
-          "slug": "stephen-hall",
-          "section": "Mens",
-          "value": 146,
-          "displayValue": 146
+          "value": 2
         },
-        {
-          "rank": 2,
-          "player": "Melvyn Crook",
-          "slug": "melvyn-crook",
-          "section": "Mixed",
-          "value": 124,
-          "displayValue": 124
-        },
-        {
-          "rank": 3,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
-          "section": "Mens",
-          "value": 123,
-          "displayValue": 123
-        },
-        {
-          "rank": 4,
-          "player": "Keith Durbridge",
-          "slug": "keith-durbridge",
-          "section": "Mens",
-          "value": 119,
-          "displayValue": 119
-        },
-        {
-          "rank": 5,
-          "player": "G.B. Ray",
-          "slug": "g-b-ray",
-          "section": "Mens",
-          "value": 115,
-          "displayValue": 115
-        },
-        {
-          "rank": 6,
-          "player": "James Stevens",
-          "slug": "james-stevens",
-          "section": "Mens",
-          "value": 105,
-          "displayValue": 105
-        },
-        {
-          "rank": 7,
-          "player": "Keith John Woodall",
-          "slug": "keith-john-woodall",
-          "section": "Mens",
-          "value": 100,
-          "displayValue": 100
-        },
-        {
-          "rank": 8,
-          "player": "Neil Hartland",
-          "slug": "neil-hartland",
-          "section": "Mens",
-          "value": 99,
-          "displayValue": 99
-        },
-        {
-          "rank": 9,
-          "player": "Gerald Paul Crowley",
-          "slug": "gerald-paul-crowley",
-          "section": "Mens",
-          "value": 98,
-          "displayValue": 98
-        },
-        {
-          "rank": 10,
-          "player": "David Hill",
-          "slug": "david-hill",
-          "section": "Mens",
-          "value": 97,
-          "displayValue": 97
-        }
-      ]
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Alan Ball",
+            "slug": "alan-ball",
+            "section": "Mens",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 2,
+            "player": "Lewis Ganner",
+            "slug": "lewis-ganner",
+            "section": "Mens",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 3,
+            "player": "Wayne Rutter",
+            "slug": "wayne-rutter",
+            "section": "Mens",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 4,
+            "player": "Andrew Russell",
+            "slug": "andrew-russell",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 5,
+            "player": "Clive Peter Gould",
+            "slug": "clive-peter-gould",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 6,
+            "player": "Darren Povey",
+            "slug": "darren-povey",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 7,
+            "player": "Gary William Stubbs",
+            "slug": "gary-william-stubbs",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 8,
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 9,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 10,
+            "player": "Jason Bates",
+            "slug": "jason-bates",
+            "section": "Mens",
+            "value": 1,
+            "displayValue": 1
+          }
+        ]
+      }
     }
   },
-  "championships": {
-    "mostMajorWins": {
-      "label": "Most Major Wins",
-      "holder": {
-        "player": "M. Hickman",
-        "slug": "m-hickman",
-        "section": "Mens",
-        "value": 26
+  "seniors": {
+    "career": {
+      "mostWins": {
+        "label": "Most Wins",
+        "holder": {
+          "player": "Keith Ratcliffe",
+          "slug": "keith-ratcliffe",
+          "section": "Seniors",
+          "value": 5
+        },
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 2,
+            "player": "Kenneth Brettle",
+            "slug": "kenneth-brettle",
+            "section": "Seniors",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 3,
+            "player": "Malcolm Powell",
+            "slug": "malcolm-powell",
+            "section": "Seniors",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 4,
+            "player": "M.j. Davies",
+            "slug": "m-j-davies",
+            "section": "Seniors",
+            "value": 4,
+            "displayValue": 4
+          },
+          {
+            "rank": 5,
+            "player": "Robert Hudson",
+            "slug": "robert-hudson",
+            "section": "Seniors",
+            "value": 4,
+            "displayValue": 4
+          },
+          {
+            "rank": 6,
+            "player": "Keith Durbridge",
+            "slug": "keith-durbridge",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 7,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 8,
+            "player": "Philip John Northall",
+            "slug": "philip-john-northall",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 9,
+            "player": "Stephen Price",
+            "slug": "stephen-price",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 10,
+            "player": "Clive Atkins",
+            "slug": "clive-atkins",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          }
+        ]
       },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
-          "section": "Mens",
-          "value": 26,
-          "displayValue": 26
+      "mostRunnerUp": {
+        "label": "Most Runner-up Finishes",
+        "holder": {
+          "player": "Eric Edwards",
+          "slug": "eric-edwards",
+          "section": "Seniors",
+          "value": 5
         },
-        {
-          "rank": 2,
-          "player": "M. Williams",
-          "slug": "m-williams",
-          "section": "Mens",
-          "value": 18,
-          "displayValue": 18
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Eric Edwards",
+            "slug": "eric-edwards",
+            "section": "Seniors",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 2,
+            "player": "Keith Durbridge",
+            "slug": "keith-durbridge",
+            "section": "Seniors",
+            "value": 5,
+            "displayValue": 5
+          },
+          {
+            "rank": 3,
+            "player": "Raymond Saunders",
+            "slug": "raymond-saunders",
+            "section": "Seniors",
+            "value": 4,
+            "displayValue": 4
+          },
+          {
+            "rank": 4,
+            "player": "Bruce Antony Mansell",
+            "slug": "bruce-antony-mansell",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 5,
+            "player": "Keith Brian Culwick",
+            "slug": "keith-brian-culwick",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 6,
+            "player": "Kevin Cooksey",
+            "slug": "kevin-cooksey",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 7,
+            "player": "Philip John Northall",
+            "slug": "philip-john-northall",
+            "section": "Seniors",
+            "value": 3,
+            "displayValue": 3
+          },
+          {
+            "rank": 8,
+            "player": "Barry Thomas Lawton",
+            "slug": "barry-thomas-lawton",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 9,
+            "player": "Clive Atkins",
+            "slug": "clive-atkins",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 10,
+            "player": "James Marsh Derrer",
+            "slug": "james-marsh-derrer",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          }
+        ]
+      },
+      "mostTop3": {
+        "label": "Most Top 3 Finishes",
+        "holder": {
+          "player": "Keith Durbridge",
+          "slug": "keith-durbridge",
+          "section": "Seniors",
+          "value": 11
         },
-        {
-          "rank": 3,
-          "player": "T. Blakemore",
-          "slug": "t-blakemore",
-          "section": "Mens",
-          "value": 11,
-          "displayValue": 11
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Keith Durbridge",
+            "slug": "keith-durbridge",
+            "section": "Seniors",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 2,
+            "player": "Philip John Northall",
+            "slug": "philip-john-northall",
+            "section": "Seniors",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 3,
+            "player": "Eric Edwards",
+            "slug": "eric-edwards",
+            "section": "Seniors",
+            "value": 9,
+            "displayValue": 9
+          },
+          {
+            "rank": 4,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 9,
+            "displayValue": 9
+          },
+          {
+            "rank": 5,
+            "player": "Malcolm Powell",
+            "slug": "malcolm-powell",
+            "section": "Seniors",
+            "value": 9,
+            "displayValue": 9
+          },
+          {
+            "rank": 6,
+            "player": "M.j. Davies",
+            "slug": "m-j-davies",
+            "section": "Seniors",
+            "value": 8,
+            "displayValue": 8
+          },
+          {
+            "rank": 7,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 8,
+            "displayValue": 8
+          },
+          {
+            "rank": 8,
+            "player": "Clive Atkins",
+            "slug": "clive-atkins",
+            "section": "Seniors",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 9,
+            "player": "James Marsh Derrer",
+            "slug": "james-marsh-derrer",
+            "section": "Seniors",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 10,
+            "player": "Robert Hudson",
+            "slug": "robert-hudson",
+            "section": "Seniors",
+            "value": 7,
+            "displayValue": 7
+          }
+        ]
+      },
+      "mostTop5": {
+        "label": "Most Top 5 Finishes",
+        "holder": {
+          "player": "M.j. Davies",
+          "slug": "m-j-davies",
+          "section": "Seniors",
+          "value": 17
         },
-        {
-          "rank": 4,
-          "player": "Mark A. Williams",
-          "slug": "mark-a-williams",
-          "section": "Mens",
-          "value": 10,
-          "displayValue": 10
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "M.j. Davies",
+            "slug": "m-j-davies",
+            "section": "Seniors",
+            "value": 17,
+            "displayValue": 17
+          },
+          {
+            "rank": 2,
+            "player": "Philip John Northall",
+            "slug": "philip-john-northall",
+            "section": "Seniors",
+            "value": 16,
+            "displayValue": 16
+          },
+          {
+            "rank": 3,
+            "player": "Keith Durbridge",
+            "slug": "keith-durbridge",
+            "section": "Seniors",
+            "value": 15,
+            "displayValue": 15
+          },
+          {
+            "rank": 4,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 15,
+            "displayValue": 15
+          },
+          {
+            "rank": 5,
+            "player": "Kenneth Brettle",
+            "slug": "kenneth-brettle",
+            "section": "Seniors",
+            "value": 13,
+            "displayValue": 13
+          },
+          {
+            "rank": 6,
+            "player": "Robert Hudson",
+            "slug": "robert-hudson",
+            "section": "Seniors",
+            "value": 12,
+            "displayValue": 12
+          },
+          {
+            "rank": 7,
+            "player": "Eric Edwards",
+            "slug": "eric-edwards",
+            "section": "Seniors",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 8,
+            "player": "James Marsh Derrer",
+            "slug": "james-marsh-derrer",
+            "section": "Seniors",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 9,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 11,
+            "displayValue": 11
+          },
+          {
+            "rank": 10,
+            "player": "Clive Atkins",
+            "slug": "clive-atkins",
+            "section": "Seniors",
+            "value": 10,
+            "displayValue": 10
+          }
+        ]
+      },
+      "mostTop10": {
+        "label": "Most Top 10 Finishes",
+        "holder": {
+          "player": "Keith Ratcliffe",
+          "slug": "keith-ratcliffe",
+          "section": "Seniors",
+          "value": 32
         },
-        {
-          "rank": 5,
-          "player": "M. Bianco",
-          "slug": "m-bianco",
-          "section": "Mens",
-          "value": 9,
-          "displayValue": 9
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 32,
+            "displayValue": 32
+          },
+          {
+            "rank": 2,
+            "player": "Keith Durbridge",
+            "slug": "keith-durbridge",
+            "section": "Seniors",
+            "value": 31,
+            "displayValue": 31
+          },
+          {
+            "rank": 3,
+            "player": "Philip John Northall",
+            "slug": "philip-john-northall",
+            "section": "Seniors",
+            "value": 28,
+            "displayValue": 28
+          },
+          {
+            "rank": 4,
+            "player": "M.j. Davies",
+            "slug": "m-j-davies",
+            "section": "Seniors",
+            "value": 27,
+            "displayValue": 27
+          },
+          {
+            "rank": 5,
+            "player": "Kenneth Brettle",
+            "slug": "kenneth-brettle",
+            "section": "Seniors",
+            "value": 22,
+            "displayValue": 22
+          },
+          {
+            "rank": 6,
+            "player": "Malcolm Powell",
+            "slug": "malcolm-powell",
+            "section": "Seniors",
+            "value": 22,
+            "displayValue": 22
+          },
+          {
+            "rank": 7,
+            "player": "James Marsh Derrer",
+            "slug": "james-marsh-derrer",
+            "section": "Seniors",
+            "value": 21,
+            "displayValue": 21
+          },
+          {
+            "rank": 8,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 20,
+            "displayValue": 20
+          },
+          {
+            "rank": 9,
+            "player": "Robert Hudson",
+            "slug": "robert-hudson",
+            "section": "Seniors",
+            "value": 20,
+            "displayValue": 20
+          },
+          {
+            "rank": 10,
+            "player": "Stephen Hall",
+            "slug": "stephen-hall",
+            "section": "Seniors",
+            "value": 19,
+            "displayValue": 19
+          }
+        ]
+      },
+      "mostPlayed": {
+        "label": "Most Competitions Played",
+        "holder": {
+          "player": "Keith Ratcliffe",
+          "slug": "keith-ratcliffe",
+          "section": "Seniors",
+          "value": 54
         },
-        {
-          "rank": 6,
-          "player": "P. Swift",
-          "slug": "p-swift",
-          "section": "Mens",
-          "value": 7,
-          "displayValue": 7
-        },
-        {
-          "rank": 7,
-          "player": "G. Smith",
-          "slug": "g-smith",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 8,
-          "player": "M. Short",
-          "slug": "m-short",
-          "section": "Mens",
-          "value": 6,
-          "displayValue": 6
-        },
-        {
-          "rank": 9,
-          "player": "B. Lloyd",
-          "slug": "b-lloyd",
-          "section": "Mens",
-          "value": 5,
-          "displayValue": 5
-        },
-        {
-          "rank": 10,
-          "player": "C. Cheese",
-          "slug": "c-cheese",
-          "section": "Mens",
-          "value": 5,
-          "displayValue": 5
-        }
-      ]
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 54,
+            "displayValue": 54
+          },
+          {
+            "rank": 2,
+            "player": "Malcolm Powell",
+            "slug": "malcolm-powell",
+            "section": "Seniors",
+            "value": 53,
+            "displayValue": 53
+          },
+          {
+            "rank": 3,
+            "player": "M.j. Davies",
+            "slug": "m-j-davies",
+            "section": "Seniors",
+            "value": 51,
+            "displayValue": 51
+          },
+          {
+            "rank": 4,
+            "player": "Keith Durbridge",
+            "slug": "keith-durbridge",
+            "section": "Seniors",
+            "value": 49,
+            "displayValue": 49
+          },
+          {
+            "rank": 5,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 49,
+            "displayValue": 49
+          },
+          {
+            "rank": 6,
+            "player": "Kenneth Brettle",
+            "slug": "kenneth-brettle",
+            "section": "Seniors",
+            "value": 46,
+            "displayValue": 46
+          },
+          {
+            "rank": 7,
+            "player": "Michael Geoffrey Guise",
+            "slug": "michael-geoffrey-guise",
+            "section": "Seniors",
+            "value": 46,
+            "displayValue": 46
+          },
+          {
+            "rank": 8,
+            "player": "Robert P. Timmington",
+            "slug": "robert-p-timmington",
+            "section": "Seniors",
+            "value": 46,
+            "displayValue": 46
+          },
+          {
+            "rank": 9,
+            "player": "Clive Atkins",
+            "slug": "clive-atkins",
+            "section": "Seniors",
+            "value": 44,
+            "displayValue": 44
+          },
+          {
+            "rank": 10,
+            "player": "John Gilbert Baker",
+            "slug": "john-gilbert-baker",
+            "section": "Seniors",
+            "value": 44,
+            "displayValue": 44
+          }
+        ]
+      }
     },
-    "mostMedalWins": {
-      "label": "Most Medal Wins",
-      "holder": {
-        "player": "Alan Ball",
-        "slug": "alan-ball",
-        "section": "Mens",
-        "value": 2
-      },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "Alan Ball",
-          "slug": "alan-ball",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
+    "championships": {
+      "mostMajorWins": {
+        "label": "Most Major Wins",
+        "holder": {
+          "player": "C. B. Jones",
+          "slug": "c-b-jones",
+          "section": "Seniors",
+          "value": 1
         },
-        {
-          "rank": 2,
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "C. B. Jones",
+            "slug": "c-b-jones",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 2,
+            "player": "Eric Edwards",
+            "slug": "eric-edwards",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 3,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 4,
+            "player": "Kevin John Hartland",
+            "slug": "kevin-john-hartland",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 5,
+            "player": "M. Carrington",
+            "slug": "m-carrington",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 6,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 7,
+            "player": "Philip John Northall",
+            "slug": "philip-john-northall",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 8,
+            "player": "Raymond Saunders",
+            "slug": "raymond-saunders",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 9,
+            "player": "Robert Hudson",
+            "slug": "robert-hudson",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 10,
+            "player": "Stephen Hall",
+            "slug": "stephen-hall",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          }
+        ]
+      },
+      "mostMedalWins": {
+        "label": "Most Medal Wins",
+        "holder": {
           "player": "Clive Atkins",
           "slug": "clive-atkins",
           "section": "Seniors",
-          "value": 2,
-          "displayValue": 2
+          "value": 2
         },
-        {
-          "rank": 3,
-          "player": "Lewis Ganner",
-          "slug": "lewis-ganner",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 4,
-          "player": "Paul Russell",
-          "slug": "paul-russell",
-          "section": "Mixed",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 5,
-          "player": "Robert Hudson",
-          "slug": "robert-hudson",
-          "section": "Mixed",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 6,
-          "player": "Wayne Rutter",
-          "slug": "wayne-rutter",
-          "section": "Mens",
-          "value": 2,
-          "displayValue": 2
-        },
-        {
-          "rank": 7,
-          "player": "Andrew Russell",
-          "slug": "andrew-russell",
-          "section": "Mixed",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 8,
-          "player": "Clive Peter Gould",
-          "slug": "clive-peter-gould",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 9,
-          "player": "Darren Povey",
-          "slug": "darren-povey",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        },
-        {
-          "rank": 10,
-          "player": "Gary William Stubbs",
-          "slug": "gary-william-stubbs",
-          "section": "Mens",
-          "value": 1,
-          "displayValue": 1
-        }
-      ]
-    },
-    "lowestGrossScore": {
-      "label": "Lowest Gross Score",
-      "holder": {
-        "player": "Mark Dando",
-        "slug": "mark-dando",
-        "section": "Mens",
-        "value": 68,
-        "date": "2025-06-07",
-        "course": "Dudley Golf Course"
-      },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "Mark Dando",
-          "slug": "mark-dando",
-          "section": "Mens",
-          "value": 68,
-          "date": "2025-06-07",
-          "course": "Dudley Golf Course",
-          "displayValue": 68
-        },
-        {
-          "rank": 2,
-          "player": "Lee Roger Grainger",
-          "slug": "lee-roger-grainger",
-          "section": "Mens",
-          "value": 69,
-          "date": "2023-07-22",
-          "course": "Dudley Golf Course",
-          "displayValue": 69
-        },
-        {
-          "rank": 3,
-          "player": "Lisa Hampson",
-          "slug": "lisa-hampson",
-          "section": "Mixed",
-          "value": 84,
-          "date": "2023-10-07",
-          "course": "Dudley Golf Course",
-          "displayValue": 84
-        }
-      ]
-    },
-    "highestStablefordScore": {
-      "label": "Highest Stableford Score",
-      "holder": {
-        "player": "Calin Tiplea",
-        "slug": "calin-tiplea",
-        "section": "Mens",
-        "value": 48,
-        "date": "2023-08-22",
-        "course": "Dudley Golf Course"
-      },
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "Calin Tiplea",
-          "slug": "calin-tiplea",
-          "section": "Mens",
-          "value": 48,
-          "date": "2023-08-22",
-          "course": "Dudley Golf Course",
-          "displayValue": "48 pts"
-        },
-        {
-          "rank": 2,
-          "player": "Steven Brookes",
-          "slug": "steven-brookes",
-          "section": "Mens",
-          "value": 46,
-          "date": "2021-07-18",
-          "course": "Dudley Golf Course",
-          "displayValue": "46 pts"
-        },
-        {
-          "rank": 3,
-          "player": "Lisa Hampson",
-          "slug": "lisa-hampson",
-          "section": "Mixed",
-          "value": 41,
-          "date": "2023-07-22",
-          "course": "Dudley Golf Course",
-          "displayValue": "41 pts"
-        }
-      ]
+        "leaders": [
+          {
+            "rank": 1,
+            "player": "Clive Atkins",
+            "slug": "clive-atkins",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 2,
+            "player": "Paul Russell",
+            "slug": "paul-russell",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 3,
+            "player": "Robert Hudson",
+            "slug": "robert-hudson",
+            "section": "Seniors",
+            "value": 2,
+            "displayValue": 2
+          },
+          {
+            "rank": 4,
+            "player": "Geoffrey Alan Ford",
+            "slug": "geoffrey-alan-ford",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 5,
+            "player": "Ivan James Cooper",
+            "slug": "ivan-james-cooper",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 6,
+            "player": "James Marsh Derrer",
+            "slug": "james-marsh-derrer",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 7,
+            "player": "Keith Ratcliffe",
+            "slug": "keith-ratcliffe",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 8,
+            "player": "Keith Taylor",
+            "slug": "keith-taylor",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 9,
+            "player": "Kenneth Brettle",
+            "slug": "kenneth-brettle",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          },
+          {
+            "rank": 10,
+            "player": "M T Cowdell",
+            "slug": "m-t-cowdell",
+            "section": "Seniors",
+            "value": 1,
+            "displayValue": 1
+          }
+        ]
+      }
     }
   },
   "museum": {
@@ -981,6 +1631,92 @@
           "section": "Mens",
           "value": 1,
           "displayValue": 1
+        }
+      ]
+    },
+    "lowestGrossScore": {
+      "label": "Lowest Gross Score",
+      "holder": {
+        "player": "Mark Dando",
+        "slug": "mark-dando",
+        "section": "Mens",
+        "value": 68,
+        "date": "2025-06-07",
+        "course": "Dudley Golf Course"
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Mark Dando",
+          "slug": "mark-dando",
+          "section": "Mens",
+          "value": 68,
+          "date": "2025-06-07",
+          "course": "Dudley Golf Course",
+          "displayValue": 68
+        },
+        {
+          "rank": 2,
+          "player": "Lee Roger Grainger",
+          "slug": "lee-roger-grainger",
+          "section": "Mens",
+          "value": 69,
+          "date": "2023-07-22",
+          "course": "Dudley Golf Course",
+          "displayValue": 69
+        },
+        {
+          "rank": 3,
+          "player": "Lisa Hampson",
+          "slug": "lisa-hampson",
+          "section": "Ladies",
+          "value": 84,
+          "date": "2023-10-07",
+          "course": "Dudley Golf Course",
+          "displayValue": 84
+        }
+      ]
+    },
+    "highestStablefordScore": {
+      "label": "Highest Stableford Score",
+      "holder": {
+        "player": "Calin Tiplea",
+        "slug": "calin-tiplea",
+        "section": "Mens",
+        "value": 48,
+        "date": "2023-08-22",
+        "course": "Dudley Golf Course"
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Calin Tiplea",
+          "slug": "calin-tiplea",
+          "section": "Mens",
+          "value": 48,
+          "date": "2023-08-22",
+          "course": "Dudley Golf Course",
+          "displayValue": "48 pts"
+        },
+        {
+          "rank": 2,
+          "player": "Steven Brookes",
+          "slug": "steven-brookes",
+          "section": "Mens",
+          "value": 46,
+          "date": "2021-07-18",
+          "course": "Dudley Golf Course",
+          "displayValue": "46 pts"
+        },
+        {
+          "rank": 3,
+          "player": "Lisa Hampson",
+          "slug": "lisa-hampson",
+          "section": "Ladies",
+          "value": 41,
+          "date": "2023-07-22",
+          "course": "Dudley Golf Course",
+          "displayValue": "41 pts"
         }
       ]
     }
