@@ -729,6 +729,92 @@
           "displayValue": 1
         }
       ]
+    },
+    "lowestGrossScore": {
+      "label": "Lowest Gross Score",
+      "holder": {
+        "player": "Mark Dando",
+        "slug": "mark-dando",
+        "section": "Mens",
+        "value": 68,
+        "date": "2025-06-07",
+        "course": "Dudley Golf Course"
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Mark Dando",
+          "slug": "mark-dando",
+          "section": "Mens",
+          "value": 68,
+          "date": "2025-06-07",
+          "course": "Dudley Golf Course",
+          "displayValue": 68
+        },
+        {
+          "rank": 2,
+          "player": "Lee Roger Grainger",
+          "slug": "lee-roger-grainger",
+          "section": "Mens",
+          "value": 69,
+          "date": "2023-07-22",
+          "course": "Dudley Golf Course",
+          "displayValue": 69
+        },
+        {
+          "rank": 3,
+          "player": "Lisa Hampson",
+          "slug": "lisa-hampson",
+          "section": "Mixed",
+          "value": 84,
+          "date": "2023-10-07",
+          "course": "Dudley Golf Course",
+          "displayValue": 84
+        }
+      ]
+    },
+    "highestStablefordScore": {
+      "label": "Highest Stableford Score",
+      "holder": {
+        "player": "Calin Tiplea",
+        "slug": "calin-tiplea",
+        "section": "Mens",
+        "value": 48,
+        "date": "2023-08-22",
+        "course": "Dudley Golf Course"
+      },
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Calin Tiplea",
+          "slug": "calin-tiplea",
+          "section": "Mens",
+          "value": 48,
+          "date": "2023-08-22",
+          "course": "Dudley Golf Course",
+          "displayValue": "48 pts"
+        },
+        {
+          "rank": 2,
+          "player": "Steven Brookes",
+          "slug": "steven-brookes",
+          "section": "Mens",
+          "value": 46,
+          "date": "2021-07-18",
+          "course": "Dudley Golf Course",
+          "displayValue": "46 pts"
+        },
+        {
+          "rank": 3,
+          "player": "Lisa Hampson",
+          "slug": "lisa-hampson",
+          "section": "Mixed",
+          "value": 41,
+          "date": "2023-07-22",
+          "course": "Dudley Golf Course",
+          "displayValue": "41 pts"
+        }
+      ]
     }
   },
   "museum": {
@@ -824,26 +910,74 @@
       ]
     },
     "mostRecordsHeld": {
-      "label": "Most Records Held",
+      "label": "Most Hole In Ones",
       "holder": {
-        "player": "M. Hickman",
-        "slug": "m-hickman",
+        "player": "Andrew Kilroy",
+        "slug": "andrew-kilroy",
         "section": "Mens",
-        "value": 3
+        "value": 1
       },
       "leaders": [
         {
           "rank": 1,
-          "player": "M. Hickman",
-          "slug": "m-hickman",
+          "player": "Andrew Kilroy",
+          "slug": "andrew-kilroy",
           "section": "Mens",
-          "value": 3,
-          "displayValue": 3
+          "value": 1,
+          "displayValue": 1
         },
         {
           "rank": 2,
-          "player": "James Stevens",
-          "slug": "james-stevens",
+          "player": "Ben Fisher",
+          "slug": "ben-fisher",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 3,
+          "player": "Christopher Fereday",
+          "slug": "christopher-fereday",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 4,
+          "player": "Clive Kearey",
+          "slug": "clive-kearey",
+          "section": "Mixed",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 5,
+          "player": "David Harris",
+          "slug": "david-harris",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 6,
+          "player": "G.B. Ray",
+          "slug": "g-b-ray",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 7,
+          "player": "Jason Sean Higley",
+          "slug": "jason-sean-higley",
+          "section": "Mens",
+          "value": 1,
+          "displayValue": 1
+        },
+        {
+          "rank": 8,
+          "player": "Kevin John Foster",
+          "slug": "kevin-john-foster",
           "section": "Mens",
           "value": 1,
           "displayValue": 1
