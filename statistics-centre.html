@@ -61,7 +61,140 @@
         number > 0
       );
     }
+function getIndividualPlayerName(result) {
+  const players = Array.isArray(result?.players)
+    ? result.players
+        .map(player =>
+          typeof player === "string"
+            ? player
+            : player?.name
+        )
+        .filter(Boolean)
+    : [];
 
+  if (players.length === 1) {
+    return players[0];
+  }
+
+  if (players.length > 1) {
+    return null;
+  }
+
+  const fallbackName =
+    result?.playerName ||
+    result?.player ||
+    result?.name ||
+    null;
+
+  return fallbackName
+    ? String(fallbackName).trim()
+    : null;
+}
+function getResultScore(result, scoreType) {
+  if (!result || result.status) {
+    return null;
+  }
+
+if (scoreType === "Gross") {
+  const handicap =
+    Number(
+      result?.players?.[0]?.handicap ??
+      result?.handicap
+    );
+
+  const nett =
+    Number(
+      result.nettScore ??
+      (
+        result.scoreType === "Nett"
+          ? result.totalScore
+          : null
+      )
+    );
+
+  if (
+    Number.isFinite(nett) &&
+    Number.isFinite(handicap) &&
+    nett >= 50 &&
+    nett <= 120 &&
+    handicap >= 0 &&
+    handicap <= 54
+  ) {
+    return nett + handicap;
+  }
+
+  return null;
+}
+  if (scoreType === "Nett") {
+    const value =
+      result.nettScore ??
+      result.nettTotal ??
+      (
+        result.scoreType === "Nett"
+          ? result.totalScore
+          : null
+      );
+
+    return validScore(value)
+      ? Number(value)
+      : null;
+  }
+
+  return null;
+}
+
+function buildScoreRecords(competitions) {
+  const records = new Map();
+
+  competitions.forEach(competition => {
+    (competition.results || []).forEach(result => {
+      const playerName =
+        getIndividualPlayerName(result);
+
+      if (!playerName) {
+        return;
+      }
+
+      if (!records.has(playerName)) {
+        records.set(playerName, {
+          lowestGross: null,
+          lowestNett: null
+        });
+      }
+
+      const playerRecord =
+        records.get(playerName);
+
+      const gross =
+        getResultScore(result, "Gross");
+
+      const nett =
+        getResultScore(result, "Nett");
+
+      if (
+        gross !== null &&
+        (
+          playerRecord.lowestGross === null ||
+          gross < playerRecord.lowestGross
+        )
+      ) {
+        playerRecord.lowestGross = gross;
+      }
+
+      if (
+        nett !== null &&
+        (
+          playerRecord.lowestNett === null ||
+          nett < playerRecord.lowestNett
+        )
+      ) {
+        playerRecord.lowestNett = nett;
+      }
+    });
+  });
+
+  return records;
+}
     function createSlug(value) {
       return String(value || "")
         .toLowerCase()
@@ -154,36 +287,53 @@
     `;
     }
 
-    async function loadStats() {
-      const container =
-        document.getElementById("stats");
+   async function loadStats() {
+  const container =
+    document.getElementById("stats");
 
-      try {
-        const [
-          profilesResponse,
-          pagesResponse
-        ] = await Promise.all([
-          fetch("data/player-profiles.json"),
-          fetch("data/player-page-data.json")
-        ]);
+  try {
+    const [
+      profilesResponse,
+      pagesResponse,
+      resultsResponse
+    ] = await Promise.all([
+      fetch("data/player-profiles.json"),
+      fetch("data/player-page-data.json"),
+      fetch("data/competition-results.json")
+    ]);
 
-        if (!profilesResponse.ok) {
-          throw new Error(
-            `player-profiles.json returned ${profilesResponse.status}`
-          );
-        }
+    if (!profilesResponse.ok) {
+      throw new Error(
+        `player-profiles.json returned ${profilesResponse.status}`
+      );
+    }
 
-        if (!pagesResponse.ok) {
-          throw new Error(
-            `player-page-data.json returned ${pagesResponse.status}`
-          );
-        }
+    if (!pagesResponse.ok) {
+      throw new Error(
+        `player-page-data.json returned ${pagesResponse.status}`
+      );
+    }
 
-        const playerProfiles =
-          await profilesResponse.json();
+    if (!resultsResponse.ok) {
+      throw new Error(
+        `competition-results.json returned ${resultsResponse.status}`
+      );
+    }
+
+    const playerProfiles =
+      await profilesResponse.json();
 
         const playerPages =
           await pagesResponse.json();
+const competitionResults =
+  await resultsResponse.json();
+
+const scoreRecords =
+  buildScoreRecords(
+    Array.isArray(competitionResults)
+      ? competitionResults
+      : []
+  );
 
         const profileList =
           Array.isArray(playerProfiles)
@@ -219,59 +369,35 @@
           );
         });
 
-        const players = profileList
-          .filter(profile => profile?.player)
-          .map(profile => ({
-            playerName: profile.player,
+     const players = profileList
+  .filter(profile => profile?.player)
+  .map(profile => ({
+    playerName: profile.player,
 
-            slug:
-              slugByName.get(profile.player) ||
-              createSlug(profile.player),
+    slug:
+      slugByName.get(profile.player) ||
+      createSlug(profile.player),
 
-            competitionsPlayed:
-              num(
-                profile.career
-                  ?.competitionsPlayed
-              ),
+    competitionsPlayed:
+      num(profile.career?.competitionsPlayed),
 
-            wins:
-              num(profile.career?.wins),
+    wins:
+      num(profile.career?.wins),
 
-            runnerUp:
-              num(profile.career?.runnerUp),
+    runnerUp:
+      num(profile.career?.runnerUp),
 
-            topTen:
-              num(profile.career?.top10),
+    topTen:
+      num(profile.career?.top10),
 
-            /*
-             * These fields will populate as Museum Brain
-             * receives complete scoring information.
-             */
-            averageGross:
-              num(
-                profile.averageGross ??
-                profile.scoring?.averageGross
-              ),
+    lowestGross:
+      scoreRecords.get(profile.player)
+        ?.lowestGross || 0,
 
-            averageNett:
-              num(
-                profile.averageNett ??
-                profile.scoring?.averageNett
-              ),
-
-            lowestGross:
-              num(
-                profile.lowestGross ??
-                profile.scoring?.lowestGross
-              ),
-
-            lowestNett:
-              num(
-                profile.lowestNett ??
-                profile.scoring?.lowestNett
-              )
-          }));
-
+    lowestNett:
+      scoreRecords.get(profile.player)
+        ?.lowestNett || 0
+  }));
         const totalAppearances =
           players.reduce(
             (total, player) =>
@@ -280,12 +406,12 @@
             0
           );
 
-        const totalWins =
-          players.reduce(
-            (total, player) =>
-              total + player.wins,
-            0
-          );
+      const totalWins =
+  players.reduce(
+    (total, player) =>
+      total + player.wins,
+    0
+  );
 
         const totalTopTens =
           players.reduce(
