@@ -3,136 +3,816 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Records Centre | Dudley Golf Club Digital Museum</title>
+
+  <meta
+    name="description"
+    content="Explore the Mens, Seniors and Club records preserved by the Dudley Golf Club Digital Museum."
+  >
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
+    :root {
+      --forest: #132419;
+      --forest-light: #1d3526;
+      --gold: #c5a367;
+      --cream: #f9f7f2;
+      --cream-dark: #eee9df;
+      --white: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+      font-family: "Outfit", sans-serif;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(197, 163, 103, 0.11),
+          transparent 34rem
+        ),
+        var(--cream);
+      color: var(--forest);
     }
 
     .font-serif {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    .museum-shadow {
+      box-shadow:
+        0 25px 60px rgba(19, 36, 25, 0.09),
+        0 4px 14px rgba(19, 36, 25, 0.05);
+    }
+
+    .gold-line {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--gold),
+        transparent
+      );
+    }
+
+    .section-tab {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-tab::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      content: "";
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 250ms ease;
+    }
+
+    .section-tab.active::after {
+      transform: scaleX(1);
+    }
+
+    .section-tab.active {
+      color: var(--forest);
+      background: var(--white);
+      box-shadow: 0 12px 30px rgba(19, 36, 25, 0.08);
+    }
+
+    .record-card {
+      transition:
+        transform 250ms ease,
+        box-shadow 250ms ease,
+        border-color 250ms ease;
+    }
+
+    .record-card:hover {
+      border-color: rgba(197, 163, 103, 0.75);
+      box-shadow: 0 24px 55px rgba(19, 36, 25, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .leader-row {
+      transition:
+        color 180ms ease,
+        background-color 180ms ease,
+        transform 180ms ease;
+    }
+
+    .leader-row:hover {
+      color: var(--gold);
+      background: rgba(249, 247, 242, 0.85);
+      transform: translateX(3px);
+    }
+
+    .fade-in {
+      animation: fadeIn 420ms ease both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
     }
   </style>
 </head>
 
-<body class="bg-[#F9F7F2] text-[#132419]">
+<body>
 
-  <main class="max-w-7xl mx-auto px-6 py-16">
+  <!-- Hero -->
+  <header class="relative overflow-hidden bg-[#132419] text-white">
 
-    <a href="digital-museum.html"
-      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      ← Back to Museum
-    </a>
+    <div
+      class="absolute inset-0 opacity-[0.08]"
+      style="
+        background-image:
+          linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px);
+        background-size: 54px 54px;
+      "
+    ></div>
 
-    <section class="mt-12 mb-12">
-      <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
-        Dudley Golf Club Digital Museum
-      </p>
+    <div
+      class="absolute -top-32 -right-28 h-96 w-96 rounded-full border border-[#C5A367]/20"
+    ></div>
 
-      <h1 class="text-6xl font-serif mb-6">Records Centre</h1>
+    <div
+      class="absolute -top-16 -right-10 h-64 w-64 rounded-full border border-[#C5A367]/20"
+    ></div>
 
-      <p class="text-xl max-w-4xl leading-8">
-        The living wall of records, generated automatically from the Museum Brain.
-      </p>
+    <div class="relative max-w-7xl mx-auto px-6 py-8 sm:py-10">
+
+      <nav class="flex items-center justify-between gap-6">
+        <a
+          href="digital-museum.html"
+          class="inline-flex items-center gap-3 text-xs sm:text-sm uppercase tracking-[0.22em] text-[#C5A367] font-bold hover:text-white transition"
+        >
+          <span aria-hidden="true">←</span>
+          <span>Back to Museum</span>
+        </a>
+
+        <p
+          class="hidden sm:block text-xs uppercase tracking-[0.28em] text-white/50"
+        >
+          Museum Brain Live Archive
+        </p>
+      </nav>
+
+      <div class="grid lg:grid-cols-[1fr_340px] gap-12 items-end pt-20 pb-16 sm:pt-28 sm:pb-24">
+
+        <div>
+          <p class="uppercase tracking-[0.38em] text-xs text-[#C5A367] font-bold mb-6">
+            Dudley Golf Club Digital Museum
+          </p>
+
+          <h1 class="font-serif text-6xl sm:text-7xl lg:text-8xl leading-[0.9] mb-8">
+            Records
+            <span class="block text-[#C5A367]">Centre</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl leading-8 text-white/72 max-w-3xl">
+            A living archive of achievement across the Mens and Seniors
+            sections, alongside the enduring records of the club.
+          </p>
+        </div>
+
+        <aside class="border-l border-[#C5A367]/40 pl-7">
+          <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-4">
+            Archive principle
+          </p>
+
+          <p class="font-serif text-2xl leading-8 text-white/90">
+            Every record is calculated automatically from the museum’s
+            preserved competition history.
+          </p>
+        </aside>
+
+      </div>
+    </div>
+
+    <div class="h-px gold-line"></div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-14 sm:py-20">
+
+    <!-- Introduction -->
+    <section class="grid lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-20 items-start mb-14">
+
+      <div>
+        <p class="uppercase tracking-[0.32em] text-xs text-[#C5A367] font-bold mb-4">
+          Explore the archive
+        </p>
+
+        <h2 class="font-serif text-4xl sm:text-5xl leading-tight">
+          Three record collections.
+          <span class="block text-[#C5A367]">One club history.</span>
+        </h2>
+      </div>
+
+      <div class="lg:pt-3">
+        <p class="text-lg leading-8 text-[#132419]/70">
+          Competition records are separated by section so achievements made
+          in Mens and Seniors golf remain accurate. Club-wide museum records
+          are preserved together in the Club Records collection.
+        </p>
+      </div>
+
     </section>
 
-    <section id="records" class="space-y-12">
-      <p>Loading records...</p>
+    <!-- Main navigation tabs -->
+    <section
+      aria-label="Records sections"
+      class="sticky top-3 z-30 mb-14"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-2 rounded-2xl bg-[#EEE9DF]/95 p-2 border border-[#C5A367]/20 shadow-lg backdrop-blur"
+      >
+        <button
+          type="button"
+          class="section-tab active rounded-xl px-5 py-5 text-left transition"
+          data-section="mens"
+        >
+          <span class="block text-[10px] uppercase tracking-[0.28em] text-[#C5A367] font-bold mb-2">
+            Section One
+          </span>
+
+          <span class="block font-serif text-2xl">
+            Mens Records
+          </span>
+        </button>
+
+        <button
+          type="button"
+          class="section-tab rounded-xl px-5 py-5 text-left text-[#132419]/55 transition hover:bg-white/60 hover:text-[#132419]"
+          data-section="seniors"
+        >
+          <span class="block text-[10px] uppercase tracking-[0.28em] text-[#C5A367] font-bold mb-2">
+            Section Two
+          </span>
+
+          <span class="block font-serif text-2xl">
+            Seniors Records
+          </span>
+        </button>
+
+        <button
+          type="button"
+          class="section-tab rounded-xl px-5 py-5 text-left text-[#132419]/55 transition hover:bg-white/60 hover:text-[#132419]"
+          data-section="club"
+        >
+          <span class="block text-[10px] uppercase tracking-[0.28em] text-[#C5A367] font-bold mb-2">
+            Section Three
+          </span>
+
+          <span class="block font-serif text-2xl">
+            Club Records
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Loading and generated records -->
+    <section id="records" aria-live="polite">
+      <div class="rounded-3xl bg-white border border-[#C5A367]/25 p-10 museum-shadow">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+          Museum Brain
+        </p>
+
+        <p class="font-serif text-3xl">
+          Loading records…
+        </p>
+      </div>
+    </section>
+
+    <!-- Archive note -->
+    <section class="mt-20 rounded-[2rem] bg-[#132419] text-white overflow-hidden museum-shadow">
+      <div class="grid lg:grid-cols-[1fr_auto] gap-8 items-center p-8 sm:p-12">
+
+        <div>
+          <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+            The archive continues to grow
+          </p>
+
+          <h2 class="font-serif text-4xl sm:text-5xl mb-5">
+            History becomes clearer with every restored result.
+          </h2>
+
+          <p class="max-w-3xl text-white/65 leading-7">
+            Records shown here reflect the competitions currently preserved
+            in the Digital Museum. Totals will continue to develop as more
+            historical results and honours boards are restored.
+          </p>
+        </div>
+
+        <a
+          href="competition-index.html"
+          class="inline-flex justify-center items-center min-w-52 rounded-full border border-[#C5A367] px-7 py-4 uppercase tracking-[0.2em] text-xs text-[#C5A367] font-bold hover:bg-[#C5A367] hover:text-[#132419] transition"
+        >
+          Competition Archive →
+        </a>
+
+      </div>
     </section>
 
   </main>
 
-  <script>
-    async function loadRecords() {
-      const container = document.getElementById("records");
+  <footer class="border-t border-[#C5A367]/25 mt-10">
+    <div
+      class="max-w-7xl mx-auto px-6 py-10 flex flex-col sm:flex-row gap-4 justify-between text-sm text-[#132419]/55"
+    >
+      <p>Dudley Golf Club Digital Museum</p>
 
-      try {
-        const response = await fetch("data/records-centre.json");
+      <p>Records generated by Museum Brain</p>
+    </div>
+  </footer>
 
-        if (!response.ok) {
-          throw new Error(`Records file returned ${response.status}`);
-        }
-
-        const records = await response.json();
-
-        const sections = [
-          ["Career Records", records.career],
-          ["Championship Records", records.championships],
-          ["Museum Records", records.museum]
-        ];
-
-        container.innerHTML = sections.map(([title, group]) => `
-        <section>
-          <h2 class="text-4xl font-serif mb-6">${title}</h2>
-
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            ${Object.values(group || {}).map(record => `
-              <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-                <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
-                  ${record.label || "Museum Record"}
-                </p>
-
-                <h3 class="text-3xl font-serif mb-2">
-                  ${record.holder?.player || "No holder yet"}
-                </h3>
-
-                <p class="text-5xl font-serif text-[#C5A367] mb-6">
-                  ${record.holder?.value ?? "-"}
-                </p>
-
-                <div class="space-y-2">
-                  ${(record.leaders || []).map(item => `
-                    <a
-                      href="player-profile.html?player=${encodeURIComponent(item.slug || "")}"
-                      class="flex justify-between border-b border-[#C5A367]/20 pb-2 hover:text-[#C5A367]"
-                    >
-                      <span>${item.rank}. ${item.player}</span>
-                      <strong>${item.displayValue ?? item.value ?? "-"}</strong>
-                    </a>
-                  `).join("")}
-                </div>
-              </div>
-            `).join("")}
-          </div>
-        </section>
-      `).join("");
-
-      } catch (error) {
-        console.error("Records failed to load", error);
-
-        container.innerHTML = `
-        <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-          <h2 class="text-3xl font-serif mb-4">Records unavailable</h2>
-          <p class="text-gray-600">
-            The records could not be loaded at the moment.
-          </p>
-        </div>
-      `;
-      }
-    }
-
-    loadRecords();
-  </script>
-  <button id="backToTop"
-    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    ↑ Top
+  <!-- Back to top -->
+  <button
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+    class="fixed bottom-6 right-6 hidden h-14 w-14 items-center justify-center rounded-full bg-[#132419] text-white border border-[#C5A367]/50 shadow-xl hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50"
+  >
+    ↑
   </button>
 
   <script>
+    const recordsContainer = document.getElementById("records");
+    const sectionButtons = document.querySelectorAll("[data-section]");
     const backToTop = document.getElementById("backToTop");
 
+    let recordsData = null;
+    let activeSection = "mens";
+
+    const sectionContent = {
+      mens: {
+        eyebrow: "Mens Section",
+        title: "Mens Records",
+        description:
+          "Career and championship achievements recorded in Mens competitions.",
+        dataKey: "mens"
+      },
+
+      seniors: {
+        eyebrow: "Seniors Section",
+        title: "Seniors Records",
+        description:
+          "Career and championship achievements recorded in Seniors competitions.",
+        dataKey: "seniors"
+      },
+
+      club: {
+        eyebrow: "Club-Wide Archive",
+        title: "Club Records",
+        description:
+          "Museum and scoring records preserved across the complete club archive.",
+        dataKey: "museum"
+      }
+    };
+
+    const groupNames = {
+      career: {
+        eyebrow: "Career Archive",
+        title: "Career Records",
+        description:
+          "Long-term achievements calculated from every preserved appearance."
+      },
+
+      championships: {
+        eyebrow: "Honours Archive",
+        title: "Championship Records",
+        description:
+          "Major, board and medal achievements recorded within this section."
+      },
+
+      museum: {
+        eyebrow: "Club Archive",
+        title: "Museum Records",
+        description:
+          "Club-wide achievements preserved across the complete museum."
+      }
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function formatValue(value) {
+      if (value === null || value === undefined || value === "") {
+        return "—";
+      }
+
+      return escapeHtml(value);
+    }
+
+    function playerUrl(player) {
+      const slug = encodeURIComponent(player?.slug || "");
+
+      return slug
+        ? `player-profile.html?player=${slug}`
+        : "player-index.html";
+    }
+
+    function getRecordGroups(sectionName, sectionData) {
+      if (sectionName === "club") {
+        return [
+          {
+            key: "museum",
+            data: sectionData || {}
+          }
+        ];
+      }
+
+      return [
+        {
+          key: "career",
+          data: sectionData?.career || {}
+        },
+        {
+          key: "championships",
+          data: sectionData?.championships || {}
+        }
+      ];
+    }
+
+    function createLeaderRow(item, index) {
+      const rank = item?.rank ?? index + 1;
+      const value = item?.displayValue ?? item?.value ?? "—";
+
+      return `
+        <a
+          href="${playerUrl(item)}"
+          class="leader-row grid grid-cols-[2.25rem_1fr_auto] gap-3 items-center px-3 py-3 rounded-xl border-b border-[#C5A367]/15 last:border-b-0"
+        >
+          <span
+            class="
+              flex h-8 w-8 items-center justify-center rounded-full
+              ${rank === 1
+                ? "bg-[#C5A367] text-[#132419]"
+                : "bg-[#F9F7F2] text-[#132419]/55"}
+              text-xs font-bold
+            "
+          >
+            ${formatValue(rank)}
+          </span>
+
+          <span class="min-w-0">
+            <span class="block truncate font-medium">
+              ${escapeHtml(item?.player || "Unknown player")}
+            </span>
+
+            <span class="block text-[10px] uppercase tracking-[0.18em] text-[#132419]/40">
+              ${escapeHtml(item?.section || "")}
+            </span>
+          </span>
+
+          <strong class="font-serif text-xl text-[#C5A367]">
+            ${formatValue(value)}
+          </strong>
+        </a>
+      `;
+    }
+
+    function createRecordCard(record, cardIndex) {
+      const holder = record?.holder || {};
+      const leaders = Array.isArray(record?.leaders)
+        ? record.leaders
+        : [];
+
+      const holderValue =
+        holder.displayValue ??
+        holder.value ??
+        "—";
+
+      const visibleLeaders = leaders.slice(0, 10);
+
+      return `
+        <article
+          class="record-card flex flex-col rounded-[1.75rem] bg-white border border-[#C5A367]/25 overflow-hidden museum-shadow fade-in"
+          style="animation-delay: ${cardIndex * 45}ms"
+        >
+          <div class="relative bg-[#132419] text-white p-7 sm:p-8 overflow-hidden">
+            <div
+              class="absolute -top-14 -right-14 h-36 w-36 rounded-full border border-[#C5A367]/20"
+            ></div>
+
+            <div
+              class="absolute top-2 right-2 h-20 w-20 rounded-full border border-[#C5A367]/15"
+            ></div>
+
+            <div class="relative">
+              <p class="uppercase tracking-[0.25em] text-[10px] text-[#C5A367] font-bold mb-5">
+                Current record holder
+              </p>
+
+              <h3 class="font-serif text-3xl sm:text-4xl leading-tight mb-6">
+                ${escapeHtml(record?.label || "Museum Record")}
+              </h3>
+
+              <div class="flex items-end justify-between gap-5">
+                <div class="min-w-0">
+                  <a
+                    href="${playerUrl(holder)}"
+                    class="block truncate text-lg font-semibold hover:text-[#C5A367] transition"
+                  >
+                    ${escapeHtml(holder.player || "No holder yet")}
+                  </a>
+
+                  <p class="mt-1 text-xs uppercase tracking-[0.18em] text-white/45">
+                    ${escapeHtml(holder.section || "")}
+                  </p>
+                </div>
+
+                <p class="shrink-0 font-serif text-5xl sm:text-6xl leading-none text-[#C5A367]">
+                  ${formatValue(holderValue)}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-1 p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-4 px-3 mb-3">
+              <p class="uppercase tracking-[0.22em] text-[10px] text-[#132419]/45 font-bold">
+                Leading players
+              </p>
+
+              <p class="text-xs text-[#132419]/35">
+                Top ${visibleLeaders.length}
+              </p>
+            </div>
+
+            <div>
+              ${
+                visibleLeaders.length
+                  ? visibleLeaders
+                      .map((item, index) => createLeaderRow(item, index))
+                      .join("")
+                  : `
+                    <div class="rounded-xl bg-[#F9F7F2] px-5 py-6 text-center">
+                      <p class="text-sm text-[#132419]/55">
+                        No leaders recorded yet.
+                      </p>
+                    </div>
+                  `
+              }
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function createGroup(group, startIndex) {
+      const details =
+        groupNames[group.key] ||
+        groupNames.museum;
+
+      const records = Object.values(group.data || {});
+
+      if (!records.length) {
+        return "";
+      }
+
+      return `
+        <section class="mb-20 last:mb-0">
+
+          <header class="grid lg:grid-cols-[0.75fr_1.25fr] gap-5 lg:gap-14 items-end mb-9">
+            <div>
+              <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-3">
+                ${details.eyebrow}
+              </p>
+
+              <h3 class="font-serif text-4xl sm:text-5xl">
+                ${details.title}
+              </h3>
+            </div>
+
+            <p class="text-[#132419]/60 leading-7 lg:max-w-2xl">
+              ${details.description}
+            </p>
+          </header>
+
+          <div class="grid lg:grid-cols-2 gap-7">
+            ${records
+              .map((record, index) =>
+                createRecordCard(record, startIndex + index)
+              )
+              .join("")}
+          </div>
+
+        </section>
+      `;
+    }
+
+    function renderSection(sectionName) {
+      if (!recordsData) {
+        return;
+      }
+
+      activeSection = sectionName;
+
+      const content = sectionContent[sectionName];
+      const sectionData = recordsData[content.dataKey] || {};
+      const groups = getRecordGroups(sectionName, sectionData);
+
+      sectionButtons.forEach(button => {
+        const isActive =
+          button.dataset.section === sectionName;
+
+        button.classList.toggle("active", isActive);
+        button.classList.toggle(
+          "text-[#132419]/55",
+          !isActive
+        );
+
+        button.setAttribute(
+          "aria-pressed",
+          isActive ? "true" : "false"
+        );
+      });
+
+      let runningIndex = 0;
+
+      const groupsHtml = groups
+        .map(group => {
+          const html = createGroup(group, runningIndex);
+          runningIndex += Object.values(group.data || {}).length;
+          return html;
+        })
+        .join("");
+
+      recordsContainer.innerHTML = `
+        <div class="fade-in">
+
+          <section
+            class="relative rounded-[2rem] overflow-hidden bg-white border border-[#C5A367]/25 museum-shadow mb-16"
+          >
+            <div class="grid lg:grid-cols-[1fr_320px]">
+
+              <div class="p-8 sm:p-12">
+                <p class="uppercase tracking-[0.32em] text-xs text-[#C5A367] font-bold mb-5">
+                  ${content.eyebrow}
+                </p>
+
+                <h2 class="font-serif text-5xl sm:text-6xl mb-6">
+                  ${content.title}
+                </h2>
+
+                <p class="max-w-3xl text-lg leading-8 text-[#132419]/65">
+                  ${content.description}
+                </p>
+              </div>
+
+              <div class="relative flex items-center bg-[#132419] text-white p-8 sm:p-10 overflow-hidden">
+                <div
+                  class="absolute -bottom-20 -right-16 h-56 w-56 rounded-full border border-[#C5A367]/20"
+                ></div>
+
+                <div class="relative">
+                  <p class="uppercase tracking-[0.28em] text-[10px] text-[#C5A367] font-bold mb-4">
+                    Records displayed
+                  </p>
+
+                  <p class="font-serif text-7xl text-[#C5A367] leading-none">
+                    ${runningIndex}
+                  </p>
+
+                  <p class="mt-4 text-sm leading-6 text-white/55">
+                    Generated from the competition history currently held by
+                    the Digital Museum.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          ${
+            groupsHtml ||
+            `
+              <div class="rounded-3xl bg-white border border-[#C5A367]/25 p-10 museum-shadow">
+                <h3 class="font-serif text-3xl mb-3">
+                  No records available
+                </h3>
+
+                <p class="text-[#132419]/60">
+                  This collection does not yet contain any generated records.
+                </p>
+              </div>
+            `
+          }
+
+        </div>
+      `;
+    }
+
+    async function loadRecords() {
+      try {
+        const response = await fetch("data/records-centre.json", {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error(
+            `Records file returned ${response.status}`
+          );
+        }
+
+        recordsData = await response.json();
+
+        renderSection(activeSection);
+
+      } catch (error) {
+        console.error("Records failed to load:", error);
+
+        recordsContainer.innerHTML = `
+          <div
+            class="rounded-[2rem] bg-white border border-red-200 p-8 sm:p-12 museum-shadow"
+          >
+            <p class="uppercase tracking-[0.25em] text-xs text-red-700 font-bold mb-4">
+              Records unavailable
+            </p>
+
+            <h2 class="font-serif text-4xl mb-4">
+              The archive could not be loaded.
+            </h2>
+
+            <p class="max-w-2xl text-[#132419]/60 leading-7">
+              Please check that
+              <strong>data/records-centre.json</strong>
+              has been published with the website.
+            </p>
+          </div>
+        `;
+      }
+    }
+
+    sectionButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        renderSection(button.dataset.section);
+
+        const recordsTop =
+          recordsContainer.getBoundingClientRect().top +
+          window.scrollY -
+          165;
+
+        window.scrollTo({
+          top: recordsTop,
+          behavior: "smooth"
+        });
+      });
+    });
+
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 500) {
         backToTop.classList.remove("hidden");
+        backToTop.classList.add("flex");
       } else {
         backToTop.classList.add("hidden");
+        backToTop.classList.remove("flex");
       }
     });
 
@@ -142,7 +822,10 @@
         behavior: "smooth"
       });
     });
+
+    loadRecords();
   </script>
+
 </body>
 
 </html>

@@ -1444,14 +1444,14 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 29,
-      "wins": 1,
+      "competitionsPlayed": 30,
+      "wins": 2,
       "runnerUp": 2,
-      "top3": 4,
-      "top5": 9,
-      "top10": 14
+      "top3": 5,
+      "top5": 10,
+      "top10": 15
     },
-    "favouriteCompetition": "Millennium Trophy - 4 Ball",
+    "favouriteCompetition": "Pairs Multiplier",
     "favouriteCompetitionWins": 1,
     "majorWins": 1,
     "medalWins": 0,
@@ -1463,29 +1463,18 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 1,
-          "position": 2,
-          "score": 67,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 86,
-      "status": "Emerging Candidate"
+      "score": 107,
+      "status": "Strong Candidate"
     },
     "bestSeason": {
       "year": 2024,
@@ -1494,11 +1483,11 @@
       "played": 22
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Adam Bonehill has played 29 recorded competitions in the Digital Museum. Adam Bonehill has recorded 1 win, with 2 runner-up finishes and 4 top-three finishes. Adam Bonehill's strongest competition so far is Millennium Trophy - 4 Ball. Current Hall of Fame status: Emerging Candidate with a score of 86.",
-    "profileSummary": "Adam Bonehill has played 29 recorded competitions, with 1 win, 2 runner-up finishes and 4 top-three finishes.",
+    "writtenSummary": "Adam Bonehill has played 30 recorded competitions in the Digital Museum. Adam Bonehill has recorded 2 wins, with 2 runner-up finishes and 5 top-three finishes. Adam Bonehill's strongest competition so far is Pairs Multiplier. Current Hall of Fame status: Strong Candidate with a score of 107.",
+    "profileSummary": "Adam Bonehill has played 30 recorded competitions, with 2 wins, 2 runner-up finishes and 5 top-three finishes.",
     "firstWin": {
-      "year": 2024,
-      "competition": "Millennium Trophy - 4 Ball"
+      "year": 2021,
+      "competition": "Pairs Multiplier"
     },
     "latestWin": {
       "year": 2024,
@@ -1533,6 +1522,14 @@
         "year": 2021,
         "competition": "June Sunday Stableford",
         "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 1,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -1739,9 +1736,9 @@
       }
     ],
     "highlights": [
-      "1 career win",
-      "4 top-three finishes",
-      "Most successful in Millennium Trophy - 4 Ball"
+      "2 career wins",
+      "5 top-three finishes",
+      "Most successful in Pairs Multiplier"
     ]
   },
   {
@@ -1749,14 +1746,14 @@
     "section": "Mixed",
     "status": "Active",
     "career": {
-      "firstYear": 2024,
+      "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 4,
+      "competitionsPlayed": 5,
       "wins": 0,
       "runnerUp": 0,
-      "top3": 0,
-      "top5": 0,
-      "top10": 1
+      "top3": 1,
+      "top5": 1,
+      "top10": 2
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -1780,21 +1777,29 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 0,
+      "score": 6,
       "status": "Building Record"
     },
     "bestSeason": {
-      "year": 2024,
+      "year": 2021,
       "wins": 0,
-      "top3": 0,
-      "played": 3
+      "top3": 1,
+      "played": 1
     },
-    "careerEra": "2024-2026",
-    "writtenSummary": "Adam Farley has played 4 recorded competitions in the Digital Museum. Adam Farley is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Adam Farley has played 4 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "careerEra": "2021-2026",
+    "writtenSummary": "Adam Farley has played 5 recorded competitions in the Digital Museum. Adam Farley is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 6.",
+    "profileSummary": "Adam Farley has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 3,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
       {
         "year": 2024,
         "competition": "Captain's Charity Day",
@@ -1828,7 +1833,9 @@
         "boardCompetition": true
       }
     ],
-    "highlights": []
+    "highlights": [
+      "1 top-three finish"
+    ]
   },
   {
     "player": "Adam Iezzi",
@@ -1918,24 +1925,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 1,
-          "position": 3,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -2746,33 +2742,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 2,
-          "position": 3,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 2,
-          "position": 2,
-          "score": 74,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -3313,49 +3288,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 1,
-          "position": 1,
-          "score": 68,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "february-medal",
-          "competition": "February Medal",
-          "year": 2025,
-          "date": "2025-02-22",
-          "division": 1,
-          "position": 1,
-          "score": 62,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 1,
-          "position": 2,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -4433,24 +4377,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 1,
-          "position": 2,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -6189,23 +6122,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 2,
-          "position": 3,
-          "score": 74,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -8214,14 +8136,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 7,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 20,
         "resultType": "Competition Result",
@@ -8312,6 +8226,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 10,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 7,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -8560,12 +8482,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2021,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
       "top5": 2,
-      "top10": 3
+      "top10": 4
     },
     "favouriteCompetition": "Centenary Trophy & Boscowan Cup",
     "favouriteCompetitionWins": 1,
@@ -8596,11 +8518,11 @@
       "year": 2021,
       "wins": 1,
       "top3": 1,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2021-2021",
-    "writtenSummary": "Ben Fisher has played 5 recorded competitions in the Digital Museum. Ben Fisher has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Ben Fisher's strongest competition so far is Centenary Trophy & Boscowan Cup. Current Hall of Fame status: Building Record with a score of 48.",
-    "profileSummary": "Ben Fisher has played 5 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Ben Fisher has played 6 recorded competitions in the Digital Museum. Ben Fisher has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Ben Fisher's strongest competition so far is Centenary Trophy & Boscowan Cup. Current Hall of Fame status: Building Record with a score of 48.",
+    "profileSummary": "Ben Fisher has played 6 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2021,
       "competition": "Centenary Trophy & Boscowan Cup"
@@ -8649,6 +8571,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 6,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": [
@@ -9049,24 +8979,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 1,
-          "position": 3,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -9455,12 +9374,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2024,
-      "competitionsPlayed": 14,
+      "competitionsPlayed": 15,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
-      "top5": 1,
-      "top10": 5
+      "top5": 2,
+      "top10": 6
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -9484,7 +9403,7 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 2,
+      "score": 4,
       "status": "Building Record"
     },
     "bestSeason": {
@@ -9494,8 +9413,8 @@
       "played": 10
     },
     "careerEra": "2021-2024",
-    "writtenSummary": "Brett Denis Gilbert has played 14 recorded competitions in the Digital Museum. Brett Denis Gilbert is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 2.",
-    "profileSummary": "Brett Denis Gilbert has played 14 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Brett Denis Gilbert has played 15 recorded competitions in the Digital Museum. Brett Denis Gilbert is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 4.",
+    "profileSummary": "Brett Denis Gilbert has played 15 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -9530,6 +9449,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 4,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -9891,14 +9818,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 2,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 16,
         "resultType": "Competition Result",
@@ -9925,6 +9844,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 2,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -11107,39 +11034,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 1,
-        "division2": 1,
+        "division1": 0,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 1,
-          "position": 1,
-          "score": 65,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 2,
-          "position": 3,
-          "score": 72,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -11974,39 +11880,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 1,
-          "position": 1,
-          "score": 69,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 1,
-          "position": 3,
-          "score": 73,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -12317,7 +12202,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 39,
+      "competitionsPlayed": 40,
       "wins": 0,
       "runnerUp": 2,
       "top3": 3,
@@ -12333,27 +12218,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 3,
-          "position": 1,
-          "score": 68,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -12367,8 +12241,8 @@
       "played": 20
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Carl R. Biddulph has played 39 recorded competitions in the Digital Museum. Carl R. Biddulph is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 32.",
-    "profileSummary": "Carl R. Biddulph has played 39 recorded competitions, with 0 wins, 2 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Carl R. Biddulph has played 40 recorded competitions in the Digital Museum. Carl R. Biddulph is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 32.",
+    "profileSummary": "Carl R. Biddulph has played 40 recorded competitions, with 0 wins, 2 runner-up finishes and 3 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -12387,6 +12261,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 13,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -12963,38 +12845,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 2,
-          "position": 1,
-          "score": 67,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 2,
-          "position": 3,
-          "score": 72,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -14137,14 +13998,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 1,
         "resultType": "Competition Result",
@@ -14219,6 +14072,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 20,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 6,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -14583,53 +14444,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 3
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 3,
-          "position": 2,
-          "score": 69,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 3,
-          "position": 2,
-          "score": 70,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 3,
-          "position": 3,
-          "score": 68,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 2,
-          "position": 2,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 4
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -15316,12 +15136,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 66,
+      "competitionsPlayed": 67,
       "wins": 2,
       "runnerUp": 0,
       "top3": 8,
       "top5": 10,
-      "top10": 22
+      "top10": 23
     },
     "favouriteCompetition": "Grandads Cup & Veterans Cup",
     "favouriteCompetitionWins": 1,
@@ -15332,57 +15152,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 4
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 3,
-          "position": 1,
-          "score": 66,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 3,
-          "position": 3,
-          "score": 68,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 3,
-          "position": 1,
-          "score": 71,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 3,
-          "position": 3,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -15396,8 +15175,8 @@
       "played": 28
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Clive Peter Gould has played 66 recorded competitions in the Digital Museum. Clive Peter Gould has recorded 2 wins, with 0 runner-up finishes and 8 top-three finishes. Clive Peter Gould's strongest competition so far is Grandads Cup & Veterans Cup. Current Hall of Fame status: Strong Candidate with a score of 115.",
-    "profileSummary": "Clive Peter Gould has played 66 recorded competitions, with 2 wins, 0 runner-up finishes and 8 top-three finishes.",
+    "writtenSummary": "Clive Peter Gould has played 67 recorded competitions in the Digital Museum. Clive Peter Gould has recorded 2 wins, with 0 runner-up finishes and 8 top-three finishes. Clive Peter Gould's strongest competition so far is Grandads Cup & Veterans Cup. Current Hall of Fame status: Strong Candidate with a score of 115.",
+    "profileSummary": "Clive Peter Gould has played 67 recorded competitions, with 2 wins, 0 runner-up finishes and 8 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Grandads Cup & Veterans Cup"
@@ -15422,6 +15201,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -15969,33 +15756,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 2,
-          "position": 2,
-          "score": 74,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 2,
-          "position": 3,
-          "score": 68,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -16457,58 +16223,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 3
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 2,
-          "position": 1,
-          "score": 71,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 3,
-          "position": 1,
-          "score": 67,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 3,
-          "position": 2,
-          "score": 74,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 3,
-          "position": 3,
-          "score": 71,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -18929,7 +18654,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 45,
+      "competitionsPlayed": 46,
       "wins": 2,
       "runnerUp": 5,
       "top3": 9,
@@ -18949,23 +18674,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 2,
-          "position": 3,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -18979,8 +18693,8 @@
       "played": 16
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Darren Element has played 45 recorded competitions in the Digital Museum. Darren Element has recorded 2 wins, with 5 runner-up finishes and 9 top-three finishes. Darren Element's strongest competition so far is Stableford Pairs Competition. Current Hall of Fame status: Strong Candidate with a score of 145.",
-    "profileSummary": "Darren Element has played 45 recorded competitions, with 2 wins, 5 runner-up finishes and 9 top-three finishes.",
+    "writtenSummary": "Darren Element has played 46 recorded competitions in the Digital Museum. Darren Element has recorded 2 wins, with 5 runner-up finishes and 9 top-three finishes. Darren Element's strongest competition so far is Stableford Pairs Competition. Current Hall of Fame status: Strong Candidate with a score of 145.",
+    "profileSummary": "Darren Element has played 46 recorded competitions, with 2 wins, 5 runner-up finishes and 9 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "Stableford Pairs Competition"
@@ -19029,6 +18743,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 11,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -19651,28 +19373,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 2,
-          "position": 1,
-          "score": 66,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -20031,47 +19742,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 3
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 3,
-          "position": 1,
-          "score": 63,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 3,
-          "position": 2,
-          "score": 67,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 3,
-          "position": 2,
-          "score": 75,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -20828,12 +20508,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 97,
+      "competitionsPlayed": 98,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
       "top5": 6,
-      "top10": 12
+      "top10": 13
     },
     "favouriteCompetition": "Doug Lee Pairs",
     "favouriteCompetitionWins": 1,
@@ -20867,8 +20547,8 @@
       "played": 36
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "David Hill has played 97 recorded competitions in the Digital Museum. David Hill has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. David Hill's strongest competition so far is Doug Lee Pairs. Current Hall of Fame status: Emerging Candidate with a score of 56.",
-    "profileSummary": "David Hill has played 97 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "David Hill has played 98 recorded competitions in the Digital Museum. David Hill has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. David Hill's strongest competition so far is Doug Lee Pairs. Current Hall of Fame status: Emerging Candidate with a score of 56.",
+    "profileSummary": "David Hill has played 98 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2025,
       "competition": "Doug Lee Pairs"
@@ -20901,6 +20581,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 7,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -21668,15 +21356,15 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 70,
-      "wins": 0,
+      "competitionsPlayed": 71,
+      "wins": 1,
       "runnerUp": 1,
-      "top3": 5,
-      "top5": 11,
-      "top10": 18
+      "top3": 6,
+      "top5": 12,
+      "top10": 19
     },
-    "favouriteCompetition": null,
-    "favouriteCompetitionWins": 0,
+    "favouriteCompetition": "Pairs Multiplier",
+    "favouriteCompetitionWins": 1,
     "majorWins": 0,
     "medalWins": 0,
     "matchplayWins": 0,
@@ -21688,40 +21376,35 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 2,
-          "position": 3,
-          "score": 73,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 48,
-      "status": "Building Record"
+      "score": 69,
+      "status": "Emerging Candidate"
     },
     "bestSeason": {
-      "year": 2024,
-      "wins": 0,
-      "top3": 5,
-      "played": 31
+      "year": 2021,
+      "wins": 1,
+      "top3": 1,
+      "played": 6
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "David Hobley has played 70 recorded competitions in the Digital Museum. David Hobley is still waiting for a first recorded win, but has 5 top-three finishes. Current Hall of Fame status: Building Record with a score of 48.",
-    "profileSummary": "David Hobley has played 70 recorded competitions, with 0 wins, 1 runner-up finish and 5 top-three finishes.",
-    "firstWin": null,
-    "latestWin": null,
+    "writtenSummary": "David Hobley has played 71 recorded competitions in the Digital Museum. David Hobley has recorded 1 win, with 1 runner-up finish and 6 top-three finishes. David Hobley's strongest competition so far is Pairs Multiplier. Current Hall of Fame status: Emerging Candidate with a score of 69.",
+    "profileSummary": "David Hobley has played 71 recorded competitions, with 1 win, 1 runner-up finish and 6 top-three finishes.",
+    "firstWin": {
+      "year": 2021,
+      "competition": "Pairs Multiplier"
+    },
+    "latestWin": {
+      "year": 2021,
+      "competition": "Pairs Multiplier"
+    },
     "careerTimeline": [
       {
         "year": 2021,
@@ -21762,6 +21445,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -22285,7 +21976,9 @@
       }
     ],
     "highlights": [
-      "5 top-three finishes"
+      "1 career win",
+      "6 top-three finishes",
+      "Most successful in Pairs Multiplier"
     ]
   },
   {
@@ -22310,28 +22003,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 2,
-          "position": 1,
-          "score": 70,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -23074,37 +22756,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 3,
-          "position": 1,
-          "score": 67,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 3,
-          "position": 1,
-          "score": 74,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -23866,28 +23527,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 2,
-          "position": 1,
-          "score": 73,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -27400,7 +27050,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 115,
+      "competitionsPlayed": 116,
       "wins": 3,
       "runnerUp": 7,
       "top3": 15,
@@ -27415,88 +27065,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 4,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 1,
-        "division2": 6,
+        "division1": 0,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 2,
-          "position": 1,
-          "score": 69,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 1,
-          "position": 2,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "february-medal",
-          "competition": "February Medal",
-          "year": 2025,
-          "date": "2025-02-22",
-          "division": 2,
-          "position": 1,
-          "score": 65,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 2,
-          "position": 1,
-          "score": 66,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 2,
-          "position": 1,
-          "score": 69,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 2,
-          "position": 2,
-          "score": 67,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 2,
-          "position": 3,
-          "score": 75,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 4,
-      "totalTop3": 7
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -27510,8 +27089,8 @@
       "played": 42
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "G.B. Ray has played 115 recorded competitions in the Digital Museum. G.B. Ray has recorded 3 wins, with 7 runner-up finishes and 15 top-three finishes. G.B. Ray's strongest competition so far is April Sunday Stableford. Current Hall of Fame status: Hall of Fame Level with a score of 195.",
-    "profileSummary": "G.B. Ray has played 115 recorded competitions, with 3 wins, 7 runner-up finishes and 15 top-three finishes.",
+    "writtenSummary": "G.B. Ray has played 116 recorded competitions in the Digital Museum. G.B. Ray has recorded 3 wins, with 7 runner-up finishes and 15 top-three finishes. G.B. Ray's strongest competition so far is April Sunday Stableford. Current Hall of Fame status: Hall of Fame Level with a score of 195.",
+    "profileSummary": "G.B. Ray has played 116 recorded competitions, with 3 wins, 7 runner-up finishes and 15 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "April Sunday Stableford"
@@ -27556,6 +27135,14 @@
       {
         "year": 2021,
         "competition": "June Sunday Stableford",
+        "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
         "position": 17,
         "resultType": "Competition Result",
         "historicalHonour": false,
@@ -28547,33 +28134,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 2,
-          "position": 2,
-          "score": 64,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 2,
-          "position": 2,
-          "score": 69,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -29690,12 +29256,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2024,
-      "competitionsPlayed": 20,
+      "competitionsPlayed": 21,
       "wins": 0,
       "runnerUp": 0,
       "top3": 1,
       "top5": 3,
-      "top10": 4
+      "top10": 5
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -29709,24 +29275,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 1,
-          "position": 3,
-          "score": 67,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -29740,8 +29295,8 @@
       "played": 16
     },
     "careerEra": "2021-2024",
-    "writtenSummary": "Gavin Higgs has played 20 recorded competitions in the Digital Museum. Gavin Higgs is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 10.",
-    "profileSummary": "Gavin Higgs has played 20 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Gavin Higgs has played 21 recorded competitions in the Digital Museum. Gavin Higgs is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 10.",
+    "profileSummary": "Gavin Higgs has played 21 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -29776,6 +29331,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 9,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -30133,7 +29696,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2021,
-      "competitionsPlayed": 3,
+      "competitionsPlayed": 4,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -30169,11 +29732,11 @@
       "year": 2021,
       "wins": 0,
       "top3": 0,
-      "played": 3
+      "played": 4
     },
     "careerEra": "2021-2021",
-    "writtenSummary": "George Brookes has played 3 recorded competitions in the Digital Museum. George Brookes is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "George Brookes has played 3 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "George Brookes has played 4 recorded competitions in the Digital Museum. George Brookes is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "George Brookes has played 4 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -30200,6 +29763,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 15,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": []
@@ -30211,7 +29782,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 98,
+      "competitionsPlayed": 99,
       "wins": 0,
       "runnerUp": 3,
       "top3": 6,
@@ -30226,38 +29797,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 2,
-          "position": 1,
-          "score": 71,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 3,
-          "position": 3,
-          "score": 67,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -30271,8 +29821,8 @@
       "played": 41
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Gerald Paul Crowley has played 98 recorded competitions in the Digital Museum. Gerald Paul Crowley is still waiting for a first recorded win, but has 6 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 56.",
-    "profileSummary": "Gerald Paul Crowley has played 98 recorded competitions, with 0 wins, 3 runner-up finishes and 6 top-three finishes.",
+    "writtenSummary": "Gerald Paul Crowley has played 99 recorded competitions in the Digital Museum. Gerald Paul Crowley is still waiting for a first recorded win, but has 6 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 56.",
+    "profileSummary": "Gerald Paul Crowley has played 99 recorded competitions, with 0 wins, 3 runner-up finishes and 6 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -30315,6 +29865,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 13,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -31134,14 +30692,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 10,
         "resultType": "Competition Result",
@@ -31208,6 +30758,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 22,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 8,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -33032,14 +32590,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors August Medal",
         "position": 25,
         "resultType": "Competition Result",
@@ -33066,6 +32616,14 @@
         "year": 2024,
         "competition": "Seniors Greensomes",
         "position": 16,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 11,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -33936,7 +33494,7 @@
     "career": {
       "firstYear": 1999,
       "latestYear": 2026,
-      "competitionsPlayed": 87,
+      "competitionsPlayed": 88,
       "wins": 6,
       "runnerUp": 4,
       "top3": 13,
@@ -33950,59 +33508,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 4,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 1,
-          "position": 1,
-          "score": 67,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 1,
-          "position": 2,
-          "score": 65,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 1,
-          "position": 1,
-          "score": 65,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 1,
-          "position": 3,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -34016,8 +33533,8 @@
       "played": 39
     },
     "careerEra": "1999-2026",
-    "writtenSummary": "Ian Frederick Stevens has played 87 recorded competitions in the Digital Museum. Ian Frederick Stevens has recorded 6 wins, with 4 runner-up finishes and 13 top-three finishes. Ian Frederick Stevens's strongest competition so far is 3 Ball Rumble - all scores to count. Current Hall of Fame status: Hall of Fame Level with a score of 310.",
-    "profileSummary": "Ian Frederick Stevens has played 87 recorded competitions, with 6 wins, 4 runner-up finishes and 13 top-three finishes.",
+    "writtenSummary": "Ian Frederick Stevens has played 88 recorded competitions in the Digital Museum. Ian Frederick Stevens has recorded 6 wins, with 4 runner-up finishes and 13 top-three finishes. Ian Frederick Stevens's strongest competition so far is 3 Ball Rumble - all scores to count. Current Hall of Fame status: Hall of Fame Level with a score of 310.",
+    "profileSummary": "Ian Frederick Stevens has played 88 recorded competitions, with 6 wins, 4 runner-up finishes and 13 top-three finishes.",
     "firstWin": {
       "year": 1999,
       "competition": "Boscawen Cup"
@@ -34042,6 +33559,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -34939,14 +34464,6 @@
     "careerTimeline": [
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 25,
         "resultType": "Competition Result",
@@ -34989,6 +34506,14 @@
         "year": 2024,
         "competition": "Seniors May Medal",
         "position": 31,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 12,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -38293,23 +37818,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 2,
-          "position": 3,
-          "score": 68,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -38948,12 +38462,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 53,
+      "competitionsPlayed": 54,
       "wins": 3,
       "runnerUp": 2,
       "top3": 8,
       "top5": 10,
-      "top10": 18
+      "top10": 19
     },
     "favouriteCompetition": "James Grainger Pairs",
     "favouriteCompetitionWins": 1,
@@ -38969,22 +38483,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 3,
-          "position": 3,
-          "score": 69,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -38998,8 +38501,8 @@
       "played": 20
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "James Price has played 53 recorded competitions in the Digital Museum. James Price has recorded 3 wins, with 2 runner-up finishes and 8 top-three finishes. James Price's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Hall of Fame Level with a score of 159.",
-    "profileSummary": "James Price has played 53 recorded competitions, with 3 wins, 2 runner-up finishes and 8 top-three finishes.",
+    "writtenSummary": "James Price has played 54 recorded competitions in the Digital Museum. James Price has recorded 3 wins, with 2 runner-up finishes and 8 top-three finishes. James Price's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Hall of Fame Level with a score of 159.",
+    "profileSummary": "James Price has played 54 recorded competitions, with 3 wins, 2 runner-up finishes and 8 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "James Grainger Pairs"
@@ -39024,6 +38527,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 10,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -39466,34 +38977,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "february-medal",
-          "competition": "February Medal",
-          "year": 2025,
-          "date": "2025-02-22",
-          "division": 1,
-          "position": 2,
-          "score": 67,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 1,
-          "position": 3,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [
       "Most top-three finishes"
@@ -40390,27 +39880,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 3,
-          "position": 1,
-          "score": 70,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -40629,14 +40108,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 13,
         "resultType": "Competition Result",
@@ -40703,6 +40174,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 6,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -41097,27 +40576,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 3,
-          "position": 1,
-          "score": 60,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -41309,34 +40777,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 1,
-          "position": 2,
-          "score": 72,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -41759,7 +41206,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 46,
+      "competitionsPlayed": 47,
       "wins": 0,
       "runnerUp": 1,
       "top3": 3,
@@ -41778,24 +41225,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "february-medal",
-          "competition": "February Medal",
-          "year": 2025,
-          "date": "2025-02-22",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -41809,8 +41245,8 @@
       "played": 16
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Jason Langford has played 46 recorded competitions in the Digital Museum. Jason Langford is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 24.",
-    "profileSummary": "Jason Langford has played 46 recorded competitions, with 0 wins, 1 runner-up finish and 3 top-three finishes.",
+    "writtenSummary": "Jason Langford has played 47 recorded competitions in the Digital Museum. Jason Langford is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 24.",
+    "profileSummary": "Jason Langford has played 47 recorded competitions, with 0 wins, 1 runner-up finish and 3 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -41845,6 +41281,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 18,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -42208,29 +41652,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 1,
-          "position": 1,
-          "score": 68,
-          "label": "Division 1 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -42442,22 +41875,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 3,
-          "position": 2,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -43366,14 +42788,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 33,
         "resultType": "Competition Result",
@@ -43400,6 +42814,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 26,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 11,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -43601,22 +43023,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 3,
-          "position": 3,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -44269,14 +43680,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 5,
         "resultType": "Competition Result",
@@ -44351,6 +43754,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 29,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 4,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -45043,14 +44454,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors August Medal",
         "position": 24,
         "resultType": "Competition Result",
@@ -45061,6 +44464,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 3,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 12,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -45324,22 +44735,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 3,
-          "position": 2,
-          "score": 68,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -45573,22 +44973,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 3,
-          "position": 3,
-          "score": 67,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -47210,42 +46599,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 3
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 3,
-          "position": 2,
-          "score": 71,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 3,
-          "position": 2,
-          "score": 71,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 3,
-          "position": 2,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 3
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -47520,14 +46878,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 2,
         "resultType": "Competition Result",
@@ -47618,6 +46968,14 @@
         "year": 2024,
         "competition": "Seniors Peter Pendrey Trophy",
         "position": 8,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 10,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -48251,38 +47609,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 3,
-          "position": 2,
-          "score": 67,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 2,
-          "position": 1,
-          "score": 67,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -49251,14 +48588,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 8,
         "resultType": "Competition Result",
@@ -49349,6 +48678,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 3,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -50171,14 +49508,6 @@
     "careerTimeline": [
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 5,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors August Medal",
         "position": 11,
         "resultType": "Competition Result",
@@ -50221,6 +49550,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 5,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -50719,14 +50056,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 7,
         "resultType": "Competition Result",
@@ -50801,6 +50130,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 4,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 9,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -51160,7 +50497,7 @@
       "top5": 7,
       "top10": 18
     },
-    "favouriteCompetition": "Roy Birch Trophy Seniors",
+    "favouriteCompetition": "Seniors Roy Birch Trophy",
     "favouriteCompetitionWins": 1,
     "majorWins": 0,
     "medalWins": 0,
@@ -51192,15 +50529,15 @@
       "played": 27
     },
     "careerEra": "2024-2026",
-    "writtenSummary": "Kevin Cooksey has played 38 recorded competitions in the Digital Museum. Kevin Cooksey has recorded 1 win, with 3 runner-up finishes and 4 top-three finishes. Kevin Cooksey's strongest competition so far is Roy Birch Trophy Seniors. Current Hall of Fame status: Emerging Candidate with a score of 63.",
+    "writtenSummary": "Kevin Cooksey has played 38 recorded competitions in the Digital Museum. Kevin Cooksey has recorded 1 win, with 3 runner-up finishes and 4 top-three finishes. Kevin Cooksey's strongest competition so far is Seniors Roy Birch Trophy. Current Hall of Fame status: Emerging Candidate with a score of 63.",
     "profileSummary": "Kevin Cooksey has played 38 recorded competitions, with 1 win, 3 runner-up finishes and 4 top-three finishes.",
     "firstWin": {
       "year": 2024,
-      "competition": "Roy Birch Trophy Seniors"
+      "competition": "Seniors Roy Birch Trophy"
     },
     "latestWin": {
       "year": 2024,
-      "competition": "Roy Birch Trophy Seniors"
+      "competition": "Seniors Roy Birch Trophy"
     },
     "careerTimeline": [
       {
@@ -51309,14 +50646,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 19,
         "resultType": "Competition Result",
@@ -51383,6 +50712,14 @@
         "year": 2024,
         "competition": "Seniors June Medal",
         "position": 15,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 1,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -51511,7 +50848,7 @@
     "highlights": [
       "1 career win",
       "4 top-three finishes",
-      "Most successful in Roy Birch Trophy Seniors"
+      "Most successful in Seniors Roy Birch Trophy"
     ]
   },
   {
@@ -51521,7 +50858,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 50,
+      "competitionsPlayed": 51,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -51537,37 +50874,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 3,
-          "position": 1,
-          "score": 69,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 3,
-          "position": 3,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -51581,8 +50897,8 @@
       "played": 22
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Kevin Eric Conn has played 50 recorded competitions in the Digital Museum. Kevin Eric Conn is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 4.",
-    "profileSummary": "Kevin Eric Conn has played 50 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Kevin Eric Conn has played 51 recorded competitions in the Digital Museum. Kevin Eric Conn is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 4.",
+    "profileSummary": "Kevin Eric Conn has played 51 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -51609,6 +50925,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 14,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -52017,22 +51341,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 3,
-          "position": 2,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -52605,49 +51918,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 1,
-          "position": 2,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 1,
-          "position": 2,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 1,
-          "position": 1,
-          "score": 66,
-          "label": "Division 1 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -53794,12 +53076,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 65,
+      "competitionsPlayed": 66,
       "wins": 4,
-      "runnerUp": 2,
-      "top3": 8,
-      "top5": 12,
-      "top10": 27
+      "runnerUp": 3,
+      "top3": 9,
+      "top5": 13,
+      "top10": 28
     },
     "favouriteCompetition": "Doug Lee Pairs",
     "favouriteCompetitionWins": 1,
@@ -53823,7 +53105,7 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 228,
+      "score": 240,
       "status": "Hall of Fame Level"
     },
     "bestSeason": {
@@ -53833,8 +53115,8 @@
       "played": 27
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Lee Roger Grainger has played 65 recorded competitions in the Digital Museum. Lee Roger Grainger has recorded 4 wins, with 2 runner-up finishes and 8 top-three finishes. Lee Roger Grainger's strongest competition so far is Doug Lee Pairs. Current Hall of Fame status: Hall of Fame Level with a score of 228.",
-    "profileSummary": "Lee Roger Grainger has played 65 recorded competitions, with 4 wins, 2 runner-up finishes and 8 top-three finishes.",
+    "writtenSummary": "Lee Roger Grainger has played 66 recorded competitions in the Digital Museum. Lee Roger Grainger has recorded 4 wins, with 3 runner-up finishes and 9 top-three finishes. Lee Roger Grainger's strongest competition so far is Doug Lee Pairs. Current Hall of Fame status: Hall of Fame Level with a score of 240.",
+    "profileSummary": "Lee Roger Grainger has played 66 recorded competitions, with 4 wins, 3 runner-up finishes and 9 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "Doug Lee Pairs"
@@ -53883,6 +53165,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 2,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -54367,7 +53657,7 @@
     ],
     "highlights": [
       "4 career wins",
-      "8 top-three finishes",
+      "9 top-three finishes",
       "Most successful in Doug Lee Pairs"
     ]
   },
@@ -54741,38 +54031,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 2,
-          "position": 1,
-          "score": 69,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 3,
-          "position": 1,
-          "score": 67,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -55049,49 +54318,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 1,
-          "position": 3,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 1,
-          "position": 1,
-          "score": 63,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 1,
-          "position": 3,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -55788,33 +55026,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 2,
-          "position": 2,
-          "score": 68,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 3,
-          "position": 3,
-          "score": 75,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -56285,12 +55502,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 28,
+      "competitionsPlayed": 29,
       "wins": 0,
       "runnerUp": 0,
       "top3": 1,
       "top5": 5,
-      "top10": 12
+      "top10": 13
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -56304,24 +55521,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 1,
-          "position": 3,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -56335,8 +55541,8 @@
       "played": 19
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Luke Homer has played 28 recorded competitions in the Digital Museum. Luke Homer is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
-    "profileSummary": "Luke Homer has played 28 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Luke Homer has played 29 recorded competitions in the Digital Museum. Luke Homer is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 14.",
+    "profileSummary": "Luke Homer has played 29 recorded competitions, with 0 wins, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -56371,6 +55577,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 9,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -56576,12 +55790,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2021,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
-      "top5": 1,
-      "top10": 1
+      "top5": 2,
+      "top10": 2
     },
     "favouriteCompetition": "James Grainger Pairs",
     "favouriteCompetitionWins": 1,
@@ -56605,18 +55819,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 46,
+      "score": 48,
       "status": "Building Record"
     },
     "bestSeason": {
       "year": 2021,
       "wins": 1,
       "top3": 1,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2021-2021",
-    "writtenSummary": "Luke Hopkins has played 5 recorded competitions in the Digital Museum. Luke Hopkins has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Luke Hopkins's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "Luke Hopkins has played 5 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Luke Hopkins has played 6 recorded competitions in the Digital Museum. Luke Hopkins has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Luke Hopkins's strongest competition so far is James Grainger Pairs. Current Hall of Fame status: Building Record with a score of 48.",
+    "profileSummary": "Luke Hopkins has played 6 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2021,
       "competition": "James Grainger Pairs"
@@ -56665,6 +55879,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 4,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       }
     ],
     "highlights": [
@@ -56700,23 +55922,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 2,
-          "position": 3,
-          "score": 70,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -56848,28 +56059,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 2,
-          "position": 1,
-          "score": 70,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -60556,14 +59756,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 4,
         "resultType": "Competition Result",
@@ -60646,6 +59838,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 14,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 4,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -61428,14 +60628,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 7,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 15,
         "resultType": "Competition Result",
@@ -61526,6 +60718,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 28,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 7,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -61971,44 +61171,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 1,
-          "position": 3,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 3
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -62789,59 +61958,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 4,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 1,
-          "position": 1,
-          "score": 69,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 1,
-          "position": 3,
-          "score": 65,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 1,
-          "position": 1,
-          "score": 69,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 1,
-          "position": 1,
-          "score": 69,
-          "label": "Division 1 Winner"
-        }
-      ],
-      "totalWins": 3,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -63536,7 +62664,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 59,
+      "competitionsPlayed": 60,
       "wins": 4,
       "runnerUp": 1,
       "top3": 6,
@@ -63575,8 +62703,8 @@
       "played": 28
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Mark Basterfield has played 59 recorded competitions in the Digital Museum. Mark Basterfield has recorded 4 wins, with 1 runner-up finish and 6 top-three finishes. Mark Basterfield's strongest competition so far is 3 Ball Modified Waltz. Current Hall of Fame status: Hall of Fame Level with a score of 183.",
-    "profileSummary": "Mark Basterfield has played 59 recorded competitions, with 4 wins, 1 runner-up finish and 6 top-three finishes.",
+    "writtenSummary": "Mark Basterfield has played 60 recorded competitions in the Digital Museum. Mark Basterfield has recorded 4 wins, with 1 runner-up finish and 6 top-three finishes. Mark Basterfield's strongest competition so far is 3 Ball Modified Waltz. Current Hall of Fame status: Hall of Fame Level with a score of 183.",
+    "profileSummary": "Mark Basterfield has played 60 recorded competitions, with 4 wins, 1 runner-up finish and 6 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "3 Ball Modified Waltz"
@@ -63601,6 +62729,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 11,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -64086,49 +63222,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 1,
-          "position": 1,
-          "score": 61,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 1,
-          "position": 2,
-          "score": 72,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -64771,7 +63876,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 47,
+      "competitionsPlayed": 48,
       "wins": 2,
       "runnerUp": 0,
       "top3": 4,
@@ -64790,34 +63895,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 1,
-          "position": 3,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 1,
-          "position": 2,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -64831,8 +63915,8 @@
       "played": 19
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Mark Neil Tolley has played 47 recorded competitions in the Digital Museum. Mark Neil Tolley has recorded 2 wins, with 0 runner-up finishes and 4 top-three finishes. Mark Neil Tolley's strongest competition so far is 3 Ball Modified Waltz. Current Hall of Fame status: Emerging Candidate with a score of 64.",
-    "profileSummary": "Mark Neil Tolley has played 47 recorded competitions, with 2 wins, 0 runner-up finishes and 4 top-three finishes.",
+    "writtenSummary": "Mark Neil Tolley has played 48 recorded competitions in the Digital Museum. Mark Neil Tolley has recorded 2 wins, with 0 runner-up finishes and 4 top-three finishes. Mark Neil Tolley's strongest competition so far is 3 Ball Modified Waltz. Current Hall of Fame status: Emerging Candidate with a score of 64.",
+    "profileSummary": "Mark Neil Tolley has played 48 recorded competitions, with 2 wins, 0 runner-up finishes and 4 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "3 Ball Modified Waltz"
@@ -64873,6 +63957,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 16,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -65580,43 +64672,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 3,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 2,
-          "position": 2,
-          "score": 68,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 2,
-          "position": 3,
-          "score": 68,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2024,
-          "date": "2024-07-13",
-          "division": 2,
-          "position": 2,
-          "score": 66,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 3
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -66836,68 +65897,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 5,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 2,
-          "position": 3,
-          "score": 70,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 2,
-          "position": 3,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 2,
-          "position": 3,
-          "score": 72,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 2,
-          "position": 1,
-          "score": 66,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 2,
-          "position": 3,
-          "score": 72,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 5
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -67476,14 +66486,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 18,
         "resultType": "Competition Result",
@@ -67534,6 +66536,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 3,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -67877,32 +66887,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 3,
-          "position": 3,
-          "score": 77,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 3,
-          "position": 3,
-          "score": 74,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 2
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -68115,14 +67104,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Bruton Cup",
         "position": 11,
         "resultType": "Competition Result",
@@ -68173,6 +67154,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 27,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 9,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -69215,14 +68204,6 @@
     "careerTimeline": [
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 5,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 20,
         "resultType": "Competition Result",
@@ -69281,6 +68262,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 13,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 5,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -70041,57 +69030,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
-        "division3": 3
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "february-medal",
-          "competition": "February Medal",
-          "year": 2025,
-          "date": "2025-02-22",
-          "division": 2,
-          "position": 3,
-          "score": 68,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 3,
-          "position": 2,
-          "score": 67,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 3,
-          "position": 3,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 3,
-          "position": 1,
-          "score": 69,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -70940,29 +69888,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 1,
-          "position": 1,
-          "score": 70,
-          "label": "Division 1 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -71225,27 +70162,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 3,
-          "position": 1,
-          "score": 68,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -72119,52 +71045,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 4
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 3,
-          "position": 3,
-          "score": 71,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 3,
-          "position": 2,
-          "score": 67,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 3,
-          "position": 2,
-          "score": 71,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 3,
-          "position": 3,
-          "score": 73,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 4
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -72790,44 +71675,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 1,
-          "position": 2,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 1,
-          "position": 2,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 1,
-          "position": 2,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 3
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -73934,7 +72788,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 76,
+      "competitionsPlayed": 77,
       "wins": 0,
       "runnerUp": 5,
       "top3": 9,
@@ -73953,24 +72807,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 1,
-          "position": 2,
-          "score": 67,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -73984,8 +72827,8 @@
       "played": 34
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Nigel Brookes has played 76 recorded competitions in the Digital Museum. Nigel Brookes is still waiting for a first recorded win, but has 9 top-three finishes. Current Hall of Fame status: Strong Candidate with a score of 94.",
-    "profileSummary": "Nigel Brookes has played 76 recorded competitions, with 0 wins, 5 runner-up finishes and 9 top-three finishes.",
+    "writtenSummary": "Nigel Brookes has played 77 recorded competitions in the Digital Museum. Nigel Brookes is still waiting for a first recorded win, but has 9 top-three finishes. Current Hall of Fame status: Strong Candidate with a score of 94.",
+    "profileSummary": "Nigel Brookes has played 77 recorded competitions, with 0 wins, 5 runner-up finishes and 9 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -74012,6 +72855,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 15,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -74815,37 +73666,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 3,
-          "position": 1,
-          "score": 69,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 3,
-          "position": 2,
-          "score": 66,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -77379,38 +76209,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 2,
-          "position": 1,
-          "score": 65,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 2,
-          "position": 2,
-          "score": 66,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -77703,12 +76512,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 54,
+      "competitionsPlayed": 55,
       "wins": 1,
       "runnerUp": 0,
       "top3": 2,
       "top5": 3,
-      "top10": 13
+      "top10": 14
     },
     "favouriteCompetition": "3 Ball Am-Am (2 to count)",
     "favouriteCompetitionWins": 1,
@@ -77722,24 +76531,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 1,
-          "position": 2,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -77753,8 +76551,8 @@
       "played": 16
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Harper has played 54 recorded competitions in the Digital Museum. Paul Harper has recorded 1 win, with 0 runner-up finishes and 2 top-three finishes. Paul Harper's strongest competition so far is 3 Ball Am-Am (2 to count). Current Hall of Fame status: Building Record with a score of 29.",
-    "profileSummary": "Paul Harper has played 54 recorded competitions, with 1 win, 0 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "Paul Harper has played 55 recorded competitions in the Digital Museum. Paul Harper has recorded 1 win, with 0 runner-up finishes and 2 top-three finishes. Paul Harper's strongest competition so far is 3 Ball Am-Am (2 to count). Current Hall of Fame status: Building Record with a score of 29.",
+    "profileSummary": "Paul Harper has played 55 recorded competitions, with 1 win, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "3 Ball Am-Am (2 to count)"
@@ -77787,6 +76585,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 6,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -78472,12 +77278,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 94,
+      "competitionsPlayed": 95,
       "wins": 3,
       "runnerUp": 1,
       "top3": 6,
       "top5": 10,
-      "top10": 26
+      "top10": 27
     },
     "favouriteCompetition": "Captain's Day & Walker Cup",
     "favouriteCompetitionWins": 1,
@@ -78486,59 +77292,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 2,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 3,
-        "division2": 1,
+        "division1": 0,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 1,
-          "position": 1,
-          "score": 68,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 1,
-          "position": 1,
-          "score": 67,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2025,
-          "date": "2025-08-02",
-          "division": 2,
-          "position": 2,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 1,
-          "position": 2,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -78552,8 +77317,8 @@
       "played": 38
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Ian Welch has played 94 recorded competitions in the Digital Museum. Paul Ian Welch has recorded 3 wins, with 1 runner-up finish and 6 top-three finishes. Paul Ian Welch's strongest competition so far is Captain's Day & Walker Cup. Current Hall of Fame status: Strong Candidate with a score of 145.",
-    "profileSummary": "Paul Ian Welch has played 94 recorded competitions, with 3 wins, 1 runner-up finish and 6 top-three finishes.",
+    "writtenSummary": "Paul Ian Welch has played 95 recorded competitions in the Digital Museum. Paul Ian Welch has recorded 3 wins, with 1 runner-up finish and 6 top-three finishes. Paul Ian Welch's strongest competition so far is Captain's Day & Walker Cup. Current Hall of Fame status: Strong Candidate with a score of 145.",
+    "profileSummary": "Paul Ian Welch has played 95 recorded competitions, with 3 wins, 1 runner-up finish and 6 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Captain's Day & Walker Cup"
@@ -78586,6 +77351,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 7,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -79515,14 +78288,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 15,
         "resultType": "Competition Result",
@@ -79589,6 +78354,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 7,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 10,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -80175,7 +78948,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 67,
+      "competitionsPlayed": 68,
       "wins": 2,
       "runnerUp": 0,
       "top3": 3,
@@ -80190,48 +78963,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 2,
-          "position": 3,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 3,
-          "position": 3,
-          "score": 74,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 2,
-          "position": 1,
-          "score": 72,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -80245,8 +78987,8 @@
       "played": 26
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Thomas Donnelly has played 67 recorded competitions in the Digital Museum. Paul Thomas Donnelly has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Paul Thomas Donnelly's strongest competition so far is Centenary Trophy & Boscowan Cup. Current Hall of Fame status: Emerging Candidate with a score of 77.",
-    "profileSummary": "Paul Thomas Donnelly has played 67 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Paul Thomas Donnelly has played 68 recorded competitions in the Digital Museum. Paul Thomas Donnelly has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Paul Thomas Donnelly's strongest competition so far is Centenary Trophy & Boscowan Cup. Current Hall of Fame status: Emerging Candidate with a score of 77.",
+    "profileSummary": "Paul Thomas Donnelly has played 68 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "Centenary Trophy & Boscowan Cup"
@@ -80287,6 +79029,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 19,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -81030,27 +79780,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 3,
-          "position": 1,
-          "score": 66,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -82164,24 +80903,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2024,
-          "date": "2024-11-02",
-          "division": 1,
-          "position": 3,
-          "score": 72,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -82928,12 +81656,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 123,
+      "competitionsPlayed": 124,
       "wins": 5,
       "runnerUp": 6,
       "top3": 20,
-      "top5": 28,
-      "top10": 48
+      "top5": 29,
+      "top10": 49
     },
     "favouriteCompetition": "Club Stableford Pairs competition",
     "favouriteCompetitionWins": 1,
@@ -82943,72 +81671,21 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 5,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 2,
-          "position": 2,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 2,
-          "position": 3,
-          "score": 76,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 2,
-          "position": 1,
-          "score": 67,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 2,
-          "position": 2,
-          "score": 66,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 2,
-          "position": 2,
-          "score": 70,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 5
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 297,
+      "score": 299,
       "status": "Hall of Fame Level"
     },
     "bestSeason": {
@@ -83018,8 +81695,8 @@
       "played": 53
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Philip John Northall has played 123 recorded competitions in the Digital Museum. Philip John Northall has recorded 5 wins, with 6 runner-up finishes and 20 top-three finishes. Philip John Northall's strongest competition so far is Club Stableford Pairs competition. Current Hall of Fame status: Hall of Fame Level with a score of 297.",
-    "profileSummary": "Philip John Northall has played 123 recorded competitions, with 5 wins, 6 runner-up finishes and 20 top-three finishes.",
+    "writtenSummary": "Philip John Northall has played 124 recorded competitions in the Digital Museum. Philip John Northall has recorded 5 wins, with 6 runner-up finishes and 20 top-three finishes. Philip John Northall's strongest competition so far is Club Stableford Pairs competition. Current Hall of Fame status: Hall of Fame Level with a score of 299.",
+    "profileSummary": "Philip John Northall has played 124 recorded competitions, with 5 wins, 6 runner-up finishes and 20 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Club Stableford Pairs competition"
@@ -83068,6 +81745,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -83311,14 +81996,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors April Medal",
         "position": 4,
         "resultType": "Competition Result",
@@ -83393,6 +82070,14 @@
         "year": 2024,
         "competition": "Seniors October Medal",
         "position": 18,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 1,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -84027,7 +82712,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 66,
+      "competitionsPlayed": 67,
       "wins": 3,
       "runnerUp": 6,
       "top3": 11,
@@ -84041,59 +82726,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 4,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 1,
-          "position": 2,
-          "score": 73,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 1,
-          "position": 1,
-          "score": 68,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 1,
-          "position": 3,
-          "score": 71,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 1,
-          "position": 3,
-          "score": 73,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -84107,8 +82751,8 @@
       "played": 23
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Philip Thompson has played 66 recorded competitions in the Digital Museum. Philip Thompson has recorded 3 wins, with 6 runner-up finishes and 11 top-three finishes. Philip Thompson's strongest competition so far is Bassano Cup. Current Hall of Fame status: Hall of Fame Level with a score of 190.",
-    "profileSummary": "Philip Thompson has played 66 recorded competitions, with 3 wins, 6 runner-up finishes and 11 top-three finishes.",
+    "writtenSummary": "Philip Thompson has played 67 recorded competitions in the Digital Museum. Philip Thompson has recorded 3 wins, with 6 runner-up finishes and 11 top-three finishes. Philip Thompson's strongest competition so far is Bassano Cup. Current Hall of Fame status: Hall of Fame Level with a score of 190.",
+    "profileSummary": "Philip Thompson has played 67 recorded competitions, with 3 wins, 6 runner-up finishes and 11 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Bassano Cup"
@@ -84162,6 +82806,14 @@
         "year": 2021,
         "competition": "June Sunday Stableford",
         "position": 7,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 16,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -87954,49 +86606,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 1,
-          "position": 2,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 1,
-          "position": 1,
-          "score": 71,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -88803,37 +87424,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 3,
-          "position": 1,
-          "score": 74,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 3,
-          "position": 1,
-          "score": 67,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -89189,38 +87789,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2026,
-          "date": "2026-05-02",
-          "division": 2,
-          "position": 1,
-          "score": 64,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 2,
-          "position": 2,
-          "score": 73,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -89881,12 +88460,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 63,
+      "competitionsPlayed": 64,
       "wins": 2,
       "runnerUp": 7,
-      "top3": 11,
-      "top5": 17,
-      "top10": 26
+      "top3": 12,
+      "top5": 18,
+      "top10": 27
     },
     "favouriteCompetition": "January Stableford",
     "favouriteCompetitionWins": 1,
@@ -89895,63 +88474,22 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 3,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 4,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 1,
-          "position": 1,
-          "score": 66,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2026,
-          "date": "2026-03-28",
-          "division": 1,
-          "position": 1,
-          "score": 71,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 1,
-          "position": 1,
-          "score": 65,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 1,
-          "position": 2,
-          "score": 68,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 3,
-      "totalTop3": 4
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 158,
+      "score": 164,
       "status": "Hall of Fame Level"
     },
     "bestSeason": {
@@ -89961,8 +88499,8 @@
       "played": 14
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Robert Keith Woodall has played 63 recorded competitions in the Digital Museum. Robert Keith Woodall has recorded 2 wins, with 7 runner-up finishes and 11 top-three finishes. Robert Keith Woodall's strongest competition so far is January Stableford. Current Hall of Fame status: Hall of Fame Level with a score of 158.",
-    "profileSummary": "Robert Keith Woodall has played 63 recorded competitions, with 2 wins, 7 runner-up finishes and 11 top-three finishes.",
+    "writtenSummary": "Robert Keith Woodall has played 64 recorded competitions in the Digital Museum. Robert Keith Woodall has recorded 2 wins, with 7 runner-up finishes and 12 top-three finishes. Robert Keith Woodall's strongest competition so far is January Stableford. Current Hall of Fame status: Hall of Fame Level with a score of 164.",
+    "profileSummary": "Robert Keith Woodall has played 64 recorded competitions, with 2 wins, 7 runner-up finishes and 12 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "January Stableford"
@@ -90008,6 +88546,14 @@
         "year": 2021,
         "competition": "June Sunday Stableford",
         "position": 2,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 3,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -90479,7 +89025,7 @@
     ],
     "highlights": [
       "2 career wins",
-      "11 top-three finishes",
+      "12 top-three finishes",
       "Most successful in January Stableford"
     ]
   },
@@ -90644,14 +89190,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 2,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 24,
         "resultType": "Competition Result",
@@ -90726,6 +89264,14 @@
         "year": 2024,
         "competition": "Seniors May Medal",
         "position": 32,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 2,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -91044,23 +89590,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2025,
-          "date": "2025-06-07",
-          "division": 2,
-          "position": 3,
-          "score": 67,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -92006,22 +90541,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 3,
-          "position": 2,
-          "score": 68,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -94981,48 +93505,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 3,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 2,
-          "position": 1,
-          "score": 68,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "uly-medal-bloom-cup",
-          "competition": "uly Medal / Bloom Cup",
-          "year": 2025,
-          "date": "2025-07-12",
-          "division": 2,
-          "position": 1,
-          "score": 65,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 2,
-          "position": 2,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -95733,7 +94226,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 72,
+      "competitionsPlayed": 73,
       "wins": 2,
       "runnerUp": 5,
       "top3": 11,
@@ -95753,23 +94246,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 2,
-          "position": 2,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -95783,8 +94265,8 @@
       "played": 32
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Sean Element has played 72 recorded competitions in the Digital Museum. Sean Element has recorded 2 wins, with 5 runner-up finishes and 11 top-three finishes. Sean Element's strongest competition so far is 3 Ball Modified Waltz. Current Hall of Fame status: Hall of Fame Level with a score of 165.",
-    "profileSummary": "Sean Element has played 72 recorded competitions, with 2 wins, 5 runner-up finishes and 11 top-three finishes.",
+    "writtenSummary": "Sean Element has played 73 recorded competitions in the Digital Museum. Sean Element has recorded 2 wins, with 5 runner-up finishes and 11 top-three finishes. Sean Element's strongest competition so far is 3 Ball Modified Waltz. Current Hall of Fame status: Hall of Fame Level with a score of 165.",
+    "profileSummary": "Sean Element has played 73 recorded competitions, with 2 wins, 5 runner-up finishes and 11 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "3 Ball Modified Waltz"
@@ -95833,6 +94315,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 12,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -96384,7 +94874,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2024,
-      "competitionsPlayed": 5,
+      "competitionsPlayed": 6,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -96420,11 +94910,11 @@
       "year": 2021,
       "wins": 0,
       "top3": 0,
-      "played": 3
+      "played": 4
     },
     "careerEra": "2021-2024",
-    "writtenSummary": "Shaun Edward Messer has played 5 recorded competitions in the Digital Museum. Shaun Edward Messer is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Shaun Edward Messer has played 5 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Shaun Edward Messer has played 6 recorded competitions in the Digital Museum. Shaun Edward Messer is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Shaun Edward Messer has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -96451,6 +94941,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 17,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -96620,49 +95118,18 @@
     "matchplayWins": 0,
     "divisionHonours": {
       "wins": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
       "top3": {
-        "division1": 2,
-        "division2": 1,
+        "division1": 0,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 2,
-          "position": 2,
-          "score": 70,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 1,
-          "position": 1,
-          "score": 68,
-          "label": "Division 1 Winner"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2024,
-          "date": "2024-04-27",
-          "division": 1,
-          "position": 2,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -97299,7 +95766,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 146,
+      "competitionsPlayed": 147,
       "wins": 6,
       "runnerUp": 4,
       "top3": 13,
@@ -97319,53 +95786,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 3,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 2,
-          "position": 2,
-          "score": 78,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 2,
-          "position": 2,
-          "score": 73,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "november-medal",
-          "competition": "November Medal",
-          "year": 2025,
-          "date": "2025-11-01",
-          "division": 2,
-          "position": 3,
-          "score": 71,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2024,
-          "date": "2024-05-04",
-          "division": 3,
-          "position": 2,
-          "score": 72,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 4
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -97379,8 +95805,8 @@
       "played": 58
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Stephen Hall has played 146 recorded competitions in the Digital Museum. Stephen Hall has recorded 6 wins, with 4 runner-up finishes and 13 top-three finishes. Stephen Hall's strongest competition so far is Seniors Centenary Trophy. Current Hall of Fame status: Hall of Fame Level with a score of 266.",
-    "profileSummary": "Stephen Hall has played 146 recorded competitions, with 6 wins, 4 runner-up finishes and 13 top-three finishes.",
+    "writtenSummary": "Stephen Hall has played 147 recorded competitions in the Digital Museum. Stephen Hall has recorded 6 wins, with 4 runner-up finishes and 13 top-three finishes. Stephen Hall's strongest competition so far is Seniors Centenary Trophy. Current Hall of Fame status: Hall of Fame Level with a score of 266.",
+    "profileSummary": "Stephen Hall has played 147 recorded competitions, with 6 wins, 4 runner-up finishes and 13 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors Centenary Trophy"
@@ -97434,6 +95860,14 @@
         "year": 2021,
         "competition": "June Sunday Stableford",
         "position": 13,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 20,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -98873,22 +97307,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 3,
-          "position": 3,
-          "score": 77,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -99357,12 +97780,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 76,
+      "competitionsPlayed": 77,
       "wins": 4,
       "runnerUp": 2,
       "top3": 8,
       "top5": 11,
-      "top10": 21
+      "top10": 22
     },
     "favouriteCompetition": "Millennium Trophy - 4 Ball",
     "favouriteCompetitionWins": 1,
@@ -99396,8 +97819,8 @@
       "played": 31
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Stephen Price has played 76 recorded competitions in the Digital Museum. Stephen Price has recorded 4 wins, with 2 runner-up finishes and 8 top-three finishes. Stephen Price's strongest competition so far is Millennium Trophy - 4 Ball. Current Hall of Fame status: Hall of Fame Level with a score of 159.",
-    "profileSummary": "Stephen Price has played 76 recorded competitions, with 4 wins, 2 runner-up finishes and 8 top-three finishes.",
+    "writtenSummary": "Stephen Price has played 77 recorded competitions in the Digital Museum. Stephen Price has recorded 4 wins, with 2 runner-up finishes and 8 top-three finishes. Stephen Price's strongest competition so far is Millennium Trophy - 4 Ball. Current Hall of Fame status: Hall of Fame Level with a score of 159.",
+    "profileSummary": "Stephen Price has played 77 recorded competitions, with 4 wins, 2 runner-up finishes and 8 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "Millennium Trophy - 4 Ball"
@@ -99430,6 +97853,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 10,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -100321,12 +98752,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 85,
+      "competitionsPlayed": 86,
       "wins": 1,
       "runnerUp": 3,
       "top3": 6,
-      "top5": 13,
-      "top10": 30
+      "top5": 14,
+      "top10": 31
     },
     "favouriteCompetition": "Club Pairs competition",
     "favouriteCompetitionWins": 1,
@@ -100337,81 +98768,20 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 6
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "july-medal-bloom-cup",
-          "competition": "July Medal / Bloom Cup",
-          "year": 2026,
-          "date": "2026-07-11",
-          "division": 3,
-          "position": 3,
-          "score": 69,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 3,
-          "position": 2,
-          "score": 70,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 3,
-          "position": 3,
-          "score": 69,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 3,
-          "position": 3,
-          "score": 76,
-          "label": "Division 3 Top 3"
-        },
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2024,
-          "date": "2024-06-01",
-          "division": 3,
-          "position": 1,
-          "score": 69,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2024,
-          "date": "2024-10-05",
-          "division": 3,
-          "position": 1,
-          "score": 71,
-          "label": "Division 3 Winner"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 6
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 83,
+      "score": 85,
       "status": "Emerging Candidate"
     },
     "bestSeason": {
@@ -100421,8 +98791,8 @@
       "played": 14
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Steve Homer has played 85 recorded competitions in the Digital Museum. Steve Homer has recorded 1 win, with 3 runner-up finishes and 6 top-three finishes. Steve Homer's strongest competition so far is Club Pairs competition. Current Hall of Fame status: Emerging Candidate with a score of 83.",
-    "profileSummary": "Steve Homer has played 85 recorded competitions, with 1 win, 3 runner-up finishes and 6 top-three finishes.",
+    "writtenSummary": "Steve Homer has played 86 recorded competitions in the Digital Museum. Steve Homer has recorded 1 win, with 3 runner-up finishes and 6 top-three finishes. Steve Homer's strongest competition so far is Club Pairs competition. Current Hall of Fame status: Emerging Candidate with a score of 85.",
+    "profileSummary": "Steve Homer has played 86 recorded competitions, with 1 win, 3 runner-up finishes and 6 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Club Pairs competition"
@@ -100463,6 +98833,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 5,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -101126,12 +99504,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 49,
+      "competitionsPlayed": 50,
       "wins": 0,
-      "runnerUp": 2,
-      "top3": 5,
-      "top5": 7,
-      "top10": 16
+      "runnerUp": 3,
+      "top3": 6,
+      "top5": 8,
+      "top10": 17
     },
     "favouriteCompetition": null,
     "favouriteCompetitionWins": 0,
@@ -101145,29 +99523,18 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "may-medal-and-brian-lloyd-scratch-qualifier",
-          "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-          "year": 2025,
-          "date": "2025-05-03",
-          "division": 1,
-          "position": 3,
-          "score": 70,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 46,
-      "status": "Building Record"
+      "score": 58,
+      "status": "Emerging Candidate"
     },
     "bestSeason": {
       "year": 2024,
@@ -101176,8 +99543,8 @@
       "played": 18
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Steven Brookes has played 49 recorded competitions in the Digital Museum. Steven Brookes is still waiting for a first recorded win, but has 5 top-three finishes. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "Steven Brookes has played 49 recorded competitions, with 0 wins, 2 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Steven Brookes has played 50 recorded competitions in the Digital Museum. Steven Brookes is still waiting for a first recorded win, but has 6 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 58.",
+    "profileSummary": "Steven Brookes has played 50 recorded competitions, with 0 wins, 3 runner-up finishes and 6 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -101204,6 +99571,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 2,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -101575,7 +99950,7 @@
       }
     ],
     "highlights": [
-      "5 top-three finishes"
+      "6 top-three finishes"
     ]
   },
   {
@@ -101585,7 +99960,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 37,
+      "competitionsPlayed": 38,
       "wins": 0,
       "runnerUp": 2,
       "top3": 3,
@@ -101624,8 +99999,8 @@
       "played": 13
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Steven Taylor has played 37 recorded competitions in the Digital Museum. Steven Taylor is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 34.",
-    "profileSummary": "Steven Taylor has played 37 recorded competitions, with 0 wins, 2 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Steven Taylor has played 38 recorded competitions in the Digital Museum. Steven Taylor is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 34.",
+    "profileSummary": "Steven Taylor has played 38 recorded competitions, with 0 wins, 2 runner-up finishes and 3 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -101660,6 +100035,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 12,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -101937,7 +100320,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 28,
+      "competitionsPlayed": 29,
       "wins": 1,
       "runnerUp": 1,
       "top3": 3,
@@ -101952,28 +100335,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 2,
-          "position": 1,
-          "score": 69,
-          "label": "Division 2 Winner"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 1
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -101984,11 +100356,11 @@
       "year": 2021,
       "wins": 1,
       "top3": 1,
-      "played": 5
+      "played": 6
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Stewart Marshall has played 28 recorded competitions in the Digital Museum. Stewart Marshall has recorded 1 win, with 1 runner-up finish and 3 top-three finishes. Stewart Marshall's strongest competition so far is June Monthly Medal/ Prosser Lytham Trophy & Brian Lloyd Qualifier. Current Hall of Fame status: Emerging Candidate with a score of 80.",
-    "profileSummary": "Stewart Marshall has played 28 recorded competitions, with 1 win, 1 runner-up finish and 3 top-three finishes.",
+    "writtenSummary": "Stewart Marshall has played 29 recorded competitions in the Digital Museum. Stewart Marshall has recorded 1 win, with 1 runner-up finish and 3 top-three finishes. Stewart Marshall's strongest competition so far is June Monthly Medal/ Prosser Lytham Trophy & Brian Lloyd Qualifier. Current Hall of Fame status: Emerging Candidate with a score of 80.",
+    "profileSummary": "Stewart Marshall has played 29 recorded competitions, with 1 win, 1 runner-up finish and 3 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "June Monthly Medal/ Prosser Lytham Trophy & Brian Lloyd Qualifier"
@@ -102037,6 +100409,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 18,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -103894,7 +102274,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 39,
+      "competitionsPlayed": 40,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -103933,8 +102313,8 @@
       "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Terrance Stanley Nolan has played 39 recorded competitions in the Digital Museum. Terrance Stanley Nolan has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Terrance Stanley Nolan's strongest competition so far is Stableford Qualifier. Current Hall of Fame status: Building Record with a score of 21.",
-    "profileSummary": "Terrance Stanley Nolan has played 39 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Terrance Stanley Nolan has played 40 recorded competitions in the Digital Museum. Terrance Stanley Nolan has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Terrance Stanley Nolan's strongest competition so far is Stableford Qualifier. Current Hall of Fame status: Building Record with a score of 21.",
+    "profileSummary": "Terrance Stanley Nolan has played 40 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2025,
       "competition": "Stableford Qualifier"
@@ -103967,6 +102347,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 20,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2021,
@@ -104106,14 +102494,6 @@
       },
       {
         "year": 2024,
-        "competition": "Roy Birch Trophy Seniors",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
         "competition": "Seniors Arthur Turley Trophy",
         "position": 31,
         "resultType": "Competition Result",
@@ -104140,6 +102520,14 @@
         "year": 2024,
         "competition": "Seniors George Barratt Trophy",
         "position": 20,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2024,
+        "competition": "Seniors Roy Birch Trophy",
+        "position": 8,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -104289,24 +102677,13 @@
         "division3": 0
       },
       "top3": {
-        "division1": 1,
+        "division1": 0,
         "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 1,
-          "position": 2,
-          "score": 69,
-          "label": "Division 1 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -104677,12 +103054,12 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 86,
+      "competitionsPlayed": 87,
       "wins": 3,
       "runnerUp": 2,
       "top3": 9,
       "top5": 12,
-      "top10": 25
+      "top10": 26
     },
     "favouriteCompetition": "June Sunday Stableford",
     "favouriteCompetitionWins": 1,
@@ -104697,53 +103074,12 @@
       },
       "top3": {
         "division1": 0,
-        "division2": 3,
-        "division3": 1
+        "division2": 0,
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "year": 2026,
-          "date": "2026-06-06",
-          "division": 2,
-          "position": 2,
-          "score": 72,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "february-medal",
-          "competition": "February Medal",
-          "year": 2025,
-          "date": "2025-02-22",
-          "division": 2,
-          "position": 2,
-          "score": 67,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 2,
-          "position": 3,
-          "score": 74,
-          "label": "Division 2 Top 3"
-        },
-        {
-          "competitionId": "august-medal",
-          "competition": "August Medal",
-          "year": 2024,
-          "date": "2024-08-03",
-          "division": 3,
-          "position": 2,
-          "score": 72,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 4
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -104757,8 +103093,8 @@
       "played": 40
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Tim Mark Wright has played 86 recorded competitions in the Digital Museum. Tim Mark Wright has recorded 3 wins, with 2 runner-up finishes and 9 top-three finishes. Tim Mark Wright's strongest competition so far is June Sunday Stableford. Current Hall of Fame status: Strong Candidate with a score of 117.",
-    "profileSummary": "Tim Mark Wright has played 86 recorded competitions, with 3 wins, 2 runner-up finishes and 9 top-three finishes.",
+    "writtenSummary": "Tim Mark Wright has played 87 recorded competitions in the Digital Museum. Tim Mark Wright has recorded 3 wins, with 2 runner-up finishes and 9 top-three finishes. Tim Mark Wright's strongest competition so far is June Sunday Stableford. Current Hall of Fame status: Strong Candidate with a score of 117.",
+    "profileSummary": "Tim Mark Wright has played 87 recorded competitions, with 3 wins, 2 runner-up finishes and 9 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "June Sunday Stableford"
@@ -104804,6 +103140,14 @@
         "year": 2021,
         "competition": "June Sunday Stableford",
         "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 8,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
@@ -106219,38 +104563,17 @@
     "divisionHonours": {
       "wins": {
         "division1": 0,
-        "division2": 1,
+        "division2": 0,
         "division3": 0
       },
       "top3": {
         "division1": 0,
-        "division2": 2,
+        "division2": 0,
         "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 2,
-          "position": 1,
-          "score": 73,
-          "label": "Division 2 Winner"
-        },
-        {
-          "competitionId": "october-medal-and-lewis-cup",
-          "competition": "October Medal & Lewis Cup",
-          "year": 2025,
-          "date": "2025-10-04",
-          "division": 2,
-          "position": 3,
-          "score": 78,
-          "label": "Division 2 Top 3"
-        }
-      ],
-      "totalWins": 1,
-      "totalTop3": 2
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -107415,7 +105738,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 92,
+      "competitionsPlayed": 93,
       "wins": 3,
       "runnerUp": 2,
       "top3": 6,
@@ -107431,47 +105754,16 @@
       "wins": {
         "division1": 0,
         "division2": 0,
-        "division3": 2
+        "division3": 0
       },
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 3
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2025,
-          "date": "2025-04-05",
-          "division": 3,
-          "position": 1,
-          "score": 69,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "september-medal",
-          "competition": "September medal",
-          "year": 2025,
-          "date": "2025-09-06",
-          "division": 3,
-          "position": 1,
-          "score": 64,
-          "label": "Division 3 Winner"
-        },
-        {
-          "competitionId": "march-medal",
-          "competition": "March Medal",
-          "year": 2025,
-          "date": "2025-03-22",
-          "division": 3,
-          "position": 2,
-          "score": 68,
-          "label": "Division 3 Top 3"
-        }
-      ],
-      "totalWins": 2,
-      "totalTop3": 3
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
@@ -107485,8 +105777,8 @@
       "played": 43
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Wayne Rutter has played 92 recorded competitions in the Digital Museum. Wayne Rutter has recorded 3 wins, with 2 runner-up finishes and 6 top-three finishes. Wayne Rutter's strongest competition so far is Seniors George Barratt Trophy. Current Hall of Fame status: Strong Candidate with a score of 121.",
-    "profileSummary": "Wayne Rutter has played 92 recorded competitions, with 3 wins, 2 runner-up finishes and 6 top-three finishes.",
+    "writtenSummary": "Wayne Rutter has played 93 recorded competitions in the Digital Museum. Wayne Rutter has recorded 3 wins, with 2 runner-up finishes and 6 top-three finishes. Wayne Rutter's strongest competition so far is Seniors George Barratt Trophy. Current Hall of Fame status: Strong Candidate with a score of 121.",
+    "profileSummary": "Wayne Rutter has played 93 recorded competitions, with 3 wins, 2 runner-up finishes and 6 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors George Barratt Trophy"
@@ -107527,6 +105819,14 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
+      },
+      {
+        "year": 2021,
+        "competition": "Pairs Multiplier",
+        "position": 14,
+        "resultType": "Competition Result",
+        "historicalHonour": false,
+        "boardCompetition": false
       },
       {
         "year": 2024,
@@ -108329,22 +106629,11 @@
       "top3": {
         "division1": 0,
         "division2": 0,
-        "division3": 1
+        "division3": 0
       },
-      "history": [
-        {
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "competition": "April Medal and Presidents Putter qualifier",
-          "year": 2026,
-          "date": "2026-04-18",
-          "division": 3,
-          "position": 3,
-          "score": 69,
-          "label": "Division 3 Top 3"
-        }
-      ],
       "totalWins": 0,
-      "totalTop3": 1
+      "totalTop3": 0,
+      "history": []
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
