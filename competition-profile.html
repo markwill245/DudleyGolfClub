@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Competition Profile | Dudley Golf Club Digital Museum</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -13,11 +16,11 @@
 
   <style>
     body {
-      font-family: 'Outfit', sans-serif;
+      font-family: "Outfit", sans-serif;
     }
 
     .font-serif {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: "Cormorant Garamond", serif;
     }
   </style>
 </head>
@@ -31,168 +34,507 @@
       ← Back to Competition Archive
     </a>
 
-    <section id="profile" class="mt-12">
-      Loading competition...
+    <section id="profile" class="mt-12" aria-live="polite">
+      <p>Loading competition...</p>
     </section>
 
   </main>
 
+  <button id="backToTop" type="button"
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50"
+    aria-label="Back to top">
+    ↑ Top
+  </button>
+
   <script>
+    const profileContainer = document.getElementById("profile");
+    const backToTop = document.getElementById("backToTop");
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function displayValue(value, fallback = "—") {
+      return value === undefined || value === null || value === ""
+        ? fallback
+        : escapeHtml(value);
+    }
+
+    function formatRelativeToPar(value) {
+      if (value === undefined || value === null || value === "") {
+        return "";
+      }
+
+      const numericValue = Number(value);
+
+      if (Number.isNaN(numericValue)) {
+        return ` (${escapeHtml(value)})`;
+      }
+
+      if (numericValue === 0) {
+        return " (E)";
+      }
+
+      return ` (${numericValue > 0 ? "+" : ""}${numericValue})`;
+    }
+
+    function getPlayerNames(result) {
+      if (Array.isArray(result.players) && result.players.length) {
+        return result.players
+          .map(player => player?.name)
+          .filter(Boolean);
+      }
+
+      if (Array.isArray(result.teamMembers) && result.teamMembers.length) {
+        return result.teamMembers
+          .map(player => typeof player === "string" ? player : player?.name)
+          .filter(Boolean);
+      }
+
+      return result.playerName ? [result.playerName] : ["Unknown player"];
+    }
+
+    function getHandicapText(result) {
+      if (Array.isArray(result.players) && result.players.length) {
+        const handicaps = result.players
+          .map(player =>
+            player?.handicap !== undefined &&
+              player?.handicap !== null &&
+              player?.handicap !== ""
+              ? `Hcp ${escapeHtml(player.handicap)}`
+              : ""
+          )
+          .filter(Boolean);
+
+        return handicaps.join(" / ");
+      }
+
+      if (
+        result.handicap !== undefined &&
+        result.handicap !== null &&
+        result.handicap !== ""
+      ) {
+        return `Hcp ${escapeHtml(result.handicap)}`;
+      }
+
+      return "";
+    }
+
+    function getPositionText(result) {
+      if (
+        result.position !== undefined &&
+        result.position !== null &&
+        result.position !== ""
+      ) {
+        return escapeHtml(result.position);
+      }
+
+      if (result.status) {
+        return escapeHtml(result.status);
+      }
+
+      return "—";
+    }
+
+    function getScoreText(result) {
+      if (result.status === "DQ") {
+        return result.statusNote
+          ? `DQ — ${escapeHtml(result.statusNote)}`
+          : "DQ";
+      }
+
+      if (result.status === "WD") {
+        return result.statusNote
+          ? `WD — ${escapeHtml(result.statusNote)}`
+          : "WD";
+      }
+
+      if (result.status === "NR" && result.totalScore === null) {
+        return result.statusNote
+          ? `NR — ${escapeHtml(result.statusNote)}`
+          : "NR";
+      }
+
+      if (
+        result.stablefordPoints !== undefined &&
+        result.stablefordPoints !== null
+      ) {
+        return `${escapeHtml(result.stablefordPoints)} pts`;
+      }
+
+      if (result.points !== undefined && result.points !== null) {
+        return `${escapeHtml(result.points)} pts`;
+      }
+
+      if (result.totalScore !== undefined && result.totalScore !== null) {
+        return `${escapeHtml(result.totalScore)}${formatRelativeToPar(result.relativeToPar)}`;
+      }
+
+      if (result.grossTotal !== undefined && result.grossTotal !== null) {
+        return `${escapeHtml(result.grossTotal)}${formatRelativeToPar(result.relativeToPar)}`;
+      }
+
+      if (result.nettScore !== undefined && result.nettScore !== null) {
+        return `${escapeHtml(result.nettScore)} nett`;
+      }
+
+      if (result.grossScore !== undefined && result.grossScore !== null) {
+        return `${escapeHtml(result.grossScore)} gross`;
+      }
+
+      if (result.score !== undefined && result.score !== null) {
+        return escapeHtml(result.score);
+      }
+
+      if (result.status) {
+        return escapeHtml(result.status);
+      }
+
+      return "—";
+    }
+
+    function getFormatLine(yearBlock) {
+      const parts = [];
+
+      if (yearBlock.competitionFormat) {
+        parts.push(yearBlock.competitionFormat);
+      } else if (yearBlock.format) {
+        parts.push(yearBlock.format);
+      }
+
+      if (yearBlock.tees) {
+        parts.push(`${yearBlock.tees} Tees`);
+      }
+
+      if (yearBlock.multiDayEvent && yearBlock.numberOfRounds) {
+        parts.push(`${yearBlock.numberOfRounds} Rounds`);
+      }
+
+      return parts.join(" • ");
+    }
+
+    function renderRoundDetails(result) {
+      if (!Array.isArray(result.rounds) || !result.rounds.length) {
+        return "";
+      }
+
+      const rounds = result.rounds
+        .map(round => {
+          const score =
+            round?.score === undefined ||
+              round?.score === null ||
+              round?.score === ""
+              ? "—"
+              : escapeHtml(round.score);
+
+          return `R${escapeHtml(round.round)}: ${score}`;
+        })
+        .join(" • ");
+
+      return `
+        <p class="text-xs text-gray-500 mt-1">
+          ${rounds}
+        </p>
+      `;
+    }
+
+    function renderDetailedResults(comp, compResults) {
+      if (!compResults.length) {
+        return "";
+      }
+
+      return compResults.map(yearBlock => `
+        <section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow border border-[#C5A367]/30">
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+            ${displayValue(yearBlock.year, "Year Unknown")} Result
+          </p>
+
+          <h2 class="text-4xl font-serif mb-2">
+            ${displayValue(yearBlock.competitionName, comp.name)}
+          </h2>
+
+          <p class="text-gray-600 mb-6">
+            ${displayValue(getFormatLine(yearBlock), "Recorded competition result")}
+          </p>
+
+          <div class="overflow-x-auto">
+            <div class="min-w-[720px]">
+              <div class="grid grid-cols-[70px_2fr_1fr_1fr] gap-4 border-b border-[#C5A367]/30 pb-3 mb-2 text-xs uppercase tracking-widest text-gray-500 font-bold">
+                <span>Pos</span>
+                <span>Player</span>
+                <span>Handicap</span>
+                <span class="text-right">Score</span>
+              </div>
+
+              <div>
+                ${(yearBlock.results || []).map(result => {
+        const names = getPlayerNames(result)
+          .map(name => escapeHtml(name))
+          .join(" / ");
+
+        return `
+                    <div class="grid grid-cols-[70px_2fr_1fr_1fr] gap-4 border-b border-gray-200 py-3 text-sm items-start">
+                      <span class="font-semibold">
+                        ${getPositionText(result)}
+                      </span>
+
+                      <div>
+                        <span>${names}</span>
+                        ${renderRoundDetails(result)}
+                      </div>
+
+                      <span>
+                        ${getHandicapText(result)}
+                      </span>
+
+                      <span class="text-right font-semibold">
+                        ${getScoreText(result)}
+                      </span>
+                    </div>
+                  `;
+      }).join("")}
+              </div>
+            </div>
+          </div>
+        </section>
+      `).join("");
+    }
+
+    function renderHistoricalWinners(comp) {
+      if (!Array.isArray(comp.winnerHistory) || !comp.winnerHistory.length) {
+        return "";
+      }
+
+      return `
+        <section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow border border-[#C5A367]/30">
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+            Verified Honours Board
+          </p>
+
+          <h2 class="text-4xl font-serif mb-2">
+            Historical Winners
+          </h2>
+
+          <p class="text-gray-600 mb-6">
+            Preserved from the verified honours board record.
+          </p>
+
+          <div class="overflow-x-auto">
+            <div class="min-w-[520px]">
+              <div class="grid grid-cols-[110px_2fr_1fr] gap-4 border-b border-[#C5A367]/30 pb-3 mb-2 text-xs uppercase tracking-widest text-gray-500 font-bold">
+                <span>Year</span>
+                <span>Winner</span>
+                <span class="text-right">Score</span>
+              </div>
+
+              ${comp.winnerHistory.map(item => `
+                <div class="grid grid-cols-[110px_2fr_1fr] gap-4 border-b border-gray-200 py-3 text-sm">
+                  <span class="font-semibold">
+                    ${displayValue(item.year)}
+                  </span>
+
+                  <span>
+                    ${displayValue(item.winner, "Winner not recorded")}
+                  </span>
+
+                  <span class="text-right font-semibold">
+                    ${item.score !== undefined &&
+          item.score !== null &&
+          item.score !== ""
+          ? `${escapeHtml(item.score)}${formatRelativeToPar(item.relativeToPar)}`
+          : "—"
+        }
+                  </span>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function renderCompetition(comp, compResults) {
+      document.title = `${comp.name} | Dudley Golf Club Digital Museum`;
+
+      const profileType = comp.historicalBoard
+        ? "Historical Honour"
+        : "Competition Profile";
+
+      profileContainer.innerHTML = `
+        <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+          ${profileType}
+        </p>
+
+        <h1 class="text-5xl md:text-6xl font-serif mb-4">
+          ${displayValue(comp.name, "Unnamed Competition")}
+        </h1>
+
+        <p class="text-xl text-gray-700 mb-10">
+          ${displayValue(comp.summary, `${comp.section || "Club"} competition record preserved in the Dudley Golf Club Digital Museum.`)}
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+              Years Recorded
+            </p>
+            <p class="text-4xl font-serif">${displayValue(comp.yearsPlayed, 0)}</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+              First Year
+            </p>
+            <p class="text-4xl font-serif">${displayValue(comp.firstYear)}</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+              Latest Year
+            </p>
+            <p class="text-4xl font-serif">${displayValue(comp.latestYear)}</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+              ${comp.historicalBoard ? "Unique Winners" : "Entries"}
+            </p>
+            <p class="text-4xl font-serif">
+              ${displayValue(comp.historicalBoard ? comp.uniqueWinners : comp.totalEntries, 0)}
+            </p>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <section class="lg:col-span-2 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+              Competition Summary
+            </p>
+
+            <h2 class="text-4xl font-serif mb-6">Museum Record</h2>
+
+            <div class="space-y-4 text-lg">
+              <p><strong>Competition:</strong> ${displayValue(comp.name)}</p>
+              <p><strong>Section:</strong> ${displayValue(comp.section)}</p>
+              <p><strong>Format:</strong> ${displayValue(comp.competitionFormat || comp.format)}</p>
+              <p><strong>Years covered:</strong> ${displayValue(comp.firstYear)}–${displayValue(comp.latestYear)}</p>
+              <p><strong>Years recorded:</strong> ${displayValue(comp.yearsPlayed, 0)}</p>
+              <p><strong>Total recorded entries:</strong> ${displayValue(comp.totalEntries, 0)}</p>
+              <p><strong>Average entries:</strong> ${displayValue(comp.averageEntries, 0)}</p>
+              <p><strong>Unique winners:</strong> ${displayValue(comp.uniqueWinners, 0)}</p>
+            </div>
+          </section>
+
+          <aside class="bg-[#132419] text-white rounded-2xl p-8 shadow">
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+              Most Successful
+            </p>
+
+            <h2 class="text-4xl font-serif mb-4">
+              ${displayValue(comp.mostSuccessfulPlayer, "None yet")}
+            </h2>
+
+            <p class="text-white/70 text-lg">
+              ${displayValue(comp.mostWins, 0)}
+              ${Number(comp.mostWins) === 1 ? "recorded win" : "recorded wins"}
+            </p>
+
+            <div class="mt-8 pt-6 border-t border-white/20">
+              <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+                Museum Status
+              </p>
+              <p class="text-white/80">
+                ${comp.historicalBoard
+          ? "Verified honours-board history preserved in the Digital Museum."
+          : "Linked to the competition archive, records centre and player statistics."
+        }
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        ${renderHistoricalWinners(comp)}
+        ${renderDetailedResults(comp, compResults)}
+      `;
+    }
+
+    function renderError(title, message) {
+      profileContainer.innerHTML = `
+        <div class="bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+          <h1 class="text-5xl font-serif mb-4">${escapeHtml(title)}</h1>
+          <p class="text-gray-700">${escapeHtml(message)}</p>
+        </div>
+      `;
+    }
+
     async function loadCompetition() {
       const params = new URLSearchParams(window.location.search);
       const id = params.get("id");
 
-      const response = await fetch("data/competition-profiles.json");
-      const competitions = await response.json();
-      const resultsResponse = await fetch("data/competition-results.json");
-      const results = await resultsResponse.json();
-
-      const comp = competitions.find(c => c.id === id);
-      const compResults = results
-        .filter(r => r.competitionId === id)
-        .sort((a, b) => b.year - a.year);
-
-      const container = document.getElementById("profile");
-
-      if (!comp) {
-        container.innerHTML = `
-      <h1 class="text-5xl font-serif mb-4">Competition Not Found</h1>
-      <p>This competition could not be found in the Digital Museum.</p>
-    `;
+      if (!id) {
+        window.location.replace("competition-index.html");
         return;
       }
 
-      document.title = `${comp.name} | Dudley Golf Club Digital Museum`;
+      try {
+        const [profilesResponse, resultsResponse] = await Promise.all([
+          fetch("data/competition-profiles.json"),
+          fetch("data/competition-results.json")
+        ]);
 
-      container.innerHTML = `
-    <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
-      Competition Profile
-    </p>
+        if (!profilesResponse.ok) {
+          throw new Error(`Competition profiles failed to load (${profilesResponse.status})`);
+        }
 
-    <h1 class="text-6xl font-serif mb-4">
-      ${comp.name}
-    </h1>
+        if (!resultsResponse.ok) {
+          throw new Error(`Competition results failed to load (${resultsResponse.status})`);
+        }
 
-    <p class="text-xl text-gray-700 mb-10">
-      ${comp.section || "Club"} competition record preserved in the Dudley Golf Club Digital Museum.
-    </p>
+        const [competitions, results] = await Promise.all([
+          profilesResponse.json(),
+          resultsResponse.json()
+        ]);
 
-    <div class="grid md:grid-cols-4 gap-6 mb-12">
+        const comp = competitions.find(item => item.id === id);
 
-      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Years Recorded</p>
-        <p class="text-4xl font-serif">${comp.yearsPlayed || 0}</p>
-      </div>
+        if (!comp) {
+          renderError(
+            "Competition Not Found",
+            "This competition could not be found in the Digital Museum."
+          );
+          return;
+        }
 
-      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">First Year</p>
-        <p class="text-4xl font-serif">${comp.firstYear || "—"}</p>
-      </div>
+        const compResults = results
+          .filter(item => item.competitionId === id)
+          .sort((a, b) => Number(b.year || 0) - Number(a.year || 0));
 
-      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Latest Year</p>
-        <p class="text-4xl font-serif">${comp.latestYear || "—"}</p>
-      </div>
+        renderCompetition(comp, compResults);
+      } catch (error) {
+        console.error("Competition Profile error:", error);
 
-      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Entries</p>
-        <p class="text-4xl font-serif">${comp.totalEntries || 0}</p>
-      </div>
-
-    </div>
-
-    <div class="grid lg:grid-cols-3 gap-8">
-
-      <section class="lg:col-span-2 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
-          Competition Summary
-        </p>
-
-        <h2 class="text-4xl font-serif mb-6">Museum Record</h2>
-
-        <div class="space-y-4 text-lg">
-          <p><strong>Competition:</strong> ${comp.name}</p>
-          <p><strong>Section:</strong> ${comp.section || "—"}</p>
-          <p><strong>Years covered:</strong> ${comp.firstYear || "—"}–${comp.latestYear || "—"}</p>
-          <p><strong>Years recorded:</strong> ${comp.yearsPlayed || 0}</p>
-          <p><strong>Total recorded entries:</strong> ${comp.totalEntries || 0}</p>
-          <p><strong>Average entries:</strong> ${comp.averageEntries || 0}</p>
-          <p><strong>Unique winners:</strong> ${comp.uniqueWinners || 0}</p>
-        </div>
-      </section>
-
-      <aside class="bg-[#132419] text-white rounded-2xl p-8 shadow">
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
-          Most Successful
-        </p>
-
-        <h2 class="text-4xl font-serif mb-4">
-          ${comp.mostSuccessfulPlayer || "None yet"}
-        </h2>
-
-        <p class="text-white/70 text-lg">
-          ${comp.mostWins || 0} ${comp.mostWins === 1 ? "recorded win" : "recorded wins"}
-        </p>
-
-        <div class="mt-8 pt-6 border-t border-white/20">
-          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
-            Museum Status
-          </p>
-          <p class="text-white/80">
-            Linked to competition archive, records centre and player statistics.
-          </p>
-        </div>
-      </aside>
-
-       </div>
-
-   ${compResults.length
-          ? compResults.map(yearBlock => `
-    <section class="mt-12 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
-        ${yearBlock.year || "Year Unknown"} Result
-      </p>
-
-      <h2 class="text-4xl font-serif mb-2">
-        ${yearBlock.competitionName || comp.name}
-      </h2>
-
-      <p class="text-gray-600 mb-6">
-        ${yearBlock.format || ""} ${yearBlock.tees ? `• ${yearBlock.tees} Tees` : ""}
-      </p>
-
-      <div class="space-y-3">
-        ${yearBlock.results.map(r => `
-         <div class="grid md:grid-cols-3 gap-2 md:gap-4 border-b pb-2 text-sm">
-           <span>
-  ${r.position}. ${
-    Array.isArray(r.players) && r.players.length
-      ? r.players.map(p => p.name).join(" / ")
-      : r.playerName || "Unknown player"
-  }
-</span>
-            <span>
-  ${
-    Array.isArray(r.players) && r.players.length
-      ? r.players.map(p => p.handicap !== null && p.handicap !== undefined ? `Hcp ${p.handicap}` : "").filter(Boolean).join(" / ")
-      : r.handicap !== undefined ? `Hcp ${r.handicap}` : ""
-  }
-</span>
-            <span class="text-right font-semibold">
-              ${r.points !== undefined
-              ? `${r.points} pts`
-              : r.total !== undefined && r.total !== null
-                ? `${r.total}${r.toPar ? ` (${r.toPar})` : ""}`
-                : r.status || ""}
-            </span>
-          </div>
-        `).join("")}
-      </div>
-    </section>
-  `).join("")
-          : ""}
-  `;
+        renderError(
+          "Competition Data Unavailable",
+          "The competition record could not be loaded. Please try again later."
+        );
+      }
     }
+
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("hidden", window.scrollY <= 300);
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
 
     loadCompetition();
   </script>

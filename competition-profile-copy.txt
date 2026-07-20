@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Competition Profile | Dudley Golf Club Digital Museum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+    <a href="competition-index.html"
+      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
+      â† Back to Competition Archive
+    </a>
+
+    <section id="profile" class="mt-12">
+      Loading competition...
+    </section>
+
+  </main>
+
+  <script>
+    async function loadCompetition() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+
+      const response = await fetch("data/competition-profiles.json");
+      const competitions = await response.json();
+      const resultsResponse = await fetch("data/competition-results.json");
+      const results = await resultsResponse.json();
+
+      const comp = competitions.find(c => c.id === id);
+      const compResults = results
+        .filter(r => r.competitionId === id)
+        .sort((a, b) => b.year - a.year);
+
+      const container = document.getElementById("profile");
+
+      if (!comp) {
+        container.innerHTML = `
+      <h1 class="text-5xl font-serif mb-4">Competition Not Found</h1>
+      <p>This competition could not be found in the Digital Museum.</p>
+    `;
+        return;
+      }
+
+      document.title = `${comp.name} | Dudley Golf Club Digital Museum`;
+
+      container.innerHTML = `
+    <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+      Competition Profile
+    </p>
+
+    <h1 class="text-6xl font-serif mb-4">
+      ${comp.name}
+    </h1>
+
+    <p class="text-xl text-gray-700 mb-10">
+      ${comp.section || "Club"} competition record preserved in the Dudley Golf Club Digital Museum.
+    </p>
+
+    <div class="grid md:grid-cols-4 gap-6 mb-12">
+
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Years Recorded</p>
+        <p class="text-4xl font-serif">${comp.yearsPlayed || 0}</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">First Year</p>
+        <p class="text-4xl font-serif">${comp.firstYear || "â€”"}</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Latest Year</p>
+        <p class="text-4xl font-serif">${comp.latestYear || "â€”"}</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">Entries</p>
+        <p class="text-4xl font-serif">${comp.totalEntries || 0}</p>
+      </div>
+
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+
+      <section class="lg:col-span-2 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+          Competition Summary
+        </p>
+
+        <h2 class="text-4xl font-serif mb-6">Museum Record</h2>
+
+        <div class="space-y-4 text-lg">
+          <p><strong>Competition:</strong> ${comp.name}</p>
+          <p><strong>Section:</strong> ${comp.section || "â€”"}</p>
+          <p><strong>Years covered:</strong> ${comp.firstYear || "â€”"}â€“${comp.latestYear || "â€”"}</p>
+          <p><strong>Years recorded:</strong> ${comp.yearsPlayed || 0}</p>
+          <p><strong>Total recorded entries:</strong> ${comp.totalEntries || 0}</p>
+          <p><strong>Average entries:</strong> ${comp.averageEntries || 0}</p>
+          <p><strong>Unique winners:</strong> ${comp.uniqueWinners || 0}</p>
+        </div>
+      </section>
+
+      <aside class="bg-[#132419] text-white rounded-2xl p-8 shadow">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+          Most Successful
+        </p>
+
+        <h2 class="text-4xl font-serif mb-4">
+          ${comp.mostSuccessfulPlayer || "None yet"}
+        </h2>
+
+        <p class="text-white/70 text-lg">
+          ${comp.mostWins || 0} ${comp.mostWins === 1 ? "recorded win" : "recorded wins"}
+        </p>
+
+        <div class="mt-8 pt-6 border-t border-white/20">
+          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
+            Museum Status
+          </p>
+          <p class="text-white/80">
+            Linked to competition archive, records centre and player statistics.
+          </p>
+        </div>
+      </aside>
+
+       </div>
+
+   ${compResults.length
+          ? compResults.map(yearBlock => `
+    <section class="mt-12 bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30">
+      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+        ${yearBlock.year || "Year Unknown"} Result
+      </p>
+
+      <h2 class="text-4xl font-serif mb-2">
+        ${yearBlock.competitionName || comp.name}
+      </h2>
+
+      <p class="text-gray-600 mb-6">
+        ${yearBlock.format || ""} ${yearBlock.tees ? `â€¢ ${yearBlock.tees} Tees` : ""}
+      </p>
+
+      <div class="space-y-3">
+        ${yearBlock.results.map(r => `
+         <div class="grid md:grid-cols-3 gap-2 md:gap-4 border-b pb-2 text-sm">
+           <span>
+  ${r.position}. ${
+    Array.isArray(r.players) && r.players.length
+      ? r.players.map(p => p.name).join(" / ")
+      : r.playerName || "Unknown player"
+  }
+</span>
+            <span>
+  ${
+    Array.isArray(r.players) && r.players.length
+      ? r.players.map(p => p.handicap !== null && p.handicap !== undefined ? `Hcp ${p.handicap}` : "").filter(Boolean).join(" / ")
+      : r.handicap !== undefined ? `Hcp ${r.handicap}` : ""
+  }
+</span>
+            <span class="text-right font-semibold">
+              ${r.points !== undefined
+              ? `${r.points} pts`
+              : r.total !== undefined && r.total !== null
+                ? `${r.total}${r.toPar ? ` (${r.toPar})` : ""}`
+                : r.status || ""}
+            </span>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+  `).join("")
+          : ""}
+  `;
+    }
+
+    loadCompetition();
+  </script>
+
+</body>
+
+</html>
