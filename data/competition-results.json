@@ -4768,7 +4768,7 @@
     "competitionName": "3 Ball Modified Waltz",
     "competitionFormat": "Individual",
     "scoreType": "Unknown",
-    "teamSize": 1,
+    "teamSize": 3,
     "section": "Mens",
     "competitionClass": "Standard",
     "countsForOrderOfMerit": false,
@@ -4810,7 +4810,8 @@
             "name": "Mark Basterfield",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 2,
@@ -4830,7 +4831,8 @@
             "name": "Anthony Fegan",
             "handicap": 16
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 3,
@@ -4850,7 +4852,8 @@
             "name": "Tim Mark Wright",
             "handicap": 17
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 4,
@@ -4870,7 +4873,8 @@
             "name": "Graham Morgan",
             "handicap": 18
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 5,
@@ -4890,7 +4894,8 @@
             "name": "Ian Frederick Stevens",
             "handicap": 5
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 6,
@@ -4910,7 +4915,8 @@
             "name": "Benjamin Woodall",
             "handicap": 2
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 7,
@@ -4930,7 +4936,8 @@
             "name": "Gary Baker",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 8,
@@ -4950,7 +4957,8 @@
             "name": "Philip Thompson",
             "handicap": 7
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 9,
@@ -4970,7 +4978,8 @@
             "name": "Clive Kearey",
             "handicap": 17
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 10,
@@ -4990,7 +4999,8 @@
             "name": "Philip John Northall",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 11,
@@ -5010,7 +5020,8 @@
             "name": "Paul Ian Welch",
             "handicap": 10
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 12,
@@ -5028,7 +5039,8 @@
           }
         ]
       }
-    ]
+    ],
+    "format": "Team"
   },
   {
     "competitionId": "3-ball-reverse-cha-cha",
@@ -24846,7 +24858,7 @@
     "competitionName": "Millennium Trophy - 4 Ball",
     "competitionFormat": "Individual",
     "scoreType": "Unknown",
-    "teamSize": 1,
+    "teamSize": 4,
     "section": "Mens",
     "competitionClass": "Standard",
     "countsForOrderOfMerit": false,
@@ -24892,7 +24904,8 @@
             "name": "Adam Bonehill",
             "handicap": 7
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 2,
@@ -24916,7 +24929,8 @@
             "name": "Anthony Fegan",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 3,
@@ -24940,7 +24954,8 @@
             "name": "Jack Lowe",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 4,
@@ -24964,7 +24979,8 @@
             "name": "Darren Element",
             "handicap": 17
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 5,
@@ -24988,7 +25004,8 @@
             "name": "Melvyn Crook",
             "handicap": 16
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 6,
@@ -25012,7 +25029,8 @@
             "name": "Scott Whitehall",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 7,
@@ -25036,7 +25054,8 @@
             "name": "Paul Ian Welch",
             "handicap": 9
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 8,
@@ -25060,7 +25079,8 @@
             "name": "Clive Kearey",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 9,
@@ -25084,7 +25104,8 @@
             "name": "Lewis Ganner",
             "handicap": 18
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 10,
@@ -25108,7 +25129,8 @@
             "name": "Tim Mark Wright",
             "handicap": 15
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 11,
@@ -25132,7 +25154,8 @@
             "name": "Stewart Smith",
             "handicap": 28
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 12,
@@ -25156,7 +25179,8 @@
             "name": "M T Cowdell",
             "handicap": 9
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 13,
@@ -25180,7 +25204,8 @@
             "name": "Adrian Burns",
             "handicap": 12
           }
-        ]
+        ],
+        "teamSize": 4
       },
       {
         "position": 14,
@@ -25202,7 +25227,8 @@
           }
         ]
       }
-    ]
+    ],
+    "format": "Team"
   },
   {
     "competitionId": "november-medal",
@@ -37547,8 +37573,20 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Paul Holmes (3), Stephen Holmes",
-        "handicap": 19
+        "playerName": "Paul Holmes / Thomas Plant / Stephen Holmes",
+        "handicap": 19,
+        "teamMembers": [
+          {
+            "playerName": "Paul Holmes"
+          },
+          {
+            "playerName": "Thomas Plant"
+          },
+          {
+            "playerName": "Stephen Holmes"
+          }
+        ],
+        "teamSize": 3
       },
       {
         "position": 2,
@@ -37631,8 +37669,20 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Mark Williams (9), Neil Hartland",
-        "handicap": 7
+        "playerName": "Mark Williams / Neil Hartland / James Stevens",
+        "handicap": 7,
+        "teamMembers": [
+          {
+            "playerName": "Mark Williams"
+          },
+          {
+            "playerName": "Neil Hartland"
+          },
+          {
+            "playerName": "James Stevens"
+          }
+        ],
+        "teamSize": 3
       },
       {
         "position": 6,
@@ -37694,8 +37744,20 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "David Jeavons (21), Clive Kearey",
-        "handicap": 17
+        "playerName": "David Jeavons / Clive Kearey / Adam Stanfield",
+        "handicap": 17,
+        "teamMembers": [
+          {
+            "playerName": "David Jeavons"
+          },
+          {
+            "playerName": "Clive Kearey"
+          },
+          {
+            "playerName": "Adam Stanfield"
+          }
+        ],
+        "teamSize": 3
       },
       {
         "position": 9,
@@ -37778,8 +37840,20 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Sean Element (14), Steven Taylor",
-        "handicap": 14
+        "playerName": "Sean Element / Steven Taylor / Paul Wayne Taylor",
+        "handicap": 14,
+        "teamMembers": [
+          {
+            "playerName": "Sean Element"
+          },
+          {
+            "playerName": "Steven Taylor"
+          },
+          {
+            "playerName": "Paul Wayne Taylor"
+          }
+        ],
+        "teamSize": 3
       },
       {
         "position": 13,
@@ -37799,8 +37873,20 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Richard Limb (9), Mark Andrew Poulding",
-        "handicap": 7
+        "playerName": "Richard Limb / Mark Andrew Poulding / Ian Frederick Stevens",
+        "handicap": 7,
+        "teamMembers": [
+          {
+            "playerName": "Richard Limb"
+          },
+          {
+            "playerName": "Mark Andrew Poulding"
+          },
+          {
+            "playerName": "Ian Frederick Stevens"
+          }
+        ],
+        "teamSize": 3
       },
       {
         "position": 14,
@@ -37841,8 +37927,20 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Alan Ball (5), David Evitts",
-        "handicap": 23
+        "playerName": "Alan Ball / David Evitts / Andrew Russell",
+        "handicap": 23,
+        "teamMembers": [
+          {
+            "playerName": "Alan Ball"
+          },
+          {
+            "playerName": "David Evitts"
+          },
+          {
+            "playerName": "Andrew Russell"
+          }
+        ],
+        "teamSize": 3
       }
     ]
   },
@@ -39040,7 +39138,8 @@
             "name": "Michael Williams",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 2,
@@ -39060,7 +39159,8 @@
             "name": "Mitch Sayce",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 3,
@@ -39080,7 +39180,8 @@
             "name": "Mitchell Raybould",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 4,
@@ -39100,7 +39201,8 @@
             "name": "Kevin Walters",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 5,
@@ -39120,7 +39222,8 @@
             "name": "Craig Smart",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 6,
@@ -39140,7 +39243,8 @@
             "name": "Ian Frederick Stevens",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 7,
@@ -39160,7 +39264,8 @@
             "name": "Robert Keith Woodall",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 8,
@@ -39180,7 +39285,8 @@
             "name": "Michael John Kendrick",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 9,
@@ -39200,7 +39306,8 @@
             "name": "Philip John Northall",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 10,
@@ -39220,7 +39327,8 @@
             "name": "Andrew Russell",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 11,
@@ -39240,7 +39348,8 @@
             "name": "Paul Wayne Taylor",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 12,
@@ -39260,7 +39369,8 @@
             "name": "Tim Mark Wright",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 13,
@@ -39280,7 +39390,8 @@
             "name": "Mark Williams",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 14,
@@ -39300,7 +39411,8 @@
             "name": "Adam Stanfield",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 15,
@@ -39320,7 +39432,8 @@
             "name": "Thomas Plant",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 16,
@@ -39340,7 +39453,8 @@
             "name": "Steven Taylor",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 17,
@@ -39360,7 +39474,8 @@
             "name": "Anthony Willetts",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 18,
@@ -39380,7 +39495,8 @@
             "name": "Stephen Brian Hopkins",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 19,
@@ -39416,7 +39532,8 @@
             "name": "G.B. Ray",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 21,
@@ -39436,7 +39553,8 @@
             "name": "Mark Neil Tolley",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       },
       {
         "position": 22,
@@ -39457,9 +39575,11 @@
             "name": "Joshua Johnson",
             "handicap": null
           }
-        ]
+        ],
+        "teamSize": 3
       }
-    ]
+    ],
+    "format": "Team"
   },
   {
     "competitionId": "3-ball-waltz",
@@ -39884,8 +40004,23 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Kevin Walters (10), Mark Williams (9), Neil Hartland",
-        "handicap": 7
+        "playerName": "Kevin Walters / Mark Williams / Neil Hartland / James Stevens",
+        "handicap": 7,
+        "teamMembers": [
+          {
+            "playerName": "Kevin Walters"
+          },
+          {
+            "playerName": "Mark Williams"
+          },
+          {
+            "playerName": "Neil Hartland"
+          },
+          {
+            "playerName": "James Stevens"
+          }
+        ],
+        "teamSize": 4
       },
       {
         "position": 7,
@@ -40031,8 +40166,23 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "scoreType": "Unknown",
-        "playerName": "Alan Ball (5), Andrew Russell (9), Mark Dando",
-        "handicap": 4
+        "playerName": "Alan Ball / Andrew Russell / Mark Dando / Gary Baker",
+        "handicap": 4,
+        "teamMembers": [
+          {
+            "playerName": "Alan Ball"
+          },
+          {
+            "playerName": "Andrew Russell"
+          },
+          {
+            "playerName": "Mark Dando"
+          },
+          {
+            "playerName": "Gary Baker"
+          }
+        ],
+        "teamSize": 4
       }
     ]
   },
@@ -56403,7 +56553,7 @@
     "competitionName": "Probus Pairs Stableford Betterball",
     "competitionFormat": "Individual",
     "scoreType": "Stableford",
-    "teamSize": 1,
+    "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Standard",
     "countsForOrderOfMerit": false,
@@ -56443,7 +56593,8 @@
             "name": "Richard Price",
             "handicap": 24
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 2,
@@ -56461,7 +56612,8 @@
             "name": "Clive Kearey",
             "handicap": 19
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 3,
@@ -56479,7 +56631,8 @@
             "name": "M T Cowdell",
             "handicap": 12
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 4,
@@ -56497,7 +56650,8 @@
             "name": "Andrew Deakin",
             "handicap": 15
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 5,
@@ -56515,7 +56669,8 @@
             "name": "Paul Wayne Taylor",
             "handicap": 16
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 6,
@@ -56533,7 +56688,8 @@
             "name": "Adam Stanfield",
             "handicap": 12
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 7,
@@ -56551,7 +56707,8 @@
             "name": "James Stevens",
             "handicap": 10
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 8,
@@ -56569,7 +56726,8 @@
             "name": "Adrian Burns",
             "handicap": 14
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 9,
@@ -56587,7 +56745,8 @@
             "name": "James Price",
             "handicap": 20
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 10,
@@ -56605,7 +56764,8 @@
             "name": "Paul Ian Welch",
             "handicap": 11
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 11,
@@ -56623,7 +56783,8 @@
             "name": "Stephen Hall",
             "handicap": 17
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 12,
@@ -56641,7 +56802,8 @@
             "name": "Wayne Rutter",
             "handicap": 18
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 13,
@@ -56659,7 +56821,8 @@
             "name": "Tim Mark Wright",
             "handicap": 16
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 14,
@@ -56677,7 +56840,8 @@
             "name": "David Hobley",
             "handicap": 11
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 15,
@@ -56695,7 +56859,8 @@
             "name": "Alan Ball",
             "handicap": 7
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 16,
@@ -56713,7 +56878,8 @@
             "name": "Gerald Paul Crowley",
             "handicap": 19
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 17,
@@ -56731,7 +56897,8 @@
             "name": "Chris Norton",
             "handicap": 6
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 18,
@@ -56749,7 +56916,8 @@
             "name": "Jason Langford",
             "handicap": 12
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 19,
@@ -56767,7 +56935,8 @@
             "name": "Neil Hanley",
             "handicap": 24
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 20,
@@ -56785,7 +56954,8 @@
             "name": "Jason Watchorn",
             "handicap": 16
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 21,
@@ -56803,7 +56973,8 @@
             "name": "Calin Tiplea",
             "handicap": 12
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 22,
@@ -56821,7 +56992,8 @@
             "name": "Anthony Fegan",
             "handicap": 18
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 23,
@@ -56839,7 +57011,8 @@
             "name": "Mark Andrew Poulding",
             "handicap": 7
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 24,
@@ -56857,7 +57030,8 @@
             "name": "Mark Williams",
             "handicap": 9
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 25,
@@ -56875,7 +57049,8 @@
             "name": "Steven Brookes",
             "handicap": 11
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 26,
@@ -56893,7 +57068,8 @@
             "name": "Melvyn Crook",
             "handicap": 15
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 27,
@@ -56920,7 +57096,8 @@
             "name": "Graham Morgan",
             "handicap": 18
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 29,
@@ -56938,7 +57115,8 @@
             "name": "Ian Frederick Stevens",
             "handicap": 6
           }
-        ]
+        ],
+        "teamSize": 2
       },
       {
         "position": 30,
@@ -56956,9 +57134,11 @@
             "name": "Steve Homer",
             "handicap": 20
           }
-        ]
+        ],
+        "teamSize": 2
       }
-    ]
+    ],
+    "format": "Pairs"
   },
   {
     "competitionId": "queen-elizabeth-ii-memorial-cup",
@@ -67383,413 +67563,362 @@
     ]
   },
   {
+    "recordId": "REC-00005",
     "competitionId": "3-ball-cha-cha-cha",
     "competitionName": "3 Ball - Cha Cha Cha",
-    "competitionFormat": "Individual",
-    "scoreType": "Unknown",
-    "teamSize": 1,
+    "competitionFormat": "Team",
+    "teamSize": 3,
     "section": "Mens",
-    "competitionClass": "Standard",
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General",
     "year": 2026,
-    "date": "2026-03-07",
-    "endDate": null,
-    "multiDayEvent": false,
-    "numberOfRounds": 1,
-    "sourceTitle": "3 Ball - Cha Cha Cha",
-    "sourceDate": "Saturday 7th March 2026, Yellow Tees, Dudley Golf Course",
-    "awards": {
-      "overallWinner": {
-        "playerName": "Michael David Cosnett (14), Stephen Brian Hopkins",
-        "score": null,
-        "countsAsCareerWin": true
-      }
-    },
     "results": [
       {
         "position": 1,
-        "rounds": [
+        "score": 80,
+        "playerName": "Michael David Cosnett / Stephen Brian Hopkins / Craig Locke",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Michael David Cosnett",
+            "handicap": 14
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Stephen Brian Hopkins",
+            "handicap": 12
+          },
+          {
+            "name": "Craig Locke",
+            "handicap": 18
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Michael David Cosnett (14), Stephen Brian Hopkins",
-        "handicap": 12
+        ]
       },
       {
         "position": 2,
-        "rounds": [
+        "score": 76,
+        "playerName": "Jason Hurp / Carl Elsworth / Richard Weston",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Jason Hurp",
+            "handicap": 7
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Carl Elsworth",
+            "handicap": 5
+          },
+          {
+            "name": "Richard Weston",
+            "handicap": 12
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Jason Hurp (7), Carl Elsworth",
-        "handicap": 5
+        ]
       },
       {
         "position": 3,
-        "rounds": [
+        "score": 76,
+        "playerName": "Mark Williams / Neil Hartland / James Stevens",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Mark Williams",
+            "handicap": 9
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Neil Hartland",
+            "handicap": 7
+          },
+          {
+            "name": "James Stevens",
+            "handicap": 9
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Mark Williams (9), Neil Hartland",
-        "handicap": 7
+        ]
       },
       {
         "position": 4,
-        "rounds": [
+        "score": 76,
+        "playerName": "Craig Biddulph / Philip Thompson / Mark Dando",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Craig Biddulph",
+            "handicap": 15
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Philip Thompson",
+            "handicap": 7
+          },
+          {
+            "name": "Mark Dando",
+            "handicap": 4
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Craig Biddulph (15), Philip Thompson",
-        "handicap": 7
+        ]
       },
       {
         "position": 5,
-        "rounds": [
+        "score": 76,
+        "playerName": "Steven Taylor / Anthony Fegan / Neil Hanley",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Steven Taylor",
+            "handicap": 14
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Anthony Fegan",
+            "handicap": 18
+          },
+          {
+            "name": "Neil Hanley",
+            "handicap": 22
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Steven Taylor (14), Anthony Fegan",
-        "handicap": 18
+        ]
       },
       {
         "position": 6,
-        "rounds": [
+        "score": 75,
+        "playerName": "David Jeavons / Clive Kearey / Adam Stanfield",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "David Jeavons",
+            "handicap": 21
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Clive Kearey",
+            "handicap": 17
+          },
+          {
+            "name": "Adam Stanfield",
+            "handicap": 10
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "David Jeavons (21), Clive Kearey",
-        "handicap": 17
+        ]
       },
       {
         "position": 7,
-        "rounds": [
+        "score": 74,
+        "playerName": "Alan Ball / Andrew Russell / Gary Baker",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Alan Ball",
+            "handicap": 5
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Andrew Russell",
+            "handicap": 9
+          },
+          {
+            "name": "Gary Baker",
+            "handicap": 16
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Alan Ball (5), Andrew Russell",
-        "handicap": 9
+        ]
       },
       {
         "position": 8,
-        "rounds": [
+        "score": 72,
+        "playerName": "Lee Roger Grainger / Sean Element / Lewis Ganner",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Lee Roger Grainger",
+            "handicap": 2
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Sean Element",
+            "handicap": 14
+          },
+          {
+            "name": "Lewis Ganner",
+            "handicap": 14
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Lee Roger Grainger (2), Sean Element",
-        "handicap": 14
+        ]
       },
       {
         "position": 9,
-        "rounds": [
+        "score": 71,
+        "playerName": "James Johnson / Joshua Johnson / Dean Johnson",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "James Johnson",
+            "handicap": 8
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Joshua Johnson",
+            "handicap": 19
+          },
+          {
+            "name": "Dean Johnson",
+            "handicap": 16
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "James Johnson (8), Joshua Johnson",
-        "handicap": 19
+        ]
       },
       {
         "position": 10,
-        "rounds": [
+        "score": 70,
+        "playerName": "G.B. Ray / Nigel Brookes / Tim Mark Wright",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "G.B. Ray",
+            "handicap": 9
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Nigel Brookes",
+            "handicap": 5
+          },
+          {
+            "name": "Tim Mark Wright",
+            "handicap": 15
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "G.B. Ray (9), Nigel Brookes",
-        "handicap": 5
+        ]
       },
       {
         "position": 11,
-        "rounds": [
+        "score": 70,
+        "playerName": "Kevin Walters / Kevin Eric Conn / Scott Postin",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Kevin Walters",
+            "handicap": 10
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Kevin Eric Conn",
+            "handicap": 19
+          },
+          {
+            "name": "Scott Postin",
+            "handicap": 11
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Kevin Walters (10), Kevin Eric Conn",
-        "handicap": 19
+        ]
       },
       {
         "position": 12,
-        "rounds": [
+        "score": 68,
+        "playerName": "Mitchell Raybould / Adrian Burns / Dean Hinchcliffe",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Mitchell Raybould",
+            "handicap": 17
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Adrian Burns",
+            "handicap": 12
+          },
+          {
+            "name": "Dean Hinchcliffe",
+            "handicap": 14
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Mitchell Raybould (17), Adrian Burns",
-        "handicap": 12
+        ]
       },
       {
         "position": 13,
-        "rounds": [
+        "score": 66,
+        "playerName": "Calin Tiplea / Michael Williams / Melvyn Crook",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Calin Tiplea",
+            "handicap": 9
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Michael Williams",
+            "handicap": 15
+          },
+          {
+            "name": "Melvyn Crook",
+            "handicap": 16
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Calin Tiplea (9), Michael Williams",
-        "handicap": 15
+        ]
       },
       {
         "position": 14,
-        "rounds": [
+        "score": 66,
+        "playerName": "Jason Watchorn / Graham Morgan / Scott Whitehall",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Jason Watchorn",
+            "handicap": 16
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Graham Morgan",
+            "handicap": 17
+          },
+          {
+            "name": "Scott Whitehall",
+            "handicap": 13
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Jason Watchorn (16), Graham Morgan",
-        "handicap": 17
+        ]
       },
       {
         "position": 15,
-        "rounds": [
+        "score": 65,
+        "playerName": "Paul Holmes / Stephen Holmes / Andrew Card",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Paul Holmes",
+            "handicap": 3
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Stephen Holmes",
+            "handicap": 19
+          },
+          {
+            "name": "Andrew Card",
+            "handicap": 19
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Paul Holmes (3), Stephen Holmes",
-        "handicap": 19
+        ]
       },
       {
         "position": 16,
-        "rounds": [
+        "score": 63,
+        "playerName": "Tony John Salt / Mark Basterfield / Ryan Walker",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Tony John Salt",
+            "handicap": 15
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Mark Basterfield",
+            "handicap": 12
+          },
+          {
+            "name": "Ryan Walker",
+            "handicap": 7
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Tony John Salt (15), Mark Basterfield",
-        "handicap": 12
+        ]
       },
       {
         "position": 17,
-        "rounds": [
+        "score": 62,
+        "playerName": "Richard Limb / Mark Andrew Poulding / Ian Frederick Stevens",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Richard Limb",
+            "handicap": 9
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Mark Andrew Poulding",
+            "handicap": 7
+          },
+          {
+            "name": "Ian Frederick Stevens",
+            "handicap": 6
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Richard Limb (9), Mark Andrew Poulding",
-        "handicap": 7
+        ]
       },
       {
         "position": 18,
-        "rounds": [
+        "score": 57,
+        "playerName": "Clive Peter Gould / Steve Homer / George McKirdy",
+        "teamMembers": [
           {
-            "round": 1,
-            "score": null
+            "name": "Clive Peter Gould",
+            "handicap": 20
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Steve Homer",
+            "handicap": 18
+          },
+          {
+            "name": "George McKirdy",
+            "handicap": 15
           }
-        ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Clive Peter Gould (20), Steve Homer",
-        "handicap": 18
+        ]
       }
-    ]
+    ],
+    "metadata": {
+      "importedBy": "Museum Import Engine v2",
+      "importDate": "2026-07-03",
+      "source": "competition-import.json"
+    }
   },
   {
     "competitionId": "3-ball-modified-waltz",

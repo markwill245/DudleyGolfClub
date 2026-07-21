@@ -186,14 +186,22 @@
       "mostTop3": {
         "label": "Most Top 3 Finishes",
         "holder": {
-          "player": "M. Hickman",
-          "slug": "m-hickman",
+          "player": "James Stevens",
+          "slug": "james-stevens",
           "section": "Mens",
           "value": 26
         },
         "leaders": [
           {
             "rank": 1,
+            "player": "James Stevens",
+            "slug": "james-stevens",
+            "section": "Mens",
+            "value": 26,
+            "displayValue": 26
+          },
+          {
+            "rank": 2,
             "player": "M. Hickman",
             "slug": "m-hickman",
             "section": "Mens",
@@ -201,25 +209,17 @@
             "displayValue": 26
           },
           {
-            "rank": 2,
-            "player": "James Stevens",
-            "slug": "james-stevens",
-            "section": "Mens",
-            "value": 25,
-            "displayValue": 25
-          },
-          {
             "rank": 3,
-            "player": "M. Williams",
-            "slug": "m-williams",
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
             "section": "Mens",
-            "value": 18,
-            "displayValue": 18
+            "value": 19,
+            "displayValue": 19
           },
           {
             "rank": 4,
-            "player": "Mark A. Williams",
-            "slug": "mark-a-williams",
+            "player": "M. Williams",
+            "slug": "m-williams",
             "section": "Mens",
             "value": 18,
             "displayValue": 18
@@ -229,8 +229,8 @@
             "player": "Neil Hartland",
             "slug": "neil-hartland",
             "section": "Mens",
-            "value": 16,
-            "displayValue": 16
+            "value": 17,
+            "displayValue": 17
           },
           {
             "rank": 6,
@@ -280,7 +280,7 @@
           "player": "James Stevens",
           "slug": "james-stevens",
           "section": "Mens",
-          "value": 29
+          "value": 31
         },
         "leaders": [
           {
@@ -288,11 +288,19 @@
             "player": "James Stevens",
             "slug": "james-stevens",
             "section": "Mens",
-            "value": 29,
-            "displayValue": 29
+            "value": 31,
+            "displayValue": 31
           },
           {
             "rank": 2,
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
+            "section": "Mens",
+            "value": 27,
+            "displayValue": 27
+          },
+          {
+            "rank": 3,
             "player": "M. Hickman",
             "slug": "m-hickman",
             "section": "Mens",
@@ -300,28 +308,20 @@
             "displayValue": 26
           },
           {
-            "rank": 3,
-            "player": "Neil Hartland",
-            "slug": "neil-hartland",
+            "rank": 4,
+            "player": "Mark A. Williams",
+            "slug": "mark-a-williams",
             "section": "Mens",
             "value": 25,
             "displayValue": 25
           },
           {
-            "rank": 4,
+            "rank": 5,
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
             "value": 24,
             "displayValue": 24
-          },
-          {
-            "rank": 5,
-            "player": "Mark A. Williams",
-            "slug": "mark-a-williams",
-            "section": "Mens",
-            "value": 23,
-            "displayValue": 23
           },
           {
             "rank": 6,
@@ -371,7 +371,7 @@
           "player": "James Stevens",
           "slug": "james-stevens",
           "section": "Mens",
-          "value": 56
+          "value": 59
         },
         "leaders": [
           {
@@ -379,32 +379,32 @@
             "player": "James Stevens",
             "slug": "james-stevens",
             "section": "Mens",
-            "value": 56,
-            "displayValue": 56
+            "value": 59,
+            "displayValue": 59
           },
           {
             "rank": 2,
             "player": "Neil Hartland",
             "slug": "neil-hartland",
             "section": "Mens",
-            "value": 50,
-            "displayValue": 50
+            "value": 53,
+            "displayValue": 53
           },
           {
             "rank": 3,
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 45,
-            "displayValue": 45
+            "value": 46,
+            "displayValue": 46
           },
           {
             "rank": 4,
             "player": "Mark A. Williams",
             "slug": "mark-a-williams",
             "section": "Mens",
-            "value": 39,
-            "displayValue": 39
+            "value": 42,
+            "displayValue": 42
           },
           {
             "rank": 5,
@@ -419,11 +419,19 @@
             "player": "Alan Ball",
             "slug": "alan-ball",
             "section": "Mens",
-            "value": 37,
-            "displayValue": 37
+            "value": 38,
+            "displayValue": 38
           },
           {
             "rank": 7,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
+            "value": 34,
+            "displayValue": 34
+          },
+          {
+            "rank": 8,
             "player": "Mark Andrew Poulding",
             "slug": "mark-andrew-poulding",
             "section": "Mens",
@@ -431,25 +439,17 @@
             "displayValue": 33
           },
           {
-            "rank": 8,
-            "player": "Adam Stanfield",
-            "slug": "adam-stanfield",
-            "section": "Mens",
-            "value": 32,
-            "displayValue": 32
-          },
-          {
             "rank": 9,
-            "player": "Ian Frederick Stevens",
-            "slug": "ian-frederick-stevens",
+            "player": "Nigel Brookes",
+            "slug": "nigel-brookes",
             "section": "Mens",
-            "value": 32,
-            "displayValue": 32
+            "value": 33,
+            "displayValue": 33
           },
           {
             "rank": 10,
-            "player": "Lewis Jones",
-            "slug": "lewis-jones",
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
             "section": "Mens",
             "value": 32,
             "displayValue": 32
@@ -462,7 +462,7 @@
           "player": "G.B. Ray",
           "slug": "g-b-ray",
           "section": "Mens",
-          "value": 113
+          "value": 114
         },
         "leaders": [
           {
@@ -470,8 +470,8 @@
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 113,
-            "displayValue": 113
+            "value": 114,
+            "displayValue": 114
           },
           {
             "rank": 2,
@@ -486,21 +486,21 @@
             "player": "James Stevens",
             "slug": "james-stevens",
             "section": "Mens",
-            "value": 100,
-            "displayValue": 100
+            "value": 103,
+            "displayValue": 103
           },
           {
             "rank": 4,
-            "player": "Gerald Paul Crowley",
-            "slug": "gerald-paul-crowley",
+            "player": "Neil Hartland",
+            "slug": "neil-hartland",
             "section": "Mens",
-            "value": 96,
-            "displayValue": 96
+            "value": 99,
+            "displayValue": 99
           },
           {
             "rank": 5,
-            "player": "Neil Hartland",
-            "slug": "neil-hartland",
+            "player": "Gerald Paul Crowley",
+            "slug": "gerald-paul-crowley",
             "section": "Mens",
             "value": 96,
             "displayValue": 96
@@ -518,11 +518,19 @@
             "player": "Richard Limb",
             "slug": "richard-limb",
             "section": "Mens",
+            "value": 95,
+            "displayValue": 95
+          },
+          {
+            "rank": 8,
+            "player": "Adam Stanfield",
+            "slug": "adam-stanfield",
+            "section": "Mens",
             "value": 93,
             "displayValue": 93
           },
           {
-            "rank": 8,
+            "rank": 9,
             "player": "Paul Ian Welch",
             "slug": "paul-ian-welch",
             "section": "Mens",
@@ -530,20 +538,12 @@
             "displayValue": 92
           },
           {
-            "rank": 9,
-            "player": "Adam Stanfield",
-            "slug": "adam-stanfield",
-            "section": "Mens",
-            "value": 91,
-            "displayValue": 91
-          },
-          {
             "rank": 10,
             "player": "Calin Tiplea",
             "slug": "calin-tiplea",
             "section": "Mens",
-            "value": 90,
-            "displayValue": 90
+            "value": 91,
+            "displayValue": 91
           }
         ]
       }
@@ -1474,7 +1474,7 @@
         "player": "M. Hickman",
         "slug": "m-hickman",
         "section": "Mens",
-        "value": 1256
+        "value": 1236
       },
       "leaders": [
         {
@@ -1482,8 +1482,8 @@
           "player": "M. Hickman",
           "slug": "m-hickman",
           "section": "Mens",
-          "value": 1256,
-          "displayValue": 1256
+          "value": 1236,
+          "displayValue": 1236
         },
         {
           "rank": 2,
@@ -1498,16 +1498,16 @@
           "player": "Mark A. Williams",
           "slug": "mark-a-williams",
           "section": "Mens",
-          "value": 581,
-          "displayValue": 581
+          "value": 589,
+          "displayValue": 589
         },
         {
           "rank": 4,
           "player": "James Stevens",
           "slug": "james-stevens",
           "section": "Mens",
-          "value": 523,
-          "displayValue": 523
+          "value": 531,
+          "displayValue": 531
         },
         {
           "rank": 5,
@@ -1538,8 +1538,8 @@
           "player": "Neil Hartland",
           "slug": "neil-hartland",
           "section": "Mens",
-          "value": 337,
-          "displayValue": 337
+          "value": 345,
+          "displayValue": 345
         },
         {
           "rank": 9,

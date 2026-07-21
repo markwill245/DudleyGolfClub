@@ -645,24 +645,339 @@
     "competitionFormat": "Individual",
     "competitionClass": "Medal",
     "museumCategory": "Medal",
-    "importStatus": "pending",
+    "importStatus": "complete",
     "category": "Medal",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 0,
-    "firstYear": null,
-    "latestYear": null,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 0,
-    "mostSuccessfulPlayer": null,
-    "mostWins": 0,
-    "currentWinners": [],
-    "winnerLeaders": [],
-    "winnerHistory": [],
+    "yearsPlayed": 4,
+    "firstYear": 2021,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 1318,
+    "averageEntries": 329.5,
+    "uniqueWinners": 24,
+    "mostSuccessfulPlayer": "Alan Ball",
+    "mostWins": 2,
+    "currentWinners": [
+      "Alan Ball",
+      "Andrew Russell",
+      "Jason Bates",
+      "Paul Wayne Taylor",
+      "Richard Weston",
+      "Robert Keith Woodall",
+      "Stuart Evans",
+      "Wayne Rutter"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Alan Ball",
+        "wins": 2
+      },
+      {
+        "player": "Wayne Rutter",
+        "wins": 2
+      },
+      {
+        "player": "Andrew Russell",
+        "wins": 1
+      },
+      {
+        "player": "Clive Peter Gould",
+        "wins": 1
+      },
+      {
+        "player": "Darren Povey",
+        "wins": 1
+      },
+      {
+        "player": "Gary William Stubbs",
+        "wins": 1
+      },
+      {
+        "player": "Ian Frederick Stevens",
+        "wins": 1
+      },
+      {
+        "player": "James Stevens",
+        "wins": 1
+      },
+      {
+        "player": "Jason Bates",
+        "wins": 1
+      },
+      {
+        "player": "Jason Sean Higley",
+        "wins": 1
+      },
+      {
+        "player": "Keith John Woodall",
+        "wins": 1
+      },
+      {
+        "player": "Kevin Walters",
+        "wins": 1
+      },
+      {
+        "player": "Lewis Ganner",
+        "wins": 1
+      },
+      {
+        "player": "Lewis Jones",
+        "wins": 1
+      },
+      {
+        "player": "Mark Andrew Poulding",
+        "wins": 1
+      },
+      {
+        "player": "Mark Dando",
+        "wins": 1
+      },
+      {
+        "player": "Patrick Corcoran",
+        "wins": 1
+      },
+      {
+        "player": "Paul Wayne Taylor",
+        "wins": 1
+      },
+      {
+        "player": "Philip Thompson",
+        "wins": 1
+      },
+      {
+        "player": "Richard Weston",
+        "wins": 1
+      },
+      {
+        "player": "Robert Keith Woodall",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Brian Hopkins",
+        "wins": 1
+      },
+      {
+        "player": "Stewart Marshall",
+        "wins": 1
+      },
+      {
+        "player": "Stuart Evans",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Alan Ball",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 68,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Andrew Russell",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 1,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Jason Bates",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 60,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Paul Wayne Taylor",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 66,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Richard Weston",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Robert Keith Woodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 71,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Stuart Evans",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 70,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Wayne Rutter",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 69,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Alan Ball",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 62,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Clive Peter Gould",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 66,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Lewis Ganner",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 69,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Lewis Jones",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Mark Dando",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 61,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Patrick Corcoran",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 65,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Philip Thompson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 68,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Wayne Rutter",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Darren Povey",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 66,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Gary William Stubbs",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 66,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Ian Frederick Stevens",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 65,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "James Stevens",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Jason Sean Higley",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 68,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Keith John Woodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 67,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Kevin Walters",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 66,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Mark Andrew Poulding",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 69,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Stephen Brian Hopkins",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 68,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Stewart Marshall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
+      }
+    ],
     "sourcePriority": {
       "officialWinnerSource": "Competition Results",
       "hasVerifiedBoard": false,
@@ -682,24 +997,100 @@
     "competitionFormat": "Individual",
     "competitionClass": "Board",
     "museumCategory": "Board Competition",
-    "importStatus": "pending",
+    "importStatus": "complete",
     "category": "Board Competition",
     "historicalBoard": true,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 0,
-    "firstYear": null,
-    "latestYear": null,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 0,
-    "mostSuccessfulPlayer": null,
-    "mostWins": 0,
-    "currentWinners": [],
-    "winnerLeaders": [],
-    "winnerHistory": [],
+    "yearsPlayed": 2,
+    "firstYear": 2024,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 274,
+    "averageEntries": 137,
+    "uniqueWinners": 6,
+    "mostSuccessfulPlayer": "Gary Baker",
+    "mostWins": 1,
+    "currentWinners": [
+      "Gary Baker"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Gary Baker",
+        "wins": 1
+      },
+      {
+        "player": "Keith Durbridge",
+        "wins": 1
+      },
+      {
+        "player": "Linda Rafferty",
+        "wins": 1
+      },
+      {
+        "player": "Paul Ian Welch",
+        "wins": 1
+      },
+      {
+        "player": "Raymond Saunders",
+        "wins": 1
+      },
+      {
+        "player": "Tim Blakemore",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Gary Baker",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 43,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Keith Durbridge",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 37,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Linda Rafferty",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 30,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Paul Ian Welch",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 37,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Raymond Saunders",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Tim Blakemore",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 35,
+        "relativeToPar": null
+      }
+    ],
     "sourcePriority": {
       "officialWinnerSource": "Competition Results",
       "hasVerifiedBoard": false,
@@ -756,24 +1147,206 @@
     "competitionFormat": "Individual",
     "competitionClass": "Medal",
     "museumCategory": "Seniors",
-    "importStatus": "pending",
+    "importStatus": "complete",
     "category": "Seniors",
     "historicalBoard": false,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 0,
-    "firstYear": null,
-    "latestYear": null,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 0,
-    "mostSuccessfulPlayer": null,
-    "mostWins": 0,
-    "currentWinners": [],
-    "winnerLeaders": [],
-    "winnerHistory": [],
+    "yearsPlayed": 4,
+    "firstYear": 2021,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 525,
+    "averageEntries": 131.3,
+    "uniqueWinners": 14,
+    "mostSuccessfulPlayer": "Clive Atkins",
+    "mostWins": 2,
+    "currentWinners": [
+      "James Marsh Derrer",
+      "Robert Hudson",
+      "Stephen Hall"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Clive Atkins",
+        "wins": 2
+      },
+      {
+        "player": "Geoffrey Alan Ford",
+        "wins": 1
+      },
+      {
+        "player": "Ivan James Cooper",
+        "wins": 1
+      },
+      {
+        "player": "James Marsh Derrer",
+        "wins": 1
+      },
+      {
+        "player": "Keith Ratcliffe",
+        "wins": 1
+      },
+      {
+        "player": "Keith Taylor",
+        "wins": 1
+      },
+      {
+        "player": "Kenneth Brettle",
+        "wins": 1
+      },
+      {
+        "player": "M T Cowdell",
+        "wins": 1
+      },
+      {
+        "player": "Malcolm Powell",
+        "wins": 1
+      },
+      {
+        "player": "Paul Raymond Rock",
+        "wins": 1
+      },
+      {
+        "player": "Paul Russell",
+        "wins": 1
+      },
+      {
+        "player": "Robert Hudson",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Hall",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Price",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "James Marsh Derrer",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 30,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Robert Hudson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Stephen Hall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 30,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Geoffrey Alan Ford",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Malcolm Powell",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Paul Russell",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 31,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Stephen Price",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 31,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Clive Atkins",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 19,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Ivan James Cooper",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 34,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Keith Ratcliffe",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 36,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Keith Taylor",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 31,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Kenneth Brettle",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "M T Cowdell",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Paul Raymond Rock",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Clive Atkins",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
+      }
+    ],
     "sourcePriority": {
       "officialWinnerSource": "Competition Results",
       "hasVerifiedBoard": false,
@@ -11757,13 +12330,15 @@
     "firstYear": 2025,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 69,
-    "averageEntries": 34.5,
-    "uniqueWinners": 4,
+    "totalEntries": 105,
+    "averageEntries": 52.5,
+    "uniqueWinners": 6,
     "mostSuccessfulPlayer": "Adrian Burns",
     "mostWins": 1,
     "currentWinners": [
-      "Michael David Cosnett (14), Stephen Brian Hopkins"
+      "Craig Locke",
+      "Michael David Cosnett",
+      "Stephen Brian Hopkins"
     ],
     "winnerLeaders": [
       {
@@ -11771,25 +12346,49 @@
         "wins": 1
       },
       {
+        "player": "Craig Locke",
+        "wins": 1
+      },
+      {
         "player": "James Price",
         "wins": 1
       },
       {
-        "player": "Michael David Cosnett (14), Stephen Brian Hopkins",
+        "player": "Michael David Cosnett",
         "wins": 1
       },
       {
         "player": "Mitchell Raybould",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Brian Hopkins",
         "wins": 1
       }
     ],
     "winnerHistory": [
       {
         "year": 2026,
-        "winner": "Michael David Cosnett (14), Stephen Brian Hopkins",
+        "winner": "Craig Locke",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 80,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Michael David Cosnett",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 80,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Stephen Brian Hopkins",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 80,
         "relativeToPar": null
       },
       {
@@ -12118,16 +12717,18 @@
     "firstYear": 2025,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 65,
-    "averageEntries": 65,
-    "uniqueWinners": 4,
+    "totalEntries": 77,
+    "averageEntries": 77,
+    "uniqueWinners": 6,
     "mostSuccessfulPlayer": "G.B. Ray",
     "mostWins": 1,
     "currentWinners": [
       "G.B. Ray",
       "Paul Harper",
-      "Paul Holmes (3), Stephen Holmes",
-      "Stephen Hall"
+      "Paul Holmes",
+      "Stephen Hall",
+      "Stephen Holmes",
+      "Thomas Plant"
     ],
     "winnerLeaders": [
       {
@@ -12139,11 +12740,19 @@
         "wins": 1
       },
       {
-        "player": "Paul Holmes (3), Stephen Holmes",
+        "player": "Paul Holmes",
         "wins": 1
       },
       {
         "player": "Stephen Hall",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Holmes",
+        "wins": 1
+      },
+      {
+        "player": "Thomas Plant",
         "wins": 1
       }
     ],
@@ -12166,7 +12775,7 @@
       },
       {
         "year": 2025,
-        "winner": "Paul Holmes (3), Stephen Holmes",
+        "winner": "Paul Holmes",
         "source": "Competition Result",
         "verified": false,
         "score": null,
@@ -12178,6 +12787,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 80,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Stephen Holmes",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Thomas Plant",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
         "relativeToPar": null
       }
     ],
@@ -12263,8 +12888,8 @@
     "firstYear": 2025,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 78,
-    "averageEntries": 78,
+    "totalEntries": 84,
+    "averageEntries": 84,
     "uniqueWinners": 5,
     "mostSuccessfulPlayer": "Craig Tromans",
     "mostWins": 1,
