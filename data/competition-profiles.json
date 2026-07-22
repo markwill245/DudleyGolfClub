@@ -10441,17 +10441,20 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
+    "yearsPlayed": 2,
     "firstYear": 2024,
-    "latestYear": 2026,
-    "latestDetailedYear": 2026,
-    "totalEntries": 149,
-    "averageEntries": 49.7,
-    "uniqueWinners": 9,
+    "latestYear": 2025,
+    "latestDetailedYear": 2025,
+    "totalEntries": 131,
+    "averageEntries": 65.5,
+    "uniqueWinners": 8,
     "mostSuccessfulPlayer": "Adam Bonehill",
     "mostWins": 1,
     "currentWinners": [
-      "Mark Dando (7), Clive Kearey (18), Adam Stanfield"
+      "Adrian Burns",
+      "James Price",
+      "Keith Durbridge",
+      "Stephen Price"
     ],
     "winnerLeaders": [
       {
@@ -10479,10 +10482,6 @@
         "wins": 1
       },
       {
-        "player": "Mark Dando (7), Clive Kearey (18), Adam Stanfield",
-        "wins": 1
-      },
-      {
         "player": "Richard Limb",
         "wins": 1
       },
@@ -10492,14 +10491,6 @@
       }
     ],
     "winnerHistory": [
-      {
-        "year": 2026,
-        "winner": "Mark Dando (7), Clive Kearey (18), Adam Stanfield",
-        "source": "Competition Result",
-        "verified": false,
-        "score": null,
-        "relativeToPar": null
-      },
       {
         "year": 2025,
         "winner": "Adrian Burns",
@@ -10842,17 +10833,22 @@
     "firstYear": 2024,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 158,
-    "averageEntries": 52.7,
-    "uniqueWinners": 5,
+    "totalEntries": 189,
+    "averageEntries": 63,
+    "uniqueWinners": 6,
     "mostSuccessfulPlayer": "Adrian Burns",
     "mostWins": 1,
     "currentWinners": [
+      "James Stevens",
       "Neil Hartland"
     ],
     "winnerLeaders": [
       {
         "player": "Adrian Burns",
+        "wins": 1
+      },
+      {
+        "player": "James Stevens",
         "wins": 1
       },
       {
@@ -10875,10 +10871,18 @@
     "winnerHistory": [
       {
         "year": 2026,
+        "winner": "James Stevens",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 49,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
         "winner": "Neil Hartland",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 49,
         "relativeToPar": null
       },
       {
@@ -11377,13 +11381,14 @@
     "firstYear": 2024,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 164,
-    "averageEntries": 54.7,
-    "uniqueWinners": 5,
+    "totalEntries": 190,
+    "averageEntries": 63.3,
+    "uniqueWinners": 6,
     "mostSuccessfulPlayer": "Adam Stanfield",
     "mostWins": 1,
     "currentWinners": [
-      "Gregory Curry"
+      "Gregory Curry",
+      "Richard Weston"
     ],
     "winnerLeaders": [
       {
@@ -11403,6 +11408,10 @@
         "wins": 1
       },
       {
+        "player": "Richard Weston",
+        "wins": 1
+      },
+      {
         "player": "Robert Shedden",
         "wins": 1
       }
@@ -11413,7 +11422,15 @@
         "winner": "Gregory Curry",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 46,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Richard Weston",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 46,
         "relativeToPar": null
       },
       {
@@ -11478,17 +11495,22 @@
     "firstYear": 2025,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 50,
-    "averageEntries": 25,
-    "uniqueWinners": 3,
+    "totalEntries": 63,
+    "averageEntries": 31.5,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "Eric Edwards",
     "mostWins": 1,
     "currentWinners": [
+      "Keith Brian Culwick",
       "Kevin John Hartland"
     ],
     "winnerLeaders": [
       {
         "player": "Eric Edwards",
+        "wins": 1
+      },
+      {
+        "player": "Keith Brian Culwick",
         "wins": 1
       },
       {
@@ -11503,10 +11525,18 @@
     "winnerHistory": [
       {
         "year": 2026,
+        "winner": "Keith Brian Culwick",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 20,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
         "winner": "Kevin John Hartland",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 20,
         "relativeToPar": null
       },
       {
@@ -12253,12 +12283,13 @@
     "firstYear": 2025,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 93,
-    "averageEntries": 46.5,
-    "uniqueWinners": 3,
+    "totalEntries": 126,
+    "averageEntries": 63,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "Clive Kearey",
     "mostWins": 1,
     "currentWinners": [
+      "Philip John Northall",
       "Steve Homer"
     ],
     "winnerLeaders": [
@@ -12271,6 +12302,10 @@
         "wins": 1
       },
       {
+        "player": "Philip John Northall",
+        "wins": 1
+      },
+      {
         "player": "Steve Homer",
         "wins": 1
       }
@@ -12278,10 +12313,18 @@
     "winnerHistory": [
       {
         "year": 2026,
+        "winner": "Philip John Northall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
         "winner": "Steve Homer",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 45,
         "relativeToPar": null
       },
       {
@@ -12445,15 +12488,20 @@
     "firstYear": 2026,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 23,
-    "averageEntries": 23,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "Philip Thompson",
+    "totalEntries": 46,
+    "averageEntries": 46,
+    "uniqueWinners": 2,
+    "mostSuccessfulPlayer": "Lewis Ganner",
     "mostWins": 1,
     "currentWinners": [
+      "Lewis Ganner",
       "Philip Thompson"
     ],
     "winnerLeaders": [
+      {
+        "player": "Lewis Ganner",
+        "wins": 1
+      },
       {
         "player": "Philip Thompson",
         "wins": 1
@@ -12462,10 +12510,18 @@
     "winnerHistory": [
       {
         "year": 2026,
+        "winner": "Lewis Ganner",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
         "winner": "Philip Thompson",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 42,
         "relativeToPar": null
       }
     ],
@@ -12628,25 +12684,31 @@
     "firstYear": 2024,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 56,
-    "averageEntries": 28,
-    "uniqueWinners": 4,
+    "totalEntries": 98,
+    "averageEntries": 49,
+    "uniqueWinners": 5,
     "mostSuccessfulPlayer": "Mark Basterfield",
-    "mostWins": 1,
+    "mostWins": 2,
     "currentWinners": [
-      "Mark Basterfield (12), Jason Langford"
+      "Jason Langford",
+      "Mark Basterfield",
+      "Neil Hanley"
     ],
     "winnerLeaders": [
       {
         "player": "Mark Basterfield",
-        "wins": 1
+        "wins": 2
       },
       {
-        "player": "Mark Basterfield (12), Jason Langford",
+        "player": "Jason Langford",
         "wins": 1
       },
       {
         "player": "Mark Neil Tolley",
+        "wins": 1
+      },
+      {
+        "player": "Neil Hanley",
         "wins": 1
       },
       {
@@ -12657,10 +12719,26 @@
     "winnerHistory": [
       {
         "year": 2026,
-        "winner": "Mark Basterfield (12), Jason Langford",
+        "winner": "Jason Langford",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 89,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Mark Basterfield",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 89,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Neil Hanley",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 89,
         "relativeToPar": null
       },
       {
@@ -13774,15 +13852,20 @@
     "firstYear": 2025,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 25,
-    "averageEntries": 25,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "Scott Postin",
+    "totalEntries": 48,
+    "averageEntries": 48,
+    "uniqueWinners": 2,
+    "mostSuccessfulPlayer": "Richard Price",
     "mostWins": 1,
     "currentWinners": [
+      "Richard Price",
       "Scott Postin"
     ],
     "winnerLeaders": [
+      {
+        "player": "Richard Price",
+        "wins": 1
+      },
       {
         "player": "Scott Postin",
         "wins": 1
@@ -13791,10 +13874,18 @@
     "winnerHistory": [
       {
         "year": 2025,
+        "winner": "Richard Price",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 44,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "Scott Postin",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 44,
         "relativeToPar": null
       }
     ],
@@ -14661,13 +14752,14 @@
     "firstYear": 2024,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 82,
-    "averageEntries": 41,
-    "uniqueWinners": 3,
+    "totalEntries": 108,
+    "averageEntries": 54,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "Ivan John Jones",
     "mostWins": 1,
     "currentWinners": [
-      "Ivan John Jones"
+      "Ivan John Jones",
+      "John Edwards"
     ],
     "winnerLeaders": [
       {
@@ -14676,6 +14768,10 @@
       },
       {
         "player": "James Stevens",
+        "wins": 1
+      },
+      {
+        "player": "John Edwards",
         "wins": 1
       },
       {
@@ -14689,7 +14785,15 @@
         "winner": "Ivan John Jones",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 48,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "John Edwards",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 48,
         "relativeToPar": null
       },
       {
@@ -17017,5 +17121,97 @@
     },
     "clubChampionship": null,
     "summary": "January Stableford is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "millenium-trophy-4-ball",
+    "competitionId": "millenium-trophy-4-ball",
+    "name": "Millenium Trophy - 4 Ball",
+    "competitionName": "Millenium Trophy - 4 Ball",
+    "section": "Mens",
+    "format": "Team",
+    "competitionFormat": "Team",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2026,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 72,
+    "averageEntries": 72,
+    "uniqueWinners": 4,
+    "mostSuccessfulPlayer": "Adam Stanfield",
+    "mostWins": 1,
+    "currentWinners": [
+      "Adam Stanfield",
+      "Clive Kearey",
+      "Gary Baker",
+      "Mark Dando"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Adam Stanfield",
+        "wins": 1
+      },
+      {
+        "player": "Clive Kearey",
+        "wins": 1
+      },
+      {
+        "player": "Gary Baker",
+        "wins": 1
+      },
+      {
+        "player": "Mark Dando",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Adam Stanfield",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 90,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Clive Kearey",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 90,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Gary Baker",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 90,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Mark Dando",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 90,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Millenium Trophy - 4 Ball is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
