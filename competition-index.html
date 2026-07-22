@@ -66,10 +66,16 @@
 
             const response = await fetch("data/competition-profiles.json");
 
-            competitions = await response.json();
+            const allCompetitions = await response.json();
+
+            competitions = allCompetitions.filter(comp =>
+                comp.displayInArchive !== false &&
+                comp.hasDirectResults !== false &&
+                comp.recordType !== "Competition Family" &&
+                comp.catalogueStatus !== "Umbrella"
+            );
 
             renderCompetitions(competitions);
-
         }
 
         function renderCompetitions(list) {
