@@ -151,6 +151,14 @@
           },
           {
             "rank": 7,
+            "player": "Philip Thompson",
+            "slug": "philip-thompson",
+            "section": "Mens",
+            "value": 7,
+            "displayValue": 7
+          },
+          {
+            "rank": 8,
             "player": "Richard Limb",
             "slug": "richard-limb",
             "section": "Mens",
@@ -158,25 +166,17 @@
             "displayValue": 7
           },
           {
-            "rank": 8,
-            "player": "Gary Baker",
-            "slug": "gary-baker",
-            "section": "Mens",
-            "value": 6,
-            "displayValue": 6
-          },
-          {
             "rank": 9,
-            "player": "Philip Thompson",
-            "slug": "philip-thompson",
+            "player": "Darren Element",
+            "slug": "darren-element",
             "section": "Mens",
             "value": 6,
             "displayValue": 6
           },
           {
             "rank": 10,
-            "player": "Stephen Hall",
-            "slug": "stephen-hall",
+            "player": "Gary Baker",
+            "slug": "gary-baker",
             "section": "Mens",
             "value": 6,
             "displayValue": 6
@@ -304,8 +304,8 @@
             "player": "Sean Element",
             "slug": "sean-element",
             "section": "Mens",
-            "value": 31,
-            "displayValue": 31
+            "value": 32,
+            "displayValue": 32
           },
           {
             "rank": 4,
@@ -344,8 +344,8 @@
             "player": "Philip Thompson",
             "slug": "philip-thompson",
             "section": "Mens",
-            "value": 27,
-            "displayValue": 27
+            "value": 28,
+            "displayValue": 28
           },
           {
             "rank": 9,
@@ -387,8 +387,8 @@
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 63,
-            "displayValue": 63
+            "value": 64,
+            "displayValue": 64
           },
           {
             "rank": 3,
@@ -411,21 +411,21 @@
             "player": "Nigel Brookes",
             "slug": "nigel-brookes",
             "section": "Mens",
+            "value": 51,
+            "displayValue": 51
+          },
+          {
+            "rank": 6,
+            "player": "Sean Element",
+            "slug": "sean-element",
+            "section": "Mens",
             "value": 50,
             "displayValue": 50
           },
           {
-            "rank": 6,
+            "rank": 7,
             "player": "Ian Frederick Stevens",
             "slug": "ian-frederick-stevens",
-            "section": "Mens",
-            "value": 49,
-            "displayValue": 49
-          },
-          {
-            "rank": 7,
-            "player": "Sean Element",
-            "slug": "sean-element",
             "section": "Mens",
             "value": 49,
             "displayValue": 49
@@ -435,8 +435,8 @@
             "player": "Steve Homer",
             "slug": "steve-homer",
             "section": "Mens",
-            "value": 48,
-            "displayValue": 48
+            "value": 49,
+            "displayValue": 49
           },
           {
             "rank": 9,
@@ -462,7 +462,7 @@
           "player": "G.B. Ray",
           "slug": "g-b-ray",
           "section": "Mens",
-          "value": 169
+          "value": 170
         },
         "leaders": [
           {
@@ -470,8 +470,8 @@
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 169,
-            "displayValue": 169
+            "value": 170,
+            "displayValue": 170
           },
           {
             "rank": 2,
@@ -486,8 +486,8 @@
             "player": "Gerald Paul Crowley",
             "slug": "gerald-paul-crowley",
             "section": "Mens",
-            "value": 141,
-            "displayValue": 141
+            "value": 142,
+            "displayValue": 142
           },
           {
             "rank": 4,
@@ -510,21 +510,21 @@
             "player": "Paul Ian Welch",
             "slug": "paul-ian-welch",
             "section": "Mens",
-            "value": 128,
-            "displayValue": 128
+            "value": 129,
+            "displayValue": 129
           },
           {
             "rank": 7,
-            "player": "Ian Frederick Stevens",
-            "slug": "ian-frederick-stevens",
+            "player": "Steve Homer",
+            "slug": "steve-homer",
             "section": "Mens",
-            "value": 126,
-            "displayValue": 126
+            "value": 127,
+            "displayValue": 127
           },
           {
             "rank": 8,
-            "player": "Steve Homer",
-            "slug": "steve-homer",
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
             "section": "Mens",
             "value": 126,
             "displayValue": 126
@@ -1554,8 +1554,8 @@
           "player": "Sean Element",
           "slug": "sean-element",
           "section": "Mens",
-          "value": 355,
-          "displayValue": 355
+          "value": 357,
+          "displayValue": 357
         }
       ]
     },
