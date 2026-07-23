@@ -8857,17 +8857,18 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 14,
+    "yearsPlayed": 15,
     "firstYear": 1993,
-    "latestYear": 2006,
-    "latestDetailedYear": 2006,
-    "totalEntries": 2,
-    "averageEntries": 1,
-    "uniqueWinners": 14,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 34,
+    "averageEntries": 11.3,
+    "uniqueWinners": 16,
     "mostSuccessfulPlayer": "A. Shinton",
     "mostWins": 1,
     "currentWinners": [
-      "I. Taylor"
+      "James Webber",
+      "John Gilbert Baker"
     ],
     "winnerLeaders": [
       {
@@ -8907,6 +8908,14 @@
         "wins": 1
       },
       {
+        "player": "James Webber",
+        "wins": 1
+      },
+      {
+        "player": "John Gilbert Baker",
+        "wins": 1
+      },
+      {
         "player": "M. Hickman",
         "wins": 1
       },
@@ -8928,6 +8937,22 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "James Webber",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 30,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "John Gilbert Baker",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 30,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "I. Taylor",
