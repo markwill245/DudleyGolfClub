@@ -703,9 +703,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 1784,
-    "averageEntries": 356.8,
-    "uniqueWinners": 30,
+    "totalEntries": 1836,
+    "averageEntries": 367.2,
+    "uniqueWinners": 31,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 2,
     "currentWinners": [
@@ -734,6 +734,10 @@
       {
         "player": "Wayne Rutter",
         "wins": 2
+      },
+      {
+        "player": "Adam Bonehill",
+        "wins": 1
       },
       {
         "player": "Andrew Russell",
@@ -1095,6 +1099,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 62,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Adam Bonehill",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
         "relativeToPar": null
       },
       {
@@ -11010,19 +11022,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2022,
+    "yearsPlayed": 4,
+    "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 178,
-    "averageEntries": 59.3,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Darren Povey",
+    "totalEntries": 230,
+    "averageEntries": 57.5,
+    "uniqueWinners": 4,
+    "mostSuccessfulPlayer": "Adam Bonehill",
     "mostWins": 1,
     "currentWinners": [
       "Jason Bates"
     ],
     "winnerLeaders": [
+      {
+        "player": "Adam Bonehill",
+        "wins": 1
+      },
       {
         "player": "Darren Povey",
         "wins": 1
@@ -11059,6 +11075,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 61,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Adam Bonehill",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
         "relativeToPar": null
       }
     ],
