@@ -1289,9 +1289,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 700,
-    "averageEntries": 140,
-    "uniqueWinners": 18,
+    "totalEntries": 731,
+    "averageEntries": 146.2,
+    "uniqueWinners": 19,
     "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 2,
     "currentWinners": [
@@ -1358,6 +1358,10 @@
       },
       {
         "player": "Paul Russell",
+        "wins": 1
+      },
+      {
+        "player": "Philip John Northall",
         "wins": 1
       },
       {
@@ -1516,6 +1520,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 40,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Philip John Northall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 32,
         "relativeToPar": null
       },
       {
@@ -11603,13 +11615,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 57,
-    "averageEntries": 28.5,
-    "uniqueWinners": 2,
+    "totalEntries": 88,
+    "averageEntries": 29.3,
+    "uniqueWinners": 3,
     "mostSuccessfulPlayer": "M T Cowdell",
     "mostWins": 1,
     "currentWinners": [
@@ -11618,6 +11630,10 @@
     "winnerLeaders": [
       {
         "player": "M T Cowdell",
+        "wins": 1
+      },
+      {
+        "player": "Philip John Northall",
         "wins": 1
       },
       {
@@ -11640,6 +11656,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Philip John Northall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 32,
         "relativeToPar": null
       }
     ],
