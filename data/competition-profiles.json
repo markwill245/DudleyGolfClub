@@ -10365,20 +10365,24 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2024,
+    "yearsPlayed": 4,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 90,
-    "averageEntries": 30,
-    "uniqueWinners": 6,
-    "mostSuccessfulPlayer": "James Marsh Derrer",
+    "totalEntries": 118,
+    "averageEntries": 29.5,
+    "uniqueWinners": 8,
+    "mostSuccessfulPlayer": "Geoffrey Alan Ford",
     "mostWins": 1,
     "currentWinners": [
       "James Marsh Derrer",
       "Kenneth Brettle"
     ],
     "winnerLeaders": [
+      {
+        "player": "Geoffrey Alan Ford",
+        "wins": 1
+      },
       {
         "player": "James Marsh Derrer",
         "wins": 1
@@ -10389,6 +10393,10 @@
       },
       {
         "player": "Kenneth Brettle",
+        "wins": 1
+      },
+      {
+        "player": "M.j. Davies",
         "wins": 1
       },
       {
@@ -10451,6 +10459,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Geoffrey Alan Ford",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 31,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "M.j. Davies",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 31,
         "relativeToPar": null
       }
     ],
