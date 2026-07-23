@@ -703,9 +703,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 1695,
-    "averageEntries": 339,
-    "uniqueWinners": 28,
+    "totalEntries": 1729,
+    "averageEntries": 345.8,
+    "uniqueWinners": 29,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 2,
     "currentWinners": [
@@ -789,6 +789,10 @@
       },
       {
         "player": "Lewis Jones",
+        "wins": 1
+      },
+      {
+        "player": "Mark Basterfield",
         "wins": 1
       },
       {
@@ -1055,6 +1059,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 60,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Mark Basterfield",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 67,
         "relativeToPar": null
       },
       {
@@ -16335,13 +16347,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2025,
+    "yearsPlayed": 2,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 33,
-    "averageEntries": 33,
-    "uniqueWinners": 1,
+    "totalEntries": 67,
+    "averageEntries": 33.5,
+    "uniqueWinners": 2,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 1,
     "currentWinners": [
@@ -16350,6 +16362,10 @@
     "winnerLeaders": [
       {
         "player": "Alan Ball",
+        "wins": 1
+      },
+      {
+        "player": "Mark Basterfield",
         "wins": 1
       }
     ],
@@ -16360,6 +16376,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 62,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Mark Basterfield",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 67,
         "relativeToPar": null
       }
     ],
