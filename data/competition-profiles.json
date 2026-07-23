@@ -18769,5 +18769,71 @@
     },
     "clubChampionship": null,
     "summary": "Club 3 Ball Waltz is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "summer-foursomes-qualifier",
+    "competitionId": "summer-foursomes-qualifier",
+    "name": "Summer Foursomes Qualifier",
+    "competitionName": "Summer Foursomes Qualifier",
+    "section": "Mens",
+    "format": "Pairs",
+    "competitionFormat": "Pairs",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 50,
+    "averageEntries": 50,
+    "uniqueWinners": 2,
+    "mostSuccessfulPlayer": "Philip John Northall",
+    "mostWins": 1,
+    "currentWinners": [
+      "Philip John Northall",
+      "Steve Homer"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Philip John Northall",
+        "wins": 1
+      },
+      {
+        "player": "Steve Homer",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Philip John Northall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 68,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Steve Homer",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 68,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Summer Foursomes Qualifier is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
