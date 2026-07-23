@@ -8719,6 +8719,157 @@
     ]
   },
   {
+    "competitionId": "september-sunday-stableford",
+    "competitionName": "September Sunday Stableford",
+    "competitionFormat": "Individual",
+    "scoreType": "Stableford",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2021,
+    "date": "2021-09-12",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "September Sunday Stableford",
+    "sourceDate": "Sunday 12th September 2021, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Jack Lowe",
+        "score": 38,
+        "countsAsCareerWin": true
+      }
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 38,
+        "rawLine": "1st\tJack Lowe(23)\t38",
+        "scoreType": "Stableford",
+        "stablefordPoints": 38,
+        "points": 38,
+        "playerName": "Jack Lowe",
+        "handicap": 23
+      },
+      {
+        "position": 2,
+        "totalScore": 37,
+        "rawLine": "2nd\tCraig Biddulph(19)\t37",
+        "scoreType": "Stableford",
+        "stablefordPoints": 37,
+        "points": 37,
+        "playerName": "Craig Biddulph",
+        "handicap": 19
+      },
+      {
+        "position": 3,
+        "totalScore": 36,
+        "rawLine": "3rd\tG.B. Ray(13)\t36",
+        "scoreType": "Stableford",
+        "stablefordPoints": 36,
+        "points": 36,
+        "playerName": "G.B. Ray",
+        "handicap": 13
+      },
+      {
+        "position": 4,
+        "totalScore": 35,
+        "rawLine": "4th\tDavid Harris(12)\t35",
+        "scoreType": "Stableford",
+        "stablefordPoints": 35,
+        "points": 35,
+        "playerName": "David Harris",
+        "handicap": 12
+      },
+      {
+        "position": 5,
+        "totalScore": 34,
+        "rawLine": "5th\tCarl R. Biddulph(18)\t34",
+        "scoreType": "Stableford",
+        "stablefordPoints": 34,
+        "points": 34,
+        "playerName": "Carl R. Biddulph",
+        "handicap": 18
+      },
+      {
+        "position": 6,
+        "totalScore": 33,
+        "rawLine": "6th\tKeith John Woodall(19)\t33",
+        "scoreType": "Stableford",
+        "stablefordPoints": 33,
+        "points": 33,
+        "playerName": "Keith John Woodall",
+        "handicap": 19
+      },
+      {
+        "position": 7,
+        "totalScore": 33,
+        "rawLine": "7th\tGerald Paul Crowley(16)\t33",
+        "scoreType": "Stableford",
+        "stablefordPoints": 33,
+        "points": 33,
+        "playerName": "Gerald Paul Crowley",
+        "handicap": 16
+      },
+      {
+        "position": 8,
+        "totalScore": 32,
+        "rawLine": "8th\tDavid Hill(14)\t32",
+        "scoreType": "Stableford",
+        "stablefordPoints": 32,
+        "points": 32,
+        "playerName": "David Hill",
+        "handicap": 14
+      },
+      {
+        "position": 9,
+        "totalScore": 32,
+        "rawLine": "9th\tAndy Sherwood(29)\t32",
+        "scoreType": "Stableford",
+        "stablefordPoints": 32,
+        "points": 32,
+        "playerName": "Andy Sherwood",
+        "handicap": 29
+      },
+      {
+        "position": 10,
+        "totalScore": 31,
+        "rawLine": "10th\tChristopher Yale(35)\t31",
+        "scoreType": "Stableford",
+        "stablefordPoints": 31,
+        "points": 31,
+        "playerName": "Christopher Yale",
+        "handicap": 35
+      },
+      {
+        "position": 11,
+        "totalScore": 28,
+        "rawLine": "11th\tNigel Figg(13)\t28",
+        "scoreType": "Stableford",
+        "stablefordPoints": 28,
+        "points": 28,
+        "playerName": "Nigel Figg",
+        "handicap": 13
+      },
+      {
+        "position": 12,
+        "totalScore": 26,
+        "rawLine": "12th\tLee Rhoden(33)\t26",
+        "scoreType": "Stableford",
+        "stablefordPoints": 26,
+        "points": 26,
+        "playerName": "Lee Rhoden",
+        "handicap": 33
+      }
+    ]
+  },
+  {
     "competitionId": "writtle-grove-winter-greensomes-qualifier",
     "competitionName": "Writtle Grove Winter Greensomes Qualifier",
     "competitionFormat": "Pairs",

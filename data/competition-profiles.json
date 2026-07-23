@@ -14400,13 +14400,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2025,
+    "yearsPlayed": 2,
+    "firstYear": 2021,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 29,
-    "averageEntries": 29,
-    "uniqueWinners": 1,
+    "totalEntries": 41,
+    "averageEntries": 20.5,
+    "uniqueWinners": 2,
     "mostSuccessfulPlayer": "Benjamin Jones",
     "mostWins": 1,
     "currentWinners": [
@@ -14416,12 +14416,24 @@
       {
         "player": "Benjamin Jones",
         "wins": 1
+      },
+      {
+        "player": "Jack Lowe",
+        "wins": 1
       }
     ],
     "winnerHistory": [
       {
         "year": 2025,
         "winner": "Benjamin Jones",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 38,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Jack Lowe",
         "source": "Competition Result",
         "verified": false,
         "score": 38,
