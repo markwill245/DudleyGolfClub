@@ -12662,25 +12662,25 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2025,
+    "yearsPlayed": 3,
+    "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 109,
-    "averageEntries": 54.5,
+    "totalEntries": 133,
+    "averageEntries": 44.3,
     "uniqueWinners": 2,
-    "mostSuccessfulPlayer": "Andrew Card",
-    "mostWins": 1,
+    "mostSuccessfulPlayer": "G.B. Ray",
+    "mostWins": 2,
     "currentWinners": [
       "Andrew Card"
     ],
     "winnerLeaders": [
       {
-        "player": "Andrew Card",
-        "wins": 1
+        "player": "G.B. Ray",
+        "wins": 2
       },
       {
-        "player": "G.B. Ray",
+        "player": "Andrew Card",
         "wins": 1
       }
     ],
@@ -12699,6 +12699,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 39,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "G.B. Ray",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 42,
         "relativeToPar": null
       }
     ],
