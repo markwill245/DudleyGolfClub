@@ -16910,13 +16910,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2024,
+    "yearsPlayed": 2,
+    "firstYear": 2022,
     "latestYear": 2024,
     "latestDetailedYear": 2024,
-    "totalEntries": 108,
-    "averageEntries": 108,
-    "uniqueWinners": 4,
+    "totalEntries": 288,
+    "averageEntries": 144,
+    "uniqueWinners": 8,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 1,
     "currentWinners": [
@@ -16931,11 +16931,27 @@
         "wins": 1
       },
       {
+        "player": "Ian Frederick Stevens",
+        "wins": 1
+      },
+      {
         "player": "James Stevens",
         "wins": 1
       },
       {
+        "player": "Jason Miles",
+        "wins": 1
+      },
+      {
+        "player": "Philip Thompson",
+        "wins": 1
+      },
+      {
         "player": "Richard Price",
+        "wins": 1
+      },
+      {
+        "player": "Robert Hudson",
         "wins": 1
       },
       {
@@ -16974,6 +16990,38 @@
         "source": "Competition Result",
         "verified": false,
         "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Ian Frederick Stevens",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 43,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Jason Miles",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 39,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Philip Thompson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 41,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Robert Hudson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 21,
         "relativeToPar": null
       }
     ],
