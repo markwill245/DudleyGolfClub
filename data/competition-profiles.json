@@ -14888,20 +14888,24 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 108,
-    "averageEntries": 54,
-    "uniqueWinners": 4,
-    "mostSuccessfulPlayer": "Ivan John Jones",
+    "totalEntries": 189,
+    "averageEntries": 63,
+    "uniqueWinners": 6,
+    "mostSuccessfulPlayer": "Christopher Yale",
     "mostWins": 1,
     "currentWinners": [
       "Ivan John Jones",
       "John Edwards"
     ],
     "winnerLeaders": [
+      {
+        "player": "Christopher Yale",
+        "wins": 1
+      },
       {
         "player": "Ivan John Jones",
         "wins": 1
@@ -14912,6 +14916,10 @@
       },
       {
         "player": "John Edwards",
+        "wins": 1
+      },
+      {
+        "player": "Micah Dance",
         "wins": 1
       },
       {
@@ -14950,6 +14958,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 44,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Christopher Yale",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 49,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Micah Dance",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 49,
         "relativeToPar": null
       }
     ],
