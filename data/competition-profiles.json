@@ -19052,5 +19052,71 @@
     },
     "clubChampionship": null,
     "summary": "Arthur Turley Trophy is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "tom-poole-pairs",
+    "competitionId": "tom-poole-pairs",
+    "name": "Tom Poole Pairs",
+    "competitionName": "Tom Poole Pairs",
+    "section": "Mens",
+    "format": "Pairs",
+    "competitionFormat": "Pairs",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 64,
+    "averageEntries": 64,
+    "uniqueWinners": 2,
+    "mostSuccessfulPlayer": "Mark Neil Tolley",
+    "mostWins": 1,
+    "currentWinners": [
+      "Mark Neil Tolley",
+      "Sean Element"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Mark Neil Tolley",
+        "wins": 1
+      },
+      {
+        "player": "Sean Element",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Mark Neil Tolley",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 62,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Sean Element",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 62,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Tom Poole Pairs is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
