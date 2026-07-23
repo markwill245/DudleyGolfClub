@@ -17687,13 +17687,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2022,
+    "yearsPlayed": 3,
+    "firstYear": 2021,
     "latestYear": 2024,
     "latestDetailedYear": 2024,
-    "totalEntries": 492,
-    "averageEntries": 246,
-    "uniqueWinners": 15,
+    "totalEntries": 551,
+    "averageEntries": 183.7,
+    "uniqueWinners": 17,
     "mostSuccessfulPlayer": "Adam Bonehill",
     "mostWins": 1,
     "currentWinners": [
@@ -17713,6 +17713,10 @@
       },
       {
         "player": "Alan Ball",
+        "wins": 1
+      },
+      {
+        "player": "Anthony Willetts",
         "wins": 1
       },
       {
@@ -17745,6 +17749,10 @@
       },
       {
         "player": "Robert Hudson",
+        "wins": 1
+      },
+      {
+        "player": "Robert Keith Woodall",
         "wins": 1
       },
       {
@@ -17883,6 +17891,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 63,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Anthony Willetts",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Robert Keith Woodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 43,
         "relativeToPar": null
       }
     ],
