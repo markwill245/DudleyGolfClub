@@ -18907,5 +18907,84 @@
     },
     "clubChampionship": null,
     "summary": "Summer Foursomes Qualifier is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "club-texas-scramble",
+    "competitionId": "club-texas-scramble",
+    "name": "Club Texas Scramble",
+    "competitionName": "Club Texas Scramble",
+    "section": "Mens",
+    "format": "Team",
+    "competitionFormat": "Team",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 65,
+    "averageEntries": 65,
+    "uniqueWinners": 3,
+    "mostSuccessfulPlayer": "Bradley Leadbeater",
+    "mostWins": 1,
+    "currentWinners": [
+      "Bradley Leadbeater",
+      "Christopher Yale",
+      "Jack Lowe"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Bradley Leadbeater",
+        "wins": 1
+      },
+      {
+        "player": "Christopher Yale",
+        "wins": 1
+      },
+      {
+        "player": "Jack Lowe",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Bradley Leadbeater",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 53,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Christopher Yale",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 53,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Jack Lowe",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 53,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Club Texas Scramble is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
