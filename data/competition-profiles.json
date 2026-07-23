@@ -15527,21 +15527,25 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
+    "yearsPlayed": 2,
     "firstYear": 2025,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 65,
-    "averageEntries": 65,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Lewis Jones",
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 101,
+    "averageEntries": 50.5,
+    "uniqueWinners": 6,
+    "mostSuccessfulPlayer": "David Postin",
     "mostWins": 1,
     "currentWinners": [
-      "Lewis Jones",
-      "Michael Williams",
-      "Paul Ian Welch"
+      "David Postin",
+      "Ross Postin",
+      "Stephen Thompson"
     ],
     "winnerLeaders": [
+      {
+        "player": "David Postin",
+        "wins": 1
+      },
       {
         "player": "Lewis Jones",
         "wins": 1
@@ -15553,9 +15557,41 @@
       {
         "player": "Paul Ian Welch",
         "wins": 1
+      },
+      {
+        "player": "Ross Postin",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Thompson",
+        "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "David Postin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 56,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Ross Postin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 56,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Stephen Thompson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 56,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "Lewis Jones",
@@ -17213,5 +17249,137 @@
     },
     "clubChampionship": null,
     "summary": "Millenium Trophy - 4 Ball is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "winter-league",
+    "competitionId": "winter-league",
+    "name": "Winter league",
+    "competitionName": "Winter league",
+    "section": "Mens",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 64,
+    "averageEntries": 64,
+    "uniqueWinners": 3,
+    "mostSuccessfulPlayer": "Adam Bonehill",
+    "mostWins": 1,
+    "currentWinners": [
+      "Adam Bonehill",
+      "Barry Thomas Lawton",
+      "Robert Keith Woodall"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Adam Bonehill",
+        "wins": 1
+      },
+      {
+        "player": "Barry Thomas Lawton",
+        "wins": 1
+      },
+      {
+        "player": "Robert Keith Woodall",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Adam Bonehill",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 35,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Barry Thomas Lawton",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 19,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Robert Keith Woodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 38,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Winter league is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "december-medal",
+    "competitionId": "december-medal",
+    "name": "December Medal",
+    "competitionName": "December Medal",
+    "section": "Mens",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 49,
+    "averageEntries": 49,
+    "uniqueWinners": 1,
+    "mostSuccessfulPlayer": "Craig Smart",
+    "mostWins": 1,
+    "currentWinners": [
+      "Craig Smart"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Craig Smart",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Craig Smart",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 69,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "December Medal is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
