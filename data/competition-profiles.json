@@ -16232,14 +16232,14 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2025,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 101,
-    "averageEntries": 50.5,
-    "uniqueWinners": 6,
-    "mostSuccessfulPlayer": "David Postin",
+    "totalEntries": 140,
+    "averageEntries": 46.7,
+    "uniqueWinners": 9,
+    "mostSuccessfulPlayer": "Carl R. Biddulph",
     "mostWins": 1,
     "currentWinners": [
       "David Postin",
@@ -16248,7 +16248,15 @@
     ],
     "winnerLeaders": [
       {
+        "player": "Carl R. Biddulph",
+        "wins": 1
+      },
+      {
         "player": "David Postin",
+        "wins": 1
+      },
+      {
+        "player": "Gerald Paul Crowley",
         "wins": 1
       },
       {
@@ -16261,6 +16269,10 @@
       },
       {
         "player": "Paul Ian Welch",
+        "wins": 1
+      },
+      {
+        "player": "Peter Evans",
         "wins": 1
       },
       {
@@ -16319,6 +16331,30 @@
         "source": "Competition Result",
         "verified": false,
         "score": 56,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Carl R. Biddulph",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 54,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Gerald Paul Crowley",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 54,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Peter Evans",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 54,
         "relativeToPar": null
       }
     ],
