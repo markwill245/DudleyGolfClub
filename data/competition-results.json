@@ -14028,6 +14028,777 @@
     ]
   },
   {
+    "competitionId": "probus-pairs-stableford-betterball",
+    "competitionName": "Probus Pairs Stableford Betterball",
+    "competitionFormat": "Pairs",
+    "scoreType": "Stableford",
+    "teamSize": 2,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2022,
+    "date": "2022-07-16",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "Probus Pairs Stableford Betterball",
+    "sourceDate": "Saturday 16th July 2022, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Richard Limb",
+        "score": 48,
+        "countsAsCareerWin": true
+      }
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 48,
+        "rawLine": "1st\tRichard Limb (11) & Mark Andrew Poulding (9)\t48",
+        "scoreType": "Stableford",
+        "stablefordPoints": 48,
+        "points": 48,
+        "playerName": "Richard Limb / Mark Andrew Poulding",
+        "teamMembers": [
+          {
+            "name": "Richard Limb",
+            "handicap": 11
+          },
+          {
+            "name": "Mark Andrew Poulding",
+            "handicap": 9
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "totalScore": 47,
+        "rawLine": "2nd\tKevin Walters (14) & Adam Stanfield (15)\t47",
+        "scoreType": "Stableford",
+        "stablefordPoints": 47,
+        "points": 47,
+        "playerName": "Kevin Walters / Adam Stanfield",
+        "teamMembers": [
+          {
+            "name": "Kevin Walters",
+            "handicap": 14
+          },
+          {
+            "name": "Adam Stanfield",
+            "handicap": 15
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "totalScore": 46,
+        "rawLine": "3rd\tGraham John Franks (21) & James Webber (20)\t46",
+        "scoreType": "Stableford",
+        "stablefordPoints": 46,
+        "points": 46,
+        "playerName": "Graham John Franks / James Webber",
+        "teamMembers": [
+          {
+            "name": "Graham John Franks",
+            "handicap": 21
+          },
+          {
+            "name": "James Webber",
+            "handicap": 20
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "totalScore": 46,
+        "rawLine": "4th\tEric Edwards (24) & Roger John Smith (16)\t46",
+        "scoreType": "Stableford",
+        "stablefordPoints": 46,
+        "points": 46,
+        "playerName": "Eric Edwards / Roger John Smith",
+        "teamMembers": [
+          {
+            "name": "Eric Edwards",
+            "handicap": 24
+          },
+          {
+            "name": "Roger John Smith",
+            "handicap": 16
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "totalScore": 46,
+        "rawLine": "5th\tMicah Dance (26) & Keith Durbridge (21)\t46",
+        "scoreType": "Stableford",
+        "stablefordPoints": 46,
+        "points": 46,
+        "playerName": "Micah Dance / Keith Durbridge",
+        "teamMembers": [
+          {
+            "name": "Micah Dance",
+            "handicap": 26
+          },
+          {
+            "name": "Keith Durbridge",
+            "handicap": 21
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "totalScore": 45,
+        "rawLine": "6th\tSam Marsden (22) & Liam Harding (17)\t45",
+        "scoreType": "Stableford",
+        "stablefordPoints": 45,
+        "points": 45,
+        "playerName": "Sam Marsden / Liam Harding",
+        "teamMembers": [
+          {
+            "name": "Sam Marsden",
+            "handicap": 22
+          },
+          {
+            "name": "Liam Harding",
+            "handicap": 17
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "totalScore": 44,
+        "rawLine": "7th\tAnthony Willetts (16) & Graham Morgan (18)\t44",
+        "scoreType": "Stableford",
+        "stablefordPoints": 44,
+        "points": 44,
+        "playerName": "Anthony Willetts / Graham Morgan",
+        "teamMembers": [
+          {
+            "name": "Anthony Willetts",
+            "handicap": 16
+          },
+          {
+            "name": "Graham Morgan",
+            "handicap": 18
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "totalScore": 43,
+        "rawLine": "8th\tAdam Farley (5) & Luke Hopkins (11)\t43",
+        "scoreType": "Stableford",
+        "stablefordPoints": 43,
+        "points": 43,
+        "playerName": "Adam Farley / Luke Hopkins",
+        "teamMembers": [
+          {
+            "name": "Adam Farley",
+            "handicap": 5
+          },
+          {
+            "name": "Luke Hopkins",
+            "handicap": 11
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "totalScore": 43,
+        "rawLine": "9th\tLeigh Bate (9) & Christopher Churchman (13)\t43",
+        "scoreType": "Stableford",
+        "stablefordPoints": 43,
+        "points": 43,
+        "playerName": "Leigh Bate / Christopher Churchman",
+        "teamMembers": [
+          {
+            "name": "Leigh Bate",
+            "handicap": 9
+          },
+          {
+            "name": "Christopher Churchman",
+            "handicap": 13
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "totalScore": 43,
+        "rawLine": "10th\tBrett Denis Gilbert (12) & Alexander Idoine (3)\t43",
+        "scoreType": "Stableford",
+        "stablefordPoints": 43,
+        "points": 43,
+        "playerName": "Brett Denis Gilbert / Alexander Idoine",
+        "teamMembers": [
+          {
+            "name": "Brett Denis Gilbert",
+            "handicap": 12
+          },
+          {
+            "name": "Alexander Idoine",
+            "handicap": 3
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "totalScore": 43,
+        "rawLine": "11th\tSean Element (14) & Darren Element (19)\t43",
+        "scoreType": "Stableford",
+        "stablefordPoints": 43,
+        "points": 43,
+        "playerName": "Sean Element / Darren Element",
+        "teamMembers": [
+          {
+            "name": "Sean Element",
+            "handicap": 14
+          },
+          {
+            "name": "Darren Element",
+            "handicap": 19
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "totalScore": 42,
+        "rawLine": "12th\tLuke Homer (10) & G.B. Ray (11)\t42",
+        "scoreType": "Stableford",
+        "stablefordPoints": 42,
+        "points": 42,
+        "playerName": "Luke Homer / G.B. Ray",
+        "teamMembers": [
+          {
+            "name": "Luke Homer",
+            "handicap": 10
+          },
+          {
+            "name": "G.B. Ray",
+            "handicap": 11
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "totalScore": 42,
+        "rawLine": "13th\tTony John Salt (12) & Adam Bonehill (6)\t42",
+        "scoreType": "Stableford",
+        "stablefordPoints": 42,
+        "points": 42,
+        "playerName": "Tony John Salt / Adam Bonehill",
+        "teamMembers": [
+          {
+            "name": "Tony John Salt",
+            "handicap": 12
+          },
+          {
+            "name": "Adam Bonehill",
+            "handicap": 6
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "totalScore": 42,
+        "rawLine": "14th\tKevin Eric Conn (18) & Wayne Rutter (17)\t42",
+        "scoreType": "Stableford",
+        "stablefordPoints": 42,
+        "points": 42,
+        "playerName": "Kevin Eric Conn / Wayne Rutter",
+        "teamMembers": [
+          {
+            "name": "Kevin Eric Conn",
+            "handicap": 18
+          },
+          {
+            "name": "Wayne Rutter",
+            "handicap": 17
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "totalScore": 42,
+        "rawLine": "15th\tJason Watchorn (20) & Ben McNally (28)\t42",
+        "scoreType": "Stableford",
+        "stablefordPoints": 42,
+        "points": 42,
+        "playerName": "Jason Watchorn / Ben McNally",
+        "teamMembers": [
+          {
+            "name": "Jason Watchorn",
+            "handicap": 20
+          },
+          {
+            "name": "Ben McNally",
+            "handicap": 28
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "totalScore": 41,
+        "rawLine": "16th\tKevin John Foster (23) & Steve Homer (20)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Kevin John Foster / Steve Homer",
+        "teamMembers": [
+          {
+            "name": "Kevin John Foster",
+            "handicap": 23
+          },
+          {
+            "name": "Steve Homer",
+            "handicap": 20
+          }
+        ]
+      },
+      {
+        "position": 17,
+        "totalScore": 41,
+        "rawLine": "17th\tStewart Marshall (13) & Darren Povey (16)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Stewart Marshall / Darren Povey",
+        "teamMembers": [
+          {
+            "name": "Stewart Marshall",
+            "handicap": 13
+          },
+          {
+            "name": "Darren Povey",
+            "handicap": 16
+          }
+        ]
+      },
+      {
+        "position": 18,
+        "totalScore": 41,
+        "rawLine": "18th\tStephen Langford (21) & Dean Hinchcliffe (20)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Stephen Langford / Dean Hinchcliffe",
+        "teamMembers": [
+          {
+            "name": "Stephen Langford",
+            "handicap": 21
+          },
+          {
+            "name": "Dean Hinchcliffe",
+            "handicap": 20
+          }
+        ]
+      },
+      {
+        "position": 19,
+        "totalScore": 41,
+        "rawLine": "19th\tSteven Taylor (14) & Philip Thompson (9)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Steven Taylor / Philip Thompson",
+        "teamMembers": [
+          {
+            "name": "Steven Taylor",
+            "handicap": 14
+          },
+          {
+            "name": "Philip Thompson",
+            "handicap": 9
+          }
+        ]
+      },
+      {
+        "position": 20,
+        "totalScore": 41,
+        "rawLine": "20th\tMichael David Cosnett (12) & David Hobley (13)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Michael David Cosnett / David Hobley",
+        "teamMembers": [
+          {
+            "name": "Michael David Cosnett",
+            "handicap": 12
+          },
+          {
+            "name": "David Hobley",
+            "handicap": 13
+          }
+        ]
+      },
+      {
+        "position": 21,
+        "totalScore": 41,
+        "rawLine": "21st\tCarl R. Biddulph (15) & Gerald Paul Crowley (16)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Carl R. Biddulph / Gerald Paul Crowley",
+        "teamMembers": [
+          {
+            "name": "Carl R. Biddulph",
+            "handicap": 15
+          },
+          {
+            "name": "Gerald Paul Crowley",
+            "handicap": 16
+          }
+        ]
+      },
+      {
+        "position": 22,
+        "totalScore": 41,
+        "rawLine": "22nd\tPaul Harper (12) & Christopher Vanes (16)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Paul Harper / Christopher Vanes",
+        "teamMembers": [
+          {
+            "name": "Paul Harper",
+            "handicap": 12
+          },
+          {
+            "name": "Christopher Vanes",
+            "handicap": 16
+          }
+        ]
+      },
+      {
+        "position": 23,
+        "totalScore": 41,
+        "rawLine": "23rd\tJason Sean Higley (9) & Stuart Baker (9)\t41",
+        "scoreType": "Stableford",
+        "stablefordPoints": 41,
+        "points": 41,
+        "playerName": "Jason Sean Higley / Stuart Baker",
+        "teamMembers": [
+          {
+            "name": "Jason Sean Higley",
+            "handicap": 9
+          },
+          {
+            "name": "Stuart Baker",
+            "handicap": 9
+          }
+        ]
+      },
+      {
+        "position": 24,
+        "totalScore": 40,
+        "rawLine": "24th\tDavid J. L. Jones (14) & Lewis Jones (8)\t40",
+        "scoreType": "Stableford",
+        "stablefordPoints": 40,
+        "points": 40,
+        "playerName": "David J. L. Jones / Lewis Jones",
+        "teamMembers": [
+          {
+            "name": "David J. L. Jones",
+            "handicap": 14
+          },
+          {
+            "name": "Lewis Jones",
+            "handicap": 8
+          }
+        ]
+      },
+      {
+        "position": 25,
+        "totalScore": 39,
+        "rawLine": "25th\tPaul Willetts (14) & Adrian Clift (27)\t39",
+        "scoreType": "Stableford",
+        "stablefordPoints": 39,
+        "points": 39,
+        "playerName": "Paul Willetts / Adrian Clift",
+        "teamMembers": [
+          {
+            "name": "Paul Willetts",
+            "handicap": 14
+          },
+          {
+            "name": "Adrian Clift",
+            "handicap": 27
+          }
+        ]
+      },
+      {
+        "position": 26,
+        "totalScore": 39,
+        "rawLine": "26th\tStephen Price (19) & James Price (19)\t39",
+        "scoreType": "Stableford",
+        "stablefordPoints": 39,
+        "points": 39,
+        "playerName": "Stephen Price / James Price",
+        "teamMembers": [
+          {
+            "name": "Stephen Price",
+            "handicap": 19
+          },
+          {
+            "name": "James Price",
+            "handicap": 19
+          }
+        ]
+      },
+      {
+        "position": 27,
+        "totalScore": 39,
+        "rawLine": "27th\tCraig Watchorn (25) & Mark Dando (8)\t39",
+        "scoreType": "Stableford",
+        "stablefordPoints": 39,
+        "points": 39,
+        "playerName": "Craig Watchorn / Mark Dando",
+        "teamMembers": [
+          {
+            "name": "Craig Watchorn",
+            "handicap": 25
+          },
+          {
+            "name": "Mark Dando",
+            "handicap": 8
+          }
+        ]
+      },
+      {
+        "position": 28,
+        "totalScore": 39,
+        "rawLine": "28th\tScott Postin (16) & Jason Gregory (20)\t39",
+        "scoreType": "Stableford",
+        "stablefordPoints": 39,
+        "points": 39,
+        "playerName": "Scott Postin / Jason Gregory",
+        "teamMembers": [
+          {
+            "name": "Scott Postin",
+            "handicap": 16
+          },
+          {
+            "name": "Jason Gregory",
+            "handicap": 20
+          }
+        ]
+      },
+      {
+        "position": 29,
+        "totalScore": 39,
+        "rawLine": "29th\tPeter Evans (13) & Stephen Brian Hopkins (10)\t39",
+        "scoreType": "Stableford",
+        "stablefordPoints": 39,
+        "points": 39,
+        "playerName": "Peter Evans / Stephen Brian Hopkins",
+        "teamMembers": [
+          {
+            "name": "Peter Evans",
+            "handicap": 13
+          },
+          {
+            "name": "Stephen Brian Hopkins",
+            "handicap": 10
+          }
+        ]
+      },
+      {
+        "position": 30,
+        "totalScore": 38,
+        "rawLine": "30th\tLee Roger Grainger (3) & Gary William Stubbs (7)\t38",
+        "scoreType": "Stableford",
+        "stablefordPoints": 38,
+        "points": 38,
+        "playerName": "Lee Roger Grainger / Gary William Stubbs",
+        "teamMembers": [
+          {
+            "name": "Lee Roger Grainger",
+            "handicap": 3
+          },
+          {
+            "name": "Gary William Stubbs",
+            "handicap": 7
+          }
+        ]
+      },
+      {
+        "position": 31,
+        "totalScore": 37,
+        "rawLine": "31st\tPaul Thomas Donnelly (12) & Aaron Lee Warner (12)\t37",
+        "scoreType": "Stableford",
+        "stablefordPoints": 37,
+        "points": 37,
+        "playerName": "Paul Thomas Donnelly / Aaron Lee Warner",
+        "teamMembers": [
+          {
+            "name": "Paul Thomas Donnelly",
+            "handicap": 12
+          },
+          {
+            "name": "Aaron Lee Warner",
+            "handicap": 12
+          }
+        ]
+      },
+      {
+        "position": 32,
+        "totalScore": 35,
+        "rawLine": "32nd\tCalin Tiplea (25) & Jonathan Wood (20)\t35",
+        "scoreType": "Stableford",
+        "stablefordPoints": 35,
+        "points": 35,
+        "playerName": "Calin Tiplea / Jonathan Wood",
+        "teamMembers": [
+          {
+            "name": "Calin Tiplea",
+            "handicap": 25
+          },
+          {
+            "name": "Jonathan Wood",
+            "handicap": 20
+          }
+        ]
+      },
+      {
+        "position": 33,
+        "totalScore": 35,
+        "rawLine": "33rd\tIvan John Jones (21) & Michael John Kendrick (16)\t35",
+        "scoreType": "Stableford",
+        "stablefordPoints": 35,
+        "points": 35,
+        "playerName": "Ivan John Jones / Michael John Kendrick",
+        "teamMembers": [
+          {
+            "name": "Ivan John Jones",
+            "handicap": 21
+          },
+          {
+            "name": "Michael John Kendrick",
+            "handicap": 16
+          }
+        ]
+      },
+      {
+        "position": 34,
+        "totalScore": 35,
+        "rawLine": "34th\tDavid Jeavons (20) & Clive Kearey (20)\t35",
+        "scoreType": "Stableford",
+        "stablefordPoints": 35,
+        "points": 35,
+        "playerName": "David Jeavons / Clive Kearey",
+        "teamMembers": [
+          {
+            "name": "David Jeavons",
+            "handicap": 20
+          },
+          {
+            "name": "Clive Kearey",
+            "handicap": 20
+          }
+        ]
+      },
+      {
+        "position": 35,
+        "totalScore": 35,
+        "rawLine": "35th\tMark Basterfield (16) & Jason Langford (14)\t35",
+        "scoreType": "Stableford",
+        "stablefordPoints": 35,
+        "points": 35,
+        "playerName": "Mark Basterfield / Jason Langford",
+        "teamMembers": [
+          {
+            "name": "Mark Basterfield",
+            "handicap": 16
+          },
+          {
+            "name": "Jason Langford",
+            "handicap": 14
+          }
+        ]
+      },
+      {
+        "position": 36,
+        "totalScore": 34,
+        "rawLine": "36th\tDavid Hill (11) & Paul Ian Welch (10)\t34",
+        "scoreType": "Stableford",
+        "stablefordPoints": 34,
+        "points": 34,
+        "playerName": "David Hill / Paul Ian Welch",
+        "teamMembers": [
+          {
+            "name": "David Hill",
+            "handicap": 11
+          },
+          {
+            "name": "Paul Ian Welch",
+            "handicap": 10
+          }
+        ]
+      },
+      {
+        "position": 37,
+        "totalScore": 33,
+        "rawLine": "37th\tKeith John Woodall (19) & Robert Keith Woodall (4)\t33",
+        "scoreType": "Stableford",
+        "stablefordPoints": 33,
+        "points": 33,
+        "playerName": "Keith John Woodall / Robert Keith Woodall",
+        "teamMembers": [
+          {
+            "name": "Keith John Woodall",
+            "handicap": 19
+          },
+          {
+            "name": "Robert Keith Woodall",
+            "handicap": 4
+          }
+        ]
+      },
+      {
+        "position": 38,
+        "totalScore": 32,
+        "rawLine": "38th\tStephen Hall (19) & Terrance Stanley Nolan (22)\t32",
+        "scoreType": "Stableford",
+        "stablefordPoints": 32,
+        "points": 32,
+        "playerName": "Stephen Hall / Terrance Stanley Nolan",
+        "teamMembers": [
+          {
+            "name": "Stephen Hall",
+            "handicap": 19
+          },
+          {
+            "name": "Terrance Stanley Nolan",
+            "handicap": 22
+          }
+        ]
+      },
+      {
+        "position": 39,
+        "status": "DQ",
+        "statusNote": "No Card returned",
+        "rawLine": "39th\tGavin Higgs (11) & Alfie Higgs (28)\tDQ No Card returned",
+        "scoreType": "Stableford",
+        "playerName": "Gavin Higgs / Alfie Higgs",
+        "teamMembers": [
+          {
+            "name": "Gavin Higgs",
+            "handicap": 11
+          },
+          {
+            "name": "Alfie Higgs",
+            "handicap": 28
+          }
+        ]
+      }
+    ]
+  },
+  {
     "competitionId": "seniors-august-medal",
     "competitionName": "Seniors August Medal",
     "competitionFormat": "Individual",
