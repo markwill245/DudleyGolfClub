@@ -9906,13 +9906,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 4,
+    "yearsPlayed": 5,
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 109,
-    "averageEntries": 27.3,
-    "uniqueWinners": 4,
+    "totalEntries": 153,
+    "averageEntries": 30.6,
+    "uniqueWinners": 5,
     "mostSuccessfulPlayer": "Gary Male",
     "mostWins": 1,
     "currentWinners": [
@@ -9925,6 +9925,10 @@
       },
       {
         "player": "Harry Pearce-Williams",
+        "wins": 1
+      },
+      {
+        "player": "Reece Lawton",
         "wins": 1
       },
       {
@@ -9959,6 +9963,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 37,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Reece Lawton",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 44,
         "relativeToPar": null
       },
       {
