@@ -1277,9 +1277,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 589,
-    "averageEntries": 117.8,
-    "uniqueWinners": 16,
+    "totalEntries": 700,
+    "averageEntries": 140,
+    "uniqueWinners": 18,
     "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 2,
     "currentWinners": [
@@ -1291,6 +1291,10 @@
       {
         "player": "Clive Atkins",
         "wins": 2
+      },
+      {
+        "player": "Clive Peter Gould",
+        "wins": 1
       },
       {
         "player": "Geoffrey Alan Ford",
@@ -1318,6 +1322,10 @@
       },
       {
         "player": "Kenneth Brettle",
+        "wins": 1
+      },
+      {
+        "player": "Kevin Cooksey",
         "wins": 1
       },
       {
@@ -1468,10 +1476,26 @@
       },
       {
         "year": 2022,
+        "winner": "Clive Peter Gould",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
         "winner": "Gordon Hampstead",
         "source": "Competition Result",
         "verified": false,
         "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Kevin Cooksey",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 29,
         "relativeToPar": null
       },
       {
@@ -9747,13 +9771,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 4,
+    "yearsPlayed": 5,
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 123,
-    "averageEntries": 30.8,
-    "uniqueWinners": 4,
+    "totalEntries": 234,
+    "averageEntries": 46.8,
+    "uniqueWinners": 6,
     "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 1,
     "currentWinners": [
@@ -9765,7 +9789,15 @@
         "wins": 1
       },
       {
+        "player": "Clive Peter Gould",
+        "wins": 1
+      },
+      {
         "player": "James Marsh Derrer",
+        "wins": 1
+      },
+      {
+        "player": "Kevin Cooksey",
         "wins": 1
       },
       {
@@ -9800,6 +9832,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Clive Peter Gould",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Kevin Cooksey",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 29,
         "relativeToPar": null
       },
       {
