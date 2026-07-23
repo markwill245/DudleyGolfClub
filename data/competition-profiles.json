@@ -1289,9 +1289,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 731,
-    "averageEntries": 146.2,
-    "uniqueWinners": 19,
+    "totalEntries": 767,
+    "averageEntries": 153.4,
+    "uniqueWinners": 20,
     "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 2,
     "currentWinners": [
@@ -1303,6 +1303,10 @@
       {
         "player": "Clive Atkins",
         "wins": 2
+      },
+      {
+        "player": "Clive Goodall",
+        "wins": 1
       },
       {
         "player": "Clive Peter Gould",
@@ -1488,6 +1492,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Clive Goodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 34,
         "relativeToPar": null
       },
       {
@@ -12424,13 +12436,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2024,
+    "yearsPlayed": 4,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 90,
-    "averageEntries": 30,
-    "uniqueWinners": 3,
+    "totalEntries": 126,
+    "averageEntries": 31.5,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 1,
     "currentWinners": [
@@ -12439,6 +12451,10 @@
     "winnerLeaders": [
       {
         "player": "Clive Atkins",
+        "wins": 1
+      },
+      {
+        "player": "Clive Goodall",
         "wins": 1
       },
       {
@@ -12473,6 +12489,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 19,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Clive Goodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 34,
         "relativeToPar": null
       }
     ],
@@ -19155,5 +19179,111 @@
     },
     "clubChampionship": null,
     "summary": "Tom Poole Pairs is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "april-medal",
+    "competitionId": "april-medal",
+    "name": "April Medal",
+    "competitionName": "April Medal",
+    "section": "Mens",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 58,
+    "averageEntries": 58,
+    "uniqueWinners": 1,
+    "mostSuccessfulPlayer": "Steven Taylor",
+    "mostWins": 1,
+    "currentWinners": [
+      "Steven Taylor"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Steven Taylor",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Steven Taylor",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 67,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "April Medal is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "captain-s-welcome-club-stableford",
+    "competitionId": "captain-s-welcome-club-stableford",
+    "name": "Captain's Welcome Club Stableford",
+    "competitionName": "Captain's Welcome Club Stableford",
+    "section": "Mens",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 61,
+    "averageEntries": 61,
+    "uniqueWinners": 1,
+    "mostSuccessfulPlayer": "Sean Element",
+    "mostWins": 1,
+    "currentWinners": [
+      "Sean Element"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Sean Element",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Sean Element",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 39,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Captain's Welcome Club Stableford is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
