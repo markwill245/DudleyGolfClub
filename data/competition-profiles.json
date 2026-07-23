@@ -13751,13 +13751,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2025,
+    "yearsPlayed": 2,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 29,
+    "totalEntries": 58,
     "averageEntries": 29,
-    "uniqueWinners": 1,
+    "uniqueWinners": 2,
     "mostSuccessfulPlayer": "M.j. Davies",
     "mostWins": 1,
     "currentWinners": [
@@ -13766,6 +13766,10 @@
     "winnerLeaders": [
       {
         "player": "M.j. Davies",
+        "wins": 1
+      },
+      {
+        "player": "Philip John Northall",
         "wins": 1
       }
     ],
@@ -13776,6 +13780,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 20,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Philip John Northall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 17,
         "relativeToPar": null
       }
     ],
