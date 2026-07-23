@@ -15782,20 +15782,28 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2022,
+    "yearsPlayed": 4,
+    "firstYear": 2021,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 198,
-    "averageEntries": 66,
-    "uniqueWinners": 6,
-    "mostSuccessfulPlayer": "James Stevens",
+    "totalEntries": 236,
+    "averageEntries": 59,
+    "uniqueWinners": 8,
+    "mostSuccessfulPlayer": "Andrew Deakin",
     "mostWins": 1,
     "currentWinners": [
       "Lee Roger Grainger",
       "Mark Basterfield"
     ],
     "winnerLeaders": [
+      {
+        "player": "Andrew Deakin",
+        "wins": 1
+      },
+      {
+        "player": "G.B. Ray",
+        "wins": 1
+      },
       {
         "player": "James Stevens",
         "wins": 1
@@ -15868,6 +15876,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Andrew Deakin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 47,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "G.B. Ray",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 47,
         "relativeToPar": null
       }
     ],
