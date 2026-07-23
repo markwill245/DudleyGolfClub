@@ -111,6 +111,14 @@
           },
           {
             "rank": 2,
+            "player": "Robert Keith Woodall",
+            "slug": "robert-keith-woodall",
+            "section": "Mens",
+            "value": 8,
+            "displayValue": 8
+          },
+          {
+            "rank": 3,
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
@@ -118,7 +126,7 @@
             "displayValue": 7
           },
           {
-            "rank": 3,
+            "rank": 4,
             "player": "James Stevens",
             "slug": "james-stevens",
             "section": "Mens",
@@ -126,7 +134,7 @@
             "displayValue": 7
           },
           {
-            "rank": 4,
+            "rank": 5,
             "player": "Nigel Brookes",
             "slug": "nigel-brookes",
             "section": "Mens",
@@ -134,17 +142,9 @@
             "displayValue": 7
           },
           {
-            "rank": 5,
+            "rank": 6,
             "player": "Richard Limb",
             "slug": "richard-limb",
-            "section": "Mens",
-            "value": 7,
-            "displayValue": 7
-          },
-          {
-            "rank": 6,
-            "player": "Robert Keith Woodall",
-            "slug": "robert-keith-woodall",
             "section": "Mens",
             "value": 7,
             "displayValue": 7
@@ -349,16 +349,16 @@
           },
           {
             "rank": 9,
-            "player": "Alan Ball",
-            "slug": "alan-ball",
+            "player": "Robert Keith Woodall",
+            "slug": "robert-keith-woodall",
             "section": "Mens",
-            "value": 23,
-            "displayValue": 23
+            "value": 24,
+            "displayValue": 24
           },
           {
             "rank": 10,
-            "player": "Lewis Jones",
-            "slug": "lewis-jones",
+            "player": "Alan Ball",
+            "slug": "alan-ball",
             "section": "Mens",
             "value": 23,
             "displayValue": 23
@@ -462,7 +462,7 @@
           "player": "G.B. Ray",
           "slug": "g-b-ray",
           "section": "Mens",
-          "value": 147
+          "value": 148
         },
         "leaders": [
           {
@@ -470,24 +470,24 @@
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 147,
-            "displayValue": 147
+            "value": 148,
+            "displayValue": 148
           },
           {
             "rank": 2,
             "player": "Stephen Hall",
             "slug": "stephen-hall",
             "section": "Mens",
-            "value": 136,
-            "displayValue": 136
+            "value": 137,
+            "displayValue": 137
           },
           {
             "rank": 3,
             "player": "Gerald Paul Crowley",
             "slug": "gerald-paul-crowley",
             "section": "Mens",
-            "value": 123,
-            "displayValue": 123
+            "value": 124,
+            "displayValue": 124
           },
           {
             "rank": 4,
@@ -502,8 +502,8 @@
             "player": "Adam Stanfield",
             "slug": "adam-stanfield",
             "section": "Mens",
-            "value": 119,
-            "displayValue": 119
+            "value": 120,
+            "displayValue": 120
           },
           {
             "rank": 6,
@@ -515,16 +515,16 @@
           },
           {
             "rank": 7,
-            "player": "Paul Ian Welch",
-            "slug": "paul-ian-welch",
+            "player": "Richard Limb",
+            "slug": "richard-limb",
             "section": "Mens",
-            "value": 114,
-            "displayValue": 114
+            "value": 115,
+            "displayValue": 115
           },
           {
             "rank": 8,
-            "player": "Richard Limb",
-            "slug": "richard-limb",
+            "player": "Paul Ian Welch",
+            "slug": "paul-ian-welch",
             "section": "Mens",
             "value": 114,
             "displayValue": 114
@@ -1527,6 +1527,14 @@
         },
         {
           "rank": 7,
+          "player": "Philip John Northall",
+          "slug": "philip-john-northall",
+          "section": "Mens",
+          "value": 393,
+          "displayValue": 393
+        },
+        {
+          "rank": 8,
           "player": "Ian Frederick Stevens",
           "slug": "ian-frederick-stevens",
           "section": "Mixed",
@@ -1534,7 +1542,7 @@
           "displayValue": 374
         },
         {
-          "rank": 8,
+          "rank": 9,
           "player": "Neil Hartland",
           "slug": "neil-hartland",
           "section": "Mens",
@@ -1542,20 +1550,12 @@
           "displayValue": 359
         },
         {
-          "rank": 9,
+          "rank": 10,
           "player": "Keith Durbridge",
           "slug": "keith-durbridge",
           "section": "Mens",
           "value": 352,
           "displayValue": 352
-        },
-        {
-          "rank": 10,
-          "player": "Philip John Northall",
-          "slug": "philip-john-northall",
-          "section": "Mens",
-          "value": 347,
-          "displayValue": 347
         }
       ]
     },
