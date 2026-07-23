@@ -14052,13 +14052,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 61,
-    "averageEntries": 30.5,
-    "uniqueWinners": 2,
+    "totalEntries": 94,
+    "averageEntries": 31.3,
+    "uniqueWinners": 3,
     "mostSuccessfulPlayer": "Clive Peter Gould",
     "mostWins": 1,
     "currentWinners": [
@@ -14067,6 +14067,10 @@
     "winnerLeaders": [
       {
         "player": "Clive Peter Gould",
+        "wins": 1
+      },
+      {
+        "player": "Graham John Franks",
         "wins": 1
       },
       {
@@ -14089,6 +14093,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 35,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Graham John Franks",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 44,
         "relativeToPar": null
       }
     ],
