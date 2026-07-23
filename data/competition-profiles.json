@@ -12389,13 +12389,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2025,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 105,
-    "averageEntries": 52.5,
-    "uniqueWinners": 6,
+    "totalEntries": 159,
+    "averageEntries": 53,
+    "uniqueWinners": 9,
     "mostSuccessfulPlayer": "Adrian Burns",
     "mostWins": 1,
     "currentWinners": [
@@ -12425,7 +12425,19 @@
         "wins": 1
       },
       {
+        "player": "Sean Round",
+        "wins": 1
+      },
+      {
+        "player": "Simon Nunn",
+        "wins": 1
+      },
+      {
         "player": "Stephen Brian Hopkins",
+        "wins": 1
+      },
+      {
+        "player": "William Nunn",
         "wins": 1
       }
     ],
@@ -12476,6 +12488,30 @@
         "source": "Competition Result",
         "verified": false,
         "score": 79,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Sean Round",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Simon Nunn",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "William Nunn",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
         "relativeToPar": null
       }
     ],
