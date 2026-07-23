@@ -703,8 +703,8 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 1451,
-    "averageEntries": 290.2,
+    "totalEntries": 1517,
+    "averageEntries": 303.4,
     "uniqueWinners": 25,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 2,
@@ -725,6 +725,10 @@
       },
       {
         "player": "Mark Andrew Poulding",
+        "wins": 2
+      },
+      {
+        "player": "Mark Dando",
         "wins": 2
       },
       {
@@ -777,10 +781,6 @@
       },
       {
         "player": "Lewis Jones",
-        "wins": 1
-      },
-      {
-        "player": "Mark Dando",
         "wins": 1
       },
       {
@@ -1027,6 +1027,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 60,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Mark Dando",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 61,
         "relativeToPar": null
       },
       {
@@ -10673,13 +10681,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 112,
-    "averageEntries": 56,
-    "uniqueWinners": 2,
+    "totalEntries": 178,
+    "averageEntries": 59.3,
+    "uniqueWinners": 3,
     "mostSuccessfulPlayer": "Darren Povey",
     "mostWins": 1,
     "currentWinners": [
@@ -10692,6 +10700,10 @@
       },
       {
         "player": "Jason Bates",
+        "wins": 1
+      },
+      {
+        "player": "Mark Dando",
         "wins": 1
       }
     ],
@@ -10710,6 +10722,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 66,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Mark Dando",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 61,
         "relativeToPar": null
       }
     ],

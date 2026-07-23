@@ -13642,6 +13642,631 @@
     ]
   },
   {
+    "competitionId": "july-medal-bloom-cup",
+    "competitionName": "July Medal / Bloom Cup",
+    "competitionFormat": "Individual",
+    "scoreType": "Nett",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2022,
+    "date": "2022-07-02",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "July Medal / Bloom Cup",
+    "sourceDate": "Saturday 2nd July 2022, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Mark Dando",
+        "score": 61,
+        "countsAsCareerWin": true
+      }
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 61,
+        "rawLine": "1st\tMark Dando(10)\t61",
+        "scoreType": "Nett",
+        "nettScore": 61,
+        "playerName": "Mark Dando",
+        "handicap": 10
+      },
+      {
+        "position": 2,
+        "totalScore": 62,
+        "rawLine": "2nd\tNigel Brookes(10)\t62",
+        "scoreType": "Nett",
+        "nettScore": 62,
+        "playerName": "Nigel Brookes",
+        "handicap": 10
+      },
+      {
+        "position": 3,
+        "totalScore": 63,
+        "rawLine": "3rd\tGerald Paul Crowley(18)\t63",
+        "scoreType": "Nett",
+        "nettScore": 63,
+        "playerName": "Gerald Paul Crowley",
+        "handicap": 18
+      },
+      {
+        "position": 4,
+        "totalScore": 64,
+        "rawLine": "4th\tCarl R. Biddulph(18)\t64",
+        "scoreType": "Nett",
+        "nettScore": 64,
+        "playerName": "Carl R. Biddulph",
+        "handicap": 18
+      },
+      {
+        "position": 5,
+        "totalScore": 64,
+        "rawLine": "5th\tSven Garratt(47)\t64",
+        "scoreType": "Nett",
+        "nettScore": 64,
+        "playerName": "Sven Garratt",
+        "handicap": 47
+      },
+      {
+        "position": 6,
+        "totalScore": 65,
+        "rawLine": "6th\tCraig Watchorn(29)\t65",
+        "scoreType": "Nett",
+        "nettScore": 65,
+        "playerName": "Craig Watchorn",
+        "handicap": 29
+      },
+      {
+        "position": 7,
+        "totalScore": 65,
+        "rawLine": "7th\tStephen Price(22)\t65",
+        "scoreType": "Nett",
+        "nettScore": 65,
+        "playerName": "Stephen Price",
+        "handicap": 22
+      },
+      {
+        "position": 8,
+        "totalScore": 66,
+        "rawLine": "8th\tBen Paul Smith(26)\t66",
+        "scoreType": "Nett",
+        "nettScore": 66,
+        "playerName": "Ben Paul Smith",
+        "handicap": 26
+      },
+      {
+        "position": 9,
+        "totalScore": 67,
+        "rawLine": "9th\tSteve Homer(23)\t67",
+        "scoreType": "Nett",
+        "nettScore": 67,
+        "playerName": "Steve Homer",
+        "handicap": 23
+      },
+      {
+        "position": 10,
+        "totalScore": 67,
+        "rawLine": "10th\tRobert Keith Woodall(6)\t67",
+        "scoreType": "Nett",
+        "nettScore": 67,
+        "playerName": "Robert Keith Woodall",
+        "handicap": 6
+      },
+      {
+        "position": 11,
+        "totalScore": 67,
+        "rawLine": "11th\tDavid Hobley(16)\t67",
+        "scoreType": "Nett",
+        "nettScore": 67,
+        "playerName": "David Hobley",
+        "handicap": 16
+      },
+      {
+        "position": 12,
+        "totalScore": 68,
+        "rawLine": "12th\tMark Andrew Poulding(10)\t68",
+        "scoreType": "Nett",
+        "nettScore": 68,
+        "playerName": "Mark Andrew Poulding",
+        "handicap": 10
+      },
+      {
+        "position": 13,
+        "totalScore": 68,
+        "rawLine": "13th\tStephen Dennis Gilbert(29)\t68",
+        "scoreType": "Nett",
+        "nettScore": 68,
+        "playerName": "Stephen Dennis Gilbert",
+        "handicap": 29
+      },
+      {
+        "position": 14,
+        "totalScore": 68,
+        "rawLine": "14th\tG.B. Ray(11)\t68",
+        "scoreType": "Nett",
+        "nettScore": 68,
+        "playerName": "G.B. Ray",
+        "handicap": 11
+      },
+      {
+        "position": 15,
+        "totalScore": 69,
+        "rawLine": "15th\tStephen Hall(21)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Stephen Hall",
+        "handicap": 21
+      },
+      {
+        "position": 16,
+        "totalScore": 69,
+        "rawLine": "16th\tSam Thompson(24)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Sam Thompson",
+        "handicap": 24
+      },
+      {
+        "position": 17,
+        "totalScore": 69,
+        "rawLine": "17th\tMichael John Kendrick(18)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Michael John Kendrick",
+        "handicap": 18
+      },
+      {
+        "position": 18,
+        "totalScore": 69,
+        "rawLine": "18th\tTim Mark Wright(16)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Tim Mark Wright",
+        "handicap": 16
+      },
+      {
+        "position": 19,
+        "totalScore": 69,
+        "rawLine": "19th\tSam Marsden(26)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Sam Marsden",
+        "handicap": 26
+      },
+      {
+        "position": 20,
+        "totalScore": 69,
+        "rawLine": "20th\tStuart Baker(10)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Stuart Baker",
+        "handicap": 10
+      },
+      {
+        "position": 21,
+        "totalScore": 69,
+        "rawLine": "21st\tRichard Limb(12)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Richard Limb",
+        "handicap": 12
+      },
+      {
+        "position": 22,
+        "totalScore": 69,
+        "rawLine": "22nd\tAdam Farley(6)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Adam Farley",
+        "handicap": 6
+      },
+      {
+        "position": 23,
+        "totalScore": 70,
+        "rawLine": "23rd\tLuke Hopkins(12)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Luke Hopkins",
+        "handicap": 12
+      },
+      {
+        "position": 24,
+        "totalScore": 70,
+        "rawLine": "24th\tThomas Worley(19)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Thomas Worley",
+        "handicap": 19
+      },
+      {
+        "position": 25,
+        "totalScore": 70,
+        "rawLine": "25th\tStewart Marshall(14)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Stewart Marshall",
+        "handicap": 14
+      },
+      {
+        "position": 26,
+        "totalScore": 72,
+        "rawLine": "26th\tMark Basterfield(18)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Mark Basterfield",
+        "handicap": 18
+      },
+      {
+        "position": 27,
+        "totalScore": 72,
+        "rawLine": "27th\tKevin John Foster(25)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Kevin John Foster",
+        "handicap": 25
+      },
+      {
+        "position": 28,
+        "totalScore": 72,
+        "rawLine": "28th\tGeorge Brookes(16)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "George Brookes",
+        "handicap": 16
+      },
+      {
+        "position": 29,
+        "totalScore": 72,
+        "rawLine": "29th\tChristopher Vanes(18)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Christopher Vanes",
+        "handicap": 18
+      },
+      {
+        "position": 30,
+        "totalScore": 72,
+        "rawLine": "30th\tAdam Bonehill(8)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Adam Bonehill",
+        "handicap": 8
+      },
+      {
+        "position": 31,
+        "totalScore": 73,
+        "rawLine": "31st\tMark Neil Tolley(14)\t73",
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Mark Neil Tolley",
+        "handicap": 14
+      },
+      {
+        "position": 32,
+        "totalScore": 73,
+        "rawLine": "32nd\tShaun Edward Messer(17)\t73",
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Shaun Edward Messer",
+        "handicap": 17
+      },
+      {
+        "position": 33,
+        "totalScore": 73,
+        "rawLine": "33rd\tPhilip Thompson(10)\t73",
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Philip Thompson",
+        "handicap": 10
+      },
+      {
+        "position": 34,
+        "totalScore": 73,
+        "rawLine": "34th\tJason Miles(12)\t73",
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Jason Miles",
+        "handicap": 12
+      },
+      {
+        "position": 35,
+        "totalScore": 73,
+        "rawLine": "35th\tLiam Harding(19)\t73",
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Liam Harding",
+        "handicap": 19
+      },
+      {
+        "position": 36,
+        "totalScore": 75,
+        "rawLine": "36th\tJason Langford(18)\t75",
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Jason Langford",
+        "handicap": 18
+      },
+      {
+        "position": 37,
+        "totalScore": 75,
+        "rawLine": "37th\tPaul Ian Welch(10)\t75",
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Paul Ian Welch",
+        "handicap": 10
+      },
+      {
+        "position": 38,
+        "totalScore": 76,
+        "rawLine": "38th\tRobert Shedden(19)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Robert Shedden",
+        "handicap": 19
+      },
+      {
+        "position": 39,
+        "totalScore": 76,
+        "rawLine": "39th\tPhilip John Northall(15)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Philip John Northall",
+        "handicap": 15
+      },
+      {
+        "position": 40,
+        "totalScore": 76,
+        "rawLine": "40th\tSean Element(15)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Sean Element",
+        "handicap": 15
+      },
+      {
+        "position": 41,
+        "totalScore": 77,
+        "rawLine": "41st\tAlexander Idoine(2)\t77",
+        "scoreType": "Nett",
+        "nettScore": 77,
+        "playerName": "Alexander Idoine",
+        "handicap": 2
+      },
+      {
+        "position": 42,
+        "totalScore": 78,
+        "rawLine": "42nd\tClive Kearey(22)\t78",
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Clive Kearey",
+        "handicap": 22
+      },
+      {
+        "position": 43,
+        "totalScore": 78,
+        "rawLine": "43rd\tDavid Hill(11)\t78",
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "David Hill",
+        "handicap": 11
+      },
+      {
+        "position": 44,
+        "totalScore": 79,
+        "rawLine": "44th\tDarren Element(21)\t79",
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Darren Element",
+        "handicap": 21
+      },
+      {
+        "position": 45,
+        "totalScore": 80,
+        "rawLine": "45th\tGraham John Franks(23)\t80",
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Graham John Franks",
+        "handicap": 23
+      },
+      {
+        "position": 46,
+        "totalScore": 80,
+        "rawLine": "46th\tAdam Stanfield(18)\t80",
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Adam Stanfield",
+        "handicap": 18
+      },
+      {
+        "position": 47,
+        "totalScore": 80,
+        "rawLine": "47th\tIvan John Jones(23)\t80",
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Ivan John Jones",
+        "handicap": 23
+      },
+      {
+        "position": 48,
+        "totalScore": 82,
+        "rawLine": "48th\tGraham Chilton(10)\t82",
+        "scoreType": "Nett",
+        "nettScore": 82,
+        "playerName": "Graham Chilton",
+        "handicap": 10
+      },
+      {
+        "position": 49,
+        "totalScore": 84,
+        "rawLine": "49th\tJames Webber(20)\t84",
+        "scoreType": "Nett",
+        "nettScore": 84,
+        "playerName": "James Webber",
+        "handicap": 20
+      },
+      {
+        "position": 50,
+        "totalScore": 93,
+        "rawLine": "50th\tDavid Crumpton(19)\t93",
+        "scoreType": "Nett",
+        "nettScore": 93,
+        "playerName": "David Crumpton",
+        "handicap": 19
+      },
+      {
+        "position": 51,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "51st\tJason Watchorn(24)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Jason Watchorn",
+        "handicap": 24
+      },
+      {
+        "position": 52,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "52nd\tClive Peter Gould(24)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Clive Peter Gould",
+        "handicap": 24
+      },
+      {
+        "position": 53,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "53rd\tMichael David Cosnett(13)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Michael David Cosnett",
+        "handicap": 13
+      },
+      {
+        "position": 54,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "54th\tPeter Evans(14)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Peter Evans",
+        "handicap": 14
+      },
+      {
+        "position": 55,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "55th\tJames Price(22)\tNR",
+        "scoreType": "Nett",
+        "playerName": "James Price",
+        "handicap": 22
+      },
+      {
+        "position": 56,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "56th\tJason Gregory(22)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Jason Gregory",
+        "handicap": 22
+      },
+      {
+        "position": 57,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "57th\tPaul Thomas Donnelly(12)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Paul Thomas Donnelly",
+        "handicap": 12
+      },
+      {
+        "position": 58,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "58th\tRoger William Grainger(22)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Roger William Grainger",
+        "handicap": 22
+      },
+      {
+        "position": 59,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "59th\tTony John Salt(11)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Tony John Salt",
+        "handicap": 11
+      },
+      {
+        "position": 60,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "60th\tAnthony Willetts(18)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Anthony Willetts",
+        "handicap": 18
+      },
+      {
+        "position": 61,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "61st\tAdrian Clift(30)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Adrian Clift",
+        "handicap": 30
+      },
+      {
+        "position": 62,
+        "status": "DQ",
+        "statusNote": "No card returned",
+        "rawLine": "62nd\tStephen Langford(25)\tDQ No card returned",
+        "scoreType": "Nett",
+        "playerName": "Stephen Langford",
+        "handicap": 25
+      },
+      {
+        "position": 63,
+        "status": "DQ",
+        "statusNote": "No card returned",
+        "rawLine": "63rd\tAlfie Higgs(40)\tDQ No card returned",
+        "scoreType": "Nett",
+        "playerName": "Alfie Higgs",
+        "handicap": 40
+      },
+      {
+        "position": 64,
+        "status": "DQ",
+        "statusNote": "No Card returned",
+        "rawLine": "64th\tCraig Langford(29)\tDQ No Card returned",
+        "scoreType": "Nett",
+        "playerName": "Craig Langford",
+        "handicap": 29
+      },
+      {
+        "position": 65,
+        "status": "DQ",
+        "statusNote": "No Card returned",
+        "rawLine": "65th\tDean Hinchcliffe(23)\tDQ No Card returned",
+        "scoreType": "Nett",
+        "playerName": "Dean Hinchcliffe",
+        "handicap": 23
+      },
+      {
+        "position": 66,
+        "status": "DQ",
+        "statusNote": "No card returned",
+        "rawLine": "66th\tCraig Tromans(24)\tDQ No card returned",
+        "scoreType": "Nett",
+        "playerName": "Craig Tromans",
+        "handicap": 24
+      }
+    ]
+  },
+  {
     "competitionId": "members-non-cup-stableford-competition",
     "competitionName": "Members Non-Cup Stableford Competition",
     "competitionFormat": "Individual",
