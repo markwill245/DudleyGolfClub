@@ -14641,13 +14641,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2022,
+    "yearsPlayed": 4,
+    "firstYear": 2021,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 94,
-    "averageEntries": 31.3,
-    "uniqueWinners": 3,
+    "totalEntries": 141,
+    "averageEntries": 35.3,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "Clive Peter Gould",
     "mostWins": 1,
     "currentWinners": [
@@ -14664,6 +14664,10 @@
       },
       {
         "player": "Neil Hartland",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Price",
         "wins": 1
       }
     ],
@@ -14690,6 +14694,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 44,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Stephen Price",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
         "relativeToPar": null
       }
     ],
