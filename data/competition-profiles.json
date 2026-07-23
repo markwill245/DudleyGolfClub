@@ -17318,14 +17318,16 @@
     "firstYear": 2022,
     "latestYear": 2022,
     "latestDetailedYear": 2022,
-    "totalEntries": 143,
-    "averageEntries": 143,
-    "uniqueWinners": 5,
+    "totalEntries": 198,
+    "averageEntries": 198,
+    "uniqueWinners": 7,
     "mostSuccessfulPlayer": "Adam Bonehill",
     "mostWins": 1,
     "currentWinners": [
       "Adam Bonehill",
       "Barry Thomas Lawton",
+      "Calin Tiplea",
+      "Paul Harper",
       "Robert Keith Woodall",
       "Roger John Smith",
       "Stephen Hall"
@@ -17337,6 +17339,14 @@
       },
       {
         "player": "Barry Thomas Lawton",
+        "wins": 1
+      },
+      {
+        "player": "Calin Tiplea",
+        "wins": 1
+      },
+      {
+        "player": "Paul Harper",
         "wins": 1
       },
       {
@@ -17367,6 +17377,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 19,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Calin Tiplea",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 40,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Paul Harper",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 61,
         "relativeToPar": null
       },
       {
