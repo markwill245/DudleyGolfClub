@@ -15,21 +15,29 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Club Championship",
-    "yearsPlayed": 3,
+    "yearsPlayed": 4,
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 156,
-    "averageEntries": 52,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Kevin Walters",
+    "totalEntries": 272,
+    "averageEntries": 68,
+    "uniqueWinners": 5,
+    "mostSuccessfulPlayer": "Jack Lowe",
     "mostWins": 1,
     "currentWinners": [
       "Kevin Walters"
     ],
     "winnerLeaders": [
       {
+        "player": "Jack Lowe",
+        "wins": 1
+      },
+      {
         "player": "Kevin Walters",
+        "wins": 1
+      },
+      {
+        "player": "Lee Roger Grainger",
         "wins": 1
       },
       {
@@ -57,6 +65,22 @@
         "verified": false,
         "score": 153,
         "relativeToPar": 15
+      },
+      {
+        "year": 2022,
+        "winner": "Jack Lowe",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 128,
+        "relativeToPar": -10
+      },
+      {
+        "year": 2022,
+        "winner": "Lee Roger Grainger",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 150,
+        "relativeToPar": 12
       },
       {
         "year": 2021,
@@ -98,6 +122,22 @@
             "relativeToPar": 15
           },
           {
+            "year": 2022,
+            "winner": "Jack Lowe",
+            "source": "Competition Result",
+            "verified": false,
+            "score": 128,
+            "relativeToPar": -10
+          },
+          {
+            "year": 2022,
+            "winner": "Lee Roger Grainger",
+            "source": "Competition Result",
+            "verified": false,
+            "score": 150,
+            "relativeToPar": 12
+          },
+          {
             "year": 2021,
             "winner": "Stuart Baker",
             "source": "Competition Result",
@@ -107,18 +147,26 @@
           }
         ],
         "statistics": {
-          "totalWins": 3,
-          "uniqueWinners": 3,
+          "totalWins": 5,
+          "uniqueWinners": 5,
           "firstYear": 2021,
           "latestYear": 2026,
           "currentWinners": [
             "Kevin Walters"
           ],
-          "mostSuccessfulPlayer": "Kevin Walters",
+          "mostSuccessfulPlayer": "Jack Lowe",
           "mostWins": 1,
           "leaders": [
             {
+              "player": "Jack Lowe",
+              "wins": 1
+            },
+            {
               "player": "Kevin Walters",
+              "wins": 1
+            },
+            {
+              "player": "Lee Roger Grainger",
               "wins": 1
             },
             {
