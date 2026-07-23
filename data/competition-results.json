@@ -756,6 +756,625 @@
     ]
   },
   {
+    "competitionId": "captains-charity-day",
+    "competitionName": "Captains Charity Day",
+    "competitionFormat": "Individual",
+    "scoreType": "Unknown",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2021,
+    "date": "2021-09-18",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "Captains Charity Day",
+    "sourceDate": "Saturday 18th September 2021, Yellow & Red Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "David J. L. Jones",
+        "score": 45,
+        "countsAsCareerWin": true
+      },
+      "divisionWinners": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "G.B. Ray",
+          "score": 40,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "David J. L. Jones",
+          "score": 45,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        }
+      ],
+      "divisionResults": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "G.B. Ray",
+          "score": 40,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 2,
+          "playerName": "Sean Williams(10) Little Lakes Golf Club",
+          "score": 40,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 3,
+          "playerName": "Steven Brookes",
+          "score": 39,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "David J. L. Jones",
+          "score": 45,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 2,
+          "playerName": "Terrance Stanley Nolan",
+          "score": 41,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 3,
+          "playerName": "Steven Taylor",
+          "score": 39,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        }
+      ]
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 45,
+        "rawLine": "1st\tDavid J. L. Jones(16)\t45",
+        "scoreType": "Unknown",
+        "playerName": "David J. L. Jones",
+        "handicap": 16
+      },
+      {
+        "position": 2,
+        "totalScore": 41,
+        "rawLine": "2nd\tTerrance Stanley Nolan(24)\t41",
+        "scoreType": "Unknown",
+        "playerName": "Terrance Stanley Nolan",
+        "handicap": 24
+      },
+      {
+        "position": 3,
+        "totalScore": 40,
+        "rawLine": "3rd\tG.B. Ray(14)\t40",
+        "scoreType": "Unknown",
+        "playerName": "G.B. Ray",
+        "handicap": 14
+      },
+      {
+        "position": 4,
+        "totalScore": 40,
+        "rawLine": "4th\tSean Williams(10) Little Lakes Golf Club\t40",
+        "scoreType": "Unknown",
+        "playerName": "Sean Williams(10) Little Lakes Golf Club"
+      },
+      {
+        "position": 5,
+        "totalScore": 39,
+        "rawLine": "5th\tSteven Brookes(10)\t39",
+        "scoreType": "Unknown",
+        "playerName": "Steven Brookes",
+        "handicap": 10
+      },
+      {
+        "position": 6,
+        "totalScore": 39,
+        "rawLine": "6th\tSteven Taylor(16)\t39",
+        "scoreType": "Unknown",
+        "playerName": "Steven Taylor",
+        "handicap": 16
+      },
+      {
+        "position": 7,
+        "totalScore": 39,
+        "rawLine": "7th\tScott Postin(19)\t39",
+        "scoreType": "Unknown",
+        "playerName": "Scott Postin",
+        "handicap": 19
+      },
+      {
+        "position": 8,
+        "totalScore": 39,
+        "rawLine": "8th\tShaun Edward Messer(17)\t39",
+        "scoreType": "Unknown",
+        "playerName": "Shaun Edward Messer",
+        "handicap": 17
+      },
+      {
+        "position": 9,
+        "totalScore": 39,
+        "rawLine": "9th\tDavid Hobley(15)\t39",
+        "scoreType": "Unknown",
+        "playerName": "David Hobley",
+        "handicap": 15
+      },
+      {
+        "position": 10,
+        "totalScore": 38,
+        "rawLine": "10th\tKarl Matthew Ashmore(5)\t38",
+        "scoreType": "Unknown",
+        "playerName": "Karl Matthew Ashmore",
+        "handicap": 5
+      },
+      {
+        "position": 11,
+        "totalScore": 38,
+        "rawLine": "11th\tKevin Phillips(14) Little Lakes Golf Club\t38",
+        "scoreType": "Unknown",
+        "playerName": "Kevin Phillips(14) Little Lakes Golf Club"
+      },
+      {
+        "position": 12,
+        "totalScore": 38,
+        "rawLine": "12th\tLee Roger Grainger(5)\t38",
+        "scoreType": "Unknown",
+        "playerName": "Lee Roger Grainger",
+        "handicap": 5
+      },
+      {
+        "position": 13,
+        "totalScore": 38,
+        "rawLine": "13th\tPhilip Thompson(11)\t38",
+        "scoreType": "Unknown",
+        "playerName": "Philip Thompson",
+        "handicap": 11
+      },
+      {
+        "position": 14,
+        "totalScore": 37,
+        "rawLine": "14th\tKeith John Woodall(19)\t37",
+        "scoreType": "Unknown",
+        "playerName": "Keith John Woodall",
+        "handicap": 19
+      },
+      {
+        "position": 15,
+        "totalScore": 37,
+        "rawLine": "15th\tSean Element(17)\t37",
+        "scoreType": "Unknown",
+        "playerName": "Sean Element",
+        "handicap": 17
+      },
+      {
+        "position": 16,
+        "totalScore": 37,
+        "rawLine": "16th\tStuart Baker(9)\t37",
+        "scoreType": "Unknown",
+        "playerName": "Stuart Baker",
+        "handicap": 9
+      },
+      {
+        "position": 17,
+        "totalScore": 36,
+        "rawLine": "17th\tWayne Rutter(19)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Wayne Rutter",
+        "handicap": 19
+      },
+      {
+        "position": 18,
+        "totalScore": 36,
+        "rawLine": "18th\tChristopher Vanes(18)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Christopher Vanes",
+        "handicap": 18
+      },
+      {
+        "position": 19,
+        "totalScore": 36,
+        "rawLine": "19th\tStephen Dennis Gilbert(28)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Stephen Dennis Gilbert",
+        "handicap": 28
+      },
+      {
+        "position": 20,
+        "totalScore": 36,
+        "rawLine": "20th\tNicholas Watson(19) Little Lakes Golf Club\t36",
+        "scoreType": "Unknown",
+        "playerName": "Nicholas Watson(19) Little Lakes Golf Club"
+      },
+      {
+        "position": 21,
+        "totalScore": 36,
+        "rawLine": "21st\tGary Deeley(20)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Gary Deeley",
+        "handicap": 20
+      },
+      {
+        "position": 22,
+        "totalScore": 35,
+        "rawLine": "22nd\tSam Rutter(23) \t35",
+        "scoreType": "Unknown",
+        "playerName": "Sam Rutter",
+        "handicap": 23
+      },
+      {
+        "position": 23,
+        "totalScore": 35,
+        "rawLine": "23rd\tRobert Keith Woodall(7)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Robert Keith Woodall",
+        "handicap": 7
+      },
+      {
+        "position": 24,
+        "totalScore": 35,
+        "rawLine": "24th\tAaron Lee Warner(20)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Aaron Lee Warner",
+        "handicap": 20
+      },
+      {
+        "position": 25,
+        "totalScore": 35,
+        "rawLine": "25th\tTim Mark Wright(18)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Tim Mark Wright",
+        "handicap": 18
+      },
+      {
+        "position": 26,
+        "totalScore": 35,
+        "rawLine": "26th\tLinda Rafferty(24)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Linda Rafferty",
+        "handicap": 24
+      },
+      {
+        "position": 27,
+        "totalScore": 35,
+        "rawLine": "27th\tDarren Element(19)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Darren Element",
+        "handicap": 19
+      },
+      {
+        "position": 28,
+        "totalScore": 35,
+        "rawLine": "28th\tEric Edwards(26)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Eric Edwards",
+        "handicap": 26
+      },
+      {
+        "position": 29,
+        "totalScore": 35,
+        "rawLine": "29th\tPaul Ian Welch(12)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Paul Ian Welch",
+        "handicap": 12
+      },
+      {
+        "position": 30,
+        "totalScore": 34,
+        "rawLine": "30th\tAndrew Deakin(14)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Andrew Deakin",
+        "handicap": 14
+      },
+      {
+        "position": 31,
+        "totalScore": 34,
+        "rawLine": "31st\tStephen Hall(18)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Stephen Hall",
+        "handicap": 18
+      },
+      {
+        "position": 32,
+        "totalScore": 34,
+        "rawLine": "32nd\tRobert Hudson(18)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Robert Hudson",
+        "handicap": 18
+      },
+      {
+        "position": 33,
+        "totalScore": 34,
+        "rawLine": "33rd\tJohn Bunce(23) Little Lakes Golf Club\t34",
+        "scoreType": "Unknown",
+        "playerName": "John Bunce(23) Little Lakes Golf Club"
+      },
+      {
+        "position": 34,
+        "totalScore": 34,
+        "rawLine": "34th\tRichard Price(24)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Richard Price",
+        "handicap": 24
+      },
+      {
+        "position": 35,
+        "totalScore": 34,
+        "rawLine": "35th\tCarl R. Biddulph(17)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Carl R. Biddulph",
+        "handicap": 17
+      },
+      {
+        "position": 36,
+        "totalScore": 34,
+        "rawLine": "36th\tAdam Farley(9)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Adam Farley",
+        "handicap": 9
+      },
+      {
+        "position": 37,
+        "totalScore": 34,
+        "rawLine": "37th\tAnthony Willetts(19)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Anthony Willetts",
+        "handicap": 19
+      },
+      {
+        "position": 38,
+        "totalScore": 33,
+        "rawLine": "38th\tSteven Smith(16) Little Lakes Golf Club\t33",
+        "scoreType": "Unknown",
+        "playerName": "Steven Smith(16) Little Lakes Golf Club"
+      },
+      {
+        "position": 39,
+        "totalScore": 33,
+        "rawLine": "39th\tCraig Watchorn(35)\t33",
+        "scoreType": "Unknown",
+        "playerName": "Craig Watchorn",
+        "handicap": 35
+      },
+      {
+        "position": 40,
+        "totalScore": 32,
+        "rawLine": "40th\tAndy Simmons(8) Little Lakes Golf Club\t32",
+        "scoreType": "Unknown",
+        "playerName": "Andy Simmons(8) Little Lakes Golf Club"
+      },
+      {
+        "position": 41,
+        "totalScore": 32,
+        "rawLine": "41st\tPaul Harper(13)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Paul Harper",
+        "handicap": 13
+      },
+      {
+        "position": 42,
+        "totalScore": 32,
+        "rawLine": "42nd\tRoger Idione(7) \t32",
+        "scoreType": "Unknown",
+        "playerName": "Roger Idione",
+        "handicap": 7
+      },
+      {
+        "position": 43,
+        "totalScore": 32,
+        "rawLine": "43rd\tMark Basterfield(16)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Mark Basterfield",
+        "handicap": 16
+      },
+      {
+        "position": 44,
+        "totalScore": 31,
+        "rawLine": "44th\tR Marsden(17) \t31",
+        "scoreType": "Unknown",
+        "playerName": "R Marsden",
+        "handicap": 17
+      },
+      {
+        "position": 45,
+        "totalScore": 31,
+        "rawLine": "45th\tPaul Willetts(17) \t31",
+        "scoreType": "Unknown",
+        "playerName": "Paul Willetts",
+        "handicap": 17
+      },
+      {
+        "position": 46,
+        "totalScore": 29,
+        "rawLine": "46th\tBen Paul Smith(27)\t29",
+        "scoreType": "Unknown",
+        "playerName": "Ben Paul Smith",
+        "handicap": 27
+      },
+      {
+        "position": 47,
+        "totalScore": 29,
+        "rawLine": "47th\tAda Clift(35) \t29",
+        "scoreType": "Unknown",
+        "playerName": "Ada Clift",
+        "handicap": 35
+      },
+      {
+        "position": 48,
+        "totalScore": 29,
+        "rawLine": "48th\tMichael David Cosnett(13)\t29",
+        "scoreType": "Unknown",
+        "playerName": "Michael David Cosnett",
+        "handicap": 13
+      },
+      {
+        "position": 49,
+        "totalScore": 29,
+        "rawLine": "49th\tIan Frederick Stevens(8)\t29",
+        "scoreType": "Unknown",
+        "playerName": "Ian Frederick Stevens",
+        "handicap": 8
+      },
+      {
+        "position": 50,
+        "totalScore": 29,
+        "rawLine": "50th\tChris George-Burnell(22) Little Lakes Golf Club\t29",
+        "scoreType": "Unknown",
+        "playerName": "Chris George-Burnell(22) Little Lakes Golf Club"
+      },
+      {
+        "position": 51,
+        "totalScore": 29,
+        "rawLine": "51st\tMark Andrew Poulding(11)\t29",
+        "scoreType": "Unknown",
+        "playerName": "Mark Andrew Poulding",
+        "handicap": 11
+      },
+      {
+        "position": 52,
+        "totalScore": 28,
+        "rawLine": "52nd\tJames Webber(20)\t28",
+        "scoreType": "Unknown",
+        "playerName": "James Webber",
+        "handicap": 20
+      },
+      {
+        "position": 53,
+        "totalScore": 28,
+        "rawLine": "53rd\tTony John Salt(10)\t28",
+        "scoreType": "Unknown",
+        "playerName": "Tony John Salt",
+        "handicap": 10
+      },
+      {
+        "position": 54,
+        "totalScore": 27,
+        "rawLine": "54th\tJohn Edwards(21)\t27",
+        "scoreType": "Unknown",
+        "playerName": "John Edwards",
+        "handicap": 21
+      },
+      {
+        "position": 55,
+        "totalScore": 27,
+        "rawLine": "55th\tKeith Sabin(13)\t27",
+        "scoreType": "Unknown",
+        "playerName": "Keith Sabin",
+        "handicap": 13
+      },
+      {
+        "position": 56,
+        "totalScore": 27,
+        "rawLine": "56th\tStewart Marshall(13)\t27",
+        "scoreType": "Unknown",
+        "playerName": "Stewart Marshall",
+        "handicap": 13
+      },
+      {
+        "position": 56,
+        "totalScore": 27,
+        "rawLine": "56th\tLes Wartnsby(18) \t27",
+        "scoreType": "Unknown",
+        "playerName": "Les Wartnsby",
+        "handicap": 18
+      },
+      {
+        "position": 58,
+        "totalScore": 26,
+        "rawLine": "58th\tPaul Thomas Donnelly(13)\t26",
+        "scoreType": "Unknown",
+        "playerName": "Paul Thomas Donnelly",
+        "handicap": 13
+      },
+      {
+        "position": 59,
+        "totalScore": 26,
+        "rawLine": "59th\tLisa Hampson(23)\t26",
+        "scoreType": "Unknown",
+        "playerName": "Lisa Hampson",
+        "handicap": 23
+      },
+      {
+        "position": 60,
+        "totalScore": 26,
+        "rawLine": "60th\tJason Langford(18)\t26",
+        "scoreType": "Unknown",
+        "playerName": "Jason Langford",
+        "handicap": 18
+      },
+      {
+        "position": 61,
+        "totalScore": 25,
+        "rawLine": "61st\tGarry Guest(12) Little Lakes Golf Club\t25",
+        "scoreType": "Unknown",
+        "playerName": "Garry Guest(12) Little Lakes Golf Club"
+      },
+      {
+        "position": 62,
+        "totalScore": 23,
+        "rawLine": "62nd\tMichael John Walter Horne(29)\t23",
+        "scoreType": "Unknown",
+        "playerName": "Michael John Walter Horne",
+        "handicap": 29
+      },
+      {
+        "position": 63,
+        "totalScore": 23,
+        "rawLine": "63rd\tKevin John Foster(23)\t23",
+        "scoreType": "Unknown",
+        "playerName": "Kevin John Foster",
+        "handicap": 23
+      },
+      {
+        "position": 64,
+        "totalScore": 19,
+        "rawLine": "64th\tJason Watchorn(22)\t19",
+        "scoreType": "Unknown",
+        "playerName": "Jason Watchorn",
+        "handicap": 22
+      },
+      {
+        "position": 65,
+        "totalScore": 19,
+        "rawLine": "65th\tJason Sean Higley(8)\t19",
+        "scoreType": "Unknown",
+        "playerName": "Jason Sean Higley",
+        "handicap": 8
+      },
+      {
+        "position": 66,
+        "totalScore": 3,
+        "rawLine": "66th\tKevin Cooksey(15)\t3",
+        "scoreType": "Unknown",
+        "playerName": "Kevin Cooksey",
+        "handicap": 15
+      }
+    ]
+  },
+  {
     "competitionId": "centenary-trophy",
     "competitionName": "Centenary Trophy",
     "competitionFormat": "Individual",
