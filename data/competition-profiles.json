@@ -17890,13 +17890,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2026,
+    "yearsPlayed": 2,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 72,
-    "averageEntries": 72,
-    "uniqueWinners": 4,
+    "totalEntries": 128,
+    "averageEntries": 64,
+    "uniqueWinners": 8,
     "mostSuccessfulPlayer": "Adam Stanfield",
     "mostWins": 1,
     "currentWinners": [
@@ -17911,11 +17911,27 @@
         "wins": 1
       },
       {
+        "player": "Bradley Leadbeater",
+        "wins": 1
+      },
+      {
         "player": "Clive Kearey",
         "wins": 1
       },
       {
         "player": "Gary Baker",
+        "wins": 1
+      },
+      {
+        "player": "Gavin Higgs",
+        "wins": 1
+      },
+      {
+        "player": "Jack Lowe",
+        "wins": 1
+      },
+      {
+        "player": "Luke Homer",
         "wins": 1
       },
       {
@@ -17954,6 +17970,38 @@
         "source": "Competition Result",
         "verified": false,
         "score": 90,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Bradley Leadbeater",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Gavin Higgs",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Jack Lowe",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Luke Homer",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 85,
         "relativeToPar": null
       }
     ],
