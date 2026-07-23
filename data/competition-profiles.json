@@ -3222,19 +3222,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 3,
+    "yearsPlayed": 4,
     "firstYear": 1993,
-    "latestYear": 2021,
-    "latestDetailedYear": 2021,
-    "totalEntries": 29,
-    "averageEntries": 9.7,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Geoffrey Alan Ford",
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 56,
+    "averageEntries": 14,
+    "uniqueWinners": 4,
+    "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 1,
     "currentWinners": [
-      "Geoffrey Alan Ford"
+      "Clive Atkins"
     ],
     "winnerLeaders": [
+      {
+        "player": "Clive Atkins",
+        "wins": 1
+      },
       {
         "player": "Geoffrey Alan Ford",
         "wins": 1
@@ -3249,6 +3253,14 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Clive Atkins",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 15,
+        "relativeToPar": null
+      },
       {
         "year": 2021,
         "winner": "Geoffrey Alan Ford",
