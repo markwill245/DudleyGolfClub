@@ -15437,13 +15437,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 3,
-    "firstYear": 2022,
+    "yearsPlayed": 4,
+    "firstYear": 2021,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 189,
-    "averageEntries": 63,
-    "uniqueWinners": 6,
+    "totalEntries": 237,
+    "averageEntries": 59.3,
+    "uniqueWinners": 8,
     "mostSuccessfulPlayer": "Christopher Yale",
     "mostWins": 1,
     "currentWinners": [
@@ -15453,6 +15453,14 @@
     "winnerLeaders": [
       {
         "player": "Christopher Yale",
+        "wins": 1
+      },
+      {
+        "player": "David Hill",
+        "wins": 1
+      },
+      {
+        "player": "Gary William Stubbs",
         "wins": 1
       },
       {
@@ -15523,6 +15531,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 49,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "David Hill",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 48,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Gary William Stubbs",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 48,
         "relativeToPar": null
       }
     ],
