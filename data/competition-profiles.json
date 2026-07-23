@@ -19514,5 +19514,71 @@
     },
     "clubChampionship": null,
     "summary": "4 ball AmAm 1-9,10-15, 16-18 is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "winter-pairs-competition",
+    "competitionId": "winter-pairs-competition",
+    "name": "Winter Pairs Competition",
+    "competitionName": "Winter Pairs Competition",
+    "section": "Mens",
+    "format": "Pairs",
+    "competitionFormat": "Pairs",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2022,
+    "latestYear": 2022,
+    "latestDetailedYear": 2022,
+    "totalEntries": 36,
+    "averageEntries": 36,
+    "uniqueWinners": 2,
+    "mostSuccessfulPlayer": "Philip Thompson",
+    "mostWins": 1,
+    "currentWinners": [
+      "Philip Thompson",
+      "Sean Element"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Philip Thompson",
+        "wins": 1
+      },
+      {
+        "player": "Sean Element",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2022,
+        "winner": "Philip Thompson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 57,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Sean Element",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 57,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results"
+    },
+    "clubChampionship": null,
+    "summary": "Winter Pairs Competition is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
