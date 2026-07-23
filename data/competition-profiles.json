@@ -17055,14 +17055,14 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2024,
+    "yearsPlayed": 2,
+    "firstYear": 2021,
     "latestYear": 2024,
     "latestDetailedYear": 2024,
-    "totalEntries": 58,
-    "averageEntries": 58,
-    "uniqueWinners": 2,
-    "mostSuccessfulPlayer": "Mitch Sayce",
+    "totalEntries": 98,
+    "averageEntries": 49,
+    "uniqueWinners": 4,
+    "mostSuccessfulPlayer": "Ben Paul Smith",
     "mostWins": 1,
     "currentWinners": [
       "Mitch Sayce",
@@ -17070,7 +17070,15 @@
     ],
     "winnerLeaders": [
       {
+        "player": "Ben Paul Smith",
+        "wins": 1
+      },
+      {
         "player": "Mitch Sayce",
+        "wins": 1
+      },
+      {
+        "player": "Richard Price",
         "wins": 1
       },
       {
@@ -17093,6 +17101,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 62,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Ben Paul Smith",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Richard Price",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
         "relativeToPar": null
       }
     ],
