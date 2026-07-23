@@ -10007,13 +10007,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 4,
+    "yearsPlayed": 5,
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 246,
-    "averageEntries": 61.5,
-    "uniqueWinners": 8,
+    "totalEntries": 306,
+    "averageEntries": 61.2,
+    "uniqueWinners": 10,
     "mostSuccessfulPlayer": "Adrian Burns",
     "mostWins": 1,
     "currentWinners": [
@@ -10023,6 +10023,10 @@
     "winnerLeaders": [
       {
         "player": "Adrian Burns",
+        "wins": 1
+      },
+      {
+        "player": "Darren Element",
         "wins": 1
       },
       {
@@ -10047,6 +10051,10 @@
       },
       {
         "player": "Stephen Hall",
+        "wins": 1
+      },
+      {
+        "player": "Stewart Marshall",
         "wins": 1
       },
       {
@@ -10101,6 +10109,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 46,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Darren Element",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 47,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Stewart Marshall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 47,
         "relativeToPar": null
       },
       {
