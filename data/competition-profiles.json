@@ -1736,13 +1736,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 42,
+    "yearsPlayed": 43,
     "firstYear": 1968,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 267,
-    "averageEntries": 44.5,
-    "uniqueWinners": 37,
+    "totalEntries": 332,
+    "averageEntries": 47.4,
+    "uniqueWinners": 38,
     "mostSuccessfulPlayer": "C. A. Price",
     "mostWins": 2,
     "currentWinners": [
@@ -1870,6 +1870,10 @@
         "wins": 1
       },
       {
+        "player": "Richard Limb",
+        "wins": 1
+      },
+      {
         "player": "S. Cox",
         "wins": 1
       },
@@ -1937,6 +1941,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Richard Limb",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 43,
         "relativeToPar": null
       },
       {
