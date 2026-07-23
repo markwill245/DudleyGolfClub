@@ -14129,13 +14129,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 37,
-    "averageEntries": 18.5,
-    "uniqueWinners": 2,
+    "totalEntries": 70,
+    "averageEntries": 23.3,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "Adam Stanfield",
     "mostWins": 1,
     "currentWinners": [
@@ -14144,6 +14144,14 @@
     "winnerLeaders": [
       {
         "player": "Adam Stanfield",
+        "wins": 1
+      },
+      {
+        "player": "Andrew Deakin",
+        "wins": 1
+      },
+      {
+        "player": "Ian Frederick Stevens",
         "wins": 1
       },
       {
@@ -14166,6 +14174,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 34,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Andrew Deakin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 41,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Ian Frederick Stevens",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 41,
         "relativeToPar": null
       }
     ],
