@@ -18354,21 +18354,33 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2022,
+    "yearsPlayed": 2,
+    "firstYear": 2021,
     "latestYear": 2022,
     "latestDetailedYear": 2022,
-    "totalEntries": 49,
-    "averageEntries": 49,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "Craig Smart",
+    "totalEntries": 128,
+    "averageEntries": 64,
+    "uniqueWinners": 4,
+    "mostSuccessfulPlayer": "Ben Fisher",
     "mostWins": 1,
     "currentWinners": [
       "Craig Smart"
     ],
     "winnerLeaders": [
       {
+        "player": "Ben Fisher",
+        "wins": 1
+      },
+      {
         "player": "Craig Smart",
+        "wins": 1
+      },
+      {
+        "player": "Nigel Brookes",
+        "wins": 1
+      },
+      {
+        "player": "Richard Limb",
         "wins": 1
       }
     ],
@@ -18379,6 +18391,30 @@
         "source": "Competition Result",
         "verified": false,
         "score": 69,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Ben Fisher",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 39,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Nigel Brookes",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Richard Limb",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 73,
         "relativeToPar": null
       }
     ],
