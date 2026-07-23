@@ -16914,10 +16914,10 @@
     "firstYear": 2022,
     "latestYear": 2024,
     "latestDetailedYear": 2024,
-    "totalEntries": 288,
-    "averageEntries": 144,
-    "uniqueWinners": 8,
-    "mostSuccessfulPlayer": "Alan Ball",
+    "totalEntries": 429,
+    "averageEntries": 214.5,
+    "uniqueWinners": 12,
+    "mostSuccessfulPlayer": "Adam Farley",
     "mostWins": 1,
     "currentWinners": [
       "Alan Ball",
@@ -16926,6 +16926,10 @@
       "Tim Mark Wright"
     ],
     "winnerLeaders": [
+      {
+        "player": "Adam Farley",
+        "wins": 1
+      },
       {
         "player": "Alan Ball",
         "wins": 1
@@ -16955,7 +16959,19 @@
         "wins": 1
       },
       {
+        "player": "Scott Postin",
+        "wins": 1
+      },
+      {
+        "player": "Simon Nunn",
+        "wins": 1
+      },
+      {
         "player": "Tim Mark Wright",
+        "wins": 1
+      },
+      {
+        "player": "Tony John Salt",
         "wins": 1
       }
     ],
@@ -16994,6 +17010,14 @@
       },
       {
         "year": 2022,
+        "winner": "Adam Farley",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
         "winner": "Ian Frederick Stevens",
         "source": "Competition Result",
         "verified": false,
@@ -17022,6 +17046,30 @@
         "source": "Competition Result",
         "verified": false,
         "score": 21,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Scott Postin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Simon Nunn",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Tony John Salt",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
         "relativeToPar": null
       }
     ],
