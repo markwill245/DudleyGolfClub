@@ -703,9 +703,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 1661,
-    "averageEntries": 332.2,
-    "uniqueWinners": 27,
+    "totalEntries": 1695,
+    "averageEntries": 339,
+    "uniqueWinners": 28,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 2,
     "currentWinners": [
@@ -741,6 +741,10 @@
       },
       {
         "player": "Anthony Willetts",
+        "wins": 1
+      },
+      {
+        "player": "Christopher Yale",
         "wins": 1
       },
       {
@@ -1035,6 +1039,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 62,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Christopher Yale",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
         "relativeToPar": null
       },
       {
@@ -12525,19 +12537,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2025,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 105,
-    "averageEntries": 52.5,
-    "uniqueWinners": 2,
-    "mostSuccessfulPlayer": "Patrick Corcoran",
+    "totalEntries": 139,
+    "averageEntries": 46.3,
+    "uniqueWinners": 3,
+    "mostSuccessfulPlayer": "Christopher Yale",
     "mostWins": 1,
     "currentWinners": [
       "Robert Keith Woodall"
     ],
     "winnerLeaders": [
+      {
+        "player": "Christopher Yale",
+        "wins": 1
+      },
       {
         "player": "Patrick Corcoran",
         "wins": 1
@@ -12562,6 +12578,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 65,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Christopher Yale",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 63,
         "relativeToPar": null
       }
     ],

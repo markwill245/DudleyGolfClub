@@ -210,6 +210,14 @@
           },
           {
             "rank": 3,
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
+            "section": "Mens",
+            "value": 20,
+            "displayValue": 20
+          },
+          {
+            "rank": 4,
             "player": "Mark A. Williams",
             "slug": "mark-a-williams",
             "section": "Mens",
@@ -217,20 +225,12 @@
             "displayValue": 20
           },
           {
-            "rank": 4,
+            "rank": 5,
             "player": "Sean Element",
             "slug": "sean-element",
             "section": "Mens",
             "value": 20,
             "displayValue": 20
-          },
-          {
-            "rank": 5,
-            "player": "G.B. Ray",
-            "slug": "g-b-ray",
-            "section": "Mens",
-            "value": 19,
-            "displayValue": 19
           },
           {
             "rank": 6,
@@ -293,19 +293,19 @@
           },
           {
             "rank": 2,
-            "player": "Sean Element",
-            "slug": "sean-element",
+            "player": "G.B. Ray",
+            "slug": "g-b-ray",
             "section": "Mens",
             "value": 31,
             "displayValue": 31
           },
           {
             "rank": 3,
-            "player": "G.B. Ray",
-            "slug": "g-b-ray",
+            "player": "Sean Element",
+            "slug": "sean-element",
             "section": "Mens",
-            "value": 30,
-            "displayValue": 30
+            "value": 31,
+            "displayValue": 31
           },
           {
             "rank": 4,
@@ -387,8 +387,8 @@
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 60,
-            "displayValue": 60
+            "value": 61,
+            "displayValue": 61
           },
           {
             "rank": 3,
@@ -400,16 +400,16 @@
           },
           {
             "rank": 4,
-            "player": "Nigel Brookes",
-            "slug": "nigel-brookes",
+            "player": "Richard Limb",
+            "slug": "richard-limb",
             "section": "Mens",
-            "value": 50,
-            "displayValue": 50
+            "value": 51,
+            "displayValue": 51
           },
           {
             "rank": 5,
-            "player": "Richard Limb",
-            "slug": "richard-limb",
+            "player": "Nigel Brookes",
+            "slug": "nigel-brookes",
             "section": "Mens",
             "value": 50,
             "displayValue": 50
@@ -432,16 +432,16 @@
           },
           {
             "rank": 8,
-            "player": "Lewis Jones",
-            "slug": "lewis-jones",
+            "player": "Steve Homer",
+            "slug": "steve-homer",
             "section": "Mens",
-            "value": 46,
-            "displayValue": 46
+            "value": 47,
+            "displayValue": 47
           },
           {
             "rank": 9,
-            "player": "Steve Homer",
-            "slug": "steve-homer",
+            "player": "Lewis Jones",
+            "slug": "lewis-jones",
             "section": "Mens",
             "value": 46,
             "displayValue": 46
@@ -462,7 +462,7 @@
           "player": "G.B. Ray",
           "slug": "g-b-ray",
           "section": "Mens",
-          "value": 166
+          "value": 167
         },
         "leaders": [
           {
@@ -470,8 +470,8 @@
             "player": "G.B. Ray",
             "slug": "g-b-ray",
             "section": "Mens",
-            "value": 166,
-            "displayValue": 166
+            "value": 167,
+            "displayValue": 167
           },
           {
             "rank": 2,
@@ -486,11 +486,19 @@
             "player": "Gerald Paul Crowley",
             "slug": "gerald-paul-crowley",
             "section": "Mens",
-            "value": 139,
-            "displayValue": 139
+            "value": 140,
+            "displayValue": 140
           },
           {
             "rank": 4,
+            "player": "Richard Limb",
+            "slug": "richard-limb",
+            "section": "Mens",
+            "value": 129,
+            "displayValue": 129
+          },
+          {
+            "rank": 5,
             "player": "David Hill",
             "slug": "david-hill",
             "section": "Mens",
@@ -498,7 +506,7 @@
             "displayValue": 128
           },
           {
-            "rank": 5,
+            "rank": 6,
             "player": "Paul Ian Welch",
             "slug": "paul-ian-welch",
             "section": "Mens",
@@ -506,15 +514,23 @@
             "displayValue": 128
           },
           {
-            "rank": 6,
-            "player": "Richard Limb",
-            "slug": "richard-limb",
+            "rank": 7,
+            "player": "Ian Frederick Stevens",
+            "slug": "ian-frederick-stevens",
             "section": "Mens",
-            "value": 128,
-            "displayValue": 128
+            "value": 125,
+            "displayValue": 125
           },
           {
-            "rank": 7,
+            "rank": 8,
+            "player": "Steve Homer",
+            "slug": "steve-homer",
+            "section": "Mens",
+            "value": 125,
+            "displayValue": 125
+          },
+          {
+            "rank": 9,
             "player": "Adam Stanfield",
             "slug": "adam-stanfield",
             "section": "Mens",
@@ -522,25 +538,9 @@
             "displayValue": 124
           },
           {
-            "rank": 8,
+            "rank": 10,
             "player": "Calin Tiplea",
             "slug": "calin-tiplea",
-            "section": "Mens",
-            "value": 124,
-            "displayValue": 124
-          },
-          {
-            "rank": 9,
-            "player": "Ian Frederick Stevens",
-            "slug": "ian-frederick-stevens",
-            "section": "Mens",
-            "value": 124,
-            "displayValue": 124
-          },
-          {
-            "rank": 10,
-            "player": "Steve Homer",
-            "slug": "steve-homer",
             "section": "Mens",
             "value": 124,
             "displayValue": 124
@@ -715,16 +715,16 @@
           },
           {
             "rank": 9,
-            "player": "Clive Peter Gould",
-            "slug": "clive-peter-gould",
+            "player": "Christopher Yale",
+            "slug": "christopher-yale",
             "section": "Mens",
             "value": 1,
             "displayValue": 1
           },
           {
             "rank": 10,
-            "player": "Craig Smart",
-            "slug": "craig-smart",
+            "player": "Clive Peter Gould",
+            "slug": "clive-peter-gould",
             "section": "Mens",
             "value": 1,
             "displayValue": 1
