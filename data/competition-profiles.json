@@ -11401,21 +11401,29 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2024,
+    "yearsPlayed": 4,
+    "firstYear": 2022,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 94,
-    "averageEntries": 31.3,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "James Stevens",
+    "totalEntries": 156,
+    "averageEntries": 39,
+    "uniqueWinners": 5,
+    "mostSuccessfulPlayer": "Craig Watchorn",
     "mostWins": 1,
     "currentWinners": [
       "Scott Longhurst"
     ],
     "winnerLeaders": [
       {
+        "player": "Craig Watchorn",
+        "wins": 1
+      },
+      {
         "player": "James Stevens",
+        "wins": 1
+      },
+      {
+        "player": "Philip John Northall",
         "wins": 1
       },
       {
@@ -11450,6 +11458,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 37,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Craig Watchorn",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 38,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Philip John Northall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 20,
         "relativeToPar": null
       }
     ],
