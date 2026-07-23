@@ -17270,15 +17270,17 @@
     "firstYear": 2022,
     "latestYear": 2022,
     "latestDetailedYear": 2022,
-    "totalEntries": 64,
-    "averageEntries": 64,
-    "uniqueWinners": 3,
+    "totalEntries": 143,
+    "averageEntries": 143,
+    "uniqueWinners": 5,
     "mostSuccessfulPlayer": "Adam Bonehill",
     "mostWins": 1,
     "currentWinners": [
       "Adam Bonehill",
       "Barry Thomas Lawton",
-      "Robert Keith Woodall"
+      "Robert Keith Woodall",
+      "Roger John Smith",
+      "Stephen Hall"
     ],
     "winnerLeaders": [
       {
@@ -17291,6 +17293,14 @@
       },
       {
         "player": "Robert Keith Woodall",
+        "wins": 1
+      },
+      {
+        "player": "Roger John Smith",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Hall",
         "wins": 1
       }
     ],
@@ -17317,6 +17327,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 38,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Roger John Smith",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 39,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Stephen Hall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 36,
         "relativeToPar": null
       }
     ],
