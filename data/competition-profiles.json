@@ -1173,13 +1173,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 4,
+    "yearsPlayed": 5,
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 525,
-    "averageEntries": 131.3,
-    "uniqueWinners": 14,
+    "totalEntries": 589,
+    "averageEntries": 117.8,
+    "uniqueWinners": 16,
     "mostSuccessfulPlayer": "Clive Atkins",
     "mostWins": 2,
     "currentWinners": [
@@ -1194,6 +1194,10 @@
       },
       {
         "player": "Geoffrey Alan Ford",
+        "wins": 1
+      },
+      {
+        "player": "Gordon Hampstead",
         "wins": 1
       },
       {
@@ -1222,6 +1226,10 @@
       },
       {
         "player": "Malcolm Powell",
+        "wins": 1
+      },
+      {
+        "player": "Nigel Brookes",
         "wins": 1
       },
       {
@@ -1356,6 +1364,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 32,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Gordon Hampstead",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Nigel Brookes",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 40,
         "relativeToPar": null
       },
       {
@@ -16729,21 +16753,29 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2024,
+    "yearsPlayed": 2,
+    "firstYear": 2022,
     "latestYear": 2024,
     "latestDetailedYear": 2024,
-    "totalEntries": 33,
-    "averageEntries": 33,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "Kenneth Brettle",
+    "totalEntries": 97,
+    "averageEntries": 48.5,
+    "uniqueWinners": 3,
+    "mostSuccessfulPlayer": "Gordon Hampstead",
     "mostWins": 1,
     "currentWinners": [
       "Kenneth Brettle"
     ],
     "winnerLeaders": [
       {
+        "player": "Gordon Hampstead",
+        "wins": 1
+      },
+      {
         "player": "Kenneth Brettle",
+        "wins": 1
+      },
+      {
+        "player": "Nigel Brookes",
         "wins": 1
       }
     ],
@@ -16754,6 +16786,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Gordon Hampstead",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 33,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Nigel Brookes",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 40,
         "relativeToPar": null
       }
     ],
