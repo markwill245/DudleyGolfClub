@@ -655,9 +655,9 @@
     "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 1379,
-    "averageEntries": 275.8,
-    "uniqueWinners": 24,
+    "totalEntries": 1451,
+    "averageEntries": 290.2,
+    "uniqueWinners": 25,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 2,
     "currentWinners": [
@@ -733,6 +733,10 @@
       },
       {
         "player": "Mark Dando",
+        "wins": 1
+      },
+      {
+        "player": "Neil Penton",
         "wins": 1
       },
       {
@@ -975,6 +979,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 60,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Neil Penton",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 62,
         "relativeToPar": null
       },
       {
@@ -14534,13 +14546,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 99,
-    "averageEntries": 49.5,
-    "uniqueWinners": 2,
+    "totalEntries": 171,
+    "averageEntries": 57,
+    "uniqueWinners": 3,
     "mostSuccessfulPlayer": "James Stevens",
     "mostWins": 1,
     "currentWinners": [
@@ -14549,6 +14561,10 @@
     "winnerLeaders": [
       {
         "player": "James Stevens",
+        "wins": 1
+      },
+      {
+        "player": "Neil Penton",
         "wins": 1
       },
       {
@@ -14571,6 +14587,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 64,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Neil Penton",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 62,
         "relativeToPar": null
       }
     ],
