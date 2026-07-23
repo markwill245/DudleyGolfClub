@@ -1139,13 +1139,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 3,
-    "firstYear": 2022,
+    "yearsPlayed": 4,
+    "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 495,
-    "averageEntries": 165,
-    "uniqueWinners": 8,
+    "totalEntries": 568,
+    "averageEntries": 142,
+    "uniqueWinners": 9,
     "mostSuccessfulPlayer": "Linda Rafferty",
     "mostWins": 2,
     "currentWinners": [
@@ -1162,6 +1162,10 @@
       },
       {
         "player": "Keith Durbridge",
+        "wins": 1
+      },
+      {
+        "player": "Mark Andrew Poulding",
         "wins": 1
       },
       {
@@ -1256,6 +1260,14 @@
         "source": "Competition Result",
         "verified": false,
         "score": 39,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Mark Andrew Poulding",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 44,
         "relativeToPar": null
       }
     ],

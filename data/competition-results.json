@@ -2413,6 +2413,721 @@
     ]
   },
   {
+    "competitionId": "captains-day",
+    "competitionName": "Captain's Day",
+    "competitionFormat": "Individual",
+    "scoreType": "Unknown",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": false,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "Board Competition",
+    "year": 2021,
+    "date": "2021-07-10",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "Captain's Day",
+    "sourceDate": "Saturday 10th July 2021, Yellow & Red Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Mark Andrew Poulding",
+        "score": 44,
+        "countsAsCareerWin": true
+      },
+      "divisionWinners": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Mark Andrew Poulding",
+          "score": 44,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "Paul Harper",
+          "score": 44,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "Jason Langford",
+          "score": 41,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        }
+      ],
+      "divisionResults": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Mark Andrew Poulding",
+          "score": 44,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 2,
+          "playerName": "Adam Bonehill",
+          "score": 42,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 3,
+          "playerName": "Karl Matthew Ashmore",
+          "score": 41,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "Paul Harper",
+          "score": 44,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 2,
+          "playerName": "Stephen Hall",
+          "score": 40,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 3,
+          "playerName": "Anthony Willetts",
+          "score": 40,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "Jason Langford",
+          "score": 41,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 2,
+          "playerName": "Roger William Grainger",
+          "score": 39,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 3,
+          "playerName": "Ben Fisher",
+          "score": 38,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        }
+      ]
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 44,
+        "rawLine": "1st\tMark Andrew Poulding(12)\t44",
+        "scoreType": "Unknown",
+        "playerName": "Mark Andrew Poulding",
+        "handicap": 12
+      },
+      {
+        "position": 2,
+        "totalScore": 44,
+        "rawLine": "2nd\tPaul Harper(18)\t44",
+        "scoreType": "Unknown",
+        "playerName": "Paul Harper",
+        "handicap": 18
+      },
+      {
+        "position": 3,
+        "totalScore": 42,
+        "rawLine": "3rd\tAdam Bonehill(13)\t42",
+        "scoreType": "Unknown",
+        "playerName": "Adam Bonehill",
+        "handicap": 13
+      },
+      {
+        "position": 4,
+        "totalScore": 41,
+        "rawLine": "4th\tKarl Matthew Ashmore(9)\t41",
+        "scoreType": "Unknown",
+        "playerName": "Karl Matthew Ashmore",
+        "handicap": 9
+      },
+      {
+        "position": 5,
+        "totalScore": 41,
+        "rawLine": "5th\tJason Langford(23)\t41",
+        "scoreType": "Unknown",
+        "playerName": "Jason Langford",
+        "handicap": 23
+      },
+      {
+        "position": 6,
+        "totalScore": 40,
+        "rawLine": "6th\tStephen Hall(21)\t40",
+        "scoreType": "Unknown",
+        "playerName": "Stephen Hall",
+        "handicap": 21
+      },
+      {
+        "position": 7,
+        "totalScore": 40,
+        "rawLine": "7th\tAnthony Willetts(20)\t40",
+        "scoreType": "Unknown",
+        "playerName": "Anthony Willetts",
+        "handicap": 20
+      },
+      {
+        "position": 8,
+        "totalScore": 40,
+        "rawLine": "8th\tTim Mark Wright(20)\t40",
+        "scoreType": "Unknown",
+        "playerName": "Tim Mark Wright",
+        "handicap": 20
+      },
+      {
+        "position": 9,
+        "totalScore": 39,
+        "rawLine": "9th\tRoger William Grainger(23)\t39",
+        "scoreType": "Unknown",
+        "playerName": "Roger William Grainger",
+        "handicap": 23
+      },
+      {
+        "position": 10,
+        "totalScore": 39,
+        "rawLine": "10th\tDarren Element(19)\t39",
+        "scoreType": "Unknown",
+        "playerName": "Darren Element",
+        "handicap": 19
+      },
+      {
+        "position": 11,
+        "totalScore": 38,
+        "rawLine": "11th\tDavid Hill(14)\t38",
+        "scoreType": "Unknown",
+        "playerName": "David Hill",
+        "handicap": 14
+      },
+      {
+        "position": 12,
+        "totalScore": 38,
+        "rawLine": "12th\tBen Fisher(26)\t38",
+        "scoreType": "Unknown",
+        "playerName": "Ben Fisher",
+        "handicap": 26
+      },
+      {
+        "position": 13,
+        "totalScore": 38,
+        "rawLine": "13th\tStuart Baker(9)\t38",
+        "scoreType": "Unknown",
+        "playerName": "Stuart Baker",
+        "handicap": 9
+      },
+      {
+        "position": 14,
+        "totalScore": 37,
+        "rawLine": "14th\tTony John Salt(14)\t37",
+        "scoreType": "Unknown",
+        "playerName": "Tony John Salt",
+        "handicap": 14
+      },
+      {
+        "position": 15,
+        "totalScore": 37,
+        "rawLine": "15th\tPaul Thomas Donnelly(15)\t37",
+        "scoreType": "Unknown",
+        "playerName": "Paul Thomas Donnelly",
+        "handicap": 15
+      },
+      {
+        "position": 16,
+        "totalScore": 37,
+        "rawLine": "16th\tJack Lowe(24)\t37",
+        "scoreType": "Unknown",
+        "playerName": "Jack Lowe",
+        "handicap": 24
+      },
+      {
+        "position": 17,
+        "totalScore": 36,
+        "rawLine": "17th\tJason Sean Higley(9)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Jason Sean Higley",
+        "handicap": 9
+      },
+      {
+        "position": 18,
+        "totalScore": 36,
+        "rawLine": "18th\tPhilip Thompson(14)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Philip Thompson",
+        "handicap": 14
+      },
+      {
+        "position": 19,
+        "totalScore": 36,
+        "rawLine": "19th\tLee Roger Grainger(5)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Lee Roger Grainger",
+        "handicap": 5
+      },
+      {
+        "position": 20,
+        "totalScore": 36,
+        "rawLine": "20th\tSteve Homer(21)\t36",
+        "scoreType": "Unknown",
+        "playerName": "Steve Homer",
+        "handicap": 21
+      },
+      {
+        "position": 21,
+        "totalScore": 35,
+        "rawLine": "21st\tChristopher Yale(34)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Christopher Yale",
+        "handicap": 34
+      },
+      {
+        "position": 22,
+        "totalScore": 35,
+        "rawLine": "22nd\tCarl R. Biddulph(18)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Carl R. Biddulph",
+        "handicap": 18
+      },
+      {
+        "position": 23,
+        "totalScore": 35,
+        "rawLine": "23rd\tLuke Homer(12)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Luke Homer",
+        "handicap": 12
+      },
+      {
+        "position": 24,
+        "totalScore": 35,
+        "rawLine": "24th\tPaul Ian Welch(13)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Paul Ian Welch",
+        "handicap": 13
+      },
+      {
+        "position": 25,
+        "totalScore": 35,
+        "rawLine": "25th\tRoger John Smith(18)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Roger John Smith",
+        "handicap": 18
+      },
+      {
+        "position": 26,
+        "totalScore": 35,
+        "rawLine": "26th\tGeorge Brookes(19)\t35",
+        "scoreType": "Unknown",
+        "playerName": "George Brookes",
+        "handicap": 19
+      },
+      {
+        "position": 27,
+        "totalScore": 35,
+        "rawLine": "27th\tBrett Denis Gilbert(15)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Brett Denis Gilbert",
+        "handicap": 15
+      },
+      {
+        "position": 28,
+        "totalScore": 35,
+        "rawLine": "28th\tStephen Price(23)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Stephen Price",
+        "handicap": 23
+      },
+      {
+        "position": 29,
+        "totalScore": 35,
+        "rawLine": "29th\tMichael John Kendrick(19)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Michael John Kendrick",
+        "handicap": 19
+      },
+      {
+        "position": 30,
+        "totalScore": 35,
+        "rawLine": "30th\tKevin John Foster(23)\t35",
+        "scoreType": "Unknown",
+        "playerName": "Kevin John Foster",
+        "handicap": 23
+      },
+      {
+        "position": 31,
+        "totalScore": 34,
+        "rawLine": "31st\tJames Webber(19)\t34",
+        "scoreType": "Unknown",
+        "playerName": "James Webber",
+        "handicap": 19
+      },
+      {
+        "position": 32,
+        "totalScore": 34,
+        "rawLine": "32nd\tAndrew Deakin(14)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Andrew Deakin",
+        "handicap": 14
+      },
+      {
+        "position": 33,
+        "totalScore": 34,
+        "rawLine": "33rd\tStewart Marshall(13)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Stewart Marshall",
+        "handicap": 13
+      },
+      {
+        "position": 34,
+        "totalScore": 34,
+        "rawLine": "34th\tM T Cowdell(12)\t34",
+        "scoreType": "Unknown",
+        "playerName": "M T Cowdell",
+        "handicap": 12
+      },
+      {
+        "position": 35,
+        "totalScore": 34,
+        "rawLine": "35th\tMark Basterfield(17)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Mark Basterfield",
+        "handicap": 17
+      },
+      {
+        "position": 36,
+        "totalScore": 34,
+        "rawLine": "36th\tWayne Rutter(19)\t34",
+        "scoreType": "Unknown",
+        "playerName": "Wayne Rutter",
+        "handicap": 19
+      },
+      {
+        "position": 37,
+        "totalScore": 33,
+        "rawLine": "37th\tKevin Eric Conn(18)\t33",
+        "scoreType": "Unknown",
+        "playerName": "Kevin Eric Conn",
+        "handicap": 18
+      },
+      {
+        "position": 38,
+        "totalScore": 33,
+        "rawLine": "38th\tRichard Limb(14)\t33",
+        "scoreType": "Unknown",
+        "playerName": "Richard Limb",
+        "handicap": 14
+      },
+      {
+        "position": 39,
+        "totalScore": 33,
+        "rawLine": "39th\tScott Postin(20)\t33",
+        "scoreType": "Unknown",
+        "playerName": "Scott Postin",
+        "handicap": 20
+      },
+      {
+        "position": 40,
+        "totalScore": 33,
+        "rawLine": "40th\tNeil Penton(14)\t33",
+        "scoreType": "Unknown",
+        "playerName": "Neil Penton",
+        "handicap": 14
+      },
+      {
+        "position": 41,
+        "totalScore": 32,
+        "rawLine": "41st\tKarl Evans(21)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Karl Evans",
+        "handicap": 21
+      },
+      {
+        "position": 42,
+        "totalScore": 32,
+        "rawLine": "42nd\tKevin Cooksey(15)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Kevin Cooksey",
+        "handicap": 15
+      },
+      {
+        "position": 43,
+        "totalScore": 32,
+        "rawLine": "43rd\tLuke Hopkins(14)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Luke Hopkins",
+        "handicap": 14
+      },
+      {
+        "position": 44,
+        "totalScore": 32,
+        "rawLine": "44th\tPaul Russell(26)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Paul Russell",
+        "handicap": 26
+      },
+      {
+        "position": 45,
+        "totalScore": 32,
+        "rawLine": "45th\tEric Edwards(24)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Eric Edwards",
+        "handicap": 24
+      },
+      {
+        "position": 46,
+        "totalScore": 32,
+        "rawLine": "46th\tSven Garratt(46)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Sven Garratt",
+        "handicap": 46
+      },
+      {
+        "position": 47,
+        "totalScore": 32,
+        "rawLine": "47th\tPaul Ingram(11)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Paul Ingram",
+        "handicap": 11
+      },
+      {
+        "position": 48,
+        "totalScore": 32,
+        "rawLine": "48th\tPhilip John Northall(15)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Philip John Northall",
+        "handicap": 15
+      },
+      {
+        "position": 49,
+        "totalScore": 32,
+        "rawLine": "49th\tSean Element(17)\t32",
+        "scoreType": "Unknown",
+        "playerName": "Sean Element",
+        "handicap": 17
+      },
+      {
+        "position": 50,
+        "totalScore": 31,
+        "rawLine": "50th\tIan Frederick Stevens(9)\t31",
+        "scoreType": "Unknown",
+        "playerName": "Ian Frederick Stevens",
+        "handicap": 9
+      },
+      {
+        "position": 51,
+        "totalScore": 31,
+        "rawLine": "51st\tBen Paul Smith(28)\t31",
+        "scoreType": "Unknown",
+        "playerName": "Ben Paul Smith",
+        "handicap": 28
+      },
+      {
+        "position": 52,
+        "totalScore": 31,
+        "rawLine": "52nd\tJohn Edwards(22)\t31",
+        "scoreType": "Unknown",
+        "playerName": "John Edwards",
+        "handicap": 22
+      },
+      {
+        "position": 53,
+        "totalScore": 31,
+        "rawLine": "53rd\tGary Deeley(21)\t31",
+        "scoreType": "Unknown",
+        "playerName": "Gary Deeley",
+        "handicap": 21
+      },
+      {
+        "position": 54,
+        "totalScore": 31,
+        "rawLine": "54th\tRobert Hudson(18)\t31",
+        "scoreType": "Unknown",
+        "playerName": "Robert Hudson",
+        "handicap": 18
+      },
+      {
+        "position": 55,
+        "totalScore": 31,
+        "rawLine": "55th\tKeith John Woodall(18)\t31",
+        "scoreType": "Unknown",
+        "playerName": "Keith John Woodall",
+        "handicap": 18
+      },
+      {
+        "position": 56,
+        "totalScore": 31,
+        "rawLine": "56th\tPaul Andrew Birch(14)\t31",
+        "scoreType": "Unknown",
+        "playerName": "Paul Andrew Birch",
+        "handicap": 14
+      },
+      {
+        "position": 57,
+        "totalScore": 30,
+        "rawLine": "57th\tChristopher Vanes(18)\t30",
+        "scoreType": "Unknown",
+        "playerName": "Christopher Vanes",
+        "handicap": 18
+      },
+      {
+        "position": 58,
+        "totalScore": 30,
+        "rawLine": "58th\tIvan John Jones(22)\t30",
+        "scoreType": "Unknown",
+        "playerName": "Ivan John Jones",
+        "handicap": 22
+      },
+      {
+        "position": 59,
+        "totalScore": 29,
+        "rawLine": "59th\tKeith B. Stubbs(18)\t29",
+        "scoreType": "Unknown",
+        "playerName": "Keith B. Stubbs",
+        "handicap": 18
+      },
+      {
+        "position": 60,
+        "totalScore": 29,
+        "rawLine": "60th\tLinda Rafferty(24)\t29",
+        "scoreType": "Unknown",
+        "playerName": "Linda Rafferty",
+        "handicap": 24
+      },
+      {
+        "position": 61,
+        "totalScore": 28,
+        "rawLine": "61st\tGary William Stubbs(8)\t28",
+        "scoreType": "Unknown",
+        "playerName": "Gary William Stubbs",
+        "handicap": 8
+      },
+      {
+        "position": 62,
+        "totalScore": 28,
+        "rawLine": "62nd\tPaul Wayne Taylor(20)\t28",
+        "scoreType": "Unknown",
+        "playerName": "Paul Wayne Taylor",
+        "handicap": 20
+      },
+      {
+        "position": 63,
+        "totalScore": 27,
+        "rawLine": "63rd\tGraham John Franks(21)\t27",
+        "scoreType": "Unknown",
+        "playerName": "Graham John Franks",
+        "handicap": 21
+      },
+      {
+        "position": 64,
+        "totalScore": 26,
+        "rawLine": "64th\tLee Rhoden(36)\t26",
+        "scoreType": "Unknown",
+        "playerName": "Lee Rhoden",
+        "handicap": 36
+      },
+      {
+        "position": 65,
+        "totalScore": 26,
+        "rawLine": "65th\tGerald Paul Crowley(15)\t26",
+        "scoreType": "Unknown",
+        "playerName": "Gerald Paul Crowley",
+        "handicap": 15
+      },
+      {
+        "position": 66,
+        "totalScore": 26,
+        "rawLine": "66th\tPeter Evans(13)\t26",
+        "scoreType": "Unknown",
+        "playerName": "Peter Evans",
+        "handicap": 13
+      },
+      {
+        "position": 67,
+        "totalScore": 25,
+        "rawLine": "67th\tKeith Sabin(15)\t25",
+        "scoreType": "Unknown",
+        "playerName": "Keith Sabin",
+        "handicap": 15
+      },
+      {
+        "position": 68,
+        "totalScore": 25,
+        "rawLine": "68th\tSteven Hawthorn(14)\t25",
+        "scoreType": "Unknown",
+        "playerName": "Steven Hawthorn",
+        "handicap": 14
+      },
+      {
+        "position": 69,
+        "totalScore": 21,
+        "rawLine": "69th\tStephen Dennis Gilbert(29)\t21",
+        "scoreType": "Unknown",
+        "playerName": "Stephen Dennis Gilbert",
+        "handicap": 29
+      },
+      {
+        "position": 70,
+        "totalScore": 20,
+        "rawLine": "70th\tRobert Keith Woodall(8)\t20",
+        "scoreType": "Unknown",
+        "playerName": "Robert Keith Woodall",
+        "handicap": 8
+      },
+      {
+        "position": 71,
+        "totalScore": 18,
+        "rawLine": "71st\tLisa Hampson(27)\t18",
+        "scoreType": "Unknown",
+        "playerName": "Lisa Hampson",
+        "handicap": 27
+      },
+      {
+        "position": 72,
+        "totalScore": 16,
+        "rawLine": "72nd\tCraig Biddulph(20)\t16",
+        "scoreType": "Unknown",
+        "playerName": "Craig Biddulph",
+        "handicap": 20
+      },
+      {
+        "position": 73,
+        "totalScore": 6,
+        "rawLine": "73rd\tJack Lewis(31)\t6",
+        "scoreType": "Unknown",
+        "playerName": "Jack Lewis",
+        "handicap": 31
+      }
+    ]
+  },
+  {
     "competitionId": "centenary-trophy",
     "competitionName": "Centenary Trophy",
     "competitionFormat": "Individual",
