@@ -15113,13 +15113,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
-    "firstYear": 2024,
+    "yearsPlayed": 3,
+    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 120,
-    "averageEntries": 60,
-    "uniqueWinners": 4,
+    "totalEntries": 198,
+    "averageEntries": 66,
+    "uniqueWinners": 6,
     "mostSuccessfulPlayer": "James Stevens",
     "mostWins": 1,
     "currentWinners": [
@@ -15132,6 +15132,10 @@
         "wins": 1
       },
       {
+        "player": "Keith John Woodall",
+        "wins": 1
+      },
+      {
         "player": "Lee Roger Grainger",
         "wins": 1
       },
@@ -15141,6 +15145,10 @@
       },
       {
         "player": "Neil Hartland",
+        "wins": 1
+      },
+      {
+        "player": "Roger John Smith",
         "wins": 1
       }
     ],
@@ -15172,6 +15180,22 @@
       {
         "year": 2024,
         "winner": "Neil Hartland",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Keith John Woodall",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "Roger John Smith",
         "source": "Competition Result",
         "verified": false,
         "score": 45,
