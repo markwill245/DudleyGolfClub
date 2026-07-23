@@ -11270,13 +11270,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 4,
-    "firstYear": 2022,
+    "yearsPlayed": 5,
+    "firstYear": 2021,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 267,
-    "averageEntries": 66.8,
-    "uniqueWinners": 8,
+    "totalEntries": 321,
+    "averageEntries": 64.2,
+    "uniqueWinners": 10,
     "mostSuccessfulPlayer": "Adrian Burns",
     "mostWins": 1,
     "currentWinners": [
@@ -11290,6 +11290,10 @@
       },
       {
         "player": "James Stevens",
+        "wins": 1
+      },
+      {
+        "player": "Kevin John Foster",
         "wins": 1
       },
       {
@@ -11314,6 +11318,10 @@
       },
       {
         "player": "Scott Postin",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Dennis Gilbert",
         "wins": 1
       }
     ],
@@ -11380,6 +11388,22 @@
         "source": "Competition Result",
         "verified": false,
         "score": 48,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Kevin John Foster",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 50,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Stephen Dennis Gilbert",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 50,
         "relativeToPar": null
       }
     ],
