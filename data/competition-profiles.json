@@ -4226,72 +4226,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 1,
+    "yearsPlayed": 4,
     "firstYear": 2021,
-    "latestYear": 2021,
-    "latestDetailedYear": 2021,
-    "totalEntries": 60,
-    "averageEntries": 60,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "Ben Fisher",
-    "mostWins": 1,
-    "currentWinners": [
-      "Ben Fisher"
-    ],
-    "winnerLeaders": [
-      {
-        "player": "Ben Fisher",
-        "wins": 1
-      }
-    ],
-    "winnerHistory": [
-      {
-        "year": 2021,
-        "winner": "Ben Fisher",
-        "source": "Competition Result",
-        "verified": false,
-        "score": null,
-        "relativeToPar": null
-      }
-    ],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results"
-    },
-    "clubChampionship": null,
-    "summary": "Centenary Trophy & Boscowan Cup is preserved from the verified honours board and enriched with detailed competition results where available."
-  },
-  {
-    "id": "centenary-trophy-and-boscowan-cup",
-    "competitionId": "centenary-trophy-and-boscowan-cup",
-    "name": "Centenary Trophy & Boscowan Cup",
-    "competitionName": "Centenary Trophy & Boscowan Cup",
-    "section": "Mens",
-    "format": "Individual",
-    "competitionFormat": "Individual",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "complete",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2022,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 322,
-    "averageEntries": 107.3,
-    "uniqueWinners": 5,
-    "mostSuccessfulPlayer": "Graham Morgan",
+    "totalEntries": 382,
+    "averageEntries": 95.5,
+    "uniqueWinners": 6,
+    "mostSuccessfulPlayer": "Ben Fisher",
     "mostWins": 1,
     "currentWinners": [
       "Paul Thomas Donnelly"
     ],
     "winnerLeaders": [
+      {
+        "player": "Ben Fisher",
+        "wins": 1
+      },
       {
         "player": "Graham Morgan",
         "wins": 1
@@ -4353,6 +4304,14 @@
         "verified": false,
         "score": 39,
         "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Ben Fisher",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
       }
     ],
     "sourcePriority": {
@@ -4362,7 +4321,7 @@
       "detailedResultsSource": "Competition Results"
     },
     "clubChampionship": null,
-    "summary": "Centenary Trophy & Boscowan Cup is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+    "summary": "Centenary Trophy & Boscowan Cup is preserved from the verified honours board and enriched with detailed competition results where available."
   },
   {
     "id": "challenge-shield",
@@ -6482,59 +6441,6 @@
     },
     "clubChampionship": null,
     "summary": "Club Championship GROSS is preserved as a competition profile in the Dudley Golf Club Digital Museum."
-  },
-  {
-    "id": "club-championships",
-    "competitionId": "club-championships",
-    "name": "Club Championships",
-    "competitionName": "Club Championships",
-    "section": "Mens",
-    "format": "Individual",
-    "competitionFormat": "Individual",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "complete",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2024,
-    "latestYear": 2024,
-    "latestDetailedYear": 2024,
-    "totalEntries": 55,
-    "averageEntries": 55,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "Lee Roger Grainger",
-    "mostWins": 1,
-    "currentWinners": [
-      "Lee Roger Grainger"
-    ],
-    "winnerLeaders": [
-      {
-        "player": "Lee Roger Grainger",
-        "wins": 1
-      }
-    ],
-    "winnerHistory": [
-      {
-        "year": 2024,
-        "winner": "Lee Roger Grainger",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 150,
-        "relativeToPar": 12
-      }
-    ],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results"
-    },
-    "clubChampionship": null,
-    "summary": "Club Championships is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "club-championships-nett",
