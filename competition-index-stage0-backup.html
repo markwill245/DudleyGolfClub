@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Competition Archive | Dudley Golf Club Digital Museum</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Outfit", sans-serif;
+        }
+
+        .font-serif {
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+
+        <a href="digital-museum.html"
+            class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
+            ? Back to Museum
+        </a>
+
+        <section class="mt-12 mb-12">
+
+            <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+                Dudley Golf Club Digital Museum
+            </p>
+
+            <h1 class="text-5xl md:text-6xl font-serif mb-6">
+                Competition Archive
+            </h1>
+
+            <p class="text-lg md:text-xl max-w-3xl text-[#132419]/80">
+                Browse the club's competitions by type, section and historical importance.
+            </p>
+
+        </section>
+
+        <input
+            id="search"
+            type="search"
+            placeholder="Search every competition..."
+            class="w-full p-4 rounded-xl border border-[#C5A367]/40 bg-white mb-8 shadow-sm">
+
+        <nav id="category-navigation"
+            class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14">
+        </nav>
+
+        <div id="archive">
+            Loading competition archive...
+        </div>
+
+    </main>
+
+    <script>
+
+        const categoryDefinitions = [
+            {
+                id: "board-competitions",
+                title: "Board Competitions",
+                description: "Club championships, trophies and honours-board competitions.",
+                matches: competition =>
+                    competition.historicalBoard === true ||
+                    competition.profileType === "Historical Honour" ||
+                    competition.competitionClass === "Board" ||
+                    String(competition.museumCategory || "").toLowerCase().includes("board")
+            },
+            {
+                id: "seniors-events",
+                title: "Seniors Events",
+                description: "Competitions belonging to the Dudley Golf Club Seniors section.",
+                matches: competition =>
+                    normalise(competition.section) === "seniors" ||
+                    normalise(getName(competition)).includes("senior")
+            },
+            {
+                id: "medals",
+                title: "Medals",
+                description: "Monthly, seasonal and special medal competitions.",
+                matches: competition =>
+                    normalise(getName(competition)).includes("medal") ||
+                    normalise(competition.format).includes("medal") ||
+                    normalise(competition.competitionFormat).includes("medal")
+            },
+            {
+                id: "team-events",
+                title: "Team Events",
+                description: "Pairs, betterball, greensomes, scrambles, three-ball and four-ball competitions.",
+                matches: competition => {
+                    const searchable = normalise([
+                        getName(competition),
+                        competition.format,
+                        competition.competitionFormat
+                    ].join(" "));
+
+                    return [
+                        "pairs",
+                        "pair",
+                        "team",
+                        "betterball",
+                        "better ball",
+                        "greensomes",
+                        "scramble",
+                        "3 ball",
+                        "3-ball",
+                        "three ball",
+                        "4 ball",
+                        "4-ball",
+                        "four ball",
+                        "foursomes",
+                        "texas"
+                    ].some(term => searchable.includes(term));
+                }
+            },
+            {
+                id: "stablefords",
+                title: "Stablefords",
+                description: "Individual and team Stableford competitions.",
+                matches: competition => {
+                    const searchable = normalise([
+                        getName(competition),
+                        competition.format,
+                        competition.competitionFormat
+                    ].join(" "));
+
+                    return searchable.includes("stableford");
+                }
+            },
+            {
+                id: "knockouts",
+                title: "Knockouts",
+                description: "Singles, pairs and match-play knockout competitions.",
+                matches: competition => {
+                    const searchable = normalise([
+                        getName(competition),
+                        competition.format,
+                        competition.competitionFormat
+                    ].join(" "));
+
+                    return [
+                        "knockout",
+                        "knock-out",
+                        "match play",
+                        "matchplay"
+                    ].some(term => searchable.includes(term));
+                }
+            },
+            {
+                id: "ladies",
+                title: "Ladies",
+                description: "Competitions belonging to the Ladies section.",
+                matches: competition =>
+                    normalise(competition.section) === "ladies" ||
+                    normalise(getName(competition)).includes("ladies")
+            },
+            {
+                id: "juniors",
+                title: "Juniors",
+                description: "Competitions belonging to the Junior section.",
+                matches: competition =>
+                    normalise(competition.section) === "juniors" ||
+                    normalise(competition.section) === "junior" ||
+                    normalise(getName(competition)).includes("junior")
+            }
+        ];
+
+        let allCompetitions = [];
+
+        function normalise(value) {
+            return String(value || "")
+                .trim()
+                .toLowerCase()
+                .replace(/[’']/g, "")
+                .replace(/&/g, "and")
+                .replace(/[^a-z0-9]+/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
+        }
+
+        function getName(competition) {
+            return competition.name ||
+                competition.competitionName ||
+                "Unnamed Competition";
+        }
+
+        function getId(competition) {
+            return competition.id || competition.competitionId || "";
+        }
+
+        function removeDuplicates(competitions) {
+
+            const unique = new Map();
+
+            competitions.forEach(competition => {
+
+                const key = getId(competition) ||
+                    normalise(getName(competition));
+
+                if (!unique.has(key)) {
+                    unique.set(key, competition);
+                }
+
+            });
+
+            return Array.from(unique.values());
+        }
+
+        function sortCompetitions(competitions) {
+
+            return [...competitions].sort((a, b) =>
+                getName(a).localeCompare(getName(b))
+            );
+        }
+
+        function competitionCard(competition) {
+
+            const id = encodeURIComponent(getId(competition));
+            const name = getName(competition);
+            const section = competition.section || "Club";
+            const yearsPlayed = Number(competition.yearsPlayed || 0);
+            const firstYear = competition.firstYear;
+            const latestYear = competition.latestYear;
+            const profileType = competition.profileType || "Competition";
+
+            let yearsText = `${yearsPlayed} ${yearsPlayed === 1 ? "year" : "years"} recorded`;
+
+            if (firstYear && latestYear) {
+                yearsText += ` · ${firstYear}–${latestYear}`;
+            }
+
+            return `
+                <a
+                    href="competition-profile.html?id=${id}"
+                    class="block bg-white rounded-2xl p-7 shadow-sm border border-[#C5A367]/30 hover:shadow-xl hover:-translate-y-1 transition">
+
+                    <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+                        ${section}
+                    </p>
+
+                    <h3 class="text-2xl md:text-3xl font-serif mb-4">
+                        ${name}
+                    </h3>
+
+                    <p class="text-sm text-[#132419]/70">
+                        ${yearsText}
+                    </p>
+
+                    <p class="text-xs uppercase tracking-[0.2em] text-[#132419]/50 mt-3">
+                        ${profileType}
+                    </p>
+
+                    <div class="mt-6 pt-4 border-t border-[#C5A367]/20 text-sm font-semibold">
+                        View competition ?
+                    </div>
+
+                </a>
+            `;
+        }
+
+        function renderNavigation(categories) {
+
+            const navigation = document.getElementById("category-navigation");
+
+            navigation.innerHTML = categories.map(category => `
+                <a
+                    href="#${category.id}"
+                    class="bg-white border border-[#C5A367]/30 rounded-xl p-4 text-center font-semibold hover:bg-[#132419] hover:text-white transition">
+
+                    ${category.title}
+
+                    <span class="block text-sm font-normal mt-1 opacity-70">
+                        ${category.competitions.length}
+                    </span>
+                </a>
+            `).join("");
+        }
+
+        function renderArchive(searchTerm = "") {
+
+            const archive = document.getElementById("archive");
+            const term = normalise(searchTerm);
+
+            const categories = categoryDefinitions.map(category => {
+
+                let competitions = allCompetitions.filter(category.matches);
+
+                if (term) {
+                    competitions = competitions.filter(competition =>
+                        normalise([
+                            getName(competition),
+                            competition.section,
+                            competition.format,
+                            competition.competitionFormat,
+                            competition.profileType
+                        ].join(" ")).includes(term)
+                    );
+                }
+
+                competitions = sortCompetitions(
+                    removeDuplicates(competitions)
+                );
+
+                return {
+                    ...category,
+                    competitions
+                };
+
+            }).filter(category => category.competitions.length > 0);
+
+            renderNavigation(categories);
+
+            if (!categories.length) {
+
+                archive.innerHTML = `
+                    <div class="bg-white rounded-2xl p-12 text-center border border-[#C5A367]/30">
+                        <h2 class="text-3xl font-serif mb-4">
+                            No competitions found
+                        </h2>
+
+                        <p class="text-[#132419]/70">
+                            Try a different competition name or category.
+                        </p>
+                    </div>
+                `;
+
+                return;
+            }
+
+            archive.innerHTML = categories.map(category => `
+                <section id="${category.id}" class="mb-20 scroll-mt-8">
+
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+
+                        <div>
+                            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
+                                Competition Category
+                            </p>
+
+                            <h2 class="text-4xl md:text-5xl font-serif">
+                                ${category.title}
+                            </h2>
+
+                            <p class="text-[#132419]/70 mt-2 max-w-3xl">
+                                ${category.description}
+                            </p>
+                        </div>
+
+                        <p class="text-sm font-semibold">
+                            ${category.competitions.length}
+                            ${category.competitions.length === 1 ? "competition" : "competitions"}
+                        </p>
+
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${category.competitions.map(competitionCard).join("")}
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="#category-navigation"
+                            class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+                            ? Back to categories
+                        </a>
+                    </div>
+
+                </section>
+            `).join("");
+        }
+
+        async function loadCompetitions() {
+
+            try {
+
+                const response = await fetch(
+                    "data/competition-profiles.json?v=" + Date.now(),
+                    { cache: "no-store" }
+                );
+
+                if (!response.ok) {
+                    throw new Error("Unable to load competition profiles");
+                }
+
+                const data = await response.json();
+
+                allCompetitions = sortCompetitions(
+                    removeDuplicates(
+                        data.filter(competition =>
+                            competition.displayInArchive !== false &&
+                            competition.recordType !== "Competition Family" &&
+                            competition.catalogueStatus !== "Umbrella" &&
+                            Number(competition.yearsPlayed || 0) > 0
+                        )
+                    )
+                );
+
+                renderArchive();
+
+            } catch (error) {
+
+                console.error(error);
+
+                document.getElementById("archive").innerHTML = `
+                    <div class="bg-white rounded-2xl p-12 text-center border border-red-300">
+                        <h2 class="text-3xl font-serif mb-4">
+                            Competition archive unavailable
+                        </h2>
+
+                        <p>
+                            The Museum data could not be loaded.
+                        </p>
+                    </div>
+                `;
+
+            }
+
+        }
+
+        document.getElementById("search").addEventListener("input", event => {
+            renderArchive(event.target.value);
+        });
+
+        loadCompetitions();
+
+    </script>
+
+</body>
+
+</html>

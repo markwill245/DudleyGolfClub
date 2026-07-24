@@ -53,17 +53,6 @@
             );
             border: 1px solid rgba(19,36,25,0.10);
         }
-    
-        .competition-card[hidden],
-        .more-card[hidden] {
-            display: none !important;
-        }
-
-        @media (min-width: 1280px) {
-            .archive-grid {
-                grid-template-columns: repeat(6, minmax(0, 1fr));
-            }
-        }
     </style>
 </head>
 
@@ -157,45 +146,9 @@
             Loading competition archive...
         </div>
 
-        <footer
-            class="soft-strip rounded-lg px-4 py-3 mt-8 mb-4 flex flex-col md:flex-row gap-3 md:items-center md:justify-between text-sm text-[#132419]/70">
-
-            <p class="flex items-start md:items-center gap-2">
-
-                <span class="w-5 h-5 rounded-full border border-[#132419]/35 flex items-center justify-center text-xs shrink-0">
-                    ✓
-                </span>
-
-                <span>
-                    Only competitions with recorded results are shown.
-                    This page updates automatically when Museum data is published.
-                </span>
-
-            </p>
-
-            <p
-                id="total-shown"
-                class="font-semibold text-[#132419] whitespace-nowrap">
-            </p>
-
-        </footer>
-
     </main>
 
-    <button
-        id="back-to-top"
-        type="button"
-        aria-label="Back to top"
-        class="fixed right-5 bottom-5 z-50 w-16 h-16 rounded-full bg-[#132419] text-white shadow-xl opacity-0 pointer-events-none transition duration-200 hover:-translate-y-1">
-
-        <span class="block text-xl leading-none">↑</span>
-        <span class="block text-[10px] tracking-widest mt-1">TOP</span>
-
-    </button>
-
     <script>
-
-        const PREVIEW_COUNT = 5;
 
         const categoryDefinitions = [
             {
@@ -355,99 +308,48 @@
             );
         }
 
-        function yearsLabel(competition) {
+        function competitionCard(competition) {
 
+            const id = encodeURIComponent(getId(competition));
+            const name = getName(competition);
+            const section = competition.section || "Club";
             const yearsPlayed = Number(competition.yearsPlayed || 0);
             const firstYear = competition.firstYear;
             const latestYear = competition.latestYear;
+            const profileType = competition.profileType || "Competition";
 
-            return {
-                countText:
-                    `${yearsPlayed} ${yearsPlayed === 1 ? "year" : "years"}`,
+            let yearsText = `${yearsPlayed} ${yearsPlayed === 1 ? "year" : "years"} recorded`;
 
-                rangeText:
-                    firstYear && latestYear
-                        ? (
-                            firstYear === latestYear
-                                ? String(firstYear)
-                                : `${firstYear}–${latestYear}`
-                        )
-                        : ""
-            };
-        }
-
-        function competitionCard(competition, index) {
-
-            const id = encodeURIComponent(getId(competition));
-            const years = yearsLabel(competition);
+            if (firstYear && latestYear) {
+                yearsText += ` � ${firstYear}�${latestYear}`;
+            }
 
             return `
                 <a
                     href="competition-profile.html?id=${id}"
-                    class="competition-card museum-tile rounded-lg p-4 min-h-[140px] flex flex-col"
-                    ${index >= PREVIEW_COUNT ? "hidden" : ""}>
+                    class="block bg-white rounded-2xl p-7 shadow-sm border border-[#C5A367]/30 hover:shadow-xl hover:-translate-y-1 transition">
 
-                    <div class="flex items-start gap-2">
+                    <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
+                        ${section}
+                    </p>
 
-                        <span class="text-[#C5A367] text-base leading-none">
-                            🏆
-                        </span>
+                    <h3 class="text-2xl md:text-3xl font-serif mb-4">
+                        ${name}
+                    </h3>
 
-                        <h3 class="text-[21px] leading-[1.05] font-serif">
-                            ${getName(competition)}
-                        </h3>
+                    <p class="text-sm text-[#132419]/70">
+                        ${yearsText}
+                    </p>
 
-                    </div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-[#132419]/50 mt-3">
+                        ${profileType}
+                    </p>
 
-                    <div class="mt-auto pt-4">
-
-                        <p class="text-xs font-semibold">
-                            ${years.countText}
-                        </p>
-
-                        <p class="text-[11px] text-[#132419]/55 mt-1">
-                            ${years.rangeText}
-                        </p>
-
-                        <p class="text-[#C5A367] text-xs font-semibold mt-3">
-                            View competition&nbsp;&nbsp;→
-                        </p>
-
+                    <div class="mt-6 pt-4 border-t border-[#C5A367]/20 text-sm font-semibold">
+                        View competition ?
                     </div>
 
                 </a>
-            `;
-        }
-
-        function moreCard(category) {
-
-            const remaining =
-                category.competitions.length - PREVIEW_COUNT;
-
-            if (remaining <= 0) {
-                return "";
-            }
-
-            return `
-                <button
-                    type="button"
-                    class="more-card museum-tile rounded-lg p-4 min-h-[140px] text-left"
-                    data-category="${category.id}">
-
-                    <p class="text-3xl font-serif text-[#C5A367] leading-none">
-                        + ${remaining}
-                    </p>
-
-                    <p class="text-xs text-[#132419]/65 mt-1">
-                        more
-                    </p>
-
-                    <p class="text-[#C5A367] text-xs font-semibold mt-8">
-                        View all<br>
-                        ${category.title}&nbsp;&nbsp;→
-                    </p>
-
-                </button>
             `;
         }
 
@@ -529,13 +431,6 @@
 
             if (!categories.length) {
 
-                const totalElement =
-                    document.getElementById("total-shown");
-
-                if (totalElement) {
-                    totalElement.textContent = "Total competitions shown: 0";
-                }
-
                 archive.innerHTML = `
                     <div class="bg-white rounded-2xl p-12 text-center border border-[#C5A367]/30">
                         <h2 class="text-3xl font-serif mb-4">
@@ -552,167 +447,44 @@
             }
 
             archive.innerHTML = categories.map(category => `
-                <section
-                    id="${category.id}"
-                    class="mb-6 scroll-mt-8">
+                <section id="${category.id}" class="mb-20 scroll-mt-8">
 
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
 
-                        <div class="flex items-center gap-4">
+                        <div>
+                            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
+                                Competition Category
+                            </p>
 
-                            <div class="w-12 h-12 rounded-full bg-[#132419] text-white border border-[#C5A367]/50 flex items-center justify-center text-lg shrink-0">
-                                ${getCategoryIcon(category.id)}
-                            </div>
+                            <h2 class="text-4xl md:text-5xl font-serif">
+                                ${category.title}
+                            </h2>
 
-                            <div>
-
-                                <h2 class="text-[32px] leading-none font-serif">
-                                    ${category.title}
-                                </h2>
-
-                                <p class="text-[13px] text-[#132419]/65 mt-1">
-                                    ${category.description}
-                                </p>
-
-                            </div>
-
+                            <p class="text-[#132419]/70 mt-2 max-w-3xl">
+                                ${category.description}
+                            </p>
                         </div>
 
-                        <button
-                            type="button"
-                            class="view-all text-xs underline underline-offset-4 font-semibold"
-                            data-category="${category.id}">
-
-                            View all (${category.competitions.length}) →
-
-                        </button>
+                        <p class="text-sm font-semibold">
+                            ${category.competitions.length}
+                            ${category.competitions.length === 1 ? "competition" : "competitions"}
+                        </p>
 
                     </div>
 
-                    <div
-                        class="archive-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-3"
-                        data-grid="${category.id}">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${category.competitions.map(competitionCard).join("")}
+                    </div>
 
-                        ${category.competitions
-                            .map(competitionCard)
-                            .join("")}
-
-                        ${moreCard(category)}
-
+                    <div class="mt-8">
+                        <a href="#category-navigation"
+                            class="text-sm uppercase tracking-widest text-[#C5A367] font-bold">
+                            ? Back to categories
+                        </a>
                     </div>
 
                 </section>
             `).join("");
-
-            wireArchiveControls();
-            updateArchiveTotal(categories);
-
-        }
-
-        function setExpanded(categoryId, expanded) {
-
-            const grid =
-                document.querySelector(
-                    `[data-grid="${categoryId}"]`
-                );
-
-            if (!grid) {
-                return;
-            }
-
-            const cards =
-                Array.from(
-                    grid.querySelectorAll(".competition-card")
-                );
-
-            const more =
-                grid.querySelector(".more-card");
-
-            const button =
-                document.querySelector(
-                    `.view-all[data-category="${categoryId}"]`
-                );
-
-            cards.forEach((card, index) => {
-                card.hidden =
-                    !expanded &&
-                    index >= PREVIEW_COUNT;
-            });
-
-            if (more) {
-                more.hidden = expanded;
-            }
-
-            if (button) {
-                button.dataset.expanded =
-                    expanded ? "true" : "false";
-
-                button.textContent =
-                    expanded
-                        ? "Show fewer ↑"
-                        : `View all (${cards.length}) →`;
-            }
-        }
-
-        function wireArchiveControls() {
-
-            document
-                .querySelectorAll(".view-all")
-                .forEach(button => {
-
-                    button.addEventListener("click", () => {
-
-                        setExpanded(
-                            button.dataset.category,
-                            button.dataset.expanded !== "true"
-                        );
-
-                    });
-
-                });
-
-            document
-                .querySelectorAll(".more-card")
-                .forEach(button => {
-
-                    button.addEventListener("click", () => {
-
-                        setExpanded(
-                            button.dataset.category,
-                            true
-                        );
-
-                    });
-
-                });
-        }
-
-        function updateArchiveTotal(categories) {
-
-            const totalElement =
-                document.getElementById("total-shown");
-
-            if (!totalElement) {
-                return;
-            }
-
-            const uniqueCompetitions = new Set();
-
-            categories.forEach(category => {
-
-                category.competitions.forEach(competition => {
-
-                    uniqueCompetitions.add(
-                        getId(competition) ||
-                        normalise(getName(competition))
-                    );
-
-                });
-
-            });
-
-            totalElement.textContent =
-                `Total competitions shown: ${uniqueCompetitions.size}`;
         }
 
         async function loadCompetitions() {
@@ -773,35 +545,6 @@
             search.value = "";
             renderArchive("");
             search.focus();
-        });
-
-        const backToTop =
-            document.getElementById("back-to-top");
-
-        window.addEventListener("scroll", () => {
-
-            const shouldShow =
-                window.scrollY > 450;
-
-            backToTop.classList.toggle(
-                "opacity-0",
-                !shouldShow
-            );
-
-            backToTop.classList.toggle(
-                "pointer-events-none",
-                !shouldShow
-            );
-
-        });
-
-        backToTop.addEventListener("click", () => {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
         });
 
         loadCompetitions();
