@@ -242,7 +242,66 @@
         </p>
       `;
     }
+    function renderClubChampionshipAwards(comp, yearBlock) {
+      const competitionId =
+        yearBlock.competitionId ||
+        comp.id ||
+        "";
 
+      if (competitionId !== "club-championship") {
+        return "";
+      }
+
+      const awards = yearBlock.awards || {};
+      const clubChampion = awards.overallWinner || null;
+
+      const challengeShield = Array.isArray(awards.specialAwards)
+        ? awards.specialAwards.find(award =>
+          award.type === "challenge-shield" ||
+          String(award.label || "").toLowerCase().includes("challenge shield")
+        )
+        : null;
+
+      if (!clubChampion && !challengeShield) {
+        return "";
+      }
+
+      function renderAwardCard(title, award) {
+        if (!award) {
+          return "";
+        }
+
+        const score =
+          award.score !== undefined &&
+            award.score !== null &&
+            award.score !== ""
+            ? escapeHtml(award.score)
+            : "Score not recorded";
+
+        return `
+      <div class="rounded-2xl border border-[#C5A367]/30 bg-[#F9F7F2] p-5">
+        <p class="uppercase tracking-[0.2em] text-xs text-[#C5A367] font-bold mb-2">
+          ${escapeHtml(title)}
+        </p>
+
+        <h3 class="text-2xl font-serif mb-1">
+          ${displayValue(award.playerName, "Winner not recorded")}
+        </h3>
+
+        <p class="text-gray-700 font-semibold">
+          ${score}
+        </p>
+      </div>
+    `;
+      }
+
+      return `
+    <div class="grid md:grid-cols-2 gap-4 mb-8">
+      ${renderAwardCard("Club Champion (Gross)", clubChampion)}
+      ${renderAwardCard("Challenge Shield (Nett)", challengeShield)}
+    </div>
+  `;
+    }
     function renderDetailedResults(comp, compResults) {
       if (!compResults.length) {
         return "";
@@ -258,11 +317,13 @@
             ${displayValue(yearBlock.competitionName, comp.name)}
           </h2>
 
-          <p class="text-gray-600 mb-6">
-            ${displayValue(getFormatLine(yearBlock), "Recorded competition result")}
-          </p>
+         <p class="text-gray-600 mb-6">
+  ${displayValue(getFormatLine(yearBlock), "Recorded competition result")}
+</p>
 
-          <div class="overflow-x-auto">
+${renderClubChampionshipAwards(comp, yearBlock)}
+
+<div class="overflow-x-auto">
             <div class="min-w-[720px]">
               <div class="grid grid-cols-[70px_2fr_1fr_1fr] gap-4 border-b border-[#C5A367]/30 pb-3 mb-2 text-xs uppercase tracking-widest text-gray-500 font-bold">
                 <span>Pos</span>

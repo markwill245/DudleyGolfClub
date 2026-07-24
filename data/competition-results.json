@@ -122020,15 +122020,17 @@
     "competitionId": "club-championship",
     "competitionName": "Club Championship",
     "competitionFormat": "Individual",
+    "scoreType": "Gross",
+    "secondaryScoreType": "Nett",
     "teamSize": 1,
     "section": "Mens",
-    "competitionClass": "Major",
+    "competitionClass": "Board",
     "countsForOrderOfMerit": false,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Championship",
+    "museumCategory": "Board Competition",
     "year": 2026,
     "date": "2026-06-27",
     "endDate": "2026-06-28",
@@ -122036,1024 +122038,2460 @@
     "numberOfRounds": 2,
     "sourceTitle": "Club Championship 2026",
     "sourceDate": "Saturday 27th June 2026 - Sunday 28th June 2026",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Lewis Jones",
+        "score": 153,
+        "label": "Club Champion"
+      },
+      "specialAwards": [
+        {
+          "playerName": "Kevin Walters",
+          "score": 136,
+          "type": "challenge-shield",
+          "label": "Challenge Shield",
+          "countsAsCareerWin": false
+        }
+      ]
+    },
     "results": [
       {
         "position": 1,
+        "players": [
+          {
+            "name": "Lewis Jones",
+            "handicap": 3
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 65
+            "score": 74,
+            "grossScore": 74,
+            "nettScore": 71
           },
           {
             "round": 2,
-            "score": 71
+            "score": 79,
+            "grossScore": 79,
+            "nettScore": 76
           }
         ],
-        "round1": 65,
-        "round2": 71,
-        "totalScore": 136,
-        "relativeToPar": -2,
+        "round1": 74,
+        "round2": 79,
+        "totalScore": 153,
+        "relativeToPar": 15,
         "completedRounds": 2,
-        "playerName": "Kevin Walters",
-        "handicap": 12
+        "scoreType": "Gross",
+        "grossTotal": 153,
+        "grossPosition": 1,
+        "grossRounds": [
+          74,
+          79
+        ],
+        "grossRound1": 74,
+        "grossRound2": 79,
+        "grossRelativeToPar": 15,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 14,
+        "nettRounds": [
+          71,
+          76
+        ],
+        "nettRound1": 71,
+        "nettRound2": 76,
+        "nettTotal": 147,
+        "nettRelativeToPar": 9
       },
       {
         "position": 2,
+        "players": [
+          {
+            "name": "Mark Dando",
+            "handicap": 7
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 67
+            "score": 85,
+            "grossScore": 85,
+            "nettScore": 78
           },
           {
             "round": 2,
-            "score": 70
+            "score": 75,
+            "grossScore": 75,
+            "nettScore": 68
           }
         ],
-        "round1": 67,
-        "round2": 70,
-        "totalScore": 137,
-        "relativeToPar": -1,
+        "round1": 85,
+        "round2": 75,
+        "totalScore": 160,
+        "relativeToPar": 22,
         "completedRounds": 2,
-        "playerName": "Keith John Woodall",
-        "handicap": 23
+        "scoreType": "Gross",
+        "grossTotal": 160,
+        "grossPosition": 2,
+        "grossRounds": [
+          85,
+          75
+        ],
+        "grossRound1": 85,
+        "grossRound2": 75,
+        "grossRelativeToPar": 22,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 7,
+        "nettRounds": [
+          78,
+          68
+        ],
+        "nettRound1": 78,
+        "nettRound2": 68,
+        "nettTotal": 146,
+        "nettRelativeToPar": 8
       },
       {
         "position": 3,
+        "players": [
+          {
+            "name": "Robert Keith Woodall",
+            "handicap": 4
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 69
+            "score": 78,
+            "grossScore": 78,
+            "nettScore": 74
           },
           {
             "round": 2,
-            "score": 70
+            "score": 82,
+            "grossScore": 82,
+            "nettScore": 78
           }
         ],
-        "round1": 69,
-        "round2": 70,
-        "totalScore": 139,
-        "relativeToPar": 1,
+        "round1": 78,
+        "round2": 82,
+        "totalScore": 160,
+        "relativeToPar": 22,
         "completedRounds": 2,
-        "playerName": "Richard Limb",
-        "handicap": 11
+        "scoreType": "Gross",
+        "grossTotal": 160,
+        "grossPosition": 3,
+        "grossRounds": [
+          78,
+          82
+        ],
+        "grossRound1": 78,
+        "grossRound2": 82,
+        "grossRelativeToPar": 22,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 23,
+        "nettRounds": [
+          74,
+          78
+        ],
+        "nettRound1": 74,
+        "nettRound2": 78,
+        "nettTotal": 152,
+        "nettRelativeToPar": 14
       },
       {
         "position": 4,
+        "players": [
+          {
+            "name": "Kevin Walters",
+            "handicap": 12
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 70
+            "score": 77,
+            "grossScore": 77,
+            "nettScore": 65
           },
           {
             "round": 2,
-            "score": 70
+            "score": 83,
+            "grossScore": 83,
+            "nettScore": 71
           }
         ],
-        "round1": 70,
-        "round2": 70,
-        "totalScore": 140,
-        "relativeToPar": 2,
+        "round1": 77,
+        "round2": 83,
+        "totalScore": 160,
+        "relativeToPar": 22,
         "completedRounds": 2,
-        "playerName": "Paul Thomas Donnelly",
-        "handicap": 19
+        "scoreType": "Gross",
+        "grossTotal": 160,
+        "grossPosition": 4,
+        "grossRounds": [
+          77,
+          83
+        ],
+        "grossRound1": 77,
+        "grossRound2": 83,
+        "grossRelativeToPar": 22,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 1,
+        "nettRounds": [
+          65,
+          71
+        ],
+        "nettRound1": 65,
+        "nettRound2": 71,
+        "nettTotal": 136,
+        "nettRelativeToPar": -2
       },
       {
         "position": 5,
-        "rounds": [
+        "players": [
           {
-            "round": 1,
-            "score": 69
-          },
-          {
-            "round": 2,
-            "score": 75
+            "name": "Lee Roger Grainger",
+            "handicap": 4
           }
         ],
-        "round1": 69,
-        "round2": 75,
-        "totalScore": 144,
-        "relativeToPar": 6,
-        "completedRounds": 2,
-        "playerName": "Peter Evans",
-        "handicap": 14
-      },
-      {
-        "position": 6,
         "rounds": [
           {
             "round": 1,
-            "score": 67
+            "score": 84,
+            "grossScore": 84,
+            "nettScore": 80
           },
           {
             "round": 2,
-            "score": 77
-          }
-        ],
-        "round1": 67,
-        "round2": 77,
-        "totalScore": 144,
-        "relativeToPar": 6,
-        "completedRounds": 2,
-        "playerName": "Paul Wayne Taylor",
-        "handicap": 16
-      },
-      {
-        "position": 7,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 78
-          },
-          {
-            "round": 2,
-            "score": 68
-          }
-        ],
-        "round1": 78,
-        "round2": 68,
-        "totalScore": 146,
-        "relativeToPar": 8,
-        "completedRounds": 2,
-        "playerName": "Mark Dando",
-        "handicap": 7
-      },
-      {
-        "position": 8,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 75
-          },
-          {
-            "round": 2,
-            "score": 71
-          }
-        ],
-        "round1": 75,
-        "round2": 71,
-        "totalScore": 146,
-        "relativeToPar": 8,
-        "completedRounds": 2,
-        "playerName": "Tony John Salt",
-        "handicap": 18
-      },
-      {
-        "position": 9,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 74
-          },
-          {
-            "round": 2,
-            "score": 72
-          }
-        ],
-        "round1": 74,
-        "round2": 72,
-        "totalScore": 146,
-        "relativeToPar": 8,
-        "completedRounds": 2,
-        "playerName": "Tim Mark Wright",
-        "handicap": 18
-      },
-      {
-        "position": 10,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 74
-          },
-          {
-            "round": 2,
-            "score": 72
-          }
-        ],
-        "round1": 74,
-        "round2": 72,
-        "totalScore": 146,
-        "relativeToPar": 8,
-        "completedRounds": 2,
-        "playerName": "Mark Williams",
-        "handicap": 11
-      },
-      {
-        "position": 11,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 69
-          },
-          {
-            "round": 2,
-            "score": 77
-          }
-        ],
-        "round1": 69,
-        "round2": 77,
-        "totalScore": 146,
-        "relativeToPar": 8,
-        "completedRounds": 2,
-        "playerName": "Michael Williams",
-        "handicap": 18
-      },
-      {
-        "position": 12,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 75
-          },
-          {
-            "round": 2,
-            "score": 72
-          }
-        ],
-        "round1": 75,
-        "round2": 72,
-        "totalScore": 147,
-        "relativeToPar": 9,
-        "completedRounds": 2,
-        "playerName": "Craig Locke",
-        "handicap": 19
-      },
-      {
-        "position": 13,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 71
-          },
-          {
-            "round": 2,
-            "score": 76
-          }
-        ],
-        "round1": 71,
-        "round2": 76,
-        "totalScore": 147,
-        "relativeToPar": 9,
-        "completedRounds": 2,
-        "playerName": "Keith Durbridge",
-        "handicap": 22
-      },
-      {
-        "position": 14,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 71
-          },
-          {
-            "round": 2,
-            "score": 76
-          }
-        ],
-        "round1": 71,
-        "round2": 76,
-        "totalScore": 147,
-        "relativeToPar": 9,
-        "completedRounds": 2,
-        "playerName": "Lewis Jones",
-        "handicap": 3
-      },
-      {
-        "position": 15,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 69
-          },
-          {
-            "round": 2,
-            "score": 79
-          }
-        ],
-        "round1": 69,
-        "round2": 79,
-        "totalScore": 148,
-        "relativeToPar": 10,
-        "completedRounds": 2,
-        "playerName": "Gary Baker",
-        "handicap": 17
-      },
-      {
-        "position": 16,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 72
-          },
-          {
-            "round": 2,
-            "score": 77
-          }
-        ],
-        "round1": 72,
-        "round2": 77,
-        "totalScore": 149,
-        "relativeToPar": 11,
-        "completedRounds": 2,
-        "playerName": "Ryan Walker",
-        "handicap": 10
-      },
-      {
-        "position": 17,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 69
-          },
-          {
-            "round": 2,
-            "score": 80
-          }
-        ],
-        "round1": 69,
-        "round2": 80,
-        "totalScore": 149,
-        "relativeToPar": 11,
-        "completedRounds": 2,
-        "playerName": "Dean Hinchcliffe",
-        "handicap": 19
-      },
-      {
-        "position": 18,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 67
-          },
-          {
-            "round": 2,
-            "score": 82
-          }
-        ],
-        "round1": 67,
-        "round2": 82,
-        "totalScore": 149,
-        "relativeToPar": 11,
-        "completedRounds": 2,
-        "playerName": "David Hobley",
-        "handicap": 13
-      },
-      {
-        "position": 19,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 73
-          },
-          {
-            "round": 2,
-            "score": 77
-          }
-        ],
-        "round1": 73,
-        "round2": 77,
-        "totalScore": 150,
-        "relativeToPar": 12,
-        "completedRounds": 2,
-        "playerName": "Stephen Hall",
-        "handicap": 20
-      },
-      {
-        "position": 20,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 77
-          },
-          {
-            "round": 2,
-            "score": 74
-          }
-        ],
-        "round1": 77,
-        "round2": 74,
-        "totalScore": 151,
-        "relativeToPar": 13,
-        "completedRounds": 2,
-        "playerName": "Paul Ian Welch",
-        "handicap": 11
-      },
-      {
-        "position": 21,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 68
-          },
-          {
-            "round": 2,
-            "score": 83
-          }
-        ],
-        "round1": 68,
-        "round2": 83,
-        "totalScore": 151,
-        "relativeToPar": 13,
-        "completedRounds": 2,
-        "playerName": "Adrian Burns",
-        "handicap": 13
-      },
-      {
-        "position": 22,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 62
-          },
-          {
-            "round": 2,
-            "score": 89
-          }
-        ],
-        "round1": 62,
-        "round2": 89,
-        "totalScore": 151,
-        "relativeToPar": 13,
-        "completedRounds": 2,
-        "playerName": "David Evitts",
-        "handicap": 27
-      },
-      {
-        "position": 23,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 74
-          },
-          {
-            "round": 2,
-            "score": 78
-          }
-        ],
-        "round1": 74,
-        "round2": 78,
-        "totalScore": 152,
-        "relativeToPar": 14,
-        "completedRounds": 2,
-        "playerName": "Robert Keith Woodall",
-        "handicap": 4
-      },
-      {
-        "position": 24,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 73
-          },
-          {
-            "round": 2,
-            "score": 79
-          }
-        ],
-        "round1": 73,
-        "round2": 79,
-        "totalScore": 152,
-        "relativeToPar": 14,
-        "completedRounds": 2,
-        "playerName": "Alan Ball",
-        "handicap": 7
-      },
-      {
-        "position": 25,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 71
-          },
-          {
-            "round": 2,
-            "score": 81
-          }
-        ],
-        "round1": 71,
-        "round2": 81,
-        "totalScore": 152,
-        "relativeToPar": 14,
-        "completedRounds": 2,
-        "playerName": "Mitchell Raybould",
-        "handicap": 20
-      },
-      {
-        "position": 26,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 70
-          },
-          {
-            "round": 2,
-            "score": 82
-          }
-        ],
-        "round1": 70,
-        "round2": 82,
-        "totalScore": 152,
-        "relativeToPar": 14,
-        "completedRounds": 2,
-        "playerName": "Calin Tiplea",
-        "handicap": 11
-      },
-      {
-        "position": 27,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 68
-          },
-          {
-            "round": 2,
-            "score": 84
-          }
-        ],
-        "round1": 68,
-        "round2": 84,
-        "totalScore": 152,
-        "relativeToPar": 14,
-        "completedRounds": 2,
-        "playerName": "Owen Limb",
-        "handicap": 26
-      },
-      {
-        "position": 28,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 80
-          },
-          {
-            "round": 2,
-            "score": 73
-          }
-        ],
-        "round1": 80,
-        "round2": 73,
-        "totalScore": 153,
-        "relativeToPar": 15,
-        "completedRounds": 2,
-        "playerName": "Adam Stanfield",
-        "handicap": 12
-      },
-      {
-        "position": 29,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 80
-          },
-          {
-            "round": 2,
-            "score": 73
-          }
-        ],
-        "round1": 80,
-        "round2": 73,
-        "totalScore": 153,
-        "relativeToPar": 15,
-        "completedRounds": 2,
-        "playerName": "Lee Roger Grainger",
-        "handicap": 4
-      },
-      {
-        "position": 30,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 78
-          },
-          {
-            "round": 2,
-            "score": 75
-          }
-        ],
-        "round1": 78,
-        "round2": 75,
-        "totalScore": 153,
-        "relativeToPar": 15,
-        "completedRounds": 2,
-        "playerName": "Jason Hurp",
-        "handicap": 9
-      },
-      {
-        "position": 31,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 77
-          },
-          {
-            "round": 2,
-            "score": 76
-          }
-        ],
-        "round1": 77,
-        "round2": 76,
-        "totalScore": 153,
-        "relativeToPar": 15,
-        "completedRounds": 2,
-        "playerName": "James Stevens",
-        "handicap": 8
-      },
-      {
-        "position": 32,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 74
-          },
-          {
-            "round": 2,
-            "score": 79
-          }
-        ],
-        "round1": 74,
-        "round2": 79,
-        "totalScore": 153,
-        "relativeToPar": 15,
-        "completedRounds": 2,
-        "playerName": "Gregory Curry",
-        "handicap": 13
-      },
-      {
-        "position": 33,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 75
-          },
-          {
-            "round": 2,
-            "score": 79
-          }
-        ],
-        "round1": 75,
-        "round2": 79,
-        "totalScore": 154,
-        "relativeToPar": 16,
-        "completedRounds": 2,
-        "playerName": "Steve Aston",
-        "handicap": 8
-      },
-      {
-        "position": 34,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 75
-          },
-          {
-            "round": 2,
-            "score": 80
-          }
-        ],
-        "round1": 75,
-        "round2": 80,
-        "totalScore": 155,
-        "relativeToPar": 17,
-        "completedRounds": 2,
-        "playerName": "Paul Tromans",
-        "handicap": 24
-      },
-      {
-        "position": 35,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 81
-          },
-          {
-            "round": 2,
-            "score": 75
-          }
-        ],
-        "round1": 81,
-        "round2": 75,
-        "totalScore": 156,
-        "relativeToPar": 18,
-        "completedRounds": 2,
-        "playerName": "G.B. Ray",
-        "handicap": 12
-      },
-      {
-        "position": 36,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 74
-          },
-          {
-            "round": 2,
-            "score": 82
-          }
-        ],
-        "round1": 74,
-        "round2": 82,
-        "totalScore": 156,
-        "relativeToPar": 18,
-        "completedRounds": 2,
-        "playerName": "Stephen Langford",
-        "handicap": 21
-      },
-      {
-        "position": 37,
-        "rounds": [
-          {
-            "round": 1,
-            "score": 84
-          },
-          {
-            "round": 2,
-            "score": 74
+            "score": 77,
+            "grossScore": 77,
+            "nettScore": 73
           }
         ],
         "round1": 84,
-        "round2": 74,
-        "totalScore": 158,
-        "relativeToPar": 20,
+        "round2": 77,
+        "totalScore": 161,
+        "relativeToPar": 23,
         "completedRounds": 2,
-        "playerName": "Greg Underhill",
-        "handicap": 10
+        "scoreType": "Gross",
+        "grossTotal": 161,
+        "grossPosition": 5,
+        "grossRounds": [
+          84,
+          77
+        ],
+        "grossRound1": 84,
+        "grossRound2": 77,
+        "grossRelativeToPar": 23,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 29,
+        "nettRounds": [
+          80,
+          73
+        ],
+        "nettRound1": 80,
+        "nettRound2": 73,
+        "nettTotal": 153,
+        "nettRelativeToPar": 15
       },
       {
-        "position": 38,
+        "position": 6,
+        "players": [
+          {
+            "name": "Richard Limb",
+            "handicap": 11
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 80
+            "score": 80,
+            "grossScore": 80,
+            "nettScore": 69
           },
           {
             "round": 2,
-            "score": 83
+            "score": 81,
+            "grossScore": 81,
+            "nettScore": 70
           }
         ],
         "round1": 80,
-        "round2": 83,
-        "totalScore": 163,
-        "relativeToPar": 25,
+        "round2": 81,
+        "totalScore": 161,
+        "relativeToPar": 23,
         "completedRounds": 2,
-        "playerName": "Scott Whitehall",
-        "handicap": 17
+        "scoreType": "Gross",
+        "grossTotal": 161,
+        "grossPosition": 6,
+        "grossRounds": [
+          80,
+          81
+        ],
+        "grossRound1": 80,
+        "grossRound2": 81,
+        "grossRelativeToPar": 23,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 3,
+        "nettRounds": [
+          69,
+          70
+        ],
+        "nettRound1": 69,
+        "nettRound2": 70,
+        "nettTotal": 139,
+        "nettRelativeToPar": 1
+      },
+      {
+        "position": 7,
+        "players": [
+          {
+            "name": "Alan Ball",
+            "handicap": 7
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 80,
+            "grossScore": 80,
+            "nettScore": 73
+          },
+          {
+            "round": 2,
+            "score": 86,
+            "grossScore": 86,
+            "nettScore": 79
+          }
+        ],
+        "round1": 80,
+        "round2": 86,
+        "totalScore": 166,
+        "relativeToPar": 28,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 166,
+        "grossPosition": 7,
+        "grossRounds": [
+          80,
+          86
+        ],
+        "grossRound1": 80,
+        "grossRound2": 86,
+        "grossRelativeToPar": 28,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 24,
+        "nettRounds": [
+          73,
+          79
+        ],
+        "nettRound1": 73,
+        "nettRound2": 79,
+        "nettTotal": 152,
+        "nettRelativeToPar": 14
+      },
+      {
+        "position": 8,
+        "players": [
+          {
+            "name": "Mark Williams",
+            "handicap": 11
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 85,
+            "grossScore": 85,
+            "nettScore": 74
+          },
+          {
+            "round": 2,
+            "score": 83,
+            "grossScore": 83,
+            "nettScore": 72
+          }
+        ],
+        "round1": 85,
+        "round2": 83,
+        "totalScore": 168,
+        "relativeToPar": 30,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 168,
+        "grossPosition": 8,
+        "grossRounds": [
+          85,
+          83
+        ],
+        "grossRound1": 85,
+        "grossRound2": 83,
+        "grossRelativeToPar": 30,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 10,
+        "nettRounds": [
+          74,
+          72
+        ],
+        "nettRound1": 74,
+        "nettRound2": 72,
+        "nettTotal": 146,
+        "nettRelativeToPar": 8
+      },
+      {
+        "position": 9,
+        "players": [
+          {
+            "name": "James Stevens",
+            "handicap": 8
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 85,
+            "grossScore": 85,
+            "nettScore": 77
+          },
+          {
+            "round": 2,
+            "score": 84,
+            "grossScore": 84,
+            "nettScore": 76
+          }
+        ],
+        "round1": 85,
+        "round2": 84,
+        "totalScore": 169,
+        "relativeToPar": 31,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 169,
+        "grossPosition": 9,
+        "grossRounds": [
+          85,
+          84
+        ],
+        "grossRound1": 85,
+        "grossRound2": 84,
+        "grossRelativeToPar": 31,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 31,
+        "nettRounds": [
+          77,
+          76
+        ],
+        "nettRound1": 77,
+        "nettRound2": 76,
+        "nettTotal": 153,
+        "nettRelativeToPar": 15
+      },
+      {
+        "position": 10,
+        "players": [
+          {
+            "name": "Ryan Walker",
+            "handicap": 10
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 82,
+            "grossScore": 82,
+            "nettScore": 72
+          },
+          {
+            "round": 2,
+            "score": 87,
+            "grossScore": 87,
+            "nettScore": 77
+          }
+        ],
+        "round1": 82,
+        "round2": 87,
+        "totalScore": 169,
+        "relativeToPar": 31,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 169,
+        "grossPosition": 10,
+        "grossRounds": [
+          82,
+          87
+        ],
+        "grossRound1": 82,
+        "grossRound2": 87,
+        "grossRelativeToPar": 31,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 16,
+        "nettRounds": [
+          72,
+          77
+        ],
+        "nettRound1": 72,
+        "nettRound2": 77,
+        "nettTotal": 149,
+        "nettRelativeToPar": 11
+      },
+      {
+        "position": 11,
+        "players": [
+          {
+            "name": "Steve Aston",
+            "handicap": 8
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 83,
+            "grossScore": 83,
+            "nettScore": 75
+          },
+          {
+            "round": 2,
+            "score": 87,
+            "grossScore": 87,
+            "nettScore": 79
+          }
+        ],
+        "round1": 83,
+        "round2": 87,
+        "totalScore": 170,
+        "relativeToPar": 32,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 170,
+        "grossPosition": 11,
+        "grossRounds": [
+          83,
+          87
+        ],
+        "grossRound1": 83,
+        "grossRound2": 87,
+        "grossRelativeToPar": 32,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 33,
+        "nettRounds": [
+          75,
+          79
+        ],
+        "nettRound1": 75,
+        "nettRound2": 79,
+        "nettTotal": 154,
+        "nettRelativeToPar": 16
+      },
+      {
+        "position": 12,
+        "players": [
+          {
+            "name": "Jason Hurp",
+            "handicap": 9
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 87,
+            "grossScore": 87,
+            "nettScore": 78
+          },
+          {
+            "round": 2,
+            "score": 84,
+            "grossScore": 84,
+            "nettScore": 75
+          }
+        ],
+        "round1": 87,
+        "round2": 84,
+        "totalScore": 171,
+        "relativeToPar": 33,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 171,
+        "grossPosition": 12,
+        "grossRounds": [
+          87,
+          84
+        ],
+        "grossRound1": 87,
+        "grossRound2": 84,
+        "grossRelativeToPar": 33,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 30,
+        "nettRounds": [
+          78,
+          75
+        ],
+        "nettRound1": 78,
+        "nettRound2": 75,
+        "nettTotal": 153,
+        "nettRelativeToPar": 15
+      },
+      {
+        "position": 13,
+        "players": [
+          {
+            "name": "Peter Evans",
+            "handicap": 14
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 83,
+            "grossScore": 83,
+            "nettScore": 69
+          },
+          {
+            "round": 2,
+            "score": 89,
+            "grossScore": 89,
+            "nettScore": 75
+          }
+        ],
+        "round1": 83,
+        "round2": 89,
+        "totalScore": 172,
+        "relativeToPar": 34,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 172,
+        "grossPosition": 13,
+        "grossRounds": [
+          83,
+          89
+        ],
+        "grossRound1": 83,
+        "grossRound2": 89,
+        "grossRelativeToPar": 34,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 5,
+        "nettRounds": [
+          69,
+          75
+        ],
+        "nettRound1": 69,
+        "nettRound2": 75,
+        "nettTotal": 144,
+        "nettRelativeToPar": 6
+      },
+      {
+        "position": 14,
+        "players": [
+          {
+            "name": "Paul Ian Welch",
+            "handicap": 11
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 88,
+            "grossScore": 88,
+            "nettScore": 77
+          },
+          {
+            "round": 2,
+            "score": 85,
+            "grossScore": 85,
+            "nettScore": 74
+          }
+        ],
+        "round1": 88,
+        "round2": 85,
+        "totalScore": 173,
+        "relativeToPar": 35,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 173,
+        "grossPosition": 14,
+        "grossRounds": [
+          88,
+          85
+        ],
+        "grossRound1": 88,
+        "grossRound2": 85,
+        "grossRelativeToPar": 35,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 20,
+        "nettRounds": [
+          77,
+          74
+        ],
+        "nettRound1": 77,
+        "nettRound2": 74,
+        "nettTotal": 151,
+        "nettRelativeToPar": 13
+      },
+      {
+        "position": 15,
+        "players": [
+          {
+            "name": "Calin Tiplea",
+            "handicap": 11
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 81,
+            "grossScore": 81,
+            "nettScore": 70
+          },
+          {
+            "round": 2,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 82
+          }
+        ],
+        "round1": 81,
+        "round2": 93,
+        "totalScore": 174,
+        "relativeToPar": 36,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 174,
+        "grossPosition": 15,
+        "grossRounds": [
+          81,
+          93
+        ],
+        "grossRound1": 81,
+        "grossRound2": 93,
+        "grossRelativeToPar": 36,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 26,
+        "nettRounds": [
+          70,
+          82
+        ],
+        "nettRound1": 70,
+        "nettRound2": 82,
+        "nettTotal": 152,
+        "nettRelativeToPar": 14
+      },
+      {
+        "position": 16,
+        "players": [
+          {
+            "name": "David Hobley",
+            "handicap": 13
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 80,
+            "grossScore": 80,
+            "nettScore": 67
+          },
+          {
+            "round": 2,
+            "score": 95,
+            "grossScore": 95,
+            "nettScore": 82
+          }
+        ],
+        "round1": 80,
+        "round2": 95,
+        "totalScore": 175,
+        "relativeToPar": 37,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 175,
+        "grossPosition": 16,
+        "grossRounds": [
+          80,
+          95
+        ],
+        "grossRound1": 80,
+        "grossRound2": 95,
+        "grossRelativeToPar": 37,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 18,
+        "nettRounds": [
+          67,
+          82
+        ],
+        "nettRound1": 67,
+        "nettRound2": 82,
+        "nettTotal": 149,
+        "nettRelativeToPar": 11
+      },
+      {
+        "position": 17,
+        "players": [
+          {
+            "name": "Paul Wayne Taylor",
+            "handicap": 16
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 83,
+            "grossScore": 83,
+            "nettScore": 67
+          },
+          {
+            "round": 2,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 77
+          }
+        ],
+        "round1": 83,
+        "round2": 93,
+        "totalScore": 176,
+        "relativeToPar": 38,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 176,
+        "grossPosition": 17,
+        "grossRounds": [
+          83,
+          93
+        ],
+        "grossRound1": 83,
+        "grossRound2": 93,
+        "grossRelativeToPar": 38,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 6,
+        "nettRounds": [
+          67,
+          77
+        ],
+        "nettRound1": 67,
+        "nettRound2": 77,
+        "nettTotal": 144,
+        "nettRelativeToPar": 6
+      },
+      {
+        "position": 18,
+        "players": [
+          {
+            "name": "Adam Stanfield",
+            "handicap": 12
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 92,
+            "grossScore": 92,
+            "nettScore": 80
+          },
+          {
+            "round": 2,
+            "score": 85,
+            "grossScore": 85,
+            "nettScore": 73
+          }
+        ],
+        "round1": 92,
+        "round2": 85,
+        "totalScore": 177,
+        "relativeToPar": 39,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 177,
+        "grossPosition": 18,
+        "grossRounds": [
+          92,
+          85
+        ],
+        "grossRound1": 92,
+        "grossRound2": 85,
+        "grossRelativeToPar": 39,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 28,
+        "nettRounds": [
+          80,
+          73
+        ],
+        "nettRound1": 80,
+        "nettRound2": 73,
+        "nettTotal": 153,
+        "nettRelativeToPar": 15
+      },
+      {
+        "position": 19,
+        "players": [
+          {
+            "name": "Adrian Burns",
+            "handicap": 13
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 81,
+            "grossScore": 81,
+            "nettScore": 68
+          },
+          {
+            "round": 2,
+            "score": 96,
+            "grossScore": 96,
+            "nettScore": 83
+          }
+        ],
+        "round1": 81,
+        "round2": 96,
+        "totalScore": 177,
+        "relativeToPar": 39,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 177,
+        "grossPosition": 19,
+        "grossRounds": [
+          81,
+          96
+        ],
+        "grossRound1": 81,
+        "grossRound2": 96,
+        "grossRelativeToPar": 39,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 21,
+        "nettRounds": [
+          68,
+          83
+        ],
+        "nettRound1": 68,
+        "nettRound2": 83,
+        "nettTotal": 151,
+        "nettRelativeToPar": 13
+      },
+      {
+        "position": 20,
+        "players": [
+          {
+            "name": "Greg Underhill",
+            "handicap": 10
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 94,
+            "grossScore": 94,
+            "nettScore": 84
+          },
+          {
+            "round": 2,
+            "score": 84,
+            "grossScore": 84,
+            "nettScore": 74
+          }
+        ],
+        "round1": 94,
+        "round2": 84,
+        "totalScore": 178,
+        "relativeToPar": 40,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 178,
+        "grossPosition": 20,
+        "grossRounds": [
+          94,
+          84
+        ],
+        "grossRound1": 94,
+        "grossRound2": 84,
+        "grossRelativeToPar": 40,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 37,
+        "nettRounds": [
+          84,
+          74
+        ],
+        "nettRound1": 84,
+        "nettRound2": 74,
+        "nettTotal": 158,
+        "nettRelativeToPar": 20
+      },
+      {
+        "position": 21,
+        "players": [
+          {
+            "name": "Paul Thomas Donnelly",
+            "handicap": 19
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 89,
+            "grossScore": 89,
+            "nettScore": 70
+          },
+          {
+            "round": 2,
+            "score": 89,
+            "grossScore": 89,
+            "nettScore": 70
+          }
+        ],
+        "round1": 89,
+        "round2": 89,
+        "totalScore": 178,
+        "relativeToPar": 40,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 178,
+        "grossPosition": 21,
+        "grossRounds": [
+          89,
+          89
+        ],
+        "grossRound1": 89,
+        "grossRound2": 89,
+        "grossRelativeToPar": 40,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 4,
+        "nettRounds": [
+          70,
+          70
+        ],
+        "nettRound1": 70,
+        "nettRound2": 70,
+        "nettTotal": 140,
+        "nettRelativeToPar": 2
+      },
+      {
+        "position": 22,
+        "players": [
+          {
+            "name": "Gregory Curry",
+            "handicap": 13
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 87,
+            "grossScore": 87,
+            "nettScore": 74
+          },
+          {
+            "round": 2,
+            "score": 92,
+            "grossScore": 92,
+            "nettScore": 79
+          }
+        ],
+        "round1": 87,
+        "round2": 92,
+        "totalScore": 179,
+        "relativeToPar": 41,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 179,
+        "grossPosition": 22,
+        "grossRounds": [
+          87,
+          92
+        ],
+        "grossRound1": 87,
+        "grossRound2": 92,
+        "grossRelativeToPar": 41,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 32,
+        "nettRounds": [
+          74,
+          79
+        ],
+        "nettRound1": 74,
+        "nettRound2": 79,
+        "nettTotal": 153,
+        "nettRelativeToPar": 15
+      },
+      {
+        "position": 23,
+        "players": [
+          {
+            "name": "G.B. Ray",
+            "handicap": 12
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 81
+          },
+          {
+            "round": 2,
+            "score": 87,
+            "grossScore": 87,
+            "nettScore": 75
+          }
+        ],
+        "round1": 93,
+        "round2": 87,
+        "totalScore": 180,
+        "relativeToPar": 42,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 180,
+        "grossPosition": 23,
+        "grossRounds": [
+          93,
+          87
+        ],
+        "grossRound1": 93,
+        "grossRound2": 87,
+        "grossRelativeToPar": 42,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 35,
+        "nettRounds": [
+          81,
+          75
+        ],
+        "nettRound1": 81,
+        "nettRound2": 75,
+        "nettTotal": 156,
+        "nettRelativeToPar": 18
+      },
+      {
+        "position": 24,
+        "players": [
+          {
+            "name": "Neil Hartland",
+            "handicap": 9
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 88,
+            "grossScore": 88,
+            "nettScore": 79
+          },
+          {
+            "round": 2,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 84
+          }
+        ],
+        "round1": 88,
+        "round2": 93,
+        "totalScore": 181,
+        "relativeToPar": 43,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 181,
+        "grossPosition": 24,
+        "grossRounds": [
+          88,
+          93
+        ],
+        "grossRound1": 88,
+        "grossRound2": 93,
+        "grossRelativeToPar": 43,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 39,
+        "nettRounds": [
+          79,
+          84
+        ],
+        "nettRound1": 79,
+        "nettRound2": 84,
+        "nettTotal": 163,
+        "nettRelativeToPar": 25
+      },
+      {
+        "position": 25,
+        "players": [
+          {
+            "name": "Tony John Salt",
+            "handicap": 18
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 75
+          },
+          {
+            "round": 2,
+            "score": 89,
+            "grossScore": 89,
+            "nettScore": 71
+          }
+        ],
+        "round1": 93,
+        "round2": 89,
+        "totalScore": 182,
+        "relativeToPar": 44,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 182,
+        "grossPosition": 25,
+        "grossRounds": [
+          93,
+          89
+        ],
+        "grossRound1": 93,
+        "grossRound2": 89,
+        "grossRelativeToPar": 44,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 8,
+        "nettRounds": [
+          75,
+          71
+        ],
+        "nettRound1": 75,
+        "nettRound2": 71,
+        "nettTotal": 146,
+        "nettRelativeToPar": 8
+      },
+      {
+        "position": 26,
+        "players": [
+          {
+            "name": "Tim Mark Wright",
+            "handicap": 18
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 92,
+            "grossScore": 92,
+            "nettScore": 74
+          },
+          {
+            "round": 2,
+            "score": 90,
+            "grossScore": 90,
+            "nettScore": 72
+          }
+        ],
+        "round1": 92,
+        "round2": 90,
+        "totalScore": 182,
+        "relativeToPar": 44,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 182,
+        "grossPosition": 26,
+        "grossRounds": [
+          92,
+          90
+        ],
+        "grossRound1": 92,
+        "grossRound2": 90,
+        "grossRelativeToPar": 44,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 9,
+        "nettRounds": [
+          74,
+          72
+        ],
+        "nettRound1": 74,
+        "nettRound2": 72,
+        "nettTotal": 146,
+        "nettRelativeToPar": 8
+      },
+      {
+        "position": 27,
+        "players": [
+          {
+            "name": "Michael Williams",
+            "handicap": 18
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 87,
+            "grossScore": 87,
+            "nettScore": 69
+          },
+          {
+            "round": 2,
+            "score": 95,
+            "grossScore": 95,
+            "nettScore": 77
+          }
+        ],
+        "round1": 87,
+        "round2": 95,
+        "totalScore": 182,
+        "relativeToPar": 44,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 182,
+        "grossPosition": 27,
+        "grossRounds": [
+          87,
+          95
+        ],
+        "grossRound1": 87,
+        "grossRound2": 95,
+        "grossRelativeToPar": 44,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 11,
+        "nettRounds": [
+          69,
+          77
+        ],
+        "nettRound1": 69,
+        "nettRound2": 77,
+        "nettTotal": 146,
+        "nettRelativeToPar": 8
+      },
+      {
+        "position": 28,
+        "players": [
+          {
+            "name": "Gary Baker",
+            "handicap": 17
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 86,
+            "grossScore": 86,
+            "nettScore": 69
+          },
+          {
+            "round": 2,
+            "score": 96,
+            "grossScore": 96,
+            "nettScore": 79
+          }
+        ],
+        "round1": 86,
+        "round2": 96,
+        "totalScore": 182,
+        "relativeToPar": 44,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 182,
+        "grossPosition": 28,
+        "grossRounds": [
+          86,
+          96
+        ],
+        "grossRound1": 86,
+        "grossRound2": 96,
+        "grossRelativeToPar": 44,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 15,
+        "nettRounds": [
+          69,
+          79
+        ],
+        "nettRound1": 69,
+        "nettRound2": 79,
+        "nettTotal": 148,
+        "nettRelativeToPar": 10
+      },
+      {
+        "position": 29,
+        "players": [
+          {
+            "name": "Keith John Woodall",
+            "handicap": 23
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 90,
+            "grossScore": 90,
+            "nettScore": 67
+          },
+          {
+            "round": 2,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 70
+          }
+        ],
+        "round1": 90,
+        "round2": 93,
+        "totalScore": 183,
+        "relativeToPar": 45,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 183,
+        "grossPosition": 29,
+        "grossRounds": [
+          90,
+          93
+        ],
+        "grossRound1": 90,
+        "grossRound2": 93,
+        "grossRelativeToPar": 45,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 2,
+        "nettRounds": [
+          67,
+          70
+        ],
+        "nettRound1": 67,
+        "nettRound2": 70,
+        "nettTotal": 137,
+        "nettRelativeToPar": -1
+      },
+      {
+        "position": 30,
+        "players": [
+          {
+            "name": "Craig Locke",
+            "handicap": 19
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 94,
+            "grossScore": 94,
+            "nettScore": 75
+          },
+          {
+            "round": 2,
+            "score": 91,
+            "grossScore": 91,
+            "nettScore": 72
+          }
+        ],
+        "round1": 94,
+        "round2": 91,
+        "totalScore": 185,
+        "relativeToPar": 47,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 185,
+        "grossPosition": 30,
+        "grossRounds": [
+          94,
+          91
+        ],
+        "grossRound1": 94,
+        "grossRound2": 91,
+        "grossRelativeToPar": 47,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 12,
+        "nettRounds": [
+          75,
+          72
+        ],
+        "nettRound1": 75,
+        "nettRound2": 72,
+        "nettTotal": 147,
+        "nettRelativeToPar": 9
+      },
+      {
+        "position": 31,
+        "players": [
+          {
+            "name": "Dean Hinchcliffe",
+            "handicap": 19
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 88,
+            "grossScore": 88,
+            "nettScore": 69
+          },
+          {
+            "round": 2,
+            "score": 99,
+            "grossScore": 99,
+            "nettScore": 80
+          }
+        ],
+        "round1": 88,
+        "round2": 99,
+        "totalScore": 187,
+        "relativeToPar": 49,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 187,
+        "grossPosition": 31,
+        "grossRounds": [
+          88,
+          99
+        ],
+        "grossRound1": 88,
+        "grossRound2": 99,
+        "grossRelativeToPar": 49,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 17,
+        "nettRounds": [
+          69,
+          80
+        ],
+        "nettRound1": 69,
+        "nettRound2": 80,
+        "nettTotal": 149,
+        "nettRelativeToPar": 11
+      },
+      {
+        "position": 32,
+        "players": [
+          {
+            "name": "Stephen Hall",
+            "handicap": 20
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 73
+          },
+          {
+            "round": 2,
+            "score": 97,
+            "grossScore": 97,
+            "nettScore": 77
+          }
+        ],
+        "round1": 93,
+        "round2": 97,
+        "totalScore": 190,
+        "relativeToPar": 52,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 190,
+        "grossPosition": 32,
+        "grossRounds": [
+          93,
+          97
+        ],
+        "grossRound1": 93,
+        "grossRound2": 97,
+        "grossRelativeToPar": 52,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 19,
+        "nettRounds": [
+          73,
+          77
+        ],
+        "nettRound1": 73,
+        "nettRound2": 77,
+        "nettTotal": 150,
+        "nettRelativeToPar": 12
+      },
+      {
+        "position": 33,
+        "players": [
+          {
+            "name": "Keith Durbridge",
+            "handicap": 22
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 93,
+            "grossScore": 93,
+            "nettScore": 71
+          },
+          {
+            "round": 2,
+            "score": 98,
+            "grossScore": 98,
+            "nettScore": 76
+          }
+        ],
+        "round1": 93,
+        "round2": 98,
+        "totalScore": 191,
+        "relativeToPar": 53,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 191,
+        "grossPosition": 33,
+        "grossRounds": [
+          93,
+          98
+        ],
+        "grossRound1": 93,
+        "grossRound2": 98,
+        "grossRelativeToPar": 53,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 13,
+        "nettRounds": [
+          71,
+          76
+        ],
+        "nettRound1": 71,
+        "nettRound2": 76,
+        "nettTotal": 147,
+        "nettRelativeToPar": 9
+      },
+      {
+        "position": 34,
+        "players": [
+          {
+            "name": "Mitchell Raybould",
+            "handicap": 20
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 91,
+            "grossScore": 91,
+            "nettScore": 71
+          },
+          {
+            "round": 2,
+            "score": 101,
+            "grossScore": 101,
+            "nettScore": 81
+          }
+        ],
+        "round1": 91,
+        "round2": 101,
+        "totalScore": 192,
+        "relativeToPar": 54,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 192,
+        "grossPosition": 34,
+        "grossRounds": [
+          91,
+          101
+        ],
+        "grossRound1": 91,
+        "grossRound2": 101,
+        "grossRelativeToPar": 54,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 25,
+        "nettRounds": [
+          71,
+          81
+        ],
+        "nettRound1": 71,
+        "nettRound2": 81,
+        "nettTotal": 152,
+        "nettRelativeToPar": 14
+      },
+      {
+        "position": 35,
+        "players": [
+          {
+            "name": "Scott Whitehall",
+            "handicap": 17
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 97,
+            "grossScore": 97,
+            "nettScore": 80
+          },
+          {
+            "round": 2,
+            "score": 100,
+            "grossScore": 100,
+            "nettScore": 83
+          }
+        ],
+        "round1": 97,
+        "round2": 100,
+        "totalScore": 197,
+        "relativeToPar": 59,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 197,
+        "grossPosition": 35,
+        "grossRounds": [
+          97,
+          100
+        ],
+        "grossRound1": 97,
+        "grossRound2": 100,
+        "grossRelativeToPar": 59,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 38,
+        "nettRounds": [
+          80,
+          83
+        ],
+        "nettRound1": 80,
+        "nettRound2": 83,
+        "nettTotal": 163,
+        "nettRelativeToPar": 25
+      },
+      {
+        "position": 36,
+        "players": [
+          {
+            "name": "Stephen Langford",
+            "handicap": 21
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 95,
+            "grossScore": 95,
+            "nettScore": 74
+          },
+          {
+            "round": 2,
+            "score": 103,
+            "grossScore": 103,
+            "nettScore": 82
+          }
+        ],
+        "round1": 95,
+        "round2": 103,
+        "totalScore": 198,
+        "relativeToPar": 60,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 198,
+        "grossPosition": 36,
+        "grossRounds": [
+          95,
+          103
+        ],
+        "grossRound1": 95,
+        "grossRound2": 103,
+        "grossRelativeToPar": 60,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 36,
+        "nettRounds": [
+          74,
+          82
+        ],
+        "nettRound1": 74,
+        "nettRound2": 82,
+        "nettTotal": 156,
+        "nettRelativeToPar": 18
+      },
+      {
+        "position": 37,
+        "players": [
+          {
+            "name": "Paul Tromans",
+            "handicap": 24
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 99,
+            "grossScore": 99,
+            "nettScore": 75
+          },
+          {
+            "round": 2,
+            "score": 104,
+            "grossScore": 104,
+            "nettScore": 80
+          }
+        ],
+        "round1": 99,
+        "round2": 104,
+        "totalScore": 203,
+        "relativeToPar": 65,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 203,
+        "grossPosition": 37,
+        "grossRounds": [
+          99,
+          104
+        ],
+        "grossRound1": 99,
+        "grossRound2": 104,
+        "grossRelativeToPar": 65,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 34,
+        "nettRounds": [
+          75,
+          80
+        ],
+        "nettRound1": 75,
+        "nettRound2": 80,
+        "nettTotal": 155,
+        "nettRelativeToPar": 17
+      },
+      {
+        "position": 38,
+        "players": [
+          {
+            "name": "Owen Limb",
+            "handicap": 26
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "score": 94,
+            "grossScore": 94,
+            "nettScore": 68
+          },
+          {
+            "round": 2,
+            "score": 110,
+            "grossScore": 110,
+            "nettScore": 84
+          }
+        ],
+        "round1": 94,
+        "round2": 110,
+        "totalScore": 204,
+        "relativeToPar": 66,
+        "completedRounds": 2,
+        "scoreType": "Gross",
+        "grossTotal": 204,
+        "grossPosition": 38,
+        "grossRounds": [
+          94,
+          110
+        ],
+        "grossRound1": 94,
+        "grossRound2": 110,
+        "grossRelativeToPar": 66,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 27,
+        "nettRounds": [
+          68,
+          84
+        ],
+        "nettRound1": 68,
+        "nettRound2": 84,
+        "nettTotal": 152,
+        "nettRelativeToPar": 14
       },
       {
         "position": 39,
+        "players": [
+          {
+            "name": "David Evitts",
+            "handicap": 27
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 79
+            "score": 89,
+            "grossScore": 89,
+            "nettScore": 62
           },
           {
             "round": 2,
-            "score": 84
+            "score": 116,
+            "grossScore": 116,
+            "nettScore": 89
           }
         ],
-        "round1": 79,
-        "round2": 84,
-        "totalScore": 163,
-        "relativeToPar": 25,
+        "round1": 89,
+        "round2": 116,
+        "totalScore": 205,
+        "relativeToPar": 67,
         "completedRounds": 2,
-        "playerName": "Neil Hartland",
-        "handicap": 9
+        "scoreType": "Gross",
+        "grossTotal": 205,
+        "grossPosition": 39,
+        "grossRounds": [
+          89,
+          116
+        ],
+        "grossRound1": 89,
+        "grossRound2": 116,
+        "grossRelativeToPar": 67,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 22,
+        "nettRounds": [
+          62,
+          89
+        ],
+        "nettRound1": 62,
+        "nettRound2": 89,
+        "nettTotal": 151,
+        "nettRelativeToPar": 13
       },
       {
         "position": 40,
+        "players": [
+          {
+            "name": "David Hill",
+            "handicap": 21
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 78
+            "score": 99,
+            "grossScore": 99,
+            "nettScore": 78
           },
           {
             "round": 2,
-            "score": 86
+            "score": 107,
+            "grossScore": 107,
+            "nettScore": 86
           }
         ],
-        "round1": 78,
-        "round2": 86,
-        "totalScore": 164,
-        "relativeToPar": 26,
+        "round1": 99,
+        "round2": 107,
+        "totalScore": 206,
+        "relativeToPar": 68,
         "completedRounds": 2,
-        "playerName": "David Hill",
-        "handicap": 21
+        "scoreType": "Gross",
+        "grossTotal": 206,
+        "grossPosition": 40,
+        "grossRounds": [
+          99,
+          107
+        ],
+        "grossRound1": 99,
+        "grossRound2": 107,
+        "grossRelativeToPar": 68,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 40,
+        "nettRounds": [
+          78,
+          86
+        ],
+        "nettRound1": 78,
+        "nettRound2": 86,
+        "nettTotal": 164,
+        "nettRelativeToPar": 26
       },
       {
         "position": 41,
+        "players": [
+          {
+            "name": "Zachary Downing",
+            "handicap": 20
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 74
+            "score": 94,
+            "grossScore": 94,
+            "nettScore": 74
           },
           {
             "round": 2,
-            "score": "NR"
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 74,
+        "round1": 94,
         "round2": "NR",
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "Zachary Downing",
-        "handicap": 20
+        "scoreType": "Gross",
+        "grossPosition": 41,
+        "grossRounds": [
+          94,
+          null
+        ],
+        "grossRound1": 94,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 41,
+        "nettRounds": [
+          74,
+          null
+        ],
+        "nettRound1": 74,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 42,
+        "players": [
+          {
+            "name": "Gerald Paul Crowley",
+            "handicap": 21
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": "NR"
+            "score": 98,
+            "grossScore": 98,
+            "nettScore": 77
           },
           {
             "round": 2,
-            "score": 78
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": "NR",
-        "round2": 78,
+        "round1": 98,
+        "round2": "NR",
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "Stephen Thompson",
-        "handicap": 24
+        "scoreType": "Gross",
+        "grossPosition": 42,
+        "grossRounds": [
+          98,
+          null
+        ],
+        "grossRound1": 98,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 43,
+        "nettRounds": [
+          77,
+          null
+        ],
+        "nettRound1": 77,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 43,
+        "players": [
+          {
+            "name": "Stephen Thompson",
+            "handicap": 24
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 77
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           },
           {
             "round": 2,
-            "score": "NR"
+            "score": 102,
+            "grossScore": 102,
+            "nettScore": 78
           }
         ],
-        "round1": 77,
-        "round2": "NR",
+        "round1": "NR",
+        "round2": 102,
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "Gerald Paul Crowley",
-        "handicap": 21
+        "scoreType": "Gross",
+        "grossPosition": 43,
+        "grossRounds": [
+          null,
+          102
+        ],
+        "grossRound1": null,
+        "grossRound2": 102,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 42,
+        "nettRounds": [
+          null,
+          78
+        ],
+        "nettRound1": null,
+        "nettRound2": 78,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 44,
+        "players": [
+          {
+            "name": "Carl Elsworth",
+            "handicap": 7
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 76
+            "score": 83,
+            "grossScore": 83,
+            "nettScore": 76
           },
           {
             "round": 2,
-            "score": "NR"
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 76,
+        "round1": 83,
         "round2": "NR",
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "Carl Elsworth",
-        "handicap": 7
+        "scoreType": "Gross",
+        "grossPosition": 44,
+        "grossRounds": [
+          83,
+          null
+        ],
+        "grossRound1": 83,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 44,
+        "nettRounds": [
+          76,
+          null
+        ],
+        "nettRound1": 76,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 45,
+        "players": [
+          {
+            "name": "Scott Postin",
+            "handicap": 14
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 70
+            "score": 81,
+            "grossScore": 81,
+            "nettScore": 67
           },
           {
             "round": 2,
-            "score": "NR"
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 70,
+        "round1": 81,
         "round2": "NR",
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "Richard Price",
-        "handicap": 26
+        "scoreType": "Gross",
+        "grossPosition": 45,
+        "grossRounds": [
+          81,
+          null
+        ],
+        "grossRound1": 81,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 46,
+        "nettRounds": [
+          67,
+          null
+        ],
+        "nettRound1": 67,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 46,
+        "players": [
+          {
+            "name": "Richard Price",
+            "handicap": 26
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 67
+            "score": 96,
+            "grossScore": 96,
+            "nettScore": 70
           },
           {
             "round": 2,
-            "score": "NR"
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 67,
+        "round1": 96,
         "round2": "NR",
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "Scott Postin",
-        "handicap": 14
+        "scoreType": "Gross",
+        "grossPosition": 46,
+        "grossRounds": [
+          96,
+          null
+        ],
+        "grossRound1": 96,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 45,
+        "nettRounds": [
+          70,
+          null
+        ],
+        "nettRound1": 70,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 47,
+        "players": [
+          {
+            "name": "David Postin",
+            "handicap": 23
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 71
+            "score": 94,
+            "grossScore": 94,
+            "nettScore": 71
           },
           {
             "round": 2,
-            "score": "NR"
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 71,
+        "round1": 94,
         "round2": "NR",
         "totalScore": null,
         "relativeToPar": null,
         "completedRounds": 1,
         "status": "NR",
-        "playerName": "David Postin",
-        "handicap": 23
+        "scoreType": "Gross",
+        "grossPosition": 47,
+        "grossRounds": [
+          94,
+          null
+        ],
+        "grossRound1": 94,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 47,
+        "nettRounds": [
+          71,
+          null
+        ],
+        "nettRound1": 71,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       },
       {
         "position": 48,
+        "players": [
+          {
+            "name": "Mark Andrew Poulding",
+            "handicap": 9
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 72
+            "score": 81,
+            "grossScore": 81,
+            "nettScore": 72
           },
           {
             "round": 2,
-            "score": null
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 72,
+        "round1": 81,
         "round2": null,
-        "totalScore": 72,
-        "relativeToPar": 3,
+        "totalScore": 81,
+        "relativeToPar": 12,
         "completedRounds": 1,
-        "playerName": "Mark Andrew Poulding",
-        "handicap": 9
+        "scoreType": "Gross",
+        "grossScore": 81,
+        "grossPosition": 48,
+        "grossRounds": [
+          81,
+          null
+        ],
+        "grossRound1": 81,
+        "grossRound2": null,
+        "grossTotal": 81,
+        "grossRelativeToPar": 12,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 48,
+        "nettRounds": [
+          72,
+          null
+        ],
+        "nettRound1": 72,
+        "nettRound2": null,
+        "nettTotal": 72,
+        "nettRelativeToPar": 3
       },
       {
         "position": 49,
+        "players": [
+          {
+            "name": "Robert Shedden",
+            "handicap": 15
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 81
+            "score": 96,
+            "grossScore": 96,
+            "nettScore": 81
           },
           {
             "round": 2,
-            "score": null
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 81,
+        "round1": 96,
         "round2": null,
-        "totalScore": 81,
-        "relativeToPar": 12,
+        "totalScore": 96,
+        "relativeToPar": 27,
         "completedRounds": 1,
-        "playerName": "Robert Shedden",
-        "handicap": 15
+        "scoreType": "Gross",
+        "grossScore": 96,
+        "grossPosition": 49,
+        "grossRounds": [
+          96,
+          null
+        ],
+        "grossRound1": 96,
+        "grossRound2": null,
+        "grossTotal": 96,
+        "grossRelativeToPar": 27,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 49,
+        "nettRounds": [
+          81,
+          null
+        ],
+        "nettRound1": 81,
+        "nettRound2": null,
+        "nettTotal": 81,
+        "nettRelativeToPar": 12
       },
       {
         "position": 50,
+        "players": [
+          {
+            "name": "Anthony Fegan",
+            "handicap": 21
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": 81
+            "score": 102,
+            "grossScore": 102,
+            "nettScore": 81
           },
           {
             "round": 2,
-            "score": null
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
-        "round1": 81,
+        "round1": 102,
         "round2": null,
-        "totalScore": 81,
-        "relativeToPar": 12,
+        "totalScore": 102,
+        "relativeToPar": 33,
         "completedRounds": 1,
-        "playerName": "Anthony Fegan",
-        "handicap": 21
+        "scoreType": "Gross",
+        "grossScore": 102,
+        "grossPosition": 50,
+        "grossRounds": [
+          102,
+          null
+        ],
+        "grossRound1": 102,
+        "grossRound2": null,
+        "grossTotal": 102,
+        "grossRelativeToPar": 33,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 50,
+        "nettRounds": [
+          81,
+          null
+        ],
+        "nettRound1": 81,
+        "nettRound2": null,
+        "nettTotal": 81,
+        "nettRelativeToPar": 12
       },
       {
         "position": 51,
+        "players": [
+          {
+            "name": "Andrew Deakin",
+            "handicap": 13
+          }
+        ],
         "rounds": [
           {
             "round": 1,
-            "score": "NR"
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           },
           {
             "round": 2,
-            "score": null
+            "score": null,
+            "grossScore": null,
+            "nettScore": null
           }
         ],
         "round1": "NR",
@@ -123062,8 +124500,27 @@
         "relativeToPar": null,
         "completedRounds": 0,
         "status": "NR",
-        "playerName": "Andrew Deakin",
-        "handicap": 13
+        "scoreType": "Gross",
+        "grossPosition": 51,
+        "grossRounds": [
+          null,
+          null
+        ],
+        "grossRound1": null,
+        "grossRound2": null,
+        "grossTotal": null,
+        "grossRelativeToPar": null,
+        "secondaryScoreType": "Nett",
+        "nettPosition": 51,
+        "nettRounds": [
+          null,
+          null
+        ],
+        "nettRound1": null,
+        "nettRound2": null,
+        "nettTotal": null,
+        "nettRelativeToPar": null,
+        "nettStatus": "NR"
       }
     ]
   },
