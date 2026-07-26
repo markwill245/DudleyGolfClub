@@ -15,26 +15,48 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 4,
-    "firstYear": 2021,
+    "yearsPlayed": 6,
+    "firstYear": 2020,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
     "totalEntries": 237,
     "averageEntries": 59.3,
-    "uniqueWinners": 8,
-    "mostSuccessfulPlayer": "Christopher Yale",
+    "uniqueWinners": 19,
+    "mostSuccessfulPlayer": "C. Feereday",
     "mostWins": 1,
     "currentWinners": [
       "Ivan John Jones",
-      "John Edwards"
+      "J. Edwards",
+      "John Edwards",
+      "L. Jones"
     ],
     "winnerLeaders": [
+      {
+        "player": "C. Feereday",
+        "wins": 1
+      },
+      {
+        "player": "C. Yale",
+        "wins": 1
+      },
       {
         "player": "Christopher Yale",
         "wins": 1
       },
       {
+        "player": "D. Hill",
+        "wins": 1
+      },
+      {
         "player": "David Hill",
+        "wins": 1
+      },
+      {
+        "player": "G. Ray",
+        "wins": 1
+      },
+      {
+        "player": "G. Stubbs",
         "wins": 1
       },
       {
@@ -46,6 +68,10 @@
         "wins": 1
       },
       {
+        "player": "J. Edwards",
+        "wins": 1
+      },
+      {
         "player": "James Stevens",
         "wins": 1
       },
@@ -54,7 +80,27 @@
         "wins": 1
       },
       {
+        "player": "L. Clarke",
+        "wins": 1
+      },
+      {
+        "player": "L. Jones",
+        "wins": 1
+      },
+      {
+        "player": "M. Cowdell",
+        "wins": 1
+      },
+      {
+        "player": "M. Dance",
+        "wins": 1
+      },
+      {
         "player": "Micah Dance",
+        "wins": 1
+      },
+      {
+        "player": "N. Hartland",
         "wins": 1
       },
       {
@@ -73,6 +119,15 @@
       },
       {
         "year": 2025,
+        "winner": "J. Edwards",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "John Edwards",
         "source": "Competition Result",
         "verified": false,
@@ -80,11 +135,30 @@
         "relativeToPar": null
       },
       {
+        "year": 2025,
+        "winner": "L. Jones",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
         "year": 2024,
         "winner": "James Stevens",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 44,
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "N. Hartland",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -93,6 +167,33 @@
         "source": "Competition Result",
         "verified": false,
         "score": 44,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "C. Feereday",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "L. Clarke",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "C. Yale",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -105,10 +206,28 @@
       },
       {
         "year": 2022,
+        "winner": "M. Dance",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
         "winner": "Micah Dance",
         "source": "Competition Result",
         "verified": false,
         "score": 49,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "D. Hill",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -121,17 +240,44 @@
       },
       {
         "year": 2021,
+        "winner": "G. Stubbs",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
         "winner": "Gary William Stubbs",
         "source": "Competition Result",
         "verified": false,
         "score": 48,
         "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "G. Ray",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "M. Cowdell",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
+      "officialWinnerSource": "Verified Honours Board",
+      "hasVerifiedBoard": true,
+      "boardCompetitionId": "125-trophy-pairs-stableford-betterball",
       "detailedResultsSource": "Competition Results"
     },
     "clubChampionship": null,
@@ -1958,13 +2104,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 43,
+    "yearsPlayed": 45,
     "firstYear": 1968,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
     "totalEntries": 332,
     "averageEntries": 47.4,
-    "uniqueWinners": 38,
+    "uniqueWinners": 44,
     "mostSuccessfulPlayer": "C. A. Price",
     "mostWins": 2,
     "currentWinners": [
@@ -1994,6 +2140,10 @@
       {
         "player": "Philip John Northall",
         "wins": 2
+      },
+      {
+        "player": "A. Chester",
+        "wins": 1
       },
       {
         "player": "A. J. Plant",
@@ -2076,11 +2226,27 @@
         "wins": 1
       },
       {
+        "player": "P. Evans",
+        "wins": 1
+      },
+      {
+        "player": "P. Northall",
+        "wins": 1
+      },
+      {
+        "player": "P. Thompson",
+        "wins": 1
+      },
+      {
         "player": "Philip Thompson",
         "wins": 1
       },
       {
         "player": "R. J. Hadley",
+        "wins": 1
+      },
+      {
+        "player": "R. Limb",
         "wins": 1
       },
       {
@@ -2120,6 +2286,10 @@
         "wins": 1
       },
       {
+        "player": "W. Rutter",
+        "wins": 1
+      },
+      {
         "player": "Wayne Rutter",
         "wins": 1
       }
@@ -2135,6 +2305,15 @@
       },
       {
         "year": 2025,
+        "winner": "P. Northall",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "Philip John Northall",
         "source": "Competition Result",
         "verified": false,
@@ -2143,10 +2322,28 @@
       },
       {
         "year": 2024,
+        "winner": "P. Thompson",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
         "winner": "Philip Thompson",
         "source": "Competition Result",
         "verified": false,
         "score": 42,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "A. Chester",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -2159,6 +2356,15 @@
       },
       {
         "year": 2022,
+        "winner": "W. Rutter",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
         "winner": "Wayne Rutter",
         "source": "Competition Result",
         "verified": false,
@@ -2167,10 +2373,28 @@
       },
       {
         "year": 2021,
+        "winner": "R. Limb",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
         "winner": "Richard Limb",
         "source": "Competition Result",
         "verified": false,
         "score": 43,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "P. Evans",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -2541,19 +2765,39 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 3,
+    "yearsPlayed": 9,
     "firstYear": 1968,
-    "latestYear": 2005,
+    "latestYear": 2025,
     "latestDetailedYear": 2005,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Mark A. Williams",
+    "uniqueWinners": 9,
+    "mostSuccessfulPlayer": "A. Bonehill",
     "mostWins": 1,
     "currentWinners": [
-      "R. Jackson"
+      "S. Postin"
     ],
     "winnerLeaders": [
+      {
+        "player": "A. Bonehill",
+        "wins": 1
+      },
+      {
+        "player": "D. Element",
+        "wins": 1
+      },
+      {
+        "player": "D. Povey",
+        "wins": 1
+      },
+      {
+        "player": "G. Crowley",
+        "wins": 1
+      },
+      {
+        "player": "M. Dando",
+        "wins": 1
+      },
       {
         "player": "Mark A. Williams",
         "wins": 1
@@ -2563,11 +2807,69 @@
         "wins": 1
       },
       {
+        "player": "S. Postin",
+        "wins": 1
+      },
+      {
         "player": "T. A. Currie",
         "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "S. Postin",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "D. Povey",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "G. Crowley",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "M. Dando",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "A. Bonehill",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "D. Element",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2005,
         "winner": "R. Jackson",
@@ -2619,18 +2921,17 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 37,
+    "yearsPlayed": 43,
     "firstYear": 1968,
-    "latestYear": 2005,
+    "latestYear": 2025,
     "latestDetailedYear": 2005,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 26,
+    "uniqueWinners": 32,
     "mostSuccessfulPlayer": "P. Swift",
     "mostWins": 6,
     "currentWinners": [
-      "D. Hill",
-      "W. A. Jones"
+      "P. Donnelly"
     ],
     "winnerLeaders": [
       {
@@ -2670,6 +2971,10 @@
         "wins": 1
       },
       {
+        "player": "C. Biddulph",
+        "wins": 1
+      },
+      {
         "player": "D. Roberts",
         "wins": 1
       },
@@ -2682,7 +2987,15 @@
         "wins": 1
       },
       {
+        "player": "G. Morgan",
+        "wins": 1
+      },
+      {
         "player": "Ian Frederick Stevens",
+        "wins": 1
+      },
+      {
+        "player": "J. Langford",
         "wins": 1
       },
       {
@@ -2718,6 +3031,10 @@
         "wins": 1
       },
       {
+        "player": "P. Donnelly",
+        "wins": 1
+      },
+      {
         "player": "P. Parsons",
         "wins": 1
       },
@@ -2730,6 +3047,14 @@
         "wins": 1
       },
       {
+        "player": "S. Element",
+        "wins": 1
+      },
+      {
+        "player": "S. Homer",
+        "wins": 1
+      },
+      {
         "player": "S. K. Allen",
         "wins": 1
       },
@@ -2739,6 +3064,60 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "P. Donnelly",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "G. Morgan",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "S. Homer",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "S. Element",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "C. Biddulph",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "J. Langford",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2005,
         "winner": "D. Hill",
@@ -3313,19 +3692,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 14,
+    "yearsPlayed": 20,
     "firstYear": 1993,
-    "latestYear": 2006,
+    "latestYear": 2025,
     "latestDetailedYear": null,
     "totalEntries": 0,
     "averageEntries": 0,
-    "uniqueWinners": 9,
-    "mostSuccessfulPlayer": "M. Hickman",
+    "uniqueWinners": 13,
+    "mostSuccessfulPlayer": "L. Grainger",
     "mostWins": 3,
     "currentWinners": [
-      "R. Wood"
+      "L. Jones"
     ],
     "winnerLeaders": [
+      {
+        "player": "L. Grainger",
+        "wins": 3
+      },
       {
         "player": "M. Hickman",
         "wins": 3
@@ -3339,7 +3722,15 @@
         "wins": 2
       },
       {
+        "player": "Adam Farley",
+        "wins": 1
+      },
+      {
         "player": "G. Hazlewood",
+        "wins": 1
+      },
+      {
+        "player": "L. Jones",
         "wins": 1
       },
       {
@@ -3361,9 +3752,67 @@
       {
         "player": "R. Wood",
         "wins": 1
+      },
+      {
+        "player": "Stuart Baker",
+        "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "L. Jones",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "Adam Farley",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Stuart Baker",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "R. Wood",
@@ -4339,17 +4788,17 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 38,
+    "yearsPlayed": 44,
     "firstYear": 1968,
-    "latestYear": 2005,
+    "latestYear": 2025,
     "latestDetailedYear": 2005,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 34,
+    "uniqueWinners": 40,
     "mostSuccessfulPlayer": "B. Lloyd",
     "mostWins": 2,
     "currentWinners": [
-      "D. Organ"
+      "A. Willetts"
     ],
     "winnerLeaders": [
       {
@@ -4389,11 +4838,23 @@
         "wins": 1
       },
       {
+        "player": "A. Willetts",
+        "wins": 1
+      },
+      {
         "player": "B. E. Lloyd",
         "wins": 1
       },
       {
         "player": "C. Tilley",
+        "wins": 1
+      },
+      {
+        "player": "C. Yale",
+        "wins": 1
+      },
+      {
+        "player": "Chris Vanes",
         "wins": 1
       },
       {
@@ -4429,7 +4890,19 @@
         "wins": 1
       },
       {
+        "player": "J. Langford",
+        "wins": 1
+      },
+      {
+        "player": "J. Lowe",
+        "wins": 1
+      },
+      {
         "player": "J. Moore",
+        "wins": 1
+      },
+      {
+        "player": "James Stevens",
         "wins": 1
       },
       {
@@ -4490,6 +4963,60 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "A. Willetts",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "James Stevens",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "C. Yale",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "J. Lowe",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Chris Vanes",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "J. Langford",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2005,
         "winner": "D. Organ",
@@ -4976,13 +5503,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 42,
+    "yearsPlayed": 44,
     "firstYear": 1968,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
     "totalEntries": 248,
     "averageEntries": 41.3,
-    "uniqueWinners": 42,
+    "uniqueWinners": 46,
     "mostSuccessfulPlayer": "R. Whitehouse",
     "mostWins": 2,
     "currentWinners": [
@@ -4995,6 +5522,10 @@
       },
       {
         "player": "A. P. Jackson",
+        "wins": 1
+      },
+      {
+        "player": "A. Stanfield",
         "wins": 1
       },
       {
@@ -5026,11 +5557,19 @@
         "wins": 1
       },
       {
+        "player": "C. Tiplea",
+        "wins": 1
+      },
+      {
         "player": "D. Homer",
         "wins": 1
       },
       {
         "player": "D. Tarbet",
+        "wins": 1
+      },
+      {
+        "player": "G. Morgan",
         "wins": 1
       },
       {
@@ -5156,6 +5695,10 @@
       {
         "player": "W. Abbey",
         "wins": 1
+      },
+      {
+        "player": "W. Rutter",
+        "wins": 1
       }
     ],
     "winnerHistory": [
@@ -5169,10 +5712,28 @@
       },
       {
         "year": 2025,
+        "winner": "A. Stanfield",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "Adam Stanfield",
         "source": "Competition Result",
         "verified": false,
         "score": 39,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "G. Morgan",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -5184,11 +5745,30 @@
         "relativeToPar": null
       },
       {
+        "year": 2023,
+        "winner": "C. Tiplea",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
         "year": 2021,
         "winner": "Adam Farley",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 41,
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "W. Rutter",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -6234,15 +6814,69 @@
             "photoReference": "Bloom Cup and Challenge Shield board",
             "score": null,
             "relativeToPar": null
+          },
+          {
+            "year": 2020,
+            "winner": "J. Langford",
+            "source": "Honours Board Photograph",
+            "verified": true,
+            "photoReference": null,
+            "score": null,
+            "relativeToPar": null
+          },
+          {
+            "year": 2021,
+            "winner": "Chris Vanes",
+            "source": "Honours Board Photograph",
+            "verified": true,
+            "photoReference": null,
+            "score": null,
+            "relativeToPar": null
+          },
+          {
+            "year": 2022,
+            "winner": "J. Lowe",
+            "source": "Honours Board Photograph",
+            "verified": true,
+            "photoReference": null,
+            "score": null,
+            "relativeToPar": null
+          },
+          {
+            "year": 2023,
+            "winner": "C. Yale",
+            "source": "Honours Board Photograph",
+            "verified": true,
+            "photoReference": null,
+            "score": null,
+            "relativeToPar": null
+          },
+          {
+            "year": 2024,
+            "winner": "James Stevens",
+            "source": "Honours Board Photograph",
+            "verified": true,
+            "photoReference": null,
+            "score": null,
+            "relativeToPar": null
+          },
+          {
+            "year": 2025,
+            "winner": "A. Willetts",
+            "source": "Honours Board Photograph",
+            "verified": true,
+            "photoReference": null,
+            "score": null,
+            "relativeToPar": null
           }
         ],
         "statistics": {
-          "totalWins": 38,
-          "uniqueWinners": 34,
+          "totalWins": 44,
+          "uniqueWinners": 40,
           "firstYear": 1968,
-          "latestYear": 2005,
+          "latestYear": 2025,
           "currentWinners": [
-            "D. Organ"
+            "A. Willetts"
           ],
           "mostSuccessfulPlayer": "B. Lloyd",
           "mostWins": 2,
@@ -6284,11 +6918,23 @@
               "wins": 1
             },
             {
+              "player": "A. Willetts",
+              "wins": 1
+            },
+            {
               "player": "B. E. Lloyd",
               "wins": 1
             },
             {
               "player": "C. Tilley",
+              "wins": 1
+            },
+            {
+              "player": "C. Yale",
+              "wins": 1
+            },
+            {
+              "player": "Chris Vanes",
               "wins": 1
             },
             {
@@ -6324,7 +6970,19 @@
               "wins": 1
             },
             {
+              "player": "J. Langford",
+              "wins": 1
+            },
+            {
+              "player": "J. Lowe",
+              "wins": 1
+            },
+            {
               "player": "J. Moore",
+              "wins": 1
+            },
+            {
+              "player": "James Stevens",
               "wins": 1
             },
             {
@@ -9413,17 +10071,17 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 14,
+    "yearsPlayed": 20,
     "firstYear": 1993,
-    "latestYear": 2006,
+    "latestYear": 2025,
     "latestDetailedYear": 2006,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 11,
+    "uniqueWinners": 17,
     "mostSuccessfulPlayer": "M. Hickman",
     "mostWins": 3,
     "currentWinners": [
-      "P. Howard"
+      "L. Jones"
     ],
     "winnerLeaders": [
       {
@@ -9439,7 +10097,27 @@
         "wins": 1
       },
       {
+        "player": "C. Tiplea",
+        "wins": 1
+      },
+      {
+        "player": "G. Stubbs",
+        "wins": 1
+      },
+      {
+        "player": "James Stevens",
+        "wins": 1
+      },
+      {
+        "player": "L. Grainger",
+        "wins": 1
+      },
+      {
         "player": "L. Henley",
+        "wins": 1
+      },
+      {
+        "player": "L. Jones",
         "wins": 1
       },
       {
@@ -9463,6 +10141,10 @@
         "wins": 1
       },
       {
+        "player": "R. Woodward",
+        "wins": 1
+      },
+      {
         "player": "S. Newey",
         "wins": 1
       },
@@ -9472,6 +10154,60 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "L. Jones",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "James Stevens",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "C. Tiplea",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "R. Woodward",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "G. Stubbs",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "P. Howard",
@@ -9624,19 +10360,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 14,
+    "yearsPlayed": 20,
     "firstYear": 1993,
-    "latestYear": 2006,
+    "latestYear": 2025,
     "latestDetailedYear": 2006,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 13,
-    "mostSuccessfulPlayer": "R. Stockden",
+    "uniqueWinners": 18,
+    "mostSuccessfulPlayer": "G. Crowley",
     "mostWins": 2,
     "currentWinners": [
-      "T. Nolan"
+      "N. Hartland"
     ],
     "winnerLeaders": [
+      {
+        "player": "G. Crowley",
+        "wins": 2
+      },
       {
         "player": "R. Stockden",
         "wins": 2
@@ -9646,7 +10386,11 @@
         "wins": 1
       },
       {
-        "player": "G. Crowley",
+        "player": "C. Gould",
+        "wins": 1
+      },
+      {
+        "player": "G. Franks",
         "wins": 1
       },
       {
@@ -9670,6 +10414,10 @@
         "wins": 1
       },
       {
+        "player": "N. Hartland",
+        "wins": 1
+      },
+      {
         "player": "P. Hammond",
         "wins": 1
       },
@@ -9682,6 +10430,14 @@
         "wins": 1
       },
       {
+        "player": "S. Element",
+        "wins": 1
+      },
+      {
+        "player": "S. Price",
+        "wins": 1
+      },
+      {
         "player": "T. Nolan",
         "wins": 1
       },
@@ -9691,6 +10447,60 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "N. Hartland",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "C. Gould",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "S. Element",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "G. Franks",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "S. Price",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "G. Crowley",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "T. Nolan",
@@ -11038,26 +11848,44 @@
     "museumCategory": "General",
     "importStatus": "complete",
     "category": "General",
-    "historicalBoard": false,
+    "historicalBoard": true,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 4,
-    "firstYear": 2021,
+    "profileType": "Historical Honour",
+    "yearsPlayed": 6,
+    "firstYear": 2020,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
     "totalEntries": 236,
     "averageEntries": 59,
-    "uniqueWinners": 8,
-    "mostSuccessfulPlayer": "Andrew Deakin",
+    "uniqueWinners": 19,
+    "mostSuccessfulPlayer": "A. Deakin",
     "mostWins": 1,
     "currentWinners": [
+      "G. Grainger",
       "Lee Roger Grainger",
+      "M. Basterfield",
       "Mark Basterfield"
     ],
     "winnerLeaders": [
       {
+        "player": "A. Deakin",
+        "wins": 1
+      },
+      {
         "player": "Andrew Deakin",
+        "wins": 1
+      },
+      {
+        "player": "D. Postin",
+        "wins": 1
+      },
+      {
+        "player": "G. Grainger",
+        "wins": 1
+      },
+      {
+        "player": "G. Ray",
         "wins": 1
       },
       {
@@ -11073,7 +11901,19 @@
         "wins": 1
       },
       {
+        "player": "Keith Woodall",
+        "wins": 1
+      },
+      {
+        "player": "L. Grainger",
+        "wins": 1
+      },
+      {
         "player": "Lee Roger Grainger",
+        "wins": 1
+      },
+      {
+        "player": "M. Basterfield",
         "wins": 1
       },
       {
@@ -11081,21 +11921,55 @@
         "wins": 1
       },
       {
+        "player": "N. Hartland",
+        "wins": 1
+      },
+      {
         "player": "Neil Hartland",
         "wins": 1
       },
       {
+        "player": "P. Thompson",
+        "wins": 1
+      },
+      {
+        "player": "R. Smith",
+        "wins": 1
+      },
+      {
         "player": "Roger John Smith",
+        "wins": 1
+      },
+      {
+        "player": "S. Postin",
         "wins": 1
       }
     ],
     "winnerHistory": [
       {
         "year": 2025,
+        "winner": "G. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "Lee Roger Grainger",
         "source": "Competition Result",
         "verified": false,
         "score": 48,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "M. Basterfield",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -11109,9 +11983,19 @@
       {
         "year": 2024,
         "winner": "James Stevens",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 45,
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "N. Hartland",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -11120,6 +12004,24 @@
         "source": "Competition Result",
         "verified": false,
         "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "D. Postin",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "S. Postin",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -11132,10 +12034,37 @@
       },
       {
         "year": 2022,
+        "winner": "Keith Woodall",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "R. Smith",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
         "winner": "Roger John Smith",
         "source": "Competition Result",
         "verified": false,
         "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "A. Deakin",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -11148,21 +12077,48 @@
       },
       {
         "year": 2021,
+        "winner": "G. Ray",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
         "winner": "G.B. Ray",
         "source": "Competition Result",
         "verified": false,
         "score": 47,
         "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "P. Thompson",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
+      "officialWinnerSource": "Verified Honours Board",
+      "hasVerifiedBoard": true,
+      "boardCompetitionId": "jubilee-salver-pairs-betterball",
       "detailedResultsSource": "Competition Results"
     },
     "clubChampionship": null,
-    "summary": "Jubilee Salver Pairs BetterBall is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+    "summary": "Jubilee Salver Pairs BetterBall is preserved from the verified honours board and enriched with detailed competition results where available."
   },
   {
     "id": "july-medal-bloom-cup",
@@ -11589,29 +12545,107 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 2,
+    "yearsPlayed": 8,
     "firstYear": 1993,
-    "latestYear": 2006,
+    "latestYear": 2025,
     "latestDetailedYear": 2006,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 2,
-    "mostSuccessfulPlayer": "M. Hinds",
+    "uniqueWinners": 8,
+    "mostSuccessfulPlayer": "B. Smith",
     "mostWins": 1,
     "currentWinners": [
-      "P. I. Welch"
+      "L. Ganner"
     ],
     "winnerLeaders": [
+      {
+        "player": "B. Smith",
+        "wins": 1
+      },
+      {
+        "player": "Ian Frederick Stevens",
+        "wins": 1
+      },
+      {
+        "player": "L. Ganner",
+        "wins": 1
+      },
       {
         "player": "M. Hinds",
         "wins": 1
       },
       {
+        "player": "M. Poulding",
+        "wins": 1
+      },
+      {
+        "player": "M. Williams",
+        "wins": 1
+      },
+      {
         "player": "P. I. Welch",
+        "wins": 1
+      },
+      {
+        "player": "S. Marshall",
         "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "L. Ganner",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "Ian Frederick Stevens",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "M. Williams",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "M. Poulding",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "B. Smith",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "S. Marshall",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "P. I. Welch",
@@ -11630,9 +12664,9 @@
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
+      "officialWinnerSource": "Verified Honours Board",
+      "hasVerifiedBoard": true,
+      "boardCompetitionId": "lewis-cup",
       "detailedResultsSource": "Competition Results"
     },
     "clubChampionship": null,
@@ -13622,24 +14656,36 @@
     "museumCategory": "General",
     "importStatus": "complete",
     "category": "General",
-    "historicalBoard": false,
+    "historicalBoard": true,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 5,
-    "firstYear": 2021,
+    "profileType": "Historical Honour",
+    "yearsPlayed": 7,
+    "firstYear": 2020,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
     "totalEntries": 321,
     "averageEntries": 64.2,
-    "uniqueWinners": 10,
-    "mostSuccessfulPlayer": "Adrian Burns",
-    "mostWins": 1,
+    "uniqueWinners": 18,
+    "mostSuccessfulPlayer": "M. Poulding",
+    "mostWins": 3,
     "currentWinners": [
       "James Stevens",
       "Neil Hartland"
     ],
     "winnerLeaders": [
+      {
+        "player": "M. Poulding",
+        "wins": 3
+      },
+      {
+        "player": "R. Limb",
+        "wins": 3
+      },
+      {
+        "player": "A. Burns",
+        "wins": 1
+      },
       {
         "player": "Adrian Burns",
         "wins": 1
@@ -13649,7 +14695,15 @@
         "wins": 1
       },
       {
+        "player": "K. Foster",
+        "wins": 1
+      },
+      {
         "player": "Kevin John Foster",
+        "wins": 1
+      },
+      {
+        "player": "M. Raybould",
         "wins": 1
       },
       {
@@ -13665,11 +14719,23 @@
         "wins": 1
       },
       {
+        "player": "R. Price",
+        "wins": 1
+      },
+      {
         "player": "Richard Limb",
         "wins": 1
       },
       {
         "player": "Richard Price",
+        "wins": 1
+      },
+      {
+        "player": "S. Gilbert",
+        "wins": 1
+      },
+      {
+        "player": "S. Postin",
         "wins": 1
       },
       {
@@ -13700,10 +14766,28 @@
       },
       {
         "year": 2025,
+        "winner": "R. Price",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "Richard Price",
         "source": "Competition Result",
         "verified": false,
         "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "S. Postin",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -13716,6 +14800,15 @@
       },
       {
         "year": 2024,
+        "winner": "A. Burns",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
         "winner": "Adrian Burns",
         "source": "Competition Result",
         "verified": false,
@@ -13724,10 +14817,46 @@
       },
       {
         "year": 2024,
+        "winner": "M. Raybould",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
         "winner": "Mitchell Raybould",
         "source": "Competition Result",
         "verified": false,
         "score": 47,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "M. Poulding",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "R. Limb",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "M. Poulding",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -13740,10 +14869,28 @@
       },
       {
         "year": 2022,
+        "winner": "R. Limb",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
         "winner": "Richard Limb",
         "source": "Competition Result",
         "verified": false,
         "score": 48,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "K. Foster",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -13756,21 +14903,48 @@
       },
       {
         "year": 2021,
+        "winner": "S. Gilbert",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
         "winner": "Stephen Dennis Gilbert",
         "source": "Competition Result",
         "verified": false,
         "score": 50,
         "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "M. Poulding",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "R. Limb",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
+      "officialWinnerSource": "Verified Honours Board",
+      "hasVerifiedBoard": true,
+      "boardCompetitionId": "probus-pairs-stableford-betterball",
       "detailedResultsSource": "Competition Results"
     },
     "clubChampionship": null,
-    "summary": "Probus Pairs Stableford Betterball is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+    "summary": "Probus Pairs Stableford Betterball is preserved from the verified honours board and enriched with detailed competition results where available."
   },
   {
     "id": "probus-trophy",
@@ -14924,29 +16098,53 @@
     "museumCategory": "General",
     "importStatus": "complete",
     "category": "General",
-    "historicalBoard": false,
+    "historicalBoard": true,
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2024,
+    "profileType": "Historical Honour",
+    "yearsPlayed": 7,
+    "firstYear": 2020,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
     "totalEntries": 83,
     "averageEntries": 27.7,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Keith Ratcliffe",
+    "uniqueWinners": 9,
+    "mostSuccessfulPlayer": "G. Stubbs",
     "mostWins": 1,
     "currentWinners": [
       "Keith Ratcliffe"
     ],
     "winnerLeaders": [
       {
+        "player": "G. Stubbs",
+        "wins": 1
+      },
+      {
         "player": "Keith Ratcliffe",
         "wins": 1
       },
       {
+        "player": "L. Grainger",
+        "wins": 1
+      },
+      {
+        "player": "M. Dando",
+        "wins": 1
+      },
+      {
+        "player": "M. Tolley",
+        "wins": 1
+      },
+      {
+        "player": "P. Welch",
+        "wins": 1
+      },
+      {
         "player": "Paul Russell",
+        "wins": 1
+      },
+      {
+        "player": "S. Hopkins",
         "wins": 1
       },
       {
@@ -14965,10 +16163,28 @@
       },
       {
         "year": 2025,
+        "winner": "M. Tolley",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
         "winner": "Paul Russell",
         "source": "Competition Result",
         "verified": false,
         "score": 22,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "P. Welch",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -14978,16 +16194,52 @@
         "verified": false,
         "score": 22,
         "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "M. Dando",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "S. Hopkins",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "G. Stubbs",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
+      "officialWinnerSource": "Verified Honours Board",
+      "hasVerifiedBoard": true,
+      "boardCompetitionId": "seniors-centenary-trophy",
       "detailedResultsSource": "Competition Results"
     },
     "clubChampionship": null,
-    "summary": "Seniors Centenary Trophy is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+    "summary": "Seniors Centenary Trophy is preserved from the verified honours board and enriched with detailed competition results where available."
   },
   {
     "id": "seniors-cyril-joseph-trophy",
@@ -18461,17 +19713,17 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Historical Honour",
-    "yearsPlayed": 14,
+    "yearsPlayed": 20,
     "firstYear": 1993,
-    "latestYear": 2006,
+    "latestYear": 2025,
     "latestDetailedYear": 2006,
     "totalEntries": 2,
     "averageEntries": 1,
-    "uniqueWinners": 13,
+    "uniqueWinners": 19,
     "mostSuccessfulPlayer": "J. Coates",
     "mostWins": 2,
     "currentWinners": [
-      "C. B. Jones"
+      "N. Hartland"
     ],
     "winnerLeaders": [
       {
@@ -18484,6 +19736,10 @@
       },
       {
         "player": "C. B. Jones",
+        "wins": 1
+      },
+      {
+        "player": "C. Gould",
         "wins": 1
       },
       {
@@ -18507,6 +19763,10 @@
         "wins": 1
       },
       {
+        "player": "N. Hartland",
+        "wins": 1
+      },
+      {
         "player": "P. Hammond",
         "wins": 1
       },
@@ -18519,15 +19779,85 @@
         "wins": 1
       },
       {
+        "player": "R. Shedden",
+        "wins": 1
+      },
+      {
         "player": "R. Stockden",
         "wins": 1
       },
       {
         "player": "R. Taylor",
         "wins": 1
+      },
+      {
+        "player": "S. Hall",
+        "wins": 1
+      },
+      {
+        "player": "S. Messer",
+        "wins": 1
+      },
+      {
+        "player": "S. Price",
+        "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "N. Hartland",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "C. Gould",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "R. Shedden",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2022,
+        "winner": "S. Hall",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "S. Price",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "S. Messer",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "C. B. Jones",
