@@ -1691,7 +1691,7 @@
     "category": "General",
     "historicalBoard": false,
     "winnerOnly": false,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
     "yearsPlayed": 1,
     "firstYear": 2022,
@@ -4483,7 +4483,7 @@
     "category": "General",
     "historicalBoard": false,
     "winnerOnly": false,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
     "yearsPlayed": 1,
     "firstYear": 2022,
@@ -9703,7 +9703,7 @@
     "category": "General",
     "historicalBoard": false,
     "winnerOnly": false,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
     "yearsPlayed": 2,
     "firstYear": 2021,
@@ -11047,17 +11047,17 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 43,
+    "yearsPlayed": 44,
     "firstYear": 1968,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 106,
-    "averageEntries": 26.5,
-    "uniqueWinners": 43,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 153,
+    "averageEntries": 30.6,
+    "uniqueWinners": 44,
     "mostSuccessfulPlayer": "Stephen Hopkins",
     "mostWins": 2,
     "currentWinners": [
-      "Michael Williams"
+      "Richard Weston"
     ],
     "winnerLeaders": [
       {
@@ -11193,6 +11193,10 @@
         "wins": 1
       },
       {
+        "player": "Richard Weston",
+        "wins": 1
+      },
+      {
         "player": "S.K. Allen",
         "wins": 1
       },
@@ -11234,6 +11238,14 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Richard Weston",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 41,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "Michael Williams",

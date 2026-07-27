@@ -7,12 +7,13 @@
     "competitionClass": "Standard",
     "format": "Pairs",
     "teamSize": 2,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "3-ball-cha-cha-cha",
@@ -207,7 +208,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "april-medal",
@@ -217,12 +219,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "april-medal-and-presidents-putter-qualifier",
@@ -248,12 +251,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "arthur-turley-trophy",
@@ -294,12 +298,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "bassano-cup",
@@ -308,12 +313,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "bloom-cup",
@@ -322,12 +328,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "boscawen-cup",
@@ -336,12 +343,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "brian-lloyd-cup",
@@ -350,12 +358,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "caldene-cup",
@@ -364,12 +373,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "captain-s-charity-day",
@@ -436,12 +446,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "captains-charity-day",
@@ -480,12 +491,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "centenary-trophy-boscowan-cup",
@@ -494,12 +506,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "challenge-shield",
@@ -508,12 +521,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "christmas-hamper-competition",
@@ -552,14 +566,15 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
     "name": "Claughton Cup",
-    "format": "Individual"
+    "format": "Individual",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-3-ball-waltz",
@@ -589,7 +604,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "club-championship",
@@ -597,13 +613,14 @@
     "section": "Mens",
     "format": "Individual",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
     "active": true,
-    "major": true
+    "major": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-championship-gross",
@@ -643,12 +660,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-pairs-competition",
@@ -673,12 +691,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-stableford-competition",
@@ -688,12 +707,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-stableford-from-the-red-tees",
@@ -703,12 +723,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-stableford-pairs-competition",
@@ -723,7 +744,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "club-texas-scramble",
@@ -778,7 +800,7 @@
     "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
@@ -787,7 +809,8 @@
     "name": "Coronation Cup",
     "format": "Pairs",
     "active": true,
-    "displayInArchive": true
+    "displayInArchive": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "coronation-cup-pairs-betterball",
@@ -811,12 +834,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "david-poole-trophy",
@@ -825,12 +849,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "december-medal",
@@ -840,12 +865,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "december-stableford",
@@ -855,12 +881,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "december-sunday-stableford",
@@ -870,12 +897,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "doug-lee-trophy",
@@ -884,7 +912,7 @@
     "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
@@ -893,7 +921,8 @@
     "name": "Doug Lee Pairs Trophy",
     "format": "Pairs",
     "active": true,
-    "displayInArchive": true
+    "displayInArchive": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "february-medal",
@@ -919,12 +948,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "february-sunday-stableford-competition",
@@ -934,12 +964,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "golfer-of-the-year",
@@ -962,7 +993,7 @@
     "teamSize": 1,
     "section": "Seniors",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
@@ -1022,12 +1053,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "james-grainger-trophy",
@@ -1036,7 +1068,7 @@
     "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
@@ -1045,7 +1077,8 @@
     "format": "Pairs",
     "name": "James Grainger Trophy",
     "active": true,
-    "displayInArchive": true
+    "displayInArchive": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "january-stableford",
@@ -1055,12 +1088,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "january-sunday-stableford-competition",
@@ -1070,12 +1104,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "jubilee-salver",
@@ -1084,12 +1119,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "jubilee-salver-pairs-betterball",
@@ -1128,12 +1164,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "june-monthly-medal-prosser-lytham-trophy",
@@ -1174,12 +1211,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "lewis-cup",
@@ -1188,12 +1226,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "march-medal",
@@ -1219,12 +1258,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "may-medal-and-brian-lloyd-scratch-qualifier",
@@ -1250,12 +1290,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "members-invitational-pairs-betterball",
@@ -1280,12 +1321,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "millennium-trophy",
@@ -1294,12 +1336,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "millennium-trophy-4-ball",
@@ -1323,7 +1366,7 @@
     "section": "Mens",
     "format": "Individual",
     "competitionClass": "Medal",
-    "countsForOrderOfMerit": true,
+    "countsForOrderOfMerit": false,
     "boardCompetition": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
@@ -1359,12 +1402,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "october-medal-and-lewis-cup",
@@ -1390,12 +1434,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "pairs-multiplier",
@@ -1472,7 +1517,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "probus-trophy",
@@ -1481,12 +1527,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "prosser-lytham-trophy",
@@ -1495,12 +1542,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "queen-elizabeth-ii-memorial-cup",
@@ -1510,12 +1558,13 @@
     "competitionClass": "Board",
     "format": "Team",
     "teamSize": 4,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "saturday-medal-only",
@@ -1541,7 +1590,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1557,7 +1606,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1605,7 +1654,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1653,7 +1702,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1669,7 +1718,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1717,7 +1766,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1732,7 +1781,7 @@
     "competitionClass": "Medal",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1748,7 +1797,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1798,7 +1847,7 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -1912,7 +1961,7 @@
     "competitionClass": "Standard",
     "format": "Pairs",
     "teamSize": 2,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
@@ -2040,12 +2089,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "stableford-pairs",
@@ -2060,7 +2110,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "stableford-pairs-both-to-count",
@@ -2075,7 +2126,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "stableford-pairs-competition",
@@ -2090,7 +2142,8 @@
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "stableford-qualifier",
@@ -2100,12 +2153,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "stewart-goldie-trophy",
@@ -2114,12 +2168,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "summer-foursomes",
@@ -2128,13 +2183,14 @@
     "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "format": "Pairs"
+    "format": "Pairs",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "summer-foursomes-qualifier",
@@ -2175,12 +2231,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "sunday-stableford-competition",
@@ -2190,12 +2247,13 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "ted-jones-trophy",
@@ -2220,12 +2278,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "thyssen-trophy",
@@ -2250,7 +2309,7 @@
     "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
@@ -2259,7 +2318,8 @@
     "name": "Tom Poole Cup",
     "format": "Pairs",
     "active": true,
-    "displayInArchive": true
+    "displayInArchive": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "tom-poole-trophy-and-summer-foursomes-qualifier",
@@ -2283,7 +2343,7 @@
     "teamSize": 1,
     "section": "Seniors",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
@@ -2298,12 +2358,13 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   },
   {
     "competitionId": "winter-greensomes",
@@ -2312,13 +2373,14 @@
     "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "format": "Pairs"
+    "format": "Pairs",
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "winter-league",
@@ -2387,11 +2449,12 @@
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition"
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard"
   }
 ]
