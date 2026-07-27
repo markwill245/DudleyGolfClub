@@ -261,22 +261,89 @@
 
       if (scoreType === "Nett") {
         const value =
-          result.nettScore ??
-          result.nettTotal ??
-          (
-            storedScoreType === "nett"
-              ? result.totalScore
-              : null
+          Number(
+            result.nettScore ??
+            result.nettTotal ??
+            (
+              storedScoreType === "nett"
+                ? result.totalScore
+                : null
+            )
           );
 
-        return validScore(value)
-          ? Number(value)
+        return (
+          Number.isFinite(value) &&
+          value >= 50 &&
+          value <= 120
+        )
+          ? value
           : null;
       }
 
       return null;
     }
 
+    function getLowestRoundScore(result, scoreType) {
+      if (!result || result.status) {
+        return null;
+      }
+
+      const scoreField =
+        scoreType === "Gross"
+          ? "grossScore"
+          : "nettScore";
+
+      const roundScores = (
+        Array.isArray(result.rounds)
+          ? result.rounds
+          : []
+      )
+        .map(round => Number(round?.[scoreField]))
+        .filter(score =>
+          Number.isFinite(score) &&
+          score >= 40 &&
+          score <= 120
+        );
+
+      if (roundScores.length > 0) {
+        return Math.min(...roundScores);
+      }
+
+      const legacyScores =
+        scoreType === "Gross"
+          ? [
+            ...(Array.isArray(result.grossRounds)
+              ? result.grossRounds
+              : []),
+            result.grossRound1,
+            result.grossRound2,
+            result.grossRound3,
+            result.grossRound4
+          ]
+          : [
+            ...(Array.isArray(result.nettRounds)
+              ? result.nettRounds
+              : []),
+            result.nettRound1,
+            result.nettRound2,
+            result.nettRound3,
+            result.nettRound4
+          ];
+
+      const validLegacyScores = legacyScores
+        .map(Number)
+        .filter(score =>
+          Number.isFinite(score) &&
+          score >= 40 &&
+          score <= 120
+        );
+
+      if (validLegacyScores.length > 0) {
+        return Math.min(...validLegacyScores);
+      }
+
+      return getResultScore(result, scoreType);
+    }
     function makeCatalogMap(catalogue) {
       const map = new Map();
 
@@ -319,6 +386,7 @@
           : "seniors";
 
       const sectionStats =
+        profile?.sectionCareer?.[sectionKey] ||
         profile?.sections?.[sectionKey] ||
         profile?.sectionStats?.[sectionKey] ||
         profile?.careerBySection?.[sectionKey] ||
@@ -385,11 +453,22 @@
             ? profile?.boardWins
             : undefined
         );
-
+      const top10 =
+        firstNumber(
+          sectionStats?.top10,
+          sectionStats?.top10Finishes,
+          normaliseSection(profile?.section) === section
+            ? career?.top10
+            : undefined,
+          normaliseSection(profile?.section) === section
+            ? profile?.top10
+            : undefined
+        );
       return {
         overallCareerWins,
         majorWins,
-        boardWins
+        boardWins,
+        top10
       };
     }
 
@@ -416,7 +495,8 @@
         if (
           values.overallCareerWins <= 0 &&
           values.majorWins <= 0 &&
-          values.boardWins <= 0
+          values.boardWins <= 0 &&
+          values.top10 <= 0
         ) {
           return;
         }
@@ -490,10 +570,10 @@
                */
               if (names.length === 1) {
                 const gross =
-                  getResultScore(result, "Gross");
+                  getLowestRoundScore(result, "Gross");
 
                 const nett =
-                  getResultScore(result, "Nett");
+                  getLowestRoundScore(result, "Nett");
 
                 if (
                   gross !== null &&
@@ -565,6 +645,9 @@
           boardWins:
             num(historic.boardWins),
 
+          top10:
+            num(historic.top10),
+
           lowestGross:
             modern.lowestGross ?? null,
 
@@ -578,11 +661,21 @@
         };
       });
     }
-
+    function getFieldValue(object, field) {
+      return String(field)
+        .split(".")
+        .reduce(
+          (value, key) =>
+            value !== null && value !== undefined
+              ? value[key]
+              : undefined,
+          object
+        );
+    }
     function topBy(
       players,
       field,
-      limit = 10,
+      limit = 20,
       lowestFirst = false
     ) {
       return [...players]
@@ -649,7 +742,7 @@
                 </span>
 
                 <strong>
-                  ${player[field]}
+                  ${getFieldValue(player, field)}
                 </strong>
               </a>
             `).join("")}
@@ -689,7 +782,7 @@
           </p>
 
           <p class="text-white/80">
-            Overall Career, Major and Board wins use the certified Museum player records.
+            Overall Career, Major Wins and competition performance statistics use the certified Museum player records. Wins, appearances and score records use verified competition results from ${MODERN_START_YEAR} onwards.
             Wins, appearances and score records use verified competition results from
             ${MODERN_START_YEAR} onwards. The wider Museum currently contains result years
             from ${coverage.firstYear} to ${coverage.lastYear}.
@@ -750,21 +843,20 @@
         "majorWins"
       )}
 
-          ${leaderboard(
-        `${label} Board Wins`,
+    ${leaderboard(
+        `${label} Most Top 10 Finishes`,
         topBy(
           players,
-          "boardWins"
+          "top10"
         ),
-        "boardWins"
+        "top10"
       )}
-
           ${leaderboard(
         `${label} Lowest Gross Since ${MODERN_START_YEAR}`,
         topBy(
           players,
           "lowestGross",
-          10,
+          20,
           true
         ),
         "lowestGross"
@@ -775,7 +867,7 @@
         topBy(
           players,
           "lowestNett",
-          10,
+          20,
           true
         ),
         "lowestNett"
