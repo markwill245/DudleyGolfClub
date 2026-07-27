@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,7 +35,7 @@
         <div class="max-w-7xl mx-auto">
             <a href="digital-museum.html"
                 class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
-                â† Back to Museum
+                ← Back to Museum
             </a>
         </div>
     </header>
@@ -45,7 +45,7 @@
         <section class="bg-[#132419] text-white py-20 px-6">
             <div class="max-w-7xl mx-auto">
                 <p class="text-[#C5A367] uppercase tracking-[0.35em] text-xs mb-4">
-                    Digital Museum â€¢ Leadership
+                    Digital Museum • Leadership
                 </p>
                 <h1 class="serif text-5xl md:text-7xl mb-6">
                     Captains of Dudley Golf Club
@@ -63,17 +63,17 @@
 
                 <div class="bg-white p-6 border border-[#C5A367]/30 shadow-sm">
                     <p class="text-xs uppercase tracking-[0.25em] text-gray-500">Years Covered</p>
-                    <h2 id="years-covered" class="serif text-4xl mt-2">â€”</h2>
+                    <h2 id="years-covered" class="serif text-4xl mt-2">—</h2>
                 </div>
 
                 <div class="bg-white p-6 border border-[#C5A367]/30 shadow-sm">
                     <p class="text-xs uppercase tracking-[0.25em] text-gray-500">Records</p>
-                    <h2 id="total-records" class="serif text-4xl mt-2">â€”</h2>
+                    <h2 id="total-records" class="serif text-4xl mt-2">—</h2>
                 </div>
 
                 <div class="bg-white p-6 border border-[#C5A367]/30 shadow-sm">
                     <p class="text-xs uppercase tracking-[0.25em] text-gray-500">Unique Captains</p>
-                    <h2 id="unique-captains" class="serif text-4xl mt-2">â€”</h2>
+                    <h2 id="unique-captains" class="serif text-4xl mt-2">—</h2>
                 </div>
 
                 <div class="bg-white p-6 border border-[#C5A367]/30 shadow-sm">
@@ -129,12 +129,12 @@
 
                 <a href="digital-museum.html"
                     class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
-                    Museum Home â†’
+                    Museum Home →
                 </a>
 
                 <a href="index.html"
                     class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
-                    Club Website â†’
+                    Club Website →
                 </a>
 
             </div>
@@ -147,17 +147,31 @@
 
         async function loadCaptains() {
             try {
-                const response = await fetch("data/captains-summary.json?v=1");
+                const response = await fetch("data/captains-summary.json?v=3");
                 const data = await response.json();
 
-                captainsData = data.timeline || [];
+                const mens =
+                    data.mens ||
+                    (Array.isArray(data.sections)
+                        ? data.sections.find(section =>
+                            String(section.section || "").toLowerCase() === "mens"
+                        )
+                        : null);
 
-                document.getElementById("years-covered").textContent = `${data.firstYear}â€“${data.lastYear}`;
-                document.getElementById("total-records").textContent = data.totalRecords;
-                document.getElementById("unique-captains").textContent = data.totalCaptains;
+                if (!mens) {
+                    throw new Error("Mens Captains section was not found.");
+                }
+
+                captainsData = Array.isArray(mens.timeline)
+                    ? mens.timeline
+                    : [];
+
+                document.getElementById("years-covered").textContent = `${mens.firstYear}–${mens.lastYear}`;
+                document.getElementById("total-records").textContent = mens.totalRecords ?? captainsData.length;
+                document.getElementById("unique-captains").textContent = mens.totalCaptains ?? 0;
 
                 renderTimeline(captainsData);
-                renderLongestServing(data.longestServing || []);
+                renderLongestServing(mens.longestServing || []);
 
             } catch (error) {
                 console.error(error);
@@ -225,7 +239,7 @@
     </script>
     <button id="backToTop"
         class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-        â†‘ Top
+        ↑ Top
     </button>
 
     <script>
