@@ -44,16 +44,61 @@
 
         <section class="bg-[#132419] text-white py-20 px-6">
             <div class="max-w-7xl mx-auto">
+
                 <p class="text-[#C5A367] uppercase tracking-[0.35em] text-xs mb-4">
                     Digital Museum • Leadership
                 </p>
+
                 <h1 class="serif text-5xl md:text-7xl mb-6">
-                    Captains of Dudley Golf Club
+                    Leadership of Dudley Golf Club
                 </h1>
-                <p class="max-w-3xl text-white/75 text-lg">
-                    A complete historical record of the Captains of Dudley Golf Club, preserved from the club honours
-                    boards and
-                    structured as part of the Digital Museum.
+
+                <p class="max-w-4xl text-white/75 text-lg leading-relaxed">
+                    Explore the history of the men and women who have guided Dudley Golf Club
+                    throughout its history. From Club Captains and Senior Captains to Ladies'
+                    Captains, Lady Presidents and Club Presidents, this archive preserves more
+                    than a century of leadership recorded from the Club's historic honours
+                    boards.
+                </p>
+
+            </div>
+        </section>
+        <section class="bg-[#F9F7F2] px-6 pt-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-wrap gap-3" role="group" aria-label="Leadership section">
+                    <button id="show-mens" type="button"
+                        data-section="mens"
+                        class="leadership-section-button bg-[#132419] text-white px-5 py-3 uppercase tracking-[0.16em] text-xs font-bold transition">
+                        Club Captains
+                    </button>
+
+                    <button id="show-seniors" type="button"
+                        data-section="seniors"
+                        class="leadership-section-button bg-white text-[#132419] border border-[#132419]/20 px-5 py-3 uppercase tracking-[0.16em] text-xs font-bold transition hover:border-[#C5A367]">
+                        Senior Captains
+                    </button>
+
+                    <button id="show-ladies" type="button"
+                        data-section="ladies"
+                        class="leadership-section-button bg-white text-[#132419] border border-[#132419]/20 px-5 py-3 uppercase tracking-[0.16em] text-xs font-bold transition hover:border-[#C5A367]">
+                        Ladies' Captains
+                    </button>
+
+                    <button id="show-lady-presidents" type="button"
+                        data-section="ladyPresidents"
+                        class="leadership-section-button bg-white text-[#132419] border border-[#132419]/20 px-5 py-3 uppercase tracking-[0.16em] text-xs font-bold transition hover:border-[#C5A367]">
+                        Lady Presidents
+                    </button>
+
+                    <button id="show-presidents" type="button"
+                        data-section="presidents"
+                        class="leadership-section-button bg-white text-[#132419] border border-[#132419]/20 px-5 py-3 uppercase tracking-[0.16em] text-xs font-bold transition hover:border-[#C5A367]">
+                        Club Presidents
+                    </button>
+                </div>
+
+                <p id="active-section-title" class="mt-5 text-sm uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+                    Club Captains
                 </p>
             </div>
         </section>
@@ -90,8 +135,13 @@
                 <div class="lg:col-span-2">
                     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
                         <div>
-                            <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">Timeline</p>
-                            <h2 class="serif text-4xl">Captaincy Record</h2>
+                            <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">
+                                Leadership Timeline
+                            </p>
+
+                            <h2 class="serif text-4xl">
+                                Historical Leadership Record
+                            </h2>
                         </div>
 
                         <input id="search-box" type="text" placeholder="Search captain or year..."
@@ -106,9 +156,9 @@
                 <aside>
                     <div class="bg-[#132419] text-white p-8 sticky top-8">
                         <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-3">
-                            Longest Serving
+                            Leadership
                         </p>
-                        <h3 class="serif text-3xl mb-6">Captaincy Notes</h3>
+                        <h3 class="serif text-3xl mb-6">Historical Notes</h3>
                         <div id="longest-serving" class="space-y-4 text-white/80"></div>
                     </div>
                 </aside>
@@ -143,97 +193,225 @@
     </footer>
 
     <script>
+        let captainsSummary = null;
         let captainsData = [];
+        let activeSectionKey = "mens";
 
         async function loadCaptains() {
             try {
-                const response = await fetch("data/captains-summary.json?v=3");
-                const data = await response.json();
+                const response = await fetch("data/captains-summary.json?v=5");
 
-                const mens =
-                    data.mens ||
-                    (Array.isArray(data.sections)
-                        ? data.sections.find(section =>
-                            String(section.section || "").toLowerCase() === "mens"
-                        )
-                        : null);
-
-                if (!mens) {
-                    throw new Error("Mens Captains section was not found.");
+                if (!response.ok) {
+                    throw new Error(
+                        `Captains data request failed: ${response.status}`
+                    );
                 }
 
-                captainsData = Array.isArray(mens.timeline)
-                    ? mens.timeline
-                    : [];
+                captainsSummary = await response.json();
 
-                document.getElementById("years-covered").textContent = `${mens.firstYear}–${mens.lastYear}`;
-                document.getElementById("total-records").textContent = mens.totalRecords ?? captainsData.length;
-                document.getElementById("unique-captains").textContent = mens.totalCaptains ?? 0;
-
-                renderTimeline(captainsData);
-                renderLongestServing(mens.longestServing || []);
+                showCaptainSection("mens");
 
             } catch (error) {
                 console.error(error);
+
                 document.getElementById("timeline").innerHTML =
                     `<p class="text-red-700">Unable to load captains data.</p>`;
             }
         }
 
+        function getSection(sectionKey) {
+            if (!captainsSummary) {
+                return null;
+            }
+
+            const directSection = captainsSummary[sectionKey];
+
+            if (directSection) {
+                return directSection;
+            }
+
+            return Array.isArray(captainsSummary.sections)
+                ? captainsSummary.sections.find(section =>
+                    String(section.section || "").toLowerCase() === sectionKey
+                )
+                : null;
+        }
+
+        function showCaptainSection(sectionKey) {
+            const section = getSection(sectionKey);
+
+            if (!section) {
+                console.error(
+                    `Captain section not found: ${sectionKey}`
+                );
+                return;
+            }
+
+            activeSectionKey = sectionKey;
+
+            captainsData = Array.isArray(section.timeline)
+                ? section.timeline
+                : [];
+
+            document.getElementById("years-covered").textContent =
+                `${section.firstYear}–${section.lastYear}`;
+
+            document.getElementById("total-records").textContent =
+                section.totalRecords ?? captainsData.length;
+
+            document.getElementById("unique-captains").textContent =
+                section.totalCaptains ?? 0;
+
+            document.getElementById("active-section-title").textContent =
+                section.title ||
+                (sectionKey === "seniors"
+                    ? "Senior Section Captains"
+                    : "Club Captains");
+
+            document.getElementById("search-box").value = "";
+
+            renderTimeline(captainsData);
+            renderLongestServing(section.longestServing || []);
+            updateSectionButtons();
+        }
+
+        function updateSectionButtons() {
+            const buttons = document.querySelectorAll(
+                ".leadership-section-button"
+            );
+
+            for (const button of buttons) {
+                const isActive =
+                    button.dataset.section === activeSectionKey;
+
+                button.classList.toggle(
+                    "bg-[#132419]",
+                    isActive
+                );
+
+                button.classList.toggle(
+                    "text-white",
+                    isActive
+                );
+
+                button.classList.toggle(
+                    "bg-white",
+                    !isActive
+                );
+
+                button.classList.toggle(
+                    "text-[#132419]",
+                    !isActive
+                );
+
+                button.classList.toggle(
+                    "border",
+                    !isActive
+                );
+
+                button.classList.toggle(
+                    "border-[#132419]/20",
+                    !isActive
+                );
+
+                button.setAttribute(
+                    "aria-pressed",
+                    String(isActive)
+                );
+            }
+        }
+
         function renderTimeline(items) {
-            const container = document.getElementById("timeline");
+            const container =
+                document.getElementById("timeline");
 
             if (!items.length) {
                 container.innerHTML = `
-  <div class="bg-white border border-[#C5A367]/25 p-8 shadow-sm">
-    <h3 class="serif text-3xl mb-3">No captains found</h3>
-    <p class="text-gray-600">
-      Try searching by captain name or year.
-    </p>
-  </div>
-`;
+                    <div class="bg-white border border-[#C5A367]/25 p-8 shadow-sm">
+                        <h3 class="serif text-3xl mb-3">No captains found</h3>
+                        <p class="text-gray-600">
+                            Try searching by captain name or year.
+                        </p>
+                    </div>
+                `;
                 return;
             }
 
             container.innerHTML = items.map(item => `
-        <div class="bg-white border border-[#C5A367]/25 p-5 flex justify-between gap-6 items-center shadow-sm">
-          <div>
-            <p class="text-xs uppercase tracking-[0.25em] text-gray-400">${item.source || "Captains Board"}</p>
-            <h3 class="serif text-2xl">${item.name}</h3>
-          </div>
-          <div class="text-right">
-            <p class="serif text-3xl text-[#C5A367]">${item.year}</p>
-            <p class="text-xs uppercase tracking-[0.2em] text-gray-400">
-              ${item.verified ? "Verified" : "Check"}
-            </p>
-          </div>
-        </div>
-      `).join("");
+                <div class="bg-white border border-[#C5A367]/25 p-5 flex justify-between gap-6 items-center shadow-sm">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.25em] text-gray-400">
+                            ${item.source || "Captains Board"}
+                        </p>
+                        <h3 class="serif text-2xl">${item.name}</h3>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="serif text-3xl text-[#C5A367]">
+                            ${item.yearLabel || item.year}
+                        </p>
+                        <p class="text-xs uppercase tracking-[0.2em] text-gray-400">
+                            ${item.verified ? "Verified" : "Check"}
+                        </p>
+                    </div>
+                </div>
+            `).join("");
         }
 
         function renderLongestServing(items) {
-            const container = document.getElementById("longest-serving");
+            const container =
+                document.getElementById("longest-serving");
+
+            if (!items.length) {
+                container.innerHTML =
+                    `<p class="text-white/60">No captaincy notes available.</p>`;
+                return;
+            }
 
             container.innerHTML = items.map((item, index) => `
-        <div class="border-b border-white/10 pb-4">
-          <p class="text-[#C5A367] text-sm">#${index + 1}</p>
-          <h4 class="serif text-xl text-white">${item.name}</h4>
-          <p class="text-sm">${item.totalYears} years</p>
-       <p class="text-xs text-white/50">${(item.years || []).join(", ")}</p>
-        </div>
-      `).join("");
+                <div class="border-b border-white/10 pb-4">
+                    <p class="text-[#C5A367] text-sm">
+                        #${index + 1}
+                    </p>
+                    <h4 class="serif text-xl text-white">
+                        ${item.name}
+                    </h4>
+                    <p class="text-sm">
+                        ${item.totalYears} years
+                    </p>
+                    <p class="text-xs text-white/50">
+                        ${(item.years || []).join(", ")}
+                    </p>
+                </div>
+            `).join("");
         }
 
-        document.getElementById("search-box").addEventListener("input", function () {
-            const term = this.value.toLowerCase().trim();
-
-            const filtered = captainsData.filter(item =>
-                (item.name || "").toLowerCase().includes(term) ||
-                String(item.year || "").includes(term)
-            );
-
-            renderTimeline(filtered);
+        document.querySelectorAll(
+            ".leadership-section-button"
+        ).forEach(button => {
+            button.addEventListener("click", () => {
+                showCaptainSection(
+                    button.dataset.section
+                );
+            });
         });
+
+        document.getElementById("search-box")
+            .addEventListener("input", function () {
+                const term =
+                    this.value.toLowerCase().trim();
+
+                const filtered =
+                    captainsData.filter(item =>
+                        (item.name || "")
+                            .toLowerCase()
+                            .includes(term) ||
+                        String(item.year || "")
+                            .includes(term)
+                    );
+
+                renderTimeline(filtered);
+            });
 
         loadCaptains();
     </script>
