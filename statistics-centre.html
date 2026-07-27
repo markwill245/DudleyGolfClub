@@ -10,26 +10,34 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
     rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Outfit, sans-serif;
       background: #F9F7F2;
-      color: #132419
+      color: #132419;
     }
 
     .serif {
-      font-family: "Cormorant Garamond", serif
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    .section-tab[aria-selected="true"] {
+      background: #132419;
+      color: #fff;
+      border-color: #132419;
     }
   </style>
 </head>
 
 <body>
   <header class="bg-[#132419] text-white px-6 py-5">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="max-w-7xl mx-auto">
       <a href="digital-museum.html"
-        class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
-        ← Back to Museum
-      </a>
-
+        class="text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">← Back to
+        Museum</a>
     </div>
   </header>
 
@@ -37,17 +45,55 @@
     <div class="max-w-7xl mx-auto">
       <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">Digital Museum</p>
       <h1 class="serif text-6xl md:text-8xl leading-none mb-6">Statistics Centre</h1>
-      <p class="max-w-3xl text-white/70 text-lg">
-        A simple live summary of the Dudley Golf Club Digital Museum, built from Player Intelligence.
-      </p>
+      <p class="max-w-3xl text-white/70 text-lg">Verified Men's, Seniors and Club records from the Dudley Golf Club
+        Digital Museum.</p>
     </div>
   </section>
 
-  <main class="max-w-7xl mx-auto px-6 py-16">
+  <main id="top" class="max-w-7xl mx-auto px-6 py-16">
+    <nav class="flex flex-wrap gap-3 mb-12" aria-label="Statistics section">
+      <button type="button" class="section-tab border border-[#C5A367] rounded-full px-6 py-3 font-bold transition"
+        data-section="Mens" aria-selected="true">Men's Records</button>
+      <button type="button" class="section-tab border border-[#C5A367] rounded-full px-6 py-3 font-bold transition"
+        data-section="Seniors" aria-selected="false">Seniors Records</button>
+      <button type="button" class="section-tab border border-[#C5A367] rounded-full px-6 py-3 font-bold transition"
+        data-section="Club" aria-selected="false">Club Records</button>
+    </nav>
+
     <div id="stats">Loading statistics...</div>
+
+    <div class="mt-14 text-center">
+      <a href="#top"
+        class="inline-flex items-center rounded-full bg-[#132419] px-6 py-3 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-[#C5A367] hover:text-[#132419]">↑
+        Back to Top</a>
+    </div>
   </main>
 
   <script>
+    const MODERN_START_YEAR = 2021;
+
+    const state = {
+      activeSection: "Mens",
+      sections: {
+        Mens: [],
+        Seniors: []
+      },
+      club: {
+        holeInOnes: [],
+        longestRunning: [],
+        totals: {}
+      },
+      coverage: {
+        firstYear: null,
+        lastYear: null,
+        yearCount: 0
+      }
+    };
+
+    function clean(value) {
+      return String(value || "").trim();
+    }
+
     function num(value) {
       const number = Number(value);
       return Number.isFinite(number) ? number : 0;
@@ -55,152 +101,482 @@
 
     function validScore(value) {
       const number = Number(value);
-
-      return (
-        Number.isFinite(number) &&
-        number > 0
-      );
+      return Number.isFinite(number) && number > 0;
     }
-function getIndividualPlayerName(result) {
-  const players = Array.isArray(result?.players)
-    ? result.players
-        .map(player =>
-          typeof player === "string"
-            ? player
-            : player?.name
-        )
-        .filter(Boolean)
-    : [];
 
-  if (players.length === 1) {
-    return players[0];
-  }
-
-  if (players.length > 1) {
-    return null;
-  }
-
-  const fallbackName =
-    result?.playerName ||
-    result?.player ||
-    result?.name ||
-    null;
-
-  return fallbackName
-    ? String(fallbackName).trim()
-    : null;
-}
-function getResultScore(result, scoreType) {
-  if (!result || result.status) {
-    return null;
-  }
-
-if (scoreType === "Gross") {
-  const handicap =
-    Number(
-      result?.players?.[0]?.handicap ??
-      result?.handicap
-    );
-
-  const nett =
-    Number(
-      result.nettScore ??
-      (
-        result.scoreType === "Nett"
-          ? result.totalScore
-          : null
-      )
-    );
-
-  if (
-    Number.isFinite(nett) &&
-    Number.isFinite(handicap) &&
-    nett >= 50 &&
-    nett <= 120 &&
-    handicap >= 0 &&
-    handicap <= 54
-  ) {
-    return nett + handicap;
-  }
-
-  return null;
-}
-  if (scoreType === "Nett") {
-    const value =
-      result.nettScore ??
-      result.nettTotal ??
-      (
-        result.scoreType === "Nett"
-          ? result.totalScore
-          : null
-      );
-
-    return validScore(value)
-      ? Number(value)
-      : null;
-  }
-
-  return null;
-}
-
-function buildScoreRecords(competitions) {
-  const records = new Map();
-
-  competitions.forEach(competition => {
-    (competition.results || []).forEach(result => {
-      const playerName =
-        getIndividualPlayerName(result);
-
-      if (!playerName) {
-        return;
-      }
-
-      if (!records.has(playerName)) {
-        records.set(playerName, {
-          lowestGross: null,
-          lowestNett: null
-        });
-      }
-
-      const playerRecord =
-        records.get(playerName);
-
-      const gross =
-        getResultScore(result, "Gross");
-
-      const nett =
-        getResultScore(result, "Nett");
-
-      if (
-        gross !== null &&
-        (
-          playerRecord.lowestGross === null ||
-          gross < playerRecord.lowestGross
-        )
-      ) {
-        playerRecord.lowestGross = gross;
-      }
-
-      if (
-        nett !== null &&
-        (
-          playerRecord.lowestNett === null ||
-          nett < playerRecord.lowestNett
-        )
-      ) {
-        playerRecord.lowestNett = nett;
-      }
-    });
-  });
-
-  return records;
-}
     function createSlug(value) {
-      return String(value || "")
+      return clean(value)
         .toLowerCase()
-        .trim()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-+|-+$/g, "");
+    }
+
+    function normaliseName(value) {
+      return clean(value)
+        .toLowerCase()
+        .replace(/\./g, "")
+        .replace(/\s+/g, " ");
+    }
+
+    function normaliseSection(value) {
+      const section = clean(value).toLowerCase();
+
+      if (section.includes("senior")) {
+        return "Seniors";
+      }
+
+      if (
+        section === "mens" ||
+        section === "men" ||
+        section.includes("male")
+      ) {
+        return "Mens";
+      }
+
+      return "";
+    }
+
+    function firstNumber(...values) {
+      for (const value of values) {
+        const number = Number(value);
+
+        if (Number.isFinite(number)) {
+          return number;
+        }
+      }
+
+      return 0;
+    }
+
+    function getPosition(result) {
+      const raw =
+        result?.position ??
+        result?.place ??
+        result?.rank ??
+        null;
+
+      if (raw === null || raw === undefined) {
+        return null;
+      }
+
+      const match = String(raw).match(/\d+/);
+      return match ? Number(match[0]) : null;
+    }
+
+    function getPlayerNames(result) {
+      const names = [];
+
+      const addName = value => {
+        const name = clean(
+          typeof value === "string"
+            ? value
+            : value?.name
+        );
+
+        if (name && !names.includes(name)) {
+          names.push(name);
+        }
+      };
+
+      if (Array.isArray(result?.players)) {
+        result.players.forEach(addName);
+      }
+
+      if (Array.isArray(result?.teamMembers)) {
+        result.teamMembers.forEach(addName);
+      }
+
+      if (!names.length) {
+        const fallback =
+          result?.playerName ||
+          result?.player ||
+          result?.name ||
+          "";
+
+        if (
+          fallback &&
+          !String(fallback).includes(" / ") &&
+          !String(fallback).includes(" & ")
+        ) {
+          addName(fallback);
+        }
+      }
+
+      return names;
+    }
+
+    function getResultScore(result, scoreType) {
+      if (!result || result.status) {
+        return null;
+      }
+
+      const storedScoreType =
+        clean(result.scoreType).toLowerCase();
+
+      if (scoreType === "Gross") {
+        const explicitGross =
+          result.grossScore ??
+          result.grossTotal ??
+          (
+            storedScoreType === "gross"
+              ? result.totalScore
+              : null
+          );
+
+        if (validScore(explicitGross)) {
+          return Number(explicitGross);
+        }
+
+        const handicap =
+          Number(
+            result?.players?.[0]?.handicap ??
+            result?.teamMembers?.[0]?.handicap ??
+            result?.handicap
+          );
+
+        const nett =
+          Number(
+            result.nettScore ??
+            result.nettTotal ??
+            (
+              storedScoreType === "nett"
+                ? result.totalScore
+                : null
+            )
+          );
+
+        if (
+          Number.isFinite(nett) &&
+          Number.isFinite(handicap) &&
+          nett >= 50 &&
+          nett <= 120 &&
+          handicap >= 0 &&
+          handicap <= 54
+        ) {
+          return nett + handicap;
+        }
+
+        return null;
+      }
+
+      if (scoreType === "Nett") {
+        const value =
+          result.nettScore ??
+          result.nettTotal ??
+          (
+            storedScoreType === "nett"
+              ? result.totalScore
+              : null
+          );
+
+        return validScore(value)
+          ? Number(value)
+          : null;
+      }
+
+      return null;
+    }
+
+    function makeCatalogMap(catalogue) {
+      const map = new Map();
+
+      (Array.isArray(catalogue) ? catalogue : [])
+        .forEach(item => {
+          const id =
+            item?.competitionId ||
+            item?.id ||
+            "";
+
+          if (id) {
+            map.set(id, item);
+          }
+        });
+
+      return map;
+    }
+
+    function getProfileName(profile) {
+      return clean(
+        profile?.player ||
+        profile?.playerName ||
+        profile?.name ||
+        profile?.hero?.name
+      );
+    }
+
+    function getProfileSlug(profile, playerName) {
+      return clean(
+        profile?.slug ||
+        profile?.playerSlug ||
+        profile?.hero?.slug
+      ) || createSlug(playerName);
+    }
+
+    function getProfileSectionTotals(profile, section) {
+      const sectionKey =
+        section === "Mens"
+          ? "mens"
+          : "seniors";
+
+      const sectionStats =
+        profile?.sections?.[sectionKey] ||
+        profile?.sectionStats?.[sectionKey] ||
+        profile?.careerBySection?.[sectionKey] ||
+        profile?.[sectionKey] ||
+        {};
+
+      const career =
+        profile?.career || {};
+
+      const overallCareerWins =
+        firstNumber(
+          sectionStats?.careerWins,
+          sectionStats?.wins,
+          sectionStats?.totalWins,
+          section === "Mens"
+            ? career?.mensWins
+            : career?.seniorsWins,
+          section === "Mens"
+            ? profile?.mensWins
+            : profile?.seniorsWins,
+          normaliseSection(profile?.section) === section
+            ? career?.wins
+            : undefined,
+          normaliseSection(profile?.section) === section
+            ? profile?.wins
+            : undefined
+        );
+
+      const majorWins =
+        firstNumber(
+          sectionStats?.majorWins,
+          sectionStats?.majors,
+          section === "Mens"
+            ? career?.mensMajorWins
+            : career?.seniorsMajorWins,
+          section === "Mens"
+            ? profile?.mensMajorWins
+            : profile?.seniorsMajorWins,
+          normaliseSection(profile?.section) === section
+            ? career?.majorWins
+            : undefined,
+          normaliseSection(profile?.section) === section
+            ? profile?.majorWins
+            : undefined
+        );
+
+      const boardWins =
+        firstNumber(
+          sectionStats?.boardWins,
+          sectionStats?.boardCompetitionWins,
+          section === "Mens"
+            ? career?.mensBoardWins
+            : career?.seniorsBoardWins,
+          section === "Mens"
+            ? profile?.mensBoardWins
+            : profile?.seniorsBoardWins,
+          normaliseSection(profile?.section) === section
+            ? career?.boardWins
+            : undefined,
+          normaliseSection(profile?.section) === section
+            ? career?.boardCompetitionWins
+            : undefined,
+          normaliseSection(profile?.section) === section
+            ? profile?.boardWins
+            : undefined
+        );
+
+      return {
+        overallCareerWins,
+        majorWins,
+        boardWins
+      };
+    }
+
+    function buildProfileTotals(profileList, section) {
+      const totals = new Map();
+
+      profileList.forEach(profile => {
+        const playerName = getProfileName(profile);
+
+        if (!playerName) {
+          return;
+        }
+
+        const values =
+          getProfileSectionTotals(
+            profile,
+            section
+          );
+
+        /*
+         * Keep a profile only when it contains at least one verified
+         * all-time total for this section.
+         */
+        if (
+          values.overallCareerWins <= 0 &&
+          values.majorWins <= 0 &&
+          values.boardWins <= 0
+        ) {
+          return;
+        }
+
+        totals.set(
+          normaliseName(playerName),
+          {
+            playerName,
+            slug:
+              getProfileSlug(
+                profile,
+                playerName
+              ),
+            ...values
+          }
+        );
+      });
+
+      return totals;
+    }
+
+    function buildModernSectionRecords(
+      competitions,
+      section,
+      slugByName
+    ) {
+      const records = new Map();
+
+      competitions
+        .filter(competition =>
+          normaliseSection(competition?.section) === section &&
+          Number(competition?.year) >= MODERN_START_YEAR
+        )
+        .forEach(competition => {
+          const seenInCompetition = new Set();
+
+          (competition.results || []).forEach(result => {
+            const names = getPlayerNames(result);
+            const position = getPosition(result);
+
+            names.forEach(playerName => {
+              const key = normaliseName(playerName);
+
+              if (!records.has(key)) {
+                records.set(key, {
+                  playerName,
+                  slug:
+                    slugByName.get(playerName) ||
+                    createSlug(playerName),
+                  winsSince2021: 0,
+                  appearancesSince2021: 0,
+                  lowestGross: null,
+                  lowestNett: null
+                });
+              }
+
+              const record = records.get(key);
+
+              if (!seenInCompetition.has(key)) {
+                seenInCompetition.add(key);
+                record.appearancesSince2021 += 1;
+              }
+
+              if (position === 1) {
+                record.winsSince2021 += 1;
+              }
+
+              /*
+               * Lowest scores are taken from the verified modern result rows.
+               * Team scores are excluded from individual score records.
+               */
+              if (names.length === 1) {
+                const gross =
+                  getResultScore(result, "Gross");
+
+                const nett =
+                  getResultScore(result, "Nett");
+
+                if (
+                  gross !== null &&
+                  (
+                    record.lowestGross === null ||
+                    gross < record.lowestGross
+                  )
+                ) {
+                  record.lowestGross = gross;
+                }
+
+                if (
+                  nett !== null &&
+                  (
+                    record.lowestNett === null ||
+                    nett < record.lowestNett
+                  )
+                ) {
+                  record.lowestNett = nett;
+                }
+              }
+            });
+          });
+        });
+
+      return records;
+    }
+
+    function mergeSectionRecords(
+      profileTotals,
+      modernTotals
+    ) {
+      const keys =
+        new Set([
+          ...profileTotals.keys(),
+          ...modernTotals.keys()
+        ]);
+
+      return [...keys].map(key => {
+        const historic =
+          profileTotals.get(key) || {};
+
+        const modern =
+          modernTotals.get(key) || {};
+
+        return {
+          playerName:
+            historic.playerName ||
+            modern.playerName ||
+            "Unknown",
+
+          slug:
+            historic.slug ||
+            modern.slug ||
+            createSlug(
+              historic.playerName ||
+              modern.playerName
+            ),
+
+          overallCareerWins:
+            num(historic.overallCareerWins),
+
+          winsSince2021:
+            num(modern.winsSince2021),
+
+          majorWins:
+            num(historic.majorWins),
+
+          boardWins:
+            num(historic.boardWins),
+
+          lowestGross:
+            modern.lowestGross ?? null,
+
+          lowestNett:
+            modern.lowestNett ?? null,
+
+          appearancesSince2021:
+            num(
+              modern.appearancesSince2021
+            )
+        };
+      });
     }
 
     function topBy(
@@ -210,29 +586,25 @@ function buildScoreRecords(competitions) {
       lowestFirst = false
     ) {
       return [...players]
-        .filter(player => {
-          if (lowestFirst) {
-            return validScore(player[field]);
-          }
-
-          return num(player[field]) > 0;
-        })
+        .filter(player =>
+          lowestFirst
+            ? validScore(player[field])
+            : num(player[field]) > 0
+        )
         .sort((a, b) => {
-          const firstValue = num(a[field]);
-          const secondValue = num(b[field]);
+          const first = num(a[field]);
+          const second = num(b[field]);
 
-          const valueDifference = lowestFirst
-            ? firstValue - secondValue
-            : secondValue - firstValue;
+          const difference =
+            lowestFirst
+              ? first - second
+              : second - first;
 
-          if (valueDifference !== 0) {
-            return valueDifference;
-          }
-
-          return String(a.playerName || "")
-            .localeCompare(
-              String(b.playerName || "")
-            );
+          return difference ||
+            String(a.playerName || "")
+              .localeCompare(
+                String(b.playerName || "")
+              );
         })
         .slice(0, limit);
     }
@@ -240,100 +612,487 @@ function buildScoreRecords(competitions) {
     function leaderboard(
       title,
       players,
-      field,
-      suffix = ""
+      field
     ) {
       if (!players.length) {
         return `
+          <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+            <h2 class="serif text-4xl mb-6">
+              ${title}
+            </h2>
+
+            <p class="text-gray-500">
+              No verified data available yet.
+            </p>
+          </section>
+        `;
+      }
+
+      return `
         <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
           <h2 class="serif text-4xl mb-6">
             ${title}
           </h2>
 
-          <p class="text-gray-500">
-            No verified data available yet.
-          </p>
+          <div class="space-y-4">
+            ${players.map((player, index) => `
+              <a
+                href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+                class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3 hover:text-[#C5A367] transition"
+              >
+                <span>
+                  <span class="text-[#C5A367] mr-3">
+                    ${index + 1}
+                  </span>
+
+                  ${player.playerName}
+                </span>
+
+                <strong>
+                  ${player[field]}
+                </strong>
+              </a>
+            `).join("")}
+          </div>
         </section>
       `;
+    }
+
+    function statCard(label, value) {
+      return `
+        <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
+          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+            ${label}
+          </p>
+
+          <p class="serif text-5xl">
+            ${value}
+          </p>
+        </div>
+      `;
+    }
+
+    function renderCoverageNote() {
+      const coverage = state.coverage;
+
+      if (
+        !Number.isFinite(coverage.firstYear) ||
+        !Number.isFinite(coverage.lastYear)
+      ) {
+        return "";
       }
 
       return `
-      <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-        <h2 class="serif text-4xl mb-6">
-          ${title}
-        </h2>
+        <div class="mt-10 rounded border border-[#C5A367]/30 bg-[#132419] p-6 text-white">
+          <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">
+            Record Coverage
+          </p>
 
-        <div class="space-y-4">
-          ${players.map((player, index) => `
-            <a
-              href="player-profile.html?player=${encodeURIComponent(player.slug)}"
-              class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3 hover:text-[#C5A367] transition"
-            >
-              <span>
-                <span class="text-[#C5A367] mr-3">
-                  ${index + 1}
+          <p class="text-white/80">
+            Overall Career, Major and Board wins use the certified Museum player records.
+            Wins, appearances and score records use verified competition results from
+            ${MODERN_START_YEAR} onwards. The wider Museum currently contains result years
+            from ${coverage.firstYear} to ${coverage.lastYear}.
+          </p>
+        </div>
+      `;
+    }
+
+    function renderSection(section) {
+      const players =
+        state.sections[section] || [];
+
+      const label =
+        section === "Mens"
+          ? "Men's"
+          : "Seniors";
+
+      return `
+        <div class="mb-10">
+          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">
+            ${section}
+          </p>
+
+          <h2 class="serif text-5xl">
+            ${label} Records
+          </h2>
+
+          <p class="text-gray-600 mt-3 max-w-3xl">
+            All-time Museum honours are shown separately from the modern results era beginning in ${MODERN_START_YEAR}.
+          </p>
+        </div>
+
+        <section class="grid lg:grid-cols-2 gap-8">
+          ${leaderboard(
+        `${label} Overall Career Wins`,
+        topBy(
+          players,
+          "overallCareerWins"
+        ),
+        "overallCareerWins"
+      )}
+
+          ${leaderboard(
+        `${label} Wins Since ${MODERN_START_YEAR}`,
+        topBy(
+          players,
+          "winsSince2021"
+        ),
+        "winsSince2021"
+      )}
+
+          ${leaderboard(
+        `${label} Major Wins`,
+        topBy(
+          players,
+          "majorWins"
+        ),
+        "majorWins"
+      )}
+
+          ${leaderboard(
+        `${label} Board Wins`,
+        topBy(
+          players,
+          "boardWins"
+        ),
+        "boardWins"
+      )}
+
+          ${leaderboard(
+        `${label} Lowest Gross Since ${MODERN_START_YEAR}`,
+        topBy(
+          players,
+          "lowestGross",
+          10,
+          true
+        ),
+        "lowestGross"
+      )}
+
+          ${leaderboard(
+        `${label} Lowest Nett Since ${MODERN_START_YEAR}`,
+        topBy(
+          players,
+          "lowestNett",
+          10,
+          true
+        ),
+        "lowestNett"
+      )}
+
+          ${leaderboard(
+        `${label} Most Appearances Since ${MODERN_START_YEAR}`,
+        topBy(
+          players,
+          "appearancesSince2021"
+        ),
+        "appearancesSince2021"
+      )}
+        </section>
+
+        ${renderCoverageNote()}
+      `;
+    }
+
+    function extractHoleInOnes(recordsCentre) {
+      const candidates = [
+        recordsCentre?.holeInOnes,
+        recordsCentre?.clubRecords?.holeInOnes,
+        recordsCentre?.records?.holeInOnes,
+        recordsCentre?.club?.holeInOnes
+      ];
+
+      const match =
+        candidates.find(Array.isArray);
+
+      return Array.isArray(match)
+        ? match
+        : [];
+    }
+
+    function buildLongestRunning(
+      competitions,
+      catalogById
+    ) {
+      const map = new Map();
+
+      competitions.forEach(competition => {
+        const id =
+          competition?.competitionId || "";
+
+        if (!id) {
+          return;
+        }
+
+        const year =
+          Number(competition?.year);
+
+        if (!map.has(id)) {
+          const catalog =
+            catalogById.get(id) || {};
+
+          map.set(id, {
+            competitionId: id,
+            name:
+              catalog?.name ||
+              competition?.competitionName ||
+              competition?.name ||
+              id,
+            years: new Set()
+          });
+        }
+
+        if (Number.isFinite(year)) {
+          map.get(id).years.add(year);
+        }
+      });
+
+      return [...map.values()]
+        .map(item => {
+          const years =
+            [...item.years]
+              .sort((a, b) => a - b);
+
+          return {
+            ...item,
+            yearsPlayed: years.length,
+            firstYear: years[0] || null,
+            lastYear:
+              years[years.length - 1] || null
+          };
+        })
+        .filter(item => item.yearsPlayed > 0)
+        .sort((a, b) =>
+          b.yearsPlayed - a.yearsPlayed ||
+          a.name.localeCompare(b.name)
+        )
+        .slice(0, 10);
+    }
+
+    function renderHoleInOnes(items) {
+      if (!items.length) {
+        return `
+          <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+            <h2 class="serif text-4xl mb-6">
+              Hole in Ones
+            </h2>
+
+            <p class="text-gray-500">
+              No verified Hole in One records were found in the current Museum data.
+            </p>
+          </section>
+        `;
+      }
+
+      return `
+        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+          <h2 class="serif text-4xl mb-6">
+            Hole in Ones
+          </h2>
+
+          <div class="space-y-4">
+            ${items.slice(0, 10).map((item, index) => {
+        const name =
+          item?.playerName ||
+          item?.player ||
+          item?.name ||
+          "Unknown";
+
+        const detail = [
+          item?.hole
+            ? `Hole ${item.hole}`
+            : "",
+          item?.year ||
+          item?.date ||
+          ""
+        ].filter(Boolean).join(" · ");
+
+        return `
+                <div class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3">
+                  <span>
+                    <span class="text-[#C5A367] mr-3">
+                      ${index + 1}
+                    </span>
+
+                    ${name}
+                  </span>
+
+                  <strong>
+                    ${detail}
+                  </strong>
+                </div>
+              `;
+      }).join("")}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderLongestRunning(items) {
+      if (!items.length) {
+        return `
+          <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+            <h2 class="serif text-4xl mb-6">
+              Longest-Running Competitions
+            </h2>
+
+            <p class="text-gray-500">
+              No verified competition history is available yet.
+            </p>
+          </section>
+        `;
+      }
+
+      return `
+        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+          <h2 class="serif text-4xl mb-6">
+            Longest-Running Competitions
+          </h2>
+
+          <div class="space-y-4">
+            ${items.map((item, index) => `
+              <a
+                href="competition-profile.html?competition=${encodeURIComponent(item.competitionId)}"
+                class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3 hover:text-[#C5A367] transition"
+              >
+                <span>
+                  <span class="text-[#C5A367] mr-3">
+                    ${index + 1}
+                  </span>
+
+                  ${item.name}
                 </span>
 
-                ${player.playerName}
-              </span>
+                <strong>
+                  ${item.yearsPlayed} years
+                </strong>
+              </a>
+            `).join("")}
+          </div>
+        </section>
+      `;
+    }
 
-              <strong>
-                ${player[field]}${suffix}
-              </strong>
-            </a>
-          `).join("")}
+    function renderClub() {
+      const club = state.club;
+      const totals = club.totals || {};
+
+      return `
+        <div class="mb-10">
+          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">
+            Whole Museum
+          </p>
+
+          <h2 class="serif text-5xl">
+            Club Records
+          </h2>
+
+          <p class="text-gray-600 mt-3 max-w-3xl">
+            Club-wide Museum records and collection totals.
+            Men's and Seniors player records remain independent.
+          </p>
         </div>
-      </section>
-    `;
+
+        <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+          ${statCard("Unique Players", totals.players)}
+          ${statCard("Competitions", totals.competitions)}
+          ${statCard("Result Blocks", totals.resultBlocks)}
+          ${statCard("Result Rows", totals.resultRows)}
+        </section>
+
+        <section class="grid lg:grid-cols-2 gap-8">
+          ${renderHoleInOnes(club.holeInOnes)}
+          ${renderLongestRunning(club.longestRunning)}
+        </section>
+
+        ${renderCoverageNote()}
+      `;
     }
 
-   async function loadStats() {
-  const container =
-    document.getElementById("stats");
+    function render() {
+      const container =
+        document.getElementById("stats");
 
-  try {
-    const [
-      profilesResponse,
-      pagesResponse,
-      resultsResponse
-    ] = await Promise.all([
-      fetch("data/player-profiles.json"),
-      fetch("data/player-page-data.json"),
-      fetch("data/competition-results.json")
-    ]);
+      container.innerHTML =
+        state.activeSection === "Club"
+          ? renderClub()
+          : renderSection(
+            state.activeSection
+          );
 
-    if (!profilesResponse.ok) {
-      throw new Error(
-        `player-profiles.json returned ${profilesResponse.status}`
-      );
+      document
+        .querySelectorAll(".section-tab")
+        .forEach(button => {
+          button.setAttribute(
+            "aria-selected",
+            button.dataset.section ===
+              state.activeSection
+              ? "true"
+              : "false"
+          );
+        });
     }
 
-    if (!pagesResponse.ok) {
-      throw new Error(
-        `player-page-data.json returned ${pagesResponse.status}`
-      );
-    }
+    async function loadStats() {
+      const container =
+        document.getElementById("stats");
 
-    if (!resultsResponse.ok) {
-      throw new Error(
-        `competition-results.json returned ${resultsResponse.status}`
-      );
-    }
+      try {
+        const [
+          profilesResponse,
+          pagesResponse,
+          resultsResponse,
+          catalogueResponse,
+          recordsResponse
+        ] = await Promise.all([
+          fetch("data/player-profiles.json"),
+          fetch("data/player-page-data.json"),
+          fetch("data/competition-results.json"),
+          fetch("data/competition-catalog.json"),
+          fetch("data/records-centre.json")
+        ]);
 
-    const playerProfiles =
-      await profilesResponse.json();
+        if (!profilesResponse.ok) {
+          throw new Error(
+            `player-profiles.json returned ${profilesResponse.status}`
+          );
+        }
+
+        if (!pagesResponse.ok) {
+          throw new Error(
+            `player-page-data.json returned ${pagesResponse.status}`
+          );
+        }
+
+        if (!resultsResponse.ok) {
+          throw new Error(
+            `competition-results.json returned ${resultsResponse.status}`
+          );
+        }
+
+        if (!catalogueResponse.ok) {
+          throw new Error(
+            `competition-catalog.json returned ${catalogueResponse.status}`
+          );
+        }
+
+        const playerProfiles =
+          await profilesResponse.json();
 
         const playerPages =
           await pagesResponse.json();
-const competitionResults =
-  await resultsResponse.json();
 
-const scoreRecords =
-  buildScoreRecords(
-    Array.isArray(competitionResults)
-      ? competitionResults
-      : []
-  );
+        const competitionResults =
+          await resultsResponse.json();
+
+        const catalogue =
+          await catalogueResponse.json();
+
+        const recordsCentre =
+          recordsResponse.ok
+            ? await recordsResponse.json()
+            : {};
 
         const profileList =
           Array.isArray(playerProfiles)
@@ -348,6 +1107,14 @@ const scoreRecords =
             : Object.values(
               playerPages || {}
             );
+
+        const competitions =
+          Array.isArray(competitionResults)
+            ? competitionResults
+            : [];
+
+        const catalogById =
+          makeCatalogMap(catalogue);
 
         const slugByName = new Map();
 
@@ -369,161 +1136,90 @@ const scoreRecords =
           );
         });
 
-     const players = profileList
-  .filter(profile => profile?.player)
-  .map(profile => ({
-    playerName: profile.player,
+        ["Mens", "Seniors"].forEach(section => {
+          const profileTotals =
+            buildProfileTotals(
+              profileList,
+              section
+            );
 
-    slug:
-      slugByName.get(profile.player) ||
-      createSlug(profile.player),
+          const modernTotals =
+            buildModernSectionRecords(
+              competitions,
+              section,
+              slugByName
+            );
 
-    competitionsPlayed:
-      num(profile.career?.competitionsPlayed),
+          state.sections[section] =
+            mergeSectionRecords(
+              profileTotals,
+              modernTotals
+            );
+        });
 
-    wins:
-      num(profile.career?.wins),
+        const allPlayers = new Set([
+          ...state.sections.Mens.map(
+            player => player.playerName
+          ),
+          ...state.sections.Seniors.map(
+            player => player.playerName
+          )
+        ]);
 
-    runnerUp:
-      num(profile.career?.runnerUp),
-
-    topTen:
-      num(profile.career?.top10),
-
-    lowestGross:
-      scoreRecords.get(profile.player)
-        ?.lowestGross || 0,
-
-    lowestNett:
-      scoreRecords.get(profile.player)
-        ?.lowestNett || 0
-  }));
-        const totalAppearances =
-          players.reduce(
-            (total, player) =>
-              total +
-              player.competitionsPlayed,
-            0
+        const competitionIds =
+          new Set(
+            competitions
+              .map(item => item?.competitionId)
+              .filter(Boolean)
           );
 
-      const totalWins =
-  players.reduce(
-    (total, player) =>
-      total + player.wins,
-    0
-  );
+        const years =
+          [...new Set(
+            competitions
+              .map(item => Number(item?.year))
+              .filter(Number.isFinite)
+          )].sort((a, b) => a - b);
 
-        const totalTopTens =
-          players.reduce(
-            (total, player) =>
-              total + player.topTen,
-            0
-          );
+        state.coverage = {
+          firstYear: years[0] || null,
+          lastYear:
+            years[years.length - 1] || null,
+          yearCount: years.length
+        };
 
-        container.innerHTML = `
-        <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
-          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-              Players
-            </p>
+        state.club = {
+          holeInOnes:
+            extractHoleInOnes(
+              recordsCentre
+            ),
 
-            <p class="serif text-5xl">
-              ${players.length}
-            </p>
-          </div>
+          longestRunning:
+            buildLongestRunning(
+              competitions,
+              catalogById
+            ),
 
-          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-              Recorded Appearances
-            </p>
+          totals: {
+            players: allPlayers.size,
+            competitions: competitionIds.size,
+            resultBlocks: competitions.length,
+            resultRows:
+              competitions.reduce(
+                (total, competition) =>
+                  total +
+                  (
+                    Array.isArray(
+                      competition?.results
+                    )
+                      ? competition.results.length
+                      : 0
+                  ),
+                0
+              )
+          }
+        };
 
-            <p class="serif text-5xl">
-              ${totalAppearances}
-            </p>
-          </div>
-
-          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-              Recorded Wins
-            </p>
-
-            <p class="serif text-5xl">
-              ${totalWins}
-            </p>
-          </div>
-
-          <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-              Top-Ten Finishes
-            </p>
-
-            <p class="serif text-5xl">
-              ${totalTopTens}
-            </p>
-          </div>
-        </section>
-
-        <section class="grid lg:grid-cols-2 gap-8">
-          ${leaderboard(
-          "Most Recorded Wins",
-          topBy(
-            players,
-            "wins"
-          ),
-          "wins"
-        )}
-
-          ${leaderboard(
-          "Most Recorded Appearances",
-          topBy(
-            players,
-            "competitionsPlayed"
-          ),
-          "competitionsPlayed"
-        )}
-
-          ${leaderboard(
-          "Most Top-Ten Finishes",
-          topBy(
-            players,
-            "topTen"
-          ),
-          "topTen"
-        )}
-
-          ${leaderboard(
-          "Most Runner-Up Finishes",
-          topBy(
-            players,
-            "runnerUp"
-          ),
-          "runnerUp"
-        )}
-
-          ${leaderboard(
-          "Lowest Gross",
-          topBy(
-            players,
-            "lowestGross",
-            10,
-            true
-          ),
-          "lowestGross"
-        )}
-
-          ${leaderboard(
-          "Lowest Nett",
-          topBy(
-            players,
-            "lowestNett",
-            10,
-            true
-          ),
-          "lowestNett"
-        )}
-        </section>
-      `;
-
+        render();
       } catch (error) {
         console.error(
           "Statistics failed to load",
@@ -531,18 +1227,32 @@ const scoreRecords =
         );
 
         container.innerHTML = `
-        <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-          <h2 class="serif text-3xl mb-4">
-            Statistics unavailable
-          </h2>
+          <div class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+            <h2 class="serif text-3xl mb-4">
+              Statistics unavailable
+            </h2>
 
-          <p class="text-gray-600">
-            The Museum statistics could not be loaded at the moment.
-          </p>
-        </div>
-      `;
+            <p class="text-gray-600">
+              The Museum statistics could not be loaded at the moment.
+            </p>
+          </div>
+        `;
       }
     }
+
+    document
+      .querySelectorAll(".section-tab")
+      .forEach(button => {
+        button.addEventListener(
+          "click",
+          () => {
+            state.activeSection =
+              button.dataset.section;
+
+            render();
+          }
+        );
+      });
 
     loadStats();
   </script>

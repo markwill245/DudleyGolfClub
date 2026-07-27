@@ -2415,17 +2415,22 @@
   {
     "id": "writtle-grove-and-winter-greensomes-qualifier",
     "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-    "name": "Writtle Grove & Winter Greensomes qualifier",
+    "name": "Writtle Grove & Winter Greensomes Qualifier",
     "section": "Mens",
-    "competitionClass": "Standard",
+    "competitionClass": "Board",
     "format": "Pairs",
     "teamSize": 2,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "Board Competition",
+    "competitionName": "Writtle Grove & Winter Greensomes Qualifier",
+    "competitionFormat": "Pairs",
+    "active": true,
+    "displayInArchive": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "writtle-grove-winter-greensomes-qualifier",
