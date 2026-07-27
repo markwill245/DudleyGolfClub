@@ -1,50 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿const fs = require("fs");
 
-<head>
-  <meta charset="UTF-8">
-  <title>Order of Merit | Dudley Golf Club</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
-  <style>
-    body {
-      font-family: Outfit, sans-serif;
-      background: #F9F7F2;
-      color: #132419
-    }
+const file = "./order-of-merit.html";
+const backup = "./order-of-merit.before-museum-json.html";
 
-    .serif {
-      font-family: "Cormorant Garamond", serif
-    }
-  </style>
-</head>
+if (!fs.existsSync(file)) {
+  throw new Error("order-of-merit.html was not found.");
+}
 
-<body>
+let html = fs.readFileSync(file, "utf8");
 
-  <header class="bg-[#132419] text-white px-6 py-5">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <a href="digital-museum.html"
-        class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
-        ← Back to Museum
-      </a>
+if (!fs.existsSync(backup)) {
+  fs.copyFileSync(file, backup);
+  console.log("Backup created:", backup);
+}
 
-    </div>
-  </header>
+const oldMain = `  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="oom">Loading Order of Merit...</div>
+  </main>`;
 
-  <section class="bg-[#132419] text-white px-6 py-20">
-    <div class="max-w-7xl mx-auto">
-      <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">Digital Museum</p>
-      <h1 class="serif text-6xl md:text-8xl leading-none mb-6">Order of Merit</h1>
-      <p class="max-w-3xl text-white/70 text-lg">
-        Separate Men's and Seniors leaderboards generated from verified Museum competition results and their approved scoring systems.
-      </p>
-    </div>
-  </section>
-
-  <main class="max-w-7xl mx-auto px-6 py-16">
+const newMain = `  <main class="max-w-7xl mx-auto px-6 py-16">
     <div class="flex flex-wrap gap-3 mb-10">
       <button
         type="button"
@@ -62,9 +36,32 @@
     </div>
 
     <div id="oom">Loading Order of Merit...</div>
-  </main>
+  </main>`;
 
-  <script>
+if (!html.includes("class=\"oom-button")) {
+  const mainPattern =
+    /<main\s+class=["']max-w-7xl mx-auto px-6 py-16["']>[\s\S]*?<\/main>/;
+
+  if (!mainPattern.test(html)) {
+    throw new Error("The Order of Merit main section was not found.");
+  }
+
+  html = html.replace(mainPattern, newMain.trim());
+}
+
+html = html.replace(
+  "A live leaderboard built from Player Intelligence and recorded competition results.",
+  "Separate Men's and Seniors leaderboards generated from verified Museum competition results and their approved scoring systems."
+);
+
+const scriptStart = html.indexOf("  <script>");
+const scriptEnd = html.indexOf("  </script>", scriptStart);
+
+if (scriptStart === -1 || scriptEnd === -1) {
+  throw new Error("The existing page script was not found.");
+}
+
+const replacementScript = `  <script>
     const state = {
       activeSection: "mens",
       mens: null,
@@ -204,14 +201,14 @@
       const sectionName =
         section === "seniors" ? "Seniors" : "Men's";
 
-      document.getElementById("oom").innerHTML = `
+      document.getElementById("oom").innerHTML = \`
         <section class="grid md:grid-cols-4 gap-6 mb-14">
           <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
             <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
               Current Season
             </p>
             <p class="serif text-3xl">
-              ${escapeHtml(season.season || "—")}
+              \${escapeHtml(season.season || "—")}
             </p>
           </div>
 
@@ -220,7 +217,7 @@
               Current Leader
             </p>
             <p class="serif text-3xl">
-              ${leader ? escapeHtml(leader.player) : "—"}
+              \${leader ? escapeHtml(leader.player) : "—"}
             </p>
           </div>
 
@@ -229,7 +226,7 @@
               Players Ranked
             </p>
             <p class="serif text-5xl">
-              ${players.length}
+              \${players.length}
             </p>
           </div>
 
@@ -238,7 +235,7 @@
               Wins Recorded
             </p>
             <p class="serif text-5xl">
-              ${totalWins}
+              \${totalWins}
             </p>
           </div>
         </section>
@@ -246,7 +243,7 @@
         <section class="bg-white border border-[#C5A367]/30 rounded shadow overflow-hidden">
           <div class="p-8 border-b border-[#C5A367]/20">
             <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">
-              ${sectionName} Leaderboard
+              \${sectionName} Leaderboard
             </p>
 
             <h2 class="serif text-5xl">
@@ -268,46 +265,46 @@
               </thead>
 
               <tbody>
-                ${
+                \${
                   players.length
-                    ? players.map(player => `
+                    ? players.map(player => \`
                       <tr class="border-b border-gray-200 hover:bg-[#F9F7F2] transition">
                         <td class="p-4 serif text-3xl">
-                          ${medal(player.rank)}
+                          \${medal(player.rank)}
                         </td>
 
                         <td class="p-4">
                           <a
-                            href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+                            href="player-profile.html?player=\${encodeURIComponent(player.slug)}"
                             class="font-semibold hover:text-[#C5A367] transition">
-                            ${escapeHtml(player.player)}
+                            \${escapeHtml(player.player)}
                           </a>
                         </td>
 
                         <td class="p-4 font-bold">
-                          ${player.points}
+                          \${player.points}
                         </td>
 
                         <td class="p-4">
-                          ${player.competitionsPlayed}
+                          \${player.competitionsPlayed}
                         </td>
 
                         <td class="p-4">
-                          ${player.wins}
+                          \${player.wins}
                         </td>
 
                         <td class="p-4">
-                          ${player.top10}
+                          \${player.top10}
                         </td>
                       </tr>
-                    `).join("")
-                    : `
+                    \`).join("")
+                    : \`
                       <tr>
                         <td colspan="6" class="p-10 text-center text-gray-500">
                           No qualifying results are currently recorded for this season.
                         </td>
                       </tr>
-                    `
+                    \`
                 }
               </tbody>
             </table>
@@ -320,18 +317,18 @@
           </p>
 
           <h2 class="serif text-4xl mb-4">
-            ${sectionName} Order of Merit
+            \${sectionName} Order of Merit
           </h2>
 
           <p class="text-white/75 max-w-4xl">
-            ${
+            \${
               section === "seniors"
                 ? "The Seniors leaderboard uses the approved Seniors scoring system. Qualifying medals, cups and trophies award one winner point, while Harrington competitions award two winner points."
                 : "The Men's leaderboard uses the approved positional Order of Merit scoring system for qualifying competitions."
             }
           </p>
         </section>
-      `;
+      \`;
 
       updateButtons();
     }
@@ -374,7 +371,7 @@
           error
         );
 
-        document.getElementById("oom").innerHTML = `
+        document.getElementById("oom").innerHTML = \`
           <div class="bg-white border border-red-200 p-8 rounded shadow">
             <h2 class="serif text-3xl mb-4">
               Order of Merit unavailable
@@ -384,7 +381,7 @@
               The Museum Order of Merit files could not be loaded.
             </p>
           </div>
-        `;
+        \`;
       }
     }
 
@@ -397,24 +394,16 @@
       });
 
     loadOrderOfMerit();
-  </script>
-  <footer class="bg-[#07140d] text-white py-10 px-6">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="serif text-2xl">Dudley Golf Club Digital Museum</p>
+  </script>`;
 
-      <div class="flex flex-col md:flex-row gap-6 text-center">
-        <a href="digital-museum.html"
-          class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
-          Museum Home →
-        </a>
+html =
+  html.slice(0, scriptStart) +
+  replacementScript +
+  html.slice(scriptEnd + "  </script>".length);
 
-        <a href="index.html" class="text-[#C5A367] uppercase tracking-[0.25em] text-xs hover:text-white transition">
-          Club Website →
-        </a>
-      </div>
-    </div>
-  </footer>
+fs.writeFileSync(file, html, "utf8");
 
-</body>
+console.log("Order of Merit page upgraded.");
+console.log("Old Sanity query removed.");
+console.log("Men's and Seniors views added.");
 
-</html>

@@ -406,8 +406,18 @@
                         (item.name || "")
                             .toLowerCase()
                             .includes(term) ||
-                        String(item.year || "")
-                            .includes(term)
+                        String(item.yearLabel || item.year || "")
+                            .toLowerCase()
+                            .includes(term) ||
+                        (
+                            /^\d{4}$/.test(term) &&
+                            Number(term) >= Number(
+                                item.startYear ?? item.year
+                            ) &&
+                            Number(term) <= Number(
+                                item.endYear ?? item.year
+                            )
+                        )
                     );
 
                 renderTimeline(filtered);
