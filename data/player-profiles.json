@@ -204,100 +204,6 @@
     ]
   },
   {
-    "player": "A. Butler",
-    "section": "Mens",
-    "primarySection": "Mens",
-    "playedSections": [
-      "Mens"
-    ],
-    "status": "Active",
-    "career": {
-      "firstYear": 1993,
-      "latestYear": 1993,
-      "competitionsPlayed": 1,
-      "wins": 1,
-      "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 1
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 1,
-        "wins": 1,
-        "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
-      },
-      "seniors": {
-        "competitionsPlayed": 0,
-        "wins": 0,
-        "runnerUp": 0,
-        "top3": 0,
-        "top5": 0,
-        "top10": 0
-      }
-    },
-    "favouriteCompetition": "Prosser Lytham Trophy",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 1,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 46,
-      "status": "Building Record"
-    },
-    "bestSeason": {
-      "year": 1993,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "1993-1993",
-    "writtenSummary": "A. Butler has played 1 recorded competition in the Digital Museum. A. Butler has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. A. Butler's strongest competition so far is Prosser Lytham Trophy. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "A. Butler has played 1 recorded competition, with 1 win, 0 runner-up finishes and 1 top-three finish.",
-    "firstWin": {
-      "year": 1993,
-      "competition": "Prosser Lytham Trophy"
-    },
-    "latestWin": {
-      "year": 1993,
-      "competition": "Prosser Lytham Trophy"
-    },
-    "careerTimeline": [
-      {
-        "year": 1993,
-        "competition": "Prosser Lytham Trophy",
-        "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "1 career win",
-      "1 top-three finish",
-      "Most successful in Prosser Lytham Trophy"
-    ]
-  },
-  {
     "player": "A. Chandler",
     "section": "Mens",
     "primarySection": "Mens",
@@ -2630,7 +2536,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -3360,9 +3267,10 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
@@ -3842,7 +3750,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -4912,7 +4821,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -5826,7 +5736,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -6770,6 +6681,76 @@
       "16 top-three finishes",
       "Most successful in 3 Ball reverse cha-cha"
     ]
+  },
+  {
+    "player": "Alan Butler",
+    "section": "Mens",
+    "primarySection": "Mens",
+    "playedSections": [
+      "Mens"
+    ],
+    "status": "Active",
+    "career": {
+      "firstYear": null,
+      "latestYear": null,
+      "competitionsPlayed": 0,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 0,
+      "top10": 0
+    },
+    "sectionCareer": {
+      "mens": {
+        "competitionsPlayed": 0,
+        "wins": 0,
+        "runnerUp": 0,
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
+      },
+      "seniors": {
+        "competitionsPlayed": 0,
+        "wins": 0,
+        "runnerUp": 0,
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
+      }
+    },
+    "favouriteCompetition": null,
+    "favouriteCompetitionWins": 0,
+    "majorWins": 0,
+    "medalWins": 0,
+    "matchplayWins": 0,
+    "divisionHonours": {
+      "wins": {
+        "division1": 0,
+        "division2": 0,
+        "division3": 0
+      },
+      "top3": {
+        "division1": 0,
+        "division2": 0,
+        "division3": 0
+      },
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
+    },
+    "recordsHeld": [],
+    "hallOfFameReadiness": {
+      "score": 0,
+      "status": "Building Record"
+    },
+    "bestSeason": null,
+    "careerEra": null,
+    "writtenSummary": "Alan Butler does not yet have any recorded competition results in the Digital Museum.",
+    "profileSummary": "Alan Butler has played 0 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "firstWin": null,
+    "latestWin": null,
+    "careerTimeline": [],
+    "highlights": []
   },
   {
     "player": "Alan Gatland",
@@ -7802,7 +7783,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -9141,7 +9123,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -9243,7 +9226,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -10137,7 +10121,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -10558,7 +10543,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2022,
-      "competitionsPlayed": 7,
+      "competitionsPlayed": 6,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -10567,7 +10552,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 3,
+        "competitionsPlayed": 2,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -10612,11 +10597,11 @@
       "year": 2022,
       "wins": 0,
       "top3": 0,
-      "played": 5
+      "played": 4
     },
     "careerEra": "2021-2022",
-    "writtenSummary": "Anthony Patrick has played 7 recorded competitions in the Digital Museum. Anthony Patrick is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Anthony Patrick has played 7 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Anthony Patrick has played 6 recorded competitions in the Digital Museum. Anthony Patrick is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Anthony Patrick has played 6 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -10635,14 +10620,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 24,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -10684,7 +10661,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -11722,7 +11700,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -12065,100 +12044,6 @@
       "2 career wins",
       "2 top-three finishes",
       "Most successful in Writtle Groves Cup"
-    ]
-  },
-  {
-    "player": "B. Charlton",
-    "section": "Mens",
-    "primarySection": "Mens",
-    "playedSections": [
-      "Mens"
-    ],
-    "status": "Historical",
-    "career": {
-      "firstYear": 1982,
-      "latestYear": 1982,
-      "competitionsPlayed": 1,
-      "wins": 1,
-      "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 1
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 1,
-        "wins": 1,
-        "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
-      },
-      "seniors": {
-        "competitionsPlayed": 0,
-        "wins": 0,
-        "runnerUp": 0,
-        "top3": 0,
-        "top5": 0,
-        "top10": 0
-      }
-    },
-    "favouriteCompetition": "Hooper Cup",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 1,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 46,
-      "status": "Building Record"
-    },
-    "bestSeason": {
-      "year": 1982,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "1982-1982",
-    "writtenSummary": "B. Charlton has played 1 recorded competition in the Digital Museum. B. Charlton has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. B. Charlton's strongest competition so far is Hooper Cup. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "B. Charlton has played 1 recorded competition, with 1 win, 0 runner-up finishes and 1 top-three finish.",
-    "firstWin": {
-      "year": 1982,
-      "competition": "Hooper Cup"
-    },
-    "latestWin": {
-      "year": 1982,
-      "competition": "Hooper Cup"
-    },
-    "careerTimeline": [
-      {
-        "year": 1982,
-        "competition": "Hooper Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "1 career win",
-      "1 top-three finish",
-      "Most successful in Hooper Cup"
     ]
   },
   {
@@ -13644,6 +13529,76 @@
     ]
   },
   {
+    "player": "Barry Charlton",
+    "section": "Mens",
+    "primarySection": "Mens",
+    "playedSections": [
+      "Mens"
+    ],
+    "status": "Historical",
+    "career": {
+      "firstYear": null,
+      "latestYear": null,
+      "competitionsPlayed": 0,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 0,
+      "top10": 0
+    },
+    "sectionCareer": {
+      "mens": {
+        "competitionsPlayed": 0,
+        "wins": 0,
+        "runnerUp": 0,
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
+      },
+      "seniors": {
+        "competitionsPlayed": 0,
+        "wins": 0,
+        "runnerUp": 0,
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
+      }
+    },
+    "favouriteCompetition": null,
+    "favouriteCompetitionWins": 0,
+    "majorWins": 0,
+    "medalWins": 0,
+    "matchplayWins": 0,
+    "divisionHonours": {
+      "wins": {
+        "division1": 0,
+        "division2": 0,
+        "division3": 0
+      },
+      "top3": {
+        "division1": 0,
+        "division2": 0,
+        "division3": 0
+      },
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
+    },
+    "recordsHeld": [],
+    "hallOfFameReadiness": {
+      "score": 0,
+      "status": "Building Record"
+    },
+    "bestSeason": null,
+    "careerEra": null,
+    "writtenSummary": "Barry Charlton does not yet have any recorded competition results in the Digital Museum.",
+    "profileSummary": "Barry Charlton has played 0 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "firstWin": null,
+    "latestWin": null,
+    "careerTimeline": [],
+    "highlights": []
+  },
+  {
     "player": "Barry Thomas Lawton",
     "section": "Seniors",
     "primarySection": "Seniors",
@@ -13655,7 +13610,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 60,
+      "competitionsPlayed": 59,
       "wins": 2,
       "runnerUp": 2,
       "top3": 5,
@@ -13664,7 +13619,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 11,
+        "competitionsPlayed": 10,
         "wins": 2,
         "runnerUp": 0,
         "top3": 2,
@@ -13709,11 +13664,11 @@
       "year": 2022,
       "wins": 2,
       "top3": 3,
-      "played": 14
+      "played": 13
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Barry Thomas Lawton has played 60 recorded competitions in the Digital Museum. Barry Thomas Lawton has recorded 2 wins, with 2 runner-up finishes and 5 top-three finishes. Barry Thomas Lawton's strongest competition so far is August Sunday Stableford. Current Hall of Fame status: Emerging Candidate with a score of 74.",
-    "profileSummary": "Barry Thomas Lawton has played 60 recorded competitions, with 2 wins, 2 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Barry Thomas Lawton has played 59 recorded competitions in the Digital Museum. Barry Thomas Lawton has recorded 2 wins, with 2 runner-up finishes and 5 top-three finishes. Barry Thomas Lawton's strongest competition so far is August Sunday Stableford. Current Hall of Fame status: Emerging Candidate with a score of 74.",
+    "profileSummary": "Barry Thomas Lawton has played 59 recorded competitions, with 2 wins, 2 runner-up finishes and 5 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "August Sunday Stableford"
@@ -13762,14 +13717,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 26,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -14887,7 +14834,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -15233,7 +15181,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -15527,7 +15476,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -16258,7 +16208,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 26,
+      "competitionsPlayed": 25,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -16267,7 +16217,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 5,
+        "competitionsPlayed": 4,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -16315,8 +16265,8 @@
       "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Brian Douglas Perry has played 26 recorded competitions in the Digital Museum. Brian Douglas Perry has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Brian Douglas Perry's strongest competition so far is Seniors Thyssen Trophy. Current Hall of Fame status: Building Record with a score of 21.",
-    "profileSummary": "Brian Douglas Perry has played 26 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Brian Douglas Perry has played 25 recorded competitions in the Digital Museum. Brian Douglas Perry has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Brian Douglas Perry's strongest competition so far is Seniors Thyssen Trophy. Current Hall of Fame status: Building Record with a score of 21.",
+    "profileSummary": "Brian Douglas Perry has played 25 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors Thyssen Trophy"
@@ -16365,14 +16315,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 33,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -16553,21 +16495,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 44,
+      "competitionsPlayed": 43,
       "wins": 0,
       "runnerUp": 3,
       "top3": 5,
       "top5": 8,
-      "top10": 22
+      "top10": 21
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 8,
+        "competitionsPlayed": 7,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
         "top5": 0,
-        "top10": 5
+        "top10": 4
       },
       "seniors": {
         "competitionsPlayed": 36,
@@ -16610,8 +16552,8 @@
       "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Bruce Antony Mansell has played 44 recorded competitions in the Digital Museum. Bruce Antony Mansell is still waiting for a first recorded win, but has 5 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 54.",
-    "profileSummary": "Bruce Antony Mansell has played 44 recorded competitions, with 0 wins, 3 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Bruce Antony Mansell has played 43 recorded competitions in the Digital Museum. Bruce Antony Mansell is still waiting for a first recorded win, but has 5 top-three finishes. Current Hall of Fame status: Emerging Candidate with a score of 54.",
+    "profileSummary": "Bruce Antony Mansell has played 43 recorded competitions, with 0 wins, 3 runner-up finishes and 5 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -16646,14 +16588,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -17079,7 +17013,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Active",
     "career": {
@@ -17299,7 +17234,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -17386,140 +17322,6 @@
       "1 career win",
       "1 top-three finish",
       "Most successful in Boscawen Cup"
-    ]
-  },
-  {
-    "player": "C. Cheese",
-    "section": "Mens",
-    "primarySection": "Mens",
-    "playedSections": [
-      "Mens"
-    ],
-    "status": "Historical",
-    "career": {
-      "firstYear": 1980,
-      "latestYear": 2004,
-      "competitionsPlayed": 6,
-      "wins": 6,
-      "runnerUp": 0,
-      "top3": 6,
-      "top5": 6,
-      "top10": 6
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 5,
-        "wins": 5,
-        "runnerUp": 0,
-        "top3": 5,
-        "top5": 5,
-        "top10": 5
-      },
-      "seniors": {
-        "competitionsPlayed": 1,
-        "wins": 1,
-        "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
-      }
-    },
-    "favouriteCompetition": "Bassano Cup",
-    "favouriteCompetitionWins": 2,
-    "majorWins": 6,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 276,
-      "status": "Hall of Fame Level"
-    },
-    "bestSeason": {
-      "year": 1980,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "1980-2004",
-    "writtenSummary": "C. Cheese has played 6 recorded competitions in the Digital Museum. C. Cheese has recorded 6 wins, with 0 runner-up finishes and 6 top-three finishes. C. Cheese's strongest competition so far is Bassano Cup. Current Hall of Fame status: Hall of Fame Level with a score of 276.",
-    "profileSummary": "C. Cheese has played 6 recorded competitions, with 6 wins, 0 runner-up finishes and 6 top-three finishes.",
-    "firstWin": {
-      "year": 1980,
-      "competition": "Bassano Cup"
-    },
-    "latestWin": {
-      "year": 2004,
-      "competition": "Summer Foursomes"
-    },
-    "careerTimeline": [
-      {
-        "year": 1980,
-        "competition": "Bassano Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2001,
-        "competition": "Bassano Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 1989,
-        "competition": "Coronation Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2003,
-        "competition": "Grandads Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2004,
-        "competition": "Summer Foursomes",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 1997,
-        "competition": "Writtle Groves Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "6 career wins",
-      "6 top-three finishes",
-      "Most successful in Bassano Cup"
     ]
   },
   {
@@ -17715,7 +17517,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -18891,7 +18694,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -20021,7 +19825,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -20411,7 +20216,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -21165,6 +20971,77 @@
     ]
   },
   {
+    "player": "Charlie Cheese",
+    "section": "Mens",
+    "primarySection": "Mens",
+    "playedSections": [
+      "Mens",
+      "Seniors"
+    ],
+    "status": "Historical",
+    "career": {
+      "firstYear": null,
+      "latestYear": null,
+      "competitionsPlayed": 0,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 0,
+      "top10": 0
+    },
+    "sectionCareer": {
+      "mens": {
+        "competitionsPlayed": 0,
+        "wins": 0,
+        "runnerUp": 0,
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
+      },
+      "seniors": {
+        "competitionsPlayed": 0,
+        "wins": 0,
+        "runnerUp": 0,
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
+      }
+    },
+    "favouriteCompetition": null,
+    "favouriteCompetitionWins": 0,
+    "majorWins": 0,
+    "medalWins": 0,
+    "matchplayWins": 0,
+    "divisionHonours": {
+      "wins": {
+        "division1": 0,
+        "division2": 0,
+        "division3": 0
+      },
+      "top3": {
+        "division1": 0,
+        "division2": 0,
+        "division3": 0
+      },
+      "totalWins": 0,
+      "totalTop3": 0,
+      "history": []
+    },
+    "recordsHeld": [],
+    "hallOfFameReadiness": {
+      "score": 0,
+      "status": "Building Record"
+    },
+    "bestSeason": null,
+    "careerEra": null,
+    "writtenSummary": "Charlie Cheese does not yet have any recorded competition results in the Digital Museum.",
+    "profileSummary": "Charlie Cheese has played 0 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "firstWin": null,
+    "latestWin": null,
+    "careerTimeline": [],
+    "highlights": []
+  },
+  {
     "player": "Chay Cohen",
     "section": "Mens",
     "primarySection": "Mens",
@@ -21467,108 +21344,6 @@
       }
     ],
     "highlights": []
-  },
-  {
-    "player": "Chris Vanes",
-    "section": "Mens",
-    "primarySection": "Mens",
-    "playedSections": [
-      "Mens"
-    ],
-    "status": "Historical",
-    "career": {
-      "firstYear": 2021,
-      "latestYear": 2025,
-      "competitionsPlayed": 2,
-      "wins": 2,
-      "runnerUp": 0,
-      "top3": 2,
-      "top5": 2,
-      "top10": 2
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 2,
-        "wins": 2,
-        "runnerUp": 0,
-        "top3": 2,
-        "top5": 2,
-        "top10": 2
-      },
-      "seniors": {
-        "competitionsPlayed": 0,
-        "wins": 0,
-        "runnerUp": 0,
-        "top3": 0,
-        "top5": 0,
-        "top10": 0
-      }
-    },
-    "favouriteCompetition": "Club Championship Challenge Shield",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 2,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 92,
-      "status": "Strong Candidate"
-    },
-    "bestSeason": {
-      "year": 2021,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "2021-2025",
-    "writtenSummary": "Chris Vanes has played 2 recorded competitions in the Digital Museum. Chris Vanes has recorded 2 wins, with 0 runner-up finishes and 2 top-three finishes. Chris Vanes's strongest competition so far is Club Championship Challenge Shield. Current Hall of Fame status: Strong Candidate with a score of 92.",
-    "profileSummary": "Chris Vanes has played 2 recorded competitions, with 2 wins, 0 runner-up finishes and 2 top-three finishes.",
-    "firstWin": {
-      "year": 2021,
-      "competition": "Club Championship Challenge Shield"
-    },
-    "latestWin": {
-      "year": 2025,
-      "competition": "Queen Elizabeth II Memorial Cup"
-    },
-    "careerTimeline": [
-      {
-        "year": 2021,
-        "competition": "Club Championship Challenge Shield",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Queen Elizabeth II Memorial Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "2 career wins",
-      "2 top-three finishes",
-      "Most successful in Club Championship Challenge Shield"
-    ]
   },
   {
     "player": "Christopher Churchman",
@@ -23310,7 +23085,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -23441,21 +23217,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 58,
+      "competitionsPlayed": 57,
       "wins": 3,
       "runnerUp": 2,
       "top3": 10,
       "top5": 19,
-      "top10": 28
+      "top10": 27
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 7,
+        "competitionsPlayed": 6,
         "wins": 1,
         "runnerUp": 0,
         "top3": 2,
         "top5": 4,
-        "top10": 6
+        "top10": 5
       },
       "seniors": {
         "competitionsPlayed": 51,
@@ -23498,8 +23274,8 @@
       "played": 19
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Clive Atkins has played 58 recorded competitions in the Digital Museum. Clive Atkins has recorded 3 wins, with 2 runner-up finishes and 10 top-three finishes. Clive Atkins's strongest competition so far is Seniors June Medal. Current Hall of Fame status: Hall of Fame Level with a score of 176.",
-    "profileSummary": "Clive Atkins has played 58 recorded competitions, with 3 wins, 2 runner-up finishes and 10 top-three finishes.",
+    "writtenSummary": "Clive Atkins has played 57 recorded competitions in the Digital Museum. Clive Atkins has recorded 3 wins, with 2 runner-up finishes and 10 top-three finishes. Clive Atkins's strongest competition so far is Seniors June Medal. Current Hall of Fame status: Hall of Fame Level with a score of 176.",
+    "profileSummary": "Clive Atkins has played 57 recorded competitions, with 3 wins, 2 runner-up finishes and 10 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "Seniors June Medal"
@@ -23540,14 +23316,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -23992,7 +23760,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2022,
-      "competitionsPlayed": 11,
+      "competitionsPlayed": 10,
       "wins": 1,
       "runnerUp": 1,
       "top3": 2,
@@ -24001,7 +23769,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 6,
+        "competitionsPlayed": 5,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -24046,11 +23814,11 @@
       "year": 2022,
       "wins": 1,
       "top3": 2,
-      "played": 8
+      "played": 7
     },
     "careerEra": "2021-2022",
-    "writtenSummary": "Clive Goodall has played 11 recorded competitions in the Digital Museum. Clive Goodall has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Clive Goodall's strongest competition so far is Seniors April Medal. Current Hall of Fame status: Building Record with a score of 47.",
-    "profileSummary": "Clive Goodall has played 11 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Clive Goodall has played 10 recorded competitions in the Digital Museum. Clive Goodall has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Clive Goodall's strongest competition so far is Seniors April Medal. Current Hall of Fame status: Building Record with a score of 47.",
+    "profileSummary": "Clive Goodall has played 10 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Seniors April Medal"
@@ -24099,14 +23867,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 35,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -24160,7 +23920,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -26084,7 +25845,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -26878,7 +26640,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -27388,7 +27151,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -27874,7 +27638,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -29414,100 +29179,6 @@
     ]
   },
   {
-    "player": "D. Jones",
-    "section": "Mens",
-    "primarySection": "Mens",
-    "playedSections": [
-      "Mens"
-    ],
-    "status": "Historical",
-    "career": {
-      "firstYear": 2021,
-      "latestYear": 2021,
-      "competitionsPlayed": 1,
-      "wins": 1,
-      "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 1
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 1,
-        "wins": 1,
-        "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
-      },
-      "seniors": {
-        "competitionsPlayed": 0,
-        "wins": 0,
-        "runnerUp": 0,
-        "top3": 0,
-        "top5": 0,
-        "top10": 0
-      }
-    },
-    "favouriteCompetition": "James Grainger Trophy",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 1,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 46,
-      "status": "Building Record"
-    },
-    "bestSeason": {
-      "year": 2021,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "2021-2021",
-    "writtenSummary": "D. Jones has played 1 recorded competition in the Digital Museum. D. Jones has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. D. Jones's strongest competition so far is James Grainger Trophy. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "D. Jones has played 1 recorded competition, with 1 win, 0 runner-up finishes and 1 top-three finish.",
-    "firstWin": {
-      "year": 2021,
-      "competition": "James Grainger Trophy"
-    },
-    "latestWin": {
-      "year": 2021,
-      "competition": "James Grainger Trophy"
-    },
-    "careerTimeline": [
-      {
-        "year": 2021,
-        "competition": "James Grainger Trophy",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "1 career win",
-      "1 top-three finish",
-      "Most successful in James Grainger Trophy"
-    ]
-  },
-  {
     "player": "D. King Snr.",
     "section": "Mens",
     "primarySection": "Mens",
@@ -29998,7 +29669,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -30750,7 +30422,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -30917,7 +30590,7 @@
       "Mens",
       "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2020,
       "latestYear": 2026,
@@ -33896,7 +33569,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -35142,7 +34816,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -36164,7 +35839,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -36738,7 +36414,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -37946,7 +37623,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -38838,7 +38516,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -39998,7 +39677,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 79,
+      "competitionsPlayed": 78,
       "wins": 2,
       "runnerUp": 7,
       "top3": 12,
@@ -40007,7 +39686,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 57,
+        "competitionsPlayed": 56,
         "wins": 0,
         "runnerUp": 2,
         "top3": 3,
@@ -40055,8 +39734,8 @@
       "played": 31
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Eric Edwards has played 79 recorded competitions in the Digital Museum. Eric Edwards has recorded 2 wins, with 7 runner-up finishes and 12 top-three finishes. Eric Edwards's strongest competition so far is Seniors Winter League 3. Current Hall of Fame status: Hall of Fame Level with a score of 179.",
-    "profileSummary": "Eric Edwards has played 79 recorded competitions, with 2 wins, 7 runner-up finishes and 12 top-three finishes.",
+    "writtenSummary": "Eric Edwards has played 78 recorded competitions in the Digital Museum. Eric Edwards has recorded 2 wins, with 7 runner-up finishes and 12 top-three finishes. Eric Edwards's strongest competition so far is Seniors Winter League 3. Current Hall of Fame status: Hall of Fame Level with a score of 179.",
+    "profileSummary": "Eric Edwards has played 78 recorded competitions, with 2 wins, 7 runner-up finishes and 12 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors Winter League 3"
@@ -40222,14 +39901,6 @@
         "year": 2022,
         "competition": "Bassano Cup",
         "position": 56,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 19,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
@@ -41202,7 +40873,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -41704,7 +41376,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -42293,108 +41966,6 @@
       "1 career win",
       "1 top-three finish",
       "Most successful in Cunningham Cup"
-    ]
-  },
-  {
-    "player": "G. Morgan",
-    "section": "Seniors",
-    "primarySection": "Seniors",
-    "playedSections": [
-      "Seniors"
-    ],
-    "status": "Historical",
-    "career": {
-      "firstYear": 2024,
-      "latestYear": 2024,
-      "competitionsPlayed": 2,
-      "wins": 2,
-      "runnerUp": 0,
-      "top3": 2,
-      "top5": 2,
-      "top10": 2
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 2,
-        "wins": 2,
-        "runnerUp": 0,
-        "top3": 2,
-        "top5": 2,
-        "top10": 2
-      },
-      "seniors": {
-        "competitionsPlayed": 0,
-        "wins": 0,
-        "runnerUp": 0,
-        "top3": 0,
-        "top5": 0,
-        "top10": 0
-      }
-    },
-    "favouriteCompetition": "Boscawen Cup",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 2,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 92,
-      "status": "Strong Candidate"
-    },
-    "bestSeason": {
-      "year": 2024,
-      "wins": 2,
-      "top3": 2,
-      "played": 2
-    },
-    "careerEra": "2024-2024",
-    "writtenSummary": "G. Morgan has played 2 recorded competitions in the Digital Museum. G. Morgan has recorded 2 wins, with 0 runner-up finishes and 2 top-three finishes. G. Morgan's strongest competition so far is Boscawen Cup. Current Hall of Fame status: Strong Candidate with a score of 92.",
-    "profileSummary": "G. Morgan has played 2 recorded competitions, with 2 wins, 0 runner-up finishes and 2 top-three finishes.",
-    "firstWin": {
-      "year": 2024,
-      "competition": "Boscawen Cup"
-    },
-    "latestWin": {
-      "year": 2024,
-      "competition": "Claughton Cup"
-    },
-    "careerTimeline": [
-      {
-        "year": 2024,
-        "competition": "Boscawen Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Claughton Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "2 career wins",
-      "2 top-three finishes",
-      "Most successful in Boscawen Cup"
     ]
   },
   {
@@ -43618,7 +43189,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -45262,7 +44834,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -46368,7 +45941,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -46518,9 +46092,10 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 1987,
       "latestYear": 2024,
@@ -47505,21 +47080,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 31,
+      "competitionsPlayed": 30,
       "wins": 3,
       "runnerUp": 0,
       "top3": 3,
-      "top5": 6,
-      "top10": 11
+      "top5": 5,
+      "top10": 10
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 9,
+        "competitionsPlayed": 8,
         "wins": 1,
         "runnerUp": 0,
         "top3": 1,
-        "top5": 3,
-        "top10": 4
+        "top5": 2,
+        "top10": 3
       },
       "seniors": {
         "competitionsPlayed": 22,
@@ -47552,18 +47127,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 102,
+      "score": 100,
       "status": "Strong Candidate"
     },
     "bestSeason": {
-      "year": 2022,
+      "year": 2025,
       "wins": 1,
       "top3": 1,
       "played": 11
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Geoffrey Alan Ford has played 31 recorded competitions in the Digital Museum. Geoffrey Alan Ford has recorded 3 wins, with 0 runner-up finishes and 3 top-three finishes. Geoffrey Alan Ford's strongest competition so far is Centenary Trophy. Current Hall of Fame status: Strong Candidate with a score of 102.",
-    "profileSummary": "Geoffrey Alan Ford has played 31 recorded competitions, with 3 wins, 0 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Geoffrey Alan Ford has played 30 recorded competitions in the Digital Museum. Geoffrey Alan Ford has recorded 3 wins, with 0 runner-up finishes and 3 top-three finishes. Geoffrey Alan Ford's strongest competition so far is Centenary Trophy. Current Hall of Fame status: Strong Candidate with a score of 100.",
+    "profileSummary": "Geoffrey Alan Ford has played 30 recorded competitions, with 3 wins, 0 runner-up finishes and 3 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "Centenary Trophy"
@@ -47612,14 +47187,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -48163,7 +47730,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -49528,7 +49096,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 46,
+      "competitionsPlayed": 45,
       "wins": 1,
       "runnerUp": 1,
       "top3": 2,
@@ -49537,7 +49105,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 8,
+        "competitionsPlayed": 7,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -49582,11 +49150,11 @@
       "year": 2022,
       "wins": 1,
       "top3": 1,
-      "played": 10
+      "played": 9
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Gordon Hampstead has played 46 recorded competitions in the Digital Museum. Gordon Hampstead has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Gordon Hampstead's strongest competition so far is Seniors August Medal. Current Hall of Fame status: Building Record with a score of 45.",
-    "profileSummary": "Gordon Hampstead has played 46 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
+    "writtenSummary": "Gordon Hampstead has played 45 recorded competitions in the Digital Museum. Gordon Hampstead has recorded 1 win, with 1 runner-up finish and 2 top-three finishes. Gordon Hampstead's strongest competition so far is Seniors August Medal. Current Hall of Fame status: Building Record with a score of 45.",
+    "profileSummary": "Gordon Hampstead has played 45 recorded competitions, with 1 win, 1 runner-up finish and 2 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Seniors August Medal"
@@ -49635,14 +49203,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 28,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -49976,7 +49536,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -50334,7 +49895,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -50809,9 +50371,10 @@
   },
   {
     "player": "Graham Morgan",
-    "section": "Mens",
-    "primarySection": "Mens",
+    "section": "Seniors",
+    "primarySection": "Seniors",
     "playedSections": [
+      "Seniors",
       "Mens"
     ],
     "status": "Active",
@@ -51426,7 +50989,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -52291,7 +51855,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 31,
+      "competitionsPlayed": 30,
       "wins": 1,
       "runnerUp": 0,
       "top3": 1,
@@ -52300,7 +51864,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 7,
+        "competitionsPlayed": 6,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -52348,8 +51912,8 @@
       "played": 9
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "Harry Clarke has played 31 recorded competitions in the Digital Museum. Harry Clarke has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Harry Clarke's strongest competition so far is Seniors Winter League 1. Current Hall of Fame status: Building Record with a score of 23.",
-    "profileSummary": "Harry Clarke has played 31 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
+    "writtenSummary": "Harry Clarke has played 30 recorded competitions in the Digital Museum. Harry Clarke has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. Harry Clarke's strongest competition so far is Seniors Winter League 1. Current Hall of Fame status: Building Record with a score of 23.",
+    "profileSummary": "Harry Clarke has played 30 recorded competitions, with 1 win, 0 runner-up finishes and 1 top-three finish.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors Winter League 1"
@@ -52398,14 +51962,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 27,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -53780,7 +53336,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -54986,7 +54543,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -55410,21 +54968,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 53,
+      "competitionsPlayed": 52,
       "wins": 1,
-      "runnerUp": 2,
-      "top3": 5,
-      "top5": 10,
-      "top10": 20
+      "runnerUp": 1,
+      "top3": 4,
+      "top5": 9,
+      "top10": 19
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 8,
+        "competitionsPlayed": 7,
         "wins": 0,
-        "runnerUp": 1,
-        "top3": 2,
-        "top5": 3,
-        "top10": 3
+        "runnerUp": 0,
+        "top3": 1,
+        "top5": 2,
+        "top10": 2
       },
       "seniors": {
         "competitionsPlayed": 45,
@@ -55457,7 +55015,7 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 75,
+      "score": 63,
       "status": "Emerging Candidate"
     },
     "bestSeason": {
@@ -55467,8 +55025,8 @@
       "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Ivan James Cooper has played 53 recorded competitions in the Digital Museum. Ivan James Cooper has recorded 1 win, with 2 runner-up finishes and 5 top-three finishes. Ivan James Cooper's strongest competition so far is Seniors July Medal. Current Hall of Fame status: Emerging Candidate with a score of 75.",
-    "profileSummary": "Ivan James Cooper has played 53 recorded competitions, with 1 win, 2 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Ivan James Cooper has played 52 recorded competitions in the Digital Museum. Ivan James Cooper has recorded 1 win, with 1 runner-up finish and 4 top-three finishes. Ivan James Cooper's strongest competition so far is Seniors July Medal. Current Hall of Fame status: Emerging Candidate with a score of 63.",
+    "profileSummary": "Ivan James Cooper has played 52 recorded competitions, with 1 win, 1 runner-up finish and 4 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors July Medal"
@@ -55501,14 +55059,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 2,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -55905,7 +55455,7 @@
     ],
     "highlights": [
       "1 career win",
-      "5 top-three finishes",
+      "4 top-three finishes",
       "Most successful in Seniors July Medal"
     ]
   },
@@ -56690,7 +56240,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -57098,7 +56649,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -58074,23 +57626,23 @@
     ],
     "status": "Historical",
     "career": {
-      "firstYear": 2025,
-      "latestYear": 2025,
-      "competitionsPlayed": 1,
-      "wins": 1,
+      "firstYear": null,
+      "latestYear": null,
+      "competitionsPlayed": 0,
+      "wins": 0,
       "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 1
+      "top3": 0,
+      "top5": 0,
+      "top10": 0
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 1,
-        "wins": 1,
+        "competitionsPlayed": 0,
+        "wins": 0,
         "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
       },
       "seniors": {
         "competitionsPlayed": 0,
@@ -58101,9 +57653,9 @@
         "top10": 0
       }
     },
-    "favouriteCompetition": "Queen Elizabeth II Memorial Cup",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 1,
+    "favouriteCompetition": null,
+    "favouriteCompetitionWins": 0,
+    "majorWins": 0,
     "medalWins": 0,
     "matchplayWins": 0,
     "divisionHonours": {
@@ -58123,41 +57675,17 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 46,
+      "score": 0,
       "status": "Building Record"
     },
-    "bestSeason": {
-      "year": 2025,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "2025-2025",
-    "writtenSummary": "J. Hurt has played 1 recorded competition in the Digital Museum. J. Hurt has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. J. Hurt's strongest competition so far is Queen Elizabeth II Memorial Cup. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "J. Hurt has played 1 recorded competition, with 1 win, 0 runner-up finishes and 1 top-three finish.",
-    "firstWin": {
-      "year": 2025,
-      "competition": "Queen Elizabeth II Memorial Cup"
-    },
-    "latestWin": {
-      "year": 2025,
-      "competition": "Queen Elizabeth II Memorial Cup"
-    },
-    "careerTimeline": [
-      {
-        "year": 2025,
-        "competition": "Queen Elizabeth II Memorial Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "1 career win",
-      "1 top-three finish",
-      "Most successful in Queen Elizabeth II Memorial Cup"
-    ]
+    "bestSeason": null,
+    "careerEra": null,
+    "writtenSummary": "J. Hurt does not yet have any recorded competition results in the Digital Museum.",
+    "profileSummary": "J. Hurt has played 0 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "firstWin": null,
+    "latestWin": null,
+    "careerTimeline": [],
+    "highlights": []
   },
   {
     "player": "J. Insull",
@@ -58364,23 +57892,23 @@
     ],
     "status": "Historical",
     "career": {
-      "firstYear": 2024,
-      "latestYear": 2024,
-      "competitionsPlayed": 1,
-      "wins": 1,
+      "firstYear": null,
+      "latestYear": null,
+      "competitionsPlayed": 0,
+      "wins": 0,
       "runnerUp": 0,
-      "top3": 1,
-      "top5": 1,
-      "top10": 1
+      "top3": 0,
+      "top5": 0,
+      "top10": 0
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 1,
-        "wins": 1,
+        "competitionsPlayed": 0,
+        "wins": 0,
         "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
+        "top3": 0,
+        "top5": 0,
+        "top10": 0
       },
       "seniors": {
         "competitionsPlayed": 0,
@@ -58391,9 +57919,9 @@
         "top10": 0
       }
     },
-    "favouriteCompetition": "Queen Elizabeth II Memorial Cup",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 1,
+    "favouriteCompetition": null,
+    "favouriteCompetitionWins": 0,
+    "majorWins": 0,
     "medalWins": 0,
     "matchplayWins": 0,
     "divisionHonours": {
@@ -58413,41 +57941,17 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 46,
+      "score": 0,
       "status": "Building Record"
     },
-    "bestSeason": {
-      "year": 2024,
-      "wins": 1,
-      "top3": 1,
-      "played": 1
-    },
-    "careerEra": "2024-2024",
-    "writtenSummary": "J. Johnson has played 1 recorded competition in the Digital Museum. J. Johnson has recorded 1 win, with 0 runner-up finishes and 1 top-three finish. J. Johnson's strongest competition so far is Queen Elizabeth II Memorial Cup. Current Hall of Fame status: Building Record with a score of 46.",
-    "profileSummary": "J. Johnson has played 1 recorded competition, with 1 win, 0 runner-up finishes and 1 top-three finish.",
-    "firstWin": {
-      "year": 2024,
-      "competition": "Queen Elizabeth II Memorial Cup"
-    },
-    "latestWin": {
-      "year": 2024,
-      "competition": "Queen Elizabeth II Memorial Cup"
-    },
-    "careerTimeline": [
-      {
-        "year": 2024,
-        "competition": "Queen Elizabeth II Memorial Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "1 career win",
-      "1 top-three finish",
-      "Most successful in Queen Elizabeth II Memorial Cup"
-    ]
+    "bestSeason": null,
+    "careerEra": null,
+    "writtenSummary": "J. Johnson does not yet have any recorded competition results in the Digital Museum.",
+    "profileSummary": "J. Johnson has played 0 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "firstWin": null,
+    "latestWin": null,
+    "careerTimeline": [],
+    "highlights": []
   },
   {
     "player": "J. Joyce",
@@ -58658,7 +58162,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -60264,7 +59769,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -61074,7 +60580,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -61407,7 +60914,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 54,
+      "competitionsPlayed": 53,
       "wins": 2,
       "runnerUp": 4,
       "top3": 10,
@@ -61416,7 +60923,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 9,
+        "competitionsPlayed": 8,
         "wins": 0,
         "runnerUp": 0,
         "top3": 1,
@@ -61464,8 +60971,8 @@
       "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "James Marsh Derrer has played 54 recorded competitions in the Digital Museum. James Marsh Derrer has recorded 2 wins, with 4 runner-up finishes and 10 top-three finishes. James Marsh Derrer's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Strong Candidate with a score of 132.",
-    "profileSummary": "James Marsh Derrer has played 54 recorded competitions, with 2 wins, 4 runner-up finishes and 10 top-three finishes.",
+    "writtenSummary": "James Marsh Derrer has played 53 recorded competitions in the Digital Museum. James Marsh Derrer has recorded 2 wins, with 4 runner-up finishes and 10 top-three finishes. James Marsh Derrer's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Strong Candidate with a score of 132.",
+    "profileSummary": "James Marsh Derrer has played 53 recorded competitions, with 2 wins, 4 runner-up finishes and 10 top-three finishes.",
     "firstWin": {
       "year": 2026,
       "competition": "Seniors Greensomes"
@@ -61514,14 +61021,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -61919,7 +61418,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -63683,21 +63183,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 102,
+      "competitionsPlayed": 101,
       "wins": 2,
       "runnerUp": 3,
       "top3": 8,
       "top5": 15,
-      "top10": 33
+      "top10": 32
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 63,
+        "competitionsPlayed": 62,
         "wins": 1,
         "runnerUp": 1,
         "top3": 3,
         "top5": 6,
-        "top10": 15
+        "top10": 14
       },
       "seniors": {
         "competitionsPlayed": 39,
@@ -63740,8 +63240,8 @@
       "played": 39
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "James Webber has played 102 recorded competitions in the Digital Museum. James Webber has recorded 2 wins, with 3 runner-up finishes and 8 top-three finishes. James Webber's strongest competition so far is Walker Cup. Current Hall of Fame status: Strong Candidate with a score of 135.",
-    "profileSummary": "James Webber has played 102 recorded competitions, with 2 wins, 3 runner-up finishes and 8 top-three finishes.",
+    "writtenSummary": "James Webber has played 101 recorded competitions in the Digital Museum. James Webber has recorded 2 wins, with 3 runner-up finishes and 8 top-three finishes. James Webber's strongest competition so far is Walker Cup. Current Hall of Fame status: Strong Candidate with a score of 135.",
+    "profileSummary": "James Webber has played 101 recorded competitions, with 2 wins, 3 runner-up finishes and 8 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Walker Cup"
@@ -63958,14 +63458,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -64671,7 +64163,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -64901,7 +64394,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -65457,7 +64951,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -67519,7 +67014,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -68603,7 +68099,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -68776,7 +68273,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2025,
-      "competitionsPlayed": 29,
+      "competitionsPlayed": 28,
       "wins": 0,
       "runnerUp": 0,
       "top3": 2,
@@ -68785,7 +68282,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 5,
+        "competitionsPlayed": 4,
         "wins": 0,
         "runnerUp": 0,
         "top3": 1,
@@ -68830,11 +68327,11 @@
       "year": 2022,
       "wins": 0,
       "top3": 2,
-      "played": 7
+      "played": 6
     },
     "careerEra": "2021-2025",
-    "writtenSummary": "John Coley has played 29 recorded competitions in the Digital Museum. John Coley is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 12.",
-    "profileSummary": "John Coley has played 29 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
+    "writtenSummary": "John Coley has played 28 recorded competitions in the Digital Museum. John Coley is still waiting for a first recorded win, but has 2 top-three finishes. Current Hall of Fame status: Building Record with a score of 12.",
+    "profileSummary": "John Coley has played 28 recorded competitions, with 0 wins, 0 runner-up finishes and 2 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -68877,14 +68374,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 15,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -69087,7 +68576,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2022,
-      "competitionsPlayed": 10,
+      "competitionsPlayed": 9,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -69096,7 +68585,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 6,
+        "competitionsPlayed": 5,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -69141,11 +68630,11 @@
       "year": 2022,
       "wins": 0,
       "top3": 0,
-      "played": 8
+      "played": 7
     },
     "careerEra": "2021-2022",
-    "writtenSummary": "John Edward Nicklin has played 10 recorded competitions in the Digital Museum. John Edward Nicklin is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "John Edward Nicklin has played 10 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "John Edward Nicklin has played 9 recorded competitions in the Digital Museum. John Edward Nicklin is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "John Edward Nicklin has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -69180,14 +68669,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 32,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -70571,7 +70052,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -71790,7 +71272,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -72314,7 +71797,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -72706,7 +72190,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -73701,7 +73186,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -74190,7 +73676,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2022,
-      "competitionsPlayed": 19,
+      "competitionsPlayed": 18,
       "wins": 2,
       "runnerUp": 1,
       "top3": 3,
@@ -74199,7 +73685,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 12,
+        "competitionsPlayed": 11,
         "wins": 1,
         "runnerUp": 0,
         "top3": 1,
@@ -74247,8 +73733,8 @@
       "played": 5
     },
     "careerEra": "2021-2022",
-    "writtenSummary": "Keith B. Stubbs has played 19 recorded competitions in the Digital Museum. Keith B. Stubbs has recorded 2 wins, with 1 runner-up finish and 3 top-three finishes. Keith B. Stubbs's strongest competition so far is Harry Bruton Cup. Current Hall of Fame status: Emerging Candidate with a score of 62.",
-    "profileSummary": "Keith B. Stubbs has played 19 recorded competitions, with 2 wins, 1 runner-up finish and 3 top-three finishes.",
+    "writtenSummary": "Keith B. Stubbs has played 18 recorded competitions in the Digital Museum. Keith B. Stubbs has recorded 2 wins, with 1 runner-up finish and 3 top-three finishes. Keith B. Stubbs's strongest competition so far is Harry Bruton Cup. Current Hall of Fame status: Emerging Candidate with a score of 62.",
+    "profileSummary": "Keith B. Stubbs has played 18 recorded competitions, with 2 wins, 1 runner-up finish and 3 top-three finishes.",
     "firstWin": {
       "year": 2021,
       "competition": "Harry Bruton Cup"
@@ -74313,14 +73799,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 14,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -75883,7 +75361,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 156,
+      "competitionsPlayed": 155,
       "wins": 4,
       "runnerUp": 4,
       "top3": 11,
@@ -75892,7 +75370,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 116,
+        "competitionsPlayed": 115,
         "wins": 3,
         "runnerUp": 3,
         "top3": 8,
@@ -75940,8 +75418,8 @@
       "played": 37
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Keith John Woodall has played 156 recorded competitions in the Digital Museum. Keith John Woodall has recorded 4 wins, with 4 runner-up finishes and 11 top-three finishes. Keith John Woodall's strongest competition so far is Jubilee Salver Pairs BetterBall. Current Hall of Fame status: Hall of Fame Level with a score of 203.",
-    "profileSummary": "Keith John Woodall has played 156 recorded competitions, with 4 wins, 4 runner-up finishes and 11 top-three finishes.",
+    "writtenSummary": "Keith John Woodall has played 155 recorded competitions in the Digital Museum. Keith John Woodall has recorded 4 wins, with 4 runner-up finishes and 11 top-three finishes. Keith John Woodall's strongest competition so far is Jubilee Salver Pairs BetterBall. Current Hall of Fame status: Hall of Fame Level with a score of 203.",
+    "profileSummary": "Keith John Woodall has played 155 recorded competitions, with 4 wins, 4 runner-up finishes and 11 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Jubilee Salver Pairs BetterBall"
@@ -76179,14 +75657,6 @@
         "year": 2022,
         "competition": "Bassano Cup",
         "position": 25,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 22,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
@@ -77302,21 +76772,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 72,
+      "competitionsPlayed": 71,
       "wins": 5,
       "runnerUp": 1,
-      "top3": 11,
-      "top5": 18,
-      "top10": 42
+      "top3": 10,
+      "top5": 17,
+      "top10": 41
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 11,
+        "competitionsPlayed": 10,
         "wins": 0,
         "runnerUp": 0,
-        "top3": 1,
-        "top5": 2,
-        "top10": 6
+        "top3": 0,
+        "top5": 1,
+        "top10": 5
       },
       "seniors": {
         "competitionsPlayed": 61,
@@ -77349,7 +76819,7 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 194,
+      "score": 188,
       "status": "Hall of Fame Level"
     },
     "bestSeason": {
@@ -77359,8 +76829,8 @@
       "played": 22
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Keith Ratcliffe has played 72 recorded competitions in the Digital Museum. Keith Ratcliffe has recorded 5 wins, with 1 runner-up finish and 11 top-three finishes. Keith Ratcliffe's strongest competition so far is Seniors Thyssen Trophy. Current Hall of Fame status: Hall of Fame Level with a score of 194.",
-    "profileSummary": "Keith Ratcliffe has played 72 recorded competitions, with 5 wins, 1 runner-up finish and 11 top-three finishes.",
+    "writtenSummary": "Keith Ratcliffe has played 71 recorded competitions in the Digital Museum. Keith Ratcliffe has recorded 5 wins, with 1 runner-up finish and 10 top-three finishes. Keith Ratcliffe's strongest competition so far is Seniors Thyssen Trophy. Current Hall of Fame status: Hall of Fame Level with a score of 188.",
+    "profileSummary": "Keith Ratcliffe has played 71 recorded competitions, with 5 wins, 1 runner-up finish and 10 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors October Medal"
@@ -77425,14 +76895,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -77949,7 +77411,7 @@
     ],
     "highlights": [
       "5 career wins",
-      "11 top-three finishes",
+      "10 top-three finishes",
       "Most successful in Seniors Thyssen Trophy"
     ]
   },
@@ -78902,7 +78364,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -79191,7 +78654,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 58,
+      "competitionsPlayed": 57,
       "wins": 5,
       "runnerUp": 1,
       "top3": 8,
@@ -79200,7 +78663,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 7,
+        "competitionsPlayed": 6,
         "wins": 0,
         "runnerUp": 1,
         "top3": 2,
@@ -79248,8 +78711,8 @@
       "played": 20
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Kenneth Brettle has played 58 recorded competitions in the Digital Museum. Kenneth Brettle has recorded 5 wins, with 1 runner-up finish and 8 top-three finishes. Kenneth Brettle's strongest competition so far is Seniors August Medal. Current Hall of Fame status: Hall of Fame Level with a score of 153.",
-    "profileSummary": "Kenneth Brettle has played 58 recorded competitions, with 5 wins, 1 runner-up finish and 8 top-three finishes.",
+    "writtenSummary": "Kenneth Brettle has played 57 recorded competitions in the Digital Museum. Kenneth Brettle has recorded 5 wins, with 1 runner-up finish and 8 top-three finishes. Kenneth Brettle's strongest competition so far is Seniors August Medal. Current Hall of Fame status: Hall of Fame Level with a score of 153.",
+    "profileSummary": "Kenneth Brettle has played 57 recorded competitions, with 5 wins, 1 runner-up finish and 8 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors August Medal"
@@ -79298,14 +78761,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 16,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -79826,7 +79281,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 57,
+      "competitionsPlayed": 56,
       "wins": 2,
       "runnerUp": 4,
       "top3": 7,
@@ -79835,7 +79290,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 26,
+        "competitionsPlayed": 25,
         "wins": 0,
         "runnerUp": 1,
         "top3": 1,
@@ -79883,8 +79338,8 @@
       "played": 27
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Kevin Cooksey has played 57 recorded competitions in the Digital Museum. Kevin Cooksey has recorded 2 wins, with 4 runner-up finishes and 7 top-three finishes. Kevin Cooksey's strongest competition so far is Seniors June Medal. Current Hall of Fame status: Strong Candidate with a score of 112.",
-    "profileSummary": "Kevin Cooksey has played 57 recorded competitions, with 2 wins, 4 runner-up finishes and 7 top-three finishes.",
+    "writtenSummary": "Kevin Cooksey has played 56 recorded competitions in the Digital Museum. Kevin Cooksey has recorded 2 wins, with 4 runner-up finishes and 7 top-three finishes. Kevin Cooksey's strongest competition so far is Seniors June Medal. Current Hall of Fame status: Strong Candidate with a score of 112.",
+    "profileSummary": "Kevin Cooksey has played 56 recorded competitions, with 2 wins, 4 runner-up finishes and 7 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Seniors June Medal"
@@ -79941,14 +79396,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 17,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -81656,7 +81103,7 @@
       "Mens",
       "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 1996,
       "latestYear": 2026,
@@ -82036,7 +81483,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -83340,7 +82788,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -84029,7 +83478,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2022,
-      "competitionsPlayed": 9,
+      "competitionsPlayed": 8,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -84038,7 +83487,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 5,
+        "competitionsPlayed": 4,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -84083,11 +83532,11 @@
       "year": 2022,
       "wins": 0,
       "top3": 0,
-      "played": 7
+      "played": 6
     },
     "careerEra": "2021-2022",
-    "writtenSummary": "Lawrence Goodall has played 9 recorded competitions in the Digital Museum. Lawrence Goodall is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Lawrence Goodall has played 9 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Lawrence Goodall has played 8 recorded competitions in the Digital Museum. Lawrence Goodall is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Lawrence Goodall has played 8 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -84122,14 +83571,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 34,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -84381,7 +83822,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -86409,7 +85851,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -87323,7 +86766,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -87705,7 +87149,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -87967,7 +87412,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -89193,7 +88639,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -91444,7 +90891,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -91766,7 +91214,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -94646,7 +94095,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 67,
+      "competitionsPlayed": 66,
       "wins": 5,
       "runnerUp": 1,
       "top3": 9,
@@ -94655,7 +94104,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 10,
+        "competitionsPlayed": 9,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -94703,8 +94152,8 @@
       "played": 19
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "M.j. Davies has played 67 recorded competitions in the Digital Museum. M.j. Davies has recorded 5 wins, with 1 runner-up finish and 9 top-three finishes. M.j. Davies's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Hall of Fame Level with a score of 155.",
-    "profileSummary": "M.j. Davies has played 67 recorded competitions, with 5 wins, 1 runner-up finish and 9 top-three finishes.",
+    "writtenSummary": "M.j. Davies has played 66 recorded competitions in the Digital Museum. M.j. Davies has recorded 5 wins, with 1 runner-up finish and 9 top-three finishes. M.j. Davies's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Hall of Fame Level with a score of 155.",
+    "profileSummary": "M.j. Davies has played 66 recorded competitions, with 5 wins, 1 runner-up finish and 9 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Seniors Greensomes"
@@ -94753,14 +94202,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 29,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -95269,7 +94710,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 53,
+      "competitionsPlayed": 52,
       "wins": 0,
       "runnerUp": 1,
       "top3": 1,
@@ -95278,7 +94719,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 7,
+        "competitionsPlayed": 6,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -95326,8 +94767,8 @@
       "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Malcolm Benjamin Jones has played 53 recorded competitions in the Digital Museum. Malcolm Benjamin Jones is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 16.",
-    "profileSummary": "Malcolm Benjamin Jones has played 53 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
+    "writtenSummary": "Malcolm Benjamin Jones has played 52 recorded competitions in the Digital Museum. Malcolm Benjamin Jones is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 16.",
+    "profileSummary": "Malcolm Benjamin Jones has played 52 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -95362,14 +94803,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -95772,7 +95205,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 70,
+      "competitionsPlayed": 69,
       "wins": 5,
       "runnerUp": 4,
       "top3": 11,
@@ -95781,7 +95214,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 9,
+        "competitionsPlayed": 8,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -95829,8 +95262,8 @@
       "played": 22
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Malcolm Powell has played 70 recorded competitions in the Digital Museum. Malcolm Powell has recorded 5 wins, with 4 runner-up finishes and 11 top-three finishes. Malcolm Powell's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Hall of Fame Level with a score of 175.",
-    "profileSummary": "Malcolm Powell has played 70 recorded competitions, with 5 wins, 4 runner-up finishes and 11 top-three finishes.",
+    "writtenSummary": "Malcolm Powell has played 69 recorded competitions in the Digital Museum. Malcolm Powell has recorded 5 wins, with 4 runner-up finishes and 11 top-three finishes. Malcolm Powell's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Hall of Fame Level with a score of 175.",
+    "profileSummary": "Malcolm Powell has played 69 recorded competitions, with 5 wins, 4 runner-up finishes and 11 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors Greensomes"
@@ -95895,14 +95328,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -96412,7 +95837,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -96522,7 +95948,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -97424,7 +96851,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -98510,7 +97938,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -99420,7 +98849,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -101730,7 +101160,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -101814,9 +101245,10 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2024,
       "latestYear": 2024,
@@ -101901,1149 +101333,6 @@
       "1 career win",
       "1 top-three finish",
       "Most successful in Queen Elizabeth II Memorial Cup"
-    ]
-  },
-  {
-    "player": "Melvyn Crook",
-    "section": "Mens",
-    "primarySection": "Mens",
-    "playedSections": [
-      "Mens",
-      "Seniors"
-    ],
-    "status": "Active",
-    "career": {
-      "firstYear": 2024,
-      "latestYear": 2026,
-      "competitionsPlayed": 132,
-      "wins": 3,
-      "runnerUp": 3,
-      "top3": 12,
-      "top5": 24,
-      "top10": 43
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 88,
-        "wins": 3,
-        "runnerUp": 2,
-        "top3": 10,
-        "top5": 17,
-        "top10": 25
-      },
-      "seniors": {
-        "competitionsPlayed": 44,
-        "wins": 0,
-        "runnerUp": 1,
-        "top3": 2,
-        "top5": 7,
-        "top10": 18
-      }
-    },
-    "favouriteCompetition": "August Sunday Stableford",
-    "favouriteCompetitionWins": 1,
-    "majorWins": 2,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 209,
-      "status": "Hall of Fame Level"
-    },
-    "bestSeason": {
-      "year": 2024,
-      "wins": 2,
-      "top3": 5,
-      "played": 59
-    },
-    "careerEra": "2024-2026",
-    "writtenSummary": "Melvyn Crook has played 132 recorded competitions in the Digital Museum. Melvyn Crook has recorded 3 wins, with 3 runner-up finishes and 12 top-three finishes. Melvyn Crook's strongest competition so far is August Sunday Stableford. Current Hall of Fame status: Hall of Fame Level with a score of 209.",
-    "profileSummary": "Melvyn Crook has played 132 recorded competitions, with 3 wins, 3 runner-up finishes and 12 top-three finishes.",
-    "firstWin": {
-      "year": 2024,
-      "competition": "August Sunday Stableford"
-    },
-    "latestWin": {
-      "year": 2025,
-      "competition": "Coronation Cup"
-    },
-    "careerTimeline": [
-      {
-        "year": 2024,
-        "competition": "125 Trophy - Pairs Stableford Betterball",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "3 Ball Modified Waltz",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "3 Ball reverse cha-cha",
-        "position": 15,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "3 Ball Rumble",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "3 Ball Rumble - all scores to count",
-        "position": 14,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "April Medal and Presidents Putter qualifier",
-        "position": 60,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "April Sunday Stableford",
-        "position": 33,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "August Medal",
-        "position": 49,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "August Sunday Stableford",
-        "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Bassano Cup",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Captain's Charity Day",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Captain's Day & Walker Cup",
-        "position": 28,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Captain's Day & Walker Cup",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Centenary Trophy & Boscowan Cup",
-        "position": 63,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Centenary Trophy & Boscowan Cup",
-        "position": 29,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Christmas Hamper Competition",
-        "position": 28,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Claughton Cup",
-        "position": 66,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Club Championship",
-        "position": 48,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Club Championships Nett",
-        "position": 48,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Club Not Acceptable Scoring Stableford",
-        "position": 2,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Club Stableford competition",
-        "position": 44,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Coronation Cup",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Doug Lee Pairs Trophy",
-        "position": 5,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Grandads Cup & Veterans Cup",
-        "position": 28,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Hooper Cup",
-        "position": 15,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "January Stableford",
-        "position": 51,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Jubilee Salver Pairs BetterBall",
-        "position": 21,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "July Medal / Bloom Cup",
-        "position": 2,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "July Sunday Stableford",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "June Sunday Stableford",
-        "position": 19,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "March Sunday Stableford",
-        "position": 33,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-        "position": 35,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Millennium Trophy - 4 Ball",
-        "position": 5,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "October Medal & Lewis Cup",
-        "position": 29,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Pro's Winter Series",
-        "position": 23,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Pro's Winter Series",
-        "position": 29,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Probus Pairs Stableford Betterball",
-        "position": 14,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Queen Elizabeth II Memorial Cup",
-        "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors April Medal",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Arthur Turley Trophy",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors August Medal",
-        "position": 30,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Bruton Cup",
-        "position": 21,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Centenary Trophy",
-        "position": 7,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Cyril Joseph Trophy",
-        "position": 5,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors George Barratt Trophy",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Greensomes",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors July Medal",
-        "position": 21,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors June Medal",
-        "position": 30,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors May Medal",
-        "position": 28,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors September Medal",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Thyssen Trophy",
-        "position": 5,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Tony Walker Cup",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Winter League 2",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Winter League 3",
-        "position": 23,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Winter League 4",
-        "position": 26,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Seniors Winter League 5",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "September medal",
-        "position": 22,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2024,
-        "competition": "Writtle Grove Winter Greensomes Qualifier",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "125 Trophy - Pairs Stableford Betterball",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "3 Ball Am-Am (2 to count)",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "4 ball multiplier",
-        "position": 7,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "April Medal and Presidents Putter qualifier",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "April Sunday Stableford",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "August Medal",
-        "position": 47,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "August Sunday Stableford",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Bassano Cup",
-        "position": 31,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Centenary Trophy & Boscowan Cup",
-        "position": 45,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Club Betterball Pairs Stableford",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Club Pairs competition",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Club Stableford",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Coronation Cup",
-        "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "December Stableford",
-        "position": 29,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Doug Lee Pairs Trophy",
-        "position": 19,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "February Sunday Stableford Competition",
-        "position": 26,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Gruesome Greensomes",
-        "position": 23,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Hooper Cup",
-        "position": 39,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "James Grainger Trophy",
-        "position": 31,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "July Medal / Bloom Cup",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "July Sunday Stableford",
-        "position": 17,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-        "position": 17,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "March Medal",
-        "position": 20,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "March Sunday Stableford",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "May Medal & Brian Lloyd Scratch Qualifier",
-        "position": 35,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "May Sunday Stableford",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "November Medal",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "November Sunday Stableford",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "October Medal & Lewis Cup",
-        "position": 32,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "October Sunday Stableford Competition",
-        "position": 23,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Probus Pairs Stableford Betterball",
-        "position": 26,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Queen Elizabeth II Memorial Cup",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors April Medal",
-        "position": 7,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Arthur Turley Trophy",
-        "position": 17,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Captain's Day",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Centenary Trophy",
-        "position": 18,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Cyril Joseph Trophy",
-        "position": 16,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Greensomes",
-        "position": 15,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors July Medal",
-        "position": 24,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors June Medal",
-        "position": 31,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors October Medal",
-        "position": 26,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors September Medal",
-        "position": 22,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Ted Jones Trophy",
-        "position": 24,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Walker Cup",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Winter League 2",
-        "position": 17,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Winter League 3",
-        "position": 14,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Seniors Winter League 4",
-        "position": 2,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "September medal",
-        "position": 31,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Stableford Pairs Competition",
-        "position": 16,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Stableford Qualifier",
-        "position": 21,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Sunday Poppy Stableford",
-        "position": 14,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Sunday Stableford Competition",
-        "position": 22,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2025,
-        "competition": "Tom Poole Trophy & Summer Foursomes qualifier",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Writtle Grove & Winter Greensomes Qualifier",
-        "position": 32,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "3 Ball - Cha Cha Cha",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "3 Ball Modified Waltz",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "April Sunday Stableford",
-        "position": 13,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Captain's Day & Walker Cup",
-        "position": 53,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "Coronation Cup",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "James Grainger Trophy",
-        "position": 10,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "June Sunday Stableford",
-        "position": 21,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "March Sunday Stableford",
-        "position": 28,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Millennium Trophy - 4 Ball",
-        "position": 8,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "Probus Pairs Stableford Betterball",
-        "position": 26,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors April Medal",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors Arthur Turley Trophy",
-        "position": 11,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors Centenary Trophy",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors Cyril Joseph Trophy",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors Greensomes",
-        "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors July Medal",
-        "position": 3,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors May Medal",
-        "position": 4,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Seniors Winter League 3",
-        "position": 18,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      },
-      {
-        "year": 2026,
-        "competition": "Stableford Pairs",
-        "position": 12,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": false
-      }
-    ],
-    "highlights": [
-      "3 career wins",
-      "12 top-three finishes",
-      "Most successful in August Sunday Stableford"
     ]
   },
   {
@@ -103485,7 +101774,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -104338,7 +102628,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 65,
+      "competitionsPlayed": 64,
       "wins": 1,
       "runnerUp": 2,
       "top3": 5,
@@ -104347,7 +102637,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 10,
+        "competitionsPlayed": 9,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -104395,8 +102685,8 @@
       "played": 18
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael Geoffrey Guise has played 65 recorded competitions in the Digital Museum. Michael Geoffrey Guise has recorded 1 win, with 2 runner-up finishes and 5 top-three finishes. Michael Geoffrey Guise's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Emerging Candidate with a score of 63.",
-    "profileSummary": "Michael Geoffrey Guise has played 65 recorded competitions, with 1 win, 2 runner-up finishes and 5 top-three finishes.",
+    "writtenSummary": "Michael Geoffrey Guise has played 64 recorded competitions in the Digital Museum. Michael Geoffrey Guise has recorded 1 win, with 2 runner-up finishes and 5 top-three finishes. Michael Geoffrey Guise's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Emerging Candidate with a score of 63.",
+    "profileSummary": "Michael Geoffrey Guise has played 64 recorded competitions, with 1 win, 2 runner-up finishes and 5 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "Seniors Greensomes"
@@ -104453,14 +102743,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 30,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -106064,7 +104346,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 60,
+      "competitionsPlayed": 59,
       "wins": 0,
       "runnerUp": 2,
       "top3": 3,
@@ -106073,7 +104355,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 10,
+        "competitionsPlayed": 9,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -106121,8 +104403,8 @@
       "played": 19
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael John Walter Horne has played 60 recorded competitions in the Digital Museum. Michael John Walter Horne is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 38.",
-    "profileSummary": "Michael John Walter Horne has played 60 recorded competitions, with 0 wins, 2 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Michael John Walter Horne has played 59 recorded competitions in the Digital Museum. Michael John Walter Horne is still waiting for a first recorded win, but has 3 top-three finishes. Current Hall of Fame status: Building Record with a score of 38.",
+    "profileSummary": "Michael John Walter Horne has played 59 recorded competitions, with 0 wins, 2 runner-up finishes and 3 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -106173,14 +104455,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 20,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -107184,7 +105458,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 26,
+      "competitionsPlayed": 25,
       "wins": 0,
       "runnerUp": 0,
       "top3": 0,
@@ -107193,7 +105467,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 7,
+        "competitionsPlayed": 6,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -107238,11 +105512,11 @@
       "year": 2022,
       "wins": 0,
       "top3": 0,
-      "played": 11
+      "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael Terence Cole has played 26 recorded competitions in the Digital Museum. Michael Terence Cole is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
-    "profileSummary": "Michael Terence Cole has played 26 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
+    "writtenSummary": "Michael Terence Cole has played 25 recorded competitions in the Digital Museum. Michael Terence Cole is still waiting for a first recorded win, but has 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 0.",
+    "profileSummary": "Michael Terence Cole has played 25 recorded competitions, with 0 wins, 0 runner-up finishes and 0 top-three finishes.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -107277,14 +105551,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 21,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -107469,7 +105735,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 43,
+      "competitionsPlayed": 42,
       "wins": 0,
       "runnerUp": 1,
       "top3": 1,
@@ -107478,7 +105744,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 9,
+        "competitionsPlayed": 8,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -107526,8 +105792,8 @@
       "played": 10
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Michael William Murray has played 43 recorded competitions in the Digital Museum. Michael William Murray is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 20.",
-    "profileSummary": "Michael William Murray has played 43 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
+    "writtenSummary": "Michael William Murray has played 42 recorded competitions in the Digital Museum. Michael William Murray is still waiting for a first recorded win, but has 1 top-three finish. Current Hall of Fame status: Building Record with a score of 20.",
+    "profileSummary": "Michael William Murray has played 42 recorded competitions, with 0 wins, 1 runner-up finish and 1 top-three finish.",
     "firstWin": null,
     "latestWin": null,
     "careerTimeline": [
@@ -107562,14 +105828,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 25,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -107885,7 +106143,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -109045,7 +107304,7 @@
     "playedSections": [
       "Mens"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2023,
       "latestYear": 2025,
@@ -109353,7 +107612,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -110147,7 +108407,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -110359,7 +108620,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -110493,7 +108755,7 @@
     "playedSections": [
       "Mens"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2024,
       "latestYear": 2026,
@@ -111209,7 +109471,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -112259,7 +110522,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -112665,7 +110929,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -114057,7 +112322,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -114951,7 +113217,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -117525,7 +115792,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -118767,7 +117035,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -119979,7 +118248,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -121458,7 +119728,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 32,
+      "competitionsPlayed": 31,
       "wins": 2,
       "runnerUp": 0,
       "top3": 3,
@@ -121467,7 +119737,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 7,
+        "competitionsPlayed": 6,
         "wins": 1,
         "runnerUp": 0,
         "top3": 1,
@@ -121515,8 +119785,8 @@
       "played": 12
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Raymond Rock has played 32 recorded competitions in the Digital Museum. Paul Raymond Rock has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Paul Raymond Rock's strongest competition so far is Arthur Turley Trophy. Current Hall of Fame status: Emerging Candidate with a score of 62.",
-    "profileSummary": "Paul Raymond Rock has played 32 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Paul Raymond Rock has played 31 recorded competitions in the Digital Museum. Paul Raymond Rock has recorded 2 wins, with 0 runner-up finishes and 3 top-three finishes. Paul Raymond Rock's strongest competition so far is Arthur Turley Trophy. Current Hall of Fame status: Emerging Candidate with a score of 62.",
+    "profileSummary": "Paul Raymond Rock has played 31 recorded competitions, with 2 wins, 0 runner-up finishes and 3 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Arthur Turley Trophy"
@@ -121557,14 +119827,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 23,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -121801,21 +120063,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 71,
+      "competitionsPlayed": 70,
       "wins": 4,
       "runnerUp": 3,
       "top3": 10,
       "top5": 15,
-      "top10": 29
+      "top10": 28
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 11,
+        "competitionsPlayed": 10,
         "wins": 1,
         "runnerUp": 0,
         "top3": 1,
         "top5": 3,
-        "top10": 5
+        "top10": 4
       },
       "seniors": {
         "competitionsPlayed": 60,
@@ -121858,8 +120120,8 @@
       "played": 17
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Paul Russell has played 71 recorded competitions in the Digital Museum. Paul Russell has recorded 4 wins, with 3 runner-up finishes and 10 top-three finishes. Paul Russell's strongest competition so far is Captain's Day. Current Hall of Fame status: Hall of Fame Level with a score of 214.",
-    "profileSummary": "Paul Russell has played 71 recorded competitions, with 4 wins, 3 runner-up finishes and 10 top-three finishes.",
+    "writtenSummary": "Paul Russell has played 70 recorded competitions in the Digital Museum. Paul Russell has recorded 4 wins, with 3 runner-up finishes and 10 top-three finishes. Paul Russell's strongest competition so far is Captain's Day. Current Hall of Fame status: Hall of Fame Level with a score of 214.",
+    "profileSummary": "Paul Russell has played 70 recorded competitions, with 4 wins, 3 runner-up finishes and 10 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Captain's Day"
@@ -121916,14 +120178,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 6,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -122449,7 +120703,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -123765,7 +122020,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -125518,7 +123774,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -126781,27 +125038,28 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
       "firstYear": 2000,
       "latestYear": 2026,
-      "competitionsPlayed": 191,
-      "wins": 14,
+      "competitionsPlayed": 190,
+      "wins": 13,
       "runnerUp": 8,
-      "top3": 36,
-      "top5": 49,
-      "top10": 83
+      "top3": 35,
+      "top5": 48,
+      "top10": 82
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 138,
-        "wins": 9,
+        "competitionsPlayed": 137,
+        "wins": 8,
         "runnerUp": 5,
-        "top3": 23,
-        "top5": 30,
-        "top10": 50
+        "top3": 22,
+        "top5": 29,
+        "top10": 49
       },
       "seniors": {
         "competitionsPlayed": 53,
@@ -126812,9 +125070,9 @@
         "top10": 33
       }
     },
-    "favouriteCompetition": "Bassano Cup",
-    "favouriteCompetitionWins": 2,
-    "majorWins": 6,
+    "favouriteCompetition": "Millennium Trophy",
+    "favouriteCompetitionWins": 1,
+    "majorWins": 5,
     "medalWins": 1,
     "matchplayWins": 0,
     "divisionHonours": {
@@ -126836,18 +125094,18 @@
       "Most top-three finishes"
     ],
     "hallOfFameReadiness": {
-      "score": 678,
+      "score": 632,
       "status": "Hall of Fame Level"
     },
     "bestSeason": {
       "year": 2022,
-      "wins": 6,
-      "top3": 8,
-      "played": 43
+      "wins": 5,
+      "top3": 7,
+      "played": 42
     },
     "careerEra": "2000-2026",
-    "writtenSummary": "Philip John Northall has played 191 recorded competitions in the Digital Museum. Philip John Northall has recorded 14 wins, with 8 runner-up finishes and 36 top-three finishes. Philip John Northall's strongest competition so far is Bassano Cup. Current Hall of Fame status: Hall of Fame Level with a score of 678.",
-    "profileSummary": "Philip John Northall has played 191 recorded competitions, with 14 wins, 8 runner-up finishes and 36 top-three finishes.",
+    "writtenSummary": "Philip John Northall has played 190 recorded competitions in the Digital Museum. Philip John Northall has recorded 13 wins, with 8 runner-up finishes and 35 top-three finishes. Philip John Northall's strongest competition so far is Millennium Trophy. Current Hall of Fame status: Hall of Fame Level with a score of 632.",
+    "profileSummary": "Philip John Northall has played 190 recorded competitions, with 13 wins, 8 runner-up finishes and 35 top-three finishes.",
     "firstWin": {
       "year": 2000,
       "competition": "Millennium Trophy"
@@ -127077,14 +125335,6 @@
         "year": 2022,
         "competition": "Bassano Cup",
         "position": 9,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 1,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
@@ -128387,9 +126637,9 @@
       }
     ],
     "highlights": [
-      "14 career wins",
-      "36 top-three finishes",
-      "Most successful in Bassano Cup"
+      "13 career wins",
+      "35 top-three finishes",
+      "Most successful in Millennium Trophy"
     ]
   },
   {
@@ -128397,7 +126647,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -130337,7 +128588,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -130533,7 +128785,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -131139,7 +129392,7 @@
     "playedSections": [
       "Mens"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2005,
       "latestYear": 2005,
@@ -132603,7 +130856,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -133691,7 +131945,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -134672,7 +132927,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -135926,7 +134182,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -136496,7 +134753,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -137027,7 +135285,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 66,
+      "competitionsPlayed": 65,
       "wins": 4,
       "runnerUp": 1,
       "top3": 7,
@@ -137036,7 +135294,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 24,
+        "competitionsPlayed": 23,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -137084,8 +135342,8 @@
       "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Robert Hudson has played 66 recorded competitions in the Digital Museum. Robert Hudson has recorded 4 wins, with 1 runner-up finish and 7 top-three finishes. Robert Hudson's strongest competition so far is Seniors Tony Walker Cup. Current Hall of Fame status: Hall of Fame Level with a score of 163.",
-    "profileSummary": "Robert Hudson has played 66 recorded competitions, with 4 wins, 1 runner-up finish and 7 top-three finishes.",
+    "writtenSummary": "Robert Hudson has played 65 recorded competitions in the Digital Museum. Robert Hudson has recorded 4 wins, with 1 runner-up finish and 7 top-three finishes. Robert Hudson's strongest competition so far is Seniors Tony Walker Cup. Current Hall of Fame status: Hall of Fame Level with a score of 163.",
+    "profileSummary": "Robert Hudson has played 65 recorded competitions, with 4 wins, 1 runner-up finish and 7 top-three finishes.",
     "firstWin": {
       "year": 2024,
       "competition": "Seniors Tony Walker Cup"
@@ -137158,14 +135416,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 31,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -137635,7 +135885,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -138657,7 +136908,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -138780,7 +137032,7 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 62,
+      "competitionsPlayed": 61,
       "wins": 1,
       "runnerUp": 1,
       "top3": 4,
@@ -138789,7 +137041,7 @@
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 10,
+        "competitionsPlayed": 9,
         "wins": 0,
         "runnerUp": 0,
         "top3": 0,
@@ -138837,8 +137089,8 @@
       "played": 15
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Robert P. Timmington has played 62 recorded competitions in the Digital Museum. Robert P. Timmington has recorded 1 win, with 1 runner-up finish and 4 top-three finishes. Robert P. Timmington's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Building Record with a score of 49.",
-    "profileSummary": "Robert P. Timmington has played 62 recorded competitions, with 1 win, 1 runner-up finish and 4 top-three finishes.",
+    "writtenSummary": "Robert P. Timmington has played 61 recorded competitions in the Digital Museum. Robert P. Timmington has recorded 1 win, with 1 runner-up finish and 4 top-three finishes. Robert P. Timmington's strongest competition so far is Seniors Greensomes. Current Hall of Fame status: Building Record with a score of 49.",
+    "profileSummary": "Robert P. Timmington has played 61 recorded competitions, with 1 win, 1 runner-up finish and 4 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "Seniors Greensomes"
@@ -138895,14 +137147,6 @@
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": false
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 18,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
       },
       {
         "year": 2022,
@@ -139356,7 +137600,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -140332,7 +138577,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -140810,7 +139056,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -141832,7 +140079,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -142922,7 +141170,7 @@
     "playedSections": [
       "Mens"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 1999,
       "latestYear": 2002,
@@ -143210,7 +141458,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Historical",
     "career": {
@@ -143516,7 +141765,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -143916,7 +142166,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Historical",
     "career": {
@@ -144230,7 +142481,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -144622,7 +142874,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -145224,9 +143477,10 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2024,
       "latestYear": 2026,
@@ -145692,9 +143946,10 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
@@ -146610,7 +144865,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -146880,7 +145136,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -148156,7 +146413,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -148800,7 +147058,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -151739,7 +149998,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -152101,137 +150361,12 @@
     ]
   },
   {
-    "player": "Stephen Hopkins",
-    "section": "Seniors",
-    "primarySection": "Seniors",
-    "playedSections": [
-      "Seniors"
-    ],
-    "status": "Historical",
-    "career": {
-      "firstYear": 2020,
-      "latestYear": 2025,
-      "competitionsPlayed": 5,
-      "wins": 5,
-      "runnerUp": 0,
-      "top3": 5,
-      "top5": 5,
-      "top10": 5
-    },
-    "sectionCareer": {
-      "mens": {
-        "competitionsPlayed": 4,
-        "wins": 4,
-        "runnerUp": 0,
-        "top3": 4,
-        "top5": 4,
-        "top10": 4
-      },
-      "seniors": {
-        "competitionsPlayed": 1,
-        "wins": 1,
-        "runnerUp": 0,
-        "top3": 1,
-        "top5": 1,
-        "top10": 1
-      }
-    },
-    "favouriteCompetition": "Doug Lee Trophy",
-    "favouriteCompetitionWins": 2,
-    "majorWins": 5,
-    "medalWins": 0,
-    "matchplayWins": 0,
-    "divisionHonours": {
-      "wins": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "top3": {
-        "division1": 0,
-        "division2": 0,
-        "division3": 0
-      },
-      "totalWins": 0,
-      "totalTop3": 0,
-      "history": []
-    },
-    "recordsHeld": [],
-    "hallOfFameReadiness": {
-      "score": 230,
-      "status": "Hall of Fame Level"
-    },
-    "bestSeason": {
-      "year": 2020,
-      "wins": 2,
-      "top3": 2,
-      "played": 2
-    },
-    "careerEra": "2020-2025",
-    "writtenSummary": "Stephen Hopkins has played 5 recorded competitions in the Digital Museum. Stephen Hopkins has recorded 5 wins, with 0 runner-up finishes and 5 top-three finishes. Stephen Hopkins's strongest competition so far is Doug Lee Trophy. Current Hall of Fame status: Hall of Fame Level with a score of 230.",
-    "profileSummary": "Stephen Hopkins has played 5 recorded competitions, with 5 wins, 0 runner-up finishes and 5 top-three finishes.",
-    "firstWin": {
-      "year": 2020,
-      "competition": "Doug Lee Trophy"
-    },
-    "latestWin": {
-      "year": 2025,
-      "competition": "Doug Lee Trophy"
-    },
-    "careerTimeline": [
-      {
-        "year": 2022,
-        "competition": "Centenary Trophy",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2020,
-        "competition": "Doug Lee Trophy",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2025,
-        "competition": "Doug Lee Trophy",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2020,
-        "competition": "Hooper Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      },
-      {
-        "year": 2024,
-        "competition": "Hooper Cup",
-        "position": 1,
-        "resultType": "Historical Honour",
-        "historicalHonour": true,
-        "boardCompetition": true
-      }
-    ],
-    "highlights": [
-      "5 career wins",
-      "5 top-three finishes",
-      "Most successful in Doug Lee Trophy"
-    ]
-  },
-  {
     "player": "Stephen Langford",
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -155432,7 +153567,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -156978,7 +155114,7 @@
     "playedSections": [
       "Mens"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2020,
       "latestYear": 2025,
@@ -157782,7 +155918,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -157980,7 +156117,7 @@
     "playedSections": [
       "Mens"
     ],
-    "status": "Historical",
+    "status": "Active",
     "career": {
       "firstYear": 2021,
       "latestYear": 2022,
@@ -158372,7 +156509,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -160292,7 +158430,8 @@
     "section": "Seniors",
     "primarySection": "Seniors",
     "playedSections": [
-      "Seniors"
+      "Seniors",
+      "Mens"
     ],
     "status": "Active",
     "career": {
@@ -160409,21 +158548,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 77,
+      "competitionsPlayed": 76,
       "wins": 1,
       "runnerUp": 2,
       "top3": 3,
       "top5": 3,
-      "top10": 15
+      "top10": 14
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 54,
+        "competitionsPlayed": 53,
         "wins": 1,
         "runnerUp": 1,
         "top3": 2,
         "top5": 2,
-        "top10": 8
+        "top10": 7
       },
       "seniors": {
         "competitionsPlayed": 23,
@@ -160466,8 +158605,8 @@
       "played": 11
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Terrance Stanley Nolan has played 77 recorded competitions in the Digital Museum. Terrance Stanley Nolan has recorded 1 win, with 2 runner-up finishes and 3 top-three finishes. Terrance Stanley Nolan's strongest competition so far is Stableford Qualifier. Current Hall of Fame status: Building Record with a score of 45.",
-    "profileSummary": "Terrance Stanley Nolan has played 77 recorded competitions, with 1 win, 2 runner-up finishes and 3 top-three finishes.",
+    "writtenSummary": "Terrance Stanley Nolan has played 76 recorded competitions in the Digital Museum. Terrance Stanley Nolan has recorded 1 win, with 2 runner-up finishes and 3 top-three finishes. Terrance Stanley Nolan's strongest competition so far is Stableford Qualifier. Current Hall of Fame status: Building Record with a score of 45.",
+    "profileSummary": "Terrance Stanley Nolan has played 76 recorded competitions, with 1 win, 2 runner-up finishes and 3 top-three finishes.",
     "firstWin": {
       "year": 2025,
       "competition": "Stableford Qualifier"
@@ -160665,14 +158804,6 @@
         "year": 2022,
         "competition": "Bassano Cup",
         "position": 63,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 6,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
@@ -161547,7 +159678,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -161665,7 +159797,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -162981,7 +161114,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -163155,7 +161289,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -164149,7 +162284,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -165365,7 +163501,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
@@ -165738,21 +163875,21 @@
     "career": {
       "firstYear": 2021,
       "latestYear": 2026,
-      "competitionsPlayed": 137,
+      "competitionsPlayed": 136,
       "wins": 4,
       "runnerUp": 4,
       "top3": 11,
-      "top5": 21,
-      "top10": 47
+      "top5": 20,
+      "top10": 46
     },
     "sectionCareer": {
       "mens": {
-        "competitionsPlayed": 88,
+        "competitionsPlayed": 87,
         "wins": 3,
         "runnerUp": 2,
         "top3": 6,
-        "top5": 13,
-        "top10": 28
+        "top5": 12,
+        "top10": 27
       },
       "seniors": {
         "competitionsPlayed": 49,
@@ -165785,18 +163922,18 @@
     },
     "recordsHeld": [],
     "hallOfFameReadiness": {
-      "score": 211,
+      "score": 209,
       "status": "Hall of Fame Level"
     },
     "bestSeason": {
       "year": 2022,
       "wins": 1,
       "top3": 5,
-      "played": 24
+      "played": 23
     },
     "careerEra": "2021-2026",
-    "writtenSummary": "Wayne Rutter has played 137 recorded competitions in the Digital Museum. Wayne Rutter has recorded 4 wins, with 4 runner-up finishes and 11 top-three finishes. Wayne Rutter's strongest competition so far is Bassano Cup. Current Hall of Fame status: Hall of Fame Level with a score of 211.",
-    "profileSummary": "Wayne Rutter has played 137 recorded competitions, with 4 wins, 4 runner-up finishes and 11 top-three finishes.",
+    "writtenSummary": "Wayne Rutter has played 136 recorded competitions in the Digital Museum. Wayne Rutter has recorded 4 wins, with 4 runner-up finishes and 11 top-three finishes. Wayne Rutter's strongest competition so far is Bassano Cup. Current Hall of Fame status: Hall of Fame Level with a score of 209.",
+    "profileSummary": "Wayne Rutter has played 136 recorded competitions, with 4 wins, 4 runner-up finishes and 11 top-three finishes.",
     "firstWin": {
       "year": 2022,
       "competition": "Bassano Cup"
@@ -166018,14 +164155,6 @@
         "year": 2022,
         "competition": "Bassano Cup",
         "position": 1,
-        "resultType": "Competition Result",
-        "historicalHonour": false,
-        "boardCompetition": true
-      },
-      {
-        "year": 2022,
-        "competition": "Bassano Cup",
-        "position": 5,
         "resultType": "Competition Result",
         "historicalHonour": false,
         "boardCompetition": true
@@ -167056,7 +165185,8 @@
     "section": "Mens",
     "primarySection": "Mens",
     "playedSections": [
-      "Mens"
+      "Mens",
+      "Seniors"
     ],
     "status": "Active",
     "career": {
