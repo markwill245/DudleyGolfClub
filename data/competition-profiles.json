@@ -4618,21 +4618,45 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 4,
+    "yearsPlayed": 20,
     "firstYear": 1993,
-    "latestYear": 2022,
+    "latestYear": 2025,
     "latestDetailedYear": 2022,
     "totalEntries": 56,
     "averageEntries": 14,
-    "uniqueWinners": 4,
-    "mostSuccessfulPlayer": "Clive Atkins",
+    "uniqueWinners": 23,
+    "mostSuccessfulPlayer": "A. Long",
     "mostWins": 1,
     "currentWinners": [
-      "Clive Atkins"
+      "M. Tolley"
     ],
     "winnerLeaders": [
       {
+        "player": "A. Long",
+        "wins": 1
+      },
+      {
+        "player": "A.P. Jackson",
+        "wins": 1
+      },
+      {
         "player": "Clive Atkins",
+        "wins": 1
+      },
+      {
+        "player": "D. Melbourne",
+        "wins": 1
+      },
+      {
+        "player": "D. O'Brien",
+        "wins": 1
+      },
+      {
+        "player": "D. Toone",
+        "wins": 1
+      },
+      {
+        "player": "Gary William Stubbs",
         "wins": 1
       },
       {
@@ -4644,11 +4668,90 @@
         "wins": 1
       },
       {
+        "player": "J.S. Higley",
+        "wins": 1
+      },
+      {
+        "player": "L. Grainger",
+        "wins": 1
+      },
+      {
+        "player": "M. Dando",
+        "wins": 1
+      },
+      {
+        "player": "M. Duckett",
+        "wins": 1
+      },
+      {
+        "player": "M. Hall",
+        "wins": 1
+      },
+      {
+        "player": "M. Hickman",
+        "wins": 1
+      },
+      {
+        "player": "M. Tolley",
+        "wins": 1
+      },
+      {
         "player": "P. Prosser",
+        "wins": 1
+      },
+      {
+        "player": "P. Welch",
+        "wins": 1
+      },
+      {
+        "player": "R. Williams",
+        "wins": 1
+      },
+      {
+        "player": "S.J. Edgar",
+        "wins": 1
+      },
+      {
+        "player": "Stephen Hopkins",
+        "wins": 1
+      },
+      {
+        "player": "T. Howles",
+        "wins": 1
+      },
+      {
+        "player": "W. Waston",
         "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2025,
+        "winner": "M. Tolley",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "P. Welch",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2023,
+        "winner": "M. Dando",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2022,
         "winner": "Clive Atkins",
@@ -4658,10 +4761,37 @@
         "relativeToPar": null
       },
       {
+        "year": 2022,
+        "winner": "Stephen Hopkins",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "Gary William Stubbs",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
         "year": 2021,
         "winner": "Geoffrey Alan Ford",
         "source": "Competition Result",
         "verified": false,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2020,
+        "winner": "L. Grainger",
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
         "score": null,
         "relativeToPar": null
       },
@@ -4674,18 +4804,136 @@
         "relativeToPar": null
       },
       {
+        "year": 2006,
+        "winner": "J.S. Higley",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2005,
+        "winner": "W. Waston",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2004,
+        "winner": "A.P. Jackson",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2003,
+        "winner": "S.J. Edgar",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2002,
+        "winner": "T. Howles",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2001,
+        "winner": "D. Melbourne",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2000,
+        "winner": "D. Toone",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1999,
+        "winner": "D. O'Brien",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1998,
+        "winner": "M. Hickman",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1997,
+        "winner": "M. Hall",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1996,
+        "winner": "R. Williams",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1995,
+        "winner": "A. Long",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1994,
+        "winner": "M. Duckett",
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
         "year": 1993,
         "winner": "P. Prosser",
-        "source": "Competition Result",
-        "verified": false,
+        "source": "Historic Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
         "score": null,
         "relativeToPar": null
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
+      "officialWinnerSource": "Verified Honours Board",
+      "hasVerifiedBoard": true,
+      "boardCompetitionId": "centenary-trophy",
       "detailedResultsSource": "Competition Results",
       "linkedResultCompetitionId": null,
       "linkedScoreType": null
@@ -15207,13 +15455,13 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 7,
-    "firstYear": 2020,
+    "yearsPlayed": 21,
+    "firstYear": 1993,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
-    "totalEntries": 321,
-    "averageEntries": 64.2,
-    "uniqueWinners": 17,
+    "totalEntries": 325,
+    "averageEntries": 46.4,
+    "uniqueWinners": 42,
     "mostSuccessfulPlayer": "M. Poulding",
     "mostWins": 3,
     "currentWinners": [
@@ -15230,11 +15478,55 @@
         "wins": 3
       },
       {
+        "player": "G. Smith",
+        "wins": 2
+      },
+      {
+        "player": "J. Parkes",
+        "wins": 2
+      },
+      {
+        "player": "M. Bianco",
+        "wins": 2
+      },
+      {
+        "player": "M. Hall",
+        "wins": 2
+      },
+      {
         "player": "A. Burns",
         "wins": 1
       },
       {
+        "player": "A. Chandler",
+        "wins": 1
+      },
+      {
+        "player": "A. Dimmock",
+        "wins": 1
+      },
+      {
         "player": "Adrian Burns",
+        "wins": 1
+      },
+      {
+        "player": "B. Lawton",
+        "wins": 1
+      },
+      {
+        "player": "C. Wilkinson",
+        "wins": 1
+      },
+      {
+        "player": "G. Bailey",
+        "wins": 1
+      },
+      {
+        "player": "G. Hazlewood",
+        "wins": 1
+      },
+      {
+        "player": "G. Prophet",
         "wins": 1
       },
       {
@@ -15250,7 +15542,23 @@
         "wins": 1
       },
       {
+        "player": "M. Cosnett",
+        "wins": 1
+      },
+      {
+        "player": "M. Hickman",
+        "wins": 1
+      },
+      {
+        "player": "M. J. Hall",
+        "wins": 1
+      },
+      {
         "player": "M. Raybould",
+        "wins": 1
+      },
+      {
+        "player": "M.J. Hall",
         "wins": 1
       },
       {
@@ -15266,7 +15574,27 @@
         "wins": 1
       },
       {
+        "player": "P. Cooke",
+        "wins": 1
+      },
+      {
+        "player": "P. Green",
+        "wins": 1
+      },
+      {
+        "player": "R. Hardwick",
+        "wins": 1
+      },
+      {
+        "player": "R. Jones",
+        "wins": 1
+      },
+      {
         "player": "R. Price",
+        "wins": 1
+      },
+      {
+        "player": "R. Webb",
         "wins": 1
       },
       {
@@ -15278,7 +15606,15 @@
         "wins": 1
       },
       {
+        "player": "S. Allen",
+        "wins": 1
+      },
+      {
         "player": "S. Gilbert",
+        "wins": 1
+      },
+      {
+        "player": "S. Hall",
         "wins": 1
       },
       {
@@ -15287,6 +15623,18 @@
       },
       {
         "player": "Stephen Dennis Gilbert",
+        "wins": 1
+      },
+      {
+        "player": "T. Blakemore",
+        "wins": 1
+      },
+      {
+        "player": "W. Jones",
+        "wins": 1
+      },
+      {
+        "player": "W. Lawton",
         "wins": 1
       }
     ],
@@ -15470,151 +15818,7 @@
         "photoReference": null,
         "score": null,
         "relativeToPar": null
-      }
-    ],
-    "sourcePriority": {
-      "officialWinnerSource": "Verified Honours Board",
-      "hasVerifiedBoard": true,
-      "boardCompetitionId": "probus-pairs-stableford-betterball",
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "Probus Pairs Stableford Betterball is preserved from the verified honours board and enriched with detailed competition results where available."
-  },
-  {
-    "id": "probus-trophy",
-    "competitionId": "probus-trophy",
-    "name": "Probus Trophy",
-    "competitionName": "Probus Trophy",
-    "section": "Mens",
-    "format": "Historical Winners",
-    "competitionFormat": "Historical Winners",
-    "competitionClass": "Board",
-    "museumCategory": "Board Competition",
-    "importStatus": "complete",
-    "category": "Board Competition",
-    "historicalBoard": true,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": true,
-    "profileType": "Historical Honour",
-    "yearsPlayed": 14,
-    "firstYear": 1993,
-    "latestYear": 2006,
-    "latestDetailedYear": 2006,
-    "totalEntries": 4,
-    "averageEntries": 2,
-    "uniqueWinners": 25,
-    "mostSuccessfulPlayer": "G. Smith",
-    "mostWins": 2,
-    "currentWinners": [
-      "B. Lawton",
-      "J. Parkes"
-    ],
-    "winnerLeaders": [
-      {
-        "player": "G. Smith",
-        "wins": 2
       },
-      {
-        "player": "J. Parkes",
-        "wins": 2
-      },
-      {
-        "player": "M. Bianco",
-        "wins": 2
-      },
-      {
-        "player": "M. Hall",
-        "wins": 2
-      },
-      {
-        "player": "A. Chandler",
-        "wins": 1
-      },
-      {
-        "player": "A. Dimmock",
-        "wins": 1
-      },
-      {
-        "player": "B. Lawton",
-        "wins": 1
-      },
-      {
-        "player": "C. Wilkinson",
-        "wins": 1
-      },
-      {
-        "player": "G. Bailey",
-        "wins": 1
-      },
-      {
-        "player": "G. Hazlewood",
-        "wins": 1
-      },
-      {
-        "player": "G. Prophet",
-        "wins": 1
-      },
-      {
-        "player": "M. Cosnett",
-        "wins": 1
-      },
-      {
-        "player": "M. Hickman",
-        "wins": 1
-      },
-      {
-        "player": "M. J. Hall",
-        "wins": 1
-      },
-      {
-        "player": "M.J. Hall",
-        "wins": 1
-      },
-      {
-        "player": "P. Cooke",
-        "wins": 1
-      },
-      {
-        "player": "P. Green",
-        "wins": 1
-      },
-      {
-        "player": "R. Hardwick",
-        "wins": 1
-      },
-      {
-        "player": "R. Jones",
-        "wins": 1
-      },
-      {
-        "player": "R. Webb",
-        "wins": 1
-      },
-      {
-        "player": "S. Allen",
-        "wins": 1
-      },
-      {
-        "player": "S. Hall",
-        "wins": 1
-      },
-      {
-        "player": "T. Blakemore",
-        "wins": 1
-      },
-      {
-        "player": "W. Jones",
-        "wins": 1
-      },
-      {
-        "player": "W. Lawton",
-        "wins": 1
-      }
-    ],
-    "winnerHistory": [
       {
         "year": 2006,
         "winner": "B. Lawton",
@@ -15879,13 +16083,13 @@
     "sourcePriority": {
       "officialWinnerSource": "Verified Honours Board",
       "hasVerifiedBoard": true,
-      "boardCompetitionId": "probus-trophy",
+      "boardCompetitionId": "probus-pairs-stableford-betterball",
       "detailedResultsSource": "Competition Results",
       "linkedResultCompetitionId": null,
       "linkedScoreType": null
     },
     "clubChampionship": null,
-    "summary": "Probus Trophy is preserved from the verified honours board and enriched with detailed competition results where available."
+    "summary": "Probus Pairs Stableford Betterball is preserved from the verified honours board and enriched with detailed competition results where available."
   },
   {
     "id": "prosser-lytham-trophy",
@@ -16760,41 +16964,21 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 7,
-    "firstYear": 2020,
+    "yearsPlayed": 3,
+    "firstYear": 2024,
     "latestYear": 2026,
     "latestDetailedYear": 2026,
     "totalEntries": 83,
     "averageEntries": 27.7,
-    "uniqueWinners": 9,
-    "mostSuccessfulPlayer": "Gary William Stubbs",
+    "uniqueWinners": 3,
+    "mostSuccessfulPlayer": "Keith Ratcliffe",
     "mostWins": 1,
     "currentWinners": [
       "Keith Ratcliffe"
     ],
     "winnerLeaders": [
       {
-        "player": "Gary William Stubbs",
-        "wins": 1
-      },
-      {
         "player": "Keith Ratcliffe",
-        "wins": 1
-      },
-      {
-        "player": "L. Grainger",
-        "wins": 1
-      },
-      {
-        "player": "M. Dando",
-        "wins": 1
-      },
-      {
-        "player": "M. Tolley",
-        "wins": 1
-      },
-      {
-        "player": "P. Welch",
         "wins": 1
       },
       {
@@ -16803,10 +16987,6 @@
       },
       {
         "player": "Stephen Hall",
-        "wins": 1
-      },
-      {
-        "player": "Stephen Hopkins",
         "wins": 1
       }
     ],
@@ -16821,28 +17001,10 @@
       },
       {
         "year": 2025,
-        "winner": "M. Tolley",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
-        "relativeToPar": null
-      },
-      {
-        "year": 2025,
         "winner": "Paul Russell",
         "source": "Competition Result",
         "verified": false,
         "score": 22,
-        "relativeToPar": null
-      },
-      {
-        "year": 2024,
-        "winner": "P. Welch",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
         "relativeToPar": null
       },
       {
@@ -16852,48 +17014,12 @@
         "verified": false,
         "score": 22,
         "relativeToPar": null
-      },
-      {
-        "year": 2023,
-        "winner": "M. Dando",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
-        "relativeToPar": null
-      },
-      {
-        "year": 2022,
-        "winner": "Stephen Hopkins",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
-        "relativeToPar": null
-      },
-      {
-        "year": 2021,
-        "winner": "Gary William Stubbs",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
-        "relativeToPar": null
-      },
-      {
-        "year": 2020,
-        "winner": "L. Grainger",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
-        "relativeToPar": null
       }
     ],
     "sourcePriority": {
-      "officialWinnerSource": "Verified Honours Board",
-      "hasVerifiedBoard": true,
-      "boardCompetitionId": "seniors-centenary-trophy",
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
       "detailedResultsSource": "Competition Results",
       "linkedResultCompetitionId": null,
       "linkedScoreType": null

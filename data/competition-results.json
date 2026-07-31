@@ -226,7 +226,7 @@
     ]
   },
   {
-    "competitionId": "probus-trophy",
+    "competitionId": "probus-pairs-stableford-betterball",
     "competitionName": "Probus Trophy",
     "section": "Mens",
     "year": 1993,
@@ -237,7 +237,14 @@
         "position": 1,
         "playerName": "M. Hall / M. J. Hall"
       }
-    ]
+    ],
+    "competitionFormat": "Pairs",
+    "format": "Pairs",
+    "teamSize": 2,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true
   },
   {
     "competitionId": "prosser-lytham-trophy",
@@ -618,7 +625,7 @@
     ]
   },
   {
-    "competitionId": "probus-trophy",
+    "competitionId": "probus-pairs-stableford-betterball",
     "competitionName": "Probus Trophy",
     "section": "Mens",
     "year": 2006,
@@ -629,7 +636,14 @@
         "position": 1,
         "playerName": "J. Parkes / B. Lawton"
       }
-    ]
+    ],
+    "competitionFormat": "Pairs",
+    "format": "Pairs",
+    "teamSize": 2,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true
   },
   {
     "competitionId": "prosser-lytham-trophy",
@@ -3772,7 +3786,39 @@
         "scoreType": "Stableford"
       }
     ],
-    "scoreType": "Stableford"
+    "scoreType": "Stableford",
+    "awards": {
+      "centenaryWinner": {
+        "playerName": "Gary William Stubbs",
+        "position": 2,
+        "handicap": 10,
+        "score": 43,
+        "label": "Centenary Trophy Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "0-14",
+          "source": "competition-results.json",
+          "sourceRow": 2
+        }
+      },
+      "boscawenWinner": {
+        "playerName": "Craig Biddulph",
+        "position": 3,
+        "handicap": 21,
+        "score": 40,
+        "label": "Boscawen Cup Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "15-26",
+          "source": "competition-results.json",
+          "sourceRow": 3
+        }
+      }
+    }
   },
   {
     "competitionId": "claughton-cup",
@@ -25755,6 +25801,36 @@
         "playerName": "Sean Element",
         "score": 40,
         "countsAsCareerWin": true
+      },
+      "centenaryWinner": {
+        "playerName": "Stephen Brian Hopkins",
+        "position": 1,
+        "handicap": 13,
+        "score": 39,
+        "label": "Centenary Trophy Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "0-14",
+          "source": "competition-results.json",
+          "sourceRow": 78
+        }
+      },
+      "boscawenWinner": {
+        "playerName": "Sean Element",
+        "position": 1,
+        "handicap": 16,
+        "score": 40,
+        "label": "Boscawen Cup Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "15-26",
+          "source": "competition-results.json",
+          "sourceRow": 1
+        }
       }
     },
     "results": [
@@ -58393,6 +58469,36 @@
         "playerName": "Paul Ian Welch",
         "score": 43,
         "countsAsCareerWin": true
+      },
+      "centenaryWinner": {
+        "playerName": "Paul Ian Welch",
+        "position": 1,
+        "handicap": 11,
+        "score": 43,
+        "label": "Centenary Trophy Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "0-14",
+          "source": "competition-results.json",
+          "sourceRow": 1
+        }
+      },
+      "boscawenWinner": {
+        "playerName": "Graham Morgan",
+        "position": 1,
+        "handicap": 21,
+        "score": 42,
+        "label": "Boscawen Cup Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "15-26",
+          "source": "competition-results.json",
+          "sourceRow": 77
+        }
       }
     },
     "results": [
@@ -91380,6 +91486,36 @@
         "playerName": "Paul Thomas Donnelly",
         "score": 39,
         "countsAsCareerWin": true
+      },
+      "centenaryWinner": {
+        "playerName": "Mark Neil Tolley",
+        "position": 3,
+        "handicap": 13,
+        "score": 38,
+        "label": "Centenary Trophy Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "0-14",
+          "source": "competition-results.json",
+          "sourceRow": 3
+        }
+      },
+      "boscawenWinner": {
+        "playerName": "Paul Thomas Donnelly",
+        "position": 1,
+        "handicap": 18,
+        "score": 39,
+        "label": "Boscawen Cup Winner",
+        "countsAsCareerWin": true,
+        "certification": {
+          "status": "Certified",
+          "basis": "Highest-placed eligible golfer in the confirmed handicap band.",
+          "handicapBand": "15-26",
+          "source": "competition-results.json",
+          "sourceRow": 1
+        }
       }
     },
     "results": [
