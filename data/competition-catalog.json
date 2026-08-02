@@ -773,9 +773,13 @@
     "countsForOrderOfMerit": false,
     "boardCompetition": false,
     "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "includeInCareerWins": false,
+    "includeInPlayerAppearances": false,
+    "museumCategory": "General",
+    "includeInCareerScoringAverages": false,
+    "statisticsEligible": false,
+    "competitionPurpose": "Social",
+    "certificationNote": "Fun/social event. Retained in the archive but excluded from all competitive career statistics."
   },
   {
     "id": "combined-medal",
