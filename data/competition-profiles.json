@@ -17983,8 +17983,8 @@
     "name": "Seniors Roy Birch Trophy",
     "competitionName": "Seniors Roy Birch Trophy",
     "section": "Seniors",
-    "format": "Individual",
-    "competitionFormat": "Individual",
+    "format": "Pairs",
+    "competitionFormat": "Pairs",
     "competitionClass": "Standard",
     "museumCategory": "Historic Trophy",
     "importStatus": "complete",
@@ -17997,13 +17997,14 @@
     "firstYear": 2024,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 42,
-    "averageEntries": 21,
-    "uniqueWinners": 3,
+    "totalEntries": 60,
+    "averageEntries": 30,
+    "uniqueWinners": 4,
     "mostSuccessfulPlayer": "John W. T. Mc'ewan",
     "mostWins": 1,
     "currentWinners": [
-      "John W. T. Mc'ewan"
+      "John W. T. Mc'ewan",
+      "Michael John Walter Horne"
     ],
     "winnerLeaders": [
       {
@@ -18012,6 +18013,10 @@
       },
       {
         "player": "Kevin Cooksey",
+        "wins": 1
+      },
+      {
+        "player": "Michael John Walter Horne",
         "wins": 1
       },
       {
@@ -18025,7 +18030,15 @@
         "winner": "John W. T. Mc'ewan",
         "source": "Competition Result",
         "verified": false,
-        "score": null,
+        "score": 22,
+        "relativeToPar": null
+      },
+      {
+        "year": 2025,
+        "winner": "Michael John Walter Horne",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 22,
         "relativeToPar": null
       },
       {

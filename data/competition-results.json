@@ -80317,9 +80317,9 @@
   {
     "competitionId": "seniors-roy-birch-trophy",
     "competitionName": "Roy Birch Trophy Seniors",
-    "competitionFormat": "Individual",
-    "scoreType": "Unknown",
-    "teamSize": 1,
+    "competitionFormat": "Pairs",
+    "scoreType": "Nett",
+    "teamSize": 2,
     "section": "Seniors",
     "competitionClass": "Standard",
     "countsForOrderOfMerit": false,
@@ -80337,8 +80337,29 @@
     "sourceDate": "Thursday 5th September 2024, Yellow Tees, Mixed 9",
     "awards": {
       "overallWinner": {
-        "playerName": "Philip John Northall",
+        "playerName": "Philip John Northall / Kevin Cooksey",
+        "players": [
+          {
+            "name": "Philip John Northall",
+            "handicap": 5
+          },
+          {
+            "name": "Kevin Cooksey",
+            "handicap": 5
+          }
+        ],
+        "teamMembers": [
+          {
+            "name": "Philip John Northall",
+            "handicap": 5
+          },
+          {
+            "name": "Kevin Cooksey",
+            "handicap": 5
+          }
+        ],
         "score": 21,
+        "scoreType": "Nett",
         "countsAsCareerWin": true
       }
     },
@@ -80346,7 +80367,7 @@
       {
         "position": 1,
         "totalScore": 21,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Philip John Northall / Kevin Cooksey",
         "teamMembers": [
           {
@@ -80357,12 +80378,14 @@
             "name": "Kevin Cooksey",
             "handicap": 5
           }
-        ]
+        ],
+        "nettScore": 21,
+        "teamSize": 2
       },
       {
         "position": 2,
         "totalScore": 19,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Bruce Antony Mansell / Robert P. Timmington",
         "teamMembers": [
           {
@@ -80373,12 +80396,14 @@
             "name": "Robert P. Timmington",
             "handicap": 12
           }
-        ]
+        ],
+        "nettScore": 19,
+        "teamSize": 2
       },
       {
         "position": 3,
         "totalScore": 19,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Michael Geoffrey Guise / Keith Ratcliffe",
         "teamMembers": [
           {
@@ -80389,12 +80414,14 @@
             "name": "Keith Ratcliffe",
             "handicap": 9
           }
-        ]
+        ],
+        "nettScore": 19,
+        "teamSize": 2
       },
       {
         "position": 4,
         "totalScore": 19,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "John Gilbert Baker / M.j. Davies",
         "teamMembers": [
           {
@@ -80405,12 +80432,14 @@
             "name": "M.j. Davies",
             "handicap": 8
           }
-        ]
+        ],
+        "nettScore": 19,
+        "teamSize": 2
       },
       {
         "position": 5,
         "totalScore": 17,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Keith Taylor / Michael Merrell",
         "teamMembers": [
           {
@@ -80421,12 +80450,14 @@
             "name": "Michael Merrell",
             "handicap": 13
           }
-        ]
+        ],
+        "nettScore": 17,
+        "teamSize": 2
       },
       {
         "position": 6,
         "totalScore": 17,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Clive Atkins / James Webber",
         "teamMembers": [
           {
@@ -80437,12 +80468,14 @@
             "name": "James Webber",
             "handicap": 9
           }
-        ]
+        ],
+        "nettScore": 17,
+        "teamSize": 2
       },
       {
         "position": 7,
         "totalScore": 17,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Barry Thomas Lawton / Malcolm Powell",
         "teamMembers": [
           {
@@ -80453,12 +80486,14 @@
             "name": "Malcolm Powell",
             "handicap": 12
           }
-        ]
+        ],
+        "nettScore": 17,
+        "teamSize": 2
       },
       {
         "position": 8,
         "totalScore": 17,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Terrance Stanley Nolan / Gordon Hampstead",
         "teamMembers": [
           {
@@ -80469,12 +80504,14 @@
             "name": "Gordon Hampstead",
             "handicap": 15
           }
-        ]
+        ],
+        "nettScore": 17,
+        "teamSize": 2
       },
       {
         "position": 9,
         "totalScore": 16,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Kenneth Brettle / Michael John Kendrick",
         "teamMembers": [
           {
@@ -80485,12 +80522,14 @@
             "name": "Michael John Kendrick",
             "handicap": 7
           }
-        ]
+        ],
+        "nettScore": 16,
+        "teamSize": 2
       },
       {
         "position": 10,
         "totalScore": 16,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Paul Raymond Rock / Keith Durbridge",
         "teamMembers": [
           {
@@ -80501,12 +80540,14 @@
             "name": "Keith Durbridge",
             "handicap": 9
           }
-        ]
+        ],
+        "nettScore": 16,
+        "teamSize": 2
       },
       {
         "position": 11,
         "totalScore": 15,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Harry Clarke / John Coley",
         "teamMembers": [
           {
@@ -80517,12 +80558,14 @@
             "name": "John Coley",
             "handicap": 15
           }
-        ]
+        ],
+        "nettScore": 15,
+        "teamSize": 2
       },
       {
         "position": 12,
         "totalScore": 12,
-        "scoreType": "Unknown",
+        "scoreType": "Nett",
         "playerName": "Ivan James Cooper / John W. T. Mc'ewan",
         "teamMembers": [
           {
@@ -80533,7 +80576,9 @@
             "name": "John W. T. Mc'ewan",
             "handicap": 6
           }
-        ]
+        ],
+        "nettScore": 12,
+        "teamSize": 2
       }
     ]
   },
@@ -110864,9 +110909,9 @@
   {
     "competitionId": "seniors-roy-birch-trophy",
     "competitionName": "Seniors Roy Birch Trophy",
-    "competitionFormat": "Individual",
-    "scoreType": "Unknown",
-    "teamSize": 1,
+    "competitionFormat": "Pairs",
+    "scoreType": "Nett",
+    "teamSize": 2,
     "section": "Seniors",
     "competitionClass": "Standard",
     "countsForOrderOfMerit": false,
@@ -110884,389 +110929,478 @@
     "sourceDate": "Monday 8th September 2025, Yellow Tees, Mixed 9",
     "awards": {
       "overallWinner": {
-        "playerName": "John W. T. Mc'ewan",
-        "score": null,
+        "playerName": "John W. T. Mc'ewan / Michael John Walter Horne",
+        "players": [
+          {
+            "name": "John W. T. Mc'ewan"
+          },
+          {
+            "name": "Michael John Walter Horne"
+          }
+        ],
+        "teamMembers": [
+          {
+            "name": "John W. T. Mc'ewan"
+          },
+          {
+            "name": "Michael John Walter Horne"
+          }
+        ],
+        "score": 22,
+        "scoreType": "Nett",
         "countsAsCareerWin": true
       }
     },
     "results": [
       {
         "position": 1,
-        "rounds": [
+        "totalScore": 22,
+        "scoreType": "Nett",
+        "playerName": "John W. T. Mc'ewan / Michael John Walter Horne",
+        "handicap": 9,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "John W. T. Mc'ewan"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Michael John Walter Horne"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "John W. T. Mc'ewan",
-        "handicap": 9
+        "teamMembers": [
+          {
+            "name": "John W. T. Mc'ewan"
+          },
+          {
+            "name": "Michael John Walter Horne"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 22
       },
       {
         "position": 2,
-        "rounds": [
+        "totalScore": 22,
+        "scoreType": "Nett",
+        "playerName": "Michael Merrell / Keith Brian Culwick",
+        "handicap": 15,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Michael Merrell"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Keith Brian Culwick"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Michael Merrell",
-        "handicap": 15
+        "teamMembers": [
+          {
+            "name": "Michael Merrell"
+          },
+          {
+            "name": "Keith Brian Culwick"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 22
       },
       {
         "position": 3,
-        "rounds": [
+        "totalScore": 21,
+        "scoreType": "Nett",
+        "playerName": "Kevin John Hartland / Harry Westwood",
+        "handicap": 6,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Kevin John Hartland"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Harry Westwood"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Kevin John Hartland",
-        "handicap": 6
+        "teamMembers": [
+          {
+            "name": "Kevin John Hartland"
+          },
+          {
+            "name": "Harry Westwood"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 21
       },
       {
         "position": 4,
-        "rounds": [
+        "totalScore": 20,
+        "scoreType": "Nett",
+        "playerName": "James Marsh Derrer / David Evitts",
+        "handicap": 12,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "James Marsh Derrer"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "David Evitts"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "James Marsh Derrer",
-        "handicap": 12
+        "teamMembers": [
+          {
+            "name": "James Marsh Derrer"
+          },
+          {
+            "name": "David Evitts"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 20
       },
       {
         "position": 5,
-        "rounds": [
+        "totalScore": 20,
+        "scoreType": "Nett",
+        "playerName": "Ivan James Cooper / Paul Russell",
+        "handicap": 10,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Ivan James Cooper"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Paul Russell"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Ivan James Cooper",
-        "handicap": 10
+        "teamMembers": [
+          {
+            "name": "Ivan James Cooper"
+          },
+          {
+            "name": "Paul Russell"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 20
       },
       {
         "position": 6,
-        "rounds": [
+        "totalScore": 19,
+        "scoreType": "Nett",
+        "playerName": "Kevin Eric Conn / Keith John Woodall",
+        "handicap": 8,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Kevin Eric Conn"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Keith John Woodall"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Kevin Eric Conn",
-        "handicap": 8
+        "teamMembers": [
+          {
+            "name": "Kevin Eric Conn"
+          },
+          {
+            "name": "Keith John Woodall"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 19
       },
       {
         "position": 7,
-        "rounds": [
+        "totalScore": 19,
+        "scoreType": "Nett",
+        "playerName": "Terrance Stanley Nolan / Melvin Crook",
+        "handicap": 13,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Terrance Stanley Nolan"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Melvin Crook"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Terrance Stanley Nolan",
-        "handicap": 13
+        "teamMembers": [
+          {
+            "name": "Terrance Stanley Nolan"
+          },
+          {
+            "name": "Melvin Crook"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 19
       },
       {
         "position": 8,
-        "rounds": [
+        "totalScore": 18,
+        "scoreType": "Nett",
+        "playerName": "Kenneth Brettle / M.j. Davies",
+        "handicap": 10,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Kenneth Brettle"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "M.j. Davies"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Kenneth Brettle",
-        "handicap": 10
+        "teamMembers": [
+          {
+            "name": "Kenneth Brettle"
+          },
+          {
+            "name": "M.j. Davies"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 18
       },
       {
         "position": 9,
-        "rounds": [
+        "totalScore": 18,
+        "scoreType": "Nett",
+        "playerName": "Michael William Murray / Malcolm Powell",
+        "handicap": 12,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Michael William Murray"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Malcolm Powell"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Michael William Murray",
-        "handicap": 12
+        "teamMembers": [
+          {
+            "name": "Michael William Murray"
+          },
+          {
+            "name": "Malcolm Powell"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 18
       },
       {
         "position": 10,
-        "rounds": [
+        "totalScore": 18,
+        "scoreType": "Nett",
+        "playerName": "Kevin Cooksey / Keith Ratcliffe",
+        "handicap": 6,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Kevin Cooksey"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Keith Ratcliffe"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Kevin Cooksey",
-        "handicap": 6
+        "teamMembers": [
+          {
+            "name": "Kevin Cooksey"
+          },
+          {
+            "name": "Keith Ratcliffe"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 18
       },
       {
         "position": 11,
-        "rounds": [
+        "totalScore": 16,
+        "scoreType": "Nett",
+        "playerName": "Harry Clarke / Geoffrey Alan Ford",
+        "handicap": 19,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Harry Clarke"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Geoffrey Alan Ford"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Harry Clarke",
-        "handicap": 19
+        "teamMembers": [
+          {
+            "name": "Harry Clarke"
+          },
+          {
+            "name": "Geoffrey Alan Ford"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 16
       },
       {
         "position": 12,
-        "rounds": [
+        "totalScore": 16,
+        "scoreType": "Nett",
+        "playerName": "Clive Atkins / John Gilbert Baker",
+        "handicap": 8,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Clive Atkins"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "John Gilbert Baker"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Clive Atkins",
-        "handicap": 8
+        "teamMembers": [
+          {
+            "name": "Clive Atkins"
+          },
+          {
+            "name": "John Gilbert Baker"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 16
       },
       {
         "position": 13,
-        "rounds": [
+        "totalScore": 16,
+        "scoreType": "Nett",
+        "playerName": "Keith Sabin / Keith Durbridge",
+        "handicap": 8,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Keith Sabin"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Keith Durbridge"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Keith Sabin",
-        "handicap": 8
+        "teamMembers": [
+          {
+            "name": "Keith Sabin"
+          },
+          {
+            "name": "Keith Durbridge"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 16
       },
       {
         "position": 14,
-        "rounds": [
+        "totalScore": 15,
+        "scoreType": "Nett",
+        "playerName": "Philip John Northall / Malcolm Benjamin Jones",
+        "handicap": 6,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Philip John Northall"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Malcolm Benjamin Jones"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Philip John Northall",
-        "handicap": 6
+        "teamMembers": [
+          {
+            "name": "Philip John Northall"
+          },
+          {
+            "name": "Malcolm Benjamin Jones"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 15
       },
       {
         "position": 15,
-        "rounds": [
+        "totalScore": 15,
+        "scoreType": "Nett",
+        "playerName": "Gordon Hampstead / Raymond Saunders",
+        "handicap": 17,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Gordon Hampstead"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Raymond Saunders"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Gordon Hampstead",
-        "handicap": 17
+        "teamMembers": [
+          {
+            "name": "Gordon Hampstead"
+          },
+          {
+            "name": "Raymond Saunders"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 15
       },
       {
         "position": 16,
-        "rounds": [
+        "totalScore": 15,
+        "scoreType": "Nett",
+        "playerName": "Michael Terence Cole / Bruce Antony Mansell",
+        "handicap": 14,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Michael Terence Cole"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Bruce Antony Mansell"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Michael Terence Cole",
-        "handicap": 14
+        "teamMembers": [
+          {
+            "name": "Michael Terence Cole"
+          },
+          {
+            "name": "Bruce Antony Mansell"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 15
       },
       {
         "position": 17,
-        "rounds": [
+        "totalScore": 14,
+        "scoreType": "Nett",
+        "playerName": "Stephen Hall / James Webber",
+        "handicap": 7,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Stephen Hall"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "James Webber"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Stephen Hall",
-        "handicap": 7
+        "teamMembers": [
+          {
+            "name": "Stephen Hall"
+          },
+          {
+            "name": "James Webber"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 14
       },
       {
         "position": 18,
-        "rounds": [
+        "totalScore": 12,
+        "scoreType": "Nett",
+        "playerName": "Barry Thomas Lawton / Michael Geoffrey Guise",
+        "handicap": 10,
+        "players": [
           {
-            "round": 1,
-            "score": null
+            "name": "Barry Thomas Lawton"
           },
           {
-            "round": 2,
-            "score": null
+            "name": "Michael Geoffrey Guise"
           }
         ],
-        "round1": null,
-        "round2": null,
-        "totalScore": null,
-        "relativeToPar": null,
-        "completedRounds": 0,
-        "scoreType": "Unknown",
-        "playerName": "Barry Thomas Lawton",
-        "handicap": 10
+        "teamMembers": [
+          {
+            "name": "Barry Thomas Lawton"
+          },
+          {
+            "name": "Michael Geoffrey Guise"
+          }
+        ],
+        "teamSize": 2,
+        "nettScore": 12
       }
     ]
   },
