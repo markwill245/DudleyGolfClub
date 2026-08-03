@@ -309,7 +309,7 @@
   {
     "competitionId": "bassano-cup",
     "competitionName": "Bassano Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -319,12 +319,13 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "competitionId": "bloom-cup",
     "competitionName": "Bloom Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -334,12 +335,13 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "competitionId": "boscawen-cup",
     "competitionName": "Boscawen Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -349,7 +351,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "competitionId": "brian-lloyd-cup",
@@ -369,7 +372,7 @@
   {
     "competitionId": "caldene-cup",
     "competitionName": "Caldene Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -379,7 +382,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "id": "captain-s-charity-day",
@@ -416,18 +420,19 @@
     "section": "Mens",
     "format": "Individual",
     "competitionClass": "Board",
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "active": false,
+    "active": true,
     "major": true,
-    "catalogueStatus": "Alias",
-    "recordType": "Legacy Catalogue Entry",
-    "canonicalCompetitionId": "captains-day-walker-cup",
-    "displayInArchive": false,
-    "hasDirectResults": false
+    "displayInArchive": true,
+    "hasDirectResults": true,
+    "competitionName": "Captain's Day",
+    "competitionFormat": "Individual",
+    "teamSize": 1,
+    "scoringProfile": "mens-standard"
   },
   {
     "name": "Captain's Day & Walker Cup",
@@ -487,21 +492,6 @@
   {
     "competitionId": "centenary-trophy",
     "competitionName": "Centenary Trophy",
-    "competitionFormat": "Historical Winners",
-    "teamSize": 1,
-    "section": "Mens",
-    "competitionClass": "Board",
-    "countsForOrderOfMerit": true,
-    "boardCompetition": true,
-    "major": true,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
-  },
-  {
-    "competitionId": "centenary-trophy-boscowan-cup",
-    "competitionName": "Centenary Trophy & Boscowan Cup",
     "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
@@ -512,12 +502,33 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
+  },
+  {
+    "competitionId": "centenary-trophy-boscowan-cup",
+    "competitionName": "Centenary Trophy & Boscowan Cup",
+    "competitionFormat": "Individual",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Combined Award Event",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": false,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "Combined Award Event",
+    "scoringProfile": "mens-standard",
+    "containsBoardAwards": true,
+    "boardAwardCompetitionIds": [
+      "centenary-trophy",
+      "boscawen-cup"
+    ]
   },
   {
     "competitionId": "challenge-shield",
     "competitionName": "Challenge Shield",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -527,7 +538,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "id": "christmas-hamper-competition",
@@ -849,7 +861,7 @@
   {
     "competitionId": "david-poole-trophy",
     "competitionName": "David Poole Trophy",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -859,7 +871,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "id": "december-medal",
@@ -993,7 +1006,7 @@
   {
     "competitionId": "grandads-cup",
     "competitionName": "Grandads Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Seniors",
     "competitionClass": "Board",
@@ -1003,7 +1016,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "seniors-standard"
+    "scoringProfile": "seniors-standard",
+    "format": "Individual"
   },
   {
     "id": "grandads-cup-and-veterans-cup",
@@ -1053,7 +1067,7 @@
   {
     "competitionId": "hooper-cup",
     "competitionName": "Hooper Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -1063,7 +1077,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "competitionId": "james-grainger-trophy",
@@ -1124,13 +1139,19 @@
     "competitionClass": "Board",
     "format": "Historical Winners",
     "teamSize": 1,
-    "countsForOrderOfMerit": true,
+    "countsForOrderOfMerit": false,
     "boardCompetition": true,
     "major": true,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
+    "includeInCareerWins": false,
+    "includeInPlayerAppearances": false,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "active": false,
+    "displayInArchive": false,
+    "catalogueStatus": "Alias",
+    "recordType": "Legacy Catalogue Entry",
+    "canonicalCompetitionId": "jubilee-salver-pairs-betterball",
+    "hasDirectResults": false
   },
   {
     "id": "jubilee-salver-pairs-betterball",
@@ -1229,7 +1250,7 @@
   {
     "competitionId": "lewis-cup",
     "competitionName": "Lewis Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -1239,7 +1260,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "id": "march-medal",
@@ -1532,7 +1554,7 @@
   {
     "competitionId": "prosser-lytham-trophy",
     "competitionName": "Prosser Lytham Trophy",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -1542,7 +1564,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "id": "queen-elizabeth-ii-memorial-cup",
@@ -1702,7 +1725,9 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "seniors-standard"
+    "scoringProfile": "seniors-standard",
+    "competitionName": "Seniors Centenary Trophy",
+    "competitionFormat": "Individual"
   },
   {
     "id": "seniors-cyril-joseph-trophy",
@@ -2159,8 +2184,8 @@
   {
     "competitionId": "stewart-goldie-trophy",
     "competitionName": "Stewart Goldie Trophy",
-    "competitionFormat": "Historical Winners",
-    "teamSize": 1,
+    "competitionFormat": "Mixed Historical Format",
+    "teamSize": null,
     "section": "Mens",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
@@ -2169,7 +2194,9 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Mixed Historical Format",
+    "formatVariesByYear": true
   },
   {
     "competitionId": "summer-foursomes",
@@ -2192,15 +2219,20 @@
     "competitionId": "summer-foursomes-qualifier",
     "name": "Summer Foursomes Qualifier",
     "section": "Mens",
-    "competitionClass": "Standard",
+    "competitionClass": "Qualifier",
     "format": "Pairs",
     "teamSize": 2,
     "countsForOrderOfMerit": false,
     "boardCompetition": false,
     "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "includeInCareerWins": false,
+    "includeInPlayerAppearances": false,
+    "museumCategory": "Qualifier",
+    "competitionName": "Summer Foursomes Qualifier",
+    "competitionFormat": "Pairs",
+    "active": true,
+    "displayInArchive": true,
+    "scoringProfile": "mens-standard"
   },
   {
     "id": "sunday-medal-only",
@@ -2269,8 +2301,8 @@
   {
     "competitionId": "thompson-shield",
     "competitionName": "Thompson Shield",
-    "competitionFormat": "Historical Winners",
-    "teamSize": 1,
+    "competitionFormat": "Pairs",
+    "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
@@ -2299,7 +2331,7 @@
   },
   {
     "competitionId": "tom-poole-cup",
-    "competitionName": "Tom Poole Cup",
+    "competitionName": "Tom Poole Trophy",
     "competitionFormat": "Pairs",
     "teamSize": 2,
     "section": "Mens",
@@ -2310,31 +2342,16 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "name": "Tom Poole Cup",
+    "name": "Tom Poole Trophy",
     "format": "Pairs",
     "active": true,
     "displayInArchive": true,
     "scoringProfile": "mens-standard"
   },
   {
-    "id": "tom-poole-trophy-and-summer-foursomes-qualifier",
-    "competitionId": "tom-poole-trophy-and-summer-foursomes-qualifier",
-    "name": "Tom Poole Trophy & Summer Foursomes qualifier",
-    "section": "Mens",
-    "competitionClass": "Standard",
-    "format": "Pairs",
-    "teamSize": 2,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
-  },
-  {
     "competitionId": "veterans-cup",
     "competitionName": "Veterans Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Seniors",
     "competitionClass": "Board",
@@ -2344,12 +2361,13 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "seniors-standard"
+    "scoringProfile": "seniors-standard",
+    "format": "Individual"
   },
   {
     "competitionId": "walker-cup",
     "competitionName": "Walker Cup",
-    "competitionFormat": "Historical Winners",
+    "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Board",
@@ -2359,7 +2377,8 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   },
   {
     "competitionId": "winter-greensomes",
@@ -2445,8 +2464,8 @@
   {
     "competitionId": "writtle-groves-cup",
     "competitionName": "Writtle Groves Cup",
-    "competitionFormat": "Historical Winners",
-    "teamSize": 1,
+    "competitionFormat": "Pairs",
+    "teamSize": 2,
     "section": "Mens",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
@@ -2455,6 +2474,7 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "mens-standard"
+    "scoringProfile": "mens-standard",
+    "format": "Pairs"
   }
 ]

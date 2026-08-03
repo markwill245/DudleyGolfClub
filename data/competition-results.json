@@ -41,11 +41,18 @@
     "results": [
       {
         "position": 1,
-        "playerName": "F. J. Dalloway"
+        "playerName": "F. J. Dalloway",
+        "teamMembers": [
+          {
+            "name": "F. J. Dalloway"
+          }
+        ]
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "boardEvidenceVerified": true,
+    "boardEvidenceDate": "2026-08-03"
   },
   {
     "competitionId": "challenge-shield",
@@ -226,7 +233,7 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "jubilee-salver",
+    "competitionId": "jubilee-salver-pairs-betterball",
     "competitionName": "Jubilee Salver",
     "section": "Mens",
     "year": 1993,
@@ -239,7 +246,29 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "competitionFormat": "Pairs",
+    "teamSize": 2,
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "Board Competition",
+    "awards": {
+      "overallWinner": {
+        "playerName": "G. Clarke / B. Lloyd",
+        "players": [
+          "G. Clarke",
+          "B. Lloyd"
+        ],
+        "playerCount": 2,
+        "score": null,
+        "countsAsCareerWin": true,
+        "label": "Jubilee Salver Winners"
+      }
+    }
   },
   {
     "competitionId": "lewis-cup",
@@ -498,11 +527,18 @@
     "results": [
       {
         "position": 1,
-        "playerName": "W. A. Jones"
+        "playerName": "W. A. Jones",
+        "teamMembers": [
+          {
+            "name": "W. A. Jones"
+          }
+        ]
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "boardEvidenceVerified": true,
+    "boardEvidenceDate": "2026-08-03"
   },
   {
     "competitionId": "challenge-shield",
@@ -681,7 +717,7 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "jubilee-salver",
+    "competitionId": "jubilee-salver-pairs-betterball",
     "competitionName": "Jubilee Salver",
     "section": "Mens",
     "year": 2006,
@@ -694,7 +730,29 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "competitionFormat": "Pairs",
+    "teamSize": 2,
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "Board Competition",
+    "awards": {
+      "overallWinner": {
+        "playerName": "J. Hingley / T. J. Salt",
+        "players": [
+          "J. Hingley",
+          "T. J. Salt"
+        ],
+        "playerCount": 2,
+        "score": null,
+        "countsAsCareerWin": true,
+        "label": "Jubilee Salver Winners"
+      }
+    }
   },
   {
     "competitionId": "lewis-cup",
@@ -809,11 +867,40 @@
     "results": [
       {
         "position": 1,
-        "playerName": "J. Stevens / G. P. Crowley"
+        "playerName": "Ian Stevens / G. P. Crowley",
+        "players": [
+          "Ian Stevens",
+          "G. P. Crowley"
+        ],
+        "playerCount": 2,
+        "competitionFormat": "Pairs",
+        "teamSize": 2
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "competitionFormat": "Pairs",
+    "teamSize": 2,
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "Board Competition",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Ian Stevens / G. P. Crowley",
+        "players": [
+          "Ian Stevens",
+          "G. P. Crowley"
+        ],
+        "playerCount": 2,
+        "score": null,
+        "countsAsCareerWin": true,
+        "label": "Tom Poole Trophy Winners"
+      }
+    }
   },
   {
     "competitionId": "veterans-cup",
@@ -873,11 +960,21 @@
     "results": [
       {
         "position": 1,
-        "playerName": "K. McKenna / R. Bray"
+        "playerName": "C. Beese / A. Raybould",
+        "teamMembers": [
+          {
+            "name": "C. Beese"
+          },
+          {
+            "name": "A. Raybould"
+          }
+        ]
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "boardEvidenceVerified": true,
+    "boardEvidenceDate": "2026-08-03"
   },
   {
     "competitionId": "125-trophy-pairs-stableford-betterball",
@@ -3474,13 +3571,13 @@
     "competitionFormat": "Individual",
     "teamSize": 1,
     "section": "Mens",
-    "competitionClass": "Board",
+    "competitionClass": "Combined Award Event",
     "countsForOrderOfMerit": true,
-    "boardCompetition": true,
-    "major": true,
-    "includeInCareerWins": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": false,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition",
+    "museumCategory": "Combined Award Event",
     "year": 2021,
     "results": [
       {
@@ -3938,7 +4035,12 @@
       }
     },
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "containsBoardAwards": true,
+    "boardAwardCompetitionIds": [
+      "centenary-trophy",
+      "boscawen-cup"
+    ]
   },
   {
     "competitionId": "claughton-cup",
@@ -25982,13 +26084,13 @@
     "scoreType": "Stableford",
     "teamSize": 1,
     "section": "Mens",
-    "competitionClass": "Board",
+    "competitionClass": "Combined Award Event",
     "countsForOrderOfMerit": true,
-    "boardCompetition": true,
-    "major": true,
-    "includeInCareerWins": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": false,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition",
+    "museumCategory": "Combined Award Event",
     "year": 2022,
     "date": "2022-05-21",
     "endDate": null,
@@ -27268,7 +27370,12 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "containsBoardAwards": true,
+    "boardAwardCompetitionIds": [
+      "centenary-trophy",
+      "boscawen-cup"
+    ]
   },
   {
     "competitionId": "club-3-ball-waltz",
@@ -45364,9 +45471,15 @@
     "sourceDate": "Saturday 9th April 2022, White Tees, Dudley Golf Course",
     "awards": {
       "overallWinner": {
-        "playerName": "Sean Element",
+        "playerName": "Sean Element / Mark Neil Tolley",
+        "players": [
+          "Sean Element",
+          "Mark Neil Tolley"
+        ],
+        "playerCount": 2,
         "score": 62,
-        "countsAsCareerWin": true
+        "countsAsCareerWin": true,
+        "label": "Tom Poole Trophy Winners"
       }
     },
     "results": [
@@ -45919,19 +46032,19 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "walker-cup",
-    "competitionName": "Walker Cup",
+    "competitionId": "seniors-walker-cup",
+    "competitionName": "Seniors Walker Cup",
     "competitionFormat": "Pairs",
     "scoreType": "Unknown",
-    "teamSize": 1,
-    "section": "Mens",
-    "competitionClass": "Board",
+    "teamSize": 2,
+    "section": "Seniors",
+    "competitionClass": "Standard",
     "countsForOrderOfMerit": true,
-    "boardCompetition": true,
-    "major": true,
+    "boardCompetition": false,
+    "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition",
+    "museumCategory": "General",
     "year": 2022,
     "date": "2022-04-04",
     "endDate": null,
@@ -45941,9 +46054,15 @@
     "sourceDate": "Monday 4th April 2022, Yellow Tees, Mixed 9",
     "awards": {
       "overallWinner": {
-        "playerName": "John Gilbert Baker",
+        "playerName": "John Gilbert Baker / James Webber",
+        "players": [
+          "John Gilbert Baker",
+          "James Webber"
+        ],
+        "playerCount": 2,
         "score": 30,
-        "countsAsCareerWin": true
+        "countsAsCareerWin": true,
+        "label": "Seniors Walker Cup Winners"
       }
     },
     "results": [
@@ -58750,13 +58869,13 @@
     "scoreType": "Stableford",
     "teamSize": 1,
     "section": "Mens",
-    "competitionClass": "Board",
+    "competitionClass": "Combined Award Event",
     "countsForOrderOfMerit": true,
-    "boardCompetition": true,
-    "major": true,
-    "includeInCareerWins": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": false,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition",
+    "museumCategory": "Combined Award Event",
     "year": 2024,
     "date": "2024-05-18",
     "endDate": null,
@@ -59611,7 +59730,12 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "containsBoardAwards": true,
+    "boardAwardCompetitionIds": [
+      "centenary-trophy",
+      "boscawen-cup"
+    ]
   },
   {
     "competitionId": "christmas-hamper-competition",
@@ -84812,19 +84936,19 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "tom-poole-trophy-and-summer-foursomes-qualifier",
-    "competitionName": "Tom Poole Trophy & Summer Foursomes qualifier",
+    "competitionId": "tom-poole-cup",
+    "competitionName": "Tom Poole Trophy",
     "competitionFormat": "Pairs",
     "scoreType": "Unknown",
     "teamSize": 2,
     "section": "Mens",
-    "competitionClass": "Standard",
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General",
+    "museumCategory": "Board Competition",
     "year": 2024,
     "date": "2024-04-13",
     "endDate": null,
@@ -84834,9 +84958,15 @@
     "sourceDate": "Saturday 13th April 2024, White Tees, Dudley Golf Course",
     "awards": {
       "overallWinner": {
-        "playerName": "Mark Basterfield",
+        "playerName": "Mark Basterfield / Paul Wayne Taylor",
+        "players": [
+          "Mark Basterfield",
+          "Paul Wayne Taylor"
+        ],
+        "playerCount": 2,
         "score": 68,
-        "countsAsCareerWin": true
+        "countsAsCareerWin": true,
+        "label": "Tom Poole Trophy Winners"
       }
     },
     "results": [
@@ -85324,7 +85454,15 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "qualifierAssociations": [
+      {
+        "competitionId": "summer-foursomes-qualifier",
+        "competitionName": "Summer Foursomes Qualifier",
+        "sourceTitle": "Tom Poole Trophy & Summer Foursomes qualifier",
+        "qualificationDetails": "Not yet certified"
+      }
+    ]
   },
   {
     "competitionId": "writtle-grove-winter-greensomes-qualifier",
@@ -91970,13 +92108,13 @@
     "scoreType": "Stableford",
     "teamSize": 1,
     "section": "Mens",
-    "competitionClass": "Board",
+    "competitionClass": "Combined Award Event",
     "countsForOrderOfMerit": true,
-    "boardCompetition": true,
-    "major": true,
-    "includeInCareerWins": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": false,
     "includeInPlayerAppearances": true,
-    "museumCategory": "Board Competition",
+    "museumCategory": "Combined Award Event",
     "year": 2025,
     "date": "2025-05-17",
     "endDate": null,
@@ -92416,7 +92554,12 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "containsBoardAwards": true,
+    "boardAwardCompetitionIds": [
+      "centenary-trophy",
+      "boscawen-cup"
+    ]
   },
   {
     "competitionId": "christmas-hamper-competition",
@@ -116740,19 +116883,19 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "tom-poole-trophy-and-summer-foursomes-qualifier",
-    "competitionName": "Tom Poole Trophy & Summer Foursomes qualifier",
+    "competitionId": "tom-poole-cup",
+    "competitionName": "Tom Poole Trophy",
     "competitionFormat": "Pairs",
     "scoreType": "Unknown",
     "teamSize": 2,
     "section": "Mens",
-    "competitionClass": "Standard",
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General",
+    "museumCategory": "Board Competition",
     "year": 2025,
     "date": "2025-04-12",
     "endDate": null,
@@ -116762,9 +116905,15 @@
     "sourceDate": "Saturday 12th April 2025, White Tees, Dudley Golf Course",
     "awards": {
       "overallWinner": {
-        "playerName": "Graham Morgan",
+        "playerName": "Graham Morgan / Darren Povey",
+        "players": [
+          "Graham Morgan",
+          "Darren Povey"
+        ],
+        "playerCount": 2,
         "score": 66,
-        "countsAsCareerWin": true
+        "countsAsCareerWin": true,
+        "label": "Tom Poole Trophy Winners"
       }
     },
     "results": [
@@ -117317,7 +117466,15 @@
       }
     ],
     "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "holeLengthCertification": "Standard Dudley competition length.",
+    "qualifierAssociations": [
+      {
+        "competitionId": "summer-foursomes-qualifier",
+        "competitionName": "Summer Foursomes Qualifier",
+        "sourceTitle": "Tom Poole Trophy & Summer Foursomes qualifier",
+        "qualificationDetails": "Not yet certified"
+      }
+    ]
   },
   {
     "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
@@ -120126,6 +120283,560 @@
     ],
     "numberOfHoles": 18,
     "holeLengthCertification": "Standard Dudley competition length."
+  },
+  {
+    "competitionId": "august-medal",
+    "competitionName": "August Medal",
+    "competitionFormat": "Individual",
+    "scoreType": "Nett",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2026,
+    "date": "2026-08-01",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "August Medal",
+    "sourceDate": "Saturday 1st August 2026, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "Steve Homer",
+        "score": 65,
+        "countsAsCareerWin": true
+      },
+      "divisionWinners": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Mark Williams",
+          "score": 67,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "Steven Brookes",
+          "score": 69,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "Steve Homer",
+          "score": 65,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        }
+      ],
+      "divisionResults": [
+        {
+          "division": 1,
+          "position": 1,
+          "playerName": "Mark Williams",
+          "score": 67,
+          "label": "Division 1 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 2,
+          "playerName": "Calin Tiplea",
+          "score": 70,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 1,
+          "position": 3,
+          "playerName": "Mark Dando",
+          "score": 70,
+          "label": "Division 1 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 1,
+          "playerName": "Steven Brookes",
+          "score": 69,
+          "label": "Division 2 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 2,
+          "playerName": "Gary Baker",
+          "score": 71,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 2,
+          "position": 3,
+          "playerName": "Anthony Willetts",
+          "score": 71,
+          "label": "Division 2 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 1,
+          "playerName": "Steve Homer",
+          "score": 65,
+          "label": "Division 3 Winner",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 2,
+          "playerName": "Jason Bates",
+          "score": 66,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        },
+        {
+          "division": 3,
+          "position": 3,
+          "playerName": "Ross Postin",
+          "score": 69,
+          "label": "Division 3 Top 3",
+          "countsAsCareerWin": false
+        }
+      ]
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 65,
+        "rawLine": "1st\tSteve Homer(22)\t65",
+        "scoreType": "Nett",
+        "nettScore": 65,
+        "playerName": "Steve Homer",
+        "handicap": 22
+      },
+      {
+        "position": 2,
+        "totalScore": 66,
+        "rawLine": "2nd\tJason Bates(24)\t66",
+        "scoreType": "Nett",
+        "nettScore": 66,
+        "playerName": "Jason Bates",
+        "handicap": 24
+      },
+      {
+        "position": 3,
+        "totalScore": 67,
+        "rawLine": "3rd\tMark Williams(11)\t67",
+        "scoreType": "Nett",
+        "nettScore": 67,
+        "playerName": "Mark Williams",
+        "handicap": 11
+      },
+      {
+        "position": 4,
+        "totalScore": 69,
+        "rawLine": "4th\tSteven Brookes(13)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Steven Brookes",
+        "handicap": 13
+      },
+      {
+        "position": 5,
+        "totalScore": 69,
+        "rawLine": "5th\tRoss Postin(33)\t69",
+        "scoreType": "Nett",
+        "nettScore": 69,
+        "playerName": "Ross Postin",
+        "handicap": 33
+      },
+      {
+        "position": 6,
+        "totalScore": 70,
+        "rawLine": "6th\tCalin Tiplea(11)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Calin Tiplea",
+        "handicap": 11
+      },
+      {
+        "position": 7,
+        "totalScore": 70,
+        "rawLine": "7th\tMark Dando(7)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Mark Dando",
+        "handicap": 7
+      },
+      {
+        "position": 8,
+        "totalScore": 70,
+        "rawLine": "8th\tStephen Price(25)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Stephen Price",
+        "handicap": 25
+      },
+      {
+        "position": 9,
+        "totalScore": 70,
+        "rawLine": "9th\tLewis Jones(4)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Lewis Jones",
+        "handicap": 4
+      },
+      {
+        "position": 10,
+        "totalScore": 70,
+        "rawLine": "10th\tClive Kearey(21)\t70",
+        "scoreType": "Nett",
+        "nettScore": 70,
+        "playerName": "Clive Kearey",
+        "handicap": 21
+      },
+      {
+        "position": 11,
+        "totalScore": 71,
+        "rawLine": "11th\tGary Baker(13)\t71",
+        "scoreType": "Nett",
+        "nettScore": 71,
+        "playerName": "Gary Baker",
+        "handicap": 13
+      },
+      {
+        "position": 12,
+        "totalScore": 71,
+        "rawLine": "12th\tAnthony Willetts(18)\t71",
+        "scoreType": "Nett",
+        "nettScore": 71,
+        "playerName": "Anthony Willetts",
+        "handicap": 18
+      },
+      {
+        "position": 13,
+        "totalScore": 72,
+        "rawLine": "13th\tPhilip John Northall(16)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Philip John Northall",
+        "handicap": 16
+      },
+      {
+        "position": 14,
+        "totalScore": 72,
+        "rawLine": "14th\tRobert Shedden(15)\t72",
+        "scoreType": "Nett",
+        "nettScore": 72,
+        "playerName": "Robert Shedden",
+        "handicap": 15
+      },
+      {
+        "position": 15,
+        "totalScore": 73,
+        "rawLine": "15th\tNigel Brookes(7)\t73",
+        "scoreType": "Nett",
+        "nettScore": 73,
+        "playerName": "Nigel Brookes",
+        "handicap": 7
+      },
+      {
+        "position": 16,
+        "totalScore": 74,
+        "rawLine": "16th\tPaul Ian Welch(11)\t74",
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Paul Ian Welch",
+        "handicap": 11
+      },
+      {
+        "position": 17,
+        "totalScore": 74,
+        "rawLine": "17th\tCraig Locke(19)\t74",
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Craig Locke",
+        "handicap": 19
+      },
+      {
+        "position": 18,
+        "totalScore": 74,
+        "rawLine": "18th\tRoger William Grainger(27)\t74",
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Roger William Grainger",
+        "handicap": 27
+      },
+      {
+        "position": 19,
+        "totalScore": 74,
+        "rawLine": "19th\tPhilip Thompson(8)\t74",
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Philip Thompson",
+        "handicap": 8
+      },
+      {
+        "position": 20,
+        "totalScore": 74,
+        "rawLine": "20th\tNeil Hartland(8)\t74",
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Neil Hartland",
+        "handicap": 8
+      },
+      {
+        "position": 21,
+        "totalScore": 74,
+        "rawLine": "21st\tIan Frederick Stevens(8)\t74",
+        "scoreType": "Nett",
+        "nettScore": 74,
+        "playerName": "Ian Frederick Stevens",
+        "handicap": 8
+      },
+      {
+        "position": 22,
+        "totalScore": 75,
+        "rawLine": "22nd\tStephen Hall(20)\t75",
+        "scoreType": "Nett",
+        "nettScore": 75,
+        "playerName": "Stephen Hall",
+        "handicap": 20
+      },
+      {
+        "position": 23,
+        "totalScore": 76,
+        "rawLine": "23rd\tAlan Ball(8)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Alan Ball",
+        "handicap": 8
+      },
+      {
+        "position": 24,
+        "totalScore": 76,
+        "rawLine": "24th\tKeith John Woodall(22)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Keith John Woodall",
+        "handicap": 22
+      },
+      {
+        "position": 25,
+        "totalScore": 76,
+        "rawLine": "25th\tG.B. Ray(14)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "G.B. Ray",
+        "handicap": 14
+      },
+      {
+        "position": 26,
+        "totalScore": 76,
+        "rawLine": "26th\tJames Stevens(9)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "James Stevens",
+        "handicap": 9
+      },
+      {
+        "position": 27,
+        "totalScore": 76,
+        "rawLine": "27th\tJamie Daniel Hunt(13)\t76",
+        "scoreType": "Nett",
+        "nettScore": 76,
+        "playerName": "Jamie Daniel Hunt",
+        "handicap": 13
+      },
+      {
+        "position": 28,
+        "totalScore": 78,
+        "rawLine": "28th\tScott Whitehall(17)\t78",
+        "scoreType": "Nett",
+        "nettScore": 78,
+        "playerName": "Scott Whitehall",
+        "handicap": 17
+      },
+      {
+        "position": 29,
+        "totalScore": 79,
+        "rawLine": "29th\tRobert Keith Woodall(5)\t79",
+        "scoreType": "Nett",
+        "nettScore": 79,
+        "playerName": "Robert Keith Woodall",
+        "handicap": 5
+      },
+      {
+        "position": 30,
+        "totalScore": 80,
+        "rawLine": "30th\tAndrew Deakin(13)\t80",
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Andrew Deakin",
+        "handicap": 13
+      },
+      {
+        "position": 31,
+        "totalScore": 80,
+        "rawLine": "31st\tJason Hurp(11)\t80",
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Jason Hurp",
+        "handicap": 11
+      },
+      {
+        "position": 32,
+        "totalScore": 80,
+        "rawLine": "32nd\tPaul Harper(15)\t80",
+        "scoreType": "Nett",
+        "nettScore": 80,
+        "playerName": "Paul Harper",
+        "handicap": 15
+      },
+      {
+        "position": 33,
+        "totalScore": 81,
+        "rawLine": "33rd\tCarl Elsworth(7)\t81",
+        "scoreType": "Nett",
+        "nettScore": 81,
+        "playerName": "Carl Elsworth",
+        "handicap": 7
+      },
+      {
+        "position": 34,
+        "totalScore": 82,
+        "rawLine": "34th\tMark Neil Tolley(12)\t82",
+        "scoreType": "Nett",
+        "nettScore": 82,
+        "playerName": "Mark Neil Tolley",
+        "handicap": 12
+      },
+      {
+        "position": 35,
+        "totalScore": 85,
+        "rawLine": "35th\tJohn Goudge(28)\t85",
+        "scoreType": "Nett",
+        "nettScore": 85,
+        "playerName": "John Goudge",
+        "handicap": 28
+      },
+      {
+        "position": 36,
+        "totalScore": 86,
+        "rawLine": "36th\tAdrian Burns(12)\t86",
+        "scoreType": "Nett",
+        "nettScore": 86,
+        "playerName": "Adrian Burns",
+        "handicap": 12
+      },
+      {
+        "position": 37,
+        "totalScore": 86,
+        "rawLine": "37th\tDavid Hill(22)\t86",
+        "scoreType": "Nett",
+        "nettScore": 86,
+        "playerName": "David Hill",
+        "handicap": 22
+      },
+      {
+        "position": 38,
+        "totalScore": 87,
+        "rawLine": "38th\tM T Cowdell(13)\t87",
+        "scoreType": "Nett",
+        "nettScore": 87,
+        "playerName": "M T Cowdell",
+        "handicap": 13
+      },
+      {
+        "position": 39,
+        "totalScore": 89,
+        "rawLine": "39th\tPaul Meaden(24)\t89",
+        "scoreType": "Nett",
+        "nettScore": 89,
+        "playerName": "Paul Meaden",
+        "handicap": 24
+      },
+      {
+        "position": 40,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "40th\tPeter Evans(13)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Peter Evans",
+        "handicap": 13
+      },
+      {
+        "position": 41,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "41st\tChristopher Vanes(21)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Christopher Vanes",
+        "handicap": 21
+      },
+      {
+        "position": 42,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "42nd\tStuart Evans(9)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Stuart Evans",
+        "handicap": 9
+      },
+      {
+        "position": 43,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "43rd\tScott Postin(13)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Scott Postin",
+        "handicap": 13
+      },
+      {
+        "position": 44,
+        "status": "NR",
+        "statusNote": "",
+        "rawLine": "44th\tMark Andrew Poulding(8)\tNR",
+        "scoreType": "Nett",
+        "playerName": "Mark Andrew Poulding",
+        "handicap": 8
+      },
+      {
+        "position": 45,
+        "status": "DQ",
+        "statusNote": "Rule 3.3b Not returning a scorecard",
+        "rawLine": "45th\tJames Price(24)\tDQ Rule 3.3b Not returning a scorecard",
+        "scoreType": "Nett",
+        "playerName": "James Price",
+        "handicap": 24
+      },
+      {
+        "position": 46,
+        "status": "DQ",
+        "statusNote": "Rule 3.3b Not returning a scorecard",
+        "rawLine": "46th\tMitchell Raybould(19)\tDQ Rule 3.3b Not returning a scorecard",
+        "scoreType": "Nett",
+        "playerName": "Mitchell Raybould",
+        "handicap": 19
+      },
+      {
+        "position": 47,
+        "status": "DQ",
+        "statusNote": "Rule 3.3b Not returning a scorecard",
+        "rawLine": "47th\tAndrew Russell(12)\tDQ Rule 3.3b Not returning a scorecard",
+        "scoreType": "Nett",
+        "playerName": "Andrew Russell",
+        "handicap": 12
+      }
+    ]
   },
   {
     "competitionId": "bassano-cup",
@@ -129053,6 +129764,187 @@
     ],
     "numberOfHoles": 18,
     "holeLengthCertification": "Standard Dudley competition length."
+  },
+  {
+    "competitionId": "july-sunday-stableford",
+    "competitionName": "July Sunday Stableford",
+    "competitionFormat": "Individual",
+    "scoreType": "Stableford",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Standard",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": false,
+    "major": false,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "General",
+    "year": 2026,
+    "date": "2026-07-26",
+    "endDate": null,
+    "multiDayEvent": false,
+    "numberOfRounds": 1,
+    "sourceTitle": "July Sunday Stableford",
+    "sourceDate": "Sunday 26th July 2026, White Tees, Dudley Golf Course",
+    "awards": {
+      "overallWinner": {
+        "playerName": "David Evitts",
+        "score": 36,
+        "countsAsCareerWin": true
+      }
+    },
+    "results": [
+      {
+        "position": 1,
+        "totalScore": 36,
+        "rawLine": "1st\tDavid Evitts(25)\t36",
+        "scoreType": "Stableford",
+        "stablefordPoints": 36,
+        "points": 36,
+        "playerName": "David Evitts",
+        "handicap": 25
+      },
+      {
+        "position": 2,
+        "totalScore": 36,
+        "rawLine": "2nd\tPaul Ian Welch(11)\t36",
+        "scoreType": "Stableford",
+        "stablefordPoints": 36,
+        "points": 36,
+        "playerName": "Paul Ian Welch",
+        "handicap": 11
+      },
+      {
+        "position": 3,
+        "totalScore": 35,
+        "rawLine": "3rd\tStephen Hall(20)\t35",
+        "scoreType": "Stableford",
+        "stablefordPoints": 35,
+        "points": 35,
+        "playerName": "Stephen Hall",
+        "handicap": 20
+      },
+      {
+        "position": 4,
+        "totalScore": 31,
+        "rawLine": "4th\tKeith Durbridge(24)\t31",
+        "scoreType": "Stableford",
+        "stablefordPoints": 31,
+        "points": 31,
+        "playerName": "Keith Durbridge",
+        "handicap": 24
+      },
+      {
+        "position": 5,
+        "totalScore": 31,
+        "rawLine": "5th\tDarren Jones(15)\t31",
+        "scoreType": "Stableford",
+        "stablefordPoints": 31,
+        "points": 31,
+        "playerName": "Darren Jones",
+        "handicap": 15
+      },
+      {
+        "position": 6,
+        "totalScore": 31,
+        "rawLine": "6th\tRobert Shedden(15)\t31",
+        "scoreType": "Stableford",
+        "stablefordPoints": 31,
+        "points": 31,
+        "playerName": "Robert Shedden",
+        "handicap": 15
+      },
+      {
+        "position": 7,
+        "totalScore": 31,
+        "rawLine": "7th\tPavittar Singh(31)\t31",
+        "scoreType": "Stableford",
+        "stablefordPoints": 31,
+        "points": 31,
+        "playerName": "Pavittar Singh",
+        "handicap": 31
+      },
+      {
+        "position": 8,
+        "totalScore": 31,
+        "rawLine": "8th\tDavid Hill(22)\t31",
+        "scoreType": "Stableford",
+        "stablefordPoints": 31,
+        "points": 31,
+        "playerName": "David Hill",
+        "handicap": 22
+      },
+      {
+        "position": 9,
+        "totalScore": 30,
+        "rawLine": "9th\tAdam Stanfield(12)\t30",
+        "scoreType": "Stableford",
+        "stablefordPoints": 30,
+        "points": 30,
+        "playerName": "Adam Stanfield",
+        "handicap": 12
+      },
+      {
+        "position": 10,
+        "totalScore": 30,
+        "rawLine": "10th\tKeith John Woodall(22)\t30",
+        "scoreType": "Stableford",
+        "stablefordPoints": 30,
+        "points": 30,
+        "playerName": "Keith John Woodall",
+        "handicap": 22
+      },
+      {
+        "position": 11,
+        "totalScore": 30,
+        "rawLine": "11th\tRoger William Grainger(26)\t30",
+        "scoreType": "Stableford",
+        "stablefordPoints": 30,
+        "points": 30,
+        "playerName": "Roger William Grainger",
+        "handicap": 26
+      },
+      {
+        "position": 12,
+        "totalScore": 29,
+        "rawLine": "12th\tKelvin Jordan(18)\t29",
+        "scoreType": "Stableford",
+        "stablefordPoints": 29,
+        "points": 29,
+        "playerName": "Kelvin Jordan",
+        "handicap": 18
+      },
+      {
+        "position": 13,
+        "totalScore": 29,
+        "rawLine": "13th\tBenjamin Jones(19)\t29",
+        "scoreType": "Stableford",
+        "stablefordPoints": 29,
+        "points": 29,
+        "playerName": "Benjamin Jones",
+        "handicap": 19
+      },
+      {
+        "position": 14,
+        "totalScore": 24,
+        "rawLine": "14th\tClinton Taylor(21)\t24",
+        "scoreType": "Stableford",
+        "stablefordPoints": 24,
+        "points": 24,
+        "playerName": "Clinton Taylor",
+        "handicap": 21
+      },
+      {
+        "position": 15,
+        "totalScore": 20,
+        "rawLine": "15th\tSteve Aston(8)\t20",
+        "scoreType": "Stableford",
+        "stablefordPoints": 20,
+        "points": 20,
+        "playerName": "Steve Aston",
+        "handicap": 8
+      }
+    ]
   },
   {
     "competitionId": "june-monthly-medal-prosser-lytham-trophy",
