@@ -7,34 +7,350 @@
     "section": "Mens",
     "seniorsExcluded": true,
     "standardCompetitionsExcluded": true,
+    "qualifierRoundsExcluded": true,
     "publicVisibility": "Committee Only"
   },
-  "rules": [
+  "rules": {
+    "singlesMajorPoints": 1,
+    "pairsTeamMajorPoints": 0.5,
+    "knockoutWinnerPoints": 2,
+    "clubChampionPoints": 2
+  },
+  "progress": {
+    "totalMajors": 13,
+    "completedMajors": 11,
+    "awaitingMajors": 2,
+    "reviewMajors": 0
+  },
+  "currentLeader": {
+    "player": "Richard Weston",
+    "points": 2.5
+  },
+  "schedule": [
     {
-      "awardType": "Club Champion",
-      "points": 2
+      "id": "bassano-cup",
+      "name": "Bassano Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-06-20",
+      "winners": [
+        "Mitchell Raybould"
+      ],
+      "note": null
     },
     {
-      "awardType": "Knockout Winner",
-      "points": 2
+      "id": "bloom-cup",
+      "name": "Bloom Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-07-11",
+      "winners": [
+        "Jason Bates"
+      ],
+      "note": null
     },
     {
-      "awardType": "Singles Major",
-      "points": 1
+      "id": "claughton-cup",
+      "name": "Claughton Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-04-04",
+      "winners": [
+        "Richard Weston"
+      ],
+      "note": null
     },
     {
-      "awardType": "Pairs / Team Major",
-      "points": 0.5
+      "id": "coronation-cup",
+      "name": "Coronation Cup",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-04-25",
+      "winners": [
+        "Gregory Curry",
+        "Richard Weston"
+      ],
+      "note": null
+    },
+    {
+      "id": "hooper-cup",
+      "name": "Hooper Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-07-25",
+      "winners": [
+        "Richard Weston"
+      ],
+      "note": null
+    },
+    {
+      "id": "james-grainger-trophy",
+      "name": "James Grainger Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-06-13",
+      "winners": [
+        "Tony John Salt",
+        "Ryan Walker"
+      ],
+      "note": null
+    },
+    {
+      "id": "millennium-trophy",
+      "name": "Millennium Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-05-23",
+      "winners": [
+        "Mark Dando",
+        "Clive Kearey",
+        "Adam Stanfield",
+        "Gary Baker"
+      ],
+      "note": null
+    },
+    {
+      "id": "probus-trophy",
+      "name": "Probus Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-05-30",
+      "winners": [
+        "Neil Hartland",
+        "James Stevens"
+      ],
+      "note": null
+    },
+    {
+      "id": "prosser-lytham-trophy",
+      "name": "Prosser Lytham Trophy",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-06-06",
+      "winners": [
+        "Alan Ball"
+      ],
+      "note": null
+    },
+    {
+      "id": "tom-poole-cup",
+      "name": "Tom Poole Cup",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-05-09",
+      "winners": [
+        "Paul Thomas Donnelly",
+        "Sean Element"
+      ],
+      "note": null
+    },
+    {
+      "id": "brian-lloyd-cup",
+      "name": "Brian Lloyd Cup",
+      "type": "Knockout Winner",
+      "pointsPerWinner": 2,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": "The May Medal is a qualifying round only. No points are awarded until the knockout winner is known."
+    },
+    {
+      "id": "club-championship",
+      "name": "Club Championship",
+      "type": "Club Champion",
+      "pointsPerWinner": 2,
+      "status": "Completed",
+      "date": "2026-06-27",
+      "winners": [
+        "Lewis Jones"
+      ],
+      "note": null
+    },
+    {
+      "id": "summer-foursomes",
+      "name": "Summer Foursomes",
+      "type": "Knockout Winner",
+      "pointsPerWinner": 2,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": "The 9 May event is the qualifying round only. No knockout points are awarded until the Summer Foursomes winners are decided."
     }
   ],
-  "tieBreakOrder": [
-    "Total points",
-    "Club Championship wins",
-    "Knockout wins",
-    "Singles major wins",
-    "Total qualifying wins",
-    "Player name"
+  "completedMajors": [
+    {
+      "id": "bassano-cup",
+      "name": "Bassano Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-06-20",
+      "winners": [
+        "Mitchell Raybould"
+      ],
+      "note": null
+    },
+    {
+      "id": "bloom-cup",
+      "name": "Bloom Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-07-11",
+      "winners": [
+        "Jason Bates"
+      ],
+      "note": null
+    },
+    {
+      "id": "claughton-cup",
+      "name": "Claughton Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-04-04",
+      "winners": [
+        "Richard Weston"
+      ],
+      "note": null
+    },
+    {
+      "id": "coronation-cup",
+      "name": "Coronation Cup",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-04-25",
+      "winners": [
+        "Gregory Curry",
+        "Richard Weston"
+      ],
+      "note": null
+    },
+    {
+      "id": "hooper-cup",
+      "name": "Hooper Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-07-25",
+      "winners": [
+        "Richard Weston"
+      ],
+      "note": null
+    },
+    {
+      "id": "james-grainger-trophy",
+      "name": "James Grainger Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-06-13",
+      "winners": [
+        "Tony John Salt",
+        "Ryan Walker"
+      ],
+      "note": null
+    },
+    {
+      "id": "millennium-trophy",
+      "name": "Millennium Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-05-23",
+      "winners": [
+        "Mark Dando",
+        "Clive Kearey",
+        "Adam Stanfield",
+        "Gary Baker"
+      ],
+      "note": null
+    },
+    {
+      "id": "probus-trophy",
+      "name": "Probus Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-05-30",
+      "winners": [
+        "Neil Hartland",
+        "James Stevens"
+      ],
+      "note": null
+    },
+    {
+      "id": "prosser-lytham-trophy",
+      "name": "Prosser Lytham Trophy",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": "2026-06-06",
+      "winners": [
+        "Alan Ball"
+      ],
+      "note": null
+    },
+    {
+      "id": "tom-poole-cup",
+      "name": "Tom Poole Cup",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-05-09",
+      "winners": [
+        "Paul Thomas Donnelly",
+        "Sean Element"
+      ],
+      "note": null
+    },
+    {
+      "id": "club-championship",
+      "name": "Club Championship",
+      "type": "Club Champion",
+      "pointsPerWinner": 2,
+      "status": "Completed",
+      "date": "2026-06-27",
+      "winners": [
+        "Lewis Jones"
+      ],
+      "note": null
+    }
   ],
+  "awaitingMajors": [
+    {
+      "id": "brian-lloyd-cup",
+      "name": "Brian Lloyd Cup",
+      "type": "Knockout Winner",
+      "pointsPerWinner": 2,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": "The May Medal is a qualifying round only. No points are awarded until the knockout winner is known."
+    },
+    {
+      "id": "summer-foursomes",
+      "name": "Summer Foursomes",
+      "type": "Knockout Winner",
+      "pointsPerWinner": 2,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": "The 9 May event is the qualifying round only. No knockout points are awarded until the Summer Foursomes winners are decided."
+    }
+  ],
+  "reviewMajors": [],
   "standings": [
     {
       "rank": 1,
@@ -48,38 +364,192 @@
       "evidence": [
         {
           "competitionId": "claughton-cup",
+          "resultCompetitionId": "claughton-cup",
           "competitionName": "Claughton Cup",
-          "year": 2026,
-          "date": "2026-04-04",
           "awardType": "Singles Major",
           "points": 1,
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
+          "year": 2026,
+          "date": "2026-04-04",
+          "source": "Certified competition result"
         },
         {
           "competitionId": "coronation-cup",
+          "resultCompetitionId": "coronation-cup",
           "competitionName": "Coronation Cup",
-          "year": 2026,
-          "date": "2026-04-25",
           "awardType": "Pairs / Team Major",
           "points": 0.5,
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
+          "year": 2026,
+          "date": "2026-04-25",
+          "source": "Certified competition result"
         },
         {
           "competitionId": "hooper-cup",
+          "resultCompetitionId": "hooper-cup",
           "competitionName": "Hooper Cup",
-          "year": 2026,
-          "date": "2026-07-25",
           "awardType": "Singles Major",
           "points": 1,
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
+          "year": 2026,
+          "date": "2026-07-25",
+          "source": "Certified competition result"
         }
       ]
     },
     {
       "rank": 2,
+      "player": "Lewis Jones",
+      "totalPoints": 2,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 0,
+      "knockoutWins": 0,
+      "clubChampionships": 1,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "club-championship",
+          "resultCompetitionId": "club-championship",
+          "competitionName": "Club Championship",
+          "awardType": "Club Champion",
+          "points": 2,
+          "year": 2026,
+          "date": "2026-06-27",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "player": "Alan Ball",
+      "totalPoints": 1,
+      "singlesMajors": 1,
+      "pairsTeamMajors": 0,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "prosser-lytham-trophy",
+          "resultCompetitionId": "june-monthly-medal-prosser-lytham-trophy",
+          "competitionName": "Prosser Lytham Trophy",
+          "awardType": "Singles Major",
+          "points": 1,
+          "year": 2026,
+          "date": "2026-06-06",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "player": "Jason Bates",
+      "totalPoints": 1,
+      "singlesMajors": 1,
+      "pairsTeamMajors": 0,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "bloom-cup",
+          "resultCompetitionId": "july-medal-bloom-cup",
+          "competitionName": "Bloom Cup",
+          "awardType": "Singles Major",
+          "points": 1,
+          "year": 2026,
+          "date": "2026-07-11",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "player": "Mitchell Raybould",
+      "totalPoints": 1,
+      "singlesMajors": 1,
+      "pairsTeamMajors": 0,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "bassano-cup",
+          "resultCompetitionId": "bassano-cup",
+          "competitionName": "Bassano Cup",
+          "awardType": "Singles Major",
+          "points": 1,
+          "year": 2026,
+          "date": "2026-06-20",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "player": "Adam Stanfield",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "millennium-trophy",
+          "resultCompetitionId": "millennium-trophy-4-ball",
+          "competitionName": "Millennium Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-05-23",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "player": "Clive Kearey",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "millennium-trophy",
+          "resultCompetitionId": "millennium-trophy-4-ball",
+          "competitionName": "Millennium Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-05-23",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "player": "Gary Baker",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "millennium-trophy",
+          "resultCompetitionId": "millennium-trophy-4-ball",
+          "competitionName": "Millennium Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-05-23",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 9,
       "player": "Gregory Curry",
       "totalPoints": 0.5,
       "singlesMajors": 0,
@@ -90,18 +560,18 @@
       "evidence": [
         {
           "competitionId": "coronation-cup",
+          "resultCompetitionId": "coronation-cup",
           "competitionName": "Coronation Cup",
-          "year": 2026,
-          "date": "2026-04-25",
           "awardType": "Pairs / Team Major",
           "points": 0.5,
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
+          "year": 2026,
+          "date": "2026-04-25",
+          "source": "Certified competition result"
         }
       ]
     },
     {
-      "rank": 3,
+      "rank": 10,
       "player": "James Stevens",
       "totalPoints": 0.5,
       "singlesMajors": 0,
@@ -111,19 +581,41 @@
       "qualifyingWins": 1,
       "evidence": [
         {
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "year": 2026,
-          "date": "2026-05-30",
+          "competitionId": "probus-trophy",
+          "resultCompetitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Trophy",
           "awardType": "Pairs / Team Major",
           "points": 0.5,
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
+          "year": 2026,
+          "date": "2026-05-30",
+          "source": "Certified competition result"
         }
       ]
     },
     {
-      "rank": 4,
+      "rank": 11,
+      "player": "Mark Dando",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "millennium-trophy",
+          "resultCompetitionId": "millennium-trophy-4-ball",
+          "competitionName": "Millennium Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-05-23",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 12,
       "player": "Neil Hartland",
       "totalPoints": 0.5,
       "singlesMajors": 0,
@@ -133,17 +625,104 @@
       "qualifyingWins": 1,
       "evidence": [
         {
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "year": 2026,
-          "date": "2026-05-30",
+          "competitionId": "probus-trophy",
+          "resultCompetitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Trophy",
           "awardType": "Pairs / Team Major",
           "points": 0.5,
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
+          "year": 2026,
+          "date": "2026-05-30",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "player": "Paul Thomas Donnelly",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "tom-poole-cup",
+          "resultCompetitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Cup",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-05-09",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "player": "Ryan Walker",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "james-grainger-trophy",
+          "resultCompetitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-06-13",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "player": "Sean Element",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "tom-poole-cup",
+          "resultCompetitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Cup",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-05-09",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "player": "Tony John Salt",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "james-grainger-trophy",
+          "resultCompetitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "year": 2026,
+          "date": "2026-06-13",
+          "source": "Certified competition result"
         }
       ]
     }
-  ],
-  "excluded": []
+  ]
 }

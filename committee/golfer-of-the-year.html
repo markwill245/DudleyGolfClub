@@ -207,9 +207,146 @@
           </div>
         `;
 
+      const completedMajors =
+        Array.isArray(data.completedMajors)
+          ? data.completedMajors
+          : [];
+
+      const awaitingMajors =
+        Array.isArray(data.awaitingMajors)
+          ? data.awaitingMajors
+          : [];
+
       document
         .getElementById("standings")
         .innerHTML = `
+          <section class="grid md:grid-cols-4 gap-5 mb-10">
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Majors Completed
+              </p>
+              <strong class="serif text-4xl">
+                ${data.progress.completedMajors}
+                / ${data.progress.totalMajors}
+              </strong>
+            </div>
+
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Majors Remaining
+              </p>
+              <strong class="serif text-4xl">
+                ${data.progress.awaitingMajors}
+              </strong>
+            </div>
+
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Current Leader
+              </p>
+              <strong class="serif text-3xl">
+                ${escapeHtml(
+                  data.currentLeader?.player || "—"
+                )}
+              </strong>
+            </div>
+
+            <div class="bg-[#132419] text-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Leader Points
+              </p>
+              <strong class="serif text-4xl text-[#C5A367]">
+                ${data.currentLeader?.points ?? "—"}
+              </strong>
+            </div>
+          </section>
+
+          <section class="grid lg:grid-cols-2 gap-7 mb-10">
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl shadow overflow-hidden">
+              <div class="p-6 border-b border-[#C5A367]/20">
+                <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                  Completed
+                </p>
+                <h2 class="serif text-3xl">
+                  Completed Majors
+                </h2>
+              </div>
+
+              <div>
+                ${completedMajors.map(item => `
+                  <div class="border-b last:border-b-0 border-[#C5A367]/20 p-5">
+                    <div class="flex items-start justify-between gap-4">
+                      <div>
+                        <strong>
+                          ${escapeHtml(item.name)}
+                        </strong>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                          ${escapeHtml(item.type)}
+                          ·
+                          ${escapeHtml(item.date || "")}
+                        </p>
+
+                        <p class="mt-2 text-sm">
+                          ${item.winners
+                            .map(escapeHtml)
+                            .join(" / ")}
+                        </p>
+                      </div>
+
+                      <span class="text-[#C5A367] font-bold">
+                        ${item.pointsPerWinner}
+                        pts
+                      </span>
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl shadow overflow-hidden">
+              <div class="p-6 border-b border-[#C5A367]/20">
+                <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                  Still to Come
+                </p>
+                <h2 class="serif text-3xl">
+                  Awaiting Results
+                </h2>
+              </div>
+
+              <div>
+                ${awaitingMajors.map(item => `
+                  <div class="border-b last:border-b-0 border-[#C5A367]/20 p-5">
+                    <div class="flex items-start justify-between gap-4">
+                      <div>
+                        <strong>
+                          ${escapeHtml(item.name)}
+                        </strong>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                          ${escapeHtml(item.type)}
+                        </p>
+
+                        ${item.note
+                          ? `
+                            <p class="mt-2 text-xs leading-5 text-amber-700">
+                              ${escapeHtml(item.note)}
+                            </p>
+                          `
+                          : ""
+                        }
+                      </div>
+
+                      <span class="rounded-full bg-amber-50 border border-amber-300 px-3 py-1 text-xs text-amber-800">
+                        Awaiting
+                      </span>
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+          </section>
+
           <section class="bg-white border border-[#C5A367]/30 rounded-2xl shadow overflow-hidden">
             <div class="p-7 border-b border-[#C5A367]/20">
               <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">
