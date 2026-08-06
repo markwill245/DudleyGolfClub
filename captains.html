@@ -69,54 +69,130 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-
-            <div class="bg-white p-8 border border-[#C5A367]/20 text-center shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="bg-[#132419] p-1 shadow-md max-w-[180px] mx-auto mb-6">
-                        <img src="cap/capt1.webp" alt="Dudley Golf Club Club Captain formal portrait"
-                            class="w-full h-48 object-cover grayscale hover:grayscale-0 transition duration-500"
-                            width="800" height="400" loading="lazy">
-                    </div>
-
-                    <h3 class="serif text-2xl mb-1">Club Captain</h3>
-                    <p class="text-[#C5A367] font-bold text-xs uppercase tracking-wider mb-4">2026 Season</p>
-                    <p class="text-gray-600 text-xs leading-relaxed italic mb-6">
-                        Championing the competitive spirit of our membership, organizing our historic board
-                        competitions, and upholding the timeless camaraderie that makes Turners Hill a home away from
-                        home.
-                    </p>
-                </div>
-                <div>
-                    <div class="text-[#132419] font-semibold text-sm tracking-wide mb-1"> Kieth Woodall</div>
-                    <div class="text-[10px] text-gray-400 uppercase tracking-widest border-t border-gray-100 pt-3">
-                        Dudley Golf Club</div>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 border border-[#C5A367]/20 text-center shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="bg-[#132419] p-1 shadow-md max-w-[180px] mx-auto mb-6">
-                        <img src="cap/capt2.webp" alt="Dudley Golf Club Seniors Captain formal portrait"
-                            class="w-full h-48 object-cover grayscale hover:grayscale-0 transition duration-500"
-                            width="800" height="400" loading="lazy">
-                    </div>
-
-                    <h3 class="serif text-2xl mb-1">Seniors Captain</h3>
-                    <p class="text-[#C5A367] font-bold text-xs uppercase tracking-wider mb-4">2026 Season</p>
-                    <p class="text-gray-600 text-xs leading-relaxed italic mb-6">
-                        Leading our thriving senior section with a focus on competitive match fixtures, regular
-                        fellowship mornings, and preserving our club's traditional hospitality across the West Midlands.
-                    </p>
-                </div>
-                <div>
-                    <div class="text-[#132419] font-semibold text-sm tracking-wide mb-1">Keith Woodall</div>
-                    <div class="text-[10px] text-gray-400 uppercase tracking-widest border-t border-gray-100 pt-3">
-                        Dudley Golf Club</div>
-                </div>
-            </div>
-
+        <div
+            id="captains-grid"
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+        >
+            <p class="md:col-span-2 text-center">
+                Loading certified captains...
+            </p>
         </div>
+
+        <script>
+            function escapeHtml(value) {
+                return String(value ?? "")
+                    .replaceAll("&", "&amp;")
+                    .replaceAll("<", "&lt;")
+                    .replaceAll(">", "&gt;")
+                    .replaceAll('"', "&quot;")
+                    .replaceAll("'", "&#039;");
+            }
+
+            function captainCard(captain) {
+                return `
+                    <article class="bg-white p-8 border border-[#C5A367]/20 text-center shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="bg-[#132419] p-1 shadow-md max-w-[180px] mx-auto mb-6">
+                                <img
+                                    src="${escapeHtml(captain.portrait)}"
+                                    alt="${escapeHtml(captain.role)} formal portrait"
+                                    class="w-full h-48 object-cover grayscale hover:grayscale-0 transition duration-500"
+                                    width="800"
+                                    height="400"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <h3 class="serif text-2xl mb-1">
+                                ${escapeHtml(captain.role)}
+                            </h3>
+
+                            <p class="text-[#C5A367] font-bold text-xs uppercase tracking-wider mb-4">
+                                ${escapeHtml(captain.seasonLabel)}
+                            </p>
+
+                            <p class="text-gray-600 text-xs leading-relaxed italic mb-6">
+                                ${escapeHtml(captain.description)}
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="text-[#132419] font-semibold text-sm tracking-wide mb-1">
+                                ${escapeHtml(captain.name)}
+                            </div>
+
+                            <div class="text-[10px] text-gray-400 uppercase tracking-widest border-t border-gray-100 pt-3">
+                                ${escapeHtml(captain.clubLabel)}
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }
+
+            async function loadCaptains() {
+                const grid =
+                    document.getElementById(
+                        "captains-grid"
+                    );
+
+                try {
+                    const response = await fetch(
+                        "data/captains-certified.json",
+                        {
+                            cache: "no-store"
+                        }
+                    );
+
+                    if (!response.ok) {
+                        throw new Error(
+                            `Certified Captains returned ${response.status}`
+                        );
+                    }
+
+                    const data =
+                        await response.json();
+
+                    if (
+                        data.certificationStatus !==
+                        "CERTIFIED"
+                    ) {
+                        throw new Error(
+                            "Captains data is not certified."
+                        );
+                    }
+
+                    grid.innerHTML = [
+                        captainCard(
+                            data.current.clubCaptain
+                        ),
+
+                        captainCard(
+                            data.current.seniorsCaptain
+                        )
+                    ].join("");
+
+                } catch (error) {
+                    console.error(
+                        "Certified Captains failed to load:",
+                        error
+                    );
+
+                    grid.innerHTML = `
+                        <div class="md:col-span-2 bg-white p-8 border border-red-300 text-center shadow-sm">
+                            <h2 class="serif text-3xl mb-4">
+                                Captains unavailable
+                            </h2>
+
+                            <p class="text-gray-600">
+                                The certified current-captains data could not be loaded.
+                            </p>
+                        </div>
+                    `;
+                }
+            }
+
+            loadCaptains();
+        </script>
 
         <div class="bg-white p-8 md:p-10 border border-[#C5A367]/10 shadow-sm mb-16">
             <h3 class="serif text-xl mb-4 text-[#132419]">The Captain’s Drive-In</h3>

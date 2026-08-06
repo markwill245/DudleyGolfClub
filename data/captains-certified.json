@@ -1,0 +1,45 @@
+{
+  "title": "Dudley Golf Club Captains",
+  "certificationStatus": "CERTIFIED",
+  "architecture": "Current office-holders with certified historical context",
+  "source": {
+    "current": "current-captains.json",
+    "history": "captains-summary.json",
+    "playerIdentity": "players.json"
+  },
+  "season": 2026,
+  "current": {
+    "clubCaptain": {
+      "name": "Keith Woodall",
+      "role": "Club Captain",
+      "season": 2026,
+      "seasonLabel": "2026 Season",
+      "portrait": "cap/capt1.webp",
+      "description": "Championing the competitive spirit of our membership, organising our historic board competitions, and upholding the timeless camaraderie that makes Turners Hill a home away from home.",
+      "clubLabel": "Dudley Golf Club"
+    },
+    "seniorsCaptain": {
+      "name": "Keith Woodall",
+      "role": "Seniors Captain",
+      "season": 2026,
+      "seasonLabel": "2026 Season",
+      "portrait": "cap/capt2.webp",
+      "description": "Leading our thriving senior section with a focus on competitive match fixtures, regular fellowship mornings, and preserving our club's traditional hospitality across the West Midlands.",
+      "clubLabel": "Dudley Golf Club"
+    }
+  },
+  "historySummary": {
+    "clubCaptains": {
+      "firstYear": 1893,
+      "lastHistoricYear": 2018,
+      "records": 118,
+      "captains": 89
+    },
+    "seniorsCaptains": {
+      "firstYear": 1977,
+      "lastHistoricYear": 2025,
+      "records": 49,
+      "captains": 48
+    }
+  }
+}
