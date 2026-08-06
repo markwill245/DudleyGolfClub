@@ -39,7 +39,7 @@
       <h1 class="text-5xl font-serif mb-4">Player Index</h1>
 
       <p class="text-lg max-w-3xl">
-        Explore recorded player profiles, career statistics, Hall of Fame scores and competition history.
+        Explore certified player profiles, career statistics, Hall of Fame scores and competition history.
       </p>
     </section>
 
@@ -59,7 +59,18 @@
     let activePlayers = [];
 
     async function loadPlayers() {
-      const response = await fetch("data/player-page-data.json");
+      const response = await fetch(
+        "data/player-page-data.json",
+        {
+          cache: "no-store"
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Player Index data returned ${response.status}`
+        );
+      }
       allPlayers = await response.json();
 
       activePlayers = allPlayers
