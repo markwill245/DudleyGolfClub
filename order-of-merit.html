@@ -100,60 +100,6 @@
         .replace(/^-+|-+$/g, "");
     }
 
-    function seasonSortValue(label) {
-      const years = String(label || "")
-        .match(/\d{4}|\d{2}/g) || [];
-
-      if (!years.length) {
-        return 0;
-      }
-
-      const startYear = Number(years[0]);
-
-      if (years.length === 1) {
-        return startYear;
-      }
-
-      const second = Number(years[1]);
-
-      const endYear = years[1].length === 2
-        ? Math.floor(startYear / 100) * 100 + second
-        : second;
-
-      return Math.max(startYear, endYear);
-    }
-
-    function latestSeason(data) {
-      const entries = Object.entries(data || {});
-
-      if (!entries.length) {
-        return {
-          season: "",
-          leaderboard: []
-        };
-      }
-
-      entries.sort((a, b) =>
-        seasonSortValue(b[0]) -
-        seasonSortValue(a[0])
-      );
-
-      const [seasonKey, seasonValue] = entries[0];
-
-      if (Array.isArray(seasonValue)) {
-        return {
-          season: seasonKey,
-          leaderboard: seasonValue
-        };
-      }
-
-      return {
-        ...seasonValue,
-        season: seasonValue?.season || seasonKey,
-        leaderboard: seasonValue?.leaderboard || []
-      };
-    }
-
     function normalisePlayer(player, index) {
       const name =
         player.player ||
@@ -535,53 +481,60 @@
 
     async function loadOrderOfMerit() {
       try {
-        const [mensResponse, seniorsResponse] =
-          await Promise.all([
-            fetch("data/order-of-merit-mens-seasons.json"),
-            fetch("data/order-of-merit-seniors-seasons.json")
-          ]);
+        const response = await fetch(
+          "data/order-of-merit-certified.json",
+          {
+            cache: "no-store"
+          }
+        );
 
-        if (!mensResponse.ok) {
+        if (!response.ok) {
           throw new Error(
-            "Men's Order of Merit returned " +
-            mensResponse.status
+            "Certified Order of Merit returned " +
+            response.status
           );
         }
 
-        if (!seniorsResponse.ok) {
+        const certifiedData =
+          await response.json();
+
+        if (
+          certifiedData
+            .certificationStatus !==
+          "CERTIFIED"
+        ) {
           throw new Error(
-            "Seniors Order of Merit returned " +
-            seniorsResponse.status
+            "Order of Merit data is not certified."
           );
         }
 
-        const [mensData, seniorsData] =
-          await Promise.all([
-            mensResponse.json(),
-            seniorsResponse.json()
-          ]);
+        state.mens =
+          certifiedData.mens;
 
-        state.mens = latestSeason(mensData);
-        state.seniors = latestSeason(seniorsData);
+        state.seniors =
+          certifiedData.seniors;
 
         render("mens");
+
       } catch (error) {
         console.error(
           "Order of Merit failed to load",
           error
         );
 
-        document.getElementById("oom").innerHTML = `
-          <div class="bg-white border border-red-200 p-8 rounded shadow">
-            <h2 class="serif text-3xl mb-4">
-              Order of Merit unavailable
-            </h2>
+        document
+          .getElementById("oom")
+          .innerHTML = `
+            <div class="bg-white border border-red-200 p-8 rounded shadow">
+              <h2 class="serif text-3xl mb-4">
+                Order of Merit unavailable
+              </h2>
 
-            <p class="text-gray-600">
-              The Museum Order of Merit files could not be loaded.
-            </p>
-          </div>
-        `;
+              <p class="text-gray-600">
+                The certified Museum Order of Merit could not be loaded.
+              </p>
+            </div>
+          `;
       }
     }
 
