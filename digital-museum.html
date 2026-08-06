@@ -96,7 +96,7 @@
         class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg hover:shadow-2xl transition">
         <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Statistics</p>
         <h2 class="text-3xl font-serif mb-4">Statistics Centre</h2>
-        <p>Explore generated statistics across players, competitions, records and results.</p>
+        <p>Explore certified statistics across players, competitions, records and results.</p>
       </a>
 
       <a href="order-of-merit.html"
@@ -134,28 +134,71 @@
   <script>
     async function loadMuseumStats() {
       try {
-        const players = await fetch("data/player-page-data.json").then(r => r.json());
-        const competitions = await fetch("data/competition-profiles.json").then(r => r.json());
-
-        document.getElementById("stat-players").textContent = players.length;
-        document.getElementById("stat-competitions").textContent = competitions.length;
-
-        const resultCount = players.reduce(
-          (total, player) => total + (player.timeline?.length || 0),
-          0
+        const response = await fetch(
+          "data/digital-museum-summary.json",
+          {
+            cache: "no-store"
+          }
         );
 
-        document.getElementById("stat-results").textContent = resultCount;
-        const lifetimeLeader = [...players].sort(
-          (a, b) =>
-            (b.headlineStats?.wins || 0) -
-            (a.headlineStats?.wins || 0)
-        )[0];
+        if (!response.ok) {
+          throw new Error(
+            `Digital Museum summary returned ${response.status}`
+          );
+        }
 
-        document.getElementById("stat-leader").textContent =
-          lifetimeLeader?.hero?.name || "-";
+        const summary =
+          await response.json();
+
+        document
+          .getElementById("stat-players")
+          .textContent =
+            summary.playersRecorded ?? "—";
+
+        document
+          .getElementById("stat-competitions")
+          .textContent =
+            summary.competitions ?? "—";
+
+        document
+          .getElementById("stat-results")
+          .textContent =
+            summary.recordedResultRows ?? "—";
+
+        const leader =
+          summary.lifetimeLeader;
+
+        const leaderElement =
+          document.getElementById(
+            "stat-leader"
+          );
+
+        if (leader?.player) {
+          const link =
+            document.createElement("a");
+
+          link.href =
+            leader.slug
+              ? `player-profile.html?player=${encodeURIComponent(leader.slug)}`
+              : "player-index.html";
+
+          link.textContent =
+            `${leader.player} — ${leader.wins} wins`;
+
+          link.className =
+            "hover:text-[#C5A367] transition";
+
+          leaderElement.replaceChildren(
+            link
+          );
+        } else {
+          leaderElement.textContent = "—";
+        }
       } catch (error) {
-        console.log("Museum stats failed to load", error);
+        console.error(
+          "Museum summary failed to load:",
+          error
+        );
       }
     }
 

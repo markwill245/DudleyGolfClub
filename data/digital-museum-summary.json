@@ -1,0 +1,20 @@
+{
+  "title": "Dudley Golf Club Digital Museum",
+  "certificationStatus": "CERTIFIED",
+  "source": {
+    "players": "player-page-data.json",
+    "competitions": "competition-profiles.json",
+    "recordedResults": "competition-results.json",
+    "lifetimeLeader": "records-centre.json"
+  },
+  "playersRecorded": 758,
+  "competitions": 155,
+  "resultBlocks": 337,
+  "recordedResultRows": 10584,
+  "lifetimeLeader": {
+    "player": "M. Hickman",
+    "slug": "m-hickman",
+    "section": "Mens",
+    "wins": 28
+  }
+}
