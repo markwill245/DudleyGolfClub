@@ -107,7 +107,7 @@
                         </p>
 
                         <p class="text-xs text-[#132419]/55 mt-3">
-                            Museum data loaded live
+                            Certified Museum archive
                         </p>
                     </div>
 
@@ -149,7 +149,7 @@
                 ✓
             </span>
 
-            Competitions are shown in relevant categories. A competition may appear in more than one category.
+            Competitions are displayed in their certified archive categories. A competition may appear in more than one category.
 
         </div>
 
@@ -194,120 +194,19 @@
     </button>
 
     <script>
-
         const PREVIEW_COUNT = 5;
 
-        const categoryDefinitions = [
-            {
-                id: "board-competitions",
-                title: "Board Competitions",
-                description: "Club championships, trophies and honours-board competitions.",
-                matches: competition =>
-                    competition.historicalBoard === true ||
-                    competition.profileType === "Historical Honour" ||
-                    competition.competitionClass === "Board" ||
-                    String(competition.museumCategory || "").toLowerCase().includes("board")
-            },
-            {
-                id: "seniors-events",
-                title: "Seniors Events",
-                description: "Competitions belonging to the Dudley Golf Club Seniors section.",
-                matches: competition =>
-                    normalise(competition.section) === "seniors" ||
-                    normalise(getName(competition)).includes("senior")
-            },
-            {
-                id: "medals",
-                title: "Medals",
-                description: "Monthly, seasonal and special medal competitions.",
-                matches: competition =>
-                    normalise(getName(competition)).includes("medal") ||
-                    normalise(competition.format).includes("medal") ||
-                    normalise(competition.competitionFormat).includes("medal")
-            },
-            {
-                id: "team-events",
-                title: "Team Events",
-                description: "Pairs, betterball, greensomes, scrambles, three-ball and four-ball competitions.",
-                matches: competition => {
-                    const searchable = normalise([
-                        getName(competition),
-                        competition.format,
-                        competition.competitionFormat
-                    ].join(" "));
+        let archiveData = null;
+        let visibleCategories = [];
 
-                    return [
-                        "pairs",
-                        "pair",
-                        "team",
-                        "betterball",
-                        "better ball",
-                        "greensomes",
-                        "scramble",
-                        "3 ball",
-                        "3-ball",
-                        "three ball",
-                        "4 ball",
-                        "4-ball",
-                        "four ball",
-                        "foursomes",
-                        "texas"
-                    ].some(term => searchable.includes(term));
-                }
-            },
-            {
-                id: "stablefords",
-                title: "Stablefords",
-                description: "Individual and team Stableford competitions.",
-                matches: competition => {
-                    const searchable = normalise([
-                        getName(competition),
-                        competition.format,
-                        competition.competitionFormat
-                    ].join(" "));
-
-                    return searchable.includes("stableford");
-                }
-            },
-            {
-                id: "knockouts",
-                title: "Knockouts",
-                description: "Singles, pairs and match-play knockout competitions.",
-                matches: competition => {
-                    const searchable = normalise([
-                        getName(competition),
-                        competition.format,
-                        competition.competitionFormat
-                    ].join(" "));
-
-                    return [
-                        "knockout",
-                        "knock-out",
-                        "match play",
-                        "matchplay"
-                    ].some(term => searchable.includes(term));
-                }
-            },
-            {
-                id: "ladies",
-                title: "Ladies",
-                description: "Competitions belonging to the Ladies section.",
-                matches: competition =>
-                    normalise(competition.section) === "ladies" ||
-                    normalise(getName(competition)).includes("ladies")
-            },
-            {
-                id: "juniors",
-                title: "Juniors",
-                description: "Competitions belonging to the Junior section.",
-                matches: competition =>
-                    normalise(competition.section) === "juniors" ||
-                    normalise(competition.section) === "junior" ||
-                    normalise(getName(competition)).includes("junior")
-            }
-        ];
-
-        let allCompetitions = [];
+        function escapeHtml(value) {
+            return String(value ?? "")
+                .replaceAll("&", "&amp;")
+                .replaceAll("<", "&lt;")
+                .replaceAll(">", "&gt;")
+                .replaceAll('"', "&quot;")
+                .replaceAll("'", "&#039;");
+        }
 
         function normalise(value) {
             return String(value || "")
@@ -320,109 +219,57 @@
                 .trim();
         }
 
-        function getName(competition) {
-            return competition.name ||
-                competition.competitionName ||
-                "Unnamed Competition";
-        }
-
-        function getId(competition) {
-            return competition.id || competition.competitionId || "";
-        }
-
-        function removeDuplicates(competitions) {
-
-            const unique = new Map();
-
-            competitions.forEach(competition => {
-
-                const key = getId(competition) ||
-                    normalise(getName(competition));
-
-                if (!unique.has(key)) {
-                    unique.set(key, competition);
-                }
-
-            });
-
-            return Array.from(unique.values());
-        }
-
-        function sortCompetitions(competitions) {
-
-            return [...competitions].sort((a, b) =>
-                getName(a).localeCompare(getName(b))
-            );
-        }
-
-        function yearsLabel(competition) {
-
-            const yearsPlayed = Number(competition.yearsPlayed || 0);
-            const firstYear = competition.firstYear;
-            const latestYear = competition.latestYear;
-
-            return {
-                countText:
-                    `${yearsPlayed} ${yearsPlayed === 1 ? "year" : "years"}`,
-
-                rangeText:
-                    firstYear && latestYear
-                        ? (
-                            firstYear === latestYear
-                                ? String(firstYear)
-                                : `${firstYear}–${latestYear}`
-                        )
-                        : ""
-            };
-        }
-
-        function competitionCard(competition, index) {
-
-            const id = encodeURIComponent(getId(competition));
-            const years = yearsLabel(competition);
-
+        function competitionCard(
+            competition,
+            index
+        ) {
             return `
                 <a
-                    href="competition-profile.html?id=${id}"
+                    href="${escapeHtml(
+                        competition.profileUrl ||
+                        "competition-index.html"
+                    )}"
                     class="competition-card museum-tile rounded-lg p-4 min-h-[140px] flex flex-col"
-                    ${index >= PREVIEW_COUNT ? "hidden" : ""}>
-
+                    ${index >= PREVIEW_COUNT ? "hidden" : ""}
+                >
                     <div class="flex items-start gap-2">
-
                         <span class="text-[#C5A367] text-base leading-none">
                             🏆
                         </span>
 
                         <h3 class="text-[21px] leading-[1.05] font-serif">
-                            ${getName(competition)}
+                            ${escapeHtml(
+                                competition.name ||
+                                "Unnamed Competition"
+                            )}
                         </h3>
-
                     </div>
 
                     <div class="mt-auto pt-4">
-
                         <p class="text-xs font-semibold">
-                            ${years.countText}
+                            ${escapeHtml(
+                                competition.countText || ""
+                            )}
                         </p>
 
                         <p class="text-[11px] text-[#132419]/55 mt-1">
-                            ${years.rangeText}
+                            ${escapeHtml(
+                                competition.rangeText || ""
+                            )}
                         </p>
 
                         <p class="text-[#C5A367] text-xs font-semibold mt-3">
                             View competition&nbsp;&nbsp;→
                         </p>
-
                     </div>
-
                 </a>
             `;
         }
 
         function moreCard(category) {
-
             const remaining =
-                category.competitions.length - PREVIEW_COUNT;
+                category.competitions.length -
+                PREVIEW_COUNT;
 
             if (remaining <= 0) {
                 return "";
@@ -432,8 +279,8 @@
                 <button
                     type="button"
                     class="more-card museum-tile rounded-lg p-4 min-h-[140px] text-left"
-                    data-category="${category.id}">
-
+                    data-category="${escapeHtml(category.id)}"
+                >
                     <p class="text-3xl font-serif text-[#C5A367] leading-none">
                         + ${remaining}
                     </p>
@@ -444,97 +291,87 @@
 
                     <p class="text-[#C5A367] text-xs font-semibold mt-8">
                         View all<br>
-                        ${category.title}&nbsp;&nbsp;→
+                        ${escapeHtml(category.title)}&nbsp;&nbsp;→
                     </p>
-
                 </button>
             `;
         }
 
-        function getCategoryIcon(categoryId) {
+        function renderNavigation(categories) {
+            const navigation =
+                document.getElementById(
+                    "category-navigation"
+                );
 
-            const icons = {
-                "board-competitions": "🏆",
-                "seniors-events": "♙",
-                "medals": "◉",
-                "team-events": "👥",
-                "stablefords": "⚑",
-                "knockouts": "⚔",
-                "ladies": "♙",
-                "juniors": "◒"
-            };
+            navigation.innerHTML =
+                categories.map(category => `
+                    <a
+                        href="#${escapeHtml(category.id)}"
+                        class="museum-tile rounded-lg p-3 text-center"
+                    >
+                        <span class="block text-[#C5A367] text-2xl mb-1">
+                            ${escapeHtml(category.icon || "🏆")}
+                        </span>
 
-            return icons[categoryId] || "🏆";
+                        <span class="block text-[19px] leading-[1.05] font-serif">
+                            ${escapeHtml(category.title)}
+                        </span>
+
+                        <span class="block text-xs mt-2">
+                            ${category.competitionCount}
+                        </span>
+                    </a>
+                `).join("");
         }
 
-        function renderNavigation(categories) {
+        function filterCategories(searchTerm = "") {
+            const term =
+                normalise(searchTerm);
 
-            const navigation =
-                document.getElementById("category-navigation");
+            if (!term) {
+                return archiveData.categories;
+            }
 
-            navigation.innerHTML = categories.map(category => `
-                <a
-                    href="#${category.id}"
-                    class="museum-tile rounded-lg p-3 text-center">
+            return archiveData.categories
+                .map(category => ({
+                    ...category,
 
-                    <span class="block text-[#C5A367] text-2xl mb-1">
-                        ${getCategoryIcon(category.id)}
-                    </span>
+                    competitions:
+                        category.competitions.filter(
+                            competition =>
+                                String(
+                                    competition.searchText || ""
+                                ).includes(term)
+                        )
+                }))
+                .map(category => ({
+                    ...category,
 
-                    <span class="block text-[19px] leading-[1.05] font-serif">
-                        ${category.title}
-                    </span>
-
-                    <span class="block text-xs mt-2">
-                        ${category.competitions.length}
-                    </span>
-
-                </a>
-            `).join("");
+                    competitionCount:
+                        category.competitions.length
+                }))
+                .filter(
+                    category =>
+                        category.competitions.length > 0
+                );
         }
 
         function renderArchive(searchTerm = "") {
+            const archive =
+                document.getElementById("archive");
 
-            const archive = document.getElementById("archive");
-            const term = normalise(searchTerm);
+            visibleCategories =
+                filterCategories(searchTerm);
 
-            const categories = categoryDefinitions.map(category => {
+            renderNavigation(
+                visibleCategories
+            );
 
-                let competitions = allCompetitions.filter(category.matches);
-
-                if (term) {
-                    competitions = competitions.filter(competition =>
-                        normalise([
-                            getName(competition),
-                            competition.section,
-                            competition.format,
-                            competition.competitionFormat,
-                            competition.profileType
-                        ].join(" ")).includes(term)
-                    );
-                }
-
-                competitions = sortCompetitions(
-                    removeDuplicates(competitions)
-                );
-
-                return {
-                    ...category,
-                    competitions
-                };
-
-            }).filter(category => category.competitions.length > 0);
-
-            renderNavigation(categories);
-
-            if (!categories.length) {
-
-                const totalElement =
-                    document.getElementById("total-shown");
-
-                if (totalElement) {
-                    totalElement.textContent = "Total competitions shown: 0";
-                }
+            if (!visibleCategories.length) {
+                document
+                    .getElementById("total-shown")
+                    .textContent =
+                        "Total competitions shown: 0";
 
                 archive.innerHTML = `
                     <div class="bg-white rounded-2xl p-12 text-center border border-[#C5A367]/30">
@@ -551,66 +388,59 @@
                 return;
             }
 
-            archive.innerHTML = categories.map(category => `
-                <section
-                    id="${category.id}"
-                    class="mb-6 scroll-mt-8">
+            archive.innerHTML =
+                visibleCategories.map(category => `
+                    <section
+                        id="${escapeHtml(category.id)}"
+                        class="mb-6 scroll-mt-8"
+                    >
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-[#132419] text-white border border-[#C5A367]/50 flex items-center justify-center text-lg shrink-0">
+                                    ${escapeHtml(category.icon || "🏆")}
+                                </div>
 
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
+                                <div>
+                                    <h2 class="text-[32px] leading-none font-serif">
+                                        ${escapeHtml(category.title)}
+                                    </h2>
 
-                        <div class="flex items-center gap-4">
-
-                            <div class="w-12 h-12 rounded-full bg-[#132419] text-white border border-[#C5A367]/50 flex items-center justify-center text-lg shrink-0">
-                                ${getCategoryIcon(category.id)}
+                                    <p class="text-[13px] text-[#132419]/65 mt-1">
+                                        ${escapeHtml(category.description)}
+                                    </p>
+                                </div>
                             </div>
 
-                            <div>
-
-                                <h2 class="text-[32px] leading-none font-serif">
-                                    ${category.title}
-                                </h2>
-
-                                <p class="text-[13px] text-[#132419]/65 mt-1">
-                                    ${category.description}
-                                </p>
-
-                            </div>
-
+                            <button
+                                type="button"
+                                class="view-all text-xs underline underline-offset-4 font-semibold"
+                                data-category="${escapeHtml(category.id)}"
+                            >
+                                View all (${category.competitionCount}) →
+                            </button>
                         </div>
 
-                        <button
-                            type="button"
-                            class="view-all text-xs underline underline-offset-4 font-semibold"
-                            data-category="${category.id}">
+                        <div
+                            class="archive-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-3"
+                            data-grid="${escapeHtml(category.id)}"
+                        >
+                            ${category.competitions
+                                .map(competitionCard)
+                                .join("")}
 
-                            View all (${category.competitions.length}) →
-
-                        </button>
-
-                    </div>
-
-                    <div
-                        class="archive-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-3"
-                        data-grid="${category.id}">
-
-                        ${category.competitions
-                            .map(competitionCard)
-                            .join("")}
-
-                        ${moreCard(category)}
-
-                    </div>
-
-                </section>
-            `).join("");
+                            ${moreCard(category)}
+                        </div>
+                    </section>
+                `).join("");
 
             wireArchiveControls();
-            updateArchiveTotal(categories);
-
+            updateArchiveTotal();
         }
 
-        function setExpanded(categoryId, expanded) {
-
+        function setExpanded(
+            categoryId,
+            expanded
+        ) {
             const grid =
                 document.querySelector(
                     `[data-grid="${categoryId}"]`
@@ -622,22 +452,28 @@
 
             const cards =
                 Array.from(
-                    grid.querySelectorAll(".competition-card")
+                    grid.querySelectorAll(
+                        ".competition-card"
+                    )
                 );
 
             const more =
-                grid.querySelector(".more-card");
+                grid.querySelector(
+                    ".more-card"
+                );
 
             const button =
                 document.querySelector(
                     `.view-all[data-category="${categoryId}"]`
                 );
 
-            cards.forEach((card, index) => {
-                card.hidden =
-                    !expanded &&
-                    index >= PREVIEW_COUNT;
-            });
+            cards.forEach(
+                (card, index) => {
+                    card.hidden =
+                        !expanded &&
+                        index >= PREVIEW_COUNT;
+                }
+            );
 
             if (more) {
                 more.hidden = expanded;
@@ -645,7 +481,9 @@
 
             if (button) {
                 button.dataset.expanded =
-                    expanded ? "true" : "false";
+                    expanded
+                        ? "true"
+                        : "false";
 
                 button.textContent =
                     expanded
@@ -655,157 +493,175 @@
         }
 
         function wireArchiveControls() {
-
             document
                 .querySelectorAll(".view-all")
                 .forEach(button => {
-
-                    button.addEventListener("click", () => {
-
-                        setExpanded(
-                            button.dataset.category,
-                            button.dataset.expanded !== "true"
-                        );
-
-                    });
-
+                    button.addEventListener(
+                        "click",
+                        () => {
+                            setExpanded(
+                                button.dataset.category,
+                                button.dataset.expanded !==
+                                    "true"
+                            );
+                        }
+                    );
                 });
 
             document
                 .querySelectorAll(".more-card")
                 .forEach(button => {
-
-                    button.addEventListener("click", () => {
-
-                        setExpanded(
-                            button.dataset.category,
-                            true
-                        );
-
-                    });
-
+                    button.addEventListener(
+                        "click",
+                        () => {
+                            setExpanded(
+                                button.dataset.category,
+                                true
+                            );
+                        }
+                    );
                 });
         }
 
-        function updateArchiveTotal(categories) {
-
+        function updateArchiveTotal() {
             const totalElement =
-                document.getElementById("total-shown");
+                document.getElementById(
+                    "total-shown"
+                );
 
             if (!totalElement) {
                 return;
             }
 
-            const uniqueCompetitions = new Set();
+            const uniqueIds =
+                new Set();
 
-            categories.forEach(category => {
-
-                category.competitions.forEach(competition => {
-
-                    uniqueCompetitions.add(
-                        getId(competition) ||
-                        normalise(getName(competition))
+            visibleCategories.forEach(
+                category => {
+                    category.competitions.forEach(
+                        competition => {
+                            uniqueIds.add(
+                                competition.id
+                            );
+                        }
                     );
-
-                });
-
-            });
+                }
+            );
 
             totalElement.textContent =
-                `Total competitions shown: ${uniqueCompetitions.size}`;
+                `Total competitions shown: ${uniqueIds.size}`;
         }
 
         async function loadCompetitions() {
-
             try {
-
-                const response = await fetch(
-                    "data/competition-profiles.json?v=" + Date.now(),
-                    { cache: "no-store" }
-                );
+                const response =
+                    await fetch(
+                        "data/competition-archive.json",
+                        {
+                            cache: "no-store"
+                        }
+                    );
 
                 if (!response.ok) {
-                    throw new Error("Unable to load competition profiles");
+                    throw new Error(
+                        `Competition Archive returned ${response.status}`
+                    );
                 }
 
-                const data = await response.json();
+                archiveData =
+                    await response.json();
 
-                allCompetitions = sortCompetitions(
-                    removeDuplicates(
-                        data.filter(competition =>
-                            competition.displayInArchive !== false &&
-                            competition.recordType !== "Competition Family" &&
-                            competition.catalogueStatus !== "Umbrella" &&
-                            Number(competition.yearsPlayed || 0) > 0
-                        )
-                    )
-                );
+                if (
+                    archiveData.certificationStatus !==
+                    "CERTIFIED"
+                ) {
+                    throw new Error(
+                        "Competition Archive is not certified."
+                    );
+                }
 
                 renderArchive();
 
             } catch (error) {
-
                 console.error(error);
 
-                document.getElementById("archive").innerHTML = `
-                    <div class="bg-white rounded-2xl p-12 text-center border border-red-300">
-                        <h2 class="text-3xl font-serif mb-4">
-                            Competition archive unavailable
-                        </h2>
+                document
+                    .getElementById("archive")
+                    .innerHTML = `
+                        <div class="bg-white rounded-2xl p-12 text-center border border-red-300">
+                            <h2 class="text-3xl font-serif mb-4">
+                                Competition archive unavailable
+                            </h2>
 
-                        <p>
-                            The Museum data could not be loaded.
-                        </p>
-                    </div>
-                `;
-
+                            <p>
+                                The certified Museum data could not be loaded.
+                            </p>
+                        </div>
+                    `;
             }
-
         }
 
-        document.getElementById("search").addEventListener("input", event => {
-            renderArchive(event.target.value);
-        });
+        document
+            .getElementById("search")
+            .addEventListener(
+                "input",
+                event => {
+                    renderArchive(
+                        event.target.value
+                    );
+                }
+            );
 
-        document.getElementById("clear-search").addEventListener("click", () => {
-            const search = document.getElementById("search");
+        document
+            .getElementById("clear-search")
+            .addEventListener(
+                "click",
+                () => {
+                    const search =
+                        document.getElementById(
+                            "search"
+                        );
 
-            search.value = "";
-            renderArchive("");
-            search.focus();
-        });
+                    search.value = "";
+                    renderArchive("");
+                    search.focus();
+                }
+            );
 
         const backToTop =
-            document.getElementById("back-to-top");
-
-        window.addEventListener("scroll", () => {
-
-            const shouldShow =
-                window.scrollY > 450;
-
-            backToTop.classList.toggle(
-                "opacity-0",
-                !shouldShow
+            document.getElementById(
+                "back-to-top"
             );
 
-            backToTop.classList.toggle(
-                "pointer-events-none",
-                !shouldShow
-            );
+        window.addEventListener(
+            "scroll",
+            () => {
+                const shouldShow =
+                    window.scrollY > 450;
 
-        });
+                backToTop.classList.toggle(
+                    "opacity-0",
+                    !shouldShow
+                );
 
-        backToTop.addEventListener("click", () => {
+                backToTop.classList.toggle(
+                    "pointer-events-none",
+                    !shouldShow
+                );
+            }
+        );
 
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
-        });
+        backToTop.addEventListener(
+            "click",
+            () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+        );
 
         loadCompetitions();
-
     </script>
 
 </body>
