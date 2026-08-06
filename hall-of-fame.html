@@ -28,7 +28,7 @@
 
     <a href="digital-museum.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      ← Back to Museum
+      â† Back to Museum
     </a>
 
     <section class="mt-12 mb-12">
@@ -66,7 +66,27 @@
       </div>
     </section>
 
-    <section class="mb-8">
+        <section class="flex flex-col sm:flex-row gap-3 mb-6">
+      <button
+        type="button"
+        data-hof-section="mens"
+        aria-pressed="true"
+        class="px-6 py-3 rounded-xl border border-[#C5A367]/40 bg-[#132419] text-white font-semibold transition"
+      >
+        Mens Hall of Fame
+      </button>
+
+      <button
+        type="button"
+        data-hof-section="seniors"
+        aria-pressed="false"
+        class="px-6 py-3 rounded-xl border border-[#C5A367]/40 bg-white font-semibold transition"
+      >
+        Seniors Hall of Fame
+      </button>
+    </section>
+
+<section class="mb-8">
       <input id="search" type="text" placeholder="Search Hall of Fame..."
         class="w-full px-5 py-4 rounded-xl border border-[#C5A367]/40 bg-white text-lg">
     </section>
@@ -78,125 +98,319 @@
   </main>
 
   <script>
-    let allPlayers = [];
+    let hallOfFameData = null;
+    let activeSection = "mens";
 
-    async function loadHallOfFame() {
-      const container = document.getElementById("hof-gallery");
-
-      try {
-        const response = await fetch("data/player-page-data.json");
-        allPlayers = await response.json();
-
-        allPlayers.sort((a, b) => (b.hallOfFame?.score || 0) - (a.hallOfFame?.score || 0));
-
-        updateStats(allPlayers);
-        renderHallOfFame(allPlayers);
-
-      } catch (error) {
-        console.log("Hall of Fame failed to load", error);
-
-        container.innerHTML = `
-      <div class="col-span-full bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
-        <h2 class="text-3xl font-serif mb-4">Hall of Fame unavailable</h2>
-        <p class="text-gray-600">
-          The Hall of Fame data could not be loaded at the moment.
-        </p>
-      </div>
-    `;
-      }
-    }
-
-    function updateStats(players) {
-      document.getElementById("total-players").textContent = players.length;
-      document.getElementById("top-score").textContent = players[0]?.hallOfFame.score || 0;
-      document.getElementById("leader-name").textContent = players[0]?.hero.name || "-";
-
-      const strong = players.filter(p =>
-        p.hallOfFame.status === "Strong Candidate" ||
-        p.hallOfFame.status === "Hall of Fame Level"
-      );
-
-      document.getElementById("strong-candidates").textContent = strong.length;
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
     }
 
     function badge(status) {
-      if (status === "Hall of Fame Level") return "★★★★★";
-      if (status === "Strong Candidate") return "★★★★☆";
-      if (status === "Emerging Candidate") return "★★★☆☆";
-      return "★★☆☆☆";
+      if (status === "Hall of Fame Level") {
+        return "â˜…â˜…â˜…â˜…â˜…";
+      }
+
+      if (status === "Strong Candidate") {
+        return "â˜…â˜…â˜…â˜…â˜†";
+      }
+
+      if (status === "Emerging Candidate") {
+        return "â˜…â˜…â˜…â˜†â˜†";
+      }
+
+      return "â˜…â˜…â˜†â˜†â˜†";
     }
 
-    function renderHallOfFame(players) {
-      const container = document.getElementById("hof-gallery");
+    function currentSection() {
+      return hallOfFameData?.[
+        activeSection
+      ] || null;
+    }
+
+    function updateTabs() {
+      document
+        .querySelectorAll(
+          "[data-hof-section]"
+        )
+        .forEach(button => {
+          const selected =
+            button.dataset.hofSection ===
+            activeSection;
+
+          button.classList.toggle(
+            "bg-[#132419]",
+            selected
+          );
+
+          button.classList.toggle(
+            "text-white",
+            selected
+          );
+
+          button.classList.toggle(
+            "bg-white",
+            !selected
+          );
+
+          button.setAttribute(
+            "aria-pressed",
+            selected
+              ? "true"
+              : "false"
+          );
+        });
+    }
+
+    function updateStats(section) {
+      document
+        .getElementById(
+          "total-players"
+        )
+        .textContent =
+          section.playersAssessed;
+
+      document
+        .getElementById(
+          "top-score"
+        )
+        .textContent =
+          section.topScore;
+
+      document
+        .getElementById(
+          "strong-candidates"
+        )
+        .textContent =
+          section.strongCandidates;
+
+      document
+        .getElementById(
+          "leader-name"
+        )
+        .textContent =
+          section.leader?.name || "â€”";
+    }
+
+    function renderHallOfFame(
+      players
+    ) {
+      const container =
+        document.getElementById(
+          "hof-gallery"
+        );
 
       if (!players.length) {
         container.innerHTML = `
-  <div class="col-span-full text-center py-16">
-    <h2 class="text-3xl font-serif mb-4">No Hall of Fame records found</h2>
-    <p class="text-gray-600">
-      Try searching by player name or Hall of Fame status.
-    </p>
-  </div>
-`;
+          <div class="col-span-full text-center py-16">
+            <h2 class="text-3xl font-serif mb-4">
+              No Hall of Fame records found
+            </h2>
+
+            <p class="text-gray-600">
+              Try searching by player name or Hall of Fame status.
+            </p>
+          </div>
+        `;
+
         return;
       }
 
-      container.innerHTML = players.map(player => `
-    <a href="player-profile.html?player=${player.slug}"
-       class="block bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30 hover:shadow-2xl transition">
+      container.innerHTML =
+        players.map(player => `
+          <a
+            href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+            class="block bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30 hover:shadow-2xl transition"
+          >
+            <div class="flex items-start justify-between gap-4 mb-4">
+              <p class="text-[#C5A367] text-2xl">
+                ${badge(player.hallOfFameStatus)}
+              </p>
 
-      <p class="text-[#C5A367] text-2xl mb-4">${badge(player.hallOfFame.status)}</p>
+              <span class="rounded-full bg-[#132419] text-white px-3 py-1 text-xs font-bold">
+                #${player.rank}
+              </span>
+            </div>
 
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
-        ${player.hero.section} • ${player.hero.status}
-      </p>
+            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+              ${escapeHtml(player.section)}
+              â€¢
+              ${escapeHtml(player.status)}
+            </p>
 
-      <h2 class="text-3xl font-serif mb-3">${player.hero.name}</h2>
+            <h2 class="text-3xl font-serif mb-3">
+              ${escapeHtml(player.name)}
+            </h2>
 
-      <p class="text-sm mb-5">
-        ${player.curator?.hallOfFameCitation || player.hallOfFame.status}
-      </p>
+            <p class="text-sm mb-5">
+              ${escapeHtml(
+                player.hallOfFameStatus
+              )}
+            </p>
 
-      <div class="grid grid-cols-3 gap-4 text-sm border-t border-[#C5A367]/20 pt-5">
-        <div>
-          <strong class="text-2xl">${player.hallOfFame.score}</strong><br>
-          HOF Score
-        </div>
+            <div class="grid grid-cols-3 gap-4 text-sm border-t border-[#C5A367]/20 pt-5">
+              <div>
+                <strong class="text-2xl">
+                  ${player.score}
+                </strong><br>
+                HOF Score
+              </div>
 
-        <div>
-          <strong class="text-2xl">${player.achievements.majorWins}</strong><br>
-          Majors
-        </div>
+              <div>
+                <strong class="text-2xl">
+                  ${player.majorWins}
+                </strong><br>
+                Majors
+              </div>
 
-        <div>
-          <strong class="text-2xl">${player.headlineStats.wins}</strong><br>
-          Wins
-        </div>
-      </div>
+              <div>
+                <strong class="text-2xl">
+                  ${player.wins}
+                </strong><br>
+                Wins
+              </div>
+            </div>
 
-      <p class="mt-5 text-sm text-gray-600">
-        ${player.hallOfFame.status}
-      </p>
-    </a>
-  `).join("");
+            <p class="mt-5 text-sm text-gray-600">
+              ${escapeHtml(
+                player.hallOfFameStatus
+              )}
+            </p>
+          </a>
+        `).join("");
     }
 
-    document.getElementById("search").addEventListener("input", e => {
-      const term = e.target.value.toLowerCase();
+    function renderActiveSection(
+      searchTerm = ""
+    ) {
+      const section =
+        currentSection();
 
-      const filtered = allPlayers.filter(player =>
-        (player.hero?.name || "").toLowerCase().includes(term) ||
-        (player.hallOfFame?.status || "").toLowerCase().includes(term)
+      if (!section) {
+        return;
+      }
+
+      const term =
+        String(searchTerm || "")
+          .trim()
+          .toLowerCase();
+
+      const players =
+        term
+          ? section.leaderboard.filter(
+              player =>
+                player.name
+                  .toLowerCase()
+                  .includes(term) ||
+                player.hallOfFameStatus
+                  .toLowerCase()
+                  .includes(term)
+            )
+          : section.leaderboard;
+
+      updateStats(section);
+      updateTabs();
+      renderHallOfFame(players);
+    }
+
+    async function loadHallOfFame() {
+      const container =
+        document.getElementById(
+          "hof-gallery"
+        );
+
+      try {
+        const response = await fetch(
+          "data/hall-of-fame-certified.json",
+          {
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(
+            `Hall of Fame returned ${response.status}`
+          );
+        }
+
+        hallOfFameData =
+          await response.json();
+
+        if (
+          hallOfFameData
+            .certificationStatus !==
+          "CERTIFIED"
+        ) {
+          throw new Error(
+            "Hall of Fame data is not certified."
+          );
+        }
+
+        renderActiveSection();
+
+      } catch (error) {
+        console.error(
+          "Hall of Fame failed to load:",
+          error
+        );
+
+        container.innerHTML = `
+          <div class="col-span-full bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow">
+            <h2 class="text-3xl font-serif mb-4">
+              Hall of Fame unavailable
+            </h2>
+
+            <p class="text-gray-600">
+              The certified Hall of Fame data could not be loaded.
+            </p>
+          </div>
+        `;
+      }
+    }
+
+    document
+      .getElementById("search")
+      .addEventListener(
+        "input",
+        event => {
+          renderActiveSection(
+            event.target.value
+          );
+        }
       );
 
-      renderHallOfFame(filtered);
-    });
+    document
+      .querySelectorAll(
+        "[data-hof-section]"
+      )
+      .forEach(button => {
+        button.addEventListener(
+          "click",
+          () => {
+            activeSection =
+              button.dataset
+                .hofSection;
+
+            const search =
+              document.getElementById(
+                "search"
+              );
+
+            search.value = "";
+            renderActiveSection();
+          }
+        );
+      });
 
     loadHallOfFame();
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    ↑ Top
+    â†‘ Top
   </button>
 
   <script>
