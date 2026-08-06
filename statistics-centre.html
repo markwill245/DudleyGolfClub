@@ -181,8 +181,11 @@
 
     function renderPlayerSection(section) {
       const data = sectionRecords(section);
-      const career = data.career || {};
-      const championships = data.championships || {};
+      const career =
+        data.career || {};
+
+      const championships =
+        data.championships || {};
       const label = section === "Mens"
         ? "Men's"
         : "Seniors";
@@ -330,16 +333,42 @@
 
       try {
         const response = await fetch(
-          "data/records-centre.json"
+          "data/statistics-centre-certified.json"
         );
 
         if (!response.ok) {
           throw new Error(
-            `records-centre.json returned ${response.status}`
+            `statistics-centre-certified.json returned ${response.status}`
           );
         }
 
-        state.records = await response.json();
+        const certifiedData =
+          await response.json();
+
+        if (
+          certifiedData
+            .certificationStatus !==
+          "CERTIFIED"
+        ) {
+          throw new Error(
+            "Statistics Centre data is not certified."
+          );
+        }
+
+        state.records = {
+          mens:
+            certifiedData.sections
+              .mens,
+
+          seniors:
+            certifiedData.sections
+              .seniors,
+
+          museum:
+            certifiedData.sections
+              .club.records
+        };
+
         render();
       } catch (error) {
         console.error(
