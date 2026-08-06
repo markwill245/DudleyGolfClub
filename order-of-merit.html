@@ -67,6 +67,10 @@
   <script>
     const state = {
       activeSection: "mens",
+      selectedSeason: {
+        mens: "",
+        seniors: ""
+      },
       mens: null,
       seniors: null
     };
@@ -310,42 +314,119 @@
       });
     }
 
+    function changeSeason(season) {
+      state.selectedSeason[
+        state.activeSection
+      ] = season;
+
+      render(state.activeSection);
+    }
+
+    function seasonSelector(sectionData, selectedSeason) {
+      const seasons =
+        Array.isArray(sectionData?.seasonOrder)
+          ? sectionData.seasonOrder
+          : [];
+
+      if (seasons.length <= 1) {
+        return "";
+      }
+
+      return `
+        <section class="bg-white border border-[#C5A367]/30 rounded shadow p-6 mb-10">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Historical Seasons
+              </p>
+
+              <h2 class="serif text-3xl">
+                Select a Season
+              </h2>
+            </div>
+
+            <select
+              id="seasonSelector"
+              class="min-w-52 border border-[#C5A367]/40 bg-[#F9F7F2] rounded px-5 py-3 font-semibold"
+              onchange="changeSeason(this.value)"
+            >
+              ${seasons.map(season => `
+                <option
+                  value="${escapeHtml(season)}"
+                  ${season === selectedSeason ? "selected" : ""}
+                >
+                  ${escapeHtml(season)}
+                  ${season === sectionData.currentSeason ? " — Current" : ""}
+                </option>
+              `).join("")}
+            </select>
+          </div>
+        </section>
+      `;
+    }
+
     function render(section) {
       state.activeSection = section;
 
-      const season = state[section] || {
-        season: "",
-        leaderboard: []
-      };
+      const sectionData =
+        state[section] || {
+          currentSeason: "",
+          seasonOrder: [],
+          seasons: {}
+        };
+
+      const selectedSeason =
+        state.selectedSeason[section] ||
+        sectionData.currentSeason ||
+        sectionData.seasonOrder?.[0] ||
+        "";
+
+      state.selectedSeason[section] =
+        selectedSeason;
+
+      const season =
+        sectionData.seasons?.[
+          selectedSeason
+        ] || {
+          season: selectedSeason,
+          leaderboard: []
+        };
 
       /*
-       * Display the certified leaderboard exactly as supplied.
-       * Do not sort, re-rank or recalculate the standings here.
+       * Display the certified season and leaderboard exactly
+       * as supplied. Do not sort, re-rank or recalculate here.
        */
-      const players = (season.leaderboard || [])
-        .map(normalisePlayer);
+      const players =
+        (season.leaderboard || [])
+          .map(normalisePlayer);
 
-      const leader = players[0] || null;
-
-
+      const leader =
+        players[0] || null;
 
       const sectionName =
-        section === "seniors" ? "Seniors" : "Men's";
+        section === "seniors"
+          ? "Seniors"
+          : "Men's";
 
       document.getElementById("oom").innerHTML = `
+        ${seasonSelector(
+          sectionData,
+          selectedSeason
+        )}
+
         <section class="grid md:grid-cols-4 gap-6 mb-14">
           <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
             <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-              Current Season
+              Selected Season
             </p>
             <p class="serif text-3xl">
-              ${escapeHtml(season.season || "—")}
+              ${escapeHtml(season.season || selectedSeason || "—")}
             </p>
           </div>
 
           <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
             <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-              Current Leader
+              Season Leader
             </p>
             <p class="serif text-3xl">
               ${leader ? escapeHtml(leader.player) : "—"}
@@ -378,7 +459,7 @@
             </p>
 
             <h2 class="serif text-5xl">
-              Current Standings
+              ${escapeHtml(season.season || selectedSeason)} Standings
             </h2>
           </div>
 
@@ -412,9 +493,7 @@
                             onclick="toggleBreakdown('${escapeHtml(player.slug)}', this)"
                           >
                             ${escapeHtml(player.player)}
-                            <span class="ml-2 text-[#C5A367]">
-                              ▼
-                            </span>
+                            <span class="ml-2 text-[#C5A367]">▼</span>
                           </button>
 
                           <a
@@ -447,7 +526,7 @@
                     : `
                       <tr>
                         <td colspan="6" class="p-10 text-center text-gray-500">
-                          No qualifying results are currently recorded for this season.
+                          No qualifying results are recorded for this season.
                         </td>
                       </tr>
                     `
@@ -513,6 +592,12 @@
 
         state.seniors =
           certifiedData.seniors;
+
+        state.selectedSeason.mens =
+          certifiedData.mens.currentSeason;
+
+        state.selectedSeason.seniors =
+          certifiedData.seniors.currentSeason;
 
         render("mens");
 

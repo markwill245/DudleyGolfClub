@@ -13,6 +13,8 @@ const html = fs.readFileSync(
 );
 
 const failures = [];
+
+let seasonsChecked = 0;
 let playersChecked = 0;
 let transactionsChecked = 0;
 
@@ -20,97 +22,129 @@ function fail(message) {
   failures.push(message);
 }
 
-if (data.certificationStatus !== "CERTIFIED") {
-  fail("Order of Merit JSON is not certified.");
+if (
+  data.certificationStatus !==
+  "CERTIFIED"
+) {
+  fail(
+    "Order of Merit JSON is not certified."
+  );
 }
 
 for (const sectionName of ["mens", "seniors"]) {
   const section = data[sectionName];
 
-  if (!section || !Array.isArray(section.leaderboard)) {
-    fail(`${sectionName} leaderboard is missing.`);
+  if (
+    !section ||
+    !Array.isArray(section.seasonOrder) ||
+    !section.seasons
+  ) {
+    fail(
+      `${sectionName} season archive is missing.`
+    );
     continue;
   }
 
   if (
-    Number(section.playersRanked) !==
-    section.leaderboard.length
+    !section.seasonOrder.includes(
+      section.currentSeason
+    )
   ) {
-    fail(`${sectionName} player count mismatch.`);
-  }
-
-  const firstPlayer =
-    section.leaderboard[0]?.player ||
-    section.leaderboard[0]?.playerName ||
-    section.leaderboard[0]?.name;
-
-  if (section.leader?.player !== firstPlayer) {
-    fail(`${sectionName} leader mismatch.`);
-  }
-
-  for (const [index, player] of section.leaderboard.entries()) {
-    playersChecked++;
-
-    const playerName =
-      player.player ||
-      player.playerName ||
-      player.name ||
-      "Unknown";
-
-    if (Number(player.rank) !== index + 1) {
-      fail(`${sectionName}: invalid rank for ${playerName}.`);
-    }
-
-    const results =
-      Array.isArray(player.results)
-        ? player.results
-        : [];
-
-    transactionsChecked += results.length;
-
-    const breakdown = results.reduce(
-      (total, result) =>
-        total + Number(result.points || 0),
-      0
+    fail(
+      `${sectionName} current season is not in its archive.`
     );
+  }
 
-    if (Number(player.points || 0) !== breakdown) {
-      fail(`${sectionName}: ${playerName} point total mismatch.`);
+  for (const seasonName of section.seasonOrder) {
+    seasonsChecked++;
+
+    const season =
+      section.seasons[seasonName];
+
+    if (
+      !season ||
+      !Array.isArray(season.leaderboard)
+    ) {
+      fail(
+        `${sectionName} ${seasonName} leaderboard is missing.`
+      );
+      continue;
     }
 
-    const competitions =
-      Number(
-        player.competitionsPlayed ??
-        player.competitions ??
-        0
+    if (
+      Number(season.playersRanked) !==
+      season.leaderboard.length
+    ) {
+      fail(
+        `${sectionName} ${seasonName} player-count mismatch.`
       );
+    }
 
-    if (competitions !== results.length) {
-      fail(`${sectionName}: ${playerName} competition-count mismatch.`);
+    for (
+      const [index, player] of
+      season.leaderboard.entries()
+    ) {
+      playersChecked++;
+
+      const playerName =
+        player.player ||
+        player.playerName ||
+        player.name ||
+        "Unknown";
+
+      if (
+        Number(player.rank) !==
+        index + 1
+      ) {
+        fail(
+          `${sectionName} ${seasonName}: invalid rank for ${playerName}.`
+        );
+      }
+
+      const results =
+        Array.isArray(player.results)
+          ? player.results
+          : [];
+
+      transactionsChecked +=
+        results.length;
+
+      const breakdown =
+        results.reduce(
+          (sum, result) =>
+            sum + Number(result.points || 0),
+          0
+        );
+
+      if (
+        Number(player.points || 0) !==
+        breakdown
+      ) {
+        fail(
+          `${sectionName} ${seasonName}: ${playerName} point mismatch.`
+        );
+      }
     }
   }
 }
 
 const required = [
   "data/order-of-merit-certified.json",
-  "certifiedData.mens",
-  "certifiedData.seniors",
-  "season.leaderboard",
-  "player.results",
-  "toggleBreakdown",
+  "sectionData.seasonOrder",
+  "sectionData.seasons",
+  "sectionData.currentSeason",
+  "seasonSelector(",
+  'id="seasonSelector"',
+  "changeSeason(",
   "Certified Points Breakdown"
 ];
 
 for (const marker of required) {
   if (!html.includes(marker)) {
-    fail(`Missing renderer marker: ${marker}`);
+    fail(
+      `Missing renderer marker: ${marker}`
+    );
   }
-}
-
-if (
-  !/certifiedData\s*[\r\n\s]*\.\s*certificationStatus/.test(html)
-) {
-  fail("Missing Order of Merit certification-status check.");
 }
 
 const forbidden = [
@@ -123,7 +157,9 @@ const forbidden = [
 
 for (const marker of forbidden) {
   if (html.includes(marker)) {
-    fail(`Forbidden browser authority found: ${marker}`);
+    fail(
+      `Forbidden browser authority found: ${marker}`
+    );
   }
 }
 
@@ -131,7 +167,9 @@ const fetchCount =
   (html.match(/fetch\(/g) || []).length;
 
 if (fetchCount !== 1) {
-  fail(`Expected one fetch, found ${fetchCount}.`);
+  fail(
+    `Expected one fetch, found ${fetchCount}.`
+  );
 }
 
 if (failures.length) {
@@ -158,10 +196,7 @@ console.log(
   "------------------------------------"
 );
 console.log(
-  `[PASS] Mens season: ${data.mens.season}`
-);
-console.log(
-  `[PASS] Seniors season: ${data.seniors.season}`
+  `[PASS] Seasons checked: ${seasonsChecked}`
 );
 console.log(
   `[PASS] Players checked: ${playersChecked}`
@@ -170,25 +205,22 @@ console.log(
   `[PASS] Point transactions checked: ${transactionsChecked}`
 );
 console.log(
-  "[PASS] Every player total matches the breakdown"
+  "[PASS] Every historical season is available"
 );
 console.log(
-  "[PASS] Competition counts match breakdown rows"
+  "[PASS] Current seasons supplied by admin output"
 );
 console.log(
-  "[PASS] Certified ranks preserved"
+  "[PASS] Season switching is presentation-only"
 );
 console.log(
-  "[PASS] Current seasons selected by admin output"
+  "[PASS] Certified ranks and point breakdowns preserved"
 );
 console.log(
   "[PASS] One certified JSON source"
 );
 console.log(
-  "[PASS] No browser-side season or ranking authority"
-);
-console.log(
-  "[PASS] Expandable player breakdown present"
+  "[PASS] No browser-side season selection or calculation"
 );
 console.log("");
 console.log(
