@@ -70,652 +70,68 @@
   </main>
 
   <script>
-    const MODERN_START_YEAR = 2021;
-
     const state = {
       activeSection: "Mens",
-      sections: {
-        Mens: [],
-        Seniors: []
-      },
-      club: {
-        holeInOnes: [],
-        longestRunning: [],
-        totals: {}
-      },
-      coverage: {
-        firstYear: null,
-        lastYear: null,
-        yearCount: 0
-      }
+      records: null
     };
 
     function clean(value) {
-      return String(value || "").trim();
+      return String(value ?? "").trim();
     }
 
-    function num(value) {
-      const number = Number(value);
-      return Number.isFinite(number) ? number : 0;
-    }
-
-    function validScore(value) {
-      const number = Number(value);
-      return Number.isFinite(number) && number > 0;
-    }
-
-    function createSlug(value) {
+    function escapeHtml(value) {
       return clean(value)
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "");
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
     }
 
-    function normaliseName(value) {
-      return clean(value)
-        .toLowerCase()
-        .replace(/\./g, "")
-        .replace(/\s+/g, " ");
+    function playerLink(item) {
+      const player = clean(item?.player || item?.playerName);
+      const slug = clean(item?.slug);
+
+      if (!player) {
+        return "Unknown";
+      }
+
+      if (!slug) {
+        return escapeHtml(player);
+      }
+
+      return `
+        <a
+          href="player-profile.html?player=${encodeURIComponent(slug)}"
+          class="hover:text-[#C5A367] transition"
+        >
+          ${escapeHtml(player)}
+        </a>
+      `;
     }
 
-    function normaliseSection(value) {
-      const section = clean(value).toLowerCase();
-
-      if (section.includes("senior")) {
-        return "Seniors";
-      }
-
-      if (
-        section === "mens" ||
-        section === "men" ||
-        section.includes("male")
-      ) {
-        return "Mens";
-      }
-
-      return "";
-    }
-
-    function firstNumber(...values) {
-      for (const value of values) {
-        const number = Number(value);
-
-        if (Number.isFinite(number)) {
-          return number;
-        }
-      }
-
-      return 0;
-    }
-
-    function getPosition(result) {
-      const raw =
-        result?.position ??
-        result?.place ??
-        result?.rank ??
-        null;
-
-      if (raw === null || raw === undefined) {
-        return null;
-      }
-
-      const match = String(raw).match(/\d+/);
-      return match ? Number(match[0]) : null;
-    }
-
-    function getPlayerNames(result) {
-      const names = [];
-
-      const addName = value => {
-        const name = clean(
-          typeof value === "string"
-            ? value
-            : value?.name
-        );
-
-        if (name && !names.includes(name)) {
-          names.push(name);
-        }
-      };
-
-      if (Array.isArray(result?.players)) {
-        result.players.forEach(addName);
-      }
-
-      if (Array.isArray(result?.teamMembers)) {
-        result.teamMembers.forEach(addName);
-      }
-
-      if (!names.length) {
-        const fallback =
-          result?.playerName ||
-          result?.player ||
-          result?.name ||
-          "";
-
-        if (
-          fallback &&
-          !String(fallback).includes(" / ") &&
-          !String(fallback).includes(" & ")
-        ) {
-          addName(fallback);
-        }
-      }
-
-      return names;
-    }
-
-    function getResultScore(result, scoreType) {
-      if (!result || result.status) {
-        return null;
-      }
-
-      const storedScoreType =
-        clean(result.scoreType).toLowerCase();
-
-      if (scoreType === "Gross") {
-        const explicitGross =
-          result.grossScore ??
-          result.grossTotal ??
-          (
-            storedScoreType === "gross"
-              ? result.totalScore
-              : null
-          );
-
-        if (validScore(explicitGross)) {
-          return Number(explicitGross);
-        }
-
-        const handicap =
-          Number(
-            result?.players?.[0]?.handicap ??
-            result?.teamMembers?.[0]?.handicap ??
-            result?.handicap
-          );
-
-        const nett =
-          Number(
-            result.nettScore ??
-            result.nettTotal ??
-            (
-              storedScoreType === "nett"
-                ? result.totalScore
-                : null
-            )
-          );
-
-        if (
-          Number.isFinite(nett) &&
-          Number.isFinite(handicap) &&
-          nett >= 50 &&
-          nett <= 120 &&
-          handicap >= 0 &&
-          handicap <= 54
-        ) {
-          return nett + handicap;
-        }
-
-        return null;
-      }
-
-      if (scoreType === "Nett") {
-        const value =
-          Number(
-            result.nettScore ??
-            result.nettTotal ??
-            (
-              storedScoreType === "nett"
-                ? result.totalScore
-                : null
-            )
-          );
-
-        return (
-          Number.isFinite(value) &&
-          value >= 50 &&
-          value <= 120
-        )
-          ? value
-          : null;
-      }
-
-      return null;
-    }
-
-    function getLowestRoundScore(result, scoreType) {
-      if (!result || result.status) {
-        return null;
-      }
-
-      const scoreField =
-        scoreType === "Gross"
-          ? "grossScore"
-          : "nettScore";
-
-      const roundScores = (
-        Array.isArray(result.rounds)
-          ? result.rounds
-          : []
-      )
-        .map(round => Number(round?.[scoreField]))
-        .filter(score =>
-          Number.isFinite(score) &&
-          score >= 40 &&
-          score <= 120
-        );
-
-      if (roundScores.length > 0) {
-        return Math.min(...roundScores);
-      }
-
-      const legacyScores =
-        scoreType === "Gross"
-          ? [
-            ...(Array.isArray(result.grossRounds)
-              ? result.grossRounds
-              : []),
-            result.grossRound1,
-            result.grossRound2,
-            result.grossRound3,
-            result.grossRound4
-          ]
-          : [
-            ...(Array.isArray(result.nettRounds)
-              ? result.nettRounds
-              : []),
-            result.nettRound1,
-            result.nettRound2,
-            result.nettRound3,
-            result.nettRound4
-          ];
-
-      const validLegacyScores = legacyScores
-        .map(Number)
-        .filter(score =>
-          Number.isFinite(score) &&
-          score >= 40 &&
-          score <= 120
-        );
-
-      if (validLegacyScores.length > 0) {
-        return Math.min(...validLegacyScores);
-      }
-
-      return getResultScore(result, scoreType);
-    }
-    function makeCatalogMap(catalogue) {
-      const map = new Map();
-
-      (Array.isArray(catalogue) ? catalogue : [])
-        .forEach(item => {
-          const id =
-            item?.competitionId ||
-            item?.id ||
-            "";
-
-          if (id) {
-            map.set(id, item);
-          }
-        });
-
-      return map;
-    }
-
-    function getProfileName(profile) {
-      return clean(
-        profile?.player ||
-        profile?.playerName ||
-        profile?.name ||
-        profile?.hero?.name
+    function displayValue(item) {
+      return escapeHtml(
+        item?.displayValue ??
+        item?.value ??
+        ""
       );
     }
 
-    function getProfileSlug(profile, playerName) {
-      return clean(
-        profile?.slug ||
-        profile?.playerSlug ||
-        profile?.hero?.slug
-      ) || createSlug(playerName);
-    }
+    function leaderboard(title, record) {
+      const leaders = Array.isArray(record?.leaders)
+        ? record.leaders
+        : [];
 
-    function getProfileSectionTotals(profile, section) {
-      const sectionKey =
-        section === "Mens"
-          ? "mens"
-          : "seniors";
-
-      const sectionStats =
-        profile?.sectionCareer?.[sectionKey] ||
-        profile?.sections?.[sectionKey] ||
-        profile?.sectionStats?.[sectionKey] ||
-        profile?.careerBySection?.[sectionKey] ||
-        profile?.[sectionKey] ||
-        {};
-
-      const career =
-        profile?.career || {};
-
-      const overallCareerWins =
-        firstNumber(
-          sectionStats?.careerWins,
-          sectionStats?.wins,
-          sectionStats?.totalWins,
-          section === "Mens"
-            ? career?.mensWins
-            : career?.seniorsWins,
-          section === "Mens"
-            ? profile?.mensWins
-            : profile?.seniorsWins,
-          normaliseSection(profile?.section) === section
-            ? career?.wins
-            : undefined,
-          normaliseSection(profile?.section) === section
-            ? profile?.wins
-            : undefined
-        );
-
-      const majorWins =
-        firstNumber(
-          sectionStats?.majorWins,
-          sectionStats?.majors,
-          section === "Mens"
-            ? career?.mensMajorWins
-            : career?.seniorsMajorWins,
-          section === "Mens"
-            ? profile?.mensMajorWins
-            : profile?.seniorsMajorWins,
-          normaliseSection(profile?.section) === section
-            ? career?.majorWins
-            : undefined,
-          normaliseSection(profile?.section) === section
-            ? profile?.majorWins
-            : undefined
-        );
-
-      const boardWins =
-        firstNumber(
-          sectionStats?.boardWins,
-          sectionStats?.boardCompetitionWins,
-          section === "Mens"
-            ? career?.mensBoardWins
-            : career?.seniorsBoardWins,
-          section === "Mens"
-            ? profile?.mensBoardWins
-            : profile?.seniorsBoardWins,
-          normaliseSection(profile?.section) === section
-            ? career?.boardWins
-            : undefined,
-          normaliseSection(profile?.section) === section
-            ? career?.boardCompetitionWins
-            : undefined,
-          normaliseSection(profile?.section) === section
-            ? profile?.boardWins
-            : undefined
-        );
-      const top10 =
-        firstNumber(
-          sectionStats?.top10,
-          sectionStats?.top10Finishes,
-          normaliseSection(profile?.section) === section
-            ? career?.top10
-            : undefined,
-          normaliseSection(profile?.section) === section
-            ? profile?.top10
-            : undefined
-        );
-      return {
-        overallCareerWins,
-        majorWins,
-        boardWins,
-        top10
-      };
-    }
-
-    function buildProfileTotals(profileList, section) {
-      const totals = new Map();
-
-      profileList.forEach(profile => {
-        const playerName = getProfileName(profile);
-
-        if (!playerName) {
-          return;
-        }
-
-        const values =
-          getProfileSectionTotals(
-            profile,
-            section
-          );
-
-        /*
-         * Keep a profile only when it contains at least one verified
-         * all-time total for this section.
-         */
-        if (
-          values.overallCareerWins <= 0 &&
-          values.majorWins <= 0 &&
-          values.boardWins <= 0 &&
-          values.top10 <= 0
-        ) {
-          return;
-        }
-
-        totals.set(
-          normaliseName(playerName),
-          {
-            playerName,
-            slug:
-              getProfileSlug(
-                profile,
-                playerName
-              ),
-            ...values
-          }
-        );
-      });
-
-      return totals;
-    }
-
-    function buildModernSectionRecords(
-      competitions,
-      section,
-      slugByName
-    ) {
-      const records = new Map();
-
-      competitions
-        .filter(competition =>
-          normaliseSection(competition?.section) === section &&
-          Number(competition?.year) >= MODERN_START_YEAR
-        )
-        .forEach(competition => {
-          const seenInCompetition = new Set();
-
-          (competition.results || []).forEach(result => {
-            const names = getPlayerNames(result);
-            const position = getPosition(result);
-
-            names.forEach(playerName => {
-              const key = normaliseName(playerName);
-
-              if (!records.has(key)) {
-                records.set(key, {
-                  playerName,
-                  slug:
-                    slugByName.get(playerName) ||
-                    createSlug(playerName),
-                  winsSince2021: 0,
-                  appearancesSince2021: 0,
-                  lowestGross: null,
-                  lowestNett: null
-                });
-              }
-
-              const record = records.get(key);
-
-              if (!seenInCompetition.has(key)) {
-                seenInCompetition.add(key);
-                record.appearancesSince2021 += 1;
-              }
-
-              if (position === 1) {
-                record.winsSince2021 += 1;
-              }
-
-              /*
-               * Lowest scores are taken from the verified modern result rows.
-               * Team scores are excluded from individual score records.
-               */
-              if (names.length === 1) {
-                const gross =
-                  getLowestRoundScore(result, "Gross");
-
-                const nett =
-                  getLowestRoundScore(result, "Nett");
-
-                if (
-                  gross !== null &&
-                  (
-                    record.lowestGross === null ||
-                    gross < record.lowestGross
-                  )
-                ) {
-                  record.lowestGross = gross;
-                }
-
-                if (
-                  nett !== null &&
-                  (
-                    record.lowestNett === null ||
-                    nett < record.lowestNett
-                  )
-                ) {
-                  record.lowestNett = nett;
-                }
-              }
-            });
-          });
-        });
-
-      return records;
-    }
-
-    function mergeSectionRecords(
-      profileTotals,
-      modernTotals
-    ) {
-      const keys =
-        new Set([
-          ...profileTotals.keys(),
-          ...modernTotals.keys()
-        ]);
-
-      return [...keys].map(key => {
-        const historic =
-          profileTotals.get(key) || {};
-
-        const modern =
-          modernTotals.get(key) || {};
-
-        return {
-          playerName:
-            historic.playerName ||
-            modern.playerName ||
-            "Unknown",
-
-          slug:
-            historic.slug ||
-            modern.slug ||
-            createSlug(
-              historic.playerName ||
-              modern.playerName
-            ),
-
-          overallCareerWins:
-            num(historic.overallCareerWins),
-
-          winsSince2021:
-            num(modern.winsSince2021),
-
-          majorWins:
-            num(historic.majorWins),
-
-          boardWins:
-            num(historic.boardWins),
-
-          top10:
-            num(historic.top10),
-
-          lowestGross:
-            modern.lowestGross ?? null,
-
-          lowestNett:
-            modern.lowestNett ?? null,
-
-          appearancesSince2021:
-            num(
-              modern.appearancesSince2021
-            )
-        };
-      });
-    }
-    function getFieldValue(object, field) {
-      return String(field)
-        .split(".")
-        .reduce(
-          (value, key) =>
-            value !== null && value !== undefined
-              ? value[key]
-              : undefined,
-          object
-        );
-    }
-    function topBy(
-      players,
-      field,
-      limit = 20,
-      lowestFirst = false
-    ) {
-      return [...players]
-        .filter(player =>
-          lowestFirst
-            ? validScore(player[field])
-            : num(player[field]) > 0
-        )
-        .sort((a, b) => {
-          const first = num(a[field]);
-          const second = num(b[field]);
-
-          const difference =
-            lowestFirst
-              ? first - second
-              : second - first;
-
-          return difference ||
-            String(a.playerName || "")
-              .localeCompare(
-                String(b.playerName || "")
-              );
-        })
-        .slice(0, limit);
-    }
-
-    function leaderboard(
-      title,
-      players,
-      field
-    ) {
-      if (!players.length) {
+      if (!leaders.length) {
         return `
           <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
             <h2 class="serif text-4xl mb-6">
-              ${title}
+              ${escapeHtml(title)}
             </h2>
 
             <p class="text-gray-500">
-              No verified data available yet.
+              No certified data available yet.
             </p>
           </section>
         `;
@@ -724,402 +140,185 @@
       return `
         <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
           <h2 class="serif text-4xl mb-6">
-            ${title}
+            ${escapeHtml(title)}
           </h2>
 
           <div class="space-y-4">
-            ${players.map((player, index) => `
-              <a
-                href="player-profile.html?player=${encodeURIComponent(player.slug)}"
-                class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3 hover:text-[#C5A367] transition"
-              >
+            ${leaders.map((item, index) => `
+              <div class="flex justify-between items-start gap-4 border-b border-gray-200 pb-3">
                 <span>
                   <span class="text-[#C5A367] mr-3">
-                    ${index + 1}
+                    ${escapeHtml(item?.rank ?? index + 1)}
                   </span>
 
-                  ${player.playerName}
+                  ${playerLink(item)}
+
+                  ${item?.date ? `
+                    <span class="block ml-8 mt-1 text-xs text-gray-500">
+                      ${escapeHtml(item.date)}
+                      ${item?.course ? ` · ${escapeHtml(item.course)}` : ""}
+                    </span>
+                  ` : ""}
                 </span>
 
-                <strong>
-                  ${getFieldValue(player, field)}
+                <strong class="shrink-0">
+                  ${displayValue(item)}
                 </strong>
-              </a>
+              </div>
             `).join("")}
           </div>
         </section>
       `;
     }
 
-    function statCard(label, value) {
-      return `
-        <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
-          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
-            ${label}
-          </p>
+    function sectionRecords(section) {
+      const key = section === "Mens"
+        ? "mens"
+        : "seniors";
 
-          <p class="serif text-5xl">
-            ${value}
-          </p>
-        </div>
-      `;
+      return state.records?.[key] || {};
     }
 
-    function renderCoverageNote() {
-      const coverage = state.coverage;
-
-      if (
-        !Number.isFinite(coverage.firstYear) ||
-        !Number.isFinite(coverage.lastYear)
-      ) {
-        return "";
-      }
-
-      return `
-        <div class="mt-10 rounded border border-[#C5A367]/30 bg-[#132419] p-6 text-white">
-          <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">
-            Record Coverage
-          </p>
-
-          <p class="text-white/80">
-            Overall Career, Major Wins and competition performance statistics use the certified Museum player records. Wins, appearances and score records use verified competition results from ${MODERN_START_YEAR} onwards.
-            Wins, appearances and score records use verified competition results from
-            ${MODERN_START_YEAR} onwards. The wider Museum currently contains result years
-            from ${coverage.firstYear} to ${coverage.lastYear}.
-          </p>
-        </div>
-      `;
-    }
-
-    function renderSection(section) {
-      const players =
-        state.sections[section] || [];
-
-      const label =
-        section === "Mens"
-          ? "Men's"
-          : "Seniors";
+    function renderPlayerSection(section) {
+      const data = sectionRecords(section);
+      const career = data.career || {};
+      const championships = data.championships || {};
+      const label = section === "Mens"
+        ? "Men's"
+        : "Seniors";
 
       return `
         <div class="mb-10">
           <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">
-            ${section}
+            ${escapeHtml(section)}
           </p>
 
           <h2 class="serif text-5xl">
-            ${label} Records
+            ${label} Certified Records
           </h2>
 
           <p class="text-gray-600 mt-3 max-w-3xl">
-            All-time Museum honours are shown separately from the modern results era beginning in ${MODERN_START_YEAR}.
+            These rankings are displayed directly from the certified Museum output.
+            The website does not recalculate wins, placings, appearances or scores.
           </p>
         </div>
 
         <section class="grid lg:grid-cols-2 gap-8">
           ${leaderboard(
-        `${label} Overall Career Wins`,
-        topBy(
-          players,
-          "overallCareerWins"
-        ),
-        "overallCareerWins"
-      )}
+            `${label} Most Wins`,
+            career.mostWins
+          )}
 
           ${leaderboard(
-        `${label} Wins Since ${MODERN_START_YEAR}`,
-        topBy(
-          players,
-          "winsSince2021"
-        ),
-        "winsSince2021"
-      )}
+            `${label} Most Runner-up Finishes`,
+            career.mostRunnerUp
+          )}
 
           ${leaderboard(
-        `${label} Major Wins`,
-        topBy(
-          players,
-          "majorWins"
-        ),
-        "majorWins"
-      )}
-
-    ${leaderboard(
-        `${label} Most Top 10 Finishes`,
-        topBy(
-          players,
-          "top10"
-        ),
-        "top10"
-      )}
-          ${leaderboard(
-        `${label} Lowest Gross Since ${MODERN_START_YEAR}`,
-        topBy(
-          players,
-          "lowestGross",
-          20,
-          true
-        ),
-        "lowestGross"
-      )}
+            `${label} Most Top 3 Finishes`,
+            career.mostTop3
+          )}
 
           ${leaderboard(
-        `${label} Lowest Nett Since ${MODERN_START_YEAR}`,
-        topBy(
-          players,
-          "lowestNett",
-          20,
-          true
-        ),
-        "lowestNett"
-      )}
+            `${label} Most Top 5 Finishes`,
+            career.mostTop5
+          )}
 
           ${leaderboard(
-        `${label} Most Appearances Since ${MODERN_START_YEAR}`,
-        topBy(
-          players,
-          "appearancesSince2021"
-        ),
-        "appearancesSince2021"
-      )}
-        </section>
+            `${label} Most Top 10 Finishes`,
+            career.mostTop10
+          )}
 
-        ${renderCoverageNote()}
-      `;
-    }
+          ${leaderboard(
+            `${label} Most Competitions Played`,
+            career.mostPlayed
+          )}
 
-    function extractHoleInOnes(recordsCentre) {
-      const candidates = [
-        recordsCentre?.holeInOnes,
-        recordsCentre?.clubRecords?.holeInOnes,
-        recordsCentre?.records?.holeInOnes,
-        recordsCentre?.club?.holeInOnes
-      ];
+          ${leaderboard(
+            `${label} Most Major Wins`,
+            championships.mostMajorWins
+          )}
 
-      const match =
-        candidates.find(Array.isArray);
-
-      return Array.isArray(match)
-        ? match
-        : [];
-    }
-
-    function buildLongestRunning(
-      competitions,
-      catalogById
-    ) {
-      const map = new Map();
-
-      competitions.forEach(competition => {
-        const id =
-          competition?.competitionId || "";
-
-        if (!id) {
-          return;
-        }
-
-        const year =
-          Number(competition?.year);
-
-        if (!map.has(id)) {
-          const catalog =
-            catalogById.get(id) || {};
-
-          map.set(id, {
-            competitionId: id,
-            name:
-              catalog?.name ||
-              competition?.competitionName ||
-              competition?.name ||
-              id,
-            years: new Set()
-          });
-        }
-
-        if (Number.isFinite(year)) {
-          map.get(id).years.add(year);
-        }
-      });
-
-      return [...map.values()]
-        .map(item => {
-          const years =
-            [...item.years]
-              .sort((a, b) => a - b);
-
-          return {
-            ...item,
-            yearsPlayed: years.length,
-            firstYear: years[0] || null,
-            lastYear:
-              years[years.length - 1] || null
-          };
-        })
-        .filter(item => item.yearsPlayed > 0)
-        .sort((a, b) =>
-          b.yearsPlayed - a.yearsPlayed ||
-          a.name.localeCompare(b.name)
-        )
-        .slice(0, 10);
-    }
-
-    function renderHoleInOnes(items) {
-      if (!items.length) {
-        return `
-          <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-            <h2 class="serif text-4xl mb-6">
-              Hole in Ones
-            </h2>
-
-            <p class="text-gray-500">
-              No verified Hole in One records were found in the current Museum data.
-            </p>
-          </section>
-        `;
-      }
-
-      return `
-        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-          <h2 class="serif text-4xl mb-6">
-            Hole in Ones
-          </h2>
-
-          <div class="space-y-4">
-            ${items.slice(0, 10).map((item, index) => {
-        const name =
-          item?.playerName ||
-          item?.player ||
-          item?.name ||
-          "Unknown";
-
-        const detail = [
-          item?.hole
-            ? `Hole ${item.hole}`
-            : "",
-          item?.year ||
-          item?.date ||
-          ""
-        ].filter(Boolean).join(" · ");
-
-        return `
-                <div class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3">
-                  <span>
-                    <span class="text-[#C5A367] mr-3">
-                      ${index + 1}
-                    </span>
-
-                    ${name}
-                  </span>
-
-                  <strong>
-                    ${detail}
-                  </strong>
-                </div>
-              `;
-      }).join("")}
-          </div>
-        </section>
-      `;
-    }
-
-    function renderLongestRunning(items) {
-      if (!items.length) {
-        return `
-          <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-            <h2 class="serif text-4xl mb-6">
-              Longest-Running Competitions
-            </h2>
-
-            <p class="text-gray-500">
-              No verified competition history is available yet.
-            </p>
-          </section>
-        `;
-      }
-
-      return `
-        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
-          <h2 class="serif text-4xl mb-6">
-            Longest-Running Competitions
-          </h2>
-
-          <div class="space-y-4">
-            ${items.map((item, index) => `
-              <a
-                href="competition-profile.html?competition=${encodeURIComponent(item.competitionId)}"
-                class="flex justify-between items-center gap-4 border-b border-gray-200 pb-3 hover:text-[#C5A367] transition"
-              >
-                <span>
-                  <span class="text-[#C5A367] mr-3">
-                    ${index + 1}
-                  </span>
-
-                  ${item.name}
-                </span>
-
-                <strong>
-                  ${item.yearsPlayed} years
-                </strong>
-              </a>
-            `).join("")}
-          </div>
+          ${leaderboard(
+            `${label} Most Medal Wins`,
+            championships.mostMedalWins
+          )}
         </section>
       `;
     }
 
     function renderClub() {
-      const club = state.club;
-      const totals = club.totals || {};
+      const museum = state.records?.museum || {};
 
       return `
         <div class="mb-10">
           <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">
-            Whole Museum
+            Certified Museum Output
           </p>
 
           <h2 class="serif text-5xl">
-            Club Records
+            Club Scoring Records
           </h2>
 
           <p class="text-gray-600 mt-3 max-w-3xl">
-            Club-wide Museum records and collection totals.
-            Men's and Seniors player records remain independent.
+            These records retain their source event, score type and verification basis.
           </p>
         </div>
 
-        <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
-          ${statCard("Unique Players", totals.players)}
-          ${statCard("Competitions", totals.competitions)}
-          ${statCard("Result Blocks", totals.resultBlocks)}
-          ${statCard("Result Rows", totals.resultRows)}
-        </section>
-
         <section class="grid lg:grid-cols-2 gap-8">
-          ${renderHoleInOnes(club.holeInOnes)}
-          ${renderLongestRunning(club.longestRunning)}
-        </section>
+          ${leaderboard(
+            museum.lowest18HoleGross?.label ||
+              "Lowest 18-Hole Gross Since 2021",
+            museum.lowest18HoleGross
+          )}
 
-        ${renderCoverageNote()}
+          ${leaderboard(
+            museum.lowest18HoleNett?.label ||
+              "Lowest 18-Hole Nett Since 2021",
+            museum.lowest18HoleNett
+          )}
+
+          ${leaderboard(
+            museum.lowest36HoleGross?.label ||
+              "Lowest Completed 36-Hole Gross Since 2021",
+            museum.lowest36HoleGross
+          )}
+
+          ${leaderboard(
+            museum.lowest36HoleNett?.label ||
+              "Lowest Completed 36-Hole Nett Since 2021",
+            museum.lowest36HoleNett
+          )}
+
+          ${leaderboard(
+            museum.highestStablefordScore?.label ||
+              "Highest Stableford Score",
+            museum.highestStablefordScore
+          )}
+
+          ${leaderboard(
+            museum.mostRecordsHeld?.label ||
+              "Most Hole In Ones",
+            museum.mostRecordsHeld
+          )}
+        </section>
       `;
     }
 
     function render() {
-      const container =
-        document.getElementById("stats");
+      const container = document.getElementById("stats");
 
       container.innerHTML =
         state.activeSection === "Club"
           ? renderClub()
-          : renderSection(
-            state.activeSection
-          );
+          : renderPlayerSection(state.activeSection);
 
       document
         .querySelectorAll(".section-tab")
         .forEach(button => {
           button.setAttribute(
             "aria-selected",
-            button.dataset.section ===
-              state.activeSection
+            button.dataset.section === state.activeSection
               ? "true"
               : "false"
           );
@@ -1127,194 +326,24 @@
     }
 
     async function loadStats() {
-      const container =
-        document.getElementById("stats");
+      const container = document.getElementById("stats");
 
       try {
-        const [
-          profilesResponse,
-          pagesResponse,
-          resultsResponse,
-          catalogueResponse,
-          recordsResponse
-        ] = await Promise.all([
-          fetch("data/player-profiles.json"),
-          fetch("data/player-page-data.json"),
-          fetch("data/competition-results.json"),
-          fetch("data/competition-catalog.json"),
-          fetch("data/records-centre.json")
-        ]);
+        const response = await fetch(
+          "data/records-centre.json"
+        );
 
-        if (!profilesResponse.ok) {
+        if (!response.ok) {
           throw new Error(
-            `player-profiles.json returned ${profilesResponse.status}`
+            `records-centre.json returned ${response.status}`
           );
         }
 
-        if (!pagesResponse.ok) {
-          throw new Error(
-            `player-page-data.json returned ${pagesResponse.status}`
-          );
-        }
-
-        if (!resultsResponse.ok) {
-          throw new Error(
-            `competition-results.json returned ${resultsResponse.status}`
-          );
-        }
-
-        if (!catalogueResponse.ok) {
-          throw new Error(
-            `competition-catalog.json returned ${catalogueResponse.status}`
-          );
-        }
-
-        const playerProfiles =
-          await profilesResponse.json();
-
-        const playerPages =
-          await pagesResponse.json();
-
-        const competitionResults =
-          await resultsResponse.json();
-
-        const catalogue =
-          await catalogueResponse.json();
-
-        const recordsCentre =
-          recordsResponse.ok
-            ? await recordsResponse.json()
-            : {};
-
-        const profileList =
-          Array.isArray(playerProfiles)
-            ? playerProfiles
-            : Object.values(
-              playerProfiles || {}
-            );
-
-        const pageList =
-          Array.isArray(playerPages)
-            ? playerPages
-            : Object.values(
-              playerPages || {}
-            );
-
-        const competitions =
-          Array.isArray(competitionResults)
-            ? competitionResults
-            : [];
-
-        const catalogById =
-          makeCatalogMap(catalogue);
-
-        const slugByName = new Map();
-
-        pageList.forEach(page => {
-          const playerName =
-            page?.hero?.name ||
-            page?.player ||
-            page?.playerName ||
-            "";
-
-          if (!playerName) {
-            return;
-          }
-
-          slugByName.set(
-            playerName,
-            page.slug ||
-            createSlug(playerName)
-          );
-        });
-
-        ["Mens", "Seniors"].forEach(section => {
-          const profileTotals =
-            buildProfileTotals(
-              profileList,
-              section
-            );
-
-          const modernTotals =
-            buildModernSectionRecords(
-              competitions,
-              section,
-              slugByName
-            );
-
-          state.sections[section] =
-            mergeSectionRecords(
-              profileTotals,
-              modernTotals
-            );
-        });
-
-        const allPlayers = new Set([
-          ...state.sections.Mens.map(
-            player => player.playerName
-          ),
-          ...state.sections.Seniors.map(
-            player => player.playerName
-          )
-        ]);
-
-        const competitionIds =
-          new Set(
-            competitions
-              .map(item => item?.competitionId)
-              .filter(Boolean)
-          );
-
-        const years =
-          [...new Set(
-            competitions
-              .map(item => Number(item?.year))
-              .filter(Number.isFinite)
-          )].sort((a, b) => a - b);
-
-        state.coverage = {
-          firstYear: years[0] || null,
-          lastYear:
-            years[years.length - 1] || null,
-          yearCount: years.length
-        };
-
-        state.club = {
-          holeInOnes:
-            extractHoleInOnes(
-              recordsCentre
-            ),
-
-          longestRunning:
-            buildLongestRunning(
-              competitions,
-              catalogById
-            ),
-
-          totals: {
-            players: allPlayers.size,
-            competitions: competitionIds.size,
-            resultBlocks: competitions.length,
-            resultRows:
-              competitions.reduce(
-                (total, competition) =>
-                  total +
-                  (
-                    Array.isArray(
-                      competition?.results
-                    )
-                      ? competition.results.length
-                      : 0
-                  ),
-                0
-              )
-          }
-        };
-
+        state.records = await response.json();
         render();
       } catch (error) {
         console.error(
-          "Statistics failed to load",
+          "Certified statistics failed to load",
           error
         );
 
@@ -1325,7 +354,7 @@
             </h2>
 
             <p class="text-gray-600">
-              The Museum statistics could not be loaded at the moment.
+              The certified Museum statistics could not be loaded.
             </p>
           </div>
         `;
@@ -1335,15 +364,14 @@
     document
       .querySelectorAll(".section-tab")
       .forEach(button => {
-        button.addEventListener(
-          "click",
-          () => {
-            state.activeSection =
-              button.dataset.section;
+        button.addEventListener("click", () => {
+          state.activeSection =
+            button.dataset.section;
 
+          if (state.records) {
             render();
           }
-        );
+        });
       });
 
     loadStats();
