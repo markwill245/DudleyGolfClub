@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="robots" content="noindex,nofollow">
+
+  <title>
+    Committee Login | Dudley Golf Club
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Outfit", sans-serif;
+      background:
+        linear-gradient(
+          rgba(7, 20, 13, 0.72),
+          rgba(7, 20, 13, 0.94)
+        ),
+        url("images/hole12.webp") center / cover fixed;
+    }
+
+    .serif {
+      font-family:
+        "Cormorant Garamond",
+        serif;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <main
+    class="min-h-screen flex items-center justify-center px-6 py-16"
+  >
+    <section
+      class="w-full max-w-lg rounded-2xl border border-[#C5A367]/30 bg-[#132419]/90 p-8 md:p-12 text-center shadow-2xl backdrop-blur"
+    >
+      <p
+        class="text-xs uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-5"
+      >
+        Dudley Golf Club
+      </p>
+
+      <h1
+        class="serif text-5xl text-white mb-4"
+      >
+        Committee Area
+      </h1>
+
+      <p
+        class="text-white/65 leading-7 mb-9"
+      >
+        Private access to the live Golfer
+        of the Year working rankings and
+        evidence.
+      </p>
+
+      <label
+        for="committee-password"
+        class="block text-xs uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-3"
+      >
+        Committee password
+      </label>
+
+      <input
+        id="committee-password"
+        type="password"
+        autocomplete="current-password"
+        placeholder="Enter password"
+        class="w-full rounded-lg bg-white px-5 py-4 text-center text-lg text-[#132419] outline-none"
+      >
+
+      <button
+        id="login-button"
+        type="button"
+        class="mt-4 w-full rounded-lg bg-[#C5A367] px-6 py-4 uppercase tracking-[0.2em] text-xs font-bold text-[#132419] hover:bg-white transition"
+      >
+        Enter Committee Area
+      </button>
+
+      <p
+        id="password-error"
+        class="hidden mt-4 text-sm text-red-300"
+      >
+        Incorrect password. Please try again.
+      </p>
+
+      <a
+        href="digital-museum.html"
+        class="inline-block mt-9 text-xs uppercase tracking-[0.22em] text-white/45 hover:text-[#C5A367] transition"
+      >
+        ← Return to Digital Museum
+      </a>
+    </section>
+  </main>
+
+  <script>
+    const PASSWORD_HASH =
+      "7ad526e5410d0b7043f9b3a8d9c0ccb0e69c6e9be7db2095240f63dc24c885f2";
+
+    async function sha256(value) {
+      const data =
+        new TextEncoder().encode(value);
+
+      const digest =
+        await crypto.subtle.digest(
+          "SHA-256",
+          data
+        );
+
+      return [...new Uint8Array(digest)]
+        .map(byte =>
+          byte
+            .toString(16)
+            .padStart(2, "0")
+        )
+        .join("");
+    }
+
+    async function login() {
+      const input =
+        document.getElementById(
+          "committee-password"
+        );
+
+      const error =
+        document.getElementById(
+          "password-error"
+        );
+
+      const hash =
+        await sha256(
+          input.value.trim()
+        );
+
+      if (hash === PASSWORD_HASH) {
+        sessionStorage.setItem(
+          "dgcCommitteeAccess",
+          "granted"
+        );
+
+        window.location.href =
+          "committee/golfer-of-the-year.html";
+
+        return;
+      }
+
+      error.classList.remove("hidden");
+      input.value = "";
+      input.focus();
+    }
+
+    document
+      .getElementById("login-button")
+      .addEventListener("click", login);
+
+    document
+      .getElementById("committee-password")
+      .addEventListener(
+        "keydown",
+        event => {
+          if (event.key === "Enter") {
+            login();
+          }
+        }
+      );
+  </script>
+
+</body>
+</html>

@@ -29,7 +29,7 @@
 
     <a href="index.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      ← Back to Home
+      â† Back to Home
     </a>
 
     <section class="mt-12 mb-16">
@@ -42,7 +42,7 @@
       </h1>
 
       <p class="text-xl max-w-4xl leading-8">
-        A living archive of Dudley Golf Club’s players, competitions, records,
+        A living archive of Dudley Golf Clubâ€™s players, competitions, records,
         champions and historical achievements.
       </p>
     </section>
@@ -120,6 +120,18 @@
         <p>View the historical record of Dudley Golf Club captains.</p>
       </a>
 
+      <a href="committee-login.html"
+        class="bg-[#132419] text-white rounded-2xl p-8 border border-[#C5A367]/50 shadow-lg hover:shadow-2xl transition">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+          Private Access
+        </p>
+        <h2 class="text-3xl font-serif mb-4">
+          Committee Area
+        </h2>
+        <p class="text-white/70">
+          Password-protected Golfer of the Year working rankings.
+        </p>
+      </a>
       <a href="museum-collection.html"
         class="bg-white rounded-2xl p-8 border border-[#C5A367]/30 shadow-lg hover:shadow-2xl transition">
         <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">Collection</p>
@@ -153,17 +165,17 @@
         document
           .getElementById("stat-players")
           .textContent =
-            summary.playersRecorded ?? "—";
+            summary.playersRecorded ?? "â€”";
 
         document
           .getElementById("stat-competitions")
           .textContent =
-            summary.competitions ?? "—";
+            summary.competitions ?? "â€”";
 
         document
           .getElementById("stat-results")
           .textContent =
-            summary.recordedResultRows ?? "—";
+            summary.recordedResultRows ?? "â€”";
 
         const leader =
           summary.lifetimeLeader;
@@ -183,7 +195,7 @@
               : "player-index.html";
 
           link.textContent =
-            `${leader.player} — ${leader.wins} wins`;
+            `${leader.player} â€” ${leader.wins} wins`;
 
           link.className =
             "hover:text-[#C5A367] transition";
@@ -192,7 +204,7 @@
             link
           );
         } else {
-          leaderElement.textContent = "—";
+          leaderElement.textContent = "â€”";
         }
       } catch (error) {
         console.error(
@@ -206,7 +218,7 @@
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    ↑ Top
+    â†‘ Top
   </button>
 
   <script>

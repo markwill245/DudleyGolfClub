@@ -1,0 +1,149 @@
+{
+  "title": "Dudley Golf Club Golfer of the Year",
+  "access": "Committee Only",
+  "calculationStatus": "COMMITTEE REVIEW",
+  "season": 2026,
+  "scope": {
+    "section": "Mens",
+    "seniorsExcluded": true,
+    "standardCompetitionsExcluded": true,
+    "publicVisibility": "Committee Only"
+  },
+  "rules": [
+    {
+      "awardType": "Club Champion",
+      "points": 2
+    },
+    {
+      "awardType": "Knockout Winner",
+      "points": 2
+    },
+    {
+      "awardType": "Singles Major",
+      "points": 1
+    },
+    {
+      "awardType": "Pairs / Team Major",
+      "points": 0.5
+    }
+  ],
+  "tieBreakOrder": [
+    "Total points",
+    "Club Championship wins",
+    "Knockout wins",
+    "Singles major wins",
+    "Total qualifying wins",
+    "Player name"
+  ],
+  "standings": [
+    {
+      "rank": 1,
+      "player": "Richard Weston",
+      "totalPoints": 2.5,
+      "singlesMajors": 2,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 3,
+      "evidence": [
+        {
+          "competitionId": "claughton-cup",
+          "competitionName": "Claughton Cup",
+          "year": 2026,
+          "date": "2026-04-04",
+          "awardType": "Singles Major",
+          "points": 1,
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "year": 2026,
+          "date": "2026-04-25",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "competitionId": "hooper-cup",
+          "competitionName": "Hooper Cup",
+          "year": 2026,
+          "date": "2026-07-25",
+          "awardType": "Singles Major",
+          "points": 1,
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "player": "Gregory Curry",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "year": 2026,
+          "date": "2026-04-25",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "player": "James Stevens",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "year": 2026,
+          "date": "2026-05-30",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "player": "Neil Hartland",
+      "totalPoints": 0.5,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "year": 2026,
+          "date": "2026-05-30",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}

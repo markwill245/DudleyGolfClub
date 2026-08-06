@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="robots" content="noindex,nofollow">
+
+  <title>
+    Golfer of the Year | Committee Area
+  </title>
+
+  <script>
+    if (
+      sessionStorage.getItem(
+        "dgcCommitteeAccess"
+      ) !== "granted"
+    ) {
+      window.location.replace(
+        "../committee-login.html"
+      );
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      background: #F9F7F2;
+      color: #132419;
+    }
+
+    .serif {
+      font-family:
+        "Cormorant Garamond",
+        serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header
+    class="bg-[#132419] px-6 py-8 text-white"
+  >
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-5"
+    >
+      <div>
+        <p
+          class="text-xs uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3"
+        >
+          Private Committee Area
+        </p>
+
+        <h1 class="serif text-5xl">
+          Golfer of the Year
+        </h1>
+      </div>
+
+      <button
+        id="logout"
+        type="button"
+        class="border border-[#C5A367] px-5 py-3 text-xs uppercase tracking-[0.2em] text-[#C5A367] hover:bg-[#C5A367] hover:text-[#132419] transition"
+      >
+        Log Out
+      </button>
+    </div>
+  </header>
+
+  <main
+    class="max-w-6xl mx-auto px-6 py-14"
+  >
+    <section
+      id="summary"
+      class="mb-10"
+    >
+      <p>Loading committee rankings...</p>
+    </section>
+
+    <section
+      id="standings"
+      aria-live="polite"
+    ></section>
+  </main>
+
+  <script>
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function evidencePanel(player) {
+      return `
+        <div
+          id="evidence-${player.rank}"
+          class="hidden bg-[#F9F7F2] px-6 py-6 border-t border-[#C5A367]/20"
+        >
+          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-4">
+            Points Evidence
+          </p>
+
+          <div class="space-y-3">
+            ${player.evidence.map(item => `
+              <div class="grid md:grid-cols-[1fr_auto_auto] gap-3 bg-white border border-[#C5A367]/20 rounded-xl p-4">
+                <div>
+                  <strong>
+                    ${escapeHtml(item.competitionName)}
+                  </strong>
+
+                  <p class="text-xs text-gray-500 mt-1">
+                    ${escapeHtml(item.awardType)}
+                  </p>
+                </div>
+
+                <span class="text-sm">
+                  ${escapeHtml(item.year)}
+                </span>
+
+                <strong class="text-[#C5A367]">
+                  ${item.points}
+                  ${item.points === 1 ? "pt" : "pts"}
+                </strong>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    function toggleEvidence(rank) {
+      const panel =
+        document.getElementById(
+          `evidence-${rank}`
+        );
+
+      panel?.classList.toggle("hidden");
+    }
+
+    async function loadData() {
+      const response = await fetch(
+        "data/golfer-of-the-year-committee.json",
+        {
+          cache: "no-store"
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Committee data returned ${response.status}`
+        );
+      }
+
+      const data =
+        await response.json();
+
+      document
+        .getElementById("summary")
+        .innerHTML = `
+          <div class="grid md:grid-cols-3 gap-5">
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Season
+              </p>
+              <strong class="serif text-4xl">
+                ${data.season}
+              </strong>
+            </div>
+
+            <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Players Ranked
+              </p>
+              <strong class="serif text-4xl">
+                ${data.standings.length}
+              </strong>
+            </div>
+
+            <div class="bg-[#132419] text-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">
+                Status
+              </p>
+              <strong class="serif text-3xl">
+                ${escapeHtml(data.calculationStatus)}
+              </strong>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-amber-50 border border-amber-300 rounded-xl p-5 text-sm">
+            This is a private Mens-only working ranking for committee review.
+            Seniors competitions and standard non-major competitions are excluded.
+            It must not be treated as the formal Prize Night announcement.
+          </div>
+        `;
+
+      document
+        .getElementById("standings")
+        .innerHTML = `
+          <section class="bg-white border border-[#C5A367]/30 rounded-2xl shadow overflow-hidden">
+            <div class="p-7 border-b border-[#C5A367]/20">
+              <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">
+                Committee Working Table
+              </p>
+
+              <h2 class="serif text-4xl">
+                Current Standings
+              </h2>
+            </div>
+
+            ${data.standings.map(player => `
+              <div class="border-b last:border-b-0 border-[#C5A367]/20">
+                <button
+                  type="button"
+                  onclick="toggleEvidence(${player.rank})"
+                  class="w-full grid grid-cols-[55px_1fr_auto] md:grid-cols-[70px_1fr_100px_100px] gap-4 items-center px-5 py-5 text-left hover:bg-[#F9F7F2] transition"
+                >
+                  <strong class="serif text-3xl">
+                    ${player.rank}
+                  </strong>
+
+                  <div>
+                    <strong class="text-lg">
+                      ${escapeHtml(player.player)}
+                    </strong>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                      ${player.qualifyingWins}
+                      qualifying
+                      ${player.qualifyingWins === 1 ? "win" : "wins"}
+                    </p>
+                  </div>
+
+                  <span class="hidden md:block text-sm">
+                    ${player.singlesMajors}
+                    singles
+                  </span>
+
+                  <strong class="serif text-3xl text-[#C5A367]">
+                    ${player.totalPoints}
+                  </strong>
+                </button>
+
+                ${evidencePanel(player)}
+              </div>
+            `).join("")}
+          </section>
+        `;
+    }
+
+    document
+      .getElementById("logout")
+      .addEventListener(
+        "click",
+        () => {
+          sessionStorage.removeItem(
+            "dgcCommitteeAccess"
+          );
+
+          window.location.replace(
+            "../committee-login.html"
+          );
+        }
+      );
+
+    loadData().catch(error => {
+      console.error(error);
+
+      document
+        .getElementById("standings")
+        .innerHTML = `
+          <div class="bg-white border border-red-300 rounded-xl p-8">
+            Committee rankings could not be loaded.
+          </div>
+        `;
+    });
+  </script>
+
+</body>
+</html>
