@@ -31,7 +31,7 @@
 
     <a href="competition-index.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      â† Back to Competition Archive
+      ← Back to Competition Archive
     </a>
 
     <section id="profile" class="mt-12" aria-live="polite">
@@ -43,7 +43,7 @@
   <button id="backToTop" type="button"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50"
     aria-label="Back to top">
-    â†‘ Top
+    ↑ Top
   </button>
 
   <script>
@@ -59,7 +59,7 @@
         .replaceAll("'", "&#039;");
     }
 
-    function displayValue(value, fallback = "â€”") {
+    function displayValue(value, fallback = "—") {
       return value === undefined || value === null || value === ""
         ? fallback
         : escapeHtml(value);
@@ -138,25 +138,25 @@
         return escapeHtml(result.status);
       }
 
-      return "â€”";
+      return "—";
     }
 
     function getScoreText(result) {
       if (result.status === "DQ") {
         return result.statusNote
-          ? `DQ â€” ${escapeHtml(result.statusNote)}`
+          ? `DQ — ${escapeHtml(result.statusNote)}`
           : "DQ";
       }
 
       if (result.status === "WD") {
         return result.statusNote
-          ? `WD â€” ${escapeHtml(result.statusNote)}`
+          ? `WD — ${escapeHtml(result.statusNote)}`
           : "WD";
       }
 
       if (result.status === "NR" && result.totalScore === null) {
         return result.statusNote
-          ? `NR â€” ${escapeHtml(result.statusNote)}`
+          ? `NR — ${escapeHtml(result.statusNote)}`
           : "NR";
       }
 
@@ -195,7 +195,7 @@
         return escapeHtml(result.status);
       }
 
-      return "â€”";
+      return "—";
     }
 
     function getFormatLine(yearBlock) {
@@ -215,7 +215,7 @@
         parts.push(`${yearBlock.numberOfRounds} Rounds`);
       }
 
-      return parts.join(" â€¢ ");
+      return parts.join(" • ");
     }
 
     function renderRoundDetails(result) {
@@ -229,12 +229,12 @@
             round?.score === undefined ||
               round?.score === null ||
               round?.score === ""
-              ? "â€”"
+              ? "—"
               : escapeHtml(round.score);
 
           return `R${escapeHtml(round.round)}: ${score}`;
         })
-        .join(" â€¢ ");
+        .join(" • ");
 
       return `
         <p class="text-xs text-gray-500 mt-1">
@@ -408,7 +408,7 @@ ${renderClubChampionshipAwards(comp, yearBlock)}
           item.score !== null &&
           item.score !== ""
           ? `${escapeHtml(item.score)}${formatRelativeToPar(item.relativeToPar)}`
-          : "â€”"
+          : "—"
         }
                   </span>
                 </div>
@@ -483,7 +483,7 @@ ${renderClubChampionshipAwards(comp, yearBlock)}
               <p><strong>Competition:</strong> ${displayValue(comp.name)}</p>
               <p><strong>Section:</strong> ${displayValue(comp.section)}</p>
               <p><strong>Format:</strong> ${displayValue(comp.competitionFormat || comp.format)}</p>
-              <p><strong>Years covered:</strong> ${displayValue(comp.firstYear)}â€“${displayValue(comp.latestYear)}</p>
+              <p><strong>Years covered:</strong> ${displayValue(comp.firstYear)}–${displayValue(comp.latestYear)}</p>
               <p><strong>Years recorded:</strong> ${displayValue(comp.yearsPlayed, 0)}</p>
               <p><strong>Total recorded entries:</strong> ${displayValue(comp.totalEntries, 0)}</p>
               <p><strong>Average entries:</strong> ${displayValue(comp.averageEntries, 0)}</p>

@@ -28,7 +28,7 @@
 
     <a href="digital-museum.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      â† Back to Museum
+      ← Back to Museum
     </a>
 
     <section class="mt-12 mb-12">
@@ -112,18 +112,18 @@
 
     function badge(status) {
       if (status === "Hall of Fame Level") {
-        return "â˜…â˜…â˜…â˜…â˜…";
+        return "★★★★★";
       }
 
       if (status === "Strong Candidate") {
-        return "â˜…â˜…â˜…â˜…â˜†";
+        return "★★★★☆";
       }
 
       if (status === "Emerging Candidate") {
-        return "â˜…â˜…â˜…â˜†â˜†";
+        return "★★★☆☆";
       }
 
-      return "â˜…â˜…â˜†â˜†â˜†";
+      return "★★☆☆☆";
     }
 
     function currentSection() {
@@ -193,7 +193,7 @@
           "leader-name"
         )
         .textContent =
-          section.leader?.name || "â€”";
+          section.leader?.name || "—";
     }
 
     function renderHallOfFame(
@@ -238,7 +238,7 @@
 
             <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
               ${escapeHtml(player.section)}
-              â€¢
+              •
               ${escapeHtml(player.status)}
             </p>
 
@@ -410,7 +410,7 @@
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    â†‘ Top
+    ↑ Top
   </button>
 
   <script>
