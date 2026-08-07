@@ -1,4 +1,4 @@
-﻿export async function onRequestGet(context) {
+export async function onRequestGet(context) {
     try {
         const query = `*[_type == "clubSettings" && _id == "clubSettings"][0]{
             courseStatus,
@@ -47,6 +47,7 @@
         }
 
         return Response.json({
+            bindings: Object.keys(context.env || {}).sort(),
             status,
             time: ukTime,
             source: "sanity",
