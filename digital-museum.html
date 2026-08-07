@@ -29,7 +29,7 @@
 
     <a href="index.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      â† Back to Home
+      ← Back to Home
     </a>
 
     <section class="mt-12 mb-16">
@@ -42,7 +42,7 @@
       </h1>
 
       <p class="text-xl max-w-4xl leading-8">
-        A living archive of Dudley Golf Clubâ€™s players, competitions, records,
+        A living archive of Dudley Golf Club’s players, competitions, records,
         champions and historical achievements.
       </p>
     </section>
@@ -165,17 +165,17 @@
         document
           .getElementById("stat-players")
           .textContent =
-            summary.playersRecorded ?? "â€”";
+            summary.playersRecorded ?? "—";
 
         document
           .getElementById("stat-competitions")
           .textContent =
-            summary.competitions ?? "â€”";
+            summary.competitions ?? "—";
 
         document
           .getElementById("stat-results")
           .textContent =
-            summary.recordedResultRows ?? "â€”";
+            summary.recordedResultRows ?? "—";
 
         const leader =
           summary.lifetimeLeader;
@@ -195,7 +195,7 @@
               : "player-index.html";
 
           link.textContent =
-            `${leader.player} â€” ${leader.wins} wins`;
+            `${leader.player} — ${leader.wins} wins`;
 
           link.className =
             "hover:text-[#C5A367] transition";
@@ -204,7 +204,7 @@
             link
           );
         } else {
-          leaderElement.textContent = "â€”";
+          leaderElement.textContent = "—";
         }
       } catch (error) {
         console.error(
@@ -218,7 +218,7 @@
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    â†‘ Top
+    ↑ Top
   </button>
 
   <script>
