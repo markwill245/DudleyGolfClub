@@ -47,8 +47,7 @@ export async function onRequestGet(context) {
         }
 
         return Response.json({
-            hasWeatherKey: !!context.env.OPENWEATHER_API_KEY,
-            weatherKeyLength: context.env.OPENWEATHER_API_KEY?.length || 0,
+
             status,
             time: ukTime,
             source: "sanity",
