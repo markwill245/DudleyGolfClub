@@ -3357,11 +3357,11 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "centenary-trophy",
-    "competitionName": "Centenary Trophy",
+    "competitionId": "seniors-centenary-trophy",
+    "competitionName": "Seniors Centenary Trophy",
     "competitionFormat": "Individual",
     "teamSize": 1,
-    "section": "Mens",
+    "section": "Seniors",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
     "boardCompetition": true,
@@ -3561,9 +3561,16 @@
         "scoreType": "Stableford"
       }
     ],
+    "awards": {
+      "overallWinner": {
+        "playerName": "Geoffrey Alan Ford",
+        "score": 35,
+        "countsAsCareerWin": true
+      }
+    },
     "scoreType": "Stableford",
-    "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "numberOfHoles": 9,
+    "holeLengthCertification": "Seniors Mixed 9 event."
   },
   {
     "competitionId": "centenary-trophy-boscowan-cup",
@@ -25829,12 +25836,12 @@
     "holeLengthCertification": "Standard Dudley competition length."
   },
   {
-    "competitionId": "centenary-trophy",
-    "competitionName": "Centenary Trophy",
+    "competitionId": "seniors-centenary-trophy",
+    "competitionName": "Seniors Centenary Trophy",
     "competitionFormat": "Individual",
     "scoreType": "Stableford",
     "teamSize": 1,
-    "section": "Mens",
+    "section": "Seniors",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
     "boardCompetition": true,
@@ -26074,8 +26081,8 @@
         "handicap": 8
       }
     ],
-    "numberOfHoles": 18,
-    "holeLengthCertification": "Standard Dudley competition length."
+    "numberOfHoles": 9,
+    "holeLengthCertification": "Seniors Mixed 9 event."
   },
   {
     "competitionId": "centenary-trophy-boscowan-cup",
@@ -57485,12 +57492,12 @@
     }
   },
   {
-    "competitionId": "centenary-trophy",
-    "competitionName": "Centenary Trophy",
+    "competitionId": "seniors-centenary-trophy",
+    "competitionName": "Seniors Centenary Trophy",
     "competitionFormat": "Individual",
     "scoreType": "Unknown",
     "teamSize": 1,
-    "section": "Mens",
+    "section": "Seniors",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
     "boardCompetition": true,
@@ -57503,6 +57510,7 @@
     "endDate": null,
     "multiDayEvent": false,
     "numberOfRounds": 1,
+    "numberOfHoles": 9,
     "sourceTitle": "Centenary Trophy",
     "sourceDate": "Monday 17th April 2023, Yellow Tees, Mixed 9",
     "awards": {
@@ -57871,7 +57879,7 @@
     "competitionId": "centenary-trophy-boscowan-cup",
     "competitionName": "Centenary Trophy & Boscowan Cup",
     "competitionFormat": "Individual",
-    "scoreType": "Unknown",
+    "scoreType": "Stableford",
     "teamSize": 1,
     "section": "Mens",
     "competitionClass": "Combined Award Event",
@@ -57886,12 +57894,30 @@
     "endDate": null,
     "multiDayEvent": false,
     "numberOfRounds": 1,
+    "numberOfHoles": 18,
+    "holeLengthCertification": "Standard Dudley competition length.",
     "sourceTitle": "Centenary Trophy & Boscowan Cup",
     "sourceDate": "Saturday 20th May 2023, White Tees, Dudley Golf Course",
     "awards": {
       "overallWinner": {
         "playerName": "Steve Homer",
         "score": 39
+      },
+      "centenaryWinner": {
+        "playerName": "Mark Dando",
+        "position": 2,
+        "handicap": 9,
+        "score": 38,
+        "label": "Centenary Trophy Winner",
+        "countsAsCareerWin": true
+      },
+      "boscawenWinner": {
+        "playerName": "Steve Homer",
+        "position": 1,
+        "handicap": 22,
+        "score": 39,
+        "label": "Boscawen Cup Winner",
+        "countsAsCareerWin": true
       }
     },
     "results": [
@@ -63159,326 +63185,6 @@
           }
         ],
         "rawLine": "46th\tKevin John Foster(26)\t8",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 1,
-        "totalScore": 86,
-        "players": [
-          {
-            "name": "G.B. Ray",
-            "handicap": 13
-          },
-          {
-            "name": "Adam Bonehill",
-            "handicap": 8
-          },
-          {
-            "name": "Nigel Brookes",
-            "handicap": 6
-          }
-        ],
-        "rawLine": "1st\tG.B. Ray (13), Adam Bonehill (8) & Nigel Brookes (6)\t86",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 2,
-        "totalScore": 81,
-        "players": [
-          {
-            "name": "Sean Element",
-            "handicap": 15
-          },
-          {
-            "name": "Philip Thompson",
-            "handicap": 8
-          },
-          {
-            "name": "Paul Wayne Taylor",
-            "handicap": 19
-          }
-        ],
-        "rawLine": "2nd\tSean Element (15), Philip Thompson (8) & Paul Wayne Taylor (19)\t81",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 3,
-        "totalScore": 78,
-        "players": [
-          {
-            "name": "Kevin Walters",
-            "handicap": 12
-          },
-          {
-            "name": "Mark Dando",
-            "handicap": 5
-          },
-          {
-            "name": "Gary Baker",
-            "handicap": 15
-          }
-        ],
-        "rawLine": "3rd\tKevin Walters (12), Mark Dando (5) & Gary Baker (15)\t78",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 4,
-        "totalScore": 78,
-        "players": [
-          {
-            "name": "Stephen Hall",
-            "handicap": 18
-          },
-          {
-            "name": "David Hobley",
-            "handicap": 13
-          },
-          {
-            "name": "Stephen Brian Hopkins",
-            "handicap": 10
-          }
-        ],
-        "rawLine": "4th\tStephen Hall (18), David Hobley (13) & Stephen Brian Hopkins (10)\t78",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 5,
-        "totalScore": 77,
-        "players": [
-          {
-            "name": "Peter Evans",
-            "handicap": 10
-          },
-          {
-            "name": "Robert Keith Woodall",
-            "handicap": 7
-          },
-          {
-            "name": "Mark Neil Tolley",
-            "handicap": 13
-          }
-        ],
-        "rawLine": "5th\tPeter Evans (10), Robert Keith Woodall (7) & Mark Neil Tolley (13)\t77",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 6,
-        "totalScore": 77,
-        "players": [
-          {
-            "name": "Alan Ball",
-            "handicap": 8
-          },
-          {
-            "name": "David Evitts",
-            "handicap": 28
-          },
-          {
-            "name": "Andrew Russell",
-            "handicap": 11
-          }
-        ],
-        "rawLine": "6th\tAlan Ball (8), David Evitts (28) & Andrew Russell (11)\t77",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 7,
-        "totalScore": 77,
-        "players": [
-          {
-            "name": "Mark Williams",
-            "handicap": 11
-          },
-          {
-            "name": "Neil Hartland",
-            "handicap": 9
-          },
-          {
-            "name": "James Stevens",
-            "handicap": 11
-          }
-        ],
-        "rawLine": "7th\tMark Williams (11), Neil Hartland (9) & James Stevens (11)\t77",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 8,
-        "totalScore": 76,
-        "players": [
-          {
-            "name": "Michael John Kendrick",
-            "handicap": 16
-          },
-          {
-            "name": "Calin Tiplea",
-            "handicap": 14
-          },
-          {
-            "name": "Keith Durbridge",
-            "handicap": 23
-          }
-        ],
-        "rawLine": "8th\tMichael John Kendrick (16), Calin Tiplea (14) & Keith Durbridge (23)\t76",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 9,
-        "totalScore": 75,
-        "players": [
-          {
-            "name": "Clive Peter Gould",
-            "handicap": 20
-          },
-          {
-            "name": "Steve Homer",
-            "handicap": 19
-          },
-          {
-            "name": "Philip John Northall",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "9th\tClive Peter Gould (20), Steve Homer (19) & Philip John Northall (14)\t75",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 10,
-        "totalScore": 74,
-        "players": [
-          {
-            "name": "Luke Jones",
-            "handicap": 14
-          },
-          {
-            "name": "Dean Hinchcliffe",
-            "handicap": 16
-          },
-          {
-            "name": "Mitch Sayce",
-            "handicap": 5
-          }
-        ],
-        "rawLine": "10th\tLuke Jones (14), Dean Hinchcliffe (16) & Mitch Sayce (5)\t74",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 11,
-        "totalScore": 73,
-        "players": [
-          {
-            "name": "Gerald Paul Crowley",
-            "handicap": 18
-          },
-          {
-            "name": "David Hill",
-            "handicap": 14
-          },
-          {
-            "name": "Paul Ian Welch",
-            "handicap": 11
-          }
-        ],
-        "rawLine": "11th\tGerald Paul Crowley (18), David Hill (14) & Paul Ian Welch (11)\t73",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 12,
-        "totalScore": 69,
-        "players": [
-          {
-            "name": "Eric Edwards",
-            "handicap": 24
-          },
-          {
-            "name": "Roger John Smith",
-            "handicap": 16
-          },
-          {
-            "name": "Robert Hudson",
-            "handicap": 18
-          }
-        ],
-        "rawLine": "12th\tEric Edwards (24), Roger John Smith (16) & Robert Hudson (18)\t69",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 13,
-        "totalScore": 66,
-        "players": [
-          {
-            "name": "Craig Tromans",
-            "handicap": 18
-          },
-          {
-            "name": "Stephen Langford",
-            "handicap": 21
-          },
-          {
-            "name": "Thomas Worley",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "13th\tCraig Tromans (18), Stephen Langford (21) & Thomas Worley (14)\t66",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 14,
-        "totalScore": 65,
-        "players": [
-          {
-            "name": "Keith John Woodall",
-            "handicap": 16
-          },
-          {
-            "name": "Robert Shedden",
-            "handicap": 15
-          },
-          {
-            "name": "Adam Stanfield",
-            "handicap": 13
-          }
-        ],
-        "rawLine": "14th\tKeith John Woodall (16), Robert Shedden (15) & Adam Stanfield (13)\t65",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 15,
-        "totalScore": 65,
-        "players": [
-          {
-            "name": "Scott Postin",
-            "handicap": 13
-          },
-          {
-            "name": "Richard Price",
-            "handicap": 21
-          },
-          {
-            "name": "Graham Morgan",
-            "handicap": 20
-          }
-        ],
-        "rawLine": "15th\tScott Postin (13), Richard Price (21) & Graham Morgan (20)\t65",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 16,
-        "totalScore": 59,
-        "players": [
-          {
-            "name": "Graham Chilton",
-            "handicap": 12
-          },
-          {
-            "name": "David Jeavons",
-            "handicap": 23
-          },
-          {
-            "name": "Clive Kearey",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "16th\tGraham Chilton (12), David Jeavons (23) & Clive Kearey (14)\t59",
         "scoreType": "Unknown"
       }
     ],
@@ -86348,467 +86054,6 @@
         ],
         "rawLine": "DQ\tAndy Sherwood(24)\tDQ rule 3.3b Not returning a scorecard",
         "scoreType": "Stableford"
-      },
-      {
-        "position": 1,
-        "totalScore": 114,
-        "players": [
-          {
-            "name": "Gavin Higgs",
-            "handicap": 9
-          },
-          {
-            "name": "Mark Dando",
-            "handicap": 5
-          },
-          {
-            "name": "Gary Baker",
-            "handicap": 18
-          }
-        ],
-        "rawLine": "1st\tGavin Higgs (9), Mark Dando (5) & Gary Baker (18)\t114",
-        "scoreType": "Stableford",
-        "stablefordPoints": 114,
-        "points": 114
-      },
-      {
-        "position": 2,
-        "totalScore": 109,
-        "players": [
-          {
-            "name": "Mark Williams",
-            "handicap": 11
-          },
-          {
-            "name": "Neil Hartland",
-            "handicap": 9
-          },
-          {
-            "name": "James Stevens",
-            "handicap": 11
-          }
-        ],
-        "rawLine": "2nd\tMark Williams (11), Neil Hartland (9) & James Stevens (11)\t109",
-        "scoreType": "Stableford",
-        "stablefordPoints": 109,
-        "points": 109
-      },
-      {
-        "position": 3,
-        "totalScore": 105,
-        "players": [
-          {
-            "name": "Sean Round",
-            "handicap": 13
-          },
-          {
-            "name": "William Nunn",
-            "handicap": 22
-          },
-          {
-            "name": "Simon Nunn",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "3rd\tSean Round (13), William Nunn (22) & Simon Nunn (14)\t105",
-        "scoreType": "Stableford",
-        "stablefordPoints": 105,
-        "points": 105
-      },
-      {
-        "position": 4,
-        "totalScore": 97,
-        "players": [
-          {
-            "name": "Michael David Cosnett",
-            "handicap": 13
-          },
-          {
-            "name": "David Hobley",
-            "handicap": 12
-          },
-          {
-            "name": "Stephen Brian Hopkins",
-            "handicap": 9
-          }
-        ],
-        "rawLine": "4th\tMichael David Cosnett (13), David Hobley (12) & Stephen Brian Hopkins (9)\t97",
-        "scoreType": "Stableford",
-        "stablefordPoints": 97,
-        "points": 97
-      },
-      {
-        "position": 5,
-        "totalScore": 96,
-        "players": [
-          {
-            "name": "G.B. Ray",
-            "handicap": 13
-          },
-          {
-            "name": "Steven Brookes",
-            "handicap": 11
-          },
-          {
-            "name": "Andrew Deakin",
-            "handicap": 10
-          }
-        ],
-        "rawLine": "5th\tG.B. Ray (13), Steven Brookes (11) & Andrew Deakin (10)\t96",
-        "scoreType": "Stableford",
-        "stablefordPoints": 96,
-        "points": 96
-      },
-      {
-        "position": 6,
-        "totalScore": 94,
-        "players": [
-          {
-            "name": "Kevin Walters",
-            "handicap": 12
-          },
-          {
-            "name": "Richard Limb",
-            "handicap": 10
-          },
-          {
-            "name": "Mark Andrew Poulding",
-            "handicap": 9
-          }
-        ],
-        "rawLine": "6th\tKevin Walters (12), Richard Limb (10) & Mark Andrew Poulding (9)\t94",
-        "scoreType": "Stableford",
-        "stablefordPoints": 94,
-        "points": 94
-      },
-      {
-        "position": 7,
-        "totalScore": 92,
-        "players": [
-          {
-            "name": "Anthony Willetts",
-            "handicap": 16
-          },
-          {
-            "name": "Jason Watchorn",
-            "handicap": 20
-          },
-          {
-            "name": "Graham Morgan",
-            "handicap": 20
-          }
-        ],
-        "rawLine": "7th\tAnthony Willetts (16), Jason Watchorn (20) & Graham Morgan (20)\t92",
-        "scoreType": "Stableford",
-        "stablefordPoints": 92,
-        "points": 92
-      },
-      {
-        "position": 8,
-        "totalScore": 92,
-        "players": [
-          {
-            "name": "Robert Keith Woodall",
-            "handicap": 6
-          },
-          {
-            "name": "Sean Element",
-            "handicap": 15
-          },
-          {
-            "name": "Mark Neil Tolley",
-            "handicap": 13
-          }
-        ],
-        "rawLine": "8th\tRobert Keith Woodall (6), Sean Element (15) & Mark Neil Tolley (13)\t92",
-        "scoreType": "Stableford",
-        "stablefordPoints": 92,
-        "points": 92
-      },
-      {
-        "position": 9,
-        "totalScore": 92,
-        "players": [
-          {
-            "name": "Wayne Rutter",
-            "handicap": 19
-          },
-          {
-            "name": "David Evitts",
-            "handicap": 28
-          },
-          {
-            "name": "Robert Shedden",
-            "handicap": 16
-          }
-        ],
-        "rawLine": "9th\tWayne Rutter (19), David Evitts (28) & Robert Shedden (16)\t92",
-        "scoreType": "Stableford",
-        "stablefordPoints": 92,
-        "points": 92
-      },
-      {
-        "position": 10,
-        "totalScore": 91,
-        "players": [
-          {
-            "name": "Lee Roger Grainger",
-            "handicap": 3
-          },
-          {
-            "name": "Gary William Stubbs",
-            "handicap": 9
-          },
-          {
-            "name": "Lisa Hampson",
-            "handicap": 20
-          }
-        ],
-        "rawLine": "10th\tLee Roger Grainger (3), Gary William Stubbs (9) & Lisa Hampson (20)\t91",
-        "scoreType": "Stableford",
-        "stablefordPoints": 91,
-        "points": 91
-      },
-      {
-        "position": 11,
-        "totalScore": 89,
-        "players": [
-          {
-            "name": "Robert Hudson",
-            "handicap": 19
-          },
-          {
-            "name": "Calin Tiplea",
-            "handicap": 15
-          },
-          {
-            "name": "Keith Durbridge",
-            "handicap": 22
-          }
-        ],
-        "rawLine": "11th\tRobert Hudson (19), Calin Tiplea (15) & Keith Durbridge (22)\t89",
-        "scoreType": "Stableford",
-        "stablefordPoints": 89,
-        "points": 89
-      },
-      {
-        "position": 12,
-        "totalScore": 88,
-        "players": [
-          {
-            "name": "David Jeavons",
-            "handicap": 23
-          },
-          {
-            "name": "Clive Kearey",
-            "handicap": 14
-          },
-          {
-            "name": "Adam Stanfield",
-            "handicap": 12
-          }
-        ],
-        "rawLine": "12th\tDavid Jeavons (23), Clive Kearey (14) & Adam Stanfield (12)\t88",
-        "scoreType": "Stableford",
-        "stablefordPoints": 88,
-        "points": 88
-      },
-      {
-        "position": 13,
-        "totalScore": 87,
-        "players": [
-          {
-            "name": "Christopher Fereday",
-            "handicap": 13
-          },
-          {
-            "name": "Lewis Ganner",
-            "handicap": 21
-          },
-          {
-            "name": "Neil Hanley",
-            "handicap": 22
-          }
-        ],
-        "rawLine": "13th\tChristopher Fereday (13), Lewis Ganner (21) & Neil Hanley (22)\t87",
-        "scoreType": "Stableford",
-        "stablefordPoints": 87,
-        "points": 87
-      },
-      {
-        "position": 14,
-        "totalScore": 85,
-        "players": [
-          {
-            "name": "James Price",
-            "handicap": 20
-          },
-          {
-            "name": "Mitchell Raybould",
-            "handicap": 22
-          },
-          {
-            "name": "Adrian Burns",
-            "handicap": 13
-          }
-        ],
-        "rawLine": "14th\tJames Price (20), Mitchell Raybould (22) & Adrian Burns (13)\t85",
-        "scoreType": "Stableford",
-        "stablefordPoints": 85,
-        "points": 85
-      },
-      {
-        "position": 15,
-        "totalScore": 83,
-        "players": [
-          {
-            "name": "Mark Basterfield",
-            "handicap": 17
-          },
-          {
-            "name": "Stewart Marshall",
-            "handicap": 13
-          },
-          {
-            "name": "Darren Element",
-            "handicap": 18
-          }
-        ],
-        "rawLine": "15th\tMark Basterfield (17), Stewart Marshall (13) & Darren Element (18)\t83",
-        "scoreType": "Stableford",
-        "stablefordPoints": 83,
-        "points": 83
-      },
-      {
-        "position": 16,
-        "totalScore": 82,
-        "players": [
-          {
-            "name": "Kevin Cooksey",
-            "handicap": 13
-          },
-          {
-            "name": "Scott Postin",
-            "handicap": 12
-          },
-          {
-            "name": "David Postin",
-            "handicap": 21
-          }
-        ],
-        "rawLine": "16th\tKevin Cooksey (13), Scott Postin (12) & David Postin (21)\t82",
-        "scoreType": "Stableford",
-        "stablefordPoints": 82,
-        "points": 82
-      },
-      {
-        "position": 17,
-        "totalScore": 80,
-        "players": [
-          {
-            "name": "Carl R. Biddulph",
-            "handicap": 18
-          },
-          {
-            "name": "Gerald Paul Crowley",
-            "handicap": 17
-          },
-          {
-            "name": "Tim Mark Wright",
-            "handicap": 15
-          }
-        ],
-        "rawLine": "17th\tCarl R. Biddulph (18), Gerald Paul Crowley (17) & Tim Mark Wright (15)\t80",
-        "scoreType": "Stableford",
-        "stablefordPoints": 80,
-        "points": 80
-      },
-      {
-        "position": 18,
-        "totalScore": 79,
-        "players": [
-          {
-            "name": "Clive Peter Gould",
-            "handicap": 20
-          },
-          {
-            "name": "Steve Homer",
-            "handicap": 18
-          },
-          {
-            "name": "Philip John Northall",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "18th\tClive Peter Gould (20), Steve Homer (18) & Philip John Northall (14)\t79",
-        "scoreType": "Stableford",
-        "stablefordPoints": 79,
-        "points": 79
-      },
-      {
-        "position": 19,
-        "totalScore": 76,
-        "players": [
-          {
-            "name": "Eric Edwards",
-            "handicap": 25
-          },
-          {
-            "name": "Keith John Woodall",
-            "handicap": 16
-          },
-          {
-            "name": "Melvyn Crook",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "19th\tEric Edwards (25), Keith John Woodall (16) & Melvyn Crook (14)\t76",
-        "scoreType": "Stableford",
-        "stablefordPoints": 76,
-        "points": 76
-      },
-      {
-        "position": 20,
-        "totalScore": 72,
-        "players": [
-          {
-            "name": "Adam Bonehill",
-            "handicap": 8
-          },
-          {
-            "name": "Andrew Russell",
-            "handicap": 10
-          },
-          {
-            "name": "Leighton Clarke",
-            "handicap": 26
-          }
-        ],
-        "rawLine": "20th\tAdam Bonehill (8), Andrew Russell (10) & Leighton Clarke (26)\t72",
-        "scoreType": "Stableford",
-        "stablefordPoints": 72,
-        "points": 72
-      },
-      {
-        "position": 21,
-        "status": "DQ",
-        "statusNote": "rule 3.3b Not returning a scorecard",
-        "players": [
-          {
-            "name": "Sam Marsden",
-            "handicap": 22
-          },
-          {
-            "name": "Liam Harding",
-            "handicap": 17
-          },
-          {
-            "name": "Anthony Fegan",
-            "handicap": 15
-          }
-        ],
-        "rawLine": "21st\tSam Marsden (22), Liam Harding (17) & Anthony Fegan (15)\tDQ rule 3.3b Not returning a scorecard",
-        "scoreType": "Stableford"
       }
     ],
     "recoverySource": {
@@ -88961,390 +88206,6 @@
           }
         ],
         "rawLine": "20th\tAndrew Deakin(14)\t20",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 1,
-        "totalScore": 119,
-        "players": [
-          {
-            "name": "Sean Element",
-            "handicap": 13
-          },
-          {
-            "name": "Stewart Marshall",
-            "handicap": 13
-          },
-          {
-            "name": "Philip Thompson",
-            "handicap": 9
-          },
-          {
-            "name": "Darren Povey",
-            "handicap": 16
-          }
-        ],
-        "rawLine": "1st\tSean Element (13), Stewart Marshall (13), Philip Thompson (9) & Darren Povey (16)\t119",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 2,
-        "totalScore": 114,
-        "players": [
-          {
-            "name": "Adam Farley",
-            "handicap": 4
-          },
-          {
-            "name": "Michael David Cosnett",
-            "handicap": 13
-          },
-          {
-            "name": "David Hobley",
-            "handicap": 12
-          },
-          {
-            "name": "Adam Bonehill",
-            "handicap": 8
-          }
-        ],
-        "rawLine": "2nd\tAdam Farley (4), Michael David Cosnett (13), David Hobley (12) & Adam Bonehill (8)\t114",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 3,
-        "totalScore": 114,
-        "players": [
-          {
-            "name": "Anthony Willetts",
-            "handicap": 15
-          },
-          {
-            "name": "Jason Watchorn",
-            "handicap": 20
-          },
-          {
-            "name": "Graham Morgan",
-            "handicap": 19
-          },
-          {
-            "name": "Scott Whitehall",
-            "handicap": 13
-          }
-        ],
-        "rawLine": "3rd\tAnthony Willetts (15), Jason Watchorn (20), Graham Morgan (19) & Scott Whitehall (13)\t114",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 4,
-        "totalScore": 108,
-        "players": [
-          {
-            "name": "Gerald Paul Crowley",
-            "handicap": 16
-          },
-          {
-            "name": "Peter Evans",
-            "handicap": 11
-          },
-          {
-            "name": "Neil Penton",
-            "handicap": 14
-          },
-          {
-            "name": "Paul Ian Welch",
-            "handicap": 9
-          }
-        ],
-        "rawLine": "4th\tGerald Paul Crowley (16), Peter Evans (11), Neil Penton (14) & Paul Ian Welch (9)\t108",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 5,
-        "totalScore": 105,
-        "players": [
-          {
-            "name": "Mark Neil Tolley",
-            "handicap": 12
-          },
-          {
-            "name": "Mark Basterfield",
-            "handicap": 15
-          },
-          {
-            "name": "Steven Taylor",
-            "handicap": 12
-          },
-          {
-            "name": "Darren Element",
-            "handicap": 20
-          }
-        ],
-        "rawLine": "5th\tMark Neil Tolley (12), Mark Basterfield (15), Steven Taylor (12) & Darren Element (20)\t105",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 6,
-        "totalScore": 105,
-        "players": [
-          {
-            "name": "Gavin Higgs",
-            "handicap": 10
-          },
-          {
-            "name": "Craig Watchorn",
-            "handicap": 20
-          },
-          {
-            "name": "Paul Willetts",
-            "handicap": 14
-          },
-          {
-            "name": "Adrian Clift",
-            "handicap": 26
-          }
-        ],
-        "rawLine": "6th\tGavin Higgs (10), Craig Watchorn (20), Paul Willetts (14) & Adrian Clift (26)\t105",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 7,
-        "totalScore": 103,
-        "players": [
-          {
-            "name": "Lee Roger Grainger",
-            "handicap": 3
-          },
-          {
-            "name": "Stephen Hall",
-            "handicap": 19
-          },
-          {
-            "name": "Gary William Stubbs",
-            "handicap": 8
-          },
-          {
-            "name": "Lisa Hampson",
-            "handicap": 22
-          }
-        ],
-        "rawLine": "7th\tLee Roger Grainger (3), Stephen Hall (19), Gary William Stubbs (8) & Lisa Hampson (22)\t103",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 8,
-        "totalScore": 99,
-        "players": [
-          {
-            "name": "Graham Chilton",
-            "handicap": 11
-          },
-          {
-            "name": "David Jeavons",
-            "handicap": 22
-          },
-          {
-            "name": "Clive Kearey",
-            "handicap": 15
-          },
-          {
-            "name": "Adam Stanfield",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "8th\tGraham Chilton (11), David Jeavons (22), Clive Kearey (15) & Adam Stanfield (14)\t99",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 9,
-        "totalScore": 98,
-        "players": [
-          {
-            "name": "Kevin Walters",
-            "handicap": 13
-          },
-          {
-            "name": "Richard Limb",
-            "handicap": 10
-          },
-          {
-            "name": "Mark Andrew Poulding",
-            "handicap": 8
-          },
-          {
-            "name": "Ian Frederick Stevens",
-            "handicap": 7
-          }
-        ],
-        "rawLine": "9th\tKevin Walters (13), Richard Limb (10), Mark Andrew Poulding (8) & Ian Frederick Stevens (7)\t98",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 10,
-        "totalScore": 97,
-        "players": [
-          {
-            "name": "Alan Ball",
-            "handicap": 10
-          },
-          {
-            "name": "David Evitts",
-            "handicap": 28
-          },
-          {
-            "name": "Andrew Russell",
-            "handicap": 9
-          },
-          {
-            "name": "Robert Shedden",
-            "handicap": 16
-          }
-        ],
-        "rawLine": "10th\tAlan Ball (10), David Evitts (28), Andrew Russell (9) & Robert Shedden (16)\t97",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 11,
-        "totalScore": 97,
-        "players": [
-          {
-            "name": "Mark Williams",
-            "handicap": 9
-          },
-          {
-            "name": "Sean Round",
-            "handicap": 13
-          },
-          {
-            "name": "William Nunn",
-            "handicap": 21
-          },
-          {
-            "name": "Simon Nunn",
-            "handicap": 14
-          }
-        ],
-        "rawLine": "11th\tMark Williams (9), Sean Round (13), William Nunn (21) & Simon Nunn (14)\t97",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 12,
-        "totalScore": 95,
-        "players": [
-          {
-            "name": "Craig Tromans",
-            "handicap": 18
-          },
-          {
-            "name": "Stephen Langford",
-            "handicap": 19
-          },
-          {
-            "name": "Thomas Worley",
-            "handicap": 14
-          },
-          {
-            "name": "Dean Hinchcliffe",
-            "handicap": 18
-          }
-        ],
-        "rawLine": "12th\tCraig Tromans (18), Stephen Langford (19), Thomas Worley (14) & Dean Hinchcliffe (18)\t95",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 13,
-        "totalScore": 94,
-        "players": [
-          {
-            "name": "Clive Peter Gould",
-            "handicap": 20
-          },
-          {
-            "name": "Steve Homer",
-            "handicap": 20
-          },
-          {
-            "name": "Philip John Northall",
-            "handicap": 12
-          },
-          {
-            "name": "Stephen Price",
-            "handicap": 19
-          }
-        ],
-        "rawLine": "13th\tClive Peter Gould (20), Steve Homer (20), Philip John Northall (12) & Stephen Price (19)\t94",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 14,
-        "totalScore": 90,
-        "players": [
-          {
-            "name": "Graham John Franks",
-            "handicap": 20
-          },
-          {
-            "name": "Linda Rafferty",
-            "handicap": 22
-          },
-          {
-            "name": "Robert Hudson",
-            "handicap": 19
-          },
-          {
-            "name": "Keith Durbridge",
-            "handicap": 23
-          }
-        ],
-        "rawLine": "14th\tGraham John Franks (20), Linda Rafferty (22), Robert Hudson (19) & Keith Durbridge (23)\t90",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 15,
-        "totalScore": 87,
-        "players": [
-          {
-            "name": "Paul Thomas Donnelly",
-            "handicap": 13
-          },
-          {
-            "name": "Andrew Deakin",
-            "handicap": 13
-          },
-          {
-            "name": "John Goudge",
-            "handicap": 23
-          },
-          {
-            "name": "Stuart Evans",
-            "handicap": 8
-          }
-        ],
-        "rawLine": "15th\tPaul Thomas Donnelly (13), Andrew Deakin (13), John Goudge (23) & Stuart Evans (8)\t87",
-        "scoreType": "Unknown"
-      },
-      {
-        "position": 16,
-        "totalScore": 77,
-        "players": [
-          {
-            "name": "Paul Harper",
-            "handicap": 9
-          },
-          {
-            "name": "G.B. Ray",
-            "handicap": 11
-          },
-          {
-            "name": "Tony John Salt",
-            "handicap": 12
-          },
-          {
-            "name": "Christopher Vanes",
-            "handicap": 17
-          }
-        ],
-        "rawLine": "16th\tPaul Harper (9), G.B. Ray (11), Tony John Salt (12) & Christopher Vanes (17)\t77",
         "scoreType": "Unknown"
       }
     ],

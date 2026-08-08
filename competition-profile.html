@@ -303,11 +303,22 @@
   `;
     }
     function renderDetailedResults(comp, compResults) {
-      if (!compResults.length) {
+      const detailedResults = compResults.filter(yearBlock => {
+        if (yearBlock.source !== "Honours Board") {
+          return true;
+        }
+
+        return (yearBlock.results || []).some(result => {
+          const score = result.totalScore ?? result.score ?? result.points ?? result.gross ?? result.nett;
+          return score !== undefined && score !== null && score !== "";
+        });
+      });
+
+      if (!detailedResults.length) {
         return "";
       }
 
-      return compResults.map(yearBlock => `
+      return detailedResults.map(yearBlock => `
         <section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow border border-[#C5A367]/30">
           <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
             ${displayValue(yearBlock.year, "Year Unknown")} Result
@@ -493,17 +504,26 @@ ${renderClubChampionshipAwards(comp, yearBlock)}
 
           <aside class="bg-[#132419] text-white rounded-2xl p-8 shadow">
             <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
-              Most Successful
-            </p>
+          ${Array.isArray(comp.winnerLeaders) && comp.winnerLeaders.filter(w => Number(w.wins) === Number(comp.mostWins)).length > 1
+            ? "Joint Most Successful"
+            : "Most Successful"}
+        </p>
 
-            <h2 class="text-4xl font-serif mb-4">
-              ${displayValue(comp.mostSuccessfulPlayer, "None yet")}
-            </h2>
+        <h2 class="text-4xl font-serif mb-4">
+          ${Array.isArray(comp.winnerLeaders) && comp.winnerLeaders.filter(w => Number(w.wins) === Number(comp.mostWins)).length
+            ? comp.winnerLeaders
+                .filter(w => Number(w.wins) === Number(comp.mostWins))
+                .map(w => displayValue(w.player, "None yet"))
+                .join("<br>")
+            : displayValue(comp.mostSuccessfulPlayer, "None yet")}
+        </h2>
 
-            <p class="text-white/70 text-lg">
-              ${displayValue(comp.mostWins, 0)}
-              ${Number(comp.mostWins) === 1 ? "recorded win" : "recorded wins"}
-            </p>
+        <p class="text-white/70 text-lg">
+          ${displayValue(comp.mostWins, 0)}
+          ${Array.isArray(comp.winnerLeaders) && comp.winnerLeaders.filter(w => Number(w.wins) === Number(comp.mostWins)).length > 1
+            ? (Number(comp.mostWins) === 1 ? "recorded win each" : "recorded wins each")
+            : Number(comp.mostWins) === 1 ? "recorded win" : "recorded wins"}
+        </p>
 
             <div class="mt-8 pt-6 border-t border-white/20">
               <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-2">
