@@ -11,7 +11,7 @@
     "general-competitions"
   ],
   "totalUniqueCompetitions": 151,
-  "totalCategoryMemberships": 191,
+  "totalCategoryMemberships": 190,
   "categories": [
     {
       "id": "board-competitions",
@@ -482,21 +482,8 @@
       "title": "Seniors Events",
       "description": "Competitions belonging to the Dudley Golf Club Seniors section.",
       "icon": "♙",
-      "competitionCount": 32,
+      "competitionCount": 31,
       "competitions": [
-        {
-          "id": "captains-day-walker-cup",
-          "name": "Captain's Day & Walker Cup",
-          "section": "Seniors",
-          "format": "Stableford",
-          "yearsPlayed": 4,
-          "firstYear": 2023,
-          "latestYear": 2026,
-          "countText": "4 years",
-          "rangeText": "2023–2026",
-          "profileUrl": "competition-profile.html?id=captains-day-walker-cup",
-          "searchText": "captains day and walker cup seniors stableford stableford competition profile stableford historic trophy"
-        },
         {
           "id": "grandads-cup",
           "name": "Grandads Cup",
@@ -1996,7 +1983,7 @@
         {
           "id": "captains-day-walker-cup",
           "name": "Captain's Day & Walker Cup",
-          "section": "Seniors",
+          "section": "Mens",
           "format": "Stableford",
           "yearsPlayed": 4,
           "firstYear": 2023,
@@ -2004,7 +1991,7 @@
           "countText": "4 years",
           "rangeText": "2023–2026",
           "profileUrl": "competition-profile.html?id=captains-day-walker-cup",
-          "searchText": "captains day and walker cup seniors stableford stableford competition profile stableford historic trophy"
+          "searchText": "captains day and walker cup mens stableford stableford competition profile stableford historic trophy"
         },
         {
           "id": "captain-s-welcome-club-stableford",
