@@ -21,18 +21,14 @@
     "latestDetailedYear": 2025,
     "totalEntries": 303,
     "averageEntries": 60.6,
-    "uniqueWinners": 18,
-    "mostSuccessfulPlayer": "C. Feereday",
+    "uniqueWinners": 16,
+    "mostSuccessfulPlayer": "Chris Vanes",
     "mostWins": 1,
     "currentWinners": [
       "Ivan John Jones",
       "John Edwards"
     ],
     "winnerLeaders": [
-      {
-        "player": "C. Feereday",
-        "wins": 1
-      },
       {
         "player": "Chris Vanes",
         "wins": 1
@@ -71,10 +67,6 @@
       },
       {
         "player": "John Edwards",
-        "wins": 1
-      },
-      {
-        "player": "L. Clarke",
         "wins": 1
       },
       {
@@ -141,24 +133,7 @@
       },
       {
         "year": 2023,
-        "winner": "C. Feereday",
-        "source": "Honours Board Photograph",
-        "verified": true,
-        "photoReference": null,
-        "score": null,
-        "relativeToPar": null
-      },
-      {
-        "year": 2023,
         "winner": "Christopher Fereday",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 44,
-        "relativeToPar": null
-      },
-      {
-        "year": 2023,
-        "winner": "L. Clarke",
         "source": "Honours Board Photograph",
         "verified": true,
         "photoReference": null,
@@ -168,9 +143,10 @@
       {
         "year": 2023,
         "winner": "Leighton Clarke",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 44,
+        "source": "Honours Board Photograph",
+        "verified": true,
+        "photoReference": null,
+        "score": null,
         "relativeToPar": null
       },
       {
@@ -15154,45 +15130,6 @@
     },
     "clubChampionship": null,
     "summary": "January Sunday Stableford Competition is preserved as a competition profile in the Dudley Golf Club Digital Museum."
-  },
-  {
-    "id": "jubilee-salver",
-    "competitionId": "jubilee-salver",
-    "name": "Jubilee Salver",
-    "competitionName": "Jubilee Salver",
-    "section": "Mens",
-    "format": "Historical Winners",
-    "competitionFormat": "Historical Winners",
-    "competitionClass": "Board",
-    "museumCategory": "Board Competition",
-    "importStatus": "pending",
-    "category": "Board Competition",
-    "historicalBoard": true,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": true,
-    "profileType": "Historical Honour",
-    "yearsPlayed": 0,
-    "firstYear": null,
-    "latestYear": null,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 0,
-    "mostSuccessfulPlayer": null,
-    "mostWins": 0,
-    "currentWinners": [],
-    "winnerLeaders": [],
-    "winnerHistory": [],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "Jubilee Salver is preserved from the verified honours board and enriched with detailed competition results where available."
   },
   {
     "id": "jubilee-salver-pairs-betterball",
