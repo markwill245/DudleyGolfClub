@@ -13289,22 +13289,6 @@
     },
     {
       "rank": 15,
-      "player": "J. Lowe",
-      "section": "Mens",
-      "points": 0.5,
-      "wins": 1,
-      "results": [
-        {
-          "year": 2018,
-          "competition": "Tom Poole Trophy",
-          "competitionId": "tom-poole-cup",
-          "points": 0.5,
-          "reason": "Pairs/team board/major win"
-        }
-      ]
-    },
-    {
-      "rank": 16,
       "player": "J. Price",
       "section": "Mens",
       "points": 0.5,
@@ -13314,6 +13298,22 @@
           "year": 2018,
           "competition": "Doug Lee Pairs Trophy",
           "competitionId": "doug-lee-trophy",
+          "points": 0.5,
+          "reason": "Pairs/team board/major win"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "player": "Jack Lowe",
+      "section": "Mens",
+      "points": 0.5,
+      "wins": 1,
+      "results": [
+        {
+          "year": 2018,
+          "competition": "Tom Poole Trophy",
+          "competitionId": "tom-poole-cup",
           "points": 0.5,
           "reason": "Pairs/team board/major win"
         }
@@ -14192,6 +14192,29 @@
     },
     {
       "rank": 2,
+      "player": "Stuart Baker",
+      "section": "Mens",
+      "points": 3,
+      "wins": 2,
+      "results": [
+        {
+          "year": 2021,
+          "competition": "Caldene Cup",
+          "competitionId": "caldene-cup",
+          "points": 1,
+          "reason": "Singles board/major win"
+        },
+        {
+          "year": 2021,
+          "competition": "Club Championship",
+          "competitionId": "club-championship",
+          "points": 2,
+          "reason": "Club Champion"
+        }
+      ]
+    },
+    {
+      "rank": 3,
       "player": "S. Price",
       "section": "Seniors",
       "points": 2,
@@ -14214,7 +14237,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "player": "B. Smith",
       "section": "Mens",
       "points": 1.5,
@@ -14237,7 +14260,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "player": "A. Bonehill",
       "section": "Mens",
       "points": 1,
@@ -14253,7 +14276,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "player": "Adam Farley",
       "section": "Mens",
       "points": 1,
@@ -14269,7 +14292,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "player": "Christopher Vanes",
       "section": "Mens",
       "points": 1,
@@ -14285,7 +14308,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "player": "Craig Biddulph",
       "section": "Mens",
       "points": 1,
@@ -14301,7 +14324,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "player": "Geoffrey Alan Ford",
       "section": "Seniors",
       "points": 1,
@@ -14317,7 +14340,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "player": "Mark Andrew Poulding",
       "section": "Mens",
       "points": 1,
@@ -14333,7 +14356,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": "Richard Limb",
       "section": "Mens",
       "points": 1,
@@ -14349,7 +14372,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "player": "Scott Postin",
       "section": "Mens",
       "points": 1,
@@ -14359,22 +14382,6 @@
           "year": 2021,
           "competition": "Hooper Cup",
           "competitionId": "hooper-cup",
-          "points": 1,
-          "reason": "Singles board/major win"
-        }
-      ]
-    },
-    {
-      "rank": 12,
-      "player": "Stuart Baker",
-      "section": "Mens",
-      "points": 1,
-      "wins": 1,
-      "results": [
-        {
-          "year": 2021,
-          "competition": "Caldene Cup",
-          "competitionId": "caldene-cup",
           "points": 1,
           "reason": "Singles board/major win"
         }
@@ -14668,7 +14675,7 @@
     },
     {
       "rank": 7,
-      "player": "J. Lowe",
+      "player": "Jack Lowe",
       "section": "Mens",
       "points": 1,
       "wins": 1,
@@ -14974,6 +14981,36 @@
   "2023-24": [
     {
       "rank": 1,
+      "player": "Adam Farley",
+      "section": "Mens",
+      "points": 3.5,
+      "wins": 3,
+      "results": [
+        {
+          "year": 2023,
+          "competition": "Caldene Cup",
+          "competitionId": "caldene-cup",
+          "points": 1,
+          "reason": "Singles board/major win"
+        },
+        {
+          "year": 2023,
+          "competition": "Club Championship",
+          "competitionId": "club-championship",
+          "points": 2,
+          "reason": "Club Champion"
+        },
+        {
+          "year": 2023,
+          "competition": "Winter Greensomes",
+          "competitionId": "winter-greensomes",
+          "points": 0.5,
+          "reason": "Pairs/team board/major win"
+        }
+      ]
+    },
+    {
+      "rank": 2,
       "player": "C. Tiplea",
       "section": "Mens",
       "points": 2.5,
@@ -14997,29 +15034,6 @@
           "year": 2023,
           "competition": "James Grainger Trophy",
           "competitionId": "james-grainger-trophy",
-          "points": 0.5,
-          "reason": "Pairs/team board/major win"
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "player": "Adam Farley",
-      "section": "Mens",
-      "points": 1.5,
-      "wins": 2,
-      "results": [
-        {
-          "year": 2023,
-          "competition": "Caldene Cup",
-          "competitionId": "caldene-cup",
-          "points": 1,
-          "reason": "Singles board/major win"
-        },
-        {
-          "year": 2023,
-          "competition": "Winter Greensomes",
-          "competitionId": "winter-greensomes",
           "points": 0.5,
           "reason": "Pairs/team board/major win"
         }
@@ -15089,22 +15103,6 @@
     },
     {
       "rank": 6,
-      "player": "C. Yale",
-      "section": "Mens",
-      "points": 1,
-      "wins": 1,
-      "results": [
-        {
-          "year": 2023,
-          "competition": "Challenge Shield",
-          "competitionId": "challenge-shield",
-          "points": 1,
-          "reason": "Singles board/major win"
-        }
-      ]
-    },
-    {
-      "rank": 7,
       "player": "Calin Tiplea",
       "section": "Mens",
       "points": 1,
@@ -15114,6 +15112,22 @@
           "year": 2023,
           "competition": "Claughton Cup",
           "competitionId": "claughton-cup",
+          "points": 1,
+          "reason": "Singles board/major win"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "player": "Christopher Yale",
+      "section": "Mens",
+      "points": 1,
+      "wins": 1,
+      "results": [
+        {
+          "year": 2023,
+          "competition": "Challenge Shield",
+          "competitionId": "challenge-shield",
           "points": 1,
           "reason": "Singles board/major win"
         }
@@ -15137,6 +15151,22 @@
     },
     {
       "rank": 9,
+      "player": "Keith John Woodall",
+      "section": "Seniors",
+      "points": 1,
+      "wins": 1,
+      "results": [
+        {
+          "year": 2023,
+          "competition": "Seniors Centenary Trophy",
+          "competitionId": "seniors-centenary-trophy",
+          "points": 1,
+          "reason": "Singles board/major win"
+        }
+      ]
+    },
+    {
+      "rank": 10,
       "player": "M. Williams",
       "section": "Mens",
       "points": 1,
@@ -15152,7 +15182,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": "Mark Dando",
       "section": "Mens",
       "points": 1,
@@ -15168,7 +15198,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "player": "R. Shedden",
       "section": "Seniors",
       "points": 1,
@@ -15184,7 +15214,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "player": "Steve Homer",
       "section": "Mens",
       "points": 1,
@@ -15200,7 +15230,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "player": "A. Bonehill",
       "section": "Mens",
       "points": 0.5,
@@ -15216,7 +15246,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "player": "C. Churchman",
       "section": "Mens",
       "points": 0.5,
@@ -15232,7 +15262,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 16,
       "player": "Christopher Fereday",
       "section": "Mens",
       "points": 0.5,
@@ -15248,7 +15278,7 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 17,
       "player": "D. Postin",
       "section": "Mens",
       "points": 0.5,
@@ -15264,7 +15294,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 18,
       "player": "Darren Element",
       "section": "Mens",
       "points": 0.5,
@@ -15280,7 +15310,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 19,
       "player": "Leighton Clarke",
       "section": "Mens",
       "points": 0.5,
@@ -15296,7 +15326,7 @@
       ]
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player": "M. Kendrick",
       "section": "Mens",
       "points": 0.5,
@@ -15312,7 +15342,7 @@
       ]
     },
     {
-      "rank": 20,
+      "rank": 21,
       "player": "M. Poulding",
       "section": "Mens",
       "points": 0.5,
@@ -15328,7 +15358,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 22,
       "player": "P. Thompson",
       "section": "Mens",
       "points": 0.5,
@@ -15344,7 +15374,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 23,
       "player": "R. Limb",
       "section": "Mens",
       "points": 0.5,
@@ -15360,7 +15390,7 @@
       ]
     },
     {
-      "rank": 23,
+      "rank": 24,
       "player": "Scott Postin",
       "section": "Mens",
       "points": 0.5,
@@ -15376,7 +15406,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 25,
       "player": "Stewart Marshall",
       "section": "Mens",
       "points": 0.5,
@@ -15938,6 +15968,22 @@
     },
     {
       "rank": 3,
+      "player": "Lewis Jones",
+      "section": "Mens",
+      "points": 2,
+      "wins": 1,
+      "results": [
+        {
+          "year": 2025,
+          "competition": "Club Championship",
+          "competitionId": "club-championship",
+          "points": 2,
+          "reason": "Club Champion"
+        }
+      ]
+    },
+    {
+      "rank": 4,
       "player": "Scott Postin",
       "section": "Mens",
       "points": 1.5,
@@ -15960,7 +16006,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "player": "Lee Roger Grainger",
       "section": "Mens",
       "points": 1,
@@ -15983,7 +16029,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "player": "Neil Hanley",
       "section": "Mens",
       "points": 1,
@@ -16006,22 +16052,6 @@
       ]
     },
     {
-      "rank": 6,
-      "player": "A. Willetts",
-      "section": "Mens",
-      "points": 1,
-      "wins": 1,
-      "results": [
-        {
-          "year": 2025,
-          "competition": "Challenge Shield",
-          "competitionId": "challenge-shield",
-          "points": 1,
-          "reason": "Singles board/major win"
-        }
-      ]
-    },
-    {
       "rank": 7,
       "player": "Adam Stanfield",
       "section": "Mens",
@@ -16039,6 +16069,22 @@
     },
     {
       "rank": 8,
+      "player": "Anthony Willetts",
+      "section": "Mens",
+      "points": 1,
+      "wins": 1,
+      "results": [
+        {
+          "year": 2025,
+          "competition": "Challenge Shield",
+          "competitionId": "challenge-shield",
+          "points": 1,
+          "reason": "Singles board/major win"
+        }
+      ]
+    },
+    {
+      "rank": 9,
       "player": "L. Ganner",
       "section": "Mens",
       "points": 1,
@@ -16054,7 +16100,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "player": "Mark Neil Tolley",
       "section": "Mens",
       "points": 1,
@@ -16070,7 +16116,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": "Michael Williams",
       "section": "Mens",
       "points": 1,
@@ -16086,7 +16132,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "player": "Paul Russell",
       "section": "Seniors",
       "points": 1,
@@ -16102,7 +16148,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "player": "Paul Thomas Donnelly",
       "section": "Mens",
       "points": 1,
@@ -16118,7 +16164,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "player": "Philip John Northall",
       "section": "Mens",
       "points": 1,
@@ -16134,7 +16180,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "player": "C. Tromans",
       "section": "Mens",
       "points": 0.5,
@@ -16150,7 +16196,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 16,
       "player": "Christopher Vanes",
       "section": "Mens",
       "points": 0.5,
@@ -16166,7 +16212,7 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 17,
       "player": "D. Hinchcliffe",
       "section": "Mens",
       "points": 0.5,
@@ -16182,7 +16228,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 18,
       "player": "Darren Element",
       "section": "Mens",
       "points": 0.5,
@@ -16198,7 +16244,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 19,
       "player": "Darren Povey",
       "section": "Mens",
       "points": 0.5,
@@ -16214,7 +16260,7 @@
       ]
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player": "David Evitts",
       "section": "Mens",
       "points": 0.5,
@@ -16230,7 +16276,7 @@
       ]
     },
     {
-      "rank": 20,
+      "rank": 21,
       "player": "David Hill",
       "section": "Mens",
       "points": 0.5,
@@ -16246,7 +16292,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 22,
       "player": "Graham Morgan",
       "section": "Mens",
       "points": 0.5,
@@ -16262,7 +16308,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 23,
       "player": "Ivan John Jones",
       "section": "Mens",
       "points": 0.5,
@@ -16278,7 +16324,7 @@
       ]
     },
     {
-      "rank": 23,
+      "rank": 24,
       "player": "Jamie Daniel Hunt",
       "section": "Mens",
       "points": 0.5,
@@ -16294,7 +16340,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 25,
       "player": "John Edwards",
       "section": "Mens",
       "points": 0.5,
@@ -16310,7 +16356,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 26,
       "player": "Mark Basterfield",
       "section": "Mens",
       "points": 0.5,
@@ -16326,7 +16372,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 27,
       "player": "Melvin Crook",
       "section": "Mens",
       "points": 0.5,
@@ -16342,7 +16388,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 28,
       "player": "Richard Price",
       "section": "Mens",
       "points": 0.5,
@@ -16358,7 +16404,7 @@
       ]
     },
     {
-      "rank": 28,
+      "rank": 29,
       "player": "Roger William Grainger",
       "section": "Mens",
       "points": 0.5,
@@ -16374,7 +16420,7 @@
       ]
     },
     {
-      "rank": 29,
+      "rank": 30,
       "player": "Stephen Brian Hopkins",
       "section": "Mens",
       "points": 0.5,
@@ -16390,7 +16436,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 31,
       "player": "Stephen Hall",
       "section": "Mens",
       "points": 0.5,
@@ -16439,6 +16485,45 @@
     },
     {
       "rank": 2,
+      "player": "Kevin Walters",
+      "section": "Mens",
+      "points": 2,
+      "wins": 2,
+      "results": [
+        {
+          "year": 2026,
+          "competition": "Centenary Trophy",
+          "competitionId": "centenary-trophy",
+          "points": 1,
+          "reason": "Singles board/major win"
+        },
+        {
+          "year": 2026,
+          "competition": "Challenge Shield",
+          "competitionId": "challenge-shield",
+          "points": 1,
+          "reason": "Singles board/major win"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "player": "Lewis Jones",
+      "section": "Mens",
+      "points": 2,
+      "wins": 1,
+      "results": [
+        {
+          "year": 2026,
+          "competition": "Club Championship",
+          "competitionId": "club-championship",
+          "points": 2,
+          "reason": "Club Champion"
+        }
+      ]
+    },
+    {
+      "rank": 4,
       "player": "Keith Ratcliffe",
       "section": "Seniors",
       "points": 1,
@@ -16454,23 +16539,7 @@
       ]
     },
     {
-      "rank": 3,
-      "player": "Kevin Walters",
-      "section": "Mens",
-      "points": 1,
-      "wins": 1,
-      "results": [
-        {
-          "year": 2026,
-          "competition": "Centenary Trophy",
-          "competitionId": "centenary-trophy",
-          "points": 1,
-          "reason": "Singles board/major win"
-        }
-      ]
-    },
-    {
-      "rank": 4,
+      "rank": 5,
       "player": "Robert Shedden",
       "section": "Mens",
       "points": 1,
@@ -16486,7 +16555,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "player": "Gregory Curry",
       "section": "Mens",
       "points": 0.5,
@@ -16502,7 +16571,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "player": "James Stevens",
       "section": "Mens",
       "points": 0.5,
@@ -16518,7 +16587,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "player": "Neil Hartland",
       "section": "Mens",
       "points": 0.5,
@@ -16534,7 +16603,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "player": "Paul Thomas Donnelly",
       "section": "Mens",
       "points": 0.5,
@@ -16550,7 +16619,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "player": "Sean Element",
       "section": "Mens",
       "points": 0.5,

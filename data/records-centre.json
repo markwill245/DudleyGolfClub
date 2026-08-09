@@ -876,8 +876,8 @@
                 "year": 2022,
                 "date": "2022-07-09",
                 "section": "Mens",
-                "awardId": "overallWinner",
-                "sourceType": "modern-overall",
+                "awardId": "club-championship",
+                "sourceType": "modern-award",
                 "sourceLabel": "overallWinner",
                 "winType": "Career"
               },
@@ -900,8 +900,8 @@
                 "year": 2024,
                 "date": "2024-06-22",
                 "section": "Mens",
-                "awardId": "overallWinner",
-                "sourceType": "modern-overall",
+                "awardId": "club-championship",
+                "sourceType": "modern-award",
                 "sourceLabel": "overallWinner",
                 "winType": "Career"
               },
@@ -1432,11 +1432,11 @@
                 "competitionId": "challenge-shield",
                 "competitionName": "Challenge Shield",
                 "year": 2024,
-                "date": null,
+                "date": "2024-06-22",
                 "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Club Championship Challenge Shield",
+                "awardId": "challenge-shield",
+                "sourceType": "modern-award",
+                "sourceLabel": "challenge-shield",
                 "winType": "Career"
               },
               {
@@ -2180,6 +2180,148 @@
           },
           {
             "rank": 10,
+            "player": "Adam Farley",
+            "slug": "adam-farley",
+            "section": "Mens",
+            "value": 11,
+            "wins": [
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "caldene-cup",
+                "competitionName": "Caldene Cup",
+                "year": 2016,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Caldene Cup",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "cunningham-cup",
+                "competitionName": "Cunningham Cup",
+                "year": 2016,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Cunningham Cup",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "doug-lee-trophy",
+                "competitionName": "Doug Lee Pairs Trophy",
+                "year": 2016,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Doug Lee Trophy",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "claughton-cup",
+                "competitionName": "Claughton Cup",
+                "year": 2021,
+                "date": "2021-10-02",
+                "section": "Mens",
+                "awardId": "overallWinner",
+                "sourceType": "modern-overall",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "coronation-cup-pairs-betterball",
+                "competitionName": "Coronation Cup Pairs BetterBall",
+                "year": 2021,
+                "date": "2021-09-11",
+                "section": "Mens",
+                "awardId": "overallWinner",
+                "sourceType": "modern-overall",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "winter-greensomes",
+                "competitionName": "Winter Greensomes",
+                "year": 2022,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Winter Greensomes K.O.",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+                "competitionName": "Writtle Grove & Winter Greensomes Qualifier",
+                "year": 2022,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Writtle Grove & Winter Greensomes Qualifier",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "writtle-grove-winter-greensomes-qualifier",
+                "competitionName": "Writtle Grove Winter Greensomes Qualifier",
+                "year": 2022,
+                "date": "2022-10-15",
+                "section": "Mens",
+                "awardId": "overallWinner",
+                "sourceType": "modern-overall",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "caldene-cup",
+                "competitionName": "Caldene Cup",
+                "year": 2023,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Caldene Cup",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "club-championship",
+                "competitionName": "Club Championship",
+                "year": 2023,
+                "date": "2023-07-08",
+                "section": "Mens",
+                "awardId": "club-championship",
+                "sourceType": "modern-award",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "winter-greensomes",
+                "competitionName": "Winter Greensomes",
+                "year": 2023,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Winter Greensomes K.O.",
+                "winType": "Career"
+              }
+            ],
+            "displayValue": 11
+          },
+          {
+            "rank": 11,
             "player": "Darren Element",
             "slug": "darren-element",
             "section": "Mens",
@@ -2321,7 +2463,7 @@
             "displayValue": 11
           },
           {
-            "rank": 11,
+            "rank": 12,
             "player": "Gary William Stubbs",
             "slug": "gary-william-stubbs",
             "section": "Mens",
@@ -4104,8 +4246,8 @@
                 "year": 2022,
                 "date": "2022-07-09",
                 "section": "Mens",
-                "awardId": "overallWinner",
-                "sourceType": "modern-overall",
+                "awardId": "club-championship",
+                "sourceType": "modern-award",
                 "sourceLabel": "overallWinner",
                 "winType": "Career"
               },
@@ -4128,8 +4270,8 @@
                 "year": 2024,
                 "date": "2024-06-22",
                 "section": "Mens",
-                "awardId": "overallWinner",
-                "sourceType": "modern-overall",
+                "awardId": "club-championship",
+                "sourceType": "modern-award",
                 "sourceLabel": "overallWinner",
                 "winType": "Career"
               },
@@ -4648,6 +4790,124 @@
           },
           {
             "rank": 7,
+            "player": "Adam Farley",
+            "slug": "adam-farley",
+            "section": "Mens",
+            "value": 9,
+            "wins": [
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "caldene-cup",
+                "competitionName": "Caldene Cup",
+                "year": 2016,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Caldene Cup",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "cunningham-cup",
+                "competitionName": "Cunningham Cup",
+                "year": 2016,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Cunningham Cup",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "doug-lee-trophy",
+                "competitionName": "Doug Lee Pairs Trophy",
+                "year": 2016,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Doug Lee Trophy",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "claughton-cup",
+                "competitionName": "Claughton Cup",
+                "year": 2021,
+                "date": "2021-10-02",
+                "section": "Mens",
+                "awardId": "overallWinner",
+                "sourceType": "modern-overall",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "winter-greensomes",
+                "competitionName": "Winter Greensomes",
+                "year": 2022,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Winter Greensomes K.O.",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+                "competitionName": "Writtle Grove & Winter Greensomes Qualifier",
+                "year": 2022,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Writtle Grove & Winter Greensomes Qualifier",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "caldene-cup",
+                "competitionName": "Caldene Cup",
+                "year": 2023,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Caldene Cup",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "club-championship",
+                "competitionName": "Club Championship",
+                "year": 2023,
+                "date": "2023-07-08",
+                "section": "Mens",
+                "awardId": "club-championship",
+                "sourceType": "modern-award",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              },
+              {
+                "playerName": "Adam Farley",
+                "competitionId": "winter-greensomes",
+                "competitionName": "Winter Greensomes",
+                "year": 2023,
+                "date": null,
+                "section": "Mens",
+                "awardId": "boardWinner",
+                "sourceType": "board",
+                "sourceLabel": "Winter Greensomes K.O.",
+                "winType": "Career"
+              }
+            ],
+            "displayValue": 9
+          },
+          {
+            "rank": 8,
             "player": "Darren Element",
             "slug": "darren-element",
             "section": "Mens",
@@ -4765,7 +5025,7 @@
             "displayValue": 9
           },
           {
-            "rank": 8,
+            "rank": 9,
             "player": "G. Crowley",
             "slug": "g-crowley",
             "section": "Mens",
@@ -4881,112 +5141,6 @@
               }
             ],
             "displayValue": 9
-          },
-          {
-            "rank": 9,
-            "player": "Adam Farley",
-            "slug": "adam-farley",
-            "section": "Mens",
-            "value": 8,
-            "wins": [
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "caldene-cup",
-                "competitionName": "Caldene Cup",
-                "year": 2016,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Caldene Cup",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "cunningham-cup",
-                "competitionName": "Cunningham Cup",
-                "year": 2016,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Cunningham Cup",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "doug-lee-trophy",
-                "competitionName": "Doug Lee Pairs Trophy",
-                "year": 2016,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Doug Lee Trophy",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "claughton-cup",
-                "competitionName": "Claughton Cup",
-                "year": 2021,
-                "date": "2021-10-02",
-                "section": "Mens",
-                "awardId": "overallWinner",
-                "sourceType": "modern-overall",
-                "sourceLabel": "overallWinner",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "winter-greensomes",
-                "competitionName": "Winter Greensomes",
-                "year": 2022,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Winter Greensomes K.O.",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-                "competitionName": "Writtle Grove & Winter Greensomes Qualifier",
-                "year": 2022,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Writtle Grove & Winter Greensomes Qualifier",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "caldene-cup",
-                "competitionName": "Caldene Cup",
-                "year": 2023,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Caldene Cup",
-                "winType": "Career"
-              },
-              {
-                "playerName": "Adam Farley",
-                "competitionId": "winter-greensomes",
-                "competitionName": "Winter Greensomes",
-                "year": 2023,
-                "date": null,
-                "section": "Mens",
-                "awardId": "boardWinner",
-                "sourceType": "board",
-                "sourceLabel": "Winter Greensomes K.O.",
-                "winType": "Career"
-              }
-            ],
-            "displayValue": 8
           },
           {
             "rank": 10,
