@@ -66,29 +66,60 @@
       </div>
     </section>
 
-        <section class="flex flex-col sm:flex-row gap-3 mb-6">
-      <button
-        type="button"
-        data-hof-section="mens"
-        aria-pressed="true"
-        class="px-6 py-3 rounded-xl border border-[#C5A367]/40 bg-[#132419] text-white font-semibold transition"
-      >
+    <section class="flex flex-col sm:flex-row gap-3 mb-6">
+      <button type="button" data-hof-section="mens" aria-pressed="true"
+        class="px-6 py-3 rounded-xl border border-[#C5A367]/40 bg-[#132419] text-white font-semibold transition">
         Mens Hall of Fame
       </button>
 
-      <button
-        type="button"
-        data-hof-section="seniors"
-        aria-pressed="false"
-        class="px-6 py-3 rounded-xl border border-[#C5A367]/40 bg-white font-semibold transition"
-      >
+      <button type="button" data-hof-section="seniors" aria-pressed="false"
+        class="px-6 py-3 rounded-xl border border-[#C5A367]/40 bg-white font-semibold transition">
         Seniors Hall of Fame
       </button>
     </section>
 
-<section class="mb-8">
+    <section class="mb-8">
       <input id="search" type="text" placeholder="Search Hall of Fame..."
         class="w-full px-5 py-4 rounded-xl border border-[#C5A367]/40 bg-white text-lg">
+    </section>
+    <section class="bg-white rounded-2xl border border-[#C5A367]/30 shadow p-6 mb-8">
+      <div class="mb-5">
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
+          Hall of Fame Scoring
+        </p>
+
+        <h2 class="text-2xl font-serif mb-2">
+          How Hall of Fame Points Are Awarded
+        </h2>
+
+        <p class="text-sm text-gray-600">
+          Points are calculated from certified Museum records. Bonuses are cumulative.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-[#C5A367]/30 text-left">
+              <th class="py-3 pr-6">Achievement</th>
+              <th class="py-3 text-right">Points</th>
+            </tr>
+          </thead>
+
+          <tbody id="hof-scoring-table">
+            <tr>
+              <td colspan="2" class="py-4 text-gray-500">
+                Loading certified scoring...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-4 text-xs text-gray-500">
+        A Major win receives the normal win points plus the Major bonus.
+        Runner-up, Top 3 and Top 5 points are also cumulative.
+      </p>
     </section>
 
     <section id="hof-gallery" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -172,30 +203,66 @@
           "total-players"
         )
         .textContent =
-          section.playersAssessed;
+        section.playersAssessed;
 
       document
         .getElementById(
           "top-score"
         )
         .textContent =
-          section.topScore;
+        section.topScore;
 
       document
         .getElementById(
           "strong-candidates"
         )
         .textContent =
-          section.strongCandidates;
+        section.strongCandidates;
 
       document
         .getElementById(
           "leader-name"
         )
         .textContent =
-          section.leader?.name || "—";
+        section.leader?.name || "—";
     }
+    function renderScoringFormula() {
+      const formula =
+        hallOfFameData?.scoringFormula;
 
+      const table =
+        document.getElementById(
+          "hof-scoring-table"
+        );
+
+      if (!formula || !table) {
+        return;
+      }
+
+      const rows = [
+        ["Career Win", formula.win],
+        ["Major Win Bonus", formula.majorWin],
+        ["Medal Win Bonus", formula.medalWin],
+        ["Matchplay Win Bonus", formula.matchplayWin],
+        ["Runner-up Finish", formula.runnerUp],
+        ["Top 3 Finish", formula.top3],
+        ["Top 5 Finish", formula.top5],
+        ["Section Record Held", formula.sectionRecordHeld]
+      ];
+
+      table.innerHTML =
+        rows.map(([label, points]) => `
+      <tr class="border-b border-gray-100 last:border-0">
+        <td class="py-3 pr-6">
+          ${escapeHtml(label)}
+        </td>
+
+        <td class="py-3 text-right font-semibold">
+          ${Number(points)} pts
+        </td>
+      </tr>
+    `).join("");
+    }
     function renderHallOfFame(
       players
     ) {
@@ -248,8 +315,8 @@
 
             <p class="text-sm mb-5">
               ${escapeHtml(
-                player.hallOfFameStatus
-              )}
+          player.hallOfFameStatus
+        )}
             </p>
 
             <div class="grid grid-cols-3 gap-4 text-sm border-t border-[#C5A367]/20 pt-5">
@@ -277,8 +344,8 @@
 
             <p class="mt-5 text-sm text-gray-600">
               ${escapeHtml(
-                player.hallOfFameStatus
-              )}
+          player.hallOfFameStatus
+        )}
             </p>
           </a>
         `).join("");
@@ -302,14 +369,14 @@
       const players =
         term
           ? section.leaderboard.filter(
-              player =>
-                player.name
-                  .toLowerCase()
-                  .includes(term) ||
-                player.hallOfFameStatus
-                  .toLowerCase()
-                  .includes(term)
-            )
+            player =>
+              player.name
+                .toLowerCase()
+                .includes(term) ||
+              player.hallOfFameStatus
+                .toLowerCase()
+                .includes(term)
+          )
           : section.leaderboard;
 
       updateStats(section);
@@ -350,6 +417,7 @@
           );
         }
 
+        renderScoringFormula();
         renderActiveSection();
 
       } catch (error) {
