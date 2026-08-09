@@ -39,22 +39,21 @@
       <p class="text-xs uppercase tracking-[0.4em] text-[#C5A367] mb-6">Digital Museum</p>
       <h1 class="serif text-6xl md:text-8xl leading-none mb-6">Order of Merit</h1>
       <p class="max-w-3xl text-white/70 text-lg">
-        Separate Men's and Seniors leaderboards generated from verified Museum competition results and their approved scoring systems.
+        Separate Men's and Seniors leaderboards generated from verified Museum competition results and their approved
+        scoring systems.
       </p>
     </div>
   </section>
 
   <main class="max-w-7xl mx-auto px-6 py-16">
     <div class="flex flex-wrap gap-3 mb-10">
-      <button
-        type="button"
+      <button type="button"
         class="oom-button bg-[#132419] text-white px-6 py-3 uppercase tracking-[0.2em] text-xs font-bold rounded"
         data-section="mens">
         Men's Order of Merit
       </button>
 
-      <button
-        type="button"
+      <button type="button"
         class="oom-button bg-white text-[#132419] border border-[#132419]/20 px-6 py-3 uppercase tracking-[0.2em] text-xs font-bold rounded"
         data-section="seniors">
         Seniors Order of Merit
@@ -121,9 +120,6 @@
         points:
           num(player.points) ||
           num(player.orderOfMeritPoints),
-        competitionsPlayed:
-          num(player.competitionsPlayed) ||
-          num(player.competitions),
         wins: num(player.wins),
         top10:
           num(player.top10) ||
@@ -174,7 +170,7 @@
           id="breakdown-${escapeHtml(player.slug)}"
           class="oom-breakdown hidden bg-[#F9F7F2]"
         >
-          <td colspan="6" class="p-0">
+          <td colspan="5" class="p-0">
             <div class="p-6 md:p-8 border-t border-[#C5A367]/30">
               <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-6">
                 <div>
@@ -194,15 +190,14 @@
                 </p>
               </div>
 
-              ${
-                results.length
-                  ? `
+              ${results.length
+          ? `
                     <div class="space-y-3">
                       ${results.map(result => {
-                        const slug =
-                          competitionSlug(result);
+            const slug =
+              competitionSlug(result);
 
-                        return `
+            return `
                           <div class="grid md:grid-cols-[1fr_auto_auto] gap-3 items-center bg-white border border-[#C5A367]/20 rounded p-4">
                             <div>
                               <a
@@ -210,11 +205,11 @@
                                 class="font-semibold hover:text-[#C5A367] transition"
                               >
                                 ${escapeHtml(
-                                  result.competition ||
-                                  result.competitionName ||
-                                  result.competitionId ||
-                                  "Unknown Competition"
-                                )}
+              result.competition ||
+              result.competitionName ||
+              result.competitionId ||
+              "Unknown Competition"
+            )}
                               </a>
 
                               ${result.year ? `
@@ -237,15 +232,15 @@
                             </div>
                           </div>
                         `;
-                      }).join("")}
+          }).join("")}
                     </div>
                   `
-                  : `
+          : `
                     <p class="text-gray-500">
                       No certified point transactions are recorded for this player.
                     </p>
                   `
-              }
+        }
 
               <div class="flex justify-between items-center border-t border-[#C5A367]/30 mt-6 pt-5">
                 <strong>Certified Order of Merit total</strong>
@@ -386,7 +381,7 @@
 
       const season =
         sectionData.seasons?.[
-          selectedSeason
+        selectedSeason
         ] || {
           season: selectedSeason,
           leaderboard: []
@@ -410,9 +405,9 @@
 
       document.getElementById("oom").innerHTML = `
         ${seasonSelector(
-          sectionData,
-          selectedSeason
-        )}
+        sectionData,
+        selectedSeason
+      )}
 
         <section class="grid md:grid-cols-4 gap-6 mb-14">
           <div class="bg-white border border-[#C5A367]/30 p-6 rounded shadow">
@@ -461,25 +456,57 @@
             <h2 class="serif text-5xl">
               ${escapeHtml(season.season || selectedSeason)} Standings
             </h2>
+
+            <p class="text-sm text-gray-600 mt-3">
+              Order of Merit points are awarded for Top 10 finishes in eligible competitions.
+            </p>
           </div>
 
-          <div class="overflow-x-auto">
+          <div class="px-8 pt-6">
+            <div class="bg-[#F9F7F2] border border-[#C5A367]/30 rounded p-5">
+              <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-3">
+                Scoring Points
+              </p>
+
+              <div class="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-2 text-center">
+                ${[
+          ["1st", "10"],
+          ["2nd", "8"],
+          ["3rd", "6"],
+          ["4th", "5"],
+          ["5th", "4"],
+          ["6th", "3"],
+          ["7th", "2"],
+          ["8th", "1"],
+          ["9th", "1"],
+          ["10th", "1"]
+        ].map(([position, points]) => `
+                  <div class="bg-white border border-[#C5A367]/20 rounded px-3 py-3">
+                    <div class="font-bold">${position}</div>
+                    <div class="text-sm text-gray-600">
+                      ${points} ${points === "1" ? "pt" : "pts"}
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto mt-6">
             <table class="w-full text-left">
               <thead class="bg-[#132419] text-white">
                 <tr>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Pos</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Player</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Points</th>
-                  <th class="p-4 text-xs uppercase tracking-[0.2em]">Comps</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Wins</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Top 10</th>
                 </tr>
               </thead>
 
               <tbody>
-                ${
-                  players.length
-                    ? players.map(player => `
+                ${players.length
+          ? players.map(player => `
                       <tr class="border-b border-gray-200 hover:bg-[#F9F7F2] transition">
                         <td class="p-4 serif text-3xl">
                           ${medal(player.rank)}
@@ -509,10 +536,6 @@
                         </td>
 
                         <td class="p-4">
-                          ${player.competitionsPlayed}
-                        </td>
-
-                        <td class="p-4">
                           ${player.wins}
                         </td>
 
@@ -523,14 +546,14 @@
 
                       ${pointsBreakdown(player)}
                     `).join("")
-                    : `
+          : `
                       <tr>
-                        <td colspan="6" class="p-10 text-center text-gray-500">
+                        <td colspan="5" class="p-10 text-center text-gray-500">
                           No qualifying results are recorded for this season.
                         </td>
                       </tr>
                     `
-                }
+        }
               </tbody>
             </table>
           </div>
@@ -546,11 +569,10 @@
           </h2>
 
           <p class="text-white/75 max-w-4xl">
-            ${
-              section === "seniors"
-                ? "The Seniors leaderboard uses the approved Seniors scoring system. Qualifying medals, cups and trophies award one winner point, while Harrington competitions award two winner points."
-                : "The Men's leaderboard uses the approved positional Order of Merit scoring system for qualifying competitions."
-            }
+            ${section === "seniors"
+          ? "The Seniors leaderboard uses the approved Seniors scoring system. Qualifying medals, cups and trophies award one winner point, while Harrington competitions award two winner points."
+          : "The Men's leaderboard uses the approved positional Order of Merit scoring system. Points are awarded for Top 10 finishes in eligible competitions."
+        }
           </p>
         </section>
       `;
