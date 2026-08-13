@@ -11,7 +11,7 @@
     "general-competitions"
   ],
   "totalUniqueCompetitions": 151,
-  "totalCategoryMemberships": 190,
+  "totalCategoryMemberships": 188,
   "categories": [
     {
       "id": "board-competitions",
@@ -231,7 +231,7 @@
         {
           "id": "grandads-cup",
           "name": "Grandads Cup",
-          "section": "Seniors",
+          "section": "Mens",
           "format": "Individual",
           "yearsPlayed": 33,
           "firstYear": 1993,
@@ -239,7 +239,7 @@
           "countText": "33 years",
           "rangeText": "1993–2025",
           "profileUrl": "competition-profile.html?id=grandads-cup",
-          "searchText": "grandads cup seniors individual individual historical honour board board competition"
+          "searchText": "grandads cup mens individual individual historical honour board board competition"
         },
         {
           "id": "hooper-cup",
@@ -413,7 +413,7 @@
         {
           "id": "veterans-cup",
           "name": "Veterans Cup",
-          "section": "Seniors",
+          "section": "Mens",
           "format": "Individual",
           "yearsPlayed": 33,
           "firstYear": 1993,
@@ -421,7 +421,7 @@
           "countText": "33 years",
           "rangeText": "1993–2025",
           "profileUrl": "competition-profile.html?id=veterans-cup",
-          "searchText": "veterans cup seniors individual individual historical honour board board competition"
+          "searchText": "veterans cup mens individual individual historical honour board board competition"
         },
         {
           "id": "walker-cup",
@@ -482,21 +482,8 @@
       "title": "Seniors Events",
       "description": "Competitions belonging to the Dudley Golf Club Seniors section.",
       "icon": "♙",
-      "competitionCount": 31,
+      "competitionCount": 29,
       "competitions": [
-        {
-          "id": "grandads-cup",
-          "name": "Grandads Cup",
-          "section": "Seniors",
-          "format": "Individual",
-          "yearsPlayed": 33,
-          "firstYear": 1993,
-          "latestYear": 2025,
-          "countText": "33 years",
-          "rangeText": "1993–2025",
-          "profileUrl": "competition-profile.html?id=grandads-cup",
-          "searchText": "grandads cup seniors individual individual historical honour board board competition"
-        },
         {
           "id": "seniors-april-medal",
           "name": "Seniors April Medal",
@@ -873,19 +860,6 @@
           "rangeText": "2023–2025",
           "profileUrl": "competition-profile.html?id=seniors-winter-league-5",
           "searchText": "seniors winter league 5 seniors individual individual competition profile stableford general"
-        },
-        {
-          "id": "veterans-cup",
-          "name": "Veterans Cup",
-          "section": "Seniors",
-          "format": "Individual",
-          "yearsPlayed": 33,
-          "firstYear": 1993,
-          "latestYear": 2025,
-          "countText": "33 years",
-          "rangeText": "1993–2025",
-          "profileUrl": "competition-profile.html?id=veterans-cup",
-          "searchText": "veterans cup seniors individual individual historical honour board board competition"
         }
       ]
     },

@@ -660,8 +660,8 @@
     "countsForOrderOfMerit": false,
     "boardCompetition": false,
     "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
+    "includeInCareerWins": false,
+    "includeInPlayerAppearances": false,
     "museumCategory": "General"
   },
   {
@@ -1008,7 +1008,7 @@
     "competitionName": "Grandads Cup",
     "competitionFormat": "Individual",
     "teamSize": 1,
-    "section": "Seniors",
+    "section": "Mens",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
     "boardCompetition": true,
@@ -1016,7 +1016,7 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "seniors-standard",
+    "scoringProfile": "mens-standard",
     "format": "Individual"
   },
   {
@@ -2331,7 +2331,7 @@
     "competitionName": "Veterans Cup",
     "competitionFormat": "Individual",
     "teamSize": 1,
-    "section": "Seniors",
+    "section": "Mens",
     "competitionClass": "Board",
     "countsForOrderOfMerit": true,
     "boardCompetition": true,
@@ -2339,7 +2339,7 @@
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
     "museumCategory": "Board Competition",
-    "scoringProfile": "seniors-standard",
+    "scoringProfile": "mens-standard",
     "format": "Individual"
   },
   {
