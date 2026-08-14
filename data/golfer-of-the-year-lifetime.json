@@ -339,8 +339,10 @@
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Lewis Cup",
         "competitionId": "lewis-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -432,50 +434,64 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Caldene Cup",
         "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2022,
+        "date": "2022-07-09",
         "competition": "Club Championship",
         "competitionId": "club-championship",
+        "awardId": "club-championship",
         "points": 2,
         "reason": "Club Champion"
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Caldene Cup",
         "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-06-22",
         "competition": "Club Championship",
         "competitionId": "club-championship",
+        "awardId": "club-championship",
         "points": 2,
         "reason": "Club Champion"
       },
       {
         "year": 2025,
+        "date": "2025-07-19",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-08-30",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -702,8 +718,10 @@
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Bloom Cup",
         "competitionId": "bloom-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -774,29 +792,37 @@
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Veterans Cup",
         "competitionId": "veterans-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-05-07",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-05-23",
         "competition": "Seniors Centenary Trophy",
         "competitionId": "seniors-centenary-trophy",
+        "awardId": "seniors-centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-06-14",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -925,43 +951,55 @@
       },
       {
         "year": 2021,
+        "date": "2021-10-02",
         "competition": "Claughton Cup",
         "competitionId": "claughton-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Caldene Cup",
         "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-07-08",
         "competition": "Club Championship",
         "competitionId": "club-championship",
+        "awardId": "club-championship",
         "points": 2,
         "reason": "Club Champion"
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -1097,15 +1135,19 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-05-18",
         "competition": "Centenary Trophy",
         "competitionId": "centenary-trophy",
+        "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -1162,22 +1204,28 @@
       },
       {
         "year": 2022,
+        "date": "2022-06-18",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-09-23",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-10-11",
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -1410,29 +1458,37 @@
     "results": [
       {
         "year": 2025,
+        "date": null,
         "competition": "Caldene Cup",
         "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-06-28",
         "competition": "Club Championship",
         "competitionId": "club-championship",
+        "awardId": "club-championship",
         "points": 2,
         "reason": "Club Champion"
       },
       {
         "year": 2025,
+        "date": null,
         "competition": "Golfer of the Year",
         "competitionId": "golfer-of-the-year",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-06-27",
         "competition": "Club Championship",
         "competitionId": "club-championship",
+        "awardId": "club-championship",
         "points": 2,
         "reason": "Club Champion"
       }
@@ -1533,36 +1589,46 @@
       },
       {
         "year": 2021,
+        "date": "2021-07-31",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Centenary Trophy",
         "competitionId": "centenary-trophy",
+        "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Golfer of the Year",
         "competitionId": "golfer-of-the-year",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -1656,43 +1722,55 @@
       },
       {
         "year": 2022,
+        "date": "2022-05-21",
         "competition": "Boscawen Cup",
         "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2022,
+        "date": "2022-04-09",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Grandads Cup",
         "competitionId": "grandads-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-09-23",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-08-10",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-05-09",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -1851,22 +1929,28 @@
       },
       {
         "year": 2022,
+        "date": "2022-05-21",
         "competition": "Centenary Trophy",
         "competitionId": "centenary-trophy",
+        "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-09-28",
         "competition": "Hooper Cup",
         "competitionId": "hooper-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-08-16",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -1930,8 +2014,10 @@
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -1981,22 +2067,28 @@
       },
       {
         "year": 2022,
+        "date": "2022-06-18",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-09-23",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -2039,29 +2131,37 @@
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-06-10",
         "competition": "Hooper Cup",
         "competitionId": "hooper-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -2118,8 +2218,10 @@
       },
       {
         "year": 2021,
+        "date": "2021-08-28",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -2257,15 +2359,19 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Grandads Cup",
         "competitionId": "grandads-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Veterans Cup",
         "competitionId": "veterans-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -2338,36 +2444,46 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Hooper Cup",
         "competitionId": "hooper-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2022,
+        "date": "2022-09-10",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-08-19",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": null,
         "competition": "Bloom Cup",
         "competitionId": "bloom-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-07-05",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -2454,15 +2570,19 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Bloom Cup",
         "competitionId": "bloom-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-08-12",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -2505,15 +2625,19 @@
       },
       {
         "year": 2021,
+        "date": "2021-06-26",
         "competition": "Challenge Shield",
         "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-08-30",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -2556,8 +2680,10 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Boscawen Cup",
         "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -2600,8 +2726,10 @@
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Lewis Cup",
         "competitionId": "lewis-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -2688,8 +2816,10 @@
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -3019,15 +3149,19 @@
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Grandads Cup",
         "competitionId": "grandads-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Veterans Cup",
         "competitionId": "veterans-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -3086,36 +3220,46 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-08-24",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-06-22",
         "competition": "Challenge Shield",
         "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": null,
         "competition": "Golfer of the Year",
         "competitionId": "golfer-of-the-year",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-07-20",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-05-30",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -3218,36 +3362,46 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-08-24",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-07-20",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": null,
         "competition": "Grandads Cup",
         "competitionId": "grandads-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": null,
         "competition": "Veterans Cup",
         "competitionId": "veterans-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-05-30",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -3283,15 +3437,19 @@
       },
       {
         "year": 2023,
+        "date": "2023-05-20",
         "competition": "Boscawen Cup",
         "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-04-15",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -3512,15 +3670,19 @@
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Lewis Cup",
         "competitionId": "lewis-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -3600,15 +3762,19 @@
       },
       {
         "year": 2023,
+        "date": "2023-04-15",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-06-21",
         "competition": "Bassano Cup",
         "competitionId": "bassano-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -4235,15 +4401,19 @@
     "results": [
       {
         "year": 2021,
+        "date": null,
         "competition": "Caldene Cup",
         "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2021,
+        "date": "2021-06-26",
         "competition": "Club Championship",
         "competitionId": "club-championship",
+        "awardId": "club-championship",
         "points": 2,
         "reason": "Club Champion"
       }
@@ -4420,15 +4590,19 @@
       },
       {
         "year": 2025,
+        "date": "2025-05-17",
         "competition": "Boscawen Cup",
         "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-05-09",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -4690,22 +4864,28 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-04-29",
         "competition": "Claughton Cup",
         "competitionId": "claughton-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Golfer of the Year",
         "competitionId": "golfer-of-the-year",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-06-17",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -4750,22 +4930,28 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-05-18",
         "competition": "Boscawen Cup",
         "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-04-06",
         "competition": "Claughton Cup",
         "competitionId": "claughton-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-04-12",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -4930,22 +5116,28 @@
     "results": [
       {
         "year": 2026,
+        "date": "2026-04-04",
         "competition": "Claughton Cup",
         "competitionId": "claughton-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-04-25",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-07-25",
         "competition": "Hooper Cup",
         "competitionId": "hooper-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -4960,22 +5152,28 @@
     "results": [
       {
         "year": 2023,
+        "date": null,
         "competition": "Veterans Cup",
         "competitionId": "veterans-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-05-25",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-08-08",
         "competition": "Boscawen Cup",
         "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -5219,8 +5417,10 @@
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -5505,22 +5705,28 @@
     "results": [
       {
         "year": 2021,
+        "date": "2021-07-10",
         "competition": "Captain's Day",
         "competitionId": "captains-day",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2022,
+        "date": "2022-07-16",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-07-29",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -5565,22 +5771,28 @@
     "results": [
       {
         "year": 2021,
+        "date": "2021-07-24",
         "competition": "Bassano Cup",
         "competitionId": "bassano-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2022,
+        "date": "2022-07-16",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-07-29",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -5763,8 +5975,10 @@
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Seniors Centenary Trophy",
         "competitionId": "seniors-centenary-trophy",
+        "awardId": "seniors-centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -5894,15 +6108,19 @@
     "results": [
       {
         "year": 2026,
+        "date": "2026-08-08",
         "competition": "Centenary Trophy",
         "competitionId": "centenary-trophy",
+        "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2026,
+        "date": "2026-06-27",
         "competition": "Challenge Shield",
         "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -5963,15 +6181,19 @@
     "results": [
       {
         "year": 2022,
+        "date": null,
         "competition": "Bloom Cup",
         "competitionId": "bloom-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-05-20",
         "competition": "Centenary Trophy",
         "competitionId": "centenary-trophy",
+        "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -6078,15 +6300,19 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-06-11",
         "competition": "Captain's Day",
         "competitionId": "captains-day",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-04-17",
         "competition": "Seniors Centenary Trophy",
         "competitionId": "seniors-centenary-trophy",
+        "awardId": "seniors-centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -6488,22 +6714,28 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-08-10",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-04-13",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-07-19",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -6670,15 +6902,19 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-05-25",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-04-19",
         "competition": "Claughton Cup",
         "competitionId": "claughton-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -6739,15 +6975,19 @@
     "results": [
       {
         "year": 2021,
+        "date": null,
         "competition": "Lewis Cup",
         "competitionId": "lewis-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       },
       {
         "year": 2021,
+        "date": null,
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -6785,15 +7025,19 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-07-23",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-07-08",
         "competition": "Challenge Shield",
         "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -6815,8 +7059,10 @@
       },
       {
         "year": 2022,
+        "date": "2022-04-07",
         "competition": "Seniors Centenary Trophy",
         "competitionId": "seniors-centenary-trophy",
+        "awardId": "seniors-centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -6861,8 +7107,10 @@
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Grandads Cup",
         "competitionId": "grandads-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -6930,8 +7178,10 @@
       },
       {
         "year": 2022,
+        "date": null,
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -6953,8 +7203,10 @@
       },
       {
         "year": 2022,
+        "date": "2022-07-09",
         "competition": "Challenge Shield",
         "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -7015,15 +7267,19 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-08-20",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2023,
+        "date": "2023-04-17",
         "competition": "Seniors Centenary Trophy",
         "competitionId": "seniors-centenary-trophy",
+        "awardId": "seniors-centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -7084,15 +7340,19 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-04-09",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-05-17",
         "competition": "Centenary Trophy",
         "competitionId": "centenary-trophy",
+        "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -7176,15 +7436,19 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-09-23",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-06-29",
         "competition": "Bassano Cup",
         "competitionId": "bassano-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -7275,8 +7539,10 @@
       },
       {
         "year": 2022,
+        "date": "2022-08-20",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7406,15 +7672,19 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-06-08",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2024,
+        "date": "2024-07-06",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7590,15 +7860,19 @@
     "results": [
       {
         "year": 2021,
+        "date": "2021-07-31",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-08-16",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7643,8 +7917,10 @@
       },
       {
         "year": 2025,
+        "date": "2025-08-23",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7689,8 +7965,10 @@
       },
       {
         "year": 2025,
+        "date": "2025-08-30",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7751,15 +8029,19 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-10-19",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-05-24",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7781,8 +8063,10 @@
       },
       {
         "year": 2023,
+        "date": "2023-06-17",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7797,15 +8081,19 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-08-30",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       },
       {
         "year": 2025,
+        "date": "2025-10-11",
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -7919,8 +8207,10 @@
       },
       {
         "year": 2023,
+        "date": null,
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -8187,8 +8477,10 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-06-24",
         "competition": "Bassano Cup",
         "competitionId": "bassano-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -8235,8 +8527,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-06-28",
         "competition": "Challenge Shield",
         "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -8507,8 +8801,10 @@
     "results": [
       {
         "year": 2024,
+        "date": null,
         "competition": "Bloom Cup",
         "competitionId": "bloom-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -9195,8 +9491,10 @@
     "results": [
       {
         "year": 2026,
+        "date": "2026-04-16",
         "competition": "Seniors Centenary Trophy",
         "competitionId": "seniors-centenary-trophy",
+        "awardId": "seniors-centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -9227,8 +9525,10 @@
     "results": [
       {
         "year": 2025,
+        "date": null,
         "competition": "Lewis Cup",
         "competitionId": "lewis-cup",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -9531,8 +9831,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-07-26",
         "competition": "Hooper Cup",
         "competitionId": "hooper-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -9899,8 +10201,10 @@
     "results": [
       {
         "year": 2022,
+        "date": null,
         "competition": "Golfer of the Year",
         "competitionId": "golfer-of-the-year",
+        "awardId": "boardWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -10363,8 +10667,10 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-06-25",
         "competition": "Bassano Cup",
         "competitionId": "bassano-cup",
+        "awardId": "overallWinner",
         "points": 1,
         "reason": "Singles board/major win"
       }
@@ -10475,8 +10781,10 @@
     "results": [
       {
         "year": 2021,
+        "date": "2021-08-28",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10587,8 +10895,10 @@
     "results": [
       {
         "year": 2025,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10635,8 +10945,10 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-08-12",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10651,8 +10963,10 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-08-26",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10699,8 +11013,10 @@
     "results": [
       {
         "year": 2025,
+        "date": null,
         "competition": "Winter Greensomes",
         "competitionId": "winter-greensomes",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10779,8 +11095,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-04-12",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10795,8 +11113,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-05-24",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10811,8 +11131,10 @@
     "results": [
       {
         "year": 2021,
+        "date": null,
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10827,8 +11149,10 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-08-19",
         "competition": "Jubilee Salver Pairs BetterBall",
         "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -10971,8 +11295,10 @@
     "results": [
       {
         "year": 2026,
+        "date": "2026-04-25",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11243,8 +11569,10 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-10-19",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11259,8 +11587,10 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-06-08",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11291,8 +11621,10 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-09-10",
         "competition": "Doug Lee Pairs Trophy",
         "competitionId": "doug-lee-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11307,8 +11639,10 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-10-19",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11323,8 +11657,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-08-23",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11339,8 +11675,10 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-10-19",
         "competition": "Queen Elizabeth II Memorial Cup",
         "competitionId": "queen-elizabeth-ii-memorial-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11435,8 +11773,10 @@
     "results": [
       {
         "year": 2021,
+        "date": "2021-07-17",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11483,8 +11823,10 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-08-26",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11499,8 +11841,10 @@
     "results": [
       {
         "year": 2021,
+        "date": null,
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11691,8 +12035,10 @@
     "results": [
       {
         "year": 2022,
+        "date": "2022-07-23",
         "competition": "125 Trophy - Pairs Stableford Betterball",
         "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11707,8 +12053,10 @@
     "results": [
       {
         "year": 2024,
+        "date": null,
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11723,8 +12071,10 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-07-06",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11867,8 +12217,10 @@
     "results": [
       {
         "year": 2021,
+        "date": null,
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -11931,8 +12283,10 @@
     "results": [
       {
         "year": 2024,
+        "date": "2024-04-13",
         "competition": "Tom Poole Trophy",
         "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -12139,8 +12493,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-07-05",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -12155,8 +12511,10 @@
     "results": [
       {
         "year": 2025,
+        "date": "2025-06-14",
         "competition": "James Grainger Trophy",
         "competitionId": "james-grainger-trophy",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -12251,8 +12609,10 @@
     "results": [
       {
         "year": 2024,
+        "date": null,
         "competition": "Writtle Grove & Winter Greensomes Qualifier",
         "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "boardWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -12267,8 +12627,10 @@
     "results": [
       {
         "year": 2021,
+        "date": "2021-07-17",
         "competition": "Probus Pairs Stableford Betterball",
         "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
@@ -12347,8 +12709,10 @@
     "results": [
       {
         "year": 2023,
+        "date": "2023-05-07",
         "competition": "Coronation Cup",
         "competitionId": "coronation-cup",
+        "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
       }
