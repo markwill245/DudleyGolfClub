@@ -20332,19 +20332,23 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 2,
+    "yearsPlayed": 3,
     "firstYear": 2023,
-    "latestYear": 2024,
-    "latestDetailedYear": 2024,
-    "totalEntries": 57,
-    "averageEntries": 28.5,
-    "uniqueWinners": 2,
-    "mostSuccessfulPlayer": "Michael Geoffrey Guise",
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 87,
+    "averageEntries": 29,
+    "uniqueWinners": 3,
+    "mostSuccessfulPlayer": "Keith Ratcliffe",
     "mostWins": 1,
     "currentWinners": [
-      "Wayne Rutter"
+      "Keith Ratcliffe"
     ],
     "winnerLeaders": [
+      {
+        "player": "Keith Ratcliffe",
+        "wins": 1
+      },
       {
         "player": "Michael Geoffrey Guise",
         "wins": 1
@@ -20355,6 +20359,14 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Keith Ratcliffe",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2024,
         "winner": "Wayne Rutter",
