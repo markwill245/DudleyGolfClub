@@ -11543,20 +11543,24 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 27,
+    "yearsPlayed": 28,
     "firstYear": 1993,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 306,
-    "averageEntries": 61.2,
-    "uniqueWinners": 55,
-    "mostSuccessfulPlayer": "A. D. Raybould",
-    "mostWins": 1,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 374,
+    "averageEntries": 62.3,
+    "uniqueWinners": 56,
+    "mostSuccessfulPlayer": "Scott Postin",
+    "mostWins": 2,
     "currentWinners": [
-      "David Hill",
-      "Stephen Brian Hopkins"
+      "David Postin",
+      "Scott Postin"
     ],
     "winnerLeaders": [
+      {
+        "player": "Scott Postin",
+        "wins": 2
+      },
       {
         "player": "A. D. Raybould",
         "wins": 1
@@ -11623,6 +11627,10 @@
       },
       {
         "player": "David Hill",
+        "wins": 1
+      },
+      {
+        "player": "David Postin",
         "wins": 1
       },
       {
@@ -11750,10 +11758,6 @@
         "wins": 1
       },
       {
-        "player": "Scott Postin",
-        "wins": 1
-      },
-      {
         "player": "Sean Element",
         "wins": 1
       },
@@ -11779,6 +11783,22 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "David Postin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Scott Postin",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "David Hill",
