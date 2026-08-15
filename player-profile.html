@@ -38,9 +38,502 @@
   </main>
 
   <script>
+    let currentPlayer = null;
+    let hallOfFameData = null;
+    let oomData = null;
+    let ledgerData = null;
+
     function getSlug() {
       const params = new URLSearchParams(window.location.search);
       return params.get("player");
+    }
+
+    function normalise(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function getHallOfFamePlayer(player) {
+      const section =
+        normalise(player.hero?.section) === "seniors"
+          ? "seniors"
+          : "mens";
+
+      return (
+        hallOfFameData?.[section]?.leaderboard || []
+      ).find(row =>
+        normalise(row.name) === normalise(player.hero?.name)
+      ) || null;
+    }
+
+    function getOomPlayer(player) {
+      const section =
+        normalise(player.hero?.section) === "seniors"
+          ? "seniors"
+          : "mens";
+
+      const sectionData = oomData?.[section];
+
+      if (!sectionData) {
+        return {
+          season: null,
+          row: null
+        };
+      }
+
+      const season = sectionData.currentSeason;
+      const seasonData = sectionData.seasons?.[season];
+
+      const rows =
+        seasonData?.leaderboard ||
+        seasonData?.players ||
+        seasonData?.standings ||
+        [];
+
+      return {
+        season,
+        row:
+          rows.find(row =>
+            normalise(row.player) ===
+            normalise(player.hero?.name)
+          ) || null
+      };
+    }
+
+    async function loadLedger() {
+      if (ledgerData) {
+        return ledgerData;
+      }
+
+      const response = await fetch(
+        "data/certified-event-ledger.json",
+        {
+          cache: "no-store"
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Certified ledger returned ${response.status}`
+        );
+      }
+
+      ledgerData = await response.json();
+      return ledgerData;
+    }
+
+    function getCertifiedResults(player) {
+      if (!ledgerData) {
+        return [];
+      }
+
+      const name = player.hero?.name || "";
+      const section = player.hero?.section || "Mens";
+
+      return (ledgerData.records || [])
+        .filter(row =>
+          row.evidenceType === "competitive-result" &&
+          row.appearanceEligible === true &&
+          normalise(row.playerName) === normalise(name) &&
+          normalise(row.section) === normalise(section)
+        )
+        .sort((a, b) =>
+          String(b.date || b.year || "")
+            .localeCompare(
+              String(a.date || a.year || "")
+            )
+        );
+    }
+
+    async function renderPlayed(player) {
+      await loadLedger();
+
+      const rows = getCertifiedResults(player);
+
+      return `
+      <h3 class="text-2xl font-serif mb-1">
+        Certified Appearances
+      </h3>
+
+      <p class="text-sm text-gray-500 mb-5">
+        ${rows.length} qualifying competition
+        ${rows.length === 1 ? "appearance" : "appearances"}
+      </p>
+
+      <div class="max-h-[520px] overflow-y-auto space-y-2 pr-2">
+        ${rows.map(row => `
+          <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
+            <div class="flex justify-between gap-4">
+              <strong>
+                ${escapeHtml(
+        row.competitionName ||
+        row.competitionId
+      )}
+              </strong>
+
+              <span class="text-sm text-[#C5A367] font-bold">
+                ${escapeHtml(row.date || row.year || "")}
+              </span>
+            </div>
+
+            ${row.position
+          ? `
+                  <p class="text-sm text-gray-600 mt-1">
+                    Position ${escapeHtml(row.position)}
+                  </p>
+                `
+          : ""
+        }
+          </div>
+        `).join("")}
+      </div>
+    `;
+    }
+
+    function renderWins(player) {
+      const hof = getHallOfFamePlayer(player);
+      const wins = hof?.winEvidence || [];
+
+      if (!wins.length) {
+        return `
+        <h3 class="text-2xl font-serif mb-2">
+          Certified Wins
+        </h3>
+
+        <p class="text-gray-600">
+          No certified career wins recorded.
+        </p>
+      `;
+      }
+
+      return `
+      <h3 class="text-2xl font-serif mb-1">
+        Certified Wins
+      </h3>
+
+      <p class="text-sm text-gray-500 mb-5">
+        ${wins.length} certified career
+        ${wins.length === 1 ? "win" : "wins"}
+      </p>
+
+      <div class="space-y-3">
+        ${wins
+          .slice()
+          .sort((a, b) =>
+            Number(b.year || 0) -
+            Number(a.year || 0)
+          )
+          .map(win => `
+            <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
+
+              <div class="flex justify-between gap-4">
+                <strong>
+                  ${escapeHtml(win.competitionName)}
+                </strong>
+
+                <span class="text-[#C5A367] font-bold">
+                  ${escapeHtml(win.year)}
+                </span>
+              </div>
+
+              <div class="flex flex-wrap gap-3 mt-2 text-sm text-gray-600">
+                ${win.majorWin ? "<span>Major</span>" : ""}
+                ${win.medalWin ? "<span>Medal</span>" : ""}
+                ${win.matchplayWin ? "<span>Matchplay</span>" : ""}
+              </div>
+
+            </div>
+          `)
+          .join("")}
+      </div>
+    `;
+    }
+
+    async function renderRunnerUp(player) {
+      await loadLedger();
+
+      const rows = getCertifiedResults(player)
+        .filter(row => row.runnerUp === true);
+
+      if (!rows.length) {
+        return `
+        <h3 class="text-2xl font-serif mb-2">
+          Certified Runner-up Finishes
+        </h3>
+
+        <p class="text-gray-600">
+          No certified runner-up finishes recorded.
+        </p>
+      `;
+      }
+
+      return `
+      <h3 class="text-2xl font-serif mb-1">
+        Certified Runner-up Finishes
+      </h3>
+
+      <p class="text-sm text-gray-500 mb-5">
+        ${rows.length} qualifying
+        ${rows.length === 1 ? "finish" : "finishes"}
+      </p>
+
+      <div class="space-y-2">
+        ${rows.map(row => `
+          <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
+            <div class="flex justify-between gap-4">
+              <strong>
+                ${escapeHtml(
+        row.competitionName ||
+        row.competitionId
+      )}
+              </strong>
+
+              <span class="text-[#C5A367] font-bold">
+                #2
+              </span>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-1">
+              ${escapeHtml(row.date || row.year || "")}
+            </p>
+          </div>
+        `).join("")}
+      </div>
+    `;
+    }
+
+    async function renderTop3(player) {
+      await loadLedger();
+
+      const rows = getCertifiedResults(player)
+        .filter(row => row.top3 === true);
+
+      if (!rows.length) {
+        return `
+        <h3 class="text-2xl font-serif mb-2">
+          Certified Top 3 Finishes
+        </h3>
+
+        <p class="text-gray-600">
+          No certified Top 3 finishes recorded.
+        </p>
+      `;
+      }
+
+      return `
+      <h3 class="text-2xl font-serif mb-1">
+        Certified Top 3 Finishes
+      </h3>
+
+      <p class="text-sm text-gray-500 mb-5">
+        ${rows.length} qualifying
+        ${rows.length === 1 ? "finish" : "finishes"}
+      </p>
+
+      <div class="max-h-[520px] overflow-y-auto space-y-2 pr-2">
+
+        ${rows.map(row => `
+          <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
+
+            <div class="flex justify-between gap-4">
+              <strong>
+                ${escapeHtml(
+        row.competitionName ||
+        row.competitionId
+      )}
+              </strong>
+
+              <span class="text-[#C5A367] font-bold">
+                #${escapeHtml(row.position)}
+              </span>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-1">
+              ${escapeHtml(row.date || row.year || "")}
+            </p>
+
+          </div>
+        `).join("")}
+
+      </div>
+    `;
+    }
+
+    function renderHallOfFame(player) {
+      const hof = getHallOfFamePlayer(player);
+
+      if (!hof) {
+        return `
+        <p class="text-gray-600">
+          No certified Hall of Fame record.
+        </p>
+      `;
+      }
+
+      const scoring =
+        hallOfFameData?.scoring || {};
+
+      const premiumPoints =
+        scoring.premiumHonour ??
+        hallOfFameData?.premiumHonours?.bonus ??
+        25;
+
+      const rows = [
+        ["Career Wins", hof.wins, scoring.win || 0],
+        ["Major Wins", hof.majorWins, scoring.majorWin || 0],
+        ["Premium Honours", hof.premiumHonours, premiumPoints],
+        ["Medal Wins", hof.medalWins, scoring.medalWin || 0],
+        ["Matchplay Wins", hof.matchplayWins, scoring.matchplayWin || 0],
+        ["Runner-up", hof.runnerUp, scoring.runnerUp || 0],
+        ["Top 3", hof.top3, scoring.top3 || 0],
+        ["Top 5", hof.top5, scoring.top5 || 0],
+        [
+          "Section Records",
+          hof.recordsHeld?.length || 0,
+          scoring.sectionRecord || 0
+        ]
+      ];
+
+      return `
+      <div class="flex items-end justify-between gap-5 mb-5">
+
+        <div>
+          <h3 class="text-2xl font-serif">
+            Hall of Fame Breakdown
+          </h3>
+
+          <p class="text-sm text-gray-500">
+            Certified scoring calculation
+          </p>
+        </div>
+
+        <strong class="text-4xl font-serif text-[#C5A367]">
+          ${hof.score}
+        </strong>
+
+      </div>
+
+      <div class="space-y-2">
+        ${rows
+          .filter(row => Number(row[1] || 0) > 0)
+          .map(([label, count, rate]) => `
+            <div class="flex justify-between gap-4 rounded-xl bg-[#F9F7F2] px-4 py-3">
+
+              <span>${escapeHtml(label)}</span>
+
+              <strong>
+                ${count} × ${rate}
+                =
+                ${Number(count) * Number(rate)}
+              </strong>
+
+            </div>
+          `)
+          .join("")}
+      </div>
+
+      <div class="mt-5 pt-4 border-t border-[#C5A367]/30 flex justify-between text-lg font-bold">
+
+        <span>Total HOF Score</span>
+
+        <span>${hof.score}</span>
+
+      </div>
+    `;
+    }
+
+    function renderOom(player) {
+      const oom = getOomPlayer(player);
+
+      if (!oom.row) {
+        return `
+        <h3 class="text-2xl font-serif mb-2">
+          Order of Merit
+        </h3>
+
+        <p class="text-gray-600">
+          No OOM points recorded for the current season.
+        </p>
+      `;
+      }
+
+      const row = oom.row;
+
+      return `
+      <div class="flex justify-between gap-5 mb-5">
+
+        <div>
+          <h3 class="text-2xl font-serif">
+            Order of Merit
+          </h3>
+
+          <p class="text-sm text-gray-500">
+            ${escapeHtml(oom.season)} season
+          </p>
+        </div>
+
+        <div class="text-right">
+          <strong class="text-3xl font-serif">
+            #${row.rank}
+          </strong>
+
+          <p class="text-sm text-gray-500">
+            ${row.points} points
+          </p>
+        </div>
+
+      </div>
+
+      <div class="space-y-2">
+        ${(row.results || [])
+          .slice()
+          .sort((a, b) =>
+            String(b.date || "")
+              .localeCompare(
+                String(a.date || "")
+              )
+          )
+          .map(result => `
+            <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
+
+              <div class="flex justify-between gap-4">
+
+                <strong>
+                  ${escapeHtml(result.competition)}
+                </strong>
+
+                <span class="text-[#C5A367] font-bold">
+                  +${result.points}
+                </span>
+
+              </div>
+
+              <p class="text-sm text-gray-500 mt-1">
+                ${escapeHtml(result.date || result.year)}
+                • Position ${escapeHtml(result.position)}
+              </p>
+
+            </div>
+          `)
+          .join("")}
+      </div>
+
+      <div class="mt-5 pt-4 border-t border-[#C5A367]/30 flex justify-between font-bold">
+
+        <span>Total</span>
+
+        <span>${row.points} points</span>
+
+      </div>
+    `;
     }
 
     async function loadPlayerProfile() {
@@ -52,135 +545,405 @@
         return;
       }
 
-      const response = await fetch("data/player-page-data.json");
-      const players = await response.json();
+      const [
+        playerResponse,
+        hofResponse,
+        oomResponse
+      ] = await Promise.all([
+        fetch("data/player-page-data.json", {
+          cache: "no-store"
+        }),
+        fetch("data/hall-of-fame-certified.json", {
+          cache: "no-store"
+        }),
+        fetch("data/order-of-merit-certified.json", {
+          cache: "no-store"
+        })
+      ]);
 
-      const player = players.find(p => p.slug === slug);
+      if (
+        !playerResponse.ok ||
+        !hofResponse.ok ||
+        !oomResponse.ok
+      ) {
+        throw new Error(
+          "Certified player data could not be loaded."
+        );
+      }
+
+      const players = await playerResponse.json();
+      hallOfFameData = await hofResponse.json();
+      oomData = await oomResponse.json();
+
+      const player =
+        players.find(p => p.slug === slug);
 
       if (!player) {
-        container.innerHTML = "<p>Player profile not found.</p>";
+        container.innerHTML =
+          "<p>Player profile not found.</p>";
         return;
       }
 
-      document.title = `${player.hero.name} | Dudley Golf Club Digital Museum`;
+      currentPlayer = player;
+
+      const hof = getHallOfFamePlayer(player);
+      const oom = getOomPlayer(player);
+
+      const hofScore =
+        hof?.score ??
+        player.hallOfFame?.score ??
+        0;
+
+      const oomPoints =
+        oom.row?.points ?? 0;
+
+      document.title =
+        `${player.hero.name} | Dudley Golf Club Digital Museum`;
 
       container.innerHTML = `
-        <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
-          <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
-            ${player.hero.section} • ${player.hero.status}
-          </p>
+      <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
 
-          <h1 class="text-5xl font-serif mb-4">${player.hero.name}</h1>
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
+          ${escapeHtml(player.hero.section)}
+          •
+          ${escapeHtml(player.hero.status)}
+        </p>
 
-          <p class="text-lg leading-8 mb-8">${player.summary}</p>
+        <h1 class="text-5xl font-serif mb-4">
+          ${escapeHtml(player.hero.name)}
+        </h1>
 
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
-            <div><strong>${player.headlineStats.competitionsPlayed}</strong><br>Played</div>
-            <div><strong>${player.headlineStats.wins}</strong><br>Wins</div>
-            <div><strong>${player.headlineStats.runnerUp}</strong><br>Runner-up</div>
-            <div><strong>${player.headlineStats.top3}</strong><br>Top 3</div>
-           
-                  </div>
+        <p class="text-lg leading-8 mb-8">
+          ${escapeHtml(player.summary)}
+        </p>
 
-          <section class="mb-10">
-            <div class="flex items-end justify-between gap-4 mb-5">
-              <div>
-                <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
-                  Medal Achievement
-                </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-5">
 
-                <h2 class="text-3xl font-serif">
-                  🏅 Medal Division Honours
-                </h2>
-              </div>
+          <button
+            type="button"
+            data-profile-stat="played"
+            class="profile-stat rounded-xl p-3 text-left transition hover:bg-[#C5A367]/15">
 
-              <div class="text-right text-sm text-gray-600">
-                <strong class="text-[#132419] text-xl">
-                  ${player.divisionHonours?.totalWins || 0}
-                </strong>
-                <br>
-                Total Division Wins
-              </div>
+            <strong class="text-xl block">
+              ${player.headlineStats.competitionsPlayed}
+            </strong>
+
+            Played
+          </button>
+
+          <button
+            type="button"
+            data-profile-stat="wins"
+            class="profile-stat rounded-xl p-3 text-left transition hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${player.headlineStats.wins}
+            </strong>
+
+            Wins
+          </button>
+
+          <button
+            type="button"
+            data-profile-stat="runnerup"
+            class="profile-stat rounded-xl p-3 text-left transition hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${player.headlineStats.runnerUp}
+            </strong>
+
+            Runner-up
+          </button>
+
+          <button
+            type="button"
+            data-profile-stat="top3"
+            class="profile-stat rounded-xl p-3 text-left transition hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${player.headlineStats.top3}
+            </strong>
+
+            Top 3
+          </button>
+
+          <button
+            type="button"
+            data-profile-stat="hof"
+            class="profile-stat rounded-xl p-3 text-left transition hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${hofScore}
+            </strong>
+
+            HOF
+          </button>
+
+          <button
+            type="button"
+            data-profile-stat="oom"
+            class="profile-stat rounded-xl p-3 text-left transition hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${oomPoints}
+            </strong>
+
+            OOM
+          </button>
+
+        </div>
+
+        <div
+          id="profile-stat-panel"
+          class="hidden mb-10 rounded-2xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+        </div>
+
+        <section class="mb-10">
+          <div class="flex items-end justify-between gap-4 mb-5">
+            <div>
+              <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
+                Medal Achievement
+              </p>
+
+              <h2 class="text-3xl font-serif">
+                🏅 Medal Division Honours
+              </h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-4 mb-5">
-              ${[1, 2, 3].map(division => {
+            <div class="text-right text-sm text-gray-600">
+              <strong class="text-[#132419] text-xl">
+                ${player.divisionHonours?.totalWins || 0}
+              </strong>
+              <br>
+              Total Division Wins
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 mb-5">
+            ${[1, 2, 3].map(division => {
         const key = `division${division}`;
 
         return `
-                  <div class="rounded-xl border border-[#C5A367]/30 bg-[#F9F7F2] p-5">
-                    <h3 class="font-serif text-xl mb-3">
-                      Division ${division}
-                    </h3>
+                <div class="rounded-xl border border-[#C5A367]/30 bg-[#F9F7F2] p-5">
 
-                    <div class="flex justify-between py-2 border-b border-[#132419]/10">
-                      <span>Wins</span>
-                      <strong>
-                        ${player.divisionHonours?.wins?.[key] || 0}
-                      </strong>
-                    </div>
+                  <h3 class="font-serif text-xl mb-3">
+                    Division ${division}
+                  </h3>
 
-                    <div class="flex justify-between py-2">
-                      <span>Top 3 Finishes</span>
-                      <strong>
-                        ${player.divisionHonours?.top3?.[key] || 0}
-                      </strong>
-                    </div>
+                  <div class="flex justify-between py-2 border-b border-[#132419]/10">
+                    <span>Wins</span>
+
+                    <strong>
+                      ${player.divisionHonours?.wins?.[key] || 0}
+                    </strong>
                   </div>
-                `;
+
+                  <div class="flex justify-between py-2">
+                    <span>Top 3 Finishes</span>
+
+                    <strong>
+                      ${player.divisionHonours?.top3?.[key] || 0}
+                    </strong>
+                  </div>
+
+                </div>
+              `;
       }).join("")}
-            </div>
+          </div>
 
-            ${(player.divisionHonours?.history || []).length
+          ${(player.divisionHonours?.history || []).length
           ? `
-                <div class="rounded-xl border border-[#C5A367]/20 overflow-hidden">
-                  ${(player.divisionHonours.history || []).map(item => `
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-5 py-4 border-b last:border-b-0 border-[#C5A367]/20">
-                      <div>
-                        <strong>${item.competition}</strong>
+              <div class="rounded-xl border border-[#C5A367]/20 overflow-hidden">
 
-                        <div class="text-sm text-gray-600 mt-1">
-                          ${item.year}
-                          • Division ${item.division}
-                          • Position ${item.position}
-                        </div>
-                      </div>
+                ${(player.divisionHonours.history || []).map(item => `
+                  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-5 py-4 border-b last:border-b-0 border-[#C5A367]/20">
 
-                      <div class="text-sm font-bold text-[#C5A367]">
-                        ${item.position === 1
-              ? "Division Winner"
-              : `Division Top ${item.position}`}
-                        ${item.score !== null
-              ? ` • ${item.score}`
-              : ""}
+                    <div>
+                      <strong>
+                        ${escapeHtml(item.competition)}
+                      </strong>
+
+                      <div class="text-sm text-gray-600 mt-1">
+                        ${escapeHtml(item.year)}
+                        • Division ${escapeHtml(item.division)}
+                        • Position ${escapeHtml(item.position)}
                       </div>
                     </div>
-                  `).join("")}
-                </div>
-              `
-          : `
-                <p class="text-gray-500">
-                  No medal division honours recorded yet.
-                </p>
-              `
-        }
-          </section>
 
-          <h2 class="text-2xl font-serif mb-4">Career Timeline</h2>
+                    <div class="text-sm font-bold text-[#C5A367]">
+                      ${item.position === 1
+              ? "Division Winner"
+              : `Division Top ${item.position}`
+            }
 
-          <div class="space-y-3">
-           ${(player.timeline || []).map(item => `
-              <div class="border-l-4 border-[#C5A367] pl-4 py-2">
-                <strong>${item.year}</strong> — ${item.competition}
-                <span class="text-sm text-gray-600">Position ${item.position}</span>
+                      ${item.score !== null
+              ? ` • ${escapeHtml(item.score)}`
+              : ""
+            }
+                    </div>
+
+                  </div>
+                `).join("")}
+
               </div>
-            `).join("")}
-          </div>
+            `
+          : `
+              <p class="text-gray-500">
+                No medal division honours recorded yet.
+              </p>
+            `
+        }
+        </section>
+
+        <h2 class="text-2xl font-serif mb-4">
+          Career Timeline
+        </h2>
+
+        <div class="space-y-3">
+
+          ${(player.timeline || []).map(item => `
+            <div class="border-l-4 border-[#C5A367] pl-4 py-2">
+
+              <strong>
+                ${escapeHtml(item.year)}
+              </strong>
+
+              —
+              ${escapeHtml(item.competition)}
+
+              <span class="text-sm text-gray-600">
+                Position ${escapeHtml(item.position)}
+              </span>
+
+            </div>
+          `).join("")}
+
         </div>
-      `;
+
+      </div>
+    `;
+
+      const panel =
+        document.getElementById(
+          "profile-stat-panel"
+        );
+
+      document
+        .querySelectorAll(
+          ".profile-stat"
+        )
+        .forEach(button => {
+
+          button.addEventListener(
+            "click",
+            async () => {
+
+              const stat =
+                button.dataset.profileStat;
+
+              const alreadyOpen =
+                !panel.classList.contains(
+                  "hidden"
+                ) &&
+                panel.dataset.openStat ===
+                stat;
+
+              document
+                .querySelectorAll(
+                  ".profile-stat"
+                )
+                .forEach(item =>
+                  item.classList.remove(
+                    "bg-[#C5A367]",
+                    "text-[#132419]",
+                    "shadow-md",
+                    "ring-2",
+                    "ring-[#C5A367]/40"
+                  )
+                );
+
+              if (alreadyOpen) {
+                panel.classList.add("hidden");
+                panel.innerHTML = "";
+                panel.dataset.openStat = "";
+                return;
+              }
+
+              button.classList.add(
+                "bg-[#C5A367]",
+                "text-[#132419]",
+                "shadow-md",
+                "ring-2",
+                "ring-[#C5A367]/40"
+              );
+
+              panel.classList.remove("hidden");
+              panel.dataset.openStat = stat;
+
+              if (stat === "wins") {
+                panel.innerHTML =
+                  renderWins(player);
+                return;
+              }
+
+              if (stat === "hof") {
+                panel.innerHTML =
+                  renderHallOfFame(player);
+                return;
+              }
+
+              if (stat === "oom") {
+                panel.innerHTML =
+                  renderOom(player);
+                return;
+              }
+
+              panel.innerHTML = `
+              <p class="text-gray-500">
+                Loading certified evidence...
+              </p>
+            `;
+
+              try {
+                if (stat === "played") {
+                  panel.innerHTML =
+                    await renderPlayed(player);
+                }
+
+                if (stat === "runnerup") {
+                  panel.innerHTML =
+                    await renderRunnerUp(player);
+                }
+
+                if (stat === "top3") {
+                  panel.innerHTML =
+                    await renderTop3(player);
+                }
+              } catch (error) {
+                console.error(error);
+
+                panel.innerHTML = `
+                <p class="text-red-700">
+                  Unable to load certified evidence.
+                </p>
+              `;
+              }
+            }
+          );
+        });
     }
 
-    loadPlayerProfile();
+    loadPlayerProfile().catch(error => {
+      console.error(error);
+
+      document.getElementById(
+        "profile"
+      ).innerHTML = `
+      <p>
+        Certified player profile could not be loaded.
+      </p>
+    `;
+    });
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">

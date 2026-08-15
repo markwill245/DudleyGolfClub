@@ -55,104 +55,943 @@
   </main>
 
   <script>
+
     let allPlayers = [];
     let activePlayers = [];
 
-    async function loadPlayers() {
-      const response = await fetch(
-        "data/player-page-data.json",
-        {
-          cache: "no-store"
-        }
-      );
+    let hallOfFameData = null;
+    let oomData = null;
+    let ledgerData = null;
 
-      if (!response.ok) {
+    function normalise(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function getHallOfFamePlayer(player) {
+      const section =
+        normalise(player.hero?.section) === "seniors"
+          ? "seniors"
+          : "mens";
+
+      return (
+        hallOfFameData?.[section]?.leaderboard || []
+      ).find(row =>
+        normalise(row.name) ===
+        normalise(player.hero?.name)
+      ) || null;
+    }
+
+    function getOomPlayer(player) {
+      const section =
+        normalise(player.hero?.section) === "seniors"
+          ? "seniors"
+          : "mens";
+
+      const sectionData = oomData?.[section];
+
+      if (!sectionData) {
+        return {
+          season: null,
+          row: null
+        };
+      }
+
+      const season =
+        sectionData.currentSeason;
+
+      const seasonData =
+        sectionData.seasons?.[season];
+
+      const rows =
+        seasonData?.leaderboard ||
+        seasonData?.players ||
+        seasonData?.standings ||
+        [];
+
+      const row = rows.find(item =>
+        normalise(item.player) ===
+        normalise(player.hero?.name)
+      ) || null;
+
+      return {
+        season,
+        row
+      };
+    }
+
+    async function loadPlayers() {
+      const [
+        playerResponse,
+        hofResponse,
+        oomResponse
+      ] = await Promise.all([
+        fetch("data/player-page-data.json", {
+          cache: "no-store"
+        }),
+        fetch("data/hall-of-fame-certified.json", {
+          cache: "no-store"
+        }),
+        fetch("data/order-of-merit-certified.json", {
+          cache: "no-store"
+        })
+      ]);
+
+      if (!playerResponse.ok) {
         throw new Error(
-          `Player Index data returned ${response.status}`
+          `Player data returned ${playerResponse.status}`
         );
       }
-      allPlayers = await response.json();
+
+      if (!hofResponse.ok) {
+        throw new Error(
+          `Hall of Fame data returned ${hofResponse.status}`
+        );
+      }
+
+      if (!oomResponse.ok) {
+        throw new Error(
+          `OOM data returned ${oomResponse.status}`
+        );
+      }
+
+      allPlayers =
+        await playerResponse.json();
+
+      hallOfFameData =
+        await hofResponse.json();
+
+      oomData =
+        await oomResponse.json();
 
       activePlayers = allPlayers
         .slice()
         .sort((a, b) =>
-          (a.hero?.name || "").localeCompare(b.hero?.name || "")
+          (a.hero?.name || "")
+            .localeCompare(
+              b.hero?.name || ""
+            )
         );
 
       renderPlayers(activePlayers);
     }
 
     function renderPlayers(players) {
-      const container = document.getElementById("players");
+      const container =
+        document.getElementById("players");
 
       if (!players.length) {
         container.innerHTML = `
-          <div class="col-span-full text-center py-16">
-            <h2 class="text-3xl font-serif mb-4">No players found</h2>
-            <p class="text-gray-600">Try searching with a different player name.</p>
-          </div>
-        `;
+        <div class="col-span-full text-center py-16">
+          <h2 class="text-3xl font-serif mb-4">
+            No players found
+          </h2>
+
+          <p class="text-gray-600">
+            Try searching with a different player name.
+          </p>
+        </div>
+      `;
         return;
       }
 
-      container.innerHTML = players.map(player => {
-        const name = player.hero?.name || "Unknown Player";
-        const section = player.hero?.section || "Unknown";
-        const status = player.hero?.status || "Unknown";
-        const wins = player.headlineStats?.wins || 0;
-        const top3 = player.headlineStats?.top3 || 0;
-        const hofScore = player.hallOfFame?.score || 0;
-        const hofStatus = player.hallOfFame?.status || "Building Record";
+      container.innerHTML =
+        players.map(player => {
+          const name =
+            player.hero?.name ||
+            "Unknown Player";
 
-        return `
-          <a href="player-profile.html?player=${player.slug}"
-             class="block bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
+          const section =
+            player.hero?.section ||
+            "Unknown";
 
-            <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
-              ${section} • ${status}
-            </p>
+          const status =
+            player.hero?.status ||
+            "Unknown";
 
-            <h2 class="text-3xl font-serif mb-5">${name}</h2>
+          const hof =
+            getHallOfFamePlayer(player);
 
-            <div class="grid grid-cols-3 gap-4 text-sm">
-              <div>
-                <strong class="text-xl">${wins}</strong><br>
-                Wins
-              </div>
-              <div>
-                <strong class="text-xl">${top3}</strong><br>
-                Top 3
-              </div>
-              <div>
-                <strong class="text-xl">${hofScore}</strong><br>
-                HOF
-              </div>
-            </div>
+          const oom =
+            getOomPlayer(player);
 
-            <p class="mt-4 text-sm text-gray-600">
-              ${hofStatus}
-            </p>
-          </a>
-        `;
-      }).join("");
+          const wins =
+            hof?.wins ??
+            player.headlineStats?.wins ??
+            0;
+
+          const top3 =
+            hof?.top3 ??
+            player.headlineStats?.top3 ??
+            0;
+
+          const hofScore =
+            hof?.score ??
+            player.hallOfFame?.score ??
+            0;
+
+          const hofStatus =
+            hof?.hallOfFameStatus ??
+            player.hallOfFame?.status ??
+            "Building Record";
+
+          const oomPoints =
+            oom.row?.points ?? 0;
+
+          const oomRank =
+            oom.row?.rank ?? null;
+
+          return `
+      <article
+        data-player-card="${escapeHtml(player.slug)}"
+        class="bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
+
+        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+          ${escapeHtml(section)}
+          •
+          ${escapeHtml(status)}
+        </p>
+
+        <a
+          href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+          class="inline-block hover:text-[#C5A367] transition">
+
+          <h2 class="text-3xl font-serif mb-5">
+            ${escapeHtml(name)}
+          </h2>
+        </a>
+
+        <div class="grid grid-cols-4 gap-2 text-sm">
+
+          <button
+            type="button"
+            data-player="${escapeHtml(player.slug)}"
+            data-stat="wins"
+            class="stat-button rounded-xl px-2 py-3 transition-all duration-200 hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${wins}
+            </strong>
+
+            Wins
+          </button>
+
+          <button
+            type="button"
+            data-player="${escapeHtml(player.slug)}"
+            data-stat="top3"
+            class="stat-button rounded-xl px-2 py-3 transition-all duration-200 hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${top3}
+            </strong>
+
+            Top 3
+          </button>
+
+          <button
+            type="button"
+            data-player="${escapeHtml(player.slug)}"
+            data-stat="hof"
+            class="stat-button rounded-xl px-2 py-3 transition-all duration-200 hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${hofScore}
+            </strong>
+
+            HOF
+          </button>
+
+          <button
+            type="button"
+            data-player="${escapeHtml(player.slug)}"
+            data-stat="oom"
+            class="stat-button rounded-xl px-2 py-3 transition-all duration-200 hover:bg-[#C5A367]/15">
+
+            <strong class="text-xl block">
+              ${oomPoints}
+            </strong>
+
+            OOM
+          </button>
+
+        </div>
+
+        <div
+          data-stat-panel="${escapeHtml(player.slug)}"
+          class="hidden mt-5 border-t border-[#C5A367]/30 pt-5">
+        </div>
+
+        <div class="mt-4 flex items-center justify-between gap-4">
+
+          <p class="text-sm text-gray-600">
+            ${escapeHtml(hofStatus)}
+          </p>
+
+          ${oomRank
+              ? `
+                    <span class="text-xs font-semibold text-[#C5A367]">
+                      OOM #${oomRank}
+                    </span>
+                  `
+              : ""
+            }
+
+        </div>
+
+        <a
+          href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+          class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
+          View Full Profile →
+        </a>
+
+      </article>
+      `;
+        }).join("");
     }
 
-    document.getElementById("search").addEventListener("input", e => {
-      const term = e.target.value.toLowerCase().trim();
+    function getPlayerBySlug(slug) {
+      return allPlayers.find(
+        player => player.slug === slug
+      );
+    }
 
-      const filtered = activePlayers
-        .filter(player =>
-          (player.hero?.name || "").toLowerCase().includes(term)
+    function closeAllPanels(exceptSlug = null) {
+      document
+        .querySelectorAll("[data-stat-panel]")
+        .forEach(panel => {
+          if (
+            exceptSlug &&
+            panel.dataset.statPanel ===
+            exceptSlug
+          ) {
+            return;
+          }
+
+          panel.classList.add("hidden");
+          panel.innerHTML = "";
+          panel.dataset.openStat = "";
+        });
+
+      document
+        .querySelectorAll(".stat-button")
+        .forEach(button => {
+          if (
+            exceptSlug &&
+            button.dataset.player ===
+            exceptSlug
+          ) {
+            return;
+          }
+
+          button.classList.remove(
+            "bg-[#C5A367]",
+            "text-[#132419]",
+            "shadow-md",
+            "ring-2",
+            "ring-[#C5A367]/40"
+          );
+        });
+    }
+
+    function highlightButton(button) {
+      document
+        .querySelectorAll(
+          `.stat-button[data-player="${button.dataset.player}"]`
         )
-        .sort((a, b) =>
-          (a.hero?.name || "").localeCompare(b.hero?.name || "")
-        );
+        .forEach(item => {
+          item.classList.remove(
+            "bg-[#C5A367]",
+            "text-[#132419]",
+            "shadow-md",
+            "ring-2",
+            "ring-[#C5A367]/40"
+          );
+        });
 
-      renderPlayers(filtered);
+      button.classList.add(
+        "bg-[#C5A367]",
+        "text-[#132419]",
+        "shadow-md",
+        "ring-2",
+        "ring-[#C5A367]/40"
+      );
+    }
+
+    function renderWins(player) {
+      const hof =
+        getHallOfFamePlayer(player);
+
+      const wins =
+        hof?.winEvidence || [];
+
+      if (!wins.length) {
+        return `
+      <h3 class="text-xl font-serif mb-2">
+        Certified Wins
+      </h3>
+
+      <p class="text-sm text-gray-600">
+        No certified career wins recorded.
+      </p>
+      `;
+      }
+
+      return `
+      <h3 class="text-xl font-serif mb-1">
+        Certified Wins
+      </h3>
+
+      <p class="text-xs text-gray-500 mb-4">
+        ${wins.length}
+        certified career
+        ${wins.length === 1 ? "win" : "wins"}
+      </p>
+
+      <div class="space-y-3">
+        ${wins
+          .slice()
+          .sort((a, b) =>
+            Number(b.year || 0) -
+            Number(a.year || 0)
+          )
+          .map(win => `
+            <div class="rounded-xl bg-[#F9F7F2] p-3">
+              <div class="flex justify-between gap-3">
+                <strong class="text-sm">
+                  ${escapeHtml(
+            win.competitionName
+          )}
+                </strong>
+
+                <span class="text-xs text-[#C5A367] font-bold">
+                  ${escapeHtml(win.year)}
+                </span>
+              </div>
+
+              <div class="mt-1 flex flex-wrap gap-2 text-xs text-gray-600">
+                ${win.majorWin
+              ? `<span>Major</span>`
+              : ""
+            }
+
+                ${win.medalWin
+              ? `<span>Medal</span>`
+              : ""
+            }
+
+                ${win.matchplayWin
+              ? `<span>Matchplay</span>`
+              : ""
+            }
+              </div>
+            </div>
+          `)
+          .join("")}
+      </div>
+      `;
+    }
+
+    function renderHallOfFame(player) {
+      const hof =
+        getHallOfFamePlayer(player);
+
+      if (!hof) {
+        return `
+      <p class="text-sm text-gray-600">
+        No certified Hall of Fame record.
+      </p>
+      `;
+      }
+
+      const scoring =
+        hallOfFameData?.scoring || {};
+
+      const premiumPoints =
+        scoring.premiumHonour ??
+        hallOfFameData?.premiumHonours?.bonus ??
+        25;
+
+      const rows = [
+        {
+          label: "Career Wins",
+          count: hof.wins,
+          rate: scoring.win || 0
+        },
+        {
+          label: "Major Wins",
+          count: hof.majorWins,
+          rate: scoring.majorWin || 0
+        },
+        {
+          label: "Premium Honours",
+          count: hof.premiumHonours,
+          rate: premiumPoints
+        },
+        {
+          label: "Medal Wins",
+          count: hof.medalWins,
+          rate: scoring.medalWin || 0
+        },
+        {
+          label: "Matchplay Wins",
+          count: hof.matchplayWins,
+          rate: scoring.matchplayWin || 0
+        },
+        {
+          label: "Runner-up",
+          count: hof.runnerUp,
+          rate: scoring.runnerUp || 0
+        },
+        {
+          label: "Top 3",
+          count: hof.top3,
+          rate: scoring.top3 || 0
+        },
+        {
+          label: "Top 5",
+          count: hof.top5,
+          rate: scoring.top5 || 0
+        },
+        {
+          label: "Section Records",
+          count:
+            hof.recordsHeld?.length || 0,
+          rate: scoring.sectionRecord || 0
+        }
+      ];
+
+      return `
+      <div class="flex items-end justify-between gap-4 mb-4">
+
+        <div>
+          <h3 class="text-xl font-serif">
+            Hall of Fame Breakdown
+          </h3>
+
+          <p class="text-xs text-gray-500">
+            Certified scoring calculation
+          </p>
+        </div>
+
+        <strong class="text-3xl font-serif text-[#C5A367]">
+          ${hof.score}
+        </strong>
+
+      </div>
+
+      <div class="space-y-2">
+        ${rows
+          .filter(row =>
+            Number(row.count || 0) > 0
+          )
+          .map(row => {
+            const points =
+              Number(row.count || 0) *
+              Number(row.rate || 0);
+
+            return `
+              <div class="flex items-center justify-between gap-3 rounded-lg bg-[#F9F7F2] px-3 py-2 text-sm">
+
+                <span>
+                  ${escapeHtml(row.label)}
+                </span>
+
+                <span class="font-semibold whitespace-nowrap">
+                  ${row.count}
+                  ×
+                  ${row.rate}
+                  =
+                  ${points}
+                </span>
+
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-[#C5A367]/30 flex justify-between font-bold">
+
+        <span>Total HOF Score</span>
+
+        <span>${hof.score}</span>
+
+      </div>
+      `;
+    }
+
+    function renderOom(player) {
+      const oom =
+        getOomPlayer(player);
+
+      if (!oom.row) {
+        return `
+      <h3 class="text-xl font-serif mb-2">
+        Order of Merit
+      </h3>
+
+      <p class="text-sm text-gray-600">
+        No points recorded in the current
+        ${escapeHtml(oom.season || "")}
+        season.
+      </p>
+      `;
+      }
+
+      const row = oom.row;
+
+      return `
+      <div class="flex justify-between gap-4 mb-4">
+
+        <div>
+          <h3 class="text-xl font-serif">
+            Order of Merit
+          </h3>
+
+          <p class="text-xs text-gray-500">
+            ${escapeHtml(oom.season)}
+            season
+          </p>
+        </div>
+
+        <div class="text-right">
+          <strong class="text-2xl font-serif">
+            #${row.rank}
+          </strong>
+
+          <p class="text-xs text-gray-500">
+            ${row.points} points
+          </p>
+        </div>
+
+      </div>
+
+      <div class="space-y-2">
+
+        ${(row.results || [])
+          .slice()
+          .sort((a, b) =>
+            String(b.date || "")
+              .localeCompare(
+                String(a.date || "")
+              )
+          )
+          .map(result => `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+
+              <div class="flex justify-between gap-3">
+
+                <span class="text-sm font-semibold">
+                  ${escapeHtml(
+            result.competition
+          )}
+                </span>
+
+                <strong class="text-sm text-[#C5A367]">
+                  +${result.points}
+                </strong>
+
+              </div>
+
+              <p class="text-xs text-gray-500 mt-1">
+                ${escapeHtml(result.date || result.year)}
+                •
+                Position ${escapeHtml(result.position)}
+              </p>
+
+            </div>
+          `)
+          .join("")}
+
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-[#C5A367]/30 flex justify-between font-bold">
+
+        <span>Total</span>
+
+        <span>${row.points} points</span>
+
+      </div>
+      `;
+    }
+
+    async function renderTop3(player) {
+      if (!ledgerData) {
+        const response =
+          await fetch(
+            "data/certified-event-ledger.json",
+            {
+              cache: "no-store"
+            }
+          );
+
+        if (!response.ok) {
+          throw new Error(
+            `Certified ledger returned ${response.status}`
+          );
+        }
+
+        ledgerData =
+          await response.json();
+      }
+
+      const name =
+        player.hero?.name || "";
+
+      const section =
+        player.hero?.section || "Mens";
+
+      const rows =
+        (ledgerData.records || [])
+          .filter(row =>
+            row.evidenceType ===
+            "competitive-result" &&
+            row.appearanceEligible === true &&
+            row.top3 === true &&
+            normalise(row.playerName) ===
+            normalise(name) &&
+            normalise(row.section) ===
+            normalise(section)
+          )
+          .sort((a, b) =>
+            String(b.date || b.year || "")
+              .localeCompare(
+                String(a.date || a.year || "")
+              )
+          );
+
+      if (!rows.length) {
+        return `
+      <h3 class="text-xl font-serif mb-2">
+        Certified Top 3 Finishes
+      </h3>
+
+      <p class="text-sm text-gray-600">
+        No certified Top 3 finishes recorded.
+      </p>
+      `;
+      }
+
+      return `
+      <h3 class="text-xl font-serif mb-1">
+        Certified Top 3 Finishes
+      </h3>
+
+      <p class="text-xs text-gray-500 mb-4">
+        ${rows.length}
+        qualifying
+        ${rows.length === 1
+          ? "finish"
+          : "finishes"}
+      </p>
+
+      <div class="space-y-2">
+
+        ${rows.map(row => `
+          <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+
+            <div class="flex justify-between gap-3">
+
+              <span class="text-sm font-semibold">
+                ${escapeHtml(
+            row.competitionName ||
+            row.competitionId
+          )}
+              </span>
+
+              <strong class="text-sm text-[#C5A367]">
+                #${escapeHtml(row.position)}
+              </strong>
+
+            </div>
+
+            <p class="text-xs text-gray-500 mt-1">
+              ${escapeHtml(
+            row.date ||
+            row.year ||
+            ""
+          )}
+            </p>
+
+          </div>
+        `).join("")}
+
+      </div>
+      `;
+    }
+
+    document
+      .getElementById("players")
+      .addEventListener(
+        "click",
+        async event => {
+
+          const button =
+            event.target.closest(
+              ".stat-button"
+            );
+
+          if (!button) {
+            return;
+          }
+
+          const slug =
+            button.dataset.player;
+
+          const stat =
+            button.dataset.stat;
+
+          const panel =
+            document.querySelector(
+              `[data-stat-panel="${slug}"]`
+            );
+
+          const player =
+            getPlayerBySlug(slug);
+
+          if (!panel || !player) {
+            return;
+          }
+
+          const alreadyOpen =
+            !panel.classList.contains(
+              "hidden"
+            ) &&
+            panel.dataset.openStat ===
+            stat;
+
+          if (alreadyOpen) {
+            panel.classList.add("hidden");
+            panel.innerHTML = "";
+            panel.dataset.openStat = "";
+
+            button.classList.remove(
+              "bg-[#C5A367]",
+              "text-[#132419]",
+              "shadow-md",
+              "ring-2",
+              "ring-[#C5A367]/40"
+            );
+
+            return;
+          }
+
+          closeAllPanels(slug);
+
+          highlightButton(button);
+
+          panel.classList.remove("hidden");
+
+          panel.dataset.openStat =
+            stat;
+
+          if (stat === "wins") {
+            panel.innerHTML =
+              renderWins(player);
+
+            return;
+          }
+
+          if (stat === "hof") {
+            panel.innerHTML =
+              renderHallOfFame(player);
+
+            return;
+          }
+
+          if (stat === "oom") {
+            panel.innerHTML =
+              renderOom(player);
+
+            return;
+          }
+
+          if (stat === "top3") {
+            panel.innerHTML = `
+            <p class="text-sm text-gray-500">
+              Loading certified Top 3 evidence...
+            </p>
+          `;
+
+            try {
+              panel.innerHTML =
+                await renderTop3(player);
+            } catch (error) {
+              console.error(error);
+
+              panel.innerHTML = `
+      <p class="text-sm text-red-700">
+        Unable to load certified Top 3 evidence.
+      </p>
+      `;
+            }
+          }
+        }
+      );
+
+    document
+      .getElementById("search")
+      .addEventListener(
+        "input",
+        event => {
+
+          const term =
+            event.target.value
+              .toLowerCase()
+              .trim();
+
+          const filtered =
+            activePlayers
+              .filter(player =>
+                (
+                  player.hero?.name ||
+                  ""
+                )
+                  .toLowerCase()
+                  .includes(term)
+              )
+              .sort((a, b) =>
+                (
+                  a.hero?.name ||
+                  ""
+                ).localeCompare(
+                  b.hero?.name ||
+                  ""
+                )
+              );
+
+          renderPlayers(filtered);
+        }
+      );
+
+    loadPlayers().catch(error => {
+      console.error(error);
+
+      document.getElementById(
+        "players"
+      ).innerHTML = `
+      <div class="col-span-full text-center py-16">
+        <h2 class="text-2xl font-serif mb-3">
+          Player Index unavailable
+        </h2>
+
+        <p class="text-gray-600">
+          Certified player data could not be loaded.
+        </p>
+      </div>
+    `;
     });
-
-    loadPlayers();
   </script>
+
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
     ↑ Top
