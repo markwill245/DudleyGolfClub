@@ -19,18 +19,128 @@
     .font-serif {
       font-family: 'Cormorant Garamond', serif;
     }
+
+    .serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    #menu-btn div {
+      display: block !important;
+      width: 24px !important;
+      height: 2px !important;
+      background-color: #C5A367 !important;
+      opacity: 1 !important;
+    }
+
+    .nav-blur {
+      background: rgba(19, 36, 25, 0.98);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    #nav-links {
+      will-change: transform;
+    }
   </style>
 
 </head>
 
 <body class="bg-[#F9F7F2] text-[#132419]">
+  <!-- TOP INFO BAR -->
+  <div
+    class="bg-[#0D1712] text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+
+    <div id="live-clock">
+      Loading...
+    </div>
+
+    <div class="flex gap-6">
+      <span id="weather">
+        Dudley: --°C
+      </span>
+
+      <span>
+        Course Status:
+        <span id="course-status" class="font-bold uppercase">
+        </span>
+      </span>
+    </div>
+
+  </div>
+  <nav
+    class="w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10 relative">
+
+    <a href="index.html" class="flex flex-col z-[100]">
+      <span class="serif text-2xl">DUDLEY</span>
+      <span class="text-[8px] uppercase text-[#C5A367]">
+        Golf Club Est. 1893
+      </span>
+    </a>
+
+    <div class="hidden md:flex justify-center gap-6 text-[12px] uppercase tracking-widest">
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Guide</a>
+      <a href="amen-corner.html">Amen Corner</a>
+      <a href="history.html">History</a>
+      <a href="digital-museum.html">Digital Museum</a>
+      <a href="hospitality.html">Hospitality & Events</a>
+      <a href="pro-shop.html">Pro Shop</a>
+      <a href="visitors.html">Visitors</a>
+      <a href="membership.html">Membership</a>
+    </div>
+
+    <div class="hidden md:flex items-center gap-4 relative z-[200]">
+
+      <a href="members-login.html" target="_blank"
+        class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+        Members iGolf
+      </a>
+
+      <a href="login.html"
+        class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+        Members Portal
+      </a>
+
+    </div>
+
+    <button id="menu-btn" class="md:hidden z-[120] flex flex-col gap-1">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <div id="nav-links"
+      class="fixed top-0 right-0 h-screen w-[80%] max-w-[320px] bg-[#132419] z-[110] translate-x-full transition-transform duration-300 flex flex-col pt-28 px-8 gap-6 text-[12px] uppercase tracking-widest border-l border-[#C5A367]/30 md:hidden">
+
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Guide</a>
+      <a href="amen-corner.html">Amen Corner</a>
+      <a href="history.html">History</a>
+      <a href="digital-museum.html">Digital Museum</a>
+      <a href="hospitality.html">Hospitality & Events</a>
+      <a href="pro-shop.html">Pro Shop</a>
+      <a href="visitors.html">Visitors</a>
+      <a href="membership.html">Membership</a>
+
+      <div class="pt-6 border-t border-[#C5A367]/20 flex flex-col gap-4">
+
+        <a href="members-login.html" target="_blank"
+          class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-center text-[10px] font-bold">
+          iGolf App
+        </a>
+
+        <a href="login.html"
+          class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold text-center">
+          Members Portal
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
 
   <main class="max-w-7xl mx-auto px-6 py-16">
 
-    <a href="index.html"
-      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      ← Back to Home
-    </a>
+
 
     <a href="members-area.html"
       class="inline-block ml-6 text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
@@ -165,17 +275,17 @@
         document
           .getElementById("stat-players")
           .textContent =
-            summary.playersRecorded ?? "—";
+          summary.playersRecorded ?? "—";
 
         document
           .getElementById("stat-competitions")
           .textContent =
-            summary.competitions ?? "—";
+          summary.competitions ?? "—";
 
         document
           .getElementById("stat-results")
           .textContent =
-            summary.recordedResultRows ?? "—";
+          summary.recordedResultRows ?? "—";
 
         const leader =
           summary.lifetimeLeader;
@@ -206,6 +316,7 @@
         } else {
           leaderElement.textContent = "—";
         }
+
       } catch (error) {
         console.error(
           "Museum summary failed to load:",
@@ -214,7 +325,222 @@
       }
     }
 
+    async function updateWeather() {
+      const weather =
+        document.getElementById("weather");
+
+      if (!weather) return;
+
+      try {
+        const response =
+          await fetch("/api/weather");
+
+        if (!response.ok) {
+          throw new Error(
+            "Weather fetch failed"
+          );
+        }
+
+        const data =
+          await response.json();
+
+        weather.textContent =
+          `Dudley: ${data.temp}°C`;
+
+      } catch (error) {
+        console.error(
+          "Could not fetch weather:",
+          error
+        );
+
+        weather.textContent =
+          "Dudley: --°C";
+      }
+    }
+
+    async function updateCourseStatus() {
+      const statusEl =
+        document.getElementById(
+          "course-status"
+        );
+
+      if (!statusEl) return;
+
+      try {
+        const response =
+          await fetch(
+            "/api/course-status"
+          );
+
+        if (!response.ok) {
+          throw new Error();
+        }
+
+        const data =
+          await response.json();
+
+        const statusMap = {
+          open: {
+            text: "🟢 COURSE OPEN",
+            className:
+              "font-bold uppercase text-green-400"
+          },
+
+          closed: {
+            text: "🔴 COURSE CLOSED",
+            className:
+              "font-bold uppercase text-red-400"
+          },
+
+          frost: {
+            text: "🟡 FROST DELAY",
+            className:
+              "font-bold uppercase text-yellow-400"
+          },
+
+          "temporary-greens": {
+            text: "🟠 TEMPORARY GREENS",
+            className:
+              "font-bold uppercase text-orange-400"
+          },
+
+          "preferred-lies": {
+            text: "🔵 PREFERRED LIES",
+            className:
+              "font-bold uppercase text-blue-400"
+          },
+
+          maintenance: {
+            text: "⚪ COURSE MAINTENANCE",
+            className:
+              "font-bold uppercase text-gray-300"
+          }
+        };
+
+        const currentStatus =
+          statusMap[data.status] ||
+          statusMap.closed;
+
+        statusEl.textContent =
+          currentStatus.text;
+
+        statusEl.className =
+          currentStatus.className;
+
+      } catch (error) {
+        statusEl.textContent =
+          "⚪ STATUS UNKNOWN";
+
+        statusEl.className =
+          "font-bold uppercase text-gray-400";
+      }
+    }
+
+    function updateClock() {
+      const clock =
+        document.getElementById(
+          "live-clock"
+        );
+
+      if (!clock) return;
+
+      const now = new Date();
+
+      clock.textContent =
+        now.toLocaleTimeString(
+          "en-GB",
+          {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+          }
+        );
+    }
+
+    function initMenu() {
+      const btn =
+        document.getElementById(
+          "menu-btn"
+        );
+
+      const nav =
+        document.getElementById(
+          "nav-links"
+        );
+
+      if (!btn || !nav) return;
+
+      function closeMenu() {
+        nav.classList.add(
+          "translate-x-full"
+        );
+
+        nav.classList.remove(
+          "translate-x-0"
+        );
+
+        document.body.style.overflow =
+          "auto";
+      }
+
+      function openMenu() {
+        nav.classList.remove(
+          "translate-x-full"
+        );
+
+        nav.classList.add(
+          "translate-x-0"
+        );
+
+        document.body.style.overflow =
+          "hidden";
+      }
+
+      btn.addEventListener(
+        "click",
+        e => {
+          e.stopPropagation();
+
+          nav.classList.contains(
+            "translate-x-full"
+          )
+            ? openMenu()
+            : closeMenu();
+        }
+      );
+
+      document
+        .querySelectorAll(
+          "#nav-links a"
+        )
+        .forEach(link => {
+          link.addEventListener(
+            "click",
+            closeMenu
+          );
+        });
+    }
+
     loadMuseumStats();
+    updateClock();
+    updateWeather();
+    updateCourseStatus();
+    initMenu();
+
+    setInterval(
+      updateClock,
+      1000
+    );
+
+    setInterval(
+      updateCourseStatus,
+      60000
+    );
+
+    setInterval(
+      updateWeather,
+      600000
+    );
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
