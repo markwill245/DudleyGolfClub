@@ -324,6 +324,22 @@
                 text-align: center;
             }
         }
+
+        /* DESKTOP NAVIGATION FIX */
+        @media (min-width: 1280px) {
+            nav > div.hidden.xl\:flex {
+                display: flex !important;
+            }
+
+            nav > div.hidden.xl\:flex.justify-center {
+                font-size: 13px;
+            }
+
+            #menu-btn,
+            #nav-links {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
