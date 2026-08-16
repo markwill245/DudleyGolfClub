@@ -44,10 +44,26 @@
     </section>
 
     <section class="mb-8">
+      <div class="flex flex-wrap gap-3 mb-4">
+        <button type="button" data-player-filter="active"
+          class="player-filter px-5 py-3 rounded-xl border border-[#C5A367]/40 bg-[#132419] text-white font-semibold transition">
+          Active Players
+        </button>
+
+        <button type="button" data-player-filter="historical"
+          class="player-filter px-5 py-3 rounded-xl border border-[#C5A367]/40 bg-white font-semibold transition">
+          Historical Players
+        </button>
+
+        <button type="button" data-player-filter="all"
+          class="player-filter px-5 py-3 rounded-xl border border-[#C5A367]/40 bg-white font-semibold transition">
+          All Players
+        </button>
+      </div>
+
       <input id="search" type="text" placeholder="Search by player name..."
         class="w-full px-5 py-4 rounded-xl border border-[#C5A367]/40 bg-white text-lg">
     </section>
-
     <section id="players" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <p>Loading players...</p>
     </section>
@@ -58,7 +74,7 @@
 
     let allPlayers = [];
     let activePlayers = [];
-
+    let currentPlayerFilter = "active";
     let hallOfFameData = null;
     let oomData = null;
     let ledgerData = null;
@@ -140,25 +156,70 @@
       const name =
         normalise(player.hero?.name);
 
-      const medal =
-        metric?.leaderboards
-          ?.eighteenHole
-          ?.nett
-          ?.find(row =>
+      function findPlayer(rows) {
+        return (
+          rows?.find(row =>
             normalise(row.playerName) === name
-          ) || null;
-
-      const stableford =
-        metric?.leaderboards
-          ?.eighteenHole
-          ?.stableford
-          ?.find(row =>
-            normalise(row.playerName) === name
-          ) || null;
+          ) || null
+        );
+      }
 
       return {
-        medal,
-        stableford
+        mens: {
+          medal:
+            findPlayer(
+              metric?.sectionLeaderboards
+                ?.mens
+                ?.eighteenHole
+                ?.nett
+            ),
+
+          stableford:
+            findPlayer(
+              metric?.sectionLeaderboards
+                ?.mens
+                ?.eighteenHole
+                ?.stableford
+            )
+        },
+
+        seniors: {
+          nineHole: {
+            medal:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.nineHole
+                  ?.nett
+              ),
+
+            stableford:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.nineHole
+                  ?.stableford
+              )
+          },
+
+          eighteenHole: {
+            medal:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.eighteenHole
+                  ?.nett
+              ),
+
+            stableford:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.eighteenHole
+                  ?.stableford
+              )
+          }
+        }
       };
     }
     async function loadPlayers() {
@@ -227,7 +288,50 @@
             )
         );
 
-      renderPlayers(activePlayers);
+      applyPlayerFilters();
+    }
+    function applyPlayerFilters() {
+      const term =
+        document
+          .getElementById("search")
+          .value
+          .toLowerCase()
+          .trim();
+
+      const filtered =
+        activePlayers
+          .filter(player => {
+            const status =
+              normalise(
+                player.hero?.status
+              );
+
+            if (
+              currentPlayerFilter === "active" &&
+              status !== "active"
+            ) {
+              return false;
+            }
+
+            if (
+              currentPlayerFilter === "historical" &&
+              status !== "historical"
+            ) {
+              return false;
+            }
+
+            return true;
+          })
+          .filter(player =>
+            (
+              player.hero?.name ||
+              ""
+            )
+              .toLowerCase()
+              .includes(term)
+          );
+
+      renderPlayers(filtered);
     }
     function renderPlayers(players) {
       const container =
@@ -393,41 +497,131 @@
             }
 
         </div>
-${scoring.medal || scoring.stableford ? `
-  <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+${(
+              scoring.mens.medal ||
+              scoring.mens.stableford ||
+              scoring.seniors.nineHole.medal ||
+              scoring.seniors.nineHole.stableford ||
+              scoring.seniors.eighteenHole.medal ||
+              scoring.seniors.eighteenHole.stableford
+            ) ? `
+  <div class="mt-4 space-y-3 text-xs">
 
-    ${scoring.medal ? `
-      <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-        <span class="block text-gray-500">
-          Medal Nett Avg
-        </span>
-        <strong class="text-base">
-          ${escapeHtml(scoring.medal.average)}
-        </strong>
+    ${(
+              scoring.mens.medal ||
+              scoring.mens.stableford
+            ) ? `
+      <div>
+        <p class="mb-2 font-semibold uppercase tracking-wider text-[#132419]">
+          Mens 18-Hole
+        </p>
+
+        <div class="grid grid-cols-2 gap-2">
+          ${scoring.mens.medal ? `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+              <span class="block text-gray-500">
+                Medal Nett Avg
+              </span>
+              <strong class="text-base">
+                ${escapeHtml(scoring.mens.medal.average)}
+              </strong>
+            </div>
+          ` : ""}
+
+          ${scoring.mens.stableford ? `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+              <span class="block text-gray-500">
+                Stableford Avg
+              </span>
+              <strong class="text-base">
+                ${escapeHtml(scoring.mens.stableford.average)} pts
+              </strong>
+            </div>
+          ` : ""}
+        </div>
       </div>
     ` : ""}
 
-    ${scoring.stableford ? `
-      <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-        <span class="block text-gray-500">
-          Stableford Avg
-        </span>
-        <strong class="text-base">
-          ${escapeHtml(scoring.stableford.average)} pts
-        </strong>
+    ${(
+              scoring.seniors.nineHole.medal ||
+              scoring.seniors.nineHole.stableford
+            ) ? `
+      <div>
+        <p class="mb-2 font-semibold uppercase tracking-wider text-[#132419]">
+          Seniors 9-Hole
+        </p>
+
+        <div class="grid grid-cols-2 gap-2">
+          ${scoring.seniors.nineHole.medal ? `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+              <span class="block text-gray-500">
+                Nett Avg
+              </span>
+              <strong class="text-base">
+                ${escapeHtml(scoring.seniors.nineHole.medal.average)}
+              </strong>
+            </div>
+          ` : ""}
+
+          ${scoring.seniors.nineHole.stableford ? `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+              <span class="block text-gray-500">
+                Stableford Avg
+              </span>
+              <strong class="text-base">
+                ${escapeHtml(scoring.seniors.nineHole.stableford.average)} pts
+              </strong>
+            </div>
+          ` : ""}
+        </div>
+      </div>
+    ` : ""}
+
+    ${(
+              scoring.seniors.eighteenHole.medal ||
+              scoring.seniors.eighteenHole.stableford
+            ) ? `
+      <div>
+        <p class="mb-2 font-semibold uppercase tracking-wider text-[#132419]">
+          Seniors 18-Hole
+        </p>
+
+        <div class="grid grid-cols-2 gap-2">
+          ${scoring.seniors.eighteenHole.medal ? `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+              <span class="block text-gray-500">
+                Nett Avg
+              </span>
+              <strong class="text-base">
+                ${escapeHtml(scoring.seniors.eighteenHole.medal.average)}
+              </strong>
+            </div>
+          ` : ""}
+
+          ${scoring.seniors.eighteenHole.stableford ? `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+              <span class="block text-gray-500">
+                Stableford Avg
+              </span>
+              <strong class="text-base">
+                ${escapeHtml(scoring.seniors.eighteenHole.stableford.average)} pts
+              </strong>
+            </div>
+          ` : ""}
+        </div>
       </div>
     ` : ""}
 
   </div>
 ` : ""}
         <a
-          href="player-profile.html?player=${encodeURIComponent(player.slug)}"
-          class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
-          View Full Profile →
-        </a>
+            href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+            class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
+            View Full Profile →
+          </a>
 
       </article>
-      `;
+          `;
         }).join("");
     }
 
@@ -478,7 +672,7 @@ ${scoring.medal || scoring.stableford ? `
     function highlightButton(button) {
       document
         .querySelectorAll(
-          `.stat-button[data-player="${button.dataset.player}"]`
+          `.stat - button[data - player="${button.dataset.player}"]`
         )
         .forEach(item => {
           item.classList.remove(
@@ -508,20 +702,20 @@ ${scoring.medal || scoring.stableford ? `
 
       if (!wins.length) {
         return `
-      <h3 class="text-xl font-serif mb-2">
+        < h3 class= "text-xl font-serif mb-2" >
         Certified Wins
-      </h3>
+      </h3 >
 
-      <p class="text-sm text-gray-600">
-        No certified career wins recorded.
-      </p>
+          <p class="text-sm text-gray-600">
+            No certified career wins recorded.
+          </p>
       `;
       }
 
       return `
-      <h3 class="text-xl font-serif mb-1">
-        Certified Wins
-      </h3>
+          < h3 class= "text-xl font-serif mb-1" >
+          Certified Wins
+      </h3 >
 
       <p class="text-xs text-gray-500 mb-4">
         ${wins.length}
@@ -579,10 +773,10 @@ ${scoring.medal || scoring.stableford ? `
 
       if (!hof) {
         return `
-      <p class="text-sm text-gray-600">
-        No certified Hall of Fame record.
-      </p>
-      `;
+          < p class= "text-sm text-gray-600" >
+          No certified Hall of Fame record.
+      </p >
+          `;
       }
 
       const scoring =
@@ -643,7 +837,7 @@ ${scoring.medal || scoring.stableford ? `
       ];
 
       return `
-      <div class="flex items-end justify-between gap-4 mb-4">
+          < div class= "flex items-end justify-between gap-4 mb-4" >
 
         <div>
           <h3 class="text-xl font-serif">
@@ -659,7 +853,7 @@ ${scoring.medal || scoring.stableford ? `
           ${hof.score}
         </strong>
 
-      </div>
+      </div >
 
       <div class="space-y-2">
         ${rows
@@ -708,22 +902,22 @@ ${scoring.medal || scoring.stableford ? `
 
       if (!oom.row) {
         return `
-      <h3 class="text-xl font-serif mb-2">
-        Order of Merit
-      </h3>
+          < h3 class= "text-xl font-serif mb-2" >
+          Order of Merit
+      </h3 >
 
-      <p class="text-sm text-gray-600">
-        No points recorded in the current
-        ${escapeHtml(oom.season || "")}
-        season.
-      </p>
+          <p class="text-sm text-gray-600">
+            No points recorded in the current
+            ${escapeHtml(oom.season || "")}
+            season.
+          </p>
       `;
       }
 
       const row = oom.row;
 
       return `
-      <div class="flex justify-between gap-4 mb-4">
+          < div class= "flex justify-between gap-4 mb-4" >
 
         <div>
           <h3 class="text-xl font-serif">
@@ -746,7 +940,7 @@ ${scoring.medal || scoring.stableford ? `
           </p>
         </div>
 
-      </div>
+      </div >
 
       <div class="space-y-2">
 
@@ -844,20 +1038,20 @@ ${scoring.medal || scoring.stableford ? `
 
       if (!rows.length) {
         return `
-      <h3 class="text-xl font-serif mb-2">
+        < h3 class= "text-xl font-serif mb-2" >
         Certified Top 3 Finishes
-      </h3>
+      </h3 >
 
-      <p class="text-sm text-gray-600">
-        No certified Top 3 finishes recorded.
-      </p>
+          <p class="text-sm text-gray-600">
+            No certified Top 3 finishes recorded.
+          </p>
       `;
       }
 
       return `
-      <h3 class="text-xl font-serif mb-1">
-        Certified Top 3 Finishes
-      </h3>
+          < h3 class= "text-xl font-serif mb-1" >
+          Certified Top 3 Finishes
+      </h3 >
 
       <p class="text-xs text-gray-500 mb-4">
         ${rows.length}
@@ -925,7 +1119,7 @@ ${scoring.medal || scoring.stableford ? `
 
           const panel =
             document.querySelector(
-              `[data-stat-panel="${slug}"]`
+              `[data - stat - panel= "${slug}"]`
             );
 
           const player =
@@ -990,9 +1184,9 @@ ${scoring.medal || scoring.stableford ? `
 
           if (stat === "top3") {
             panel.innerHTML = `
-            <p class="text-sm text-gray-500">
-              Loading certified Top 3 evidence...
-            </p>
+        < p class= "text-sm text-gray-500" >
+        Loading certified Top 3 evidence...
+            </p >
           `;
 
             try {
@@ -1002,10 +1196,10 @@ ${scoring.medal || scoring.stableford ? `
               console.error(error);
 
               panel.innerHTML = `
-      <p class="text-sm text-red-700">
-        Unable to load certified Top 3 evidence.
-      </p>
-      `;
+          < p class= "text-sm text-red-700" >
+          Unable to load certified Top 3 evidence.
+      </p >
+          `;
             }
           }
         }
@@ -1015,44 +1209,52 @@ ${scoring.medal || scoring.stableford ? `
       .getElementById("search")
       .addEventListener(
         "input",
-        event => {
-
-          const term =
-            event.target.value
-              .toLowerCase()
-              .trim();
-
-          const filtered =
-            activePlayers
-              .filter(player =>
-                (
-                  player.hero?.name ||
-                  ""
-                )
-                  .toLowerCase()
-                  .includes(term)
-              )
-              .sort((a, b) =>
-                (
-                  a.hero?.name ||
-                  ""
-                ).localeCompare(
-                  b.hero?.name ||
-                  ""
-                )
-              );
-
-          renderPlayers(filtered);
+        () => {
+          applyPlayerFilters();
         }
       );
+    document
+      .querySelectorAll(".player-filter")
+      .forEach(button => {
+        button.addEventListener(
+          "click",
+          () => {
+            currentPlayerFilter =
+              button.dataset.playerFilter;
 
+            document
+              .querySelectorAll(".player-filter")
+              .forEach(item => {
+                const selected =
+                  item === button;
+
+                item.classList.toggle(
+                  "bg-[#132419]",
+                  selected
+                );
+
+                item.classList.toggle(
+                  "text-white",
+                  selected
+                );
+
+                item.classList.toggle(
+                  "bg-white",
+                  !selected
+                );
+              });
+
+            applyPlayerFilters();
+          }
+        );
+      });
     loadPlayers().catch(error => {
       console.error(error);
 
       document.getElementById(
         "players"
       ).innerHTML = `
-      <div class="col-span-full text-center py-16">
+          < div class= "col-span-full text-center py-16" >
         <h2 class="text-2xl font-serif mb-3">
           Player Index unavailable
         </h2>
@@ -1060,7 +1262,7 @@ ${scoring.medal || scoring.stableford ? `
         <p class="text-gray-600">
           Certified player data could not be loaded.
         </p>
-      </div>
+      </div >
     `;
     });
   </script>

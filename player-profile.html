@@ -120,25 +120,70 @@
       const name =
         normalise(player.hero?.name);
 
-      const medal =
-        metric?.leaderboards
-          ?.eighteenHole
-          ?.nett
-          ?.find(row =>
+      function findPlayer(rows) {
+        return (
+          rows?.find(row =>
             normalise(row.playerName) === name
-          ) || null;
-
-      const stableford =
-        metric?.leaderboards
-          ?.eighteenHole
-          ?.stableford
-          ?.find(row =>
-            normalise(row.playerName) === name
-          ) || null;
+          ) || null
+        );
+      }
 
       return {
-        medal,
-        stableford
+        mens: {
+          medal:
+            findPlayer(
+              metric?.sectionLeaderboards
+                ?.mens
+                ?.eighteenHole
+                ?.nett
+            ),
+
+          stableford:
+            findPlayer(
+              metric?.sectionLeaderboards
+                ?.mens
+                ?.eighteenHole
+                ?.stableford
+            )
+        },
+
+        seniors: {
+          nineHole: {
+            medal:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.nineHole
+                  ?.nett
+              ),
+
+            stableford:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.nineHole
+                  ?.stableford
+              )
+          },
+
+          eighteenHole: {
+            medal:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.eighteenHole
+                  ?.nett
+              ),
+
+            stableford:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.eighteenHole
+                  ?.stableford
+              )
+          }
+        }
       };
     }
     async function loadLedger() {
@@ -734,7 +779,23 @@
 ${(() => {
           const scoring = getCertifiedScoringAverages(player);
 
-          if (!scoring.medal && !scoring.stableford) {
+          const hasMens =
+            scoring.mens.medal ||
+            scoring.mens.stableford;
+
+          const hasSeniors9 =
+            scoring.seniors.nineHole.medal ||
+            scoring.seniors.nineHole.stableford;
+
+          const hasSeniors18 =
+            scoring.seniors.eighteenHole.medal ||
+            scoring.seniors.eighteenHole.stableford;
+
+          if (
+            !hasMens &&
+            !hasSeniors9 &&
+            !hasSeniors18
+          ) {
             return "";
           }
 
@@ -748,37 +809,137 @@ ${(() => {
         Career Scoring Averages
       </h2>
 
-      <div class="grid sm:grid-cols-2 gap-4">
+      <div class="space-y-6">
 
-        ${scoring.medal ? `
-          <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
-            <p class="text-sm text-gray-500 mb-1">
-             Career Medal Nett Average
-            </p>
+        ${hasMens ? `
+          <div>
+            <h3 class="text-lg font-serif mb-3">
+              Mens 18-Hole
+            </h3>
 
-            <strong class="text-3xl font-serif text-[#132419]">
-              ${escapeHtml(scoring.medal.average)}
-            </strong>
+            <div class="grid sm:grid-cols-2 gap-4">
 
-            <p class="text-sm text-gray-600 mt-2">
-              ${escapeHtml(scoring.medal.rounds)} qualifying medal rounds
-            </p>
+              ${scoring.mens.medal ? `
+                <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+                  <p class="text-sm text-gray-500 mb-1">
+                    Medal Nett Average
+                  </p>
+
+                  <strong class="text-3xl font-serif text-[#132419]">
+                    ${escapeHtml(scoring.mens.medal.average)}
+                  </strong>
+
+                  <p class="text-sm text-gray-600 mt-2">
+                    ${escapeHtml(scoring.mens.medal.rounds)} qualifying medal rounds
+                  </p>
+                </div>
+              ` : ""}
+
+              ${scoring.mens.stableford ? `
+                <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+                  <p class="text-sm text-gray-500 mb-1">
+                    Stableford Average
+                  </p>
+
+                  <strong class="text-3xl font-serif text-[#132419]">
+                    ${escapeHtml(scoring.mens.stableford.average)} pts
+                  </strong>
+
+                  <p class="text-sm text-gray-600 mt-2">
+                    ${escapeHtml(scoring.mens.stableford.rounds)} qualifying Stableford rounds
+                  </p>
+                </div>
+              ` : ""}
+
+            </div>
           </div>
         ` : ""}
 
-        ${scoring.stableford ? `
-          <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
-            <p class="text-sm text-gray-500 mb-1">
-              Career Stableford Average
-            </p>
+        ${hasSeniors9 ? `
+          <div>
+            <h3 class="text-lg font-serif mb-3">
+              Seniors 9-Hole
+            </h3>
 
-            <strong class="text-3xl font-serif text-[#132419]">
-              ${escapeHtml(scoring.stableford.average)} pts
-            </strong>
+            <div class="grid sm:grid-cols-2 gap-4">
 
-            <p class="text-sm text-gray-600 mt-2">
-              ${escapeHtml(scoring.stableford.rounds)} qualifying Stableford rounds
-            </p>
+              ${scoring.seniors.nineHole.medal ? `
+                <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+                  <p class="text-sm text-gray-500 mb-1">
+                    Nett Average
+                  </p>
+
+                  <strong class="text-3xl font-serif text-[#132419]">
+                    ${escapeHtml(scoring.seniors.nineHole.medal.average)}
+                  </strong>
+
+                  <p class="text-sm text-gray-600 mt-2">
+                    ${escapeHtml(scoring.seniors.nineHole.medal.rounds)} qualifying Seniors rounds
+                  </p>
+                </div>
+              ` : ""}
+
+              ${scoring.seniors.nineHole.stableford ? `
+                <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+                  <p class="text-sm text-gray-500 mb-1">
+                    Stableford Average
+                  </p>
+
+                  <strong class="text-3xl font-serif text-[#132419]">
+                    ${escapeHtml(scoring.seniors.nineHole.stableford.average)} pts
+                  </strong>
+
+                  <p class="text-sm text-gray-600 mt-2">
+                    ${escapeHtml(scoring.seniors.nineHole.stableford.rounds)} qualifying Seniors rounds
+                  </p>
+                </div>
+              ` : ""}
+
+            </div>
+          </div>
+        ` : ""}
+
+        ${hasSeniors18 ? `
+          <div>
+            <h3 class="text-lg font-serif mb-3">
+              Seniors 18-Hole
+            </h3>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+
+              ${scoring.seniors.eighteenHole.medal ? `
+                <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+                  <p class="text-sm text-gray-500 mb-1">
+                    Nett Average
+                  </p>
+
+                  <strong class="text-3xl font-serif text-[#132419]">
+                    ${escapeHtml(scoring.seniors.eighteenHole.medal.average)}
+                  </strong>
+
+                  <p class="text-sm text-gray-600 mt-2">
+                    ${escapeHtml(scoring.seniors.eighteenHole.medal.rounds)} qualifying Seniors rounds
+                  </p>
+                </div>
+              ` : ""}
+
+              ${scoring.seniors.eighteenHole.stableford ? `
+                <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+                  <p class="text-sm text-gray-500 mb-1">
+                    Stableford Average
+                  </p>
+
+                  <strong class="text-3xl font-serif text-[#132419]">
+                    ${escapeHtml(scoring.seniors.eighteenHole.stableford.average)} pts
+                  </strong>
+
+                  <p class="text-sm text-gray-600 mt-2">
+                    ${escapeHtml(scoring.seniors.eighteenHole.stableford.rounds)} qualifying Seniors rounds
+                  </p>
+                </div>
+              ` : ""}
+
+            </div>
           </div>
         ` : ""}
 
