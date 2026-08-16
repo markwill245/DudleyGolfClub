@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-16T19:42:25.224Z",
+  "generatedAt": "2026-08-16T21:37:30.482Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -54,7 +54,7 @@
         "historicalBoardWins": 833,
         "rawWinnerOccurrences": 1563,
         "certifiedPlayerWins": 1459,
-        "uniqueWinningPlayers": 521,
+        "uniqueWinningPlayers": 520,
         "duplicatePlayerEventOccurrences": 104,
         "externalParticipantOccurrences": 0,
         "unresolvedPlayerOccurrences": 0,
@@ -94,6 +94,10 @@
         {
           "playerName": "Gerald Paul Crowley",
           "wins": 16
+        },
+        {
+          "playerName": "Ian Frederick Stevens",
+          "wins": 13
         },
         {
           "playerName": "James Stevens",
@@ -162,10 +166,6 @@
         {
           "playerName": "Tony John Salt",
           "wins": 10
-        },
-        {
-          "playerName": "Ian Frederick Stevens",
-          "wins": 9
         },
         {
           "playerName": "Kevin John Hartland",
@@ -469,10 +469,6 @@
         },
         {
           "playerName": "Graham Morgan",
-          "wins": 4
-        },
-        {
-          "playerName": "Ian Stevens",
           "wins": 4
         },
         {
@@ -7381,7 +7377,7 @@
           "sourceLabel": "Thompson Shield"
         },
         {
-          "playerName": "Ian Stevens",
+          "playerName": "Ian Frederick Stevens",
           "competitionId": "tom-poole-cup",
           "awardId": "boardWinner",
           "year": 2004,
@@ -8002,7 +7998,7 @@
           "sourceLabel": "overallWinner"
         },
         {
-          "playerName": "Ian Stevens",
+          "playerName": "Ian Frederick Stevens",
           "competitionId": "tom-poole-cup",
           "awardId": "overallWinner",
           "year": 2006,
@@ -9847,7 +9843,7 @@
           "sourceLabel": "Tom Poole Trophy"
         },
         {
-          "playerName": "Ian Stevens",
+          "playerName": "Ian Frederick Stevens",
           "competitionId": "tom-poole-cup",
           "awardId": "boardWinner",
           "year": 2015,
@@ -10054,7 +10050,7 @@
           "sourceLabel": "Tom Poole Trophy"
         },
         {
-          "playerName": "Ian Stevens",
+          "playerName": "Ian Frederick Stevens",
           "competitionId": "tom-poole-cup",
           "awardId": "boardWinner",
           "year": 2016,
@@ -16680,6 +16676,10 @@
           "finishes": 15
         },
         {
+          "playerName": "Ian Frederick Stevens",
+          "finishes": 15
+        },
+        {
           "playerName": "M.j. Davies",
           "finishes": 15
         },
@@ -16689,10 +16689,6 @@
         },
         {
           "playerName": "Gerald Paul Crowley",
-          "finishes": 14
-        },
-        {
-          "playerName": "Ian Frederick Stevens",
           "finishes": 14
         },
         {
@@ -17476,10 +17472,6 @@
           "finishes": 1
         },
         {
-          "playerName": "Ian Stevens",
-          "finishes": 1
-        },
-        {
           "playerName": "Ian Woodward",
           "finishes": 1
         },
@@ -17978,7 +17970,7 @@
         },
         {
           "playerName": "Ian Frederick Stevens",
-          "finishes": 57
+          "finishes": 58
         },
         {
           "playerName": "Mark Andrew Poulding",
@@ -19037,10 +19029,6 @@
           "finishes": 1
         },
         {
-          "playerName": "Ian Stevens",
-          "finishes": 1
-        },
-        {
           "playerName": "J. Feakes",
           "finishes": 1
         },
@@ -19482,7 +19470,7 @@
         },
         {
           "playerName": "Ian Frederick Stevens",
-          "appearances": 153
+          "appearances": 154
         },
         {
           "playerName": "Tim Mark Wright",
@@ -20809,10 +20797,6 @@
           "appearances": 1
         },
         {
-          "playerName": "Ian Stevens",
-          "appearances": 1
-        },
-        {
           "playerName": "J. Feakes",
           "appearances": 1
         },
@@ -21316,17 +21300,17 @@
         "inferScoreTypes": false
       },
       "totals": {
-        "competitions": 69,
-        "uniqueEvents": 203,
+        "competitions": 68,
+        "uniqueEvents": 190,
         "resultRowsChecked": 13578,
-        "eligibleRows": 7678,
-        "rawPlayerScoreOccurrences": 7678,
-        "certifiedPlayerScores": 7677,
+        "eligibleRows": 7225,
+        "rawPlayerScoreOccurrences": 7225,
+        "certifiedPlayerScores": 7224,
         "duplicatePlayerEventScores": 1,
         "certifiedScoresByType": {
           "gross": 0,
           "nett": 2868,
-          "stableford": 4809
+          "stableford": 4356
         },
         "leaderboardPlayers": {
           "nineHole": {
@@ -21337,7 +21321,7 @@
           "eighteenHole": {
             "gross": 0,
             "nett": 117,
-            "stableford": 176
+            "stableford": 175
           },
           "thirtySixHole": {
             "gross": 0,
@@ -21354,7 +21338,7 @@
           "eighteenHole": {
             "gross": 0,
             "nett": 2031,
-            "stableford": 4076
+            "stableford": 3623
           },
           "thirtySixHole": {
             "gross": 0,
@@ -21365,11 +21349,11 @@
         "excludedTeamRows": 2484,
         "excludedBoardRows": 48,
         "excludedMatchplayRows": 0,
-        "excludedNonFinishingRows": 728,
+        "excludedNonFinishingRows": 725,
         "excludedIncompleteRows": 24,
         "excludedUnknownScoreTypeRows": 7,
         "excludedMultiRoundRows": 0,
-        "excludedNonCompetitiveRows": 1129,
+        "excludedNonCompetitiveRows": 1585,
         "excludedMixedTableRows": 1392,
         "excludedMixedTableEvents": 14,
         "uncertifiedHoleLengthRows": 0,
@@ -23139,6 +23123,14 @@
           ],
           "stableford": [
             {
+              "playerName": "Adam Farley",
+              "rounds": 8,
+              "totalScore": 283,
+              "average": 35.38,
+              "lowestScore": 30,
+              "highestScore": 41
+            },
+            {
               "playerName": "Stuart Baker",
               "rounds": 7,
               "totalScore": 238,
@@ -23155,12 +23147,20 @@
               "highestScore": 45
             },
             {
-              "playerName": "Alan Ball",
-              "rounds": 34,
-              "totalScore": 1149,
-              "average": 33.79,
+              "playerName": "Jason Gregory",
+              "rounds": 5,
+              "totalScore": 170,
+              "average": 34,
+              "lowestScore": 29,
+              "highestScore": 38
+            },
+            {
+              "playerName": "Craig Watchorn",
+              "rounds": 7,
+              "totalScore": 236,
+              "average": 33.71,
               "lowestScore": 26,
-              "highestScore": 43
+              "highestScore": 39
             },
             {
               "playerName": "Richard Weston",
@@ -23171,12 +23171,20 @@
               "highestScore": 41
             },
             {
-              "playerName": "Adam Bonehill",
-              "rounds": 20,
-              "totalScore": 668,
-              "average": 33.4,
-              "lowestScore": 20,
+              "playerName": "Alan Ball",
+              "rounds": 29,
+              "totalScore": 968,
+              "average": 33.38,
+              "lowestScore": 26,
               "highestScore": 42
+            },
+            {
+              "playerName": "Lewis Jones",
+              "rounds": 29,
+              "totalScore": 964,
+              "average": 33.24,
+              "lowestScore": 25,
+              "highestScore": 41
             },
             {
               "playerName": "Trevor Norton",
@@ -23195,22 +23203,6 @@
               "highestScore": 42
             },
             {
-              "playerName": "Lewis Jones",
-              "rounds": 33,
-              "totalScore": 1086,
-              "average": 32.91,
-              "lowestScore": 24,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Lee Roger Grainger",
-              "rounds": 38,
-              "totalScore": 1248,
-              "average": 32.84,
-              "lowestScore": 24,
-              "highestScore": 41
-            },
-            {
               "playerName": "Scott Harrison",
               "rounds": 6,
               "totalScore": 197,
@@ -23219,12 +23211,20 @@
               "highestScore": 45
             },
             {
-              "playerName": "Christopher Fereday",
-              "rounds": 8,
-              "totalScore": 262,
-              "average": 32.75,
-              "lowestScore": 28,
-              "highestScore": 39
+              "playerName": "Lee Roger Grainger",
+              "rounds": 34,
+              "totalScore": 1116,
+              "average": 32.82,
+              "lowestScore": 24,
+              "highestScore": 41
+            },
+            {
+              "playerName": "Adam Bonehill",
+              "rounds": 11,
+              "totalScore": 361,
+              "average": 32.82,
+              "lowestScore": 20,
+              "highestScore": 42
             },
             {
               "playerName": "Harry Pearce-Williams",
@@ -23235,12 +23235,12 @@
               "highestScore": 38
             },
             {
-              "playerName": "Richard Limb",
-              "rounds": 51,
-              "totalScore": 1663,
-              "average": 32.61,
-              "lowestScore": 22,
-              "highestScore": 43
+              "playerName": "Christopher Fereday",
+              "rounds": 5,
+              "totalScore": 163,
+              "average": 32.6,
+              "lowestScore": 28,
+              "highestScore": 39
             },
             {
               "playerName": "Josh Williams",
@@ -23251,22 +23251,6 @@
               "highestScore": 37
             },
             {
-              "playerName": "Sean Element",
-              "rounds": 38,
-              "totalScore": 1237,
-              "average": 32.55,
-              "lowestScore": 16,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Paul Andrew Birch",
-              "rounds": 11,
-              "totalScore": 358,
-              "average": 32.55,
-              "lowestScore": 19,
-              "highestScore": 39
-            },
-            {
               "playerName": "David Postin",
               "rounds": 13,
               "totalScore": 422,
@@ -23275,27 +23259,19 @@
               "highestScore": 36
             },
             {
-              "playerName": "Mark Dando",
-              "rounds": 27,
-              "totalScore": 876,
+              "playerName": "Neil Hartland",
+              "rounds": 41,
+              "totalScore": 1330,
               "average": 32.44,
-              "lowestScore": 17,
-              "highestScore": 43
+              "lowestScore": 25,
+              "highestScore": 41
             },
             {
-              "playerName": "Jason Gregory",
-              "rounds": 7,
-              "totalScore": 227,
-              "average": 32.43,
-              "lowestScore": 28,
-              "highestScore": 38
-            },
-            {
-              "playerName": "Craig Watchorn",
-              "rounds": 11,
-              "totalScore": 356,
-              "average": 32.36,
-              "lowestScore": 21,
+              "playerName": "Paul Andrew Birch",
+              "rounds": 8,
+              "totalScore": 259,
+              "average": 32.38,
+              "lowestScore": 19,
               "highestScore": 39
             },
             {
@@ -23307,20 +23283,44 @@
               "highestScore": 37
             },
             {
+              "playerName": "Richard Limb",
+              "rounds": 38,
+              "totalScore": 1224,
+              "average": 32.21,
+              "lowestScore": 22,
+              "highestScore": 43
+            },
+            {
               "playerName": "Anthony Willetts",
-              "rounds": 34,
-              "totalScore": 1094,
-              "average": 32.18,
+              "rounds": 27,
+              "totalScore": 869,
+              "average": 32.19,
               "lowestScore": 21,
               "highestScore": 40
             },
             {
-              "playerName": "Adrian Clift",
+              "playerName": "Steve Homer",
+              "rounds": 41,
+              "totalScore": 1315,
+              "average": 32.07,
+              "lowestScore": 24,
+              "highestScore": 43
+            },
+            {
+              "playerName": "Sean Element",
+              "rounds": 33,
+              "totalScore": 1057,
+              "average": 32.03,
+              "lowestScore": 16,
+              "highestScore": 41
+            },
+            {
+              "playerName": "Gary William Stubbs",
               "rounds": 9,
               "totalScore": 288,
               "average": 32,
               "lowestScore": 26,
-              "highestScore": 36
+              "highestScore": 43
             },
             {
               "playerName": "Jason Bates",
@@ -23339,30 +23339,6 @@
               "highestScore": 42
             },
             {
-              "playerName": "Ian Frederick Stevens",
-              "rounds": 45,
-              "totalScore": 1439,
-              "average": 31.98,
-              "lowestScore": 18,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Neil Hartland",
-              "rounds": 47,
-              "totalScore": 1502,
-              "average": 31.96,
-              "lowestScore": 21,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Steve Homer",
-              "rounds": 54,
-              "totalScore": 1725,
-              "average": 31.94,
-              "lowestScore": 24,
-              "highestScore": 43
-            },
-            {
               "playerName": "Sidney Hickman",
               "rounds": 10,
               "totalScore": 319,
@@ -23371,36 +23347,36 @@
               "highestScore": 39
             },
             {
+              "playerName": "Mark A. Williams",
+              "rounds": 36,
+              "totalScore": 1148,
+              "average": 31.89,
+              "lowestScore": 20,
+              "highestScore": 39
+            },
+            {
+              "playerName": "Darren Element",
+              "rounds": 22,
+              "totalScore": 699,
+              "average": 31.77,
+              "lowestScore": 22,
+              "highestScore": 39
+            },
+            {
               "playerName": "James Stevens",
-              "rounds": 54,
-              "totalScore": 1719,
-              "average": 31.83,
+              "rounds": 48,
+              "totalScore": 1521,
+              "average": 31.69,
               "lowestScore": 9,
               "highestScore": 44
             },
             {
-              "playerName": "Stephen Brian Hopkins",
+              "playerName": "Robert Shedden",
               "rounds": 39,
-              "totalScore": 1241,
-              "average": 31.82,
-              "lowestScore": 17,
-              "highestScore": 42
-            },
-            {
-              "playerName": "Christopher Churchman",
-              "rounds": 9,
-              "totalScore": 285,
-              "average": 31.67,
-              "lowestScore": 25,
-              "highestScore": 38
-            },
-            {
-              "playerName": "Darren Element",
-              "rounds": 24,
-              "totalScore": 759,
-              "average": 31.63,
-              "lowestScore": 22,
-              "highestScore": 39
+              "totalScore": 1234,
+              "average": 31.64,
+              "lowestScore": 20,
+              "highestScore": 41
             },
             {
               "playerName": "David Jeavons",
@@ -23408,6 +23384,14 @@
               "totalScore": 601,
               "average": 31.63,
               "lowestScore": 24,
+              "highestScore": 38
+            },
+            {
+              "playerName": "Christopher Churchman",
+              "rounds": 8,
+              "totalScore": 253,
+              "average": 31.63,
+              "lowestScore": 25,
               "highestScore": 38
             },
             {
@@ -23419,28 +23403,28 @@
               "highestScore": 41
             },
             {
-              "playerName": "Robert Keith Woodall",
-              "rounds": 39,
-              "totalScore": 1231,
-              "average": 31.56,
-              "lowestScore": 15,
-              "highestScore": 42
-            },
-            {
-              "playerName": "Mark A. Williams",
+              "playerName": "Gary Baker",
               "rounds": 44,
-              "totalScore": 1388,
-              "average": 31.55,
-              "lowestScore": 20,
-              "highestScore": 39
+              "totalScore": 1390,
+              "average": 31.59,
+              "lowestScore": 22,
+              "highestScore": 43
             },
             {
-              "playerName": "Robert Shedden",
-              "rounds": 47,
-              "totalScore": 1481,
-              "average": 31.51,
-              "lowestScore": 20,
-              "highestScore": 41
+              "playerName": "Adrian Clift",
+              "rounds": 7,
+              "totalScore": 221,
+              "average": 31.57,
+              "lowestScore": 26,
+              "highestScore": 36
+            },
+            {
+              "playerName": "Mark Dando",
+              "rounds": 22,
+              "totalScore": 694,
+              "average": 31.55,
+              "lowestScore": 17,
+              "highestScore": 39
             },
             {
               "playerName": "Karl Matthew Ashmore",
@@ -23460,43 +23444,27 @@
             },
             {
               "playerName": "David Hobley",
-              "rounds": 38,
-              "totalScore": 1193,
-              "average": 31.39,
+              "rounds": 29,
+              "totalScore": 910,
+              "average": 31.38,
               "lowestScore": 14,
               "highestScore": 40
             },
             {
-              "playerName": "Clive Peter Gould",
-              "rounds": 40,
-              "totalScore": 1255,
-              "average": 31.38,
-              "lowestScore": 22,
-              "highestScore": 39
-            },
-            {
               "playerName": "Nigel Brookes",
-              "rounds": 51,
-              "totalScore": 1597,
-              "average": 31.31,
+              "rounds": 40,
+              "totalScore": 1254,
+              "average": 31.35,
               "lowestScore": 5,
               "highestScore": 37
             },
             {
-              "playerName": "Keith Durbridge",
-              "rounds": 53,
-              "totalScore": 1659,
-              "average": 31.3,
-              "lowestScore": 14,
-              "highestScore": 40
-            },
-            {
-              "playerName": "Gary Baker",
-              "rounds": 50,
-              "totalScore": 1565,
-              "average": 31.3,
-              "lowestScore": 22,
-              "highestScore": 43
+              "playerName": "Paul Harper",
+              "rounds": 31,
+              "totalScore": 971,
+              "average": 31.32,
+              "lowestScore": 20,
+              "highestScore": 44
             },
             {
               "playerName": "Gary Male",
@@ -23507,12 +23475,28 @@
               "highestScore": 41
             },
             {
+              "playerName": "Simon Nunn",
+              "rounds": 7,
+              "totalScore": 219,
+              "average": 31.29,
+              "lowestScore": 27,
+              "highestScore": 36
+            },
+            {
               "playerName": "Philip Thompson",
-              "rounds": 34,
-              "totalScore": 1063,
-              "average": 31.26,
+              "rounds": 30,
+              "totalScore": 938,
+              "average": 31.27,
               "lowestScore": 9,
               "highestScore": 42
+            },
+            {
+              "playerName": "Ian Frederick Stevens",
+              "rounds": 36,
+              "totalScore": 1125,
+              "average": 31.25,
+              "lowestScore": 18,
+              "highestScore": 39
             },
             {
               "playerName": "Kevin Eric Conn",
@@ -23521,14 +23505,6 @@
               "average": 31.23,
               "lowestScore": 25,
               "highestScore": 38
-            },
-            {
-              "playerName": "Adam Farley",
-              "rounds": 10,
-              "totalScore": 312,
-              "average": 31.2,
-              "lowestScore": 0,
-              "highestScore": 41
             },
             {
               "playerName": "Carl Elsworth",
@@ -23547,20 +23523,12 @@
               "highestScore": 38
             },
             {
-              "playerName": "Paul Harper",
-              "rounds": 34,
-              "totalScore": 1059,
-              "average": 31.15,
-              "lowestScore": 20,
-              "highestScore": 44
-            },
-            {
-              "playerName": "Darren Povey",
-              "rounds": 12,
-              "totalScore": 373,
-              "average": 31.08,
-              "lowestScore": 26,
-              "highestScore": 37
+              "playerName": "Keith Durbridge",
+              "rounds": 47,
+              "totalScore": 1463,
+              "average": 31.13,
+              "lowestScore": 14,
+              "highestScore": 40
             },
             {
               "playerName": "Michael John Kendrick",
@@ -23595,6 +23563,22 @@
               "highestScore": 44
             },
             {
+              "playerName": "Stephen Brian Hopkins",
+              "rounds": 28,
+              "totalScore": 865,
+              "average": 30.89,
+              "lowestScore": 17,
+              "highestScore": 42
+            },
+            {
+              "playerName": "Stephen Hall",
+              "rounds": 62,
+              "totalScore": 1913,
+              "average": 30.85,
+              "lowestScore": 5,
+              "highestScore": 40
+            },
+            {
               "playerName": "Brett Denis Gilbert",
               "rounds": 13,
               "totalScore": 401,
@@ -23611,20 +23595,44 @@
               "highestScore": 39
             },
             {
+              "playerName": "Clive Peter Gould",
+              "rounds": 29,
+              "totalScore": 893,
+              "average": 30.79,
+              "lowestScore": 22,
+              "highestScore": 39
+            },
+            {
               "playerName": "Gavin Ray",
-              "rounds": 76,
-              "totalScore": 2341,
-              "average": 30.8,
+              "rounds": 65,
+              "totalScore": 2001,
+              "average": 30.78,
               "lowestScore": 13,
               "highestScore": 42
             },
             {
-              "playerName": "Simon Nunn",
-              "rounds": 11,
-              "totalScore": 338,
+              "playerName": "Michael Williams",
+              "rounds": 42,
+              "totalScore": 1292,
+              "average": 30.76,
+              "lowestScore": 20,
+              "highestScore": 44
+            },
+            {
+              "playerName": "Robert Keith Woodall",
+              "rounds": 33,
+              "totalScore": 1014,
               "average": 30.73,
-              "lowestScore": 23,
-              "highestScore": 36
+              "lowestScore": 15,
+              "highestScore": 42
+            },
+            {
+              "playerName": "Jason Watchorn",
+              "rounds": 25,
+              "totalScore": 767,
+              "average": 30.68,
+              "lowestScore": 19,
+              "highestScore": 38
             },
             {
               "playerName": "Dean Johnson",
@@ -23635,19 +23643,27 @@
               "highestScore": 38
             },
             {
-              "playerName": "Michael Williams",
-              "rounds": 50,
-              "totalScore": 1525,
-              "average": 30.5,
-              "lowestScore": 17,
-              "highestScore": 44
-            },
-            {
               "playerName": "Darren Jones",
               "rounds": 32,
               "totalScore": 976,
               "average": 30.5,
               "lowestScore": 24,
+              "highestScore": 41
+            },
+            {
+              "playerName": "Andrew Russell",
+              "rounds": 16,
+              "totalScore": 487,
+              "average": 30.44,
+              "lowestScore": 16,
+              "highestScore": 38
+            },
+            {
+              "playerName": "Calin Tiplea",
+              "rounds": 51,
+              "totalScore": 1552,
+              "average": 30.43,
+              "lowestScore": 5,
               "highestScore": 41
             },
             {
@@ -23659,20 +23675,12 @@
               "highestScore": 35
             },
             {
-              "playerName": "Stephen Hall",
-              "rounds": 72,
-              "totalScore": 2190,
-              "average": 30.42,
-              "lowestScore": 1,
-              "highestScore": 40
-            },
-            {
-              "playerName": "Gary William Stubbs",
-              "rounds": 14,
-              "totalScore": 425,
-              "average": 30.36,
-              "lowestScore": 20,
-              "highestScore": 43
+              "playerName": "Darren Povey",
+              "rounds": 8,
+              "totalScore": 243,
+              "average": 30.38,
+              "lowestScore": 26,
+              "highestScore": 37
             },
             {
               "playerName": "Christopher Longhurst",
@@ -23683,60 +23691,20 @@
               "highestScore": 37
             },
             {
-              "playerName": "Calin Tiplea",
-              "rounds": 55,
-              "totalScore": 1668,
-              "average": 30.33,
-              "lowestScore": 5,
-              "highestScore": 41
+              "playerName": "Paul Welch",
+              "rounds": 58,
+              "totalScore": 1754,
+              "average": 30.24,
+              "lowestScore": 20,
+              "highestScore": 40
             },
             {
-              "playerName": "Philip John Northall",
-              "rounds": 51,
-              "totalScore": 1545,
-              "average": 30.29,
-              "lowestScore": 17,
-              "highestScore": 39
-            },
-            {
-              "playerName": "Stephen Langford",
-              "rounds": 17,
-              "totalScore": 515,
-              "average": 30.29,
-              "lowestScore": 15,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Jason Watchorn",
-              "rounds": 35,
-              "totalScore": 1059,
-              "average": 30.26,
-              "lowestScore": 19,
-              "highestScore": 38
-            },
-            {
-              "playerName": "Graham Morgan",
-              "rounds": 24,
-              "totalScore": 725,
-              "average": 30.21,
-              "lowestScore": 21,
-              "highestScore": 37
-            },
-            {
-              "playerName": "Neil Hanley",
-              "rounds": 36,
-              "totalScore": 1087,
+              "playerName": "Adam Stanfield",
+              "rounds": 42,
+              "totalScore": 1268,
               "average": 30.19,
-              "lowestScore": 19,
-              "highestScore": 37
-            },
-            {
-              "playerName": "Scott Postin",
-              "rounds": 35,
-              "totalScore": 1056,
-              "average": 30.17,
-              "lowestScore": 0,
-              "highestScore": 41
+              "lowestScore": 7,
+              "highestScore": 39
             },
             {
               "playerName": "Bradley Leadbeater",
@@ -23745,14 +23713,6 @@
               "average": 30.17,
               "lowestScore": 27,
               "highestScore": 35
-            },
-            {
-              "playerName": "Paul Welch",
-              "rounds": 63,
-              "totalScore": 1900,
-              "average": 30.16,
-              "lowestScore": 20,
-              "highestScore": 40
             },
             {
               "playerName": "Linda Rafferty",
@@ -23771,36 +23731,20 @@
               "highestScore": 42
             },
             {
-              "playerName": "Mark Neil Tolley",
-              "rounds": 24,
-              "totalScore": 720,
-              "average": 30,
-              "lowestScore": 23,
-              "highestScore": 40
+              "playerName": "Philip John Northall",
+              "rounds": 40,
+              "totalScore": 1203,
+              "average": 30.07,
+              "lowestScore": 17,
+              "highestScore": 39
             },
             {
-              "playerName": "Richard Price",
-              "rounds": 17,
-              "totalScore": 510,
-              "average": 30,
-              "lowestScore": 23,
+              "playerName": "Tim Mark Wright",
+              "rounds": 49,
+              "totalScore": 1468,
+              "average": 29.96,
+              "lowestScore": 17,
               "highestScore": 42
-            },
-            {
-              "playerName": "Gerald Paul Crowley",
-              "rounds": 64,
-              "totalScore": 1915,
-              "average": 29.92,
-              "lowestScore": 11,
-              "highestScore": 40
-            },
-            {
-              "playerName": "George Brookes",
-              "rounds": 12,
-              "totalScore": 359,
-              "average": 29.92,
-              "lowestScore": 8,
-              "highestScore": 36
             },
             {
               "playerName": "M T Cowdell",
@@ -23819,6 +23763,30 @@
               "highestScore": 42
             },
             {
+              "playerName": "Neil Hanley",
+              "rounds": 30,
+              "totalScore": 896,
+              "average": 29.87,
+              "lowestScore": 19,
+              "highestScore": 37
+            },
+            {
+              "playerName": "Gerald Paul Crowley",
+              "rounds": 59,
+              "totalScore": 1762,
+              "average": 29.86,
+              "lowestScore": 11,
+              "highestScore": 40
+            },
+            {
+              "playerName": "Richard Price",
+              "rounds": 14,
+              "totalScore": 418,
+              "average": 29.86,
+              "lowestScore": 25,
+              "highestScore": 38
+            },
+            {
               "playerName": "Liam Harding",
               "rounds": 7,
               "totalScore": 209,
@@ -23835,14 +23803,6 @@
               "highestScore": 35
             },
             {
-              "playerName": "Adam Stanfield",
-              "rounds": 50,
-              "totalScore": 1491,
-              "average": 29.82,
-              "lowestScore": 7,
-              "highestScore": 39
-            },
-            {
               "playerName": "Nigel Figg",
               "rounds": 11,
               "totalScore": 328,
@@ -23851,20 +23811,28 @@
               "highestScore": 33
             },
             {
+              "playerName": "Stephen Langford",
+              "rounds": 11,
+              "totalScore": 328,
+              "average": 29.82,
+              "lowestScore": 15,
+              "highestScore": 41
+            },
+            {
+              "playerName": "Mark Andrew Poulding",
+              "rounds": 30,
+              "totalScore": 894,
+              "average": 29.8,
+              "lowestScore": 23,
+              "highestScore": 44
+            },
+            {
               "playerName": "James Johnson",
               "rounds": 10,
               "totalScore": 298,
               "average": 29.8,
               "lowestScore": 21,
               "highestScore": 38
-            },
-            {
-              "playerName": "William Nunn",
-              "rounds": 10,
-              "totalScore": 298,
-              "average": 29.8,
-              "lowestScore": 17,
-              "highestScore": 35
             },
             {
               "playerName": "Greg Underhill",
@@ -23883,6 +23851,14 @@
               "highestScore": 39
             },
             {
+              "playerName": "Mark Basterfield",
+              "rounds": 19,
+              "totalScore": 564,
+              "average": 29.68,
+              "lowestScore": 8,
+              "highestScore": 38
+            },
+            {
               "playerName": "Scott Whitehall",
               "rounds": 9,
               "totalScore": 267,
@@ -23899,20 +23875,20 @@
               "highestScore": 39
             },
             {
-              "playerName": "Tim Mark Wright",
-              "rounds": 60,
-              "totalScore": 1778,
-              "average": 29.63,
-              "lowestScore": 17,
-              "highestScore": 42
-            },
-            {
               "playerName": "Luke Homer",
               "rounds": 16,
               "totalScore": 474,
               "average": 29.63,
               "lowestScore": 12,
               "highestScore": 40
+            },
+            {
+              "playerName": "Steven Brookes",
+              "rounds": 26,
+              "totalScore": 770,
+              "average": 29.62,
+              "lowestScore": 8,
+              "highestScore": 39
             },
             {
               "playerName": "James Price",
@@ -23931,20 +23907,52 @@
               "highestScore": 40
             },
             {
-              "playerName": "Peter Evans",
-              "rounds": 43,
-              "totalScore": 1264,
-              "average": 29.4,
-              "lowestScore": 14,
+              "playerName": "Dean Hinchcliffe",
+              "rounds": 10,
+              "totalScore": 295,
+              "average": 29.5,
+              "lowestScore": 21,
+              "highestScore": 35
+            },
+            {
+              "playerName": "Scott Postin",
+              "rounds": 25,
+              "totalScore": 737,
+              "average": 29.48,
+              "lowestScore": 0,
+              "highestScore": 41
+            },
+            {
+              "playerName": "Stewart Marshall",
+              "rounds": 20,
+              "totalScore": 589,
+              "average": 29.45,
+              "lowestScore": 13,
               "highestScore": 39
             },
             {
-              "playerName": "Steven Taylor",
-              "rounds": 18,
-              "totalScore": 529,
-              "average": 29.39,
-              "lowestScore": 16,
+              "playerName": "Paul Thomas Donnelly",
+              "rounds": 41,
+              "totalScore": 1206,
+              "average": 29.41,
+              "lowestScore": 3,
+              "highestScore": 45
+            },
+            {
+              "playerName": "Mark Neil Tolley",
+              "rounds": 20,
+              "totalScore": 588,
+              "average": 29.4,
+              "lowestScore": 23,
               "highestScore": 40
+            },
+            {
+              "playerName": "George Brookes",
+              "rounds": 10,
+              "totalScore": 294,
+              "average": 29.4,
+              "lowestScore": 8,
+              "highestScore": 36
             },
             {
               "playerName": "Kelvin Jordan",
@@ -23963,26 +23971,26 @@
               "highestScore": 37
             },
             {
-              "playerName": "Sean Round",
-              "rounds": 10,
-              "totalScore": 293,
-              "average": 29.3,
-              "lowestScore": 17,
-              "highestScore": 40
-            },
-            {
               "playerName": "Kevin Walters",
-              "rounds": 39,
-              "totalScore": 1140,
-              "average": 29.23,
+              "rounds": 31,
+              "totalScore": 908,
+              "average": 29.29,
               "lowestScore": 12,
               "highestScore": 41
             },
             {
+              "playerName": "William Nunn",
+              "rounds": 7,
+              "totalScore": 205,
+              "average": 29.29,
+              "lowestScore": 17,
+              "highestScore": 35
+            },
+            {
               "playerName": "Paul Wayne Taylor",
-              "rounds": 27,
-              "totalScore": 788,
-              "average": 29.19,
+              "rounds": 26,
+              "totalScore": 760,
+              "average": 29.23,
               "lowestScore": 18,
               "highestScore": 42
             },
@@ -23995,12 +24003,12 @@
               "highestScore": 38
             },
             {
-              "playerName": "Steven Brookes",
-              "rounds": 34,
-              "totalScore": 991,
-              "average": 29.15,
-              "lowestScore": 8,
-              "highestScore": 39
+              "playerName": "Sean Round",
+              "rounds": 6,
+              "totalScore": 175,
+              "average": 29.17,
+              "lowestScore": 17,
+              "highestScore": 40
             },
             {
               "playerName": "James Webber",
@@ -24019,11 +24027,43 @@
               "highestScore": 35
             },
             {
+              "playerName": "Tony John Salt",
+              "rounds": 36,
+              "totalScore": 1048,
+              "average": 29.11,
+              "lowestScore": 0,
+              "highestScore": 43
+            },
+            {
               "playerName": "Anthony Fegan",
               "rounds": 18,
               "totalScore": 524,
               "average": 29.11,
               "lowestScore": 17,
+              "highestScore": 37
+            },
+            {
+              "playerName": "Kevin John Foster",
+              "rounds": 12,
+              "totalScore": 349,
+              "average": 29.08,
+              "lowestScore": 23,
+              "highestScore": 37
+            },
+            {
+              "playerName": "Clive Kearey",
+              "rounds": 30,
+              "totalScore": 872,
+              "average": 29.07,
+              "lowestScore": 17,
+              "highestScore": 39
+            },
+            {
+              "playerName": "Graham Morgan",
+              "rounds": 16,
+              "totalScore": 465,
+              "average": 29.06,
+              "lowestScore": 21,
               "highestScore": 37
             },
             {
@@ -24035,14 +24075,6 @@
               "highestScore": 39
             },
             {
-              "playerName": "Andrew Russell",
-              "rounds": 19,
-              "totalScore": 550,
-              "average": 28.95,
-              "lowestScore": 0,
-              "highestScore": 38
-            },
-            {
               "playerName": "Pavittar Singh",
               "rounds": 34,
               "totalScore": 984,
@@ -24051,52 +24083,12 @@
               "highestScore": 41
             },
             {
-              "playerName": "Luke Hopkins",
-              "rounds": 17,
-              "totalScore": 492,
-              "average": 28.94,
-              "lowestScore": 14,
+              "playerName": "Steven Taylor",
+              "rounds": 16,
+              "totalScore": 462,
+              "average": 28.88,
+              "lowestScore": 16,
               "highestScore": 40
-            },
-            {
-              "playerName": "Jason Langford",
-              "rounds": 28,
-              "totalScore": 810,
-              "average": 28.93,
-              "lowestScore": 20,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Michael David Cosnett",
-              "rounds": 24,
-              "totalScore": 694,
-              "average": 28.92,
-              "lowestScore": 14,
-              "highestScore": 38
-            },
-            {
-              "playerName": "Paul Thomas Donnelly",
-              "rounds": 45,
-              "totalScore": 1297,
-              "average": 28.82,
-              "lowestScore": 3,
-              "highestScore": 45
-            },
-            {
-              "playerName": "Stewart Marshall",
-              "rounds": 23,
-              "totalScore": 662,
-              "average": 28.78,
-              "lowestScore": 13,
-              "highestScore": 39
-            },
-            {
-              "playerName": "Clive Kearey",
-              "rounds": 33,
-              "totalScore": 949,
-              "average": 28.76,
-              "lowestScore": 17,
-              "highestScore": 39
             },
             {
               "playerName": "Gregory Curry",
@@ -24107,6 +24099,14 @@
               "highestScore": 33
             },
             {
+              "playerName": "Robert Hudson",
+              "rounds": 12,
+              "totalScore": 345,
+              "average": 28.75,
+              "lowestScore": 18,
+              "highestScore": 38
+            },
+            {
               "playerName": "Craig Tromans",
               "rounds": 8,
               "totalScore": 230,
@@ -24115,20 +24115,60 @@
               "highestScore": 37
             },
             {
-              "playerName": "Mark Andrew Poulding",
-              "rounds": 39,
-              "totalScore": 1121,
-              "average": 28.74,
-              "lowestScore": 0,
-              "highestScore": 44
-            },
-            {
               "playerName": "Graham John Franks",
               "rounds": 11,
               "totalScore": 316,
               "average": 28.73,
               "lowestScore": 13,
               "highestScore": 44
+            },
+            {
+              "playerName": "Peter Evans",
+              "rounds": 36,
+              "totalScore": 1034,
+              "average": 28.72,
+              "lowestScore": 14,
+              "highestScore": 39
+            },
+            {
+              "playerName": "Luke Hopkins",
+              "rounds": 14,
+              "totalScore": 402,
+              "average": 28.71,
+              "lowestScore": 14,
+              "highestScore": 40
+            },
+            {
+              "playerName": "Michael David Cosnett",
+              "rounds": 22,
+              "totalScore": 631,
+              "average": 28.68,
+              "lowestScore": 14,
+              "highestScore": 38
+            },
+            {
+              "playerName": "Andrew Deakin",
+              "rounds": 36,
+              "totalScore": 1032,
+              "average": 28.67,
+              "lowestScore": 0,
+              "highestScore": 40
+            },
+            {
+              "playerName": "Carl R. Biddulph",
+              "rounds": 27,
+              "totalScore": 774,
+              "average": 28.67,
+              "lowestScore": 13,
+              "highestScore": 36
+            },
+            {
+              "playerName": "Jason Langford",
+              "rounds": 23,
+              "totalScore": 659,
+              "average": 28.65,
+              "lowestScore": 20,
+              "highestScore": 41
             },
             {
               "playerName": "Eric Edwards",
@@ -24155,28 +24195,12 @@
               "highestScore": 32
             },
             {
-              "playerName": "Robert Hudson",
-              "rounds": 14,
-              "totalScore": 399,
-              "average": 28.5,
-              "lowestScore": 18,
-              "highestScore": 38
-            },
-            {
               "playerName": "Graham Chilton",
               "rounds": 6,
               "totalScore": 171,
               "average": 28.5,
               "lowestScore": 23,
               "highestScore": 36
-            },
-            {
-              "playerName": "Tony John Salt",
-              "rounds": 41,
-              "totalScore": 1166,
-              "average": 28.44,
-              "lowestScore": 0,
-              "highestScore": 43
             },
             {
               "playerName": "Andrew Card",
@@ -24219,14 +24243,6 @@
               "highestScore": 39
             },
             {
-              "playerName": "Mark Basterfield",
-              "rounds": 23,
-              "totalScore": 653,
-              "average": 28.39,
-              "lowestScore": 5,
-              "highestScore": 38
-            },
-            {
               "playerName": "Patrick Corcoran",
               "rounds": 8,
               "totalScore": 227,
@@ -24252,35 +24268,11 @@
             },
             {
               "playerName": "Jack Lowe",
-              "rounds": 19,
-              "totalScore": 535,
-              "average": 28.16,
+              "rounds": 18,
+              "totalScore": 506,
+              "average": 28.11,
               "lowestScore": 13,
               "highestScore": 39
-            },
-            {
-              "playerName": "Christopher Vanes",
-              "rounds": 32,
-              "totalScore": 900,
-              "average": 28.13,
-              "lowestScore": 7,
-              "highestScore": 41
-            },
-            {
-              "playerName": "Jonathan Wood",
-              "rounds": 9,
-              "totalScore": 253,
-              "average": 28.11,
-              "lowestScore": 20,
-              "highestScore": 38
-            },
-            {
-              "playerName": "Carl R. Biddulph",
-              "rounds": 29,
-              "totalScore": 815,
-              "average": 28.1,
-              "lowestScore": 13,
-              "highestScore": 36
             },
             {
               "playerName": "Andy Sherwood",
@@ -24291,6 +24283,14 @@
               "highestScore": 34
             },
             {
+              "playerName": "Christopher Vanes",
+              "rounds": 29,
+              "totalScore": 813,
+              "average": 28.03,
+              "lowestScore": 7,
+              "highestScore": 41
+            },
+            {
               "playerName": "Paul Tromans",
               "rounds": 18,
               "totalScore": 504,
@@ -24299,19 +24299,19 @@
               "highestScore": 39
             },
             {
+              "playerName": "Jonathan Wood",
+              "rounds": 8,
+              "totalScore": 224,
+              "average": 28,
+              "lowestScore": 20,
+              "highestScore": 38
+            },
+            {
               "playerName": "David Harris",
               "rounds": 21,
               "totalScore": 587,
               "average": 27.95,
               "lowestScore": 16,
-              "highestScore": 37
-            },
-            {
-              "playerName": "Kevin John Foster",
-              "rounds": 13,
-              "totalScore": 363,
-              "average": 27.92,
-              "lowestScore": 14,
               "highestScore": 37
             },
             {
@@ -24323,20 +24323,12 @@
               "highestScore": 39
             },
             {
-              "playerName": "Andrew Deakin",
-              "rounds": 42,
-              "totalScore": 1164,
-              "average": 27.71,
-              "lowestScore": 0,
-              "highestScore": 40
-            },
-            {
-              "playerName": "David J. L. Jones",
-              "rounds": 22,
-              "totalScore": 609,
-              "average": 27.68,
-              "lowestScore": 8,
-              "highestScore": 45
+              "playerName": "Micah Dance",
+              "rounds": 9,
+              "totalScore": 250,
+              "average": 27.78,
+              "lowestScore": 4,
+              "highestScore": 37
             },
             {
               "playerName": "Daniel Round",
@@ -24363,12 +24355,12 @@
               "highestScore": 33
             },
             {
-              "playerName": "Jason Sean Higley",
-              "rounds": 15,
-              "totalScore": 410,
-              "average": 27.33,
-              "lowestScore": 6,
-              "highestScore": 39
+              "playerName": "David Hill",
+              "rounds": 54,
+              "totalScore": 1474,
+              "average": 27.3,
+              "lowestScore": 15,
+              "highestScore": 38
             },
             {
               "playerName": "Sam Marsden",
@@ -24388,18 +24380,10 @@
             },
             {
               "playerName": "Melvin Crook",
-              "rounds": 43,
-              "totalScore": 1163,
-              "average": 27.05,
+              "rounds": 39,
+              "totalScore": 1059,
+              "average": 27.15,
               "lowestScore": 1,
-              "highestScore": 38
-            },
-            {
-              "playerName": "David Hill",
-              "rounds": 60,
-              "totalScore": 1621,
-              "average": 27.02,
-              "lowestScore": 14,
               "highestScore": 38
             },
             {
@@ -24419,12 +24403,28 @@
               "highestScore": 37
             },
             {
-              "playerName": "Micah Dance",
-              "rounds": 12,
-              "totalScore": 321,
-              "average": 26.75,
-              "lowestScore": 4,
-              "highestScore": 37
+              "playerName": "Jason Sean Higley",
+              "rounds": 13,
+              "totalScore": 348,
+              "average": 26.77,
+              "lowestScore": 6,
+              "highestScore": 39
+            },
+            {
+              "playerName": "Mitch Sayce",
+              "rounds": 9,
+              "totalScore": 239,
+              "average": 26.56,
+              "lowestScore": 7,
+              "highestScore": 32
+            },
+            {
+              "playerName": "David J. L. Jones",
+              "rounds": 15,
+              "totalScore": 396,
+              "average": 26.4,
+              "lowestScore": 8,
+              "highestScore": 45
             },
             {
               "playerName": "Lee Rhoden",
@@ -24441,14 +24441,6 @@
               "average": 26.14,
               "lowestScore": 10,
               "highestScore": 39
-            },
-            {
-              "playerName": "Dean Hinchcliffe",
-              "rounds": 15,
-              "totalScore": 392,
-              "average": 26.13,
-              "lowestScore": 0,
-              "highestScore": 35
             },
             {
               "playerName": "Christopher Yale",
@@ -24475,22 +24467,6 @@
               "highestScore": 41
             },
             {
-              "playerName": "Arran Keeley",
-              "rounds": 15,
-              "totalScore": 386,
-              "average": 25.73,
-              "lowestScore": 19,
-              "highestScore": 34
-            },
-            {
-              "playerName": "Paul Willetts",
-              "rounds": 5,
-              "totalScore": 128,
-              "average": 25.6,
-              "lowestScore": 19,
-              "highestScore": 31
-            },
-            {
               "playerName": "Stephen Thompson",
               "rounds": 5,
               "totalScore": 128,
@@ -24499,12 +24475,12 @@
               "highestScore": 33
             },
             {
-              "playerName": "Mitch Sayce",
-              "rounds": 13,
-              "totalScore": 317,
-              "average": 24.38,
-              "lowestScore": 0,
-              "highestScore": 32
+              "playerName": "Arran Keeley",
+              "rounds": 11,
+              "totalScore": 281,
+              "average": 25.55,
+              "lowestScore": 19,
+              "highestScore": 34
             },
             {
               "playerName": "Ivan John Jones",
@@ -24552,6 +24528,3190 @@
           "gross": [],
           "nett": [],
           "stableford": []
+        }
+      },
+      "sectionLeaderboards": {
+        "mens": {
+          "nineHole": {
+            "gross": [],
+            "nett": [],
+            "stableford": []
+          },
+          "eighteenHole": {
+            "gross": [],
+            "nett": [
+              {
+                "playerName": "Ben Paul Smith",
+                "rounds": 6,
+                "totalScore": 421,
+                "average": 70.17,
+                "lowestScore": 64,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Patrick Corcoran",
+                "rounds": 6,
+                "totalScore": 421,
+                "average": 70.17,
+                "lowestScore": 65,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Brett Denis Gilbert",
+                "rounds": 9,
+                "totalScore": 637,
+                "average": 70.78,
+                "lowestScore": 65,
+                "highestScore": 76
+              },
+              {
+                "playerName": "Anthony Willetts",
+                "rounds": 21,
+                "totalScore": 1487,
+                "average": 70.81,
+                "lowestScore": 62,
+                "highestScore": 77
+              },
+              {
+                "playerName": "Christopher Churchman",
+                "rounds": 7,
+                "totalScore": 499,
+                "average": 71.29,
+                "lowestScore": 67,
+                "highestScore": 77
+              },
+              {
+                "playerName": "Calin Tiplea",
+                "rounds": 21,
+                "totalScore": 1499,
+                "average": 71.38,
+                "lowestScore": 65,
+                "highestScore": 80
+              },
+              {
+                "playerName": "Mark Dando",
+                "rounds": 22,
+                "totalScore": 1571,
+                "average": 71.41,
+                "lowestScore": 61,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Lewis Jones",
+                "rounds": 24,
+                "totalScore": 1714,
+                "average": 71.42,
+                "lowestScore": 63,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Craig Watchorn",
+                "rounds": 5,
+                "totalScore": 358,
+                "average": 71.6,
+                "lowestScore": 65,
+                "highestScore": 77
+              },
+              {
+                "playerName": "Mark Andrew Poulding",
+                "rounds": 27,
+                "totalScore": 1938,
+                "average": 71.78,
+                "lowestScore": 60,
+                "highestScore": 81
+              },
+              {
+                "playerName": "David Evitts",
+                "rounds": 7,
+                "totalScore": 504,
+                "average": 72,
+                "lowestScore": 63,
+                "highestScore": 79
+              },
+              {
+                "playerName": "Robert Keith Woodall",
+                "rounds": 28,
+                "totalScore": 2017,
+                "average": 72.04,
+                "lowestScore": 65,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Adam Bonehill",
+                "rounds": 17,
+                "totalScore": 1225,
+                "average": 72.06,
+                "lowestScore": 63,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Jason Sean Higley",
+                "rounds": 8,
+                "totalScore": 577,
+                "average": 72.13,
+                "lowestScore": 68,
+                "highestScore": 80
+              },
+              {
+                "playerName": "Mitchell Raybould",
+                "rounds": 6,
+                "totalScore": 433,
+                "average": 72.17,
+                "lowestScore": 64,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Darren Povey",
+                "rounds": 7,
+                "totalScore": 506,
+                "average": 72.29,
+                "lowestScore": 65,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Mark Neil Tolley",
+                "rounds": 19,
+                "totalScore": 1374,
+                "average": 72.32,
+                "lowestScore": 67,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Alan Ball",
+                "rounds": 28,
+                "totalScore": 2028,
+                "average": 72.43,
+                "lowestScore": 62,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Gary William Stubbs",
+                "rounds": 15,
+                "totalScore": 1087,
+                "average": 72.47,
+                "lowestScore": 65,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Nigel Brookes",
+                "rounds": 27,
+                "totalScore": 1957,
+                "average": 72.48,
+                "lowestScore": 62,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Adam Farley",
+                "rounds": 8,
+                "totalScore": 580,
+                "average": 72.5,
+                "lowestScore": 65,
+                "highestScore": 77
+              },
+              {
+                "playerName": "Stephen Brian Hopkins",
+                "rounds": 20,
+                "totalScore": 1452,
+                "average": 72.6,
+                "lowestScore": 66,
+                "highestScore": 79
+              },
+              {
+                "playerName": "Paul Andrew Birch",
+                "rounds": 10,
+                "totalScore": 726,
+                "average": 72.6,
+                "lowestScore": 67,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Paul Harper",
+                "rounds": 23,
+                "totalScore": 1670,
+                "average": 72.61,
+                "lowestScore": 62,
+                "highestScore": 80
+              },
+              {
+                "playerName": "Luke Homer",
+                "rounds": 11,
+                "totalScore": 799,
+                "average": 72.64,
+                "lowestScore": 66,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Philip Thompson",
+                "rounds": 26,
+                "totalScore": 1892,
+                "average": 72.77,
+                "lowestScore": 67,
+                "highestScore": 79
+              },
+              {
+                "playerName": "Peter Evans",
+                "rounds": 12,
+                "totalScore": 875,
+                "average": 72.92,
+                "lowestScore": 69,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Steven Taylor",
+                "rounds": 15,
+                "totalScore": 1095,
+                "average": 73,
+                "lowestScore": 65,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Michael David Cosnett",
+                "rounds": 12,
+                "totalScore": 876,
+                "average": 73,
+                "lowestScore": 66,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Roger John Smith",
+                "rounds": 12,
+                "totalScore": 877,
+                "average": 73.08,
+                "lowestScore": 65,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Ian Frederick Stevens",
+                "rounds": 35,
+                "totalScore": 2558,
+                "average": 73.09,
+                "lowestScore": 65,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Steve Homer",
+                "rounds": 36,
+                "totalScore": 2633,
+                "average": 73.14,
+                "lowestScore": 64,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Robert Hudson",
+                "rounds": 6,
+                "totalScore": 439,
+                "average": 73.17,
+                "lowestScore": 67,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Lee Roger Grainger",
+                "rounds": 17,
+                "totalScore": 1244,
+                "average": 73.18,
+                "lowestScore": 68,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Christopher Fereday",
+                "rounds": 5,
+                "totalScore": 366,
+                "average": 73.2,
+                "lowestScore": 68,
+                "highestScore": 79
+              },
+              {
+                "playerName": "Richard Limb",
+                "rounds": 29,
+                "totalScore": 2124,
+                "average": 73.24,
+                "lowestScore": 64,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Mark A. Williams",
+                "rounds": 25,
+                "totalScore": 1833,
+                "average": 73.32,
+                "lowestScore": 66,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Liam Harding",
+                "rounds": 8,
+                "totalScore": 587,
+                "average": 73.38,
+                "lowestScore": 67,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Gerald Paul Crowley",
+                "rounds": 28,
+                "totalScore": 2055,
+                "average": 73.39,
+                "lowestScore": 63,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Gavin Ray",
+                "rounds": 36,
+                "totalScore": 2646,
+                "average": 73.5,
+                "lowestScore": 65,
+                "highestScore": 93
+              },
+              {
+                "playerName": "David Postin",
+                "rounds": 8,
+                "totalScore": 588,
+                "average": 73.5,
+                "lowestScore": 67,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Carl R. Biddulph",
+                "rounds": 11,
+                "totalScore": 809,
+                "average": 73.55,
+                "lowestScore": 64,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Sean Round",
+                "rounds": 5,
+                "totalScore": 368,
+                "average": 73.6,
+                "lowestScore": 72,
+                "highestScore": 80
+              },
+              {
+                "playerName": "Graham Morgan",
+                "rounds": 13,
+                "totalScore": 957,
+                "average": 73.62,
+                "lowestScore": 67,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Stephen Hall",
+                "rounds": 35,
+                "totalScore": 2577,
+                "average": 73.63,
+                "lowestScore": 66,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Paul Welch",
+                "rounds": 34,
+                "totalScore": 2504,
+                "average": 73.65,
+                "lowestScore": 67,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Luke Hopkins",
+                "rounds": 9,
+                "totalScore": 663,
+                "average": 73.67,
+                "lowestScore": 61,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Scott Postin",
+                "rounds": 16,
+                "totalScore": 1179,
+                "average": 73.69,
+                "lowestScore": 65,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Gavin Higgs",
+                "rounds": 7,
+                "totalScore": 516,
+                "average": 73.71,
+                "lowestScore": 67,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Kevin John Foster",
+                "rounds": 9,
+                "totalScore": 664,
+                "average": 73.78,
+                "lowestScore": 68,
+                "highestScore": 80
+              },
+              {
+                "playerName": "Darren Element",
+                "rounds": 16,
+                "totalScore": 1181,
+                "average": 73.81,
+                "lowestScore": 67,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Michael John Kendrick",
+                "rounds": 17,
+                "totalScore": 1256,
+                "average": 73.88,
+                "lowestScore": 69,
+                "highestScore": 79
+              },
+              {
+                "playerName": "Michael Williams",
+                "rounds": 28,
+                "totalScore": 2069,
+                "average": 73.89,
+                "lowestScore": 65,
+                "highestScore": 89
+              },
+              {
+                "playerName": "Jason Watchorn",
+                "rounds": 12,
+                "totalScore": 887,
+                "average": 73.92,
+                "lowestScore": 67,
+                "highestScore": 83
+              },
+              {
+                "playerName": "David Hobley",
+                "rounds": 23,
+                "totalScore": 1701,
+                "average": 73.96,
+                "lowestScore": 67,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Andrew Deakin",
+                "rounds": 20,
+                "totalScore": 1480,
+                "average": 74,
+                "lowestScore": 67,
+                "highestScore": 85
+              },
+              {
+                "playerName": "Philip John Northall",
+                "rounds": 36,
+                "totalScore": 2669,
+                "average": 74.14,
+                "lowestScore": 65,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Andrew Russell",
+                "rounds": 12,
+                "totalScore": 890,
+                "average": 74.17,
+                "lowestScore": 67,
+                "highestScore": 93
+              },
+              {
+                "playerName": "Andrew Card",
+                "rounds": 5,
+                "totalScore": 371,
+                "average": 74.2,
+                "lowestScore": 71,
+                "highestScore": 78
+              },
+              {
+                "playerName": "Craig Locke",
+                "rounds": 13,
+                "totalScore": 965,
+                "average": 74.23,
+                "lowestScore": 67,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Eric Edwards",
+                "rounds": 15,
+                "totalScore": 1116,
+                "average": 74.4,
+                "lowestScore": 64,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Stewart Marshall",
+                "rounds": 19,
+                "totalScore": 1415,
+                "average": 74.47,
+                "lowestScore": 61,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Roger William Grainger",
+                "rounds": 12,
+                "totalScore": 894,
+                "average": 74.5,
+                "lowestScore": 68,
+                "highestScore": 87
+              },
+              {
+                "playerName": "James Stevens",
+                "rounds": 26,
+                "totalScore": 1938,
+                "average": 74.54,
+                "lowestScore": 64,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Carl Elsworth",
+                "rounds": 6,
+                "totalScore": 448,
+                "average": 74.67,
+                "lowestScore": 69,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Steven Brookes",
+                "rounds": 19,
+                "totalScore": 1420,
+                "average": 74.74,
+                "lowestScore": 67,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Robert Shedden",
+                "rounds": 17,
+                "totalScore": 1271,
+                "average": 74.76,
+                "lowestScore": 67,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Melvin Crook",
+                "rounds": 15,
+                "totalScore": 1122,
+                "average": 74.8,
+                "lowestScore": 66,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Neil Hartland",
+                "rounds": 29,
+                "totalScore": 2172,
+                "average": 74.9,
+                "lowestScore": 68,
+                "highestScore": 85
+              },
+              {
+                "playerName": "Paul Wayne Taylor",
+                "rounds": 12,
+                "totalScore": 899,
+                "average": 74.92,
+                "lowestScore": 64,
+                "highestScore": 85
+              },
+              {
+                "playerName": "Keith Durbridge",
+                "rounds": 16,
+                "totalScore": 1199,
+                "average": 74.94,
+                "lowestScore": 69,
+                "highestScore": 80
+              },
+              {
+                "playerName": "James Webber",
+                "rounds": 13,
+                "totalScore": 975,
+                "average": 75,
+                "lowestScore": 69,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Adrian Burns",
+                "rounds": 12,
+                "totalScore": 901,
+                "average": 75.08,
+                "lowestScore": 69,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Paul Thomas Donnelly",
+                "rounds": 19,
+                "totalScore": 1428,
+                "average": 75.16,
+                "lowestScore": 69,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Arran Keeley",
+                "rounds": 6,
+                "totalScore": 451,
+                "average": 75.17,
+                "lowestScore": 70,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Wayne Colledge",
+                "rounds": 6,
+                "totalScore": 451,
+                "average": 75.17,
+                "lowestScore": 69,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Jonathan Wood",
+                "rounds": 10,
+                "totalScore": 752,
+                "average": 75.2,
+                "lowestScore": 68,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Dean Hinchcliffe",
+                "rounds": 10,
+                "totalScore": 753,
+                "average": 75.3,
+                "lowestScore": 67,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Graham John Franks",
+                "rounds": 10,
+                "totalScore": 753,
+                "average": 75.3,
+                "lowestScore": 69,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Neil Penton",
+                "rounds": 10,
+                "totalScore": 753,
+                "average": 75.3,
+                "lowestScore": 62,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Stuart Evans",
+                "rounds": 12,
+                "totalScore": 904,
+                "average": 75.33,
+                "lowestScore": 70,
+                "highestScore": 84
+              },
+              {
+                "playerName": "M T Cowdell",
+                "rounds": 17,
+                "totalScore": 1281,
+                "average": 75.35,
+                "lowestScore": 69,
+                "highestScore": 87
+              },
+              {
+                "playerName": "Sean Element",
+                "rounds": 23,
+                "totalScore": 1735,
+                "average": 75.43,
+                "lowestScore": 70,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Clive Peter Gould",
+                "rounds": 21,
+                "totalScore": 1584,
+                "average": 75.43,
+                "lowestScore": 66,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Kevin Cooksey",
+                "rounds": 7,
+                "totalScore": 528,
+                "average": 75.43,
+                "lowestScore": 71,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Christopher Vanes",
+                "rounds": 26,
+                "totalScore": 1962,
+                "average": 75.46,
+                "lowestScore": 69,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Kevin Eric Conn",
+                "rounds": 12,
+                "totalScore": 906,
+                "average": 75.5,
+                "lowestScore": 69,
+                "highestScore": 88
+              },
+              {
+                "playerName": "Gary Baker",
+                "rounds": 21,
+                "totalScore": 1586,
+                "average": 75.52,
+                "lowestScore": 64,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Kevin Walters",
+                "rounds": 24,
+                "totalScore": 1813,
+                "average": 75.54,
+                "lowestScore": 66,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Craig Smart",
+                "rounds": 13,
+                "totalScore": 982,
+                "average": 75.54,
+                "lowestScore": 69,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Clive Kearey",
+                "rounds": 33,
+                "totalScore": 2495,
+                "average": 75.61,
+                "lowestScore": 68,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Keith John Woodall",
+                "rounds": 18,
+                "totalScore": 1361,
+                "average": 75.61,
+                "lowestScore": 64,
+                "highestScore": 87
+              },
+              {
+                "playerName": "Wayne Rutter",
+                "rounds": 26,
+                "totalScore": 1968,
+                "average": 75.69,
+                "lowestScore": 64,
+                "highestScore": 87
+              },
+              {
+                "playerName": "David J. L. Jones",
+                "rounds": 14,
+                "totalScore": 1061,
+                "average": 75.79,
+                "lowestScore": 70,
+                "highestScore": 82
+              },
+              {
+                "playerName": "Jack Lowe",
+                "rounds": 10,
+                "totalScore": 758,
+                "average": 75.8,
+                "lowestScore": 71,
+                "highestScore": 83
+              },
+              {
+                "playerName": "Paul Holmes",
+                "rounds": 6,
+                "totalScore": 455,
+                "average": 75.83,
+                "lowestScore": 72,
+                "highestScore": 80
+              },
+              {
+                "playerName": "Jason Hurp",
+                "rounds": 10,
+                "totalScore": 759,
+                "average": 75.9,
+                "lowestScore": 70,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Neil Hanley",
+                "rounds": 21,
+                "totalScore": 1597,
+                "average": 76.05,
+                "lowestScore": 67,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Mark Basterfield",
+                "rounds": 11,
+                "totalScore": 837,
+                "average": 76.09,
+                "lowestScore": 64,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Lewis Ganner",
+                "rounds": 7,
+                "totalScore": 533,
+                "average": 76.14,
+                "lowestScore": 67,
+                "highestScore": 88
+              },
+              {
+                "playerName": "Adam Stanfield",
+                "rounds": 25,
+                "totalScore": 1904,
+                "average": 76.16,
+                "lowestScore": 69,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Trevor Norton",
+                "rounds": 5,
+                "totalScore": 382,
+                "average": 76.4,
+                "lowestScore": 73,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Craig Biddulph",
+                "rounds": 10,
+                "totalScore": 765,
+                "average": 76.5,
+                "lowestScore": 67,
+                "highestScore": 98
+              },
+              {
+                "playerName": "James Price",
+                "rounds": 8,
+                "totalScore": 612,
+                "average": 76.5,
+                "lowestScore": 69,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Stephen Price",
+                "rounds": 16,
+                "totalScore": 1226,
+                "average": 76.63,
+                "lowestScore": 65,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Micah Dance",
+                "rounds": 8,
+                "totalScore": 614,
+                "average": 76.75,
+                "lowestScore": 72,
+                "highestScore": 81
+              },
+              {
+                "playerName": "Jason Gregory",
+                "rounds": 8,
+                "totalScore": 615,
+                "average": 76.88,
+                "lowestScore": 70,
+                "highestScore": 84
+              },
+              {
+                "playerName": "Scott Whitehall",
+                "rounds": 8,
+                "totalScore": 615,
+                "average": 76.88,
+                "lowestScore": 67,
+                "highestScore": 88
+              },
+              {
+                "playerName": "Anthony Fegan",
+                "rounds": 9,
+                "totalScore": 693,
+                "average": 77,
+                "lowestScore": 69,
+                "highestScore": 89
+              },
+              {
+                "playerName": "Tony John Salt",
+                "rounds": 11,
+                "totalScore": 849,
+                "average": 77.18,
+                "lowestScore": 68,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Tim Mark Wright",
+                "rounds": 25,
+                "totalScore": 1935,
+                "average": 77.4,
+                "lowestScore": 67,
+                "highestScore": 87
+              },
+              {
+                "playerName": "Jason Langford",
+                "rounds": 24,
+                "totalScore": 1862,
+                "average": 77.58,
+                "lowestScore": 68,
+                "highestScore": 89
+              },
+              {
+                "playerName": "Stephen Langford",
+                "rounds": 11,
+                "totalScore": 855,
+                "average": 77.73,
+                "lowestScore": 66,
+                "highestScore": 89
+              },
+              {
+                "playerName": "George Brookes",
+                "rounds": 7,
+                "totalScore": 546,
+                "average": 78,
+                "lowestScore": 69,
+                "highestScore": 86
+              },
+              {
+                "playerName": "Ivan John Jones",
+                "rounds": 6,
+                "totalScore": 472,
+                "average": 78.67,
+                "lowestScore": 75,
+                "highestScore": 83
+              },
+              {
+                "playerName": "David Hill",
+                "rounds": 26,
+                "totalScore": 2105,
+                "average": 80.96,
+                "lowestScore": 70,
+                "highestScore": 93
+              },
+              {
+                "playerName": "John Goudge",
+                "rounds": 6,
+                "totalScore": 515,
+                "average": 85.83,
+                "lowestScore": 73,
+                "highestScore": 99
+              }
+            ],
+            "stableford": [
+              {
+                "playerName": "Adam Farley",
+                "rounds": 8,
+                "totalScore": 283,
+                "average": 35.38,
+                "lowestScore": 30,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Stuart Baker",
+                "rounds": 7,
+                "totalScore": 238,
+                "average": 34,
+                "lowestScore": 29,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Ben Fisher",
+                "rounds": 6,
+                "totalScore": 204,
+                "average": 34,
+                "lowestScore": 27,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Jason Gregory",
+                "rounds": 5,
+                "totalScore": 170,
+                "average": 34,
+                "lowestScore": 29,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Craig Watchorn",
+                "rounds": 7,
+                "totalScore": 236,
+                "average": 33.71,
+                "lowestScore": 26,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Richard Weston",
+                "rounds": 14,
+                "totalScore": 469,
+                "average": 33.5,
+                "lowestScore": 21,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Alan Ball",
+                "rounds": 29,
+                "totalScore": 968,
+                "average": 33.38,
+                "lowestScore": 26,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Lewis Jones",
+                "rounds": 29,
+                "totalScore": 964,
+                "average": 33.24,
+                "lowestScore": 25,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Trevor Norton",
+                "rounds": 5,
+                "totalScore": 166,
+                "average": 33.2,
+                "lowestScore": 30,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Craig Locke",
+                "rounds": 18,
+                "totalScore": 593,
+                "average": 32.94,
+                "lowestScore": 25,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Scott Harrison",
+                "rounds": 6,
+                "totalScore": 197,
+                "average": 32.83,
+                "lowestScore": 23,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Lee Roger Grainger",
+                "rounds": 34,
+                "totalScore": 1116,
+                "average": 32.82,
+                "lowestScore": 24,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Adam Bonehill",
+                "rounds": 11,
+                "totalScore": 361,
+                "average": 32.82,
+                "lowestScore": 20,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Harry Pearce-Williams",
+                "rounds": 6,
+                "totalScore": 196,
+                "average": 32.67,
+                "lowestScore": 24,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Christopher Fereday",
+                "rounds": 5,
+                "totalScore": 163,
+                "average": 32.6,
+                "lowestScore": 28,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Josh Williams",
+                "rounds": 5,
+                "totalScore": 163,
+                "average": 32.6,
+                "lowestScore": 26,
+                "highestScore": 37
+              },
+              {
+                "playerName": "David Postin",
+                "rounds": 13,
+                "totalScore": 422,
+                "average": 32.46,
+                "lowestScore": 28,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Neil Hartland",
+                "rounds": 41,
+                "totalScore": 1330,
+                "average": 32.44,
+                "lowestScore": 25,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Paul Andrew Birch",
+                "rounds": 8,
+                "totalScore": 259,
+                "average": 32.38,
+                "lowestScore": 19,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Roger John Smith",
+                "rounds": 11,
+                "totalScore": 356,
+                "average": 32.36,
+                "lowestScore": 26,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Richard Limb",
+                "rounds": 38,
+                "totalScore": 1224,
+                "average": 32.21,
+                "lowestScore": 22,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Anthony Willetts",
+                "rounds": 27,
+                "totalScore": 869,
+                "average": 32.19,
+                "lowestScore": 21,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Steve Homer",
+                "rounds": 41,
+                "totalScore": 1315,
+                "average": 32.07,
+                "lowestScore": 24,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Sean Element",
+                "rounds": 33,
+                "totalScore": 1057,
+                "average": 32.03,
+                "lowestScore": 16,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Gary William Stubbs",
+                "rounds": 9,
+                "totalScore": 288,
+                "average": 32,
+                "lowestScore": 26,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Jason Bates",
+                "rounds": 5,
+                "totalScore": 160,
+                "average": 32,
+                "lowestScore": 29,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Stuart Currill",
+                "rounds": 5,
+                "totalScore": 160,
+                "average": 32,
+                "lowestScore": 19,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Sidney Hickman",
+                "rounds": 10,
+                "totalScore": 319,
+                "average": 31.9,
+                "lowestScore": 19,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Mark A. Williams",
+                "rounds": 36,
+                "totalScore": 1148,
+                "average": 31.89,
+                "lowestScore": 20,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Darren Element",
+                "rounds": 22,
+                "totalScore": 699,
+                "average": 31.77,
+                "lowestScore": 22,
+                "highestScore": 39
+              },
+              {
+                "playerName": "James Stevens",
+                "rounds": 48,
+                "totalScore": 1521,
+                "average": 31.69,
+                "lowestScore": 9,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Robert Shedden",
+                "rounds": 39,
+                "totalScore": 1234,
+                "average": 31.64,
+                "lowestScore": 20,
+                "highestScore": 41
+              },
+              {
+                "playerName": "David Jeavons",
+                "rounds": 19,
+                "totalScore": 601,
+                "average": 31.63,
+                "lowestScore": 24,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Christopher Churchman",
+                "rounds": 8,
+                "totalScore": 253,
+                "average": 31.63,
+                "lowestScore": 25,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Paul Mallen",
+                "rounds": 5,
+                "totalScore": 158,
+                "average": 31.6,
+                "lowestScore": 21,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Gary Baker",
+                "rounds": 44,
+                "totalScore": 1390,
+                "average": 31.59,
+                "lowestScore": 22,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Adrian Clift",
+                "rounds": 7,
+                "totalScore": 221,
+                "average": 31.57,
+                "lowestScore": 26,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Mark Dando",
+                "rounds": 22,
+                "totalScore": 694,
+                "average": 31.55,
+                "lowestScore": 17,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Karl Matthew Ashmore",
+                "rounds": 9,
+                "totalScore": 283,
+                "average": 31.44,
+                "lowestScore": 15,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Stephen Holmes",
+                "rounds": 9,
+                "totalScore": 283,
+                "average": 31.44,
+                "lowestScore": 27,
+                "highestScore": 35
+              },
+              {
+                "playerName": "David Hobley",
+                "rounds": 29,
+                "totalScore": 910,
+                "average": 31.38,
+                "lowestScore": 14,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Nigel Brookes",
+                "rounds": 40,
+                "totalScore": 1254,
+                "average": 31.35,
+                "lowestScore": 5,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Paul Harper",
+                "rounds": 31,
+                "totalScore": 971,
+                "average": 31.32,
+                "lowestScore": 20,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Gary Male",
+                "rounds": 10,
+                "totalScore": 313,
+                "average": 31.3,
+                "lowestScore": 22,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Simon Nunn",
+                "rounds": 7,
+                "totalScore": 219,
+                "average": 31.29,
+                "lowestScore": 27,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Philip Thompson",
+                "rounds": 30,
+                "totalScore": 938,
+                "average": 31.27,
+                "lowestScore": 9,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Ian Frederick Stevens",
+                "rounds": 36,
+                "totalScore": 1125,
+                "average": 31.25,
+                "lowestScore": 18,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Kevin Eric Conn",
+                "rounds": 13,
+                "totalScore": 406,
+                "average": 31.23,
+                "lowestScore": 25,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Carl Elsworth",
+                "rounds": 22,
+                "totalScore": 686,
+                "average": 31.18,
+                "lowestScore": 22,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Drew Saunders",
+                "rounds": 6,
+                "totalScore": 187,
+                "average": 31.17,
+                "lowestScore": 21,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Keith Durbridge",
+                "rounds": 47,
+                "totalScore": 1463,
+                "average": 31.13,
+                "lowestScore": 14,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Michael John Kendrick",
+                "rounds": 29,
+                "totalScore": 901,
+                "average": 31.07,
+                "lowestScore": 3,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Wayne Colledge",
+                "rounds": 22,
+                "totalScore": 682,
+                "average": 31,
+                "lowestScore": 23,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Adrian Burns",
+                "rounds": 21,
+                "totalScore": 650,
+                "average": 30.95,
+                "lowestScore": 22,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Mitchell Raybould",
+                "rounds": 18,
+                "totalScore": 557,
+                "average": 30.94,
+                "lowestScore": 24,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Stephen Brian Hopkins",
+                "rounds": 28,
+                "totalScore": 865,
+                "average": 30.89,
+                "lowestScore": 17,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Stephen Hall",
+                "rounds": 62,
+                "totalScore": 1913,
+                "average": 30.85,
+                "lowestScore": 5,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Brett Denis Gilbert",
+                "rounds": 13,
+                "totalScore": 401,
+                "average": 30.85,
+                "lowestScore": 22,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Jason Hurp",
+                "rounds": 29,
+                "totalScore": 894,
+                "average": 30.83,
+                "lowestScore": 24,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Clive Peter Gould",
+                "rounds": 29,
+                "totalScore": 893,
+                "average": 30.79,
+                "lowestScore": 22,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Gavin Ray",
+                "rounds": 65,
+                "totalScore": 2001,
+                "average": 30.78,
+                "lowestScore": 13,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Michael Williams",
+                "rounds": 42,
+                "totalScore": 1292,
+                "average": 30.76,
+                "lowestScore": 20,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Robert Keith Woodall",
+                "rounds": 33,
+                "totalScore": 1014,
+                "average": 30.73,
+                "lowestScore": 15,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Jason Watchorn",
+                "rounds": 25,
+                "totalScore": 767,
+                "average": 30.68,
+                "lowestScore": 19,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Dean Johnson",
+                "rounds": 6,
+                "totalScore": 184,
+                "average": 30.67,
+                "lowestScore": 25,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Darren Jones",
+                "rounds": 32,
+                "totalScore": 976,
+                "average": 30.5,
+                "lowestScore": 24,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Andrew Russell",
+                "rounds": 16,
+                "totalScore": 487,
+                "average": 30.44,
+                "lowestScore": 16,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Calin Tiplea",
+                "rounds": 51,
+                "totalScore": 1552,
+                "average": 30.43,
+                "lowestScore": 5,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Neil Penton",
+                "rounds": 7,
+                "totalScore": 213,
+                "average": 30.43,
+                "lowestScore": 20,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Darren Povey",
+                "rounds": 8,
+                "totalScore": 243,
+                "average": 30.38,
+                "lowestScore": 26,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Christopher Longhurst",
+                "rounds": 17,
+                "totalScore": 516,
+                "average": 30.35,
+                "lowestScore": 24,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Paul Welch",
+                "rounds": 58,
+                "totalScore": 1754,
+                "average": 30.24,
+                "lowestScore": 20,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Adam Stanfield",
+                "rounds": 42,
+                "totalScore": 1268,
+                "average": 30.19,
+                "lowestScore": 7,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Bradley Leadbeater",
+                "rounds": 6,
+                "totalScore": 181,
+                "average": 30.17,
+                "lowestScore": 27,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Linda Rafferty",
+                "rounds": 8,
+                "totalScore": 241,
+                "average": 30.13,
+                "lowestScore": 23,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Craig Smart",
+                "rounds": 25,
+                "totalScore": 753,
+                "average": 30.12,
+                "lowestScore": 22,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Philip John Northall",
+                "rounds": 40,
+                "totalScore": 1203,
+                "average": 30.07,
+                "lowestScore": 17,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Tim Mark Wright",
+                "rounds": 49,
+                "totalScore": 1468,
+                "average": 29.96,
+                "lowestScore": 17,
+                "highestScore": 42
+              },
+              {
+                "playerName": "M T Cowdell",
+                "rounds": 19,
+                "totalScore": 568,
+                "average": 29.89,
+                "lowestScore": 11,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Wayne Rutter",
+                "rounds": 26,
+                "totalScore": 777,
+                "average": 29.88,
+                "lowestScore": 12,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Neil Hanley",
+                "rounds": 30,
+                "totalScore": 896,
+                "average": 29.87,
+                "lowestScore": 19,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Gerald Paul Crowley",
+                "rounds": 59,
+                "totalScore": 1762,
+                "average": 29.86,
+                "lowestScore": 11,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Richard Price",
+                "rounds": 14,
+                "totalScore": 418,
+                "average": 29.86,
+                "lowestScore": 25,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Liam Harding",
+                "rounds": 7,
+                "totalScore": 209,
+                "average": 29.86,
+                "lowestScore": 15,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Lewis Ganner",
+                "rounds": 6,
+                "totalScore": 179,
+                "average": 29.83,
+                "lowestScore": 25,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Nigel Figg",
+                "rounds": 11,
+                "totalScore": 328,
+                "average": 29.82,
+                "lowestScore": 24,
+                "highestScore": 33
+              },
+              {
+                "playerName": "Stephen Langford",
+                "rounds": 11,
+                "totalScore": 328,
+                "average": 29.82,
+                "lowestScore": 15,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Mark Andrew Poulding",
+                "rounds": 30,
+                "totalScore": 894,
+                "average": 29.8,
+                "lowestScore": 23,
+                "highestScore": 44
+              },
+              {
+                "playerName": "James Johnson",
+                "rounds": 10,
+                "totalScore": 298,
+                "average": 29.8,
+                "lowestScore": 21,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Greg Underhill",
+                "rounds": 12,
+                "totalScore": 357,
+                "average": 29.75,
+                "lowestScore": 20,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Leighton Clarke",
+                "rounds": 13,
+                "totalScore": 386,
+                "average": 29.69,
+                "lowestScore": 21,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Mark Basterfield",
+                "rounds": 19,
+                "totalScore": 564,
+                "average": 29.68,
+                "lowestScore": 8,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Scott Whitehall",
+                "rounds": 9,
+                "totalScore": 267,
+                "average": 29.67,
+                "lowestScore": 18,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Timothy Underhill",
+                "rounds": 9,
+                "totalScore": 267,
+                "average": 29.67,
+                "lowestScore": 23,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Luke Homer",
+                "rounds": 16,
+                "totalScore": 474,
+                "average": 29.63,
+                "lowestScore": 12,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Steven Brookes",
+                "rounds": 26,
+                "totalScore": 770,
+                "average": 29.62,
+                "lowestScore": 8,
+                "highestScore": 39
+              },
+              {
+                "playerName": "James Price",
+                "rounds": 23,
+                "totalScore": 681,
+                "average": 29.61,
+                "lowestScore": 21,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Stephen Price",
+                "rounds": 18,
+                "totalScore": 533,
+                "average": 29.61,
+                "lowestScore": 18,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Dean Hinchcliffe",
+                "rounds": 10,
+                "totalScore": 295,
+                "average": 29.5,
+                "lowestScore": 21,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Scott Postin",
+                "rounds": 25,
+                "totalScore": 737,
+                "average": 29.48,
+                "lowestScore": 0,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Stewart Marshall",
+                "rounds": 20,
+                "totalScore": 589,
+                "average": 29.45,
+                "lowestScore": 13,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Paul Thomas Donnelly",
+                "rounds": 41,
+                "totalScore": 1206,
+                "average": 29.41,
+                "lowestScore": 3,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Mark Neil Tolley",
+                "rounds": 20,
+                "totalScore": 588,
+                "average": 29.4,
+                "lowestScore": 23,
+                "highestScore": 40
+              },
+              {
+                "playerName": "George Brookes",
+                "rounds": 10,
+                "totalScore": 294,
+                "average": 29.4,
+                "lowestScore": 8,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Kelvin Jordan",
+                "rounds": 13,
+                "totalScore": 382,
+                "average": 29.38,
+                "lowestScore": 17,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Keith John Woodall",
+                "rounds": 46,
+                "totalScore": 1349,
+                "average": 29.33,
+                "lowestScore": 12,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Kevin Walters",
+                "rounds": 31,
+                "totalScore": 908,
+                "average": 29.29,
+                "lowestScore": 12,
+                "highestScore": 41
+              },
+              {
+                "playerName": "William Nunn",
+                "rounds": 7,
+                "totalScore": 205,
+                "average": 29.29,
+                "lowestScore": 17,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Paul Wayne Taylor",
+                "rounds": 26,
+                "totalScore": 760,
+                "average": 29.23,
+                "lowestScore": 18,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Paul Holmes",
+                "rounds": 6,
+                "totalScore": 175,
+                "average": 29.17,
+                "lowestScore": 23,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Sean Round",
+                "rounds": 6,
+                "totalScore": 175,
+                "average": 29.17,
+                "lowestScore": 17,
+                "highestScore": 40
+              },
+              {
+                "playerName": "James Webber",
+                "rounds": 20,
+                "totalScore": 583,
+                "average": 29.15,
+                "lowestScore": 12,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Jamie Daniel Hunt",
+                "rounds": 7,
+                "totalScore": 204,
+                "average": 29.14,
+                "lowestScore": 22,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Tony John Salt",
+                "rounds": 36,
+                "totalScore": 1048,
+                "average": 29.11,
+                "lowestScore": 0,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Anthony Fegan",
+                "rounds": 18,
+                "totalScore": 524,
+                "average": 29.11,
+                "lowestScore": 17,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Kevin John Foster",
+                "rounds": 12,
+                "totalScore": 349,
+                "average": 29.08,
+                "lowestScore": 23,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Clive Kearey",
+                "rounds": 30,
+                "totalScore": 872,
+                "average": 29.07,
+                "lowestScore": 17,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Graham Morgan",
+                "rounds": 16,
+                "totalScore": 465,
+                "average": 29.06,
+                "lowestScore": 21,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Peter Bradley",
+                "rounds": 17,
+                "totalScore": 493,
+                "average": 29,
+                "lowestScore": 21,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Pavittar Singh",
+                "rounds": 34,
+                "totalScore": 984,
+                "average": 28.94,
+                "lowestScore": 16,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Steven Taylor",
+                "rounds": 16,
+                "totalScore": 462,
+                "average": 28.88,
+                "lowestScore": 16,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Gregory Curry",
+                "rounds": 12,
+                "totalScore": 345,
+                "average": 28.75,
+                "lowestScore": 14,
+                "highestScore": 33
+              },
+              {
+                "playerName": "Robert Hudson",
+                "rounds": 12,
+                "totalScore": 345,
+                "average": 28.75,
+                "lowestScore": 18,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Craig Tromans",
+                "rounds": 8,
+                "totalScore": 230,
+                "average": 28.75,
+                "lowestScore": 19,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Graham John Franks",
+                "rounds": 11,
+                "totalScore": 316,
+                "average": 28.73,
+                "lowestScore": 13,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Peter Evans",
+                "rounds": 36,
+                "totalScore": 1034,
+                "average": 28.72,
+                "lowestScore": 14,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Luke Hopkins",
+                "rounds": 14,
+                "totalScore": 402,
+                "average": 28.71,
+                "lowestScore": 14,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Michael David Cosnett",
+                "rounds": 22,
+                "totalScore": 631,
+                "average": 28.68,
+                "lowestScore": 14,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Andrew Deakin",
+                "rounds": 36,
+                "totalScore": 1032,
+                "average": 28.67,
+                "lowestScore": 0,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Carl R. Biddulph",
+                "rounds": 27,
+                "totalScore": 774,
+                "average": 28.67,
+                "lowestScore": 13,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Jason Langford",
+                "rounds": 23,
+                "totalScore": 659,
+                "average": 28.65,
+                "lowestScore": 20,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Eric Edwards",
+                "rounds": 16,
+                "totalScore": 458,
+                "average": 28.63,
+                "lowestScore": 11,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Roger William Grainger",
+                "rounds": 29,
+                "totalScore": 829,
+                "average": 28.59,
+                "lowestScore": 11,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Karl Evans",
+                "rounds": 7,
+                "totalScore": 200,
+                "average": 28.57,
+                "lowestScore": 20,
+                "highestScore": 32
+              },
+              {
+                "playerName": "Graham Chilton",
+                "rounds": 6,
+                "totalScore": 171,
+                "average": 28.5,
+                "lowestScore": 23,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Andrew Card",
+                "rounds": 9,
+                "totalScore": 256,
+                "average": 28.44,
+                "lowestScore": 12,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Stuart Evans",
+                "rounds": 9,
+                "totalScore": 256,
+                "average": 28.44,
+                "lowestScore": 24,
+                "highestScore": 33
+              },
+              {
+                "playerName": "Craig Biddulph",
+                "rounds": 22,
+                "totalScore": 625,
+                "average": 28.41,
+                "lowestScore": 6,
+                "highestScore": 40
+              },
+              {
+                "playerName": "David Evitts",
+                "rounds": 20,
+                "totalScore": 568,
+                "average": 28.4,
+                "lowestScore": 12,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Gavin Higgs",
+                "rounds": 10,
+                "totalScore": 284,
+                "average": 28.4,
+                "lowestScore": 24,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Patrick Corcoran",
+                "rounds": 8,
+                "totalScore": 227,
+                "average": 28.38,
+                "lowestScore": 21,
+                "highestScore": 34
+              },
+              {
+                "playerName": "Scott Longhurst",
+                "rounds": 13,
+                "totalScore": 368,
+                "average": 28.31,
+                "lowestScore": 16,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Ross Postin",
+                "rounds": 7,
+                "totalScore": 198,
+                "average": 28.29,
+                "lowestScore": 21,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Jack Lowe",
+                "rounds": 18,
+                "totalScore": 506,
+                "average": 28.11,
+                "lowestScore": 13,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Andy Sherwood",
+                "rounds": 12,
+                "totalScore": 337,
+                "average": 28.08,
+                "lowestScore": 20,
+                "highestScore": 34
+              },
+              {
+                "playerName": "Christopher Vanes",
+                "rounds": 29,
+                "totalScore": 813,
+                "average": 28.03,
+                "lowestScore": 7,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Paul Tromans",
+                "rounds": 18,
+                "totalScore": 504,
+                "average": 28,
+                "lowestScore": 17,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Jonathan Wood",
+                "rounds": 8,
+                "totalScore": 224,
+                "average": 28,
+                "lowestScore": 20,
+                "highestScore": 38
+              },
+              {
+                "playerName": "David Harris",
+                "rounds": 21,
+                "totalScore": 587,
+                "average": 27.95,
+                "lowestScore": 16,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Clinton Taylor",
+                "rounds": 9,
+                "totalScore": 250,
+                "average": 27.78,
+                "lowestScore": 24,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Micah Dance",
+                "rounds": 9,
+                "totalScore": 250,
+                "average": 27.78,
+                "lowestScore": 4,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Daniel Round",
+                "rounds": 6,
+                "totalScore": 166,
+                "average": 27.67,
+                "lowestScore": 22,
+                "highestScore": 33
+              },
+              {
+                "playerName": "Benjamin Jones",
+                "rounds": 23,
+                "totalScore": 635,
+                "average": 27.61,
+                "lowestScore": 16,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Matt Harris",
+                "rounds": 16,
+                "totalScore": 438,
+                "average": 27.38,
+                "lowestScore": 18,
+                "highestScore": 33
+              },
+              {
+                "playerName": "David Hill",
+                "rounds": 54,
+                "totalScore": 1474,
+                "average": 27.3,
+                "lowestScore": 15,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Sam Marsden",
+                "rounds": 7,
+                "totalScore": 191,
+                "average": 27.29,
+                "lowestScore": 9,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Kevin Cooksey",
+                "rounds": 12,
+                "totalScore": 326,
+                "average": 27.17,
+                "lowestScore": 3,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Melvin Crook",
+                "rounds": 39,
+                "totalScore": 1059,
+                "average": 27.15,
+                "lowestScore": 1,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Benjamin Woodall",
+                "rounds": 6,
+                "totalScore": 162,
+                "average": 27,
+                "lowestScore": 22,
+                "highestScore": 33
+              },
+              {
+                "playerName": "John Edwards",
+                "rounds": 20,
+                "totalScore": 537,
+                "average": 26.85,
+                "lowestScore": 10,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Jason Sean Higley",
+                "rounds": 13,
+                "totalScore": 348,
+                "average": 26.77,
+                "lowestScore": 6,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Mitch Sayce",
+                "rounds": 9,
+                "totalScore": 239,
+                "average": 26.56,
+                "lowestScore": 7,
+                "highestScore": 32
+              },
+              {
+                "playerName": "David J. L. Jones",
+                "rounds": 15,
+                "totalScore": 396,
+                "average": 26.4,
+                "lowestScore": 8,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Lee Rhoden",
+                "rounds": 5,
+                "totalScore": 132,
+                "average": 26.4,
+                "lowestScore": 20,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Keith Sabin",
+                "rounds": 7,
+                "totalScore": 183,
+                "average": 26.14,
+                "lowestScore": 10,
+                "highestScore": 39
+              },
+              {
+                "playerName": "Christopher Yale",
+                "rounds": 10,
+                "totalScore": 258,
+                "average": 25.8,
+                "lowestScore": 13,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Keith B. Stubbs",
+                "rounds": 5,
+                "totalScore": 129,
+                "average": 25.8,
+                "lowestScore": 11,
+                "highestScore": 34
+              },
+              {
+                "playerName": "Lisa Hampson",
+                "rounds": 5,
+                "totalScore": 129,
+                "average": 25.8,
+                "lowestScore": 18,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Stephen Thompson",
+                "rounds": 5,
+                "totalScore": 128,
+                "average": 25.6,
+                "lowestScore": 14,
+                "highestScore": 33
+              },
+              {
+                "playerName": "Arran Keeley",
+                "rounds": 11,
+                "totalScore": 281,
+                "average": 25.55,
+                "lowestScore": 19,
+                "highestScore": 34
+              },
+              {
+                "playerName": "Ivan John Jones",
+                "rounds": 14,
+                "totalScore": 336,
+                "average": 24,
+                "lowestScore": 16,
+                "highestScore": 32
+              },
+              {
+                "playerName": "Ray Sandle",
+                "rounds": 7,
+                "totalScore": 167,
+                "average": 23.86,
+                "lowestScore": 18,
+                "highestScore": 30
+              },
+              {
+                "playerName": "Paul Russell",
+                "rounds": 5,
+                "totalScore": 115,
+                "average": 23,
+                "lowestScore": 8,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Terrance Stanley Nolan",
+                "rounds": 12,
+                "totalScore": 224,
+                "average": 18.67,
+                "lowestScore": 4,
+                "highestScore": 41
+              },
+              {
+                "playerName": "John Goudge",
+                "rounds": 19,
+                "totalScore": 344,
+                "average": 18.11,
+                "lowestScore": 0,
+                "highestScore": 35
+              }
+            ]
+          },
+          "thirtySixHole": {
+            "gross": [],
+            "nett": [],
+            "stableford": []
+          }
+        },
+        "seniors": {
+          "nineHole": {
+            "gross": [],
+            "nett": [
+              {
+                "playerName": "David Evitts",
+                "rounds": 6,
+                "totalScore": 191,
+                "average": 31.83,
+                "lowestScore": 9,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Keith John Woodall",
+                "rounds": 16,
+                "totalScore": 566,
+                "average": 35.38,
+                "lowestScore": 15,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Kevin Cooksey",
+                "rounds": 14,
+                "totalScore": 497,
+                "average": 35.5,
+                "lowestScore": 12,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Eric Edwards",
+                "rounds": 9,
+                "totalScore": 320,
+                "average": 35.56,
+                "lowestScore": 33,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Stephen Hall",
+                "rounds": 14,
+                "totalScore": 499,
+                "average": 35.64,
+                "lowestScore": 16,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Robert Hudson",
+                "rounds": 22,
+                "totalScore": 787,
+                "average": 35.77,
+                "lowestScore": 15,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Philip John Northall",
+                "rounds": 23,
+                "totalScore": 830,
+                "average": 36.09,
+                "lowestScore": 17,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Keith Durbridge",
+                "rounds": 19,
+                "totalScore": 686,
+                "average": 36.11,
+                "lowestScore": 17,
+                "highestScore": 43
+              },
+              {
+                "playerName": "James Webber",
+                "rounds": 16,
+                "totalScore": 580,
+                "average": 36.25,
+                "lowestScore": 14,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Raymond Saunders",
+                "rounds": 8,
+                "totalScore": 291,
+                "average": 36.38,
+                "lowestScore": 33,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Keith Taylor",
+                "rounds": 7,
+                "totalScore": 255,
+                "average": 36.43,
+                "lowestScore": 31,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Melvin Crook",
+                "rounds": 13,
+                "totalScore": 474,
+                "average": 36.46,
+                "lowestScore": 16,
+                "highestScore": 49
+              },
+              {
+                "playerName": "Keith Sabin",
+                "rounds": 18,
+                "totalScore": 659,
+                "average": 36.61,
+                "lowestScore": 15,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Bruce Antony Mansell",
+                "rounds": 20,
+                "totalScore": 733,
+                "average": 36.65,
+                "lowestScore": 13,
+                "highestScore": 45
+              },
+              {
+                "playerName": "James Marsh Derrer",
+                "rounds": 21,
+                "totalScore": 772,
+                "average": 36.76,
+                "lowestScore": 30,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Keith Ratcliffe",
+                "rounds": 27,
+                "totalScore": 999,
+                "average": 37,
+                "lowestScore": 15,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Geoffrey Alan Ford",
+                "rounds": 15,
+                "totalScore": 558,
+                "average": 37.2,
+                "lowestScore": 13,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Clive Atkins",
+                "rounds": 25,
+                "totalScore": 940,
+                "average": 37.6,
+                "lowestScore": 19,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Wayne Rutter",
+                "rounds": 26,
+                "totalScore": 978,
+                "average": 37.62,
+                "lowestScore": 13,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Michael John Kendrick",
+                "rounds": 11,
+                "totalScore": 417,
+                "average": 37.91,
+                "lowestScore": 34,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Malcolm Powell",
+                "rounds": 24,
+                "totalScore": 910,
+                "average": 37.92,
+                "lowestScore": 13,
+                "highestScore": 46
+              },
+              {
+                "playerName": "M.j. Davies",
+                "rounds": 26,
+                "totalScore": 992,
+                "average": 38.15,
+                "lowestScore": 33,
+                "highestScore": 50
+              },
+              {
+                "playerName": "Kenneth Brettle",
+                "rounds": 25,
+                "totalScore": 956,
+                "average": 38.24,
+                "lowestScore": 16,
+                "highestScore": 48
+              },
+              {
+                "playerName": "Stephen Price",
+                "rounds": 8,
+                "totalScore": 307,
+                "average": 38.38,
+                "lowestScore": 31,
+                "highestScore": 49
+              },
+              {
+                "playerName": "Paul Russell",
+                "rounds": 27,
+                "totalScore": 1037,
+                "average": 38.41,
+                "lowestScore": 11,
+                "highestScore": 48
+              },
+              {
+                "playerName": "Barry Thomas Lawton",
+                "rounds": 24,
+                "totalScore": 922,
+                "average": 38.42,
+                "lowestScore": 11,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Harry Westwood",
+                "rounds": 14,
+                "totalScore": 538,
+                "average": 38.43,
+                "lowestScore": 34,
+                "highestScore": 44
+              },
+              {
+                "playerName": "M T Cowdell",
+                "rounds": 11,
+                "totalScore": 425,
+                "average": 38.64,
+                "lowestScore": 33,
+                "highestScore": 42
+              },
+              {
+                "playerName": "John Edwards",
+                "rounds": 12,
+                "totalScore": 464,
+                "average": 38.67,
+                "lowestScore": 34,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Keith Brian Culwick",
+                "rounds": 9,
+                "totalScore": 348,
+                "average": 38.67,
+                "lowestScore": 32,
+                "highestScore": 53
+              },
+              {
+                "playerName": "Paul Raymond Rock",
+                "rounds": 15,
+                "totalScore": 581,
+                "average": 38.73,
+                "lowestScore": 32,
+                "highestScore": 48
+              },
+              {
+                "playerName": "Kevin John Hartland",
+                "rounds": 9,
+                "totalScore": 350,
+                "average": 38.89,
+                "lowestScore": 36,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Kevin Eric Conn",
+                "rounds": 10,
+                "totalScore": 389,
+                "average": 38.9,
+                "lowestScore": 36,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Michael Geoffrey Guise",
+                "rounds": 26,
+                "totalScore": 1013,
+                "average": 38.96,
+                "lowestScore": 12,
+                "highestScore": 52
+              },
+              {
+                "playerName": "Michael William Murray",
+                "rounds": 17,
+                "totalScore": 663,
+                "average": 39,
+                "lowestScore": 33,
+                "highestScore": 44
+              },
+              {
+                "playerName": "Ivan James Cooper",
+                "rounds": 15,
+                "totalScore": 585,
+                "average": 39,
+                "lowestScore": 34,
+                "highestScore": 46
+              },
+              {
+                "playerName": "Keith B. Stubbs",
+                "rounds": 8,
+                "totalScore": 312,
+                "average": 39,
+                "lowestScore": 33,
+                "highestScore": 48
+              },
+              {
+                "playerName": "Gordon Hampstead",
+                "rounds": 19,
+                "totalScore": 743,
+                "average": 39.11,
+                "lowestScore": 15,
+                "highestScore": 49
+              },
+              {
+                "playerName": "Terrance Stanley Nolan",
+                "rounds": 8,
+                "totalScore": 313,
+                "average": 39.13,
+                "lowestScore": 34,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Michael Merrell",
+                "rounds": 9,
+                "totalScore": 354,
+                "average": 39.33,
+                "lowestScore": 33,
+                "highestScore": 43
+              },
+              {
+                "playerName": "Pavittar Singh",
+                "rounds": 5,
+                "totalScore": 197,
+                "average": 39.4,
+                "lowestScore": 35,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Michael John Walter Horne",
+                "rounds": 27,
+                "totalScore": 1069,
+                "average": 39.59,
+                "lowestScore": 34,
+                "highestScore": 48
+              },
+              {
+                "playerName": "John Gilbert Baker",
+                "rounds": 18,
+                "totalScore": 720,
+                "average": 40,
+                "lowestScore": 35,
+                "highestScore": 46
+              },
+              {
+                "playerName": "Robert P. Timmington",
+                "rounds": 24,
+                "totalScore": 966,
+                "average": 40.25,
+                "lowestScore": 33,
+                "highestScore": 49
+              },
+              {
+                "playerName": "Brian Douglas Perry",
+                "rounds": 14,
+                "totalScore": 570,
+                "average": 40.71,
+                "lowestScore": 35,
+                "highestScore": 49
+              },
+              {
+                "playerName": "Malcolm Benjamin Jones",
+                "rounds": 17,
+                "totalScore": 695,
+                "average": 40.88,
+                "lowestScore": 36,
+                "highestScore": 48
+              },
+              {
+                "playerName": "John Coley",
+                "rounds": 10,
+                "totalScore": 421,
+                "average": 42.1,
+                "lowestScore": 37,
+                "highestScore": 50
+              },
+              {
+                "playerName": "Ivan Homer",
+                "rounds": 10,
+                "totalScore": 428,
+                "average": 42.8,
+                "lowestScore": 36,
+                "highestScore": 54
+              },
+              {
+                "playerName": "Harry Clarke",
+                "rounds": 10,
+                "totalScore": 438,
+                "average": 43.8,
+                "lowestScore": 40,
+                "highestScore": 48
+              },
+              {
+                "playerName": "John W. T. Mc'ewan",
+                "rounds": 13,
+                "totalScore": 571,
+                "average": 43.92,
+                "lowestScore": 36,
+                "highestScore": 50
+              },
+              {
+                "playerName": "Michael Terence Cole",
+                "rounds": 8,
+                "totalScore": 358,
+                "average": 44.75,
+                "lowestScore": 38,
+                "highestScore": 53
+              }
+            ],
+            "stableford": [
+              {
+                "playerName": "Robert Hudson",
+                "rounds": 15,
+                "totalScore": 267,
+                "average": 17.8,
+                "lowestScore": 12,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Philip John Northall",
+                "rounds": 20,
+                "totalScore": 350,
+                "average": 17.5,
+                "lowestScore": 10,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Stephen Hall",
+                "rounds": 12,
+                "totalScore": 205,
+                "average": 17.08,
+                "lowestScore": 12,
+                "highestScore": 22
+              },
+              {
+                "playerName": "M.j. Davies",
+                "rounds": 24,
+                "totalScore": 408,
+                "average": 17,
+                "lowestScore": 11,
+                "highestScore": 38
+              },
+              {
+                "playerName": "David Evitts",
+                "rounds": 6,
+                "totalScore": 102,
+                "average": 17,
+                "lowestScore": 16,
+                "highestScore": 18
+              },
+              {
+                "playerName": "James Webber",
+                "rounds": 13,
+                "totalScore": 219,
+                "average": 16.85,
+                "lowestScore": 12,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Keith Durbridge",
+                "rounds": 18,
+                "totalScore": 303,
+                "average": 16.83,
+                "lowestScore": 10,
+                "highestScore": 22
+              },
+              {
+                "playerName": "Eric Edwards",
+                "rounds": 13,
+                "totalScore": 218,
+                "average": 16.77,
+                "lowestScore": 11,
+                "highestScore": 19
+              },
+              {
+                "playerName": "Raymond Saunders",
+                "rounds": 9,
+                "totalScore": 150,
+                "average": 16.67,
+                "lowestScore": 12,
+                "highestScore": 21
+              },
+              {
+                "playerName": "Wayne Rutter",
+                "rounds": 16,
+                "totalScore": 266,
+                "average": 16.63,
+                "lowestScore": 10,
+                "highestScore": 41
+              },
+              {
+                "playerName": "Keith Ratcliffe",
+                "rounds": 25,
+                "totalScore": 411,
+                "average": 16.44,
+                "lowestScore": 9,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Pavittar Singh",
+                "rounds": 9,
+                "totalScore": 147,
+                "average": 16.33,
+                "lowestScore": 13,
+                "highestScore": 21
+              },
+              {
+                "playerName": "John W. T. Mc'ewan",
+                "rounds": 10,
+                "totalScore": 162,
+                "average": 16.2,
+                "lowestScore": 9,
+                "highestScore": 36
+              },
+              {
+                "playerName": "Geoffrey Alan Ford",
+                "rounds": 7,
+                "totalScore": 113,
+                "average": 16.14,
+                "lowestScore": 10,
+                "highestScore": 35
+              },
+              {
+                "playerName": "Michael John Kendrick",
+                "rounds": 12,
+                "totalScore": 189,
+                "average": 15.75,
+                "lowestScore": 12,
+                "highestScore": 21
+              },
+              {
+                "playerName": "Gordon Hampstead",
+                "rounds": 14,
+                "totalScore": 220,
+                "average": 15.71,
+                "lowestScore": 7,
+                "highestScore": 48
+              },
+              {
+                "playerName": "Terrance Stanley Nolan",
+                "rounds": 10,
+                "totalScore": 157,
+                "average": 15.7,
+                "lowestScore": 9,
+                "highestScore": 38
+              },
+              {
+                "playerName": "Kenneth Brettle",
+                "rounds": 18,
+                "totalScore": 281,
+                "average": 15.61,
+                "lowestScore": 11,
+                "highestScore": 22
+              },
+              {
+                "playerName": "Paul Russell",
+                "rounds": 21,
+                "totalScore": 325,
+                "average": 15.48,
+                "lowestScore": 8,
+                "highestScore": 37
+              },
+              {
+                "playerName": "Michael Geoffrey Guise",
+                "rounds": 20,
+                "totalScore": 308,
+                "average": 15.4,
+                "lowestScore": 8,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Kevin Cooksey",
+                "rounds": 14,
+                "totalScore": 213,
+                "average": 15.21,
+                "lowestScore": 12,
+                "highestScore": 19
+              },
+              {
+                "playerName": "Jeffrey Dean",
+                "rounds": 5,
+                "totalScore": 76,
+                "average": 15.2,
+                "lowestScore": 12,
+                "highestScore": 20
+              },
+              {
+                "playerName": "Keith John Woodall",
+                "rounds": 17,
+                "totalScore": 258,
+                "average": 15.18,
+                "lowestScore": 10,
+                "highestScore": 23
+              },
+              {
+                "playerName": "Clive Atkins",
+                "rounds": 18,
+                "totalScore": 273,
+                "average": 15.17,
+                "lowestScore": 9,
+                "highestScore": 20
+              },
+              {
+                "playerName": "Ivan Homer",
+                "rounds": 6,
+                "totalScore": 91,
+                "average": 15.17,
+                "lowestScore": 7,
+                "highestScore": 49
+              },
+              {
+                "playerName": "Malcolm Powell",
+                "rounds": 21,
+                "totalScore": 318,
+                "average": 15.14,
+                "lowestScore": 7,
+                "highestScore": 40
+              },
+              {
+                "playerName": "Bruce Antony Mansell",
+                "rounds": 14,
+                "totalScore": 212,
+                "average": 15.14,
+                "lowestScore": 10,
+                "highestScore": 19
+              },
+              {
+                "playerName": "James Marsh Derrer",
+                "rounds": 18,
+                "totalScore": 271,
+                "average": 15.06,
+                "lowestScore": 10,
+                "highestScore": 19
+              },
+              {
+                "playerName": "Michael Merrell",
+                "rounds": 8,
+                "totalScore": 120,
+                "average": 15,
+                "lowestScore": 10,
+                "highestScore": 25
+              },
+              {
+                "playerName": "Melvin Crook",
+                "rounds": 17,
+                "totalScore": 254,
+                "average": 14.94,
+                "lowestScore": 8,
+                "highestScore": 20
+              },
+              {
+                "playerName": "Michael John Walter Horne",
+                "rounds": 22,
+                "totalScore": 328,
+                "average": 14.91,
+                "lowestScore": 7,
+                "highestScore": 45
+              },
+              {
+                "playerName": "Kevin John Hartland",
+                "rounds": 11,
+                "totalScore": 164,
+                "average": 14.91,
+                "lowestScore": 11,
+                "highestScore": 20
+              },
+              {
+                "playerName": "Keith Brian Culwick",
+                "rounds": 10,
+                "totalScore": 146,
+                "average": 14.6,
+                "lowestScore": 6,
+                "highestScore": 22
+              },
+              {
+                "playerName": "Keith Sabin",
+                "rounds": 15,
+                "totalScore": 218,
+                "average": 14.53,
+                "lowestScore": 10,
+                "highestScore": 19
+              },
+              {
+                "playerName": "Brian Douglas Perry",
+                "rounds": 10,
+                "totalScore": 145,
+                "average": 14.5,
+                "lowestScore": 6,
+                "highestScore": 45
+              },
+              {
+                "playerName": "M T Cowdell",
+                "rounds": 6,
+                "totalScore": 85,
+                "average": 14.17,
+                "lowestScore": 11,
+                "highestScore": 18
+              },
+              {
+                "playerName": "Kevin Eric Conn",
+                "rounds": 7,
+                "totalScore": 99,
+                "average": 14.14,
+                "lowestScore": 12,
+                "highestScore": 21
+              },
+              {
+                "playerName": "John Coley",
+                "rounds": 9,
+                "totalScore": 127,
+                "average": 14.11,
+                "lowestScore": 6,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Paul Raymond Rock",
+                "rounds": 15,
+                "totalScore": 211,
+                "average": 14.07,
+                "lowestScore": 8,
+                "highestScore": 37
+              },
+              {
+                "playerName": "John Edwards",
+                "rounds": 11,
+                "totalScore": 154,
+                "average": 14,
+                "lowestScore": 8,
+                "highestScore": 18
+              },
+              {
+                "playerName": "Ivan James Cooper",
+                "rounds": 16,
+                "totalScore": 223,
+                "average": 13.94,
+                "lowestScore": 7,
+                "highestScore": 20
+              },
+              {
+                "playerName": "Robert P. Timmington",
+                "rounds": 24,
+                "totalScore": 334,
+                "average": 13.92,
+                "lowestScore": 5,
+                "highestScore": 44
+              },
+              {
+                "playerName": "John Gilbert Baker",
+                "rounds": 21,
+                "totalScore": 285,
+                "average": 13.57,
+                "lowestScore": 5,
+                "highestScore": 42
+              },
+              {
+                "playerName": "Stephen Price",
+                "rounds": 14,
+                "totalScore": 186,
+                "average": 13.29,
+                "lowestScore": 6,
+                "highestScore": 21
+              },
+              {
+                "playerName": "Malcolm Benjamin Jones",
+                "rounds": 18,
+                "totalScore": 234,
+                "average": 13,
+                "lowestScore": 7,
+                "highestScore": 20
+              },
+              {
+                "playerName": "Michael William Murray",
+                "rounds": 17,
+                "totalScore": 220,
+                "average": 12.94,
+                "lowestScore": 7,
+                "highestScore": 19
+              },
+              {
+                "playerName": "Barry Thomas Lawton",
+                "rounds": 17,
+                "totalScore": 217,
+                "average": 12.76,
+                "lowestScore": 9,
+                "highestScore": 17
+              },
+              {
+                "playerName": "Harry Clarke",
+                "rounds": 9,
+                "totalScore": 103,
+                "average": 11.44,
+                "lowestScore": 3,
+                "highestScore": 21
+              },
+              {
+                "playerName": "Harry Westwood",
+                "rounds": 15,
+                "totalScore": 171,
+                "average": 11.4,
+                "lowestScore": 5,
+                "highestScore": 17
+              },
+              {
+                "playerName": "Michael Terence Cole",
+                "rounds": 7,
+                "totalScore": 62,
+                "average": 8.86,
+                "lowestScore": 6,
+                "highestScore": 13
+              }
+            ]
+          },
+          "eighteenHole": {
+            "gross": [],
+            "nett": [],
+            "stableford": []
+          },
+          "thirtySixHole": {
+            "gross": [],
+            "nett": [],
+            "stableford": []
+          }
         }
       },
       "unresolvedPlayers": [],
@@ -24881,7 +28041,6 @@
         "november-sunday-stableford",
         "october-medal-and-lewis-cup",
         "october-sunday-stableford-competition",
-        "pro-s-winter-series",
         "saturday-medal-only",
         "seniors-april-medal",
         "seniors-arthur-turley-trophy",
