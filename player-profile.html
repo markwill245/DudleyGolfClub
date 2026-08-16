@@ -42,6 +42,7 @@
     let hallOfFameData = null;
     let oomData = null;
     let ledgerData = null;
+    let metricData = null;
 
     function getSlug() {
       const params = new URLSearchParams(window.location.search);
@@ -108,6 +109,38 @@
       };
     }
 
+    function getCertifiedScoringAverages(player) {
+      const metric =
+        metricData?.metrics?.find(
+          item =>
+            item.metricId ===
+            "career-scoring-averages"
+        );
+
+      const name =
+        normalise(player.hero?.name);
+
+      const medal =
+        metric?.leaderboards
+          ?.eighteenHole
+          ?.nett
+          ?.find(row =>
+            normalise(row.playerName) === name
+          ) || null;
+
+      const stableford =
+        metric?.leaderboards
+          ?.eighteenHole
+          ?.stableford
+          ?.find(row =>
+            normalise(row.playerName) === name
+          ) || null;
+
+      return {
+        medal,
+        stableford
+      };
+    }
     async function loadLedger() {
       if (ledgerData) {
         return ledgerData;
@@ -548,7 +581,8 @@
       const [
         playerResponse,
         hofResponse,
-        oomResponse
+        oomResponse,
+        metricResponse
       ] = await Promise.all([
         fetch("data/player-page-data.json", {
           cache: "no-store"
@@ -558,13 +592,17 @@
         }),
         fetch("data/order-of-merit-certified.json", {
           cache: "no-store"
+        }),
+        fetch("data/metric-certification.json", {
+          cache: "no-store"
         })
       ]);
 
       if (
         !playerResponse.ok ||
         !hofResponse.ok ||
-        !oomResponse.ok
+        !oomResponse.ok ||
+        !metricResponse.ok
       ) {
         throw new Error(
           "Certified player data could not be loaded."
@@ -574,6 +612,7 @@
       const players = await playerResponse.json();
       hallOfFameData = await hofResponse.json();
       oomData = await oomResponse.json();
+      metricData = await metricResponse.json();
 
       const player =
         players.find(p => p.slug === slug);
@@ -692,7 +731,61 @@
           </button>
 
         </div>
+${(() => {
+          const scoring = getCertifiedScoringAverages(player);
 
+          if (!scoring.medal && !scoring.stableford) {
+            return "";
+          }
+
+          return `
+    <section class="mb-8">
+      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
+        Certified Scoring
+      </p>
+
+      <h2 class="text-2xl font-serif mb-4">
+        Career Scoring Averages
+      </h2>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+
+        ${scoring.medal ? `
+          <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+            <p class="text-sm text-gray-500 mb-1">
+             Career Medal Nett Average
+            </p>
+
+            <strong class="text-3xl font-serif text-[#132419]">
+              ${escapeHtml(scoring.medal.average)}
+            </strong>
+
+            <p class="text-sm text-gray-600 mt-2">
+              ${escapeHtml(scoring.medal.rounds)} qualifying medal rounds
+            </p>
+          </div>
+        ` : ""}
+
+        ${scoring.stableford ? `
+          <div class="rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
+            <p class="text-sm text-gray-500 mb-1">
+              Career Stableford Average
+            </p>
+
+            <strong class="text-3xl font-serif text-[#132419]">
+              ${escapeHtml(scoring.stableford.average)} pts
+            </strong>
+
+            <p class="text-sm text-gray-600 mt-2">
+              ${escapeHtml(scoring.stableford.rounds)} qualifying Stableford rounds
+            </p>
+          </div>
+        ` : ""}
+
+      </div>
+    </section>
+  `;
+        })()}
         <div
           id="profile-stat-panel"
           class="hidden mb-10 rounded-2xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
@@ -720,10 +813,10 @@
           </div>
 
           <div class="grid md:grid-cols-3 gap-4 mb-5">
-            ${[1, 2, 3].map(division => {
-        const key = `division${division}`;
+                            ${[1, 2, 3].map(division => {
+          const key = `division${division}`;
 
-        return `
+          return `
                 <div class="rounded-xl border border-[#C5A367]/30 bg-[#F9F7F2] p-5">
 
                   <h3 class="font-serif text-xl mb-3">
@@ -748,7 +841,7 @@
 
                 </div>
               `;
-      }).join("")}
+        }).join("")}
           </div>
 
           ${(player.divisionHonours?.history || []).length
