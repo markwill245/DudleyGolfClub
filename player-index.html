@@ -672,7 +672,7 @@ ${(
     function highlightButton(button) {
       document
         .querySelectorAll(
-          `.stat - button[data - player="${button.dataset.player}"]`
+          `.stat-button[data-player="${button.dataset.player}"]`
         )
         .forEach(item => {
           item.classList.remove(
@@ -1119,9 +1119,8 @@ ${(
 
           const panel =
             document.querySelector(
-              `[data - stat - panel= "${slug}"]`
+              `[data-stat-panel="${slug}"]`
             );
-
           const player =
             getPlayerBySlug(slug);
 
