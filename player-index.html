@@ -702,9 +702,9 @@ ${(
 
       if (!wins.length) {
         return `
-        < h3 class= "text-xl font-serif mb-2" >
+        <h3 class="text-xl font-serif mb-2" >
         Certified Wins
-      </h3 >
+      </h3>
 
           <p class="text-sm text-gray-600">
             No certified career wins recorded.
@@ -713,9 +713,9 @@ ${(
       }
 
       return `
-          < h3 class= "text-xl font-serif mb-1" >
+          <h3 class="text-xl font-serif mb-1" >
           Certified Wins
-      </h3 >
+      </h3>
 
       <p class="text-xs text-gray-500 mb-4">
         ${wins.length}
@@ -773,9 +773,9 @@ ${(
 
       if (!hof) {
         return `
-          < p class= "text-sm text-gray-600" >
+          <p class="text-sm text-gray-600" >
           No certified Hall of Fame record.
-      </p >
+      </p>
           `;
       }
 
@@ -837,7 +837,7 @@ ${(
       ];
 
       return `
-          < div class= "flex items-end justify-between gap-4 mb-4" >
+          <div class="flex items-end justify-between gap-4 mb-4" >
 
         <div>
           <h3 class="text-xl font-serif">
@@ -853,7 +853,7 @@ ${(
           ${hof.score}
         </strong>
 
-      </div >
+      </div>
 
       <div class="space-y-2">
         ${rows
@@ -902,9 +902,9 @@ ${(
 
       if (!oom.row) {
         return `
-          < h3 class= "text-xl font-serif mb-2" >
+          <h3 class="text-xl font-serif mb-2" >
           Order of Merit
-      </h3 >
+      </h3>
 
           <p class="text-sm text-gray-600">
             No points recorded in the current
@@ -917,7 +917,7 @@ ${(
       const row = oom.row;
 
       return `
-          < div class= "flex justify-between gap-4 mb-4" >
+          <div class="flex justify-between gap-4 mb-4" >
 
         <div>
           <h3 class="text-xl font-serif">
@@ -940,7 +940,7 @@ ${(
           </p>
         </div>
 
-      </div >
+      </div>
 
       <div class="space-y-2">
 
@@ -1038,9 +1038,9 @@ ${(
 
       if (!rows.length) {
         return `
-        < h3 class= "text-xl font-serif mb-2" >
+        <h3 class="text-xl font-serif mb-2" >
         Certified Top 3 Finishes
-      </h3 >
+      </h3>
 
           <p class="text-sm text-gray-600">
             No certified Top 3 finishes recorded.
@@ -1049,9 +1049,9 @@ ${(
       }
 
       return `
-          < h3 class= "text-xl font-serif mb-1" >
+          <h3 class="text-xl font-serif mb-1" >
           Certified Top 3 Finishes
-      </h3 >
+      </h3>
 
       <p class="text-xs text-gray-500 mb-4">
         ${rows.length}
@@ -1183,9 +1183,9 @@ ${(
 
           if (stat === "top3") {
             panel.innerHTML = `
-        < p class= "text-sm text-gray-500" >
+        <p class="text-sm text-gray-500" >
         Loading certified Top 3 evidence...
-            </p >
+            </p>
           `;
 
             try {
@@ -1195,9 +1195,9 @@ ${(
               console.error(error);
 
               panel.innerHTML = `
-          < p class= "text-sm text-red-700" >
+          <p class="text-sm text-red-700" >
           Unable to load certified Top 3 evidence.
-      </p >
+      </p>
           `;
             }
           }
@@ -1253,7 +1253,7 @@ ${(
       document.getElementById(
         "players"
       ).innerHTML = `
-          < div class= "col-span-full text-center py-16" >
+          <div class="col-span-full text-center py-16" >
         <h2 class="text-2xl font-serif mb-3">
           Player Index unavailable
         </h2>
@@ -1261,7 +1261,7 @@ ${(
         <p class="text-gray-600">
           Certified player data could not be loaded.
         </p>
-      </div >
+      </div>
     `;
     });
   </script>
