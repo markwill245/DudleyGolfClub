@@ -23580,13 +23580,13 @@
       "rank": 2,
       "player": "Neil Hartland",
       "section": "Mens",
-      "points": 47,
+      "points": 48,
       "wins": 1,
       "runnerUp": 1,
       "top3": 5,
       "top5": 6,
-      "top10": 8,
-      "competitionsPlayed": 8,
+      "top10": 9,
+      "competitionsPlayed": 9,
       "results": [
         {
           "competition": "April Sunday Stableford",
@@ -23594,6 +23594,13 @@
           "year": 2026,
           "position": 3,
           "points": 6
+        },
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 9,
+          "points": 1
         },
         {
           "competition": "Bassano Cup",
@@ -23907,6 +23914,69 @@
     },
     {
       "rank": 7,
+      "player": "Nigel Brookes",
+      "section": "Mens",
+      "points": 30,
+      "wins": 0,
+      "runnerUp": 1,
+      "top3": 3,
+      "top5": 4,
+      "top10": 7,
+      "competitionsPlayed": 7,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 6,
+          "points": 3
+        },
+        {
+          "competition": "Coronation Cup",
+          "competitionId": "coronation-cup",
+          "year": 2026,
+          "position": 9,
+          "points": 1
+        },
+        {
+          "competition": "Doug Lee Pairs Trophy",
+          "competitionId": "doug-lee-trophy",
+          "year": 2026,
+          "position": 3,
+          "points": 6
+        },
+        {
+          "competition": "James Grainger Trophy",
+          "competitionId": "james-grainger-trophy",
+          "year": 2026,
+          "position": 4,
+          "points": 5
+        },
+        {
+          "competition": "July Medal / Bloom Cup",
+          "competitionId": "july-medal-bloom-cup",
+          "year": 2026,
+          "position": 10,
+          "points": 1
+        },
+        {
+          "competition": "Par/Bogey Medal",
+          "competitionId": "par-bogey-medal",
+          "year": 2026,
+          "position": 3,
+          "points": 6
+        },
+        {
+          "competition": "Probus Pairs Stableford Betterball",
+          "competitionId": "probus-pairs-stableford-betterball",
+          "year": 2026,
+          "position": 2,
+          "points": 8
+        }
+      ]
+    },
+    {
+      "rank": 8,
       "player": "Michael John Kendrick",
       "section": "Mens",
       "points": 28,
@@ -23948,7 +24018,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "player": "Calin Tiplea",
       "section": "Mens",
       "points": 28,
@@ -24032,20 +24102,34 @@
       ]
     },
     {
-      "rank": 9,
-      "player": "Nigel Brookes",
+      "rank": 10,
+      "player": "Paul Thomas Donnelly",
       "section": "Mens",
       "points": 27,
-      "wins": 0,
+      "wins": 1,
       "runnerUp": 1,
-      "top3": 3,
-      "top5": 4,
+      "top3": 2,
+      "top5": 3,
       "top10": 6,
       "competitionsPlayed": 6,
       "results": [
         {
-          "competition": "Coronation Cup",
-          "competitionId": "coronation-cup",
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 2,
+          "points": 8
+        },
+        {
+          "competition": "Bassano Cup",
+          "competitionId": "bassano-cup",
+          "year": 2026,
+          "position": 9,
+          "points": 1
+        },
+        {
+          "competition": "Centenary Trophy & Boscowan Cup",
+          "competitionId": "centenary-trophy-boscowan-cup",
           "year": 2026,
           "position": 9,
           "points": 1
@@ -24054,41 +24138,27 @@
           "competition": "Doug Lee Pairs Trophy",
           "competitionId": "doug-lee-trophy",
           "year": 2026,
-          "position": 3,
-          "points": 6
-        },
-        {
-          "competition": "James Grainger Trophy",
-          "competitionId": "james-grainger-trophy",
-          "year": 2026,
           "position": 4,
           "points": 5
         },
         {
-          "competition": "July Medal / Bloom Cup",
-          "competitionId": "july-medal-bloom-cup",
+          "competition": "March Sunday Stableford",
+          "competitionId": "march-sunday-stableford",
           "year": 2026,
-          "position": 10,
-          "points": 1
+          "position": 7,
+          "points": 2
         },
         {
-          "competition": "Par/Bogey Medal",
-          "competitionId": "par-bogey-medal",
+          "competition": "Tom Poole Trophy",
+          "competitionId": "tom-poole-cup",
           "year": 2026,
-          "position": 3,
-          "points": 6
-        },
-        {
-          "competition": "Probus Pairs Stableford Betterball",
-          "competitionId": "probus-pairs-stableford-betterball",
-          "year": 2026,
-          "position": 2,
-          "points": 8
+          "position": 1,
+          "points": 10
         }
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": "Craig Locke",
       "section": "Mens",
       "points": 27,
@@ -24151,7 +24221,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "player": "Lewis Jones",
       "section": "Mens",
       "points": 25,
@@ -24207,7 +24277,70 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
+      "player": "Mark A. Williams",
+      "section": "Mens",
+      "points": 25,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 2,
+      "top5": 4,
+      "top10": 7,
+      "competitionsPlayed": 7,
+      "results": [
+        {
+          "competition": "April Medal and Presidents Putter qualifier",
+          "competitionId": "april-medal-and-presidents-putter-qualifier",
+          "year": 2026,
+          "position": 8,
+          "points": 1
+        },
+        {
+          "competition": "August Medal",
+          "competitionId": "august-medal",
+          "year": 2026,
+          "position": 3,
+          "points": 6
+        },
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 5,
+          "points": 4
+        },
+        {
+          "competition": "Club Championship",
+          "competitionId": "club-championship",
+          "year": 2026,
+          "position": 8,
+          "points": 1
+        },
+        {
+          "competition": "January Sunday Stableford Competition",
+          "competitionId": "january-sunday-stableford-competition",
+          "year": 2026,
+          "position": 5,
+          "points": 4
+        },
+        {
+          "competition": "July Medal / Bloom Cup",
+          "competitionId": "july-medal-bloom-cup",
+          "year": 2026,
+          "position": 6,
+          "points": 3
+        },
+        {
+          "competition": "May Sunday Stableford",
+          "competitionId": "may-sunday-stableford",
+          "year": 2026,
+          "position": 3,
+          "points": 6
+        }
+      ]
+    },
+    {
+      "rank": 14,
       "player": "Steve Homer",
       "section": "Mens",
       "points": 24,
@@ -24256,7 +24389,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 15,
       "player": "Kevin Walters",
       "section": "Mens",
       "points": 24,
@@ -24305,7 +24438,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 16,
       "player": "Ian Frederick Stevens",
       "section": "Mens",
       "points": 24,
@@ -24361,7 +24494,70 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 17,
+      "player": "Michael Williams",
+      "section": "Mens",
+      "points": 23,
+      "wins": 1,
+      "runnerUp": 0,
+      "top3": 1,
+      "top5": 2,
+      "top10": 7,
+      "competitionsPlayed": 7,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 1,
+          "points": 10
+        },
+        {
+          "competition": "Bassano Cup",
+          "competitionId": "bassano-cup",
+          "year": 2026,
+          "position": 10,
+          "points": 1
+        },
+        {
+          "competition": "James Grainger Trophy",
+          "competitionId": "james-grainger-trophy",
+          "year": 2026,
+          "position": 7,
+          "points": 2
+        },
+        {
+          "competition": "March Sunday Stableford",
+          "competitionId": "march-sunday-stableford",
+          "year": 2026,
+          "position": 4,
+          "points": 5
+        },
+        {
+          "competition": "May Sunday Stableford",
+          "competitionId": "may-sunday-stableford",
+          "year": 2026,
+          "position": 9,
+          "points": 1
+        },
+        {
+          "competition": "Par/Bogey Medal",
+          "competitionId": "par-bogey-medal",
+          "year": 2026,
+          "position": 6,
+          "points": 3
+        },
+        {
+          "competition": "Probus Pairs Stableford Betterball",
+          "competitionId": "probus-pairs-stableford-betterball",
+          "year": 2026,
+          "position": 9,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "rank": 18,
       "player": "Alan Ball",
       "section": "Mens",
       "points": 22,
@@ -24417,7 +24613,7 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 19,
       "player": "Mitchell Raybould",
       "section": "Mens",
       "points": 22,
@@ -24452,7 +24648,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 20,
       "player": "Steven Brookes",
       "section": "Mens",
       "points": 22,
@@ -24494,7 +24690,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 21,
       "player": "Paul Welch",
       "section": "Mens",
       "points": 22,
@@ -24543,63 +24739,7 @@
       ]
     },
     {
-      "rank": 19,
-      "player": "Mark A. Williams",
-      "section": "Mens",
-      "points": 21,
-      "wins": 0,
-      "runnerUp": 0,
-      "top3": 2,
-      "top5": 3,
-      "top10": 6,
-      "competitionsPlayed": 6,
-      "results": [
-        {
-          "competition": "April Medal and Presidents Putter qualifier",
-          "competitionId": "april-medal-and-presidents-putter-qualifier",
-          "year": 2026,
-          "position": 8,
-          "points": 1
-        },
-        {
-          "competition": "August Medal",
-          "competitionId": "august-medal",
-          "year": 2026,
-          "position": 3,
-          "points": 6
-        },
-        {
-          "competition": "Club Championship",
-          "competitionId": "club-championship",
-          "year": 2026,
-          "position": 8,
-          "points": 1
-        },
-        {
-          "competition": "January Sunday Stableford Competition",
-          "competitionId": "january-sunday-stableford-competition",
-          "year": 2026,
-          "position": 5,
-          "points": 4
-        },
-        {
-          "competition": "July Medal / Bloom Cup",
-          "competitionId": "july-medal-bloom-cup",
-          "year": 2026,
-          "position": 6,
-          "points": 3
-        },
-        {
-          "competition": "May Sunday Stableford",
-          "competitionId": "may-sunday-stableford",
-          "year": 2026,
-          "position": 3,
-          "points": 6
-        }
-      ]
-    },
-    {
-      "rank": 20,
+      "rank": 22,
       "player": "Stephen Hall",
       "section": "Mens",
       "points": 20,
@@ -24641,7 +24781,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 23,
       "player": "Adrian Burns",
       "section": "Mens",
       "points": 20,
@@ -24697,7 +24837,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 24,
       "player": "Jason Bates",
       "section": "Mens",
       "points": 19,
@@ -24732,56 +24872,7 @@
       ]
     },
     {
-      "rank": 23,
-      "player": "Paul Thomas Donnelly",
-      "section": "Mens",
-      "points": 19,
-      "wins": 1,
-      "runnerUp": 0,
-      "top3": 1,
-      "top5": 2,
-      "top10": 5,
-      "competitionsPlayed": 5,
-      "results": [
-        {
-          "competition": "Bassano Cup",
-          "competitionId": "bassano-cup",
-          "year": 2026,
-          "position": 9,
-          "points": 1
-        },
-        {
-          "competition": "Centenary Trophy & Boscowan Cup",
-          "competitionId": "centenary-trophy-boscowan-cup",
-          "year": 2026,
-          "position": 9,
-          "points": 1
-        },
-        {
-          "competition": "Doug Lee Pairs Trophy",
-          "competitionId": "doug-lee-trophy",
-          "year": 2026,
-          "position": 4,
-          "points": 5
-        },
-        {
-          "competition": "March Sunday Stableford",
-          "competitionId": "march-sunday-stableford",
-          "year": 2026,
-          "position": 7,
-          "points": 2
-        },
-        {
-          "competition": "Tom Poole Trophy",
-          "competitionId": "tom-poole-cup",
-          "year": 2026,
-          "position": 1,
-          "points": 10
-        }
-      ]
-    },
-    {
-      "rank": 24,
+      "rank": 25,
       "player": "Adam Stanfield",
       "section": "Mens",
       "points": 19,
@@ -24830,7 +24921,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 26,
       "player": "Richard Limb",
       "section": "Mens",
       "points": 19,
@@ -24879,7 +24970,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 27,
       "player": "Andrew Russell",
       "section": "Mens",
       "points": 18,
@@ -24921,7 +25012,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 28,
       "player": "Gary Male",
       "section": "Mens",
       "points": 18,
@@ -24949,7 +25040,7 @@
       ]
     },
     {
-      "rank": 28,
+      "rank": 29,
       "player": "Mark Dando",
       "section": "Mens",
       "points": 18,
@@ -24998,7 +25089,7 @@
       ]
     },
     {
-      "rank": 29,
+      "rank": 30,
       "player": "Mark Andrew Poulding",
       "section": "Mens",
       "points": 18,
@@ -25054,7 +25145,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 31,
       "player": "David Postin",
       "section": "Mens",
       "points": 17,
@@ -25096,7 +25187,7 @@
       ]
     },
     {
-      "rank": 31,
+      "rank": 32,
       "player": "David Evitts",
       "section": "Mens",
       "points": 16,
@@ -25131,7 +25222,7 @@
       ]
     },
     {
-      "rank": 32,
+      "rank": 33,
       "player": "Gavin Ray",
       "section": "Mens",
       "points": 16,
@@ -25187,7 +25278,7 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 34,
       "player": "Gregory Curry",
       "section": "Mens",
       "points": 15,
@@ -25222,7 +25313,7 @@
       ]
     },
     {
-      "rank": 34,
+      "rank": 35,
       "player": "Owen Limb",
       "section": "Mens",
       "points": 15,
@@ -25257,7 +25348,7 @@
       ]
     },
     {
-      "rank": 35,
+      "rank": 36,
       "player": "Benjamin Jones",
       "section": "Mens",
       "points": 15,
@@ -25292,7 +25383,7 @@
       ]
     },
     {
-      "rank": 36,
+      "rank": 37,
       "player": "Jason Hurp",
       "section": "Mens",
       "points": 15,
@@ -25362,7 +25453,42 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 38,
+      "player": "Keith Durbridge",
+      "section": "Mens",
+      "points": 15,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 3,
+      "top10": 3,
+      "competitionsPlayed": 3,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 4,
+          "points": 5
+        },
+        {
+          "competition": "July Sunday Stableford",
+          "competitionId": "july-sunday-stableford",
+          "year": 2026,
+          "position": 4,
+          "points": 5
+        },
+        {
+          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
+          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
+          "year": 2026,
+          "position": 4,
+          "points": 5
+        }
+      ]
+    },
+    {
+      "rank": 39,
       "player": "Dean Johnson",
       "section": "Mens",
       "points": 14,
@@ -25390,7 +25516,7 @@
       ]
     },
     {
-      "rank": 38,
+      "rank": 40,
       "player": "Scott Postin",
       "section": "Mens",
       "points": 14,
@@ -25432,7 +25558,7 @@
       ]
     },
     {
-      "rank": 39,
+      "rank": 41,
       "player": "Tony John Salt",
       "section": "Mens",
       "points": 14,
@@ -25467,7 +25593,7 @@
       ]
     },
     {
-      "rank": 40,
+      "rank": 42,
       "player": "Darren Jones",
       "section": "Mens",
       "points": 14,
@@ -25509,7 +25635,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 43,
       "player": "David Jeavons",
       "section": "Mens",
       "points": 14,
@@ -25551,7 +25677,7 @@
       ]
     },
     {
-      "rank": 42,
+      "rank": 44,
       "player": "Zachary Downing",
       "section": "Mens",
       "points": 13,
@@ -25579,63 +25705,7 @@
       ]
     },
     {
-      "rank": 43,
-      "player": "Michael Williams",
-      "section": "Mens",
-      "points": 13,
-      "wins": 0,
-      "runnerUp": 0,
-      "top3": 0,
-      "top5": 1,
-      "top10": 6,
-      "competitionsPlayed": 6,
-      "results": [
-        {
-          "competition": "Bassano Cup",
-          "competitionId": "bassano-cup",
-          "year": 2026,
-          "position": 10,
-          "points": 1
-        },
-        {
-          "competition": "James Grainger Trophy",
-          "competitionId": "james-grainger-trophy",
-          "year": 2026,
-          "position": 7,
-          "points": 2
-        },
-        {
-          "competition": "March Sunday Stableford",
-          "competitionId": "march-sunday-stableford",
-          "year": 2026,
-          "position": 4,
-          "points": 5
-        },
-        {
-          "competition": "May Sunday Stableford",
-          "competitionId": "may-sunday-stableford",
-          "year": 2026,
-          "position": 9,
-          "points": 1
-        },
-        {
-          "competition": "Par/Bogey Medal",
-          "competitionId": "par-bogey-medal",
-          "year": 2026,
-          "position": 6,
-          "points": 3
-        },
-        {
-          "competition": "Probus Pairs Stableford Betterball",
-          "competitionId": "probus-pairs-stableford-betterball",
-          "year": 2026,
-          "position": 9,
-          "points": 1
-        }
-      ]
-    },
-    {
-      "rank": 44,
+      "rank": 45,
       "player": "Andrew Card",
       "section": "Mens",
       "points": 12,
@@ -25663,7 +25733,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 46,
       "player": "M T Cowdell",
       "section": "Mens",
       "points": 12,
@@ -25691,7 +25761,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 47,
       "player": "Sean Element",
       "section": "Mens",
       "points": 12,
@@ -25719,7 +25789,7 @@
       ]
     },
     {
-      "rank": 47,
+      "rank": 48,
       "player": "Ian Cooper",
       "section": "Mens",
       "points": 12,
@@ -25747,7 +25817,7 @@
       ]
     },
     {
-      "rank": 48,
+      "rank": 49,
       "player": "Robert Shedden",
       "section": "Mens",
       "points": 12,
@@ -25782,7 +25852,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 50,
       "player": "Stephen Brian Hopkins",
       "section": "Mens",
       "points": 12,
@@ -25817,7 +25887,7 @@
       ]
     },
     {
-      "rank": 50,
+      "rank": 51,
       "player": "Paul Wayne Taylor",
       "section": "Mens",
       "points": 11,
@@ -25845,7 +25915,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 52,
       "player": "Ryan Walker",
       "section": "Mens",
       "points": 11,
@@ -25873,7 +25943,7 @@
       ]
     },
     {
-      "rank": 52,
+      "rank": 53,
       "player": "Wayne Rutter",
       "section": "Mens",
       "points": 11,
@@ -25901,7 +25971,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 54,
       "player": "Neil Hanley",
       "section": "Mens",
       "points": 11,
@@ -25936,7 +26006,7 @@
       ]
     },
     {
-      "rank": 54,
+      "rank": 55,
       "player": "Scott Longhurst",
       "section": "Mens",
       "points": 10,
@@ -25957,7 +26027,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 56,
       "player": "Stuart Evans",
       "section": "Mens",
       "points": 10,
@@ -25978,7 +26048,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 57,
       "player": "Anthony Willetts",
       "section": "Mens",
       "points": 10,
@@ -25999,34 +26069,6 @@
         {
           "competition": "Saturday Medal Only",
           "competitionId": "saturday-medal-only",
-          "year": 2026,
-          "position": 4,
-          "points": 5
-        }
-      ]
-    },
-    {
-      "rank": 57,
-      "player": "Keith Durbridge",
-      "section": "Mens",
-      "points": 10,
-      "wins": 0,
-      "runnerUp": 0,
-      "top3": 0,
-      "top5": 2,
-      "top10": 2,
-      "competitionsPlayed": 2,
-      "results": [
-        {
-          "competition": "July Sunday Stableford",
-          "competitionId": "july-sunday-stableford",
-          "year": 2026,
-          "position": 4,
-          "points": 5
-        },
-        {
-          "competition": "June Monthly Medal/ Prosser Lytham Trophy",
-          "competitionId": "june-monthly-medal-prosser-lytham-trophy",
           "year": 2026,
           "position": 4,
           "points": 5
@@ -26224,6 +26266,62 @@
     },
     {
       "rank": 65,
+      "player": "Timothy Underhill",
+      "section": "Mens",
+      "points": 8,
+      "wins": 0,
+      "runnerUp": 1,
+      "top3": 1,
+      "top5": 1,
+      "top10": 1,
+      "competitionsPlayed": 1,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 2,
+          "points": 8
+        }
+      ]
+    },
+    {
+      "rank": 66,
+      "player": "Lee Roger Grainger",
+      "section": "Mens",
+      "points": 8,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 1,
+      "top10": 3,
+      "competitionsPlayed": 3,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 7,
+          "points": 2
+        },
+        {
+          "competition": "Club Championship",
+          "competitionId": "club-championship",
+          "year": 2026,
+          "position": 5,
+          "points": 4
+        },
+        {
+          "competition": "May Sunday Stableford",
+          "competitionId": "may-sunday-stableford",
+          "year": 2026,
+          "position": 7,
+          "points": 2
+        }
+      ]
+    },
+    {
+      "rank": 67,
       "player": "Paul Meaden",
       "section": "Mens",
       "points": 8,
@@ -26251,7 +26349,7 @@
       ]
     },
     {
-      "rank": 66,
+      "rank": 68,
       "player": "John Goudge",
       "section": "Mens",
       "points": 7,
@@ -26279,7 +26377,7 @@
       ]
     },
     {
-      "rank": 67,
+      "rank": 69,
       "player": "Christopher Vanes",
       "section": "Mens",
       "points": 7,
@@ -26307,7 +26405,7 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 70,
       "player": "Clive Kearey",
       "section": "Mens",
       "points": 7,
@@ -26349,7 +26447,42 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 71,
+      "player": "Melvin Crook",
+      "section": "Mens",
+      "points": 7,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 1,
+      "top10": 3,
+      "competitionsPlayed": 3,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 8,
+          "points": 1
+        },
+        {
+          "competition": "Coronation Cup",
+          "competitionId": "coronation-cup",
+          "year": 2026,
+          "position": 4,
+          "points": 5
+        },
+        {
+          "competition": "James Grainger Trophy",
+          "competitionId": "james-grainger-trophy",
+          "year": 2026,
+          "position": 10,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "rank": 72,
       "player": "Andrew Deakin",
       "section": "Mens",
       "points": 6,
@@ -26377,7 +26510,7 @@
       ]
     },
     {
-      "rank": 70,
+      "rank": 73,
       "player": "David Hill",
       "section": "Mens",
       "points": 6,
@@ -26405,7 +26538,7 @@
       ]
     },
     {
-      "rank": 71,
+      "rank": 74,
       "player": "Jamie Daniel Hunt",
       "section": "Mens",
       "points": 6,
@@ -26433,63 +26566,7 @@
       ]
     },
     {
-      "rank": 72,
-      "player": "Lee Roger Grainger",
-      "section": "Mens",
-      "points": 6,
-      "wins": 0,
-      "runnerUp": 0,
-      "top3": 0,
-      "top5": 1,
-      "top10": 2,
-      "competitionsPlayed": 2,
-      "results": [
-        {
-          "competition": "Club Championship",
-          "competitionId": "club-championship",
-          "year": 2026,
-          "position": 5,
-          "points": 4
-        },
-        {
-          "competition": "May Sunday Stableford",
-          "competitionId": "may-sunday-stableford",
-          "year": 2026,
-          "position": 7,
-          "points": 2
-        }
-      ]
-    },
-    {
-      "rank": 73,
-      "player": "Melvin Crook",
-      "section": "Mens",
-      "points": 6,
-      "wins": 0,
-      "runnerUp": 0,
-      "top3": 0,
-      "top5": 1,
-      "top10": 2,
-      "competitionsPlayed": 2,
-      "results": [
-        {
-          "competition": "Coronation Cup",
-          "competitionId": "coronation-cup",
-          "year": 2026,
-          "position": 4,
-          "points": 5
-        },
-        {
-          "competition": "James Grainger Trophy",
-          "competitionId": "james-grainger-trophy",
-          "year": 2026,
-          "position": 10,
-          "points": 1
-        }
-      ]
-    },
-    {
-      "rank": 74,
+      "rank": 75,
       "player": "Stephen Price",
       "section": "Mens",
       "points": 6,
@@ -26538,7 +26615,7 @@
       ]
     },
     {
-      "rank": 75,
+      "rank": 76,
       "player": "Craig Tromans",
       "section": "Mens",
       "points": 5,
@@ -26559,7 +26636,7 @@
       ]
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player": "David Hobley",
       "section": "Mens",
       "points": 5,
@@ -26580,7 +26657,7 @@
       ]
     },
     {
-      "rank": 77,
+      "rank": 78,
       "player": "Jason Watchorn",
       "section": "Mens",
       "points": 5,
@@ -26601,7 +26678,7 @@
       ]
     },
     {
-      "rank": 78,
+      "rank": 79,
       "player": "Paul Harper",
       "section": "Mens",
       "points": 5,
@@ -26629,7 +26706,7 @@
       ]
     },
     {
-      "rank": 79,
+      "rank": 80,
       "player": "Roger William Grainger",
       "section": "Mens",
       "points": 5,
@@ -26650,7 +26727,7 @@
       ]
     },
     {
-      "rank": 80,
+      "rank": 81,
       "player": "Mark Neil Tolley",
       "section": "Mens",
       "points": 4,
@@ -26671,7 +26748,7 @@
       ]
     },
     {
-      "rank": 81,
+      "rank": 82,
       "player": "Paul Tromans",
       "section": "Mens",
       "points": 4,
@@ -26692,7 +26769,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 83,
       "player": "Ross Postin",
       "section": "Mens",
       "points": 4,
@@ -26713,7 +26790,7 @@
       ]
     },
     {
-      "rank": 83,
+      "rank": 84,
       "player": "Scott Whitehall",
       "section": "Mens",
       "points": 4,
@@ -26734,7 +26811,7 @@
       ]
     },
     {
-      "rank": 84,
+      "rank": 85,
       "player": "Darren Povey",
       "section": "Mens",
       "points": 3,
@@ -26755,7 +26832,7 @@
       ]
     },
     {
-      "rank": 85,
+      "rank": 86,
       "player": "Keith John Woodall",
       "section": "Mens",
       "points": 3,
@@ -26783,7 +26860,7 @@
       ]
     },
     {
-      "rank": 86,
+      "rank": 87,
       "player": "Malcolm Powell",
       "section": "Mens",
       "points": 2,
@@ -26811,7 +26888,7 @@
       ]
     },
     {
-      "rank": 87,
+      "rank": 88,
       "player": "Robert Hudson",
       "section": "Mens",
       "points": 2,
@@ -26839,7 +26916,7 @@
       ]
     },
     {
-      "rank": 88,
+      "rank": 89,
       "player": "Craig Smart",
       "section": "Mens",
       "points": 2,
@@ -26860,7 +26937,7 @@
       ]
     },
     {
-      "rank": 89,
+      "rank": 90,
       "player": "Darren Element",
       "section": "Seniors",
       "points": 2,
@@ -26881,7 +26958,7 @@
       ]
     },
     {
-      "rank": 90,
+      "rank": 91,
       "player": "Mark Basterfield",
       "section": "Mens",
       "points": 2,
@@ -26909,7 +26986,7 @@
       ]
     },
     {
-      "rank": 91,
+      "rank": 92,
       "player": "Philip John Northall",
       "section": "Mens",
       "points": 2,
@@ -26937,7 +27014,7 @@
       ]
     },
     {
-      "rank": 92,
+      "rank": 93,
       "player": "Richard Price",
       "section": "Mens",
       "points": 2,
@@ -26958,7 +27035,7 @@
       ]
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player": "Stephen Holmes",
       "section": "Mens",
       "points": 2,
@@ -26979,7 +27056,7 @@
       ]
     },
     {
-      "rank": 94,
+      "rank": 95,
       "player": "Trevor Norton",
       "section": "Mens",
       "points": 2,
@@ -27000,7 +27077,7 @@
       ]
     },
     {
-      "rank": 95,
+      "rank": 96,
       "player": "James Marsh Derrer",
       "section": "Seniors",
       "points": 1,
@@ -27021,7 +27098,7 @@
       ]
     },
     {
-      "rank": 96,
+      "rank": 97,
       "player": "Keith Brian Culwick",
       "section": "Seniors",
       "points": 1,
@@ -27042,7 +27119,7 @@
       ]
     },
     {
-      "rank": 97,
+      "rank": 98,
       "player": "Keith Ratcliffe",
       "section": "Mens",
       "points": 1,
@@ -27063,7 +27140,7 @@
       ]
     },
     {
-      "rank": 98,
+      "rank": 99,
       "player": "Kenneth Brettle",
       "section": "Seniors",
       "points": 1,
@@ -27084,7 +27161,7 @@
       ]
     },
     {
-      "rank": 99,
+      "rank": 100,
       "player": "Kevin John Hartland",
       "section": "Mens",
       "points": 1,
@@ -27105,7 +27182,7 @@
       ]
     },
     {
-      "rank": 100,
+      "rank": 101,
       "player": "M.j. Davies",
       "section": "Mens",
       "points": 1,
@@ -27126,7 +27203,7 @@
       ]
     },
     {
-      "rank": 101,
+      "rank": 102,
       "player": "Chris Norton",
       "section": "Mens",
       "points": 1,
@@ -27147,7 +27224,7 @@
       ]
     },
     {
-      "rank": 102,
+      "rank": 103,
       "player": "Clive Peter Gould",
       "section": "Mens",
       "points": 1,
@@ -27168,7 +27245,28 @@
       ]
     },
     {
-      "rank": 103,
+      "rank": 104,
+      "player": "Gerald Paul Crowley",
+      "section": "Mens",
+      "points": 1,
+      "wins": 0,
+      "runnerUp": 0,
+      "top3": 0,
+      "top5": 0,
+      "top10": 1,
+      "competitionsPlayed": 1,
+      "results": [
+        {
+          "competition": "August Sunday Stableford",
+          "competitionId": "august-sunday-stableford",
+          "year": 2026,
+          "position": 10,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "rank": 105,
       "player": "Greg Underhill",
       "section": "Mens",
       "points": 1,
@@ -27189,7 +27287,7 @@
       ]
     },
     {
-      "rank": 104,
+      "rank": 106,
       "player": "Steve Aston",
       "section": "Mens",
       "points": 1,
@@ -27210,7 +27308,7 @@
       ]
     },
     {
-      "rank": 105,
+      "rank": 107,
       "player": "Steven Taylor",
       "section": "Mens",
       "points": 1,
@@ -27231,7 +27329,7 @@
       ]
     },
     {
-      "rank": 106,
+      "rank": 108,
       "player": "Stewart Smith",
       "section": "Mens",
       "points": 1,
@@ -27252,7 +27350,7 @@
       ]
     },
     {
-      "rank": 107,
+      "rank": 109,
       "player": "Tim Mark Wright",
       "section": "Mens",
       "points": 1,
@@ -27273,7 +27371,7 @@
       ]
     },
     {
-      "rank": 108,
+      "rank": 110,
       "player": "Wayne Colledge",
       "section": "Mens",
       "points": 1,
