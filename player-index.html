@@ -166,6 +166,14 @@
 
       return {
         mens: {
+          gross:
+            findPlayer(
+              metric?.sectionLeaderboards
+                ?.mens
+                ?.eighteenHole
+                ?.grossDerived
+            ),
+
           medal:
             findPlayer(
               metric?.sectionLeaderboards
@@ -203,6 +211,14 @@
           },
 
           eighteenHole: {
+            gross:
+              findPlayer(
+                metric?.sectionLeaderboards
+                  ?.seniors
+                  ?.eighteenHole
+                  ?.grossDerived
+              ),
+
             medal:
               findPlayer(
                 metric?.sectionLeaderboards
@@ -515,7 +531,22 @@ ${(
         <p class="mb-2 font-semibold uppercase tracking-wider text-[#132419]">
           Mens 18-Hole
         </p>
+${scoring.mens.gross ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-mens-gross">
 
+    <span class="block text-gray-500">
+      Gross Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.mens.gross.average)}
+    </strong>
+  </button>
+` : ""}
         <div class="grid grid-cols-2 gap-2">
          ${scoring.mens.medal ? `
   <button
@@ -603,7 +634,8 @@ ${(
       </div>
     ` : ""}
 
-    ${(
+   ${(
+              scoring.seniors.eighteenHole.gross ||
               scoring.seniors.eighteenHole.medal ||
               scoring.seniors.eighteenHole.stableford
             ) ? `
@@ -611,7 +643,22 @@ ${(
         <p class="mb-2 font-semibold uppercase tracking-wider text-[#132419]">
           Seniors 18-Hole
         </p>
+${scoring.seniors.eighteenHole.gross ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition mb-2"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-seniors-18-gross">
 
+    <span class="block text-gray-500">
+      Gross Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.seniors.eighteenHole.gross.average)}
+    </strong>
+  </button>
+` : ""}
         <div class="grid grid-cols-2 gap-2">
         ${scoring.seniors.eighteenHole.medal ? `
   <button
@@ -675,6 +722,9 @@ ${(
         getCertifiedScoringAverages(player);
 
       const lookup = {
+        "scoring-mens-gross":
+          scoring.mens.gross,
+
         "scoring-mens-medal":
           scoring.mens.medal,
 
@@ -686,6 +736,9 @@ ${(
 
         "scoring-seniors-9-stableford":
           scoring.seniors.nineHole.stableford,
+
+        "scoring-seniors-18-gross":
+          scoring.seniors.eighteenHole.gross,
 
         "scoring-seniors-18-medal":
           scoring.seniors.eighteenHole.medal,
@@ -773,7 +826,11 @@ ${(
                           </td>
 
                           <td class="py-2 text-right font-semibold">
-                            ${escapeHtml(round.score)}
+                            ${escapeHtml(
+            key.includes("gross")
+              ? round.grossScore
+              : round.score
+          )}
                           </td>
                         </tr>
                       `).join("")}
@@ -1339,6 +1396,17 @@ ${(
 
             return;
           }
+          if (stat === "scoring-mens-gross") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Mens 18-Hole Gross Average",
+                "Gross"
+              );
+
+            return;
+          }
           if (stat === "scoring-mens-medal") {
             panel.innerHTML =
               renderScoringEvidence(
@@ -1382,6 +1450,17 @@ ${(
                 stat,
                 "Seniors 9-Hole Stableford Average",
                 "Points"
+              );
+
+            return;
+          }
+          if (stat === "scoring-seniors-18-gross") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Seniors 18-Hole Gross Average",
+                "Gross"
               );
 
             return;
