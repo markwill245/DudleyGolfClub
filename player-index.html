@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -517,27 +517,40 @@ ${(
         </p>
 
         <div class="grid grid-cols-2 gap-2">
-          ${scoring.mens.medal ? `
-            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-              <span class="block text-gray-500">
-                Medal Nett Avg
-              </span>
-              <strong class="text-base">
-                ${escapeHtml(scoring.mens.medal.average)}
-              </strong>
-            </div>
-          ` : ""}
+         ${scoring.mens.medal ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-mens-medal">
 
-          ${scoring.mens.stableford ? `
-            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-              <span class="block text-gray-500">
-                Stableford Avg
-              </span>
-              <strong class="text-base">
-                ${escapeHtml(scoring.mens.stableford.average)} pts
-              </strong>
-            </div>
-          ` : ""}
+    <span class="block text-gray-500">
+      Medal Nett Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.mens.medal.average)}
+    </strong>
+  </button>
+` : ""}
+
+     ${scoring.mens.stableford ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-mens-stableford">
+
+    <span class="block text-gray-500">
+      Stableford Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.mens.stableford.average)} pts
+    </strong>
+  </button>
+` : ""}
+
         </div>
       </div>
     ` : ""}
@@ -552,27 +565,40 @@ ${(
         </p>
 
         <div class="grid grid-cols-2 gap-2">
-          ${scoring.seniors.nineHole.medal ? `
-            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-              <span class="block text-gray-500">
-                Nett Avg
-              </span>
-              <strong class="text-base">
-                ${escapeHtml(scoring.seniors.nineHole.medal.average)}
-              </strong>
-            </div>
-          ` : ""}
+         ${scoring.seniors.nineHole.medal ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-seniors-9-medal">
 
-          ${scoring.seniors.nineHole.stableford ? `
-            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-              <span class="block text-gray-500">
-                Stableford Avg
-              </span>
-              <strong class="text-base">
-                ${escapeHtml(scoring.seniors.nineHole.stableford.average)} pts
-              </strong>
-            </div>
-          ` : ""}
+    <span class="block text-gray-500">
+      Nett Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.seniors.nineHole.medal.average)}
+    </strong>
+  </button>
+` : ""}
+
+         ${scoring.seniors.nineHole.stableford ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-seniors-9-stableford">
+
+    <span class="block text-gray-500">
+      Stableford Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.seniors.nineHole.stableford.average)} pts
+    </strong>
+  </button>
+` : ""}
+
         </div>
       </div>
     ` : ""}
@@ -587,33 +613,47 @@ ${(
         </p>
 
         <div class="grid grid-cols-2 gap-2">
-          ${scoring.seniors.eighteenHole.medal ? `
-            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-              <span class="block text-gray-500">
-                Nett Avg
-              </span>
-              <strong class="text-base">
-                ${escapeHtml(scoring.seniors.eighteenHole.medal.average)}
-              </strong>
-            </div>
-          ` : ""}
+        ${scoring.seniors.eighteenHole.medal ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-seniors-18-medal">
 
-          ${scoring.seniors.eighteenHole.stableford ? `
-            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
-              <span class="block text-gray-500">
-                Stableford Avg
-              </span>
-              <strong class="text-base">
-                ${escapeHtml(scoring.seniors.eighteenHole.stableford.average)} pts
-              </strong>
-            </div>
-          ` : ""}
+    <span class="block text-gray-500">
+      Nett Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.seniors.eighteenHole.medal.average)}
+    </strong>
+  </button>
+` : ""}
+
+         ${scoring.seniors.eighteenHole.stableford ? `
+  <button
+    type="button"
+    class="stat-button w-full text-left rounded-lg bg-[#F9F7F2] px-3 py-2 transition"
+    data-player="${escapeHtml(player.slug)}"
+    data-stat="scoring-seniors-18-stableford">
+
+    <span class="block text-gray-500">
+      Stableford Avg
+    </span>
+
+    <strong class="text-base">
+      ${escapeHtml(scoring.seniors.eighteenHole.stableford.average)} pts
+    </strong>
+  </button>
+` : ""}
+
         </div>
       </div>
     ` : ""}
 
   </div>
 ` : ""}
+
         <a
             href="player-profile.html?player=${encodeURIComponent(player.slug)}"
             class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
@@ -630,7 +670,126 @@ ${(
         player => player.slug === slug
       );
     }
+    function renderScoringEvidence(player, key, title, scoreLabel) {
+      const scoring =
+        getCertifiedScoringAverages(player);
 
+      const lookup = {
+        "scoring-mens-medal":
+          scoring.mens.medal,
+
+        "scoring-mens-stableford":
+          scoring.mens.stableford,
+
+        "scoring-seniors-9-medal":
+          scoring.seniors.nineHole.medal,
+
+        "scoring-seniors-9-stableford":
+          scoring.seniors.nineHole.stableford,
+
+        "scoring-seniors-18-medal":
+          scoring.seniors.eighteenHole.medal,
+
+        "scoring-seniors-18-stableford":
+          scoring.seniors.eighteenHole.stableford
+      };
+
+      const item =
+        lookup[key] || null;
+
+      const rounds =
+        Array.isArray(item?.qualifyingRounds)
+          ? [...item.qualifyingRounds]
+          : [];
+
+      rounds.sort((a, b) =>
+        String(b.date || "").localeCompare(
+          String(a.date || "")
+        )
+      );
+
+      function formatDate(value) {
+        if (!value) return "";
+
+        const date =
+          new Date(`${value}T00:00:00`);
+
+        if (Number.isNaN(date.getTime())) {
+          return value;
+        }
+
+        return date.toLocaleDateString(
+          "en-GB",
+          {
+            day: "2-digit",
+            month: "short",
+            year: "numeric"
+          }
+        );
+      }
+
+      return `
+        <div>
+          <p class="uppercase tracking-[0.18em] text-xs text-[#C5A367] font-bold mb-1">
+            Certified Round Evidence
+          </p>
+
+          <h3 class="text-xl font-serif mb-1">
+            ${escapeHtml(title)}
+          </h3>
+
+          <p class="text-xs text-gray-500 mb-4">
+            ${escapeHtml(rounds.length)}
+            qualifying rounds used in this career average
+          </p>
+
+          ${rounds.length
+          ? `
+                <div style="max-height:18rem;overflow-y:auto;">
+                  <table class="w-full text-xs">
+                    <thead>
+                      <tr class="border-b border-[#C5A367]/30 text-left">
+                        <th class="py-2 pr-2">Date</th>
+                        <th class="py-2 pr-2">Competition</th>
+                        <th class="py-2 text-right">
+                          ${escapeHtml(scoreLabel)}
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      ${rounds.map(round => `
+                        <tr class="border-b border-gray-100">
+                          <td class="py-2 pr-2 whitespace-nowrap">
+                            ${escapeHtml(formatDate(round.date))}
+                          </td>
+
+                          <td class="py-2 pr-2">
+                            ${escapeHtml(
+            round.competitionName ||
+            round.competitionId ||
+            ""
+          )}
+                          </td>
+
+                          <td class="py-2 text-right font-semibold">
+                            ${escapeHtml(round.score)}
+                          </td>
+                        </tr>
+                      `).join("")}
+                    </tbody>
+                  </table>
+                </div>
+              `
+          : `
+                <p class="text-sm text-gray-600">
+                  Certified round evidence is not available.
+                </p>
+              `
+        }
+        </div>
+      `;
+    }
     function closeAllPanels(exceptSlug = null) {
       document
         .querySelectorAll("[data-stat-panel]")
@@ -1180,7 +1339,77 @@ ${(
 
             return;
           }
+          if (stat === "scoring-mens-medal") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Mens 18-Hole Medal Nett Average",
+                "Nett"
+              );
 
+            return;
+          }
+
+          if (stat === "scoring-mens-stableford") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Mens 18-Hole Stableford Average",
+                "Points"
+              );
+
+            return;
+          }
+
+          if (stat === "scoring-seniors-9-medal") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Seniors 9-Hole Nett Average",
+                "Nett"
+              );
+
+            return;
+          }
+
+          if (stat === "scoring-seniors-9-stableford") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Seniors 9-Hole Stableford Average",
+                "Points"
+              );
+
+            return;
+          }
+
+          if (stat === "scoring-seniors-18-medal") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Seniors 18-Hole Nett Average",
+                "Nett"
+              );
+
+            return;
+          }
+
+          if (stat === "scoring-seniors-18-stableford") {
+            panel.innerHTML =
+              renderScoringEvidence(
+                player,
+                stat,
+                "Seniors 18-Hole Stableford Average",
+                "Points"
+              );
+
+            return;
+          }
           if (stat === "top3") {
             panel.innerHTML = `
         <p class="text-sm text-gray-500" >
