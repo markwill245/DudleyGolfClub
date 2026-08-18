@@ -5,7 +5,7 @@
 $projectRoot = Split-Path $PSScriptRoot -Parent
 $seoFile = Join-Path $PSScriptRoot "seo-data.csv"
 
-$baseUrl = "https://dudley-golf-club.vercel.app"
+$baseUrl = "https://www.dudleygolfclub.com"
 $ogImage = "$baseUrl/images/dudley.webp"
 
 $seoRows = Import-Csv $seoFile
