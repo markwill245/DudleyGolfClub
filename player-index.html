@@ -1279,34 +1279,56 @@ ${scoring.seniors.eighteenHole.gross ? `
 
       <div class="space-y-2">
 
-        ${rows.map(row => `
-          <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+        ${rows.map(row => {
+          const scoreText =
+            row.score !== null &&
+            row.score !== undefined
+              ? `${row.scoreType ? escapeHtml(row.scoreType) + " " : ""}${escapeHtml(row.score)}`
+              : "";
 
-            <div class="flex justify-between gap-3">
+          const parText =
+            row.relativeToPar !== null &&
+            row.relativeToPar !== undefined
+              ? (
+                  Number(row.relativeToPar) === 0
+                    ? "E"
+                    : Number(row.relativeToPar) > 0
+                      ? `+${row.relativeToPar}`
+                      : String(row.relativeToPar)
+                )
+              : "";
 
-              <span class="text-sm font-semibold">
+          return `
+            <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
+
+              <div class="flex justify-between gap-3">
+
+                <span class="text-sm font-semibold">
+                  ${escapeHtml(
+              row.competitionName ||
+              row.competitionId
+            )}
+                </span>
+
+                <strong class="text-sm text-[#C5A367]">
+                  #${escapeHtml(row.position)}
+                </strong>
+
+              </div>
+
+              <p class="text-xs text-gray-500 mt-1">
                 ${escapeHtml(
-            row.competitionName ||
-            row.competitionId
-          )}
-              </span>
-
-              <strong class="text-sm text-[#C5A367]">
-                #${escapeHtml(row.position)}
-              </strong>
+              row.date ||
+              row.year ||
+              ""
+            )}
+                ${scoreText ? ` &bull; ${scoreText}` : ""}
+                ${parText ? ` &bull; ${escapeHtml(parText)}` : ""}
+              </p>
 
             </div>
-
-            <p class="text-xs text-gray-500 mt-1">
-              ${escapeHtml(
-            row.date ||
-            row.year ||
-            ""
-          )}
-            </p>
-
-          </div>
-        `).join("")}
+          `;
+        }).join("")}
 
       </div>
       `;

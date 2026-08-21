@@ -1359,22 +1359,44 @@ ${(() => {
 
         <div class="space-y-3">
 
-          ${(player.timeline || []).map(item => `
-            <div class="border-l-4 border-[#C5A367] pl-4 py-2">
+          ${(player.timeline || []).map(item => {
+            const scoreText =
+              item.score !== null &&
+              item.score !== undefined
+                ? `${item.scoreType ? escapeHtml(item.scoreType) + " " : ""}${escapeHtml(item.score)}`
+                : "";
 
-              <strong>
-                ${escapeHtml(item.year)}
-              </strong>
+            const parText =
+              item.relativeToPar !== null &&
+              item.relativeToPar !== undefined
+                ? (
+                    Number(item.relativeToPar) === 0
+                      ? "E"
+                      : Number(item.relativeToPar) > 0
+                        ? `+${item.relativeToPar}`
+                        : String(item.relativeToPar)
+                  )
+                : "";
 
-              —
-              ${escapeHtml(item.competition)}
+            return `
+              <div class="border-l-4 border-[#C5A367] pl-4 py-2">
 
-              <span class="text-sm text-gray-600">
-                Position ${escapeHtml(item.position)}
-              </span>
+                <strong>
+                  ${escapeHtml(item.year)}
+                </strong>
 
-            </div>
-          `).join("")}
+                &mdash;
+                ${escapeHtml(item.competition)}
+
+                <div class="text-sm text-gray-600 mt-1">
+                  Position ${escapeHtml(item.position)}
+                  ${scoreText ? ` &bull; ${scoreText}` : ""}
+                  ${parText ? ` &bull; ${escapeHtml(parText)}` : ""}
+                </div>
+
+              </div>
+            `;
+          }).join("")}
 
         </div>
 
