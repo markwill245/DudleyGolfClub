@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-17T20:13:02.286Z",
+  "generatedAt": "2026-08-17T21:06:21.264Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -21262,13 +21262,13 @@
         "players.json",
         "player-aliases.json"
       ],
-      "scope": "Separate certified career averages for individual Medal nett scores and individual Stableford points only.",
+      "scope": "Separate certified career averages for individual Medal nett scores, derived 18-hole gross scores using the historical handicap recorded on the same certified Medal result row, and individual Stableford points.",
       "policy": {
         "individualCompetitionsOnly": true,
         "requiredTeamSize": 1,
         "minimumQualifyingRounds": 5,
         "medalNettAverage": "Individual Medal competitions using valid Nett scores only",
-        "excludeGrossCareerAverage": true,
+        "derivedGrossCareerAverage": "18-hole Gross Average derived only from certified individual Medal nett rounds where a valid historical handicap is recorded on the same result row",
         "stablefordAverage": "Individual Stableford scoring rounds using valid Stableford points only",
         "excludeParBogey": true,
         "excludeWinterLeague": true,
