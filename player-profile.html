@@ -879,6 +879,42 @@
 
       currentPlayer = player;
 
+      const gotyResponse =
+        await fetch("data/golfer-of-the-year-lifetime.json", {
+          cache: "no-store"
+        });
+
+      let gotyHonours = [];
+
+      if (gotyResponse.ok) {
+        const gotyLifetime =
+          await gotyResponse.json();
+
+        const gotyRows =
+          Array.isArray(gotyLifetime)
+            ? gotyLifetime
+            : Object.values(gotyLifetime || {});
+
+        const gotyRow =
+          gotyRows.find(row =>
+            normalise(row.player) ===
+              normalise(player.player) &&
+            normalise(row.section) ===
+              normalise(player.section)
+          ) || null;
+
+        gotyHonours =
+          (gotyRow?.results || [])
+            .filter(result =>
+              result.competitionId ===
+              "golfer-of-the-year"
+            )
+            .sort((a, b) =>
+              Number(a.year || 0) -
+              Number(b.year || 0)
+            );
+      }
+
       const hof = getHallOfFamePlayer(player);
       const oom = getOomPlayer(player);
 
@@ -1352,6 +1388,62 @@ ${(() => {
             `
         }
         </section>
+
+        ${gotyHonours.length ? `
+        <section class="mb-10">
+          <div class="rounded-2xl border-2 border-[#C5A367]/50 bg-[#132419] text-white p-8 shadow-lg">
+
+            <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-3">
+              Honour Roll
+            </p>
+
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+              <div>
+                <h2 class="text-3xl md:text-4xl font-serif mb-2">
+                  Golfer of the Year
+                </h2>
+
+                <p class="text-white/70">
+                  Separate certified honour
+                </p>
+              </div>
+
+              <div class="text-left md:text-right">
+                <strong class="text-4xl font-serif text-[#C5A367]">
+                  ${gotyHonours.length}
+                </strong>
+
+                <p class="text-sm uppercase tracking-[0.2em] text-white/70">
+                  ${gotyHonours.length === 1
+  ? "1-Time Winner"
+  : gotyHonours.length + "-Time Winner"}
+                </p>
+              </div>
+
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-white/20">
+              <p class="text-xs uppercase tracking-[0.2em] text-[#C5A367] font-bold mb-3">
+                Winning Years
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                ${gotyHonours.map(result => `
+                  <span class="rounded-full border border-[#C5A367]/50 px-4 py-2 text-sm font-semibold">
+                    ${escapeHtml(result.year)}
+                  </span>
+                `).join("")}
+              </div>
+            </div>
+
+            <p class="mt-5 text-xs text-white/50">
+              This honour is recorded separately and is not included in Career Wins.
+            </p>
+
+          </div>
+        </section>
+        ` : ""}
 
         <h2 class="text-2xl font-serif mb-4">
           Career Timeline
