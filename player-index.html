@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +28,7 @@
 
     <a href="digital-museum.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      ← Back to Museum
+      ? Back to Museum
     </a>
 
     <section class="mt-10 mb-12">
@@ -423,7 +423,7 @@
 
         <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
           ${escapeHtml(section)}
-          •
+          �
           ${escapeHtml(status)}
         </p>
 
@@ -704,7 +704,7 @@ ${scoring.seniors.eighteenHole.gross ? `
         <a
             href="player-profile.html?player=${encodeURIComponent(player.slug)}"
             class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
-            View Full Profile →
+            View Full Profile ?
           </a>
 
       </article>
@@ -950,9 +950,12 @@ ${scoring.seniors.eighteenHole.gross ? `
             <div class="rounded-xl bg-[#F9F7F2] p-3">
               <div class="flex justify-between gap-3">
                 <strong class="text-sm">
-                  ${escapeHtml(
-            win.competitionName
-          )}
+                  ${win.competitionId
+                    ? `<a href="competition-profile.html?id=${encodeURIComponent(win.competitionId)}"
+                         class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+                         ${escapeHtml(win.competitionName || win.competitionId)}
+                       </a>`
+                    : escapeHtml(win.competitionName || "")}
                 </strong>
 
                 <span class="text-xs text-[#C5A367] font-bold">
@@ -1090,7 +1093,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
                 <span class="font-semibold whitespace-nowrap">
                   ${row.count}
-                  ×
+                  �
                   ${row.rate}
                   =
                   ${points}
@@ -1174,9 +1177,12 @@ ${scoring.seniors.eighteenHole.gross ? `
               <div class="flex justify-between gap-3">
 
                 <span class="text-sm font-semibold">
-                  ${escapeHtml(
-            result.competition
-          )}
+                  ${result.competitionId
+                    ? `<a href="competition-profile.html?id=${encodeURIComponent(result.competitionId)}"
+                         class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+                         ${escapeHtml(result.competition || result.competitionId)}
+                       </a>`
+                    : escapeHtml(result.competition || "")}
                 </span>
 
                 <strong class="text-sm text-[#C5A367]">
@@ -1187,7 +1193,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
               <p class="text-xs text-gray-500 mt-1">
                 ${escapeHtml(result.date || result.year)}
-                •
+                �
                 Position ${escapeHtml(result.position)}
               </p>
 
@@ -1304,10 +1310,12 @@ ${scoring.seniors.eighteenHole.gross ? `
               <div class="flex justify-between gap-3">
 
                 <span class="text-sm font-semibold">
-                  ${escapeHtml(
-              row.competitionName ||
-              row.competitionId
-            )}
+                  ${row.competitionId
+                    ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
+                         class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+                         ${escapeHtml(row.competitionName || row.competitionId)}
+                       </a>`
+                    : escapeHtml(row.competitionName || "")}
                 </span>
 
                 <strong class="text-sm text-[#C5A367]">
@@ -1598,7 +1606,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    ↑ Top
+    ? Top
   </button>
 
   <script>

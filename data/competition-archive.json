@@ -10,8 +10,8 @@
     "stablefords",
     "general-competitions"
   ],
-  "totalUniqueCompetitions": 149,
-  "totalCategoryMemberships": 186,
+  "totalUniqueCompetitions": 146,
+  "totalCategoryMemberships": 183,
   "categories": [
     {
       "id": "board-competitions",
@@ -1228,7 +1228,7 @@
       "title": "Team Events",
       "description": "Pairs, betterball, greensomes, scrambles, three-ball and four-ball competitions.",
       "icon": "👥",
-      "competitionCount": 52,
+      "competitionCount": 50,
       "competitions": [
         {
           "id": "125-trophy-pairs-stableford-betterball",
@@ -1300,26 +1300,13 @@
           "name": "3 Ball Rumble",
           "section": "Mens",
           "format": "Team",
-          "yearsPlayed": 1,
-          "firstYear": 2024,
-          "latestYear": 2024,
-          "countText": "1 year",
-          "rangeText": "2024",
-          "profileUrl": "competition-profile.html?id=3-ball-rumble",
-          "searchText": "3 ball rumble mens team team competition profile standard general"
-        },
-        {
-          "id": "3-ball-rumble-all-scores-to-count",
-          "name": "3 Ball Rumble - all scores to count",
-          "section": "Mens",
-          "format": "3 Ball",
           "yearsPlayed": 2,
           "firstYear": 2024,
           "latestYear": 2025,
           "countText": "2 years",
           "rangeText": "2024–2025",
-          "profileUrl": "competition-profile.html?id=3-ball-rumble-all-scores-to-count",
-          "searchText": "3 ball rumble all scores to count mens 3 ball 3 ball competition profile standard general"
+          "profileUrl": "competition-profile.html?id=3-ball-rumble",
+          "searchText": "3 ball rumble mens team team competition profile standard general"
         },
         {
           "id": "3-ball-texas-scramble",
@@ -1417,26 +1404,13 @@
           "name": "Captain's Charity Day",
           "section": "Mens",
           "format": "Team",
-          "yearsPlayed": 3,
-          "firstYear": 2023,
+          "yearsPlayed": 5,
+          "firstYear": 2021,
           "latestYear": 2025,
-          "countText": "3 years",
-          "rangeText": "2023–2025",
+          "countText": "5 years",
+          "rangeText": "2021–2025",
           "profileUrl": "competition-profile.html?id=captain-s-charity-day",
           "searchText": "captains charity day mens team team competition profile standard general"
-        },
-        {
-          "id": "captain-s-charity-day-amam",
-          "name": "Captain's Charity Day - AmAm",
-          "section": "Mens",
-          "format": "Team",
-          "yearsPlayed": 1,
-          "firstYear": 2022,
-          "latestYear": 2022,
-          "countText": "1 year",
-          "rangeText": "2022",
-          "profileUrl": "competition-profile.html?id=captain-s-charity-day-amam",
-          "searchText": "captains charity day amam mens team team competition profile standard general"
         },
         {
           "id": "club-3-ball-waltz",
@@ -2338,7 +2312,7 @@
       "title": "General Competitions",
       "description": "Other recorded club competitions that do not belong to a specialist archive category.",
       "icon": "◆",
-      "competitionCount": 11,
+      "competitionCount": 10,
       "competitions": [
         {
           "id": "arthur-turley-trophy",
@@ -2352,19 +2326,6 @@
           "rangeText": "2022–2023",
           "profileUrl": "competition-profile.html?id=arthur-turley-trophy",
           "searchText": "arthur turley trophy mens individual individual competition profile standard general"
-        },
-        {
-          "id": "captains-charity-day",
-          "name": "Captains Charity Day",
-          "section": "Mens",
-          "format": "Individual",
-          "yearsPlayed": 1,
-          "firstYear": 2021,
-          "latestYear": 2021,
-          "countText": "1 year",
-          "rangeText": "2021",
-          "profileUrl": "competition-profile.html?id=captains-charity-day",
-          "searchText": "captains charity day mens individual individual competition profile standard general"
         },
         {
           "id": "captains-drive-in-and-clubhouse-challenge-match",

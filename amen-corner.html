@@ -142,6 +142,23 @@
                 display: none !important;
             }
         }
+        /* Amen Corner text visibility */
+        #amen-gallery h1,
+        #amen-gallery h2,
+        #amen-gallery h3,
+        #amen-gallery p {
+            overflow: visible;
+            overflow-wrap: break-word;
+            word-break: normal;
+        }
+
+        #amen-gallery h1,
+        #amen-gallery h2,
+        #amen-gallery h3 {
+            line-height: 1.08;
+            padding-left: 0.05em;
+            padding-right: 0.08em;
+        }
     </style>
 </head>
 
@@ -232,7 +249,7 @@
     </nav>
 
     <!-- AMEN CORNER -->
-    <section id="amen-gallery" class="relative z-20 bg-[#08110D] py-24 px-4 overflow-hidden isolate">
+    <section id="amen-gallery" class="relative z-20 bg-[#08110D] py-24 px-4 overflow-visible isolate">
         <div class="absolute inset-0 bg-[#08110D] -z-10"></div>
 
         <div class="max-w-7xl mx-auto">
@@ -299,7 +316,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 z-10">
                             <p class="text-[#C5A367] uppercase tracking-[0.35em] text-[10px] mb-3">Hole Five</p>
-                            <h3 class="serif text-3xl italic text-white">The Decent</h3>
+                            <h3 class="serif text-3xl italic text-white">The Descent</h3>
                         </div>
                     </div>
                 </div>
@@ -325,7 +342,7 @@
                             width="800" height="520" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 z-10">
-                            <h3 class="serif text-3xl italic text-white">Presision</h3>
+                            <h3 class="serif text-3xl italic text-white">Precision</h3>
                         </div>
                     </div>
 
@@ -495,11 +512,22 @@ padding:24px;
 
             <div>
                 <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
-                <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+                <div class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
+                    <p class="font-serif text-2xl text-white mb-4">Dudley Golf Club</p>
+                    <p class="text-white/70 leading-7 mb-6">
+                        Turners Hill<br>
+                        Rowley Regis<br>
+                        West Midlands
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Dudley+Golf+Club+Turners+Hill+Rowley+Regis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex w-fit items-center justify-center px-5 py-3 rounded-lg border border-[#C5A367] text-[#C5A367] text-xs uppercase tracking-[0.2em] font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+                        View Map &amp; Directions
+                    </a>
+                    <p class="text-white/40 text-xs mt-5 leading-5">
+                        Maps only opens if you choose to view directions.
+                    </p>
                 </div>
             </div>
 
@@ -507,32 +535,37 @@ padding:24px;
 
         <div
             class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>© 2026 Dudley Golf Club</p>
-            <p>Established 1893 • Rowley Regis</p>
+            <p>&copy; 2026 Dudley Golf Club</p>
+            <p>Established 1893 &bull; Rowley Regis</p>
         </div>
     </footer>
 
     <!-- RETURN HOME BUTTON -->
-    <a href="index.html" aria-label="Return Home" style="
-        position:fixed;
-        bottom:24px;
-        right:24px;
-        width:50px;
-        height:50px;
-        background-color:#132419;
-        color:#C5A367;
-        border:2px solid #C5A367;
-        border-radius:4px;
-        z-index:1000;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        text-decoration:none;
-        box-shadow:0 10px 25px rgba(0,0,0,0.5);
-        font-size:20px;
-        font-weight:bold;">
-        ⌂
-    </a>
+<a href="/" aria-label="Return to Dudley Golf Club home page" style="
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    min-width:58px;
+    height:52px;
+    padding:0 14px;
+    background-color:#132419;
+    color:#C5A367;
+    border:2px solid #C5A367;
+    border-radius:6px;
+    z-index:99999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-weight:bold;
+    pointer-events:auto;
+    touch-action:manipulation;">
+    Home
+</a>
 
     <script>
         function openLightbox(src) {

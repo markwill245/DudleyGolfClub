@@ -480,6 +480,20 @@
            COURSE GUIDE FINAL FIX
            Stable Dudley-style image system
         ========================================= */
+        /* Course Guide text visibility */
+        #h-name {
+            overflow-wrap: break-word;
+            word-break: normal;
+            line-height: 1.05;
+            padding-left: 0.06em;
+            padding-right: 0.08em;
+        }
+
+        #h-desc,
+        #h-tip {
+            overflow: visible;
+            overflow-wrap: break-word;
+        }
         .course-image-shell {
             background: #08110D;
             border-bottom: 1px solid rgba(197, 163, 103, 0.12);
@@ -710,7 +724,7 @@
             </div>
 
             <!-- MAIN: HERO IMAGE + HOLE DISPLAY -->
-            <div class="bg-forest rounded-b shadow-2xl overflow-hidden border-x border-b border-[#C5A367]/10">
+            <div class="bg-forest rounded-b shadow-2xl overflow-visible border-x border-b border-[#C5A367]/10">
 
                 <div class="course-image-shell">
                     <div class="course-main-image-wrap">
@@ -860,7 +874,7 @@
                         "images/hole1-view3.webp"
                     ],
                     desc: "A challenging start to the round requiring precision from the tee.",
-                    tip: "A straight tee shot is required to a long left sweeping fairway followed by a club of choice for the second shot and then careful consideration is required for the shot to a sloping green."
+                    tip: "Find the fairway from the tee, then position your second shot carefully for the approach to the sloping green."
                 },
                 // STAFF: Hole 2 name-image-yards 
                 {
@@ -872,7 +886,7 @@
                     // STAFF: Hole 2 description/ Tip 	
 
                     desc: "Test your nerve on this tactical short hole.",
-                    tip: "A steady tee shot followed by an accurate pitch to a narrow raised green."
+                    tip: "Keep the tee shot under control and leave yourself a confident pitch into the narrow raised green."
                 },
                 // STAFF: Hole 3 name-image-yards 
                 {
@@ -882,7 +896,7 @@
                     images: ["images/hole3.webp", "images/hole3-3.webp", "images/hole3-view3.webp"],
                     // STAFF: Hole 3 description/ Tip 	
                     desc: "Note the horizontal dry ditch across the fairway.",
-                    tip: "A difficult blind straight tee shot. OB down right "
+                    tip: "Commit to the blind tee shot and favour the left-centre of the fairway - out of bounds waits on the right."
                 },
                 {
                     // STAFF: Hole 4 name-image-yards   
@@ -893,7 +907,7 @@
                     // STAFF: Hole 4 description/ Tip 
 
                     desc: "Short but dangerous. Club selection is everything.",
-                    tip: "Our own postage stamp hole with a bunker across the front."
+                    tip: "Club selection is key. The bunker guarding the front makes distance control essential."
                 },
                 {
                     // STAFF: Hole 5 name-image-yards 
@@ -903,8 +917,8 @@
 
                     //STAFF: Hole 5 description/ Tip 
 
-                    desc: "The first hole of our famous 'Amen Corner'.",
-                    tip: "Steady shot onto the top of a plateau fairway."
+                    desc: "Welcome to Dudley's Amen Corner - three demanding holes where accuracy and course management really matter.",
+                    tip: "A controlled tee shot onto the plateau sets up the hole. Position is more important than distance."
                 },
                 {
                     // STAFF: Hole 6 name-image-yards 
@@ -914,8 +928,8 @@
 
                     // STAFF: Hole 6 description/ Tip 
 
-                    desc: "The second challenge of Amen Corner.",
-                    tip: "A long difficult hole to a right to left sloping green."
+                    desc: "The heart of Amen Corner, where the sloping green puts a premium on distance control.",
+                    tip: "Take enough club and favour the correct side of the green - the right-to-left slope can quickly move the ball away from the target."
                 },
                 {
                     // STAFF: Hole 7 name-image-yards 
@@ -925,8 +939,8 @@
 
                     // STAFF: Hole 7 description/ Tip 
 
-                    desc: "The finale of Amen Corner.",
-                    tip: "probably the most difficult of the three with very little room for manoeuvre. A par here is a great score"
+                    desc: "The final test of Amen Corner - little room for error and a par is always a good result.",
+                    tip: "Give yourself room from the tee and prioritise accuracy. A par here is an excellent score."
                 },
                 {
                     // STAFF: Hole 8 name-image-yards 
@@ -937,7 +951,7 @@
                     // STAFF: Hole 8 description/ Tip 
 
                     desc: "The peak of the course with breathtaking panoramas.",
-                    tip: "A straight forward uphill hole to the very top of the course with outstanding views across several counties to the west and the next nearest highest point being the Ural mountains in Russia!"
+                    tip: "Stay patient on the uphill approach. Take enough club and enjoy one of the best views on the course."
                 },
                 {
                     // STAFF: Hole9 name-image-yards 
@@ -948,7 +962,7 @@
                     // STAFF: Hole 9 description/ Tip 
 
                     desc: "A tight fairway that tests your ability to play the slopes.",
-                    tip: "Use slopes,don't miss left."
+                    tip: "Use the natural slopes to your advantage and avoid missing left."
                 },
                 {
                     // STAFF: Hole 10 name-image-yards 
@@ -959,7 +973,7 @@
                     // STAFF: Hole 10 description/ Tip 
 
                     desc: "Accuracy is rewarded on this scenic par 4.",
-                    tip: "A straight forward hole onto a slightly raised green."
+                    tip: "A straight tee shot gives the best angle into the slightly raised green."
                 },
                 {
                     // STAFF: Hole 11 name-image-yards 
@@ -970,7 +984,7 @@
                     // STAFF: Hole 11 description/ Tip 
 
                     desc: "Stay centered to avoid the sand traps.",
-                    tip: "Bunkers either side to be aware of."
+                    tip: "Aim for the heart of the green and avoid bringing the bunkers on either side into play."
                 },
                 {
                     // STAFF: Hole 12 name-image-yards 
@@ -981,7 +995,7 @@
                     // STAFF: Hole 12 description/ Tip 
 
                     desc: "A generous fairway offering a real birdie opportunity.",
-                    tip: "Possible to hit the green with a good tee shot.Avoid Bunkers Left & Right."
+                    tip: "A strong tee shot can reach the green, but accuracy matters - bunkers guard both sides."
                 },
                 {
                     // STAFF: Hole 13 name-image-yards 
@@ -993,7 +1007,7 @@
 
 
                     desc: "A long journey home requiring strong ball striking.",
-                    tip: "A late dogleg left after downhill shots."
+                    tip: "Position your downhill shots carefully before taking on the late dogleg left."
                 },
                 {
                     // STAFF: Hole 14 name-image-yards 
@@ -1004,7 +1018,7 @@
                     // STAFF: Hole 14 description/ Tip 
 
                     desc: "A beautiful drop shot par 3.",
-                    tip: "A slightly downhill green requires an accurate tee shot."
+                    tip: "Control your distance on this slightly downhill par 3 and commit to the target."
                 },
                 {
                     // STAFF: Hole 15 name-image-yards 
@@ -1015,7 +1029,7 @@
                     // STAFF: Hole 15 description/ Tip 
 
                     desc: "Don't let the yardage fool you.",
-                    tip: "Uphill ground makes it longer than you think."
+                    tip: "Take enough club - the uphill ground makes the hole play longer than the yardage suggests."
                 },
                 {
                     // STAFF: Hole 16 name-image-yards 
@@ -1026,7 +1040,7 @@
                     // STAFF: Hole 16 description/ Tip 
 
                     desc: "Tests your nerve and power.",
-                    tip: "A very tough long hole with a ditch."
+                    tip: "Respect the length and the ditch. Keep the ball in position and avoid forcing the hole."
                 },
                 {
                     // STAFF: Hole 17 name-image-yards 
@@ -1037,7 +1051,7 @@
                     // STAFF: Hole 17 description/ Tip 
 
                     desc: "A demanding hole as you approach the clubhouse.",
-                    tip: "A par requires four very good shots."
+                    tip: "This demanding closing stretch rewards patience and solid ball striking from tee to green."
                 },
                 {
                     // STAFF: Hole 18 name-image-yards 
@@ -1048,7 +1062,7 @@
                     // STAFF: Hole 18 description/ Tip 
 
                     desc: "A finishing hole in front of the members.",
-                    tip: "A slight dogleg right brings you home."
+                    tip: "Favour the correct side of the slight dogleg right and give yourself a confident approach into the final green."
                 },
             ];
 
@@ -1514,7 +1528,7 @@
         <div class="max-w-4xl mx-auto text-center">
 
             <h2 class="serif text-5xl md:text-6xl text-[#132419] italic mb-6">
-                Ready to Experience Dudley?
+                Ready to Take on Dudley?
             </h2>
 
             <div class="w-24 h-[2px] bg-[#C5A367] mx-auto mb-8"></div>
@@ -1586,11 +1600,22 @@
 
             <div>
                 <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
-                <div class="w-full h-[300px] border border-[#C5A367]/30 rounded-lg overflow-hidden">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4682054238515!2d-2.072235923319084!3d52.50684197205844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870908861d9a263%3A0x63359d997cc037b5!2sDudley%20Golf%20Club!5e0!3m2!1sen!2suk"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+                <div class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
+                    <p class="font-serif text-2xl text-white mb-4">Dudley Golf Club</p>
+                    <p class="text-white/70 leading-7 mb-6">
+                        Turners Hill<br>
+                        Rowley Regis<br>
+                        West Midlands
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Dudley+Golf+Club+Turners+Hill+Rowley+Regis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex w-fit items-center justify-center px-5 py-3 rounded-lg border border-[#C5A367] text-[#C5A367] text-xs uppercase tracking-[0.2em] font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+                        View Map &amp; Directions
+                    </a>
+                    <p class="text-white/40 text-xs mt-5 leading-5">
+                        Maps only opens if you choose to view directions.
+                    </p>
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-17T21:06:21.264Z",
+  "generatedAt": "2026-08-25T23:08:11.555Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -43,10 +43,10 @@
         "unresolvedWinnersBlockCertification": true
       },
       "totals": {
-        "catalogueCompetitions": 154,
-        "includedCompetitions": 138,
-        "modernEventsChecked": 421,
-        "modernEligibleEvents": 375,
+        "catalogueCompetitions": 149,
+        "includedCompetitions": 134,
+        "modernEventsChecked": 419,
+        "modernEligibleEvents": 374,
         "modernAwardWins": 30,
         "modernOverallWins": 287,
         "historicalBoardsChecked": 35,
@@ -60,7 +60,7 @@
         "unresolvedPlayerOccurrences": 0,
         "missingWinnerOccurrences": 0,
         "certifiedSpecialAwardRows": 5,
-        "excludedAwardOrEventRecords": 70
+        "excludedAwardOrEventRecords": 69
       },
       "validation": {
         "awardCertificationPassed": true,
@@ -2462,11 +2462,6 @@
         },
         {
           "competitionId": "captains-day-walker-cup",
-          "year": 2026,
-          "reason": "No explicit career-win overallWinner"
-        },
-        {
-          "competitionId": "club-championship-gross",
           "year": 2026,
           "reason": "No explicit career-win overallWinner"
         },
@@ -11068,7 +11063,7 @@
         },
         {
           "playerName": "David J. L. Jones",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "awardId": "overallWinner",
           "year": 2021,
           "date": "2021-09-18",
@@ -11707,7 +11702,7 @@
         },
         {
           "playerName": "Clive Peter Gould",
-          "competitionId": "captain-s-charity-day-amam",
+          "competitionId": "captain-s-charity-day",
           "awardId": "overallWinner",
           "year": 2022,
           "date": "2022-08-13",
@@ -11716,7 +11711,7 @@
         },
         {
           "playerName": "Neil Penton",
-          "competitionId": "captain-s-charity-day-amam",
+          "competitionId": "captain-s-charity-day",
           "awardId": "overallWinner",
           "year": 2022,
           "date": "2022-08-13",
@@ -11725,7 +11720,7 @@
         },
         {
           "playerName": "Philip John Northall",
-          "competitionId": "captain-s-charity-day-amam",
+          "competitionId": "captain-s-charity-day",
           "awardId": "overallWinner",
           "year": 2022,
           "date": "2022-08-13",
@@ -11734,7 +11729,7 @@
         },
         {
           "playerName": "Steve Homer",
-          "competitionId": "captain-s-charity-day-amam",
+          "competitionId": "captain-s-charity-day",
           "awardId": "overallWinner",
           "year": 2022,
           "date": "2022-08-13",
@@ -13092,11 +13087,38 @@
           "sourceLabel": "overallWinner"
         },
         {
+          "playerName": "Alan Ball",
+          "competitionId": "3-ball-rumble",
+          "awardId": "overallWinner",
+          "year": 2024,
+          "date": "2024-11-16",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "playerName": "Andrew Russell",
+          "competitionId": "3-ball-rumble",
+          "awardId": "overallWinner",
+          "year": 2024,
+          "date": "2024-11-16",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
           "playerName": "Gary Baker",
           "competitionId": "3-ball-rumble",
           "awardId": "overallWinner",
           "year": 2024,
           "date": "2024-09-07",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "playerName": "Ian Frederick Stevens",
+          "competitionId": "3-ball-rumble",
+          "awardId": "overallWinner",
+          "year": 2024,
+          "date": "2024-01-13",
           "sourceType": "modern-overall",
           "sourceLabel": "overallWinner"
         },
@@ -13110,6 +13132,24 @@
           "sourceLabel": "overallWinner"
         },
         {
+          "playerName": "Kevin Walters",
+          "competitionId": "3-ball-rumble",
+          "awardId": "overallWinner",
+          "year": 2024,
+          "date": "2024-11-16",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "playerName": "Mark Andrew Poulding",
+          "competitionId": "3-ball-rumble",
+          "awardId": "overallWinner",
+          "year": 2024,
+          "date": "2024-01-13",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
           "playerName": "Neil Hartland",
           "competitionId": "3-ball-rumble",
           "awardId": "overallWinner",
@@ -13119,53 +13159,8 @@
           "sourceLabel": "overallWinner"
         },
         {
-          "playerName": "Alan Ball",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
-          "awardId": "overallWinner",
-          "year": 2024,
-          "date": "2024-11-16",
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
-        },
-        {
-          "playerName": "Andrew Russell",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
-          "awardId": "overallWinner",
-          "year": 2024,
-          "date": "2024-11-16",
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
-        },
-        {
-          "playerName": "Ian Frederick Stevens",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
-          "awardId": "overallWinner",
-          "year": 2024,
-          "date": "2024-01-13",
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
-        },
-        {
-          "playerName": "Kevin Walters",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
-          "awardId": "overallWinner",
-          "year": 2024,
-          "date": "2024-11-16",
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
-        },
-        {
-          "playerName": "Mark Andrew Poulding",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
-          "awardId": "overallWinner",
-          "year": 2024,
-          "date": "2024-01-13",
-          "sourceType": "modern-overall",
-          "sourceLabel": "overallWinner"
-        },
-        {
           "playerName": "Richard Limb",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
+          "competitionId": "3-ball-rumble",
           "awardId": "overallWinner",
           "year": 2024,
           "date": "2024-01-13",
@@ -14119,7 +14114,7 @@
         },
         {
           "playerName": "Alan Ball",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
+          "competitionId": "3-ball-rumble",
           "awardId": "overallWinner",
           "year": 2025,
           "date": "2025-11-08",
@@ -14128,7 +14123,7 @@
         },
         {
           "playerName": "Andrew Russell",
-          "competitionId": "3-ball-rumble-all-scores-to-count",
+          "competitionId": "3-ball-rumble",
           "awardId": "overallWinner",
           "year": 2025,
           "date": "2025-11-08",
@@ -15665,13 +15660,13 @@
         "inferPlayers": false
       },
       "totals": {
-        "competitions": 129,
-        "uniqueEvents": 421,
-        "resultRowsChecked": 13578,
-        "numericPositionRows": 13459,
-        "qualifyingRows": 395,
-        "rawPlayerOccurrences": 551,
-        "certifiedPlayerFinishes": 548,
+        "competitions": 124,
+        "uniqueEvents": 419,
+        "resultRowsChecked": 13472,
+        "numericPositionRows": 13353,
+        "qualifyingRows": 393,
+        "rawPlayerOccurrences": 549,
+        "certifiedPlayerFinishes": 546,
         "duplicatePlayerEventOccurrences": 3,
         "disqualifiedRows": 119,
         "otherNonFinishingRows": 0,
@@ -15697,10 +15692,6 @@
           "finishes": 11
         },
         {
-          "playerName": "Mark Dando",
-          "finishes": 10
-        },
-        {
           "playerName": "Adam Stanfield",
           "finishes": 9
         },
@@ -15718,6 +15709,10 @@
         },
         {
           "playerName": "James Stevens",
+          "finishes": 9
+        },
+        {
+          "playerName": "Mark Dando",
           "finishes": 9
         },
         {
@@ -15893,10 +15888,6 @@
           "finishes": 4
         },
         {
-          "playerName": "Robert Shedden",
-          "finishes": 4
-        },
-        {
           "playerName": "Stephen Langford",
           "finishes": 4
         },
@@ -16022,6 +16013,10 @@
         },
         {
           "playerName": "Robert Hudson",
+          "finishes": 3
+        },
+        {
+          "playerName": "Robert Shedden",
           "finishes": 3
         },
         {
@@ -16386,7 +16381,6 @@
         "3-ball-modified-waltz",
         "3-ball-reverse-cha-cha",
         "3-ball-rumble",
-        "3-ball-rumble-all-scores-to-count",
         "3-ball-texas-scramble",
         "3-ball-waltz",
         "4-ball-amam-1-9-10-15-16-18",
@@ -16402,9 +16396,7 @@
         "august-sunday-stableford",
         "bassano-cup",
         "captain-s-charity-day",
-        "captain-s-charity-day-amam",
         "captain-s-welcome-club-stableford",
-        "captains-charity-day",
         "captains-day",
         "captains-day-walker-cup",
         "captains-drive-in-and-clubhouse-challenge-match",
@@ -16415,8 +16407,6 @@
         "club-3-ball-waltz",
         "club-betterball-pairs-stableford",
         "club-championship",
-        "club-championship-gross",
-        "club-championships-nett",
         "club-not-acceptable-scoring-stableford",
         "club-pairs-competition",
         "club-stableford",
@@ -16536,13 +16526,13 @@
         "inferPlayers": false
       },
       "totals": {
-        "competitions": 147,
-        "uniqueEvents": 421,
-        "resultRowsChecked": 13578,
-        "numericPositionRows": 13459,
-        "qualifyingRows": 1227,
-        "rawPlayerOccurrences": 1721,
-        "certifiedPlayerFinishes": 1703,
+        "competitions": 142,
+        "uniqueEvents": 419,
+        "resultRowsChecked": 13472,
+        "numericPositionRows": 13353,
+        "qualifyingRows": 1221,
+        "rawPlayerOccurrences": 1715,
+        "certifiedPlayerFinishes": 1697,
         "duplicatePlayerEventOccurrences": 18,
         "disqualifiedRows": 119,
         "otherNonFinishingRows": 0,
@@ -16564,19 +16554,15 @@
           "finishes": 31
         },
         {
-          "playerName": "James Stevens",
-          "finishes": 30
-        },
-        {
           "playerName": "Sean Element",
           "finishes": 30
         },
         {
-          "playerName": "Keith Durbridge",
-          "finishes": 25
+          "playerName": "James Stevens",
+          "finishes": 29
         },
         {
-          "playerName": "Robert Keith Woodall",
+          "playerName": "Keith Durbridge",
           "finishes": 25
         },
         {
@@ -16585,6 +16571,10 @@
         },
         {
           "playerName": "Nigel Brookes",
+          "finishes": 24
+        },
+        {
+          "playerName": "Robert Keith Woodall",
           "finishes": 24
         },
         {
@@ -16624,15 +16614,11 @@
           "finishes": 18
         },
         {
-          "playerName": "Mark Dando",
-          "finishes": 18
-        },
-        {
           "playerName": "Michael John Kendrick",
           "finishes": 18
         },
         {
-          "playerName": "Mark Andrew Poulding",
+          "playerName": "Mark Dando",
           "finishes": 17
         },
         {
@@ -16656,7 +16642,7 @@
           "finishes": 16
         },
         {
-          "playerName": "Lewis Jones",
+          "playerName": "Mark Andrew Poulding",
           "finishes": 16
         },
         {
@@ -16677,6 +16663,10 @@
         },
         {
           "playerName": "Ian Frederick Stevens",
+          "finishes": 15
+        },
+        {
+          "playerName": "Lewis Jones",
           "finishes": 15
         },
         {
@@ -16772,10 +16762,6 @@
           "finishes": 11
         },
         {
-          "playerName": "Robert Shedden",
-          "finishes": 11
-        },
-        {
           "playerName": "Stephen Price",
           "finishes": 11
         },
@@ -16809,6 +16795,10 @@
         },
         {
           "playerName": "Jason Langford",
+          "finishes": 10
+        },
+        {
+          "playerName": "Robert Shedden",
           "finishes": 10
         },
         {
@@ -17721,7 +17711,6 @@
         "3-ball-modified-waltz",
         "3-ball-reverse-cha-cha",
         "3-ball-rumble",
-        "3-ball-rumble-all-scores-to-count",
         "3-ball-texas-scramble",
         "3-ball-waltz",
         "4-ball-amam-1-9-10-15-16-18",
@@ -17739,9 +17728,7 @@
         "bloom-cup",
         "boscawen-cup",
         "captain-s-charity-day",
-        "captain-s-charity-day-amam",
         "captain-s-welcome-club-stableford",
-        "captains-charity-day",
         "captains-day",
         "captains-day-walker-cup",
         "captains-drive-in-and-clubhouse-challenge-match",
@@ -17754,8 +17741,6 @@
         "club-3-ball-waltz",
         "club-betterball-pairs-stableford",
         "club-championship",
-        "club-championship-gross",
-        "club-championships-nett",
         "club-not-acceptable-scoring-stableford",
         "club-pairs-competition",
         "club-stableford",
@@ -17889,13 +17874,13 @@
         "inferPlayers": false
       },
       "totals": {
-        "competitions": 147,
-        "uniqueEvents": 421,
-        "resultRowsChecked": 13578,
-        "numericPositionRows": 13459,
-        "qualifyingRows": 3944,
-        "rawPlayerOccurrences": 5532,
-        "certifiedPlayerFinishes": 5448,
+        "competitions": 142,
+        "uniqueEvents": 419,
+        "resultRowsChecked": 13472,
+        "numericPositionRows": 13353,
+        "qualifyingRows": 3924,
+        "rawPlayerOccurrences": 5512,
+        "certifiedPlayerFinishes": 5428,
         "duplicatePlayerEventOccurrences": 83,
         "disqualifiedRows": 119,
         "otherNonFinishingRows": 0,
@@ -17921,16 +17906,16 @@
           "finishes": 86
         },
         {
-          "playerName": "James Stevens",
-          "finishes": 78
+          "playerName": "Keith Durbridge",
+          "finishes": 77
         },
         {
           "playerName": "Richard Limb",
-          "finishes": 78
+          "finishes": 77
         },
         {
-          "playerName": "Keith Durbridge",
-          "finishes": 77
+          "playerName": "James Stevens",
+          "finishes": 76
         },
         {
           "playerName": "Nigel Brookes",
@@ -17954,26 +17939,22 @@
         },
         {
           "playerName": "Robert Keith Woodall",
-          "finishes": 63
+          "finishes": 62
         },
         {
           "playerName": "Alan Ball",
-          "finishes": 61
+          "finishes": 60
         },
         {
           "playerName": "Calin Tiplea",
           "finishes": 60
         },
         {
-          "playerName": "Lee Roger Grainger",
-          "finishes": 59
-        },
-        {
           "playerName": "Ian Frederick Stevens",
           "finishes": 58
         },
         {
-          "playerName": "Mark Andrew Poulding",
+          "playerName": "Lee Roger Grainger",
           "finishes": 57
         },
         {
@@ -17981,7 +17962,7 @@
           "finishes": 57
         },
         {
-          "playerName": "Mark Dando",
+          "playerName": "Mark Andrew Poulding",
           "finishes": 56
         },
         {
@@ -17993,20 +17974,20 @@
           "finishes": 55
         },
         {
-          "playerName": "Philip Thompson",
+          "playerName": "Mark Dando",
           "finishes": 55
         },
         {
-          "playerName": "Lewis Jones",
-          "finishes": 53
+          "playerName": "Philip Thompson",
+          "finishes": 55
         },
         {
           "playerName": "Stephen Brian Hopkins",
           "finishes": 53
         },
         {
-          "playerName": "Mark A. Williams",
-          "finishes": 51
+          "playerName": "Lewis Jones",
+          "finishes": 52
         },
         {
           "playerName": "Melvin Crook",
@@ -18015,6 +17996,10 @@
         {
           "playerName": "Michael John Kendrick",
           "finishes": 51
+        },
+        {
+          "playerName": "Mark A. Williams",
+          "finishes": 49
         },
         {
           "playerName": "Eric Edwards",
@@ -18026,10 +18011,6 @@
         },
         {
           "playerName": "Darren Element",
-          "finishes": 47
-        },
-        {
-          "playerName": "Gerald Paul Crowley",
           "finishes": 47
         },
         {
@@ -18045,12 +18026,12 @@
           "finishes": 46
         },
         {
-          "playerName": "Paul Thomas Donnelly",
+          "playerName": "Gerald Paul Crowley",
           "finishes": 46
         },
         {
-          "playerName": "David Hobley",
-          "finishes": 45
+          "playerName": "Paul Thomas Donnelly",
+          "finishes": 46
         },
         {
           "playerName": "Adam Bonehill",
@@ -18058,6 +18039,10 @@
         },
         {
           "playerName": "Anthony Willetts",
+          "finishes": 44
+        },
+        {
+          "playerName": "David Hobley",
           "finishes": 44
         },
         {
@@ -18085,15 +18070,15 @@
           "finishes": 42
         },
         {
-          "playerName": "Robert Shedden",
-          "finishes": 42
-        },
-        {
           "playerName": "Clive Atkins",
           "finishes": 41
         },
         {
           "playerName": "Mark Neil Tolley",
+          "finishes": 41
+        },
+        {
+          "playerName": "Robert Shedden",
           "finishes": 41
         },
         {
@@ -18117,10 +18102,6 @@
           "finishes": 39
         },
         {
-          "playerName": "Kevin Walters",
-          "finishes": 39
-        },
-        {
           "playerName": "Stephen Price",
           "finishes": 39
         },
@@ -18138,6 +18119,10 @@
         },
         {
           "playerName": "Clive Kearey",
+          "finishes": 37
+        },
+        {
+          "playerName": "Kevin Walters",
           "finishes": 37
         },
         {
@@ -18345,10 +18330,6 @@
           "finishes": 18
         },
         {
-          "playerName": "Christopher Churchman",
-          "finishes": 17
-        },
-        {
           "playerName": "Michael William Murray",
           "finishes": 17
         },
@@ -18358,6 +18339,10 @@
         },
         {
           "playerName": "Anthony Fegan",
+          "finishes": 16
+        },
+        {
+          "playerName": "Christopher Churchman",
           "finishes": 16
         },
         {
@@ -18373,15 +18358,15 @@
           "finishes": 16
         },
         {
-          "playerName": "Liam Harding",
-          "finishes": 16
-        },
-        {
           "playerName": "Wayne Colledge",
           "finishes": 16
         },
         {
           "playerName": "Keith Brian Culwick",
+          "finishes": 15
+        },
+        {
+          "playerName": "Liam Harding",
           "finishes": 15
         },
         {
@@ -18589,10 +18574,6 @@
           "finishes": 7
         },
         {
-          "playerName": "Ryan Walker",
-          "finishes": 7
-        },
-        {
           "playerName": "Scott Harrison",
           "finishes": 7
         },
@@ -18630,6 +18611,10 @@
         },
         {
           "playerName": "Paul Willetts",
+          "finishes": 6
+        },
+        {
+          "playerName": "Ryan Walker",
           "finishes": 6
         },
         {
@@ -19233,7 +19218,7 @@
       "externalParticipants": [
         {
           "suppliedName": "Sean Williams",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -19247,7 +19232,6 @@
         "3-ball-modified-waltz",
         "3-ball-reverse-cha-cha",
         "3-ball-rumble",
-        "3-ball-rumble-all-scores-to-count",
         "3-ball-texas-scramble",
         "3-ball-waltz",
         "4-ball-amam-1-9-10-15-16-18",
@@ -19265,9 +19249,7 @@
         "bloom-cup",
         "boscawen-cup",
         "captain-s-charity-day",
-        "captain-s-charity-day-amam",
         "captain-s-welcome-club-stableford",
-        "captains-charity-day",
         "captains-day",
         "captains-day-walker-cup",
         "captains-drive-in-and-clubhouse-challenge-match",
@@ -19280,8 +19262,6 @@
         "club-3-ball-waltz",
         "club-betterball-pairs-stableford",
         "club-championship",
-        "club-championship-gross",
-        "club-championships-nett",
         "club-not-acceptable-scoring-stableford",
         "club-pairs-competition",
         "club-stableford",
@@ -19419,12 +19399,12 @@
         "inferPlayers": false
       },
       "totals": {
-        "competitions": 136,
-        "uniqueEvents": 375,
-        "resultRowsChecked": 12047,
-        "appearanceRows": 12047,
-        "rawPlayerOccurrences": 15355,
-        "certifiedPlayerAppearances": 14908,
+        "competitions": 132,
+        "uniqueEvents": 374,
+        "resultRowsChecked": 11996,
+        "appearanceRows": 11996,
+        "rawPlayerOccurrences": 15304,
+        "certifiedPlayerAppearances": 14857,
         "duplicatePlayerEventOccurrences": 435,
         "externalParticipantOccurrences": 12,
         "unresolvedPlayerOccurrences": 0,
@@ -19434,7 +19414,7 @@
       "leaderboard": [
         {
           "playerName": "Stephen Hall",
-          "appearances": 218
+          "appearances": 217
         },
         {
           "playerName": "Philip John Northall",
@@ -19442,15 +19422,15 @@
         },
         {
           "playerName": "Gavin Ray",
-          "appearances": 199
+          "appearances": 198
         },
         {
           "playerName": "Gerald Paul Crowley",
-          "appearances": 178
+          "appearances": 177
         },
         {
           "playerName": "Keith John Woodall",
-          "appearances": 176
+          "appearances": 175
         },
         {
           "playerName": "Steve Homer",
@@ -19458,42 +19438,38 @@
         },
         {
           "playerName": "David Hill",
-          "appearances": 163
+          "appearances": 162
         },
         {
           "playerName": "Richard Limb",
-          "appearances": 160
+          "appearances": 159
         },
         {
           "playerName": "Paul Welch",
-          "appearances": 159
+          "appearances": 158
         },
         {
           "playerName": "Ian Frederick Stevens",
           "appearances": 154
         },
         {
-          "playerName": "Tim Mark Wright",
-          "appearances": 153
-        },
-        {
           "playerName": "Wayne Rutter",
           "appearances": 153
         },
         {
-          "playerName": "Keith Durbridge",
-          "appearances": 149
+          "playerName": "Tim Mark Wright",
+          "appearances": 152
         },
         {
-          "playerName": "Adam Stanfield",
+          "playerName": "Keith Durbridge",
           "appearances": 148
         },
         {
-          "playerName": "Melvin Crook",
-          "appearances": 144
+          "playerName": "Adam Stanfield",
+          "appearances": 147
         },
         {
-          "playerName": "Paul Thomas Donnelly",
+          "playerName": "Melvin Crook",
           "appearances": 144
         },
         {
@@ -19501,12 +19477,16 @@
           "appearances": 143
         },
         {
+          "playerName": "Paul Thomas Donnelly",
+          "appearances": 143
+        },
+        {
           "playerName": "Calin Tiplea",
-          "appearances": 142
+          "appearances": 141
         },
         {
           "playerName": "James Stevens",
-          "appearances": 142
+          "appearances": 141
         },
         {
           "playerName": "Philip Thompson",
@@ -19518,7 +19498,7 @@
         },
         {
           "playerName": "Mark Andrew Poulding",
-          "appearances": 140
+          "appearances": 139
         },
         {
           "playerName": "Michael John Kendrick",
@@ -19534,46 +19514,42 @@
         },
         {
           "playerName": "Michael Williams",
-          "appearances": 131
+          "appearances": 130
         },
         {
           "playerName": "Neil Hartland",
-          "appearances": 131
+          "appearances": 130
         },
         {
           "playerName": "Alan Ball",
-          "appearances": 129
+          "appearances": 128
         },
         {
           "playerName": "David Hobley",
-          "appearances": 129
+          "appearances": 128
         },
         {
           "playerName": "Andrew Deakin",
-          "appearances": 127
+          "appearances": 126
         },
         {
           "playerName": "Peter Evans",
-          "appearances": 125
+          "appearances": 124
         },
         {
           "playerName": "Lee Roger Grainger",
-          "appearances": 124
+          "appearances": 123
         },
         {
           "playerName": "Stephen Brian Hopkins",
           "appearances": 123
         },
         {
-          "playerName": "Robert Keith Woodall",
-          "appearances": 122
-        },
-        {
           "playerName": "Paul Harper",
           "appearances": 121
         },
         {
-          "playerName": "Tony John Salt",
+          "playerName": "Robert Keith Woodall",
           "appearances": 121
         },
         {
@@ -19581,8 +19557,8 @@
           "appearances": 120
         },
         {
-          "playerName": "Mark A. Williams",
-          "appearances": 119
+          "playerName": "Tony John Salt",
+          "appearances": 120
         },
         {
           "playerName": "Christopher Vanes",
@@ -19593,23 +19569,23 @@
           "appearances": 118
         },
         {
-          "playerName": "Kevin Walters",
+          "playerName": "Mark A. Williams",
           "appearances": 118
-        },
-        {
-          "playerName": "Gary Baker",
-          "appearances": 117
         },
         {
           "playerName": "Jason Watchorn",
           "appearances": 117
         },
         {
-          "playerName": "Jason Langford",
-          "appearances": 113
+          "playerName": "Kevin Walters",
+          "appearances": 117
         },
         {
-          "playerName": "Scott Postin",
+          "playerName": "Gary Baker",
+          "appearances": 116
+        },
+        {
+          "playerName": "Jason Langford",
           "appearances": 113
         },
         {
@@ -19621,6 +19597,10 @@
           "appearances": 112
         },
         {
+          "playerName": "Scott Postin",
+          "appearances": 112
+        },
+        {
           "playerName": "Darren Element",
           "appearances": 108
         },
@@ -19629,24 +19609,24 @@
           "appearances": 107
         },
         {
-          "playerName": "Lewis Jones",
-          "appearances": 106
-        },
-        {
           "playerName": "M T Cowdell",
           "appearances": 106
         },
         {
-          "playerName": "Mark Dando",
-          "appearances": 104
+          "playerName": "Lewis Jones",
+          "appearances": 105
         },
         {
-          "playerName": "David Evitts",
+          "playerName": "Mark Dando",
           "appearances": 103
         },
         {
-          "playerName": "Robert Shedden",
+          "playerName": "David Evitts",
           "appearances": 102
+        },
+        {
+          "playerName": "Robert Shedden",
+          "appearances": 101
         },
         {
           "playerName": "Eric Edwards",
@@ -19694,7 +19674,7 @@
         },
         {
           "playerName": "Paul Wayne Taylor",
-          "appearances": 88
+          "appearances": 87
         },
         {
           "playerName": "Craig Biddulph",
@@ -19730,7 +19710,7 @@
         },
         {
           "playerName": "Adrian Burns",
-          "appearances": 76
+          "appearances": 75
         },
         {
           "playerName": "Kevin Cooksey",
@@ -19750,7 +19730,7 @@
         },
         {
           "playerName": "Mitchell Raybould",
-          "appearances": 73
+          "appearances": 72
         },
         {
           "playerName": "Paul Russell",
@@ -19777,20 +19757,20 @@
           "appearances": 66
         },
         {
-          "playerName": "Stephen Langford",
-          "appearances": 65
-        },
-        {
           "playerName": "David J. L. Jones",
-          "appearances": 64
-        },
-        {
-          "playerName": "Jason Hurp",
           "appearances": 64
         },
         {
           "playerName": "Kenneth Brettle",
           "appearances": 64
+        },
+        {
+          "playerName": "Stephen Langford",
+          "appearances": 64
+        },
+        {
+          "playerName": "Jason Hurp",
+          "appearances": 63
         },
         {
           "playerName": "John Gilbert Baker",
@@ -19810,7 +19790,7 @@
         },
         {
           "playerName": "Craig Locke",
-          "appearances": 61
+          "appearances": 60
         },
         {
           "playerName": "James Marsh Derrer",
@@ -19841,14 +19821,6 @@
           "appearances": 57
         },
         {
-          "playerName": "Richard Price",
-          "appearances": 57
-        },
-        {
-          "playerName": "Dean Hinchcliffe",
-          "appearances": 56
-        },
-        {
           "playerName": "Gavin Higgs",
           "appearances": 56
         },
@@ -19857,7 +19829,15 @@
           "appearances": 56
         },
         {
+          "playerName": "Richard Price",
+          "appearances": 56
+        },
+        {
           "playerName": "Bruce Antony Mansell",
+          "appearances": 55
+        },
+        {
+          "playerName": "Dean Hinchcliffe",
           "appearances": 55
         },
         {
@@ -19873,24 +19853,24 @@
           "appearances": 54
         },
         {
-          "playerName": "Anthony Fegan",
+          "playerName": "Gordon Hampstead",
           "appearances": 53
         },
         {
-          "playerName": "Gordon Hampstead",
-          "appearances": 53
+          "playerName": "Anthony Fegan",
+          "appearances": 52
         },
         {
           "playerName": "Graham John Franks",
           "appearances": 52
         },
         {
-          "playerName": "David Postin",
+          "playerName": "Ivan James Cooper",
           "appearances": 51
         },
         {
-          "playerName": "Ivan James Cooper",
-          "appearances": 51
+          "playerName": "David Postin",
+          "appearances": 50
         },
         {
           "playerName": "Luke Hopkins",
@@ -19914,7 +19894,7 @@
         },
         {
           "playerName": "Carl Elsworth",
-          "appearances": 46
+          "appearances": 45
         },
         {
           "playerName": "Harry Westwood",
@@ -20025,11 +20005,11 @@
           "appearances": 31
         },
         {
-          "playerName": "Scott Whitehall",
-          "appearances": 31
+          "playerName": "Michael Terence Cole",
+          "appearances": 30
         },
         {
-          "playerName": "Michael Terence Cole",
+          "playerName": "Scott Whitehall",
           "appearances": 30
         },
         {
@@ -20077,11 +20057,11 @@
           "appearances": 26
         },
         {
-          "playerName": "Stephen Thompson",
-          "appearances": 26
+          "playerName": "David Harris",
+          "appearances": 25
         },
         {
-          "playerName": "David Harris",
+          "playerName": "Stephen Thompson",
           "appearances": 25
         },
         {
@@ -20105,10 +20085,6 @@
           "appearances": 24
         },
         {
-          "playerName": "Greg Underhill",
-          "appearances": 23
-        },
-        {
           "playerName": "Keith B. Stubbs",
           "appearances": 23
         },
@@ -20125,11 +20101,11 @@
           "appearances": 23
         },
         {
-          "playerName": "Richard Woodward",
+          "playerName": "Greg Underhill",
           "appearances": 22
         },
         {
-          "playerName": "Ryan Walker",
+          "playerName": "Richard Woodward",
           "appearances": 22
         },
         {
@@ -20141,11 +20117,11 @@
           "appearances": 21
         },
         {
-          "playerName": "Paul Tromans",
+          "playerName": "Ross Postin",
           "appearances": 21
         },
         {
-          "playerName": "Ross Postin",
+          "playerName": "Ryan Walker",
           "appearances": 21
         },
         {
@@ -20173,6 +20149,10 @@
           "appearances": 20
         },
         {
+          "playerName": "Paul Tromans",
+          "appearances": 20
+        },
+        {
           "playerName": "Dean Johnson",
           "appearances": 19
         },
@@ -20181,19 +20161,11 @@
           "appearances": 19
         },
         {
-          "playerName": "Owen Limb",
-          "appearances": 19
-        },
-        {
           "playerName": "Sean Round",
           "appearances": 19
         },
         {
           "playerName": "Ben Paul Smith",
-          "appearances": 18
-        },
-        {
-          "playerName": "Gregory Curry",
           "appearances": 18
         },
         {
@@ -20209,6 +20181,10 @@
           "appearances": 18
         },
         {
+          "playerName": "Owen Limb",
+          "appearances": 18
+        },
+        {
           "playerName": "Peter Bradley",
           "appearances": 18
         },
@@ -20219,6 +20195,10 @@
         {
           "playerName": "William Nunn",
           "appearances": 18
+        },
+        {
+          "playerName": "Gregory Curry",
+          "appearances": 17
         },
         {
           "playerName": "Kelvin Jordan",
@@ -20337,10 +20317,6 @@
           "appearances": 11
         },
         {
-          "playerName": "Zachary Downing",
-          "appearances": 11
-        },
-        {
           "playerName": "John Edward Nicklin",
           "appearances": 10
         },
@@ -20358,6 +20334,10 @@
         },
         {
           "playerName": "Sven Garratt",
+          "appearances": 10
+        },
+        {
+          "playerName": "Zachary Downing",
           "appearances": 10
         },
         {
@@ -20473,10 +20453,6 @@
           "appearances": 5
         },
         {
-          "playerName": "Steve Aston",
-          "appearances": 5
-        },
-        {
           "playerName": "Adam Chester",
           "appearances": 4
         },
@@ -20510,6 +20486,10 @@
         },
         {
           "playerName": "Sam Worton",
+          "appearances": 4
+        },
+        {
+          "playerName": "Steve Aston",
           "appearances": 4
         },
         {
@@ -21025,7 +21005,7 @@
       "externalParticipants": [
         {
           "suppliedName": "Andy Simmons",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21033,7 +21013,7 @@
         },
         {
           "suppliedName": "Chris George-Burnell",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21041,7 +21021,7 @@
         },
         {
           "suppliedName": "Garry Guest",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21049,7 +21029,7 @@
         },
         {
           "suppliedName": "John Bunce",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21057,7 +21037,7 @@
         },
         {
           "suppliedName": "Kevin Phillips",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21065,7 +21045,7 @@
         },
         {
           "suppliedName": "Nicholas Watson",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21073,7 +21053,7 @@
         },
         {
           "suppliedName": "Sean Williams",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21081,7 +21061,7 @@
         },
         {
           "suppliedName": "Steven Smith",
-          "competitionId": "captains-charity-day",
+          "competitionId": "captain-s-charity-day",
           "competitionName": "Captains Charity Day",
           "year": 2021,
           "date": "2021-09-18",
@@ -21119,7 +21099,6 @@
         "3-ball-modified-waltz",
         "3-ball-reverse-cha-cha",
         "3-ball-rumble",
-        "3-ball-rumble-all-scores-to-count",
         "3-ball-texas-scramble",
         "3-ball-waltz",
         "4-ball-amam-1-9-10-15-16-18",
@@ -21137,9 +21116,7 @@
         "bloom-cup",
         "boscawen-cup",
         "captain-s-charity-day",
-        "captain-s-charity-day-amam",
         "captain-s-welcome-club-stableford",
-        "captains-charity-day",
         "captains-day",
         "captains-day-walker-cup",
         "captains-drive-in-and-clubhouse-challenge-match",
@@ -21152,7 +21129,6 @@
         "club-3-ball-waltz",
         "club-betterball-pairs-stableford",
         "club-championship",
-        "club-championship-gross",
         "club-not-acceptable-scoring-stableford",
         "club-pairs-competition",
         "club-stableford",
@@ -21302,7 +21278,7 @@
       "totals": {
         "competitions": 68,
         "uniqueEvents": 190,
-        "resultRowsChecked": 13578,
+        "resultRowsChecked": 13472,
         "eligibleRows": 7225,
         "rawPlayerScoreOccurrences": 7225,
         "certifiedPlayerScores": 7224,
@@ -21349,15 +21325,15 @@
         "excludedTeamRows": 2484,
         "excludedBoardRows": 48,
         "excludedMatchplayRows": 0,
-        "excludedNonFinishingRows": 725,
+        "excludedNonFinishingRows": 701,
         "excludedIncompleteRows": 24,
         "excludedUnknownScoreTypeRows": 7,
         "excludedMultiRoundRows": 0,
-        "excludedNonCompetitiveRows": 1585,
+        "excludedNonCompetitiveRows": 1513,
         "excludedMixedTableRows": 1392,
         "excludedMixedTableEvents": 14,
         "uncertifiedHoleLengthRows": 0,
-        "excludedRoundCountMismatchRows": 44,
+        "excludedRoundCountMismatchRows": 34,
         "missingPlayerRows": 0,
         "externalParticipantOccurrences": 10,
         "unresolvedPlayerOccurrences": 0,
@@ -46920,7 +46896,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -46993,7 +46969,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 37
                 },
@@ -47139,7 +47115,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 33
                 },
@@ -47972,7 +47948,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 38
                 },
@@ -49270,7 +49246,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -49764,7 +49740,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 37
                 },
@@ -50507,7 +50483,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 35
                 },
@@ -52094,7 +52070,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 38
                 },
@@ -52238,7 +52214,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 39
                 },
@@ -52740,7 +52716,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 32
                 },
@@ -53106,7 +53082,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 38
                 },
@@ -53324,7 +53300,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 29
                 },
@@ -55116,7 +55092,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -56083,7 +56059,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 40
                 },
@@ -56850,7 +56826,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 35
                 },
@@ -57082,7 +57058,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 19
                 },
@@ -58295,7 +58271,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 35
                 },
@@ -59066,7 +59042,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 35
                 },
@@ -59613,7 +59589,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 35
                 },
@@ -60106,7 +60082,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 36
                 },
@@ -60932,7 +60908,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -61324,7 +61300,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 29
                 },
@@ -61818,7 +61794,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 32
                 },
@@ -62235,7 +62211,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 39
                 },
@@ -62806,7 +62782,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 39
                 },
@@ -62997,7 +62973,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 27
                 },
@@ -63146,7 +63122,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 26
                 },
@@ -63771,7 +63747,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 37
                 },
@@ -64681,7 +64657,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 28
                 },
@@ -64889,7 +64865,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 28
                 },
@@ -65286,7 +65262,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 23
                 },
@@ -66099,7 +66075,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 39
                 },
@@ -66307,7 +66283,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -66928,7 +66904,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 29
                 },
@@ -67092,7 +67068,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -67353,7 +67329,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 34
                 },
@@ -67552,7 +67528,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 26
                 },
@@ -67722,7 +67698,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 35
                 },
@@ -69158,7 +69134,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 36
                 },
@@ -70657,7 +70633,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 3
                 },
@@ -71093,7 +71069,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 27
                 },
@@ -71242,7 +71218,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 19
                 },
@@ -71415,7 +71391,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 45
                 },
@@ -71567,7 +71543,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 27
                 },
@@ -71751,7 +71727,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 26
                 },
@@ -72146,7 +72122,7 @@
                 {
                   "date": "2021-09-18",
                   "year": 2021,
-                  "competitionId": "captains-charity-day",
+                  "competitionId": "captain-s-charity-day",
                   "competitionName": "Captains Charity Day",
                   "score": 41
                 },
@@ -101386,7 +101362,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -101459,7 +101435,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 37
                   },
@@ -101605,7 +101581,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 33
                   },
@@ -102438,7 +102414,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 38
                   },
@@ -103736,7 +103712,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -104230,7 +104206,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 37
                   },
@@ -104973,7 +104949,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 35
                   },
@@ -106560,7 +106536,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 38
                   },
@@ -106704,7 +106680,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 39
                   },
@@ -107206,7 +107182,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 32
                   },
@@ -107572,7 +107548,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 38
                   },
@@ -107790,7 +107766,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 29
                   },
@@ -109582,7 +109558,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -110549,7 +110525,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 40
                   },
@@ -111316,7 +111292,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 35
                   },
@@ -111548,7 +111524,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 19
                   },
@@ -112761,7 +112737,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 35
                   },
@@ -113532,7 +113508,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 35
                   },
@@ -114079,7 +114055,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 35
                   },
@@ -114572,7 +114548,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 36
                   },
@@ -115398,7 +115374,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -115790,7 +115766,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 29
                   },
@@ -116284,7 +116260,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 32
                   },
@@ -116701,7 +116677,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 39
                   },
@@ -117272,7 +117248,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 39
                   },
@@ -117463,7 +117439,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 27
                   },
@@ -117612,7 +117588,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 26
                   },
@@ -118237,7 +118213,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 37
                   },
@@ -119147,7 +119123,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 28
                   },
@@ -119355,7 +119331,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 28
                   },
@@ -119752,7 +119728,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 23
                   },
@@ -120565,7 +120541,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 39
                   },
@@ -120773,7 +120749,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -121394,7 +121370,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 29
                   },
@@ -121558,7 +121534,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -121819,7 +121795,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 34
                   },
@@ -122018,7 +121994,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 26
                   },
@@ -122188,7 +122164,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 35
                   },
@@ -123624,7 +123600,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 36
                   },
@@ -125123,7 +125099,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 3
                   },
@@ -125559,7 +125535,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 27
                   },
@@ -125708,7 +125684,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 19
                   },
@@ -125881,7 +125857,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 45
                   },
@@ -126033,7 +126009,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 27
                   },
@@ -126217,7 +126193,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 26
                   },
@@ -126612,7 +126588,7 @@
                   {
                     "date": "2021-09-18",
                     "year": 2021,
-                    "competitionId": "captains-charity-day",
+                    "competitionId": "captain-s-charity-day",
                     "competitionName": "Captains Charity Day",
                     "score": 41
                   },
@@ -138680,8 +138656,8 @@
         "august-medal",
         "august-sunday-stableford",
         "bassano-cup",
+        "captain-s-charity-day",
         "captain-s-welcome-club-stableford",
-        "captains-charity-day",
         "captains-day",
         "captains-day-walker-cup",
         "captains-drive-in-and-clubhouse-challenge-match",

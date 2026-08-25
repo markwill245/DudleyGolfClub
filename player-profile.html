@@ -460,10 +460,12 @@
           <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
             <div class="flex justify-between gap-4">
               <strong>
-                ${escapeHtml(
-        row.competitionName ||
-        row.competitionId
-      )}
+                ${row.competitionId
+                  ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
+                       class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+                       ${escapeHtml(row.competitionName || row.competitionId)}
+                     </a>`
+                  : escapeHtml(row.competitionName || "")}
               </strong>
 
               <span class="text-sm text-[#C5A367] font-bold">
@@ -522,9 +524,14 @@
             <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
 
               <div class="flex justify-between gap-4">
-                <strong>
-                  ${escapeHtml(win.competitionName)}
-                </strong>
+              <strong>
+  ${win.competitionId
+              ? `<a href="competition-profile.html?id=${encodeURIComponent(win.competitionId)}"
+         class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+         ${escapeHtml(win.competitionName || win.competitionId)}
+       </a>`
+              : escapeHtml(win.competitionName || "")}
+</strong>
 
                 <span class="text-[#C5A367] font-bold">
                   ${escapeHtml(win.year)}
@@ -576,12 +583,14 @@
         ${rows.map(row => `
           <div class="rounded-xl bg-[#F9F7F2] px-4 py-3">
             <div class="flex justify-between gap-4">
-              <strong>
-                ${escapeHtml(
-        row.competitionName ||
-        row.competitionId
-      )}
-              </strong>
+            <strong>
+  ${row.competitionId
+          ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
+         class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+         ${escapeHtml(row.competitionName || row.competitionId)}
+       </a>`
+          : escapeHtml(row.competitionName || "")}
+</strong>
 
               <span class="text-[#C5A367] font-bold">
                 #2
@@ -632,10 +641,12 @@
 
             <div class="flex justify-between gap-4">
               <strong>
-                ${escapeHtml(
-        row.competitionName ||
-        row.competitionId
-      )}
+                ${row.competitionId
+                  ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
+                       class="hover:text-[#C5A367] underline-offset-4 hover:underline">
+                       ${escapeHtml(row.competitionName || row.competitionId)}
+                     </a>`
+                  : escapeHtml(row.competitionName || "")}
               </strong>
 
               <span class="text-[#C5A367] font-bold">
@@ -898,9 +909,9 @@
         const gotyRow =
           gotyRows.find(row =>
             normalise(row.player) ===
-              normalise(player.player) &&
+            normalise(player.player) &&
             normalise(row.section) ===
-              normalise(player.section)
+            normalise(player.section)
           ) || null;
 
         gotyHonours =
@@ -1416,8 +1427,8 @@ ${(() => {
 
                 <p class="text-sm uppercase tracking-[0.2em] text-white/70">
                   ${gotyHonours.length === 1
-  ? "1-Time Winner"
-  : gotyHonours.length + "-Time Winner"}
+            ? "1-Time Winner"
+            : gotyHonours.length + "-Time Winner"}
                 </p>
               </div>
 
@@ -1452,25 +1463,25 @@ ${(() => {
         <div class="space-y-3">
 
           ${(player.timeline || []).map(item => {
-            const scoreText =
-              item.score !== null &&
-              item.score !== undefined
-                ? `${item.scoreType ? escapeHtml(item.scoreType) + " " : ""}${escapeHtml(item.score)}`
-                : "";
+              const scoreText =
+                item.score !== null &&
+                  item.score !== undefined
+                  ? `${item.scoreType ? escapeHtml(item.scoreType) + " " : ""}${escapeHtml(item.score)}`
+                  : "";
 
-            const parText =
-              item.relativeToPar !== null &&
-              item.relativeToPar !== undefined
-                ? (
+              const parText =
+                item.relativeToPar !== null &&
+                  item.relativeToPar !== undefined
+                  ? (
                     Number(item.relativeToPar) === 0
                       ? "E"
                       : Number(item.relativeToPar) > 0
                         ? `+${item.relativeToPar}`
                         : String(item.relativeToPar)
                   )
-                : "";
+                  : "";
 
-            return `
+              return `
               <div class="border-l-4 border-[#C5A367] pl-4 py-2">
 
                 <strong>
@@ -1488,7 +1499,7 @@ ${(() => {
 
               </div>
             `;
-          }).join("")}
+            }).join("")}
 
         </div>
 

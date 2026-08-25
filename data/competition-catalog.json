@@ -91,21 +91,6 @@
     "museumCategory": "General"
   },
   {
-    "id": "3-ball-rumble-all-scores-to-count",
-    "competitionId": "3-ball-rumble-all-scores-to-count",
-    "name": "3 Ball Rumble - all scores to count",
-    "section": "Mens",
-    "competitionClass": "Standard",
-    "format": "3 Ball",
-    "teamSize": 3,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
-  },
-  {
     "id": "3-ball-texas-scramble",
     "competitionId": "3-ball-texas-scramble",
     "name": "3 Ball Texas Scramble",
@@ -400,21 +385,6 @@
     "museumCategory": "General"
   },
   {
-    "id": "captain-s-charity-day-amam",
-    "competitionId": "captain-s-charity-day-amam",
-    "name": "Captain's Charity Day - AmAm",
-    "section": "Mens",
-    "competitionClass": "Standard",
-    "format": "Team",
-    "teamSize": 4,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
-  },
-  {
     "competitionId": "captains-day",
     "name": "Captain's Day",
     "section": "Mens",
@@ -458,21 +428,6 @@
     "includeInPlayerAppearances": true,
     "museumCategory": "General",
     "scoringProfile": "mens-standard"
-  },
-  {
-    "id": "captains-charity-day",
-    "competitionId": "captains-charity-day",
-    "name": "Captains Charity Day",
-    "section": "Mens",
-    "competitionClass": "Standard",
-    "format": "Individual",
-    "teamSize": 1,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
   },
   {
     "id": "captains-drive-in-and-clubhouse-challenge-match",
@@ -633,36 +588,6 @@
     "active": true,
     "major": true,
     "scoringProfile": "mens-standard"
-  },
-  {
-    "id": "club-championship-gross",
-    "competitionId": "club-championship-gross",
-    "name": "Club Championship GROSS",
-    "section": "Mens",
-    "competitionClass": "Standard",
-    "format": "Individual",
-    "teamSize": 1,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": true,
-    "includeInPlayerAppearances": true,
-    "museumCategory": "General"
-  },
-  {
-    "id": "club-championships-nett",
-    "competitionId": "club-championships-nett",
-    "name": "Club Championships Nett",
-    "section": "Mens",
-    "competitionClass": "Standard",
-    "format": "Individual",
-    "teamSize": 1,
-    "countsForOrderOfMerit": false,
-    "boardCompetition": false,
-    "major": false,
-    "includeInCareerWins": false,
-    "includeInPlayerAppearances": false,
-    "museumCategory": "General"
   },
   {
     "id": "club-not-acceptable-scoring-stableford",

@@ -732,96 +732,15 @@
     "category": "General",
     "historicalBoard": false,
     "winnerOnly": false,
-    "countsForOrderOfMerit": true,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2024,
-    "latestYear": 2024,
-    "latestDetailedYear": 2024,
-    "totalEntries": 51,
-    "averageEntries": 51,
-    "uniqueWinners": 3,
-    "mostSuccessfulPlayer": "Gary Baker",
-    "mostWins": 1,
-    "currentWinners": [
-      "Gary Baker",
-      "James Stevens",
-      "Neil Hartland"
-    ],
-    "winnerLeaders": [
-      {
-        "player": "Gary Baker",
-        "wins": 1
-      },
-      {
-        "player": "James Stevens",
-        "wins": 1
-      },
-      {
-        "player": "Neil Hartland",
-        "wins": 1
-      }
-    ],
-    "winnerHistory": [
-      {
-        "year": 2024,
-        "winner": "Gary Baker",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 110,
-        "relativeToPar": null
-      },
-      {
-        "year": 2024,
-        "winner": "James Stevens",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 110,
-        "relativeToPar": null
-      },
-      {
-        "year": 2024,
-        "winner": "Neil Hartland",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 110,
-        "relativeToPar": null
-      }
-    ],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "3 Ball Rumble is preserved as a competition profile in the Dudley Golf Club Digital Museum."
-  },
-  {
-    "id": "3-ball-rumble-all-scores-to-count",
-    "competitionId": "3-ball-rumble-all-scores-to-count",
-    "name": "3 Ball Rumble - all scores to count",
-    "competitionName": "3 Ball Rumble - all scores to count",
-    "section": "Mens",
-    "format": "3 Ball",
-    "competitionFormat": "3 Ball",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "complete",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": true,
+    "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
     "yearsPlayed": 2,
     "firstYear": 2024,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 125,
-    "averageEntries": 62.5,
-    "uniqueWinners": 7,
+    "totalEntries": 175,
+    "averageEntries": 87.5,
+    "uniqueWinners": 10,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 1,
     "currentWinners": [
@@ -841,7 +760,15 @@
         "wins": 1
       },
       {
+        "player": "Gary Baker",
+        "wins": 1
+      },
+      {
         "player": "Ian Frederick Stevens",
+        "wins": 1
+      },
+      {
+        "player": "James Stevens",
         "wins": 1
       },
       {
@@ -850,6 +777,10 @@
       },
       {
         "player": "Mark Andrew Poulding",
+        "wins": 1
+      },
+      {
+        "player": "Neil Hartland",
         "wins": 1
       },
       {
@@ -884,10 +815,26 @@
       },
       {
         "year": 2024,
+        "winner": "Gary Baker",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 110,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
         "winner": "Ian Frederick Stevens",
         "source": "Competition Result",
         "verified": false,
         "score": 101,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
+        "winner": "James Stevens",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 110,
         "relativeToPar": null
       },
       {
@@ -908,6 +855,14 @@
       },
       {
         "year": 2024,
+        "winner": "Neil Hartland",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 110,
+        "relativeToPar": null
+      },
+      {
+        "year": 2024,
         "winner": "Richard Limb",
         "source": "Competition Result",
         "verified": false,
@@ -924,7 +879,7 @@
       "linkedScoreType": null
     },
     "clubChampionship": null,
-    "summary": "3 Ball Rumble - all scores to count is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+    "summary": "3 Ball Rumble is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "3-ball-texas-scramble",
@@ -4774,15 +4729,15 @@
     "category": "General",
     "historicalBoard": false,
     "winnerOnly": false,
-    "countsForOrderOfMerit": true,
+    "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
-    "firstYear": 2023,
+    "yearsPlayed": 5,
+    "firstYear": 2021,
     "latestYear": 2025,
     "latestDetailedYear": 2025,
-    "totalEntries": 215,
-    "averageEntries": 71.7,
-    "uniqueWinners": 9,
+    "totalEntries": 364,
+    "averageEntries": 72.8,
+    "uniqueWinners": 14,
     "mostSuccessfulPlayer": "Alan Ball",
     "mostWins": 1,
     "currentWinners": [
@@ -4795,6 +4750,14 @@
       },
       {
         "player": "Anthony Willetts",
+        "wins": 1
+      },
+      {
+        "player": "Clive Peter Gould",
+        "wins": 1
+      },
+      {
+        "player": "David J. L. Jones",
         "wins": 1
       },
       {
@@ -4822,7 +4785,19 @@
         "wins": 1
       },
       {
+        "player": "Neil Penton",
+        "wins": 1
+      },
+      {
+        "player": "Philip John Northall",
+        "wins": 1
+      },
+      {
         "player": "Robert Marsden",
+        "wins": 1
+      },
+      {
+        "player": "Steve Homer",
         "wins": 1
       }
     ],
@@ -4898,69 +4873,7 @@
         "verified": false,
         "score": 92,
         "relativeToPar": null
-      }
-    ],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "Captain's Charity Day is preserved as a competition profile in the Dudley Golf Club Digital Museum."
-  },
-  {
-    "id": "captain-s-charity-day-amam",
-    "competitionId": "captain-s-charity-day-amam",
-    "name": "Captain's Charity Day - AmAm",
-    "competitionName": "Captain's Charity Day - AmAm",
-    "section": "Mens",
-    "format": "Team",
-    "competitionFormat": "Team",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "complete",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2022,
-    "latestYear": 2022,
-    "latestDetailedYear": 2022,
-    "totalEntries": 83,
-    "averageEntries": 83,
-    "uniqueWinners": 4,
-    "mostSuccessfulPlayer": "Clive Peter Gould",
-    "mostWins": 1,
-    "currentWinners": [
-      "Clive Peter Gould",
-      "Neil Penton",
-      "Philip John Northall",
-      "Steve Homer"
-    ],
-    "winnerLeaders": [
-      {
-        "player": "Clive Peter Gould",
-        "wins": 1
       },
-      {
-        "player": "Neil Penton",
-        "wins": 1
-      },
-      {
-        "player": "Philip John Northall",
-        "wins": 1
-      },
-      {
-        "player": "Steve Homer",
-        "wins": 1
-      }
-    ],
-    "winnerHistory": [
       {
         "year": 2022,
         "winner": "Clive Peter Gould",
@@ -4992,6 +4905,14 @@
         "verified": false,
         "score": 95,
         "relativeToPar": null
+      },
+      {
+        "year": 2021,
+        "winner": "David J. L. Jones",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 45,
+        "relativeToPar": null
       }
     ],
     "sourcePriority": {
@@ -5003,7 +4924,7 @@
       "linkedScoreType": null
     },
     "clubChampionship": null,
-    "summary": "Captain's Charity Day - AmAm is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+    "summary": "Captain's Charity Day is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "captains-day",
@@ -5382,61 +5303,6 @@
     },
     "clubChampionship": null,
     "summary": "Captain's Welcome Club Stableford is preserved as a competition profile in the Dudley Golf Club Digital Museum."
-  },
-  {
-    "id": "captains-charity-day",
-    "competitionId": "captains-charity-day",
-    "name": "Captains Charity Day",
-    "competitionName": "Captains Charity Day",
-    "section": "Mens",
-    "format": "Individual",
-    "competitionFormat": "Individual",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "complete",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": false,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 1,
-    "firstYear": 2021,
-    "latestYear": 2021,
-    "latestDetailedYear": 2021,
-    "totalEntries": 66,
-    "averageEntries": 66,
-    "uniqueWinners": 1,
-    "mostSuccessfulPlayer": "David J. L. Jones",
-    "mostWins": 1,
-    "currentWinners": [
-      "David J. L. Jones"
-    ],
-    "winnerLeaders": [
-      {
-        "player": "David J. L. Jones",
-        "wins": 1
-      }
-    ],
-    "winnerHistory": [
-      {
-        "year": 2021,
-        "winner": "David J. L. Jones",
-        "source": "Competition Result",
-        "verified": false,
-        "score": 45,
-        "relativeToPar": null
-      }
-    ],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "Captains Charity Day is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "captains-drive-in-and-clubhouse-challenge-match",
@@ -8441,84 +8307,6 @@
       }
     },
     "summary": "The Club Championship records the lowest gross score as Club Champion. The Challenge Shield records the lowest nett score as a separate honour."
-  },
-  {
-    "id": "club-championship-gross",
-    "competitionId": "club-championship-gross",
-    "name": "Club Championship GROSS",
-    "competitionName": "Club Championship GROSS",
-    "section": "Mens",
-    "format": "Individual",
-    "competitionFormat": "Individual",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "pending",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": true,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 0,
-    "firstYear": null,
-    "latestYear": null,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 0,
-    "mostSuccessfulPlayer": null,
-    "mostWins": 0,
-    "currentWinners": [],
-    "winnerLeaders": [],
-    "winnerHistory": [],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "Club Championship GROSS is preserved as a competition profile in the Dudley Golf Club Digital Museum."
-  },
-  {
-    "id": "club-championships-nett",
-    "competitionId": "club-championships-nett",
-    "name": "Club Championships Nett",
-    "competitionName": "Club Championships Nett",
-    "section": "Mens",
-    "format": "Individual",
-    "competitionFormat": "Individual",
-    "competitionClass": "Standard",
-    "museumCategory": "General",
-    "importStatus": "pending",
-    "category": "General",
-    "historicalBoard": false,
-    "winnerOnly": false,
-    "countsForOrderOfMerit": true,
-    "profileType": "Competition Profile",
-    "yearsPlayed": 0,
-    "firstYear": null,
-    "latestYear": null,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 0,
-    "mostSuccessfulPlayer": null,
-    "mostWins": 0,
-    "currentWinners": [],
-    "winnerLeaders": [],
-    "winnerHistory": [],
-    "sourcePriority": {
-      "officialWinnerSource": "Competition Results",
-      "hasVerifiedBoard": false,
-      "boardCompetitionId": null,
-      "detailedResultsSource": "Competition Results",
-      "linkedResultCompetitionId": null,
-      "linkedScoreType": null
-    },
-    "clubChampionship": null,
-    "summary": "Club Championships Nett is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   },
   {
     "id": "club-not-acceptable-scoring-stableford",
