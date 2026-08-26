@@ -220,10 +220,19 @@
                             </div>
 
                             <div class="text-sm text-gray-600">
-                              Position:
-                              <strong class="text-[#132419]">
-                                ${ordinal(result.position)}
-                              </strong>
+                              ${result.label
+                                ? `
+                                  <strong class="text-[#132419]">
+                                    ${escapeHtml(result.label)}
+                                  </strong>
+                                `
+                                : `
+                                  Position:
+                                  <strong class="text-[#132419]">
+                                    ${ordinal(result.position)}
+                                  </strong>
+                                `
+                              }
                             </div>
 
                             <div class="font-bold text-right">
@@ -458,7 +467,7 @@
             </h2>
 
             <p class="text-sm text-gray-600 mt-3">
-              Order of Merit points are awarded for Top 10 finishes in eligible competitions.
+              Order of Merit points are awarded for Top 10 finishes in eligible competitions, with an additional 10 points awarded for each Division win.
             </p>
           </div>
 
@@ -571,7 +580,7 @@
           <p class="text-white/75 max-w-4xl">
             ${section === "seniors"
           ? "The Seniors leaderboard uses the approved Seniors scoring system. Qualifying medals, cups and trophies award one winner point, while Harrington competitions award two winner points."
-          : "The Men's leaderboard uses the approved positional Order of Merit scoring system. Points are awarded for Top 10 finishes in eligible competitions."
+          : "The Men's leaderboard uses the approved positional Order of Merit scoring system. Points are awarded for Top 10 finishes in eligible competitions, with an additional 10 points awarded for each Division win."
         }
           </p>
         </section>
