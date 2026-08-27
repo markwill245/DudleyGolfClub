@@ -171,6 +171,74 @@
       `;
     }
 
+    function holesInOneCard(records) {
+      const rows = Array.isArray(records)
+        ? [...records]
+        : [];
+
+      if (!rows.length) {
+        return `
+          <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+            <h2 class="serif text-4xl mb-6">
+              Holes in One
+            </h2>
+
+            <p class="text-gray-500">
+              No recorded holes in one available yet.
+            </p>
+          </section>
+        `;
+      }
+
+      rows.sort((a, b) =>
+        String(b.date || "")
+          .localeCompare(
+            String(a.date || "")
+          )
+      );
+
+      return `
+        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+          <h2 class="serif text-4xl mb-6">
+            Holes in One
+          </h2>
+
+          <div class="space-y-0">
+            ${rows.map(item => `
+              <div class="grid grid-cols-[1fr_auto_auto] gap-5 items-center border-b border-gray-200 py-4">
+
+                <strong>
+                  ${escapeHtml(item.player || "")}
+                </strong>
+
+                <span class="text-[#C5A367] font-bold whitespace-nowrap">
+                  Hole ${escapeHtml(item.hole ?? "")}
+                </span>
+
+                <span class="text-sm text-gray-500 whitespace-nowrap">
+                  ${escapeHtml(
+                    item.date
+                      ? new Date(
+                          `${item.date}T00:00:00`
+                        ).toLocaleDateString(
+                          "en-GB",
+                          {
+                            day: "2-digit",
+                            month: "short",
+                            year: "numeric"
+                          }
+                        )
+                      : ""
+                  )}
+                </span>
+
+              </div>
+            `).join("")}
+          </div>
+        </section>
+      `;
+    }
+
     function sectionRecords(section) {
       const key = section === "Mens"
         ? "mens"
@@ -299,11 +367,9 @@
             museum.highestStablefordScore
           )}
 
-          ${leaderboard(
-            museum.mostRecordsHeld?.label ||
-              "Most Hole In Ones",
-            museum.mostRecordsHeld
-          )}
+          ${holesInOneCard(
+  state.holeInOnes || []
+)}
         </section>
       `;
     }
@@ -332,9 +398,17 @@
       const container = document.getElementById("stats");
 
       try {
-        const response = await fetch(
-          "data/statistics-centre-certified.json"
-        );
+        const [
+          response,
+          holeInOneResponse
+        ] = await Promise.all([
+          fetch(
+            "data/statistics-centre-certified.json"
+          ),
+          fetch(
+            "data/hole-in-ones.json"
+          )
+        ]);
 
         if (!response.ok) {
           throw new Error(
@@ -342,8 +416,17 @@
           );
         }
 
+        if (!holeInOneResponse.ok) {
+          throw new Error(
+            `hole-in-ones.json returned ${holeInOneResponse.status}`
+          );
+        }
+
         const certifiedData =
           await response.json();
+
+        state.holeInOnes =
+          await holeInOneResponse.json();
 
         if (
           certifiedData
