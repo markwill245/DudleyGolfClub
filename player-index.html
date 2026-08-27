@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +28,7 @@
 
     <a href="digital-museum.html"
       class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
-      ? Back to Museum
+      Back to Museum
     </a>
 
     <section class="mt-10 mb-12">
@@ -39,7 +39,8 @@
       <h1 class="text-5xl font-serif mb-4">Player Index</h1>
 
       <p class="text-lg max-w-3xl">
-        Explore certified player profiles, career statistics, Hall of Fame scores and competition history.
+        Explore certified player profiles, career statistics, Hall of Fame scores and competition history (2021 to
+        present).
       </p>
     </section>
 
@@ -423,7 +424,7 @@
 
         <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
           ${escapeHtml(section)}
-          •
+          ï¿½
           ${escapeHtml(status)}
         </p>
 
@@ -951,11 +952,11 @@ ${scoring.seniors.eighteenHole.gross ? `
               <div class="flex justify-between gap-3">
                 <strong class="text-sm">
                   ${win.competitionId
-                    ? `<a href="competition-profile.html?id=${encodeURIComponent(win.competitionId)}"
+              ? `<a href="competition-profile.html?id=${encodeURIComponent(win.competitionId)}"
                          class="hover:text-[#C5A367] underline-offset-4 hover:underline">
                          ${escapeHtml(win.competitionName || win.competitionId)}
                        </a>`
-                    : escapeHtml(win.competitionName || "")}
+              : escapeHtml(win.competitionName || "")}
                 </strong>
 
                 <span class="text-xs text-[#C5A367] font-bold">
@@ -1093,7 +1094,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
                 <span class="font-semibold whitespace-nowrap">
                   ${row.count}
-                  ×
+                  ï¿½
                   ${row.rate}
                   =
                   ${points}
@@ -1178,11 +1179,11 @@ ${scoring.seniors.eighteenHole.gross ? `
 
                 <span class="text-sm font-semibold">
                   ${result.competitionId
-                    ? `<a href="competition-profile.html?id=${encodeURIComponent(result.competitionId)}"
+              ? `<a href="competition-profile.html?id=${encodeURIComponent(result.competitionId)}"
                          class="hover:text-[#C5A367] underline-offset-4 hover:underline">
                          ${escapeHtml(result.competition || result.competitionId)}
                        </a>`
-                    : escapeHtml(result.competition || "")}
+              : escapeHtml(result.competition || "")}
                 </span>
 
                 <strong class="text-sm text-[#C5A367]">
@@ -1193,7 +1194,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
               <p class="text-xs text-gray-500 mt-1">
                 ${escapeHtml(result.date || result.year)}
-                •
+                ï¿½
                 Position ${escapeHtml(result.position)}
               </p>
 
@@ -1286,36 +1287,36 @@ ${scoring.seniors.eighteenHole.gross ? `
       <div class="space-y-2">
 
         ${rows.map(row => {
-          const scoreText =
-            row.score !== null &&
-            row.score !== undefined
-              ? `${row.scoreType ? escapeHtml(row.scoreType) + " " : ""}${escapeHtml(row.score)}`
-              : "";
+            const scoreText =
+              row.score !== null &&
+                row.score !== undefined
+                ? `${row.scoreType ? escapeHtml(row.scoreType) + " " : ""}${escapeHtml(row.score)}`
+                : "";
 
-          const parText =
-            row.relativeToPar !== null &&
-            row.relativeToPar !== undefined
-              ? (
+            const parText =
+              row.relativeToPar !== null &&
+                row.relativeToPar !== undefined
+                ? (
                   Number(row.relativeToPar) === 0
                     ? "E"
                     : Number(row.relativeToPar) > 0
                       ? `+${row.relativeToPar}`
                       : String(row.relativeToPar)
                 )
-              : "";
+                : "";
 
-          return `
+            return `
             <div class="rounded-lg bg-[#F9F7F2] px-3 py-2">
 
               <div class="flex justify-between gap-3">
 
                 <span class="text-sm font-semibold">
                   ${row.competitionId
-                    ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
+                ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
                          class="hover:text-[#C5A367] underline-offset-4 hover:underline">
                          ${escapeHtml(row.competitionName || row.competitionId)}
                        </a>`
-                    : escapeHtml(row.competitionName || "")}
+                : escapeHtml(row.competitionName || "")}
                 </span>
 
                 <strong class="text-sm text-[#C5A367]">
@@ -1326,17 +1327,17 @@ ${scoring.seniors.eighteenHole.gross ? `
 
               <p class="text-xs text-gray-500 mt-1">
                 ${escapeHtml(
-              row.date ||
-              row.year ||
-              ""
-            )}
+                  row.date ||
+                  row.year ||
+                  ""
+                )}
                 ${scoreText ? ` &bull; ${scoreText}` : ""}
                 ${parText ? ` &bull; ${escapeHtml(parText)}` : ""}
               </p>
 
             </div>
           `;
-        }).join("")}
+          }).join("")}
 
       </div>
       `;
