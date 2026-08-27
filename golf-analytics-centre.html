@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Analytics Centre | Dudley Golf Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    #menu-btn div {
+      display: block !important;
+      width: 24px !important;
+      height: 2px !important;
+      background-color: #C5A367 !important;
+      opacity: 1 !important;
+    }
+
+    .nav-blur {
+      background: rgba(19, 36, 25, 0.98);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    #nav-links {
+      will-change: transform;
+    }
+  </style>
+
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+  <!-- TOP INFO BAR -->
+  <div
+    class="bg-[#0D1712] text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+
+    <div id="live-clock">
+      Loading...
+    </div>
+
+    <div class="flex gap-6">
+      <span id="weather">
+        Dudley: --°C
+      </span>
+
+      <span>
+        Course Status:
+        <span id="course-status" class="font-bold uppercase">
+        </span>
+      </span>
+    </div>
+
+  </div>
+  <nav
+    class="w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10 relative">
+
+    <a href="index.html" class="flex flex-col z-[100]">
+      <span class="serif text-2xl">DUDLEY</span>
+      <span class="text-[8px] uppercase text-[#C5A367]">
+        Golf Club Est. 1893
+      </span>
+    </a>
+
+    <div class="hidden xl:flex justify-center gap-6 text-[12px] uppercase tracking-widest">
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Guide</a>
+      <a href="the-gauntlet.html">The Gauntlet</a>
+      <a href="history.html">History</a>
+      <a href="digital-museum.html">Digital Museum</a>
+      <a href="hospitality.html">Hospitality & Events</a>
+      <a href="pro-shop.html">Pro Shop</a>
+      <a href="visitors.html">Visitors</a>
+      <a href="membership.html">Membership</a>
+    </div>
+
+    <div class="hidden xl:flex items-center gap-4 relative z-[200]">
+
+      <a href="members-login.html" target="_blank"
+        class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+        Members iGolf
+      </a>
+
+      <a href="login.html"
+        class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+        Members Portal
+      </a>
+
+    </div>
+
+    <button id="menu-btn" class="xl:hidden z-[120] flex flex-col gap-1">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <div id="nav-links"
+      class="fixed top-0 right-0 h-screen w-[80%] max-w-[320px] bg-[#132419] z-[110] translate-x-full transition-transform duration-300 flex flex-col pt-28 px-8 gap-6 text-[12px] uppercase tracking-widest border-l border-[#C5A367]/30 xl:hidden">
+
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Guide</a>
+      <a href="the-gauntlet.html">The Gauntlet</a>
+      <a href="history.html">History</a>
+      <a href="digital-museum.html">Digital Museum</a>
+      <a href="hospitality.html">Hospitality & Events</a>
+      <a href="pro-shop.html">Pro Shop</a>
+      <a href="visitors.html">Visitors</a>
+      <a href="membership.html">Membership</a>
+
+      <div class="pt-6 border-t border-[#C5A367]/20 flex flex-col gap-4">
+
+        <a href="members-login.html" target="_blank"
+          class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-center text-[10px] font-bold">
+          iGolf App
+        </a>
+
+        <a href="login.html"
+          class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold text-center">
+          Members Portal
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+
+    <a href="digital-museum.html"
+      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
+      &larr; Back to Digital Museum
+    </a>
+
+    <!-- HERO -->
+    <section class="mt-10 mb-12">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
+        Dudley Golf Club
+      </p>
+
+      <h1 class="text-5xl md:text-7xl font-serif mb-5">
+        Golf Analytics Centre
+      </h1>
+
+      <p class="text-lg md:text-xl max-w-4xl leading-8 text-[#132419]/75">
+        Player performance, scoring trends and season form built from the
+        Dudley Golf Club Digital Museum.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-widest">
+        <span class="px-4 py-2 rounded-full bg-[#132419] text-white">
+          Individual Analytics
+        </span>
+      </div>
+    </section>
+
+    <!-- PLAYER CONTROL -->
+    <section class="bg-[#132419] text-white rounded-3xl p-6 md:p-8 mb-8 shadow-xl">
+
+      <div class="grid lg:grid-cols-4 gap-5 items-end">
+
+        <div class="lg:col-span-2">
+          <label for="player-search"
+            class="block text-[11px] uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-2">
+            Player
+          </label>
+
+          <input id="player-search" list="player-options" type="text" placeholder="Search player..." autocomplete="off"
+            class="w-full bg-white text-[#132419] px-5 py-4 rounded-xl outline-none font-semibold">
+
+          <datalist id="player-options"></datalist>
+        </div>
+
+        <div>
+          <label for="section-select"
+            class="block text-[11px] uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-2">
+            Section
+          </label>
+
+          <select id="section-select"
+            class="w-full bg-white text-[#132419] px-4 py-4 rounded-xl outline-none font-semibold">
+          </select>
+        </div>
+
+        <div>
+          <label for="season-select"
+            class="block text-[11px] uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-2">
+            Season
+          </label>
+
+          <select id="season-select"
+            class="w-full bg-white text-[#132419] px-4 py-4 rounded-xl outline-none font-semibold">
+          </select>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BROADCAST DASHBOARD -->
+    <section id="broadcast-dashboard"
+      class="hidden mb-10 bg-[#132419] text-white rounded-3xl p-6 md:p-8 shadow-xl border border-[#C5A367]/20">
+
+      <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-7">
+
+        <div>
+          <p class="text-[10px] uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-2">
+            Certified Performance Intelligence
+          </p>
+
+          <h2 class="font-serif text-4xl md:text-5xl">
+            Season Dashboard
+          </h2>
+
+          <p id="dashboard-player" class="mt-2 text-white/60">
+          </p>
+        </div>
+
+        <div class="text-left lg:text-right">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-white/40">
+            Season
+          </p>
+
+          <strong id="dashboard-season" class="font-serif text-4xl text-[#C5A367]">
+          </strong>
+        </div>
+
+      </div>
+
+      <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+
+        <div class="bg-[#F9F7F2] text-[#132419] rounded-2xl p-5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-[#132419]/55 font-bold">
+            Nett Avg
+          </p>
+          <strong id="dash-nett" class="block font-serif text-5xl mt-2">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-[#F9F7F2] text-[#132419] rounded-2xl p-5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-[#132419]/55 font-bold">
+            Stableford Avg
+          </p>
+          <strong id="dash-stableford" class="block font-serif text-5xl mt-2">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-[#F9F7F2] text-[#132419] rounded-2xl p-5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-[#132419]/55 font-bold">
+            Best Nett
+          </p>
+          <strong id="dash-best" class="block font-serif text-5xl mt-2">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-[#F9F7F2] text-[#132419] rounded-2xl p-5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-[#132419]/55 font-bold">
+            Avg HCP
+          </p>
+          <strong id="dash-hcap" class="block font-serif text-5xl mt-2">
+            -
+          </strong>
+        </div>
+
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-5">
+
+        <div class="lg:col-span-2 rounded-2xl border border-[#C5A367]/25 bg-white/5 p-5">
+
+          <div class="flex items-center justify-between gap-4 mb-4">
+            <div>
+              <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+                Season Form Trend
+              </p>
+
+              <p id="trend-subtitle" class="text-sm text-white/50 mt-1">
+                Nett rounds
+              </p>
+            </div>
+          </div>
+
+          <div class="h-56">
+            <svg id="trend-chart" viewBox="0 0 700 220" class="w-full h-full" role="img" aria-label="Season form trend">
+            </svg>
+          </div>
+
+        </div>
+
+        <div class="grid gap-5">
+
+          <div class="rounded-2xl border border-[#C5A367]/25 bg-white/5 p-5">
+            <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-4">
+              Latest Rounds
+            </p>
+
+            <div id="latest-rounds" class="space-y-3 text-sm">
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-[#C5A367]/25 bg-white/5 p-5">
+            <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-2">
+              Analytics Snapshot
+            </p>
+
+            <div id="analytics-snapshot" class="text-sm text-white/65 leading-7">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- PLAYER HEADER -->
+    <section id="player-header"
+      class="hidden mb-8 bg-white rounded-3xl border border-[#C5A367]/30 shadow overflow-hidden">
+
+      <div class="p-7 md:p-9 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+
+        <div>
+          <p id="player-section-label" class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-2">
+          </p>
+
+          <h2 id="player-name" class="font-serif text-4xl md:text-6xl leading-none">
+          </h2>
+
+          <p id="player-subtitle" class="mt-3 text-[#132419]/60">
+          </p>
+        </div>
+
+        <div class="text-left md:text-right">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50">
+            Analytics Season
+          </p>
+
+          <strong id="player-season" class="font-serif text-4xl text-[#C5A367]">
+          </strong>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 18 HOLE -->
+    <section id="eighteen-section" class="hidden mb-12">
+
+      <div class="flex items-end justify-between gap-5 mb-5">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-2">
+            Full Course
+          </p>
+
+          <h2 class="font-serif text-4xl md:text-5xl">
+            18-Hole Analytics
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+
+        <button type="button" data-evidence="eighteenHole.nett"
+          class="analytics-card text-left bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow hover:-translate-y-1 hover:shadow-xl transition">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Nett Average
+          </p>
+
+          <strong id="18-nett-average" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+
+          <p id="18-nett-rounds" class="mt-2 text-sm text-[#132419]/60">
+          </p>
+
+          <p class="mt-5 text-xs text-[#C5A367] font-bold uppercase tracking-wider">
+            View rounds &rarr;
+          </p>
+        </button>
+
+        <button type="button" data-evidence="eighteenHole.stableford"
+          class="analytics-card text-left bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow hover:-translate-y-1 hover:shadow-xl transition">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Stableford Average
+          </p>
+
+          <strong id="18-stableford-average" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+
+          <p id="18-stableford-rounds" class="mt-2 text-sm text-[#132419]/60">
+          </p>
+
+          <p class="mt-5 text-xs text-[#C5A367] font-bold uppercase tracking-wider">
+            View rounds &rarr;
+          </p>
+        </button>
+
+        <button type="button" data-evidence="eighteenHole.nett"
+          class="analytics-card text-left bg-[#132419] text-white rounded-2xl p-6 border border-[#C5A367]/30 shadow hover:-translate-y-1 hover:shadow-xl transition">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Best Nett
+          </p>
+
+          <strong id="18-best-nett" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+
+          <p id="18-best-nett-detail" class="mt-2 text-sm text-white/60">
+          </p>
+        </button>
+
+        <div class="bg-[#132419] text-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Avg Playing Handicap
+          </p>
+
+          <strong id="18-handicap" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+
+          <p class="mt-2 text-sm text-white/60">
+            Nett scoring rounds
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9 HOLE -->
+    <section id="nine-section" class="hidden mb-12">
+
+      <div class="mb-5">
+        <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-2">
+          Short Course
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl">
+          9-Hole Analytics
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+
+        <button type="button" data-evidence="nineHole.nett"
+          class="analytics-card text-left bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow hover:-translate-y-1 hover:shadow-xl transition">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Nett Average
+          </p>
+
+          <strong id="9-nett-average" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+
+          <p id="9-nett-rounds" class="mt-2 text-sm text-[#132419]/60">
+          </p>
+        </button>
+
+        <button type="button" data-evidence="nineHole.stableford"
+          class="analytics-card text-left bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow hover:-translate-y-1 hover:shadow-xl transition">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Stableford Average
+          </p>
+
+          <strong id="9-stableford-average" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+
+          <p id="9-stableford-rounds" class="mt-2 text-sm text-[#132419]/60">
+          </p>
+        </button>
+
+        <button type="button" data-evidence="nineHole.nett"
+          class="analytics-card text-left bg-[#132419] text-white rounded-2xl p-6 border border-[#C5A367]/30 shadow hover:-translate-y-1 hover:shadow-xl transition">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Best Nett
+          </p>
+
+          <strong id="9-best-nett" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </button>
+
+        <div class="bg-[#132419] text-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Avg Playing Handicap
+          </p>
+
+          <strong id="9-handicap" class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EMPTY STATE -->
+    <section id="analytics-empty" class="bg-white rounded-3xl p-10 border border-[#C5A367]/30 shadow text-center">
+
+      <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-3">
+        Golf Analytics Centre
+      </p>
+
+      <h2 class="font-serif text-4xl mb-3">
+        Select a player
+      </h2>
+
+      <p class="text-[#132419]/60 max-w-2xl mx-auto">
+        Search for a golfer above to explore their available season scoring analytics.
+      </p>
+
+    </section>
+
+    <!-- EVIDENCE PANEL -->
+    <section id="evidence-panel"
+      class="hidden mt-12 bg-white rounded-3xl border border-[#C5A367]/30 shadow overflow-hidden">
+
+      <div class="bg-[#132419] text-white px-6 md:px-8 py-6 flex justify-between items-center gap-5">
+
+        <div>
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Verified Evidence
+          </p>
+
+          <h2 id="evidence-title" class="font-serif text-3xl mt-1">
+            Qualifying Rounds
+          </h2>
+        </div>
+
+        <button id="close-evidence" type="button"
+          class="border border-[#C5A367] text-[#C5A367] rounded-full px-4 py-2 text-xs uppercase tracking-wider">
+          Close
+        </button>
+
+      </div>
+
+      <div id="evidence-summary" class="px-6 md:px-8 py-5 border-b border-[#C5A367]/20 text-sm text-[#132419]/65">
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left">
+          <thead class="bg-[#F9F7F2] text-[10px] uppercase tracking-[0.18em]">
+            <tr>
+              <th class="px-6 py-4">Date</th>
+              <th class="px-6 py-4">Competition</th>
+              <th class="px-6 py-4">Round</th>
+              <th class="px-6 py-4">Score</th>
+              <th class="px-6 py-4">Position</th>
+              <th class="px-6 py-4">Handicap</th>
+            </tr>
+          </thead>
+
+          <tbody id="evidence-body"></tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    const analyticsState = {
+      data: null,
+      player: null,
+      section: null,
+      season: null
+    };
+
+    function formatNumber(value) {
+      return Number.isFinite(Number(value))
+        ? Number(value).toFixed(
+          Number(value) % 1 === 0 ? 0 : 1
+        )
+        : "-";
+    }
+
+    function ordinal(value) {
+      const n = Number(value);
+
+      if (!Number.isFinite(n) || n <= 0) {
+        return "-";
+      }
+
+      const mod100 = n % 100;
+
+      if (mod100 >= 11 && mod100 <= 13) {
+        return `${n}th`;
+      }
+
+      switch (n % 10) {
+        case 1: return `${n}st`;
+        case 2: return `${n}nd`;
+        case 3: return `${n}rd`;
+        default: return `${n}th`;
+      }
+    }
+
+    function getSeasonData() {
+      return analyticsState.player
+        ?.sections
+        ?.[analyticsState.section]
+        ?.seasons
+        ?.[String(analyticsState.season)]
+        || null;
+    }
+
+    function populatePlayers() {
+      const list =
+        document.getElementById("player-options");
+
+      list.innerHTML = "";
+
+      analyticsState.data.players
+        .filter(player =>
+          Object.keys(player.sections || {}).length
+        )
+        .sort((a, b) =>
+          a.name.localeCompare(b.name)
+        )
+        .forEach(player => {
+          const option =
+            document.createElement("option");
+
+          option.value = player.name;
+          list.appendChild(option);
+        });
+    }
+
+    function populateSections() {
+      const select =
+        document.getElementById("section-select");
+
+      select.innerHTML = "";
+
+      if (!analyticsState.player) {
+        return;
+      }
+
+      Object.keys(
+        analyticsState.player.sections || {}
+      ).forEach(section => {
+        const option =
+          document.createElement("option");
+
+        option.value = section;
+        option.textContent =
+          section === "Mens"
+            ? "Men's"
+            : section;
+
+        select.appendChild(option);
+      });
+
+      analyticsState.section =
+        select.value || null;
+
+      populateSeasons();
+    }
+
+    function populateSeasons() {
+      const select =
+        document.getElementById("season-select");
+
+      select.innerHTML = "";
+
+      const seasons =
+        analyticsState.player
+          ?.sections
+          ?.[analyticsState.section]
+          ?.seasons || {};
+
+      Object.keys(seasons)
+        .map(Number)
+        .sort((a, b) => b - a)
+        .forEach(year => {
+          const option =
+            document.createElement("option");
+
+          option.value = year;
+          option.textContent = year;
+
+          select.appendChild(option);
+        });
+
+      analyticsState.season =
+        Number(select.value) || null;
+
+      renderAnalytics();
+    }
+
+    function setMetric(id, value) {
+      const el =
+        document.getElementById(id);
+
+      if (el) {
+        el.textContent =
+          formatNumber(value);
+      }
+    }
+
+    function setRoundText(id, summary) {
+      const el =
+        document.getElementById(id);
+
+      if (!el) return;
+
+      const rounds =
+        Number(summary?.rounds || 0);
+
+      el.textContent =
+        rounds === 1
+          ? "1 qualifying round"
+          : `${rounds} qualifying rounds`;
+    }
+
+    function findBestRound(summary, field) {
+      const evidence =
+        summary?.evidence || [];
+
+      if (!evidence.length) {
+        return null;
+      }
+
+      return evidence.reduce(
+        (best, current) => {
+          if (!best) return current;
+
+          return Number(current[field]) <
+            Number(best[field])
+            ? current
+            : best;
+        },
+        null
+      );
+    }
+
+    function renderHoleSection(
+      holes,
+      sectionData
+    ) {
+      const prefix =
+        holes === 18 ? "18" : "9";
+
+      const section =
+        document.getElementById(
+          holes === 18
+            ? "eighteen-section"
+            : "nine-section"
+        );
+
+      const nett =
+        sectionData?.nett;
+
+      const stableford =
+        sectionData?.stableford;
+
+      const hasData =
+        Number(nett?.rounds || 0) > 0 ||
+        Number(stableford?.rounds || 0) > 0;
+
+      section.classList.toggle(
+        "hidden",
+        !hasData
+      );
+
+      setMetric(
+        `${prefix}-nett-average`,
+        nett?.average
+      );
+
+      setMetric(
+        `${prefix}-stableford-average`,
+        stableford?.average
+      );
+
+      setMetric(
+        `${prefix}-best-nett`,
+        nett?.best
+      );
+
+      setMetric(
+        `${prefix}-handicap`,
+        nett?.averageHandicap
+      );
+
+      setRoundText(
+        `${prefix}-nett-rounds`,
+        nett
+      );
+
+      setRoundText(
+        `${prefix}-stableford-rounds`,
+        stableford
+      );
+
+      if (holes === 18) {
+        const detail =
+          document.getElementById(
+            "18-best-nett-detail"
+          );
+
+        const best =
+          findBestRound(
+            nett,
+            "nett"
+          );
+
+        detail.textContent =
+          best
+            ? `${best.competitionName}${Number(best.round) > 1
+              ? ` � Round ${best.round}`
+              : ""
+            }`
+            : "No qualifying round";
+      }
+
+      return hasData;
+    }
+    function getPrimaryHoleData(season) {
+      const eighteen =
+        season?.eighteenHole || {};
+
+      const nine =
+        season?.nineHole || {};
+
+      const eighteenRounds =
+        Number(eighteen?.nett?.rounds || 0) +
+        Number(eighteen?.stableford?.rounds || 0);
+
+      const nineRounds =
+        Number(nine?.nett?.rounds || 0) +
+        Number(nine?.stableford?.rounds || 0);
+
+      return eighteenRounds >= nineRounds
+        ? {
+          holes: 18,
+          data: eighteen
+        }
+        : {
+          holes: 9,
+          data: nine
+        };
+    }
+
+    function renderTrendChart(records) {
+      const svg =
+        document.getElementById("trend-chart");
+
+      svg.innerHTML = "";
+
+      if (!records?.length) {
+        svg.innerHTML = `
+          <text x="350" y="110"
+            text-anchor="middle"
+            fill="rgba(255,255,255,0.45)"
+            font-size="16">
+            No nett trend available
+          </text>
+        `;
+        return;
+      }
+
+      const sorted =
+        [...records].sort((a, b) =>
+          String(a.date).localeCompare(String(b.date))
+        );
+
+      const values =
+        sorted.map(record =>
+          Number(record.nett)
+        );
+
+      const average =
+        values.reduce(
+          (sum, value) => sum + value,
+          0
+        ) / values.length;
+
+      const min =
+        Math.floor(Math.min(...values) - 1);
+
+      const max =
+        Math.ceil(Math.max(...values) + 1);
+
+      const width = 700;
+      const height = 240;
+
+      const left = 55;
+      const right = 25;
+      const top = 25;
+      const bottom = 45;
+
+      const usableW =
+        width - left - right;
+
+      const usableH =
+        height - top - bottom;
+
+      const span =
+        Math.max(1, max - min);
+
+      const ns =
+        "http://www.w3.org/2000/svg";
+
+      function makeText(
+        x,
+        y,
+        value,
+        options = {}
+      ) {
+        const el =
+          document.createElementNS(
+            ns,
+            "text"
+          );
+
+        el.setAttribute("x", x);
+        el.setAttribute("y", y);
+
+        el.setAttribute(
+          "fill",
+          options.fill ||
+            "rgba(255,255,255,0.65)"
+        );
+
+        el.setAttribute(
+          "font-size",
+          options.size || "11"
+        );
+
+        el.setAttribute(
+          "text-anchor",
+          options.anchor || "middle"
+        );
+
+        el.textContent = value;
+
+        return el;
+      }
+
+      /*
+       * Golf scoring:
+       * lower score = higher on chart.
+       */
+      function scoreToY(score) {
+        return top +
+          (
+            (score - min) /
+            span
+          ) * usableH;
+      }
+
+      /*
+       * Horizontal score guides.
+       */
+      const guideCount = 4;
+
+      for (
+        let i = 0;
+        i <= guideCount;
+        i++
+      ) {
+        const score =
+          min +
+          (
+            span *
+            i /
+            guideCount
+          );
+
+        const y =
+          scoreToY(score);
+
+        const guide =
+          document.createElementNS(
+            ns,
+            "line"
+          );
+
+        guide.setAttribute("x1", left);
+        guide.setAttribute(
+          "x2",
+          width - right
+        );
+        guide.setAttribute("y1", y);
+        guide.setAttribute("y2", y);
+
+        guide.setAttribute(
+          "stroke",
+          "rgba(255,255,255,0.10)"
+        );
+
+        svg.appendChild(guide);
+
+        svg.appendChild(
+          makeText(
+            left - 12,
+            y + 4,
+            Math.round(score),
+            {
+              anchor: "end",
+              fill:
+                "rgba(255,255,255,0.45)"
+            }
+          )
+        );
+      }
+
+      /*
+       * Season average.
+       */
+      const averageY =
+        scoreToY(average);
+
+      const averageLine =
+        document.createElementNS(
+          ns,
+          "line"
+        );
+
+      averageLine.setAttribute(
+        "x1",
+        left
+      );
+
+      averageLine.setAttribute(
+        "x2",
+        width - right
+      );
+
+      averageLine.setAttribute(
+        "y1",
+        averageY
+      );
+
+      averageLine.setAttribute(
+        "y2",
+        averageY
+      );
+
+      averageLine.setAttribute(
+        "stroke",
+        "rgba(197,163,103,0.60)"
+      );
+
+      averageLine.setAttribute(
+        "stroke-width",
+        "2"
+      );
+
+      averageLine.setAttribute(
+        "stroke-dasharray",
+        "8 7"
+      );
+
+      svg.appendChild(
+        averageLine
+      );
+
+      svg.appendChild(
+        makeText(
+          width - right,
+          averageY - 7,
+          `Avg ${average.toFixed(1)}`,
+          {
+            anchor: "end",
+            fill: "#C5A367"
+          }
+        )
+      );
+
+      const points =
+        sorted.map(
+          (record, index) => {
+            const x =
+              left +
+              (
+                sorted.length === 1
+                  ? usableW / 2
+                  : index /
+                    (sorted.length - 1) *
+                    usableW
+              );
+
+            const y =
+              scoreToY(
+                Number(record.nett)
+              );
+
+            return {
+              x,
+              y,
+              record
+            };
+          }
+        );
+
+      const pathData =
+        points
+          .map(
+            (point, index) =>
+              `${index === 0 ? "M" : "L"} ${point.x} ${point.y}`
+          )
+          .join(" ");
+
+      const trend =
+        document.createElementNS(
+          ns,
+          "path"
+        );
+
+      trend.setAttribute(
+        "d",
+        pathData
+      );
+
+      trend.setAttribute(
+        "fill",
+        "none"
+      );
+
+      trend.setAttribute(
+        "stroke",
+        "#C5A367"
+      );
+
+      trend.setAttribute(
+        "stroke-width",
+        "4"
+      );
+
+      trend.setAttribute(
+        "stroke-linecap",
+        "round"
+      );
+
+      trend.setAttribute(
+        "stroke-linejoin",
+        "round"
+      );
+
+      svg.appendChild(trend);
+
+      points.forEach(point => {
+        const circle =
+          document.createElementNS(
+            ns,
+            "circle"
+          );
+
+        circle.setAttribute(
+          "cx",
+          point.x
+        );
+
+        circle.setAttribute(
+          "cy",
+          point.y
+        );
+
+        circle.setAttribute(
+          "r",
+          "6"
+        );
+
+        circle.setAttribute(
+          "fill",
+          "#C5A367"
+        );
+
+        svg.appendChild(circle);
+
+        svg.appendChild(
+          makeText(
+            point.x,
+            point.y - 12,
+            point.record.nett,
+            {
+              fill: "#ffffff",
+              size: "12"
+            }
+          )
+        );
+
+        const date =
+          String(
+            point.record.date || ""
+          );
+
+        const shortDate =
+          date.length >= 10
+            ? date.slice(5)
+            : date;
+
+        svg.appendChild(
+          makeText(
+            point.x,
+            height - 22,
+            shortDate,
+            {
+              fill:
+                "rgba(255,255,255,0.50)",
+              size: "10"
+            }
+          )
+        );
+      });
+    }
+    function renderBroadcastDashboard(season) {
+        const primary =
+          getPrimaryHoleData(season);
+
+        const holeData =
+          primary.data;
+
+        document.getElementById(
+          "dashboard-player"
+        ).textContent =
+          `${analyticsState.player.name} · ${analyticsState.section === "Mens"
+            ? "Men's"
+            : analyticsState.section
+          } · ${primary.holes}-hole focus`;
+
+        document.getElementById(
+          "dashboard-season"
+        ).textContent =
+          analyticsState.season;
+
+        setMetric(
+          "dash-nett",
+          holeData?.nett?.average
+        );
+
+        setMetric(
+          "dash-stableford",
+          holeData?.stableford?.average
+        );
+
+        setMetric(
+          "dash-best",
+          holeData?.nett?.best
+        );
+
+        setMetric(
+          "dash-hcap",
+          holeData?.nett?.averageHandicap
+        );
+
+        document.getElementById(
+          "trend-subtitle"
+        ).textContent =
+          `${primary.holes}-hole nett scoring trend`;
+
+        renderTrendChart(
+          holeData?.nett?.evidence || []
+        );
+
+        const latest =
+          [
+            ...(holeData?.nett?.evidence || [])
+          ]
+            .sort((a, b) =>
+              String(b.date).localeCompare(String(a.date))
+            )
+            .slice(0, 4);
+
+        const latestEl =
+          document.getElementById(
+            "latest-rounds"
+          );
+
+        latestEl.innerHTML = "";
+
+        if (!latest.length) {
+          latestEl.innerHTML =
+            `<p class="text-white/45">No nett rounds available.</p>`;
+        } else {
+          latest.forEach(round => {
+            const item =
+              document.createElement("div");
+
+            item.className =
+              "flex items-start justify-between gap-4 border-b border-white/10 pb-3 last:border-0 last:pb-0";
+
+            item.innerHTML = `
+        <div>
+          <div class="font-semibold">
+            ${round.competitionName}
+          </div>
+          <div class="text-xs text-white/45">
+            ${round.date}
+            ${Number(round.round) > 1
+                ? ` · R${round.round}`
+                : ""
+              }
+          </div>
+        </div>
+
+        <strong class="font-serif text-2xl text-[#C5A367]">
+          ${formatNumber(round.nett)}
+        </strong>
+      `;
+
+            latestEl.appendChild(item);
+          });
+        }
+
+        const snapshot =
+          document.getElementById(
+            "analytics-snapshot"
+          );
+
+        snapshot.innerHTML = `
+    <div>
+      Nett rounds:
+      <strong class="text-white">
+        ${holeData?.nett?.rounds || 0}
+      </strong>
+    </div>
+
+    <div>
+      Stableford rounds:
+      <strong class="text-white">
+        ${holeData?.stableford?.rounds || 0}
+      </strong>
+    </div>
+
+    <div>
+      Best nett:
+      <strong class="text-white">
+        ${formatNumber(
+          holeData?.nett?.best
+        )}
+      </strong>
+    </div>
+
+    <div>
+      Avg handicap:
+      <strong class="text-white">
+        ${formatNumber(
+          holeData?.nett?.averageHandicap
+        )}
+      </strong>
+    </div>
+  `;
+      }
+      function renderAnalytics() {
+        const season =
+          getSeasonData();
+
+        const empty =
+          document.getElementById(
+            "analytics-empty"
+          );
+
+        const header =
+          document.getElementById(
+            "player-header"
+          );
+
+        const dashboard =
+          document.getElementById(
+            "broadcast-dashboard"
+          );
+
+        document
+          .getElementById("evidence-panel")
+          .classList.add("hidden");
+
+        if (
+          !analyticsState.player ||
+          !season
+        ) {
+          dashboard.classList.add("hidden");
+          empty.classList.remove("hidden");
+          header.classList.add("hidden");
+
+          document
+            .getElementById(
+              "eighteen-section"
+            )
+            .classList.add("hidden");
+
+          document
+            .getElementById(
+              "nine-section"
+            )
+            .classList.add("hidden");
+
+          return;
+        }
+
+        empty.classList.add("hidden");
+        header.classList.remove("hidden");
+        dashboard.classList.remove("hidden");
+
+        document.getElementById(
+          "player-name"
+        ).textContent =
+          analyticsState.player.name;
+
+        document.getElementById(
+          "player-section-label"
+        ).textContent =
+          analyticsState.section === "Mens"
+            ? "Men's Analytics"
+            : `${analyticsState.section} Analytics`;
+
+        document.getElementById(
+          "player-season"
+        ).textContent =
+          analyticsState.season;
+
+        document.getElementById(
+          "player-subtitle"
+        ).textContent =
+          `${analyticsState.player.status || "Recorded"} player · ${analyticsState.player.primarySection || analyticsState.section}`;
+
+        renderBroadcastDashboard(season);
+
+        const has9 =
+          renderHoleSection(
+            9,
+            season.nineHole
+          );
+
+        const has18 =
+          renderHoleSection(
+            18,
+            season.eighteenHole
+          );
+
+        if (!has9 && !has18) {
+          empty.classList.remove("hidden");
+        }
+      }
+
+      function showEvidence(path) {
+        const season =
+          getSeasonData();
+
+        if (!season) return;
+
+        const [
+          holeKey,
+          scoreKey
+        ] = path.split(".");
+
+        const summary =
+          season?.[holeKey]?.[scoreKey];
+
+        if (
+          !summary ||
+          !Array.isArray(summary.evidence)
+        ) {
+          return;
+        }
+
+        const panel =
+          document.getElementById(
+            "evidence-panel"
+          );
+
+        const title =
+          document.getElementById(
+            "evidence-title"
+          );
+
+        const summaryEl =
+          document.getElementById(
+            "evidence-summary"
+          );
+
+        const body =
+          document.getElementById(
+            "evidence-body"
+          );
+
+        const holes =
+          holeKey === "nineHole"
+            ? 9
+            : 18;
+
+        const isStableford =
+          scoreKey === "stableford";
+
+        title.textContent =
+          `${holes} -Hole ${isStableford
+            ? "Stableford"
+            : "Nett"
+          } Evidence`;
+
+        summaryEl.textContent =
+          `${summary.rounds} qualifying ${summary.rounds === 1
+            ? "round"
+            : "rounds"
+          } � Average ${formatNumber(
+            summary.average
+          )}${isStableford
+            ? " points"
+            : ""
+          }`;
+
+        body.innerHTML = "";
+
+        [...summary.evidence]
+          .sort((a, b) =>
+            String(b.date)
+              .localeCompare(
+                String(a.date)
+              )
+          )
+          .forEach(record => {
+            const row =
+              document.createElement("tr");
+
+            row.className =
+              "border-t border-[#C5A367]/15";
+
+            const score =
+              isStableford
+                ? record.points
+                : record.nett;
+
+            row.innerHTML = `
+            <td class="px-6 py-4 whitespace-nowrap">
+              ${record.date || "-"}
+            </td>
+
+            <td class="px-6 py-4 font-semibold">
+              ${record.competitionName || "-"}
+            </td>
+
+            <td class="px-6 py-4">
+              ${record.round || "-"}
+            </td>
+
+            <td class="px-6 py-4 font-bold text-lg">
+              ${formatNumber(score)}
+            </td>
+
+            <td class="px-6 py-4">
+              ${record.position
+                ? ordinal(record.position)
+                : record.eventPosition
+                  ? ordinal(record.eventPosition)
+                  : "-"}
+            </td>
+
+            <td class="px-6 py-4">
+              ${Number.isFinite(
+                    Number(record.handicap)
+                  )
+                ? record.handicap
+                : "-"}
+            </td>
+          `;
+
+            body.appendChild(row);
+          });
+
+        panel.classList.remove("hidden");
+
+        panel.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+
+      async function loadGolfAnalytics() {
+        try {
+          const response =
+            await fetch(
+              "data/golf-analytics-centre.json"
+            );
+
+          if (!response.ok) {
+            throw new Error(
+              `Analytics returned ${response.status}`
+            );
+          }
+
+          analyticsState.data =
+            await response.json();
+
+          populatePlayers();
+
+          /*
+           * Start with Mark A. Williams if available.
+           * Otherwise use the first player with analytics.
+           */
+          const initial =
+            analyticsState.data.players.find(
+              player =>
+                player.name ===
+                "Mark A. Williams"
+            ) ||
+            analyticsState.data.players.find(
+              player =>
+                Object.keys(
+                  player.sections || {}
+                ).length
+            );
+
+          if (initial) {
+            analyticsState.player =
+              initial;
+
+            document.getElementById(
+              "player-search"
+            ).value =
+              initial.name;
+
+            populateSections();
+          }
+        } catch (error) {
+          console.error(
+            "Golf Analytics Centre:",
+            error
+          );
+
+          const empty =
+            document.getElementById(
+              "analytics-empty"
+            );
+
+          empty.innerHTML = `
+          <h2 class="font-serif text-4xl mb-3">
+            Analytics unavailable
+          </h2>
+          <p class="text-[#132419]/60">
+            The Golf Analytics Centre data could not be loaded.
+          </p>
+        `;
+        }
+      }
+
+      const playerSearch =
+        document.getElementById("player-search");
+
+      function normalisePlayerSearch(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/[.'�\-]/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function selectPlayerFromSearch() {
+        if (!analyticsState.data) {
+          return;
+        }
+
+        const value =
+          normalisePlayerSearch(
+            playerSearch.value
+          );
+
+        if (!value) {
+          return;
+        }
+
+        const players =
+          (analyticsState.data.players || [])
+            .filter(player =>
+              Object.keys(
+                player.sections || {}
+              ).length > 0
+            );
+
+        let player =
+          players.find(item =>
+            normalisePlayerSearch(
+              item.name
+            ) === value
+          );
+
+        if (!player) {
+          const startsWithMatches =
+            players.filter(item =>
+              normalisePlayerSearch(
+                item.name
+              ).startsWith(value)
+            );
+
+          if (
+            startsWithMatches.length === 1
+          ) {
+            player =
+              startsWithMatches[0];
+          }
+        }
+
+        if (!player) {
+          const containsMatches =
+            players.filter(item =>
+              normalisePlayerSearch(
+                item.name
+              ).includes(value)
+            );
+
+          if (
+            containsMatches.length === 1
+          ) {
+            player =
+              containsMatches[0];
+          }
+        }
+
+        if (!player) {
+          return;
+        }
+
+        analyticsState.player =
+          player;
+
+        playerSearch.value =
+          player.name;
+
+        populateSections();
+      }
+
+      playerSearch.addEventListener(
+        "input",
+        () => {
+          if (!analyticsState.data) {
+            return;
+          }
+
+          const value =
+            normalisePlayerSearch(
+              playerSearch.value
+            );
+
+          const exact =
+            analyticsState.data.players
+              ?.find(player =>
+                Object.keys(
+                  player.sections || {}
+                ).length > 0 &&
+                normalisePlayerSearch(
+                  player.name
+                ) === value
+              );
+
+          if (exact) {
+            analyticsState.player =
+              exact;
+
+            playerSearch.value =
+              exact.name;
+
+            populateSections();
+          }
+        }
+      );
+
+      playerSearch.addEventListener(
+        "change",
+        selectPlayerFromSearch
+      );
+
+      playerSearch.addEventListener(
+        "keydown",
+        event => {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            selectPlayerFromSearch();
+          }
+        }
+      );
+      document
+        .getElementById("section-select")
+        .addEventListener(
+          "change",
+          event => {
+            analyticsState.section =
+              event.target.value;
+
+            populateSeasons();
+          }
+        );
+
+      document
+        .getElementById("season-select")
+        .addEventListener(
+          "change",
+          event => {
+            analyticsState.season =
+              Number(
+                event.target.value
+              );
+
+            renderAnalytics();
+          }
+        );
+
+      document
+        .querySelectorAll(
+          "[data-evidence]"
+        )
+        .forEach(button => {
+          button.addEventListener(
+            "click",
+            () => {
+              showEvidence(
+                button.dataset.evidence
+              );
+            }
+          );
+        });
+
+      document
+        .getElementById(
+          "close-evidence"
+        )
+        .addEventListener(
+          "click",
+          () => {
+            document
+              .getElementById(
+                "evidence-panel"
+              )
+              .classList.add("hidden");
+          }
+        );
+
+      loadGolfAnalytics();
+  </script>
+
+  <script>
+     async function updateWeather() {
+       const weather =
+         document.getElementById("weather");
+
+       if (!weather) return;
+
+       try {
+         const response =
+           await fetch("/api/weather");
+
+         if (!response.ok) {
+           throw new Error(
+             "Weather fetch failed"
+           );
+         }
+
+         const data =
+           await response.json();
+
+         weather.textContent =
+           `Dudley: ${data.temp}°C`;
+
+       } catch (error) {
+         console.error(
+           "Could not fetch weather:",
+           error
+         );
+
+         weather.textContent =
+           "Dudley: --°C";
+       }
+     }
+
+     async function updateCourseStatus() {
+       const statusEl =
+         document.getElementById(
+           "course-status"
+         );
+
+       if (!statusEl) return;
+
+       try {
+         const response =
+           await fetch(
+             "/api/course-status"
+           );
+
+         if (!response.ok) {
+           throw new Error();
+         }
+
+         const data =
+           await response.json();
+
+         const statusMap = {
+           open: {
+             text: "🟢 COURSE OPEN",
+             className:
+               "font-bold uppercase text-green-400"
+           },
+
+           closed: {
+             text: "🔴 COURSE CLOSED",
+             className:
+               "font-bold uppercase text-red-400"
+           },
+
+           frost: {
+             text: "🟡 FROST DELAY",
+             className:
+               "font-bold uppercase text-yellow-400"
+           },
+
+           "temporary-greens": {
+             text: "🟠 TEMPORARY GREENS",
+             className:
+               "font-bold uppercase text-orange-400"
+           },
+
+           "preferred-lies": {
+             text: "🔵 PREFERRED LIES",
+             className:
+               "font-bold uppercase text-blue-400"
+           },
+
+           maintenance: {
+             text: "⚪ COURSE MAINTENANCE",
+             className:
+               "font-bold uppercase text-gray-300"
+           }
+         };
+
+         const currentStatus =
+           statusMap[data.status] ||
+           statusMap.closed;
+
+         statusEl.textContent =
+           currentStatus.text;
+
+         statusEl.className =
+           currentStatus.className;
+
+       } catch (error) {
+         statusEl.textContent =
+           "⚪ STATUS UNKNOWN";
+
+         statusEl.className =
+           "font-bold uppercase text-gray-400";
+       }
+     }
+
+     function updateClock() {
+       const clock =
+         document.getElementById(
+           "live-clock"
+         );
+
+       if (!clock) return;
+
+       const now = new Date();
+
+       clock.textContent =
+         now.toLocaleTimeString(
+           "en-GB",
+           {
+             hour: "2-digit",
+             minute: "2-digit",
+             second: "2-digit"
+           }
+         );
+     }
+
+     function initMenu() {
+       const btn =
+         document.getElementById(
+           "menu-btn"
+         );
+
+       const nav =
+         document.getElementById(
+           "nav-links"
+         );
+
+       if (!btn || !nav) return;
+
+       function closeMenu() {
+         nav.classList.add(
+           "translate-x-full"
+         );
+
+         nav.classList.remove(
+           "translate-x-0"
+         );
+
+         document.body.style.overflow =
+           "auto";
+       }
+
+       function openMenu() {
+         nav.classList.remove(
+           "translate-x-full"
+         );
+
+         nav.classList.add(
+           "translate-x-0"
+         );
+
+         document.body.style.overflow =
+           "hidden";
+       }
+
+       btn.addEventListener(
+         "click",
+         e => {
+           e.stopPropagation();
+
+           nav.classList.contains(
+             "translate-x-full"
+           )
+             ? openMenu()
+             : closeMenu();
+         }
+       );
+
+       document
+         .querySelectorAll(
+           "#nav-links a"
+         )
+         .forEach(link => {
+           link.addEventListener(
+             "click",
+             closeMenu
+           );
+         });
+     }
+     updateClock();
+     updateWeather();
+     updateCourseStatus();
+     initMenu();
+
+     setInterval(
+       updateClock,
+       1000
+     );
+
+     setInterval(
+       updateCourseStatus,
+       60000
+     );
+
+     setInterval(
+       updateWeather,
+       600000
+     );
+  </script>
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
+    ↑ Top
+  </button>
+
+  <script>
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.remove("hidden");
+        } else {
+          backToTop.classList.add("hidden");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+  </script>
+</body>
+
+</html>
+
+
+

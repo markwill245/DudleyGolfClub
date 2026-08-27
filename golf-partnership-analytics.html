@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team & Partnership Analytics | Dudley Golf Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    #menu-btn div {
+      display: block !important;
+      width: 24px !important;
+      height: 2px !important;
+      background-color: #C5A367 !important;
+      opacity: 1 !important;
+    }
+
+    .nav-blur {
+      background: rgba(19, 36, 25, 0.98);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    #nav-links {
+      will-change: transform;
+    }
+  </style>
+
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419]">
+  <!-- TOP INFO BAR -->
+  <div
+    class="bg-[#0D1712] text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+
+    <div id="live-clock">
+      Loading...
+    </div>
+
+    <div class="flex gap-6">
+      <span id="weather">
+        Dudley: --°C
+      </span>
+
+      <span>
+        Course Status:
+        <span id="course-status" class="font-bold uppercase">
+        </span>
+      </span>
+    </div>
+
+  </div>
+  <nav
+    class="w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10 relative">
+
+    <a href="index.html" class="flex flex-col z-[100]">
+      <span class="serif text-2xl">DUDLEY</span>
+      <span class="text-[8px] uppercase text-[#C5A367]">
+        Golf Club Est. 1893
+      </span>
+    </a>
+
+    <div class="hidden xl:flex justify-center gap-6 text-[12px] uppercase tracking-widest">
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Guide</a>
+      <a href="the-gauntlet.html">The Gauntlet</a>
+      <a href="history.html">History</a>
+      <a href="digital-museum.html">Digital Museum</a>
+      <a href="hospitality.html">Hospitality & Events</a>
+      <a href="pro-shop.html">Pro Shop</a>
+      <a href="visitors.html">Visitors</a>
+      <a href="membership.html">Membership</a>
+    </div>
+
+    <div class="hidden xl:flex items-center gap-4 relative z-[200]">
+
+      <a href="members-login.html" target="_blank"
+        class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+        Members iGolf
+      </a>
+
+      <a href="login.html"
+        class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+        Members Portal
+      </a>
+
+    </div>
+
+    <button id="menu-btn" class="xl:hidden z-[120] flex flex-col gap-1">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <div id="nav-links"
+      class="fixed top-0 right-0 h-screen w-[80%] max-w-[320px] bg-[#132419] z-[110] translate-x-full transition-transform duration-300 flex flex-col pt-28 px-8 gap-6 text-[12px] uppercase tracking-widest border-l border-[#C5A367]/30 xl:hidden">
+
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Guide</a>
+      <a href="the-gauntlet.html">The Gauntlet</a>
+      <a href="history.html">History</a>
+      <a href="digital-museum.html">Digital Museum</a>
+      <a href="hospitality.html">Hospitality & Events</a>
+      <a href="pro-shop.html">Pro Shop</a>
+      <a href="visitors.html">Visitors</a>
+      <a href="membership.html">Membership</a>
+
+      <div class="pt-6 border-t border-[#C5A367]/20 flex flex-col gap-4">
+
+        <a href="members-login.html" target="_blank"
+          class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-center text-[10px] font-bold">
+          iGolf App
+        </a>
+
+        <a href="login.html"
+          class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold text-center">
+          Members Portal
+        </a>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+
+    <a href="golf-analytics-centre.html"
+      class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-[#132419] transition">
+      &larr; Individual Analytics
+    </a>
+
+    <section class="mt-10 mb-12">
+      <p class="uppercase tracking-[0.35em] text-xs text-[#C5A367] font-bold mb-4">
+        Dudley Golf Club
+      </p>
+
+      <h1 class="text-5xl md:text-7xl font-serif mb-5">
+        Team &amp; Partnership Analytics
+      </h1>
+
+      <p class="text-lg md:text-xl max-w-4xl leading-8 text-[#132419]/75">
+        Explore proven two-player partnerships from the Dudley Golf Club Digital Museum.
+        Results are based on recorded appearances and finishing positions.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-widest">
+        <span class="px-4 py-2 rounded-full bg-[#132419] text-white">
+          Partnership Analytics
+        </span>
+      </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="bg-[#132419] text-white rounded-3xl p-6 md:p-8 mb-8 shadow-xl">
+
+      <label for="partnership-search"
+        class="block text-[11px] uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-2">
+        Partnership
+      </label>
+
+      <input
+        id="partnership-search"
+        list="partnership-options"
+        type="text"
+        placeholder="Search player or partnership..."
+        autocomplete="off"
+        class="w-full bg-white text-[#132419] px-5 py-4 rounded-xl outline-none font-semibold"
+      >
+
+      <datalist id="partnership-options"></datalist>
+
+      <p class="mt-3 text-xs text-white/45">
+        Search by either player's name. Press Enter to select when only one partnership matches.
+      </p>
+
+    </section>
+
+    <!-- EMPTY -->
+    <section id="partnership-empty"
+      class="bg-white rounded-3xl p-10 border border-[#C5A367]/30 shadow text-center">
+
+      <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-3">
+        Team &amp; Partnership Analytics
+      </p>
+
+      <h2 class="font-serif text-4xl mb-3">
+        Select a partnership
+      </h2>
+
+      <p class="text-[#132419]/60 max-w-2xl mx-auto">
+        Search above to explore appearances, wins, finishing performance and event evidence.
+      </p>
+
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="partnership-dashboard" class="hidden">
+
+      <section class="bg-[#132419] text-white rounded-3xl p-7 md:p-9 mb-8 shadow-xl">
+
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+
+          <div>
+            <p id="partnership-section"
+              class="text-[10px] uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-3">
+            </p>
+
+            <h2 id="partnership-name"
+              class="font-serif text-4xl md:text-6xl leading-tight">
+            </h2>
+
+            <p id="partnership-status"
+              class="mt-3 text-white/55">
+            </p>
+          </div>
+
+          <div class="lg:text-right">
+            <p class="text-[10px] uppercase tracking-[0.25em] text-white/40">
+              Recorded Partnership
+            </p>
+
+            <strong id="partnership-played-large"
+              class="font-serif text-5xl text-[#C5A367]">
+              -
+            </strong>
+
+            <p class="text-sm text-white/50">
+              appearances
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HEADLINE METRICS -->
+      <section class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+
+        <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Wins
+          </p>
+          <strong id="partnership-wins"
+            class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Win Rate
+          </p>
+          <strong id="partnership-win-rate"
+            class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Top 3
+          </p>
+          <strong id="partnership-top3"
+            class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#132419]/50 font-bold">
+            Top 5
+          </p>
+          <strong id="partnership-top5"
+            class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-[#132419] text-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Average Finish
+          </p>
+          <strong id="partnership-average-finish"
+            class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+        <div class="bg-[#132419] text-white rounded-2xl p-6 border border-[#C5A367]/30 shadow">
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Best Finish
+          </p>
+          <strong id="partnership-best-finish"
+            class="block font-serif text-5xl mt-3">
+            -
+          </strong>
+        </div>
+
+      </section>
+
+      <!-- FORMAT BREAKDOWN -->
+      <section class="mb-10">
+
+        <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-2">
+          Partnership Profile
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl mb-5">
+          Formats Played
+        </h2>
+
+        <div id="format-grid"
+          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        </div>
+
+        <p class="mt-5 text-sm text-[#132419]/55 max-w-4xl">
+          Score averages are deliberately withheld here until each team scoring format
+          is independently certified. Different pairs formats can use different scoring scales.
+        </p>
+
+      </section>
+
+      <!-- EVIDENCE -->
+      <section class="bg-white rounded-3xl border border-[#C5A367]/30 shadow overflow-hidden">
+
+        <div class="bg-[#132419] text-white px-6 md:px-8 py-6">
+
+          <p class="text-[10px] uppercase tracking-[0.25em] text-[#C5A367] font-bold">
+            Recorded Evidence
+          </p>
+
+          <h2 class="font-serif text-3xl mt-1">
+            Partnership Appearances
+          </h2>
+
+        </div>
+
+        <div class="overflow-x-auto">
+
+          <table class="w-full text-left">
+
+            <thead class="bg-[#F9F7F2] text-[10px] uppercase tracking-[0.18em]">
+              <tr>
+                <th class="px-6 py-4">Date</th>
+                <th class="px-6 py-4">Competition</th>
+                <th class="px-6 py-4">Format</th>
+                <th class="px-6 py-4">Finish</th>
+              </tr>
+            </thead>
+
+            <tbody id="partnership-evidence"></tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script>
+    const partnershipState = {
+      data: null,
+      partnership: null
+    };
+
+    function normalisePartnershipSearch(value) {
+      return String(value || "")
+        .toLowerCase()
+        .replace(/[.'�\-]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function ordinalPartnership(value) {
+      const n = Number(value);
+
+      if (!Number.isFinite(n) || n <= 0) {
+        return "-";
+      }
+
+      const mod100 = n % 100;
+
+      if (mod100 >= 11 && mod100 <= 13) {
+        return `${n}th`;
+      }
+
+      switch (n % 10) {
+        case 1: return `${n}st`;
+        case 2: return `${n}nd`;
+        case 3: return `${n}rd`;
+        default: return `${n}th`;
+      }
+    }
+
+    function partnershipLabel(partnership) {
+      return (partnership.players || []).join(" / ");
+    }
+
+    function renderPartnership(partnership) {
+      partnershipState.partnership =
+        partnership;
+
+      document
+        .getElementById("partnership-empty")
+        .classList.add("hidden");
+
+      document
+        .getElementById("partnership-dashboard")
+        .classList.remove("hidden");
+
+      const label =
+        partnershipLabel(partnership);
+
+      document.getElementById(
+        "partnership-search"
+      ).value = label;
+
+      document.getElementById(
+        "partnership-name"
+      ).textContent = label;
+
+      document.getElementById(
+        "partnership-section"
+      ).textContent =
+        partnership.section === "Mens"
+          ? "Men's Partnership Analytics"
+          : `${partnership.section} Partnership Analytics`;
+
+      document.getElementById(
+        "partnership-status"
+      ).textContent =
+        partnership.headlineEligible
+          ? "Headline partnership � 6 or more recorded appearances"
+          : "Recorded partnership";
+
+      document.getElementById(
+        "partnership-played-large"
+      ).textContent =
+        partnership.appearances ?? 0;
+
+      document.getElementById(
+        "partnership-wins"
+      ).textContent =
+        partnership.wins ?? 0;
+
+      document.getElementById(
+        "partnership-win-rate"
+      ).textContent =
+        Number.isFinite(
+          Number(partnership.winRate)
+        )
+          ? `${partnership.winRate}%`
+          : "-";
+
+      document.getElementById(
+        "partnership-top3"
+      ).textContent =
+        partnership.top3 ?? 0;
+
+      document.getElementById(
+        "partnership-top5"
+      ).textContent =
+        partnership.top5 ?? 0;
+
+      document.getElementById(
+        "partnership-average-finish"
+      ).textContent =
+        Number.isFinite(
+          Number(partnership.averageFinish)
+        )
+          ? partnership.averageFinish
+          : "-";
+
+      document.getElementById(
+        "partnership-best-finish"
+      ).textContent =
+        ordinalPartnership(
+          partnership.bestFinish
+        );
+
+      const formatGrid =
+        document.getElementById(
+          "format-grid"
+        );
+
+      formatGrid.innerHTML = "";
+
+      Object.entries(
+        partnership.formats || {}
+      )
+        .sort(
+          (a, b) =>
+            Number(b[1]?.appearances || 0) -
+            Number(a[1]?.appearances || 0)
+        )
+        .forEach(
+          ([formatName, format]) => {
+            const card =
+              document.createElement("div");
+
+            card.className =
+              "bg-white rounded-2xl p-6 border border-[#C5A367]/30 shadow";
+
+            card.innerHTML = `
+              <p class="text-[10px] uppercase tracking-[0.22em] text-[#132419]/50 font-bold">
+                ${formatName}
+              </p>
+
+              <strong class="block font-serif text-5xl mt-3">
+                ${format.appearances || 0}
+              </strong>
+
+              <p class="mt-2 text-sm text-[#132419]/55">
+                recorded appearances
+              </p>
+            `;
+
+            formatGrid.appendChild(card);
+          }
+        );
+
+      const evidenceBody =
+        document.getElementById(
+          "partnership-evidence"
+        );
+
+      evidenceBody.innerHTML = "";
+
+      [...(partnership.evidence || [])]
+        .sort((a, b) =>
+          String(b.date || "")
+            .localeCompare(
+              String(a.date || "")
+            )
+        )
+        .forEach(record => {
+          const row =
+            document.createElement("tr");
+
+          row.className =
+            "border-t border-[#C5A367]/15";
+
+          row.innerHTML = `
+            <td class="px-6 py-4 whitespace-nowrap">
+              ${record.date || "-"}
+            </td>
+
+            <td class="px-6 py-4 font-semibold">
+              ${record.competitionName || "-"}
+            </td>
+
+            <td class="px-6 py-4">
+              ${record.format || "-"}
+            </td>
+
+            <td class="px-6 py-4 font-bold">
+              ${ordinalPartnership(record.position)}
+            </td>
+          `;
+
+          evidenceBody.appendChild(row);
+        });
+    }
+
+    function selectPartnershipFromSearch() {
+      if (!partnershipState.data) {
+        return;
+      }
+
+      const input =
+        document.getElementById(
+          "partnership-search"
+        );
+
+      const value =
+        normalisePartnershipSearch(
+          input.value
+        );
+
+      if (!value) {
+        return;
+      }
+
+      const partnerships =
+        partnershipState.data.partnerships || [];
+
+      const exact =
+        partnerships.find(item =>
+          normalisePartnershipSearch(
+            partnershipLabel(item)
+          ) === value
+        );
+
+      if (exact) {
+        renderPartnership(exact);
+        return;
+      }
+
+      const matches =
+        partnerships.filter(item => {
+          const full =
+            normalisePartnershipSearch(
+              partnershipLabel(item)
+            );
+
+          const players =
+            (item.players || [])
+              .map(
+                normalisePartnershipSearch
+              );
+
+          return (
+            full.includes(value) ||
+            players.some(
+              player =>
+                player.includes(value)
+            )
+          );
+        });
+
+      if (matches.length === 1) {
+        renderPartnership(
+          matches[0]
+        );
+      }
+    }
+
+    async function loadPartnershipAnalytics() {
+      try {
+        const response =
+          await fetch(
+            "data/golf-partnership-analytics.json"
+          );
+
+        if (!response.ok) {
+          throw new Error(
+            `Partnership analytics returned ${response.status}`
+          );
+        }
+
+        partnershipState.data =
+          await response.json();
+
+        const list =
+          document.getElementById(
+            "partnership-options"
+          );
+
+        list.innerHTML = "";
+
+        (partnershipState.data.partnerships || [])
+          .sort(
+            (a, b) =>
+              partnershipLabel(a)
+                .localeCompare(
+                  partnershipLabel(b)
+                )
+          )
+          .forEach(partnership => {
+            const option =
+              document.createElement(
+                "option"
+              );
+
+            option.value =
+              partnershipLabel(
+                partnership
+              );
+
+            list.appendChild(option);
+          });
+
+      } catch (error) {
+        console.error(
+          "Partnership Analytics:",
+          error
+        );
+
+        const empty =
+          document.getElementById(
+            "partnership-empty"
+          );
+
+        empty.innerHTML = `
+          <h2 class="font-serif text-4xl mb-3">
+            Partnership analytics unavailable
+          </h2>
+
+          <p class="text-[#132419]/60">
+            The partnership data could not be loaded.
+          </p>
+        `;
+      }
+    }
+
+    const partnershipSearch =
+      document.getElementById(
+        "partnership-search"
+      );
+
+    partnershipSearch.addEventListener(
+      "input",
+      () => {
+        if (!partnershipState.data) {
+          return;
+        }
+
+        const value =
+          normalisePartnershipSearch(
+            partnershipSearch.value
+          );
+
+        const exact =
+          partnershipState.data.partnerships
+            ?.find(item =>
+              normalisePartnershipSearch(
+                partnershipLabel(item)
+              ) === value
+            );
+
+        if (exact) {
+          renderPartnership(exact);
+        }
+      }
+    );
+
+    partnershipSearch.addEventListener(
+      "change",
+      selectPartnershipFromSearch
+    );
+
+    partnershipSearch.addEventListener(
+      "keydown",
+      event => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          selectPartnershipFromSearch();
+        }
+      }
+    );
+
+    loadPartnershipAnalytics();
+  </script>
+
+  <script>
+    async function loadMuseumStats() {
+      try {
+        const response = await fetch(
+          "data/digital-museum-summary.json",
+          {
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(
+            `Digital Museum summary returned ${response.status}`
+          );
+        }
+
+        const summary =
+          await response.json();
+
+        document
+          .getElementById("stat-players")
+          .textContent =
+          summary.playersRecorded ?? "—";
+
+        document
+          .getElementById("stat-competitions")
+          .textContent =
+          summary.competitions ?? "—";
+
+        document
+          .getElementById("stat-results")
+          .textContent =
+          summary.recordedResultRows ?? "—";
+
+        const leader =
+          summary.lifetimeLeader;
+
+        const leaderElement =
+          document.getElementById(
+            "stat-leader"
+          );
+
+        if (leader?.player) {
+          const link =
+            document.createElement("a");
+
+          link.href =
+            leader.slug
+              ? `player-profile.html?player=${encodeURIComponent(leader.slug)}`
+              : "player-index.html";
+
+          link.textContent =
+            `${leader.player} — ${leader.wins} wins`;
+
+          link.className =
+            "hover:text-[#C5A367] transition";
+
+          leaderElement.replaceChildren(
+            link
+          );
+        } else {
+          leaderElement.textContent = "—";
+        }
+
+      } catch (error) {
+        console.error(
+          "Museum summary failed to load:",
+          error
+        );
+      }
+    }
+
+    async function updateWeather() {
+      const weather =
+        document.getElementById("weather");
+
+      if (!weather) return;
+
+      try {
+        const response =
+          await fetch("/api/weather");
+
+        if (!response.ok) {
+          throw new Error(
+            "Weather fetch failed"
+          );
+        }
+
+        const data =
+          await response.json();
+
+        weather.textContent =
+          `Dudley: ${data.temp}°C`;
+
+      } catch (error) {
+        console.error(
+          "Could not fetch weather:",
+          error
+        );
+
+        weather.textContent =
+          "Dudley: --°C";
+      }
+    }
+
+    async function updateCourseStatus() {
+      const statusEl =
+        document.getElementById(
+          "course-status"
+        );
+
+      if (!statusEl) return;
+
+      try {
+        const response =
+          await fetch(
+            "/api/course-status"
+          );
+
+        if (!response.ok) {
+          throw new Error();
+        }
+
+        const data =
+          await response.json();
+
+        const statusMap = {
+          open: {
+            text: "🟢 COURSE OPEN",
+            className:
+              "font-bold uppercase text-green-400"
+          },
+
+          closed: {
+            text: "🔴 COURSE CLOSED",
+            className:
+              "font-bold uppercase text-red-400"
+          },
+
+          frost: {
+            text: "🟡 FROST DELAY",
+            className:
+              "font-bold uppercase text-yellow-400"
+          },
+
+          "temporary-greens": {
+            text: "🟠 TEMPORARY GREENS",
+            className:
+              "font-bold uppercase text-orange-400"
+          },
+
+          "preferred-lies": {
+            text: "🔵 PREFERRED LIES",
+            className:
+              "font-bold uppercase text-blue-400"
+          },
+
+          maintenance: {
+            text: "⚪ COURSE MAINTENANCE",
+            className:
+              "font-bold uppercase text-gray-300"
+          }
+        };
+
+        const currentStatus =
+          statusMap[data.status] ||
+          statusMap.closed;
+
+        statusEl.textContent =
+          currentStatus.text;
+
+        statusEl.className =
+          currentStatus.className;
+
+      } catch (error) {
+        statusEl.textContent =
+          "⚪ STATUS UNKNOWN";
+
+        statusEl.className =
+          "font-bold uppercase text-gray-400";
+      }
+    }
+
+    function updateClock() {
+      const clock =
+        document.getElementById(
+          "live-clock"
+        );
+
+      if (!clock) return;
+
+      const now = new Date();
+
+      clock.textContent =
+        now.toLocaleTimeString(
+          "en-GB",
+          {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+          }
+        );
+    }
+
+    function initMenu() {
+      const btn =
+        document.getElementById(
+          "menu-btn"
+        );
+
+      const nav =
+        document.getElementById(
+          "nav-links"
+        );
+
+      if (!btn || !nav) return;
+
+      function closeMenu() {
+        nav.classList.add(
+          "translate-x-full"
+        );
+
+        nav.classList.remove(
+          "translate-x-0"
+        );
+
+        document.body.style.overflow =
+          "auto";
+      }
+
+      function openMenu() {
+        nav.classList.remove(
+          "translate-x-full"
+        );
+
+        nav.classList.add(
+          "translate-x-0"
+        );
+
+        document.body.style.overflow =
+          "hidden";
+      }
+
+      btn.addEventListener(
+        "click",
+        e => {
+          e.stopPropagation();
+
+          nav.classList.contains(
+            "translate-x-full"
+          )
+            ? openMenu()
+            : closeMenu();
+        }
+      );
+
+      document
+        .querySelectorAll(
+          "#nav-links a"
+        )
+        .forEach(link => {
+          link.addEventListener(
+            "click",
+            closeMenu
+          );
+        });
+    }
+    updateClock();
+    updateWeather();
+    updateCourseStatus();
+    initMenu();
+
+    setInterval(
+      updateClock,
+      1000
+    );
+
+    setInterval(
+      updateCourseStatus,
+      60000
+    );
+
+    setInterval(
+      updateWeather,
+      600000
+    );
+  </script>
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
+    ↑ Top
+  </button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+      } else {
+        backToTop.classList.add("hidden");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+
+</html>
+
