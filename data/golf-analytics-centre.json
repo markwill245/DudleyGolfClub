@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-08-27T21:19:59.187Z",
+  "generatedAt": "2026-08-27T22:54:54.343Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -17,8 +17,8 @@
     "evidenceRequired": true
   },
   "totals": {
-    "canonicalPlayers": 665,
-    "playersWithAnalytics": 306,
+    "canonicalPlayers": 664,
+    "playersWithAnalytics": 305,
     "eligibleEvents": 211,
     "eligibleRows": 8689,
     "includedNettRounds": 3334,
@@ -67733,11 +67733,22 @@
             "2024": {
               "nineHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 36.4,
-                  "best": 31,
+                  "rounds": 6,
+                  "average": 30.8,
+                  "best": 3,
                   "averageHandicap": 16,
                   "evidence": [
+                    {
+                      "date": "2024-04-18",
+                      "competitionId": "seniors-april-medal",
+                      "competitionName": "Seniors April Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 3,
+                      "handicap": null,
+                      "position": 23,
+                      "source": "certified-medal-nett"
+                    },
                     {
                       "date": "2024-06-03",
                       "competitionId": "seniors-june-medal",
@@ -67796,11 +67807,31 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 1,
-                  "average": 15,
+                  "rounds": 3,
+                  "average": 7,
                   "best": 15,
                   "averageHandicap": 16,
                   "evidence": [
+                    {
+                      "date": "2024-05-20",
+                      "competitionId": "seniors-arthur-turley-trophy",
+                      "competitionName": "Seniors Arthur Turley Trophy",
+                      "numberOfHoles": 9,
+                      "position": 34,
+                      "points": 4,
+                      "handicap": null,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2024-05-23",
+                      "competitionId": "seniors-centenary-trophy",
+                      "competitionName": "Seniors Centenary Trophy",
+                      "numberOfHoles": 9,
+                      "position": 27,
+                      "points": 2,
+                      "handicap": null,
+                      "source": "certified-individual-stableford"
+                    },
                     {
                       "date": "2024-07-04",
                       "competitionId": "seniors-cyril-joseph-trophy",
@@ -67965,87 +67996,6 @@
                       "source": "certified-individual-stableford"
                     }
                   ]
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Keith Taylor(-2)",
-      "status": "Historical",
-      "primarySection": "Seniors",
-      "playedSections": [
-        "Seniors"
-      ],
-      "sections": {
-        "Seniors": {
-          "seasons": {
-            "2024": {
-              "nineHole": {
-                "nett": {
-                  "rounds": 1,
-                  "average": 3,
-                  "best": 3,
-                  "averageHandicap": null,
-                  "evidence": [
-                    {
-                      "date": "2024-04-18",
-                      "competitionId": "seniors-april-medal",
-                      "competitionName": "Seniors April Medal",
-                      "round": 1,
-                      "numberOfHoles": 9,
-                      "nett": 3,
-                      "handicap": null,
-                      "position": 23,
-                      "source": "certified-medal-nett"
-                    }
-                  ]
-                },
-                "stableford": {
-                  "rounds": 2,
-                  "average": 3,
-                  "best": 4,
-                  "averageHandicap": null,
-                  "evidence": [
-                    {
-                      "date": "2024-05-20",
-                      "competitionId": "seniors-arthur-turley-trophy",
-                      "competitionName": "Seniors Arthur Turley Trophy",
-                      "numberOfHoles": 9,
-                      "position": 34,
-                      "points": 4,
-                      "handicap": null,
-                      "source": "certified-individual-stableford"
-                    },
-                    {
-                      "date": "2024-05-23",
-                      "competitionId": "seniors-centenary-trophy",
-                      "competitionName": "Seniors Centenary Trophy",
-                      "numberOfHoles": 9,
-                      "position": 27,
-                      "points": 2,
-                      "handicap": null,
-                      "source": "certified-individual-stableford"
-                    }
-                  ]
-                }
-              },
-              "eighteenHole": {
-                "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
-                },
-                "stableford": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
                 }
               }
             }

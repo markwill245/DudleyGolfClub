@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1-prototype",
-  "generatedAt": "2026-08-27T20:06:37.793Z",
+  "generatedAt": "2026-08-27T22:55:04.089Z",
   "status": "Prototype - partnership analytics not yet certified",
   "methodology": {
     "partnerships": "Two-player team events only",
@@ -11457,6 +11457,64 @@
     {
       "section": "Mens",
       "players": [
+        "David Hill",
+        "Lee Roger Grainger"
+      ],
+      "appearances": 3,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 15,
+      "bestFinish": 8,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Greensomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "3 Ball": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2021-08-21",
+          "year": 2021,
+          "competitionId": "members-invitational-pairs-betterball",
+          "competitionName": "Members Invitational Pairs Betterball",
+          "format": "Betterball",
+          "position": 8,
+          "score": 39
+        },
+        {
+          "date": "2021-10-16",
+          "year": 2021,
+          "competitionId": "writtle-grove-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
+          "format": "Greensomes",
+          "position": 19,
+          "score": 75
+        },
+        {
+          "date": "2025-11-08",
+          "year": 2025,
+          "competitionId": "3-ball-rumble",
+          "competitionName": "3 Ball Rumble - all scores to count",
+          "format": "3 Ball",
+          "position": 18,
+          "score": null
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Keith John Woodall",
         "Roger William Grainger"
       ],
@@ -14792,51 +14850,6 @@
           "format": "Pairs",
           "position": 3,
           "score": 45
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "David Hill",
-        "Lee Roger Grainger"
-      ],
-      "appearances": 2,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 0,
-      "averageFinish": 13.5,
-      "bestFinish": 8,
-      "formats": {
-        "Betterball": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Greensomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2021-08-21",
-          "year": 2021,
-          "competitionId": "members-invitational-pairs-betterball",
-          "competitionName": "Members Invitational Pairs Betterball",
-          "format": "Betterball",
-          "position": 8,
-          "score": 39
-        },
-        {
-          "date": "2021-10-16",
-          "year": 2021,
-          "competitionId": "writtle-grove-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
-          "format": "Greensomes",
-          "position": 19,
-          "score": 75
         }
       ]
     },
