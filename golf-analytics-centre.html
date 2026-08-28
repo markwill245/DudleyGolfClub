@@ -882,6 +882,9 @@
       const svg =
         document.getElementById("trend-chart");
 
+      const isMobile =
+        window.matchMedia("(max-width: 767px)").matches;
+
       svg.innerHTML = "";
 
       if (!records?.length) {
@@ -1023,7 +1026,9 @@
 
         guide.setAttribute(
           "stroke",
-          "rgba(255,255,255,0.10)"
+          isMobile
+            ? "rgba(255,255,255,0.20)"
+            : "rgba(255,255,255,0.10)"
         );
 
         svg.appendChild(guide);
@@ -1036,7 +1041,9 @@
             {
               anchor: "end",
               fill:
-                "rgba(255,255,255,0.45)"
+                isMobile
+                  ? "rgba(255,255,255,0.75)"
+                  : "rgba(255,255,255,0.45)"
             }
           )
         );
@@ -1076,12 +1083,14 @@
 
       averageLine.setAttribute(
         "stroke",
-        "rgba(197,163,103,0.60)"
+        isMobile
+          ? "rgba(197,163,103,0.90)"
+          : "rgba(197,163,103,0.60)"
       );
 
       averageLine.setAttribute(
         "stroke-width",
-        "2"
+        isMobile ? "2.5" : "2"
       );
 
       averageLine.setAttribute(
@@ -1162,7 +1171,7 @@
 
       trend.setAttribute(
         "stroke-width",
-        "4"
+        isMobile ? "5" : "4"
       );
 
       trend.setAttribute(
@@ -1196,7 +1205,7 @@
 
         circle.setAttribute(
           "r",
-          "6"
+          isMobile ? "7" : "6"
         );
 
         circle.setAttribute(
@@ -1213,7 +1222,7 @@
             point.record.nett,
             {
               fill: "#ffffff",
-              size: "12"
+              size: isMobile ? "14" : "12"
             }
           )
         );
@@ -1235,8 +1244,10 @@
             shortDate,
             {
               fill:
-                "rgba(255,255,255,0.50)",
-              size: "10"
+                isMobile
+                  ? "rgba(255,255,255,0.75)"
+                  : "rgba(255,255,255,0.50)",
+              size: isMobile ? "11" : "10"
             }
           )
         );
