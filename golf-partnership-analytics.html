@@ -175,16 +175,22 @@
         Partnership
       </label>
 
-      <input
-        id="partnership-search"
-        list="partnership-options"
-        type="text"
-        placeholder="Search player or partnership..."
-        autocomplete="off"
-        class="w-full bg-white text-[#132419] px-5 py-4 rounded-xl outline-none font-semibold"
-      >
+      <div class="relative">
+        <input
+          id="partnership-search"
+          list="partnership-options"
+          type="text"
+          placeholder="Search player or partnership..."
+          autocomplete="off"
+          class="w-full bg-white text-[#132419] px-5 py-4 rounded-xl outline-none font-semibold"
+        >
 
-      <datalist id="partnership-options"></datalist>
+        <datalist id="partnership-options"></datalist>
+
+        <div id="mobile-partnership-results"
+          class="hidden lg:hidden absolute left-0 right-0 top-full mt-2 bg-white text-[#132419] rounded-xl shadow-xl border border-[#C5A367]/30 max-h-72 overflow-y-auto z-50">
+        </div>
+      </div>
 
       <p class="mt-3 text-xs text-white/45">
         Search by either player's name. Press Enter to select when only one partnership matches.
@@ -717,9 +723,82 @@
         "partnership-search"
       );
 
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      partnershipSearch.removeAttribute("list");
+    }
+
+    function updateMobilePartnershipResults() {
+      const results =
+        document.getElementById("mobile-partnership-results");
+
+      if (!results || !partnershipState.data) return;
+
+      const value =
+        normalisePartnershipSearch(partnershipSearch.value);
+
+      results.innerHTML = "";
+
+      if (!value) {
+        results.classList.add("hidden");
+        return;
+      }
+
+      const matches =
+        (partnershipState.data.partnerships || [])
+          .filter(item => {
+            const full =
+              normalisePartnershipSearch(
+                partnershipLabel(item)
+              );
+
+            const players =
+              (item.players || [])
+                .map(normalisePartnershipSearch);
+
+            return (
+              full.includes(value) ||
+              players.some(
+                player => player.includes(value)
+              )
+            );
+          })
+          .slice(0, 12);
+
+      if (!matches.length) {
+        results.classList.add("hidden");
+        return;
+      }
+
+      matches.forEach(partnership => {
+        const button =
+          document.createElement("button");
+
+        button.type = "button";
+        button.textContent =
+          partnershipLabel(partnership);
+
+        button.className =
+          "block w-full text-left px-5 py-3 border-b border-[#132419]/10 last:border-0 hover:bg-[#F9F7F2] active:bg-[#F9F7F2]";
+
+        button.addEventListener(
+          "click",
+          () => {
+            results.classList.add("hidden");
+            renderPartnership(partnership);
+            partnershipSearch.blur();
+          }
+        );
+
+        results.appendChild(button);
+      });
+
+      results.classList.remove("hidden");
+    }
+
     partnershipSearch.addEventListener(
       "input",
       () => {
+        updateMobilePartnershipResults();
         if (!partnershipState.data) {
           return;
         }
