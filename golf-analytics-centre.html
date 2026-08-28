@@ -184,10 +184,16 @@
             Player
           </label>
 
-          <input id="player-search" list="player-options" type="text" placeholder="Search player..." autocomplete="off"
-            class="w-full bg-white text-[#132419] px-5 py-4 rounded-xl outline-none font-semibold">
+          <div class="relative">
+            <input id="player-search" list="player-options" type="text" placeholder="Search player..." autocomplete="off"
+              class="w-full bg-white text-[#132419] px-5 py-4 rounded-xl outline-none font-semibold">
 
-          <datalist id="player-options"></datalist>
+            <datalist id="player-options"></datalist>
+
+            <div id="mobile-player-results"
+              class="hidden lg:hidden absolute left-0 right-0 top-full mt-2 bg-white text-[#132419] rounded-xl shadow-xl border border-[#C5A367]/30 max-h-72 overflow-y-auto z-50">
+            </div>
+          </div>
         </div>
 
         <div>
@@ -1668,6 +1674,10 @@
       const playerSearch =
         document.getElementById("player-search");
 
+      if (window.matchMedia("(max-width: 1023px)").matches) {
+        playerSearch.removeAttribute("list");
+      }
+
       function normalisePlayerSearch(value) {
         return String(value || "")
           .toLowerCase()
@@ -1750,9 +1760,60 @@
         populateSections();
       }
 
+      function updateMobilePlayerResults() {
+        const results =
+          document.getElementById("mobile-player-results");
+
+        if (!results || !analyticsState.data) return;
+
+        const value =
+          normalisePlayerSearch(playerSearch.value);
+
+        results.innerHTML = "";
+
+        if (!value) {
+          results.classList.add("hidden");
+          return;
+        }
+
+        const matches =
+          (analyticsState.data.players || [])
+            .filter(player =>
+              Object.keys(player.sections || {}).length > 0 &&
+              normalisePlayerSearch(player.name).includes(value)
+            )
+            .slice(0, 12);
+
+        if (!matches.length) {
+          results.classList.add("hidden");
+          return;
+        }
+
+        matches.forEach(player => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.textContent = player.name;
+          button.className =
+            "block w-full text-left px-5 py-3 border-b border-[#132419]/10 last:border-0 hover:bg-[#F9F7F2] active:bg-[#F9F7F2]";
+
+          button.addEventListener("click", () => {
+            analyticsState.player = player;
+            playerSearch.value = player.name;
+            results.classList.add("hidden");
+            populateSections();
+            playerSearch.blur();
+          });
+
+          results.appendChild(button);
+        });
+
+        results.classList.remove("hidden");
+      }
+
       playerSearch.addEventListener(
         "input",
         () => {
+          updateMobilePlayerResults();
           if (!analyticsState.data) {
             return;
           }
