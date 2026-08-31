@@ -460,6 +460,559 @@
             }
         }
     </style>
+
+<style>
+/* PREMIUM MEMBERSHIP CTA SYSTEM */
+.membership-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    min-height: 52px;
+    padding: 0.9rem 1.65rem;
+    border: 1px solid rgba(197,163,103,.72);
+    color: #C5A367;
+    background: rgba(255,255,255,.018);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    transition:
+        transform .28s ease,
+        background-color .28s ease,
+        border-color .28s ease,
+        color .28s ease,
+        box-shadow .28s ease;
+}
+
+.membership-cta::after {
+    content: "\2192";
+    font-size: 1rem;
+    line-height: 1;
+    transform: translateX(0);
+    transition: transform .28s ease;
+}
+
+.membership-cta:hover {
+    transform: translateY(-2px);
+    border-color: #C5A367;
+    background: rgba(197,163,103,.10);
+    box-shadow: 0 12px 30px rgba(0,0,0,.14);
+}
+
+.membership-cta:hover::after {
+    transform: translateX(4px);
+}
+
+.membership-cta--gold {
+    color: #132419;
+    background: #C5A367;
+    border-color: #C5A367;
+}
+
+.membership-cta--gold:hover {
+    color: #132419;
+    background: #d2b47c;
+    box-shadow: 0 14px 34px rgba(0,0,0,.18);
+}
+
+.membership-cta--dark {
+    color: #fff;
+    background: #132419;
+    border-color: #132419;
+}
+
+.membership-cta--dark:hover {
+    color: #C5A367;
+    background: #0d1c13;
+    border-color: #132419;
+}
+
+.membership-card-cta {
+    width: auto;
+    min-width: 190px;
+    min-height: 54px;
+    padding: 1rem 1.55rem;
+    margin-top: 0.35rem;
+    background: rgba(197,163,103,.035);
+    border-color: rgba(197,163,103,.62);
+}
+
+.membership-card-cta:hover {
+    background: #C5A367;
+    color: #132419;
+    border-color: #C5A367;
+    box-shadow: 0 10px 26px rgba(0,0,0,.18);
+}
+
+.membership-option-card {
+    position: relative;
+    transition:
+        transform .32s ease,
+        border-color .32s ease,
+        background-color .32s ease,
+        box-shadow .32s ease;
+}
+
+.membership-option-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(197,163,103,.78);
+    background: rgba(255,255,255,.045);
+    box-shadow: 0 18px 45px rgba(0,0,0,.16);
+}
+
+@media (max-width: 639px) {
+    .membership-cta {
+        width: 100%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+</style>
+
+<style>
+/* PREMIUM MEMBERSHIP SECTION REDESIGN */
+
+/* HERO */
+.membership-campaign-hero {
+    max-width: 920px;
+    padding: 4.5rem 3rem;
+    border: 1px solid rgba(197,163,103,.28);
+    background:
+        radial-gradient(circle at 50% 0%, rgba(197,163,103,.11), transparent 44%),
+        linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,.008));
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.24),
+        inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.membership-campaign-hero::before,
+.membership-campaign-hero::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(197,163,103,.7));
+}
+
+.membership-campaign-hero::before {
+    left: -36px;
+}
+
+.membership-campaign-hero::after {
+    right: -36px;
+    transform: rotate(180deg);
+}
+
+
+/* WHY DUDLEY */
+.why-dudley-card {
+    position: relative;
+    min-height: 215px;
+    padding: 2.4rem 2.2rem;
+    overflow: hidden;
+    border-color: rgba(197,163,103,.24);
+    background:
+        linear-gradient(145deg, #ffffff 0%, #fbf8f1 100%);
+    box-shadow:
+        0 16px 38px rgba(19,36,25,.07);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.why-dudley-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #C5A367;
+    transition: width .35s ease;
+}
+
+.why-dudley-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(197,163,103,.55);
+    box-shadow:
+        0 24px 55px rgba(19,36,25,.12);
+}
+
+.why-dudley-card:hover::after {
+    width: 100%;
+}
+
+.why-dudley-card h3 {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.why-dudley-card h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    height: 1px;
+    background: rgba(197,163,103,.85);
+}
+
+
+/* MEMBERSHIP OPTIONS */
+.membership-option-card {
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 2.2rem 2.5rem !important;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top, rgba(197,163,103,.075), transparent 45%),
+        rgba(255,255,255,.022) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.035),
+        0 18px 42px rgba(0,0,0,.15);
+}
+
+.membership-option-card::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 1px;
+    margin-bottom: 1.7rem;
+    background: #C5A367;
+}
+
+.membership-option-card h3 {
+    margin-bottom: 1.1rem;
+}
+
+.membership-option-card p {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membership-option-card .membership-card-cta {
+    margin-top: auto;
+}
+
+.membership-option-card--featured {
+    border-color: rgba(197,163,103,.95) !important;
+    background:
+        radial-gradient(circle at top, rgba(197,163,103,.14), transparent 48%),
+        rgba(197,163,103,.035) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05),
+        0 22px 55px rgba(0,0,0,.22);
+}
+
+.membership-option-card--featured::after {
+    content: "7 DAY";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .45rem .9rem;
+    background: #C5A367;
+    color: #132419;
+    font-size: .58rem;
+    font-weight: 700;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.membership-option-card--featured::before {
+    margin-top: 1rem;
+}
+
+.membership-option-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(197,163,103,.9);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05),
+        0 28px 65px rgba(0,0,0,.25);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .membership-campaign-hero {
+        padding: 3.25rem 1.4rem;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .membership-campaign-hero::before,
+    .membership-campaign-hero::after {
+        display: none;
+    }
+
+    .why-dudley-card {
+        min-height: auto;
+    }
+
+    .membership-option-card {
+        min-height: 290px;
+    }
+}
+</style>
+
+<style>
+/* MEMBERSHIP HERO COURSE IMAGE */
+.membership-hero-image {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8,22,14,.72) 0%,
+            rgba(10,27,18,.60) 48%,
+            rgba(8,22,14,.54) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(6,18,12,.20) 0%,
+            rgba(6,18,12,.42) 100%
+        ),
+        url("./images/dudley.webp");
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+
+.membership-hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(
+            circle at 50% 42%,
+            rgba(197,163,103,.10),
+            transparent 48%
+        );
+}
+
+.membership-hero-image .membership-campaign-hero {
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(9,25,16,.70),
+            rgba(9,25,16,.56)
+        );
+    border-color: rgba(197,163,103,.42);
+}
+
+@media (max-width: 767px) {
+    .membership-hero-image {
+        background-position: center center;
+    }
+}
+</style>
+
+<style>
+/* EDITORIAL MEMBERSHIP CARDS */
+
+.membership-option-card {
+    min-height: 285px;
+    padding: 2.7rem 2.5rem 2.25rem !important;
+    border: 0 !important;
+    border-top: 1px solid rgba(197,163,103,.62) !important;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.035) 0%,
+            rgba(255,255,255,.012) 100%
+        ) !important;
+    box-shadow:
+        0 22px 55px rgba(0,0,0,.16);
+}
+
+.membership-option-card::before {
+    width: 28px;
+    margin-bottom: 1.35rem;
+    opacity: .85;
+}
+
+.membership-option-card h3 {
+    font-size: 2.35rem;
+    line-height: 1.05;
+    margin-bottom: 1.2rem;
+}
+
+.membership-option-card p {
+    line-height: 1.7;
+}
+
+.membership-option-eyebrow {
+    margin: 0 0 .8rem !important;
+    color: #C5A367 !important;
+    font-size: .62rem !important;
+    font-weight: 700;
+    letter-spacing: .22em;
+    line-height: 1 !important;
+}
+
+.membership-option-card--featured {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(197,163,103,.11),
+            transparent 55%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(197,163,103,.045),
+            rgba(255,255,255,.012)
+        ) !important;
+    border-top-color: #C5A367 !important;
+}
+
+.membership-option-card--featured::after {
+    top: 1.4rem;
+    left: 2.5rem;
+    transform: none;
+    padding: 0;
+    background: transparent;
+    color: #C5A367;
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+}
+
+.membership-option-card--featured::before {
+    margin-top: 1.85rem;
+}
+
+
+/* Editorial text-link CTA */
+.membership-option-card .membership-card-cta {
+    position: relative;
+    width: auto;
+    min-width: 0;
+    min-height: 0;
+    margin-top: auto;
+    padding: .8rem 0 .55rem;
+    border: 0;
+    border-bottom: 1px solid rgba(197,163,103,.55);
+    background: transparent;
+    box-shadow: none;
+    color: #C5A367;
+}
+
+.membership-option-card .membership-card-cta:hover {
+    transform: none;
+    background: transparent;
+    color: #fff;
+    border-bottom-color: #C5A367;
+    box-shadow: none;
+}
+
+.membership-option-card:hover {
+    transform: translateY(-5px);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(197,163,103,.055),
+            rgba(255,255,255,.018)
+        ) !important;
+    box-shadow:
+        0 28px 65px rgba(0,0,0,.23);
+}
+
+@media (max-width: 639px) {
+    .membership-option-card {
+        min-height: 270px;
+        padding: 2.5rem 1.75rem 2.1rem !important;
+    }
+
+    .membership-option-card .membership-card-cta {
+        width: auto;
+    }
+}
+</style>
+
+<style>
+.membership-heritage-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.45rem 0 0.55rem;
+    border: 0;
+    border-bottom: 1px solid rgba(197,163,103,.72);
+    background: transparent;
+    color: #C5A367;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    transition:
+        color .28s ease,
+        border-color .28s ease,
+        transform .28s ease;
+}
+
+.membership-heritage-link::after {
+    content: "\2192";
+    font-size: 1.1rem;
+    transition: transform .28s ease;
+}
+
+.membership-heritage-link:hover {
+    color: #fff;
+    border-bottom-color: #C5A367;
+    transform: translateY(-2px);
+}
+
+.membership-heritage-link:hover::after {
+    transform: translateX(5px);
+}
+</style>
+
+<style>
+/* CAMPAIGN SEASON MARQUE */
+.membership-season-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: #C5A367;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.membership-season-label::before,
+.membership-season-label::after {
+    content: "";
+    width: 64px;
+    height: 1px;
+    background: rgba(197,163,103,.65);
+}
+
+@media (max-width: 639px) {
+    .membership-season-label {
+        gap: .7rem;
+        font-size: .66rem;
+        letter-spacing: .18em;
+    }
+
+    .membership-season-label::before,
+    .membership-season-label::after {
+        width: 24px;
+    }
+}
+</style>
 </head>
 
 <body class="bg-[#132419] text-white antialiased m-0 p-0">
@@ -549,13 +1102,13 @@
 <section id="membership" class="bg-[#0f1a13] text-white overflow-hidden">
 
     <!-- CAMPAIGN HERO -->
-    <div class="relative min-h-[78vh] flex items-center px-6 py-32 border-b border-[#C5A367]/20">
+    <div class="membership-hero-image relative min-h-[78vh] flex items-center px-6 py-32 border-b border-[#C5A367]/20">
 
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(197,163,103,0.14),transparent_45%)]"></div>
 
-        <div class="relative max-w-6xl mx-auto w-full text-center">
+        <div class="membership-campaign-hero relative max-w-6xl mx-auto w-full text-center">
 
-            <p class="serif italic text-[#C5A367] text-2xl md:text-3xl mb-6">
+            <p class="membership-season-label">
                 2026/27 Membership
             </p>
 
@@ -573,12 +1126,12 @@
 
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#experience"
-                   class="inline-flex justify-center items-center px-8 py-4 bg-[#C5A367] text-[#132419] font-semibold uppercase tracking-[0.18em] text-xs hover:opacity-90 transition">
+                   class="membership-cta membership-cta--gold">
                     Experience Dudley
                 </a>
 
                 <a href="#membership-options"
-                   class="inline-flex justify-center items-center px-8 py-4 border border-[#C5A367] text-[#C5A367] font-semibold uppercase tracking-[0.18em] text-xs hover:bg-[#C5A367]/10 transition">
+                   class="membership-cta">
                     Explore Membership
                 </a>
             </div>
@@ -609,7 +1162,7 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <div class="border border-[#C5A367]/30 p-8 bg-white">
+                <div class="why-dudley-card border border-[#C5A367]/30 p-8 bg-white">
                     <p class="text-[#C5A367] text-xs uppercase tracking-[0.25em] mb-4">01</p>
                     <h3 class="serif text-3xl mb-4">The Course</h3>
                     <p class="text-[#132419]/65 leading-relaxed">
@@ -618,7 +1171,7 @@
                     </p>
                 </div>
 
-                <div class="border border-[#C5A367]/30 p-8 bg-white">
+                <div class="why-dudley-card border border-[#C5A367]/30 p-8 bg-white">
                     <p class="text-[#C5A367] text-xs uppercase tracking-[0.25em] mb-4">02</p>
                     <h3 class="serif text-3xl mb-4">Competition</h3>
                     <p class="text-[#132419]/65 leading-relaxed">
@@ -627,7 +1180,7 @@
                     </p>
                 </div>
 
-                <div class="border border-[#C5A367]/30 p-8 bg-white">
+                <div class="why-dudley-card border border-[#C5A367]/30 p-8 bg-white">
                     <p class="text-[#C5A367] text-xs uppercase tracking-[0.25em] mb-4">03</p>
                     <h3 class="serif text-3xl mb-4">Community</h3>
                     <p class="text-[#132419]/65 leading-relaxed">
@@ -636,7 +1189,7 @@
                     </p>
                 </div>
 
-                <div class="border border-[#C5A367]/30 p-8 bg-white">
+                <div class="why-dudley-card border border-[#C5A367]/30 p-8 bg-white">
                     <p class="text-[#C5A367] text-xs uppercase tracking-[0.25em] mb-4">04</p>
                     <h3 class="serif text-3xl mb-4">Heritage</h3>
                     <p class="text-[#132419]/65 leading-relaxed">
@@ -672,7 +1225,7 @@
                 </p>
 
                 <a href="membership-1.html#enquire"
-                   class="inline-flex items-center px-8 py-4 bg-[#C5A367] text-[#132419] font-semibold uppercase tracking-[0.18em] text-xs">
+                   class="membership-cta membership-cta--gold">
                     Register Your Interest
                 </a>
             </div>
@@ -726,32 +1279,34 @@
 
             <div class="grid md:grid-cols-3 gap-6">
 
-                <div class="border border-[#C5A367] p-9 text-center bg-white/[0.04]">
+                <div class="membership-option-card membership-option-card--featured border border-[#C5A367] p-9 text-center bg-white/[0.04]">
                     <h3 class="serif text-4xl mb-5">Full Membership</h3>
                     <p class="text-white/60 leading-relaxed mb-8">
                         For golfers who want Dudley to be their complete golfing home.
                     </p>
-                    <a href="membership-1.html#categories" class="inline-flex items-center px-6 py-3 bg-[#C5A367] text-[#132419] uppercase tracking-[0.16em] text-sm font-bold rounded-sm hover:bg-white transition">
+                    <a href="membership-1.html#categories" class="membership-cta membership-card-cta">
                         Membership Details
                     </a>
                 </div>
 
-                <div class="border border-[#C5A367]/40 p-9 text-center bg-white/[0.025]">
+                <div class="membership-option-card border border-[#C5A367]/40 p-9 text-center bg-white/[0.025]">
+                    <p class="membership-option-eyebrow">5 DAY</p>
                     <h3 class="serif text-4xl mb-5">5 Day Membership</h3>
                     <p class="text-white/60 leading-relaxed mb-8">
                         Ideal for golfers whose golf is mainly played during the week.
                     </p>
-                    <a href="membership-1.html#categories" class="inline-flex items-center px-6 py-3 bg-[#C5A367] text-[#132419] uppercase tracking-[0.16em] text-sm font-bold rounded-sm hover:bg-white transition">
+                    <a href="membership-1.html#categories" class="membership-cta membership-card-cta">
                         Membership Details
                     </a>
                 </div>
 
-                <div class="border border-[#C5A367]/40 p-9 text-center bg-white/[0.025]">
+                <div class="membership-option-card border border-[#C5A367]/40 p-9 text-center bg-white/[0.025]">
+                    <p class="membership-option-eyebrow">JUNIOR</p>
                     <h3 class="serif text-4xl mb-5">Junior Membership</h3>
                     <p class="text-white/60 leading-relaxed mb-8">
                         A welcoming route into golf, club life and the future of the game.
                     </p>
-                    <a href="membership-1.html#categories" class="inline-flex items-center px-6 py-3 bg-[#C5A367] text-[#132419] uppercase tracking-[0.16em] text-sm font-bold rounded-sm hover:bg-white transition">
+                    <a href="membership-1.html#categories" class="membership-cta membership-card-cta">
                         Membership Details
                     </a>
                 </div>
@@ -782,7 +1337,7 @@
             </p>
 
             <a href="membership-1.html#categories"
-               class="inline-flex px-8 py-4 border border-[#C5A367] text-[#C5A367] uppercase tracking-[0.2em] text-xs font-semibold hover:bg-[#C5A367] hover:text-[#132419] transition">
+               class="membership-heritage-link">
                 View Membership Options
             </a>
 
@@ -808,7 +1363,7 @@
             </p>
 
             <a href="membership-1.html#enquire"
-               class="inline-flex px-9 py-4 bg-[#132419] text-white uppercase tracking-[0.2em] text-xs font-semibold">
+               class="membership-cta membership-cta--dark">
                 Enquire About Membership
             </a>
 
