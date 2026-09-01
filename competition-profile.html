@@ -381,7 +381,30 @@ ${renderClubChampionshipAwards(comp, yearBlock)}
       if (!Array.isArray(comp.winnerHistory) || !comp.winnerHistory.length) {
         return "";
       }
+      const winnerHistoryForDisplay =
+        comp.competitionFormat === "Team"
+          ? Object.values(
+            comp.winnerHistory.reduce((groups, item) => {
+              const key = `${item.year}|${item.score ?? ""}`;
 
+              if (!groups[key]) {
+                groups[key] = {
+                  ...item,
+                  winners: []
+                };
+              }
+
+              groups[key].winners.push(item.winner);
+              return groups;
+            }, {})
+          ).map(item => ({
+            ...item,
+            winner:
+              item.winners.length > 1
+                ? `${item.winners.slice(0, -1).join(", ")} & ${item.winners.at(-1)}`
+                : item.winners[0]
+          }))
+          : comp.winnerHistory;
       return `
         <section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow border border-[#C5A367]/30">
           <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] mb-3">
@@ -404,7 +427,7 @@ ${renderClubChampionshipAwards(comp, yearBlock)}
                 <span class="text-right">Score</span>
               </div>
 
-              ${comp.winnerHistory.map(item => `
+              ${winnerHistoryForDisplay.map(item => `
                 <div class="grid grid-cols-[110px_2fr_1fr] gap-4 border-b border-gray-200 py-3 text-sm">
                   <span class="font-semibold">
                     ${displayValue(item.year)}
