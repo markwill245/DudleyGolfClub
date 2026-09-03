@@ -494,6 +494,7 @@
             overflow: visible;
             overflow-wrap: break-word;
         }
+
         .course-image-shell {
             background: #08110D;
             border-bottom: 1px solid rgba(197, 163, 103, 0.12);
@@ -599,11 +600,11 @@
 
         /* DESKTOP NAVIGATION FIX */
         @media (min-width: 1280px) {
-            nav > div.hidden.xl\:flex {
+            nav>div.hidden.xl\:flex {
                 display: flex !important;
             }
 
-            nav > div.hidden.xl\:flex.justify-center {
+            nav>div.hidden.xl\:flex.justify-center {
                 font-size: 13px;
             }
 
@@ -770,7 +771,8 @@
 
                     <div class="bg-gold/10 p-6 md:p-8 border-l-2 border-[#C5A367]">
                         <p class="text-[10px] uppercase tracking-widest text-gold mb-3 font-bold">Pro Advice</p>
-                        <p id="h-tip" class="text-white italic text-sm md:text-base leading-relaxed whitespace-pre-line"></p>
+                        <p id="h-tip"
+                            class="text-white italic text-sm md:text-base leading-relaxed whitespace-pre-line"></p>
                     </div>
                 </div>
 
@@ -1437,13 +1439,16 @@
 
                 try {
                     const query = encodeURIComponent(`
-                        *[_type == "course"] | order(holeNumber asc) {
-                            holeNumber,
-                            holeName,
-                            par,
-                            yards,
-                            proTip
-                        }
+                      *[_type == "course"] | order(holeNumber asc) {
+    holeNumber,
+    holeName,
+    par,
+    yards,
+    whiteYards,
+    yellowYards,
+    redYards,
+    proTip
+}
                     `);
 
                     const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
@@ -1456,7 +1461,21 @@
                         if (!hole) return;
 
                         if (item.par) hole.par = item.par;
-                        if (item.yards) hole.y = item.yards;
+
+                        if (item.whiteYards != null) {
+                            hole.w = item.whiteYards;
+                        }
+
+                        if (item.yellowYards != null) {
+                            hole.y = item.yellowYards;
+                        } else if (item.yards != null) {
+                            hole.y = item.yards;
+                        }
+
+                        if (item.redYards != null) {
+                            hole.r = item.redYards;
+                        }
+
                         if (item.proTip) hole.tip = item.proTip;
                     });
 
@@ -1599,7 +1618,8 @@
 
             <div>
                 <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
-                <div class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
+                <div
+                    class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
                     <p class="font-serif text-2xl text-white mb-4">Dudley Golf Club</p>
                     <p class="text-white/70 leading-7 mb-6">
                         Turners Hill<br>
@@ -1607,8 +1627,7 @@
                         West Midlands
                     </p>
                     <a href="https://www.google.com/maps/search/?api=1&query=Dudley+Golf+Club+Turners+Hill+Rowley+Regis"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target="_blank" rel="noopener noreferrer"
                         class="inline-flex w-fit items-center justify-center px-5 py-3 rounded-lg border border-[#C5A367] text-[#C5A367] text-xs uppercase tracking-[0.2em] font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
                         View Map &amp; Directions
                     </a>
