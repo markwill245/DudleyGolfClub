@@ -620,7 +620,7 @@
         class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
         <div id="live-clock">Loading...</div>
         <div class="flex gap-6">
-            <span id="weather">Dudley: 14°C</span>
+            <span id="weather">Dudley: 14Â°C</span>
             <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
         </div>
     </div>
@@ -825,7 +825,7 @@
             <div class="flex justify-between items-center mb-6 border-b border-gray-200 pb-4 text-[#132419]">
                 <h3 class="serif text-3xl italic">Course Scorecard</h3>
                 <button onclick="toggleScorecard()"
-                    class="text-4xl text-gold/50 hover:text-gold transition-colors">×</button>
+                    class="text-4xl text-gold/50 hover:text-gold transition-colors">Ã—</button>
             </div>
 
             <table class="w-full text-center border-collapse overflow-hidden  shadow-xl">
@@ -866,37 +866,37 @@
             // STAFF: Hole 1 name-image-yards 
             const courseData = [
                 {
-                    number: 1, name: "The Dog-Leg", par: 5, si: 9,
+                    number: 1, name: "The Sweep", par: 5, si: 9,
                     w: 483, y: 473, r: 464,
                     images: [
                         "images/hole1.webp",
                         "images/hole1-1.webp",
                         "images/hole1-view3.webp"
                     ],
-                    desc: "A challenging start to the round requiring precision from the tee.",
-                    tip: "Find the fairway from the tee, then position your second shot carefully for the approach to the sloping green."
+                    desc: "A straight tee shot sets up this long, sweeping left-hand fairway.",
+                    tip: "Position is important before choosing the right club for the second shot, with careful judgement required on the approach to the sloping green."
                 },
                 // STAFF: Hole 2 name-image-yards 
                 {
 
-                    number: 2, name: "Risk & Reward", par: 4, si: 17,
+                    number: 2, name: "The Temptation", par: 4, si: 17,
                     w: 257, y: 251, r: 167,
                     images: ["images/hole2.webp", "images/hole2-2.webp", "images/hole2-view3.webp"],
 
                     // STAFF: Hole 2 description/ Tip 	
 
-                    desc: "Test your nerve on this tactical short hole.",
-                    tip: "Keep the tee shot under control and leave yourself a confident pitch into the narrow raised green."
+                    desc: "Short enough to tempt you, but accuracy matters more than power.",
+                    tip: "A steady tee shot leaves an accurate pitch to the narrow raised green, where mistakes can quickly turn a birdie opportunity into trouble."
                 },
                 // STAFF: Hole 3 name-image-yards 
                 {
 
-                    number: 3, name: "The Peaky Blinder", par: 4, si: 1,
+                    number: 3, name: "The Blindside", par: 4, si: 1,
                     w: 443, y: 433, r: 421,
                     images: ["images/hole3.webp", "images/hole3-3.webp", "images/hole3-view3.webp"],
                     // STAFF: Hole 3 description/ Tip 	
-                    desc: "Note the horizontal dry ditch across the fairway.",
-                    tip: "Commit to the blind tee shot and favour the left-centre of the fairway - out of bounds waits on the right."
+                    desc: "The toughest-ranked hole begins with a demanding blind tee shot, with a dry ditch crossing the fairway.",
+                    tip: "Out of bounds threatens the right for around the first 250 yards before switching to the left, while two bunkers guard the green."
                 },
                 {
                     // STAFF: Hole 4 name-image-yards   
@@ -906,8 +906,8 @@
 
                     // STAFF: Hole 4 description/ Tip 
 
-                    desc: "Short but dangerous. Club selection is everything.",
-                    tip: "Club selection is key. The bunker guarding the front makes distance control essential."
+                    desc: "Short but dangerous. Club selection is everything on this compact par 3.",
+                    tip: "Accuracy and nerve matter far more than power. Find the target and par should be within reach; miss it and this diminutive hole can quickly leave its mark."
                 },
                 {
                     // STAFF: Hole 5 name-image-yards 
@@ -917,52 +917,52 @@
 
                     //STAFF: Hole 5 description/ Tip 
 
-                    desc: "Welcome to The Gauntlet at Dudley Golf Club - three demanding holes where accuracy and course management really matter.",
-                    tip: "A controlled tee shot onto the plateau sets up the hole. Position is more important than distance."
+                    desc: "The opening challenge of Dudley's three-hole Gauntlet, where accuracy, positioning and course management become essential.",
+                    tip: "A controlled tee shot is required to reach the top of the plateau fairway. Position is more important than distance."
                 },
                 {
                     // STAFF: Hole 6 name-image-yards 
-                    number: 6, name: "Hells Corner", par: 3, si: 7,
+                    number: 6, name: "Hell's Corner", par: 3, si: 7,
                     w: 182, y: 174, r: 159,
                     images: ["images/hole6.webp", "images/hole6-6.webp", "images/hole6-view3.webp"],
 
                     // STAFF: Hole 6 description/ Tip 
 
-                    desc: "The heart of The Gauntlet, where the sloping green puts a premium on distance control.",
-                    tip: "Take enough club and favour the correct side of the green - the right-to-left slope can quickly move the ball away from the target."
+                    desc: "The heart of The Gauntlet, where distance control and precision are essential.",
+                    tip: "At 182 yards, this demanding par 3 plays to a green that slopes from right to left. Miss your line or distance and trouble quickly follows."
                 },
                 {
                     // STAFF: Hole 7 name-image-yards 
-                    number: 7, name: "The Gauntlet", par: 3, si: 5,
+                    number: 7, name: "The Narrows", par: 3, si: 5,
                     w: 199, y: 180, r: 150,
                     images: ["images/hole7.webp", "images/hole7-7.webp", "images/hole7-view3.webp"],
 
                     // STAFF: Hole 7 description/ Tip 
 
-                    desc: "The final test of The Gauntlet - little room for error and a par is always a good result.",
-                    tip: "Give yourself room from the tee and prioritise accuracy. A par here is an excellent score."
+                    desc: "The final and arguably toughest test of The Gauntlet, with very little room for error.",
+                    tip: "A steep bank to the right and an overgrown bank to the left squeeze the target. At almost 200 yards, a par here is an excellent score."
                 },
                 {
                     // STAFF: Hole 8 name-image-yards 
-                    number: 8, name: "Castle View", par: 4, si: 15,
+                    number: 8, name: "The Urals", par: 4, si: 15,
                     w: 298, y: 291, r: 272,
                     images: ["images/hole8.webp", "images/hole8-8.webp", "images/hole8-view3.webp"],
 
                     // STAFF: Hole 8 description/ Tip 
 
-                    desc: "The peak of the course with breathtaking panoramas.",
-                    tip: "Stay patient on the uphill approach. Take enough club and enjoy one of the best views on the course."
+                    desc: "A steadily uphill par 4 leading to the very top of the course, with remarkable panoramic views.",
+                    tip: "From the elevated 8th green, club folklore says the next higher ground to the east lies as far away as the Ural Mountains in Russia."
                 },
                 {
                     // STAFF: Hole9 name-image-yards 
-                    number: 9, name: "Devils Horns", par: 4, si: 11,
+                    number: 9, name: "Devil's Horns", par: 4, si: 11,
                     w: 388, y: 382, r: 314,
                     images: ["images/hole9.webp", "images/hole9-9.webp", "images/hole9-view3.webp"],
 
                     // STAFF: Hole 9 description/ Tip 
 
-                    desc: "A tight fairway that tests your ability to play the slopes.",
-                    tip: "Use the natural slopes to your advantage and avoid missing left."
+                    desc: "A tight fairway where the natural slopes need to be used intelligently.",
+                    tip: "Aim towards the two distinctive fir trees in the distance, whose silhouettes resemble devil's horns, and avoid missing right."
                 },
                 {
                     // STAFF: Hole 10 name-image-yards 
@@ -972,8 +972,8 @@
 
                     // STAFF: Hole 10 description/ Tip 
 
-                    desc: "Accuracy is rewarded on this scenic par 4.",
-                    tip: "A straight tee shot gives the best angle into the slightly raised green."
+                    desc: "A scenic par 4 set amongst the rolling, tree-lined contours of the course.",
+                    tip: "Accuracy from the tee is rewarded before an approach to the slightly raised green, nestled within the natural contours of The Dell."
                 },
                 {
                     // STAFF: Hole 11 name-image-yards 
@@ -983,19 +983,19 @@
 
                     // STAFF: Hole 11 description/ Tip 
 
-                    desc: "Stay centered to avoid the sand traps.",
-                    tip: "Aim for the heart of the green and avoid bringing the bunkers on either side into play."
+                    desc: "Accuracy is the key to this well-protected par 3.",
+                    tip: "Aim for the heart of the green and avoid the bunkers either side. If the green cannot be found, short offers the safest miss."
                 },
                 {
                     // STAFF: Hole 12 name-image-yards 
-                    number: 12, name: "Calm", par: 4, si: 18,
+                    number: 12, name: "The Invitation", par: 4, si: 18,
                     w: 269, y: 264, r: 258,
                     images: ["images/hole12.webp", "images/hole12-12.webp", "images/hole12-view3.webp"],
 
                     // STAFF: Hole 12 description/ Tip 
 
-                    desc: "A generous fairway offering a real birdie opportunity.",
-                    tip: "A strong tee shot can reach the green, but accuracy matters - bunkers guard both sides."
+                    desc: "A generous fairway and short yardage offer a genuine birdie opportunity.",
+                    tip: "At only 269 yards, the green can be reachable from the tee, but bunkers left and right provide the warning for anyone becoming too ambitious."
                 },
                 {
                     // STAFF: Hole 13 name-image-yards 
@@ -1006,19 +1006,19 @@
                     // STAFF: Hole 13 description/ Tip 
 
 
-                    desc: "A long journey home requiring strong ball striking.",
-                    tip: "Position your downhill shots carefully before taking on the late dogleg left."
+                    desc: "A true three-shot par 5 and a long journey towards home.",
+                    tip: "The hole plays slightly uphill from the tee before dropping away into a dogleg left. Three controlled shots are often wiser than chasing the green in two, with out of bounds beyond the green."
                 },
                 {
                     // STAFF: Hole 14 name-image-yards 
-                    number: 14, name: "The Snap", par: 3, si: 14,
+                    number: 14, name: "The Drop", par: 3, si: 14,
                     w: 174, y: 168, r: 154,
                     images: ["images/hole14.webp", "images/hole14-14.webp", "images/hole14-view3.webp"],
 
                     // STAFF: Hole 14 description/ Tip 
 
-                    desc: "A beautiful drop shot par 3.",
-                    tip: "Control your distance on this slightly downhill par 3 and commit to the target."
+                    desc: "A beautiful downhill par 3 where elevation makes club selection and distance judgement essential.",
+                    tip: "The green lies invitingly below, but an accurate tee shot is still required."
                 },
                 {
                     // STAFF: Hole 15 name-image-yards 
@@ -1028,19 +1028,19 @@
 
                     // STAFF: Hole 15 description/ Tip 
 
-                    desc: "Don't let the yardage fool you.",
-                    tip: "Take enough club - the uphill ground makes the hole play longer than the yardage suggests."
+                    desc: "Don't let the yardage fool you - this short par 4 plays considerably longer than it looks.",
+                    tip: "The steadily uphill ground makes the hole play longer than the scorecard suggests."
                 },
                 {
                     // STAFF: Hole 16 name-image-yards 
-                    number: 16, name: "High Pressure", par: 4, si: 2,
+                    number: 16, name: "The Crossing", par: 4, si: 2,
                     w: 436, y: 430, r: 419,
                     images: ["images/hole16.webp", "images/hole16-16.webp", "images/hole16-view3.webp"],
 
                     // STAFF: Hole 16 description/ Tip 
 
-                    desc: "Tests your nerve and power.",
-                    tip: "Respect the length and the ditch. Keep the ball in position and avoid forcing the hole."
+                    desc: "One of Dudley's sternest par 4s, demanding both length and accuracy.",
+                    tip: "A ditch around 270 yards from the tee creates the defining decision: challenge it with a powerful drive or play safely and leave a much longer approach."
                 },
                 {
                     // STAFF: Hole 17 name-image-yards 
@@ -1050,19 +1050,19 @@
 
                     // STAFF: Hole 17 description/ Tip 
 
-                    desc: "A demanding hole as you approach the clubhouse.",
-                    tip: "This demanding closing stretch rewards patience and solid ball striking from tee to green."
+                    desc: "A demanding late-round par 4 as the golfer approaches the clubhouse.",
+                    tip: "Firs guard the left, trees threaten the right and bunkers protect both sides of the green. Four good shots earn a well-deserved par."
                 },
                 {
                     // STAFF: Hole 18 name-image-yards 
-                    number: 18, name: "The Finale", par: 4, si: 12,
+                    number: 18, name: "The Homecoming", par: 4, si: 12,
                     w: 318, y: 308, r: 298,
                     images: ["images/hole18.webp", "images/hole18-18.webp", "images/hole18-view3.webp"],
 
                     // STAFF: Hole 18 description/ Tip 
 
-                    desc: "A finishing hole in front of the members.",
-                    tip: "Favour the correct side of the slight dogleg right and give yourself a confident approach into the final green."
+                    desc: "One final test as the slight dogleg right brings the golfer home in front of the members.",
+                    tip: "A tight tee shot is required before the hole turns towards the clubhouse. One last tee shot, one final walk home."
                 },
             ];
 
@@ -1315,7 +1315,7 @@
 
                 rows += `
         <tr class="bg-gold/20 font-bold text-gold">
-            <td colspan="2" class="p-3">OUT (1–9)</td>
+            <td colspan="2" class="p-3">OUT (1â€“9)</td>
             <td></td>
             <td class="p-3">${outYards}</td>
             <td></td>
@@ -1325,7 +1325,7 @@
         </tr>
 
         <tr class="bg-gold/20 font-bold text-gold">
-            <td colspan="2" class="p-3">IN (10–18)</td>
+            <td colspan="2" class="p-3">IN (10â€“18)</td>
             <td></td>
             <td class="p-3">${inYards}</td>
             <td></td>
@@ -1623,8 +1623,8 @@
 
         <div
             class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>© 2026 Dudley Golf Club</p>
-            <p>Established 1893 • Rowley Regis</p>
+            <p>Â© 2026 Dudley Golf Club</p>
+            <p>Established 1893 â€¢ Rowley Regis</p>
         </div>
     </footer>
 
@@ -1649,10 +1649,10 @@
                 const data = await response.json();
                 const temp = Math.round(data.temp);
 
-                weatherEl.textContent = `Dudley: ${temp}°C`;
+                weatherEl.textContent = `Dudley: ${temp}Â°C`;
             } catch (error) {
                 console.error("Could not fetch weather:", error);
-                weatherEl.textContent = "Dudley: --°C";
+                weatherEl.textContent = "Dudley: --Â°C";
             }
         }
 
@@ -1678,7 +1678,7 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 font-size: 20px;
 font-weight: bold;
 ">
-        ⌂
+        âŒ‚
     </a>
 
 </body>
