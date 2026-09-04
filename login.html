@@ -143,7 +143,7 @@
             </p>
 
             <p class="text-xs text-white/40 mt-6 flex items-center justify-center gap-1">
-                🔒 Secure Portal
+                ðŸ”’ Secure Portal
             </p>
         </div>
     </main>
@@ -221,8 +221,8 @@
 
         <div
             class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>© 2026 Dudley Golf Club</p>
-            <p>Established 1893 • Rowley Regis</p>
+            <p>Â© 2026 Dudley Golf Club</p>
+            <p>Established 1893 â€¢ Rowley Regis</p>
         </div>
     </footer>
     <!-- RETURN HOME BUTTON -->
@@ -245,21 +245,53 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 font-size: 20px;
 font-weight: bold;
 ">
-        ⌂
+        âŒ‚
     </a>
     <script>
-        function checkMemberPassword() {
+        async function checkMemberPassword() {
 
-            const password = document.getElementById("member-password").value.trim();
+            const input = document.getElementById("member-password");
+            const error = document.getElementById("password-error");
+            const password = input.value.trim();
 
-            if (password === "DGC1893") {
-                window.location.href = "members-area.html";
+            error.classList.add("hidden");
+
+            if (!password) {
+                error.classList.remove("hidden");
+                input.focus();
                 return;
             }
 
-            document.getElementById("password-error").classList.remove("hidden");
-            document.getElementById("member-password").value = "";
-            document.getElementById("member-password").focus();
+            try {
+                const response = await fetch("/api/member-login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ password })
+                });
+
+                if (!response.ok) {
+                    throw new Error("Login failed");
+                }
+
+                const params = new URLSearchParams(window.location.search);
+                const returnPath = params.get("return");
+
+                const safeReturn =
+                    returnPath &&
+                    returnPath.startsWith("/") &&
+                    !returnPath.startsWith("//")
+                        ? returnPath
+                        : "/members-area.html";
+
+                window.location.href = safeReturn;
+
+            } catch (errorCaught) {
+                error.classList.remove("hidden");
+                input.value = "";
+                input.focus();
+            }
         }
     </script>
 

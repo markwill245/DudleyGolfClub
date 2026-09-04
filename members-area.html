@@ -66,6 +66,13 @@
                     Club Digital Museum.
                 </p>
 
+                <button
+                    type="button"
+                    onclick="memberLogout()"
+                    class="inline-flex items-center justify-center border border-[#132419]/30 px-6 py-3 text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#132419] hover:text-white transition">
+                    Log Out
+                </button>
+
 
             </div>
 
@@ -330,6 +337,17 @@ font-weight: bold;
 
 
 
+    <script>
+        async function memberLogout() {
+            try {
+                await fetch("/api/member-logout", {
+                    method: "POST"
+                });
+            } finally {
+                window.location.href = "/login.html";
+            }
+        }
+    </script>
 </body>
 
 </html>
