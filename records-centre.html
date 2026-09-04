@@ -12,6 +12,32 @@
     content="Explore the Mens, Seniors and Club records preserved by the Dudley Golf Club Digital Museum."
   >
 
+  <script>
+    (async function redirectMemberView() {
+      try {
+        const response = await fetch(
+          "/api/member-status",
+          { cache: "no-store" }
+        );
+
+        if (!response.ok) {
+          return;
+        }
+
+        const status = await response.json();
+
+        if (status.authenticated) {
+          window.location.replace(
+            "records-centre-members-prototype.html" +
+            window.location.search
+          );
+        }
+      } catch (error) {
+        // If the status check fails, keep the public page available.
+      }
+    })();
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

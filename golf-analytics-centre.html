@@ -5,6 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golf Analytics Centre | Dudley Golf Club</title>
+  <script>
+    (async function redirectMemberView() {
+      try {
+        const response = await fetch(
+          "/api/member-status",
+          { cache: "no-store" }
+        );
+
+        if (!response.ok) {
+          return;
+        }
+
+        const status = await response.json();
+
+        if (status.authenticated) {
+          window.location.replace(
+            "golf-analytics-centre-members-prototype.html" +
+            window.location.search
+          );
+        }
+      } catch (error) {
+        // If the status check fails, keep the public page available.
+      }
+    })();
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

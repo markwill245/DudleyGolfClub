@@ -54,6 +54,10 @@ export async function onRequestPost(context) {
 
         const sessionValue = `${payload}.${signature}`;
 
+        const url = new URL(context.request.url);
+        const secureFlag =
+            url.protocol === "https:" ? "; Secure" : "";
+
         return new Response(
             JSON.stringify({ success: true }),
             {
@@ -61,7 +65,7 @@ export async function onRequestPost(context) {
                 headers: {
                     "Content-Type": "application/json",
                     "Set-Cookie":
-                        `dgc_member_session=${sessionValue}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=43200`
+                        `dgc_member_session=${sessionValue}; Path=/; HttpOnly${secureFlag}; SameSite=Lax; Max-Age=43200`
                 }
             }
         );
