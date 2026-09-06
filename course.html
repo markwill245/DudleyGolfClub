@@ -613,6 +613,174 @@
                 display: none !important;
             }
         }
+
+        /* =========================================
+   NEW COURSE GUIDE BROCHURE LAYOUT
+========================================= */
+
+        .course-info-grid {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+        }
+
+        .course-pro-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            min-height: 360px;
+        }
+
+        .course-pro-photo {
+            position: relative;
+            min-height: 360px;
+            overflow: hidden;
+        }
+
+        .course-pro-photo img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        .course-pro-photo::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(90deg,
+                    #F3ECDD 0%,
+                    rgba(243, 236, 221, 0.82) 14%,
+                    rgba(243, 236, 221, 0.15) 48%,
+                    rgba(243, 236, 221, 0) 70%);
+        }
+
+        @media (max-width: 900px) {
+            .course-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .course-pro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .course-pro-photo {
+                min-height: 380px;
+            }
+        }
+
+        /* MOCKUP COURSE TITLE */
+        .course-hole-subtitle {
+            margin-top: 10px;
+            color: rgba(19, 36, 25, 0.48);
+            text-transform: uppercase;
+            letter-spacing: 0.32em;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* MOCKUP FACTS STRIP */
+        .course-facts-strip {
+            display: flex;
+            align-items: stretch;
+            min-height: 118px;
+            background: #F9F7F2;
+            border-bottom: 1px solid rgba(197, 163, 103, 0.22);
+        }
+
+        .course-fact {
+            min-width: 150px;
+            padding: 28px 32px;
+            border-right: 1px solid rgba(19, 36, 25, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .course-fact-hole {
+            min-width: 105px;
+            justify-content: center;
+        }
+
+        .course-fact-hole span {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 44px;
+            color: #132419;
+        }
+
+        .course-fact-label {
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 12px;
+            font-weight: 700;
+            color: #132419;
+        }
+
+        .course-fact strong {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #132419;
+        }
+
+        .course-tee-facts {
+            margin-left: auto;
+            padding: 28px 38px;
+            display: flex;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .course-tee {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .course-tee strong {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            color: #132419;
+        }
+
+        .tee-dot {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid rgba(19, 36, 25, .25);
+            display: inline-block;
+        }
+
+        .tee-white {
+            background: #fff;
+        }
+
+        .tee-yellow {
+            background: #f4ca00;
+        }
+
+        .tee-red {
+            background: #c8102e;
+        }
+
+        @media (max-width: 900px) {
+            .course-facts-strip {
+                flex-wrap: wrap;
+            }
+
+            .course-fact {
+                min-width: 50%;
+                flex: 1 1 50%;
+            }
+
+            .course-tee-facts {
+                width: 100%;
+                margin-left: 0;
+                justify-content: space-around;
+            }
+        }
     </style>
 </head>
 
@@ -711,7 +879,13 @@
                         <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3">
                             Course Guide
                         </p>
-                        <h2 class="serif text-5xl md:text-7xl text-[#132419] leading-none">The 18 Holes</h2>
+                        <h2 id="course-hole-title" class="serif text-5xl md:text-7xl text-[#132419] leading-none">
+                            Hole 1 – Oakham Road
+                        </h2>
+
+                        <p class="course-hole-subtitle">
+                            A fine opening hole to set the tone
+                        </p>
                     </div>
 
                     <button onclick="toggleScorecard()" class="view-scorecard-btn !mb-0 self-start lg:self-auto">
@@ -736,51 +910,125 @@
                     <div id="h-gallery" class="course-thumbs" aria-label="Hole image thumbnails"></div>
                 </div>
 
-                <div class="p-8 md:p-12 bg-forest">
-                    <div
-                        class="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-8 border-b border-white/10 pb-6">
-                        <div>
-                            <span id="h-num" class="serif text-6xl text-gold italic"></span>
-                            <h3 id="h-name" class="serif text-5xl md:text-7xl text-white mt-2 italic tracking-wide">
-                            </h3>
+                <div class="bg-[#F9F7F2] text-[#132419] border-t border-[#C5A367]/20">
+
+                    <!-- HOLE FACTS -->
+                    <div class="course-facts-strip">
+
+                        <div class="course-fact course-fact-hole">
+                            <span id="fact-hole-number">1</span>
                         </div>
 
-                        <div class="md:text-right">
-                            <p id="h-par-si" class="serif text-3xl md:text-4xl text-gold italic"></p>
+                        <div class="course-fact">
+                            <span class="course-fact-label">Par</span>
+                            <strong id="fact-par">5</strong>
                         </div>
+
+                        <div class="course-fact">
+                            <span class="course-fact-label">Yards</span>
+                            <strong id="fact-yards">483</strong>
+                        </div>
+
+                        <div class="course-fact">
+                            <span class="course-fact-label">SI</span>
+                            <strong id="fact-si">9</strong>
+                        </div>
+
+                        <div class="course-tee-facts">
+
+                            <div class="course-tee">
+                                <span class="tee-dot tee-white"></span>
+                                <strong id="h-white"></strong>
+                            </div>
+
+                            <div class="course-tee">
+                                <span class="tee-dot tee-yellow"></span>
+                                <strong id="h-yellow"></strong>
+                            </div>
+
+                            <div class="course-tee">
+                                <span class="tee-dot tee-red"></span>
+                                <strong id="h-red"></strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="course-info-grid">
+
+                        <!-- DESCRIPTION -->
+                        <section class="p-8 md:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#C5A367]/20">
+
+                            <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-4">
+                                Hole Overview
+                            </p>
+
+                            <h4 class="serif text-4xl md:text-5xl text-[#132419] italic mb-6">
+                                Description
+                            </h4>
+
+                            <p id="h-desc" class="serif text-2xl md:text-3xl text-[#132419]/80 italic leading-relaxed">
+                            </p>
+
+                        </section>
+
+                        <!-- PRO ADVICE -->
+                        <section class="relative overflow-hidden bg-[#F3ECDD] min-h-[360px]">
+
+                            <div class="course-pro-grid">
+
+                                <div class="relative z-10 p-8 md:p-10 lg:p-12">
+
+                                    <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-4">
+                                        Professional Insight
+                                    </p>
+
+                                    <h4 class="serif text-4xl md:text-5xl text-[#132419] italic mb-2">
+                                        Pro Advice
+                                    </h4>
+
+                                    <p id="h-tip"
+                                        class="text-[#132419]/78 italic text-sm md:text-base leading-relaxed whitespace-pre-line mb-8">
+                                    </p>
+
+                                    <div>
+                                        <p class="serif text-2xl text-[#132419] italic">
+                                            Richard Prophet
+                                        </p>
+
+                                        <p class="text-[9px] uppercase tracking-[0.28em] text-[#C5A367] font-bold mt-1">
+                                            PGA Professional
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="course-pro-photo">
+
+                                    <div class="absolute inset-0 z-10 pointer-events-none"
+                                        style="background:linear-gradient(90deg,#F3ECDD 0%,rgba(243,236,221,0.82) 14%,rgba(243,236,221,0.15) 48%,rgba(243,236,221,0) 70%);">
+                                    </div>
+
+                                    <img id="pro-photo" src="" alt="Richard Prophet - Dudley Golf Club PGA Professional"
+                                        class="absolute inset-0 w-full h-full object-cover object-top">
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
                     </div>
 
-                    <div class="grid grid-cols-3 gap-2 mb-10">
-                        <div class="bg-white/5 p-4 text-center border border-white/5">
-                            <p class="text-[9px] uppercase tracking-widest text-gray-400 mb-1">White</p>
-                            <p id="h-white" class="serif text-xl text-white"></p>
-                        </div>
-
-                        <div class="bg-white/5 p-4 text-center border border-white/5">
-                            <p class="text-[9px] uppercase tracking-widest text-yellow-400 mb-1">Yellow</p>
-                            <p id="h-yellow" class="serif text-xl text-yellow-400"></p>
-                        </div>
-
-                        <div class="bg-white/5 p-4 text-center border border-white/5">
-                            <p class="text-[9px] uppercase tracking-widest text-red-500 mb-1">Red</p>
-                            <p id="h-red" class="serif text-xl text-red-500"></p>
-                        </div>
-                    </div>
-
-                    <p id="h-desc" class="serif text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-10"></p>
-
-                    <div class="bg-gold/10 p-6 md:p-8 border-l-2 border-[#C5A367]">
-                        <p class="text-[10px] uppercase tracking-widest text-gold mb-3 font-bold">Pro Advice</p>
-                        <p id="h-tip"
-                            class="text-white italic text-sm md:text-base leading-relaxed whitespace-pre-line"></p>
-                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    </main>
+
+
+    <!-- PREMIUM LIGHTBOX (OUTSIDE MAIN) -->
 
     <!-- PREMIUM LIGHTBOX (OUTSIDE MAIN) -->
     <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-6">
@@ -1147,7 +1395,12 @@
 
                 setText("h-num", String(n).padStart(2, "0"));
                 setText("h-name", hole.name);
+                setText("course-hole-title", `Hole ${n} – ${hole.name}`);
                 setText("h-par-si", `P${hole.par} / S${hole.si}`);
+                setText("fact-hole-number", n);
+                setText("fact-par", hole.par);
+                setText("fact-yards", hole.w);
+                setText("fact-si", hole.si);
                 setText("h-white", hole.w);
                 setText("h-yellow", hole.y);
                 setText("h-red", hole.r);
@@ -1439,28 +1692,51 @@
 
                 try {
                     const query = encodeURIComponent(`
-                      *[_type == "course"] | order(holeNumber asc) {
-    holeNumber,
-    holeName,
-    par,
-    yards,
-    whiteYards,
-    yellowYards,
-    redYards,
-    proTip
+{
+    "holes": *[_type == "course"] | order(holeNumber asc) {
+        holeNumber,
+        holeName,
+        par,
+        yards,
+        whiteYards,
+        yellowYards,
+        redYards,
+        description,
+        proTip
+    },
+
+    "professional": *[
+        _type == "staff"
+        && name match "Richard*"
+    ][0] {
+        name,
+        photo {
+            asset-> {
+                url
+            }
+        }
+    }
 }
-                    `);
+`);
 
                     const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
                     const response = await fetch(url, { signal: controller.signal });
                     const data = await response.json();
-                    const sanityHoles = data.result || [];
+
+                    const sanityHoles = data.result?.holes || [];
+                    const professional = data.result?.professional || null;
+
+                    const proPhoto = document.getElementById("pro-photo");
+
+                    if (proPhoto && professional?.photo?.asset?.url) {
+                        proPhoto.src = professional.photo.asset.url;
+                    }
 
                     sanityHoles.forEach(item => {
                         const hole = courseData.find(h => h.number === item.holeNumber);
                         if (!hole) return;
                         if (item.holeName) hole.name = item.holeName;
-
+                        if (item.description) hole.desc = item.description;
                         if (item.par) hole.par = item.par;
 
                         if (item.whiteYards != null) {
@@ -1588,13 +1864,15 @@
             </div>
 
             <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore The Club</h4>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore
+                    The Club</h4>
                 <div class="flex flex-col gap-3 text-sm text-white/70">
                     <a href="course.html" class="hover:text-[#C5A367] transition">Course Guide</a>
                     <a href="the-gauntlet.html" class="hover:text-[#C5A367] transition">The Gauntlet</a>
                     <a href="history.html" class="hover:text-[#C5A367] transition">History</a>
                     <a href="digital-museum.html" class="hover:text-[#C5A367] transition">Digital Museum</a>
-                    <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
+                    <a href="hospitality.html" class="hover:text-[#C5A367] transition">Hospitality &
+                        Events</a>
                     <a href="pro-shop.html" class="hover:text-[#C5A367] transition">Pro Shop</a>
                     <a href="visitors.html" class="hover:text-[#C5A367] transition">Visitors</a>
                     <a href="membership.html" class="hover:text-[#C5A367] transition">Membership</a>
@@ -1605,9 +1883,11 @@
             </div>
 
             <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links
+                </h4>
                 <div class="flex flex-col gap-3 text-sm text-white/70">
-                    <a href="visitor-booking.html" class="hover:text-[#C5A367] transition">Book a Tee Time</a>
+                    <a href="visitor-booking.html" class="hover:text-[#C5A367] transition">Book a Tee
+                        Time</a>
                     <a href="members-login.html" class="hover:text-[#C5A367] transition">Member iGolf</a>
                     <a href="login.html" class="hover:text-[#C5A367] transition">Members Portal</a>
                     <a href="https://www.facebook.com/DudleyGolfClub"
@@ -1618,7 +1898,8 @@
             </div>
 
             <div>
-                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us
+                </h4>
                 <div
                     class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
                     <p class="font-serif text-2xl text-white mb-4">Dudley Golf Club</p>
