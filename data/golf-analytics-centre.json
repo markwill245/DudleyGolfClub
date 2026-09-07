@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-09-07T17:56:22.197Z",
+  "generatedAt": "2026-09-07T20:32:38.753Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -19,13 +19,13 @@
   "totals": {
     "canonicalPlayers": 664,
     "playersWithAnalytics": 305,
-    "eligibleEvents": 211,
-    "eligibleRows": 8689,
-    "includedNettRounds": 3334,
+    "eligibleEvents": 212,
+    "eligibleRows": 8727,
+    "includedNettRounds": 3372,
     "includedStablefordRounds": 5354,
     "excludedTeamEvents": 116,
     "excludedEvents": 94,
-    "excludedNonFinishers": 748,
+    "excludedNonFinishers": 754,
     "excludedUnknownPlayers": 0,
     "excludedExternalParticipants": 14,
     "excludedMultiPlayerRows": 0,
@@ -3349,10 +3349,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 6,
-                  "average": 75.8,
+                  "rounds": 7,
+                  "average": 76.3,
                   "best": 68,
-                  "averageHandicap": 13.2,
+                  "averageHandicap": 13,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -3418,6 +3418,17 @@
                       "nett": 86,
                       "handicap": 12,
                       "position": 36,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 79,
+                      "handicap": 12,
+                      "position": 33,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -4506,9 +4517,9 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 8,
-                  "average": 76.8,
-                  "best": 68,
+                  "rounds": 9,
+                  "average": 75.7,
+                  "best": 67,
                   "averageHandicap": 7.3,
                   "evidence": [
                     {
@@ -4597,6 +4608,17 @@
                       "nett": 76,
                       "handicap": 8,
                       "position": 23,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 67,
+                      "handicap": 8,
+                      "position": 1,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -8990,11 +9012,23 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
+                  "rounds": 1,
+                  "average": 72,
+                  "best": 72,
+                  "averageHandicap": 11,
+                  "evidence": [
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 72,
+                      "handicap": 11,
+                      "position": 10,
+                      "source": "certified-medal-nett"
+                    }
+                  ]
                 },
                 "stableford": {
                   "rounds": 1,
@@ -14787,10 +14821,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 73.6,
+                  "rounds": 8,
+                  "average": 73.5,
                   "best": 69,
-                  "averageHandicap": 10.9,
+                  "averageHandicap": 10.8,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -14867,6 +14901,17 @@
                       "nett": 70,
                       "handicap": 11,
                       "position": 6,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 73,
+                      "handicap": 10,
+                      "position": 14,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -18228,10 +18273,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 4,
+                  "rounds": 5,
                   "average": 75.8,
                   "best": 73,
-                  "averageHandicap": 20.8,
+                  "averageHandicap": 20.6,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -18275,6 +18320,17 @@
                       "nett": 74,
                       "handicap": 22,
                       "position": 20,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 20,
+                      "position": 29,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -20725,10 +20781,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 75.9,
+                  "rounds": 8,
+                  "average": 76.4,
                   "best": 69,
-                  "averageHandicap": 20.1,
+                  "averageHandicap": 20.3,
                   "evidence": [
                     {
                       "date": "2026-03-28",
@@ -20805,6 +20861,17 @@
                       "nett": 70,
                       "handicap": 21,
                       "position": 10,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 80,
+                      "handicap": 21,
+                      "position": 35,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -21665,11 +21732,23 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
+                  "rounds": 1,
+                  "average": 74,
+                  "best": 74,
+                  "averageHandicap": 24,
+                  "evidence": [
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 74,
+                      "handicap": 24,
+                      "position": 18,
+                      "source": "certified-medal-nett"
+                    }
+                  ]
                 },
                 "stableford": {
                   "rounds": 3,
@@ -23333,10 +23412,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 74.5,
+                  "rounds": 3,
+                  "average": 75.7,
                   "best": 74,
-                  "averageHandicap": 26.5,
+                  "averageHandicap": 26,
                   "evidence": [
                     {
                       "date": "2026-06-06",
@@ -23358,6 +23437,17 @@
                       "nett": 74,
                       "handicap": 26,
                       "position": 7,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 78,
+                      "handicap": 25,
+                      "position": 31,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -26910,10 +27000,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 75.5,
+                  "rounds": 3,
+                  "average": 74.3,
                   "best": 62,
-                  "averageHandicap": 27,
+                  "averageHandicap": 26,
                   "evidence": [
                     {
                       "date": "2026-06-27",
@@ -26936,6 +27026,17 @@
                       "handicap": 27,
                       "eventPosition": 39,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 72,
+                      "handicap": 24,
+                      "position": 9,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -28789,10 +28890,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 6,
-                  "average": 82.8,
+                  "rounds": 7,
+                  "average": 82.3,
                   "best": 78,
-                  "averageHandicap": 21.2,
+                  "averageHandicap": 21.4,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -28858,6 +28959,17 @@
                       "nett": 86,
                       "handicap": 22,
                       "position": 37,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 79,
+                      "handicap": 23,
+                      "position": 34,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -29750,10 +29862,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 73.5,
+                  "rounds": 5,
+                  "average": 73.8,
                   "best": 67,
-                  "averageHandicap": 13,
+                  "averageHandicap": 12.8,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -29798,6 +29910,17 @@
                       "handicap": 13,
                       "eventPosition": 16,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 75,
+                      "handicap": 12,
+                      "position": 23,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -39894,11 +40017,23 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
+                  "rounds": 1,
+                  "average": 70,
+                  "best": 70,
+                  "averageHandicap": 23,
+                  "evidence": [
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 70,
+                      "handicap": 23,
+                      "position": 5,
+                      "source": "certified-medal-nett"
+                    }
+                  ]
                 },
                 "stableford": {
                   "rounds": 11,
@@ -45384,10 +45519,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 74.4,
+                  "rounds": 6,
+                  "average": 73.8,
                   "best": 67,
-                  "averageHandicap": 7.8,
+                  "averageHandicap": 8,
                   "evidence": [
                     {
                       "date": "2026-03-28",
@@ -45442,6 +45577,17 @@
                       "nett": 74,
                       "handicap": 8,
                       "position": 21,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 71,
+                      "handicap": 9,
+                      "position": 6,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -50295,10 +50441,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 1,
-                  "average": 85,
-                  "best": 85,
-                  "averageHandicap": 22,
+                  "rounds": 2,
+                  "average": 82.5,
+                  "best": 80,
+                  "averageHandicap": 23,
                   "evidence": [
                     {
                       "date": "2026-05-02",
@@ -50309,6 +50455,17 @@
                       "nett": 85,
                       "handicap": 22,
                       "position": 42,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 80,
+                      "handicap": 24,
+                      "position": 37,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -51192,10 +51349,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 75.9,
+                  "rounds": 8,
+                  "average": 75.6,
                   "best": 71,
-                  "averageHandicap": 8.7,
+                  "averageHandicap": 9,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -51272,6 +51429,17 @@
                       "nett": 76,
                       "handicap": 9,
                       "position": 26,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 74,
+                      "handicap": 11,
+                      "position": 17,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -59470,10 +59638,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 81.7,
+                  "rounds": 4,
+                  "average": 80.3,
                   "best": 73,
-                  "averageHandicap": 27.7,
+                  "averageHandicap": 27.8,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -59506,6 +59674,17 @@
                       "nett": 85,
                       "handicap": 28,
                       "position": 35,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 28,
+                      "position": 25,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -63506,10 +63685,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 72.7,
+                  "rounds": 4,
+                  "average": 73.5,
                   "best": 71,
-                  "averageHandicap": 22,
+                  "averageHandicap": 22.3,
                   "evidence": [
                     {
                       "date": "2026-06-06",
@@ -63543,6 +63722,17 @@
                       "handicap": 22,
                       "eventPosition": 33,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 23,
+                      "position": 24,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -65148,10 +65338,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 76.1,
+                  "rounds": 8,
+                  "average": 76.6,
                   "best": 67,
-                  "averageHandicap": 21.6,
+                  "averageHandicap": 21.8,
                   "evidence": [
                     {
                       "date": "2026-03-28",
@@ -65228,6 +65418,17 @@
                       "nett": 76,
                       "handicap": 22,
                       "position": 24,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 80,
+                      "handicap": 23,
+                      "position": 36,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -72953,10 +73154,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 6,
-                  "average": 70.7,
+                  "rounds": 7,
+                  "average": 71,
                   "best": 65,
-                  "averageHandicap": 11.8,
+                  "averageHandicap": 11.7,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -73022,6 +73223,17 @@
                       "nett": 73,
                       "handicap": 11,
                       "position": 15,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 73,
+                      "handicap": 11,
+                      "position": 11,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -79325,10 +79537,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 80.3,
-                  "best": 74,
-                  "averageHandicap": 12.5,
+                  "rounds": 5,
+                  "average": 78.8,
+                  "best": 73,
+                  "averageHandicap": 12.8,
                   "evidence": [
                     {
                       "date": "2026-03-28",
@@ -79372,6 +79584,17 @@
                       "nett": 87,
                       "handicap": 13,
                       "position": 38,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 73,
+                      "handicap": 14,
+                      "position": 12,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -83549,10 +83772,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 6,
-                  "average": 71.3,
+                  "rounds": 7,
+                  "average": 70.9,
                   "best": 67,
-                  "averageHandicap": 11.2,
+                  "averageHandicap": 11,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -83618,6 +83841,17 @@
                       "nett": 67,
                       "handicap": 11,
                       "position": 3,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 68,
+                      "handicap": 10,
+                      "position": 2,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -84617,9 +84851,9 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 73.3,
-                  "best": 72,
+                  "rounds": 4,
+                  "average": 72.5,
+                  "best": 70,
                   "averageHandicap": 8.3,
                   "evidence": [
                     {
@@ -84654,6 +84888,17 @@
                       "handicap": 9,
                       "eventPosition": 48,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 70,
+                      "handicap": 8,
+                      "position": 4,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -86784,10 +87029,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 79,
+                  "rounds": 3,
+                  "average": 78,
                   "best": 76,
-                  "averageHandicap": 11.5,
+                  "averageHandicap": 11.7,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -86809,6 +87054,17 @@
                       "nett": 82,
                       "handicap": 12,
                       "position": 34,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 12,
+                      "position": 27,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -89944,11 +90200,23 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
+                  "rounds": 1,
+                  "average": 79,
+                  "best": 79,
+                  "averageHandicap": 17,
+                  "evidence": [
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 79,
+                      "handicap": 17,
+                      "position": 32,
+                      "source": "certified-medal-nett"
+                    }
+                  ]
                 },
                 "stableford": {
                   "rounds": 3,
@@ -91630,8 +91898,8 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 74.5,
+                  "rounds": 3,
+                  "average": 74,
                   "best": 72,
                   "averageHandicap": 23,
                   "evidence": [
@@ -91655,6 +91923,17 @@
                       "nett": 72,
                       "handicap": 23,
                       "position": 2,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 73,
+                      "handicap": 23,
+                      "position": 15,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -95944,10 +96223,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 74,
+                  "rounds": 6,
+                  "average": 75.5,
                   "best": 69,
-                  "averageHandicap": 18,
+                  "averageHandicap": 17.8,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -96003,6 +96282,17 @@
                       "handicap": 18,
                       "eventPosition": 27,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 83,
+                      "handicap": 17,
+                      "position": 38,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -98614,10 +98904,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 75.9,
+                  "rounds": 8,
+                  "average": 75.4,
                   "best": 68,
-                  "averageHandicap": 9.4,
+                  "averageHandicap": 9.3,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -98694,6 +98984,17 @@
                       "nett": 74,
                       "handicap": 8,
                       "position": 20,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 72,
+                      "handicap": 8,
+                      "position": 7,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -100356,10 +100657,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 75.6,
+                  "rounds": 6,
+                  "average": 75.3,
                   "best": 70,
-                  "averageHandicap": 6.6,
+                  "averageHandicap": 6.5,
                   "evidence": [
                     {
                       "date": "2026-03-28",
@@ -100414,6 +100715,17 @@
                       "nett": 73,
                       "handicap": 7,
                       "position": 15,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 74,
+                      "handicap": 6,
+                      "position": 19,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -102968,10 +103280,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 76.6,
+                  "rounds": 6,
+                  "average": 76.5,
                   "best": 74,
-                  "averageHandicap": 13.4,
+                  "averageHandicap": 13.7,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -103026,6 +103338,17 @@
                       "nett": 80,
                       "handicap": 15,
                       "position": 32,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 15,
+                      "position": 30,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -107434,10 +107757,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 70,
+                  "rounds": 4,
+                  "average": 70.8,
                   "best": 66,
-                  "averageHandicap": 17.3,
+                  "averageHandicap": 16.8,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -107471,6 +107794,17 @@
                       "handicap": 16,
                       "eventPosition": 17,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 73,
+                      "handicap": 15,
+                      "position": 13,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -108723,8 +109057,8 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 76.1,
+                  "rounds": 8,
+                  "average": 75.8,
                   "best": 73,
                   "averageHandicap": 11.6,
                   "evidence": [
@@ -108802,6 +109136,17 @@
                       "numberOfHoles": 18,
                       "nett": 74,
                       "handicap": 11,
+                      "position": 16,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 73,
+                      "handicap": 12,
                       "position": 16,
                       "source": "certified-medal-nett"
                     }
@@ -110924,8 +111269,8 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 72.7,
+                  "rounds": 4,
+                  "average": 73,
                   "best": 69,
                   "averageHandicap": 14,
                   "evidence": [
@@ -110961,6 +111306,17 @@
                       "handicap": 14,
                       "eventPosition": 13,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 74,
+                      "handicap": 14,
+                      "position": 20,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -116185,10 +116541,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 71,
+                  "rounds": 5,
+                  "average": 72,
                   "best": 69,
-                  "averageHandicap": 11.5,
+                  "averageHandicap": 11.4,
                   "evidence": [
                     {
                       "date": "2026-04-18",
@@ -116233,6 +116589,17 @@
                       "handicap": 11,
                       "eventPosition": 6,
                       "source": "explicit-multi-round-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 11,
+                      "position": 28,
+                      "source": "certified-medal-nett"
                     }
                   ]
                 },
@@ -119341,8 +119708,8 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 7,
-                  "average": 73,
+                  "rounds": 8,
+                  "average": 73.3,
                   "best": 66,
                   "averageHandicap": 5,
                   "evidence": [
@@ -119421,6 +119788,17 @@
                       "nett": 79,
                       "handicap": 5,
                       "position": 29,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 75,
+                      "handicap": 5,
+                      "position": 22,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -121284,10 +121662,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 78.2,
+                  "rounds": 6,
+                  "average": 77.7,
                   "best": 72,
-                  "averageHandicap": 14.8,
+                  "averageHandicap": 15,
                   "evidence": [
                     {
                       "date": "2026-05-02",
@@ -121342,6 +121720,17 @@
                       "nett": 72,
                       "handicap": 15,
                       "position": 14,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 75,
+                      "handicap": 16,
+                      "position": 21,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -128748,11 +129137,23 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
+                  "rounds": 1,
+                  "average": 72,
+                  "best": 72,
+                  "averageHandicap": 14,
+                  "evidence": [
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 72,
+                      "handicap": 14,
+                      "position": 8,
+                      "source": "certified-medal-nett"
+                    }
+                  ]
                 },
                 "stableford": {
                   "rounds": 2,
@@ -130369,9 +130770,9 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 75.2,
-                  "best": 73,
+                  "rounds": 6,
+                  "average": 74.3,
+                  "best": 70,
                   "averageHandicap": 20,
                   "evidence": [
                     {
@@ -130427,6 +130828,17 @@
                       "nett": 75,
                       "handicap": 20,
                       "position": 22,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 70,
+                      "handicap": 20,
+                      "position": 3,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -137410,10 +137822,10 @@
               },
               "eighteenHole": {
                 "nett": {
-                  "rounds": 5,
-                  "average": 74.4,
+                  "rounds": 6,
+                  "average": 74.7,
                   "best": 70,
-                  "averageHandicap": 8,
+                  "averageHandicap": 8.2,
                   "evidence": [
                     {
                       "date": "2026-03-28",
@@ -137468,6 +137880,17 @@
                       "nett": 74,
                       "handicap": 9,
                       "position": 19,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-05",
+                      "competitionId": "september-medal",
+                      "competitionName": "September medal",
+                      "round": 1,
+                      "numberOfHoles": 18,
+                      "nett": 76,
+                      "handicap": 9,
+                      "position": 26,
                       "source": "certified-medal-nett"
                     }
                   ]
