@@ -632,7 +632,7 @@
         .course-pro-photo {
             position: relative;
             min-height: 360px;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .course-pro-photo img {
@@ -647,7 +647,10 @@
         .course-pro-photo::after {
             content: "";
             position: absolute;
-            inset: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: -60px;
             pointer-events: none;
             background:
                 linear-gradient(90deg,
