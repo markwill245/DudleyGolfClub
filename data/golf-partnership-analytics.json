@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1-prototype",
-  "generatedAt": "2026-09-01T19:53:22.138Z",
+  "generatedAt": "2026-09-07T17:56:30.831Z",
   "status": "Prototype - partnership analytics not yet certified",
   "methodology": {
     "partnerships": "Two-player team events only",
@@ -11059,6 +11059,70 @@
       ]
     },
     {
+      "section": "Seniors",
+      "players": [
+        "Keith Brian Culwick",
+        "Stephen Price"
+      ],
+      "appearances": 3,
+      "headlineEligible": false,
+      "wins": 1,
+      "winRate": 33.3,
+      "top3": 3,
+      "top5": 3,
+      "averageFinish": 2,
+      "bestFinish": 1,
+      "formats": {
+        "Greensomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 20,
+              "bestScore": 20
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-06-12",
+          "year": 2025,
+          "competitionId": "seniors-greensomes",
+          "competitionName": "Seniors Greensomes",
+          "format": "Greensomes",
+          "position": 2,
+          "score": 33
+        },
+        {
+          "date": "2026-07-13",
+          "year": 2026,
+          "competitionId": "seniors-bruce-mansell-foursomes",
+          "competitionName": "Seniors Bruce Mansell Foursomes",
+          "format": "Foursomes",
+          "position": 1,
+          "score": 33
+        },
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 3,
+          "score": 20
+        }
+      ]
+    },
+    {
       "section": "Mens",
       "players": [
         "Brett Denis Gilbert",
@@ -14218,45 +14282,47 @@
     {
       "section": "Seniors",
       "players": [
-        "Keith Brian Culwick",
-        "Stephen Price"
+        "John W. T. Mc'ewan",
+        "Michael John Walter Horne"
       ],
       "appearances": 2,
       "headlineEligible": false,
       "wins": 1,
       "winRate": 50,
-      "top3": 2,
+      "top3": 1,
       "top5": 2,
-      "averageFinish": 1.5,
+      "averageFinish": 2.5,
       "bestFinish": 1,
       "formats": {
-        "Greensomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Foursomes": {
-          "appearances": 1,
-          "scoreTypes": {}
+        "Pairs": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 2,
+              "averageScore": 21,
+              "bestScore": 20
+            }
+          }
         }
       },
       "evidence": [
         {
-          "date": "2025-06-12",
+          "date": "2025-09-08",
           "year": 2025,
-          "competitionId": "seniors-greensomes",
-          "competitionName": "Seniors Greensomes",
-          "format": "Greensomes",
-          "position": 2,
-          "score": 33
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 1,
+          "score": 22
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-09-07",
           "year": 2026,
-          "competitionId": "seniors-bruce-mansell-foursomes",
-          "competitionName": "Seniors Bruce Mansell Foursomes",
-          "format": "Foursomes",
-          "position": 1,
-          "score": 33
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 4,
+          "score": 20
         }
       ]
     },
@@ -20031,44 +20097,6 @@
     {
       "section": "Seniors",
       "players": [
-        "John W. T. Mc'ewan",
-        "Michael John Walter Horne"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 1,
-      "winRate": 100,
-      "top3": 1,
-      "top5": 1,
-      "averageFinish": 1,
-      "bestFinish": 1,
-      "formats": {
-        "Pairs": {
-          "appearances": 1,
-          "scoreTypes": {
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 22,
-              "bestScore": 22
-            }
-          }
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-09-08",
-          "year": 2025,
-          "competitionId": "seniors-roy-birch-trophy",
-          "competitionName": "Seniors Roy Birch Trophy",
-          "format": "Pairs",
-          "position": 1,
-          "score": 22
-        }
-      ]
-    },
-    {
-      "section": "Seniors",
-      "players": [
         "Eric Edwards",
         "Raymond Saunders"
       ],
@@ -20159,6 +20187,44 @@
           "format": "Greensomes",
           "position": 1,
           "score": 30
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Keith Ratcliffe",
+        "M.j. Davies"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 1,
+      "winRate": 100,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 1,
+      "bestFinish": 1,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 24,
+              "bestScore": 24
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 1,
+          "score": 24
         }
       ]
     },
@@ -38335,6 +38401,348 @@
           "format": "Greensomes",
           "position": 12,
           "score": 39
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Keith John Woodall",
+        "Pavittar Singh"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 2,
+      "bestFinish": 2,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 23,
+              "bestScore": 23
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 2,
+          "score": 23
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Brian Douglas Perry",
+        "Kevin John Hartland"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 1,
+      "averageFinish": 5,
+      "bestFinish": 5,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 20,
+              "bestScore": 20
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 5,
+          "score": 20
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "James Marsh Derrer",
+        "Stephen Hall"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 6,
+      "bestFinish": 6,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 20,
+              "bestScore": 20
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 6,
+          "score": 20
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Keith Durbridge",
+        "Michael John Kendrick"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 7,
+      "bestFinish": 7,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 19,
+              "bestScore": 19
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 7,
+          "score": 19
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Kenneth Brettle",
+        "M T Cowdell"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 8,
+      "bestFinish": 8,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 19,
+              "bestScore": 19
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 8,
+          "score": 19
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "John Gilbert Baker",
+        "Keith Sabin"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 9,
+      "bestFinish": 9,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 18,
+              "bestScore": 18
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 9,
+          "score": 18
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Barry Thomas Lawton",
+        "Bruce Antony Mansell"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 10,
+      "bestFinish": 10,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 17,
+              "bestScore": 17
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 10,
+          "score": 17
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Ivan James Cooper",
+        "Michael William Murray"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 11,
+      "bestFinish": 11,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 16,
+              "bestScore": 16
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 11,
+          "score": 16
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Malcolm Powell",
+        "Michael Geoffrey Guise"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 12,
+      "bestFinish": 12,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 15,
+              "bestScore": 15
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-07",
+          "year": 2026,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 12,
+          "score": 15
         }
       ]
     },
