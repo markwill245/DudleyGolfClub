@@ -168,7 +168,7 @@
         class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
         <div id="live-clock">Loading...</div>
         <div class="flex gap-6">
-            <span id="weather">Dudley: --°C</span>
+            <span id="weather">Dudley: --Â°C</span>
             <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
         </div>
     </div>
@@ -275,7 +275,7 @@
                         <p class="text-[#C5A367] uppercase tracking-[0.3em] text-[10px] mb-3">Hole Five</p>
                         <h2 class="serif text-4xl md:text-6xl text-white italic">The Plateau</h2>
                         <p class="text-white/50 mt-4 max-w-2xl text-sm leading-relaxed">
-                            The opening test of The Gauntlet — a hole that demands control, judgement and
+                            The opening test of The Gauntlet â€” a hole that demands control, judgement and
                             commitment.
                         </p>
                     </div>
@@ -284,7 +284,7 @@
 
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="group relative overflow-hidden cursor-pointer border border-[#C5A367]/20"
-                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole5-1.webp')">
+                        onclick="openLightbox('/images/amen-corner/hole5-1.webp')">
                         <img src="images/amen-corner/hole5-2.webp"
                             class="w-full h-[520px] md:h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
                             width="800" height="520" loading="lazy">
@@ -296,7 +296,7 @@
                     </div>
 
                     <div class="group relative overflow-hidden cursor-pointer border border-[#C5A367]/20"
-                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole5-2.webp')">
+                        onclick="openLightbox('/images/amen-corner/hole5-2.webp')">
                         <img src="images/amen-corner/hole5-1.webp"
                             class="w-full h-[520px] md:h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
                             width="800" height="520" loading="lazy">
@@ -308,7 +308,7 @@
                     </div>
 
                     <div class="group relative overflow-hidden cursor-pointer border border-[#C5A367]/20"
-                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole5-3.webp')">
+                        onclick="openLightbox('/images/amen-corner/hole5-3.webp')">
                         <img src="images/amen-corner/hole5-3.webp"
                             class="w-full h-[520px] md:h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
                             width="800" height="520" loading="lazy">
@@ -335,7 +335,7 @@
 
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="group relative overflow-hidden cursor-pointer"
-                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole6-1.webp')">
+                        onclick="openLightbox('/images/amen-corner/hole6-1.webp')">
                         <img src="images/amen-corner/hole6-3.webp"
                             class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
                             width="800" height="520" loading="lazy">
@@ -346,7 +346,7 @@
                     </div>
 
                     <div class="group relative overflow-hidden cursor-pointer"
-                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole6-2.webp')">
+                        onclick="openLightbox('/images/amen-corner/hole6-2.webp')">
                         <img src="images/amen-corner/hole6-2.webp"
                             class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
                             width="800" height="520" loading="lazy">
@@ -357,7 +357,7 @@
                     </div>
 
                     <div class="group relative overflow-hidden cursor-pointer"
-                        onclick="openLightbox('/DGC-REBUILD/images/amen-corner/hole6-3.webp')">
+                        onclick="openLightbox('/images/amen-corner/hole6-3.webp')">
                         <img src="images/amen-corner/hole6-1.webp"
                             class="w-full h-[520px] object-cover transition duration-[1800ms] group-hover:scale-110"
                             width="800" height="520" loading="lazy">
@@ -661,10 +661,10 @@ padding:24px;
                 const data = await response.json();
                 const temp = Math.round(data.temp);
 
-                weatherEl.textContent = `Dudley: ${temp}°C`;
+                weatherEl.textContent = `Dudley: ${temp}Â°C`;
             } catch (error) {
                 console.error("Could not fetch weather:", error);
-                weatherEl.textContent = "Dudley: --°C";
+                weatherEl.textContent = "Dudley: --Â°C";
             }
         }
 
