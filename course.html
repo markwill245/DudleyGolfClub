@@ -644,27 +644,36 @@
             object-position: top center;
         }
 
+        /* Old colour overlay removed — image now fades naturally */
         .course-pro-photo::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-            background:
-                linear-gradient(90deg,
-                    #F3ECDD 0%,
-                    rgba(243, 236, 221, 0.68) 10%,
-                    rgba(243, 236, 221, 0.28) 24%,
-                    rgba(243, 236, 221, 0.08) 38%,
-                    rgba(243, 236, 221, 0) 52%);
+            display: none;
         }
 
+        /* Desktop Pro Advice image blend */
         @media (min-width: 901px) {
             .course-pro-photo {
                 width: calc(100% + 72px);
                 transform: translateX(-72px);
             }
+
+            .course-pro-photo img {
+                -webkit-mask-image: linear-gradient(90deg,
+                        transparent 0%,
+                        rgba(0, 0, 0, 0.20) 12%,
+                        rgba(0, 0, 0, 0.55) 24%,
+                        rgba(0, 0, 0, 0.85) 36%,
+                        #000 48%);
+
+                mask-image: linear-gradient(90deg,
+                        transparent 0%,
+                        rgba(0, 0, 0, 0.20) 12%,
+                        rgba(0, 0, 0, 0.55) 24%,
+                        rgba(0, 0, 0, 0.85) 36%,
+                        #000 48%);
+            }
         }
 
+        /* Mobile layout */
         @media (max-width: 900px) {
             .course-info-grid {
                 grid-template-columns: 1fr;
