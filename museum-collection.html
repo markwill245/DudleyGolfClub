@@ -30,7 +30,7 @@
     <div class="max-w-7xl mx-auto">
       <a href="digital-museum.html"
         class="inline-block text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">
-        ← Back to Museum
+        Back to Museum
       </a>
     </div>
   </header>
@@ -45,6 +45,15 @@
       Each certified catalogue item forms part of the club's digital museum and links together over 130 years of golfing history through
       competitions, players, officers and historic records.
     </p>
+
+    <figure class="mb-12 max-w-5xl mx-auto overflow-hidden rounded shadow-xl border border-[#C5A367]/30 bg-[#132419]">
+      <img src="images/museum-collection/museum-collection-overview.webp"
+        alt="Dudley Golf Club trophy and heritage collection displayed in the clubhouse cabinet"
+        class="block w-full h-auto" loading="eager">
+      <figcaption class="px-6 py-4 text-sm text-white/80">
+        Dudley Golf Club's historic trophies and silverware, preserved in the clubhouse collection.
+      </figcaption>
+    </figure>
 
     <input id="searchBox" placeholder="Search trophies, boards, artefacts..."
       class="w-full max-w-xl mb-10 px-5 py-4 border border-[#C5A367]/40 bg-white rounded">
@@ -113,11 +122,11 @@
           const imagePanel =
             item.photo
               ? `
-                <div class="relative h-56 bg-[#132419]/10 overflow-hidden">
+                <div class="relative h-80 bg-[#0B1710] overflow-hidden p-4">
                   <img
                     src="${escapeHtml(item.photo)}"
                     alt="${escapeHtml(item.name)}"
-                    class="w-full h-full object-cover"
+                    class="w-full h-full object-contain"
                     loading="lazy"
                   >
 
@@ -210,7 +219,7 @@
                         href="${escapeHtml(item.competitionUrl)}"
                         class="text-xs uppercase tracking-[0.25em] text-[#C5A367] font-bold hover:text-[#132419] transition"
                       >
-                        View Competition &rarr;
+                        View Competition
                       </a>
                     `
                     : ""}
@@ -223,7 +232,7 @@
                         rel="noopener"
                         class="text-xs uppercase tracking-[0.25em] text-[#132419] font-bold hover:text-[#C5A367] transition"
                       >
-                        View Honours Board &rarr;
+                        View Honours Board
                       </a>
                     `
                     : ""}
@@ -232,7 +241,7 @@
                     href="${escapeHtml(item.archiveUrl)}"
                     class="text-xs uppercase tracking-[0.25em] text-[#132419] hover:text-[#C5A367] transition"
                   >
-                    Competition Archive &rarr;
+                    Competition Archive
                   </a>
 
                   ${item.relatedPage
@@ -241,7 +250,7 @@
                         href="${escapeHtml(item.relatedPage)}"
                         class="text-xs uppercase tracking-[0.25em] text-[#132419] hover:text-[#C5A367] transition"
                       >
-                        View Related Page &rarr;
+                        View Related Page
                       </a>
                     `
                     : ""}
@@ -330,7 +339,7 @@
   </script>
   <button id="backToTop"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50">
-    ↑ Top
+    Back to top
   </button>
 
   <script>
