@@ -106,6 +106,16 @@
             padding-bottom: 0;
         }
 
+        .social-image {
+            display: block;
+            width: 100%;
+            max-height: 720px;
+            object-fit: contain;
+            background: #0b1710;
+            border: 1px solid rgba(197, 163, 103, .25);
+            margin-bottom: 20px;
+        }
+
         .social-date {
             color: rgba(255, 255, 255, .6);
             font-size: 0.8rem;
@@ -182,6 +192,8 @@
                         displayDate,
                         eventName,
                         description,
+                        imageAlt,
+                        image { asset->{url} },
                         buttonText,
                         buttonLink
                     }
@@ -192,7 +204,14 @@
                 );
 
                 const result = await response.json();
-                const events = result.result || [];
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+
+                const events = (result.result || []).filter(event => {
+                    if (!event.eventDate) return true;
+                    const eventDate = new Date(event.eventDate + "T00:00:00");
+                    return eventDate >= today;
+                });
 
                 if (!events.length) {
                     container.innerHTML = "<p>No club social events have been added yet.</p>";
@@ -203,6 +222,7 @@
 
                     return `
                         <div class="social-card">
+                            ${event.image?.asset?.url ? `<img class="social-image" src="${event.image.asset.url}?auto=format&w=1200" alt="${event.imageAlt || event.eventName || "Social event poster"}" loading="lazy">` : ""}
                             <div class="social-date">${event.displayDate || ""}</div>
                             <div class="social-title">${event.eventName || ""}</div>
                             <div class="social-description">${event.description || ""}</div>
