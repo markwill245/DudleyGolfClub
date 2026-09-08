@@ -91,9 +91,27 @@
                     </div>
                 </div>
 
-                <p class="text-[10px] uppercase tracking-wider mt-2 font-bold text-[#C5A367]">
-                    Current Progress: £<span id="charity-total">0</span> Raised
+                <p class="text-sm mt-4 font-bold text-[#132419]">
+                    £<span id="charity-total">0</span> raised of £<span id="charity-target">0</span> target
                 </p>
+                <div class="grid grid-cols-2 gap-4 mt-5 text-center">
+                    <div class="bg-white p-4 border border-[#C5A367]/20">
+                        <div id="charity-percent" class="serif text-3xl text-[#C5A367]">0%</div>
+                        <div class="text-[10px] uppercase tracking-wider text-gray-500">Target achieved</div>
+                    </div>
+                    <div class="bg-white p-4 border border-[#C5A367]/20">
+                        <div id="charity-supporters" class="serif text-3xl text-[#C5A367]">0</div>
+                        <div class="text-[10px] uppercase tracking-wider text-gray-500">Supporters</div>
+                    </div>
+                </div>
+                <p class="text-[10px] text-gray-400 mt-4 uppercase tracking-widest">
+                    Updated <span id="charity-updated"></span>
+                </p>
+            </div>
+
+            <div id="charity-qr-wrap" class="hidden text-center mb-8">
+                <img id="charity-qr" src="" alt="" class="w-52 h-52 mx-auto border-8 border-white shadow-md">
+                <p class="text-[10px] text-gray-500 mt-3 uppercase tracking-widest">Scan to donate via JustGiving</p>
             </div>
 
             <div class="text-center pt-4">
@@ -259,6 +277,10 @@
                     amountRaised,
                     targetAmount,
                     donationLink,
+                    supporterCount,
+                    progressUpdated,
+                    qrAlt,
+                    qrCode { asset->{url} },
                     charityName,
                     charityDescription
                 }
@@ -283,10 +305,22 @@
                 const target = Number(charity.targetAmount || 0);
 
                 setText("charity-total", amount.toLocaleString());
+                setText("charity-target", target.toLocaleString());
+                setText("charity-supporters", Number(charity.supporterCount || 0).toLocaleString());
+                setText("charity-updated", charity.progressUpdated || "");
+                setText("charity-percent", target > 0 ? Math.round((amount / target) * 100) + "%" : "0%");
 
                 const progress = document.getElementById("charity-progress");
                 if (progress && target > 0) {
                     progress.style.width = Math.min((amount / target) * 100, 100) + "%";
+                }
+
+                const qrImage = document.getElementById("charity-qr");
+                const qrWrap = document.getElementById("charity-qr-wrap");
+                if (qrImage && qrWrap && charity.qrCode?.asset?.url) {
+                    qrImage.src = charity.qrCode.asset.url;
+                    qrImage.alt = charity.qrAlt || "Scan to donate";
+                    qrWrap.classList.remove("hidden");
                 }
 
                 const donateBtn = document.getElementById("charity-donation-link");
