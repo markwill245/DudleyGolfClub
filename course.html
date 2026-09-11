@@ -644,7 +644,7 @@
             object-position: top center;
         }
 
-        /* Old colour overlay removed — image now fades naturally */
+        /* Old colour overlay removed - image now fades naturally */
         .course-pro-photo::after {
             display: none;
         }
@@ -798,6 +798,119 @@
                 justify-content: space-around;
             }
         }
+
+        /* =========================================
+           COURSE BROCHURE LAYOUT - SEPT 2026
+           Existing 3 photos stay changeable in centre.
+           New WebP hole plan is a separate right-hand map.
+        ========================================= */
+        .dgc-header-logo {
+            display: inline-flex; align-items: center; gap: 10px; text-decoration: none; flex: 0 0 auto;
+        }
+        .dgc-header-logo-mark { width: 43px; height: 52px; object-fit: contain; }
+        .dgc-header-logo-copy { display:flex; flex-direction:column; line-height:.86; }
+        .dgc-header-logo-name { font-size: 18px; letter-spacing:.035em; color:#fff; }
+        .dgc-header-logo-est { margin-top:6px; font-size:7px; letter-spacing:.34em; color:#C5A367; }
+
+        .course-guide-page {
+            background:#F9F7F2; color:#132419; padding:50px 28px 76px;
+        }
+        .course-guide-frame {
+            width:min(1560px, 100%); margin:0 auto;
+        }
+        .course-guide-selector {
+            background:#fff; border:1px solid rgba(197,163,103,.22); padding:24px 30px 20px;
+            box-shadow:0 12px 36px rgba(19,36,25,.07); margin-bottom:34px;
+        }
+        .course-guide-selector-heading {
+            display:flex; justify-content:space-between; align-items:flex-end; gap:24px;
+            border-bottom:1px solid rgba(19,36,25,.10); padding-bottom:18px; margin-bottom:18px;
+        }
+        .course-kicker { color:#C5A367; text-transform:uppercase; letter-spacing:.32em; font-size:10px; font-weight:700; margin-bottom:7px; }
+        #course-hole-title { color:#132419; font-size:clamp(2.1rem,3.3vw,4rem); line-height:.95; }
+        .course-hole-selector {
+            display:grid; grid-template-columns:repeat(18,minmax(38px,1fr)); gap:6px; width:100%; margin:0 auto;
+        }
+        #hole-nav-container .hole-card { min-height:42px; box-shadow:none !important; }
+
+        .course-brochure-grid {
+            display:grid; grid-template-columns:minmax(285px,.82fr) minmax(500px,1.45fr) minmax(275px,.76fr);
+            gap:42px; align-items:start; background:#F9F7F2;
+        }
+        .course-brochure-copy { padding:10px 0 0; }
+        .course-hole-small { font-size:12px; font-weight:700; letter-spacing:.24em; color:#132419; margin-bottom:4px; }
+        .course-brochure-name { font-size:clamp(2.8rem,4.3vw,5.1rem); line-height:.92; color:#C5A367; margin:0; }
+        .course-gold-rule { width:48px; height:3px; background:#C5A367; margin:24px 0 22px; }
+        .course-gold-rule-short { width:40px; margin:10px 0 16px; }
+        .course-brochure-description { font-family:'Cormorant Garamond',serif; font-size:1.42rem; line-height:1.36; color:rgba(19,36,25,.88); }
+        .course-brochure-facts {
+            margin-top:26px; display:grid; grid-template-columns:repeat(4,1fr); background:rgba(255,255,255,.7); border:1px solid rgba(19,36,25,.06);
+        }
+        .course-brochure-facts>div { padding:14px 11px; text-align:center; border-right:1px solid rgba(19,36,25,.13); }
+        .course-brochure-facts>div:last-child { border-right:0; }
+        .course-brochure-facts span { display:block; font-family:'Cormorant Garamond',serif; font-size:15px; margin-bottom:4px; }
+        .course-brochure-facts strong { display:block; font-family:'Cormorant Garamond',serif; font-size:29px; color:#132419; }
+        .course-brochure-facts>div:nth-child(3) strong { color:#C59B00; }
+        .course-brochure-facts>div:nth-child(4) strong { color:#B91C1C; }
+        .course-fact-si { display:none; }
+
+        .course-pro-advice { margin-top:30px; }
+        .course-pro-title { font-family:'Cormorant Garamond',serif; font-size:1.65rem; font-weight:600; color:#132419; }
+        .course-pro-inline { display:grid; grid-template-columns:96px 1fr; gap:18px; align-items:start; }
+        .course-pro-avatar {
+            width:96px; height:96px; border-radius:50%; object-fit:cover; object-position:top center; border:2px solid #C5A367;
+            box-shadow:0 7px 22px rgba(19,36,25,.12); background:#eee;
+        }
+        .course-pro-tip { font-family:'Cormorant Garamond',serif; font-size:1.12rem; line-height:1.35; font-style:italic; color:rgba(19,36,25,.85); white-space:pre-line; }
+        .course-pro-name { margin-top:12px; font-family:'Cormorant Garamond',serif; font-size:1.22rem; font-weight:700; color:#132419; }
+        .course-pro-role { margin-top:2px; font-size:.72rem; text-transform:uppercase; letter-spacing:.18em; font-weight:700; color:#C5A367; }
+
+        .course-photo-column { min-width:0; }
+        .course-main-image-wrap { height:680px; background:#e9e7df; overflow:hidden; position:relative; border:0; }
+        .course-main-image-wrap img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; cursor:zoom-in; }
+        .course-thumbs { grid-template-columns:repeat(3,1fr); gap:10px; padding:10px 0 0; background:transparent; }
+        .course-thumb-btn { height:92px; border:2px solid transparent; background:#fff; }
+        .course-thumb-btn.is-selected { border-color:#C5A367; }
+
+        .course-map-column { min-height:680px; display:flex; align-items:center; justify-content:center; padding:0 8px; }
+        .course-map-image {
+            width:100%; max-width:355px; max-height:690px; object-fit:contain; display:block; filter:drop-shadow(0 10px 16px rgba(19,36,25,.16));
+        }
+
+        @media (max-width:1250px) {
+            .course-brochure-grid { grid-template-columns:minmax(280px,.8fr) minmax(450px,1.25fr) minmax(240px,.65fr); gap:26px; }
+            .course-main-image-wrap { height:610px; }
+            .course-map-column { min-height:610px; }
+        }
+        @media (max-width:1000px) {
+            .course-hole-selector { grid-template-columns:repeat(9,1fr); }
+            .course-brochure-grid { grid-template-columns:1fr 1fr; }
+            .course-brochure-copy { grid-column:1 / -1; }
+            .course-main-image-wrap { height:560px; }
+            .course-map-column { min-height:560px; }
+        }
+        @media (max-width:700px) {
+            .course-guide-page { padding:28px 14px 48px !important; }
+            .course-guide-selector { padding:18px 14px; margin-bottom:24px; }
+            .course-guide-selector-heading { align-items:flex-start; flex-direction:column; }
+            .course-hole-selector { grid-template-columns:repeat(6,1fr) !important; }
+            .course-brochure-grid { grid-template-columns:1fr; gap:26px; }
+            .course-brochure-copy,.course-photo-column,.course-map-column { grid-column:auto; }
+            .course-brochure-name { font-size:3.2rem; }
+            .course-brochure-description { font-size:1.26rem; }
+            .course-brochure-facts { grid-template-columns:repeat(4,1fr); }
+            .course-brochure-facts>div { padding:12px 5px; }
+            .course-brochure-facts strong { font-size:24px; }
+            .course-pro-inline { grid-template-columns:82px 1fr; gap:14px; }
+            .course-pro-avatar { width:82px; height:82px; }
+            .course-main-image-wrap { height:430px; }
+            .course-thumb-btn { height:76px; }
+            .course-map-column { min-height:0; padding:10px 26px 0; }
+            .course-map-image { max-width:320px; max-height:610px; }
+            .dgc-header-logo-mark { width:36px; height:44px; }
+            .dgc-header-logo-name { font-size:15px; }
+        }
+
     </style>
 </head>
 
@@ -806,7 +919,7 @@
         class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
         <div id="live-clock">Loading...</div>
         <div class="flex gap-6">
-            <span id="weather">Dudley: 14Â°C</span>
+            <span id="weather">Dudley: 14&deg;C</span>
             <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
         </div>
     </div>
@@ -814,10 +927,12 @@
     <nav
         class="w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10 relative">
 
-        <!-- LOGO -->
-        <a href="index.html" class="flex flex-col z-[100]">
-            <span class="serif text-2xl">DUDLEY</span>
-            <span class="text-[8px] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
+        <!-- DUDLEY GOLF CLUB LOGO -->
+        <a href="index.html" class="dgc-header-logo z-[100]" aria-label="Dudley Golf Club home">
+            <span class="dgc-header-logo-copy">
+                <span class="serif dgc-header-logo-name">DUDLEY<br>GOLF CLUB</span>
+                <span class="dgc-header-logo-est">EST. 1893</span>
+            </span>
         </a>
 
         <!-- DESKTOP MENU -->
@@ -885,165 +1000,76 @@
     </nav>
 
     <!-- COURSE -->
-    <section id="course" class="bg-[#132419] px-4 py-16 md:py-20">
-        <div class="max-w-7xl mx-auto">
+    <section id="course" class="course-guide-page">
+        <div class="course-guide-frame">
 
-            <!-- TOP: DUDLEY STYLE SELECTOR -->
-            <div class="bg-[#f9f7f2] p-6 md:p-8 rounded-sm border border-[#C5A367]/20 shadow-2xl mb-0">
-                <div
-                    class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 border-b border-[#132419]/10 pb-6 mb-6">
+            <!-- HOLE SELECTOR -->
+            <div class="course-guide-selector">
+                <div class="course-guide-selector-heading">
                     <div>
-                        <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-3">
-                            Course Guide
-                        </p>
-                        <h2 id="course-hole-title" class="serif text-5xl md:text-7xl text-[#132419] leading-none">
-                            Hole 1 – Oakham Road
-                        </h2>
-
-                        <p class="course-hole-subtitle">
-                            A fine opening hole to set the tone
-                        </p>
+                        <p class="course-kicker">Course Guide</p>
+                        <h2 id="course-hole-title" class="serif">Hole 1 &ndash; Oakham Road</h2>
                     </div>
-
-                    <button onclick="toggleScorecard()" class="view-scorecard-btn !mb-0 self-start lg:self-auto">
+                    <button onclick="toggleScorecard()" class="view-scorecard-btn !mb-0">
                         <span>View Full Scorecard</span>
                     </button>
                 </div>
-
-                <div id="hole-nav-container"
-                    style="display:grid; grid-template-columns:repeat(9, minmax(0, 1fr)); gap:8px; max-width:920px; margin:0 auto;">
-                </div>
+                <div id="hole-nav-container" class="course-hole-selector"></div>
             </div>
 
-            <!-- MAIN: HERO IMAGE + HOLE DISPLAY -->
-            <div class="bg-forest rounded-b shadow-2xl overflow-visible border-x border-b border-[#C5A367]/10">
+            <!-- BROCHURE LAYOUT: details | changeable photo | standalone map -->
+            <div class="course-brochure-grid">
 
-                <div class="course-image-shell">
-                    <div class="course-main-image-wrap">
-                        <img id="h-img" src="images/hole1.webp" alt="Dudley Golf Club course hole image" loading="eager"
-                            decoding="async" fetchpriority="high">
+                <!-- LEFT: DETAILS -->
+                <div class="course-brochure-copy">
+                    <p class="course-hole-small">HOLE <span id="fact-hole-number">1</span></p>
+                    <h3 id="h-name" class="serif course-brochure-name">Oakham Road</h3>
+                    <div class="course-gold-rule"></div>
+
+                    <p id="h-desc" class="course-brochure-description"></p>
+
+                    <div class="course-brochure-facts">
+                        <div><span>Par</span><strong id="fact-par">5</strong></div>
+                        <div><span>White</span><strong id="h-white">483</strong></div>
+                        <div><span>Yellow</span><strong id="h-yellow">473</strong></div>
+                        <div><span>Red</span><strong id="h-red">464</strong></div>
+                        <div class="course-fact-si"><span>SI</span><strong id="fact-si">9</strong></div>
                     </div>
+<div class="course-pro-advice">
+                        <p class="course-pro-title">Pro Advice</p>
+                        <div class="course-gold-rule course-gold-rule-short"></div>
+                        <div class="course-pro-inline">
+                            <img id="pro-photo"
+                                src="https://cdn.sanity.io/images/c54r3a5t/production/a30fc1302a40f91214a7e01e48f7b83b9f4ba354-1254x1254.webp"
+                                alt="Richard Prophettt - Dudley Golf Club Head Professional"
+                                class="course-pro-avatar">
+                            <div>
+                                <p id="h-tip" class="course-pro-tip"></p>
+                                <p class="course-pro-name">Richard Prophettt</p>
+                                <p class="course-pro-role">Head Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- CENTRE: THREE EXISTING PHOTOS, CHANGEABLE -->
+                <div class="course-photo-column">
+                    <div class="course-main-image-wrap">
+                        <img id="h-img" src="images/hole1.webp" alt="Dudley Golf Club course hole image"
+                            loading="eager" decoding="async" fetchpriority="high">
+                    </div>
                     <div id="h-gallery" class="course-thumbs" aria-label="Hole image thumbnails"></div>
                 </div>
 
-                <div class="bg-[#F9F7F2] text-[#132419] border-t border-[#C5A367]/20">
-
-                    <!-- HOLE FACTS -->
-                    <div class="course-facts-strip">
-
-                        <div class="course-fact course-fact-hole">
-                            <span id="fact-hole-number">1</span>
-                        </div>
-
-                        <div class="course-fact">
-                            <span class="course-fact-label">Par</span>
-                            <strong id="fact-par">5</strong>
-                        </div>
-
-                        <div class="course-fact">
-                            <span class="course-fact-label">Yards</span>
-                            <strong id="fact-yards">483</strong>
-                        </div>
-
-                        <div class="course-fact">
-                            <span class="course-fact-label">SI</span>
-                            <strong id="fact-si">9</strong>
-                        </div>
-
-                        <div class="course-tee-facts">
-
-                            <div class="course-tee">
-                                <span class="tee-dot tee-white"></span>
-                                <strong id="h-white"></strong>
-                            </div>
-
-                            <div class="course-tee">
-                                <span class="tee-dot tee-yellow"></span>
-                                <strong id="h-yellow"></strong>
-                            </div>
-
-                            <div class="course-tee">
-                                <span class="tee-dot tee-red"></span>
-                                <strong id="h-red"></strong>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="course-info-grid">
-
-                        <!-- DESCRIPTION -->
-                        <section class="p-8 md:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#C5A367]/20">
-
-                            <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-4">
-                                Hole Overview
-                            </p>
-
-                            <h4 class="serif text-4xl md:text-5xl text-[#132419] italic mb-6">
-                                Description
-                            </h4>
-
-                            <p id="h-desc" class="serif text-2xl md:text-3xl text-[#132419]/80 italic leading-relaxed">
-                            </p>
-
-                        </section>
-
-                        <!-- PRO ADVICE -->
-                        <section class="relative overflow-hidden bg-[#F3ECDD] min-h-[360px]">
-
-                            <div class="course-pro-grid">
-
-                                <div class="relative z-10 p-8 md:p-10 lg:p-12">
-
-                                    <p class="text-[10px] uppercase tracking-[0.35em] text-[#C5A367] font-bold mb-4">
-                                        Professional Insight
-                                    </p>
-
-                                    <h4 class="serif text-4xl md:text-5xl text-[#132419] italic mb-2">
-                                        Pro Advice
-                                    </h4>
-
-                                    <p id="h-tip"
-                                        class="text-[#132419]/78 italic text-sm md:text-base leading-relaxed whitespace-pre-line mb-8">
-                                    </p>
-
-                                    <div>
-                                        <p class="serif text-2xl text-[#132419] italic">
-                                            Richard Prophet
-                                        </p>
-
-                                        <p class="text-[9px] uppercase tracking-[0.28em] text-[#C5A367] font-bold mt-1">
-                                            Head Professional
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                                <div class="course-pro-photo">
-
-
-
-                                    <img id="pro-photo"
-                                        src="https://cdn.sanity.io/images/c54r3a5t/production/a30fc1302a40f91214a7e01e48f7b83b9f4ba354-1254x1254.webp"
-                                        alt="Richard Prophet - Dudley Golf Club Head Professional"
-                                        class="absolute inset-0 w-full h-full object-cover object-top">
-
-                                </div>
-
-                            </div>
-
-                        </section>
-
-                    </div>
-
-                </div>
+                <!-- RIGHT: NEW HOLE MAP, ALWAYS VISIBLE -->
+                <aside class="course-map-column" aria-label="Hole layout">
+                    <img id="hole-map-img" src="images/course-maps/dudley-hole-01-oakham-road.webp"
+                        alt="Hole 1 illustrated course layout" class="course-map-image">
+                </aside>
 
             </div>
         </div>
     </section>
-
-
 
     <!-- PREMIUM LIGHTBOX (OUTSIDE MAIN) -->
 
@@ -1092,7 +1118,7 @@
             <div class="flex justify-between items-center mb-6 border-b border-gray-200 pb-4 text-[#132419]">
                 <h3 class="serif text-3xl italic">Course Scorecard</h3>
                 <button onclick="toggleScorecard()"
-                    class="text-4xl text-gold/50 hover:text-gold transition-colors">Ã—</button>
+                    class="text-4xl text-gold/50 hover:text-gold transition-colors">X</button>
             </div>
 
             <table class="w-full text-center border-collapse overflow-hidden  shadow-xl">
@@ -1133,7 +1159,8 @@
             // STAFF: Hole 1 name-image-yards 
             const courseData = [
                 {
-                    number: 1, name: "The Sweep", par: 5, si: 9,
+                    number: 1, name: "Oakham Road", par: 5, si: 9,
+                    map: "images/course-maps/dudley-hole-01-oakham-road.webp",
                     w: 483, y: 473, r: 464,
                     images: [
                         "images/hole1.webp",
@@ -1147,6 +1174,7 @@
                 {
 
                     number: 2, name: "The Temptation", par: 4, si: 17,
+                    map: "images/course-maps/dudley-hole-02-the-temptation.webp",
                     w: 257, y: 251, r: 167,
                     images: ["images/hole2.webp", "images/hole2-2.webp", "images/hole2-view3.webp"],
 
@@ -1159,7 +1187,8 @@
                 {
 
                     number: 3, name: "The Blindside", par: 4, si: 1,
-                    w: 443, y: 433, r: 421,
+                    map: "images/course-maps/dudley-hole-03-the-blindside.webp",
+                    w: 443, y: 433, r: 313,
                     images: ["images/hole3.webp", "images/hole3-3.webp", "images/hole3-view3.webp"],
                     // STAFF: Hole 3 description/ Tip 	
                     desc: "The toughest-ranked hole begins with a demanding blind tee shot, with a dry ditch crossing the fairway.",
@@ -1168,6 +1197,7 @@
                 {
                     // STAFF: Hole 4 name-image-yards   
                     number: 4, name: "The Stamp", par: 3, si: 13,
+                    map: "images/course-maps/dudley-hole-04-the-stamp.webp",
                     w: 143, y: 131, r: 119,
                     images: ["images/hole4.webp", "images/hole4-4.webp", "images/hole4-view3.webp"],
 
@@ -1179,6 +1209,7 @@
                 {
                     // STAFF: Hole 5 name-image-yards 
                     number: 5, name: "The Plateau", par: 4, si: 3,
+                    map: "images/course-maps/dudley-hole-05-the-plateau.webp",
                     w: 425, y: 415, r: 334,
                     images: ["images/hole5.webp", "images/hole5-5.webp", "images/hole5-view3.webp"],
 
@@ -1190,6 +1221,7 @@
                 {
                     // STAFF: Hole 6 name-image-yards 
                     number: 6, name: "Hell's Corner", par: 3, si: 7,
+                    map: "images/course-maps/dudley-hole-06-hells-corner.webp",
                     w: 182, y: 174, r: 159,
                     images: ["images/hole6.webp", "images/hole6-6.webp", "images/hole6-view3.webp"],
 
@@ -1201,6 +1233,7 @@
                 {
                     // STAFF: Hole 7 name-image-yards 
                     number: 7, name: "The Narrows", par: 3, si: 5,
+                    map: "images/course-maps/dudley-hole-07-the-narrows.webp",
                     w: 199, y: 180, r: 150,
                     images: ["images/hole7.webp", "images/hole7-7.webp", "images/hole7-view3.webp"],
 
@@ -1212,6 +1245,7 @@
                 {
                     // STAFF: Hole 8 name-image-yards 
                     number: 8, name: "The Urals", par: 4, si: 15,
+                    map: "images/course-maps/dudley-hole-08-the-urals.webp",
                     w: 298, y: 291, r: 272,
                     images: ["images/hole8.webp", "images/hole8-8.webp", "images/hole8-view3.webp"],
 
@@ -1223,6 +1257,7 @@
                 {
                     // STAFF: Hole9 name-image-yards 
                     number: 9, name: "Devil's Horns", par: 4, si: 11,
+                    map: "images/course-maps/dudley-hole-09-devils-horns.webp",
                     w: 388, y: 382, r: 314,
                     images: ["images/hole9.webp", "images/hole9-9.webp", "images/hole9-view3.webp"],
 
@@ -1234,6 +1269,7 @@
                 {
                     // STAFF: Hole 10 name-image-yards 
                     number: 10, name: "The Dell", par: 4, si: 16,
+                    map: "images/course-maps/dudley-hole-10-the-dell.webp",
                     w: 322, y: 310, r: 251,
                     images: ["images/hole10.webp", "images/hole10-10.webp", "images/hole10-view3.webp"],
 
@@ -1245,6 +1281,7 @@
                 {
                     // STAFF: Hole 11 name-image-yards 
                     number: 11, name: "The Trap", par: 3, si: 10,
+                    map: "images/course-maps/dudley-hole-11-the-trap.webp",
                     w: 173, y: 163, r: 105,
                     images: ["images/hole11.webp", "images/hole11-11.webp", "images/hole11-view3.webp"],
 
@@ -1256,6 +1293,7 @@
                 {
                     // STAFF: Hole 12 name-image-yards 
                     number: 12, name: "The Invitation", par: 4, si: 18,
+                    map: "images/course-maps/dudley-hole-12-the-invitation.webp",
                     w: 269, y: 264, r: 258,
                     images: ["images/hole12.webp", "images/hole12-12.webp", "images/hole12-view3.webp"],
 
@@ -1267,7 +1305,8 @@
                 {
                     // STAFF: Hole 13 name-image-yards 
                     number: 13, name: "The Stables", par: 5, si: 6,
-                    w: 523, y: 452, r: 442,
+                    map: "images/course-maps/dudley-hole-13-the-stables.webp",
+                    w: 523, y: 499, r: 442,
                     images: ["images/hole13.webp", "images/hole13-13.webp", "images/hole13-view3.webp"],
 
                     // STAFF: Hole 13 description/ Tip 
@@ -1279,6 +1318,7 @@
                 {
                     // STAFF: Hole 14 name-image-yards 
                     number: 14, name: "The Drop", par: 3, si: 14,
+                    map: "images/course-maps/dudley-hole-14-the-drop.webp",
                     w: 174, y: 168, r: 154,
                     images: ["images/hole14.webp", "images/hole14-14.webp", "images/hole14-view3.webp"],
 
@@ -1290,6 +1330,7 @@
                 {
                     // STAFF: Hole 15 name-image-yards 
                     number: 15, name: "The Climb", par: 4, si: 8,
+                    map: "images/course-maps/dudley-hole-15-the-climb.webp",
                     w: 304, y: 298, r: 294,
                     images: ["images/hole15.webp", "images/hole15-15.webp", "images/hole15-view3.webp"],
 
@@ -1301,6 +1342,7 @@
                 {
                     // STAFF: Hole 16 name-image-yards 
                     number: 16, name: "The Crossing", par: 4, si: 2,
+                    map: "images/course-maps/dudley-hole-16-the-crossing.webp",
                     w: 436, y: 430, r: 419,
                     images: ["images/hole16.webp", "images/hole16-16.webp", "images/hole16-view3.webp"],
 
@@ -1312,7 +1354,8 @@
                 {
                     // STAFF: Hole 17 name-image-yards 
                     number: 17, name: "The Firs", par: 4, si: 4,
-                    w: 416, y: 406, r: 392,
+                    map: "images/course-maps/dudley-hole-17.webp",
+                    w: 416, y: 406, r: 328,
                     images: ["images/hole17.webp", "images/hole17-17.webp", "images/hole17-view3.webp"],
 
                     // STAFF: Hole 17 description/ Tip 
@@ -1323,6 +1366,7 @@
                 {
                     // STAFF: Hole 18 name-image-yards 
                     number: 18, name: "The Homecoming", par: 4, si: 12,
+                    map: "images/course-maps/dudley-hole-18.webp",
                     w: 318, y: 308, r: 298,
                     images: ["images/hole18.webp", "images/hole18-18.webp", "images/hole18-view3.webp"],
 
@@ -1404,6 +1448,13 @@
                 img.alt = `${hole.name} - Dudley Golf Club hole ${hole.number}`;
                 img.onclick = () => openLightbox(img.src);
 
+                // STANDALONE HOLE MAP: changes with the selected hole, separate from photo gallery.
+                const mapImg = document.getElementById("hole-map-img");
+                if (mapImg && hole.map) {
+                    mapImg.src = hole.map;
+                    mapImg.alt = `${hole.name} - illustrated hole ${hole.number} layout`;
+                }
+
                 // TEXT
                 const setText = (id, val) => {
                     const el = document.getElementById(id);
@@ -1412,12 +1463,11 @@
 
                 setText("h-num", String(n).padStart(2, "0"));
                 setText("h-name", hole.name);
-                setText("course-hole-title", `Hole ${n} – ${hole.name}`);
+                setText("course-hole-title", `Hole ${n} \u2013 ${hole.name}`);
                 setText("h-par-si", `P${hole.par} / S${hole.si}`);
                 setText("fact-hole-number", n);
                 setText("fact-par", hole.par);
-                setText("fact-yards", hole.w);
-                setText("fact-si", hole.si);
+setText("fact-si", hole.si);
                 setText("h-white", hole.w);
                 setText("h-yellow", hole.y);
                 setText("h-red", hole.r);
@@ -1587,7 +1637,7 @@
 
                 rows += `
         <tr class="bg-gold/20 font-bold text-gold">
-            <td colspan="2" class="p-3">OUT (1â€“9)</td>
+            <td colspan="2" class="p-3">OUT (1&ndash;9)</td>
             <td></td>
             <td class="p-3">${outYards}</td>
             <td></td>
@@ -1597,7 +1647,7 @@
         </tr>
 
         <tr class="bg-gold/20 font-bold text-gold">
-            <td colspan="2" class="p-3">IN (10â€“18)</td>
+            <td colspan="2" class="p-3">IN (10&ndash;18)</td>
             <td></td>
             <td class="p-3">${inYards}</td>
             <td></td>
@@ -1940,8 +1990,8 @@
 
         <div
             class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>Â© 2026 Dudley Golf Club</p>
-            <p>Established 1893 â€¢ Rowley Regis</p>
+            <p>&copy; 2026 Dudley Golf Club</p>
+            <p>Established 1893 &bull; Rowley Regis</p>
         </div>
     </footer>
 
@@ -1966,10 +2016,10 @@
                 const data = await response.json();
                 const temp = Math.round(data.temp);
 
-                weatherEl.textContent = `Dudley: ${temp}Â°C`;
+                weatherEl.textContent = `Dudley: ${temp}\u00B0C`;
             } catch (error) {
                 console.error("Could not fetch weather:", error);
-                weatherEl.textContent = "Dudley: --Â°C";
+                weatherEl.textContent = "Dudley: --\u00B0C";
             }
         }
 
@@ -2001,3 +2051,47 @@ font-weight: bold;
 </body>
 
 </html>
+
+<style>
+/* LOCAL TEST &mdash; course layout graphic with no surrounding card */
+.course-layout-panel,
+.hole-layout-panel,
+.course-map-panel,
+.course-layout-wrap {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#course-layout-image,
+#hole-layout-image,
+.course-layout-image,
+.hole-layout-image {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+</style>
+
+
+<style>
+/* LOCAL TEST &mdash; remove map card/board appearance */
+.course-map-column {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.course-map-image {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+}
+</style>
+
+
+
+
