@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1-prototype",
-  "generatedAt": "2026-09-07T20:32:47.339Z",
+  "generatedAt": "2026-09-11T18:41:03.320Z",
   "status": "Prototype - partnership analytics not yet certified",
   "methodology": {
     "partnerships": "Two-player team events only",
@@ -17218,6 +17218,53 @@
     {
       "section": "Seniors",
       "players": [
+        "Kenneth Brettle",
+        "Michael Geoffrey Guise"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 9,
+      "bestFinish": 7,
+      "formats": {
+        "Pairs": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 20,
+              "bestScore": 20
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2023-09-25",
+          "year": 2023,
+          "competitionId": "seniors-roy-birch-trophy",
+          "competitionName": "Seniors Roy Birch Trophy",
+          "format": "Pairs",
+          "position": 11,
+          "score": 41
+        },
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 7,
+          "score": 20
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
         "Keith Ratcliffe",
         "Kevin Cooksey"
       ],
@@ -19135,6 +19182,53 @@
       ]
     },
     {
+      "section": "Seniors",
+      "players": [
+        "James Marsh Derrer",
+        "Keith Sabin"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 8,
+      "bestFinish": 3,
+      "formats": {
+        "Pairs": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 17,
+              "bestScore": 17
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-04-07",
+          "year": 2025,
+          "competitionId": "seniors-walker-cup",
+          "competitionName": "Seniors Walker Cup",
+          "format": "Pairs",
+          "position": 3,
+          "score": 21
+        },
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 13,
+          "score": 17
+        }
+      ]
+    },
+    {
       "section": "Mens",
       "players": [
         "Craig Biddulph",
@@ -19356,6 +19450,108 @@
           "format": "Greensomes",
           "position": 6,
           "score": 33
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Keith Durbridge",
+        "Robert Hudson"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 2,
+      "top5": 2,
+      "averageFinish": 2.5,
+      "bestFinish": 2,
+      "formats": {
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 22,
+              "bestScore": 22
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-07-13",
+          "year": 2026,
+          "competitionId": "seniors-bruce-mansell-foursomes",
+          "competitionName": "Seniors Bruce Mansell Foursomes",
+          "format": "Foursomes",
+          "position": 3,
+          "score": 34
+        },
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 2,
+          "score": 22
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Clive Atkins",
+        "Malcolm Powell"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 11,
+      "bestFinish": 10,
+      "formats": {
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 17,
+              "bestScore": 17
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-07-13",
+          "year": 2026,
+          "competitionId": "seniors-bruce-mansell-foursomes",
+          "competitionName": "Seniors Bruce Mansell Foursomes",
+          "format": "Foursomes",
+          "position": 10,
+          "score": 40
+        },
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 12,
+          "score": 17
         }
       ]
     },
@@ -20225,6 +20421,44 @@
           "format": "Pairs",
           "position": 1,
           "score": 24
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Bruce Antony Mansell",
+        "M.j. Davies"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 1,
+      "winRate": 100,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 1,
+      "bestFinish": 1,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 23,
+              "bestScore": 23
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 1,
+          "score": 23
         }
       ]
     },
@@ -27719,38 +27953,6 @@
           "format": "Pairs",
           "position": 10,
           "score": 39
-        }
-      ]
-    },
-    {
-      "section": "Seniors",
-      "players": [
-        "Kenneth Brettle",
-        "Michael Geoffrey Guise"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 0,
-      "averageFinish": 11,
-      "bestFinish": 11,
-      "formats": {
-        "Pairs": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2023-09-25",
-          "year": 2023,
-          "competitionId": "seniors-roy-birch-trophy",
-          "competitionName": "Seniors Roy Birch Trophy",
-          "format": "Pairs",
-          "position": 11,
-          "score": 41
         }
       ]
     },
@@ -35735,38 +35937,6 @@
     {
       "section": "Seniors",
       "players": [
-        "James Marsh Derrer",
-        "Keith Sabin"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 1,
-      "top5": 1,
-      "averageFinish": 3,
-      "bestFinish": 3,
-      "formats": {
-        "Pairs": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-04-07",
-          "year": 2025,
-          "competitionId": "seniors-walker-cup",
-          "competitionName": "Seniors Walker Cup",
-          "format": "Pairs",
-          "position": 3,
-          "score": 21
-        }
-      ]
-    },
-    {
-      "section": "Seniors",
-      "players": [
         "Clive Atkins",
         "David Evitts"
       ],
@@ -37895,38 +38065,6 @@
     {
       "section": "Seniors",
       "players": [
-        "Keith Durbridge",
-        "Robert Hudson"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 1,
-      "top5": 1,
-      "averageFinish": 3,
-      "bestFinish": 3,
-      "formats": {
-        "Foursomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2026-07-13",
-          "year": 2026,
-          "competitionId": "seniors-bruce-mansell-foursomes",
-          "competitionName": "Seniors Bruce Mansell Foursomes",
-          "format": "Foursomes",
-          "position": 3,
-          "score": 34
-        }
-      ]
-    },
-    {
-      "section": "Seniors",
-      "players": [
         "James Marsh Derrer",
         "Michael John Walter Horne"
       ],
@@ -38113,38 +38251,6 @@
           "format": "Foursomes",
           "position": 9,
           "score": 38
-        }
-      ]
-    },
-    {
-      "section": "Seniors",
-      "players": [
-        "Clive Atkins",
-        "Malcolm Powell"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 0,
-      "averageFinish": 10,
-      "bestFinish": 10,
-      "formats": {
-        "Foursomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2026-07-13",
-          "year": 2026,
-          "competitionId": "seniors-bruce-mansell-foursomes",
-          "competitionName": "Seniors Bruce Mansell Foursomes",
-          "format": "Foursomes",
-          "position": 10,
-          "score": 40
         }
       ]
     },
@@ -38743,6 +38849,348 @@
           "format": "Pairs",
           "position": 12,
           "score": 15
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Barry Thomas Lawton",
+        "Stephen Price"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 3,
+      "bestFinish": 3,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 22,
+              "bestScore": 22
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 3,
+          "score": 22
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Ivan James Cooper",
+        "Paul Raymond Rock"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 1,
+      "averageFinish": 4,
+      "bestFinish": 4,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 21,
+              "bestScore": 21
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 4,
+          "score": 21
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "John W. T. Mc'ewan",
+        "Keith John Woodall"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 1,
+      "averageFinish": 5,
+      "bestFinish": 5,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 20,
+              "bestScore": 20
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 5,
+          "score": 20
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Kevin John Hartland",
+        "Raymond Saunders"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 6,
+      "bestFinish": 6,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 20,
+              "bestScore": 20
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 6,
+          "score": 20
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "John Gilbert Baker",
+        "Melvin Crook"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 8,
+      "bestFinish": 8,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 19,
+              "bestScore": 19
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 8,
+          "score": 19
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Pavittar Singh",
+        "Roger William Grainger"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 9,
+      "bestFinish": 9,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 19,
+              "bestScore": 19
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 9,
+          "score": 19
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Keith Ratcliffe",
+        "Stephen Hall"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 10,
+      "bestFinish": 10,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 18,
+              "bestScore": 18
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 10,
+          "score": 18
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Keith Brian Culwick",
+        "Michael John Walter Horne"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 11,
+      "bestFinish": 11,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 17,
+              "bestScore": 17
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 11,
+          "score": 17
+        }
+      ]
+    },
+    {
+      "section": "Seniors",
+      "players": [
+        "Brian Douglas Perry",
+        "Michael William Murray"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 14,
+      "bestFinish": 14,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 16,
+              "bestScore": 16
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-10",
+          "year": 2026,
+          "competitionId": "seniors-thyssen-trophy",
+          "competitionName": "Seniors Thyssen Trophy",
+          "format": "Pairs",
+          "position": 14,
+          "score": 16
         }
       ]
     },

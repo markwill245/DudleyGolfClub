@@ -21455,17 +21455,18 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 3,
+    "yearsPlayed": 4,
     "firstYear": 2023,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 82,
-    "averageEntries": 27.3,
-    "uniqueWinners": 4,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 110,
+    "averageEntries": 27.5,
+    "uniqueWinners": 5,
     "mostSuccessfulPlayer": "Keith Ratcliffe",
     "mostWins": 2,
     "currentWinners": [
-      "Keith Ratcliffe"
+      "Bruce Antony Mansell",
+      "M.j. Davies"
     ],
     "winnerLeaders": [
       {
@@ -21473,19 +21474,39 @@
         "wins": 2
       },
       {
+        "player": "M.j. Davies",
+        "wins": 2
+      },
+      {
         "player": "Brian Douglas Perry",
+        "wins": 1
+      },
+      {
+        "player": "Bruce Antony Mansell",
         "wins": 1
       },
       {
         "player": "Keith Durbridge",
         "wins": 1
-      },
-      {
-        "player": "M.j. Davies",
-        "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Bruce Antony Mansell",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 23,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "M.j. Davies",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 23,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "Keith Ratcliffe",

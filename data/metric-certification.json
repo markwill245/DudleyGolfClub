@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-07T20:31:24.696Z",
+  "generatedAt": "2026-09-11T18:39:45.279Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -45,15 +45,15 @@
       "totals": {
         "catalogueCompetitions": 149,
         "includedCompetitions": 134,
-        "modernEventsChecked": 422,
-        "modernEligibleEvents": 377,
+        "modernEventsChecked": 423,
+        "modernEligibleEvents": 378,
         "modernAwardWins": 30,
-        "modernOverallWins": 290,
+        "modernOverallWins": 291,
         "historicalBoardsChecked": 35,
         "historicalBoardYearsChecked": 833,
         "historicalBoardWins": 833,
-        "rawWinnerOccurrences": 1570,
-        "certifiedPlayerWins": 1466,
+        "rawWinnerOccurrences": 1572,
+        "certifiedPlayerWins": 1468,
         "uniqueWinningPlayers": 520,
         "duplicatePlayerEventOccurrences": 104,
         "externalParticipantOccurrences": 0,
@@ -136,6 +136,10 @@
           "wins": 11
         },
         {
+          "playerName": "M.j. Davies",
+          "wins": 11
+        },
+        {
           "playerName": "Mark Andrew Poulding",
           "wins": 11
         },
@@ -153,10 +157,6 @@
         },
         {
           "playerName": "Keith John Woodall",
-          "wins": 10
-        },
-        {
-          "playerName": "M.j. Davies",
           "wins": 10
         },
         {
@@ -832,6 +832,10 @@
           "wins": 2
         },
         {
+          "playerName": "Bruce Antony Mansell",
+          "wins": 2
+        },
+        {
           "playerName": "C. A. Price",
           "wins": 2
         },
@@ -1265,10 +1269,6 @@
         },
         {
           "playerName": "Brian Douglas Perry",
-          "wins": 1
-        },
-        {
-          "playerName": "Bruce Antony Mansell",
           "wins": 1
         },
         {
@@ -15625,6 +15625,24 @@
           "sourceLabel": "overallWinner"
         },
         {
+          "playerName": "Bruce Antony Mansell",
+          "competitionId": "seniors-thyssen-trophy",
+          "awardId": "overallWinner",
+          "year": 2026,
+          "date": "2026-09-10",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "playerName": "M.j. Davies",
+          "competitionId": "seniors-thyssen-trophy",
+          "awardId": "overallWinner",
+          "year": 2026,
+          "date": "2026-09-10",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
           "playerName": "Keith Brian Culwick",
           "competitionId": "seniors-walker-cup",
           "awardId": "overallWinner",
@@ -15724,12 +15742,12 @@
       },
       "totals": {
         "competitions": 124,
-        "uniqueEvents": 422,
-        "resultRowsChecked": 13537,
-        "numericPositionRows": 13418,
-        "qualifyingRows": 396,
-        "rawPlayerOccurrences": 556,
-        "certifiedPlayerFinishes": 553,
+        "uniqueEvents": 423,
+        "resultRowsChecked": 13551,
+        "numericPositionRows": 13432,
+        "qualifyingRows": 397,
+        "rawPlayerOccurrences": 558,
+        "certifiedPlayerFinishes": 555,
         "duplicatePlayerEventOccurrences": 3,
         "disqualifiedRows": 119,
         "otherNonFinishingRows": 0,
@@ -15795,16 +15813,16 @@
           "finishes": 8
         },
         {
+          "playerName": "Keith Durbridge",
+          "finishes": 8
+        },
+        {
           "playerName": "Philip Thompson",
           "finishes": 8
         },
         {
           "playerName": "Richard Limb",
           "finishes": 8
-        },
-        {
-          "playerName": "Keith Durbridge",
-          "finishes": 7
         },
         {
           "playerName": "Keith John Woodall",
@@ -15955,6 +15973,10 @@
           "finishes": 4
         },
         {
+          "playerName": "Robert Hudson",
+          "finishes": 4
+        },
+        {
           "playerName": "Stephen Langford",
           "finishes": 4
         },
@@ -16076,10 +16098,6 @@
         },
         {
           "playerName": "Paul Russell",
-          "finishes": 3
-        },
-        {
-          "playerName": "Robert Hudson",
           "finishes": 3
         },
         {
@@ -16590,12 +16608,12 @@
       },
       "totals": {
         "competitions": 142,
-        "uniqueEvents": 422,
-        "resultRowsChecked": 13537,
-        "numericPositionRows": 13418,
-        "qualifyingRows": 1230,
-        "rawPlayerOccurrences": 1736,
-        "certifiedPlayerFinishes": 1718,
+        "uniqueEvents": 423,
+        "resultRowsChecked": 13551,
+        "numericPositionRows": 13432,
+        "qualifyingRows": 1233,
+        "rawPlayerOccurrences": 1742,
+        "certifiedPlayerFinishes": 1724,
         "duplicatePlayerEventOccurrences": 18,
         "disqualifiedRows": 119,
         "otherNonFinishingRows": 0,
@@ -16625,11 +16643,11 @@
           "finishes": 29
         },
         {
-          "playerName": "Alan Ball",
-          "finishes": 25
+          "playerName": "Keith Durbridge",
+          "finishes": 26
         },
         {
-          "playerName": "Keith Durbridge",
+          "playerName": "Alan Ball",
           "finishes": 25
         },
         {
@@ -16681,6 +16699,10 @@
           "finishes": 18
         },
         {
+          "playerName": "M.j. Davies",
+          "finishes": 17
+        },
+        {
           "playerName": "Mark Andrew Poulding",
           "finishes": 17
         },
@@ -16690,6 +16712,10 @@
         },
         {
           "playerName": "Richard Limb",
+          "finishes": 17
+        },
+        {
+          "playerName": "Robert Hudson",
           "finishes": 17
         },
         {
@@ -16713,15 +16739,7 @@
           "finishes": 16
         },
         {
-          "playerName": "M.j. Davies",
-          "finishes": 16
-        },
-        {
           "playerName": "Mark Basterfield",
-          "finishes": 16
-        },
-        {
-          "playerName": "Robert Hudson",
           "finishes": 16
         },
         {
@@ -16789,6 +16807,10 @@
           "finishes": 13
         },
         {
+          "playerName": "Stephen Price",
+          "finishes": 13
+        },
+        {
           "playerName": "M T Cowdell",
           "finishes": 12
         },
@@ -16798,10 +16820,6 @@
         },
         {
           "playerName": "Paul Thomas Donnelly",
-          "finishes": 12
-        },
-        {
-          "playerName": "Stephen Price",
           "finishes": 12
         },
         {
@@ -16913,6 +16931,10 @@
           "finishes": 9
         },
         {
+          "playerName": "Barry Thomas Lawton",
+          "finishes": 8
+        },
+        {
           "playerName": "Jason Sean Higley",
           "finishes": 8
         },
@@ -16941,7 +16963,7 @@
           "finishes": 8
         },
         {
-          "playerName": "Barry Thomas Lawton",
+          "playerName": "Bruce Antony Mansell",
           "finishes": 7
         },
         {
@@ -16971,10 +16993,6 @@
         {
           "playerName": "Pavittar Singh",
           "finishes": 7
-        },
-        {
-          "playerName": "Bruce Antony Mansell",
-          "finishes": 6
         },
         {
           "playerName": "Carl Elsworth",
@@ -17942,12 +17960,12 @@
       },
       "totals": {
         "competitions": 142,
-        "uniqueEvents": 422,
-        "resultRowsChecked": 13537,
-        "numericPositionRows": 13418,
-        "qualifyingRows": 3953,
-        "rawPlayerOccurrences": 5578,
-        "certifiedPlayerFinishes": 5494,
+        "uniqueEvents": 423,
+        "resultRowsChecked": 13551,
+        "numericPositionRows": 13432,
+        "qualifyingRows": 3963,
+        "rawPlayerOccurrences": 5598,
+        "certifiedPlayerFinishes": 5514,
         "duplicatePlayerEventOccurrences": 83,
         "disqualifiedRows": 119,
         "otherNonFinishingRows": 0,
@@ -17966,7 +17984,7 @@
         },
         {
           "playerName": "Stephen Hall",
-          "finishes": 88
+          "finishes": 89
         },
         {
           "playerName": "Gavin Ray",
@@ -17974,7 +17992,7 @@
         },
         {
           "playerName": "Keith Durbridge",
-          "finishes": 78
+          "finishes": 79
         },
         {
           "playerName": "James Stevens",
@@ -17997,12 +18015,12 @@
           "finishes": 69
         },
         {
-          "playerName": "Sean Element",
+          "playerName": "Keith John Woodall",
           "finishes": 67
         },
         {
-          "playerName": "Keith John Woodall",
-          "finishes": 66
+          "playerName": "Sean Element",
+          "finishes": 67
         },
         {
           "playerName": "Robert Keith Woodall",
@@ -18029,16 +18047,16 @@
           "finishes": 58
         },
         {
+          "playerName": "Keith Ratcliffe",
+          "finishes": 57
+        },
+        {
           "playerName": "Paul Welch",
           "finishes": 57
         },
         {
           "playerName": "Wayne Rutter",
           "finishes": 57
-        },
-        {
-          "playerName": "Keith Ratcliffe",
-          "finishes": 56
         },
         {
           "playerName": "Philip Thompson",
@@ -18058,7 +18076,7 @@
         },
         {
           "playerName": "Melvin Crook",
-          "finishes": 52
+          "finishes": 53
         },
         {
           "playerName": "Michael John Kendrick",
@@ -18070,7 +18088,7 @@
         },
         {
           "playerName": "M.j. Davies",
-          "finishes": 49
+          "finishes": 50
         },
         {
           "playerName": "Darren Element",
@@ -18078,6 +18096,10 @@
         },
         {
           "playerName": "Eric Edwards",
+          "finishes": 48
+        },
+        {
+          "playerName": "Robert Hudson",
           "finishes": 48
         },
         {
@@ -18090,10 +18112,6 @@
         },
         {
           "playerName": "Paul Thomas Donnelly",
-          "finishes": 47
-        },
-        {
-          "playerName": "Robert Hudson",
           "finishes": 47
         },
         {
@@ -18157,6 +18175,10 @@
           "finishes": 41
         },
         {
+          "playerName": "Stephen Price",
+          "finishes": 41
+        },
+        {
           "playerName": "Steven Brookes",
           "finishes": 41
         },
@@ -18166,10 +18188,6 @@
         },
         {
           "playerName": "Scott Postin",
-          "finishes": 40
-        },
-        {
-          "playerName": "Stephen Price",
           "finishes": 40
         },
         {
@@ -18201,6 +18219,10 @@
           "finishes": 37
         },
         {
+          "playerName": "Kenneth Brettle",
+          "finishes": 34
+        },
+        {
           "playerName": "Paul Russell",
           "finishes": 34
         },
@@ -18210,10 +18232,6 @@
         },
         {
           "playerName": "Andrew Russell",
-          "finishes": 33
-        },
-        {
-          "playerName": "Kenneth Brettle",
           "finishes": 33
         },
         {
@@ -18230,7 +18248,7 @@
         },
         {
           "playerName": "Bruce Antony Mansell",
-          "finishes": 31
+          "finishes": 32
         },
         {
           "playerName": "Craig Biddulph",
@@ -18246,7 +18264,7 @@
         },
         {
           "playerName": "Pavittar Singh",
-          "finishes": 30
+          "finishes": 31
         },
         {
           "playerName": "Christopher Vanes",
@@ -18285,6 +18303,10 @@
           "finishes": 27
         },
         {
+          "playerName": "Michael Geoffrey Guise",
+          "finishes": 27
+        },
+        {
           "playerName": "Paul Wayne Taylor",
           "finishes": 27
         },
@@ -18297,11 +18319,11 @@
           "finishes": 26
         },
         {
-          "playerName": "Jason Sean Higley",
+          "playerName": "Ivan James Cooper",
           "finishes": 26
         },
         {
-          "playerName": "Michael Geoffrey Guise",
+          "playerName": "Jason Sean Higley",
           "finishes": 26
         },
         {
@@ -18314,10 +18336,6 @@
         },
         {
           "playerName": "Graham Morgan",
-          "finishes": 25
-        },
-        {
-          "playerName": "Ivan James Cooper",
           "finishes": 25
         },
         {
@@ -18337,12 +18355,20 @@
           "finishes": 22
         },
         {
+          "playerName": "Kevin John Hartland",
+          "finishes": 22
+        },
+        {
           "playerName": "Craig Locke",
           "finishes": 21
         },
         {
-          "playerName": "Kevin John Hartland",
+          "playerName": "Raymond Saunders",
           "finishes": 21
+        },
+        {
+          "playerName": "Barry Thomas Lawton",
+          "finishes": 20
         },
         {
           "playerName": "Jack Lowe",
@@ -18353,12 +18379,8 @@
           "finishes": 20
         },
         {
-          "playerName": "Raymond Saunders",
+          "playerName": "Paul Raymond Rock",
           "finishes": 20
-        },
-        {
-          "playerName": "Barry Thomas Lawton",
-          "finishes": 19
         },
         {
           "playerName": "Brett Denis Gilbert",
@@ -18373,15 +18395,15 @@
           "finishes": 19
         },
         {
-          "playerName": "Paul Raymond Rock",
-          "finishes": 19
-        },
-        {
           "playerName": "Gavin Higgs",
           "finishes": 18
         },
         {
           "playerName": "Gordon Hampstead",
+          "finishes": 18
+        },
+        {
+          "playerName": "John Gilbert Baker",
           "finishes": 18
         },
         {
@@ -18395,10 +18417,6 @@
         {
           "playerName": "Robert P. Timmington",
           "finishes": 18
-        },
-        {
-          "playerName": "John Gilbert Baker",
-          "finishes": 17
         },
         {
           "playerName": "Michael William Murray",
@@ -18453,6 +18471,10 @@
           "finishes": 14
         },
         {
+          "playerName": "John W. T. Mc'ewan",
+          "finishes": 14
+        },
+        {
           "playerName": "Malcolm Benjamin Jones",
           "finishes": 14
         },
@@ -18461,15 +18483,15 @@
           "finishes": 14
         },
         {
+          "playerName": "Roger William Grainger",
+          "finishes": 14
+        },
+        {
           "playerName": "Craig Tromans",
           "finishes": 13
         },
         {
           "playerName": "Geoffrey Alan Ford",
-          "finishes": 13
-        },
-        {
-          "playerName": "John W. T. Mc'ewan",
           "finishes": 13
         },
         {
@@ -18486,10 +18508,6 @@
         },
         {
           "playerName": "Roger John Smith",
-          "finishes": 13
-        },
-        {
-          "playerName": "Roger William Grainger",
           "finishes": 13
         },
         {
@@ -19463,11 +19481,11 @@
       },
       "totals": {
         "competitions": 132,
-        "uniqueEvents": 377,
-        "resultRowsChecked": 12061,
-        "appearanceRows": 12061,
-        "rawPlayerOccurrences": 15408,
-        "certifiedPlayerAppearances": 14961,
+        "uniqueEvents": 378,
+        "resultRowsChecked": 12075,
+        "appearanceRows": 12075,
+        "rawPlayerOccurrences": 15436,
+        "certifiedPlayerAppearances": 14989,
         "duplicatePlayerEventOccurrences": 435,
         "externalParticipantOccurrences": 12,
         "unresolvedPlayerOccurrences": 0,
@@ -19477,7 +19495,7 @@
       "leaderboard": [
         {
           "playerName": "Stephen Hall",
-          "appearances": 219
+          "appearances": 220
         },
         {
           "playerName": "Philip John Northall",
@@ -19488,11 +19506,11 @@
           "appearances": 199
         },
         {
-          "playerName": "Gerald Paul Crowley",
-          "appearances": 178
+          "playerName": "Keith John Woodall",
+          "appearances": 179
         },
         {
-          "playerName": "Keith John Woodall",
+          "playerName": "Gerald Paul Crowley",
           "appearances": 178
         },
         {
@@ -19525,18 +19543,18 @@
         },
         {
           "playerName": "Keith Durbridge",
-          "appearances": 150
+          "appearances": 151
         },
         {
           "playerName": "Adam Stanfield",
           "appearances": 149
         },
         {
-          "playerName": "Clive Kearey",
-          "appearances": 145
+          "playerName": "Melvin Crook",
+          "appearances": 146
         },
         {
-          "playerName": "Melvin Crook",
+          "playerName": "Clive Kearey",
           "appearances": 145
         },
         {
@@ -19617,7 +19635,7 @@
         },
         {
           "playerName": "Stephen Price",
-          "appearances": 121
+          "appearances": 122
         },
         {
           "playerName": "Tony John Salt",
@@ -19733,7 +19751,7 @@
         },
         {
           "playerName": "Roger William Grainger",
-          "appearances": 89
+          "appearances": 90
         },
         {
           "playerName": "Paul Wayne Taylor",
@@ -19748,24 +19766,28 @@
           "appearances": 84
         },
         {
-          "playerName": "Steven Taylor",
+          "playerName": "Robert Hudson",
           "appearances": 84
         },
         {
-          "playerName": "Robert Hudson",
-          "appearances": 83
+          "playerName": "Steven Taylor",
+          "appearances": 84
         },
         {
           "playerName": "Terrance Stanley Nolan",
           "appearances": 80
         },
         {
+          "playerName": "Keith Ratcliffe",
+          "appearances": 79
+        },
+        {
           "playerName": "Graham Morgan",
           "appearances": 78
         },
         {
-          "playerName": "Keith Ratcliffe",
-          "appearances": 78
+          "playerName": "M.j. Davies",
+          "appearances": 77
         },
         {
           "playerName": "Adam Bonehill",
@@ -19776,11 +19798,11 @@
           "appearances": 76
         },
         {
-          "playerName": "M.j. Davies",
-          "appearances": 76
+          "playerName": "Kevin Cooksey",
+          "appearances": 75
         },
         {
-          "playerName": "Kevin Cooksey",
+          "playerName": "Malcolm Powell",
           "appearances": 75
         },
         {
@@ -19788,16 +19810,12 @@
           "appearances": 74
         },
         {
-          "playerName": "Malcolm Powell",
-          "appearances": 74
-        },
-        {
           "playerName": "Michael Geoffrey Guise",
-          "appearances": 72
+          "appearances": 73
         },
         {
           "playerName": "Michael John Walter Horne",
-          "appearances": 72
+          "appearances": 73
         },
         {
           "playerName": "Mitchell Raybould",
@@ -19808,6 +19826,10 @@
           "appearances": 72
         },
         {
+          "playerName": "Clive Atkins",
+          "appearances": 67
+        },
+        {
           "playerName": "Jack Lowe",
           "appearances": 67
         },
@@ -19816,12 +19838,20 @@
           "appearances": 67
         },
         {
-          "playerName": "Clive Atkins",
+          "playerName": "Kenneth Brettle",
           "appearances": 66
         },
         {
-          "playerName": "Kenneth Brettle",
+          "playerName": "John Gilbert Baker",
           "appearances": 65
+        },
+        {
+          "playerName": "Pavittar Singh",
+          "appearances": 65
+        },
+        {
+          "playerName": "Barry Thomas Lawton",
+          "appearances": 64
         },
         {
           "playerName": "David J. L. Jones",
@@ -19832,31 +19862,19 @@
           "appearances": 64
         },
         {
-          "playerName": "John Gilbert Baker",
-          "appearances": 64
-        },
-        {
-          "playerName": "Pavittar Singh",
-          "appearances": 64
-        },
-        {
           "playerName": "Stephen Langford",
           "appearances": 64
-        },
-        {
-          "playerName": "Barry Thomas Lawton",
-          "appearances": 63
         },
         {
           "playerName": "John Goudge",
           "appearances": 63
         },
         {
-          "playerName": "Craig Locke",
-          "appearances": 61
+          "playerName": "James Marsh Derrer",
+          "appearances": 62
         },
         {
-          "playerName": "James Marsh Derrer",
+          "playerName": "Craig Locke",
           "appearances": 61
         },
         {
@@ -19864,12 +19882,16 @@
           "appearances": 60
         },
         {
+          "playerName": "Michael William Murray",
+          "appearances": 59
+        },
+        {
           "playerName": "Kevin John Foster",
           "appearances": 58
         },
         {
-          "playerName": "Michael William Murray",
-          "appearances": 58
+          "playerName": "Bruce Antony Mansell",
+          "appearances": 57
         },
         {
           "playerName": "Gary William Stubbs",
@@ -19884,11 +19906,11 @@
           "appearances": 57
         },
         {
-          "playerName": "Bruce Antony Mansell",
+          "playerName": "Gavin Higgs",
           "appearances": 56
         },
         {
-          "playerName": "Gavin Higgs",
+          "playerName": "Keith Sabin",
           "appearances": 56
         },
         {
@@ -19904,10 +19926,6 @@
           "appearances": 55
         },
         {
-          "playerName": "Keith Sabin",
-          "appearances": 55
-        },
-        {
           "playerName": "Roger John Smith",
           "appearances": 55
         },
@@ -19920,15 +19938,15 @@
           "appearances": 53
         },
         {
+          "playerName": "Ivan James Cooper",
+          "appearances": 53
+        },
+        {
           "playerName": "Anthony Fegan",
           "appearances": 52
         },
         {
           "playerName": "Graham John Franks",
-          "appearances": 52
-        },
-        {
-          "playerName": "Ivan James Cooper",
           "appearances": 52
         },
         {
@@ -19956,6 +19974,10 @@
           "appearances": 46
         },
         {
+          "playerName": "Paul Raymond Rock",
+          "appearances": 46
+        },
+        {
           "playerName": "Carl Elsworth",
           "appearances": 45
         },
@@ -19965,10 +19987,6 @@
         },
         {
           "playerName": "Neil Penton",
-          "appearances": 45
-        },
-        {
-          "playerName": "Paul Raymond Rock",
           "appearances": 45
         },
         {
@@ -20000,12 +20018,12 @@
           "appearances": 40
         },
         {
-          "playerName": "Liam Harding",
+          "playerName": "John W. T. Mc'ewan",
           "appearances": 40
         },
         {
-          "playerName": "John W. T. Mc'ewan",
-          "appearances": 39
+          "playerName": "Liam Harding",
+          "appearances": 40
         },
         {
           "playerName": "Stephen Holmes",
@@ -20024,6 +20042,10 @@
           "appearances": 37
         },
         {
+          "playerName": "Brian Douglas Perry",
+          "appearances": 36
+        },
+        {
           "playerName": "Geoffrey Alan Ford",
           "appearances": 36
         },
@@ -20040,10 +20062,6 @@
           "appearances": 35
         },
         {
-          "playerName": "Brian Douglas Perry",
-          "appearances": 35
-        },
-        {
           "playerName": "Lewis Ganner",
           "appearances": 35
         },
@@ -20052,15 +20070,15 @@
           "appearances": 35
         },
         {
+          "playerName": "Kevin John Hartland",
+          "appearances": 33
+        },
+        {
           "playerName": "Andrew Card",
           "appearances": 32
         },
         {
           "playerName": "James Johnson",
-          "appearances": 32
-        },
-        {
-          "playerName": "Kevin John Hartland",
           "appearances": 32
         },
         {
@@ -20076,6 +20094,10 @@
           "appearances": 30
         },
         {
+          "playerName": "Keith Brian Culwick",
+          "appearances": 29
+        },
+        {
           "playerName": "Richard Weston",
           "appearances": 29
         },
@@ -20088,7 +20110,7 @@
           "appearances": 28
         },
         {
-          "playerName": "Keith Brian Culwick",
+          "playerName": "Raymond Saunders",
           "appearances": 28
         },
         {
@@ -20105,10 +20127,6 @@
         },
         {
           "playerName": "Paul Willetts",
-          "appearances": 27
-        },
-        {
-          "playerName": "Raymond Saunders",
           "appearances": 27
         },
         {
@@ -21333,7 +21351,7 @@
       "totals": {
         "competitions": 68,
         "uniqueEvents": 191,
-        "resultRowsChecked": 13537,
+        "resultRowsChecked": 13551,
         "eligibleRows": 7263,
         "rawPlayerScoreOccurrences": 7263,
         "certifiedPlayerScores": 7262,
@@ -21377,7 +21395,7 @@
             "stableford": 0
           }
         },
-        "excludedTeamRows": 2505,
+        "excludedTeamRows": 2519,
         "excludedBoardRows": 48,
         "excludedMatchplayRows": 0,
         "excludedNonFinishingRows": 707,
