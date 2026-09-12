@@ -506,7 +506,7 @@
       const slug = encodeURIComponent(player?.slug || "");
 
       return slug
-        ? `player-profile.html?player=${slug}`
+        ? `/player-profile?player=${slug}`
         : "player-index.html";
     }
 
@@ -537,7 +537,7 @@
         String(win?.competitionId || "").trim();
 
       return competitionId
-        ? `competition-profile.html?competition=${encodeURIComponent(competitionId)}`
+        ? `/competition-profile?competition=${encodeURIComponent(competitionId)}`
         : "competition-index.html";
     }
 

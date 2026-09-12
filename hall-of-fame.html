@@ -304,7 +304,7 @@
       container.innerHTML =
         players.map(player => `
           <a
-            href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+            href="/player-profile?player=${encodeURIComponent(player.slug)}"
             class="block bg-white rounded-2xl p-8 shadow border border-[#C5A367]/30 hover:shadow-2xl transition"
           >
             <div class="flex items-start justify-between gap-4 mb-4">

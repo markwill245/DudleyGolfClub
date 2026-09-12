@@ -443,7 +443,7 @@
         </p>
 
         <a
-          href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+          href="/player-profile?player=${encodeURIComponent(player.slug)}"
           class="inline-block hover:text-[#C5A367] transition">
 
           <h2 class="text-3xl font-serif mb-5">
@@ -717,7 +717,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 ` : ""}
 
         <a
-            href="player-profile.html?player=${encodeURIComponent(player.slug)}"
+            href="/player-profile?player=${encodeURIComponent(player.slug)}"
             class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
             View Full Profile ?
           </a>
@@ -966,7 +966,7 @@ ${scoring.seniors.eighteenHole.gross ? `
               <div class="flex justify-between gap-3">
                 <strong class="text-sm">
                   ${win.competitionId
-              ? `<a href="competition-profile.html?id=${encodeURIComponent(win.competitionId)}"
+              ? `<a href="/competition-profile?id=${encodeURIComponent(win.competitionId)}"
                          class="hover:text-[#C5A367] underline-offset-4 hover:underline">
                          ${escapeHtml(win.competitionName || win.competitionId)}
                        </a>`
@@ -1193,7 +1193,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
                 <span class="text-sm font-semibold">
                   ${result.competitionId
-              ? `<a href="competition-profile.html?id=${encodeURIComponent(result.competitionId)}"
+              ? `<a href="/competition-profile?id=${encodeURIComponent(result.competitionId)}"
                          class="hover:text-[#C5A367] underline-offset-4 hover:underline">
                          ${escapeHtml(result.competition || result.competitionId)}
                        </a>`
@@ -1326,7 +1326,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
                 <span class="text-sm font-semibold">
                   ${row.competitionId
-                ? `<a href="competition-profile.html?id=${encodeURIComponent(row.competitionId)}"
+                ? `<a href="/competition-profile?id=${encodeURIComponent(row.competitionId)}"
                          class="hover:text-[#C5A367] underline-offset-4 hover:underline">
                          ${escapeHtml(row.competitionName || row.competitionId)}
                        </a>`
