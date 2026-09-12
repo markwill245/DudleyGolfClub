@@ -113,6 +113,27 @@ const protectedPaths = new Set([
 export async function onRequest(context) {
     const url = new URL(context.request.url);
 
+    const allowedApiPaths = new Set([
+        "/api/course-status",
+        "/api/member-login",
+        "/api/member-logout",
+        "/api/member-status",
+        "/api/set-course-status",
+        "/api/weather",
+        "/api/museum-intelligence",
+        "/api/dgc-admin.html"
+    ]);
+
+    if (url.pathname.startsWith("/api/") && !allowedApiPaths.has(url.pathname)) {
+        return new Response("Not Found", {
+            status: 404,
+            headers: {
+                "Content-Type": "text/plain; charset=utf-8",
+                "X-Robots-Tag": "noindex, nofollow"
+            }
+        });
+    }
+
     if (!protectedPaths.has(url.pathname)) {
         return context.next();
     }
