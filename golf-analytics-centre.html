@@ -7,6 +7,18 @@
   <title>Golf Analytics Centre | Dudley Golf Club</title>
     <meta name="description" content="Explore Dudley Golf Club player analytics, scoring averages, handicap trends and performance statistics from recorded competition data.">
     <link rel="canonical" href="https://dudleygolfclub.co.uk/golf-analytics-centre">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Golf Analytics Centre | Dudley Golf Club">
+  <meta property="og:description" content="Explore Dudley Golf Club player analytics, scoring averages, handicap trends and performance statistics from recorded competition data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dudleygolfclub.co.uk/golf-analytics-centre">
+  <meta property="og:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Golf Analytics Centre | Dudley Golf Club">
+  <meta name="twitter:description" content="Explore Dudley Golf Club player analytics, scoring averages, handicap trends and performance statistics from recorded competition data.">
+  <meta name="twitter:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
   <script>
     (async function redirectMemberView() {
       try {
@@ -1720,7 +1732,7 @@
       function normalisePlayerSearch(value) {
         return String(value || "")
           .toLowerCase()
-          .replace(/[.'’\-]/g, " ")
+          .replace(/[.'ï¿½\-]/g, " ")
           .replace(/\s+/g, " ")
           .trim();
       }
