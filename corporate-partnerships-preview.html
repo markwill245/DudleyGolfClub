@@ -66,6 +66,77 @@
             border-color: rgba(197, 163, 103, .65);
             box-shadow: 0 18px 45px rgba(13, 23, 18, .10);
         }
+
+        /* Corporate Partnerships photography */
+        .hero-photo {
+            min-height: 390px;
+            background:
+                linear-gradient(90deg,
+                    rgba(19,36,25,.98) 0%,
+                    rgba(19,36,25,.88) 30%,
+                    rgba(19,36,25,.42) 62%,
+                    rgba(19,36,25,.08) 100%),
+                url('aireal.webp') center center / cover no-repeat;
+        }
+
+        .hero-photo .soft-grid {
+            opacity: .22;
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            height: 270px;
+            border-bottom: 3px solid #C5A367;
+            box-shadow: 0 12px 28px rgba(13,23,18,.12);
+        }
+
+        .photo-card img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.035);
+        }
+
+        .course-review {
+            position: relative;
+            background:
+                linear-gradient(90deg,
+                    rgba(13,23,18,.96) 0%,
+                    rgba(13,23,18,.84) 48%,
+                    rgba(13,23,18,.58) 100%),
+                url('heaven.webp') center center / cover no-repeat;
+        }
+
+        @media (max-width: 767px) {
+            .hero-photo {
+                min-height: 0;
+                background:
+                    linear-gradient(
+                        rgba(19,36,25,.86),
+                        rgba(19,36,25,.94)
+                    ),
+                    url('aireal.webp') center center / cover no-repeat;
+            }
+
+            .photo-card {
+                height: 220px;
+            }
+
+            .course-review {
+                background:
+                    linear-gradient(
+                        rgba(13,23,18,.90),
+                        rgba(13,23,18,.90)
+                    ),
+                    url('heaven.webp') center center / cover no-repeat;
+            }
+        }
     </style>
 </head>
 
