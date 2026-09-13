@@ -22476,21 +22476,25 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 4,
+    "yearsPlayed": 5,
     "firstYear": 2021,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 116,
-    "averageEntries": 29,
-    "uniqueWinners": 4,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 147,
+    "averageEntries": 29.4,
+    "uniqueWinners": 5,
     "mostSuccessfulPlayer": "Benjamin Jones",
     "mostWins": 1,
     "currentWinners": [
-      "Benjamin Jones"
+      "Gavin Ray"
     ],
     "winnerLeaders": [
       {
         "player": "Benjamin Jones",
+        "wins": 1
+      },
+      {
+        "player": "Gavin Ray",
         "wins": 1
       },
       {
@@ -22507,6 +22511,14 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Gavin Ray",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 42,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "Benjamin Jones",

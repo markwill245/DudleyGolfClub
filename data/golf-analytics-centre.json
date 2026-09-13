@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-09-11T18:40:55.139Z",
+  "generatedAt": "2026-09-13T19:55:32.440Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -19,13 +19,13 @@
   "totals": {
     "canonicalPlayers": 664,
     "playersWithAnalytics": 305,
-    "eligibleEvents": 212,
-    "eligibleRows": 8727,
+    "eligibleEvents": 213,
+    "eligibleRows": 8756,
     "includedNettRounds": 3372,
-    "includedStablefordRounds": 5354,
+    "includedStablefordRounds": 5383,
     "excludedTeamEvents": 117,
     "excludedEvents": 94,
-    "excludedNonFinishers": 754,
+    "excludedNonFinishers": 756,
     "excludedUnknownPlayers": 0,
     "excludedExternalParticipants": 14,
     "excludedMultiPlayerRows": 0,
@@ -7843,8 +7843,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 31.5,
+                  "rounds": 5,
+                  "average": 32.2,
                   "best": 36,
                   "averageHandicap": 20.8,
                   "evidence": [
@@ -7885,6 +7885,16 @@
                       "numberOfHoles": 18,
                       "position": 43,
                       "points": 29,
+                      "handicap": 21,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 11,
+                      "points": 35,
                       "handicap": 21,
                       "source": "certified-individual-stableford"
                     }
@@ -14917,8 +14927,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 9,
-                  "average": 31.7,
+                  "rounds": 10,
+                  "average": 31.4,
                   "best": 37,
                   "averageHandicap": 10.7,
                   "evidence": [
@@ -15009,6 +15019,16 @@
                       "numberOfHoles": 18,
                       "position": 37,
                       "points": 27,
+                      "handicap": 11,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 21,
+                      "points": 29,
                       "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
@@ -17425,9 +17445,9 @@
                   "evidence": []
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 27.5,
-                  "best": 29,
+                  "rounds": 7,
+                  "average": 28.7,
+                  "best": 36,
                   "averageHandicap": 16,
                   "evidence": [
                     {
@@ -17488,6 +17508,16 @@
                       "position": 27,
                       "points": 24,
                       "handicap": 17,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 7,
+                      "points": 36,
+                      "handicap": 16,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -18861,10 +18891,10 @@
                   "evidence": []
                 },
                 "stableford": {
-                  "rounds": 7,
-                  "average": 25.9,
+                  "rounds": 8,
+                  "average": 26.5,
                   "best": 31,
-                  "averageHandicap": 20.7,
+                  "averageHandicap": 20.8,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -18933,6 +18963,16 @@
                       "numberOfHoles": 18,
                       "position": 26,
                       "points": 25,
+                      "handicap": 21,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 17,
+                      "points": 31,
                       "handicap": 21,
                       "source": "certified-individual-stableford"
                     }
@@ -23453,10 +23493,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 7,
-                  "average": 29.9,
+                  "rounds": 8,
+                  "average": 29.4,
                   "best": 36,
-                  "averageHandicap": 25.9,
+                  "averageHandicap": 25.8,
                   "evidence": [
                     {
                       "date": "2026-03-21",
@@ -23526,6 +23566,16 @@
                       "position": 23,
                       "points": 30,
                       "handicap": 26,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 25,
+                      "points": 26,
+                      "handicap": 25,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -25752,10 +25802,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 29.8,
+                  "rounds": 7,
+                  "average": 29.3,
                   "best": 34,
-                  "averageHandicap": 14.5,
+                  "averageHandicap": 14.6,
                   "evidence": [
                     {
                       "date": "2026-01-18",
@@ -25814,6 +25864,16 @@
                       "numberOfHoles": 18,
                       "position": 24,
                       "points": 27,
+                      "handicap": 15,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 24,
+                      "points": 26,
                       "handicap": 15,
                       "source": "certified-individual-stableford"
                     }
@@ -28975,10 +29035,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 10,
-                  "average": 28.3,
+                  "rounds": 11,
+                  "average": 27.6,
                   "best": 34,
-                  "averageHandicap": 21.4,
+                  "averageHandicap": 21.6,
                   "evidence": [
                     {
                       "date": "2026-04-04",
@@ -29078,6 +29138,16 @@
                       "position": 29,
                       "points": 24,
                       "handicap": 23,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 28,
+                      "points": 21,
+                      "handicap": 24,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -35302,10 +35372,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 29,
+                  "rounds": 6,
+                  "average": 29.5,
                   "best": 37,
-                  "averageHandicap": 16.6,
+                  "averageHandicap": 16.7,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -35355,6 +35425,16 @@
                       "position": 51,
                       "points": 31,
                       "handicap": 16,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 16,
+                      "points": 32,
+                      "handicap": 17,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -37675,10 +37755,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 10,
-                  "average": 27.5,
-                  "best": 38,
-                  "averageHandicap": 11.3,
+                  "rounds": 11,
+                  "average": 28.8,
+                  "best": 42,
+                  "averageHandicap": 11.5,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -37777,6 +37857,16 @@
                       "numberOfHoles": 18,
                       "position": 30,
                       "points": 20,
+                      "handicap": 14,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 1,
+                      "points": 42,
                       "handicap": 14,
                       "source": "certified-individual-stableford"
                     }
@@ -40036,10 +40126,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 11,
+                  "rounds": 12,
                   "average": 29.3,
                   "best": 38,
-                  "averageHandicap": 21.4,
+                  "averageHandicap": 21.5,
                   "evidence": [
                     {
                       "date": "2026-03-21",
@@ -40148,6 +40238,16 @@
                       "numberOfHoles": 18,
                       "position": 10,
                       "points": 34,
+                      "handicap": 23,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 20,
+                      "points": 30,
                       "handicap": 23,
                       "source": "certified-individual-stableford"
                     }
@@ -42895,10 +42995,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 3,
-                  "average": 30.3,
+                  "rounds": 4,
+                  "average": 28.8,
                   "best": 33,
-                  "averageHandicap": 11,
+                  "averageHandicap": 11.3,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -42928,6 +43028,16 @@
                       "position": 23,
                       "points": 29,
                       "handicap": 11,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 27,
+                      "points": 24,
+                      "handicap": 12,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -51445,10 +51555,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 12,
-                  "average": 32.4,
+                  "rounds": 13,
+                  "average": 32.5,
                   "best": 43,
-                  "averageHandicap": 9.1,
+                  "averageHandicap": 9.2,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -51568,6 +51678,16 @@
                       "position": 11,
                       "points": 33,
                       "handicap": 9,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 14,
+                      "points": 33,
+                      "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -53175,10 +53295,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 32,
+                  "rounds": 6,
+                  "average": 32.7,
                   "best": 36,
-                  "averageHandicap": 26,
+                  "averageHandicap": 25.5,
                   "evidence": [
                     {
                       "date": "2026-05-16",
@@ -53227,6 +53347,16 @@
                       "numberOfHoles": 18,
                       "position": 31,
                       "points": 32,
+                      "handicap": 23,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 8,
+                      "points": 36,
                       "handicap": 23,
                       "source": "certified-individual-stableford"
                     }
@@ -54023,10 +54153,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 11,
-                  "average": 29.3,
-                  "best": 36,
-                  "averageHandicap": 9.4,
+                  "rounds": 12,
+                  "average": 30.1,
+                  "best": 39,
+                  "averageHandicap": 9.6,
                   "evidence": [
                     {
                       "date": "2026-01-18",
@@ -54136,6 +54266,16 @@
                       "position": 28,
                       "points": 24,
                       "handicap": 11,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 2,
+                      "points": 39,
+                      "handicap": 12,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -59690,10 +59830,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
+                  "rounds": 5,
                   "average": 31,
                   "best": 35,
-                  "averageHandicap": 27.5,
+                  "averageHandicap": 27.6,
                   "evidence": [
                     {
                       "date": "2026-05-10",
@@ -59732,6 +59872,16 @@
                       "numberOfHoles": 18,
                       "position": 19,
                       "points": 34,
+                      "handicap": 28,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 19,
+                      "points": 31,
                       "handicap": 28,
                       "source": "certified-individual-stableford"
                     }
@@ -63737,10 +63887,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 7,
-                  "average": 29.4,
+                  "rounds": 8,
+                  "average": 30.4,
                   "best": 38,
-                  "averageHandicap": 21.3,
+                  "averageHandicap": 21.5,
                   "evidence": [
                     {
                       "date": "2026-01-18",
@@ -63809,6 +63959,16 @@
                       "numberOfHoles": 18,
                       "position": 4,
                       "points": 38,
+                      "handicap": 23,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 4,
+                      "points": 37,
                       "handicap": 23,
                       "source": "certified-individual-stableford"
                     }
@@ -65434,10 +65594,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
+                  "rounds": 6,
                   "average": 28,
                   "best": 34,
-                  "averageHandicap": 22.2,
+                  "averageHandicap": 22.3,
                   "evidence": [
                     {
                       "date": "2026-06-14",
@@ -65485,6 +65645,16 @@
                       "competitionName": "Centenary Trophy & Boscowan Cup",
                       "numberOfHoles": 18,
                       "position": 47,
+                      "points": 28,
+                      "handicap": 23,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 23,
                       "points": 28,
                       "handicap": 23,
                       "source": "certified-individual-stableford"
@@ -68372,10 +68542,10 @@
                   "evidence": []
                 },
                 "stableford": {
-                  "rounds": 8,
-                  "average": 26.3,
+                  "rounds": 9,
+                  "average": 25.3,
                   "best": 31,
-                  "averageHandicap": 17.1,
+                  "averageHandicap": 17.2,
                   "evidence": [
                     {
                       "date": "2026-01-18",
@@ -68454,6 +68624,16 @@
                       "numberOfHoles": 18,
                       "position": 16,
                       "points": 31,
+                      "handicap": 18,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 29,
+                      "points": 18,
                       "handicap": 18,
                       "source": "certified-individual-stableford"
                     }
@@ -88723,10 +88903,10 @@
                   "evidence": []
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 29,
+                  "rounds": 6,
+                  "average": 28.8,
                   "best": 35,
-                  "averageHandicap": 18.6,
+                  "averageHandicap": 18.7,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -88775,6 +88955,16 @@
                       "numberOfHoles": 18,
                       "position": 8,
                       "points": 35,
+                      "handicap": 19,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 22,
+                      "points": 28,
                       "handicap": 19,
                       "source": "certified-individual-stableford"
                     }
@@ -99000,8 +99190,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 10,
-                  "average": 33.8,
+                  "rounds": 11,
+                  "average": 33.5,
                   "best": 37,
                   "averageHandicap": 9.1,
                   "evidence": [
@@ -99103,6 +99293,16 @@
                       "position": 9,
                       "points": 34,
                       "handicap": 8,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 18,
+                      "points": 31,
+                      "handicap": 9,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -100731,10 +100931,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 32.7,
-                  "best": 37,
-                  "averageHandicap": 6.3,
+                  "rounds": 7,
+                  "average": 33.6,
+                  "best": 39,
+                  "averageHandicap": 6.4,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -100793,6 +100993,16 @@
                       "numberOfHoles": 18,
                       "position": 6,
                       "points": 35,
+                      "handicap": 7,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 3,
+                      "points": 39,
                       "handicap": 7,
                       "source": "certified-individual-stableford"
                     }
@@ -107020,8 +107230,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 29.3,
+                  "rounds": 5,
+                  "average": 28.4,
                   "best": 35,
                   "averageHandicap": 24,
                   "evidence": [
@@ -107062,6 +107272,16 @@
                       "numberOfHoles": 18,
                       "position": 19,
                       "points": 29,
+                      "handicap": 24,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 26,
+                      "points": 25,
                       "handicap": 24,
                       "source": "certified-individual-stableford"
                     }
@@ -109153,10 +109373,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 11,
-                  "average": 30.1,
+                  "rounds": 12,
+                  "average": 30.5,
                   "best": 36,
-                  "averageHandicap": 11.5,
+                  "averageHandicap": 11.6,
                   "evidence": [
                     {
                       "date": "2026-01-18",
@@ -109265,6 +109485,16 @@
                       "numberOfHoles": 18,
                       "position": 12,
                       "points": 33,
+                      "handicap": 12,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 10,
+                      "points": 35,
                       "handicap": 12,
                       "source": "certified-individual-stableford"
                     }
@@ -109919,10 +110149,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 7,
-                  "average": 29.6,
-                  "best": 33,
-                  "averageHandicap": 29.9,
+                  "rounds": 8,
+                  "average": 30.5,
+                  "best": 37,
+                  "averageHandicap": 30,
                   "evidence": [
                     {
                       "date": "2026-01-18",
@@ -109992,6 +110222,16 @@
                       "position": 22,
                       "points": 27,
                       "handicap": 32,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 5,
+                      "points": 37,
+                      "handicap": 31,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -110504,10 +110744,10 @@
                   "evidence": []
                 },
                 "stableford": {
-                  "rounds": 3,
-                  "average": 28.7,
+                  "rounds": 4,
+                  "average": 30.3,
                   "best": 39,
-                  "averageHandicap": 18.7,
+                  "averageHandicap": 19,
                   "evidence": [
                     {
                       "date": "2026-03-15",
@@ -110537,6 +110777,16 @@
                       "position": 34,
                       "points": 22,
                       "handicap": 19,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 9,
+                      "points": 35,
+                      "handicap": 20,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -123120,10 +123370,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 10,
-                  "average": 27.8,
+                  "rounds": 11,
+                  "average": 28.2,
                   "best": 35,
-                  "averageHandicap": 24.8,
+                  "averageHandicap": 25,
                   "evidence": [
                     {
                       "date": "2026-03-21",
@@ -123222,6 +123472,16 @@
                       "numberOfHoles": 18,
                       "position": 45,
                       "points": 29,
+                      "handicap": 27,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 15,
+                      "points": 32,
                       "handicap": 27,
                       "source": "certified-individual-stableford"
                     }
@@ -125286,10 +125546,10 @@
                   "evidence": []
                 },
                 "stableford": {
-                  "rounds": 3,
-                  "average": 30.7,
+                  "rounds": 4,
+                  "average": 31.5,
                   "best": 39,
-                  "averageHandicap": 19.3,
+                  "averageHandicap": 19,
                   "evidence": [
                     {
                       "date": "2026-04-26",
@@ -125318,6 +125578,16 @@
                       "numberOfHoles": 18,
                       "position": 23,
                       "points": 27,
+                      "handicap": 18,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 12,
+                      "points": 34,
                       "handicap": 18,
                       "source": "certified-individual-stableford"
                     }
@@ -130844,8 +131114,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 13,
-                  "average": 31.8,
+                  "rounds": 14,
+                  "average": 32,
                   "best": 36,
                   "averageHandicap": 19.8,
                   "evidence": [
@@ -130977,6 +131247,16 @@
                       "position": 13,
                       "points": 32,
                       "handicap": 21,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 13,
+                      "points": 34,
+                      "handicap": 20,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -140650,9 +140930,9 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 25.7,
-                  "best": 32,
+                  "rounds": 7,
+                  "average": 27.1,
+                  "best": 36,
                   "averageHandicap": 17.7,
                   "evidence": [
                     {
@@ -140712,6 +140992,16 @@
                       "numberOfHoles": 18,
                       "position": 20,
                       "points": 29,
+                      "handicap": 18,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-13",
+                      "competitionId": "september-sunday-stableford",
+                      "competitionName": "September Sunday Stableford",
+                      "numberOfHoles": 18,
+                      "position": 6,
+                      "points": 36,
                       "handicap": 18,
                       "source": "certified-individual-stableford"
                     }
