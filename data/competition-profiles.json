@@ -4731,19 +4731,30 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": false,
     "profileType": "Competition Profile",
-    "yearsPlayed": 5,
+    "yearsPlayed": 6,
     "firstYear": 2021,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 366,
-    "averageEntries": 73.2,
-    "uniqueWinners": 14,
-    "mostSuccessfulPlayer": "Alan Ball",
-    "mostWins": 1,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 429,
+    "averageEntries": 71.5,
+    "uniqueWinners": 16,
+    "mostSuccessfulPlayer": "Kevin John Hartland",
+    "mostWins": 2,
     "currentWinners": [
-      "James Johnson (7), Joshua Johnson (19), Daniel Round"
+      "James Price",
+      "Kevin John Hartland",
+      "Robert Marsden",
+      "Stephen Price"
     ],
     "winnerLeaders": [
+      {
+        "player": "Kevin John Hartland",
+        "wins": 2
+      },
+      {
+        "player": "Robert Marsden",
+        "wins": 2
+      },
       {
         "player": "Alan Ball",
         "wins": 1
@@ -4765,15 +4776,15 @@
         "wins": 1
       },
       {
+        "player": "James Price",
+        "wins": 1
+      },
+      {
         "player": "James Stevens",
         "wins": 1
       },
       {
         "player": "Jason Watchorn",
-        "wins": 1
-      },
-      {
-        "player": "Kevin John Hartland",
         "wins": 1
       },
       {
@@ -4793,7 +4804,7 @@
         "wins": 1
       },
       {
-        "player": "Robert Marsden",
+        "player": "Stephen Price",
         "wins": 1
       },
       {
@@ -4802,6 +4813,38 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "James Price",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 89,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Kevin John Hartland",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 89,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Robert Marsden",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 89,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Stephen Price",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 89,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "James Johnson (7), Joshua Johnson (19), Daniel Round",

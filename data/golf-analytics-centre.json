@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-09-13T19:55:32.440Z",
+  "generatedAt": "2026-09-13T20:19:36.941Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -17,13 +17,13 @@
     "evidenceRequired": true
   },
   "totals": {
-    "canonicalPlayers": 664,
+    "canonicalPlayers": 667,
     "playersWithAnalytics": 305,
     "eligibleEvents": 213,
     "eligibleRows": 8756,
     "includedNettRounds": 3372,
     "includedStablefordRounds": 5383,
-    "excludedTeamEvents": 117,
+    "excludedTeamEvents": 118,
     "excludedEvents": 94,
     "excludedNonFinishers": 756,
     "excludedUnknownPlayers": 0,
@@ -48789,6 +48789,15 @@
           }
         }
       }
+    },
+    {
+      "name": "Jaffar Shamsuddin",
+      "status": "Historical",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
     },
     {
       "name": "James Golby",
@@ -101311,6 +101320,15 @@
       }
     },
     {
+      "name": "Norman Mountford",
+      "status": "Historical",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
+    },
+    {
       "name": "Oliver Underhill",
       "status": "Historical",
       "primarySection": "Mens",
@@ -115809,6 +115827,15 @@
     },
     {
       "name": "Reg Bonehill",
+      "status": "Historical",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
+    },
+    {
+      "name": "Rich Price",
       "status": "Historical",
       "primarySection": "Mens",
       "playedSections": [
