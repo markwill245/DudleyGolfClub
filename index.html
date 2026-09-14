@@ -325,6 +325,304 @@
                 display: none !important;
             }
         }
+
+        /* =========================================
+           DUDLEY HERITAGE STRIP
+        ========================================= */
+
+        .heritage-strip {
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    rgba(249, 247, 242, 0.84),
+                    rgba(249, 247, 242, 0.84)
+                ),
+                url("images/hole12-view3.webp")
+                center 52% / cover no-repeat;
+
+            border-top: 1px solid rgba(197, 163, 103, 0.22);
+            border-bottom: 1px solid rgba(197, 163, 103, 0.22);
+        }
+
+        .heritage-strip::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(249,247,242,0.20) 0%,
+                    rgba(249,247,242,0.03) 35%,
+                    rgba(249,247,242,0.03) 65%,
+                    rgba(249,247,242,0.20) 100%
+                );
+        }
+
+        .heritage-inner {
+            position: relative;
+            z-index: 1;
+
+            width: min(1220px, calc(100% - 48px));
+            min-height: 265px;
+
+            margin: 0 auto;
+            padding: 34px 0;
+
+            display: grid;
+            grid-template-columns: 255px 1px minmax(0, 1fr) 235px;
+            column-gap: 44px;
+            align-items: center;
+        }
+
+
+        /* CREST */
+
+        .heritage-crest {
+            width: 255px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heritage-crest img {
+            display: block;
+
+            width: 285px;
+            max-width: 100%;
+            height: auto;
+
+            object-fit: contain;
+        }
+
+
+        /* DIVIDER */
+
+        .heritage-divider {
+            width: 1px;
+            height: 190px;
+
+            background: rgba(166, 132, 73, 0.82);
+        }
+
+
+        /* MAIN COPY */
+
+        .heritage-copy {
+            min-width: 0;
+        }
+
+        .heritage-kicker {
+            margin: 0 0 8px;
+
+            font-family: "Outfit", sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 0.30em;
+
+            color: #B28D51;
+        }
+
+        .heritage-copy h2 {
+            margin: 0;
+
+            font-family: "Cormorant Garamond", serif;
+            font-size: 58px;
+            font-weight: 500;
+            font-style: italic;
+
+            line-height: 0.95;
+
+            color: #132419;
+        }
+
+        .heritage-founded {
+            margin: 8px 0 0;
+
+            font-family: "Cormorant Garamond", serif;
+            font-size: 34px;
+            font-weight: 500;
+            font-style: italic;
+
+            line-height: 1;
+
+            color: #B99154;
+        }
+
+        .heritage-description {
+            max-width: 610px;
+
+            margin: 17px 0 22px;
+
+            font-family: "Outfit", sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+
+            color: rgba(19, 36, 25, 0.80);
+        }
+
+
+        /* BUTTON */
+
+        .heritage-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+
+            padding: 13px 21px;
+
+            background: #132419;
+            border: 1px solid #132419;
+
+            font-family: "Outfit", sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 0.18em;
+
+            color: #C5A367;
+            text-decoration: none;
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .heritage-button:hover {
+            background: #C5A367;
+            border-color: #C5A367;
+
+            color: #132419;
+        }
+
+
+        /* RIGHT-HAND HERITAGE QUOTE */
+
+        .heritage-quote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        .heritage-quote p {
+            margin: 0;
+
+            font-family: "Cormorant Garamond", serif;
+            font-size: 29px;
+            font-style: italic;
+            font-weight: 500;
+
+            line-height: 1.14;
+
+            color: #A17D45;
+        }
+
+        .heritage-quote span {
+            display: block;
+
+            width: 82px;
+            height: 1px;
+
+            margin: 22px auto 0;
+
+            background: #B99154;
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 1000px) {
+
+            .heritage-inner {
+                grid-template-columns: 215px 1px minmax(0, 1fr);
+                column-gap: 30px;
+            }
+
+            .heritage-quote {
+                display: none;
+            }
+
+            .heritage-crest {
+                width: 215px;
+            }
+
+            .heritage-crest img {
+                width: 205px;
+            }
+
+            .heritage-copy h2 {
+                font-size: 48px;
+            }
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .heritage-strip {
+                background:
+                    linear-gradient(
+                        rgba(249, 247, 242, 0.94),
+                        rgba(249, 247, 242, 0.94)
+                    ),
+                    url("images/hole12-view3.webp")
+                    center / cover no-repeat;
+            }
+
+            .heritage-inner {
+                width: min(100% - 32px, 560px);
+                min-height: 0;
+
+                padding: 34px 0 38px;
+
+                display: block;
+
+                text-align: center;
+            }
+
+            .heritage-crest {
+                width: 190px;
+
+                margin: 0 auto 20px;
+            }
+
+            .heritage-crest img {
+                width: 175px;
+            }
+
+            .heritage-divider {
+                width: 72px;
+                height: 1px;
+
+                margin: 0 auto 24px;
+            }
+
+            .heritage-copy h2 {
+                font-size: 43px;
+            }
+
+            .heritage-founded {
+                font-size: 29px;
+            }
+
+            .heritage-description {
+                margin-left: auto;
+                margin-right: auto;
+
+                font-size: 14px;
+            }
+        }
+
     </style>
 </head>
 
@@ -454,9 +752,53 @@
 
         </div>
     </header>
+    <!-- DUDLEY HERITAGE -->
+    <section id="dudley-heritage" class="heritage-strip">
+        <div class="heritage-inner">
 
+            <div class="heritage-crest">
+                <img
+                    src="images/dudley-crest-new.webp"
+                    alt="Dudley Golf Club historic crest - Founded 1893"
+                    loading="lazy">
+            </div>
 
-    <!-- HOME LANDING LINKS -->
+            <div class="heritage-divider" aria-hidden="true"></div>
+
+            <div class="heritage-copy">
+                <p class="heritage-kicker">OUR HERITAGE</p>
+
+                <h2>Dudley Golf Club</h2>
+
+                <p class="heritage-founded">
+                    Founded 1893
+                </p>
+
+                <p class="heritage-description">
+                    For over 130 years, Dudley Golf Club has been at the heart of the
+                    Black Country, offering a challenging parkland course, a warm welcome
+                    and a proud tradition.
+                </p>
+
+                <a href="/history" class="heritage-button">
+                    EXPLORE OUR HISTORY
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div class="heritage-quote">
+                <p>
+                    More than<br>
+                    a round of golf...<br>
+                    a proud<br>
+                    history continues.
+                </p>
+                <span></span>
+            </div>
+
+        </div>
+    </section>
+<!-- HOME LANDING LINKS -->
     <section class="bg-[#F9F7F2] py-24 px-4">
         <div class="max-w-7xl mx-auto">
 
