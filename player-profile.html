@@ -969,6 +969,37 @@
       container.innerHTML = `
       <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
 
+        <div class="mb-8 rounded-2xl border border-[#C5A367]/40 bg-[#F9F7F2] p-4">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+
+            <div>
+              <p class="uppercase tracking-[0.22em] text-[11px] text-[#C5A367] font-bold">
+                Museum Access
+              </p>
+
+              <p class="text-sm text-gray-600 mt-1">
+                View this player profile as a visitor or Dudley Golf Club member.
+              </p>
+            </div>
+
+            <div class="flex gap-2">
+              <a
+                href="#"
+                aria-current="page"
+                class="rounded-xl border border-[#132419] bg-[#132419] px-4 py-2 text-sm font-semibold text-white">
+                Public View
+              </a>
+
+              <a
+                href="login.html?return=${encodeURIComponent('/player-profile.html' + window.location.search)}"
+                class="rounded-xl border border-[#C5A367]/60 bg-white px-4 py-2 text-sm font-semibold text-[#132419]">
+                Member View
+              </a>
+            </div>
+
+          </div>
+        </div>
+
         <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-4">
           ${escapeHtml(player.hero.section)}
           •
