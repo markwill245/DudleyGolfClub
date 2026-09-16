@@ -436,9 +436,9 @@
         data-player-card="${escapeHtml(player.slug)}"
         class="bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
 
-        <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-3">
+        <p class="uppercase tracking-[0.20em] text-sm text-[#C5A367] font-bold mb-3">
           ${escapeHtml(section)}
-          �
+          &bull;
           ${escapeHtml(status)}
         </p>
 
@@ -446,12 +446,12 @@
           href="/player-profile?player=${encodeURIComponent(player.slug)}"
           class="inline-block hover:text-[#C5A367] transition">
 
-          <h2 class="text-3xl font-serif mb-5">
+         <h2 class="text-3xl font-serif mb-5 leading-tight">
             ${escapeHtml(name)}
           </h2>
         </a>
 
-        <div class="grid grid-cols-4 gap-2 text-sm">
+        <div class="grid grid-cols-4 gap-2 text-base">
 
           <button
             type="button"
@@ -514,13 +514,13 @@
 
         <div class="mt-4 flex items-center justify-between gap-4">
 
-          <p class="text-sm text-gray-600">
+          <p class="text-base text-gray-600">
             ${escapeHtml(hofStatus)}
           </p>
 
           ${oomRank
               ? `
-                    <span class="text-xs font-semibold text-[#C5A367]">
+                    <span class="text-sm font-semibold text-[#C5A367]">
                       OOM #${oomRank}
                     </span>
                   `
@@ -716,12 +716,11 @@ ${scoring.seniors.eighteenHole.gross ? `
   </div>
 ` : ""}
 
-        <a
-            href="/player-profile?player=${encodeURIComponent(player.slug)}"
-            class="inline-block mt-4 text-xs uppercase tracking-widest font-bold text-[#C5A367] hover:text-[#132419] transition">
-            View Full Profile ?
-          </a>
-
+       <a
+    href="/player-profile?player=${encodeURIComponent(player.slug)}"
+    class="flex items-center justify-center w-full mt-5 min-h-[48px] px-4 py-3 rounded-lg border-2 border-[#C5A367] bg-[#132419] text-[#C5A367] text-sm uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+    View Full Profile &#8594;
+</a>
       </article>
           `;
         }).join("");
@@ -854,7 +853,7 @@ ${scoring.seniors.eighteenHole.gross ? `
                 </div>
               `
           : `
-                <p class="text-sm text-gray-600">
+                <p class="text-base text-gray-600">
                   Certified round evidence is not available.
                 </p>
               `
@@ -937,7 +936,7 @@ ${scoring.seniors.eighteenHole.gross ? `
         Certified Wins
       </h3>
 
-          <p class="text-sm text-gray-600">
+          <p class="text-base text-gray-600">
             No certified career wins recorded.
           </p>
       `;
@@ -1108,7 +1107,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
                 <span class="font-semibold whitespace-nowrap">
                   ${row.count}
-                  �
+                  &times;
                   ${row.rate}
                   =
                   ${points}
@@ -1140,7 +1139,7 @@ ${scoring.seniors.eighteenHole.gross ? `
           Order of Merit
       </h3>
 
-          <p class="text-sm text-gray-600">
+          <p class="text-base text-gray-600">
             No points recorded in the current
             ${escapeHtml(oom.season || "")}
             season.
@@ -1208,7 +1207,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
               <p class="text-xs text-gray-500 mt-1">
                 ${escapeHtml(result.date || result.year)}
-                �
+                &bull;
                 Position ${escapeHtml(result.position)}
               </p>
 
@@ -1279,7 +1278,7 @@ ${scoring.seniors.eighteenHole.gross ? `
         Certified Top 3 Finishes
       </h3>
 
-          <p class="text-sm text-gray-600">
+          <p class="text-base text-gray-600">
             No certified Top 3 finishes recorded.
           </p>
       `;
@@ -1623,7 +1622,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
   <button id="backToTop"    type="button"
     aria-label="Back to top"
-    class="fixed bottom-6 right-6 hidden md:!hidden bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-4 py-3 rounded-md shadow-lg transition-all duration-300 z-50 text-xs font-bold uppercase tracking-widest">
+    class="fixed bottom-6 right-6 hidden bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-4 py-3 rounded-md shadow-lg transition-all duration-300 z-50 text-xs font-bold uppercase tracking-widest">
     Back to Top &#8593;
   </button>
 
