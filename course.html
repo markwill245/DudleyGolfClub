@@ -2317,29 +2317,81 @@
 
         updateWeather();
     </script>
-    <!-- RETURN HOME BUTTON -->
-    <a href="/" aria-label="Return Home" style="
-position: fixed;
-bottom: 24px;
-right: 24px;
-width: 50px;
-height: 50px;
-background-color: #132419;
-color: #C5A367;
-border: 2px solid #C5A367;
-border-radius: 4px;
-z-index: 99999;
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-font-size: 20px;
-font-weight: bold;
-">
-        &#8962;
-    </a>
+  <!-- FLOATING NAVIGATION: Home on desktop / Choose Hole on mobile -->
+<a href="/" id="course-floating-nav" aria-label="Return Home">
+    <span class="course-floating-desktop">&#8962;</span>
+    <span class="course-floating-mobile">Choose Hole &#8593;</span>
+</a>
 
+<style>
+    #course-floating-nav {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 50px;
+        height: 50px;
+        background-color: #132419;
+        color: #C5A367;
+        border: 2px solid #C5A367;
+        border-radius: 4px;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .course-floating-mobile {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        #course-floating-nav {
+            width: auto;
+            height: 46px;
+            padding: 0 16px;
+            bottom: 18px;
+            right: 16px;
+            border-radius: 6px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .course-floating-desktop {
+            display: none;
+        }
+
+        .course-floating-mobile {
+            display: inline;
+        }
+    }
+</style>
+
+<script>
+    (() => {
+        const button = document.getElementById('course-floating-nav');
+        if (!button) return;
+
+        button.addEventListener('click', (event) => {
+            if (!window.matchMedia('(max-width: 767px)').matches) return;
+
+            event.preventDefault();
+
+            const selector = document.getElementById('hole-nav-container');
+            if (!selector) return;
+
+            selector.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+    })();
+</script>
 </body>
 
 </html>
