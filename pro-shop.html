@@ -383,7 +383,7 @@
                             View My Stock
                         </a>
 
-                        <a href="#goods-enquiry"
+                        <a href="#goods-enquiry" id="goods-enquiry-btn" aria-expanded="false"
                             class="bg-forest text-[#C5A367] px-6 py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-gold hover:text-[#132419] transition-all duration-300">
                             Goods Enquiry
                         </a>
@@ -392,7 +392,7 @@
             </div>
         </div>
 
-        <div id="goods-enquiry" class="max-w-4xl mx-auto mt-16 border border-[#C5A367]/30 bg-white p-6 md:p-8">
+        <div id="goods-enquiry" hidden class="max-w-4xl mx-auto mt-16 border border-[#C5A367]/30 bg-white p-6 md:p-8">
             <h3 class="serif text-3xl text-[#132419] mb-2">Pro Shop Goods Enquiry</h3>
             <p class="text-sm text-gray-600 mb-6">
                 Ask about clubs, clothing, footwear, accessories, availability or pricing.
@@ -424,6 +424,11 @@
                 <button type="submit"
                     class="bg-[#132419] text-[#C5A367] px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
                     Send Goods Enquiry
+                </button>
+
+                <button type="button" id="goods-enquiry-close"
+                    class="border border-[#132419] text-[#132419] px-8 py-4 ml-0 md:ml-3 text-[10px] uppercase tracking-widest font-bold hover:bg-[#132419] hover:text-[#C5A367] transition">
+                    Close Enquiry Form
                 </button>
             </form>
         </div>
@@ -554,6 +559,41 @@
     </a>
 
     <script>
+        // PRO SHOP GOODS ENQUIRY TOGGLE
+        function initGoodsEnquiry() {
+            const btn = document.getElementById("goods-enquiry-btn");
+            const form = document.getElementById("goods-enquiry");
+            const closeBtn = document.getElementById("goods-enquiry-close");
+
+            if (!btn || !form) return;
+
+            if (closeBtn) {
+                closeBtn.addEventListener("click", function () {
+                    form.hidden = true;
+                    btn.setAttribute("aria-expanded", "false");
+
+                    btn.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+                });
+            }
+
+            btn.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                const opening = form.hidden;
+                form.hidden = !opening;
+                btn.setAttribute("aria-expanded", String(opening));
+
+                if (opening) {
+                    form.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        }
         function updateCourseStatus() {
             const el = document.getElementById("course-status");
             if (!el) return;
@@ -635,6 +675,7 @@
 
         document.addEventListener("DOMContentLoaded", () => {
             initMenu();
+            initGoodsEnquiry();
             updateClock();
             updateWeather();
             setInterval(updateClock, 1000);
