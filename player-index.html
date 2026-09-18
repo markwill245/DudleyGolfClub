@@ -435,7 +435,7 @@
           return `
       <article
         data-player-card="${escapeHtml(player.slug)}"
-        class="bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition">
+        class="bg-white rounded-2xl p-6 shadow-lg border border-[#C5A367]/30 hover:shadow-2xl transition flex flex-col">
 
         <p class="uppercase tracking-[0.20em] text-sm text-[#C5A367] font-bold mb-3">
           ${escapeHtml(section)}
@@ -719,7 +719,7 @@ ${scoring.seniors.eighteenHole.gross ? `
 
        <a
     href="/player-profile?player=${encodeURIComponent(player.slug)}"
-    class="flex items-center justify-center w-full mt-5 min-h-[48px] px-4 py-3 rounded-lg border-2 border-[#C5A367] bg-[#132419] text-[#C5A367] text-sm uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+    class="flex items-center justify-center w-full mt-auto min-h-[48px] px-4 py-3 rounded-lg border-2 border-[#C5A367] bg-[#132419] text-[#C5A367] text-sm uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
     View Full Profile &#8594;
 </a>
       </article>
