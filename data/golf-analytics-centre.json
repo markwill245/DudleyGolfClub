@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-09-13T20:19:36.941Z",
+  "generatedAt": "2026-09-18T14:07:40.008Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -19,10 +19,10 @@
   "totals": {
     "canonicalPlayers": 667,
     "playersWithAnalytics": 305,
-    "eligibleEvents": 213,
-    "eligibleRows": 8756,
+    "eligibleEvents": 214,
+    "eligibleRows": 8783,
     "includedNettRounds": 3372,
-    "includedStablefordRounds": 5383,
+    "includedStablefordRounds": 5410,
     "excludedTeamEvents": 118,
     "excludedEvents": 94,
     "excludedNonFinishers": 756,
@@ -10379,10 +10379,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 14.6,
+                  "rounds": 6,
+                  "average": 14.2,
                   "best": 17,
-                  "averageHandicap": 12.4,
+                  "averageHandicap": 12.5,
                   "evidence": [
                     {
                       "date": "2026-04-16",
@@ -10431,6 +10431,16 @@
                       "numberOfHoles": 9,
                       "position": 18,
                       "points": 17,
+                      "handicap": 13,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 21,
+                      "points": 12,
                       "handicap": 13,
                       "source": "certified-individual-stableford"
                     }
@@ -13615,8 +13625,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 3,
-                  "average": 16.3,
+                  "rounds": 4,
+                  "average": 15.3,
                   "best": 19,
                   "averageHandicap": 11,
                   "evidence": [
@@ -13647,6 +13657,16 @@
                       "numberOfHoles": 9,
                       "position": 8,
                       "points": 19,
+                      "handicap": 11,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 20,
+                      "points": 12,
                       "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
@@ -19749,10 +19769,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 13,
+                  "rounds": 5,
+                  "average": 13.4,
                   "best": 18,
-                  "averageHandicap": 9,
+                  "averageHandicap": 9.2,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -19792,6 +19812,16 @@
                       "position": 27,
                       "points": 11,
                       "handicap": 9,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 15,
+                      "points": 15,
+                      "handicap": 10,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -40992,8 +41022,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 2,
-                  "average": 15,
+                  "rounds": 3,
+                  "average": 13,
                   "best": 19,
                   "averageHandicap": 20,
                   "evidence": [
@@ -41014,6 +41044,16 @@
                       "numberOfHoles": 9,
                       "position": 9,
                       "points": 19,
+                      "handicap": 20,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 26,
+                      "points": 9,
                       "handicap": 20,
                       "source": "certified-individual-stableford"
                     }
@@ -47047,10 +47087,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 12.5,
-                  "best": 14,
-                  "averageHandicap": 9.8,
+                  "rounds": 5,
+                  "average": 13.4,
+                  "best": 17,
+                  "averageHandicap": 9.6,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -47089,6 +47129,16 @@
                       "numberOfHoles": 9,
                       "position": 29,
                       "points": 9,
+                      "handicap": 9,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 9,
+                      "points": 17,
                       "handicap": 9,
                       "source": "certified-individual-stableford"
                     }
@@ -49984,10 +50034,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 17.3,
+                  "rounds": 5,
+                  "average": 17,
                   "best": 19,
-                  "averageHandicap": 13.3,
+                  "averageHandicap": 13.2,
                   "evidence": [
                     {
                       "date": "2026-05-21",
@@ -50026,6 +50076,16 @@
                       "numberOfHoles": 9,
                       "position": 7,
                       "points": 19,
+                      "handicap": 13,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 11,
+                      "points": 16,
                       "handicap": 13,
                       "source": "certified-individual-stableford"
                     }
@@ -56632,8 +56692,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 15.2,
+                  "rounds": 6,
+                  "average": 15.8,
                   "best": 20,
                   "averageHandicap": 10,
                   "evidence": [
@@ -56684,6 +56744,16 @@
                       "numberOfHoles": 9,
                       "position": 4,
                       "points": 20,
+                      "handicap": 10,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 7,
+                      "points": 19,
                       "handicap": 10,
                       "source": "certified-individual-stableford"
                     }
@@ -59263,10 +59333,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 11.3,
+                  "rounds": 7,
+                  "average": 10.1,
                   "best": 17,
-                  "averageHandicap": 15.8,
+                  "averageHandicap": 16,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -59326,6 +59396,16 @@
                       "position": 30,
                       "points": 7,
                       "handicap": 16,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 27,
+                      "points": 3,
+                      "handicap": 17,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -60443,10 +60523,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 14.4,
+                  "rounds": 6,
+                  "average": 14.2,
                   "best": 18,
-                  "averageHandicap": 10,
+                  "averageHandicap": 10.2,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -60496,6 +60576,16 @@
                       "position": 19,
                       "points": 16,
                       "handicap": 10,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 19,
+                      "points": 13,
+                      "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -62893,10 +62983,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 16.8,
+                  "rounds": 5,
+                  "average": 16.4,
                   "best": 19,
-                  "averageHandicap": 10,
+                  "averageHandicap": 10.2,
                   "evidence": [
                     {
                       "date": "2026-04-16",
@@ -62936,6 +63026,16 @@
                       "position": 13,
                       "points": 16,
                       "handicap": 10,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 13,
+                      "points": 15,
+                      "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -64447,10 +64547,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 15.4,
+                  "rounds": 6,
+                  "average": 14.8,
                   "best": 20,
-                  "averageHandicap": 9.2,
+                  "averageHandicap": 9.3,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -64499,6 +64599,16 @@
                       "numberOfHoles": 9,
                       "position": 6,
                       "points": 20,
+                      "handicap": 10,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 24,
+                      "points": 12,
                       "handicap": 10,
                       "source": "certified-individual-stableford"
                     }
@@ -66152,10 +66262,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 15,
+                  "rounds": 7,
+                  "average": 15.4,
                   "best": 18,
-                  "averageHandicap": 9.2,
+                  "averageHandicap": 9.3,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -66214,6 +66324,16 @@
                       "numberOfHoles": 9,
                       "position": 26,
                       "points": 12,
+                      "handicap": 10,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 8,
+                      "points": 18,
                       "handicap": 10,
                       "source": "certified-individual-stableford"
                     }
@@ -67143,10 +67263,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 17.5,
+                  "rounds": 7,
+                  "average": 17.1,
                   "best": 22,
-                  "averageHandicap": 11.8,
+                  "averageHandicap": 11.7,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -67206,6 +67326,16 @@
                       "position": 1,
                       "points": 22,
                       "handicap": 12,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 14,
+                      "points": 15,
+                      "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -68049,8 +68179,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 2,
-                  "average": 18,
+                  "rounds": 3,
+                  "average": 16.7,
                   "best": 18,
                   "averageHandicap": 8,
                   "evidence": [
@@ -68071,6 +68201,16 @@
                       "numberOfHoles": 9,
                       "position": 12,
                       "points": 18,
+                      "handicap": 8,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 17,
+                      "points": 14,
                       "handicap": 8,
                       "source": "certified-individual-stableford"
                     }
@@ -69634,10 +69774,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 16.3,
+                  "rounds": 5,
+                  "average": 17,
                   "best": 22,
-                  "averageHandicap": 11,
+                  "averageHandicap": 11.2,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -69677,6 +69817,16 @@
                       "position": 21,
                       "points": 16,
                       "handicap": 11,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 3,
+                      "points": 20,
+                      "handicap": 12,
                       "source": "certified-individual-stableford"
                     }
                   ]
@@ -81422,10 +81572,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 16.8,
+                  "rounds": 6,
+                  "average": 17.2,
                   "best": 22,
-                  "averageHandicap": 10.6,
+                  "averageHandicap": 10.5,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -81474,6 +81624,16 @@
                       "numberOfHoles": 9,
                       "position": 14,
                       "points": 18,
+                      "handicap": 10,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 5,
+                      "points": 19,
                       "handicap": 10,
                       "source": "certified-individual-stableford"
                     }
@@ -83042,10 +83202,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 16.4,
+                  "rounds": 6,
+                  "average": 15.3,
                   "best": 22,
-                  "averageHandicap": 14.6,
+                  "averageHandicap": 14.5,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -83094,6 +83254,16 @@
                       "numberOfHoles": 9,
                       "position": 10,
                       "points": 16,
+                      "handicap": 14,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 25,
+                      "points": 10,
                       "handicap": 14,
                       "source": "certified-individual-stableford"
                     }
@@ -89377,8 +89547,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 17,
+                  "rounds": 5,
+                  "average": 17.6,
                   "best": 20,
                   "averageHandicap": 8,
                   "evidence": [
@@ -89418,6 +89588,16 @@
                       "competitionName": "Seniors George Barratt Trophy",
                       "numberOfHoles": 9,
                       "position": 5,
+                      "points": 20,
+                      "handicap": 8,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 2,
                       "points": 20,
                       "handicap": 8,
                       "source": "certified-individual-stableford"
@@ -93482,10 +93662,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 15.2,
-                  "best": 18,
-                  "averageHandicap": 18.4,
+                  "rounds": 6,
+                  "average": 15.8,
+                  "best": 19,
+                  "averageHandicap": 18.5,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -93534,6 +93714,16 @@
                       "numberOfHoles": 9,
                       "position": 28,
                       "points": 11,
+                      "handicap": 19,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 4,
+                      "points": 19,
                       "handicap": 19,
                       "source": "certified-individual-stableford"
                     }
@@ -95428,10 +95618,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 13,
+                  "rounds": 6,
+                  "average": 13.2,
                   "best": 15,
-                  "averageHandicap": 14.4,
+                  "averageHandicap": 14.5,
                   "evidence": [
                     {
                       "date": "2026-04-16",
@@ -95480,6 +95670,16 @@
                       "numberOfHoles": 9,
                       "position": 22,
                       "points": 15,
+                      "handicap": 15,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 16,
+                      "points": 14,
                       "handicap": 15,
                       "source": "certified-individual-stableford"
                     }
@@ -104704,9 +104904,9 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 1,
-                  "average": 13,
-                  "best": 13,
+                  "rounds": 2,
+                  "average": 15,
+                  "best": 17,
                   "averageHandicap": 8,
                   "evidence": [
                     {
@@ -104716,6 +104916,16 @@
                       "numberOfHoles": 9,
                       "position": 23,
                       "points": 13,
+                      "handicap": 8,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 10,
+                      "points": 17,
                       "handicap": 8,
                       "source": "certified-individual-stableford"
                     }
@@ -110402,10 +110612,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 17.8,
+                  "rounds": 6,
+                  "average": 17.2,
                   "best": 21,
-                  "averageHandicap": 13.2,
+                  "averageHandicap": 13.3,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -110454,6 +110664,16 @@
                       "numberOfHoles": 9,
                       "position": 2,
                       "points": 21,
+                      "handicap": 14,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 18,
+                      "points": 14,
                       "handicap": 14,
                       "source": "certified-individual-stableford"
                     }
@@ -115741,6 +115961,51 @@
                   "evidence": []
                 }
               }
+            },
+            "2026": {
+              "nineHole": {
+                "nett": {
+                  "rounds": 0,
+                  "average": null,
+                  "best": null,
+                  "averageHandicap": null,
+                  "evidence": []
+                },
+                "stableford": {
+                  "rounds": 1,
+                  "average": 12,
+                  "best": 12,
+                  "averageHandicap": 9,
+                  "evidence": [
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 23,
+                      "points": 12,
+                      "handicap": 9,
+                      "source": "certified-individual-stableford"
+                    }
+                  ]
+                }
+              },
+              "eighteenHole": {
+                "nett": {
+                  "rounds": 0,
+                  "average": null,
+                  "best": null,
+                  "averageHandicap": null,
+                  "evidence": []
+                },
+                "stableford": {
+                  "rounds": 0,
+                  "average": null,
+                  "best": null,
+                  "averageHandicap": null,
+                  "evidence": []
+                }
+              }
             }
           }
         }
@@ -118974,8 +119239,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 16.5,
+                  "rounds": 5,
+                  "average": 17,
                   "best": 19,
                   "averageHandicap": 9,
                   "evidence": [
@@ -119016,6 +119281,16 @@
                       "numberOfHoles": 9,
                       "position": 20,
                       "points": 16,
+                      "handicap": 9,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 5,
+                      "points": 19,
                       "handicap": 9,
                       "source": "certified-individual-stableford"
                     }
@@ -121129,8 +121404,8 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 6,
-                  "average": 14.2,
+                  "rounds": 7,
+                  "average": 13.9,
                   "best": 18,
                   "averageHandicap": 17,
                   "evidence": [
@@ -121191,6 +121466,16 @@
                       "numberOfHoles": 9,
                       "position": 15,
                       "points": 17,
+                      "handicap": 17,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 22,
+                      "points": 12,
                       "handicap": 17,
                       "source": "certified-individual-stableford"
                     }
@@ -133499,10 +133784,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 5,
-                  "average": 13,
+                  "rounds": 6,
+                  "average": 13.5,
                   "best": 17,
-                  "averageHandicap": 10.6,
+                  "averageHandicap": 10.7,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -133551,6 +133836,16 @@
                       "numberOfHoles": 9,
                       "position": 17,
                       "points": 17,
+                      "handicap": 11,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 12,
+                      "points": 16,
                       "handicap": 11,
                       "source": "certified-individual-stableford"
                     }
@@ -144567,10 +144862,10 @@
                   ]
                 },
                 "stableford": {
-                  "rounds": 4,
-                  "average": 15.8,
+                  "rounds": 5,
+                  "average": 16.6,
                   "best": 21,
-                  "averageHandicap": 8.5,
+                  "averageHandicap": 8.6,
                   "evidence": [
                     {
                       "date": "2026-04-09",
@@ -144610,6 +144905,16 @@
                       "position": 22,
                       "points": 13,
                       "handicap": 7,
+                      "source": "certified-individual-stableford"
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "competitionId": "seniors-ted-jones-trophy",
+                      "competitionName": "Seniors Ted Jones Trophy",
+                      "numberOfHoles": 9,
+                      "position": 1,
+                      "points": 20,
+                      "handicap": 9,
                       "source": "certified-individual-stableford"
                     }
                   ]
