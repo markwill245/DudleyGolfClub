@@ -61,10 +61,16 @@
 
     <section class="mb-8">
       <div class="flex flex-wrap gap-3 mb-4">
+        
         <button type="button" data-player-filter="active"
           class="player-filter px-5 py-3 rounded-xl border border-[#C5A367]/40 bg-[#132419] text-white font-semibold transition">
           Active Players
         </button>
+
+<a href="#juniors-heading"
+          class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-[#C5A367]/40 bg-[#C5A367] text-[#132419] font-semibold transition hover:bg-[#132419] hover:text-white">
+          Junior Players ↓
+        </a>
 
         <button type="button" data-player-filter="historical"
           class="player-filter px-5 py-3 rounded-xl border border-[#C5A367]/40 bg-white font-semibold transition">
@@ -82,6 +88,19 @@
     </section>
     <section id="players" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <p>Loading players...</p>
+    </section>
+
+    <section class="mt-20 border-t border-[#C5A367]/30 pt-12" aria-labelledby="juniors-heading">
+      <p class="uppercase tracking-[0.3em] text-xs text-[#C5A367] font-bold mb-4">
+        Current Junior Members
+      </p>
+      <h2 id="juniors-heading" class="text-4xl font-serif mb-4">Juniors</h2>
+      <p class="text-lg mb-8">
+        Meet our junior members across three age groups.
+      </p>
+      <div id="junior-players" class="space-y-10">
+        <p>Loading juniors...</p>
+      </div>
     </section>
 
   </main>
@@ -1645,6 +1664,142 @@ ${scoring.seniors.eighteenHole.gross ? `
       });
     });
   </script>
+
+  <script>
+    (async function loadJuniorPlayers() {
+      const container = document.getElementById("junior-players");
+      if (!container) return;
+
+      const confirmedProfiles = new Set([
+        "benjamin-jones",
+        "joseph-walters",
+        "owen-limb"
+      ]);
+
+      try {
+        const [juniorResponse, playerResponse] = await Promise.all([
+          fetch("/data/current-juniors.json"),
+          fetch("/data/player-page-data.json")
+        ]);
+
+        if (!juniorResponse.ok || !playerResponse.ok) {
+          throw new Error("Junior or Museum data unavailable");
+        }
+
+        const juniors = await juniorResponse.json();
+        const museumPlayers = await playerResponse.json();
+
+        const groups = [
+          ["Under 10", "Under 10"],
+          ["11-15", "11–15"],
+          ["16-18", "16–18"]
+        ];
+
+        container.replaceChildren();
+
+        for (const [key, label] of groups) {
+          const names = juniors.categories?.[key] || [];
+
+          const section = document.createElement("section");
+          const heading = document.createElement("h3");
+          heading.className = "text-2xl font-serif mb-5";
+          heading.textContent = label + " (" + names.length + ")";
+          section.appendChild(heading);
+
+          const grid = document.createElement("div");
+          grid.className = "grid md:grid-cols-2 lg:grid-cols-3 gap-6";
+
+          for (const name of names) {
+            const player = museumPlayers.find(record =>
+              confirmedProfiles.has(record.slug) &&
+              record.hero?.name?.trim().toLowerCase() ===
+                name.trim().toLowerCase()
+            );
+
+            const card = document.createElement("article");
+            card.className =
+              "bg-white rounded-2xl p-6 shadow-lg border " +
+              "border-[#C5A367]/30 hover:shadow-2xl transition " +
+              "flex flex-col";
+
+            const category = document.createElement("p");
+            category.className =
+              "uppercase tracking-[0.20em] text-sm " +
+              "text-[#C5A367] font-bold mb-3";
+            category.textContent = "Junior • " + label;
+            card.appendChild(category);
+
+            const title = document.createElement("h4");
+            title.className =
+              "text-3xl font-serif mb-5 leading-tight";
+            title.textContent = name;
+
+            if (player) {
+              const link = document.createElement("a");
+              link.href =
+                "/player-profile?player=" +
+                encodeURIComponent(player.slug);
+              link.className =
+                "inline-block hover:text-[#C5A367] transition";
+              link.appendChild(title);
+              card.appendChild(link);
+
+              const stats = document.createElement("div");
+              stats.className = "grid grid-cols-2 gap-2 text-center";
+
+              for (const [value, label] of [
+                [player.headlineStats?.wins, "Wins"],
+                [player.headlineStats?.top3, "Top 3"]
+              ]) {
+                const stat = document.createElement("div");
+                stat.className =
+                  "rounded-xl bg-[#F9F7F2] px-3 py-4";
+
+                const number = document.createElement("strong");
+                number.className = "text-xl block";
+                number.textContent = value ?? "—";
+
+                stat.appendChild(number);
+                stat.append(label);
+                stats.appendChild(stat);
+              }
+
+              card.appendChild(stats);
+
+              const profileLink = document.createElement("a");
+              profileLink.href =
+                "/player-profile?player=" +
+                encodeURIComponent(player.slug);
+              profileLink.className =
+                "mt-auto pt-6 text-sm font-bold uppercase " +
+                "tracking-widest text-[#C5A367] " +
+                "hover:text-[#132419]";
+              profileLink.textContent = "View Full Profile →";
+              card.appendChild(profileLink);
+            } else {
+              card.appendChild(title);
+
+              const message = document.createElement("p");
+              message.className = "text-gray-600 mt-auto";
+              message.textContent =
+                "Competition record not yet linked";
+              card.appendChild(message);
+            }
+
+            grid.appendChild(card);
+          }
+
+          section.appendChild(grid);
+          container.appendChild(section);
+        }
+      } catch (error) {
+        container.textContent =
+          "Junior member list is currently unavailable.";
+        console.error("Junior list:", error);
+      }
+    })();
+  </script>
+
 </body>
 
 </html>
