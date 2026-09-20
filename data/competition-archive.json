@@ -8,10 +8,11 @@
     "medals",
     "team-events",
     "stablefords",
+    "ladies",
     "general-competitions"
   ],
-  "totalUniqueCompetitions": 146,
-  "totalCategoryMemberships": 183,
+  "totalUniqueCompetitions": 147,
+  "totalCategoryMemberships": 184,
   "categories": [
     {
       "id": "board-competitions",
@@ -2304,6 +2305,28 @@
           "rangeText": "2025",
           "profileUrl": "competition-profile.html?id=sunday-stableford-competition",
           "searchText": "sunday stableford competition mens individual individual competition profile stableford general"
+        }
+      ]
+    },
+    {
+      "id": "ladies",
+      "title": "Ladies",
+      "description": "Competitions belonging to the Ladies section.",
+      "icon": "♀",
+      "competitionCount": 1,
+      "competitions": [
+        {
+          "id": "ladies-maureen-hewitt-memorial-putter",
+          "name": "Maureen Hewitt Memorial Putter",
+          "section": "Ladies",
+          "format": "Individual",
+          "yearsPlayed": 2,
+          "firstYear": 2013,
+          "latestYear": 2015,
+          "countText": "2 years",
+          "rangeText": "2013–2015",
+          "profileUrl": "competition-profile.html?id=ladies-maureen-hewitt-memorial-putter",
+          "searchText": "maureen hewitt memorial putter ladies individual individual competition profile standard general"
         }
       ]
     },
