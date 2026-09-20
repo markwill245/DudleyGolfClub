@@ -46650,7 +46650,7 @@
       "name": "G. Taylor",
       "section": "Mens",
       "status": "Historical",
-      "careerEra": "1996-1996",
+      "careerEra": "1948-1996",
       "hallOfFameStatus": "Building Record"
     },
     "summary": "G. Taylor has played 0 recorded competitions in the Digital Museum. G. Taylor has recorded 1 win, with 0 runner-up finishes and 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 40.",
@@ -46686,6 +46686,14 @@
       "wins": 1
     },
     "timeline": [
+      {
+        "year": 1948,
+        "competition": "Grazebrook Cup",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": true,
+        "boardCompetition": false
+      },
       {
         "year": 1996,
         "competition": "Writtle Groves Cup",
@@ -70116,7 +70124,7 @@
       "name": "Jamie Daniel Hunt",
       "section": "Mens",
       "status": "Active",
-      "careerEra": "2016-2026",
+      "careerEra": "1992-2026",
       "hallOfFameStatus": "Emerging Candidate"
     },
     "summary": "Jamie Daniel Hunt has played 22 recorded competitions in the Digital Museum. Jamie Daniel Hunt has recorded 2 wins, with 0 runner-up finishes and 1 top-three finish. Current Hall of Fame status: Emerging Candidate with a score of 88.",
@@ -70332,6 +70340,14 @@
         "position": 6,
         "resultType": "Competition Result",
         "historicalHonour": false,
+        "boardCompetition": false
+      },
+      {
+        "year": 1992,
+        "competition": "Grazebrook Cup",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": true,
         "boardCompetition": false
       },
       {
@@ -156041,7 +156057,7 @@
       "name": "S. Jones",
       "section": "Mens",
       "status": "Historical",
-      "careerEra": "2002-2002",
+      "careerEra": "1965-2002",
       "hallOfFameStatus": "Building Record"
     },
     "summary": "S. Jones has played 0 recorded competitions in the Digital Museum. S. Jones has recorded 1 win, with 0 runner-up finishes and 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 46.",
@@ -156084,6 +156100,22 @@
         "resultType": "Competition Result",
         "historicalHonour": true,
         "boardCompetition": true
+      },
+      {
+        "year": 1965,
+        "competition": "Grazebrook Cup",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": true,
+        "boardCompetition": false
+      },
+      {
+        "year": 1971,
+        "competition": "Grazebrook Cup",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": true,
+        "boardCompetition": false
       }
     ],
     "hallOfFame": {
@@ -174014,10 +174046,10 @@
       "name": "Sue Boulton",
       "section": "Ladies",
       "status": "Active",
-      "careerEra": "2013-2013",
+      "careerEra": "1999-2013",
       "hallOfFameStatus": "Building Record"
     },
-    "summary": "Sue Boulton has played 0 recorded competitions in the Digital Museum. Sue Boulton has recorded 0 wins, with 0 runner-up finishes and 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 15.",
+    "summary": "Sue Boulton has played 0 recorded competitions in the Digital Museum. Sue Boulton has recorded 0 wins, with 0 runner-up finishes and 0 top-three finishes. Current Hall of Fame status: Building Record with a score of 45.",
     "headlineStats": {
       "competitionsPlayed": 0,
       "wins": 0,
@@ -174057,10 +174089,26 @@
         "resultType": "Competition Result",
         "historicalHonour": true,
         "boardCompetition": false
+      },
+      {
+        "year": 1999,
+        "competition": "Grazebrook Cup",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": true,
+        "boardCompetition": false
+      },
+      {
+        "year": 2013,
+        "competition": "Grazebrook Cup",
+        "position": 1,
+        "resultType": "Competition Result",
+        "historicalHonour": true,
+        "boardCompetition": false
       }
     ],
     "hallOfFame": {
-      "score": 15,
+      "score": 45,
       "status": "Building Record"
     }
   },

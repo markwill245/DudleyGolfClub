@@ -11,8 +11,8 @@
     "ladies",
     "general-competitions"
   ],
-  "totalUniqueCompetitions": 147,
-  "totalCategoryMemberships": 184,
+  "totalUniqueCompetitions": 148,
+  "totalCategoryMemberships": 185,
   "categories": [
     {
       "id": "board-competitions",
@@ -2313,8 +2313,21 @@
       "title": "Ladies",
       "description": "Competitions belonging to the Ladies section.",
       "icon": "♀",
-      "competitionCount": 1,
+      "competitionCount": 2,
       "competitions": [
+        {
+          "id": "ladies-grazebrook-cup",
+          "name": "Grazebrook Cup",
+          "section": "Ladies",
+          "format": "Individual",
+          "yearsPlayed": 92,
+          "firstYear": 1912,
+          "latestYear": 2018,
+          "countText": "92 years",
+          "rangeText": "1912–2018",
+          "profileUrl": "competition-profile.html?id=ladies-grazebrook-cup",
+          "searchText": "grazebrook cup ladies individual individual competition profile standard general"
+        },
         {
           "id": "ladies-maureen-hewitt-memorial-putter",
           "name": "Maureen Hewitt Memorial Putter",
