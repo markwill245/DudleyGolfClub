@@ -50,8 +50,7 @@
   <header class="bg-[#132419] text-white px-6 py-5">
     <div class="max-w-7xl mx-auto">
       <a href="/digital-museum"
-        class="text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">← Back to
-        Museum</a>
+        class="text-sm uppercase tracking-widest text-[#C5A367] font-bold hover:text-white transition">&larr; BACK TO MUSEUM</a>
     </div>
   </header>
 
@@ -71,6 +70,8 @@
       <button type="button" class="section-tab border border-[#C5A367] rounded-full px-6 py-3 font-bold transition"
         data-section="Seniors" aria-selected="false">Seniors Records</button>
       <button type="button" class="section-tab border border-[#C5A367] rounded-full px-6 py-3 font-bold transition"
+        data-section="Ladies" aria-selected="false">Ladies' Records</button>
+      <button type="button" class="section-tab border border-[#C5A367] rounded-full px-6 py-3 font-bold transition"
         data-section="Club" aria-selected="false">Club Records</button>
     </nav>
 
@@ -78,8 +79,7 @@
 
     <div class="mt-14 text-center">
       <a href="#top"
-        class="inline-flex items-center rounded-full bg-[#132419] px-6 py-3 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-[#C5A367] hover:text-[#132419]">↑
-        Back to Top</a>
+        class="inline-flex items-center rounded-full bg-[#132419] px-6 py-3 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-[#C5A367] hover:text-[#132419]">&#8593; Back to Top</a>
     </div>
   </main>
 
@@ -170,7 +170,7 @@
                   ${item?.date ? `
                     <span class="block ml-8 mt-1 text-xs text-gray-500">
                       ${escapeHtml(item.date)}
-                      ${item?.course ? ` · ${escapeHtml(item.course)}` : ""}
+                      ${item?.course ? ` - ${escapeHtml(item.course)}` : ""}
                     </span>
                   ` : ""}
                 </span>
@@ -253,6 +253,56 @@
       `;
     }
 
+    function renderLadies() {
+      const records = Array.isArray(state.holeInOnes)
+        ? state.holeInOnes
+            .filter(item => item.section === "Ladies")
+            .sort((a, b) => Number(b.year) - Number(a.year))
+        : [];
+
+      return `
+        <div class="mb-10">
+          <p class="text-xs uppercase tracking-[0.35em] text-[#C5A367] mb-3">
+            Ladies
+          </p>
+
+          <h2 class="serif text-5xl">
+            Ladies' Records
+          </h2>
+
+          <p class="text-gray-600 mt-3">
+            Historical hole-in-one achievements recorded on
+            the Dudley Golf Club Ladies' honours boards.
+          </p>
+        </div>
+
+        <section class="bg-white border border-[#C5A367]/30 p-8 rounded shadow">
+          <h3 class="serif text-4xl mb-6">
+            Ladies' Holes in One
+          </h3>
+
+          <div class="space-y-0">
+            ${records.map(item => `
+              <div class="flex justify-between items-center gap-4 border-b border-gray-200 py-4">
+                <strong>
+                  ${escapeHtml(item.player || "")} <span class="ml-2 text-xs uppercase tracking-widest text-[#C5A367]">Ladies</span>
+                </strong>
+
+                <span class="text-[#C5A367] font-bold">
+                  ${escapeHtml(item.year || "")}
+                </span>
+              </div>
+            `).join("")}
+          </div>
+
+          <p class="text-sm text-gray-500 mt-6">
+            Names and years are reproduced from the
+            historical honours boards. Exact dates and
+            hole numbers are not recorded.
+          </p>
+        </section>
+      `;
+    }
     function sectionRecords(section) {
       const key = section === "Mens"
         ? "mens"
@@ -382,7 +432,7 @@
           )}
 
           ${holesInOneCard(
-  state.holeInOnes || []
+  (state.holeInOnes || []).filter(item => item.section !== "Ladies")
 )}
         </section>
       `;
@@ -392,7 +442,7 @@
       const container = document.getElementById("stats");
 
       container.innerHTML =
-        state.activeSection === "Club"
+        state.activeSection === "Ladies" ? renderLadies() : state.activeSection === "Club"
           ? renderClub()
           : renderPlayerSection(state.activeSection);
 
