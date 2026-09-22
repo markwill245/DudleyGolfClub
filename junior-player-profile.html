@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junior Player Profile | Dudley Golf Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F9F7F2] text-[#132419] min-h-screen">
+  <main class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+    <a href="player-index.html#junior-players"
+      class="inline-block mb-10 text-sm uppercase tracking-widest text-[#98723A] font-bold hover:text-[#132419]">
+      &larr; Back to Player Index
+    </a>
+
+    <header class="bg-[#132419] text-white rounded-2xl p-8 md:p-12 mb-8">
+      <p class="text-[#C5A367] uppercase tracking-[0.25em] text-sm font-bold mb-4">
+        Dudley Golf Club &bull; Junior Player
+      </p>
+      <h1 id="player-name" class="font-serif text-5xl md:text-7xl leading-tight">
+        Junior Player
+      </h1>
+      <p id="age-group" class="mt-4 text-[#C5A367] text-lg"></p>
+    </header>
+
+    <div id="profile-content" aria-live="polite">
+      <p class="text-lg">Loading Junior profile...</p>
+    </div>
+  </main>
+
+  <script>
+    (async function loadJuniorProfile() {
+      const content = document.getElementById("profile-content");
+      const nameHeading = document.getElementById("player-name");
+      const ageHeading = document.getElementById("age-group");
+
+      const requestedName =
+        new URLSearchParams(window.location.search).get("player");
+
+      if (!requestedName) {
+        content.textContent = "No Junior player was selected.";
+        return;
+      }
+
+      try {
+        const [statsResponse, membersResponse] = await Promise.all([
+          fetch("/data/junior-player-data.json"),
+          fetch("/data/current-juniors.json")
+        ]);
+
+        if (!statsResponse.ok || !membersResponse.ok) {
+          throw new Error("Junior data unavailable");
+        }
+
+        const stats = await statsResponse.json();
+        const members = await membersResponse.json();
+
+        const normalise = value =>
+          String(value || "").trim().toLowerCase();
+
+        const memberName = Object.values(members.categories || {})
+          .flat()
+          .find(name => normalise(name) === normalise(requestedName));
+
+        if (!memberName) {
+          content.textContent = "Junior player not found.";
+          return;
+        }
+
+        const player = stats.find(record =>
+          normalise(record.name) === normalise(memberName)
+        ) || {
+          name: memberName,
+          juniorWins: 0,
+          winningCompetitions: []
+        };
+
+        nameHeading.textContent = player.name;
+        document.title = player.name + " | Dudley Golf Club Junior Profile";
+
+        for (const [group, names] of Object.entries(members.categories || {})) {
+          if (names.some(name => normalise(name) === normalise(player.name))) {
+            ageHeading.textContent = "Junior age group: " + group;
+            break;
+          }
+        }
+
+        const summary = document.createElement("section");
+        summary.className =
+          "bg-white rounded-2xl border border-[#C5A367]/30 shadow-lg p-8 mb-8";
+
+        const number = document.createElement("strong");
+        number.className =
+          "block font-serif text-6xl text-[#132419]";
+        number.textContent = player.juniorWins;
+
+        const label = document.createElement("p");
+        label.className =
+          "mt-2 text-[#98723A] font-bold uppercase tracking-widest";
+        label.textContent =
+          player.juniorWins === 1 ? "Confirmed Junior Win" : "Confirmed Junior Wins";
+
+        summary.append(number, label);
+        content.replaceChildren(summary);
+
+        const section = document.createElement("section");
+        section.className =
+          "bg-white rounded-2xl border border-[#C5A367]/30 shadow-lg p-8";
+
+        const heading = document.createElement("h2");
+        heading.className = "font-serif text-4xl mb-6";
+        heading.textContent = "Winning Competitions";
+        section.appendChild(heading);
+
+        const list = document.createElement("div");
+        list.className = "space-y-4";
+
+        for (const result of player.winningCompetitions) {
+          const item = document.createElement("article");
+          item.className =
+            "rounded-xl bg-[#F9F7F2] border border-[#C5A367]/20 p-5";
+
+          const title = document.createElement("h3");
+          title.className = "font-serif text-2xl";
+          title.textContent = result.competitionName;
+
+          const date = document.createElement("p");
+          date.className = "text-gray-600 mt-2";
+          date.textContent = new Date(
+            result.eventDate + "T12:00:00"
+          ).toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+          });
+
+          item.append(title, date);
+
+          if (result.score) {
+            const score = document.createElement("p");
+            score.className = "mt-2 font-semibold";
+            score.textContent = "Recorded score: " + result.score;
+            item.appendChild(score);
+          }
+
+          list.appendChild(item);
+        }
+
+        if (player.winningCompetitions.length === 0) {
+          const message = document.createElement("p");
+          message.className =
+            "rounded-xl bg-[#F9F7F2] border border-[#C5A367]/20 " +
+            "p-5 text-gray-700";
+
+          message.textContent =
+            "No Junior competition wins recorded yet. " +
+            "Full competition results will be added when available.";
+
+          list.appendChild(message);
+        }
+
+        section.appendChild(list);
+        content.appendChild(section);
+      } catch (error) {
+        console.error("Junior profile:", error);
+        content.textContent =
+          "The Junior profile is currently unavailable.";
+      }
+    })();
+  </script>
+</body>
+
+</html>

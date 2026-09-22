@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- MASTER SEO TEMPLATE -->
-<title>Junior Past Winners | Dudley Golf Club</title>
+    <title>Junior Past Winners | Dudley Golf Club</title>
 
-<meta name="description" content="View past junior competition winners and junior golf achievements at Dudley Golf Club.">
-<meta name="keywords" content="Dudley Golf Club junior past winners, junior golf">
-<meta name="author" content="Dudley Golf Club">
+    <meta name="description"
+        content="View past junior competition winners and junior golf achievements at Dudley Golf Club.">
+    <meta name="keywords" content="Dudley Golf Club junior past winners, junior golf">
+    <meta name="author" content="Dudley Golf Club">
 
-<link rel="canonical" href="https://dudleygolfclub.co.uk/junior-past-winners">
-<meta name="theme-color" content="#132419">
+    <link rel="canonical" href="https://dudleygolfclub.co.uk/junior-past-winners">
+    <meta name="theme-color" content="#132419">
 
-<meta property="og:title" content="Junior Past Winners | Dudley Golf Club">
-<meta property="og:description" content="View past junior competition winners and junior golf achievements at Dudley Golf Club.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dudleygolfclub.co.uk/junior-past-winners">
-<meta property="og:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
+    <meta property="og:title" content="Junior Past Winners | Dudley Golf Club">
+    <meta property="og:description"
+        content="View past junior competition winners and junior golf achievements at Dudley Golf Club.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dudleygolfclub.co.uk/junior-past-winners">
+    <meta property="og:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Junior Past Winners | Dudley Golf Club">
-<meta name="twitter:description" content="View past junior competition winners and junior golf achievements at Dudley Golf Club.">
-<meta name="twitter:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
-<!-- END MASTER SEO TEMPLATE -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Junior Past Winners | Dudley Golf Club">
+    <meta name="twitter:description"
+        content="View past junior competition winners and junior golf achievements at Dudley Golf Club.">
+    <meta name="twitter:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
+    <!-- END MASTER SEO TEMPLATE -->
 
     <link rel="stylesheet" href="dist/output.css">
 
@@ -42,43 +45,203 @@
             --cream: #F9F7F2;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Outfit', sans-serif;
-            background-color: var(--forest);
-            background-image:
-                radial-gradient(at 0% 0%, rgba(197, 163, 103, 0.08) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(197, 163, 103, 0.05) 0px, transparent 50%),
-                linear-gradient(45deg, #132419 25%, #182d20 25%, #182d20 50%, #132419 50%, #132419 75%, #182d20 75%, #182d20 100%);
-            background-size: 60px 60px;
+            background:
+                radial-gradient(circle at 85% 5%, rgba(197, 163, 103, .16), transparent 32%),
+                linear-gradient(180deg, #132419 0%, #182d20 55%, #132419 100%);
             color: white;
-            padding: 40px 20px;
             min-height: 100vh;
             margin: 0;
+            padding: 0;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 72px 24px 100px;
         }
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            color: var(--gold);
-            border-bottom: 1px solid var(--gold);
-            padding-bottom: 20px;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1;
+            font-weight: 600;
+            color: var(--cream);
+            border: 0;
+            padding: 0;
+            margin: 20px 0 36px;
+            letter-spacing: -.025em;
         }
 
         .back-btn {
+            display: inline-flex;
+            align-items: center;
             color: var(--gold);
             text-decoration: none;
-            display: inline-block;
-            margin-bottom: 20px;
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            border: 1px solid rgba(197, 163, 103, .45);
+            border-radius: 999px;
+            padding: 13px 20px;
+            margin-bottom: 24px;
+            transition: background .2s, color .2s;
+        }
+
+        .back-btn:hover {
+            background: var(--gold);
+            color: var(--forest);
         }
 
         .content-box {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 40px;
-            border: 1px solid rgba(197, 163, 103, 0.2);
+            background: var(--cream);
+            color: var(--forest);
+            padding: clamp(24px, 5vw, 56px);
+            border: 1px solid var(--gold);
+            border-radius: 24px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, .24);
+            overflow: hidden;
+        }
+
+        .content-box>p {
+            color: #47564b;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .content-box table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content-box thead {
+            background: var(--forest);
+        }
+
+        .content-box th {
+            color: var(--gold) !important;
+            font-size: .7rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            padding: 18px 16px;
+            text-align: left;
+        }
+
+        .content-box td {
+            color: var(--forest);
+            padding: 18px 16px;
+            border-bottom: 1px solid rgba(19, 36, 25, .12);
+            line-height: 1.5;
+        }
+
+        .content-box tbody tr:nth-child(even) {
+            background: #eeeae0;
+        }
+
+        .content-box tbody tr:hover {
+            background: #e7ddca;
+        }
+
+        .content-box tbody td:nth-child(2) {
+            color: #86652f;
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 36px 14px 64px;
+            }
+
+            .content-box {
+                padding: 20px 12px;
+                border-radius: 16px;
+            }
+
+            .content-box th,
+            .content-box td {
+                padding: 13px 10px;
+                font-size: .8rem;
+            }
+        }
+
+        .junior-honours-banner {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            min-height: 360px;
+            margin-bottom: 28px;
+            padding: clamp(28px, 5vw, 60px);
+            overflow: hidden;
+            border: 1px solid rgba(197, 163, 103, .4);
+            border-radius: 24px;
+            background:
+                linear-gradient(90deg, rgba(8, 20, 13, .62) 0%,
+                    rgba(8, 20, 13, .20) 55%,
+                    rgba(8, 20, 13, .02) 100%),
+                url("/images/dudleyjune24.webp") center 54% / cover no-repeat;
+        }
+
+        .junior-honours-banner-text {
+            position: relative;
+            z-index: 1;
+            max-width: 650px;
+        }
+
+        .junior-honours-banner-text p {
+            margin: 0 0 12px;
+            color: #C5A367;
+            font-size: .7rem;
+            font-weight: 600;
+            letter-spacing: .3em;
+        }
+
+        .junior-honours-banner-text h2 {
+            margin: 0 0 12px;
+            color: #fff;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1;
+        }
+
+        .junior-honours-banner-text span {
+            color: rgba(255, 255, 255, .9);
+            font-size: clamp(.9rem, 2vw, 1.1rem);
+        }
+
+        @media (max-width: 640px) {
+            .junior-honours-banner {
+                min-height: 290px;
+                padding: 26px;
+                border-radius: 16px;
+                background-position: center;
+            }
+        }
+
+        /* Junior Honours: larger, more readable results */
+        #junior-past-winners-body td {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        @media (max-width: 640px) {
+            #junior-past-winners-body td {
+                font-size: .9rem;
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
         }
     </style>
 </head>
@@ -89,6 +252,13 @@
 
         <h1>Junior Past Winners</h1>
 
+        <section id="junior-honours-banner" class="junior-honours-banner" aria-label="Dudley Golf Club Junior Honours">
+            <div class="junior-honours-banner-text">
+                <p>THE NEXT GENERATION</p>
+                <h2>Junior Honours</h2>
+                <span>Celebrating our junior competition winners</span>
+            </div>
+        </section>
         <div class="content-box">
             <p class="mb-6 text-white/70">
                 Archive of past junior competition winners.
@@ -167,7 +337,8 @@
 
             <div>
                 <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
-                <div class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
+                <div
+                    class="w-full min-h-[300px] border border-[#C5A367]/30 rounded-lg p-8 flex flex-col justify-center">
                     <p class="font-serif text-2xl text-white mb-4">Dudley Golf Club</p>
                     <p class="text-white/70 leading-7 mb-6">
                         Turners Hill<br>
@@ -175,8 +346,7 @@
                         West Midlands
                     </p>
                     <a href="https://www.google.com/maps/search/?api=1&query=Dudley+Golf+Club+Turners+Hill+Rowley+Regis"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target="_blank" rel="noopener noreferrer"
                         class="inline-flex w-fit items-center justify-center px-5 py-3 rounded-lg border border-[#C5A367] text-[#C5A367] text-xs uppercase tracking-[0.2em] font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
                         View Map &amp; Directions
                     </a>
@@ -218,75 +388,83 @@ font-weight: bold;
         ⌂
     </a>
 
-    <!-- SANITY JUNIOR PAST WINNERS FETCH -->
+    <!-- JUNIOR PAST WINNERS: VERIFIED JUNIOR BRAIN RESULTS -->
     <script>
         async function loadJuniorPastWinners() {
             const body = document.getElementById("junior-past-winners-body");
 
             try {
-                const query = encodeURIComponent(`
-                    *[_type == "juniorPastWinner"]
-                    | order(year desc, competitionName asc) {
-                        year,
-                        competitionName,
-                        winnerName,
-                        score
-                        
-                    }
-                `);
+                const response = await fetch("/data/junior-results.json", {
+                    cache: "no-store"
+                });
 
-                const url = `https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=${query}`;
+                if (!response.ok) {
+                    throw new Error("Junior results file unavailable");
+                }
 
-                const response = await fetch(url);
-                const data = await response.json();
-                const winners = data.result || [];
+                const winners = await response.json();
+
+                if (!Array.isArray(winners)) {
+                    throw new Error("Invalid Junior results format");
+                }
+
+                body.replaceChildren();
 
                 if (!winners.length) {
-                    body.innerHTML = `
-                        <tr>
-                            <td colspan="4" class="py-6 text-center text-white/60">
-                                No junior past winners available.
-                            </td>
-                        </tr>
-                    `;
+                    const row = document.createElement("tr");
+                    const cell = document.createElement("td");
+                    cell.colSpan = 4;
+                    cell.className = "py-6 text-center text-white/60";
+                    cell.textContent = "No junior past winners available.";
+                    row.appendChild(cell);
+                    body.appendChild(row);
                     return;
                 }
 
-                body.innerHTML = winners.map(item => {
+                const sortedWinners = [...winners].sort((a, b) =>
+                    b.eventDate.localeCompare(a.eventDate)
+                );
 
+                for (const item of sortedWinners) {
+                    const row = document.createElement("tr");
+                    row.className =
+                        "border-b border-[#C5A367]/10 " +
+                        "hover:bg-white/5 transition";
 
-                    return `
-                        <tr class="border-b border-[#C5A367]/10 hover:bg-white/5 transition">
-                            <td class="py-3 px-2 align-top">${item.year || ""}</td>
-                            <td class="py-3 px-2 align-top text-[#C5A367]">${item.competitionName || ""}</td>
-                           <td class="py-3 px-2 align-top">
-    ${item.winnerName || ""}
-</td>
-                            <td class="py-3 px-2 align-top">${item.score || ""}</td>
-                        </tr>
-                    `;
-                }).join("");
+                    const cells = [
+                        item.eventDate.slice(0, 4),
+                        item.competitionName || "",
+                        item.winnerName || "",
+                        item.score || ""
+                    ];
+
+                    cells.forEach((value, index) => {
+                        const cell = document.createElement("td");
+                        cell.className =
+                            "py-3 px-2 align-top" +
+                            (index === 1 ? " text-[#C5A367]" : "");
+                        cell.textContent = value;
+                        row.appendChild(cell);
+                    });
+
+                    body.appendChild(row);
+                }
 
             } catch (error) {
                 console.error("Junior past winners failed to load:", error);
 
-                body.innerHTML = `
-                    <tr>
-                        <td colspan="4" class="py-6 text-center text-red-400">
-                            Unable to load junior past winners.
-                        </td>
-                    </tr>
-                `;
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+                cell.colSpan = 4;
+                cell.className = "py-6 text-center text-red-400";
+                cell.textContent = "Unable to load junior past winners.";
+                row.appendChild(cell);
+                body.replaceChildren(row);
             }
         }
 
         loadJuniorPastWinners();
     </script>
-
 </body>
 
 </html>
-
-
-
-

@@ -39,51 +39,212 @@
         rel="stylesheet">
 
     <style>
-        :root {
-            --gold: #C5A367;
-            --forest: #132419;
-            --cream: #F9F7F2;
-        }
+    :root {
+        --gold: #C5A367;
+        --forest: #132419;
+        --cream: #F9F7F2;
+    }
 
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--forest);
-            background-image:
-                radial-gradient(at 0% 0%, rgba(197, 163, 103, 0.08) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(197, 163, 103, 0.05) 0px, transparent 50%),
-                linear-gradient(45deg, #132419 25%, #182d20 25%, #182d20 50%, #132419 50%, #132419 75%, #182d20 75%, #182d20 100%);
-            background-size: 60px 60px;
-            color: white;
-            padding: 40px 20px;
-            min-height: 100vh;
-            margin: 0;
-        }
+    * {
+        box-sizing: border-box;
+    }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Outfit', sans-serif;
+        background:
+            radial-gradient(circle at 85% 5%, rgba(197,163,103,.16), transparent 32%),
+            linear-gradient(180deg, #132419 0%, #182d20 55%, #132419 100%);
+        color: white;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 72px 24px 100px;
+    }
+
+    h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(3rem, 7vw, 5.5rem);
+        line-height: 1;
+        font-weight: 600;
+        color: var(--cream);
+        border: 0;
+        padding: 0;
+        margin: 20px 0 36px;
+        letter-spacing: -.025em;
+    }
+
+    .back-btn {
+        display: inline-flex;
+        align-items: center;
+        color: var(--gold);
+        text-decoration: none;
+        font-size: .75rem;
+        font-weight: 600;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        border: 1px solid rgba(197,163,103,.45);
+        border-radius: 999px;
+        padding: 13px 20px;
+        margin-bottom: 24px;
+        transition: background .2s, color .2s;
+    }
+
+    .back-btn:hover {
+        background: var(--gold);
+        color: var(--forest);
+    }
+
+    .content-box {
+        background: var(--cream);
+        color: var(--forest);
+        padding: clamp(24px, 5vw, 56px);
+        border: 1px solid var(--gold);
+        border-radius: 24px;
+        box-shadow: 0 24px 80px rgba(0,0,0,.24);
+        overflow: hidden;
+    }
+
+    .content-box > p {
+        color: #47564b;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .content-box a {
+        color: #86652f;
+    }
+
+    .content-box a:hover {
+        color: var(--forest);
+    }
+
+    @media (max-width: 640px) {
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-family: 'Cormorant Garamond', serif;
-            color: var(--gold);
-            border-bottom: 1px solid var(--gold);
-            padding-bottom: 20px;
-        }
-
-        .back-btn {
-            color: var(--gold);
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 20px;
+            padding: 36px 14px 64px;
         }
 
         .content-box {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 40px;
-            border: 1px solid rgba(197, 163, 103, 0.2);
+            padding: 24px 18px;
+            border-radius: 16px;
         }
-    </style>
+    }
+
+    /* Junior fixtures: readable on the new cream panel */
+    .content-box table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .content-box thead {
+        background: #132419;
+    }
+
+    .content-box th {
+        color: #C5A367 !important;
+        padding: 16px 14px;
+        text-align: left;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: .12em;
+    }
+
+    .content-box td {
+        color: #132419 !important;
+        padding: 16px 14px;
+        border-bottom: 1px solid rgba(19,36,25,.12);
+        line-height: 1.5;
+    }
+
+    .content-box tbody tr:nth-child(even) {
+        background: #eeeae0;
+    }
+
+    .content-box tbody tr:hover {
+        background: #e7ddca;
+    }
+
+    .content-box tbody td a {
+        color: #86652f;
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .content-box tbody td a:hover {
+        color: #132419;
+    }
+
+    @media (max-width: 640px) {
+        .content-box th,
+        .content-box td {
+            padding: 12px 10px;
+            font-size: .8rem;
+        }
+    }
+
+    /* Junior Competitions course banner */
+    .junior-competitions-banner {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        min-height: 360px;
+        margin-bottom: 28px;
+        padding: clamp(28px, 5vw, 60px);
+        overflow: hidden;
+        border: 1px solid rgba(197,163,103,.4);
+        border-radius: 24px;
+        background:
+            linear-gradient(90deg, rgba(8,20,13,.62) 0%,
+                                  rgba(8,20,13,.20) 55%,
+                                  rgba(8,20,13,.02) 100%),
+            url("/images/hole12-view3.webp") center 54% / cover no-repeat;
+    }
+
+    .junior-competitions-banner-text {
+        position: relative;
+        z-index: 1;
+        max-width: 650px;
+    }
+
+    .junior-competitions-banner-text p {
+        margin: 0 0 12px;
+        color: #C5A367;
+        font-size: .7rem;
+        font-weight: 600;
+        letter-spacing: .3em;
+    }
+
+    .junior-competitions-banner-text h2 {
+        margin: 0 0 12px;
+        color: #fff;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        line-height: 1;
+    }
+
+    .junior-competitions-banner-text span {
+        color: rgba(255,255,255,.9);
+        font-size: clamp(.9rem, 2vw, 1.1rem);
+    }
+
+    @media (max-width: 640px) {
+        .junior-competitions-banner {
+            min-height: 290px;
+            padding: 26px;
+            border-radius: 16px;
+            background-position: center;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -93,7 +254,16 @@
 
         <h1>Junior Competitions</h1>
 
-        <div class="content-box">
+                <section id="junior-competitions-banner"
+                 class="junior-competitions-banner"
+                 aria-label="Dudley Golf Club Junior Competitions">
+            <div class="junior-competitions-banner-text">
+                <p>THE NEXT GENERATION</p>
+                <h2>Play. Learn. Compete.</h2>
+                <span>Junior golf at Dudley Golf Club</span>
+            </div>
+        </section>
+<div class="content-box">
             <h2 id="junior-page-title" class="serif text-2xl text-[#C5A367] mb-4 italic">
                 2026 Junior Summer Schedule
             </h2>
@@ -367,7 +537,12 @@ font-weight: bold;
                     body.innerHTML = `
                     <tr>
                         <td colspan="2" class="py-6 text-center text-white/60">
-                            No junior competitions available.
+                            The 2026 junior summer schedule has now finished.
+<br>
+<a href="/junior-past-winners.html"
+   class="inline-block mt-3 font-semibold underline underline-offset-4">
+    View Junior Past Winners &rarr;
+</a>
                         </td>
                     </tr>
                 `;
