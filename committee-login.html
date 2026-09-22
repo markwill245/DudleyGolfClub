@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -110,75 +110,46 @@
   </main>
 
   <script>
-    const PASSWORD_HASH =
-      "7ad526e5410d0b7043f9b3a8d9c0ccb0e69c6e9be7db2095240f63dc24c885f2";
-
-    async function sha256(value) {
-      const data =
-        new TextEncoder().encode(value);
-
-      const digest =
-        await crypto.subtle.digest(
-          "SHA-256",
-          data
-        );
-
-      return [...new Uint8Array(digest)]
-        .map(byte =>
-          byte
-            .toString(16)
-            .padStart(2, "0")
-        )
-        .join("");
-    }
-
     async function login() {
-      const input =
-        document.getElementById(
-          "committee-password"
-        );
+      const input = document.getElementById("committee-password");
+      const error = document.getElementById("password-error");
+      const button = document.getElementById("login-button");
 
-      const error =
-        document.getElementById(
-          "password-error"
-        );
+      error.classList.add("hidden");
+      button.disabled = true;
 
-      const hash =
-        await sha256(
-          input.value.trim()
-        );
+      try {
+        const response = await fetch("/api/committee-login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "same-origin",
+          cache: "no-store",
+          body: JSON.stringify({ password: input.value })
+        });
 
-      if (hash === PASSWORD_HASH) {
-        sessionStorage.setItem(
-          "dgcCommitteeAccess",
-          "granted"
-        );
+        if (!response.ok) {
+          throw new Error("Committee login failed.");
+        }
 
-        window.location.href =
-          "committee/golfer-of-the-year.html";
-
-        return;
+        window.location.href = "/committee/golfer-of-the-year.html";
+      } catch {
+        error.classList.remove("hidden");
+        input.value = "";
+        input.focus();
+      } finally {
+        button.disabled = false;
       }
-
-      error.classList.remove("hidden");
-      input.value = "";
-      input.focus();
     }
 
-    document
-      .getElementById("login-button")
+    document.getElementById("login-button")
       .addEventListener("click", login);
 
-    document
-      .getElementById("committee-password")
-      .addEventListener(
-        "keydown",
-        event => {
-          if (event.key === "Enter") {
-            login();
-          }
+    document.getElementById("committee-password")
+      .addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+          login();
         }
-      );
+      });
   </script>
 
 </body>

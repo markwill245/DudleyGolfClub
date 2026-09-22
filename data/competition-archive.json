@@ -11,8 +11,8 @@
     "ladies",
     "general-competitions"
   ],
-  "totalUniqueCompetitions": 148,
-  "totalCategoryMemberships": 185,
+  "totalUniqueCompetitions": 150,
+  "totalCategoryMemberships": 187,
   "categories": [
     {
       "id": "board-competitions",
@@ -377,11 +377,11 @@
           "name": "Summer Foursomes",
           "section": "Mens",
           "format": "Pairs",
-          "yearsPlayed": 14,
+          "yearsPlayed": 15,
           "firstYear": 1993,
-          "latestYear": 2006,
-          "countText": "14 years",
-          "rangeText": "1993–2006",
+          "latestYear": 2026,
+          "countText": "15 years",
+          "rangeText": "1993–2026",
           "profileUrl": "competition-profile.html?id=summer-foursomes",
           "searchText": "summer foursomes mens pairs pairs historical honour board board competition"
         },
@@ -1769,11 +1769,11 @@
           "name": "Summer Foursomes",
           "section": "Mens",
           "format": "Pairs",
-          "yearsPlayed": 14,
+          "yearsPlayed": 15,
           "firstYear": 1993,
-          "latestYear": 2006,
-          "countText": "14 years",
-          "rangeText": "1993–2006",
+          "latestYear": 2026,
+          "countText": "15 years",
+          "rangeText": "1993–2026",
           "profileUrl": "competition-profile.html?id=summer-foursomes",
           "searchText": "summer foursomes mens pairs pairs historical honour board board competition"
         },
@@ -2313,8 +2313,21 @@
       "title": "Ladies",
       "description": "Competitions belonging to the Ladies section.",
       "icon": "♀",
-      "competitionCount": 2,
+      "competitionCount": 4,
       "competitions": [
+        {
+          "id": "ladies-freakley-salver",
+          "name": "Freakley Salver",
+          "section": "Ladies",
+          "format": "Individual",
+          "yearsPlayed": 33,
+          "firstYear": 1947,
+          "latestYear": 2013,
+          "countText": "33 years",
+          "rangeText": "1947–2013",
+          "profileUrl": "competition-profile.html?id=ladies-freakley-salver",
+          "searchText": "freakley salver ladies individual individual historical honour board general"
+        },
         {
           "id": "ladies-grazebrook-cup",
           "name": "Grazebrook Cup",
@@ -2327,6 +2340,19 @@
           "rangeText": "1912–2018",
           "profileUrl": "competition-profile.html?id=ladies-grazebrook-cup",
           "searchText": "grazebrook cup ladies individual individual competition profile standard general"
+        },
+        {
+          "id": "ladies-hanson-bowl",
+          "name": "Hanson Bowl",
+          "section": "Ladies",
+          "format": "Individual",
+          "yearsPlayed": 76,
+          "firstYear": 1924,
+          "latestYear": 2005,
+          "countText": "76 years",
+          "rangeText": "1924–2005",
+          "profileUrl": "competition-profile.html?id=ladies-hanson-bowl",
+          "searchText": "hanson bowl ladies individual individual historical honour board general"
         },
         {
           "id": "ladies-maureen-hewitt-memorial-putter",

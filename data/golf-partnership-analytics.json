@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1-prototype",
-  "generatedAt": "2026-09-18T14:07:48.722Z",
+  "generatedAt": "2026-09-21T22:50:57.818Z",
   "status": "Prototype - partnership analytics not yet certified",
   "methodology": {
     "partnerships": "Two-player team events only",
@@ -8708,6 +8708,94 @@
     {
       "section": "Mens",
       "players": [
+        "Ryan Walker",
+        "Tony John Salt"
+      ],
+      "appearances": 5,
+      "headlineEligible": false,
+      "wins": 2,
+      "winRate": 40,
+      "top3": 3,
+      "top5": 3,
+      "averageFinish": 7.6,
+      "bestFinish": 1,
+      "formats": {
+        "Betterball": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 2,
+              "averageScore": 41.5,
+              "bestScore": 44
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 75,
+              "bestScore": 75
+            }
+          }
+        },
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-09-27",
+          "year": 2025,
+          "competitionId": "club-betterball-pairs-stableford",
+          "competitionName": "Club Betterball Pairs Stableford",
+          "format": "Betterball",
+          "position": 3,
+          "score": 44
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 1,
+          "score": 43
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 14,
+          "score": 39
+        },
+        {
+          "date": "2026-05-09",
+          "year": 2026,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 19,
+          "score": 75
+        },
+        {
+          "date": "2026-09-13",
+          "year": 2026,
+          "competitionId": "summer-foursomes",
+          "competitionName": "Summer Foursomes",
+          "format": "Foursomes",
+          "position": 1,
+          "score": null
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Keith John Woodall",
         "Roger John Smith"
       ],
@@ -9908,81 +9996,6 @@
           "format": "Betterball",
           "position": 2,
           "score": 44
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Ryan Walker",
-        "Tony John Salt"
-      ],
-      "appearances": 4,
-      "headlineEligible": false,
-      "wins": 1,
-      "winRate": 25,
-      "top3": 2,
-      "top5": 2,
-      "averageFinish": 9.3,
-      "bestFinish": 1,
-      "formats": {
-        "Betterball": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 2,
-              "averageScore": 41.5,
-              "bestScore": 44
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 75,
-              "bestScore": 75
-            }
-          }
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-09-27",
-          "year": 2025,
-          "competitionId": "club-betterball-pairs-stableford",
-          "competitionName": "Club Betterball Pairs Stableford",
-          "format": "Betterball",
-          "position": 3,
-          "score": 44
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 1,
-          "score": 43
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 14,
-          "score": 39
-        },
-        {
-          "date": "2026-05-09",
-          "year": 2026,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 19,
-          "score": 75
         }
       ]
     },

@@ -23135,18 +23135,18 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 14,
+    "yearsPlayed": 15,
     "firstYear": 1993,
-    "latestYear": 2006,
-    "latestDetailedYear": null,
-    "totalEntries": 0,
-    "averageEntries": 0,
-    "uniqueWinners": 20,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 2,
+    "averageEntries": 2,
+    "uniqueWinners": 22,
     "mostSuccessfulPlayer": "M. Bianco",
     "mostWins": 3,
     "currentWinners": [
-      "Lee Roger Grainger",
-      "Paul Clifford Howard"
+      "Ryan Walker",
+      "Tony John Salt"
     ],
     "winnerLeaders": [
       {
@@ -23228,9 +23228,33 @@
       {
         "player": "R. Prophet",
         "wins": 1
+      },
+      {
+        "player": "Ryan Walker",
+        "wins": 1
+      },
+      {
+        "player": "Tony John Salt",
+        "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Ryan Walker",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Tony John Salt",
+        "source": "Competition Result",
+        "verified": false,
+        "score": null,
+        "relativeToPar": null
+      },
       {
         "year": 2006,
         "winner": "Lee Roger Grainger",
@@ -27938,7 +27962,7 @@
         "wins": 1
       },
       {
-        "player": "M. O’Leary",
+        "player": "M. O'Leary",
         "wins": 1
       },
       {
@@ -28257,7 +28281,7 @@
       },
       {
         "year": 1984,
-        "winner": "M. O’Leary",
+        "winner": "M. O'Leary",
         "source": "Honours Board",
         "verified": true,
         "score": null,
@@ -28746,5 +28770,1219 @@
     },
     "clubChampionship": null,
     "summary": "Grazebrook Cup is preserved as a competition profile in the Dudley Golf Club Digital Museum."
+  },
+  {
+    "id": "ladies-hanson-bowl",
+    "competitionId": "ladies-hanson-bowl",
+    "name": "Hanson Bowl",
+    "competitionName": "Hanson Bowl",
+    "section": "Ladies",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Board",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": true,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Historical Honour",
+    "yearsPlayed": 76,
+    "firstYear": 1924,
+    "latestYear": 2005,
+    "latestDetailedYear": null,
+    "totalEntries": 0,
+    "averageEntries": 0,
+    "uniqueWinners": 49,
+    "mostSuccessfulPlayer": "E. Crosby",
+    "mostWins": 4,
+    "currentWinners": [
+      "L. Messer"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "E. Crosby",
+        "wins": 4
+      },
+      {
+        "player": "I. Horridge",
+        "wins": 4
+      },
+      {
+        "player": "M. Fereday",
+        "wins": 4
+      },
+      {
+        "player": "C. A. Mannell",
+        "wins": 3
+      },
+      {
+        "player": "G. A. Woodall",
+        "wins": 3
+      },
+      {
+        "player": "M. Freakley",
+        "wins": 3
+      },
+      {
+        "player": "M. L. Clarke",
+        "wins": 3
+      },
+      {
+        "player": "E. E. Aston",
+        "wins": 2
+      },
+      {
+        "player": "F. Hingley",
+        "wins": 2
+      },
+      {
+        "player": "L. Griffith",
+        "wins": 2
+      },
+      {
+        "player": "M. Eisel",
+        "wins": 2
+      },
+      {
+        "player": "M. Gillet",
+        "wins": 2
+      },
+      {
+        "player": "M. Shelley",
+        "wins": 2
+      },
+      {
+        "player": "M. Sowry",
+        "wins": 2
+      },
+      {
+        "player": "M. Walker",
+        "wins": 2
+      },
+      {
+        "player": "N. Willetts",
+        "wins": 2
+      },
+      {
+        "player": "S. Williams",
+        "wins": 2
+      },
+      {
+        "player": "A. G. Taylor",
+        "wins": 1
+      },
+      {
+        "player": "A. Shearman",
+        "wins": 1
+      },
+      {
+        "player": "B. Griffett",
+        "wins": 1
+      },
+      {
+        "player": "B. Taylor",
+        "wins": 1
+      },
+      {
+        "player": "C. Butler",
+        "wins": 1
+      },
+      {
+        "player": "C. Mansell",
+        "wins": 1
+      },
+      {
+        "player": "D. M. Aston",
+        "wins": 1
+      },
+      {
+        "player": "E. L. Dickinson",
+        "wins": 1
+      },
+      {
+        "player": "E. Neale",
+        "wins": 1
+      },
+      {
+        "player": "E. Silvester",
+        "wins": 1
+      },
+      {
+        "player": "H. Chilton",
+        "wins": 1
+      },
+      {
+        "player": "J. Andrews",
+        "wins": 1
+      },
+      {
+        "player": "J. Bryan",
+        "wins": 1
+      },
+      {
+        "player": "J. Jones",
+        "wins": 1
+      },
+      {
+        "player": "J. Tolley",
+        "wins": 1
+      },
+      {
+        "player": "J. Townsend",
+        "wins": 1
+      },
+      {
+        "player": "K. Harvey",
+        "wins": 1
+      },
+      {
+        "player": "L. Messer",
+        "wins": 1
+      },
+      {
+        "player": "M. Bourne",
+        "wins": 1
+      },
+      {
+        "player": "M. C. Bartlett",
+        "wins": 1
+      },
+      {
+        "player": "M. Evans",
+        "wins": 1
+      },
+      {
+        "player": "M. Field",
+        "wins": 1
+      },
+      {
+        "player": "M. Jenns",
+        "wins": 1
+      },
+      {
+        "player": "M. Lees",
+        "wins": 1
+      },
+      {
+        "player": "M. O'Leary",
+        "wins": 1
+      },
+      {
+        "player": "P. Griffiths",
+        "wins": 1
+      },
+      {
+        "player": "P. Williams",
+        "wins": 1
+      },
+      {
+        "player": "R. Bate",
+        "wins": 1
+      },
+      {
+        "player": "R. Macaviney",
+        "wins": 1
+      },
+      {
+        "player": "S. Jones",
+        "wins": 1
+      },
+      {
+        "player": "T. Robinson",
+        "wins": 1
+      },
+      {
+        "player": "V. Flavell",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2005,
+        "winner": "L. Messer",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2004,
+        "winner": "T. Robinson",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2003,
+        "winner": "F. Hingley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2002,
+        "winner": "B. Griffett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2001,
+        "winner": "F. Hingley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2000,
+        "winner": "C. Butler",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1999,
+        "winner": "R. Bate",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1998,
+        "winner": "J. Andrews",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1997,
+        "winner": "K. Harvey",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1996,
+        "winner": "P. Williams",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1995,
+        "winner": "S. Williams",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1994,
+        "winner": "L. Griffith",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1993,
+        "winner": "L. Griffith",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1992,
+        "winner": "J. Jones",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1991,
+        "winner": "C. Mansell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1990,
+        "winner": "S. Williams",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1989,
+        "winner": "E. Silvester",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1988,
+        "winner": "J. Townsend",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1987,
+        "winner": "M. Field",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1986,
+        "winner": "M. Fereday",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1985,
+        "winner": "E. Neale",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1984,
+        "winner": "E. Crosby",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1983,
+        "winner": "E. Crosby",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1982,
+        "winner": "E. Crosby",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1981,
+        "winner": "M. Fereday",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1980,
+        "winner": "N. Willetts",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1979,
+        "winner": "N. Willetts",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1978,
+        "winner": "M. Fereday",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1977,
+        "winner": "M. Fereday",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1976,
+        "winner": "E. Crosby",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1975,
+        "winner": "I. Horridge",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1974,
+        "winner": "M. Eisel",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1973,
+        "winner": "J. Bryan",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1972,
+        "winner": "J. Tolley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1971,
+        "winner": "S. Jones",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1970,
+        "winner": "M. O'Leary",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1969,
+        "winner": "I. Horridge",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1968,
+        "winner": "P. Griffiths",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1967,
+        "winner": "M. Eisel",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1966,
+        "winner": "M. Shelley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1965,
+        "winner": "M. Lees",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1964,
+        "winner": "B. Taylor",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1963,
+        "winner": "M. Jenns",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1962,
+        "winner": "M. Shelley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1961,
+        "winner": "I. Horridge",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1960,
+        "winner": "I. Horridge",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1959,
+        "winner": "R. Macaviney",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1958,
+        "winner": "M. Sowry",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1957,
+        "winner": "M. Gillet",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1956,
+        "winner": "M. Gillet",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1955,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1953,
+        "winner": "M. Sowry",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1952,
+        "winner": "M. Walker",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1951,
+        "winner": "M. L. Clarke",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1950,
+        "winner": "A. G. Taylor",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1949,
+        "winner": "M. Walker",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1948,
+        "winner": "M. L. Clarke",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1947,
+        "winner": "M. Bourne",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1946,
+        "winner": "M. L. Clarke",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1940,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1939,
+        "winner": "M. Evans",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1938,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1937,
+        "winner": "M. Freakley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1936,
+        "winner": "M. Freakley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1935,
+        "winner": "M. C. Bartlett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1934,
+        "winner": "G. A. Woodall",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1933,
+        "winner": "V. Flavell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1932,
+        "winner": "A. Shearman",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1931,
+        "winner": "H. Chilton",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1930,
+        "winner": "G. A. Woodall",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1929,
+        "winner": "M. Freakley",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1928,
+        "winner": "E. L. Dickinson",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1927,
+        "winner": "E. E. Aston",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1926,
+        "winner": "E. E. Aston",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1925,
+        "winner": "D. M. Aston",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1924,
+        "winner": "G. A. Woodall",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results",
+      "linkedResultCompetitionId": null,
+      "linkedScoreType": null
+    },
+    "clubChampionship": null,
+    "summary": "Hanson Bowl is preserved from the verified honours board and enriched with detailed competition results where available."
+  },
+  {
+    "id": "ladies-freakley-salver",
+    "competitionId": "ladies-freakley-salver",
+    "name": "Freakley Salver",
+    "competitionName": "Freakley Salver",
+    "section": "Ladies",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Board",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": true,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Historical Honour",
+    "yearsPlayed": 33,
+    "firstYear": 1947,
+    "latestYear": 2013,
+    "latestDetailedYear": null,
+    "totalEntries": 0,
+    "averageEntries": 0,
+    "uniqueWinners": 15,
+    "mostSuccessfulPlayer": "B. Griffett",
+    "mostWins": 4,
+    "currentWinners": [
+      "C. Mansell"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "B. Griffett",
+        "wins": 4
+      },
+      {
+        "player": "C. A. Mannell",
+        "wins": 4
+      },
+      {
+        "player": "M. Lees",
+        "wins": 4
+      },
+      {
+        "player": "M. Scott",
+        "wins": 4
+      },
+      {
+        "player": "H. Gould",
+        "wins": 3
+      },
+      {
+        "player": "E. Crosby",
+        "wins": 2
+      },
+      {
+        "player": "M. Sennett",
+        "wins": 2
+      },
+      {
+        "player": "R. Bate",
+        "wins": 2
+      },
+      {
+        "player": "T. Robinson",
+        "wins": 2
+      },
+      {
+        "player": "C. Mansell",
+        "wins": 1
+      },
+      {
+        "player": "L. Rafferty",
+        "wins": 1
+      },
+      {
+        "player": "M. Clarke",
+        "wins": 1
+      },
+      {
+        "player": "M. Walker",
+        "wins": 1
+      },
+      {
+        "player": "P. Smith",
+        "wins": 1
+      },
+      {
+        "player": "S. Williams",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2013,
+        "winner": "C. Mansell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2012,
+        "winner": "L. Rafferty",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2011,
+        "winner": "H. Gould",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2010,
+        "winner": "H. Gould",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2009,
+        "winner": "H. Gould",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2008,
+        "winner": "M. Sennett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2007,
+        "winner": "M. Sennett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2006,
+        "winner": "B. Griffett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2005,
+        "winner": "T. Robinson",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2004,
+        "winner": "B. Griffett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2003,
+        "winner": "T. Robinson",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2002,
+        "winner": "R. Bate",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2001,
+        "winner": "R. Bate",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 2000,
+        "winner": "B. Griffett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1999,
+        "winner": "B. Griffett",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1998,
+        "winner": "E. Crosby",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1997,
+        "winner": "S. Williams",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1996,
+        "winner": "E. Crosby",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1961,
+        "winner": "M. Lees",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1960,
+        "winner": "M. Lees",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1959,
+        "winner": "M. Lees",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1958,
+        "winner": "M. Clarke",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1957,
+        "winner": "M. Scott",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1956,
+        "winner": "M. Scott",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1955,
+        "winner": "M. Scott",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1954,
+        "winner": "M. Scott",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1953,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1952,
+        "winner": "P. Smith",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1951,
+        "winner": "M. Lees",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1950,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1949,
+        "winner": "M. Walker",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1948,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      },
+      {
+        "year": 1947,
+        "winner": "C. A. Mannell",
+        "source": "Honours Board",
+        "verified": true,
+        "score": null,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results",
+      "linkedResultCompetitionId": null,
+      "linkedScoreType": null
+    },
+    "clubChampionship": null,
+    "summary": "Freakley Salver is preserved from the verified honours board and enriched with detailed competition results where available."
   }
 ]

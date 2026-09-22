@@ -3,6 +3,9 @@
   "access": "Committee Only",
   "calculationStatus": "COMMITTEE REVIEW",
   "season": 2026,
+  "seasonStartDate": "2026-04-01",
+  "seasonStatus": "SEASON OPEN",
+  "seasonEndDate": null,
   "scope": {
     "section": "Mens",
     "seniorsExcluded": true,
@@ -17,9 +20,9 @@
     "clubChampionPoints": 2
   },
   "progress": {
-    "totalMajors": 15,
-    "completedMajors": 13,
-    "awaitingMajors": 2,
+    "totalMajors": 17,
+    "completedMajors": 14,
+    "awaitingMajors": 3,
     "reviewMajors": 0
   },
   "currentLeader": {
@@ -181,9 +184,12 @@
       "name": "Summer Foursomes",
       "type": "Knockout Winner",
       "pointsPerWinner": 0.5,
-      "status": "Awaiting Results",
-      "date": null,
-      "winners": [],
+      "status": "Completed",
+      "date": "2026-09-13",
+      "winners": [
+        "Tony John Salt",
+        "Ryan Walker"
+      ],
       "note": "The 9 May event is the qualifying round only. No knockout points are awarded until the Summer Foursomes winners are decided."
     },
     {
@@ -209,6 +215,26 @@
         "Kevin Walters"
       ],
       "note": null
+    },
+    {
+      "id": "lewis-cup",
+      "name": "Lewis Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": null
+    },
+    {
+      "id": "writtle-grove-and-winter-greensomes-qualifier",
+      "name": "Writtle Grove Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": "Award points for the Writtle Grove Trophy winners only, not separately for Winter Greensomes qualification."
     }
   ],
   "completedMajors": [
@@ -352,6 +378,19 @@
       "note": null
     },
     {
+      "id": "summer-foursomes",
+      "name": "Summer Foursomes",
+      "type": "Knockout Winner",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-09-13",
+      "winners": [
+        "Tony John Salt",
+        "Ryan Walker"
+      ],
+      "note": "The 9 May event is the qualifying round only. No knockout points are awarded until the Summer Foursomes winners are decided."
+    },
+    {
       "id": "centenary-trophy",
       "name": "Centenary Trophy",
       "type": "Singles Major",
@@ -388,14 +427,24 @@
       "note": "The May Medal is a qualifying round only. No points are awarded until the knockout winner is known."
     },
     {
-      "id": "summer-foursomes",
-      "name": "Summer Foursomes",
-      "type": "Knockout Winner",
+      "id": "lewis-cup",
+      "name": "Lewis Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": null
+    },
+    {
+      "id": "writtle-grove-and-winter-greensomes-qualifier",
+      "name": "Writtle Grove Trophy",
+      "type": "Pairs / Team Major",
       "pointsPerWinner": 0.5,
       "status": "Awaiting Results",
       "date": null,
       "winners": [],
-      "note": "The 9 May event is the qualifying round only. No knockout points are awarded until the Summer Foursomes winners are decided."
+      "note": "Award points for the Writtle Grove Trophy winners only, not separately for Winter Greensomes qualification."
     }
   ],
   "reviewMajors": [],
@@ -506,7 +555,77 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 3,
+      "player": "Ryan Walker",
+      "totalPoints": 1,
+      "tieBreakPoints": 2,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 1,
+      "clubChampionships": 0,
+      "qualifyingWins": 2,
+      "evidence": [
+        {
+          "competitionId": "james-grainger-trophy",
+          "resultCompetitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": "2026-06-13",
+          "source": "Certified competition result"
+        },
+        {
+          "competitionId": "summer-foursomes",
+          "resultCompetitionId": "summer-foursomes",
+          "competitionName": "Summer Foursomes",
+          "awardType": "Knockout Winner",
+          "points": 0.5,
+          "tieBreakPoints": 2,
+          "year": 2026,
+          "date": "2026-09-13",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "player": "Tony John Salt",
+      "totalPoints": 1,
+      "tieBreakPoints": 2,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 1,
+      "knockoutWins": 1,
+      "clubChampionships": 0,
+      "qualifyingWins": 2,
+      "evidence": [
+        {
+          "competitionId": "james-grainger-trophy",
+          "resultCompetitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": "2026-06-13",
+          "source": "Certified competition result"
+        },
+        {
+          "competitionId": "summer-foursomes",
+          "resultCompetitionId": "summer-foursomes",
+          "competitionName": "Summer Foursomes",
+          "awardType": "Knockout Winner",
+          "points": 0.5,
+          "tieBreakPoints": 2,
+          "year": 2026,
+          "date": "2026-09-13",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 6,
       "player": "Alan Ball",
       "totalPoints": 1,
       "tieBreakPoints": 0,
@@ -530,7 +649,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 6,
       "player": "Jason Bates",
       "totalPoints": 1,
       "tieBreakPoints": 0,
@@ -554,7 +673,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 6,
       "player": "Mitchell Raybould",
       "totalPoints": 1,
       "tieBreakPoints": 0,
@@ -578,7 +697,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Adam Stanfield",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -602,7 +721,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Clive Kearey",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -626,7 +745,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Gary Baker",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -650,7 +769,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Gregory Curry",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -674,7 +793,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "James Stevens",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -698,7 +817,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Mark Dando",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -722,7 +841,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Neil Hartland",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -746,7 +865,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "player": "Paul Thomas Donnelly",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -770,31 +889,7 @@
       ]
     },
     {
-      "rank": 7,
-      "player": "Ryan Walker",
-      "totalPoints": 0.5,
-      "tieBreakPoints": 0,
-      "singlesMajors": 0,
-      "pairsTeamMajors": 1,
-      "knockoutWins": 0,
-      "clubChampionships": 0,
-      "qualifyingWins": 1,
-      "evidence": [
-        {
-          "competitionId": "james-grainger-trophy",
-          "resultCompetitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "awardType": "Pairs / Team Major",
-          "points": 0.5,
-          "tieBreakPoints": 0,
-          "year": 2026,
-          "date": "2026-06-13",
-          "source": "Certified competition result"
-        }
-      ]
-    },
-    {
-      "rank": 7,
+      "rank": 9,
       "player": "Sean Element",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -813,30 +908,6 @@
           "tieBreakPoints": 0,
           "year": 2026,
           "date": "2026-05-09",
-          "source": "Certified competition result"
-        }
-      ]
-    },
-    {
-      "rank": 7,
-      "player": "Tony John Salt",
-      "totalPoints": 0.5,
-      "tieBreakPoints": 0,
-      "singlesMajors": 0,
-      "pairsTeamMajors": 1,
-      "knockoutWins": 0,
-      "clubChampionships": 0,
-      "qualifyingWins": 1,
-      "evidence": [
-        {
-          "competitionId": "james-grainger-trophy",
-          "resultCompetitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "awardType": "Pairs / Team Major",
-          "points": 0.5,
-          "tieBreakPoints": 0,
-          "year": 2026,
-          "date": "2026-06-13",
           "source": "Certified competition result"
         }
       ]

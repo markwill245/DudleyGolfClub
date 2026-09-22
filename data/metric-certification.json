@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-18T14:06:26.670Z",
+  "generatedAt": "2026-09-21T22:49:29.697Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -43,10 +43,10 @@
         "unresolvedWinnersBlockCertification": true
       },
       "totals": {
-        "catalogueCompetitions": 149,
+        "catalogueCompetitions": 153,
         "includedCompetitions": 134,
-        "modernEventsChecked": 426,
-        "modernEligibleEvents": 381,
+        "modernEventsChecked": 630,
+        "modernEligibleEvents": 382,
         "modernAwardWins": 30,
         "modernOverallWins": 294,
         "historicalBoardsChecked": 35,
@@ -60,7 +60,7 @@
         "unresolvedPlayerOccurrences": 0,
         "missingWinnerOccurrences": 0,
         "certifiedSpecialAwardRows": 5,
-        "excludedAwardOrEventRecords": 69
+        "excludedAwardOrEventRecords": 70
       },
       "validation": {
         "awardCertificationPassed": true,
@@ -2497,6 +2497,11 @@
         },
         {
           "competitionId": "seniors-july-medal",
+          "year": 2026,
+          "reason": "No explicit career-win overallWinner"
+        },
+        {
+          "competitionId": "summer-foursomes",
           "year": 2026,
           "reason": "No explicit career-win overallWinner"
         }
@@ -15796,9 +15801,9 @@
       },
       "totals": {
         "competitions": 124,
-        "uniqueEvents": 426,
-        "resultRowsChecked": 13625,
-        "numericPositionRows": 13504,
+        "uniqueEvents": 630,
+        "resultRowsChecked": 13829,
+        "numericPositionRows": 13708,
         "qualifyingRows": 400,
         "rawPlayerOccurrences": 564,
         "certifiedPlayerFinishes": 561,
@@ -16669,13 +16674,13 @@
         "inferPlayers": false
       },
       "totals": {
-        "competitions": 142,
-        "uniqueEvents": 426,
-        "resultRowsChecked": 13625,
-        "numericPositionRows": 13504,
-        "qualifyingRows": 1242,
-        "rawPlayerOccurrences": 1760,
-        "certifiedPlayerFinishes": 1742,
+        "competitions": 146,
+        "uniqueEvents": 630,
+        "resultRowsChecked": 13829,
+        "numericPositionRows": 13708,
+        "qualifyingRows": 1446,
+        "rawPlayerOccurrences": 1965,
+        "certifiedPlayerFinishes": 1947,
         "duplicatePlayerEventOccurrences": 18,
         "disqualifiedRows": 121,
         "otherNonFinishingRows": 0,
@@ -16929,6 +16934,10 @@
           "finishes": 10
         },
         {
+          "playerName": "E. Crosby",
+          "finishes": 10
+        },
+        {
           "playerName": "Gary William Stubbs",
           "finishes": 10
         },
@@ -16953,6 +16962,10 @@
           "finishes": 10
         },
         {
+          "playerName": "Tony John Salt",
+          "finishes": 10
+        },
+        {
           "playerName": "Andrew Russell",
           "finishes": 9
         },
@@ -16973,6 +16986,10 @@
           "finishes": 9
         },
         {
+          "playerName": "M. Lees",
+          "finishes": 9
+        },
+        {
           "playerName": "Michael David Cosnett",
           "finishes": 9
         },
@@ -16989,11 +17006,11 @@
           "finishes": 9
         },
         {
-          "playerName": "Tony John Salt",
-          "finishes": 9
+          "playerName": "Barry Thomas Lawton",
+          "finishes": 8
         },
         {
-          "playerName": "Barry Thomas Lawton",
+          "playerName": "C. A. Mannell",
           "finishes": 8
         },
         {
@@ -17049,12 +17066,20 @@
           "finishes": 7
         },
         {
+          "playerName": "M. Fereday",
+          "finishes": 7
+        },
+        {
           "playerName": "Paul Wayne Taylor",
           "finishes": 7
         },
         {
           "playerName": "Pavittar Singh",
           "finishes": 7
+        },
+        {
+          "playerName": "B. Griffett",
+          "finishes": 6
         },
         {
           "playerName": "Carl Elsworth",
@@ -17074,6 +17099,10 @@
         },
         {
           "playerName": "David J. L. Jones",
+          "finishes": 6
+        },
+        {
+          "playerName": "H. Gould",
           "finishes": 6
         },
         {
@@ -17137,6 +17166,10 @@
           "finishes": 5
         },
         {
+          "playerName": "I. Horridge",
+          "finishes": 5
+        },
+        {
           "playerName": "Jason Watchorn",
           "finishes": 5
         },
@@ -17146,6 +17179,10 @@
         },
         {
           "playerName": "Karl Matthew Ashmore",
+          "finishes": 5
+        },
+        {
+          "playerName": "M. Scott",
           "finishes": 5
         },
         {
@@ -17185,11 +17222,23 @@
           "finishes": 4
         },
         {
+          "playerName": "E. E. Aston",
+          "finishes": 4
+        },
+        {
+          "playerName": "E. Neale",
+          "finishes": 4
+        },
+        {
           "playerName": "Gary Male",
           "finishes": 4
         },
         {
           "playerName": "Gavin Higgs",
+          "finishes": 4
+        },
+        {
+          "playerName": "J. Jones",
           "finishes": 4
         },
         {
@@ -17205,6 +17254,14 @@
           "finishes": 4
         },
         {
+          "playerName": "M. Freakley",
+          "finishes": 4
+        },
+        {
+          "playerName": "M. L. Clarke",
+          "finishes": 4
+        },
+        {
           "playerName": "Mitch Sayce",
           "finishes": 4
         },
@@ -17214,6 +17271,22 @@
         },
         {
           "playerName": "Paul Raymond Rock",
+          "finishes": 4
+        },
+        {
+          "playerName": "R. Bate",
+          "finishes": 4
+        },
+        {
+          "playerName": "Ryan Walker",
+          "finishes": 4
+        },
+        {
+          "playerName": "S. Jones",
+          "finishes": 4
+        },
+        {
+          "playerName": "T. Robinson",
           "finishes": 4
         },
         {
@@ -17233,11 +17306,27 @@
           "finishes": 3
         },
         {
+          "playerName": "C. Mansell",
+          "finishes": 3
+        },
+        {
           "playerName": "Christopher Longhurst",
           "finishes": 3
         },
         {
           "playerName": "Christopher Yale",
+          "finishes": 3
+        },
+        {
+          "playerName": "D. M. Cook",
+          "finishes": 3
+        },
+        {
+          "playerName": "F. Hingley",
+          "finishes": 3
+        },
+        {
+          "playerName": "G. A. Woodall",
           "finishes": 3
         },
         {
@@ -17265,6 +17354,10 @@
           "finishes": 3
         },
         {
+          "playerName": "J. Andrews",
+          "finishes": 3
+        },
+        {
           "playerName": "Jason Gregory",
           "finishes": 3
         },
@@ -17289,6 +17382,22 @@
           "finishes": 3
         },
         {
+          "playerName": "M. Eisel",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Shelley",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Sowry",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Walker",
+          "finishes": 3
+        },
+        {
           "playerName": "Micah Dance",
           "finishes": 3
         },
@@ -17301,7 +17410,7 @@
           "finishes": 3
         },
         {
-          "playerName": "Ryan Walker",
+          "playerName": "S. Williams",
           "finishes": 3
         },
         {
@@ -17319,6 +17428,18 @@
         {
           "playerName": "Stuart Baker",
           "finishes": 3
+        },
+        {
+          "playerName": "Sue Boulton",
+          "finishes": 3
+        },
+        {
+          "playerName": "V. Flavell",
+          "finishes": 3
+        },
+        {
+          "playerName": "A. Bowles",
+          "finishes": 2
         },
         {
           "playerName": "Andrew Card",
@@ -17353,6 +17474,10 @@
           "finishes": 2
         },
         {
+          "playerName": "D. M. Aston",
+          "finishes": 2
+        },
+        {
           "playerName": "Daniel Round",
           "finishes": 2
         },
@@ -17365,11 +17490,35 @@
           "finishes": 2
         },
         {
+          "playerName": "E. Hemmens",
+          "finishes": 2
+        },
+        {
+          "playerName": "E. Miller",
+          "finishes": 2
+        },
+        {
+          "playerName": "E. Platts",
+          "finishes": 2
+        },
+        {
+          "playerName": "G. Bennett",
+          "finishes": 2
+        },
+        {
+          "playerName": "H. Chilton",
+          "finishes": 2
+        },
+        {
           "playerName": "Ivan Homer",
           "finishes": 2
         },
         {
           "playerName": "Ivan John Jones",
+          "finishes": 2
+        },
+        {
+          "playerName": "J. Bryan",
           "finishes": 2
         },
         {
@@ -17382,6 +17531,10 @@
         },
         {
           "playerName": "J. Slater",
+          "finishes": 2
+        },
+        {
+          "playerName": "Jamie Daniel Hunt",
           "finishes": 2
         },
         {
@@ -17409,11 +17562,35 @@
           "finishes": 2
         },
         {
+          "playerName": "L. Griffith",
+          "finishes": 2
+        },
+        {
+          "playerName": "L. Messer",
+          "finishes": 2
+        },
+        {
           "playerName": "Leigh Bate",
           "finishes": 2
         },
         {
           "playerName": "Linda Rafferty",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. Bourne",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. Gillet",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. O'Leary",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. Sennett",
           "finishes": 2
         },
         {
@@ -17426,6 +17603,18 @@
         },
         {
           "playerName": "Michael William Murray",
+          "finishes": 2
+        },
+        {
+          "playerName": "N. Smith",
+          "finishes": 2
+        },
+        {
+          "playerName": "N. Willetts",
+          "finishes": 2
+        },
+        {
+          "playerName": "P. Smith",
           "finishes": 2
         },
         {
@@ -17497,6 +17686,14 @@
           "finishes": 2
         },
         {
+          "playerName": "A. E. Percy",
+          "finishes": 1
+        },
+        {
+          "playerName": "A. G. Taylor",
+          "finishes": 1
+        },
+        {
           "playerName": "A. Jackson",
           "finishes": 1
         },
@@ -17510,6 +17707,10 @@
         },
         {
           "playerName": "A. Raybould",
+          "finishes": 1
+        },
+        {
+          "playerName": "A. Shearman",
           "finishes": 1
         },
         {
@@ -17549,11 +17750,27 @@
           "finishes": 1
         },
         {
+          "playerName": "B. Taylor",
+          "finishes": 1
+        },
+        {
           "playerName": "Benjamin Woodall",
           "finishes": 1
         },
         {
           "playerName": "C. B. Jones",
+          "finishes": 1
+        },
+        {
+          "playerName": "C. Balshaw",
+          "finishes": 1
+        },
+        {
+          "playerName": "C. Bennett",
+          "finishes": 1
+        },
+        {
+          "playerName": "C. Butler",
           "finishes": 1
         },
         {
@@ -17565,6 +17782,10 @@
           "finishes": 1
         },
         {
+          "playerName": "D. Hartland",
+          "finishes": 1
+        },
+        {
           "playerName": "D. Organ",
           "finishes": 1
         },
@@ -17573,7 +17794,19 @@
           "finishes": 1
         },
         {
+          "playerName": "D. Williamson",
+          "finishes": 1
+        },
+        {
           "playerName": "Diane Hartland",
+          "finishes": 1
+        },
+        {
+          "playerName": "E. A. White",
+          "finishes": 1
+        },
+        {
+          "playerName": "E. Aston",
           "finishes": 1
         },
         {
@@ -17581,11 +17814,39 @@
           "finishes": 1
         },
         {
+          "playerName": "E. L. Dickinson",
+          "finishes": 1
+        },
+        {
+          "playerName": "E. Silvester",
+          "finishes": 1
+        },
+        {
           "playerName": "F. J. Dalloway",
           "finishes": 1
         },
         {
+          "playerName": "F. M. Newey",
+          "finishes": 1
+        },
+        {
+          "playerName": "F. M. Thompson",
+          "finishes": 1
+        },
+        {
+          "playerName": "F. Williams",
+          "finishes": 1
+        },
+        {
           "playerName": "G. Guest",
+          "finishes": 1
+        },
+        {
+          "playerName": "G. Millington",
+          "finishes": 1
+        },
+        {
+          "playerName": "G. Taylor",
           "finishes": 1
         },
         {
@@ -17641,11 +17902,19 @@
           "finishes": 1
         },
         {
+          "playerName": "J. Tolley",
+          "finishes": 1
+        },
+        {
+          "playerName": "J. Townsend",
+          "finishes": 1
+        },
+        {
           "playerName": "J. W. Owen",
           "finishes": 1
         },
         {
-          "playerName": "Jamie Daniel Hunt",
+          "playerName": "J. Wood",
           "finishes": 1
         },
         {
@@ -17661,7 +17930,27 @@
           "finishes": 1
         },
         {
+          "playerName": "K. Harvey",
+          "finishes": 1
+        },
+        {
+          "playerName": "K. L. Fitzsimons",
+          "finishes": 1
+        },
+        {
           "playerName": "Karl Ashmore",
+          "finishes": 1
+        },
+        {
+          "playerName": "L. Plant",
+          "finishes": 1
+        },
+        {
+          "playerName": "L. Rafferty",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Barker",
           "finishes": 1
         },
         {
@@ -17673,11 +17962,31 @@
           "finishes": 1
         },
         {
+          "playerName": "M. C. Bartlett",
+          "finishes": 1
+        },
+        {
           "playerName": "M. Carrington",
           "finishes": 1
         },
         {
+          "playerName": "M. Clarke",
+          "finishes": 1
+        },
+        {
           "playerName": "M. Crew",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Edwards",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Evans",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Field",
           "finishes": 1
         },
         {
@@ -17693,7 +18002,15 @@
           "finishes": 1
         },
         {
+          "playerName": "M. Jenns",
+          "finishes": 1
+        },
+        {
           "playerName": "M. Jones",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Kennedy",
           "finishes": 1
         },
         {
@@ -17702,6 +18019,10 @@
         },
         {
           "playerName": "Marcus Barton",
+          "finishes": 1
+        },
+        {
+          "playerName": "Marylou Edwards",
           "finishes": 1
         },
         {
@@ -17717,11 +18038,27 @@
           "finishes": 1
         },
         {
+          "playerName": "N. Blakemore",
+          "finishes": 1
+        },
+        {
+          "playerName": "N. Collinson",
+          "finishes": 1
+        },
+        {
+          "playerName": "N. Forster",
+          "finishes": 1
+        },
+        {
           "playerName": "Neil Moorby",
           "finishes": 1
         },
         {
           "playerName": "Oliver Underhill",
+          "finishes": 1
+        },
+        {
+          "playerName": "P. Griffiths",
           "finishes": 1
         },
         {
@@ -17737,7 +18074,11 @@
           "finishes": 1
         },
         {
-          "playerName": "P. Smith",
+          "playerName": "P. Thomas",
+          "finishes": 1
+        },
+        {
+          "playerName": "P. Williams",
           "finishes": 1
         },
         {
@@ -17757,7 +18098,19 @@
           "finishes": 1
         },
         {
+          "playerName": "R. Macaviney",
+          "finishes": 1
+        },
+        {
+          "playerName": "R. Macawiney",
+          "finishes": 1
+        },
+        {
           "playerName": "R. Pargeter",
+          "finishes": 1
+        },
+        {
+          "playerName": "R. Short",
           "finishes": 1
         },
         {
@@ -17789,7 +18142,11 @@
           "finishes": 1
         },
         {
-          "playerName": "S. Jones",
+          "playerName": "S. R. Moore",
+          "finishes": 1
+        },
+        {
+          "playerName": "S. Wakeman",
           "finishes": 1
         },
         {
@@ -17818,6 +18175,10 @@
         },
         {
           "playerName": "T. A. Currie",
+          "finishes": 1
+        },
+        {
+          "playerName": "T. Bianco",
           "finishes": 1
         },
         {
@@ -17927,6 +18288,10 @@
         "june-monthly-medal-prosser-lytham-trophy",
         "june-monthly-medal-prosser-lytham-trophy-brian-lloyd-qualifier",
         "june-sunday-stableford",
+        "ladies-freakley-salver",
+        "ladies-grazebrook-cup",
+        "ladies-hanson-bowl",
+        "ladies-maureen-hewitt-memorial-putter",
         "lewis-cup",
         "march-medal",
         "march-sunday-stableford",
@@ -18025,13 +18390,13 @@
         "inferPlayers": false
       },
       "totals": {
-        "competitions": 142,
-        "uniqueEvents": 426,
-        "resultRowsChecked": 13625,
-        "numericPositionRows": 13504,
-        "qualifyingRows": 3993,
-        "rawPlayerOccurrences": 5657,
-        "certifiedPlayerFinishes": 5573,
+        "competitions": 146,
+        "uniqueEvents": 630,
+        "resultRowsChecked": 13829,
+        "numericPositionRows": 13708,
+        "qualifyingRows": 4197,
+        "rawPlayerOccurrences": 5862,
+        "certifiedPlayerFinishes": 5778,
         "duplicatePlayerEventOccurrences": 83,
         "disqualifiedRows": 121,
         "otherNonFinishingRows": 0,
@@ -18282,7 +18647,7 @@
         },
         {
           "playerName": "Tony John Salt",
-          "finishes": 37
+          "finishes": 38
         },
         {
           "playerName": "Kenneth Brettle",
@@ -18641,6 +19006,10 @@
           "finishes": 10
         },
         {
+          "playerName": "E. Crosby",
+          "finishes": 10
+        },
+        {
           "playerName": "Stephen Thompson",
           "finishes": 10
         },
@@ -18673,8 +19042,16 @@
           "finishes": 9
         },
         {
+          "playerName": "M. Lees",
+          "finishes": 9
+        },
+        {
           "playerName": "Stuart Baker",
           "finishes": 9
+        },
+        {
+          "playerName": "C. A. Mannell",
+          "finishes": 8
         },
         {
           "playerName": "Christopher Longhurst",
@@ -18713,6 +19090,10 @@
           "finishes": 7
         },
         {
+          "playerName": "Jamie Daniel Hunt",
+          "finishes": 7
+        },
+        {
           "playerName": "Ken Jones",
           "finishes": 7
         },
@@ -18721,7 +19102,15 @@
           "finishes": 7
         },
         {
+          "playerName": "M. Fereday",
+          "finishes": 7
+        },
+        {
           "playerName": "Patrick Corcoran",
+          "finishes": 7
+        },
+        {
+          "playerName": "Ryan Walker",
           "finishes": 7
         },
         {
@@ -18737,6 +19126,10 @@
           "finishes": 7
         },
         {
+          "playerName": "B. Griffett",
+          "finishes": 6
+        },
+        {
           "playerName": "Christopher Fereday",
           "finishes": 6
         },
@@ -18749,11 +19142,11 @@
           "finishes": 6
         },
         {
-          "playerName": "Ivan Homer",
+          "playerName": "H. Gould",
           "finishes": 6
         },
         {
-          "playerName": "Jamie Daniel Hunt",
+          "playerName": "Ivan Homer",
           "finishes": 6
         },
         {
@@ -18770,10 +19163,6 @@
         },
         {
           "playerName": "Peter Bradley",
-          "finishes": 6
-        },
-        {
-          "playerName": "Ryan Walker",
           "finishes": 6
         },
         {
@@ -18801,6 +19190,10 @@
           "finishes": 5
         },
         {
+          "playerName": "I. Horridge",
+          "finishes": 5
+        },
+        {
           "playerName": "Jason Bates",
           "finishes": 5
         },
@@ -18814,6 +19207,10 @@
         },
         {
           "playerName": "Luke Jones",
+          "finishes": 5
+        },
+        {
+          "playerName": "M. Scott",
           "finishes": 5
         },
         {
@@ -18861,6 +19258,14 @@
           "finishes": 4
         },
         {
+          "playerName": "E. E. Aston",
+          "finishes": 4
+        },
+        {
+          "playerName": "E. Neale",
+          "finishes": 4
+        },
+        {
           "playerName": "Gary Male",
           "finishes": 4
         },
@@ -18870,6 +19275,10 @@
         },
         {
           "playerName": "Ivan John Jones",
+          "finishes": 4
+        },
+        {
+          "playerName": "J. Jones",
           "finishes": 4
         },
         {
@@ -18885,11 +19294,31 @@
           "finishes": 4
         },
         {
+          "playerName": "M. Freakley",
+          "finishes": 4
+        },
+        {
+          "playerName": "M. L. Clarke",
+          "finishes": 4
+        },
+        {
           "playerName": "Paul Meaden",
           "finishes": 4
         },
         {
+          "playerName": "R. Bate",
+          "finishes": 4
+        },
+        {
           "playerName": "Robert Marsden",
+          "finishes": 4
+        },
+        {
+          "playerName": "S. Jones",
+          "finishes": 4
+        },
+        {
+          "playerName": "T. Robinson",
           "finishes": 4
         },
         {
@@ -18901,7 +19330,23 @@
           "finishes": 3
         },
         {
+          "playerName": "C. Mansell",
+          "finishes": 3
+        },
+        {
           "playerName": "Chris Norton",
+          "finishes": 3
+        },
+        {
+          "playerName": "D. M. Cook",
+          "finishes": 3
+        },
+        {
+          "playerName": "F. Hingley",
+          "finishes": 3
+        },
+        {
+          "playerName": "G. A. Woodall",
           "finishes": 3
         },
         {
@@ -18921,6 +19366,26 @@
           "finishes": 3
         },
         {
+          "playerName": "J. Andrews",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Eisel",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Shelley",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Sowry",
+          "finishes": 3
+        },
+        {
+          "playerName": "M. Walker",
+          "finishes": 3
+        },
+        {
           "playerName": "Matthew Haden",
           "finishes": 3
         },
@@ -18937,11 +19402,19 @@
           "finishes": 3
         },
         {
+          "playerName": "S. Williams",
+          "finishes": 3
+        },
+        {
           "playerName": "Sam Thompson",
           "finishes": 3
         },
         {
           "playerName": "Shaun Edward Messer",
+          "finishes": 3
+        },
+        {
+          "playerName": "Sue Boulton",
           "finishes": 3
         },
         {
@@ -18953,8 +19426,16 @@
           "finishes": 3
         },
         {
+          "playerName": "V. Flavell",
+          "finishes": 3
+        },
+        {
           "playerName": "Zachary Downing",
           "finishes": 3
+        },
+        {
+          "playerName": "A. Bowles",
+          "finishes": 2
         },
         {
           "playerName": "Adam Chester",
@@ -18977,7 +19458,35 @@
           "finishes": 2
         },
         {
+          "playerName": "D. M. Aston",
+          "finishes": 2
+        },
+        {
           "playerName": "Darren Postin",
+          "finishes": 2
+        },
+        {
+          "playerName": "E. Hemmens",
+          "finishes": 2
+        },
+        {
+          "playerName": "E. Miller",
+          "finishes": 2
+        },
+        {
+          "playerName": "E. Platts",
+          "finishes": 2
+        },
+        {
+          "playerName": "G. Bennett",
+          "finishes": 2
+        },
+        {
+          "playerName": "H. Chilton",
+          "finishes": 2
+        },
+        {
+          "playerName": "J. Bryan",
           "finishes": 2
         },
         {
@@ -19001,11 +19510,47 @@
           "finishes": 2
         },
         {
+          "playerName": "L. Griffith",
+          "finishes": 2
+        },
+        {
+          "playerName": "L. Messer",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. Bourne",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. Gillet",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. O'Leary",
+          "finishes": 2
+        },
+        {
+          "playerName": "M. Sennett",
+          "finishes": 2
+        },
+        {
           "playerName": "M. Short",
           "finishes": 2
         },
         {
+          "playerName": "N. Smith",
+          "finishes": 2
+        },
+        {
+          "playerName": "N. Willetts",
+          "finishes": 2
+        },
+        {
           "playerName": "Neil Moorby",
+          "finishes": 2
+        },
+        {
+          "playerName": "P. Smith",
           "finishes": 2
         },
         {
@@ -19049,6 +19594,14 @@
           "finishes": 2
         },
         {
+          "playerName": "A. E. Percy",
+          "finishes": 1
+        },
+        {
+          "playerName": "A. G. Taylor",
+          "finishes": 1
+        },
+        {
           "playerName": "A. Jackson",
           "finishes": 1
         },
@@ -19062,6 +19615,10 @@
         },
         {
           "playerName": "A. Raybould",
+          "finishes": 1
+        },
+        {
+          "playerName": "A. Shearman",
           "finishes": 1
         },
         {
@@ -19109,11 +19666,27 @@
           "finishes": 1
         },
         {
+          "playerName": "B. Taylor",
+          "finishes": 1
+        },
+        {
           "playerName": "Ben McNally",
           "finishes": 1
         },
         {
           "playerName": "C. B. Jones",
+          "finishes": 1
+        },
+        {
+          "playerName": "C. Balshaw",
+          "finishes": 1
+        },
+        {
+          "playerName": "C. Bennett",
+          "finishes": 1
+        },
+        {
+          "playerName": "C. Butler",
           "finishes": 1
         },
         {
@@ -19129,11 +19702,19 @@
           "finishes": 1
         },
         {
+          "playerName": "D. Hartland",
+          "finishes": 1
+        },
+        {
           "playerName": "D. Organ",
           "finishes": 1
         },
         {
           "playerName": "D. Sutton",
+          "finishes": 1
+        },
+        {
+          "playerName": "D. Williamson",
           "finishes": 1
         },
         {
@@ -19145,7 +19726,23 @@
           "finishes": 1
         },
         {
+          "playerName": "E. A. White",
+          "finishes": 1
+        },
+        {
+          "playerName": "E. Aston",
+          "finishes": 1
+        },
+        {
           "playerName": "E. Davies",
+          "finishes": 1
+        },
+        {
+          "playerName": "E. L. Dickinson",
+          "finishes": 1
+        },
+        {
+          "playerName": "E. Silvester",
           "finishes": 1
         },
         {
@@ -19153,7 +19750,27 @@
           "finishes": 1
         },
         {
+          "playerName": "F. M. Newey",
+          "finishes": 1
+        },
+        {
+          "playerName": "F. M. Thompson",
+          "finishes": 1
+        },
+        {
+          "playerName": "F. Williams",
+          "finishes": 1
+        },
+        {
           "playerName": "G. Guest",
+          "finishes": 1
+        },
+        {
+          "playerName": "G. Millington",
+          "finishes": 1
+        },
+        {
+          "playerName": "G. Taylor",
           "finishes": 1
         },
         {
@@ -19185,7 +19802,19 @@
           "finishes": 1
         },
         {
+          "playerName": "J. Tolley",
+          "finishes": 1
+        },
+        {
+          "playerName": "J. Townsend",
+          "finishes": 1
+        },
+        {
           "playerName": "J. W. Owen",
+          "finishes": 1
+        },
+        {
+          "playerName": "J. Wood",
           "finishes": 1
         },
         {
@@ -19201,6 +19830,14 @@
           "finishes": 1
         },
         {
+          "playerName": "K. Harvey",
+          "finishes": 1
+        },
+        {
+          "playerName": "K. L. Fitzsimons",
+          "finishes": 1
+        },
+        {
           "playerName": "Karl Ashmore",
           "finishes": 1
         },
@@ -19213,11 +19850,23 @@
           "finishes": 1
         },
         {
+          "playerName": "L. Plant",
+          "finishes": 1
+        },
+        {
+          "playerName": "L. Rafferty",
+          "finishes": 1
+        },
+        {
           "playerName": "Laurence Peter Brown",
           "finishes": 1
         },
         {
           "playerName": "Lee Rhoden",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Barker",
           "finishes": 1
         },
         {
@@ -19229,11 +19878,31 @@
           "finishes": 1
         },
         {
+          "playerName": "M. C. Bartlett",
+          "finishes": 1
+        },
+        {
           "playerName": "M. Carrington",
           "finishes": 1
         },
         {
+          "playerName": "M. Clarke",
+          "finishes": 1
+        },
+        {
           "playerName": "M. Crew",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Edwards",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Evans",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Field",
           "finishes": 1
         },
         {
@@ -19249,7 +19918,15 @@
           "finishes": 1
         },
         {
+          "playerName": "M. Jenns",
+          "finishes": 1
+        },
+        {
           "playerName": "M. Jones",
+          "finishes": 1
+        },
+        {
+          "playerName": "M. Kennedy",
           "finishes": 1
         },
         {
@@ -19265,6 +19942,10 @@
           "finishes": 1
         },
         {
+          "playerName": "Marylou Edwards",
+          "finishes": 1
+        },
+        {
           "playerName": "Mathew Green",
           "finishes": 1
         },
@@ -19277,7 +19958,23 @@
           "finishes": 1
         },
         {
+          "playerName": "N. Blakemore",
+          "finishes": 1
+        },
+        {
+          "playerName": "N. Collinson",
+          "finishes": 1
+        },
+        {
+          "playerName": "N. Forster",
+          "finishes": 1
+        },
+        {
           "playerName": "Oliver Underhill",
+          "finishes": 1
+        },
+        {
+          "playerName": "P. Griffiths",
           "finishes": 1
         },
         {
@@ -19293,7 +19990,11 @@
           "finishes": 1
         },
         {
-          "playerName": "P. Smith",
+          "playerName": "P. Thomas",
+          "finishes": 1
+        },
+        {
+          "playerName": "P. Williams",
           "finishes": 1
         },
         {
@@ -19301,7 +20002,19 @@
           "finishes": 1
         },
         {
+          "playerName": "R. Macaviney",
+          "finishes": 1
+        },
+        {
+          "playerName": "R. Macawiney",
+          "finishes": 1
+        },
+        {
           "playerName": "R. Pargeter",
+          "finishes": 1
+        },
+        {
+          "playerName": "R. Short",
           "finishes": 1
         },
         {
@@ -19329,7 +20042,11 @@
           "finishes": 1
         },
         {
-          "playerName": "S. Jones",
+          "playerName": "S. R. Moore",
+          "finishes": 1
+        },
+        {
+          "playerName": "S. Wakeman",
           "finishes": 1
         },
         {
@@ -19350,6 +20067,10 @@
         },
         {
           "playerName": "T. A. Currie",
+          "finishes": 1
+        },
+        {
+          "playerName": "T. Bianco",
           "finishes": 1
         },
         {
@@ -19452,6 +20173,10 @@
         "june-monthly-medal-prosser-lytham-trophy",
         "june-monthly-medal-prosser-lytham-trophy-brian-lloyd-qualifier",
         "june-sunday-stableford",
+        "ladies-freakley-salver",
+        "ladies-grazebrook-cup",
+        "ladies-hanson-bowl",
+        "ladies-maureen-hewitt-memorial-putter",
         "lewis-cup",
         "march-medal",
         "march-sunday-stableford",
@@ -19555,11 +20280,11 @@
       },
       "totals": {
         "competitions": 132,
-        "uniqueEvents": 381,
-        "resultRowsChecked": 12149,
-        "appearanceRows": 12149,
-        "rawPlayerOccurrences": 15557,
-        "certifiedPlayerAppearances": 15110,
+        "uniqueEvents": 382,
+        "resultRowsChecked": 12150,
+        "appearanceRows": 12150,
+        "rawPlayerOccurrences": 15559,
+        "certifiedPlayerAppearances": 15112,
         "duplicatePlayerEventOccurrences": 435,
         "externalParticipantOccurrences": 12,
         "unresolvedPlayerOccurrences": 0,
@@ -19712,15 +20437,15 @@
           "appearances": 123
         },
         {
+          "playerName": "Tony John Salt",
+          "appearances": 122
+        },
+        {
           "playerName": "Christopher Vanes",
           "appearances": 121
         },
         {
           "playerName": "Mark A. Williams",
-          "appearances": 121
-        },
-        {
-          "playerName": "Tony John Salt",
           "appearances": 121
         },
         {
@@ -20272,6 +20997,10 @@
           "appearances": 22
         },
         {
+          "playerName": "Ryan Walker",
+          "appearances": 22
+        },
+        {
           "playerName": "Keith Taylor",
           "appearances": 21
         },
@@ -20281,10 +21010,6 @@
         },
         {
           "playerName": "Paul Tromans",
-          "appearances": 21
-        },
-        {
-          "playerName": "Ryan Walker",
           "appearances": 21
         },
         {
@@ -21437,7 +22162,7 @@
       "totals": {
         "competitions": 68,
         "uniqueEvents": 193,
-        "resultRowsChecked": 13625,
+        "resultRowsChecked": 13829,
         "eligibleRows": 7319,
         "rawPlayerScoreOccurrences": 7319,
         "certifiedPlayerScores": 7318,
@@ -21481,14 +22206,14 @@
             "stableford": 0
           }
         },
-        "excludedTeamRows": 2535,
-        "excludedBoardRows": 48,
+        "excludedTeamRows": 2536,
+        "excludedBoardRows": 142,
         "excludedMatchplayRows": 0,
         "excludedNonFinishingRows": 709,
         "excludedIncompleteRows": 24,
         "excludedUnknownScoreTypeRows": 7,
         "excludedMultiRoundRows": 0,
-        "excludedNonCompetitiveRows": 1513,
+        "excludedNonCompetitiveRows": 1622,
         "excludedMixedTableRows": 1392,
         "excludedMixedTableEvents": 14,
         "uncertifiedHoleLengthRows": 0,
