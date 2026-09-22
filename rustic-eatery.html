@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rustic Eatery | Dudley Golf Club — Staff Preview</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --forest:#132419; --gold:#C5A367; --cream:#F9F7F2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--forest); font-family:Outfit,sans-serif; }
+    a { color:inherit; }
+
+    .preview {
+      background:var(--gold); color:var(--forest); text-align:center;
+      padding:9px 16px; font-size:11px; font-weight:600; letter-spacing:.13em;
+    }
+    .topbar {
+      background:var(--forest); color:white; border-bottom:1px solid rgba(197,163,103,.45);
+      padding:22px max(20px,calc((100vw - 1120px)/2));
+      display:flex; justify-content:space-between; align-items:center; gap:20px;
+    }
+    .brand { text-decoration:none; line-height:1.1; }
+    .brand strong { display:block; font:600 30px 'Cormorant Garamond',serif; letter-spacing:.1em; }
+    .brand small { color:var(--gold); font-size:10px; letter-spacing:.18em; }
+    .topbar nav { display:flex; gap:24px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+    .topbar nav a { text-decoration:none; }
+    .topbar nav a:hover { color:var(--gold); }
+
+    .hero {
+      min-height:350px; display:flex; flex-direction:column; align-items:center;
+      justify-content:center; padding:75px 20px; text-align:center;
+      background:linear-gradient(90deg,rgba(12,27,18,.92),rgba(12,27,18,.7)),
+                 radial-gradient(circle at 70% 40%,#5b6440,var(--forest) 70%);
+      color:white;
+    }
+    .eyebrow { color:var(--gold); letter-spacing:.28em; text-transform:uppercase; font-size:12px; }
+    h1,h2,h3 { font-family:'Cormorant Garamond',serif; font-weight:600; }
+    h1 { font-size:clamp(54px,8vw,94px); margin:12px 0; line-height:1; color:var(--cream); }
+    .hero p { max-width:650px; margin:20px auto 0; color:#e8e8e0; line-height:1.7; }
+
+    main { max-width:1200px; margin:auto; padding:55px 24px 75px; }
+    .hours {
+      background:white; border:1px solid #e3d9c5; padding:30px 35px;
+      margin-bottom:65px; box-shadow:0 8px 30px rgba(19,36,25,.05);
+    }
+    h2 { color:var(--forest); font-size:clamp(36px,5vw,50px); margin:0 0 22px; }
+    .hours > h2 { text-align:center; }
+    .hours-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; }
+    .hours-card { padding:10px 25px; text-align:center; }
+    .hours-card + .hours-card { border-left:1px solid #e3d9c5; }
+    .hours-card h3 { font-size:30px; margin:0 0 12px; }
+    .hours-card p { margin:8px 0; line-height:1.6; font-size:14px; }
+    .hours-card b { color:#87672d; }
+
+    .menu-section { margin:0 0 65px; }
+    .menu-section h2 {
+      text-align:center; padding-bottom:16px; margin-bottom:30px;
+      border-bottom:1px solid var(--gold);
+    }
+    .menu-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 45px; }
+    .dish { background:transparent; border:0; border-bottom:1px solid #ded8cb; padding:20px 0; }
+    .dish-head { display:flex; justify-content:space-between; align-items:baseline; gap:14px; }
+    .dish h3 { font-size:27px; margin:0; line-height:1.15; }
+    .price { color:#8a672d; font-weight:600; white-space:nowrap; }
+    .dish p { color:#555b52; font-size:14px; line-height:1.65; margin:10px 0 0; }
+    .note { color:#5b625a; line-height:1.7; font-size:13px; text-align:center; }
+    footer {
+      text-align:center; padding:85px 20px; color:white; font-size:18px;
+      font-family:'Cormorant Garamond',serif; letter-spacing:.08em;
+      background:linear-gradient(rgba(10,27,17,.25),rgba(10,27,17,.75)),
+                 url('images/hole4-view3.webp') center 52% / cover no-repeat;
+    }
+    @media(max-width:700px) {
+      .topbar { padding:18px 20px; }
+      .topbar nav { gap:12px; font-size:11px; }
+      .hours-grid,.menu-grid { grid-template-columns:1fr; }
+      .hours-card { padding:15px 0; }
+      .hours-card + .hours-card { border-left:0; border-top:1px solid #e3d9c5; }
+      .hero { padding:65px 20px; }
+      .hours { padding:22px; }
+      main { padding:35px 20px 55px; }
+    }
+    .brand { display:flex; align-items:center; gap:13px; }
+    .club-crest { width:56px; height:56px; object-fit:contain; }
+    footer {
+      min-height:320px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      background:
+        linear-gradient(to bottom,rgba(10,27,17,.04),rgba(10,27,17,.75)),
+        url('images/hole4-view3.webp') center / cover no-repeat;
+    }
+    .hero {
+      min-height: 440px;
+      background: #132419 url('images/rustic-eatery/rustic-eatery.png')
+                  center center / cover no-repeat;
+    }
+    .hero .eyebrow,
+    .hero h1,
+    .hero p { display: none; }
+    @media (max-width: 700px) {
+      .hero { min-height: 260px; background-size: contain; }
+    }
+    /* Keep the complete Rustic Eatery header visible */
+    .hero {
+      min-height: 0;
+      height: auto;
+      aspect-ratio: 438 / 190;
+      padding: 0;
+      background-color: #132419;
+      background-position: center top;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 700px) {
+      .hero {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 438 / 190;
+        padding: 0;
+        background-size: 100% 100%;
+      }
+    }
+    /* Rustic Eatery: cropped burger-and-logo hero */
+    .hero {
+      min-height: 0;
+      height: auto;
+      aspect-ratio: 1024 / 465;
+      padding: 0;
+      background: #132419 url('images/rustic-eatery/hero-cropped.png')
+                  center / 100% 100% no-repeat;
+    }
+    @media (max-width: 700px) {
+      .hero {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 1024 / 465;
+        padding: 0;
+        background-size: 100% 100%;
+      }
+    }
+    /* Final hero: separate image beneath real website navigation */
+    .hero {
+      display: block;
+      width: 100%;
+      min-height: 0;
+      height: auto;
+      aspect-ratio: 1829 / 864;
+      padding: 0;
+      background: #132419 url('images/rustic-eatery/rustic-eatery.webp')
+                  center center / contain no-repeat;
+    }
+    .hero .eyebrow,
+    .hero h1,
+    .hero p { display: none; }
+    @media (max-width: 700px) {
+      .hero {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 1829 / 864;
+        padding: 0;
+        background-size: contain;
+      }
+    }
+      .dudley-header { background:#132419; color:white; }
+    .dudley-topbar {
+      display:flex; justify-content:space-between; gap:12px;
+      padding:9px 24px; background:#101d15;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      font:10px Outfit,sans-serif; letter-spacing:.15em;
+    }
+    .dudley-nav {
+      display:flex; align-items:center; justify-content:space-between;
+      gap:22px; padding:20px 24px;
+    }
+    .dudley-logo { text-decoration:none; flex-shrink:0; line-height:1; }
+    .dudley-logo span {
+      display:block; font:600 29px 'Cormorant Garamond',serif;
+      letter-spacing:.09em;
+    }
+    .dudley-logo small {
+      display:block; margin-top:5px; color:#C5A367;
+      font-size:9px; letter-spacing:.12em;
+    }
+    .dudley-desktop {
+      display:flex; flex-wrap:wrap; justify-content:center;
+      align-items:center; gap:12px 20px;
+    }
+    .dudley-desktop a,.dudley-member-links a,.dudley-mobile a {
+      text-decoration:none; font:600 11px Outfit,sans-serif;
+      letter-spacing:.07em; text-transform:uppercase;
+    }
+    .dudley-desktop a:hover,.dudley-mobile a:hover { color:#C5A367; }
+    .dudley-member-links { display:flex; gap:10px; flex-shrink:0; }
+    .dudley-member-links a {
+      color:#C5A367; border:1px solid #C5A367;
+      padding:12px 13px; text-align:center;
+    }
+    .dudley-member-links a:hover { background:#C5A367; color:#132419; }
+    .dudley-menu-button {
+      display:none; color:#C5A367; background:none;
+      border:1px solid #C5A367; padding:7px 12px;
+      font-size:22px; cursor:pointer;
+    }
+    .dudley-mobile[hidden] { display:none; }
+    .dudley-mobile { padding:12px 24px 24px; border-top:1px solid #C5A36755; }
+    .dudley-mobile a { display:block; padding:11px 0; }
+    @media(max-width:1250px) {
+      .dudley-desktop,.dudley-member-links { display:none; }
+      .dudley-menu-button { display:block; }
+    }
+    @media(max-width:600px) {
+      .dudley-topbar { font-size:8px; }
+      .dudley-topbar span:last-child { text-align:right; }
+    }
+    .menu-photo {
+      display:block;
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      margin-bottom:24px;
+      border:1px solid #d8c7a6;
+    }
+    @media(max-width:700px) {
+      .menu-photo { height:210px; }
+    }
+    /* Rustic Eatery staff preview: three photo-topped menu columns */
+    main {
+      max-width: 1500px;
+      padding: 28px 24px 48px;
+    }
+    .hero {
+      aspect-ratio: 1829 / 660;
+      background-size: 100% 100%;
+    }
+    .hours {
+      margin-bottom: 24px;
+      padding: 22px 30px;
+    }
+    .hours > h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .menus-three {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      align-items: stretch;
+    }
+    .menus-three .menu-section {
+      min-width: 0;
+      margin: 0;
+      background: #fffdf9;
+      border: 1px solid #e3d9c5;
+      padding-bottom: 22px;
+    }
+    .menus-three .menu-photo {
+      height: 210px;
+      margin: 0 0 14px;
+      border: 0;
+      border-bottom: 1px solid #d8c7a6;
+    }
+    .menus-three .menu-section h2 {
+      font-size: clamp(29px, 3vw, 42px);
+      margin: 0 18px 8px;
+      padding-bottom: 12px;
+    }
+    .menus-three .menu-grid {
+      display: block;
+      padding: 0 18px;
+    }
+    .menus-three .dish {
+      padding: 12px 0;
+    }
+    .menus-three .dish h3 {
+      font-size: 22px;
+    }
+    .menus-three .dish p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+    .menus-three .price {
+      font-size: 13px;
+    }
+    @media (max-width: 900px) {
+      .menus-three {
+        grid-template-columns: 1fr;
+      }
+      .menus-three .menu-photo {
+        height: 230px;
+      }
+      .hero {
+        aspect-ratio: 1829 / 864;
+      }
+    }
+    /* Keep the hero artwork in its original proportions */
+    .hero {
+      width: 100%;
+      max-width: 1450px;
+      aspect-ratio: 1829 / 864;
+      height: auto;
+      min-height: 0;
+      margin: 0 auto;
+      padding: 0;
+      background-size: contain;
+      background-position: center;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        width: 100%;
+        aspect-ratio: 1829 / 864;
+        background-size: contain;
+      }
+    }
+    /* Space between navigation and Rustic Eatery banner */
+    .hero {
+      margin-top: 36px;
+    }
+    @media (max-width: 700px) {
+      .hero {
+        margin-top: 20px;
+      }
+    }
+</style>
+</head>
+<body>
+  <div class="preview">STAFF PREVIEW — NOT YET PUBLISHED</div>
+  <header class="dudley-header">
+  <div class="dudley-topbar">
+    <span>DUDLEY GOLF CLUB · EST. 1893</span>
+    <span>THE RUSTIC EATERY · STAFF PREVIEW</span>
+  </div>
+
+  <div class="dudley-nav">
+    <a class="dudley-logo" href="/">
+      <span>DUDLEY</span>
+      <small>GOLF CLUB EST. 1893</small>
+    </a>
+
+    <nav class="dudley-desktop" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/course">Course Guide</a>
+      <a href="/the-gauntlet">The Gauntlet</a>
+      <a href="/history">History</a>
+      <a href="/digital-museum">Digital Museum</a>
+      <a href="/hospitality">Hospitality &amp; Events</a>
+      <a href="/pro-shop">Pro Shop</a>
+      <a href="/visitors">Visitors</a>
+      <a href="/membership">Membership</a>
+    </nav>
+
+    <div class="dudley-member-links">
+      <a href="members-login.html" target="_blank" rel="noopener">Members iGolf</a>
+      <a href="login.html">Members Portal</a>
+    </div>
+
+    <button class="dudley-menu-button" type="button"
+            aria-label="Open navigation" aria-controls="dudley-mobile"
+            aria-expanded="false" onclick="toggleDudleyMenu(this)">☰</button>
+  </div>
+
+  <nav id="dudley-mobile" class="dudley-mobile" aria-label="Mobile navigation" hidden>
+    <a href="/">Home</a>
+    <a href="/course">Course Guide</a>
+    <a href="/the-gauntlet">The Gauntlet</a>
+    <a href="/history">History</a>
+    <a href="/digital-museum">Digital Museum</a>
+    <a href="/hospitality">Hospitality &amp; Events</a>
+    <a href="/pro-shop">Pro Shop</a>
+    <a href="/visitors">Visitors</a>
+    <a href="/membership">Membership</a>
+    <a href="members-login.html">Members iGolf</a>
+    <a href="login.html">Members Portal</a>
+  </nav>
+</header>
+
+  <section class="hero" aria-label="The Rustic Eatery">
+    <div class="eyebrow">Dudley Golf Club · Food & Drink</div>
+    <h1>The Rustic Eatery</h1>
+    <p>Great food, great company — on and off the course. Join us for breakfast before your round or relax over a meal afterwards.</p>
+  </section>
+
+  <main>
+    <section class="hours" aria-labelledby="hours-heading">
+      <h2 id="hours-heading">Opening Hours</h2>
+      <div class="hours-grid">
+        <div class="hours-card"><h3>Friday</h3><p><b>Breakfast</b><br>7.00am–11.00am</p><p><b>Main menu</b><br>12.00pm–7.30pm</p></div>
+        <div class="hours-card"><h3>Saturday</h3><p><b>Breakfast</b><br>7.00am–11.00am</p><p><b>Main menu</b><br>12.00pm–7.30pm</p></div>
+        <div class="hours-card"><h3>Sunday</h3><p><b>Breakfast only</b><br>7.00am–11.00am</p></div>
+      </div>
+    </section>
+
+    <div class="menus-three">
+    <section class="menu-section" aria-labelledby="breakfast-heading">
+      <img class="menu-photo" src="images/rustic-eatery/breakfast.webp" alt="Breakfast menu" loading="lazy">
+      <h2 id="breakfast-heading">Breakfast Menu</h2>
+      <div class="menu-grid">
+        <article class="dish"><div class="dish-head"><h3>Full English Breakfast (Large)</h3><span class="price">£9.50</span></div><p>2 sausages, 2 bacon, 2 eggs, 2 hash browns, tomatoes, mushrooms, black pudding and 2 slices of toast.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Full English Breakfast (Small)</h3><span class="price">£7.50</span></div><p>1 sausage, 1 bacon, 1 egg, 1 hash brown, beans, tomatoes, mushrooms, black pudding and 1 slice of toast.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Beans on Toast</h3><span class="price">£4.00</span></div></article>
+        <article class="dish"><div class="dish-head"><h3>Egg on Toast</h3><span class="price">£4.00</span></div></article>
+        <article class="dish"><div class="dish-head"><h3>Tomatoes on Toast</h3><span class="price">£4.00</span></div></article>
+        <article class="dish"><div class="dish-head"><h3>Sausage, Bacon and Tomato Bloomer</h3><span class="price">£5.00</span></div><p>Extra items: egg, mushrooms, black pudding or beans — 50p each.</p></article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="main-heading">
+      <img class="menu-photo" src="images/rustic-eatery/chicken.webp" alt="Main menu" loading="lazy">
+      <h2 id="main-heading">Main Menu</h2>
+      <div class="menu-grid">
+        <article class="dish"><div class="dish-head"><h3>Rustic Bowls</h3><span class="price">£7.00</span></div><p>Southern fried chicken, chips, crispy onions, sesame seeds and spring onions. Choose your sauce: garlic mayo, blue cheese, sriracha, sweet chilli, hot chilli, buffalo or BBQ.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Chicken Burger &amp; Chips</h3><span class="price">£12.00</span></div><p>Southern fried chicken, streaky bacon, cheese, hash brown, tomato, lettuce, buttermilk sauce and burger sauce on a brioche bun.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Paninis</h3><span class="price">£7.00</span></div><p>Choose your fillings: cheese, tomatoes, onion, ham, chicken, bacon, tuna or salami. Served with a side salad.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Curry Bowl</h3><span class="price">£8.00</span></div><p>Chicken curry, rice and onion bhaji.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Smash Burger &amp; Chips</h3><span class="price">£12.00</span></div><p>2 beef patties, cheese, hash brown, onions, tomato, lettuce, gherkins and burger sauce.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Bowl of Cheesy Chips</h3><span class="price">£4.00</span></div></article>
+        <article class="dish"><div class="dish-head"><h3>Bowl of Chips</h3><span class="price">£3.00</span></div></article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="children-heading">
+      <img class="menu-photo" src="images/rustic-eatery/children.webp" alt="Children's menu" loading="lazy">
+      <h2 id="children-heading">Children's Menu</h2>
+      <div class="menu-grid">
+        <article class="dish"><div class="dish-head"><h3>Chicken Nuggets and Chips</h3><span class="price">£6.00</span></div><p>Served with baked beans.</p></article>
+        <article class="dish"><div class="dish-head"><h3>Fish Fingers and Chips</h3><span class="price">£6.00</span></div><p>Served with baked beans.</p></article>
+      </div>
+    </section>
+
+    </div>
+
+    <p class="note">Menu and opening hours are subject to change. Buffet and catering details will be added following confirmation.</p>
+  </main>
+
+  <footer>Dudley Golf Club · The Rustic Eatery</footer>
+<script>
+function toggleDudleyMenu(button) {
+  const menu = document.getElementById('dudley-mobile');
+  const opening = menu.hidden;
+  menu.hidden = !opening;
+  button.setAttribute('aria-expanded', String(opening));
+  button.setAttribute('aria-label', opening ? 'Close navigation' : 'Open navigation');
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
