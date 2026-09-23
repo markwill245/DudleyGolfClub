@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-21T22:49:29.697Z",
+  "generatedAt": "2026-09-23T21:31:06.468Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -13,8 +13,8 @@
   ],
   "summary": {
     "metrics": 6,
-    "ready": 6,
-    "blocked": 0,
+    "ready": 5,
+    "blocked": 1,
     "pending": 0
   },
   "metrics": [
@@ -45,15 +45,15 @@
       "totals": {
         "catalogueCompetitions": 153,
         "includedCompetitions": 134,
-        "modernEventsChecked": 630,
-        "modernEligibleEvents": 382,
+        "modernEventsChecked": 631,
+        "modernEligibleEvents": 383,
         "modernAwardWins": 30,
-        "modernOverallWins": 294,
+        "modernOverallWins": 295,
         "historicalBoardsChecked": 35,
         "historicalBoardYearsChecked": 833,
         "historicalBoardWins": 833,
-        "rawWinnerOccurrences": 1578,
-        "certifiedPlayerWins": 1474,
+        "rawWinnerOccurrences": 1579,
+        "certifiedPlayerWins": 1475,
         "uniqueWinningPlayers": 520,
         "duplicatePlayerEventOccurrences": 104,
         "externalParticipantOccurrences": 0,
@@ -256,6 +256,10 @@
           "wins": 6
         },
         {
+          "playerName": "Adam Stanfield",
+          "wins": 6
+        },
+        {
           "playerName": "Andrew Deakin",
           "wins": 6
         },
@@ -334,10 +338,6 @@
         {
           "playerName": "Robert Hudson",
           "wins": 6
-        },
-        {
-          "playerName": "Adam Stanfield",
-          "wins": 5
         },
         {
           "playerName": "David Hobley",
@@ -15469,6 +15469,15 @@
         },
         {
           "playerName": "Adam Stanfield",
+          "competitionId": "members-non-cup-stableford-competition",
+          "awardId": "overallWinner",
+          "year": 2026,
+          "date": "2026-09-19",
+          "sourceType": "modern-overall",
+          "sourceLabel": "overallWinner"
+        },
+        {
+          "playerName": "Adam Stanfield",
           "competitionId": "millennium-trophy-4-ball",
           "awardId": "overallWinner",
           "year": 2026,
@@ -15801,12 +15810,12 @@
       },
       "totals": {
         "competitions": 124,
-        "uniqueEvents": 630,
-        "resultRowsChecked": 13829,
-        "numericPositionRows": 13708,
-        "qualifyingRows": 400,
-        "rawPlayerOccurrences": 564,
-        "certifiedPlayerFinishes": 561,
+        "uniqueEvents": 631,
+        "resultRowsChecked": 13846,
+        "numericPositionRows": 13725,
+        "qualifyingRows": 401,
+        "rawPlayerOccurrences": 565,
+        "certifiedPlayerFinishes": 562,
         "duplicatePlayerEventOccurrences": 3,
         "disqualifiedRows": 121,
         "otherNonFinishingRows": 0,
@@ -16444,6 +16453,10 @@
           "finishes": 1
         },
         {
+          "playerName": "Paul Meaden",
+          "finishes": 1
+        },
+        {
           "playerName": "Paul Wayne Taylor",
           "finishes": 1
         },
@@ -16675,12 +16688,12 @@
       },
       "totals": {
         "competitions": 146,
-        "uniqueEvents": 630,
-        "resultRowsChecked": 13829,
-        "numericPositionRows": 13708,
-        "qualifyingRows": 1446,
-        "rawPlayerOccurrences": 1965,
-        "certifiedPlayerFinishes": 1947,
+        "uniqueEvents": 631,
+        "resultRowsChecked": 13846,
+        "numericPositionRows": 13725,
+        "qualifyingRows": 1449,
+        "rawPlayerOccurrences": 1968,
+        "certifiedPlayerFinishes": 1950,
         "duplicatePlayerEventOccurrences": 18,
         "disqualifiedRows": 121,
         "otherNonFinishingRows": 0,
@@ -16770,6 +16783,10 @@
           "finishes": 18
         },
         {
+          "playerName": "Adam Stanfield",
+          "finishes": 17
+        },
+        {
           "playerName": "M.j. Davies",
           "finishes": 17
         },
@@ -16798,11 +16815,11 @@
           "finishes": 16
         },
         {
-          "playerName": "Adam Stanfield",
+          "playerName": "Ian Frederick Stevens",
           "finishes": 16
         },
         {
-          "playerName": "Ian Frederick Stevens",
+          "playerName": "Mark A. Williams",
           "finishes": 16
         },
         {
@@ -16823,10 +16840,6 @@
         },
         {
           "playerName": "Lewis Jones",
-          "finishes": 15
-        },
-        {
-          "playerName": "Mark A. Williams",
           "finishes": 15
         },
         {
@@ -17634,6 +17647,10 @@
           "finishes": 2
         },
         {
+          "playerName": "Paul Meaden",
+          "finishes": 2
+        },
+        {
           "playerName": "Peter Bradley",
           "finishes": 2
         },
@@ -18082,10 +18099,6 @@
           "finishes": 1
         },
         {
-          "playerName": "Paul Meaden",
-          "finishes": 1
-        },
-        {
           "playerName": "Paul Tromans",
           "finishes": 1
         },
@@ -18391,12 +18404,12 @@
       },
       "totals": {
         "competitions": 146,
-        "uniqueEvents": 630,
-        "resultRowsChecked": 13829,
-        "numericPositionRows": 13708,
-        "qualifyingRows": 4197,
-        "rawPlayerOccurrences": 5862,
-        "certifiedPlayerFinishes": 5778,
+        "uniqueEvents": 631,
+        "resultRowsChecked": 13846,
+        "numericPositionRows": 13725,
+        "qualifyingRows": 4207,
+        "rawPlayerOccurrences": 5872,
+        "certifiedPlayerFinishes": 5788,
         "duplicatePlayerEventOccurrences": 83,
         "disqualifiedRows": 121,
         "otherNonFinishingRows": 0,
@@ -18426,11 +18439,11 @@
           "finishes": 81
         },
         {
-          "playerName": "James Stevens",
-          "finishes": 77
+          "playerName": "Richard Limb",
+          "finishes": 78
         },
         {
-          "playerName": "Richard Limb",
+          "playerName": "James Stevens",
           "finishes": 77
         },
         {
@@ -18455,11 +18468,11 @@
         },
         {
           "playerName": "Alan Ball",
-          "finishes": 62
+          "finishes": 63
         },
         {
           "playerName": "Calin Tiplea",
-          "finishes": 62
+          "finishes": 63
         },
         {
           "playerName": "Robert Keith Woodall",
@@ -18467,7 +18480,7 @@
         },
         {
           "playerName": "Ian Frederick Stevens",
-          "finishes": 60
+          "finishes": 61
         },
         {
           "playerName": "Lee Roger Grainger",
@@ -18491,7 +18504,7 @@
         },
         {
           "playerName": "Philip Thompson",
-          "finishes": 56
+          "finishes": 57
         },
         {
           "playerName": "Mark Dando",
@@ -18510,6 +18523,10 @@
           "finishes": 53
         },
         {
+          "playerName": "Mark A. Williams",
+          "finishes": 52
+        },
+        {
           "playerName": "Michael John Kendrick",
           "finishes": 52
         },
@@ -18518,16 +18535,12 @@
           "finishes": 51
         },
         {
-          "playerName": "Mark A. Williams",
-          "finishes": 51
-        },
-        {
           "playerName": "Robert Hudson",
           "finishes": 50
         },
         {
           "playerName": "Adam Stanfield",
-          "finishes": 48
+          "finishes": 49
         },
         {
           "playerName": "Darren Element",
@@ -18854,6 +18867,10 @@
           "finishes": 17
         },
         {
+          "playerName": "Richard Weston",
+          "finishes": 17
+        },
+        {
           "playerName": "Stephen Langford",
           "finishes": 17
         },
@@ -18875,10 +18892,6 @@
         },
         {
           "playerName": "Keith Brian Culwick",
-          "finishes": 16
-        },
-        {
-          "playerName": "Richard Weston",
           "finishes": 16
         },
         {
@@ -19150,6 +19163,10 @@
           "finishes": 6
         },
         {
+          "playerName": "Jason Bates",
+          "finishes": 6
+        },
+        {
           "playerName": "Jeffrey Dean",
           "finishes": 6
         },
@@ -19194,10 +19211,6 @@
           "finishes": 5
         },
         {
-          "playerName": "Jason Bates",
-          "finishes": 5
-        },
-        {
           "playerName": "John Goudge",
           "finishes": 5
         },
@@ -19219,6 +19232,10 @@
         },
         {
           "playerName": "Paul Holmes",
+          "finishes": 5
+        },
+        {
+          "playerName": "Paul Meaden",
           "finishes": 5
         },
         {
@@ -19299,10 +19316,6 @@
         },
         {
           "playerName": "M. L. Clarke",
-          "finishes": 4
-        },
-        {
-          "playerName": "Paul Meaden",
           "finishes": 4
         },
         {
@@ -20280,11 +20293,11 @@
       },
       "totals": {
         "competitions": 132,
-        "uniqueEvents": 382,
-        "resultRowsChecked": 12150,
-        "appearanceRows": 12150,
-        "rawPlayerOccurrences": 15559,
-        "certifiedPlayerAppearances": 15112,
+        "uniqueEvents": 383,
+        "resultRowsChecked": 12167,
+        "appearanceRows": 12167,
+        "rawPlayerOccurrences": 15576,
+        "certifiedPlayerAppearances": 15129,
         "duplicatePlayerEventOccurrences": 435,
         "externalParticipantOccurrences": 12,
         "unresolvedPlayerOccurrences": 0,
@@ -20326,11 +20339,11 @@
         },
         {
           "playerName": "Richard Limb",
-          "appearances": 160
+          "appearances": 161
         },
         {
           "playerName": "Ian Frederick Stevens",
-          "appearances": 156
+          "appearances": 157
         },
         {
           "playerName": "Wayne Rutter",
@@ -20346,19 +20359,19 @@
         },
         {
           "playerName": "Adam Stanfield",
-          "appearances": 150
+          "appearances": 151
         },
         {
           "playerName": "Melvin Crook",
           "appearances": 149
         },
         {
-          "playerName": "Clive Kearey",
+          "playerName": "Calin Tiplea",
           "appearances": 146
         },
         {
-          "playerName": "Calin Tiplea",
-          "appearances": 145
+          "playerName": "Clive Kearey",
+          "appearances": 146
         },
         {
           "playerName": "James Stevens",
@@ -20369,16 +20382,16 @@
           "appearances": 145
         },
         {
+          "playerName": "Philip Thompson",
+          "appearances": 143
+        },
+        {
           "playerName": "Sean Element",
           "appearances": 143
         },
         {
-          "playerName": "Philip Thompson",
-          "appearances": 142
-        },
-        {
           "playerName": "Mark Andrew Poulding",
-          "appearances": 141
+          "appearances": 142
         },
         {
           "playerName": "Michael John Kendrick",
@@ -20390,7 +20403,7 @@
         },
         {
           "playerName": "Neil Hartland",
-          "appearances": 134
+          "appearances": 135
         },
         {
           "playerName": "Anthony Willetts",
@@ -20401,12 +20414,12 @@
           "appearances": 132
         },
         {
-          "playerName": "David Hobley",
+          "playerName": "Alan Ball",
           "appearances": 131
         },
         {
-          "playerName": "Alan Ball",
-          "appearances": 130
+          "playerName": "David Hobley",
+          "appearances": 131
         },
         {
           "playerName": "Andrew Deakin",
@@ -20437,6 +20450,10 @@
           "appearances": 123
         },
         {
+          "playerName": "Mark A. Williams",
+          "appearances": 122
+        },
+        {
           "playerName": "Tony John Salt",
           "appearances": 122
         },
@@ -20445,7 +20462,7 @@
           "appearances": 121
         },
         {
-          "playerName": "Mark A. Williams",
+          "playerName": "Kevin Walters",
           "appearances": 121
         },
         {
@@ -20453,16 +20470,12 @@
           "appearances": 120
         },
         {
-          "playerName": "Kevin Walters",
-          "appearances": 120
+          "playerName": "Gary Baker",
+          "appearances": 117
         },
         {
           "playerName": "Jason Watchorn",
           "appearances": 117
-        },
-        {
-          "playerName": "Gary Baker",
-          "appearances": 116
         },
         {
           "playerName": "Jason Langford",
@@ -20502,7 +20515,7 @@
         },
         {
           "playerName": "Mark Dando",
-          "appearances": 103
+          "appearances": 104
         },
         {
           "playerName": "Robert Shedden",
@@ -20521,16 +20534,16 @@
           "appearances": 96
         },
         {
+          "playerName": "Andrew Russell",
+          "appearances": 94
+        },
+        {
           "playerName": "Carl R. Biddulph",
           "appearances": 94
         },
         {
           "playerName": "David Jeavons",
           "appearances": 94
-        },
-        {
-          "playerName": "Andrew Russell",
-          "appearances": 93
         },
         {
           "playerName": "Mark Neil Tolley",
@@ -20613,11 +20626,11 @@
           "appearances": 74
         },
         {
-          "playerName": "Michael Geoffrey Guise",
-          "appearances": 73
+          "playerName": "Mitchell Raybould",
+          "appearances": 74
         },
         {
-          "playerName": "Mitchell Raybould",
+          "playerName": "Michael Geoffrey Guise",
           "appearances": 73
         },
         {
@@ -20885,15 +20898,15 @@
           "appearances": 31
         },
         {
+          "playerName": "Richard Weston",
+          "appearances": 31
+        },
+        {
           "playerName": "Keith Brian Culwick",
           "appearances": 30
         },
         {
           "playerName": "Michael Terence Cole",
-          "appearances": 30
-        },
-        {
-          "playerName": "Richard Weston",
           "appearances": 30
         },
         {
@@ -21089,6 +21102,10 @@
           "appearances": 17
         },
         {
+          "playerName": "Paul Meaden",
+          "appearances": 17
+        },
+        {
           "playerName": "Alfie Higgs",
           "appearances": 16
         },
@@ -21109,10 +21126,6 @@
           "appearances": 16
         },
         {
-          "playerName": "Paul Meaden",
-          "appearances": 16
-        },
-        {
           "playerName": "Simon Nunn",
           "appearances": 16
         },
@@ -21129,6 +21142,10 @@
           "appearances": 15
         },
         {
+          "playerName": "Jason Bates",
+          "appearances": 15
+        },
+        {
           "playerName": "Stewart Smith",
           "appearances": 15
         },
@@ -21138,10 +21155,6 @@
         },
         {
           "playerName": "Alexander Idoine",
-          "appearances": 14
-        },
-        {
-          "playerName": "Jason Bates",
           "appearances": 14
         },
         {
@@ -22115,7 +22128,7 @@
       "metricId": "career-scoring-averages",
       "displayName": "Career Scoring Averages",
       "category": "Scoring",
-      "status": "Ready",
+      "status": "Blocked",
       "sourceAuthority": [
         "competition-results.json",
         "competition-catalog.json",
@@ -22162,7 +22175,7 @@
       "totals": {
         "competitions": 68,
         "uniqueEvents": 193,
-        "resultRowsChecked": 13829,
+        "resultRowsChecked": 13846,
         "eligibleRows": 7319,
         "rawPlayerScoreOccurrences": 7319,
         "certifiedPlayerScores": 7318,
@@ -22216,7 +22229,7 @@
         "excludedNonCompetitiveRows": 1622,
         "excludedMixedTableRows": 1392,
         "excludedMixedTableEvents": 14,
-        "uncertifiedHoleLengthRows": 0,
+        "uncertifiedHoleLengthRows": 17,
         "excludedRoundCountMismatchRows": 34,
         "missingPlayerRows": 0,
         "externalParticipantOccurrences": 10,
@@ -22224,7 +22237,9 @@
         "scorelessEligibleRows": 34,
         "conflictingScores": 0
       },
-      "blockers": [],
+      "blockers": [
+        "17 scoring rows belong to events without a certified hole count."
+      ],
       "leaderboards": {
         "nineHole": {
           "gross": [],
