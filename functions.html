@@ -95,13 +95,40 @@
                     </button>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <img src="images/function.webp" alt="Function Suite View"
+            <div class="grid grid-cols-2 gap-4" aria-label="Dudley Golf Club function room photographs">
+                <img src="images/func2.webp" alt="Dudley Golf Club function room prepared for a celebration" loading="eager"
                     class="w-full h-64 object-cover rounded-sm shadow-md">
-                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80"
-                    class="w-full h-64 object-cover mt-8 rounded-sm shadow-md" alt="Celebration">
+                <img src="images/func4.webp" alt="Function room seating and tables at Dudley Golf Club" loading="lazy"
+                    class="w-full h-64 object-cover mt-8 rounded-sm shadow-md">
             </div>
         </div>
+
+        <section class="mb-20" aria-labelledby="function-gallery-heading">
+            <div class="text-center mb-10">
+                <p class="text-[#C5A367] uppercase tracking-[0.3em] text-xs font-bold mb-3">Our Clubhouse</p>
+                <h2 id="function-gallery-heading" class="serif text-4xl">See Our Function Room</h2>
+                <p class="text-gray-700 mt-4">Explore our function room, set for a special occasion, with views across the golf course.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src="images/func1.webp" alt="Dudley Golf Club function room with decorated tables and views across the course"
+                    loading="lazy" class="w-full h-72 md:h-96 object-cover rounded-sm shadow-md">
+                <img src="images/func3.webp" alt="Dudley Golf Club function room arranged for a private event"
+                    loading="lazy" class="w-full h-72 md:h-96 object-cover rounded-sm shadow-md">
+            </div>
+        </section>
+
+        <section class="bg-white p-8 md:p-12 border border-[#C5A367]/10 mb-20" aria-labelledby="function-types-heading">
+            <h2 id="function-types-heading" class="serif text-3xl text-center mb-8">Occasions We Welcome</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                <p>Wedding receptions</p>
+                <p>Birthday parties</p>
+                <p>Anniversaries and family celebrations</p>
+                <p>Funeral receptions and wakes</p>
+                <p>Christenings</p>
+                <p>Corporate meetings and events</p>
+                <p>Golf society meals and presentations</p>
+            </div>
+        </section>
 
         <section class="bg-white p-12 border border-[#C5A367]/10 mb-20">
             <h3 class="serif text-3xl text-center mb-12">Venue Features</h3>
@@ -208,6 +235,10 @@
                         <option value="Birthday_Milestone">18th/21st Birthday (Security deposit required)</option>
                         <option value="Childrens_Party">Children's Party</option>
                         <option value="Funeral_Wake">Funeral Wake</option>
+                        <option value="Anniversary_Family">Anniversary or Family Celebration</option>
+                        <option value="Christening">Christening</option>
+                        <option value="Corporate">Corporate Meeting or Event</option>
+                        <option value="Golf_Society">Golf Society Meal or Presentation</option>
                     </select>
                 </div>
                 <div class="space-y-2">
@@ -230,7 +261,7 @@
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
                             <input type="radio" name="dj_status" value="Club DJ" class="w-4 h-4 accent-[#C5A367]">
-                            <span>Yes - £200</span>
+                            <span>Yes - Â£200</span>
                         </label>
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
@@ -253,22 +284,22 @@
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
                             <input type="radio" name="catering_food" value="Buffet 1" required
-                                class="w-4 h-4 accent-[#C5A367]"> <span>Buffet 1 - £5.50 per person</span>
+                                class="w-4 h-4 accent-[#C5A367]"> <span>Buffet 1 - Â£5.50 per person</span>
                         </label>
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
                             <input type="radio" name="catering_food" value="Buffet 1 Desserts"
-                                class="w-4 h-4 accent-[#C5A367]"> <span>Buffet 1 with Desserts - £6 per person</span>
+                                class="w-4 h-4 accent-[#C5A367]"> <span>Buffet 1 with Desserts - Â£6 per person</span>
                         </label>
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
                             <input type="radio" name="catering_food" value="Buffet 2" class="w-4 h-4 accent-[#C5A367]">
-                            <span>Buffet 2 - £7 per person</span>
+                            <span>Buffet 2 - Â£7 per person</span>
                         </label>
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
                             <input type="radio" name="catering_food" value="Hot Option"
-                                class="w-4 h-4 accent-[#C5A367]"> <span>Hot Option - from £7.50 per head dependant on
+                                class="w-4 h-4 accent-[#C5A367]"> <span>Hot Option - from Â£7.50 per head dependant on
                                 requirements</span>
                         </label>
                     </div>
@@ -280,7 +311,7 @@
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
                             <input type="radio" name="tablecloths" value="Yes" class="w-4 h-4 accent-[#C5A367]">
-                            <span>Yes - £75</span>
+                            <span>Yes - Â£75</span>
                         </label>
                         <label
                             class="flex items-center gap-3 bg-[#132419] border border-[#C5A367]/20 p-3 cursor-pointer text-white text-xs hover:border-[#C5A367]/50 transition">
@@ -401,8 +432,8 @@
 
         <div
             class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
-            <p>© 2026 Dudley Golf Club</p>
-            <p>Established 1893 • Rowley Regis</p>
+            <p>Â© 2026 Dudley Golf Club</p>
+            <p>Established 1893 â€¢ Rowley Regis</p>
         </div>
     </footer>
 
@@ -429,32 +460,9 @@
         }
     </script>
     <!-- RETURN HOME BUTTON -->
-    <a href="/" aria-label="Return Home" style="
-position: fixed;
-bottom: 24px;
-right: 24px;
-width: 50px;
-height: 50px;
-background-color: #132419;
-color: #C5A367;
-border: 2px solid #C5A367;
-border-radius: 4px;
-z-index: 99999;
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-font-size: 20px;
-font-weight: bold;
-">
-        ⌂
+        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m3 10 9-7 9 7'/><path d='M5 9v12h14V9'/><path d='M9 21v-7h6v7'/></svg>
     </a>
 
 </body>
 
 </html>
-
-
-
-
