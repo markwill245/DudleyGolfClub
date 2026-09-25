@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -355,7 +355,16 @@
             "2001|Mrs T. Robinson": "mrs-t-j-robinson-2001.webp",
             "2002|Mrs M. McDermott": "mo-mcdermott-2002.webp",
             "2003|Mrs L.C. Messer": "lorraine-messer-2003.webp",
-            "2009|Mrs C. Mansell": "mrs-c-mansell-2009.webp"
+            "2004|Mrs F. Hingley": "mrs-f-hingley-2004.webp",
+            "2005|Mrs J.H. Andrews": "j-h-andrews-2005.webp",
+            "2006|Mrs T. Robinson": "mrs-t-j-robinson-2006.webp",
+            "2007|Mrs L. Messer": "lorraine-messer-2007.webp",
+            "2008|Mrs S. Birch": "shirley-birch-2008.webp",
+            "2009|Mrs C. Mansell": "christine-mansell-2009.webp",
+            "2010|Mrs K. Jones": "karen-jones-2010.webp",
+            "2011|Mrs M. Edwards": "m-edwards-2011.webp",
+            "2012|Mrs M.C. Hewitt": "m-hewitt-2012-2013.webp",
+            "2013|Mrs M. Hewitt": "m-hewitt-2012-2013.webp"
         };
 
         function renderTimeline(items) {
@@ -493,6 +502,90 @@
     </script>
 
 
+  <!-- Ladies Captain photo lightbox -->
+  <div id="captain-photo-lightbox"
+       class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4 md:p-8"
+       role="dialog"
+       aria-modal="true"
+       aria-label="Expanded captain photograph">
+
+      <button id="captain-photo-lightbox-close"
+              type="button"
+              aria-label="Close expanded photograph"
+              class="absolute top-4 right-4 md:top-6 md:right-6 z-[101] flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-black/50 text-3xl leading-none text-white hover:bg-white hover:text-[#132419] transition">
+          &times;
+      </button>
+
+      <img id="captain-photo-lightbox-image"
+           src=""
+           alt=""
+           class="max-h-[90vh] max-w-[95vw] object-contain shadow-2xl">
+  </div>
+
+  <script>
+      (() => {
+          const lightbox = document.getElementById("captain-photo-lightbox");
+          const lightboxImage = document.getElementById("captain-photo-lightbox-image");
+          const closeButton = document.getElementById("captain-photo-lightbox-close");
+
+          function openCaptainPhoto(img) {
+              lightboxImage.src = img.src;
+              lightboxImage.alt = img.alt || "Captain photograph";
+              lightbox.classList.remove("hidden");
+              lightbox.classList.add("flex");
+              document.body.style.overflow = "hidden";
+              closeButton.focus();
+          }
+
+          function closeCaptainPhoto() {
+              lightbox.classList.add("hidden");
+              lightbox.classList.remove("flex");
+              lightboxImage.src = "";
+              document.body.style.overflow = "";
+          }
+
+          document.addEventListener("click", event => {
+              const img = event.target.closest(
+                  'img[src*="/images/museum/ladies-captains/"]'
+              );
+
+              if (img) {
+                  img.style.cursor = "zoom-in";
+                  openCaptainPhoto(img);
+                  return;
+              }
+
+              if (
+                  event.target === lightbox ||
+                  event.target === closeButton
+              ) {
+                  closeCaptainPhoto();
+              }
+          });
+
+          document.addEventListener("mouseover", event => {
+              const img = event.target.closest(
+                  'img[src*="/images/museum/ladies-captains/"]'
+              );
+
+              if (img) {
+                  img.style.cursor = "zoom-in";
+                  img.title = "Click to enlarge";
+              }
+          });
+
+          document.addEventListener("keydown", event => {
+              if (
+                  event.key === "Escape" &&
+                  !lightbox.classList.contains("hidden")
+              ) {
+                  closeCaptainPhoto();
+              }
+          });
+      })();
+  </script>
+
+
   <button id="backToTop"    type="button"
     aria-label="Back to top"
     class="fixed bottom-6 right-6 hidden bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-4 py-3 rounded-md shadow-lg transition-all duration-300 z-50 text-xs font-bold uppercase tracking-widest">
@@ -520,3 +613,5 @@
 </body>
 
 </html>
+
+

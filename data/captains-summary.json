@@ -5941,9 +5941,16 @@
       {
         "name": "Mrs M. Edwards",
         "years": [
+          "2011",
           "2014"
         ],
         "terms": [
+          {
+            "year": 2011,
+            "yearLabel": "2011",
+            "startYear": 2011,
+            "endYear": 2011
+          },
           {
             "year": 2014,
             "yearLabel": "2014",
@@ -5951,9 +5958,9 @@
             "endYear": 2014
           }
         ],
-        "totalYears": 1,
-        "totalTerms": 1,
-        "firstYear": 2014,
+        "totalYears": 2,
+        "totalTerms": 2,
+        "firstYear": 2011,
         "lastYear": 2014
       },
       {
@@ -6414,6 +6421,15 @@
         "startYear": 2010,
         "endYear": 2010,
         "name": "Mrs K. Jones",
+        "source": "Lady Captains Board",
+        "verified": true
+      },
+      {
+        "year": 2011,
+        "yearLabel": "2011",
+        "startYear": 2011,
+        "endYear": 2011,
+        "name": "Mrs M. Edwards",
         "source": "Lady Captains Board",
         "verified": true
       },
