@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -69,6 +69,34 @@
   <main
     class="max-w-6xl mx-auto px-6 py-14"
   >
+    <section class="mb-8 bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+      <div class="grid md:grid-cols-[1fr_280px] gap-5 items-end">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] font-bold mb-2">
+            Season Archive
+          </p>
+          <h2 class="serif text-3xl">
+            Golfer of the Year Season
+          </h2>
+          <p id="seasonHelp" class="mt-2 text-sm text-gray-600">
+            Current committee working ranking. Select a previous season to view the historical record.
+          </p>
+        </div>
+
+        <div>
+          <label for="seasonSelector" class="block text-xs uppercase tracking-[0.2em] font-bold mb-2">
+            Choose Season
+          </label>
+          <select
+            id="seasonSelector"
+            class="w-full border border-[#C5A367]/50 bg-[#F9F7F2] px-4 py-3 rounded-lg"
+          >
+            <option value="current">Current Season</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
     <section
       id="summary"
       class="mb-10"
@@ -139,6 +167,173 @@
       panel?.classList.toggle("hidden");
     }
 
+
+    let currentCommitteeData = null;
+    let historicalSeasons = null;
+
+    function historicalEvidencePanel(player, season) {
+      return `
+        <div
+          id="history-evidence-${player.rank}"
+          class="hidden bg-[#F9F7F2] px-6 py-6 border-t border-[#C5A367]/20"
+        >
+          <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] font-bold mb-4">
+            Points Evidence
+          </p>
+
+          <div class="space-y-3">
+            ${(player.results || []).map(item => `
+              <div class="grid md:grid-cols-[1fr_auto_auto] gap-3 bg-white border border-[#C5A367]/20 rounded-xl p-4">
+                <div>
+                  <strong>${escapeHtml(item.competition || "")}</strong>
+                </div>
+
+                <span class="text-sm">
+                  ${escapeHtml(item.date || item.year || season)}
+                </span>
+
+                <strong class="text-[#C5A367]">
+                  ${item.points}
+                  ${item.points === 1 ? "pt" : "pts"}
+                </strong>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    function toggleHistoricalEvidence(rank) {
+      document
+        .getElementById(`history-evidence-${rank}`)
+        ?.classList.toggle("hidden");
+    }
+
+    function renderHistoricalSeason(season) {
+      const standings = Array.isArray(historicalSeasons?.[season])
+        ? historicalSeasons[season]
+        : [];
+
+      const leader = standings[0] || null;
+
+      document.getElementById("seasonHelp").textContent =
+        "Historical club record. This has not been retrospectively recalculated using the current committee rules.";
+
+      document.getElementById("summary").innerHTML = `
+        <div class="grid md:grid-cols-3 gap-5">
+          <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Season</p>
+            <strong class="serif text-4xl">${escapeHtml(season)}</strong>
+          </div>
+
+          <div class="bg-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Players Ranked</p>
+            <strong class="serif text-4xl">${standings.length}</strong>
+          </div>
+
+          <div class="bg-[#132419] text-white border border-[#C5A367]/30 rounded-2xl p-6 shadow">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#C5A367] mb-2">Record Type</p>
+            <strong class="serif text-3xl">Historical Record</strong>
+          </div>
+        </div>
+
+        <div class="mt-6 bg-amber-50 border border-amber-300 rounded-xl p-5 text-sm">
+          This historical table uses the club's existing Golfer of the Year archive.
+          It is shown as recorded and has not been recalculated using the current committee rules.
+        </div>
+      `;
+
+      document.getElementById("standings").innerHTML = `
+        <section class="bg-white border border-[#C5A367]/30 rounded-2xl shadow overflow-hidden">
+          <div class="p-7 border-b border-[#C5A367]/20">
+            <p class="text-xs uppercase tracking-[0.3em] text-[#C5A367] mb-2">
+              Historical Archive
+            </p>
+            <h2 class="serif text-4xl">
+              ${escapeHtml(season)} Standings
+            </h2>
+          </div>
+
+          ${standings.map(player => `
+            <div class="border-b last:border-b-0 border-[#C5A367]/20">
+              <button
+                type="button"
+                onclick="toggleHistoricalEvidence(${player.rank})"
+                class="w-full grid grid-cols-[55px_1fr_auto] md:grid-cols-[70px_1fr_100px] gap-4 items-center px-5 py-5 text-left hover:bg-[#F9F7F2] transition"
+              >
+                <strong class="serif text-3xl">
+                  ${player.rank}
+                </strong>
+
+                <div>
+                  <strong class="text-lg">
+                    ${escapeHtml(player.player)}
+                  </strong>
+                  <p class="text-xs text-gray-500 mt-1">
+                    ${player.wins}
+                    recorded
+                    ${player.wins === 1 ? "win" : "wins"}
+                  </p>
+                </div>
+
+                <strong class="serif text-3xl text-[#C5A367]">
+                  ${player.points}
+                </strong>
+              </button>
+
+              ${historicalEvidencePanel(player, season)}
+            </div>
+          `).join("")}
+        </section>
+      `;
+    }
+
+    async function loadHistoricalSeasons() {
+      const response = await fetch(
+        "data/golfer-of-the-year-seasons.json",
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Historical GOTY data returned ${response.status}`
+        );
+      }
+
+      historicalSeasons = await response.json();
+
+      const seasons = Object.keys(historicalSeasons)
+        .filter(season =>
+          Array.isArray(historicalSeasons[season]) &&
+          historicalSeasons[season].length > 0
+        )
+        .filter(season => season !== "2026-27")
+        .reverse();
+
+      const selector = document.getElementById("seasonSelector");
+
+      selector.innerHTML =
+        '<option value="current">Current Season</option>' +
+        seasons.map(season =>
+          `<option value="${escapeHtml(season)}">${escapeHtml(season)}</option>`
+        ).join("");
+
+      selector.addEventListener("change", event => {
+        if (event.target.value === "current") {
+          document.getElementById("seasonHelp").textContent =
+            "Current committee working ranking. Select a previous season to view the historical record.";
+
+          document.getElementById("summary").innerHTML = "";
+          document.getElementById("standings").innerHTML = "";
+
+          loadData();
+          return;
+        }
+
+        renderHistoricalSeason(event.target.value);
+      });
+    }
+
     async function loadData() {
       const response = await fetch(
         "data/golfer-of-the-year-committee.json",
@@ -155,6 +350,8 @@
 
       const data =
         await response.json();
+
+      currentCommitteeData = data;
 
       document
         .getElementById("summary")
@@ -414,7 +611,10 @@
       }
     });
 
-    loadData().catch(error => {
+    Promise.all([
+      loadData(),
+      loadHistoricalSeasons()
+    ]).catch(error => {
       console.error(error);
 
       document
@@ -429,3 +629,4 @@
 
 </body>
 </html>
+
