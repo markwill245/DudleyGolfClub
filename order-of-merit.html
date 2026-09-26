@@ -135,6 +135,20 @@
           num(player.points) ||
           num(player.orderOfMeritPoints),
         wins: num(player.wins),
+        top3: Array.isArray(player.results)
+          ? player.results.filter(result =>
+              result.sourceType !== "divisionWinner" &&
+              num(result.position) >= 1 &&
+              num(result.position) <= 3
+            ).length
+          : 0,
+        top5: Array.isArray(player.results)
+          ? player.results.filter(result =>
+              result.sourceType !== "divisionWinner" &&
+              num(result.position) >= 1 &&
+              num(result.position) <= 5
+            ).length
+          : 0,
         top10:
           num(player.top10) ||
           num(player.topTen),
@@ -523,6 +537,8 @@
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Player</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Points</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Wins</th>
+                  <th class="p-4 text-xs uppercase tracking-[0.2em]">Top 3</th>
+                  <th class="p-4 text-xs uppercase tracking-[0.2em]">Top 5</th>
                   <th class="p-4 text-xs uppercase tracking-[0.2em]">Top 10</th>
                 </tr>
               </thead>
@@ -560,6 +576,14 @@
 
                         <td class="p-4">
                           ${player.wins}
+                        </td>
+
+                        <td class="p-4">
+                          ${player.top3}
+                        </td>
+
+                        <td class="p-4">
+                          ${player.top5}
                         </td>
 
                         <td class="p-4">
