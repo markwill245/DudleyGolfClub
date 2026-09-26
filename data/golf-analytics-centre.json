@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-09-23T21:32:25.416Z",
+  "generatedAt": "2026-09-26T16:14:42.472Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -17,13 +17,13 @@
     "evidenceRequired": true
   },
   "totals": {
-    "canonicalPlayers": 759,
+    "canonicalPlayers": 761,
     "playersWithAnalytics": 305,
     "eligibleEvents": 214,
     "eligibleRows": 8783,
     "includedNettRounds": 3372,
     "includedStablefordRounds": 5410,
-    "excludedTeamEvents": 119,
+    "excludedTeamEvents": 120,
     "excludedEvents": 94,
     "excludedNonFinishers": 756,
     "excludedUnknownPlayers": 0,
@@ -31686,6 +31686,15 @@
           }
         }
       }
+    },
+    {
+      "name": "David Tromans",
+      "status": "Active",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
     },
     {
       "name": "David Williams",
@@ -129708,6 +129717,15 @@
           }
         }
       }
+    },
+    {
+      "name": "Simon Williams",
+      "status": "Active",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
     },
     {
       "name": "Stephen Brian Hopkins",

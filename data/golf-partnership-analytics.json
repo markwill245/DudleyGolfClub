@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1-prototype",
-  "generatedAt": "2026-09-23T21:32:34.304Z",
+  "generatedAt": "2026-09-26T16:14:51.434Z",
   "status": "Prototype - partnership analytics not yet certified",
   "methodology": {
     "partnerships": "Two-player team events only",
@@ -348,13 +348,13 @@
         "James Stevens",
         "Neil Hartland"
       ],
-      "appearances": 29,
+      "appearances": 30,
       "headlineEligible": true,
       "wins": 3,
-      "winRate": 10.3,
+      "winRate": 10,
       "top3": 7,
       "top5": 10,
-      "averageFinish": 8.6,
+      "averageFinish": 8.5,
       "bestFinish": 1,
       "formats": {
         "Pairs": {
@@ -373,12 +373,17 @@
           }
         },
         "Betterball": {
-          "appearances": 9,
+          "appearances": 10,
           "scoreTypes": {
             "Stableford": {
               "scoreCount": 7,
               "averageScore": 43.3,
               "bestScore": 49
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 43,
+              "bestScore": 43
             }
           }
         },
@@ -652,6 +657,15 @@
           "format": "Pairs",
           "position": 12,
           "score": 72
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 8,
+          "score": 43
         }
       ]
     },
@@ -1762,7 +1776,7 @@
         "David Hill",
         "Paul Welch"
       ],
-      "appearances": 20,
+      "appearances": 21,
       "headlineEligible": true,
       "wins": 0,
       "winRate": 0,
@@ -1787,12 +1801,17 @@
           }
         },
         "Betterball": {
-          "appearances": 7,
+          "appearances": 8,
           "scoreTypes": {
             "Stableford": {
               "scoreCount": 7,
               "averageScore": 37.3,
               "bestScore": 43
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 41,
+              "bestScore": 41
             }
           }
         },
@@ -1981,6 +2000,15 @@
           "format": "Pairs",
           "position": 20,
           "score": 75
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 17,
+          "score": 41
         }
       ]
     },
@@ -2181,6 +2209,201 @@
     {
       "section": "Mens",
       "players": [
+        "James Price",
+        "Stephen Price"
+      ],
+      "appearances": 17,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 2,
+      "averageFinish": 14.7,
+      "bestFinish": 2,
+      "formats": {
+        "Betterball": {
+          "appearances": 8,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 5,
+              "averageScore": 39.8,
+              "bestScore": 43
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 42,
+              "bestScore": 42
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 7,
+          "scoreTypes": {}
+        },
+        "Greensomes": {
+          "appearances": 2,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2021-07-31",
+          "year": 2021,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 9,
+          "score": 40
+        },
+        {
+          "date": "2021-09-11",
+          "year": 2021,
+          "competitionId": "coronation-cup-pairs-betterball",
+          "competitionName": "Coronation Cup Pairs BetterBall",
+          "format": "Betterball",
+          "position": 14,
+          "score": 39
+        },
+        {
+          "date": null,
+          "year": 2021,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 12,
+          "score": 39
+        },
+        {
+          "date": "2021-10-23",
+          "year": 2021,
+          "competitionId": "pairs-multiplier",
+          "competitionName": "Pairs Multiplier",
+          "format": "Pairs",
+          "position": 10,
+          "score": 53
+        },
+        {
+          "date": "2021-07-17",
+          "year": 2021,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 22,
+          "score": 37
+        },
+        {
+          "date": "2022-07-23",
+          "year": 2022,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 8,
+          "score": 43
+        },
+        {
+          "date": "2022-07-16",
+          "year": 2022,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 26,
+          "score": 39
+        },
+        {
+          "date": "2022-04-09",
+          "year": 2022,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Cup",
+          "format": "Pairs",
+          "position": 18,
+          "score": 71
+        },
+        {
+          "date": "2022-10-15",
+          "year": 2022,
+          "competitionId": "writtle-grove-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
+          "format": "Greensomes",
+          "position": 4,
+          "score": 67
+        },
+        {
+          "date": "2023-08-19",
+          "year": 2023,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 22,
+          "score": 35
+        },
+        {
+          "date": "2025-03-15",
+          "year": 2025,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 2,
+          "score": 47
+        },
+        {
+          "date": "2025-05-24",
+          "year": 2025,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 29,
+          "score": 36
+        },
+        {
+          "date": "2025-06-14",
+          "year": 2025,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 25,
+          "score": 35
+        },
+        {
+          "date": "2025-07-05",
+          "year": 2025,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 9,
+          "score": 40
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 16,
+          "score": 77
+        },
+        {
+          "date": "2025-10-11",
+          "year": 2025,
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
+          "format": "Greensomes",
+          "position": 11,
+          "score": 68
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 13,
+          "score": 42
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Anthony Willetts",
         "Graham Morgan"
       ],
@@ -2368,136 +2591,111 @@
     {
       "section": "Mens",
       "players": [
-        "James Price",
-        "Stephen Price"
+        "Lewis Jones",
+        "Michael Williams"
       ],
       "appearances": 16,
       "headlineEligible": true,
       "wins": 0,
       "winRate": 0,
       "top3": 1,
-      "top5": 2,
-      "averageFinish": 14.8,
-      "bestFinish": 2,
+      "top5": 4,
+      "averageFinish": 12.4,
+      "bestFinish": 3,
       "formats": {
         "Betterball": {
           "appearances": 7,
           "scoreTypes": {
             "Stableford": {
-              "scoreCount": 5,
-              "averageScore": 39.8,
+              "scoreCount": 6,
+              "averageScore": 40.7,
               "bestScore": 43
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 42,
+              "bestScore": 42
             }
           }
         },
         "Pairs": {
           "appearances": 7,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 2,
+              "averageScore": 51.5,
+              "bestScore": 72
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 72,
+              "bestScore": 72
+            }
+          }
+        },
+        "Scramble": {
+          "appearances": 1,
           "scoreTypes": {}
         },
         "Greensomes": {
-          "appearances": 2,
+          "appearances": 1,
           "scoreTypes": {}
         }
       },
       "evidence": [
-        {
-          "date": "2021-07-31",
-          "year": 2021,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 9,
-          "score": 40
-        },
-        {
-          "date": "2021-09-11",
-          "year": 2021,
-          "competitionId": "coronation-cup-pairs-betterball",
-          "competitionName": "Coronation Cup Pairs BetterBall",
-          "format": "Betterball",
-          "position": 14,
-          "score": 39
-        },
-        {
-          "date": null,
-          "year": 2021,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 12,
-          "score": 39
-        },
-        {
-          "date": "2021-10-23",
-          "year": 2021,
-          "competitionId": "pairs-multiplier",
-          "competitionName": "Pairs Multiplier",
-          "format": "Pairs",
-          "position": 10,
-          "score": 53
-        },
-        {
-          "date": "2021-07-17",
-          "year": 2021,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 22,
-          "score": 37
-        },
         {
           "date": "2022-07-23",
           "year": 2022,
           "competitionId": "125-trophy-pairs-stableford-betterball",
           "competitionName": "125 Trophy - Pairs Stableford Betterball",
           "format": "Betterball",
-          "position": 8,
-          "score": 43
+          "position": 16,
+          "score": 41
         },
         {
-          "date": "2022-07-16",
-          "year": 2022,
+          "date": "2023-08-12",
+          "year": 2023,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 20,
+          "score": 34
+        },
+        {
+          "date": "2023-07-29",
+          "year": 2023,
           "competitionId": "probus-pairs-stableford-betterball",
           "competitionName": "Probus Pairs Stableford Betterball",
           "format": "Betterball",
-          "position": 26,
+          "position": 13,
+          "score": 40
+        },
+        {
+          "date": "2024-07-06",
+          "year": 2024,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 10,
+          "score": 40
+        },
+        {
+          "date": "2025-08-23",
+          "year": 2025,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 15,
           "score": 39
         },
         {
-          "date": "2022-04-09",
-          "year": 2022,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Cup",
-          "format": "Pairs",
-          "position": 18,
-          "score": 71
-        },
-        {
-          "date": "2022-10-15",
-          "year": 2022,
-          "competitionId": "writtle-grove-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
-          "format": "Greensomes",
-          "position": 4,
-          "score": 67
-        },
-        {
-          "date": "2023-08-19",
-          "year": 2023,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 22,
-          "score": 35
-        },
-        {
-          "date": "2025-03-15",
+          "date": "2025-09-27",
           "year": 2025,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 2,
-          "score": 47
+          "competitionId": "club-betterball-pairs-stableford",
+          "competitionName": "Club Betterball Pairs Stableford",
+          "format": "Betterball",
+          "position": 5,
+          "score": 43
         },
         {
           "date": "2025-05-24",
@@ -2505,8 +2703,17 @@
           "competitionId": "coronation-cup",
           "competitionName": "Coronation Cup",
           "format": "Pairs",
-          "position": 29,
+          "position": 28,
           "score": 36
+        },
+        {
+          "date": "2025-08-16",
+          "year": 2025,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 11,
+          "score": 39
         },
         {
           "date": "2025-06-14",
@@ -2514,26 +2721,26 @@
           "competitionId": "james-grainger-trophy",
           "competitionName": "James Grainger Trophy",
           "format": "Pairs",
-          "position": 25,
-          "score": 35
-        },
-        {
-          "date": "2025-07-05",
-          "year": 2025,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 9,
-          "score": 40
-        },
-        {
-          "date": "2025-04-12",
-          "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
           "position": 16,
-          "score": 77
+          "score": 38
+        },
+        {
+          "date": "2025-01-04",
+          "year": 2025,
+          "competitionId": "pairs-texas-scramble",
+          "competitionName": "Pairs Texas Scramble",
+          "format": "Scramble",
+          "position": 3,
+          "score": 63
+        },
+        {
+          "date": "2025-02-01",
+          "year": 2025,
+          "competitionId": "stableford-pairs-competition",
+          "competitionName": "Stableford Pairs Competition",
+          "format": "Pairs",
+          "position": 5,
+          "score": 72
         },
         {
           "date": "2025-10-11",
@@ -2541,8 +2748,44 @@
           "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
           "competitionName": "Writtle Grove & Winter Greensomes qualifier",
           "format": "Greensomes",
+          "position": 5,
+          "score": 65
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 9,
+          "score": 41
+        },
+        {
+          "date": "2026-01-24",
+          "year": 2026,
+          "competitionId": "stableford-pairs",
+          "competitionName": "Stableford Pairs",
+          "format": "Pairs",
+          "position": 19,
+          "score": 31
+        },
+        {
+          "date": "2026-05-09",
+          "year": 2026,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
           "position": 11,
-          "score": 68
+          "score": 72
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 12,
+          "score": 42
         }
       ]
     },
@@ -2924,6 +3167,193 @@
     {
       "section": "Mens",
       "players": [
+        "Adrian Burns",
+        "Mitchell Raybould"
+      ],
+      "appearances": 15,
+      "headlineEligible": true,
+      "wins": 1,
+      "winRate": 6.7,
+      "top3": 3,
+      "top5": 7,
+      "averageFinish": 10.6,
+      "bestFinish": 1,
+      "formats": {
+        "Betterball": {
+          "appearances": 5,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 3,
+              "averageScore": 41.3,
+              "bestScore": 47
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 35,
+              "bestScore": 35
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 7,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 67,
+              "bestScore": 67
+            }
+          }
+        },
+        "Greensomes": {
+          "appearances": 2,
+          "scoreTypes": {}
+        },
+        "Scramble": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2023-08-19",
+          "year": 2023,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 12,
+          "score": 40
+        },
+        {
+          "date": "2024-07-06",
+          "year": 2024,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 1,
+          "score": 47
+        },
+        {
+          "date": "2024-04-13",
+          "year": 2024,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 4,
+          "score": 72
+        },
+        {
+          "date": "2025-08-23",
+          "year": 2025,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 23,
+          "score": 36
+        },
+        {
+          "date": "2025-03-15",
+          "year": 2025,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 14,
+          "score": 41
+        },
+        {
+          "date": "2025-05-24",
+          "year": 2025,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 12,
+          "score": 41
+        },
+        {
+          "date": "2025-04-26",
+          "year": 2025,
+          "competitionId": "gruesome-greensomes",
+          "competitionName": "Gruesome Greensomes",
+          "format": "Greensomes",
+          "position": 5,
+          "score": 74
+        },
+        {
+          "date": "2025-06-14",
+          "year": 2025,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 5,
+          "score": 41
+        },
+        {
+          "date": "2025-01-04",
+          "year": 2025,
+          "competitionId": "pairs-texas-scramble",
+          "competitionName": "Pairs Texas Scramble",
+          "format": "Scramble",
+          "position": 15,
+          "score": 67
+        },
+        {
+          "date": "2025-07-05",
+          "year": 2025,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 8,
+          "score": 41
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 23,
+          "score": 79
+        },
+        {
+          "date": "2025-10-11",
+          "year": 2025,
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
+          "format": "Greensomes",
+          "position": 2,
+          "score": 61
+        },
+        {
+          "date": "2026-04-25",
+          "year": 2026,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 5,
+          "score": 41
+        },
+        {
+          "date": "2026-05-09",
+          "year": 2026,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 2,
+          "score": 67
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 28,
+          "score": 35
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Michael David Cosnett",
         "Stephen Brian Hopkins"
       ],
@@ -3283,46 +3713,42 @@
     {
       "section": "Mens",
       "players": [
-        "Lewis Jones",
-        "Michael Williams"
+        "Roger William Grainger",
+        "Stephen Hall"
       ],
-      "appearances": 15,
+      "appearances": 14,
       "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
+      "wins": 1,
+      "winRate": 7.1,
       "top3": 1,
-      "top5": 4,
-      "averageFinish": 12.4,
-      "bestFinish": 3,
+      "top5": 1,
+      "averageFinish": 17.6,
+      "bestFinish": 1,
       "formats": {
         "Betterball": {
           "appearances": 6,
           "scoreTypes": {
             "Stableford": {
-              "scoreCount": 6,
-              "averageScore": 40.7,
-              "bestScore": 43
+              "scoreCount": 4,
+              "averageScore": 37.5,
+              "bestScore": 40
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 37,
+              "bestScore": 37
             }
           }
         },
         "Pairs": {
           "appearances": 7,
           "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 2,
-              "averageScore": 51.5,
-              "bestScore": 72
-            },
             "Nett": {
               "scoreCount": 1,
-              "averageScore": 72,
-              "bestScore": 72
+              "averageScore": 84,
+              "bestScore": 84
             }
           }
-        },
-        "Scramble": {
-          "appearances": 1,
-          "scoreTypes": {}
         },
         "Greensomes": {
           "appearances": 1,
@@ -3331,66 +3757,57 @@
       },
       "evidence": [
         {
-          "date": "2022-07-23",
-          "year": 2022,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 16,
-          "score": 41
-        },
-        {
-          "date": "2023-08-12",
-          "year": 2023,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 20,
-          "score": 34
-        },
-        {
-          "date": "2023-07-29",
-          "year": 2023,
+          "date": "2021-07-17",
+          "year": 2021,
           "competitionId": "probus-pairs-stableford-betterball",
           "competitionName": "Probus Pairs Stableford Betterball",
           "format": "Betterball",
-          "position": 13,
-          "score": 40
-        },
-        {
-          "date": "2024-07-06",
-          "year": 2024,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 10,
-          "score": 40
-        },
-        {
-          "date": "2025-08-23",
-          "year": 2025,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 15,
+          "position": 18,
           "score": 39
         },
         {
-          "date": "2025-09-27",
-          "year": 2025,
-          "competitionId": "club-betterball-pairs-stableford",
-          "competitionName": "Club Betterball Pairs Stableford",
+          "date": "2022-09-10",
+          "year": 2022,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 14,
+          "score": 42
+        },
+        {
+          "date": "2023-06-17",
+          "year": 2023,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 19,
+          "score": 40
+        },
+        {
+          "date": "2023-08-19",
+          "year": 2023,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
           "format": "Betterball",
-          "position": 5,
+          "position": 8,
           "score": 43
         },
         {
-          "date": "2025-05-24",
-          "year": 2025,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
+          "date": "2024-08-24",
+          "year": 2024,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 26,
+          "score": 33
+        },
+        {
+          "date": "2024-08-10",
+          "year": 2024,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
           "format": "Pairs",
-          "position": 28,
+          "position": 15,
           "score": 36
         },
         {
@@ -3399,172 +3816,8 @@
           "competitionId": "doug-lee-trophy",
           "competitionName": "Doug Lee Pairs Trophy",
           "format": "Pairs",
-          "position": 11,
-          "score": 39
-        },
-        {
-          "date": "2025-06-14",
-          "year": 2025,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 16,
-          "score": 38
-        },
-        {
-          "date": "2025-01-04",
-          "year": 2025,
-          "competitionId": "pairs-texas-scramble",
-          "competitionName": "Pairs Texas Scramble",
-          "format": "Scramble",
-          "position": 3,
-          "score": 63
-        },
-        {
-          "date": "2025-02-01",
-          "year": 2025,
-          "competitionId": "stableford-pairs-competition",
-          "competitionName": "Stableford Pairs Competition",
-          "format": "Pairs",
-          "position": 5,
-          "score": 72
-        },
-        {
-          "date": "2025-10-11",
-          "year": 2025,
-          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
-          "format": "Greensomes",
-          "position": 5,
-          "score": 65
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 9,
-          "score": 41
-        },
-        {
-          "date": "2026-01-24",
-          "year": 2026,
-          "competitionId": "stableford-pairs",
-          "competitionName": "Stableford Pairs",
-          "format": "Pairs",
-          "position": 19,
-          "score": 31
-        },
-        {
-          "date": "2026-05-09",
-          "year": 2026,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 11,
-          "score": 72
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Adrian Burns",
-        "Mitchell Raybould"
-      ],
-      "appearances": 14,
-      "headlineEligible": true,
-      "wins": 1,
-      "winRate": 7.1,
-      "top3": 3,
-      "top5": 7,
-      "averageFinish": 9.4,
-      "bestFinish": 1,
-      "formats": {
-        "Betterball": {
-          "appearances": 4,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 3,
-              "averageScore": 41.3,
-              "bestScore": 47
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 7,
-          "scoreTypes": {
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 67,
-              "bestScore": 67
-            }
-          }
-        },
-        "Greensomes": {
-          "appearances": 2,
-          "scoreTypes": {}
-        },
-        "Scramble": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2023-08-19",
-          "year": 2023,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 12,
-          "score": 40
-        },
-        {
-          "date": "2024-07-06",
-          "year": 2024,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 1,
-          "score": 47
-        },
-        {
-          "date": "2024-04-13",
-          "year": 2024,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 4,
-          "score": 72
-        },
-        {
-          "date": "2025-08-23",
-          "year": 2025,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
           "position": 23,
-          "score": 36
-        },
-        {
-          "date": "2025-03-15",
-          "year": 2025,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 14,
-          "score": 41
-        },
-        {
-          "date": "2025-05-24",
-          "year": 2025,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 12,
-          "score": 41
+          "score": 37
         },
         {
           "date": "2025-04-26",
@@ -3572,8 +3825,8 @@
           "competitionId": "gruesome-greensomes",
           "competitionName": "Gruesome Greensomes",
           "format": "Greensomes",
-          "position": 5,
-          "score": 74
+          "position": 16,
+          "score": 81
         },
         {
           "date": "2025-06-14",
@@ -3581,17 +3834,8 @@
           "competitionId": "james-grainger-trophy",
           "competitionName": "James Grainger Trophy",
           "format": "Pairs",
-          "position": 5,
-          "score": 41
-        },
-        {
-          "date": "2025-01-04",
-          "year": 2025,
-          "competitionId": "pairs-texas-scramble",
-          "competitionName": "Pairs Texas Scramble",
-          "format": "Scramble",
-          "position": 15,
-          "score": 67
+          "position": 1,
+          "score": 44
         },
         {
           "date": "2025-07-05",
@@ -3599,35 +3843,26 @@
           "competitionId": "probus-pairs-stableford-betterball",
           "competitionName": "Probus Pairs Stableford Betterball",
           "format": "Betterball",
-          "position": 8,
-          "score": 41
+          "position": 11,
+          "score": 40
         },
         {
-          "date": "2025-04-12",
-          "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 23,
-          "score": 79
-        },
-        {
-          "date": "2025-10-11",
-          "year": 2025,
-          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
-          "format": "Greensomes",
-          "position": 2,
-          "score": 61
-        },
-        {
-          "date": "2026-04-25",
+          "date": "2026-06-13",
           "year": 2026,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
           "format": "Pairs",
-          "position": 5,
-          "score": 41
+          "position": 20,
+          "score": 34
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 19,
+          "score": 38
         },
         {
           "date": "2026-05-09",
@@ -3635,8 +3870,195 @@
           "competitionId": "tom-poole-cup",
           "competitionName": "Tom Poole Trophy",
           "format": "Pairs",
-          "position": 2,
-          "score": 67
+          "position": 31,
+          "score": 84
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 26,
+          "score": 37
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Christopher Vanes",
+        "Paul Harper"
+      ],
+      "appearances": 14,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 17.6,
+      "bestFinish": 6,
+      "formats": {
+        "Betterball": {
+          "appearances": 5,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 3,
+              "averageScore": 41.3,
+              "bestScore": 44
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 40,
+              "bestScore": 40
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 7,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 59,
+              "bestScore": 59
+            }
+          }
+        },
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Greensomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2021-07-31",
+          "year": 2021,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 10,
+          "score": 39
+        },
+        {
+          "date": null,
+          "year": 2021,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 24,
+          "score": 31
+        },
+        {
+          "date": "2022-07-23",
+          "year": 2022,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 6,
+          "score": 44
+        },
+        {
+          "date": "2022-08-20",
+          "year": 2022,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 28,
+          "score": 38
+        },
+        {
+          "date": "2022-07-16",
+          "year": 2022,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 22,
+          "score": 41
+        },
+        {
+          "date": "2022-04-30",
+          "year": 2022,
+          "competitionId": "summer-foursomes-qualifier",
+          "competitionName": "Summer Foursomes Qualifier",
+          "format": "Foursomes",
+          "position": 7,
+          "score": 74
+        },
+        {
+          "date": "2023-08-12",
+          "year": 2023,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 8,
+          "score": 41
+        },
+        {
+          "date": "2024-10-12",
+          "year": 2024,
+          "competitionId": "writtle-grove-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
+          "format": "Greensomes",
+          "position": 27,
+          "score": 78
+        },
+        {
+          "date": "2025-03-15",
+          "year": 2025,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 23,
+          "score": 39
+        },
+        {
+          "date": "2025-02-01",
+          "year": 2025,
+          "competitionId": "stableford-pairs-competition",
+          "competitionName": "Stableford Pairs Competition",
+          "format": "Pairs",
+          "position": 18,
+          "score": 59
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 26,
+          "score": 81
+        },
+        {
+          "date": "2026-08-15",
+          "year": 2026,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 6,
+          "score": 42
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 21,
+          "score": 34
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 21,
+          "score": 40
         }
       ]
     },
@@ -3821,37 +4243,51 @@
     {
       "section": "Mens",
       "players": [
-        "Roger William Grainger",
-        "Stephen Hall"
+        "Kevin Walters",
+        "Mark A. Williams"
       ],
-      "appearances": 13,
+      "appearances": 14,
       "headlineEligible": true,
-      "wins": 1,
-      "winRate": 7.7,
-      "top3": 1,
-      "top5": 1,
-      "averageFinish": 17,
-      "bestFinish": 1,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 2,
+      "top5": 3,
+      "averageFinish": 13.6,
+      "bestFinish": 2,
       "formats": {
-        "Betterball": {
-          "appearances": 5,
+        "Pairs": {
+          "appearances": 9,
           "scoreTypes": {
             "Stableford": {
-              "scoreCount": 4,
-              "averageScore": 37.5,
-              "bestScore": 40
+              "scoreCount": 2,
+              "averageScore": 49,
+              "bestScore": 62
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 73,
+              "bestScore": 73
             }
           }
         },
-        "Pairs": {
-          "appearances": 7,
+        "Betterball": {
+          "appearances": 3,
           "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 36,
+              "bestScore": 36
+            },
             "Nett": {
               "scoreCount": 1,
-              "averageScore": 84,
-              "bestScore": 84
+              "averageScore": 46,
+              "bestScore": 46
             }
           }
+        },
+        "Scramble": {
+          "appearances": 1,
+          "scoreTypes": {}
         },
         "Greensomes": {
           "appearances": 1,
@@ -3860,94 +4296,85 @@
       },
       "evidence": [
         {
-          "date": "2021-07-17",
-          "year": 2021,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 18,
-          "score": 39
-        },
-        {
-          "date": "2022-09-10",
-          "year": 2022,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 14,
-          "score": 42
-        },
-        {
-          "date": "2023-06-17",
-          "year": 2023,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 19,
-          "score": 40
-        },
-        {
-          "date": "2023-08-19",
-          "year": 2023,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 8,
-          "score": 43
-        },
-        {
-          "date": "2024-08-24",
-          "year": 2024,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 26,
-          "score": 33
-        },
-        {
-          "date": "2024-08-10",
-          "year": 2024,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 15,
-          "score": 36
-        },
-        {
           "date": "2025-08-16",
           "year": 2025,
           "competitionId": "doug-lee-trophy",
           "competitionName": "Doug Lee Pairs Trophy",
           "format": "Pairs",
-          "position": 23,
+          "position": 31,
+          "score": 33
+        },
+        {
+          "date": "2025-07-19",
+          "year": 2025,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 10,
+          "score": 41
+        },
+        {
+          "date": "2025-01-04",
+          "year": 2025,
+          "competitionId": "pairs-texas-scramble",
+          "competitionName": "Pairs Texas Scramble",
+          "format": "Scramble",
+          "position": 2,
+          "score": 63
+        },
+        {
+          "date": "2025-02-01",
+          "year": 2025,
+          "competitionId": "stableford-pairs-competition",
+          "competitionName": "Stableford Pairs Competition",
+          "format": "Pairs",
+          "position": 15,
+          "score": 62
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 13,
+          "score": 74
+        },
+        {
+          "date": "2025-10-11",
+          "year": 2025,
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
+          "format": "Greensomes",
+          "position": 8,
+          "score": 66
+        },
+        {
+          "date": "2026-03-14",
+          "year": 2026,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 4,
+          "score": 42
+        },
+        {
+          "date": "2026-04-25",
+          "year": 2026,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 19,
           "score": 37
         },
         {
-          "date": "2025-04-26",
-          "year": 2025,
-          "competitionId": "gruesome-greensomes",
-          "competitionName": "Gruesome Greensomes",
-          "format": "Greensomes",
-          "position": 16,
-          "score": 81
-        },
-        {
-          "date": "2025-06-14",
-          "year": 2025,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
+          "date": "2026-08-15",
+          "year": 2026,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
           "format": "Pairs",
-          "position": 1,
-          "score": 44
-        },
-        {
-          "date": "2025-07-05",
-          "year": 2025,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 11,
-          "score": 40
+          "position": 19,
+          "score": 38
         },
         {
           "date": "2026-06-13",
@@ -3955,8 +4382,8 @@
           "competitionId": "james-grainger-trophy",
           "competitionName": "James Grainger Trophy",
           "format": "Pairs",
-          "position": 20,
-          "score": 34
+          "position": 12,
+          "score": 38
         },
         {
           "date": "2026-05-30",
@@ -3964,8 +4391,17 @@
           "competitionId": "probus-pairs-stableford-betterball",
           "competitionName": "Probus Pairs Stableford Betterball",
           "format": "Betterball",
-          "position": 19,
-          "score": 38
+          "position": 25,
+          "score": 36
+        },
+        {
+          "date": "2026-01-24",
+          "year": 2026,
+          "competitionId": "stableford-pairs",
+          "competitionName": "Stableford Pairs",
+          "format": "Pairs",
+          "position": 14,
+          "score": 36
         },
         {
           "date": "2026-05-09",
@@ -3973,8 +4409,17 @@
           "competitionId": "tom-poole-cup",
           "competitionName": "Tom Poole Trophy",
           "format": "Pairs",
-          "position": 31,
-          "score": 84
+          "position": 16,
+          "score": 73
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 2,
+          "score": 46
         }
       ]
     },
@@ -4125,170 +4570,6 @@
           "format": "Betterball",
           "position": 14,
           "score": 39
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Christopher Vanes",
-        "Paul Harper"
-      ],
-      "appearances": 13,
-      "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 0,
-      "averageFinish": 17.4,
-      "bestFinish": 6,
-      "formats": {
-        "Betterball": {
-          "appearances": 4,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 3,
-              "averageScore": 41.3,
-              "bestScore": 44
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 7,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 59,
-              "bestScore": 59
-            }
-          }
-        },
-        "Foursomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Greensomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2021-07-31",
-          "year": 2021,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 10,
-          "score": 39
-        },
-        {
-          "date": null,
-          "year": 2021,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 24,
-          "score": 31
-        },
-        {
-          "date": "2022-07-23",
-          "year": 2022,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 6,
-          "score": 44
-        },
-        {
-          "date": "2022-08-20",
-          "year": 2022,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 28,
-          "score": 38
-        },
-        {
-          "date": "2022-07-16",
-          "year": 2022,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 22,
-          "score": 41
-        },
-        {
-          "date": "2022-04-30",
-          "year": 2022,
-          "competitionId": "summer-foursomes-qualifier",
-          "competitionName": "Summer Foursomes Qualifier",
-          "format": "Foursomes",
-          "position": 7,
-          "score": 74
-        },
-        {
-          "date": "2023-08-12",
-          "year": 2023,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 8,
-          "score": 41
-        },
-        {
-          "date": "2024-10-12",
-          "year": 2024,
-          "competitionId": "writtle-grove-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
-          "format": "Greensomes",
-          "position": 27,
-          "score": 78
-        },
-        {
-          "date": "2025-03-15",
-          "year": 2025,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 23,
-          "score": 39
-        },
-        {
-          "date": "2025-02-01",
-          "year": 2025,
-          "competitionId": "stableford-pairs-competition",
-          "competitionName": "Stableford Pairs Competition",
-          "format": "Pairs",
-          "position": 18,
-          "score": 59
-        },
-        {
-          "date": "2025-04-12",
-          "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 26,
-          "score": 81
-        },
-        {
-          "date": "2026-08-15",
-          "year": 2026,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 6,
-          "score": 42
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 21,
-          "score": 34
         }
       ]
     },
@@ -4609,175 +4890,6 @@
     {
       "section": "Mens",
       "players": [
-        "Kevin Walters",
-        "Mark A. Williams"
-      ],
-      "appearances": 13,
-      "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 1,
-      "top5": 2,
-      "averageFinish": 14.5,
-      "bestFinish": 2,
-      "formats": {
-        "Pairs": {
-          "appearances": 9,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 2,
-              "averageScore": 49,
-              "bestScore": 62
-            },
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 73,
-              "bestScore": 73
-            }
-          }
-        },
-        "Betterball": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 36,
-              "bestScore": 36
-            }
-          }
-        },
-        "Scramble": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Greensomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-08-16",
-          "year": 2025,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 31,
-          "score": 33
-        },
-        {
-          "date": "2025-07-19",
-          "year": 2025,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 10,
-          "score": 41
-        },
-        {
-          "date": "2025-01-04",
-          "year": 2025,
-          "competitionId": "pairs-texas-scramble",
-          "competitionName": "Pairs Texas Scramble",
-          "format": "Scramble",
-          "position": 2,
-          "score": 63
-        },
-        {
-          "date": "2025-02-01",
-          "year": 2025,
-          "competitionId": "stableford-pairs-competition",
-          "competitionName": "Stableford Pairs Competition",
-          "format": "Pairs",
-          "position": 15,
-          "score": 62
-        },
-        {
-          "date": "2025-04-12",
-          "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 13,
-          "score": 74
-        },
-        {
-          "date": "2025-10-11",
-          "year": 2025,
-          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
-          "format": "Greensomes",
-          "position": 8,
-          "score": 66
-        },
-        {
-          "date": "2026-03-14",
-          "year": 2026,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 4,
-          "score": 42
-        },
-        {
-          "date": "2026-04-25",
-          "year": 2026,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 19,
-          "score": 37
-        },
-        {
-          "date": "2026-08-15",
-          "year": 2026,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 19,
-          "score": 38
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 12,
-          "score": 38
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 25,
-          "score": 36
-        },
-        {
-          "date": "2026-01-24",
-          "year": 2026,
-          "competitionId": "stableford-pairs",
-          "competitionName": "Stableford Pairs",
-          "format": "Pairs",
-          "position": 14,
-          "score": 36
-        },
-        {
-          "date": "2026-05-09",
-          "year": 2026,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 16,
-          "score": 73
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
         "Jason Gregory",
         "Scott Postin"
       ],
@@ -5066,6 +5178,166 @@
           "format": "Betterball",
           "position": 31,
           "score": 33
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Clive Peter Gould",
+        "Steve Homer"
+      ],
+      "appearances": 12,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 2,
+      "averageFinish": 14.4,
+      "bestFinish": 5,
+      "formats": {
+        "Betterball": {
+          "appearances": 5,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 4,
+              "averageScore": 36.8,
+              "bestScore": 42
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 44,
+              "bestScore": 44
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 5,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 37,
+              "bestScore": 37
+            }
+          }
+        },
+        "Scramble": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Greensomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2021-07-31",
+          "year": 2021,
+          "competitionId": "125-trophy-pairs-stableford-betterball",
+          "competitionName": "125 Trophy - Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 23,
+          "score": 34
+        },
+        {
+          "date": "2022-09-10",
+          "year": 2022,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 15,
+          "score": 42
+        },
+        {
+          "date": "2022-04-09",
+          "year": 2022,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Cup",
+          "format": "Pairs",
+          "position": 5,
+          "score": 65
+        },
+        {
+          "date": "2023-07-29",
+          "year": 2023,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 8,
+          "score": 42
+        },
+        {
+          "date": "2024-12-14",
+          "year": 2024,
+          "competitionId": "club-stableford-pairs-competition",
+          "competitionName": "Club Stableford Pairs competition",
+          "format": "Pairs",
+          "position": 13,
+          "score": 37
+        },
+        {
+          "date": "2025-09-27",
+          "year": 2025,
+          "competitionId": "club-betterball-pairs-stableford",
+          "competitionName": "Club Betterball Pairs Stableford",
+          "format": "Betterball",
+          "position": 11,
+          "score": 40
+        },
+        {
+          "date": "2025-01-04",
+          "year": 2025,
+          "competitionId": "pairs-texas-scramble",
+          "competitionName": "Pairs Texas Scramble",
+          "format": "Scramble",
+          "position": 16,
+          "score": 67
+        },
+        {
+          "date": "2025-07-05",
+          "year": 2025,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 30,
+          "score": 31
+        },
+        {
+          "date": "2025-10-11",
+          "year": 2025,
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
+          "format": "Greensomes",
+          "position": 26,
+          "score": 72
+        },
+        {
+          "date": "2026-08-15",
+          "year": 2026,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 12,
+          "score": 40
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 9,
+          "score": 38
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 5,
+          "score": 44
         }
       ]
     },
@@ -5489,152 +5761,6 @@
     {
       "section": "Mens",
       "players": [
-        "Clive Peter Gould",
-        "Steve Homer"
-      ],
-      "appearances": 11,
-      "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 1,
-      "averageFinish": 15.3,
-      "bestFinish": 5,
-      "formats": {
-        "Betterball": {
-          "appearances": 4,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 4,
-              "averageScore": 36.8,
-              "bestScore": 42
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 5,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 37,
-              "bestScore": 37
-            }
-          }
-        },
-        "Scramble": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Greensomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2021-07-31",
-          "year": 2021,
-          "competitionId": "125-trophy-pairs-stableford-betterball",
-          "competitionName": "125 Trophy - Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 23,
-          "score": 34
-        },
-        {
-          "date": "2022-09-10",
-          "year": 2022,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 15,
-          "score": 42
-        },
-        {
-          "date": "2022-04-09",
-          "year": 2022,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Cup",
-          "format": "Pairs",
-          "position": 5,
-          "score": 65
-        },
-        {
-          "date": "2023-07-29",
-          "year": 2023,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 8,
-          "score": 42
-        },
-        {
-          "date": "2024-12-14",
-          "year": 2024,
-          "competitionId": "club-stableford-pairs-competition",
-          "competitionName": "Club Stableford Pairs competition",
-          "format": "Pairs",
-          "position": 13,
-          "score": 37
-        },
-        {
-          "date": "2025-09-27",
-          "year": 2025,
-          "competitionId": "club-betterball-pairs-stableford",
-          "competitionName": "Club Betterball Pairs Stableford",
-          "format": "Betterball",
-          "position": 11,
-          "score": 40
-        },
-        {
-          "date": "2025-01-04",
-          "year": 2025,
-          "competitionId": "pairs-texas-scramble",
-          "competitionName": "Pairs Texas Scramble",
-          "format": "Scramble",
-          "position": 16,
-          "score": 67
-        },
-        {
-          "date": "2025-07-05",
-          "year": 2025,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 30,
-          "score": 31
-        },
-        {
-          "date": "2025-10-11",
-          "year": 2025,
-          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
-          "format": "Greensomes",
-          "position": 26,
-          "score": 72
-        },
-        {
-          "date": "2026-08-15",
-          "year": 2026,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 12,
-          "score": 40
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 9,
-          "score": 38
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
         "Eric Edwards",
         "Roger John Smith"
       ],
@@ -5767,6 +5893,153 @@
           "format": "Pairs",
           "position": 24,
           "score": 59
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Carl Elsworth",
+        "Jason Hurp"
+      ],
+      "appearances": 11,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 2,
+      "averageFinish": 13.8,
+      "bestFinish": 3,
+      "formats": {
+        "Pairs": {
+          "appearances": 7,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 80,
+              "bestScore": 80
+            }
+          }
+        },
+        "Betterball": {
+          "appearances": 3,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 2,
+              "averageScore": 40.5,
+              "bestScore": 41
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 40,
+              "bestScore": 40
+            }
+          }
+        },
+        "Greensomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2024-08-10",
+          "year": 2024,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 19,
+          "score": 35
+        },
+        {
+          "date": "2024-06-08",
+          "year": 2024,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 26,
+          "score": 35
+        },
+        {
+          "date": "2024-07-06",
+          "year": 2024,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 8,
+          "score": 40
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 20,
+          "score": 78
+        },
+        {
+          "date": "2025-10-11",
+          "year": 2025,
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
+          "format": "Greensomes",
+          "position": 4,
+          "score": 64
+        },
+        {
+          "date": "2026-04-25",
+          "year": 2026,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 3,
+          "score": 43
+        },
+        {
+          "date": "2026-08-15",
+          "year": 2026,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 8,
+          "score": 41
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 8,
+          "score": 39
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 10,
+          "score": 41
+        },
+        {
+          "date": "2026-05-09",
+          "year": 2026,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 27,
+          "score": 80
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 19,
+          "score": 40
         }
       ]
     },
@@ -6289,139 +6562,6 @@
     {
       "section": "Mens",
       "players": [
-        "Carl Elsworth",
-        "Jason Hurp"
-      ],
-      "appearances": 10,
-      "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 1,
-      "top5": 2,
-      "averageFinish": 13.3,
-      "bestFinish": 3,
-      "formats": {
-        "Pairs": {
-          "appearances": 7,
-          "scoreTypes": {
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 80,
-              "bestScore": 80
-            }
-          }
-        },
-        "Betterball": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 2,
-              "averageScore": 40.5,
-              "bestScore": 41
-            }
-          }
-        },
-        "Greensomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2024-08-10",
-          "year": 2024,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 19,
-          "score": 35
-        },
-        {
-          "date": "2024-06-08",
-          "year": 2024,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 26,
-          "score": 35
-        },
-        {
-          "date": "2024-07-06",
-          "year": 2024,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 8,
-          "score": 40
-        },
-        {
-          "date": "2025-04-12",
-          "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 20,
-          "score": 78
-        },
-        {
-          "date": "2025-10-11",
-          "year": 2025,
-          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
-          "format": "Greensomes",
-          "position": 4,
-          "score": 64
-        },
-        {
-          "date": "2026-04-25",
-          "year": 2026,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 3,
-          "score": 43
-        },
-        {
-          "date": "2026-08-15",
-          "year": 2026,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 8,
-          "score": 41
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 8,
-          "score": 39
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 10,
-          "score": 41
-        },
-        {
-          "date": "2026-05-09",
-          "year": 2026,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 27,
-          "score": 80
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
         "Mark Neil Tolley",
         "Sean Element"
       ],
@@ -6882,6 +7022,125 @@
     {
       "section": "Mens",
       "players": [
+        "Adam Stanfield",
+        "Clive Kearey"
+      ],
+      "appearances": 8,
+      "headlineEligible": true,
+      "wins": 1,
+      "winRate": 12.5,
+      "top3": 4,
+      "top5": 4,
+      "averageFinish": 12,
+      "bestFinish": 1,
+      "formats": {
+        "Pairs": {
+          "appearances": 4,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 86,
+              "bestScore": 86
+            }
+          }
+        },
+        "Greensomes": {
+          "appearances": 2,
+          "scoreTypes": {}
+        },
+        "Scramble": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 45,
+              "bestScore": 45
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2022-06-18",
+          "year": 2022,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 25,
+          "score": 37
+        },
+        {
+          "date": "2024-04-13",
+          "year": 2024,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 11,
+          "score": 75
+        },
+        {
+          "date": "2024-10-12",
+          "year": 2024,
+          "competitionId": "writtle-grove-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
+          "format": "Greensomes",
+          "position": 3,
+          "score": 65
+        },
+        {
+          "date": "2025-01-04",
+          "year": 2025,
+          "competitionId": "pairs-texas-scramble",
+          "competitionName": "Pairs Texas Scramble",
+          "format": "Scramble",
+          "position": 1,
+          "score": 61
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 2,
+          "score": 70
+        },
+        {
+          "date": "2025-10-11",
+          "year": 2025,
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
+          "format": "Greensomes",
+          "position": 19,
+          "score": 70
+        },
+        {
+          "date": "2026-05-09",
+          "year": 2026,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 32,
+          "score": 86
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 3,
+          "score": 45
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Anthony Willetts",
         "Jason Watchorn"
       ],
@@ -7221,6 +7480,117 @@
     {
       "section": "Mens",
       "players": [
+        "Gavin Ray",
+        "Nigel Brookes"
+      ],
+      "appearances": 8,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 8,
+      "bestFinish": 2,
+      "formats": {
+        "Pairs": {
+          "appearances": 7,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 2,
+              "averageScore": 70,
+              "bestScore": 73
+            }
+          }
+        },
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 42,
+              "bestScore": 42
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2023-06-17",
+          "year": 2023,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 9,
+          "score": 42
+        },
+        {
+          "date": "2024-01-27",
+          "year": 2024,
+          "competitionId": "stableford-pairs-both-to-count",
+          "competitionName": "Stableford Pairs - both to count",
+          "format": "Pairs",
+          "position": 2,
+          "score": 73
+        },
+        {
+          "date": "2025-03-15",
+          "year": 2025,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 9,
+          "score": 43
+        },
+        {
+          "date": "2025-05-24",
+          "year": 2025,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 7,
+          "score": 42
+        },
+        {
+          "date": "2025-02-01",
+          "year": 2025,
+          "competitionId": "stableford-pairs-competition",
+          "competitionName": "Stableford Pairs Competition",
+          "format": "Pairs",
+          "position": 9,
+          "score": 67
+        },
+        {
+          "date": "2026-03-14",
+          "year": 2026,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 9,
+          "score": 41
+        },
+        {
+          "date": "2026-04-25",
+          "year": 2026,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 9,
+          "score": 40
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 10,
+          "score": 42
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "David Postin",
         "Scott Postin"
       ],
@@ -7315,106 +7685,6 @@
           "format": "Pairs",
           "position": 1,
           "score": 45
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Adam Stanfield",
-        "Clive Kearey"
-      ],
-      "appearances": 7,
-      "headlineEligible": true,
-      "wins": 1,
-      "winRate": 14.3,
-      "top3": 3,
-      "top5": 3,
-      "averageFinish": 13.3,
-      "bestFinish": 1,
-      "formats": {
-        "Pairs": {
-          "appearances": 4,
-          "scoreTypes": {
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 86,
-              "bestScore": 86
-            }
-          }
-        },
-        "Greensomes": {
-          "appearances": 2,
-          "scoreTypes": {}
-        },
-        "Scramble": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2022-06-18",
-          "year": 2022,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 25,
-          "score": 37
-        },
-        {
-          "date": "2024-04-13",
-          "year": 2024,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 11,
-          "score": 75
-        },
-        {
-          "date": "2024-10-12",
-          "year": 2024,
-          "competitionId": "writtle-grove-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove Winter Greensomes Qualifier",
-          "format": "Greensomes",
-          "position": 3,
-          "score": 65
-        },
-        {
-          "date": "2025-01-04",
-          "year": 2025,
-          "competitionId": "pairs-texas-scramble",
-          "competitionName": "Pairs Texas Scramble",
-          "format": "Scramble",
-          "position": 1,
-          "score": 61
-        },
-        {
-          "date": "2025-04-12",
-          "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 2,
-          "score": 70
-        },
-        {
-          "date": "2025-10-11",
-          "year": 2025,
-          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-          "competitionName": "Writtle Grove & Winter Greensomes qualifier",
-          "format": "Greensomes",
-          "position": 19,
-          "score": 70
-        },
-        {
-          "date": "2026-05-09",
-          "year": 2026,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 32,
-          "score": 86
         }
       ]
     },
@@ -7611,82 +7881,65 @@
     {
       "section": "Mens",
       "players": [
-        "Gavin Ray",
-        "Nigel Brookes"
+        "Calin Tiplea",
+        "Melvin Crook"
       ],
       "appearances": 7,
       "headlineEligible": true,
       "wins": 0,
       "winRate": 0,
-      "top3": 1,
+      "top3": 0,
       "top5": 1,
-      "averageFinish": 7.7,
-      "bestFinish": 2,
+      "averageFinish": 13.9,
+      "bestFinish": 4,
       "formats": {
-        "Pairs": {
-          "appearances": 7,
+        "3 Ball": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Betterball": {
+          "appearances": 3,
           "scoreTypes": {
             "Stableford": {
               "scoreCount": 2,
-              "averageScore": 70,
-              "bestScore": 73
+              "averageScore": 38.5,
+              "bestScore": 41
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 37,
+              "bestScore": 37
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 3,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 36,
+              "bestScore": 36
             }
           }
         }
       },
       "evidence": [
         {
-          "date": "2023-06-17",
-          "year": 2023,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 9,
-          "score": 42
-        },
-        {
-          "date": "2024-01-27",
+          "date": "2024-12-21",
           "year": 2024,
-          "competitionId": "stableford-pairs-both-to-count",
-          "competitionName": "Stableford Pairs - both to count",
-          "format": "Pairs",
-          "position": 2,
-          "score": 73
+          "competitionId": "3-ball-modified-waltz",
+          "competitionName": "3 Ball Modified Waltz",
+          "format": "3 Ball",
+          "position": 12,
+          "score": 5
         },
         {
-          "date": "2025-03-15",
+          "date": "2025-09-27",
           "year": 2025,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 9,
-          "score": 43
-        },
-        {
-          "date": "2025-05-24",
-          "year": 2025,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 7,
-          "score": 42
-        },
-        {
-          "date": "2025-02-01",
-          "year": 2025,
-          "competitionId": "stableford-pairs-competition",
-          "competitionName": "Stableford Pairs Competition",
-          "format": "Pairs",
-          "position": 9,
-          "score": 67
-        },
-        {
-          "date": "2026-03-14",
-          "year": 2026,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 9,
+          "competitionId": "club-betterball-pairs-stableford",
+          "competitionName": "Club Betterball Pairs Stableford",
+          "format": "Betterball",
+          "position": 8,
           "score": 41
         },
         {
@@ -7695,8 +7948,344 @@
           "competitionId": "coronation-cup",
           "competitionName": "Coronation Cup",
           "format": "Pairs",
-          "position": 9,
+          "position": 4,
+          "score": 43
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 10,
+          "score": 38
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 26,
+          "score": 36
+        },
+        {
+          "date": "2026-01-24",
+          "year": 2026,
+          "competitionId": "stableford-pairs",
+          "competitionName": "Stableford Pairs",
+          "format": "Pairs",
+          "position": 12,
+          "score": 36
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 25,
+          "score": 37
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Ian Frederick Stevens",
+        "Mark Andrew Poulding"
+      ],
+      "appearances": 7,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 2,
+      "top5": 3,
+      "averageFinish": 7.7,
+      "bestFinish": 2,
+      "formats": {
+        "Pairs": {
+          "appearances": 5,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 39,
+              "bestScore": 39
+            }
+          }
+        },
+        "Betterball": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 42,
+              "bestScore": 42
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 41,
+              "bestScore": 41
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-05-24",
+          "year": 2025,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 15,
           "score": 40
+        },
+        {
+          "date": "2026-03-14",
+          "year": 2026,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 2,
+          "score": 44
+        },
+        {
+          "date": "2026-08-15",
+          "year": 2026,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 11,
+          "score": 40
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 2,
+          "score": 41
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 6,
+          "score": 42
+        },
+        {
+          "date": "2026-01-24",
+          "year": 2026,
+          "competitionId": "stableford-pairs",
+          "competitionName": "Stableford Pairs",
+          "format": "Pairs",
+          "position": 4,
+          "score": 39
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 14,
+          "score": 41
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Ryan Walker",
+        "Tony John Salt"
+      ],
+      "appearances": 6,
+      "headlineEligible": true,
+      "wins": 2,
+      "winRate": 33.3,
+      "top3": 3,
+      "top5": 3,
+      "averageFinish": 10,
+      "bestFinish": 1,
+      "formats": {
+        "Betterball": {
+          "appearances": 3,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 2,
+              "averageScore": 41.5,
+              "bestScore": 44
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 38,
+              "bestScore": 38
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 75,
+              "bestScore": 75
+            }
+          }
+        },
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-09-27",
+          "year": 2025,
+          "competitionId": "club-betterball-pairs-stableford",
+          "competitionName": "Club Betterball Pairs Stableford",
+          "format": "Betterball",
+          "position": 3,
+          "score": 44
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 1,
+          "score": 43
+        },
+        {
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 14,
+          "score": 39
+        },
+        {
+          "date": "2026-05-09",
+          "year": 2026,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 19,
+          "score": 75
+        },
+        {
+          "date": "2026-09-13",
+          "year": 2026,
+          "competitionId": "summer-foursomes",
+          "competitionName": "Summer Foursomes",
+          "format": "Foursomes",
+          "position": 1,
+          "score": null
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 22,
+          "score": 38
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Darren Element",
+        "Philip Thompson"
+      ],
+      "appearances": 6,
+      "headlineEligible": true,
+      "wins": 1,
+      "winRate": 16.7,
+      "top3": 2,
+      "top5": 3,
+      "averageFinish": 13,
+      "bestFinish": 1,
+      "formats": {
+        "Foursomes": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Betterball": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 46,
+              "bestScore": 46
+            }
+          }
+        },
+        "Pairs": {
+          "appearances": 3,
+          "scoreTypes": {}
+        }
+      },
+      "evidence": [
+        {
+          "date": "2022-04-30",
+          "year": 2022,
+          "competitionId": "summer-foursomes-qualifier",
+          "competitionName": "Summer Foursomes Qualifier",
+          "format": "Foursomes",
+          "position": 17,
+          "score": 79
+        },
+        {
+          "date": "2023-08-19",
+          "year": 2023,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 4,
+          "score": 45
+        },
+        {
+          "date": "2023-04-15",
+          "year": 2023,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 17,
+          "score": 76
+        },
+        {
+          "date": "2024-06-08",
+          "year": 2024,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 36,
+          "score": 32
+        },
+        {
+          "date": "2025-03-15",
+          "year": 2025,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 3,
+          "score": 47
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 1,
+          "score": 46
         }
       ]
     },
@@ -8334,103 +8923,6 @@
     {
       "section": "Mens",
       "players": [
-        "Calin Tiplea",
-        "Melvin Crook"
-      ],
-      "appearances": 6,
-      "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 1,
-      "averageFinish": 12,
-      "bestFinish": 4,
-      "formats": {
-        "3 Ball": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Betterball": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 2,
-              "averageScore": 38.5,
-              "bestScore": 41
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 3,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 36,
-              "bestScore": 36
-            }
-          }
-        }
-      },
-      "evidence": [
-        {
-          "date": "2024-12-21",
-          "year": 2024,
-          "competitionId": "3-ball-modified-waltz",
-          "competitionName": "3 Ball Modified Waltz",
-          "format": "3 Ball",
-          "position": 12,
-          "score": 5
-        },
-        {
-          "date": "2025-09-27",
-          "year": 2025,
-          "competitionId": "club-betterball-pairs-stableford",
-          "competitionName": "Club Betterball Pairs Stableford",
-          "format": "Betterball",
-          "position": 8,
-          "score": 41
-        },
-        {
-          "date": "2026-04-25",
-          "year": 2026,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 4,
-          "score": 43
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 10,
-          "score": 38
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 26,
-          "score": 36
-        },
-        {
-          "date": "2026-01-24",
-          "year": 2026,
-          "competitionId": "stableford-pairs",
-          "competitionName": "Stableford Pairs",
-          "format": "Pairs",
-          "position": 12,
-          "score": 36
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
         "Alan Ball",
         "Mark A. Williams"
       ],
@@ -8524,6 +9016,99 @@
     {
       "section": "Mens",
       "players": [
+        "Andrew Card",
+        "Stephen Holmes"
+      ],
+      "appearances": 6,
+      "headlineEligible": true,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 15.3,
+      "bestFinish": 2,
+      "formats": {
+        "Pairs": {
+          "appearances": 5,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 75,
+              "bestScore": 75
+            }
+          }
+        },
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 35,
+              "bestScore": 35
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-03-15",
+          "year": 2025,
+          "competitionId": "club-pairs-competition",
+          "competitionName": "Club Pairs competition",
+          "format": "Pairs",
+          "position": 15,
+          "score": 41
+        },
+        {
+          "date": "2025-05-24",
+          "year": 2025,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
+          "format": "Pairs",
+          "position": 6,
+          "score": 43
+        },
+        {
+          "date": "2025-02-01",
+          "year": 2025,
+          "competitionId": "stableford-pairs-competition",
+          "competitionName": "Stableford Pairs Competition",
+          "format": "Pairs",
+          "position": 2,
+          "score": 75
+        },
+        {
+          "date": "2025-04-12",
+          "year": 2025,
+          "competitionId": "tom-poole-cup",
+          "competitionName": "Tom Poole Trophy",
+          "format": "Pairs",
+          "position": 27,
+          "score": 83
+        },
+        {
+          "date": "2026-06-13",
+          "year": 2026,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 13,
+          "score": 38
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 29,
+          "score": 35
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Chris Norton",
         "Trevor Norton"
       ],
@@ -8609,187 +9194,6 @@
           "format": "Pairs",
           "position": 10,
           "score": 41
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Ian Frederick Stevens",
-        "Mark Andrew Poulding"
-      ],
-      "appearances": 6,
-      "headlineEligible": true,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 2,
-      "top5": 3,
-      "averageFinish": 6.7,
-      "bestFinish": 2,
-      "formats": {
-        "Pairs": {
-          "appearances": 5,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 39,
-              "bestScore": 39
-            }
-          }
-        },
-        "Betterball": {
-          "appearances": 1,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 42,
-              "bestScore": 42
-            }
-          }
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-05-24",
-          "year": 2025,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 15,
-          "score": 40
-        },
-        {
-          "date": "2026-03-14",
-          "year": 2026,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 2,
-          "score": 44
-        },
-        {
-          "date": "2026-08-15",
-          "year": 2026,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 11,
-          "score": 40
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 2,
-          "score": 41
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 6,
-          "score": 42
-        },
-        {
-          "date": "2026-01-24",
-          "year": 2026,
-          "competitionId": "stableford-pairs",
-          "competitionName": "Stableford Pairs",
-          "format": "Pairs",
-          "position": 4,
-          "score": 39
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Ryan Walker",
-        "Tony John Salt"
-      ],
-      "appearances": 5,
-      "headlineEligible": false,
-      "wins": 2,
-      "winRate": 40,
-      "top3": 3,
-      "top5": 3,
-      "averageFinish": 7.6,
-      "bestFinish": 1,
-      "formats": {
-        "Betterball": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 2,
-              "averageScore": 41.5,
-              "bestScore": 44
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Nett": {
-              "scoreCount": 1,
-              "averageScore": 75,
-              "bestScore": 75
-            }
-          }
-        },
-        "Foursomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-09-27",
-          "year": 2025,
-          "competitionId": "club-betterball-pairs-stableford",
-          "competitionName": "Club Betterball Pairs Stableford",
-          "format": "Betterball",
-          "position": 3,
-          "score": 44
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 1,
-          "score": 43
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 14,
-          "score": 39
-        },
-        {
-          "date": "2026-05-09",
-          "year": 2026,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 19,
-          "score": 75
-        },
-        {
-          "date": "2026-09-13",
-          "year": 2026,
-          "competitionId": "summer-foursomes",
-          "competitionName": "Summer Foursomes",
-          "format": "Foursomes",
-          "position": 1,
-          "score": null
         }
       ]
     },
@@ -9604,114 +10008,47 @@
     {
       "section": "Mens",
       "players": [
-        "Darren Element",
-        "Philip Thompson"
+        "John Goudge",
+        "M T Cowdell"
       ],
       "appearances": 5,
       "headlineEligible": false,
       "wins": 0,
       "winRate": 0,
-      "top3": 1,
-      "top5": 2,
-      "averageFinish": 15.4,
-      "bestFinish": 3,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 22.4,
+      "bestFinish": 11,
       "formats": {
-        "Foursomes": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
         "Betterball": {
-          "appearances": 1,
-          "scoreTypes": {}
-        },
-        "Pairs": {
           "appearances": 3,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2022-04-30",
-          "year": 2022,
-          "competitionId": "summer-foursomes-qualifier",
-          "competitionName": "Summer Foursomes Qualifier",
-          "format": "Foursomes",
-          "position": 17,
-          "score": 79
-        },
-        {
-          "date": "2023-08-19",
-          "year": 2023,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 4,
-          "score": 45
-        },
-        {
-          "date": "2023-04-15",
-          "year": 2023,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
-          "format": "Pairs",
-          "position": 17,
-          "score": 76
-        },
-        {
-          "date": "2024-06-08",
-          "year": 2024,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 36,
-          "score": 32
-        },
-        {
-          "date": "2025-03-15",
-          "year": 2025,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 3,
-          "score": 47
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Andrew Card",
-        "Stephen Holmes"
-      ],
-      "appearances": 5,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 1,
-      "top5": 1,
-      "averageFinish": 12.6,
-      "bestFinish": 2,
-      "formats": {
-        "Pairs": {
-          "appearances": 5,
           "scoreTypes": {
             "Stableford": {
               "scoreCount": 1,
-              "averageScore": 75,
-              "bestScore": 75
+              "averageScore": 34,
+              "bestScore": 34
+            },
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 42,
+              "bestScore": 42
             }
           }
+        },
+        "Pairs": {
+          "appearances": 2,
+          "scoreTypes": {}
         }
       },
       "evidence": [
         {
-          "date": "2025-03-15",
-          "year": 2025,
-          "competitionId": "club-pairs-competition",
-          "competitionName": "Club Pairs competition",
-          "format": "Pairs",
-          "position": 15,
-          "score": 41
+          "date": "2024-07-20",
+          "year": 2024,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 30,
+          "score": 35
         },
         {
           "date": "2025-05-24",
@@ -9719,26 +10056,95 @@
           "competitionId": "coronation-cup",
           "competitionName": "Coronation Cup",
           "format": "Pairs",
-          "position": 6,
-          "score": 43
+          "position": 22,
+          "score": 38
         },
         {
-          "date": "2025-02-01",
-          "year": 2025,
-          "competitionId": "stableford-pairs-competition",
-          "competitionName": "Stableford Pairs Competition",
+          "date": "2026-04-25",
+          "year": 2026,
+          "competitionId": "coronation-cup",
+          "competitionName": "Coronation Cup",
           "format": "Pairs",
-          "position": 2,
-          "score": 75
+          "position": 21,
+          "score": 36
         },
         {
-          "date": "2025-04-12",
+          "date": "2026-05-30",
+          "year": 2026,
+          "competitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Pairs Stableford Betterball",
+          "format": "Betterball",
+          "position": 28,
+          "score": 34
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 11,
+          "score": 42
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Mark Neil Tolley",
+        "Neil Hanley"
+      ],
+      "appearances": 5,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 1,
+      "averageFinish": 21.8,
+      "bestFinish": 5,
+      "formats": {
+        "Pairs": {
+          "appearances": 3,
+          "scoreTypes": {}
+        },
+        "Betterball": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 34,
+              "bestScore": 34
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-08-16",
           "year": 2025,
-          "competitionId": "tom-poole-cup",
-          "competitionName": "Tom Poole Trophy",
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
           "format": "Pairs",
-          "position": 27,
-          "score": 83
+          "position": 26,
+          "score": 36
+        },
+        {
+          "date": "2025-07-19",
+          "year": 2025,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 22,
+          "score": 32
+        },
+        {
+          "date": "2026-08-15",
+          "year": 2026,
+          "competitionId": "doug-lee-trophy",
+          "competitionName": "Doug Lee Pairs Trophy",
+          "format": "Pairs",
+          "position": 26,
+          "score": 37
         },
         {
           "date": "2026-06-13",
@@ -9746,8 +10152,17 @@
           "competitionId": "james-grainger-trophy",
           "competitionName": "James Grainger Trophy",
           "format": "Pairs",
-          "position": 13,
-          "score": 38
+          "position": 5,
+          "score": 40
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 30,
+          "score": 34
         }
       ]
     },
@@ -10493,75 +10908,6 @@
       ]
     },
     {
-      "section": "Mens",
-      "players": [
-        "John Goudge",
-        "M T Cowdell"
-      ],
-      "appearances": 4,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 0,
-      "averageFinish": 25.3,
-      "bestFinish": 21,
-      "formats": {
-        "Betterball": {
-          "appearances": 2,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 34,
-              "bestScore": 34
-            }
-          }
-        },
-        "Pairs": {
-          "appearances": 2,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2024-07-20",
-          "year": 2024,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 30,
-          "score": 35
-        },
-        {
-          "date": "2025-05-24",
-          "year": 2025,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 22,
-          "score": 38
-        },
-        {
-          "date": "2026-04-25",
-          "year": 2026,
-          "competitionId": "coronation-cup",
-          "competitionName": "Coronation Cup",
-          "format": "Pairs",
-          "position": 21,
-          "score": 36
-        },
-        {
-          "date": "2026-05-30",
-          "year": 2026,
-          "competitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Pairs Stableford Betterball",
-          "format": "Betterball",
-          "position": 28,
-          "score": 34
-        }
-      ]
-    },
-    {
       "section": "Seniors",
       "players": [
         "Malcolm Benjamin Jones",
@@ -10769,69 +11115,6 @@
           "format": "Pairs",
           "position": 31,
           "score": 88
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Mark Neil Tolley",
-        "Neil Hanley"
-      ],
-      "appearances": 4,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 1,
-      "averageFinish": 19.8,
-      "bestFinish": 5,
-      "formats": {
-        "Pairs": {
-          "appearances": 3,
-          "scoreTypes": {}
-        },
-        "Betterball": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-08-16",
-          "year": 2025,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 26,
-          "score": 36
-        },
-        {
-          "date": "2025-07-19",
-          "year": 2025,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 22,
-          "score": 32
-        },
-        {
-          "date": "2026-08-15",
-          "year": 2026,
-          "competitionId": "doug-lee-trophy",
-          "competitionName": "Doug Lee Pairs Trophy",
-          "format": "Pairs",
-          "position": 26,
-          "score": 37
-        },
-        {
-          "date": "2026-06-13",
-          "year": 2026,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 5,
-          "score": 40
         }
       ]
     },
@@ -14244,6 +14527,53 @@
           "format": "Greensomes",
           "position": 18,
           "score": 69
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Lee Roger Grainger",
+        "Mark Basterfield"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 1,
+      "winRate": 50,
+      "top3": 1,
+      "top5": 1,
+      "averageFinish": 12,
+      "bestFinish": 1,
+      "formats": {
+        "Betterball": {
+          "appearances": 2,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 38,
+              "bestScore": 38
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-07-19",
+          "year": 2025,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 1,
+          "score": 48
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 23,
+          "score": 38
         }
       ]
     },
@@ -18396,6 +18726,63 @@
     {
       "section": "Mens",
       "players": [
+        "Gerald Paul Crowley",
+        "Michael John Kendrick"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 17.5,
+      "bestFinish": 17,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Stableford": {
+              "scoreCount": 1,
+              "averageScore": 64,
+              "bestScore": 64
+            }
+          }
+        },
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 41,
+              "bestScore": 41
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2024-01-27",
+          "year": 2024,
+          "competitionId": "stableford-pairs-both-to-count",
+          "competitionName": "Stableford Pairs - both to count",
+          "format": "Pairs",
+          "position": 17,
+          "score": 64
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 18,
+          "score": 41
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
         "Kevin Walters",
         "Robert Shedden"
       ],
@@ -19013,6 +19400,57 @@
           "format": "Greensomes",
           "position": 16,
           "score": 69
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Michael David Cosnett",
+        "Peter Evans"
+      ],
+      "appearances": 2,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 1,
+      "averageFinish": 5,
+      "bestFinish": 4,
+      "formats": {
+        "Pairs": {
+          "appearances": 1,
+          "scoreTypes": {}
+        },
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 43,
+              "bestScore": 43
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2025-06-14",
+          "year": 2025,
+          "competitionId": "james-grainger-trophy",
+          "competitionName": "James Grainger Trophy",
+          "format": "Pairs",
+          "position": 4,
+          "score": 43
+        },
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 6,
+          "score": 43
         }
       ]
     },
@@ -20268,38 +20706,6 @@
           "format": "Greensomes",
           "position": 1,
           "score": 62
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Lee Roger Grainger",
-        "Mark Basterfield"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 1,
-      "winRate": 100,
-      "top3": 1,
-      "top5": 1,
-      "averageFinish": 1,
-      "bestFinish": 1,
-      "formats": {
-        "Betterball": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-07-19",
-          "year": 2025,
-          "competitionId": "jubilee-salver-pairs-betterball",
-          "competitionName": "Jubilee Salver Pairs BetterBall",
-          "format": "Betterball",
-          "position": 1,
-          "score": 48
         }
       ]
     },
@@ -32394,44 +32800,6 @@
     {
       "section": "Mens",
       "players": [
-        "Gerald Paul Crowley",
-        "Michael John Kendrick"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 0,
-      "averageFinish": 17,
-      "bestFinish": 17,
-      "formats": {
-        "Pairs": {
-          "appearances": 1,
-          "scoreTypes": {
-            "Stableford": {
-              "scoreCount": 1,
-              "averageScore": 64,
-              "bestScore": 64
-            }
-          }
-        }
-      },
-      "evidence": [
-        {
-          "date": "2024-01-27",
-          "year": 2024,
-          "competitionId": "stableford-pairs-both-to-count",
-          "competitionName": "Stableford Pairs - both to count",
-          "format": "Pairs",
-          "position": 17,
-          "score": 64
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
         "Keith John Woodall",
         "Stephen Hall"
       ],
@@ -34320,38 +34688,6 @@
           "format": "Greensomes",
           "position": 20,
           "score": 87
-        }
-      ]
-    },
-    {
-      "section": "Mens",
-      "players": [
-        "Michael David Cosnett",
-        "Peter Evans"
-      ],
-      "appearances": 1,
-      "headlineEligible": false,
-      "wins": 0,
-      "winRate": 0,
-      "top3": 0,
-      "top5": 1,
-      "averageFinish": 4,
-      "bestFinish": 4,
-      "formats": {
-        "Pairs": {
-          "appearances": 1,
-          "scoreTypes": {}
-        }
-      },
-      "evidence": [
-        {
-          "date": "2025-06-14",
-          "year": 2025,
-          "competitionId": "james-grainger-trophy",
-          "competitionName": "James Grainger Trophy",
-          "format": "Pairs",
-          "position": 4,
-          "score": 43
         }
       ]
     },
@@ -39808,6 +40144,348 @@
           "format": "Pairs",
           "position": 29,
           "score": 82
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Craig Locke",
+        "David Evitts"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 1,
+      "averageFinish": 4,
+      "bestFinish": 4,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 45,
+              "bestScore": 45
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 4,
+          "score": 45
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Alan Ball",
+        "Gary Baker"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 7,
+      "bestFinish": 7,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 43,
+              "bestScore": 43
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 7,
+          "score": 43
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Keith John Woodall",
+        "Stephen Brian Hopkins"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 9,
+      "bestFinish": 9,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 43,
+              "bestScore": 43
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 9,
+          "score": 43
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Chay Cohen",
+        "Richard Weston"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 15,
+      "bestFinish": 15,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 41,
+              "bestScore": 41
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 15,
+          "score": 41
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Keith Durbridge",
+        "Paul Holmes"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 16,
+      "bestFinish": 16,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 41,
+              "bestScore": 41
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 16,
+          "score": 41
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Jason Bates",
+        "Paul Thomas Donnelly"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 20,
+      "bestFinish": 20,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 40,
+              "bestScore": 40
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 20,
+          "score": 40
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Ivan John Jones",
+        "Tim Mark Wright"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 24,
+      "bestFinish": 24,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 38,
+              "bestScore": 38
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 24,
+          "score": 38
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Antony Hayward",
+        "David Tromans"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 27,
+      "bestFinish": 27,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 36,
+              "bestScore": 36
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 27,
+          "score": 36
+        }
+      ]
+    },
+    {
+      "section": "Mens",
+      "players": [
+        "Owen Limb",
+        "Simon Williams"
+      ],
+      "appearances": 1,
+      "headlineEligible": false,
+      "wins": 0,
+      "winRate": 0,
+      "top3": 0,
+      "top5": 0,
+      "averageFinish": 31,
+      "bestFinish": 31,
+      "formats": {
+        "Betterball": {
+          "appearances": 1,
+          "scoreTypes": {
+            "Nett": {
+              "scoreCount": 1,
+              "averageScore": 32,
+              "bestScore": 32
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "date": "2026-09-26",
+          "year": 2026,
+          "competitionId": "jubilee-salver-pairs-betterball",
+          "competitionName": "Jubilee Salver Pairs BetterBall",
+          "format": "Betterball",
+          "position": 31,
+          "score": 32
         }
       ]
     }

@@ -14876,22 +14876,26 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Historical Honour",
-    "yearsPlayed": 8,
+    "yearsPlayed": 9,
     "firstYear": 1993,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 300,
-    "averageEntries": 60,
-    "uniqueWinners": 15,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 362,
+    "averageEntries": 60.3,
+    "uniqueWinners": 16,
     "mostSuccessfulPlayer": "Lee Roger Grainger",
     "mostWins": 2,
     "currentWinners": [
-      "Lee Roger Grainger",
-      "Mark Basterfield"
+      "Darren Element",
+      "Philip Thompson"
     ],
     "winnerLeaders": [
       {
         "player": "Lee Roger Grainger",
+        "wins": 2
+      },
+      {
+        "player": "Philip Thompson",
         "wins": 2
       },
       {
@@ -14900,6 +14904,10 @@
       },
       {
         "player": "B. Lloyd",
+        "wins": 1
+      },
+      {
+        "player": "Darren Element",
         "wins": 1
       },
       {
@@ -14935,10 +14943,6 @@
         "wins": 1
       },
       {
-        "player": "Philip Thompson",
-        "wins": 1
-      },
-      {
         "player": "Roger John Smith",
         "wins": 1
       },
@@ -14952,6 +14956,22 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Darren Element",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 46,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Philip Thompson",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 46,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "Lee Roger Grainger",
