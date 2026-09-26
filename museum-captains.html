@@ -337,6 +337,71 @@
         }
 
 
+        const mensCaptainPhotos = {
+            "1954|C. W. Furnival": "c-w-furnival-1954.webp",
+            "1958|P. Lees": "p-lees-1958.webp",
+            "1960|Dr. J. J. Harrington": "dr-j-j-harrington-1960.webp",
+            "1961|Dr. J. J. Harrington": "dr-j-j-harrington-1960.webp",
+            "1962|A. G. Walker": "a-g-walker-1962.webp",
+            "1963|T. J. S. Poole": "t-j-s-poole-1963.webp",
+            "1964|F. H. Richards": "f-h-richards-1964.webp",
+            "1966|W. Pointon": "w-pointon-1966.webp",
+            "1967|F. Mallard": "f-mallard-1967.webp",
+            "1968|A. Horridge": "a-horridge-1968.webp",
+            "1969|F. J. Daniels": "f-j-daniels-1969.webp",
+            "1970|H. G. Groves": "h-g-groves-1970.webp",
+            "1971|C. E. Writtle": "c-e-writtle-1971.webp",
+            "1972|J. D. Barney": "j-d-barney-1972.webp",
+            "1973|G. W. Arnold": "g-w-arnold-1973.webp",
+            "1975|J. A. Atkinson": "j-a-atkinson-1975.webp",
+            "1976|A. B. Dunnaker": "a-b-dunnaker-1976.webp",
+            "1977|A. M. Gibbs": "a-m-gibbs-1977.webp",
+            "1978|R. P. Fortune": "r-p-fortune-1978.webp",
+            "1979|K. G. Wakeman": "k-g-wakeman-1979.webp",
+            "1980|J. Hall": "j-hall-1980.webp",
+            "1981|D. V. Wood": "d-v-wood-1981.webp",
+            "1982|A. F. Pearson": "a-f-pearson-1982.webp",
+            "1983|R. J. Bowles": "r-j-bowles-1983.webp",
+            "1984|L. Baker": "l-baker-1984.webp",
+            "1985|J. F. R. Hyde": "j-f-r-hyde-1985.webp",
+            "1986|J. Joyce": "j-joyce-1986.webp",
+            "1987|E. Ashman": "e-ashman-1987.webp",
+            "1988|P. G. Village": "p-g-village-1988.webp",
+            "1989|T. R. Jones": "t-r-jones-1989.webp",
+            "1990|A. E. Robinson": "a-e-robinson-1990.webp",
+            "1991|G. Clarke": "g-clarke-1991.webp",
+            "1993|A. S. Lees": "a-s-lees-1993.webp",
+            "1994|C. Smith": "c-smith-1994.webp",
+            "1995|T. Whitcombe": "t-whitcombe-1995.webp",
+            "1996|A. Butler": "a-butler-1996.webp",
+            "1997|M. Willetts": "m-willetts-1997.webp",
+            "1998|K. Cadman": "k-cadman-1998.webp",
+            "1999|R. P. Smart": "r-p-smart-1999.webp",
+            "2000|T. Wakeman": "t-wakeman-2000.webp",
+            "2001|R. D. Stockden": "r-d-stockden-2001.webp",
+            "2002|W. J. Robinson": "w-j-robinson-2002.webp",
+            "2003|M. B. Pritchard": "m-b-pritchard-2003.webp",
+            "2004|A. T. Culshaw": "a-t-culshaw-2004.webp",
+            "2005|K. J. Hartland": "k-j-hartland-2005.webp",
+            "2006|B. A. Mansell": "b-a-mansell-2006.webp",
+            "2007|W. B. Whitcombe": "w-b-whitcombe-2007.webp",
+            "2008|M. Gill": "m-gill-2008.webp",
+            "2009|J. Edwards": "j-edwards-2009.webp",
+            "2010|T. Howles": "t-howles-2010.webp",
+            "2011|S. Hall": "s-hall-2011.webp",
+            "2012|J. E. Nicklin": "j-e-nicklin-2012.webp",
+            "2013|R. Saunders": "r-saunders-2013.webp",
+            "2014|I. Jones": "i-jones-2014.webp",
+            "2015|T. Nolan": "t-nolan-2015.webp",
+            "2016|K. Stubbs": "k-stubbs-2016.webp",
+            "2017|J. Parkes": "j-parkes-2017.webp",
+            "2018|C. J. Vanes": "c-j-vanes-2018.webp",
+            "2020|S. Messer": "s-h-messer-2020.webp",
+            "2021|S. Messer": "s-h-messer-2020.webp",
+            "2022|P. Donnelly": "paul-t-donnelly-2022-23.webp",
+            "2023|P. Donnelly": "paul-t-donnelly-2022-23.webp"
+        };
+
         const ladiesCaptainPhotos = {
             "1985|Mrs B. King": "mrs-b-king-1985-1987.webp",
             "1987|Mrs E. Silvester": "mrs-e-silvester-1987-1988.webp",
@@ -388,9 +453,18 @@
                     `${item.startYear ?? item.year}|${item.name}`;
 
                 const photo =
-                    activeSectionKey === "ladies"
-                        ? ladiesCaptainPhotos[photoKey]
-                        : null;
+                    activeSectionKey === "mens"
+                        ? mensCaptainPhotos[photoKey]
+                        : activeSectionKey === "ladies"
+                            ? ladiesCaptainPhotos[photoKey]
+                            : null;
+
+                const photoFolder =
+                    activeSectionKey === "mens"
+                        ? "/images/museum/mens-captains/"
+                        : activeSectionKey === "ladies"
+                            ? "/images/museum/ladies-captains/"
+                            : "";
 
                 return `
                     <div class="bg-white border border-[#C5A367]/25 p-5 shadow-sm">
@@ -399,7 +473,7 @@
                             ${photo ? `
                                 <div class="shrink-0">
                                     <img
-                                        src="/images/museum/ladies-captains/${photo}"
+                                        src="${photoFolder}${photo}"
                                         alt="${item.name} ? ${item.yearLabel || item.year}"
                                         class="w-28 h-28 md:w-32 md:h-32 object-cover border border-[#C5A367]/30 shadow-sm"
                                         loading="lazy"
@@ -502,7 +576,7 @@
     </script>
 
 
-  <!-- Ladies Captain photo lightbox -->
+  <!-- Captain photo lightbox -->
   <div id="captain-photo-lightbox"
        class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4 md:p-8"
        role="dialog"
@@ -546,7 +620,7 @@
 
           document.addEventListener("click", event => {
               const img = event.target.closest(
-                  'img[src*="/images/museum/ladies-captains/"]'
+                  'img[src*="/images/museum/ladies-captains/"], img[src*="/images/museum/mens-captains/"]'
               );
 
               if (img) {
@@ -565,7 +639,7 @@
 
           document.addEventListener("mouseover", event => {
               const img = event.target.closest(
-                  'img[src*="/images/museum/ladies-captains/"]'
+                  'img[src*="/images/museum/ladies-captains/"], img[src*="/images/museum/mens-captains/"]'
               );
 
               if (img) {
