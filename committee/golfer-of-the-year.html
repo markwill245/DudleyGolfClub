@@ -307,7 +307,7 @@
           Array.isArray(historicalSeasons[season]) &&
           historicalSeasons[season].length > 0
         )
-        .filter(season => season !== "2026-27")
+        .filter(season => ["2025-26", "2024-25", "2023-24", "2022-23", "2021-22"].includes(season))
         .reverse();
 
       const selector = document.getElementById("seasonSelector");
@@ -629,4 +629,3 @@
 
 </body>
 </html>
-
