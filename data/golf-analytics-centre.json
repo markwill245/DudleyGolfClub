@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-09-26T16:14:42.472Z",
+  "generatedAt": "2026-10-01T16:57:14.184Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -19,13 +19,13 @@
   "totals": {
     "canonicalPlayers": 761,
     "playersWithAnalytics": 305,
-    "eligibleEvents": 214,
-    "eligibleRows": 8783,
-    "includedNettRounds": 3372,
+    "eligibleEvents": 215,
+    "eligibleRows": 8803,
+    "includedNettRounds": 3392,
     "includedStablefordRounds": 5410,
     "excludedTeamEvents": 120,
     "excludedEvents": 94,
-    "excludedNonFinishers": 756,
+    "excludedNonFinishers": 760,
     "excludedUnknownPlayers": 0,
     "excludedExternalParticipants": 14,
     "excludedMultiPlayerRows": 0,
@@ -10390,10 +10390,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 39.5,
-                  "best": 36,
-                  "averageHandicap": 12.3,
+                  "rounds": 5,
+                  "average": 38.2,
+                  "best": 33,
+                  "averageHandicap": 12.4,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -10437,6 +10437,17 @@
                       "nett": 43,
                       "handicap": 13,
                       "position": 30,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 33,
+                      "handicap": 13,
+                      "position": 2,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -13112,11 +13123,23 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 0,
-                  "average": null,
-                  "best": null,
-                  "averageHandicap": null,
-                  "evidence": []
+                  "rounds": 1,
+                  "average": 45,
+                  "best": 45,
+                  "averageHandicap": 17,
+                  "evidence": [
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 45,
+                      "handicap": 17,
+                      "position": 18,
+                      "source": "certified-medal-nett"
+                    }
+                  ]
                 },
                 "stableford": {
                   "rounds": 1,
@@ -13658,8 +13681,8 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 37.5,
+                  "rounds": 3,
+                  "average": 37.7,
                   "best": 35,
                   "averageHandicap": 11,
                   "evidence": [
@@ -13683,6 +13706,17 @@
                       "nett": 35,
                       "handicap": 11,
                       "position": 6,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 38,
+                      "handicap": 11,
+                      "position": 9,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -47388,10 +47422,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 39,
+                  "rounds": 4,
+                  "average": 39.5,
                   "best": 38,
-                  "averageHandicap": 10,
+                  "averageHandicap": 9.8,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -47424,6 +47458,17 @@
                       "nett": 39,
                       "handicap": 10,
                       "position": 23,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 41,
+                      "handicap": 9,
+                      "position": 16,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -57059,8 +57104,8 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 43,
+                  "rounds": 3,
+                  "average": 41.3,
                   "best": 38,
                   "averageHandicap": 10,
                   "evidence": [
@@ -57084,6 +57129,17 @@
                       "nett": 48,
                       "handicap": 10,
                       "position": 31,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 38,
+                      "handicap": 10,
+                      "position": 10,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -60901,10 +60957,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 1,
-                  "average": 42,
-                  "best": 42,
-                  "averageHandicap": 10,
+                  "rounds": 2,
+                  "average": 40.5,
+                  "best": 39,
+                  "averageHandicap": 10.5,
                   "evidence": [
                     {
                       "date": "2026-04-27",
@@ -60915,6 +60971,17 @@
                       "nett": 42,
                       "handicap": 10,
                       "position": 21,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 39,
+                      "handicap": 11,
+                      "position": 14,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -63346,10 +63413,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 40,
-                  "best": 35,
-                  "averageHandicap": 9.8,
+                  "rounds": 5,
+                  "average": 38,
+                  "best": 30,
+                  "averageHandicap": 10,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -63393,6 +63460,17 @@
                       "nett": 36,
                       "handicap": 10,
                       "position": 9,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 30,
+                      "handicap": 11,
+                      "position": 1,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -64921,10 +64999,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 39.3,
+                  "rounds": 4,
+                  "average": 39.5,
                   "best": 37,
-                  "averageHandicap": 9.3,
+                  "averageHandicap": 9.5,
                   "evidence": [
                     {
                       "date": "2026-04-27",
@@ -64957,6 +65035,17 @@
                       "nett": 38,
                       "handicap": 10,
                       "position": 16,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 40,
+                      "handicap": 10,
+                      "position": 15,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -66647,8 +66736,8 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 38,
+                  "rounds": 3,
+                  "average": 38.3,
                   "best": 37,
                   "averageHandicap": 9,
                   "evidence": [
@@ -66672,6 +66761,17 @@
                       "nett": 37,
                       "handicap": 9,
                       "position": 15,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 39,
+                      "handicap": 9,
+                      "position": 13,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -68542,9 +68642,9 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 38.3,
-                  "best": 37,
+                  "rounds": 5,
+                  "average": 37.8,
+                  "best": 36,
                   "averageHandicap": 8,
                   "evidence": [
                     {
@@ -68589,6 +68689,17 @@
                       "nett": 38,
                       "handicap": 8,
                       "position": 20,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 36,
+                      "handicap": 8,
+                      "position": 8,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -70148,9 +70259,9 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 42,
-                  "best": 36,
+                  "rounds": 4,
+                  "average": 40,
+                  "best": 34,
                   "averageHandicap": 11,
                   "evidence": [
                     {
@@ -70184,6 +70295,17 @@
                       "nett": 48,
                       "handicap": 11,
                       "position": 32,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 34,
+                      "handicap": 11,
+                      "position": 6,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -82190,8 +82312,8 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 40.3,
+                  "rounds": 4,
+                  "average": 41.5,
                   "best": 35,
                   "averageHandicap": 10.3,
                   "evidence": [
@@ -82226,6 +82348,17 @@
                       "nett": 36,
                       "handicap": 10,
                       "position": 10,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 45,
+                      "handicap": 10,
+                      "position": 17,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -83820,8 +83953,8 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 35,
+                  "rounds": 4,
+                  "average": 35.3,
                   "best": 34,
                   "averageHandicap": 14.3,
                   "evidence": [
@@ -83856,6 +83989,17 @@
                       "nett": 34,
                       "handicap": 14,
                       "position": 5,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 36,
+                      "handicap": 14,
+                      "position": 7,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -92099,10 +92243,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 40.8,
+                  "rounds": 5,
+                  "average": 42.8,
                   "best": 37,
-                  "averageHandicap": 12.3,
+                  "averageHandicap": 12.4,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -92146,6 +92290,17 @@
                       "nett": 40,
                       "handicap": 13,
                       "position": 25,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 51,
+                      "handicap": 13,
+                      "position": 20,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -94278,10 +94433,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 36.8,
-                  "best": 35,
-                  "averageHandicap": 18.3,
+                  "rounds": 5,
+                  "average": 36.2,
+                  "best": 34,
+                  "averageHandicap": 18.4,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -94325,6 +94480,17 @@
                       "nett": 38,
                       "handicap": 19,
                       "position": 19,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 34,
+                      "handicap": 19,
+                      "position": 3,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -96256,10 +96422,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 36.5,
+                  "rounds": 3,
+                  "average": 39.3,
                   "best": 35,
-                  "averageHandicap": 14.5,
+                  "averageHandicap": 14.7,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -96281,6 +96447,17 @@
                       "nett": 35,
                       "handicap": 15,
                       "position": 8,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 45,
+                      "handicap": 15,
+                      "position": 19,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -111311,10 +111488,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 3,
-                  "average": 38.3,
+                  "rounds": 4,
+                  "average": 38.5,
                   "best": 35,
-                  "averageHandicap": 13,
+                  "averageHandicap": 13.3,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -111347,6 +111524,17 @@
                       "nett": 39,
                       "handicap": 13,
                       "position": 21,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 39,
+                      "handicap": 14,
+                      "position": 12,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -122128,8 +122316,8 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 36.8,
+                  "rounds": 5,
+                  "average": 37,
                   "best": 36,
                   "averageHandicap": 17,
                   "evidence": [
@@ -122175,6 +122363,17 @@
                       "nett": 37,
                       "handicap": 17,
                       "position": 15,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 38,
+                      "handicap": 17,
+                      "position": 11,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -132716,10 +132915,10 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 4,
-                  "average": 36.3,
+                  "rounds": 5,
+                  "average": 35.8,
                   "best": 30,
-                  "averageHandicap": 8.5,
+                  "averageHandicap": 8.4,
                   "evidence": [
                     {
                       "date": "2026-03-30",
@@ -132763,6 +132962,17 @@
                       "nett": 37,
                       "handicap": 9,
                       "position": 14,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 34,
+                      "handicap": 8,
+                      "position": 5,
                       "source": "certified-medal-nett"
                     }
                   ]
@@ -134566,9 +134776,9 @@
             "2026": {
               "nineHole": {
                 "nett": {
-                  "rounds": 2,
-                  "average": 44,
-                  "best": 39,
+                  "rounds": 3,
+                  "average": 40.7,
+                  "best": 34,
                   "averageHandicap": 11,
                   "evidence": [
                     {
@@ -134591,6 +134801,17 @@
                       "nett": 39,
                       "handicap": 11,
                       "position": 22,
+                      "source": "certified-medal-nett"
+                    },
+                    {
+                      "date": "2026-09-28",
+                      "competitionId": "seniors-october-medal",
+                      "competitionName": "Seniors October Medal",
+                      "round": 1,
+                      "numberOfHoles": 9,
+                      "nett": 34,
+                      "handicap": 11,
+                      "position": 4,
                       "source": "certified-medal-nett"
                     }
                   ]

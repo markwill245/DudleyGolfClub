@@ -10009,6 +10009,15 @@
           },
           {
             "rank": 7,
+            "player": "Barry Thomas Lawton",
+            "slug": "barry-thomas-lawton",
+            "section": "Seniors",
+            "value": 4,
+            "wins": [],
+            "displayValue": 4
+          },
+          {
+            "rank": 8,
             "player": "Bruce Antony Mansell",
             "slug": "bruce-antony-mansell",
             "section": "Seniors",
@@ -10017,7 +10026,7 @@
             "displayValue": 4
           },
           {
-            "rank": 8,
+            "rank": 9,
             "player": "James Marsh Derrer",
             "slug": "james-marsh-derrer",
             "section": "Seniors",
@@ -10026,7 +10035,7 @@
             "displayValue": 4
           },
           {
-            "rank": 9,
+            "rank": 10,
             "player": "Keith Brian Culwick",
             "slug": "keith-brian-culwick",
             "section": "Seniors",
@@ -10035,7 +10044,7 @@
             "displayValue": 4
           },
           {
-            "rank": 10,
+            "rank": 11,
             "player": "Malcolm Powell",
             "slug": "malcolm-powell",
             "section": "Seniors",
@@ -10044,7 +10053,7 @@
             "displayValue": 4
           },
           {
-            "rank": 11,
+            "rank": 12,
             "player": "Michael Geoffrey Guise",
             "slug": "michael-geoffrey-guise",
             "section": "Seniors",
@@ -10053,7 +10062,7 @@
             "displayValue": 4
           },
           {
-            "rank": 12,
+            "rank": 13,
             "player": "Philip John Northall",
             "slug": "philip-john-northall",
             "section": "Seniors",
@@ -10363,18 +10372,18 @@
             "player": "Kenneth Brettle",
             "slug": "kenneth-brettle",
             "section": "Seniors",
-            "value": 33,
+            "value": 34,
             "wins": [],
-            "displayValue": 33
+            "displayValue": 34
           },
           {
             "rank": 10,
             "player": "Malcolm Powell",
             "slug": "malcolm-powell",
             "section": "Seniors",
-            "value": 32,
+            "value": 33,
             "wins": [],
-            "displayValue": 32
+            "displayValue": 33
           }
         ]
       },
@@ -10384,7 +10393,7 @@
           "player": "Keith Ratcliffe",
           "slug": "keith-ratcliffe",
           "section": "Seniors",
-          "value": 90,
+          "value": 91,
           "wins": []
         },
         "leaders": [
@@ -10393,57 +10402,66 @@
             "player": "Keith Ratcliffe",
             "slug": "keith-ratcliffe",
             "section": "Seniors",
-            "value": 90,
+            "value": 91,
             "wins": [],
-            "displayValue": 90
+            "displayValue": 91
           },
           {
             "rank": 2,
             "player": "M.j. Davies",
             "slug": "m-j-davies",
             "section": "Seniors",
-            "value": 88,
+            "value": 89,
             "wins": [],
-            "displayValue": 88
+            "displayValue": 89
           },
           {
             "rank": 3,
             "player": "Malcolm Powell",
             "slug": "malcolm-powell",
             "section": "Seniors",
-            "value": 86,
+            "value": 87,
             "wins": [],
-            "displayValue": 86
+            "displayValue": 87
           },
           {
             "rank": 4,
             "player": "Michael Geoffrey Guise",
             "slug": "michael-geoffrey-guise",
             "section": "Seniors",
-            "value": 83,
+            "value": 84,
             "wins": [],
-            "displayValue": 83
+            "displayValue": 84
           },
           {
             "rank": 5,
             "player": "Michael John Walter Horne",
             "slug": "michael-john-walter-horne",
             "section": "Seniors",
-            "value": 81,
+            "value": 82,
             "wins": [],
-            "displayValue": 81
+            "displayValue": 82
           },
           {
             "rank": 6,
             "player": "Robert P. Timmington",
             "slug": "robert-p-timmington",
             "section": "Seniors",
+            "value": 78,
+            "wins": [],
+            "displayValue": 78
+          },
+          {
+            "rank": 7,
+            "player": "Kenneth Brettle",
+            "slug": "kenneth-brettle",
+            "section": "Seniors",
             "value": 77,
             "wins": [],
             "displayValue": 77
           },
           {
-            "rank": 7,
+            "rank": 8,
             "player": "Clive Atkins",
             "slug": "clive-atkins",
             "section": "Seniors",
@@ -10452,18 +10470,9 @@
             "displayValue": 76
           },
           {
-            "rank": 8,
-            "player": "Kenneth Brettle",
-            "slug": "kenneth-brettle",
-            "section": "Seniors",
-            "value": 76,
-            "wins": [],
-            "displayValue": 76
-          },
-          {
             "rank": 9,
-            "player": "Paul Russell",
-            "slug": "paul-russell",
+            "player": "John Gilbert Baker",
+            "slug": "john-gilbert-baker",
             "section": "Seniors",
             "value": 75,
             "wins": [],
@@ -10471,12 +10480,12 @@
           },
           {
             "rank": 10,
-            "player": "John Gilbert Baker",
-            "slug": "john-gilbert-baker",
+            "player": "Paul Russell",
+            "slug": "paul-russell",
             "section": "Seniors",
-            "value": 74,
+            "value": 75,
             "wins": [],
-            "displayValue": 74
+            "displayValue": 75
           }
         ]
       }
@@ -11034,6 +11043,28 @@
           },
           {
             "rank": 14,
+            "player": "Keith Brian Culwick",
+            "slug": "keith-brian-culwick",
+            "section": "Seniors",
+            "value": 1,
+            "wins": [
+              {
+                "playerName": "Keith Brian Culwick",
+                "competitionId": "seniors-october-medal",
+                "competitionName": "Seniors October Medal",
+                "year": 2026,
+                "date": "2026-09-28",
+                "section": "Seniors",
+                "awardId": "overallWinner",
+                "sourceType": "modern-overall",
+                "sourceLabel": "overallWinner",
+                "winType": "Career"
+              }
+            ],
+            "displayValue": 1
+          },
+          {
+            "rank": 15,
             "player": "Keith John Woodall",
             "slug": "keith-john-woodall",
             "section": "Seniors",
@@ -11055,7 +11086,7 @@
             "displayValue": 1
           },
           {
-            "rank": 15,
+            "rank": 16,
             "player": "Keith Taylor",
             "slug": "keith-taylor",
             "section": "Seniors",
@@ -11077,7 +11108,7 @@
             "displayValue": 1
           },
           {
-            "rank": 16,
+            "rank": 17,
             "player": "Kenneth Brettle",
             "slug": "kenneth-brettle",
             "section": "Seniors",
@@ -11099,7 +11130,7 @@
             "displayValue": 1
           },
           {
-            "rank": 17,
+            "rank": 18,
             "player": "Kevin Cooksey",
             "slug": "kevin-cooksey",
             "section": "Seniors",
@@ -11121,7 +11152,7 @@
             "displayValue": 1
           },
           {
-            "rank": 18,
+            "rank": 19,
             "player": "M T Cowdell",
             "slug": "m-t-cowdell",
             "section": "Seniors",
@@ -11143,7 +11174,7 @@
             "displayValue": 1
           },
           {
-            "rank": 19,
+            "rank": 20,
             "player": "M.j. Davies",
             "slug": "m-j-davies",
             "section": "Seniors",
@@ -11165,7 +11196,7 @@
             "displayValue": 1
           },
           {
-            "rank": 20,
+            "rank": 21,
             "player": "Malcolm Powell",
             "slug": "malcolm-powell",
             "section": "Seniors",
@@ -11187,7 +11218,7 @@
             "displayValue": 1
           },
           {
-            "rank": 21,
+            "rank": 22,
             "player": "Paul Raymond Rock",
             "slug": "paul-raymond-rock",
             "section": "Seniors",
@@ -11209,7 +11240,7 @@
             "displayValue": 1
           },
           {
-            "rank": 22,
+            "rank": 23,
             "player": "Philip John Northall",
             "slug": "philip-john-northall",
             "section": "Seniors",
@@ -11231,7 +11262,7 @@
             "displayValue": 1
           },
           {
-            "rank": 23,
+            "rank": 24,
             "player": "Stephen Price",
             "slug": "stephen-price",
             "section": "Seniors",
@@ -11253,7 +11284,7 @@
             "displayValue": 1
           },
           {
-            "rank": 24,
+            "rank": 25,
             "player": "Wayne Rutter",
             "slug": "wayne-rutter",
             "section": "Seniors",
