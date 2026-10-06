@@ -7,8 +7,9 @@
     "seniors": "certified-event-ledger.json"
   },
   "mens": {
-    "currentSeason": "2025-26",
+    "currentSeason": "2026-27",
     "seasonOrder": [
+      "2026-27",
       "2025-26",
       "2024-25",
       "2023-24",
@@ -28721,6 +28722,267 @@
                 "competitionId": "par-bogey-medal",
                 "year": 2026,
                 "position": 10,
+                "points": 1
+              }
+            ]
+          }
+        ]
+      },
+      "2026-27": {
+        "season": "2026-27",
+        "section": "Mens",
+        "startDate": "2026-10-01",
+        "endDate": "2027-09-30",
+        "leaderboard": [
+          {
+            "rank": 1,
+            "player": "Stuart Evans",
+            "section": "Mens",
+            "points": 20,
+            "wins": 1,
+            "runnerUp": 0,
+            "top3": 1,
+            "top5": 1,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 1,
+                "points": 10
+              },
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 1,
+                "points": 10,
+                "sourceType": "divisionWinner",
+                "division": 1,
+                "label": "Division 1 Winner"
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "player": "Gavin Ray",
+            "section": "Mens",
+            "points": 18,
+            "wins": 0,
+            "runnerUp": 1,
+            "top3": 1,
+            "top5": 1,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 2,
+                "points": 8
+              },
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 1,
+                "points": 10,
+                "sourceType": "divisionWinner",
+                "division": 2,
+                "label": "Division 2 Winner"
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "player": "Owen Limb",
+            "section": "Mens",
+            "points": 11,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 0,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 10,
+                "points": 1
+              },
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 1,
+                "points": 10,
+                "sourceType": "divisionWinner",
+                "division": 3,
+                "label": "Division 3 Winner"
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "player": "Philip Thompson",
+            "section": "Mens",
+            "points": 6,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 1,
+            "top5": 1,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 3,
+                "points": 6
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "player": "Andrew Russell",
+            "section": "Mens",
+            "points": 5,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 1,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 4,
+                "points": 5
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "player": "Nigel Brookes",
+            "section": "Mens",
+            "points": 4,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 1,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 5,
+                "points": 4
+              }
+            ]
+          },
+          {
+            "rank": 7,
+            "player": "Paul Harper",
+            "section": "Mens",
+            "points": 3,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 0,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 6,
+                "points": 3
+              }
+            ]
+          },
+          {
+            "rank": 8,
+            "player": "Paul Holmes",
+            "section": "Mens",
+            "points": 2,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 0,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 7,
+                "points": 2
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "player": "Antony Hayward",
+            "section": "Mens",
+            "points": 1,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 0,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 8,
+                "points": 1
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "player": "Ian Frederick Stevens",
+            "section": "Mens",
+            "points": 1,
+            "wins": 0,
+            "runnerUp": 0,
+            "top3": 0,
+            "top5": 0,
+            "top10": 1,
+            "competitionsPlayed": 1,
+            "results": [
+              {
+                "date": "2026-10-03",
+                "competition": "October Medal & Lewis Cup",
+                "competitionId": "october-medal-and-lewis-cup",
+                "year": 2026,
+                "position": 9,
                 "points": 1
               }
             ]
