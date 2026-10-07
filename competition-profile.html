@@ -611,12 +611,24 @@ ${renderClubChampionshipAwards(comp, yearBlock)}
         const comp = competitions.find(item => item.id === id);
 
         if (!comp) {
+          const robots = document.createElement("meta");
+          robots.name = "robots";
+          robots.content = "noindex,follow";
+          document.head.appendChild(robots);
+
           renderError(
             "Competition Not Found",
             "This competition could not be found in the Digital Museum."
           );
           return;
         }
+
+        const canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        canonical.href =
+          "https://dudleygolfclub.co.uk/competition-profile?id=" +
+          encodeURIComponent(comp.id);
+        document.head.appendChild(canonical);
 
         const compResults = results
           .filter(item => item.competitionId === id)
