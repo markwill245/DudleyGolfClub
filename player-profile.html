@@ -866,6 +866,11 @@
       const container = document.getElementById("profile");
 
       if (!slug) {
+        const robots = document.createElement("meta");
+        robots.name = "robots";
+        robots.content = "noindex,follow";
+        document.head.appendChild(robots);
+
         container.innerHTML = "<p>No player selected.</p>";
         return;
       }
@@ -910,10 +915,22 @@
         players.find(p => p.slug === slug);
 
       if (!player) {
+        const robots = document.createElement("meta");
+        robots.name = "robots";
+        robots.content = "noindex,follow";
+        document.head.appendChild(robots);
+
         container.innerHTML =
           "<p>Player profile not found.</p>";
         return;
       }
+
+      const canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href =
+        "https://dudleygolfclub.co.uk/player-profile?player=" +
+        encodeURIComponent(player.slug);
+      document.head.appendChild(canonical);
 
       currentPlayer = player;
 
