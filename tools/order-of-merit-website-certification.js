@@ -72,6 +72,7 @@ for (const sectionName of ["mens", "seniors"]) {
     }
 
     if (
+      season.playersRanked !== undefined &&
       Number(season.playersRanked) !==
       season.leaderboard.length
     ) {
