@@ -992,25 +992,25 @@
 
             <div>
               <p class="uppercase tracking-[0.22em] text-[11px] text-[#C5A367] font-bold">
-                Museum Access
+                Player Profile Views
               </p>
 
               <p class="text-sm text-gray-600 mt-1">
-                View this player profile as a visitor or Dudley Golf Club member.
+                Explore career highlights or switch to detailed member statistics.
               </p>
             </div>
 
-            <div class="flex gap-2">
+            <div class="grid grid-cols-2 gap-2 w-full sm:w-auto sm:min-w-[300px]">
               <a
                 href="#"
                 aria-current="page"
-                class="rounded-xl border border-[#132419] bg-[#132419] px-4 py-2 text-sm font-semibold text-white">
+                class="flex items-center justify-center w-full min-h-12 rounded-xl border border-[#132419] bg-[#132419] px-3 py-3 text-sm font-semibold text-white text-center">
                 Public View
               </a>
 
               <a
                 href="login.html?return=${encodeURIComponent('/player-profile.html' + window.location.search)}"
-                class="rounded-xl border border-[#C5A367]/60 bg-white px-4 py-2 text-sm font-semibold text-[#132419]">
+                class="flex items-center justify-center w-full min-h-12 rounded-xl border border-[#C5A367]/60 bg-white px-3 py-3 text-sm font-semibold text-[#132419] text-center">
                 Member View
               </a>
             </div>
@@ -1107,272 +1107,29 @@
           </button>
 
         </div>
-${(() => {
-          const scoring = getCertifiedScoringAverages(player);
+<section class="mb-8 rounded-2xl border border-[#C5A367]/40 bg-[#F9F7F2] p-6 md:p-8 shadow-sm">
+  <p class="uppercase tracking-[0.25em] text-xs text-[#A3834D] font-bold mb-3">
+    Members Performance Centre
+  </p>
 
-          const hasMens =
-            scoring.mens.gross ||
-            scoring.mens.medal ||
-            scoring.mens.stableford;
+  <h2 class="text-2xl md:text-3xl font-serif text-[#132419] mb-3">
+    Explore This Player's Performance
+  </h2>
 
-          const hasSeniors9 =
-            scoring.seniors.nineHole.medal ||
-            scoring.seniors.nineHole.stableford;
+  <p class="text-gray-700 leading-relaxed mb-5 max-w-2xl">
+    Discover detailed gross, nett and Stableford scoring averages,
+    medal performances, individual round records and complete
+    competition histories in the Dudley Golf Club Members View.
+  </p>
 
-          const hasSeniors18 =
-            scoring.seniors.eighteenHole.medal ||
-            scoring.seniors.eighteenHole.stableford;
-
-          if (
-            !hasMens &&
-            !hasSeniors9 &&
-            !hasSeniors18
-          ) {
-            return "";
-          }
-
-          return `
-    <section class="mb-8">
-      <p class="uppercase tracking-[0.25em] text-xs text-[#C5A367] font-bold mb-2">
-        Certified Scoring
-      </p>
-
-         <h2 class="text-2xl font-serif mb-4">
-        Career Scoring Averages
-      </h2>
-
-      <div class="space-y-6">
-
-        ${hasMens ? `
-          <div>
-            <h3 class="text-lg font-serif mb-3">
-              Mens 18-Hole
-            </h3>
-
-           <div class="grid sm:grid-cols-2 gap-4">
-
-  ${scoring.mens.gross ? `
-    <button
-      type="button"
-      data-scoring-card
-      aria-expanded="false"
-      onclick="toggleScoringEvidence(this, 'mens-gross', 'Mens 18-Hole Gross Average', 'Gross')"
-      class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-      <p class="text-sm text-gray-500 mb-1">
-        Gross Average
-      </p>
-
-      <strong class="text-3xl font-serif text-[#132419]">
-        ${escapeHtml(scoring.mens.gross.average)}
-      </strong>
-
-      <p class="text-sm text-gray-600 mt-2">
-        ${escapeHtml(scoring.mens.gross.rounds)} qualifying gross rounds
-      </p>
-
-      <p class="text-xs text-[#C5A367] font-semibold mt-3">
-        Click to view rounds
-      </p>
-    </button>
-  ` : ""}
-
-  ${scoring.mens.medal ? `
-                <button
-                  type="button"
-                  data-scoring-card
-                  aria-expanded="false"
-                  onclick="toggleScoringEvidence(this, 'mens-medal', 'Mens 18-Hole Medal Nett Average', 'Nett')"
-                  class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-                  <p class="text-sm text-gray-500 mb-1">
-                    Medal Nett Average
-                  </p>
-
-                  <strong class="text-3xl font-serif text-[#132419]">
-                    ${escapeHtml(scoring.mens.medal.average)}
-                  </strong>
-
-                  <p class="text-sm text-gray-600 mt-2">
-                    ${escapeHtml(scoring.mens.medal.rounds)} qualifying medal rounds
-                  </p>
-
-                  <p class="text-xs text-[#C5A367] font-semibold mt-3">
-                    Click to view rounds
-                  </p>
-                </button>
-              ` : ""}
-
-              ${scoring.mens.stableford ? `
-                <button
-                  type="button"
-                  data-scoring-card
-                  aria-expanded="false"
-                  onclick="toggleScoringEvidence(this, 'mens-stableford', 'Mens 18-Hole Stableford Average', 'Points')"
-                  class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-                  <p class="text-sm text-gray-500 mb-1">
-                    Stableford Average
-                  </p>
-
-                  <strong class="text-3xl font-serif text-[#132419]">
-                    ${escapeHtml(scoring.mens.stableford.average)} pts
-                  </strong>
-
-                  <p class="text-sm text-gray-600 mt-2">
-                    ${escapeHtml(scoring.mens.stableford.rounds)} qualifying Stableford rounds
-                  </p>
-
-                  <p class="text-xs text-[#C5A367] font-semibold mt-3">
-                    Click to view rounds
-                  </p>
-                </button>
-              ` : ""}
-
-            </div>
-          </div>
-        ` : ""}
-
-        ${hasSeniors9 ? `
-          <div>
-            <h3 class="text-lg font-serif mb-3">
-              Seniors 9-Hole
-            </h3>
-
-            <div class="grid sm:grid-cols-2 gap-4">
-
-              ${scoring.seniors.nineHole.medal ? `
-                <button
-                  type="button"
-                  data-scoring-card
-                  aria-expanded="false"
-                  onclick="toggleScoringEvidence(this, 'seniors-9-medal', 'Seniors 9-Hole Nett Average', 'Nett')"
-                  class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-                  <p class="text-sm text-gray-500 mb-1">
-                    Nett Average
-                  </p>
-
-                  <strong class="text-3xl font-serif text-[#132419]">
-                    ${escapeHtml(scoring.seniors.nineHole.medal.average)}
-                  </strong>
-
-                  <p class="text-sm text-gray-600 mt-2">
-                    ${escapeHtml(scoring.seniors.nineHole.medal.rounds)} qualifying Seniors rounds
-                  </p>
-
-                  <p class="text-xs text-[#C5A367] font-semibold mt-3">
-                    Click to view rounds
-                  </p>
-                </button>
-              ` : ""}
-
-              ${scoring.seniors.nineHole.stableford ? `
-                <button
-                  type="button"
-                  data-scoring-card
-                  aria-expanded="false"
-                  onclick="toggleScoringEvidence(this, 'seniors-9-stableford', 'Seniors 9-Hole Stableford Average', 'Points')"
-                  class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-                  <p class="text-sm text-gray-500 mb-1">
-                    Stableford Average
-                  </p>
-
-                  <strong class="text-3xl font-serif text-[#132419]">
-                    ${escapeHtml(scoring.seniors.nineHole.stableford.average)} pts
-                  </strong>
-
-                  <p class="text-sm text-gray-600 mt-2">
-                    ${escapeHtml(scoring.seniors.nineHole.stableford.rounds)} qualifying Seniors rounds
-                  </p>
-
-                  <p class="text-xs text-[#C5A367] font-semibold mt-3">
-                    Click to view rounds
-                  </p>
-                </button>
-              ` : ""}
-
-            </div>
-          </div>
-        ` : ""}
-
-        ${hasSeniors18 ? `
-          <div>
-            <h3 class="text-lg font-serif mb-3">
-              Seniors 18-Hole
-            </h3>
-
-            <div class="grid sm:grid-cols-2 gap-4">
-
-              ${scoring.seniors.eighteenHole.medal ? `
-                <button
-                  type="button"
-                  data-scoring-card
-                  aria-expanded="false"
-                  onclick="toggleScoringEvidence(this, 'seniors-18-medal', 'Seniors 18-Hole Nett Average', 'Nett')"
-                  class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-                  <p class="text-sm text-gray-500 mb-1">
-                    Nett Average
-                  </p>
-
-                  <strong class="text-3xl font-serif text-[#132419]">
-                    ${escapeHtml(scoring.seniors.eighteenHole.medal.average)}
-                  </strong>
-
-                  <p class="text-sm text-gray-600 mt-2">
-                    ${escapeHtml(scoring.seniors.eighteenHole.medal.rounds)} qualifying Seniors rounds
-                  </p>
-
-                  <p class="text-xs text-[#C5A367] font-semibold mt-3">
-                    Click to view rounds
-                  </p>
-                </button>
-              ` : ""}
-
-              ${scoring.seniors.eighteenHole.stableford ? `
-                <button
-                  type="button"
-                  data-scoring-card
-                  aria-expanded="false"
-                  onclick="toggleScoringEvidence(this, 'seniors-18-stableford', 'Seniors 18-Hole Stableford Average', 'Points')"
-                  class="w-full text-left rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm transition cursor-pointer">
-
-                  <p class="text-sm text-gray-500 mb-1">
-                    Stableford Average
-                  </p>
-
-                  <strong class="text-3xl font-serif text-[#132419]">
-                    ${escapeHtml(scoring.seniors.eighteenHole.stableford.average)} pts
-                  </strong>
-
-                  <p class="text-sm text-gray-600 mt-2">
-                    ${escapeHtml(scoring.seniors.eighteenHole.stableford.rounds)} qualifying Seniors rounds
-                  </p>
-
-                  <p class="text-xs text-[#C5A367] font-semibold mt-3">
-                    Click to view rounds
-                  </p>
-                </button>
-              ` : ""}
-
-            </div>
-          </div>
-        ` : ""}
-
-      </div>
-
-      <div
-        id="scoring-evidence-panel"
-        data-scoring-key=""
-        class="hidden mt-5 rounded-xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
-      </div>
-
-
-    </section>
-  `;
-        })()}
+  <a
+    href="login.html?return=${encodeURIComponent('/player-profile.html' + window.location.search)}"
+    class="inline-flex items-center justify-center rounded-xl bg-[#132419] px-6 py-3 text-sm font-semibold text-white hover:bg-[#254331] transition-colors"
+  >
+    View Member Statistics
+    <span aria-hidden="true" class="ml-2">&rarr;</span>
+  </a>
+</section>
         <div
           id="profile-stat-panel"
           class="hidden mb-10 rounded-2xl border border-[#C5A367]/30 bg-white p-5 shadow-sm">
@@ -1431,48 +1188,25 @@ ${(() => {
         }).join("")}
           </div>
 
-          ${(player.divisionHonours?.history || []).length
-          ? `
-              <div class="rounded-xl border border-[#C5A367]/20 overflow-hidden">
+          <div class="rounded-xl border border-[#C5A367]/30 bg-[#F9F7F2] p-5">
+  <p class="font-semibold text-[#132419] mb-2">
+    Explore Medal Division History
+  </p>
 
-                ${(player.divisionHonours.history || []).map(item => `
-                  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-5 py-4 border-b last:border-b-0 border-[#C5A367]/20">
+  <p class="text-sm text-gray-700 leading-relaxed mb-4">
+    Dudley Golf Club members can explore the complete medal
+    history, including individual competitions, finishing
+    positions and recorded scores.
+  </p>
 
-                    <div>
-                      <strong>
-                        ${escapeHtml(item.competition)}
-                      </strong>
-
-                      <div class="text-sm text-gray-600 mt-1">
-                        ${escapeHtml(item.year)}
-                        • Division ${escapeHtml(item.division)}
-                        • Position ${escapeHtml(item.position)}
-                      </div>
-                    </div>
-
-                    <div class="text-sm font-bold text-[#C5A367]">
-                      ${item.position === 1
-              ? "Division Winner"
-              : `Division Top ${item.position}`
-            }
-
-                      ${item.score !== null
-              ? ` • ${escapeHtml(item.score)}`
-              : ""
-            }
-                    </div>
-
-                  </div>
-                `).join("")}
-
-              </div>
-            `
-          : `
-              <p class="text-gray-500">
-                No medal division honours recorded yet.
-              </p>
-            `
-        }
+  <a
+    href="login.html?return=${encodeURIComponent('/player-profile.html' + window.location.search)}"
+    class="inline-flex items-center rounded-lg bg-[#132419] px-5 py-3 text-sm font-semibold text-white hover:bg-[#254331] transition-colors"
+  >
+    View Full Medal History
+    <span aria-hidden="true" class="ml-2">&rarr;</span>
+  </a>
+</div>
         </section>
 
         ${gotyHonours.length ? `
@@ -1537,7 +1271,7 @@ ${(() => {
 
         <div class="space-y-3">
 
-          ${(player.timeline || []).map(item => {
+          ${(player.timeline || []).map((item, index) => ({ item, index })).sort((a, b) => Number(b.item.year || 0) - Number(a.item.year || 0) || a.index - b.index).slice(0, 5).map(({ item }) => {
               const scoreText =
                 item.score !== null &&
                   item.score !== undefined
@@ -1705,10 +1439,12 @@ ${(() => {
   </script>
 
 
-  <button id="backToTop"    type="button"
+  <button id="backToTop"
+    type="button"
     aria-label="Back to top"
-    class="fixed bottom-6 right-6 hidden bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-4 py-3 rounded-md shadow-lg transition-all duration-300 z-50 text-xs font-bold uppercase tracking-widest">
-    Back to Top &#8593;
+    class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 hidden items-center justify-center bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50 text-xs sm:text-sm font-bold">
+    <span class="sm:hidden">&#8593; Top</span>
+    <span class="hidden sm:inline">Back to Top &#8593;</span>
   </button>
 
   <script>

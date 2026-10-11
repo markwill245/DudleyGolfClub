@@ -944,21 +944,21 @@
       container.innerHTML = `
       <div class="bg-white rounded-2xl shadow-xl p-10 border border-[#C5A367]/30">
 
-        <!-- MEMBERSHIP PROTOTYPE CONTROL - NOT FOR LIVE SITE -->
+        <!-- PLAYER PROFILE VIEW SWITCH -->
         <div class="mb-8 rounded-2xl border border-[#C5A367]/40 bg-[#F9F7F2] p-4">
           <div class="flex flex-wrap items-center justify-between gap-4">
 
             <div>
               <p class="uppercase tracking-[0.22em] text-[11px] text-[#C5A367] font-bold">
-                Museum Access Prototype
+                Player Profile Views
               </p>
 
               <p class="text-sm text-gray-600 mt-1">
-                Preview this player profile as a visitor or Dudley Golf Club member.
+                Explore career highlights or switch to detailed member statistics.
               </p>
             </div>
 
-            <div class="flex gap-2">
+            <div class="grid grid-cols-2 gap-2 w-full sm:w-auto sm:min-w-[300px]">
               <button
                 type="button"
                 id="prototype-public-view"
@@ -1605,9 +1605,7 @@ ${(() => {
                 </p>
               </div>
 
-              <span class="rounded-full border border-[#C5A367]/40 bg-white px-3 py-1 text-xs font-semibold text-[#132419]">
-                Members
-              </span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-[#806B47]">Members Only</span>
 
             </div>
           </div>
@@ -1722,7 +1720,7 @@ ${(() => {
 
           <div class="space-y-3 mb-4">
 
-            ${(player.timeline || []).slice(0, 3).map(item => {
+            ${(player.timeline || []).map((item, index) => ({ item, index })).sort((a, b) => Number(b.item.year || 0) - Number(a.item.year || 0) || a.index - b.index).slice(0, 5).map(({ item }) => {
                 const scoreText =
                   item.score !== null &&
                     item.score !== undefined
@@ -1777,9 +1775,7 @@ ${(() => {
                 </p>
               </div>
 
-              <span class="rounded-full border border-[#C5A367]/40 bg-white px-3 py-1 text-xs font-semibold text-[#132419]">
-                Members
-              </span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-[#806B47]">Members Only</span>
 
             </div>
 
@@ -1965,30 +1961,44 @@ ${(() => {
         const memberMedalDetail =
           document.querySelector("[data-member-medal-detail]");
 
-        if (view === "member") {
-          publicButton.className =
-            "rounded-xl border border-[#C5A367]/60 bg-white px-4 py-2 text-sm font-semibold text-[#132419]";
+        const publicTimeline =
+          document.querySelector("[data-public-timeline]");
 
-          memberButton.className =
-            "rounded-xl border border-[#132419] bg-[#132419] px-4 py-2 text-sm font-semibold text-white";
+        const memberTimeline =
+          document.querySelector("[data-member-timeline]");
+        const selectedClass =
+          "w-full min-h-12 rounded-xl border border-[#132419] bg-[#132419] px-3 py-3 text-sm font-semibold text-white transition-colors";
+
+        const unselectedClass =
+          "w-full min-h-12 rounded-xl border border-[#C5A367]/60 bg-white px-3 py-3 text-sm font-semibold text-[#132419] transition-colors hover:bg-[#F9F7F2]";
+
+        publicButton.className =
+          view === "public" ? selectedClass : unselectedClass;
+
+        memberButton.className =
+          view === "member" ? selectedClass : unselectedClass;
+
+        publicButton.setAttribute("aria-pressed", String(view === "public"));
+        memberButton.setAttribute("aria-pressed", String(view === "member"));
+
+        if (view === "member") {
 
           if (full) full.classList.remove("hidden");
           if (locked) locked.classList.add("hidden");
 
           if (publicMedalDetail) publicMedalDetail.classList.add("hidden");
           if (memberMedalDetail) memberMedalDetail.classList.remove("hidden");
+          if (publicTimeline) publicTimeline.classList.add("hidden");
+          if (memberTimeline) memberTimeline.classList.remove("hidden");
         } else {
-          publicButton.className =
-            "rounded-xl border border-[#132419] bg-[#132419] px-4 py-2 text-sm font-semibold text-white";
-
-          memberButton.className =
-            "rounded-xl border border-[#C5A367]/60 bg-white px-4 py-2 text-sm font-semibold text-[#132419]";
 
           if (full) full.classList.add("hidden");
           if (locked) locked.classList.remove("hidden");
 
           if (publicMedalDetail) publicMedalDetail.classList.remove("hidden");
           if (memberMedalDetail) memberMedalDetail.classList.add("hidden");
+          if (publicTimeline) publicTimeline.classList.remove("hidden");
+          if (memberTimeline) memberTimeline.classList.add("hidden");
         }
       }
 
@@ -2018,8 +2028,11 @@ ${(() => {
     });
   </script>
   <button id="backToTop"
-    class="fixed bottom-6 right-6 hidden bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-5 py-4 rounded-md shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50 text-sm font-bold uppercase tracking-widest">
-    Back to Top &#8593;
+    type="button"
+    aria-label="Back to top"
+    class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 hidden items-center justify-center bg-[#132419] text-[#C5A367] border-2 border-[#C5A367] px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl shadow-lg hover:bg-[#C5A367] hover:text-[#132419] transition-all duration-300 z-50 text-xs sm:text-sm font-bold">
+    <span class="sm:hidden">&#8593; Top</span>
+    <span class="hidden sm:inline">Back to Top &#8593;</span>
   </button>
 
   <script>
