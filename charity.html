@@ -94,6 +94,14 @@
                 <p class="text-sm mt-4 font-bold text-[#132419]">
                     £<span id="charity-total">0</span> raised of £<span id="charity-target">0</span> target
                 </p>
+            <div class="bg-white p-5 mt-5 border border-[#C5A367]/20 text-sm">
+    <p>Donations raised: £<span id="charity-donations">0.00</span></p>
+    <p>Gift Aid: £1,138.75</p>
+    <p class="font-bold mt-2">
+        Total including Gift Aid:
+        £<span id="charity-combined-total">0.00</span>
+    </p>
+</div>
                 <div class="grid grid-cols-2 gap-4 mt-5 text-center">
                     <div class="bg-white p-4 border border-[#C5A367]/20">
                         <div id="charity-percent" class="serif text-3xl text-[#C5A367]">0%</div>
@@ -307,7 +315,9 @@
                 const amount = Number(charity.amountRaised || 0);
                 const target = Number(charity.targetAmount || 0);
 
-                setText("charity-total", amount.toLocaleString());
+                setText("charity-total", amount.toLocaleString("en-GB"));
+                setText("charity-donations", amount.toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+                setText("charity-combined-total", (amount + 1138.75).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 setText("charity-target", target.toLocaleString());
                 setText("charity-supporters", Number(charity.supporterCount || 0).toLocaleString());
                 setText("charity-updated", charity.progressUpdated || "");
