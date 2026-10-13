@@ -624,7 +624,15 @@
             }
         }
 
-    </style>
+    /* Match both header bars to the original footer */
+body .nav-blur,
+body .nav-blur.scrolled,
+body .nav-blur.is-scrolled,
+body header,
+body header nav {
+    background-color: #0D1712 !important;
+}
+</style>
 </head>
 
 <body class="bg-[#132419] text-white antialiased m-0 p-0">
@@ -724,7 +732,7 @@
     <header id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center text-white">
         <div class="max-w-4xl px-4">
 
-            <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-80 font-light mb-4">
+            <p class="text-[10px] md:text-sm tracking-[0.4em] uppercase opacity-80 font-light mb-4" style="position:relative;top:12px;">
                 Established 1893
             </p>
 
@@ -760,9 +768,9 @@
 
             <div class="heritage-crest">
                 <img
-                    src="images/dudley-crest-new.webp"
+                    src="images/dudley-crest-blue-gold.webp"
                     alt="Dudley Golf Club historic crest - Founded 1893"
-                    loading="lazy">
+                    loading="lazy" style="max-width:150px;width:100%;height:auto;">
             </div>
 
             <div class="heritage-divider" aria-hidden="true"></div>
@@ -825,7 +833,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <a href="/course"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/hole1.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">01</p>
                         <h3
@@ -839,7 +847,7 @@
                 </a>
 
                 <a href="/the-gauntlet"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/amen-corner/hero.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">02</p>
                         <h3
@@ -854,7 +862,7 @@
                 </a>
 
                 <a href="/history"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/old-dudley-course.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">03</p>
                         <h3
@@ -868,7 +876,7 @@
                 </a>
 
                 <a href="/digital-museum"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/museum-collection/museum-collection-overview.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">04</p>
                         <h3
@@ -882,7 +890,7 @@
                 </a>
 
                 <a href="/hospitality"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/func2.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">05</p>
                         <h3
@@ -896,7 +904,7 @@
                 </a>
 
                 <a href="/pro-shop"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/pro.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">06</p>
                         <h3
@@ -910,7 +918,7 @@
                 </a>
 
                 <a href="/membership"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/members-bg.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">07</p>
                         <h3
@@ -925,7 +933,7 @@
 
 
                 <a href="/visitors"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/Course.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">08</p>
                         <h3
@@ -940,7 +948,7 @@
 
                 <!-- RUSTIC EATERY CARD -->
                 <a href="/rustic-eatery"
-                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300">
+                    class="group bg-[#0D1712] border border-[#C5A367]/20 p-8 min-h-[220px] flex flex-col justify-between hover:border-[#C5A367] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(197,163,103,0.15)] transition-all duration-300" style="background-image:linear-gradient(90deg,rgba(13,23,18,.94),rgba(13,23,18,.48)),url('images/breakfast.webp');background-position:center;background-size:cover;background-repeat:no-repeat;">
                     <div>
                         <p class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] mb-4">09</p>
                         <h3 class="serif text-4xl text-white italic mb-4 group-hover:text-[#C5A367] transition-colors duration-300">
