@@ -1,0 +1,220 @@
+/* Dudley Golf Club — Membership Redesign */
+:root {
+  --membership-forest: #0D1712;
+  --membership-green: #132419;
+  --membership-gold: #C5A367;
+  --membership-cream: #F9F7F2;
+}
+
+.membership-redesign {
+  background: var(--membership-cream);
+  color: var(--membership-green);
+}
+
+.membership-redesign img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.membership-redesign .membership-photo {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.membership-redesign .membership-photo img {
+  transition: transform .5s ease;
+}
+
+.membership-redesign .membership-photo:hover img {
+  transform: scale(1.035);
+}
+
+.membership-redesign .membership-price-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--membership-green);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--membership-gold);
+  padding-bottom: 6px;
+}
+
+.membership-redesign .membership-price-link:hover {
+  color: #9B7A43;
+}
+
+/* Membership preview v1 â€” self-contained layout */
+.membership-redesign {font-family:'Outfit',sans-serif;background:#F9F7F2;color:#132419}
+.membership-redesign h1,.membership-redesign h2,.membership-redesign h3 {font-family:'Cormorant Garamond',Georgia,serif;line-height:1.08;font-weight:600}
+.membership-redesign .mr-wrap {max-width:1240px;margin:0 auto;padding-left:28px;padding-right:28px}
+.membership-redesign .mr-hero {min-height:640px;display:flex;align-items:center;background-size:cover;background-position:center}
+.membership-redesign .mr-hero-inner {width:100%;padding-top:110px;padding-bottom:110px;color:#fff}
+.membership-redesign .mr-eyebrow {font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#C5A367;margin-bottom:22px}
+.membership-redesign .mr-hero h1 {font-size:clamp(58px,8vw,112px);letter-spacing:-.03em;max-width:760px;margin:0 0 24px}
+.membership-redesign .mr-hero h1 em {font-weight:400;color:#E2C68C}
+.membership-redesign .mr-hero-inner>p:not(.mr-eyebrow) {max-width:540px;font-size:19px;line-height:1.65;margin:0 0 34px;color:#f2f0e9}
+.membership-redesign .mr-button {display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:15px 22px;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.06em;transition:background .2s,color .2s}
+.membership-redesign .mr-button-gold {background:#C5A367;color:#102016}
+.membership-redesign .mr-button-gold:hover {background:#E0C58E}
+.membership-redesign .mr-section {padding:92px 0}
+.membership-redesign .mr-intro {max-width:780px;margin:0 auto 44px;text-align:center}
+.membership-redesign .mr-intro h2 {font-size:clamp(38px,5vw,62px);margin:0 0 18px}
+.membership-redesign .mr-intro>p:last-child {font-size:17px;line-height:1.7;opacity:.78}
+.membership-redesign .mr-grid-four {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:23px}
+.membership-redesign .mr-feature .membership-photo {height:205px;margin-bottom:22px}
+.membership-redesign .mr-feature h3 {font-size:31px;margin:0 0 10px}
+.membership-redesign .mr-feature p {line-height:1.65;font-size:14px;opacity:.78;min-height:70px}
+.membership-redesign .mr-feature a,.membership-redesign .mr-other a {color:#836333;font-weight:700;text-decoration:none;border-bottom:1px solid #C5A367;padding-bottom:3px}
+.membership-redesign .mr-options {background:#132419;color:#fff}
+.membership-redesign .mr-grid-three {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.membership-redesign .mr-plan {background:#F9F7F2;color:#132419;display:flex;flex-direction:column}
+.membership-redesign .mr-plan .membership-photo {height:225px;border-radius:0}
+.membership-redesign .mr-plan-body {padding:30px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
+.membership-redesign .mr-plan h3 {font-size:36px;margin:0 0 14px}
+.membership-redesign .mr-plan p {line-height:1.65;font-size:15px;margin:0 0 26px;flex:1}
+.membership-redesign .mr-button-light {border:1px solid #C5A367;color:#132419}
+.membership-redesign .mr-button-light:hover {background:#EDE4D4}
+.membership-redesign .mr-other {text-align:center;margin:35px 0 0;color:#e6e3da}
+.membership-redesign .mr-other a {color:#E2C68C}
+.membership-redesign .mr-experience {background:#EDE5D7}
+.membership-redesign .mr-experience-grid {display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.membership-redesign .mr-experience-copy h2 {font-size:clamp(44px,5vw,70px);margin:0 0 25px}
+.membership-redesign .mr-experience-copy>p:not(.mr-eyebrow) {font-size:17px;line-height:1.75;margin:0 0 22px}
+.membership-redesign .mr-button-dark {background:#132419;color:#fff;margin-top:12px}
+.membership-redesign .mr-button-dark:hover {background:#284633}
+.membership-redesign .mr-experience-photo {height:440px}
+@media(max-width:1000px){.membership-redesign .mr-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))}.membership-redesign .mr-grid-three{gap:14px}.membership-redesign .mr-plan-body{padding:22px}.membership-redesign .mr-experience-grid{gap:35px}}
+@media(max-width:700px){.membership-redesign .mr-wrap{padding-left:20px;padding-right:20px}.membership-redesign .mr-hero{min-height:550px;background-position:60% center}.membership-redesign .mr-hero-inner{padding-top:90px;padding-bottom:90px}.membership-redesign .mr-section{padding:62px 0}.membership-redesign .mr-grid-four,.membership-redesign .mr-grid-three,.membership-redesign .mr-experience-grid{grid-template-columns:1fr}.membership-redesign .mr-feature .membership-photo{height:230px}.membership-redesign .mr-feature p{min-height:0}.membership-redesign .mr-plan .membership-photo{height:235px}.membership-redesign .mr-experience-photo{height:290px}.membership-redesign .mr-experience-copy{order:1}.membership-redesign .mr-experience-photo{order:0}}
+/* Membership polish v2 â€” preview only */
+.membership-redesign .mr-wrap{max-width:1450px}
+.membership-redesign .mr-hero{min-height:610px}
+.membership-redesign .mr-hero-inner{padding-top:76px;padding-bottom:76px}
+.membership-redesign .mr-hero h1{font-size:clamp(66px,7.5vw,110px);line-height:.91;margin-bottom:24px}
+.membership-redesign .mr-hero-inner>p:not(.mr-eyebrow){font-size:18px;line-height:1.45;margin-bottom:14px;max-width:470px}
+.membership-redesign .mr-hero-inner>.mr-button{margin-top:12px}
+.membership-redesign .mr-section{padding:65px 0}
+.membership-redesign .mr-intro{margin-bottom:30px}
+.membership-redesign .mr-intro h2{font-size:clamp(38px,4vw,57px);margin-bottom:8px}
+.membership-redesign .mr-intro .mr-eyebrow{margin-bottom:8px}
+.membership-redesign .mr-intro>p:last-child{font-size:16px}
+.membership-redesign .mr-grid-four{gap:18px}
+.membership-redesign .mr-feature{position:relative;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.08);text-align:center;padding-bottom:22px}
+.membership-redesign .mr-feature .membership-photo{height:190px;margin-bottom:0;border-radius:0}
+.membership-redesign .mr-feature-icon{position:relative;display:grid;place-items:center;width:56px;height:56px;margin:-28px auto 12px;border:2px solid #C5A367;border-radius:50%;background:#0D2419;color:#D5B474;font-size:27px}
+.membership-redesign .mr-feature-body{padding:0 18px}
+.membership-redesign .mr-feature h3{font-size:30px;margin-bottom:6px}
+.membership-redesign .mr-feature p{font-size:14px;line-height:1.45;min-height:62px;margin-bottom:12px;opacity:1}
+.membership-redesign .mr-feature a{font-size:12px}
+.membership-redesign .mr-options{background:#092419}
+.membership-redesign .mr-grid-three{gap:18px}
+.membership-redesign .mr-plan .membership-photo{height:210px}
+.membership-redesign .mr-plan-body{align-items:stretch;padding:18px 25px 23px}
+.membership-redesign .mr-plan h3{text-align:center;font-size:35px;margin-bottom:12px}
+.membership-redesign .mr-plan ul{list-style:none;margin:0 0 20px;padding:0;flex:1}
+.membership-redesign .mr-plan li{position:relative;padding-left:24px;margin-bottom:8px;font-size:14px;line-height:1.4}
+.membership-redesign .mr-plan .mr-button{width:100%;padding:13px 12px;font-size:12px;letter-spacing:.09em}
+.membership-redesign .mr-other{margin-top:22px;font-size:14px}
+.membership-redesign .mr-experience{display:grid;grid-template-columns:1fr 1fr;background:#d3b071;min-height:290px}
+.membership-redesign .mr-experience-photo{height:auto;min-height:290px;border-radius:0}
+.membership-redesign .mr-experience-copy{padding:45px clamp(25px,6vw,95px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.membership-redesign .mr-experience-copy .mr-eyebrow{color:#213323;margin-bottom:9px}
+.membership-redesign .mr-experience-copy h2{font-size:clamp(40px,4vw,60px);margin-bottom:12px}
+.membership-redesign .mr-experience-copy>p:not(.mr-eyebrow){font-size:16px;line-height:1.5;margin-bottom:16px}
+.membership-redesign .mr-experience-copy .mr-button{margin-top:0}
+/* The existing footer is shared in markup; compact its desktop layout only in this preview. */
+@media(min-width:1024px){body:has(#membership-preview-v2) footer{padding-top:45px!important;padding-bottom:38px!important}body:has(#membership-preview-v2) footer>div{max-width:1450px!important}}
+@media(max-width:1000px){.membership-redesign .mr-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))}.membership-redesign .mr-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}.membership-redesign .mr-plan-body{padding:18px 14px}.membership-redesign .mr-plan h3{font-size:29px}}
+@media(max-width:700px){.membership-redesign .mr-hero{min-height:540px}.membership-redesign .mr-hero h1{font-size:clamp(58px,13vw,82px)}.membership-redesign .mr-grid-four,.membership-redesign .mr-grid-three,.membership-redesign .mr-experience{grid-template-columns:1fr}.membership-redesign .mr-feature .membership-photo{height:225px}.membership-redesign .mr-plan .membership-photo{height:230px}.membership-redesign .mr-experience-photo{min-height:250px;height:250px}.membership-redesign .mr-experience-copy{padding:36px 24px}}
+/* Membership benefit ticks — encoding-safe */
+.membership-redesign .mr-plan li {
+  list-style: none;
+  position: relative;
+  padding-left: 22px;
+}
+
+.membership-redesign .mr-plan li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid #C5A367;
+  border-bottom: 2px solid #C5A367;
+  transform: rotate(-45deg);
+}
+
+.membership-redesign .mr-plan li::marker {
+  content: "";
+}
+
+/* Dudley crest above Discovery heading */
+.membership-redesign .mr-discovery-crest {
+    display: block;
+    width: 90px;
+    height: auto;
+    max-height: 110px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+}
+
+/* Match homepage header and enlarge Discovery crest */
+nav.nav-blur {
+    background: #0D1712 !important;
+}
+
+.membership-redesign .mr-discovery-crest {
+    width: 135px;
+    max-height: 145px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 24px;
+}
+
+/* DGC compact footer layout */
+footer > .max-w-7xl.grid {
+    display: grid !important;
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr !important;
+    gap: 28px !important;
+    align-items: start;
+}
+
+footer {
+    padding-top: 40px !important;
+    padding-bottom: 24px !important;
+}
+
+footer .min-h-\[300px\] {
+    min-height: 0 !important;
+}
+
+footer > .max-w-7xl.grid > div {
+    min-width: 0;
+}
+
+@media (max-width: 950px) {
+    footer > .max-w-7xl.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 560px) {
+    footer > .max-w-7xl.grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+/* END DGC compact footer layout */
+
+/* Membership card readability */
+.membership-redesign .mr-plan li {
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 7px;
+}
+
+.membership-redesign .mr-feature-body p {
+    font-size: 15px;
+    line-height: 1.55;
+}
