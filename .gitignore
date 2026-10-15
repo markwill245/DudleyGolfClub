@@ -5,3 +5,11 @@ dist/
 .env*
 
 .wrangler/
+
+# Local backup files
+*.bak
+footer-backup-*/
+
+# Temporary PowerShell working scripts
+fix-membership-symbols.ps1
+membership-polish-v2.ps1
