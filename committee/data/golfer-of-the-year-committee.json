@@ -20,9 +20,9 @@
     "clubChampionPoints": 2
   },
   "progress": {
-    "totalMajors": 17,
-    "completedMajors": 14,
-    "awaitingMajors": 3,
+    "totalMajors": 18,
+    "completedMajors": 16,
+    "awaitingMajors": 2,
     "reviewMajors": 0
   },
   "currentLeader": {
@@ -168,6 +168,16 @@
       "note": "The May Medal is a qualifying round only. No points are awarded until the knockout winner is known."
     },
     {
+      "id": "presidents-putter",
+      "name": "President's Putter",
+      "type": "Knockout Winner",
+      "pointsPerWinner": 1,
+      "status": "Awaiting Results",
+      "date": null,
+      "winners": [],
+      "note": "The April Medal is a qualifying round only. No points are awarded until the President's Putter knockout winner is known."
+    },
+    {
       "id": "club-championship",
       "name": "Club Championship",
       "type": "Club Champion",
@@ -221,19 +231,24 @@
       "name": "Lewis Cup",
       "type": "Singles Major",
       "pointsPerWinner": 1,
-      "status": "Awaiting Results",
+      "status": "Completed",
       "date": null,
-      "winners": [],
-      "note": null
+      "winners": [
+        "Stuart Evans"
+      ],
+      "note": "Winner verified from certified Board honour; trophy date not recorded."
     },
     {
       "id": "writtle-grove-and-winter-greensomes-qualifier",
       "name": "Writtle Grove Trophy",
       "type": "Pairs / Team Major",
       "pointsPerWinner": 0.5,
-      "status": "Awaiting Results",
-      "date": null,
-      "winners": [],
+      "status": "Completed",
+      "date": "2026-10-10",
+      "winners": [
+        "Neil Hartland",
+        "James Stevens"
+      ],
       "note": "Award points for the Writtle Grove Trophy winners only, not separately for Winter Greensomes qualification."
     }
   ],
@@ -413,6 +428,31 @@
         "Kevin Walters"
       ],
       "note": null
+    },
+    {
+      "id": "lewis-cup",
+      "name": "Lewis Cup",
+      "type": "Singles Major",
+      "pointsPerWinner": 1,
+      "status": "Completed",
+      "date": null,
+      "winners": [
+        "Stuart Evans"
+      ],
+      "note": "Winner verified from certified Board honour; trophy date not recorded."
+    },
+    {
+      "id": "writtle-grove-and-winter-greensomes-qualifier",
+      "name": "Writtle Grove Trophy",
+      "type": "Pairs / Team Major",
+      "pointsPerWinner": 0.5,
+      "status": "Completed",
+      "date": "2026-10-10",
+      "winners": [
+        "Neil Hartland",
+        "James Stevens"
+      ],
+      "note": "Award points for the Writtle Grove Trophy winners only, not separately for Winter Greensomes qualification."
     }
   ],
   "awaitingMajors": [
@@ -427,24 +467,14 @@
       "note": "The May Medal is a qualifying round only. No points are awarded until the knockout winner is known."
     },
     {
-      "id": "lewis-cup",
-      "name": "Lewis Cup",
-      "type": "Singles Major",
+      "id": "presidents-putter",
+      "name": "President's Putter",
+      "type": "Knockout Winner",
       "pointsPerWinner": 1,
       "status": "Awaiting Results",
       "date": null,
       "winners": [],
-      "note": null
-    },
-    {
-      "id": "writtle-grove-and-winter-greensomes-qualifier",
-      "name": "Writtle Grove Trophy",
-      "type": "Pairs / Team Major",
-      "pointsPerWinner": 0.5,
-      "status": "Awaiting Results",
-      "date": null,
-      "winners": [],
-      "note": "Award points for the Writtle Grove Trophy winners only, not separately for Winter Greensomes qualification."
+      "note": "The April Medal is a qualifying round only. No points are awarded until the President's Putter knockout winner is known."
     }
   ],
   "reviewMajors": [],
@@ -697,7 +727,101 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 6,
+      "player": "Stuart Evans",
+      "totalPoints": 1,
+      "tieBreakPoints": 0,
+      "singlesMajors": 1,
+      "pairsTeamMajors": 0,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 1,
+      "evidence": [
+        {
+          "competitionId": "lewis-cup",
+          "resultCompetitionId": "lewis-cup",
+          "competitionName": "Lewis Cup",
+          "awardType": "Singles Major",
+          "points": 1,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": null,
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "player": "James Stevens",
+      "totalPoints": 1,
+      "tieBreakPoints": 0,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 2,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 2,
+      "evidence": [
+        {
+          "competitionId": "probus-trophy",
+          "resultCompetitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": "2026-05-30",
+          "source": "Certified competition result"
+        },
+        {
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "resultCompetitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": "2026-10-10",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "player": "Neil Hartland",
+      "totalPoints": 1,
+      "tieBreakPoints": 0,
+      "singlesMajors": 0,
+      "pairsTeamMajors": 2,
+      "knockoutWins": 0,
+      "clubChampionships": 0,
+      "qualifyingWins": 2,
+      "evidence": [
+        {
+          "competitionId": "probus-trophy",
+          "resultCompetitionId": "probus-pairs-stableford-betterball",
+          "competitionName": "Probus Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": "2026-05-30",
+          "source": "Certified competition result"
+        },
+        {
+          "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "resultCompetitionId": "writtle-grove-and-winter-greensomes-qualifier",
+          "competitionName": "Writtle Grove Trophy",
+          "awardType": "Pairs / Team Major",
+          "points": 0.5,
+          "tieBreakPoints": 0,
+          "year": 2026,
+          "date": "2026-10-10",
+          "source": "Certified competition result"
+        }
+      ]
+    },
+    {
+      "rank": 12,
       "player": "Adam Stanfield",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -721,7 +845,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 12,
       "player": "Clive Kearey",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -745,7 +869,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 12,
       "player": "Gary Baker",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -769,7 +893,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 12,
       "player": "Gregory Curry",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -793,31 +917,7 @@
       ]
     },
     {
-      "rank": 9,
-      "player": "James Stevens",
-      "totalPoints": 0.5,
-      "tieBreakPoints": 0,
-      "singlesMajors": 0,
-      "pairsTeamMajors": 1,
-      "knockoutWins": 0,
-      "clubChampionships": 0,
-      "qualifyingWins": 1,
-      "evidence": [
-        {
-          "competitionId": "probus-trophy",
-          "resultCompetitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Trophy",
-          "awardType": "Pairs / Team Major",
-          "points": 0.5,
-          "tieBreakPoints": 0,
-          "year": 2026,
-          "date": "2026-05-30",
-          "source": "Certified competition result"
-        }
-      ]
-    },
-    {
-      "rank": 9,
+      "rank": 12,
       "player": "Mark Dando",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -841,31 +941,7 @@
       ]
     },
     {
-      "rank": 9,
-      "player": "Neil Hartland",
-      "totalPoints": 0.5,
-      "tieBreakPoints": 0,
-      "singlesMajors": 0,
-      "pairsTeamMajors": 1,
-      "knockoutWins": 0,
-      "clubChampionships": 0,
-      "qualifyingWins": 1,
-      "evidence": [
-        {
-          "competitionId": "probus-trophy",
-          "resultCompetitionId": "probus-pairs-stableford-betterball",
-          "competitionName": "Probus Trophy",
-          "awardType": "Pairs / Team Major",
-          "points": 0.5,
-          "tieBreakPoints": 0,
-          "year": 2026,
-          "date": "2026-05-30",
-          "source": "Certified competition result"
-        }
-      ]
-    },
-    {
-      "rank": 9,
+      "rank": 12,
       "player": "Paul Thomas Donnelly",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,
@@ -889,7 +965,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 12,
       "player": "Sean Element",
       "totalPoints": 0.5,
       "tieBreakPoints": 0,

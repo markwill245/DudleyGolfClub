@@ -2441,5 +2441,21 @@
     "includeInCareerWins": false,
     "includeInPlayerAppearances": false,
     "museumCategory": "General"
+  },
+  {
+    "competitionId": "presidents-putter",
+    "competitionName": "President's Putter",
+    "competitionFormat": "Individual",
+    "teamSize": 1,
+    "section": "Mens",
+    "competitionClass": "Board",
+    "countsForOrderOfMerit": true,
+    "boardCompetition": true,
+    "major": true,
+    "includeInCareerWins": true,
+    "includeInPlayerAppearances": true,
+    "museumCategory": "Board Competition",
+    "scoringProfile": "mens-standard",
+    "format": "Individual"
   }
 ]
