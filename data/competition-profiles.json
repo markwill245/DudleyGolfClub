@@ -30314,5 +30314,60 @@
     },
     "clubChampionship": null,
     "summary": "President's Putter is preserved from the verified honours board and enriched with detailed competition results where available."
+  },
+  {
+    "id": "october-sunday-stableford",
+    "competitionId": "october-sunday-stableford",
+    "name": "October Sunday Stableford",
+    "competitionName": "October Sunday Stableford",
+    "section": "Mens",
+    "format": "Individual",
+    "competitionFormat": "Individual",
+    "competitionClass": "Standard",
+    "museumCategory": "General",
+    "importStatus": "complete",
+    "category": "General",
+    "historicalBoard": false,
+    "winnerOnly": false,
+    "countsForOrderOfMerit": false,
+    "profileType": "Competition Profile",
+    "yearsPlayed": 1,
+    "firstYear": 2026,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 41,
+    "averageEntries": 41,
+    "uniqueWinners": 1,
+    "mostSuccessfulPlayer": "Craig Biddulph",
+    "mostWins": 1,
+    "currentWinners": [
+      "Craig Biddulph"
+    ],
+    "winnerLeaders": [
+      {
+        "player": "Craig Biddulph",
+        "wins": 1
+      }
+    ],
+    "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Craig Biddulph",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 38,
+        "relativeToPar": null
+      }
+    ],
+    "sourcePriority": {
+      "officialWinnerSource": "Competition Results",
+      "hasVerifiedBoard": false,
+      "boardCompetitionId": null,
+      "detailedResultsSource": "Competition Results",
+      "linkedResultCompetitionId": null,
+      "linkedScoreType": null
+    },
+    "clubChampionship": null,
+    "summary": "October Sunday Stableford is preserved as a competition profile in the Dudley Golf Club Digital Museum."
   }
 ]
