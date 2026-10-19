@@ -2466,11 +2466,12 @@
     "competitionClass": "Standard",
     "format": "Individual",
     "teamSize": 1,
-    "countsForOrderOfMerit": false,
+    "countsForOrderOfMerit": true,
     "boardCompetition": false,
     "major": false,
     "includeInCareerWins": true,
     "includeInPlayerAppearances": true,
-    "museumCategory": "General"
+    "museumCategory": "General",
+    "scoringProfile": "mens-standard"
   }
 ]
