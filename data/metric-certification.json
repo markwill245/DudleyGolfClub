@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-23T18:53:56.971Z",
+  "generatedAt": "2026-10-23T21:20:33.703Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -50,10 +50,10 @@
         "modernAwardWins": 30,
         "modernOverallWins": 301,
         "historicalBoardsChecked": 36,
-        "historicalBoardYearsChecked": 843,
-        "historicalBoardWins": 843,
-        "rawWinnerOccurrences": 1601,
-        "certifiedPlayerWins": 1484,
+        "historicalBoardYearsChecked": 844,
+        "historicalBoardWins": 844,
+        "rawWinnerOccurrences": 1602,
+        "certifiedPlayerWins": 1485,
         "uniqueWinningPlayers": 523,
         "duplicatePlayerEventOccurrences": 117,
         "externalParticipantOccurrences": 0,
@@ -256,6 +256,10 @@
           "wins": 7
         },
         {
+          "playerName": "Lewis Jones",
+          "wins": 7
+        },
+        {
           "playerName": "Paul Ingram",
           "wins": 7
         },
@@ -297,10 +301,6 @@
         },
         {
           "playerName": "J. Parkes",
-          "wins": 6
-        },
-        {
-          "playerName": "Lewis Jones",
           "wins": 6
         },
         {
@@ -15268,6 +15268,15 @@
           "date": "2026-08-08",
           "sourceType": "modern-award",
           "sourceLabel": "boscawenWinner"
+        },
+        {
+          "playerName": "Lewis Jones",
+          "competitionId": "caldene-cup",
+          "awardId": "boardWinner",
+          "year": 2026,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Caldene Cup"
         },
         {
           "playerName": "James Price",
