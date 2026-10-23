@@ -1448,75 +1448,10 @@
   },
   {
     "rank": 13,
-    "player": "Paul Ingram",
-    "section": "Mens",
-    "points": 6.5,
-    "wins": 7,
-    "results": [
-      {
-        "year": 2008,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2009,
-        "competition": "Grandads Cup",
-        "competitionId": "grandads-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2010,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2011,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2012,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2012,
-        "competition": "Centenary Trophy",
-        "competitionId": "centenary-trophy",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2013,
-        "competition": "Winter Greensomes",
-        "competitionId": "winter-greensomes",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 14,
     "player": "Tony John Salt",
     "section": "Mens",
-    "points": 6,
-    "wins": 10,
+    "points": 6.5,
+    "wins": 11,
     "results": [
       {
         "year": 2006,
@@ -1600,6 +1535,80 @@
         "competitionId": "winter-greensomes",
         "awardId": "boardWinner",
         "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "competition": "125 Trophy - Pairs Stableford Betterball",
+        "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 14,
+    "player": "Paul Ingram",
+    "section": "Mens",
+    "points": 6.5,
+    "wins": 7,
+    "results": [
+      {
+        "year": 2008,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2009,
+        "competition": "Grandads Cup",
+        "competitionId": "grandads-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2010,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2011,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2012,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2012,
+        "competition": "Centenary Trophy",
+        "competitionId": "centenary-trophy",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2013,
+        "competition": "Winter Greensomes",
+        "competitionId": "winter-greensomes",
+        "points": 0.5,
+        "tieBreakPoints": 0,
         "reason": "Pairs/team board/major win"
       }
     ]
@@ -8321,6 +8330,32 @@
   },
   {
     "rank": 192,
+    "player": "Ryan Walker",
+    "section": "Mens",
+    "points": 1.5,
+    "wins": 2,
+    "results": [
+      {
+        "year": 2013,
+        "competition": "Hooper Cup",
+        "competitionId": "hooper-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2026,
+        "date": "2026-08-22",
+        "competition": "125 Trophy - Pairs Stableford Betterball",
+        "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 193,
     "player": "S. Geddes",
     "section": "Mens",
     "points": 1.5,
@@ -8345,7 +8380,7 @@
     ]
   },
   {
-    "rank": 193,
+    "rank": 194,
     "player": "S. Howard",
     "section": "Mens",
     "points": 1.5,
@@ -8370,7 +8405,7 @@
     ]
   },
   {
-    "rank": 194,
+    "rank": 195,
     "player": "S. Newey",
     "section": "Mens",
     "points": 1.5,
@@ -8395,7 +8430,7 @@
     ]
   },
   {
-    "rank": 195,
+    "rank": 196,
     "player": "T. Crosby",
     "section": "Mens",
     "points": 1.5,
@@ -8420,7 +8455,7 @@
     ]
   },
   {
-    "rank": 196,
+    "rank": 197,
     "player": "T. Howles",
     "section": "Mens",
     "points": 1.5,
@@ -8445,7 +8480,7 @@
     ]
   },
   {
-    "rank": 197,
+    "rank": 198,
     "player": "W. Jones",
     "section": "Mens",
     "points": 1.5,
@@ -8470,7 +8505,7 @@
     ]
   },
   {
-    "rank": 198,
+    "rank": 199,
     "player": "Adrian Burns",
     "section": "Mens",
     "points": 1,
@@ -8497,7 +8532,7 @@
     ]
   },
   {
-    "rank": 199,
+    "rank": 200,
     "player": "B. Carter",
     "section": "Mens",
     "points": 1,
@@ -8522,7 +8557,7 @@
     ]
   },
   {
-    "rank": 200,
+    "rank": 201,
     "player": "C. E. Biddulph",
     "section": "Mens",
     "points": 1,
@@ -8547,7 +8582,7 @@
     ]
   },
   {
-    "rank": 201,
+    "rank": 202,
     "player": "D. Clews",
     "section": "Mens",
     "points": 1,
@@ -8572,7 +8607,7 @@
     ]
   },
   {
-    "rank": 202,
+    "rank": 203,
     "player": "D. Hampton",
     "section": "Mens",
     "points": 1,
@@ -8597,7 +8632,7 @@
     ]
   },
   {
-    "rank": 203,
+    "rank": 204,
     "player": "D. Hodges",
     "section": "Mens",
     "points": 1,
@@ -8622,7 +8657,7 @@
     ]
   },
   {
-    "rank": 204,
+    "rank": 205,
     "player": "D. Jevons",
     "section": "Mens",
     "points": 1,
@@ -8647,7 +8682,7 @@
     ]
   },
   {
-    "rank": 205,
+    "rank": 206,
     "player": "D. Pass",
     "section": "Mens",
     "points": 1,
@@ -8672,7 +8707,7 @@
     ]
   },
   {
-    "rank": 206,
+    "rank": 207,
     "player": "David Postin",
     "section": "Mens",
     "points": 1,
@@ -8699,7 +8734,7 @@
     ]
   },
   {
-    "rank": 207,
+    "rank": 208,
     "player": "E. Boon",
     "section": "Mens",
     "points": 1,
@@ -8724,7 +8759,7 @@
     ]
   },
   {
-    "rank": 208,
+    "rank": 209,
     "player": "J. Bowles",
     "section": "Mens",
     "points": 1,
@@ -8749,7 +8784,7 @@
     ]
   },
   {
-    "rank": 209,
+    "rank": 210,
     "player": "James Price",
     "section": "Mens",
     "points": 1,
@@ -8775,7 +8810,7 @@
     ]
   },
   {
-    "rank": 210,
+    "rank": 211,
     "player": "Jamie Daniel Hunt",
     "section": "Mens",
     "points": 1,
@@ -8801,7 +8836,7 @@
     ]
   },
   {
-    "rank": 211,
+    "rank": 212,
     "player": "Kenneth Brettle",
     "section": "Mens",
     "points": 1,
@@ -8826,7 +8861,7 @@
     ]
   },
   {
-    "rank": 212,
+    "rank": 213,
     "player": "Kevin John Foster",
     "section": "Mens",
     "points": 1,
@@ -8852,7 +8887,7 @@
     ]
   },
   {
-    "rank": 213,
+    "rank": 214,
     "player": "Luke Hopkins",
     "section": "Mens",
     "points": 1,
@@ -8878,7 +8913,7 @@
     ]
   },
   {
-    "rank": 214,
+    "rank": 215,
     "player": "M. Whitehouse",
     "section": "Mens",
     "points": 1,
@@ -8903,7 +8938,7 @@
     ]
   },
   {
-    "rank": 215,
+    "rank": 216,
     "player": "Melvin Crook",
     "section": "Mens",
     "points": 1,
@@ -8930,7 +8965,7 @@
     ]
   },
   {
-    "rank": 216,
+    "rank": 217,
     "player": "Mitchell Raybould",
     "section": "Mens",
     "points": 1,
@@ -8956,7 +8991,7 @@
     ]
   },
   {
-    "rank": 217,
+    "rank": 218,
     "player": "P. Bailey",
     "section": "Mens",
     "points": 1,
@@ -8981,7 +9016,7 @@
     ]
   },
   {
-    "rank": 218,
+    "rank": 219,
     "player": "P. Byng",
     "section": "Mens",
     "points": 1,
@@ -9006,7 +9041,7 @@
     ]
   },
   {
-    "rank": 219,
+    "rank": 220,
     "player": "P. Green",
     "section": "Mens",
     "points": 1,
@@ -9031,7 +9066,7 @@
     ]
   },
   {
-    "rank": 220,
+    "rank": 221,
     "player": "P. Jackson",
     "section": "Mens",
     "points": 1,
@@ -9056,7 +9091,7 @@
     ]
   },
   {
-    "rank": 221,
+    "rank": 222,
     "player": "Paul Harper",
     "section": "Mens",
     "points": 1,
@@ -9081,7 +9116,7 @@
     ]
   },
   {
-    "rank": 222,
+    "rank": 223,
     "player": "Paul Wayne Taylor",
     "section": "Mens",
     "points": 1,
@@ -9107,7 +9142,7 @@
     ]
   },
   {
-    "rank": 223,
+    "rank": 224,
     "player": "R. Smith",
     "section": "Mens",
     "points": 1,
@@ -9132,7 +9167,7 @@
     ]
   },
   {
-    "rank": 224,
+    "rank": 225,
     "player": "Roger William Grainger",
     "section": "Mens",
     "points": 1,
@@ -9158,7 +9193,7 @@
     ]
   },
   {
-    "rank": 225,
+    "rank": 226,
     "player": "Stephen Dennis Gilbert",
     "section": "Mens",
     "points": 1,
@@ -9184,7 +9219,7 @@
     ]
   },
   {
-    "rank": 226,
+    "rank": 227,
     "player": "A. Boucher",
     "section": "Mens",
     "points": 1,
@@ -9201,7 +9236,7 @@
     ]
   },
   {
-    "rank": 227,
+    "rank": 228,
     "player": "A. Brayne",
     "section": "Mens",
     "points": 1,
@@ -9218,7 +9253,7 @@
     ]
   },
   {
-    "rank": 228,
+    "rank": 229,
     "player": "A. Duffield",
     "section": "Mens",
     "points": 1,
@@ -9235,7 +9270,7 @@
     ]
   },
   {
-    "rank": 229,
+    "rank": 230,
     "player": "A. Horridge",
     "section": "Mens",
     "points": 1,
@@ -9252,7 +9287,7 @@
     ]
   },
   {
-    "rank": 230,
+    "rank": 231,
     "player": "A. J. Plant",
     "section": "Mens",
     "points": 1,
@@ -9269,7 +9304,7 @@
     ]
   },
   {
-    "rank": 231,
+    "rank": 232,
     "player": "A. K. Powis",
     "section": "Mens",
     "points": 1,
@@ -9286,7 +9321,7 @@
     ]
   },
   {
-    "rank": 232,
+    "rank": 233,
     "player": "A. Lucas",
     "section": "Mens",
     "points": 1,
@@ -9303,7 +9338,7 @@
     ]
   },
   {
-    "rank": 233,
+    "rank": 234,
     "player": "A. Massey",
     "section": "Mens",
     "points": 1,
@@ -9320,7 +9355,7 @@
     ]
   },
   {
-    "rank": 234,
+    "rank": 235,
     "player": "A.A. Davies",
     "section": "Mens",
     "points": 1,
@@ -9337,7 +9372,7 @@
     ]
   },
   {
-    "rank": 235,
+    "rank": 236,
     "player": "A.G. Patrick",
     "section": "Mens",
     "points": 1,
@@ -9354,7 +9389,7 @@
     ]
   },
   {
-    "rank": 236,
+    "rank": 237,
     "player": "Adam Chester",
     "section": "Mens",
     "points": 1,
@@ -9372,7 +9407,7 @@
     ]
   },
   {
-    "rank": 237,
+    "rank": 238,
     "player": "Alexander Idoine",
     "section": "Mens",
     "points": 1,
@@ -9389,7 +9424,7 @@
     ]
   },
   {
-    "rank": 238,
+    "rank": 239,
     "player": "Andrew Haddock",
     "section": "Mens",
     "points": 1,
@@ -9406,7 +9441,7 @@
     ]
   },
   {
-    "rank": 239,
+    "rank": 240,
     "player": "Anthony Willetts",
     "section": "Mens",
     "points": 1,
@@ -9424,7 +9459,7 @@
     ]
   },
   {
-    "rank": 240,
+    "rank": 241,
     "player": "B. Haddon",
     "section": "Mens",
     "points": 1,
@@ -9441,7 +9476,7 @@
     ]
   },
   {
-    "rank": 241,
+    "rank": 242,
     "player": "B. Hillman",
     "section": "Mens",
     "points": 1,
@@ -9458,7 +9493,7 @@
     ]
   },
   {
-    "rank": 242,
+    "rank": 243,
     "player": "B. Saturley",
     "section": "Mens",
     "points": 1,
@@ -9475,7 +9510,7 @@
     ]
   },
   {
-    "rank": 243,
+    "rank": 244,
     "player": "B. V. Brown",
     "section": "Mens",
     "points": 1,
@@ -9492,7 +9527,7 @@
     ]
   },
   {
-    "rank": 244,
+    "rank": 245,
     "player": "B. Whitcombe",
     "section": "Mens",
     "points": 1,
@@ -9509,7 +9544,7 @@
     ]
   },
   {
-    "rank": 245,
+    "rank": 246,
     "player": "Barry Charlton",
     "section": "Mens",
     "points": 1,
@@ -9526,7 +9561,7 @@
     ]
   },
   {
-    "rank": 246,
+    "rank": 247,
     "player": "Bruce Antony Mansell",
     "section": "Mens",
     "points": 1,
@@ -9543,7 +9578,7 @@
     ]
   },
   {
-    "rank": 247,
+    "rank": 248,
     "player": "C. Hollis",
     "section": "Mens",
     "points": 1,
@@ -9560,7 +9595,7 @@
     ]
   },
   {
-    "rank": 248,
+    "rank": 249,
     "player": "C. Richards",
     "section": "Mens",
     "points": 1,
@@ -9577,7 +9612,7 @@
     ]
   },
   {
-    "rank": 249,
+    "rank": 250,
     "player": "C. Tilley",
     "section": "Mens",
     "points": 1,
@@ -9594,7 +9629,7 @@
     ]
   },
   {
-    "rank": 250,
+    "rank": 251,
     "player": "D. Haycock",
     "section": "Mens",
     "points": 1,
@@ -9611,7 +9646,7 @@
     ]
   },
   {
-    "rank": 251,
+    "rank": 252,
     "player": "D. Homer",
     "section": "Mens",
     "points": 1,
@@ -9628,7 +9663,7 @@
     ]
   },
   {
-    "rank": 252,
+    "rank": 253,
     "player": "D. J. Organ",
     "section": "Mens",
     "points": 1,
@@ -9645,7 +9680,7 @@
     ]
   },
   {
-    "rank": 253,
+    "rank": 254,
     "player": "D. King Snr.",
     "section": "Mens",
     "points": 1,
@@ -9662,7 +9697,7 @@
     ]
   },
   {
-    "rank": 254,
+    "rank": 255,
     "player": "D. Melbourne",
     "section": "Mens",
     "points": 1,
@@ -9679,7 +9714,7 @@
     ]
   },
   {
-    "rank": 255,
+    "rank": 256,
     "player": "D. Organ",
     "section": "Mens",
     "points": 1,
@@ -9696,7 +9731,7 @@
     ]
   },
   {
-    "rank": 256,
+    "rank": 257,
     "player": "D. Roberts",
     "section": "Mens",
     "points": 1,
@@ -9713,7 +9748,7 @@
     ]
   },
   {
-    "rank": 257,
+    "rank": 258,
     "player": "D. Tarbet",
     "section": "Mens",
     "points": 1,
@@ -9730,7 +9765,7 @@
     ]
   },
   {
-    "rank": 258,
+    "rank": 259,
     "player": "D. Tarbutt",
     "section": "Mens",
     "points": 1,
@@ -9747,7 +9782,7 @@
     ]
   },
   {
-    "rank": 259,
+    "rank": 260,
     "player": "D. Toone",
     "section": "Mens",
     "points": 1,
@@ -9764,7 +9799,7 @@
     ]
   },
   {
-    "rank": 260,
+    "rank": 261,
     "player": "D. Turner",
     "section": "Mens",
     "points": 1,
@@ -9781,7 +9816,7 @@
     ]
   },
   {
-    "rank": 261,
+    "rank": 262,
     "player": "D. Welch",
     "section": "Mens",
     "points": 1,
@@ -9798,7 +9833,7 @@
     ]
   },
   {
-    "rank": 262,
+    "rank": 263,
     "player": "D.J. Jeavons",
     "section": "Mens",
     "points": 1,
@@ -9815,7 +9850,7 @@
     ]
   },
   {
-    "rank": 263,
+    "rank": 264,
     "player": "E. Davies",
     "section": "Mens",
     "points": 1,
@@ -9832,7 +9867,7 @@
     ]
   },
   {
-    "rank": 264,
+    "rank": 265,
     "player": "E. N. Floyd",
     "section": "Mens",
     "points": 1,
@@ -9849,7 +9884,7 @@
     ]
   },
   {
-    "rank": 265,
+    "rank": 266,
     "player": "F. J. Dalloway",
     "section": "Mens",
     "points": 1,
@@ -9866,7 +9901,7 @@
     ]
   },
   {
-    "rank": 266,
+    "rank": 267,
     "player": "G. Freeman",
     "section": "Mens",
     "points": 1,
@@ -9883,7 +9918,7 @@
     ]
   },
   {
-    "rank": 267,
+    "rank": 268,
     "player": "G. Guest",
     "section": "Mens",
     "points": 1,
@@ -9900,7 +9935,7 @@
     ]
   },
   {
-    "rank": 268,
+    "rank": 269,
     "player": "G. Hughes",
     "section": "Mens",
     "points": 1,
@@ -9917,7 +9952,7 @@
     ]
   },
   {
-    "rank": 269,
+    "rank": 270,
     "player": "G. J. Smith",
     "section": "Mens",
     "points": 1,
@@ -9934,7 +9969,7 @@
     ]
   },
   {
-    "rank": 270,
+    "rank": 271,
     "player": "G. Marlow",
     "section": "Mens",
     "points": 1,
@@ -9951,7 +9986,7 @@
     ]
   },
   {
-    "rank": 271,
+    "rank": 272,
     "player": "G. Simpson",
     "section": "Mens",
     "points": 1,
@@ -9968,7 +10003,7 @@
     ]
   },
   {
-    "rank": 272,
+    "rank": 273,
     "player": "Gavin Higgs",
     "section": "Mens",
     "points": 1,
@@ -9985,7 +10020,7 @@
     ]
   },
   {
-    "rank": 273,
+    "rank": 274,
     "player": "H. D. Whitehouse",
     "section": "Mens",
     "points": 1,
@@ -10002,7 +10037,7 @@
     ]
   },
   {
-    "rank": 274,
+    "rank": 275,
     "player": "H. G. Groves",
     "section": "Mens",
     "points": 1,
@@ -10019,7 +10054,7 @@
     ]
   },
   {
-    "rank": 275,
+    "rank": 276,
     "player": "H. Loughton",
     "section": "Mens",
     "points": 1,
@@ -10036,7 +10071,7 @@
     ]
   },
   {
-    "rank": 276,
+    "rank": 277,
     "player": "I. Darlaston",
     "section": "Mens",
     "points": 1,
@@ -10053,7 +10088,7 @@
     ]
   },
   {
-    "rank": 277,
+    "rank": 278,
     "player": "I. Hillman",
     "section": "Mens",
     "points": 1,
@@ -10070,7 +10105,7 @@
     ]
   },
   {
-    "rank": 278,
+    "rank": 279,
     "player": "I. L. Jones",
     "section": "Mens",
     "points": 1,
@@ -10087,7 +10122,7 @@
     ]
   },
   {
-    "rank": 279,
+    "rank": 280,
     "player": "J. Collins",
     "section": "Mens",
     "points": 1,
@@ -10104,7 +10139,7 @@
     ]
   },
   {
-    "rank": 280,
+    "rank": 281,
     "player": "J. F. R. Hyde",
     "section": "Mens",
     "points": 1,
@@ -10121,7 +10156,7 @@
     ]
   },
   {
-    "rank": 281,
+    "rank": 282,
     "player": "J. Farkas",
     "section": "Mens",
     "points": 1,
@@ -10138,7 +10173,7 @@
     ]
   },
   {
-    "rank": 282,
+    "rank": 283,
     "player": "J. Insull",
     "section": "Mens",
     "points": 1,
@@ -10155,7 +10190,7 @@
     ]
   },
   {
-    "rank": 283,
+    "rank": 284,
     "player": "J. Nugent",
     "section": "Mens",
     "points": 1,
@@ -10172,7 +10207,7 @@
     ]
   },
   {
-    "rank": 284,
+    "rank": 285,
     "player": "J. Peakes",
     "section": "Mens",
     "points": 1,
@@ -10189,7 +10224,7 @@
     ]
   },
   {
-    "rank": 285,
+    "rank": 286,
     "player": "J. Spencer",
     "section": "Mens",
     "points": 1,
@@ -10206,7 +10241,7 @@
     ]
   },
   {
-    "rank": 286,
+    "rank": 287,
     "player": "J.C. Darby",
     "section": "Mens",
     "points": 1,
@@ -10223,7 +10258,7 @@
     ]
   },
   {
-    "rank": 287,
+    "rank": 288,
     "player": "J.R. Parkin",
     "section": "Mens",
     "points": 1,
@@ -10240,7 +10275,7 @@
     ]
   },
   {
-    "rank": 288,
+    "rank": 289,
     "player": "Jonathan Wood",
     "section": "Mens",
     "points": 1,
@@ -10257,7 +10292,7 @@
     ]
   },
   {
-    "rank": 289,
+    "rank": 290,
     "player": "K. Cotterill",
     "section": "Mens",
     "points": 1,
@@ -10274,7 +10309,7 @@
     ]
   },
   {
-    "rank": 290,
+    "rank": 291,
     "player": "K. Groves",
     "section": "Mens",
     "points": 1,
@@ -10291,7 +10326,7 @@
     ]
   },
   {
-    "rank": 291,
+    "rank": 292,
     "player": "K. Roberts",
     "section": "Mens",
     "points": 1,
@@ -10308,7 +10343,7 @@
     ]
   },
   {
-    "rank": 292,
+    "rank": 293,
     "player": "K.c. Clarke",
     "section": "Mens",
     "points": 1,
@@ -10325,7 +10360,7 @@
     ]
   },
   {
-    "rank": 293,
+    "rank": 294,
     "player": "Karl Matthew Ashmore",
     "section": "Mens",
     "points": 1,
@@ -10342,7 +10377,7 @@
     ]
   },
   {
-    "rank": 294,
+    "rank": 295,
     "player": "Keith Ratcliffe",
     "section": "Seniors",
     "points": 1,
@@ -10360,7 +10395,7 @@
     ]
   },
   {
-    "rank": 295,
+    "rank": 296,
     "player": "Kevin Eric Conn",
     "section": "Mens",
     "points": 1,
@@ -10377,7 +10412,7 @@
     ]
   },
   {
-    "rank": 296,
+    "rank": 297,
     "player": "L. Knott",
     "section": "Mens",
     "points": 1,
@@ -10394,7 +10429,7 @@
     ]
   },
   {
-    "rank": 297,
+    "rank": 298,
     "player": "Luke Homer",
     "section": "Mens",
     "points": 1,
@@ -10411,7 +10446,7 @@
     ]
   },
   {
-    "rank": 298,
+    "rank": 299,
     "player": "M. A. Holloway",
     "section": "Mens",
     "points": 1,
@@ -10428,7 +10463,7 @@
     ]
   },
   {
-    "rank": 299,
+    "rank": 300,
     "player": "M. Baker",
     "section": "Mens",
     "points": 1,
@@ -10445,7 +10480,7 @@
     ]
   },
   {
-    "rank": 300,
+    "rank": 301,
     "player": "M. Bowden",
     "section": "Mens",
     "points": 1,
@@ -10462,7 +10497,7 @@
     ]
   },
   {
-    "rank": 301,
+    "rank": 302,
     "player": "M. Buchanan",
     "section": "Mens",
     "points": 1,
@@ -10479,7 +10514,7 @@
     ]
   },
   {
-    "rank": 302,
+    "rank": 303,
     "player": "M. Butler",
     "section": "Mens",
     "points": 1,
@@ -10496,7 +10531,7 @@
     ]
   },
   {
-    "rank": 303,
+    "rank": 304,
     "player": "M. Duckett",
     "section": "Mens",
     "points": 1,
@@ -10513,7 +10548,7 @@
     ]
   },
   {
-    "rank": 304,
+    "rank": 305,
     "player": "M. Foster",
     "section": "Mens",
     "points": 1,
@@ -10530,7 +10565,7 @@
     ]
   },
   {
-    "rank": 305,
+    "rank": 306,
     "player": "M. Garratt",
     "section": "Mens",
     "points": 1,
@@ -10547,7 +10582,7 @@
     ]
   },
   {
-    "rank": 306,
+    "rank": 307,
     "player": "M. Hingley",
     "section": "Mens",
     "points": 1,
@@ -10564,7 +10599,7 @@
     ]
   },
   {
-    "rank": 307,
+    "rank": 308,
     "player": "M. Holloway",
     "section": "Mens",
     "points": 1,
@@ -10581,7 +10616,7 @@
     ]
   },
   {
-    "rank": 308,
+    "rank": 309,
     "player": "M. Howard",
     "section": "Mens",
     "points": 1,
@@ -10598,7 +10633,7 @@
     ]
   },
   {
-    "rank": 309,
+    "rank": 310,
     "player": "M. Richardson",
     "section": "Mens",
     "points": 1,
@@ -10615,7 +10650,7 @@
     ]
   },
   {
-    "rank": 310,
+    "rank": 311,
     "player": "M. Rutter",
     "section": "Mens",
     "points": 1,
@@ -10632,7 +10667,7 @@
     ]
   },
   {
-    "rank": 311,
+    "rank": 312,
     "player": "Mark Hayward",
     "section": "Mens",
     "points": 1,
@@ -10649,7 +10684,7 @@
     ]
   },
   {
-    "rank": 312,
+    "rank": 313,
     "player": "Michael Williams",
     "section": "Mens",
     "points": 1,
@@ -10667,7 +10702,7 @@
     ]
   },
   {
-    "rank": 313,
+    "rank": 314,
     "player": "N. Davies",
     "section": "Mens",
     "points": 1,
@@ -10684,7 +10719,7 @@
     ]
   },
   {
-    "rank": 314,
+    "rank": 315,
     "player": "P. Cumberbatch",
     "section": "Mens",
     "points": 1,
@@ -10701,7 +10736,7 @@
     ]
   },
   {
-    "rank": 315,
+    "rank": 316,
     "player": "P. Hammond",
     "section": "Mens",
     "points": 1,
@@ -10718,7 +10753,7 @@
     ]
   },
   {
-    "rank": 316,
+    "rank": 317,
     "player": "P. J. Bradburn",
     "section": "Mens",
     "points": 1,
@@ -10735,7 +10770,7 @@
     ]
   },
   {
-    "rank": 317,
+    "rank": 318,
     "player": "P. Longville",
     "section": "Mens",
     "points": 1,
@@ -10752,7 +10787,7 @@
     ]
   },
   {
-    "rank": 318,
+    "rank": 319,
     "player": "P. O'Reilly",
     "section": "Mens",
     "points": 1,
@@ -10769,7 +10804,7 @@
     ]
   },
   {
-    "rank": 319,
+    "rank": 320,
     "player": "R. Corey",
     "section": "Mens",
     "points": 1,
@@ -10786,7 +10821,7 @@
     ]
   },
   {
-    "rank": 320,
+    "rank": 321,
     "player": "R. Cresswell",
     "section": "Mens",
     "points": 1,
@@ -10803,7 +10838,7 @@
     ]
   },
   {
-    "rank": 321,
+    "rank": 322,
     "player": "R. Green",
     "section": "Mens",
     "points": 1,
@@ -10820,7 +10855,7 @@
     ]
   },
   {
-    "rank": 322,
+    "rank": 323,
     "player": "R. Hunt",
     "section": "Mens",
     "points": 1,
@@ -10837,7 +10872,7 @@
     ]
   },
   {
-    "rank": 323,
+    "rank": 324,
     "player": "R. J. Hadley",
     "section": "Mens",
     "points": 1,
@@ -10854,7 +10889,7 @@
     ]
   },
   {
-    "rank": 324,
+    "rank": 325,
     "player": "R. Jackson",
     "section": "Mens",
     "points": 1,
@@ -10871,7 +10906,7 @@
     ]
   },
   {
-    "rank": 325,
+    "rank": 326,
     "player": "R. Knight",
     "section": "Mens",
     "points": 1,
@@ -10888,7 +10923,7 @@
     ]
   },
   {
-    "rank": 326,
+    "rank": 327,
     "player": "R. Matthews",
     "section": "Mens",
     "points": 1,
@@ -10905,7 +10940,7 @@
     ]
   },
   {
-    "rank": 327,
+    "rank": 328,
     "player": "R. Morgan",
     "section": "Mens",
     "points": 1,
@@ -10922,7 +10957,7 @@
     ]
   },
   {
-    "rank": 328,
+    "rank": 329,
     "player": "R. S. Birch",
     "section": "Mens",
     "points": 1,
@@ -10939,7 +10974,7 @@
     ]
   },
   {
-    "rank": 329,
+    "rank": 330,
     "player": "R. S. Hill",
     "section": "Mens",
     "points": 1,
@@ -10956,7 +10991,7 @@
     ]
   },
   {
-    "rank": 330,
+    "rank": 331,
     "player": "R. Shaw",
     "section": "Mens",
     "points": 1,
@@ -10973,7 +11008,7 @@
     ]
   },
   {
-    "rank": 331,
+    "rank": 332,
     "player": "R. Stew",
     "section": "Mens",
     "points": 1,
@@ -10990,7 +11025,7 @@
     ]
   },
   {
-    "rank": 332,
+    "rank": 333,
     "player": "R. Such",
     "section": "Mens",
     "points": 1,
@@ -11007,7 +11042,7 @@
     ]
   },
   {
-    "rank": 333,
+    "rank": 334,
     "player": "R.G. Yardley",
     "section": "Mens",
     "points": 1,
@@ -11024,7 +11059,7 @@
     ]
   },
   {
-    "rank": 334,
+    "rank": 335,
     "player": "Robert Marsden",
     "section": "Mens",
     "points": 1,
@@ -11034,23 +11069,6 @@
         "year": 2005,
         "competition": "Walker Cup",
         "competitionId": "walker-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 335,
-    "player": "Ryan Walker",
-    "section": "Mens",
-    "points": 1,
-    "wins": 1,
-    "results": [
-      {
-        "year": 2013,
-        "competition": "Hooper Cup",
-        "competitionId": "hooper-cup",
         "points": 1,
         "tieBreakPoints": 0,
         "reason": "Singles board/major win"
