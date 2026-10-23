@@ -11,15 +11,15 @@
     "ladies",
     "general-competitions"
   ],
-  "totalUniqueCompetitions": 150,
-  "totalCategoryMemberships": 187,
+  "totalUniqueCompetitions": 152,
+  "totalCategoryMemberships": 189,
   "categories": [
     {
       "id": "board-competitions",
       "title": "Board Competitions",
       "description": "Club championships, trophies and honours-board competitions.",
       "icon": "🏆",
-      "competitionCount": 35,
+      "competitionCount": 36,
       "competitions": [
         {
           "id": "125-trophy-pairs-stableford-betterball",
@@ -308,6 +308,19 @@
           "searchText": "millennium trophy mens team team historical honour board board competition"
         },
         {
+          "id": "presidents-putter",
+          "name": "President's Putter",
+          "section": "Mens",
+          "format": "Individual",
+          "yearsPlayed": 6,
+          "firstYear": 2021,
+          "latestYear": 2026,
+          "countText": "6 years",
+          "rangeText": "2021–2026",
+          "profileUrl": "competition-profile.html?id=presidents-putter",
+          "searchText": "presidents putter mens individual individual historical honour board board competition"
+        },
+        {
           "id": "probus-pairs-stableford-betterball",
           "name": "Probus Pairs Stableford Betterball",
           "section": "Mens",
@@ -442,10 +455,10 @@
           "name": "Winter Greensomes",
           "section": "Mens",
           "format": "Pairs",
-          "yearsPlayed": 17,
+          "yearsPlayed": 20,
           "firstYear": 1995,
           "latestYear": 2025,
-          "countText": "17 years",
+          "countText": "20 years",
           "rangeText": "1995–2025",
           "profileUrl": "competition-profile.html?id=winter-greensomes",
           "searchText": "winter greensomes mens pairs pairs historical honour board board competition"
@@ -455,11 +468,11 @@
           "name": "Writtle Grove & Winter Greensomes Qualifier",
           "section": "Mens",
           "format": "Pairs",
-          "yearsPlayed": 5,
+          "yearsPlayed": 6,
           "firstYear": 2020,
-          "latestYear": 2025,
-          "countText": "5 years",
-          "rangeText": "2020–2025",
+          "latestYear": 2026,
+          "countText": "6 years",
+          "rangeText": "2020–2026",
           "profileUrl": "competition-profile.html?id=writtle-grove-and-winter-greensomes-qualifier",
           "searchText": "writtle grove and winter greensomes qualifier mens pairs pairs historical honour board historic trophy"
         },
@@ -1821,10 +1834,10 @@
           "name": "Winter Greensomes",
           "section": "Mens",
           "format": "Pairs",
-          "yearsPlayed": 17,
+          "yearsPlayed": 20,
           "firstYear": 1995,
           "latestYear": 2025,
-          "countText": "17 years",
+          "countText": "20 years",
           "rangeText": "1995–2025",
           "profileUrl": "competition-profile.html?id=winter-greensomes",
           "searchText": "winter greensomes mens pairs pairs historical honour board board competition"
@@ -1847,11 +1860,11 @@
           "name": "Writtle Grove & Winter Greensomes Qualifier",
           "section": "Mens",
           "format": "Pairs",
-          "yearsPlayed": 5,
+          "yearsPlayed": 6,
           "firstYear": 2020,
-          "latestYear": 2025,
-          "countText": "5 years",
-          "rangeText": "2020–2025",
+          "latestYear": 2026,
+          "countText": "6 years",
+          "rangeText": "2020–2026",
           "profileUrl": "competition-profile.html?id=writtle-grove-and-winter-greensomes-qualifier",
           "searchText": "writtle grove and winter greensomes qualifier mens pairs pairs historical honour board historic trophy"
         },
@@ -1888,7 +1901,7 @@
       "title": "Stablefords",
       "description": "Individual and team Stableford competitions.",
       "icon": "⚑",
-      "competitionCount": 32,
+      "competitionCount": 33,
       "competitions": [
         {
           "id": "125-trophy-pairs-stableford-betterball",
@@ -2190,15 +2203,28 @@
           "searchText": "november sunday stableford mens individual individual competition profile stableford general"
         },
         {
+          "id": "october-sunday-stableford",
+          "name": "October Sunday Stableford",
+          "section": "Mens",
+          "format": "Individual",
+          "yearsPlayed": 1,
+          "firstYear": 2026,
+          "latestYear": 2026,
+          "countText": "1 year",
+          "rangeText": "2026",
+          "profileUrl": "competition-profile.html?id=october-sunday-stableford",
+          "searchText": "october sunday stableford mens individual individual competition profile standard general"
+        },
+        {
           "id": "october-sunday-stableford-competition",
           "name": "October Sunday Stableford Competition",
           "section": "Mens",
           "format": "Individual",
-          "yearsPlayed": 2,
+          "yearsPlayed": 3,
           "firstYear": 2023,
-          "latestYear": 2025,
-          "countText": "2 years",
-          "rangeText": "2023–2025",
+          "latestYear": 2026,
+          "countText": "3 years",
+          "rangeText": "2023–2026",
           "profileUrl": "competition-profile.html?id=october-sunday-stableford-competition",
           "searchText": "october sunday stableford competition mens individual individual competition profile stableford general"
         },
