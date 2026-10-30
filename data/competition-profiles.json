@@ -6776,25 +6776,37 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
+    "yearsPlayed": 2,
     "firstYear": 2024,
-    "latestYear": 2024,
-    "latestDetailedYear": 2024,
-    "totalEntries": 57,
-    "averageEntries": 57,
-    "uniqueWinners": 1,
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 117,
+    "averageEntries": 58.5,
+    "uniqueWinners": 2,
     "mostSuccessfulPlayer": "Peter Evans",
     "mostWins": 1,
     "currentWinners": [
-      "Peter Evans"
+      "Steven Brookes"
     ],
     "winnerLeaders": [
       {
         "player": "Peter Evans",
         "wins": 1
+      },
+      {
+        "player": "Steven Brookes",
+        "wins": 1
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Steven Brookes",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 38,
+        "relativeToPar": null
+      },
       {
         "year": 2024,
         "winner": "Peter Evans",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-10-23T22:36:36.442Z",
+  "generatedAt": "2026-10-30T22:42:15.310Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -17,7 +17,7 @@
     "evidenceRequired": true
   },
   "totals": {
-    "canonicalPlayers": 763,
+    "canonicalPlayers": 764,
     "playersWithAnalytics": 306,
     "eligibleEvents": 217,
     "eligibleRows": 8867,
@@ -29,7 +29,7 @@
     "excludedUnknownPlayers": 0,
     "excludedExternalParticipants": 14,
     "excludedMultiPlayerRows": 0,
-    "excludedUnknownHoleLength": 5
+    "excludedUnknownHoleLength": 6
   },
   "audit": {
     "unknownPlayers": [],
@@ -691,6 +691,15 @@
           }
         }
       }
+    },
+    {
+      "name": "Aaron Lloyd",
+      "status": "Active",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
     },
     {
       "name": "Ada Clift",
