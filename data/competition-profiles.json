@@ -7547,22 +7547,30 @@
     "winnerOnly": false,
     "countsForOrderOfMerit": true,
     "profileType": "Competition Profile",
-    "yearsPlayed": 1,
+    "yearsPlayed": 2,
     "firstYear": 2025,
-    "latestYear": 2025,
-    "latestDetailedYear": 2025,
-    "totalEntries": 48,
-    "averageEntries": 48,
-    "uniqueWinners": 2,
-    "mostSuccessfulPlayer": "Richard Price",
+    "latestYear": 2026,
+    "latestDetailedYear": 2026,
+    "totalEntries": 100,
+    "averageEntries": 50,
+    "uniqueWinners": 4,
+    "mostSuccessfulPlayer": "Chay Cohen",
     "mostWins": 1,
     "currentWinners": [
-      "Richard Price",
-      "Scott Postin"
+      "Chay Cohen",
+      "Richard Weston"
     ],
     "winnerLeaders": [
       {
+        "player": "Chay Cohen",
+        "wins": 1
+      },
+      {
         "player": "Richard Price",
+        "wins": 1
+      },
+      {
+        "player": "Richard Weston",
         "wins": 1
       },
       {
@@ -7571,6 +7579,22 @@
       }
     ],
     "winnerHistory": [
+      {
+        "year": 2026,
+        "winner": "Chay Cohen",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 46,
+        "relativeToPar": null
+      },
+      {
+        "year": 2026,
+        "winner": "Richard Weston",
+        "source": "Competition Result",
+        "verified": false,
+        "score": 46,
+        "relativeToPar": null
+      },
       {
         "year": 2025,
         "winner": "Richard Price",
