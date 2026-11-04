@@ -151,6 +151,62 @@
                     const data =
                         await response.json();
 
+                    // Sanity supplies current office-holders.
+                    // Certified JSON remains the fallback.
+                    try {
+                        const query = `*[_type == "captainsPage"][0]{
+                            clubCaptainName,
+                            clubCaptainMessage,
+                            "clubPhoto": clubCaptainImage.asset->url,
+                            seniorsCaptainName,
+                            seniorsCaptainMessage,
+                            "seniorsPhoto": seniorsCaptainImage.asset->url
+                        }`;
+
+                        const url =
+                            "https://c54r3a5t.api.sanity.io/v2024-03-01/data/query/production?query=" +
+                            encodeURIComponent(query);
+
+                        const sanityResponse = await fetch(url, {
+                            cache: "no-store"
+                        });
+
+                        if (!sanityResponse.ok) {
+                            throw new Error("Sanity request failed");
+                        }
+
+                        const sanity = (await sanityResponse.json()).result;
+
+                        if (!sanity) {
+                            throw new Error("Sanity Captains record missing");
+                        }
+
+                        if (sanity.clubCaptainName) {
+                            data.current.clubCaptain.name = sanity.clubCaptainName;
+                        }
+                        if (sanity.clubCaptainMessage) {
+                            data.current.clubCaptain.description = sanity.clubCaptainMessage;
+                        }
+                        if (sanity.clubPhoto) {
+                            data.current.clubCaptain.portrait = sanity.clubPhoto;
+                        }
+
+                        if (sanity.seniorsCaptainName) {
+                            data.current.seniorsCaptain.name = sanity.seniorsCaptainName;
+                        }
+                        if (sanity.seniorsCaptainMessage) {
+                            data.current.seniorsCaptain.description = sanity.seniorsCaptainMessage;
+                        }
+                        if (sanity.seniorsPhoto) {
+                            data.current.seniorsCaptain.portrait = sanity.seniorsPhoto;
+                        }
+                    } catch (sanityError) {
+                        console.warn(
+                            "Using certified Captains fallback:",
+                            sanityError
+                        );
+                    }
+
                     if (
                         data.certificationStatus !==
                         "CERTIFIED"
