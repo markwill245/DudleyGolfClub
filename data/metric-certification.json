@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-02T16:30:05.768Z",
+  "generatedAt": "2026-11-07T14:33:04.037Z",
   "purpose": "Certify every published Museum metric before calculation.",
   "overallStatus": "In Progress",
   "authority": [
@@ -13,8 +13,8 @@
   ],
   "summary": {
     "metrics": 6,
-    "ready": 5,
-    "blocked": 1,
+    "ready": 3,
+    "blocked": 3,
     "pending": 0
   },
   "metrics": [
@@ -50,11 +50,11 @@
         "modernAwardWins": 30,
         "modernOverallWins": 304,
         "historicalBoardsChecked": 36,
-        "historicalBoardYearsChecked": 844,
-        "historicalBoardWins": 844,
-        "rawWinnerOccurrences": 1607,
-        "certifiedPlayerWins": 1490,
-        "uniqueWinningPlayers": 524,
+        "historicalBoardYearsChecked": 856,
+        "historicalBoardWins": 856,
+        "rawWinnerOccurrences": 1619,
+        "certifiedPlayerWins": 1502,
+        "uniqueWinningPlayers": 525,
         "duplicatePlayerEventOccurrences": 117,
         "externalParticipantOccurrences": 0,
         "unresolvedPlayerOccurrences": 0,
@@ -148,7 +148,15 @@
           "wins": 11
         },
         {
+          "playerName": "Peter Evans",
+          "wins": 11
+        },
+        {
           "playerName": "Robert Keith Woodall",
+          "wins": 11
+        },
+        {
+          "playerName": "Scott Postin",
           "wins": 11
         },
         {
@@ -169,14 +177,6 @@
         },
         {
           "playerName": "Paul Welch",
-          "wins": 10
-        },
-        {
-          "playerName": "Peter Evans",
-          "wins": 10
-        },
-        {
-          "playerName": "Scott Postin",
           "wins": 10
         },
         {
@@ -232,6 +232,10 @@
           "wins": 8
         },
         {
+          "playerName": "Paul Ingram",
+          "wins": 8
+        },
+        {
           "playerName": "Phil Priest",
           "wins": 8
         },
@@ -257,10 +261,6 @@
         },
         {
           "playerName": "Lewis Jones",
-          "wins": 7
-        },
-        {
-          "playerName": "Paul Ingram",
           "wins": 7
         },
         {
@@ -301,6 +301,10 @@
         },
         {
           "playerName": "J. Parkes",
+          "wins": 6
+        },
+        {
+          "playerName": "James Webber",
           "wins": 6
         },
         {
@@ -348,11 +352,19 @@
           "wins": 6
         },
         {
+          "playerName": "A. G. M. Shaw",
+          "wins": 5
+        },
+        {
           "playerName": "David Hobley",
           "wins": 5
         },
         {
           "playerName": "G.F. Clarke",
+          "wins": 5
+        },
+        {
+          "playerName": "Geoffrey Alan Ford",
           "wins": 5
         },
         {
@@ -402,10 +414,6 @@
         {
           "playerName": "R. Prophet",
           "wins": 5
-        },
-        {
-          "playerName": "A. G. M. Shaw",
-          "wins": 4
         },
         {
           "playerName": "A. P. Jackson",
@@ -460,19 +468,11 @@
           "wins": 4
         },
         {
-          "playerName": "Geoffrey Alan Ford",
-          "wins": 4
-        },
-        {
           "playerName": "Graham Morgan",
           "wins": 4
         },
         {
           "playerName": "J. Joyce",
-          "wins": 4
-        },
-        {
-          "playerName": "James Webber",
           "wins": 4
         },
         {
@@ -792,6 +792,10 @@
           "wins": 3
         },
         {
+          "playerName": "Steve Aston",
+          "wins": 3
+        },
+        {
           "playerName": "Steven Taylor",
           "wins": 3
         },
@@ -992,6 +996,10 @@
           "wins": 2
         },
         {
+          "playerName": "Karl Matthew Ashmore",
+          "wins": 2
+        },
+        {
           "playerName": "Keith B. Stubbs",
           "wins": 2
         },
@@ -1036,6 +1044,10 @@
           "wins": 2
         },
         {
+          "playerName": "P. Devey",
+          "wins": 2
+        },
+        {
           "playerName": "P. Green",
           "wins": 2
         },
@@ -1057,6 +1069,10 @@
         },
         {
           "playerName": "R. Brown",
+          "wins": 2
+        },
+        {
+          "playerName": "R. Crew",
           "wins": 2
         },
         {
@@ -1105,10 +1121,6 @@
         },
         {
           "playerName": "Stephen Dennis Gilbert",
-          "wins": 2
-        },
-        {
-          "playerName": "Steve Aston",
           "wins": 2
         },
         {
@@ -1205,6 +1217,10 @@
         },
         {
           "playerName": "Adam Chester",
+          "wins": 1
+        },
+        {
+          "playerName": "Alan Paul Griffiths",
           "wins": 1
         },
         {
@@ -1656,10 +1672,6 @@
           "wins": 1
         },
         {
-          "playerName": "Karl Matthew Ashmore",
-          "wins": 1
-        },
-        {
           "playerName": "Keith Taylor",
           "wins": 1
         },
@@ -1852,10 +1864,6 @@
           "wins": 1
         },
         {
-          "playerName": "P. Devey",
-          "wins": 1
-        },
-        {
           "playerName": "P. Hammond",
           "wins": 1
         },
@@ -1901,10 +1909,6 @@
         },
         {
           "playerName": "R. Cresswell",
-          "wins": 1
-        },
-        {
-          "playerName": "R. Crew",
           "wins": 1
         },
         {
@@ -6562,6 +6566,15 @@
           "sourceLabel": "Club Championship Challenge Shield"
         },
         {
+          "playerName": "P. Hodgetts",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2002,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "J. Wickstead",
           "competitionId": "coronation-cup",
           "awardId": "boardWinner",
@@ -6893,15 +6906,6 @@
           "date": null,
           "sourceType": "board",
           "sourceLabel": "Club Championship Challenge Shield"
-        },
-        {
-          "playerName": "P. Hodgetts",
-          "competitionId": "claughton-cup",
-          "awardId": "boardWinner",
-          "year": 2003,
-          "date": null,
-          "sourceType": "board",
-          "sourceLabel": "Claughton Cup"
         },
         {
           "playerName": "G. Prophet",
@@ -8110,6 +8114,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "R. Crew",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2007,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "S. Howard",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -8317,6 +8330,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "P. Devey",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2008,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "P. Prosser",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -8506,6 +8528,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "A. G. M. Shaw",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2009,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "W. Jones",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -8693,6 +8724,15 @@
           "date": null,
           "sourceType": "board",
           "sourceLabel": "Centenary Trophy"
+        },
+        {
+          "playerName": "Peter Evans",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2010,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
         },
         {
           "playerName": "Jason Sean Higley",
@@ -8902,6 +8942,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "Alan Paul Griffiths",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2011,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "A. Dimmock",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -9107,6 +9156,15 @@
           "date": null,
           "sourceType": "board",
           "sourceLabel": "Centenary Trophy"
+        },
+        {
+          "playerName": "Geoffrey Alan Ford",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2012,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
         },
         {
           "playerName": "Karl Matthew Ashmore",
@@ -9334,6 +9392,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "Steve Aston",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2013,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "A. K. Powis",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -9559,6 +9626,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "Paul Ingram",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2014,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "Gerald Paul Crowley",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -9764,6 +9840,15 @@
           "date": null,
           "sourceType": "board",
           "sourceLabel": "Centenary Trophy"
+        },
+        {
+          "playerName": "James Webber",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2015,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
         },
         {
           "playerName": "Roger John Smith",
@@ -9991,6 +10076,15 @@
           "sourceLabel": "Centenary Trophy"
         },
         {
+          "playerName": "Karl Matthew Ashmore",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2016,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
+        },
+        {
           "playerName": "Adam Farley",
           "competitionId": "cunningham-cup",
           "awardId": "boardWinner",
@@ -10196,6 +10290,15 @@
           "date": null,
           "sourceType": "board",
           "sourceLabel": "Centenary Trophy"
+        },
+        {
+          "playerName": "James Webber",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2017,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
         },
         {
           "playerName": "A. Culshaw",
@@ -10421,6 +10524,15 @@
           "date": null,
           "sourceType": "board",
           "sourceLabel": "Centenary Trophy"
+        },
+        {
+          "playerName": "Scott Postin",
+          "competitionId": "claughton-cup",
+          "awardId": "boardWinner",
+          "year": 2018,
+          "date": null,
+          "sourceType": "board",
+          "sourceLabel": "Claughton Cup"
         },
         {
           "playerName": "Jason Sean Higley",
@@ -16845,7 +16957,7 @@
       "metricId": "top-3",
       "displayName": "Top 3 Finishes",
       "category": "Career placings",
-      "status": "Ready",
+      "status": "Blocked",
       "sourceAuthority": [
         "competition-results.json",
         "competition-catalog.json",
@@ -16872,18 +16984,20 @@
         "numericPositionRows": 14045,
         "qualifyingRows": 1479,
         "rawPlayerOccurrences": 2013,
-        "certifiedPlayerFinishes": 1995,
+        "certifiedPlayerFinishes": 1994,
         "duplicatePlayerEventOccurrences": 18,
         "disqualifiedRows": 123,
         "otherNonFinishingRows": 0,
         "externalParticipantOccurrences": 0,
-        "unresolvedPlayerOccurrences": 0,
+        "unresolvedPlayerOccurrences": 1,
         "missingPlayerRows": 0
       },
       "nonFinishingStatusCounts": {
         "DQ": 123
       },
-      "blockers": [],
+      "blockers": [
+        "1 qualifying player occurrences could not be matched to players.json."
+      ],
       "leaderboard": [
         {
           "playerName": "Philip John Northall",
@@ -17790,10 +17904,6 @@
           "finishes": 2
         },
         {
-          "playerName": "M. O'Leary",
-          "finishes": 2
-        },
-        {
           "playerName": "M. Sennett",
           "finishes": 2
         },
@@ -18218,6 +18328,10 @@
           "finishes": 1
         },
         {
+          "playerName": "M. O'Leary",
+          "finishes": 1
+        },
+        {
           "playerName": "M. R. Jones",
           "finishes": 1
         },
@@ -18426,7 +18540,13 @@
           "finishes": 1
         }
       ],
-      "unresolvedPlayers": [],
+      "unresolvedPlayers": [
+        {
+          "suppliedName": "M. O’Leary",
+          "resolvedName": "M. O’Leary",
+          "occurrences": 1
+        }
+      ],
       "externalParticipants": [],
       "includedCompetitions": [
         "125-trophy-pairs-stableford-betterball",
@@ -18582,7 +18702,7 @@
       "metricId": "top-10",
       "displayName": "Top 10 Finishes",
       "category": "Career placings",
-      "status": "Ready",
+      "status": "Blocked",
       "sourceAuthority": [
         "competition-results.json",
         "competition-catalog.json",
@@ -18609,18 +18729,20 @@
         "numericPositionRows": 14045,
         "qualifyingRows": 4300,
         "rawPlayerOccurrences": 6008,
-        "certifiedPlayerFinishes": 5924,
+        "certifiedPlayerFinishes": 5923,
         "duplicatePlayerEventOccurrences": 83,
         "disqualifiedRows": 123,
         "otherNonFinishingRows": 0,
         "externalParticipantOccurrences": 1,
-        "unresolvedPlayerOccurrences": 0,
+        "unresolvedPlayerOccurrences": 1,
         "missingPlayerRows": 0
       },
       "nonFinishingStatusCounts": {
         "DQ": 123
       },
-      "blockers": [],
+      "blockers": [
+        "1 qualifying player occurrences could not be matched to players.json."
+      ],
       "leaderboard": [
         {
           "playerName": "Philip John Northall",
@@ -19743,10 +19865,6 @@
           "finishes": 2
         },
         {
-          "playerName": "M. O'Leary",
-          "finishes": 2
-        },
-        {
           "playerName": "M. Sennett",
           "finishes": 2
         },
@@ -20155,6 +20273,10 @@
           "finishes": 1
         },
         {
+          "playerName": "M. O'Leary",
+          "finishes": 1
+        },
+        {
           "playerName": "M. R. Jones",
           "finishes": 1
         },
@@ -20319,7 +20441,13 @@
           "finishes": 1
         }
       ],
-      "unresolvedPlayers": [],
+      "unresolvedPlayers": [
+        {
+          "suppliedName": "M. O’Leary",
+          "resolvedName": "M. O’Leary",
+          "occurrences": 1
+        }
+      ],
       "externalParticipants": [
         {
           "suppliedName": "Sean Williams",
