@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.4-prototype",
-  "generatedAt": "2026-11-02T16:31:35.275Z",
+  "generatedAt": "2026-11-07T19:29:17.562Z",
   "status": "Prototype - all-player season analytics generated; further certification checks required",
   "methodology": {
     "canonicalPlayers": "players.json",
@@ -17,7 +17,7 @@
     "evidenceRequired": true
   },
   "totals": {
-    "canonicalPlayers": 764,
+    "canonicalPlayers": 765,
     "playersWithAnalytics": 306,
     "eligibleEvents": 217,
     "eligibleRows": 8867,
@@ -29,7 +29,7 @@
     "excludedUnknownPlayers": 0,
     "excludedExternalParticipants": 14,
     "excludedMultiPlayerRows": 0,
-    "excludedUnknownHoleLength": 6
+    "excludedUnknownHoleLength": 7
   },
   "audit": {
     "unknownPlayers": [],
@@ -4803,6 +4803,15 @@
     },
     {
       "name": "Alan Jones",
+      "status": "Historical",
+      "primarySection": "Mens",
+      "playedSections": [
+        "Mens"
+      ],
+      "sections": {}
+    },
+    {
+      "name": "Alan Paul Griffiths",
       "status": "Historical",
       "primarySection": "Mens",
       "playedSections": [

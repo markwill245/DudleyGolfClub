@@ -11,8 +11,8 @@
     "ladies",
     "general-competitions"
   ],
-  "totalUniqueCompetitions": 152,
-  "totalCategoryMemberships": 189,
+  "totalUniqueCompetitions": 153,
+  "totalCategoryMemberships": 190,
   "categories": [
     {
       "id": "board-competitions",
@@ -143,10 +143,10 @@
           "name": "Claughton Cup",
           "section": "Mens",
           "format": "Individual",
-          "yearsPlayed": 44,
+          "yearsPlayed": 56,
           "firstYear": 1968,
           "latestYear": 2026,
-          "countText": "44 years",
+          "countText": "56 years",
           "rangeText": "1968–2026",
           "profileUrl": "competition-profile.html?id=claughton-cup",
           "searchText": "claughton cup mens individual individual historical honour board board competition"
@@ -1901,7 +1901,7 @@
       "title": "Stablefords",
       "description": "Individual and team Stableford competitions.",
       "icon": "⚑",
-      "competitionCount": 33,
+      "competitionCount": 34,
       "competitions": [
         {
           "id": "125-trophy-pairs-stableford-betterball",
@@ -2188,6 +2188,19 @@
           "rangeText": "2022–2026",
           "profileUrl": "competition-profile.html?id=members-non-cup-stableford-competition",
           "searchText": "members non cup stableford competition mens individual individual competition profile stableford general"
+        },
+        {
+          "id": "november-stableford",
+          "name": "November Stableford",
+          "section": "Mens",
+          "format": "Individual",
+          "yearsPlayed": 1,
+          "firstYear": 2026,
+          "latestYear": 2026,
+          "countText": "1 year",
+          "rangeText": "2026",
+          "profileUrl": "competition-profile.html?id=november-stableford",
+          "searchText": "november stableford mens individual individual competition profile standard general"
         },
         {
           "id": "november-sunday-stableford",
