@@ -72,9 +72,22 @@
         data-section="seniors">
         Seniors Order of Merit
       </button>
+
+      <button type="button"
+        class="oom-button bg-white text-[#132419] border border-[#132419]/20 px-6 py-3 uppercase tracking-[0.2em] text-xs font-bold rounded"
+        data-section="best-six">
+        Best 6 Nett &amp; Gross
+      </button>
     </div>
 
     <div id="oom">Loading Order of Merit...</div>
+
+    <section id="best-six-section" hidden
+      style="max-width:1200px;margin:40px auto;padding:24px;background:#F9F7F2;">
+      <h2 style="color:#132419;">Best 6 Nett and Gross Scores</h2>
+      <p>Qualifying medal rounds: 1 April to 31 October each year</p>
+      <div id="best-six-content">Loading Best 6 standings...</div>
+    </section>
   </main>
 
   <script>
@@ -85,7 +98,8 @@
         seniors: ""
       },
       mens: null,
-      seniors: null
+      seniors: null,
+      bestSixAwards: null
     };
 
     function num(value) {
@@ -397,8 +411,72 @@
       `;
     }
 
+
+    function applyBestSixOverlay(players, section, selectedSeason) {
+      if (section !== "mens" || selectedSeason !== "2025-26" ||
+          !state.bestSixAwards) return players;
+
+      for (const award of state.bestSixAwards.awards) {
+        const name = String(award.player || "").trim();
+        const points = Number(award.points);
+
+        if (!name || !Number.isFinite(points) || points <= 0) {
+          throw new Error("Invalid Best Six award");
+        }
+
+        let player = players.find(p => p.player === name);
+
+        if (!player) {
+          player = {
+            rank: 0, player: name, slug: makeSlug(name),
+            points: 0, wins: 0, top3: 0, top5: 0,
+            top10: 0, results: []
+          };
+          players.push(player);
+        }
+
+        player.points += points;
+
+        const title = award.awardType === "nett"
+          ? "Best 6 Nett" : "Best 6 Gross";
+
+        player.results.push({
+          date: null,
+          competition: title,
+          competitionId: "best-six-" + award.awardType,
+          year: "2025-26",
+          position: Number(award.position),
+          points,
+          label: title + " ? total " + award.totalScore
+        });
+      }
+
+      players.sort((a, b) =>
+        b.points - a.points ||
+        b.wins - a.wins ||
+        b.top3 - a.top3 ||
+        a.player.localeCompare(b.player)
+      );
+
+      players.forEach((player, index) => {
+        player.rank = index + 1;
+      });
+
+      return players;
+    }
+
     function render(section) {
+      const bestSix = section === "best-six";
+
+      document.getElementById("oom").hidden = bestSix;
+      document.getElementById("best-six-section").hidden = !bestSix;
+
       state.activeSection = section;
+
+      if (bestSix) {
+        updateButtons();
+        return;
+      }
 
       const sectionData =
         state[section] || {
@@ -428,9 +506,11 @@
        * Display the certified season and leaderboard exactly
        * as supplied. Do not sort, re-rank or recalculate here.
        */
-      const players =
+      let players =
         (season.leaderboard || [])
           .map(normalisePlayer);
+
+      players = applyBestSixOverlay(players, section, selectedSeason);
 
       const leader =
         players[0] || null;
@@ -662,6 +742,44 @@
         state.seniors =
           certifiedData.seniors;
 
+        state.bestSixAwards = null;
+
+        try {
+          const response = await fetch(
+            "data/best-six-season-awards.json",
+            { cache: "no-store" }
+          );
+
+          if (!response.ok) throw new Error("Best Six file unavailable");
+
+          const data = await response.json();
+          const awards = data.awards || [];
+          const nett = awards.filter(a => a.awardType === "nett");
+          const gross = awards.filter(a => a.awardType === "gross");
+
+          const valid =
+            data.status === "CERTIFIED" &&
+            data.oomSeason === "2025-26" &&
+            awards.length === 20 &&
+            nett.length === 10 &&
+            gross.length === 10 &&
+            awards.every(a =>
+              Array.isArray(a.rounds) &&
+              a.rounds.length === 6 &&
+              Number.isFinite(Number(a.points)) &&
+              Number(a.points) > 0
+            ) &&
+            awards.reduce((sum, a) => sum + Number(a.points), 0) === 84;
+
+          if (!valid) throw new Error("Best Six validation failed");
+
+          state.bestSixAwards = data;
+          console.log("CERTIFIED: 20 Best Six awards, 84 points loaded.");
+
+        } catch (error) {
+          console.warn("Best Six unavailable; original OOM retained.", error);
+        }
+
         state.selectedSeason.mens =
           certifiedData.mens.currentSeason;
 
@@ -754,6 +872,8 @@
       updateBackToTop();
     })();
   </script>
+  <script src="best-six-test.js"></script>
+  <script src="best-six-display-test.js"></script>
 </body>
 
 </html>
