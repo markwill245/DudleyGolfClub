@@ -1,185 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- MASTER SEO TEMPLATE -->
-    <title>Social Events | Dudley Golf Club</title>
-
-    <meta name="description" content="View Dudley Golf Club social events, club nights and member activities.">
-    <meta name="keywords" content="Dudley Golf Club social events, club events">
-    <meta name="author" content="Dudley Golf Club">
-
-    <link rel="canonical" href="https://dudleygolfclub.co.uk/social-events">
-    <meta name="theme-color" content="#132419">
-
-    <meta property="og:title" content="Social Events | Dudley Golf Club">
-    <meta property="og:description" content="View Dudley Golf Club social events, club nights and member activities.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dudleygolfclub.co.uk/social-events">
-    <meta property="og:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Social Events | Dudley Golf Club">
-    <meta name="twitter:description" content="View Dudley Golf Club social events, club nights and member activities.">
-    <meta name="twitter:image" content="https://dudleygolfclub.co.uk/images/dudley.webp">
-    <!-- END MASTER SEO TEMPLATE -->
-
-    <link rel="stylesheet" href="dist/output.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap"
-        rel="stylesheet">
-
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club Social Events | Dudley Golf Club</title>
+<meta name="description" content="Discover upcoming social events, prize nights and special occasions at Dudley Golf Club.">
+<meta name="theme-color" content="#132419">
+<link rel="canonical" href="https://dudleygolfclub.co.uk/social-events">
+<link rel="stylesheet" href="dist/output.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400;1,600&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
         :root {
             --gold: #C5A367;
             --forest: #132419;
             --cream: #F9F7F2;
         }
 
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
         body {
             font-family: 'Outfit', sans-serif;
             background-color: var(--forest);
-            background-image:
-                radial-gradient(at 0% 0%, rgba(197, 163, 103, .08) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(197, 163, 103, .05) 0px, transparent 50%),
-                linear-gradient(45deg,
-                    #132419 25%,
-                    #182d20 25%,
-                    #182d20 50%,
-                    #132419 50%,
-                    #132419 75%,
-                    #182d20 75%,
-                    #182d20 100%);
-            background-size: 60px 60px;
-            color: white;
-            padding: 40px 20px;
-            min-height: 100vh;
-            margin: 0;
+            color: #ffffff;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        a[href^="tel"] {
+            color: #C5A367;
+            text-decoration: none;
+        }
+
+        #menu-btn div {
+            display: block !important;
+            width: 24px !important;
+            height: 2px !important;
+            background-color: #C5A367 !important;
+            opacity: 1 !important;
         }
 
         h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        .serif {
             font-family: 'Cormorant Garamond', serif;
-            color: var(--gold);
-            border-bottom: 1px solid var(--gold);
-            padding-bottom: 20px;
         }
 
-        .back-btn {
-            color: var(--gold);
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 20px;
+        /* HEADER NAVIGATION */
+        .nav-blur {
+            background: rgba(19, 36, 25, 0.98);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        .content-box {
-            background: rgba(255, 255, 255, .03);
-            padding: 40px;
-            border: 1px solid rgba(197, 163, 103, .2);
+        .nav-blur.scrolled {
+            background-color: #132419 !important;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(197, 163, 103, 0.2);
         }
 
-        .social-card {
-            border-bottom: 1px solid rgba(197, 163, 103, .15);
-            padding: 24px 0;
+        /* MOBILE RESPONSIVE LAYOUT */
+        @media (max-width: 768px) {
+            section {
+                padding-top: 7rem !important;
+                padding-bottom: 5rem !important;
+            }
+
+            h1 {
+                font-size: 2.8rem !important;
+                line-height: 1.1;
+            }
+
+            h2 {
+                font-size: 2.2rem !important;
+            }
+
+            h3 {
+                font-size: 1.6rem !important;
+            }
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            #hole-nav-container {
+                gap: 10px;
+                padding-bottom: 10px;
+            }
+
+            nav {
+                background-color: #132419 !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+            }
+
+            #nav-links {
+                background-color: #132419 !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
         }
 
-        .social-card:first-child {
-            padding-top: 0;
+
+
+
+        /* SCROLLBAR & HERO STYLES */
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
         }
 
-        .social-card:last-child {
-            border-bottom: 0;
-            padding-bottom: 0;
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/home-page.webp');
+            background-size: cover;
+            background-position: center;
         }
 
-        .social-image {
-            display: block;
-            width: 100%;
-            max-height: 720px;
-            object-fit: contain;
-            background: #0b1710;
-            border: 1px solid rgba(197, 163, 103, .25);
-            margin-bottom: 20px;
+        :target {
+            scroll-margin-top: 100px;
         }
 
-        .social-date {
-            color: rgba(255, 255, 255, .6);
-            font-size: 0.8rem;
-            margin-bottom: 6px;
+        #nav-links {
+            will-change: transform;
         }
 
-        .social-title {
-            font-family: 'Cormorant Garamond', serif;
-            color: var(--gold);
-            font-size: 1.7rem;
-            font-style: italic;
-            margin-bottom: 10px;
+        #nav-links a {
+            position: relative;
         }
 
-        .social-description {
-            color: rgba(255, 255, 255, .75);
-            line-height: 1.7;
-            margin-bottom: 16px;
-            white-space: pre-line;
-        }
-
-        .social-btn {
-            display: inline-block;
+        #nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0%;
+            height: 1px;
             background: var(--gold);
-            color: var(--forest);
-            padding: 12px 18px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            text-decoration: none;
-            transition: all .3s ease;
+            transition: 0.3s ease;
         }
 
-        .social-btn:hover {
-            background: white;
+        #nav-links a:hover::after {
+            width: 100%;
+        }
+
+        a,
+        button {
+            transition: all 0.25s ease;
+        }
+
+        button:active,
+        a:active {
+            transform: scale(0.97);
+        }
+
+        section[id] {
+            scroll-margin-top: 80px;
+        }
+
+        .social-links {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 6px 4px;
+        }
+
+
+
+        /* COMPONENT BOUNDARY CONTROLS */
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        * {
+            box-sizing: border-box;
+            min-width: 0;
+        }
+
+        section,
+        div,
+        main,
+        nav,
+        footer {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden !important;
+            }
+
+            * {
+                max-width: 100vw;
+            }
+        }
+
+        /* DESKTOP NAVIGATION FIX */
+        @media (min-width: 1280px) {
+            nav > div.hidden.xl\:flex {
+                display: flex !important;
+            }
+
+            nav > div.hidden.xl\:flex.justify-center {
+                font-size: 13px;
+            }
+
+            #menu-btn,
+            #nav-links {
+                display: none !important;
+            }
         }
     </style>
-
+<style>
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: #F9F7F2;
+}
+.events-hero {
+    background: #132419;
+    color: white;
+    padding: 85px 20px;
+    text-align: center;
+    border-bottom: 3px solid #C5A367;
+}
+.events-hero .eyebrow {
+    color: #C5A367;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.events-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(48px, 7vw, 88px);
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 18px 0;
+}
+.events-hero p {
+    color: #e3dfd5;
+    font-size: 16px;
+}
+.events-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 24px 100px;
+    color: #132419;
+}
+.events-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.events-intro {
+    color: #766044;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.social-card {
+    display: grid;
+    grid-template-columns: minmax(0, 42%) minmax(0, 1fr);
+    gap: 35px;
+    background: white;
+    border: 1px solid #e5d9c5;
+    margin: 25px 0;
+    padding: 28px;
+    box-shadow: 0 12px 35px rgba(19,36,25,.06);
+}
+.social-image {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    background: #132419;
+}
+.social-date {
+    color: #9b783d;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.social-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: #132419;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.social-description {
+    color: #475348;
+    font-size: 15px;
+    line-height: 1.85;
+    white-space: pre-line;
+}
+.events-back {
+    display: inline-block;
+    margin-top: 35px;
+    color: #132419;
+    border-bottom: 1px solid #C5A367;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+@media (max-width: 700px) {
+    .social-card {
+        grid-template-columns: 1fr;
+        padding: 18px;
+        gap: 20px;
+    }
+    .events-section {
+        padding: 50px 18px;
+    }
+}
+</style>
 </head>
 
-<body>
+<body class="antialiased">
 
-    <div class="container">
+<div
+        class="bg-forest-dark text-white/70 py-2 px-8 flex justify-between items-center text-[10px] tracking-[0.2em] uppercase border-b border-white/5">
+        <div id="live-clock">Loading...</div>
+        <div class="flex gap-6">
+            <span id="weather">Dudley: 14°C</span>
+            <span>Course Status: <span id="course-status" class="font-bold uppercase"></span></span>
+        </div>
+    </div>
 
-        <a href="members-area.html" class="back-btn">
-            ← Back"Members-Area"
+    <nav
+        class="w-full z-[60] px-8 py-4 flex justify-between items-center text-white nav-blur border-b border-white/10 relative">
+
+        <!-- LOGO -->
+        <a href="/" class="flex flex-col z-[100]">
+            <span class="serif text-2xl">DUDLEY</span>
+            <span class="text-[8px] uppercase text-[#C5A367]">Golf Club Est. 1893</span>
         </a>
 
-        <h1>
-            Club Social Events
-        </h1>
+        <!-- DESKTOP MENU -->
+        <div class="hidden xl:flex justify-center gap-6 text-[12px] uppercase tracking-widest">
+            <a href="/">Home</a>
+            <a href="/course">Course Guide</a>
+            <a href="/the-gauntlet">The Gauntlet</a>
+            <a href="/history">History</a>
+            <a href="/digital-museum">Digital Museum</a>
+            <a href="/hospitality">Hospitality & Events</a>
+            <a href="/pro-shop">Pro Shop</a>
+            <a href="/visitors">Visitors</a>
+            <a href="/membership">Membership</a>
+        </div>
 
-        <div class="content-box">
+        <!-- DESKTOP RIGHT BUTTONS -->
+        <div class="hidden xl:flex items-center gap-4 relative z-[200]">
 
-            <div id="social-events-container">
-                <p>Loading club social events...</p>
+            <a href="members-login.html" target="_blank"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                Members iGolf
+            </a>
+
+            <a href="login.html"
+                class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                Members Portal
+            </a>
+
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button id="menu-btn" class="xl:hidden z-[120] flex flex-col gap-1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <!-- MOBILE SLIDER MENU -->
+        <div id="nav-links"
+            class="fixed top-0 right-0 h-screen w-[80%] max-w-[320px] bg-[#132419] z-[110] translate-x-full transition-transform duration-300 flex flex-col pt-28 px-8 gap-6 text-[12px] uppercase tracking-widest border-l border-[#C5A367]/30 xl:hidden">
+
+            <a href="/">Home</a>
+            <a href="/course">Course Guide</a>
+            <a href="/the-gauntlet">The Gauntlet</a>
+            <a href="/history">History</a>
+            <a href="/digital-museum">Digital Museum</a>
+            <a href="/hospitality">Hospitality & Events</a>
+            <a href="/pro-shop">Pro Shop</a>
+            <a href="/visitors">Visitors</a>
+            <a href="/membership">Membership</a>
+
+            <div class="pt-6 border-t border-[#C5A367]/20 flex flex-col gap-4">
+                <a href="members-login.html" target="_blank"
+                    class="border border-[#C5A367] text-[#C5A367] px-5 py-3 text-center text-[10px] font-bold">
+                    iGolf App
+                </a>
+
+                <a href="login.html"
+                    class="border border-[#C5A367] text-[#C5A367] px-4 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#C5A367] hover:text-white transition">
+                    Members Portal
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+<main>
+<section class="events-hero">
+    <div class="eyebrow">Dudley Golf Club Â· Established 1893</div>
+    <h1>Club Social Events</h1>
+    <p>Great occasions. Great company. Great club.</p>
+</section>
+
+<section class="events-section">
+    <div class="events-intro">Beyond the Fairway</div>
+    <h2>What's Coming Up</h2>
+
+    <div id="social-events-container" aria-live="polite">
+        <p>Loading club social events...</p>
+    </div>
+
+    <a class="events-back" href="/hospitality">
+        Back to Hospitality &amp; Events
+    </a>
+</section>
+</main>
+
+<!-- MASTER FOOTER -->
+    <footer style="padding-top:40px;padding-bottom:24px" class="bg-[#0D1712] text-white px-8 py-10 border-t border-[#C5A367]/20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-8" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:28px;align-items:start">
+
+            <div>
+                <h3 class="serif text-3xl text-[#C5A367] italic mb-6">Dudley Golf Club</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-6">
+                    Turners Hill, Rowley Regis,<br>
+                    West Midlands, B65 9DP
+                </p>
+                <p class="text-white/70 text-sm mb-2">
+                    Tel: <a href="tel:01384233877" class="text-[#C5A367] hover:underline">01384 233877</a>
+                </p>
+                <p class="text-white/70 text-sm">
+                    Email: <a href="mailto:secretary@dudleygolfclub.com"
+                        class="text-[#C5A367] hover:underline">secretary@dudleygolfclub.com</a>
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Explore The Club</h4>
+                <div class="flex flex-col gap-3 text-sm text-white/70">
+                    <a href="/course" class="hover:text-[#C5A367] transition">Course Guide</a>
+                    <a href="/the-gauntlet" class="hover:text-[#C5A367] transition">The Gauntlet</a>
+                    <a href="/history" class="hover:text-[#C5A367] transition">History</a>
+                    <a href="/digital-museum" class="hover:text-[#C5A367] transition">Digital Museum</a>
+                    <a href="/hospitality" class="hover:text-[#C5A367] transition">Hospitality & Events</a>
+                    <a href="/rustic-eatery" class="hover:text-[#C5A367] transition">Rustic Eatery</a>
+                    <a href="/pro-shop" class="hover:text-[#C5A367] transition">Pro Shop</a>
+                    <a href="/visitors" class="hover:text-[#C5A367] transition">Visitors</a>
+                    <a href="/membership" class="hover:text-[#C5A367] transition">Membership</a>
+                    <a href="/meet-the-team" class="hover:text-[#C5A367] transition">
+                        Meet The Team
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Club Links</h4>
+                <div class="flex flex-col gap-3 text-sm text-white/70">
+                    <a href="/visitor-booking" class="hover:text-[#C5A367] transition">Book a Tee Time</a>
+                    <a href="members-login.html" class="hover:text-[#C5A367] transition">Member iGolf</a>
+                    <a href="login.html" class="hover:text-[#C5A367] transition">Members Portal</a>
+                    <a href="https://www.facebook.com/DudleyGolfClub"
+                        class="hover:text-[#C5A367] transition">Facebook</a>
+                    <a href="https://www.instagram.com/dudleygolfclub.co.uk/"
+                        class="hover:text-[#C5A367] transition">Instagram</a>
+                    <a href="https://www.tiktok.com/@dudleygolfclub"
+                        class="hover:text-[#C5A367] transition">TikTok</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-[#C5A367] text-[10px] uppercase tracking-[0.35em] font-bold mb-6">Find Us</h4>
+                <div class="w-full min-h-0 border border-[#C5A367]/30 rounded-lg p-5 flex flex-col justify-center">
+                    <p class="font-serif text-2xl text-white mb-4">Dudley Golf Club</p>
+                    <p class="text-white/70 leading-7 mb-6">
+                        Turners Hill<br>
+                        Rowley Regis<br>
+                        West Midlands
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Dudley+Golf+Club+Turners+Hill+Rowley+Regis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex w-fit items-center justify-center px-5 py-3 rounded-lg border border-[#C5A367] text-[#C5A367] text-xs uppercase tracking-[0.2em] font-bold hover:bg-[#C5A367] hover:text-[#132419] transition">
+                        View Map &amp; Directions
+                    </a>
+                    <p class="text-white/40 text-xs mt-5 leading-5">
+                        Maps only opens if you choose to view directions.
+                    </p>
+                </div>
             </div>
 
         </div>
 
-    </div>
+        <div
+            class="max-w-7xl mx-auto mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] uppercase tracking-[0.25em] text-white/40">
+            <p>© 2026 Dudley Golf Club</p>
+            <p>Established 1893 • Rowley Regis</p>
+        </div>
+    </footer>
 
-    <script>
+<script>
+        (() => {
+            "use strict";
+
+            /* =========================
+               SAFE GUARDS
+            ========================= */
+
+            if (window.__SITE_INIT__) {
+                console.warn("Script already initialised - blocking duplicate run.");
+                return;
+            }
+            window.__SITE_INIT__ = true;
+
+
+            /* =========================
+               CLOCK SYSTEM
+            ========================= */
+
+            function updateCourseStatus() {
+                const el = document.getElementById("course-status");
+                if (!el) return;
+
+                const now = new Date();
+                const minutes = now.getHours() * 60 + now.getMinutes();
+
+                const open = minutes >= 480 && minutes <= 1072;
+
+                el.textContent = open ? "Open" : "Closed";
+                el.className = open
+                    ? "text-green-400 font-bold uppercase"
+                    : "text-red-500 font-bold uppercase";
+            }
+
+            function updateClock() {
+                const clock = document.getElementById("live-clock");
+                const year = document.getElementById("year");
+
+                const now = new Date();
+
+                if (clock) {
+                    clock.textContent = now.toLocaleString("en-GB", {
+                        weekday: "short",
+                        day: "numeric",
+                        month: "short",
+                        hour: "2-digit",
+                        minute: "2-digit"
+                    });
+                }
+
+                if (year) year.textContent = now.getFullYear();
+
+                updateCourseStatus();
+            }
+
+
+
+            /* =========================
+               MOBILE MENU
+            ========================= */
+
+
+            function initMenu() {
+                const btn = document.getElementById("menu-btn");
+                const nav = document.getElementById("nav-links");
+
+                if (!btn || !nav) return;
+
+                function closeMenu() {
+                    nav.classList.add("translate-x-full");
+                    nav.classList.remove("translate-x-0");
+                    document.body.style.overflow = "auto";
+                }
+
+                function openMenu() {
+                    nav.classList.remove("translate-x-full");
+                    nav.classList.add("translate-x-0");
+                    document.body.style.overflow = "hidden";
+                }
+
+                btn.addEventListener("click", e => {
+                    e.stopPropagation();
+
+                    nav.classList.contains("translate-x-full")
+                        ? openMenu()
+                        : closeMenu();
+                });
+
+                document.querySelectorAll("#nav-links a").forEach(link => {
+                    link.addEventListener("click", closeMenu);
+                });
+
+                document.addEventListener("click", e => {
+                    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            /* =========================
+               STARTUP (ONE ENTRY POINT)
+            ========================= */
+            document.addEventListener("DOMContentLoaded", () => {
+                initMenu();
+                updateClock();
+                setInterval(updateClock, 1000);
+            });
+            /* =========================
+               GLOBAL SAFETY NET
+            ========================= */
+
+            window.addEventListener("error", e => {
+                console.log("JS Error caught:", e.message);
+            });
+
+            // This closes the (() => { that is at the very top of your script
+        })();
+    </script>
+<script>
         async function loadSocialEvents() {
             const container = document.getElementById("social-events-container");
             if (!container) return;
@@ -222,10 +693,8 @@
 
                     return `
                         <div class="social-card">
-                            ${event.image?.asset?.url ? `<img class="social-image" src="${event.image.asset.url}?auto=format&w=1200" alt="${event.imageAlt || event.eventName || "Social event poster"}" loading="lazy">` : ""}
-                            <div class="social-date">${event.displayDate || ""}</div>
-                            <div class="social-title">${event.eventName || ""}</div>
-                            <div class="social-description">${event.description || ""}</div>
+<div class="social-poster">${event.image?.asset?.url ? `<img class="social-image" src="${event.image.asset.url}?auto=format&w=1200" alt="${event.imageAlt || event.eventName || "Social event poster"}" loading="lazy">` : ""}</div>
+<div class="social-details"><div class="social-date">${event.displayDate || ""}</div><div class="social-title">${event.eventName || ""}</div><div class="social-description">${event.description || ""}</div></div>
                            
                         </div>
                     `;
@@ -240,28 +709,5 @@
         loadSocialEvents();
     </script>
 
-    <a href="/" aria-label="Return Home" style="
-position:fixed;
-bottom:24px;
-right:24px;
-width:50px;
-height:50px;
-background:#132419;
-color:#C5A367;
-border:2px solid #C5A367;
-border-radius:4px;
-z-index:99999;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,.5);
-font-size:20px;
-font-weight:bold;
-">
-        ⌂
-    </a>
-
 </body>
-
 </html>
