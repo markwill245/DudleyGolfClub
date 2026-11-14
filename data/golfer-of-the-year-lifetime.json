@@ -366,8 +366,8 @@
     "rank": 3,
     "player": "Lee Roger Grainger",
     "section": "Mens",
-    "points": 13,
-    "wins": 17,
+    "points": 14,
+    "wins": 18,
     "results": [
       {
         "year": 2004,
@@ -511,6 +511,15 @@
         "awardId": "overallWinner",
         "points": 0.5,
         "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2026,
+        "date": null,
+        "competition": "Brian Lloyd Cup",
+        "competitionId": "brian-lloyd-cup",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
       }
     ]
   },
@@ -884,6 +893,104 @@
   },
   {
     "rank": 7,
+    "player": "Mark A. Williams",
+    "section": "Mens",
+    "points": 8.5,
+    "wins": 11,
+    "results": [
+      {
+        "year": 1989,
+        "competition": "Bloom Cup",
+        "competitionId": "bloom-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 1992,
+        "competition": "Coronation Cup",
+        "competitionId": "coronation-cup",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 1996,
+        "competition": "Bassano Cup",
+        "competitionId": "bassano-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 1998,
+        "competition": "Claughton Cup",
+        "competitionId": "claughton-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 1998,
+        "competition": "Winter Greensomes",
+        "competitionId": "winter-greensomes",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 1999,
+        "competition": "Coronation Cup",
+        "competitionId": "coronation-cup",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 1999,
+        "competition": "James Grainger Trophy",
+        "competitionId": "james-grainger-trophy",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2003,
+        "competition": "Brian Lloyd Cup",
+        "competitionId": "brian-lloyd-cup",
+        "points": 1,
+        "tieBreakPoints": 2,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2003,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2003,
+        "competition": "Summer Foursomes",
+        "competitionId": "summer-foursomes",
+        "points": 0.5,
+        "tieBreakPoints": 1,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2026,
+        "date": null,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 8,
     "player": "M. Bianco",
     "section": "Mens",
     "points": 8,
@@ -988,7 +1095,7 @@
     ]
   },
   {
-    "rank": 8,
+    "rank": 9,
     "player": "Paul Welch",
     "section": "Mens",
     "points": 8,
@@ -1068,95 +1175,6 @@
         "awardId": "centenary-trophy",
         "points": 1,
         "reason": "Singles board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 9,
-    "player": "Mark A. Williams",
-    "section": "Mens",
-    "points": 7.5,
-    "wins": 10,
-    "results": [
-      {
-        "year": 1989,
-        "competition": "Bloom Cup",
-        "competitionId": "bloom-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 1992,
-        "competition": "Coronation Cup",
-        "competitionId": "coronation-cup",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 1996,
-        "competition": "Bassano Cup",
-        "competitionId": "bassano-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 1998,
-        "competition": "Claughton Cup",
-        "competitionId": "claughton-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 1998,
-        "competition": "Winter Greensomes",
-        "competitionId": "winter-greensomes",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 1999,
-        "competition": "Coronation Cup",
-        "competitionId": "coronation-cup",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 1999,
-        "competition": "James Grainger Trophy",
-        "competitionId": "james-grainger-trophy",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2003,
-        "competition": "Brian Lloyd Cup",
-        "competitionId": "brian-lloyd-cup",
-        "points": 1,
-        "tieBreakPoints": 2,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2003,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2003,
-        "competition": "Summer Foursomes",
-        "competitionId": "summer-foursomes",
-        "points": 0.5,
-        "tieBreakPoints": 1,
-        "reason": "Pairs/team board/major win"
       }
     ]
   },
@@ -1623,6 +1641,80 @@
   },
   {
     "rank": 15,
+    "player": "Nigel Brookes",
+    "section": "Mens",
+    "points": 6.5,
+    "wins": 8,
+    "results": [
+      {
+        "year": 2013,
+        "competition": "Boscawen Cup",
+        "competitionId": "boscawen-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2013,
+        "competition": "Writtle Groves Cup",
+        "competitionId": "writtle-groves-cup",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2014,
+        "competition": "Thompson Shield",
+        "competitionId": "thompson-shield",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2015,
+        "competition": "Bassano Cup",
+        "competitionId": "bassano-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2018,
+        "competition": "Writtle Groves Cup",
+        "competitionId": "writtle-groves-cup",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2019,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2019,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "points": 1,
+        "tieBreakPoints": 0,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2023,
+        "date": null,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 16,
     "player": "Ian Frederick Stevens",
     "section": "Mens",
     "points": 6,
@@ -1704,7 +1796,7 @@
     ]
   },
   {
-    "rank": 16,
+    "rank": 17,
     "player": "Robert Keith Woodall",
     "section": "Mens",
     "points": 6,
@@ -1786,7 +1878,7 @@
     ]
   },
   {
-    "rank": 17,
+    "rank": 18,
     "player": "Charlie Cheese",
     "section": "Mens",
     "points": 6,
@@ -1859,7 +1951,7 @@
     ]
   },
   {
-    "rank": 18,
+    "rank": 19,
     "player": "Scott Postin",
     "section": "Mens",
     "points": 6,
@@ -1938,7 +2030,7 @@
     ]
   },
   {
-    "rank": 19,
+    "rank": 20,
     "player": "M. Short",
     "section": "Mens",
     "points": 6,
@@ -1995,7 +2087,7 @@
     ]
   },
   {
-    "rank": 20,
+    "rank": 21,
     "player": "P. Swift",
     "section": "Mens",
     "points": 6,
@@ -2052,7 +2144,7 @@
     ]
   },
   {
-    "rank": 21,
+    "rank": 22,
     "player": "P. Tongue",
     "section": "Mens",
     "points": 6,
@@ -2109,7 +2201,7 @@
     ]
   },
   {
-    "rank": 22,
+    "rank": 23,
     "player": "B. Lloyd",
     "section": "Mens",
     "points": 5.5,
@@ -2182,7 +2274,7 @@
     ]
   },
   {
-    "rank": 23,
+    "rank": 24,
     "player": "Gavin Ray",
     "section": "Mens",
     "points": 5.5,
@@ -2256,7 +2348,85 @@
     ]
   },
   {
-    "rank": 24,
+    "rank": 25,
+    "player": "Mark Andrew Poulding",
+    "section": "Mens",
+    "points": 5.5,
+    "wins": 8,
+    "results": [
+      {
+        "year": 2018,
+        "competition": "Probus Pairs Stableford Betterball",
+        "competitionId": "probus-pairs-stableford-betterball",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2019,
+        "competition": "Thompson Shield",
+        "competitionId": "thompson-shield",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2020,
+        "competition": "Probus Pairs Stableford Betterball",
+        "competitionId": "probus-pairs-stableford-betterball",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2021,
+        "date": "2021-07-10",
+        "competition": "Captain's Day",
+        "competitionId": "captains-day",
+        "awardId": "overallWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2022,
+        "date": null,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2022,
+        "date": null,
+        "competition": "Lewis Cup",
+        "competitionId": "lewis-cup",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2022,
+        "date": "2022-07-16",
+        "competition": "Probus Pairs Stableford Betterball",
+        "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2023,
+        "date": "2023-07-29",
+        "competition": "Probus Pairs Stableford Betterball",
+        "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 26,
     "player": "Phil Priest",
     "section": "Mens",
     "points": 5.5,
@@ -2329,7 +2499,7 @@
     ]
   },
   {
-    "rank": 25,
+    "rank": 27,
     "player": "Kevin John Hartland",
     "section": "Mens",
     "points": 5.5,
@@ -2394,72 +2564,7 @@
     ]
   },
   {
-    "rank": 26,
-    "player": "Nigel Brookes",
-    "section": "Mens",
-    "points": 5.5,
-    "wins": 7,
-    "results": [
-      {
-        "year": 2013,
-        "competition": "Boscawen Cup",
-        "competitionId": "boscawen-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2013,
-        "competition": "Writtle Groves Cup",
-        "competitionId": "writtle-groves-cup",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2014,
-        "competition": "Thompson Shield",
-        "competitionId": "thompson-shield",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2015,
-        "competition": "Bassano Cup",
-        "competitionId": "bassano-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2018,
-        "competition": "Writtle Groves Cup",
-        "competitionId": "writtle-groves-cup",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2019,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2019,
-        "competition": "David Poole Trophy",
-        "competitionId": "david-poole-trophy",
-        "points": 1,
-        "tieBreakPoints": 0,
-        "reason": "Singles board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 27,
+    "rank": 28,
     "player": "Stephen Brian Hopkins",
     "section": "Mens",
     "points": 5.5,
@@ -2527,7 +2632,7 @@
     ]
   },
   {
-    "rank": 28,
+    "rank": 29,
     "player": "Jason Sean Higley",
     "section": "Mens",
     "points": 5.5,
@@ -2584,7 +2689,7 @@
     ]
   },
   {
-    "rank": 29,
+    "rank": 30,
     "player": "Stewart Marshall",
     "section": "Mens",
     "points": 5,
@@ -2660,7 +2765,7 @@
     ]
   },
   {
-    "rank": 30,
+    "rank": 31,
     "player": "Paul Andrew Birch",
     "section": "Mens",
     "points": 5,
@@ -2717,7 +2822,7 @@
     ]
   },
   {
-    "rank": 31,
+    "rank": 32,
     "player": "A. G. M. Shaw",
     "section": "Mens",
     "points": 5,
@@ -2766,7 +2871,61 @@
     ]
   },
   {
-    "rank": 32,
+    "rank": 33,
+    "player": "Lewis Jones",
+    "section": "Mens",
+    "points": 5,
+    "wins": 5,
+    "results": [
+      {
+        "year": 2025,
+        "date": null,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2025,
+        "date": "2025-06-28",
+        "competition": "Club Championship",
+        "competitionId": "club-championship",
+        "awardId": "club-championship",
+        "points": 1,
+        "reason": "Club Champion"
+      },
+      {
+        "year": 2025,
+        "date": null,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2026,
+        "date": null,
+        "competition": "Caldene Cup",
+        "competitionId": "caldene-cup",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2026,
+        "date": "2026-06-27",
+        "competition": "Club Championship",
+        "competitionId": "club-championship",
+        "awardId": "club-championship",
+        "points": 1,
+        "reason": "Club Champion"
+      }
+    ]
+  },
+  {
+    "rank": 34,
     "player": "Wayne Rutter",
     "section": "Mens",
     "points": 5,
@@ -2818,7 +2977,7 @@
     ]
   },
   {
-    "rank": 33,
+    "rank": 35,
     "player": "David Hill",
     "section": "Mens",
     "points": 4.5,
@@ -2885,7 +3044,7 @@
     ]
   },
   {
-    "rank": 34,
+    "rank": 36,
     "player": "Gary William Stubbs",
     "section": "Mens",
     "points": 4.5,
@@ -2954,76 +3113,7 @@
     ]
   },
   {
-    "rank": 35,
-    "player": "Mark Andrew Poulding",
-    "section": "Mens",
-    "points": 4.5,
-    "wins": 7,
-    "results": [
-      {
-        "year": 2018,
-        "competition": "Probus Pairs Stableford Betterball",
-        "competitionId": "probus-pairs-stableford-betterball",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2019,
-        "competition": "Thompson Shield",
-        "competitionId": "thompson-shield",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2020,
-        "competition": "Probus Pairs Stableford Betterball",
-        "competitionId": "probus-pairs-stableford-betterball",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2021,
-        "date": "2021-07-10",
-        "competition": "Captain's Day",
-        "competitionId": "captains-day",
-        "awardId": "overallWinner",
-        "points": 1,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2022,
-        "date": null,
-        "competition": "Lewis Cup",
-        "competitionId": "lewis-cup",
-        "awardId": "boardWinner",
-        "points": 1,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2022,
-        "date": "2022-07-16",
-        "competition": "Probus Pairs Stableford Betterball",
-        "competitionId": "probus-pairs-stableford-betterball",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2023,
-        "date": "2023-07-29",
-        "competition": "Probus Pairs Stableford Betterball",
-        "competitionId": "probus-pairs-stableford-betterball",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 36,
+    "rank": 37,
     "player": "A. Lowe",
     "section": "Mens",
     "points": 4.5,
@@ -3080,7 +3170,7 @@
     ]
   },
   {
-    "rank": 37,
+    "rank": 38,
     "player": "Michael John Kendrick",
     "section": "Mens",
     "points": 4.5,
@@ -3138,7 +3228,67 @@
     ]
   },
   {
-    "rank": 38,
+    "rank": 39,
+    "player": "Steve Homer",
+    "section": "Mens",
+    "points": 4.5,
+    "wins": 6,
+    "results": [
+      {
+        "year": 2002,
+        "competition": "Challenge Shield",
+        "competitionId": "challenge-shield",
+        "points": 1,
+        "tieBreakPoints": 2,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2007,
+        "competition": "Thompson Shield",
+        "competitionId": "thompson-shield",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2013,
+        "competition": "Tom Poole Trophy",
+        "competitionId": "tom-poole-cup",
+        "points": 0.5,
+        "tieBreakPoints": 0,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2022,
+        "date": null,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2023,
+        "date": "2023-05-20",
+        "competition": "Boscawen Cup",
+        "competitionId": "boscawen-cup",
+        "awardId": "boscawen-cup",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2023,
+        "date": "2023-04-15",
+        "competition": "Tom Poole Trophy",
+        "competitionId": "tom-poole-cup",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 40,
     "player": "G.F. Clarke",
     "section": "Mens",
     "points": 4.5,
@@ -3187,7 +3337,7 @@
     ]
   },
   {
-    "rank": 39,
+    "rank": 41,
     "player": "M. Harrold",
     "section": "Mens",
     "points": 4.5,
@@ -3236,7 +3386,7 @@
     ]
   },
   {
-    "rank": 40,
+    "rank": 42,
     "player": "Adam Bonehill",
     "section": "Mens",
     "points": 4,
@@ -3295,7 +3445,7 @@
     ]
   },
   {
-    "rank": 41,
+    "rank": 43,
     "player": "Christopher Vanes",
     "section": "Mens",
     "points": 4,
@@ -3354,7 +3504,70 @@
     ]
   },
   {
-    "rank": 42,
+    "rank": 44,
+    "player": "James Stevens",
+    "section": "Mens",
+    "points": 4,
+    "wins": 6,
+    "results": [
+      {
+        "year": 2024,
+        "date": "2024-08-24",
+        "competition": "125 Trophy - Pairs Stableford Betterball",
+        "competitionId": "125-trophy-pairs-stableford-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2024,
+        "date": "2024-06-22",
+        "competition": "Challenge Shield",
+        "competitionId": "challenge-shield",
+        "awardId": "challenge-shield",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2024,
+        "date": null,
+        "competition": "David Poole Trophy",
+        "competitionId": "david-poole-trophy",
+        "awardId": "boardWinner",
+        "points": 1,
+        "reason": "Singles board/major win"
+      },
+      {
+        "year": 2024,
+        "date": "2024-07-20",
+        "competition": "Jubilee Salver Pairs BetterBall",
+        "competitionId": "jubilee-salver-pairs-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2026,
+        "date": "2026-05-30",
+        "competition": "Probus Pairs Stableford Betterball",
+        "competitionId": "probus-pairs-stableford-betterball",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      },
+      {
+        "year": 2026,
+        "date": "2026-10-10",
+        "competition": "Writtle Grove & Winter Greensomes Qualifier",
+        "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
+        "awardId": "overallWinner",
+        "points": 0.5,
+        "reason": "Pairs/team board/major win"
+      }
+    ]
+  },
+  {
+    "rank": 45,
     "player": "Keith John Woodall",
     "section": "Mens",
     "points": 4,
@@ -3413,7 +3626,7 @@
     ]
   },
   {
-    "rank": 43,
+    "rank": 46,
     "player": "Peter Evans",
     "section": "Mens",
     "points": 4,
@@ -3470,7 +3683,7 @@
     ]
   },
   {
-    "rank": 44,
+    "rank": 47,
     "player": "Craig Biddulph",
     "section": "Mens",
     "points": 4,
@@ -3520,52 +3733,7 @@
     ]
   },
   {
-    "rank": 45,
-    "player": "Lewis Jones",
-    "section": "Mens",
-    "points": 4,
-    "wins": 4,
-    "results": [
-      {
-        "year": 2025,
-        "date": null,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "awardId": "boardWinner",
-        "points": 1,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2025,
-        "date": "2025-06-28",
-        "competition": "Club Championship",
-        "competitionId": "club-championship",
-        "awardId": "club-championship",
-        "points": 1,
-        "reason": "Club Champion"
-      },
-      {
-        "year": 2026,
-        "date": null,
-        "competition": "Caldene Cup",
-        "competitionId": "caldene-cup",
-        "awardId": "boardWinner",
-        "points": 1,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2026,
-        "date": "2026-06-27",
-        "competition": "Club Championship",
-        "competitionId": "club-championship",
-        "awardId": "club-championship",
-        "points": 1,
-        "reason": "Club Champion"
-      }
-    ]
-  },
-  {
-    "rank": 46,
+    "rank": 48,
     "player": "C. Beese",
     "section": "Mens",
     "points": 3.5,
@@ -3622,7 +3790,7 @@
     ]
   },
   {
-    "rank": 47,
+    "rank": 49,
     "player": "J. Parkes",
     "section": "Mens",
     "points": 3.5,
@@ -3679,7 +3847,7 @@
     ]
   },
   {
-    "rank": 48,
+    "rank": 50,
     "player": "Richard Limb",
     "section": "Mens",
     "points": 3.5,
@@ -3739,7 +3907,7 @@
     ]
   },
   {
-    "rank": 49,
+    "rank": 51,
     "player": "M. Hall",
     "section": "Mens",
     "points": 3.5,
@@ -3788,58 +3956,7 @@
     ]
   },
   {
-    "rank": 50,
-    "player": "Steve Homer",
-    "section": "Mens",
-    "points": 3.5,
-    "wins": 5,
-    "results": [
-      {
-        "year": 2002,
-        "competition": "Challenge Shield",
-        "competitionId": "challenge-shield",
-        "points": 1,
-        "tieBreakPoints": 2,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2007,
-        "competition": "Thompson Shield",
-        "competitionId": "thompson-shield",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2013,
-        "competition": "Tom Poole Trophy",
-        "competitionId": "tom-poole-cup",
-        "points": 0.5,
-        "tieBreakPoints": 0,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2023,
-        "date": "2023-05-20",
-        "competition": "Boscawen Cup",
-        "competitionId": "boscawen-cup",
-        "awardId": "boscawen-cup",
-        "points": 1,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2023,
-        "date": "2023-04-15",
-        "competition": "Tom Poole Trophy",
-        "competitionId": "tom-poole-cup",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 51,
+    "rank": 52,
     "player": "D. Cash",
     "section": "Mens",
     "points": 3.5,
@@ -3880,7 +3997,7 @@
     ]
   },
   {
-    "rank": 52,
+    "rank": 53,
     "player": "P. Prosser",
     "section": "Mens",
     "points": 3.5,
@@ -3921,7 +4038,7 @@
     ]
   },
   {
-    "rank": 53,
+    "rank": 54,
     "player": "Paul Raymond Rock",
     "section": "Mens",
     "points": 3.5,
@@ -3962,7 +4079,7 @@
     ]
   },
   {
-    "rank": 54,
+    "rank": 55,
     "player": "R. Prophet",
     "section": "Mens",
     "points": 3.5,
@@ -4003,7 +4120,7 @@
     ]
   },
   {
-    "rank": 55,
+    "rank": 56,
     "player": "Shaun Edward Messer",
     "section": "Mens",
     "points": 3.5,
@@ -4040,60 +4157,6 @@
         "points": 1,
         "tieBreakPoints": 0,
         "reason": "Singles board/major win"
-      }
-    ]
-  },
-  {
-    "rank": 56,
-    "player": "James Stevens",
-    "section": "Mens",
-    "points": 3,
-    "wins": 5,
-    "results": [
-      {
-        "year": 2024,
-        "date": "2024-08-24",
-        "competition": "125 Trophy - Pairs Stableford Betterball",
-        "competitionId": "125-trophy-pairs-stableford-betterball",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2024,
-        "date": "2024-06-22",
-        "competition": "Challenge Shield",
-        "competitionId": "challenge-shield",
-        "awardId": "challenge-shield",
-        "points": 1,
-        "reason": "Singles board/major win"
-      },
-      {
-        "year": 2024,
-        "date": "2024-07-20",
-        "competition": "Jubilee Salver Pairs BetterBall",
-        "competitionId": "jubilee-salver-pairs-betterball",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2026,
-        "date": "2026-05-30",
-        "competition": "Probus Pairs Stableford Betterball",
-        "competitionId": "probus-pairs-stableford-betterball",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
-      },
-      {
-        "year": 2026,
-        "date": "2026-10-10",
-        "competition": "Writtle Grove & Winter Greensomes Qualifier",
-        "competitionId": "writtle-grove-and-winter-greensomes-qualifier",
-        "awardId": "overallWinner",
-        "points": 0.5,
-        "reason": "Pairs/team board/major win"
       }
     ]
   },
