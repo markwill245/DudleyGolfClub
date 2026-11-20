@@ -21,32 +21,32 @@
 <dialog id="lightbox" aria-label="Photograph viewer"><button class="close" id="close" aria-label="Close photograph">×</button><div class="lightbox"><img id="large" alt=""><small id="large-caption"></small></div></dialog>
 <script>
 const photos=[
-['Dudley Golf Club Award Portrait.webp','Presentation photograph','all'],
-['Dudley Golf Club Award Presentation (1).webp','Presentation photograph','all'],
-['Dudley Golf Club Award Presentation (2).webp','Presentation photograph','all'],
-['Dudley Golf Club Award Presentation.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (1) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (1).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (2) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (2).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (3).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (4) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (4).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (5) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (5).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (6) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (6).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (7) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (7).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (8) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (8).webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation (9) - converted from PNG.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Presentation.webp','Presentation photograph','all'],
-['Dudley Golf Club Trophy Showcase - converted from PNG.webp','Presentation photograph','all']
+["Dudley Golf Club Award Portrait.webp","Caldene Cup - Championship Gross","Lewis Jones"],
+["Dudley Golf Club Award Presentation (1).webp","Queen Elizabeth II Texas Scramble","Darren Element, Sean Element, Lewis Ganner \u0026 Neil Hanley"],
+["Dudley Golf Club Award Presentation (2).webp","125 Trophy","Tony Salt \u0026 Ryan Walker"],
+["Dudley Golf Club Award Presentation.webp","David Poole Trophy - Best Six Nett","Lewis Jones"],
+["Dudley Golf Club Trophy Presentation - converted from PNG.webp","President\u0027s Putter","Lewis Jones"],
+["Dudley Golf Club Trophy Presentation (1) - converted from PNG.webp","Grandads Cup","Steve Price"],
+["Dudley Golf Club Trophy Presentation (1).webp","Brian Lloyd Scratch","Lee Grainger"],
+["Dudley Golf Club Trophy Presentation (2) - converted from PNG.webp","Doug Lee Pairs","David Postin \u0026 Scott Postin"],
+["Dudley Golf Club Trophy Presentation (2).webp","Veterans Trophy","Steve Price"],
+["Dudley Golf Club Trophy Presentation (3).webp","Lewis Cup","Stuart Evans"],
+["Dudley Golf Club Trophy Presentation (4) - converted from PNG.webp","Bloom Cup","Jason Bates"],
+["Dudley Golf Club Trophy Presentation (4).webp","Walker Cup","Gary Baker"],
+["Dudley Golf Club Trophy Presentation (5) - converted from PNG.webp","Bassano Cup","Mitch Raybould"],
+["Dudley Golf Club Trophy Presentation (5).webp","Challenge Shield - Championship Nett","Kevin Walters"],
+["Dudley Golf Club Trophy Presentation (6) - converted from PNG.webp","James Grainger Pairs","Tony Salt \u0026 Ryan Walker"],
+["Dudley Golf Club Trophy Presentation (6).webp","Centenary Trophy","Kevin Walters"],
+["Dudley Golf Club Trophy Presentation (7) - converted from PNG.webp","Claughton Cup","Rich Weston"],
+["Dudley Golf Club Trophy Presentation (7).webp","Tom Poole Pairs","Paul Donnelly \u0026 Sean Element"],
+["Dudley Golf Club Trophy Presentation (8) - converted from PNG.webp","Millenium Trophy","Gary Baker, Mark Dando, Clive Kearey \u0026 Adam Stanfield"],
+["Dudley Golf Club Trophy Presentation (8).webp","Hooper Cup","Rich Weston"],
+["Dudley Golf Club Trophy Presentation (9) - converted from PNG.webp","Coronation Pairs","Greg Curry \u0026 Rich Weston"],
+["Dudley Golf Club Trophy Presentation.webp","Golfer of the Year","Richard Weston"],
+["Dudley Golf Club Trophy Showcase - converted from PNG.webp","2026 Trophy Collection","All the trophies presented at Dudley Golf Club"]
 ];
 const grid=document.getElementById('photo-grid'),dialog=document.getElementById('lightbox');
-photos.forEach(([file,title,category],index)=>{let btn=document.createElement('button');btn.className='photo-card';btn.dataset.category=category;btn.setAttribute('aria-label','Enlarge '+title+' '+(index+1));let img=document.createElement('img');img.src='assets/'+file;img.alt=title+' at Dudley Golf Club';img.loading='lazy';let caption=document.createElement('div');caption.innerHTML='<strong>'+title+'</strong><span>Presentation Evening 2026</span>';btn.append(img,caption);btn.onclick=()=>{document.getElementById('large').src=img.src;document.getElementById('large').alt=img.alt;document.getElementById('large-caption').textContent=title+' · Dudley Golf Club · 2026';dialog.showModal()};grid.append(btn)});
+photos.forEach(([file,title,winner],index)=>{let btn=document.createElement('button');btn.className='photo-card';btn.setAttribute('aria-label','Enlarge '+title+' '+(index+1));let img=document.createElement('img');img.src='assets/'+file;img.alt=title+' at Dudley Golf Club';img.loading='lazy';let caption=document.createElement('div');caption.innerHTML='<strong>'+title+'</strong><span>'+winner+'</span>';btn.append(img,caption);btn.onclick=()=>{document.getElementById('large').src=img.src;document.getElementById('large').alt=img.alt;document.getElementById('large-caption').textContent=title+' - '+winner;dialog.showModal()};grid.append(btn)});
 document.getElementById('close').onclick=()=>dialog.close();dialog.onclick=e=>{if(e.target===dialog)dialog.close()};
 </script>
 </body></html>
